@@ -721,6 +721,21 @@ existing f_c0 contamination. The γ data pin the e-mixture; the ṽ data then me
 with the broadening PHYSICAL instead of phenomenological. If α ≈ 1 survives v6, every
 nuisance in the fit has a measured identity.
 
+Priority scouts (two Haiku-grade sweeps, 2026-07-22, 53 searches total): the SPECIFIC
+claim — measured U-shaped γ distributions at >6 kAU decomposed as a circular+radial
+e-mixture, resolving the ṽ-broadening systematic — appears UNPUBLISHED. But the novelty
+is narrower than "e-bimodality is unknown": (1) **El-Badry 2024 review (arXiv:2403.12146)
+reportedly uses "U-shaped eccentricity distribution" language for wide binaries** —
+VERIFY the exact statement before citing/claiming; if p(e) U-shape is review-level known,
+our contribution is the γ-space measurement + the σ_m connection, not the bimodality
+itself; (2) the wide-TWIN population is published as extremely eccentric with v-r angle
+enhancement (Hwang/Andrews 2022 — scout citations may be confabulated, verify DOIs);
+(3) **Pittordis & Sutherland 2023/2025 (arXiv:2504.07569)** fit binary+triple+flyby+
+chance mixtures on similar data — the framework prior art; flyby-as-contaminant is
+published, flyby-at-γ≈0 as a measured signature is not; (4) all Hwang-method follow-ups
+reportedly assume single power-law families. Action unchanged: READ El-Badry 2024 and
+P&S 2025 properly before building v6 or claiming anything.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
