@@ -590,6 +590,51 @@ realization-dominated precision ~±0.15–0.2; Newton is disfavored by ΔlnL ≈
 five nuisances marginalized; the two remaining gates on a quotable α ± interval are the
 physical decomposition of σ_m ≈ 0.30 (TODO #2b) and the data-bootstrap half of TODO #3.
 
+## Stage 3I: data bootstrap — the α error budget completes (2026-07-22 morning, [calcs/stage3i_bootstrap.py](calcs/stage3i_bootstrap.py))
+
+1000 bootstrap replicates of the 14,071 pairs, re-scored against a saved seed-31 model
+grid (resampling at the evaluation layer — no orbit re-runs; model noise-draw convention
+held fixed, a stated second-order approximation). [data/stage3i_summary.txt](data/stage3i_summary.txt):
+
+- simple: α̂ = 0.98 ± 0.20 (16–84%: [0.84, 1.15]); interior 984/1000
+- BE: α̂ = 1.21 ± 0.26 (16–84%: [1.00, 1.51]); interior 978/1000
+- Newton ΔlnL = +60.7 ± 10.6 (simple) / +58.9 ± 10.3 (BE); **minimum over 1000
+  replicates: +30** — Newton loses in every resampling of the data.
+
+**Combined error budget (bootstrap ⊕ realization, quadrature): simple α = 0.98 ± 0.23;
+BE α = 1.21 ± 0.30.** Both consistent with the parameter-free α = 1 within 1σ. TODO #3 is
+done. This is the α ± interval — CONDITIONAL on the σ_m nuisance being benign, which
+Stage 3J immediately puts under fire:
+
+## Stage 3J: σ_m mass-budget — mass errors REFUTED as the source; multiplicity promoted (2026-07-22 morning, [calcs/stage3j_massbudget.py](calcs/stage3j_massbudget.py))
+
+Independent measurement of the photometric mass error from the sample's own photometry
+(main-sequence ridge in (BP−RP, M_G) from the 2×14,071 component stars; the binary trick:
+corr(δ₁,δ₂)=0.47 across pairs splits shared vs per-star scatter). Full output:
+[data/stage3j_summary.txt](data/stage3j_summary.txt). (One bug caught: the catalog encodes
+missing photometry as 1e20 sentinels, not NaN — first pass gave a 2.86-mag "MS width";
+suspicious round-trip numbers remain confessions.)
+
+- MS robust width: **0.275 mag** at fixed color → per-star σ_lnM ≈ **0.056** (5.6% mass
+  error — photometric masses are GOOD) → **σ_m(mass) = 0.024 (16–84%: 0.020–0.031)**.
+- **The fitted σ_m = 0.30 is 12× larger. Mass errors supply 8% of the variance; the
+  residual (0.299) is the entire effect. The Stage-3E "error-laden photometric masses"
+  hypothesis is REFUTED** — logged as such; that was this model's best guess at 4am and
+  the measurement killed it in 40 lines. Honest-updating cuts both ways.
+- The same measurement hands us the replacement suspect: **12.3% of component stars are
+  overluminous by >0.4 mag at fixed color = unresolved companions, counted in OUR sample.**
+
+Why this is the critical suspect and not a detail: a hidden companion's wobble is constant
+in km/s while vc falls with s, so multiplicity broadening GROWS with separation — the same
+direction as the MOND signal (the classic hidden-triple concern, now with a measured
+anchor). Our earlier f_t ≲ 5% tail bound used the crude two-population wobble model, which
+the σ_m fit rejects in favor of a smooth broadening — a realistic companion CONTINUUM
+(lognormal period distribution à la Raghavan, anchored to f_comp = 0.123) may reproduce
+the σ_m = 0.30 smear. **Until the v5 fit replaces σ_m with that physical model, α ≈ 1 is
+NOT safe — the s-dependence that survived the s-INDEPENDENT smear could be partly eaten by
+an s-DEPENDENT one.** This is now the sharpest known threat to the result and the next
+mandatory computation (supersedes the generic TODO #2b phrasing).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

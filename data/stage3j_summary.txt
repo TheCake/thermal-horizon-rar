@@ -1,0 +1,10 @@
+STAGE 3J mass budget: 14071 pairs, 27855/28142 stars with BP-RP
+MS robust width sigma(M_G|color): 0.275 mag (bin range 0.134-0.489)
+overluminous fraction (delta < -0.4 mag, unresolved-companion proxy): 0.123
+pair correlation corr(delta1, delta2): 0.474 (clipped +/-0.83 mag, n=12051)
+  -> shared (correlated-in-pair) variance fraction: 0.47; per-star fraction: 0.53
+per-star sigma_lnM: median 0.056 (16-84%: [0.045, 0.081])
+sigma_lnMtot per pair: median 0.048
+==> sigma_m(mass) = 0.5*sigma_lnMtot: median 0.024 (16-84%: [0.020, 0.031])
+fitted sigma_m = 0.3; mass errors supply 0.024 -> unexplained residual sqrt(0.3^2 - 0.024^2) = 0.299
+(residual candidates: unresolved companions beyond the 12.3% overluminous tail, e-model mismatch, intra-bin selection; extinction is small at plx>5 mas but included in the shared part)

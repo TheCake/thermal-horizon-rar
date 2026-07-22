@@ -40,11 +40,16 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   **simple α̂ = 0.93±0.11, BE α̂ = 1.30±0.15 (realization scatter, flat profile top over
   [0.75,1.5]), Newton ΔlnL = +55±4**; σ_m=0.30 chosen by all 12 fits; BE>simple α̂ offset
   every seed (consistent with BE-EFE being ~4% weaker); BE vs simple lnL: no shape
-  verdict. Gates before quoting α ± : physical decomposition of σ_m≈0.30 → prior
-  (TODO #2b; ~60% effective mass error — photometry alone can't supply it) and the data-
-  bootstrap half of TODO #3. Paper leads with: 1.086 boost, s-dependence of the excess
-  (what smearing cannot fake), α≈1 localization (caveated), realization systematic, BE
-  identity.
+  verdict. Error budget DONE (3I bootstrap ⊕ 3H realization): **simple α = 0.98 ± 0.23,
+  BE α = 1.21 ± 0.30; Newton loses in all 1000 bootstrap replicates (min +30)**. BUT
+  Stage 3J MEASURED the mass error (MS width 0.275 mag → σ_m(mass)=0.024, 12× below the
+  fitted 0.30 — mass-error hypothesis REFUTED) and found 12.3% of component stars
+  overluminous = unresolved companions, whose broadening GROWS with s like the signal.
+  **Gate on everything: v5 fit ([calcs/stage3k_v5fit.py](calcs/stage3k_v5fit.py)) —
+  physical companion continuum replaces σ_m; decides if α≈1 survives. Results auto-saved
+  to data/stage3k_summary.txt; if NOTES lacks a Stage-3K entry, read it, interpret, log,
+  commit, push.** Paper leads with: 1.086 boost, s-dependence of the excess, α≈1
+  (v5-gated), realization systematic, BE identity.
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.

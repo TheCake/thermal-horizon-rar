@@ -13,18 +13,19 @@
    smear σ_m ≈ 0.2–0.25 localizes interior, collapses the α corner-seeking (α=1 beats α=2),
    and deflates the Newton rejection to ≈ +63/+66 lnL. v4 fit with the σ_m axis =
    [calcs/stage3f_v4fit.py](calcs/stage3f_v4fit.py).
-2b. **Decompose σ_m physically** ← **NEW BLOCKING** — 0.2–0.25 implies ~50% effective mass
-   error; the accounted photometric budget is far smaller. Candidates: M_G→mass table
-   scatter (age/metallicity/extinction), unresolved binarity beyond f_t, e-model mismatch,
-   intra-bin selection. Measure it independently (main-sequence width of the sample;
-   FLAME/spectroscopic masses for a subsample) and turn σ_m into a PRIOR, not a free float —
-   the α interval inherits the (α,σ_m) degeneracy until then.
-3. **Error budget on lnL** — realization half DONE (Stage 3H,
-   [calcs/stage3h_mcbudget.py](calcs/stage3h_mcbudget.py)): 6 seeds → simple α̂ 0.93±0.11,
-   BE α̂ 1.30±0.15, interior 12/12, Newton ΔlnL +55±4; realization scatter dominates the
-   per-seed profile width ×2–3. REMAINING: data bootstrap (resample the 14,071 pairs,
-   redo per-bin histograms, rerun reduced fit) and finer α grid; then quote α ± interval
-   (combined realization ⊕ bootstrap).
+2b. **Decompose σ_m physically** ← **BLOCKING, sharpened by Stage 3J** — mass errors are
+   MEASURED at σ_m 0.024 (MS width 0.275 mag, pair-corr split) vs fitted 0.30: refuted as
+   the source. Remaining candidate with teeth: unresolved companions (12.3% of our stars
+   are >0.4 mag overluminous — measured). Their broadening GROWS with s like the signal.
+   **v5 fit ([calcs/stage3k_v5fit.py](calcs/stage3k_v5fit.py)): replace σ_m with a physical
+   companion continuum (lognormal Raghavan periods, PM-averaging suppression, hidden-mass
+   boost, f_comp gridded, overluminous-fraction consistency printed). Decides whether α≈1
+   survives an s-DEPENDENT broadening. Nothing gets quoted externally before this.**
+3. ~~**Error budget on lnL**~~ — DONE (Stages 3H+3I). Realization (6 seeds): simple
+   0.93±0.11, BE 1.30±0.15, interior 12/12, Newton +55±4. Bootstrap (1000 replicates):
+   simple 0.98±0.20, BE 1.21±0.26, Newton +60±11 (min +30). **Combined: simple
+   α = 0.98 ± 0.23; BE α = 1.21 ± 0.30** — conditional on the σ_m nuisance being benign
+   (see #2b/v5).
 4. **Mass-model systematic** — marginalize M/L in the Stage-1 screening-index fit and
    propagate photometric-mass errors into ṽ (affects both p and α).
 5. **Chance-alignment stress test** — scan R_chance thresholds (0.01 → 0.001) in the
