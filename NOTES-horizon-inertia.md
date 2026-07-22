@@ -1538,6 +1538,56 @@ EFE-screened-MG-like ~40%, nonlocal-MI ~30%, neither/unknown ~30%. BE microphysi
 ~15%. The theory space is now pinched from BOTH sides by our own results — which is
 exactly what a measurement program is for.
 
+## Stage 4L-b: the seed budget — CORRECTION #10: "MG wins all 8" does not survive; EFE-respecting MI ties (2026-07-23, [calcs/stage4l_mi_runner.py](calcs/stage4l_mi_runner.py) seeds 101–505)
+
+All four MI brackets re-fit on the five remaining seeds; stored MG twins subtracted
+per seed ([data/stage4l_summary.txt](data/stage4l_summary.txt)). Mean ΔlnL(MI − MG)
+± SE over 6 seeds:
+
+| bracket | simple | BE | verdict |
+|---|---|---|---|
+| mi_t (EFE on) | −3.5 ± 3.3 | −0.8 ± 2.5 | **STATISTICAL TIE with MG** |
+| mi_a (EFE on) | −9.3 ± 2.3 | −3.1 ± 2.6 | mild MG lean (simple only) |
+| mi_t no-EFE | −25.2 ± 3.4 | −19.5 ± 2.6 | dead |
+| mi_a no-EFE | −27.9 ± 2.5 | −21.5 ± 2.2 | dead |
+
+**CORRECTION #10: the seed-31 "MG wins all 8 contests" (4L) was realization luck —
+seed 31 sat at the pessimistic edge (mi_t beats MG outright on seeds 303/404/505).**
+The surviving statements, budget-grade: (1) the binaries DEMAND the external-field
+suppression (no-EFE MI: −20…−28 mean, 12/12 seeds, α̂ collapsing to 0.51–0.63 sharply
+interior — the isolated boost forced to the field-suppressed amplitude); (2) Newton
+loses all 24 fits (+71…+108); (3) local-vs-global boost character: NOT distinguished
+once the EFE amplitude is present (mi_t is a tie; only the a-scale prescription leans
+MG, simple law only). α̂(mi_t) runs 1.4–1.7 (BE edge-pinned at seed 101 — flagged);
+w_rad = 0.2 in 22/24 (two 0.3 at seed 101). **Consequence for the 4K paradox: the
+Saturn-safe branch — modified inertia WITH proper external-field suppression — fits
+the binaries as well as modified gravity. The paradox has an open door.** Caveat: our
+"MI + EFE" imports the MG-derived suppression amplitude phenomenologically; a true MI
+theory must generate that suppression from its own (frequency-based) EFE — what the
+data pin is the AMPLITUDE, agnostic on mechanism. Credences (conditional on
+anomaly-real): EFE-respecting MI (incl. nonlocal) ~40%, screened/plain-MG-with-
+unknown-quadrupole-fix ~30%, neither/unknown ~30%.
+
+## Stage 4M: the 4J residual closes — the 90° closest-approach arm is real model content; α untouched (2026-07-23, [calcs/stage4m_fly90.py](calcs/stage4m_fly90.py), TODO #2e-b closed)
+
+Four v7 variants patching what the 4J autopsy prescribed, seed 31, vs the stored
+baseline (+108.7/+98.8) ([data/stage4m_summary.txt](data/stage4m_summary.txt)):
+
+| variant | ΔlnL vs baseline (s/BE) | α̂ (s/BE) |
+|---|---|---|
+| **fly90 (pure 90°-arm)** | **+4.7 / +3.4** | 1.11 / 1.08 |
+| flymix (50/50) | −4.8 / −4.9 | 1.10 / 1.06 |
+| erad (ceiling 0.9995) | −0.8 / +0.9 | 1.16 / 1.08 |
+| both | −6.0 / −4.7 | 1.10 / 1.03 |
+
+The pure closest-approach template WINS (+4.7/+3.4) — the data want the unbound
+weight concentrated at γ≈90° in the ceiling band, exactly as 4J diagnosed (and NOT
+split with the old low-γ asymptote arm; the e-ceiling was never the issue). **α̂
+moves by ≤0.06 across all four variants (1.03–1.16, interior 8/8; w_rad = 0.2 in
+8/8): the γ≈82°/ceiling residual is formally closed as a MODEL-SHAPE gap with zero
+impact on the boost measurement.** TODO #2e-b done; the paper's §7 ceiling subsection
+gains its model-side confirmation.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -116,13 +116,18 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   also confirms the 3T convention mapping). ESCAPES: modified inertia (→ TODO #18,
   MI-vs-MG on our 2D data = top theory question) or EFE-screened theories (#8).
   MOND-Planet-9 (2304.00576) runs on the capped term — disfavored. **MI-vs-MG
-  EXECUTED (4L, [calcs/stage4l_mi_runner.py](calcs/stage4l_mi_runner.py), seed 31):
-  MG wins all 8 contests (MI-EFE −9…−16, MI-no-EFE −26…−31 with α̂→0.5 = data demand
-  the EFE; Newton +71…+109 under every class; w_rad=0.20 all 8). Paradox quantified:
-  MG fits best/breaks Saturn; MI survives Saturn/fits worse. Surviving: EFE-screened
-  MG (#8), nonlocal MI, or systematics. First-of-kind (provisional; Paci+2020 =
-  rotation-curve prior). Residual: 4L-b 6-seed budget. Credences: anomaly-real ~70%;
-  conditional: screened-MG ~40%, nonlocal-MI ~30%, unknown ~30%; BE ~15%.**
+  EXECUTED + BUDGETED (4L/4L-b, [calcs/stage4l_mi_runner.py](calcs/stage4l_mi_runner.py),
+  6 seeds — CORRECTION #10: seed-31's "MG wins all 8" was realization luck):
+  budget verdict = mi_t (EFE on) TIES MG (−3.5±3.3/−0.8±2.5); no-EFE MI dead 12/12
+  (−20…−28, α̂→0.5–0.6 sharp = data DEMAND the EFE amplitude); Newton dead 24/24
+  (+71…+108); w_rad=0.2 in 22/24. **The Saturn-safe EFE-respecting MI branch fits
+  the binaries AS WELL as MG — the 4K paradox has an open door (amplitude pinned,
+  mechanism agnostic).** First-of-kind (provisional; Paci+2020 = rotation-curve
+  prior). 4M ([calcs/stage4m_fly90.py](calcs/stage4m_fly90.py), #2e-b closed): pure
+  90°-arm flyby template +4.7/+3.4 lnL, α̂ moved ≤0.06 — the 4J ceiling residual
+  formally closed as model-shape, boost untouched. Credences: anomaly-real ~70%;
+  conditional: EFE-respecting MI ~40%, MG-with-quadrupole-fix ~30%, unknown ~30%;
+  BE ~15%.**
   NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4K; open
   items disclosed in TODO (#2e-b, #18 MI-vs-MG, Chae text, NNLO=parked, a₀∝H(z),
   #6, #7, #8).** Paper

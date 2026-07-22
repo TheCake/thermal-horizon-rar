@@ -50,9 +50,10 @@
    [√2, 1.67) (leakage null P=3.8e-9), cliff exactly at the α=1 boosted escape edge
    √(2·1.36)≈1.65 (P=0.62/0.91 consistent); flybys/triples/chance/selection each
    excluded by their own numbers. Small-N caveat (11 pairs) stated.**
-2e-b. **GPU model variant** — add the closest-approach (γ≈90°) unbound arm + lift the
-   radial e-ceiling; refit v7 at seed 31; confirm the residual cells close with α
-   invariant. One GPU evening; strengthens the §7 ceiling subsection.
+2e-b. ~~**GPU model variant**~~ — DONE (Stage 4M, [calcs/stage4m_fly90.py](calcs/stage4m_fly90.py)).
+   **Pure 90°-arm flyby template: +4.7/+3.4 lnL, α̂ moved ≤0.06 (1.03–1.16 interior
+   8/8, w_rad=0.2 8/8); 50/50 mix and e-ceiling lift rejected/null. The
+   γ≈82°/ceiling residual formally closed as a model-shape gap; boost untouched.**
 3. ~~**Error budget on lnL**~~ — DONE (Stages 3H+3I). Realization (6 seeds): simple
    0.93±0.11, BE 1.30±0.15, interior 12/12, Newton +55±4. Bootstrap (1000 replicates):
    simple 0.98±0.20, BE 1.21±0.26, Newton +60±11 (min +30). **Combined: simple
@@ -114,7 +115,12 @@
     4K paradox fully quantified: MG fits best but breaks Saturn; MI brackets survive
     Saturn but fit worse; naive no-EFE MI dead. Surviving theory space: EFE-screened
     MG (#8), time-nonlocal MI (unconstructed), or systematics. First-of-kind
-    (provisional). Residual 4L-b: 6-seed budget on the MI−MG deltas.**
+    (provisional). **4L-b BUDGET DONE — CORRECTION #10: "MG wins all 8" was seed-31
+    luck. Budget verdict: mi_t (EFE on) TIES MG (−3.5±3.3 simple / −0.8±2.5 BE);
+    mi_a mildly MG-leaning (simple only, −9.3±2.3); no-EFE MI dead 12/12 (−20…−28,
+    α̂→0.5–0.6 sharp = the data demand the EFE amplitude); Newton dead 24/24
+    (+71…+108). The Saturn-safe EFE-respecting MI branch fits the binaries AS WELL
+    as MG — the 4K paradox has an open door (amplitude pinned, mechanism agnostic).**
 19. ~~**Solar quadrupole from our solver**~~ — DONE (Stage 4K,
     [calcs/stage4k_quadrupole.py](calcs/stage4k_quadrupole.py)): Q₂ = 3.9e-26·(α/1.15)
     s⁻² for BOTH families (transition-sourced, family-blind); exceeds Hees+ 2014

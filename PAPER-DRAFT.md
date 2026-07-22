@@ -66,14 +66,18 @@ the Desmond–Hees–Famaey (2024) tension that their mass-to-light and bulge
 mitigations cannot reach. Within modified-gravity formulations the boost
 and Saturn's ephemeris are in direct conflict; modified-inertia
 formulations need not produce the quadrupole, and our trajectory-sensitive
-eccentricity data provide the test — which we execute: the binaries prefer
-the modified-gravity (local, phase-dependent) boost over two bracketing
-modified-inertia prescriptions by 9–16 in −2lnL with the external field on,
-reject the no-external-field variants by 26–31 (the fitted amplitude
-collapses to the field-suppressed value — the data demand the external
-field effect), and reject Newton under every model class by ≥71. The
-tension is thereby sharpened, not resolved: the surviving theory space is
-field-screened modified gravity or time-nonlocal modified inertia. The framework's remaining falsifiers
+eccentricity data provide the test — which we execute across six population
+realizations: the binaries decisively demand the external-field suppression
+(no-EFE modified inertia loses by 20–28 in mean −2lnL, 12/12 seeds, its
+fitted amplitude collapsing to the field-suppressed value), decisively
+reject Newton under every model class (+71 to +108, 24/24 fits), but CANNOT
+distinguish the local (modified-gravity) from the trajectory-global
+(modified-inertia) boost once the field suppression is present (mean
+differences 1–9 in −2lnL; the time-averaged prescription is a statistical
+tie). The external-field-respecting modified-inertia branch — which need
+not produce the Cassini-capped quadrupole — thus emerges as a fully viable,
+Saturn-safe reading of the anomaly: the data pin the suppression AMPLITUDE
+while remaining agnostic on its mechanism. The framework's remaining falsifiers
 are stated: the rung-2 coefficient (1/12 vs the simple family's 1/8 —
 shown here to require lensing mass cross-calibration at the ~0.02-dex
 level, or Gaia DR4), the MI-vs-MG discrimination, and a₀ ∝ H(z).
