@@ -1,0 +1,296 @@
+# Testing the Thermal-Horizon Reading of the Radial Acceleration Relation, from Galaxies to Wide Binaries
+
+**Draft v1 — assembled 2026-07-23 from the repository lab notebook (NOTES, Stages 1–4N). All numbers final as logged; prose to polish; reference list to complete at the INSPIRE pass. Not for circulation before colleague review.**
+
+*Author list, affiliation, and acknowledgments to be finalized. Computational analysis performed jointly with Claude (Anthropic).*
+
+---
+
+## Abstract
+
+The interpolating function preferred by the radial acceleration relation (RAR), ν(y) = (1−e^(−√y))⁻¹, was shown by Cadoni & Tuveri (2019) to equal 1 + n_BE(x), x = √(g_bar/a₀): the Bose–Einstein occupation of thermal excitations of the de Sitter horizon, with a₀ = H/2π derived. That framework has remained untested beyond rotation-curve fitting. We present its first empirical stress-tests, together with an independent measurement of the low-acceleration anomaly in wide binaries and a systematic reconciliation of the conflicting published wide-binary analyses.
+
+(1) We note two exact structural consequences of the identity, apparently unremarked: ν = ½ + ½·coth(x/2) — the Planck oscillator mean-energy law, whose frozen (x→∞) limit identifies the Newtonian regime with the pure zero-point response — and a low-acceleration expansion whose coefficients are the Bernoulli numbers, a ladder of parameter-free predictions. The classical self-consistent limit of the same thermal reading reproduces, exactly, the widely used "simple" interpolating function, so the empirical contest between the two leading ν-functions is a quantum-versus-classical question about the putative bath.
+
+(2) We test the first nontrivial rung on 2,700 SPARC points: the NLO-coefficient-½ branch (shared by the occupation law and simple-ν) is preferred over the c₁ = 0 branch (standard-μ) in 198–200 of 200 galaxy-level bootstraps under a raw-χ² likelihood, deflating to a sign-robust strong lean (Δ(−2lnL) = 56; 166/200) when the relation's intrinsic scatter is marginalized — both treatments are reported. Extending to the weak-lensing RAR (KiDS-1000, two public reductions, ~2 dex deeper) anchors a₀ and rejects the Newtonian control on 15 points alone, but cannot reach rung 2: the resolving power for 1/12-vs-1/8 is 0.1σ at the surveys' 0.2-dex stellar-mass calibration.
+
+(3) We measure the anomaly in 14,071 Gaia EDR3 wide binaries with a joint two-dimensional (velocity, direction-angle) likelihood, physically identified nuisances, and full seed and bootstrap error budgets: the boost strength is α = 1.18 ± 0.11 (simple-ν) / 1.13 ± 0.13 (occupation law) relative to the galactic calibration at the RAR-inverted Newtonian external field g_N,ext = 1.15 ± 0.05 a₀, with Newtonian dynamics excluded in all 2000 bootstrap contests (minimum Δ lnL +53). The fitted near-parabolic orbit fraction, w_rad = 0.20, independently matches the e > 0.9 mass fraction (20–22%) of the superthermal eccentricity law of Hwang, Ting & Zakamska (2022). The perpendicular-moving wide pairs exhibit a velocity ceiling at the boosted escape edge: eleven pairs populate the Newtonian-forbidden band ṽ ∈ [√2, 1.67) (P = 4×10⁻⁹ against Newton plus measured noise) and terminate at √(2×1.36) (P = 0.62), with flyby, triple, chance, and selection identities each excluded.
+
+(4) We localize the published wide-binary disagreement by ablation: unfencing the hidden-companion fraction — the Newton-favored analyses' free parameter, fitted there at 69% — absorbs ~60% of our Newtonian rejection while requiring fractions the photometry forbids (our measured overluminous fraction is 12%); additionally dropping the deep Newtonian anchor bin with a velocity-only statistic removes two-thirds of the significance and biases the boost estimate low. The detection itself never flips (Δ lnL ≥ 30 under every ablation).
+
+(5) Feeding the measured boost back through the same external-field solver yields the solar-system anomalous quadrupole Q₂ = 3.9×10⁻²⁶ (α/1.15) s⁻² for both interpolating families — exceeding the Cassini bound of Hees et al. (2014) by ~4×, an independent wide-binary-calibrated confirmation of the Desmond–Hees–Famaey (2024) tension immune to their mass-to-light and bulge mitigations. Executing the corresponding modified-inertia-versus-modified-gravity discrimination on the binary eccentricity structure (apparently for the first time), we find the binaries decisively demand the external-field suppression amplitude but cannot distinguish local from trajectory-global boosts once it is present: the external-field-respecting modified-inertia branch — which need not produce the Cassini-capped quadrupole — emerges as a fully viable, Saturn-safe reading of the anomaly.
+
+The framework's remaining falsifiers are stated: the rung-2 coefficient (requiring ~0.02-dex lensing mass cross-calibration or Gaia DR4), the modified-inertia/modified-gravity discrimination at DR4 precision, and a₀ ∝ H(z). A transparency appendix documents the ten corrections and retractions logged during this program; every claimed number is reproduced by a script in the public repository.
+
+---
+
+## 1. Introduction
+
+Rotation curves of disk galaxies obey a tight radial acceleration relation (RAR): the observed centripetal acceleration g_obs is a function of the Newtonian baryonic acceleration g_bar alone, transitioning from g_obs ≈ g_bar at high accelerations to g_obs ≈ √(g_bar·a₀) below a₀ ≈ 1.2×10⁻¹⁰ m/s² (McGaugh, Lelli & Schombert 2016). Whether this regularity reflects galaxy-formation physics within cold dark matter or a modification of dynamics in the spirit of Milgrom (1983) remains unresolved, in large part because rotation curves probe a single dynamical configuration: near-circular orbits in self-gravitating disks.
+
+Wide stellar binaries offer a categorically different probe. At separations beyond several kAU, the internal acceleration of a solar-mass pair falls below a₀, so any modified-dynamics law calibrated on galaxies makes a definite, parameter-free prediction for binary relative velocities — while the systems remain clean two-body problems embedded in the Galactic external field. Gaia has made samples of thousands of such pairs available, and three groups have measured them to sharply conflicting conclusions: Chae (2023, 2024) finds a velocity boost of γ ≈ 1.4 with Newtonian dynamics rejected at 5.8–9.2σ; Banik et al. (2024) find Newtonian dynamics *preferred* at 16–19σ; Pittordis & Sutherland (2025) find Newton favored with the caveat that "improved understanding of the triple population is necessary to make this fully decisive." All three fit velocity-magnitude distributions; none uses the velocity *direction* information; and each treats the dominant nuisances — hidden companions, eccentricities, contamination — differently.
+
+This paper does three things.
+
+**First, it re-measures the anomaly** with what we believe is the most complete systematics treatment yet attempted: a joint two-dimensional likelihood over the normalized velocity ṽ and the velocity-separation angle γ; a nuisance model in which every component has a *measured identity* (the eccentricity mixture validated against an independent published measurement; the companion sector bounded jointly by photometry and kinematics; contamination channels with distinct two-dimensional signatures; the catalog's selection function emulated); and full realization + bootstrap error budgets. The direction channel — immune to mass errors by construction — turns out to be the instrument that protects the boost measurement from nuisance absorption (§7.3).
+
+**Second, it tests a specific theoretical reading.** Cadoni & Tuveri (2019) derived the empirical RAR function from thermal excitations of the de Sitter horizon: ν = 1 + n_BE, with a₀ = H/2π emerging rather than fitted. We subject that framework to its first coefficient-level tests (§2–§4), measure its predicted boost in binaries (§5–§6), and compute its solar-system consequences (§8) — where we find, feeding our own measurement through our own solver, a quadrupole that Saturn's ephemeris forbids. The paper thus reports a serious internal tension for all modified-*gravity* readings of the anomaly, confirms it cannot be escaped by the mitigations available to previous statements of it, and demonstrates that the modified-*inertia* branch survives both the binaries and Saturn.
+
+**Third, it reconciles the field.** By ablating our own analysis toward the published Newton-favored choices — removing the direction channel, unfencing the companion fraction, dropping the deep anchor bin — we localize, quantitatively and on a single dataset, where the 16σ-Newton and 6–9σ-MOND results are manufactured (§7.3). The disagreement is not mysterious; it is an accounting of modeling freedoms, and the largest of them is independently refutable by photometry.
+
+Throughout, we practice what we call honest updating: every result passed a validation gate before being trusted; ten claims made during this program were subsequently corrected or retracted by our own checks, and all ten are documented in Appendix A rather than silently repaired. Every number quoted in this paper is produced by a named script in the public repository (Appendix B).
+
+## 2. The structure of the RAR function
+
+### 2.1 The occupation identity (Cadoni & Tuveri 2019)
+
+The RAR fitting function of McGaugh et al. (2016),
+
+> ν(y) = 1/(1 − e^(−√y)),  y = g_bar/a₀,
+
+satisfies the exact identity
+
+> **ν = 1 + n_BE(x), x = √y, n_BE(x) = 1/(e^x − 1).**
+
+This is not our observation: Cadoni & Tuveri (2019, arXiv:1904.11835) both stated it (their Eq. 23) and *derived* it, obtaining the anomalous acceleration as the response of Bose–Einstein-distributed soft excitations of the dark-energy/de Sitter horizon in thermal equilibrium at T_dS = H/2π — from which a₀ = H/2π ≈ 1.1×10⁻¹⁰ m/s² follows rather than being fitted. We arrived at the identity independently before locating their priority, and this paper is constructed accordingly: **Cadoni & Tuveri derived it; we test it.**
+
+### 2.2 Two elementary corollaries: the zero-point half and the Bernoulli ladder
+
+Two structural consequences of the identity appear to be unremarked in the literature (verified against the citation tree of both McGaugh et al. 2016 and Cadoni & Tuveri 2019; final INSPIRE pass pending):
+
+**(a) The Planck-oscillator form.** Algebraically, ν = ½ + ½·coth(x/2): the RAR interpolating function *is* the mean-energy law of a Planck oscillator, E/ℏω = ½·coth(ℏω/2kT), zero-point term included, under x ↔ ℏω/kT. Its limits acquire physical readings: deep MOND (x → 0) is classical equipartition, and the Newtonian regime (x → ∞) is the *frozen* oscillator — ν(∞) = ½ + ½ = 1, Newtonian gravity as the pure zero-point response with the thermal part switched off.
+
+**(b) The Bernoulli ladder.** The low-acceleration expansion of ν has coefficients that are exactly the Bernoulli numbers:
+
+> ν = Σ_{n≥0} B_n⁺ x^{n−1}/n! = 1/x + 1/2 + x/12 − x³/720 + x⁵/30240 − …
+
+Equivalently, g_obs = √(g_bar·a₀)·(1 + c₁x + c₂x² + …) with c₁ = ½, c₂ = 1/12, c₃ = 0, c₄ = −1/720 for the occupation law. Comparison families make different parameter-free predictions at each rung: the "simple" function ν_s = ½ + √(¼ + 1/y) shares c₁ = ½ but has c₂ = 1/8; the "standard" family has c₁ = 0. The ladder converts the choice of interpolating function — historically an aesthetic one — into a sequence of measurable coefficients whose discrimination grows with depth (rung-2 ratio 2:3; rung-3 ratio 5.6; rung-4 ratio ~30).
+
+### 2.3 The bath matrix: simple-ν is the classical bath
+
+Taking the thermal reading seriously generates a 2×2 matrix of bath laws — occupation statistics (quantum Planck vs classical equipartition) × mode-frequency prescription (source-driven, ω ~ √(g_bar·a₀), vs self-consistent, ω ~ g_tot):
+
+| | source-driven | self-consistent |
+|---|---|---|
+| **quantum** | ν = 1 + n_BE(√y) — c₁ = ½, c₂ = 1/12 (the RAR/C&T law) | ν = 1 + n_BE(νy) — c₁ = ¼, c₂ = 7/96 |
+| **classical** | ν = 1 + 1/√y — c₁ = 1 (solar-system-excluded a priori) | **ν = ½ + √(¼ + 1/y) — exactly simple-ν** |
+
+The lower-right identity is exact and two lines long: classical equipartition n = kT/ℏω with the frequency set self-consistently by the total field gives ν = 1 + 1/(νy), whose positive root is the Famaey–Binney (2005) simple function. Two consequences follow. First, the two leading empirical interpolating functions are the *quantum/source-driven* and *classical/self-consistent* cells of one thermal structure, so the long-standing empirical contest between them is secretly a physics question about the bath. Second, the ½ tested in §4 has two readings — zero-point occupation, or self-consistency algebra — and we therefore claim only a branch-level confirmation, not a unique detection of the vacuum term. The remaining cell (the self-consistent quantum "bootstrap," c₁ = ¼) is a new, fully determined function; we test it in §4.3 and find it disfavored. (Nearest prior art for thermal derivations of interpolating functions is the equipartition-on-holographic-screen family — Pazy & Argaman 2011; Debye-entropic variants — which modifies the equipartition law on a screen rather than closing the mode frequency self-consistently; full-text checks of two adjacent claims are flagged in Appendix A.)
+
+## 3. The screening index
+
+Before testing coefficients we ask how sharply the transition is screened, since solar-system bounds constrain soft tails. We fit the one-parameter screening family
+
+> ν_p(y) = (1 − e^(−y^p))^(−1/(2p)),
+
+whose p = ½ member is exactly the RAR function, to 2,700 RAR points from 153 SPARC galaxies (inclination > 30°, quality ≤ 2, δV/V < 0.10; M/L_disk = 0.5, M/L_bulge = 0.7 baseline).
+
+With fixed mass-to-light ratios the galaxy-bootstrap gives p = 0.443 (+0.063/−0.050). Marginalizing the disk M/L (globally, f_d = 1.22 ± 0.10, i.e. M/L_disk ≈ 0.61 — consistent with the independent fits of §4 and with stellar-population values) and propagating a 0.1-dex per-galaxy M/L scatter widens and shifts this to our primary value:
+
+> **p = 0.578 (+0.121/−0.115)** (M/L-marginalized),
+
+with a₀ = (1.05 ± 0.10)×10⁻¹⁰ m/s². The RAR/occupation value p = ½ lies 0.7σ inside the band. The Cassini/ephemeris requirement (anomalous Saturn acceleration < 2×10⁻¹⁴ m/s² under this family's direct screening term) demands p > 0.234: comfortably satisfied at the marginalized 16th percentile (0.462). The honest summary is that p is a *soft* discriminator — M/L-sensitive at the ±0.1 level — while the screening floor is robust. [Scripts: `calcs/sparc_rar_fit.py`, `calcs/stage4h_p_ml.py`]
+
+## 4. Coefficient tests: SPARC and the lensing RAR
+
+### 4.1 The truncated estimator is power-limited (an honest null)
+
+A direct fit of (a₀, c₁, c₂) to the deep-MOND expansion on SPARC is ill-conditioned (x and x² are ~99% collinear over any usable window). A two-step asymptotic-matching estimator — a₀ from ultra-deep points, then weighted least squares for (c₁, c₂) — is honest but power-limited: σ(c₁) ≈ 0.4–0.6 with window-dependent sign flips. SPARC cannot measure c₁ through a truncated series; we quote this null in full because unacknowledged versions of it could masquerade as coefficient measurements. [`calcs/stage4a_nlo_test.py`]
+
+### 4.2 The branch test: full functions, two likelihoods
+
+The truncation-free instrument compares complete ν functions with (a₀, f_ML) free per family. Under the raw-χ² likelihood of the original run, the c₁ = ½ branch (occupation and simple, statistically inseparable here) defeats the c₁ = 0 branch (standard-μ) in 198–200 of 200 galaxy bootstraps across all acceleration windows, with the standard family additionally dragging M/L to unphysical values. Under a scatter-marginalized likelihood (per-family intrinsic scatter s_int ≈ 0.12 dex profiled; the statistically honest treatment, since raw χ²/dof ≈ 57), the verdict deflates to a sign-robust strong lean: Δ(−2lnL) = 56 for the full range, branch preferred in 166/200 bootstraps, with the deep window alone inconclusive. **We report both treatments**; the branch conclusion stands as a robust lean rather than a kill, and the magnitude's likelihood-model dependence is itself a methodological finding — coefficient-level claims in this field inherit the noise model. Within the ½-branch (occupation 1/12 vs simple 1/8), neither treatment discriminates: the raw-χ² "simple lean" reverses under scatter marginalization into a small occupation lean carried by 3 of 153 galaxies — i.e., nothing. [`calcs/stage4b_branchcomp.py`, `calcs/stage4e_lensing_rar.py`, diagnostics in `calcs/stage4e_diag.py`]
+
+### 4.3 The quarter-branch (bootstrap bath) is disfavored
+
+The self-consistent quantum cell of §2.3 (c₁ = ¼, c₂ = 7/96), solved per point by seeded Newton iteration and validated against its analytic series, was entered into the same contests: dead-grade under raw χ² (beats the occupation law in 4/200, simple in 7/200) and disfavored under the marginalized likelihood (+27/+9 in −2lnL; 62–89/200), with the characteristic M/L inflation of a wrong-shape family. Across the four functions now tested the likelihood along the c₁ axis peaks at ½ (0 dead, ¼ disfavored, ½ preferred, 1 excluded by screening). [`calcs/stage4f_bathmatrix.py`]
+
+### 4.4 The lensing RAR: an anchor, not a discriminator — and rung 2's honest power
+
+To reach below SPARC we use the KiDS-1000 weak-lensing RAR in both public reductions: the exact-deprojection table of Mistele et al. (2024; 15 stacked points for isolated lenses, log g_bar ∈ [−14.86, −11.41], extracted verbatim from the published source) as primary, and the original Brouwer et al. (2021) ESD release with full covariance as cross-check. The Newtonian control fails catastrophically on the 15 lensing points alone (Δχ² = +2777 and +1659 in the two reductions) — the anomaly persists two decades below SPARC with no dark-matter component permitted. The lensing data are family-agnostic on their own (all three ν functions fit equally); jointly with SPARC they anchor a₀ = (1.00 ± 0.09)×10⁻¹⁰ (marginalized likelihood; 1.21×10⁻¹⁰ raw — the ~20% likelihood-model sensitivity is disclosed, and the values bracket both our §3 measurement and H₀/2π = 1.08×10⁻¹⁰).
+
+For rung 2 the verdict is a quantified null: even lensing-anchored, the c₂ estimator resolves 1/12-vs-1/8 at **0.09–0.10σ**. The wall is the surveys' 0.2-dex stellar-mass calibration (modeled here as a global log-g_bar offset nuisance with the published prior); the rung needs ~0.02 dex, or the Gaia DR4 distribution-level test. The ladder's next rung is measurable in principle, not yet in practice — and we prefer stating that to pretending otherwise. [`calcs/stage4e_lensing_rar.py`; data provenance in `data/lensing_rar/`]
+
+## 5. Wide binaries: data, statistic, and model
+
+### 5.1 Sample and observables
+
+From the El-Badry, Rix & Heintz (2021) Gaia EDR3 catalog we select pairs with R_chance < 0.01, both parallaxes > 5 mas at S/N > 20, parallax consistency within 3σ, projected separation 200 AU < s < 50 kAU, both components on the photometric main sequence (2.6 < M_G < 14.2), and per-pair velocity precision σ_v < 0.03 km/s: **14,071 pairs**. Component masses come from an M_G–mass relation anchored to Pecaut–Mamajek; the mass error is *measured* in §5.3. Two observables are formed per pair:
+
+- **ṽ = Δv_sky / v_c(s)**, the sky-projected relative velocity in units of the circular velocity at the projected separation (v_c = √(G·M_tot/s)); bound Newtonian pairs satisfy ṽ ≤ √2 identically;
+- **γ ∈ [0°, 90°]**, the folded angle between the separation and relative-velocity vectors on the sky (the v-r angle of Tokovinin 1998 and Hwang et al. 2022) — constructed from *directions only*, hence immune to the mass normalization by construction.
+
+The joint statistic is a multinomial likelihood over a 20 (log ṽ, 0.02–6.0) × 6 (γ) grid in four separation bins (0.2–2, 2–6, 6–20, 20–50 kAU), with per-pair measurement noise drawn from the data and convolved into every model template. We emphasize this last point: models are compared to data *after* forward-modeling the noise, which is the treatment whose absence in one published analysis was criticized by Hernandez & Chae (2024) and which our ablations (§7.3) cannot therefore reproduce.
+
+### 5.2 Forward model
+
+Model populations (10⁶ binaries per evaluation) are generated by a GPU orbit integrator under either Newtonian dynamics or a boosted law g = g_N·B(y), with B interpolated from external-field-effect (EFE) tables produced by an axisymmetric QUMOND solver (validated: spherical identity to 0.01%; tracks the Chae–Milgrom fitting formula; and cross-validated against the published solar quadrupole in §8). The boost strength is parameterized as B_α = 1 + α(B − 1): α = 0 is Newton, α = 1 is the parameter-free galactic calibration.
+
+The nuisance model, developed across seven fit generations (v1→v7 in the notebook, each falsifying its predecessor's hypothesis), comprises: an eccentricity mixture — a separation-interpolated power family plus a near-parabolic component of weight w_rad with e ∈ [0.9, 0.995] (§7.1); an undetected-companion sector with Raghavan-period wobble applied to both components, PM-suppression for long periods, hidden-mass corrections, and validity limits from resolution — bounded jointly by photometry and kinematics; chance-alignment and flyby contaminant templates with distinct 2D signatures, weighted by an s²-scaling and fenced by the fit; a proper-motion noise-scale factor; and the catalog's velocity-consistency acceptance, measured from the data first (the physical bound ceiling ṽ√s ≈ 2.2 sits well inside El-Badry's 5-M⊙ cut at ≈ 3.0) and applied to model and templates alike. The per-component noise convention (σ/√2) was audited mid-program and its correction logged.
+
+### 5.3 Measured nuisance identities
+
+Three decisions distinguish this pipeline from its published counterparts, and each rests on a measurement rather than a prior:
+
+1. **The mass error is measured, not assumed.** The main-sequence photometric width gives σ_m(mass) = 0.024 — twelve times smaller than the ṽ-broadening it was once hypothesized to cause. The mass-error explanation of the anomaly's width is refuted at that factor.
+2. **The companion fraction is fenced by photometry.** 12.3% of component stars are overluminous (unresolved light), and the kinematic fit caps the effective companion fraction at ~0.1; a dedicated physical-multiplicity fit (v5) found the companion model unable to reproduce the signal's shape (−420 in lnL against the alternative) with f_comp pinned at the fence. This is the parameter the Newton-favored analyses leave free (§7.3).
+3. **The broadening has an identity.** The excess width of the ṽ distributions — which a phenomenological smear absorbs — was traced through mass errors (refuted), companions (refuted), and a circular sub-population (vetoed by the joint 2D fit: circularity *narrows* ṽ) to a ~20% near-parabolic orbit population demanded independently by the direction channel (§7.1).
+
+## 6. Wide binaries: results
+
+### 6.1 The model-independent anchor
+
+The median-ṽ boost between the deep bins (6–30 kAU) and the Newtonian-regime anchor bins (0.2–2 kAU) is
+
+> **1.086 (68% CI 1.064–1.110)**,
+
+against a Newtonian expectation of 1.000. This statistic is immune to the population-realization systematic (below), robust to RUWE cuts, and stable under a 20× tightening of the chance-alignment threshold (max drift 0.033 with all subsample CIs overlapping; the noisy wide-bin median drifts *upward* under tightening — the opposite direction to a contamination bias). Hidden triples are capped at ≲5% of the effect by the tail shape. [`calcs/stage2c_vtilde_data.py`, `calcs/stage2d_ruwe_variant.py`, `calcs/stage4i_rchance.py`]
+
+### 6.2 The external-field convention (a correction we own)
+
+Early fits at an external field of 1.9 a₀ found α̂ ≈ 1.5 for both laws. The cause was a cross-formulation convention error of ours: 1.9 a₀ is the AQUAL-appropriate *total* dynamical field (the convention of Chae's self-consistent analysis), while our QUMOND solver's correct input is the *Newtonian* external field. Inverting the RAR at the solar circle (v_c = 233 ± 4 km/s, R₀ = 8.178 kpc) gives **g_N,ext = 1.15 ± 0.05 a₀**, confirmed against direct baryonic estimates. We flag the distinction explicitly because the two published wide-binary modeling traditions sit in different formulations, and an imported number can be silently wrong by 60% — as ours was, for five fit generations. (The cross-formulation consistency of the corrected setup is independently validated by the solar-quadrupole comparison of §8.1.)
+
+### 6.3 Final measurement
+
+At the physical field, with all nuisances active and the acceptance applied, six population realizations and 1000 bootstrap replicates per law give:
+
+> **α = 1.18 ± 0.11 (simple-ν) / 1.13 ± 0.13 (occupation law)** — both consistent with the parameter-free α = 1 (1.6σ / 1.0σ);
+> **Newtonian dynamics excluded in all 2000 bootstrap contests** (Δ lnL = +110 ± 18 and +100 ± 15; minimum +53);
+> realization scatter 0.045 / 0.039; α̂ interior in 1000/1000 and 998/1000 replicates; w_rad = 0.20 selected in every fit.
+
+The residual ~10–18% upward lean is partially covered by the g_N,ext uncertainty and is disclosed, not interpreted. The two ν-families are not discriminated by the binaries (best-lnL differences −6…−13 across seeds, sign-stable but O(SE)). Model-class robustness: under every alternative boost structure tested in this program — five classes including the modified-inertia brackets of §8.2 — Newton loses by +71 to +122 in all 24 fits. [`calcs/stage3o_v7fit.py`, `calcs/stage3p_v7budget.py`, summaries `data/stage3u_summary.txt`, `data/stage3v_boot.txt`]
+
+### 6.4 The realization systematic
+
+A methodological result with field-wide consequence: the finite-population realization of orbital elements shifts distribution-level lnL by *more than the Newton-vs-MOND gap* unless marginalized. Analyses that fit distribution shapes against a single simulated population inherit an unquantified systematic of exactly the disputed magnitude; our budgets marginalize six realizations and report the scatter. We found no published quantification of this effect. [`calcs/stage3a_likelihood.py`, Stage 3H]
+
+## 7. The eccentricity sector, the perpendicular ceiling, and the reconciliation
+
+### 7.1 The near-parabolic population: a confirmation, not a discovery
+
+The folded direction-angle distributions are U-shaped — excesses at both γ < 20° and γ > 80° against every single-power-law eccentricity family. The radial arm and its cause are *prior art*: Hwang, Ting & Zakamska (2022) measured, on this same catalog with the same v-r angles, an eccentricity distribution running from uniform at 100 AU to superthermal (α_e = 1.2–1.3) at 1–31.6 kAU, with "e > 0.9 enhanced." Our contribution is the joint gravity-law × eccentricity inference they proposed but did not run, extended to 50 kAU, with contaminant fences — and a cross-validation that we regard as one of the paper's strongest systematics results:
+
+> the e > 0.9 mass fraction implied by their superthermal law is **20.4–21.7%** across their three wide bins; our independently fitted near-parabolic weight is **w_rad = 0.20**, selected in every one of 30+ fit variations.
+
+Two pipelines with disjoint assumptions — theirs directions-only and Newton-assuming, ours a joint 2D fit with the gravity law free — agree on the population's size to 1.5 points. The main nuisance of our measurement is externally validated by a hostile-assumptions replication. (A circular sub-population was separately vetoed: w_circ → 0, and circularity narrows ṽ, the wrong direction.)
+
+### 7.2 The perpendicular velocity ceiling
+
+Vis-viva gives a geometry-independent theorem: a *bound* Newtonian pair can never exceed ṽ = √2, at any eccentricity or phase; a boosted law raises the ceiling to √(2·B), with B ≈ 1.36 at wide separations for α = 1. The perpendicular column of the (ṽ, γ) plane therefore contains a shape-free discriminator. Among wide pairs (s ≥ 6 kAU) with γ ≥ 75°:
+
+> 11 pairs in [1.2, 1.414); **11 pairs in the Newtonian-forbidden band [1.414, 1.67) at nearly equal density; 1 pair in [1.67, 2.2); none beyond.**
+
+With the measured per-pair noise (σ_ṽ = 0.044), a true Newtonian edge predicts 0.9 pairs in the forbidden band — P(≥11) = 3.8×10⁻⁹ — while a true edge at the boosted 1.65 predicts 11.6 in-band and 0.5 beyond (P = 0.62 and 0.91): the distribution terminates at the boosted escape edge, with no parameter tuned to this test. Rival identities fail on their own numbers: field-star flybys at closest approach would arrive at ṽ ~ v∞/v_c ~ 100, not 1.5, and possess no ceiling (the low-γ unbound continuum indeed runs smoothly to ṽ > 3 — and demonstrates that the catalog's selection, at ṽ ≈ 3, is not the cliff); the band's astrometry is cleaner than average (median RUWE_max 1.06 vs 1.28 for the same-ṽ low-γ continuum; S/N = 30; R_chance ~ 8×10⁻⁴); the measured 2.4% mass error cannot produce 15% shifts; companion inflation could move 1–2 pairs, not 11, and would smear past the cliff. The slow island of the same column is the apocenter face of the §7.1 population (implied e median 0.957, velocities at 4.9× the noise floor, γ-peaked as orbits require).
+
+We state the caveats with the claim: eleven pairs; the ceiling location inherits the per-pair spread of B; the islands were flagged by residual maps before the edge test was formulated (the test itself is new). Gaia DR4 multiplies the band tenfold and converts this into a sharp prediction: the band fills, and the cliff stays at 1.65 — or the boosted reading is wrong. As a model-completeness check, adding the closest-approach (γ ≈ 90°) arm to the flyby template — the component our fit generations lacked — improves the global fit by +4.7/+3.4 while moving α̂ by ≤ 0.06: the residual that led us here was a model-shape gap, not a boost bias. [`calcs/stage4j_gamma82.py`, `calcs/stage4m_fly90.py`]
+
+### 7.3 Reconciliation by ablation: where the 16σ-Newton result is manufactured
+
+Banik et al. (2024) fit (r_sky, ṽ) counts with the hidden-triple fraction free — it fits to 69% under Newton — on a 2–30 kAU sample with no deep-Newtonian anchor, and report Newton preferred at 16–19σ. Hernandez & Chae (2024) identify three defects: the fitted fraction exceeds every independent calibration; ṽ bins narrower than the measurement errors are compared without noise convolution; and no high-acceleration anchor exists to validate the method. Rather than argue, we ablate our own pipeline toward those choices (proxy-grade, honestly labeled) and measure the consequences against our baseline (+108.7/+98.8 over Newton):
+
+| ablation | Δ lnL(Newton), simple/occ. | α̂ | reading |
+|---|---|---|---|
+| direction channel removed (ṽ-only, as all published analyses) | +105.3 / +98.4 | 1.18 / 1.55 | detection intact; the *measurement* degrades — α̂ unpins from 1, w_rad drifts. The γ channel protects the parameters. |
+| companion fraction unfenced (0 → 0.8) | +42.8 / +43.8 | 0.71 / 0.83 | **~60% of the Newtonian rejection absorbed** — while requiring fractions the photometry forbids (measured 12%; their fit, 69%) |
+| both + 2–30 kAU window (anchor dropped) | +37.5 / +29.8 | 0.68 / 0.73 | **two-thirds of the significance manufactured away; boost estimate biased low** |
+
+Three conclusions. The detection never flips: Δ lnL ≥ +30 survives full Banik-style freedom on our data. The dominant manufactured component is the unfenced companion fraction — a parameter that is *photometrically boundable* and, when bounded, cannot absorb the signal. And the residual distance to an actual Newton-preferred verdict plausibly lives in the one defect our always-convolving pipeline cannot honestly reproduce (the sub-error unconvolved binning documented by Hernandez & Chae) together with the §6.4 realization systematic. The prescription for the field is measurement, not adjudication: bound the companions photometrically, keep a deep anchor bin, use the direction channel. [`calcs/stage4n_banikstyle.py`]
+
+## 8. Solar-system consistency: the paradox and its open door
+
+### 8.1 The quadrupole: our boost, our solver, Saturn's veto
+
+The external-field solve is scale-free: the solution that produced the binary boost tables is, relabeled, the Sun in the Galactic field (r_M = √(GM⊙/a₀) = 7,032 AU), and its interior carries an anomalous quadrupole δφ = q·r²·P₂(cosθ) along the Galactic axis — the term constrained by planetary ephemerides (Blanchet & Novak 2011) and invoked to torque trans-Neptunian orbits as a Planet-Nine alternative (arXiv:2304.00576). Extracting the ℓ = 2 interior moment from our solver (six gates, including an exact analytic-integrator test and a cross-formulation validation: Blanchet & Novak's AQUAL value for the simple function at the total field 1.9×10⁻¹⁰, Q₂ up to 4.1×10⁻²⁶ s⁻², against our QUMOND solve at the matched Newtonian 1.2 a₀ — agreement at 15%, which independently confirms the §6.2 convention mapping):
+
+> **Q₂ = (3.95 ± 0.39)×10⁻²⁶ s⁻² (simple) / (3.82 ± 0.46)×10⁻²⁶ s⁻² (occupation), α-scaled.**
+> Cassini radio tracking (Hees et al. 2014): Q₂ = (3 ± 3)×10⁻²⁷ s⁻² — **exceeded ~4.3×.**
+
+Two structural points. The two RAR-compatible families give the *same* quadrupole to 1%: Q₂ is sourced in the transition region (r ~ r_M), where they are near-identical — exponential (Wien) screening rescues the local anomaly at Saturn (the §3 test) but not the long-range ℓ = 2 moment of the transition shell. And the tension is not new in kind — Desmond, Hees & Famaey (2024) reported 8.7σ between the RAR and the solar quadrupole — but our version is calibrated by the wide binaries rather than by rotation-curve fits, and is therefore immune to both mitigations available to theirs (mass-to-light freedom; bulge removal): binaries have no bulges, and our mass error is measured at 2.4%. Within modified-gravity formulations (AQUAL/QUMOND), the binary boost and Saturn's ephemeris are in direct conflict. A corollary: the proposed MOND external-field explanation of the trans-Neptunian clustering runs on precisely this capped term and inherits the same veto. [`calcs/stage4k_quadrupole.py`]
+
+### 8.2 Modified inertia versus modified gravity, on the binaries themselves
+
+Milgrom's modified-inertia (MI) formulations make the low-acceleration boost a functional of the trajectory rather than of the local field; circular orbits coincide with modified gravity (MG), eccentric orbits differ, and the time-nonlocal external-field effect need not produce the capped quadrupole (Milgrom 2011 — the principle is stated there without a closed form; Desmond et al. explicitly propose the quadrupole as the MI/MG diagnostic). Our dataset — with its fitted eccentricity mixture and 2D likelihood — is the natural instrument, and to our knowledge this discrimination had not been run on binaries (nearest art: Paci et al. 2020 on rotation curves).
+
+Because a per-orbit global boost is exactly Kepler dynamics with G_eff = B·G, MI populations run through the identical machinery (the engine's Newtonian mode with rescaled mass; ṽ normalized by the true mass), making the likelihood difference pure theory. We bracket the unspecified MI prescription two ways (boost set at the semi-major-axis acceleration, or at the exact Kepler time-average ⟨1/r²⟩) and bracket its external-field treatment two ways (the MG-derived suppression tables; or none, per the naive frequency-decoupling reading). Across six population realizations against the stored MG twins:
+
+| MI bracket | mean Δ lnL (MI − MG) ± SE, simple / occupation | verdict |
+|---|---|---|
+| time-averaged, EFE on | −3.5 ± 3.3 / −0.8 ± 2.5 | **statistical tie with MG** |
+| a-scale, EFE on | −9.3 ± 2.3 / −3.1 ± 2.6 | mild MG lean (one prescription, one law) |
+| time-averaged, no EFE | −25.2 ± 3.4 / −19.5 ± 2.6 | excluded |
+| a-scale, no EFE | −27.9 ± 2.5 / −21.5 ± 2.2 | excluded |
+
+(A single-realization version of this test misleadingly favored MG in all comparisons; the budget corrected it — Appendix A, item 10.) The binaries thus **decisively demand the external-field suppression** — the no-EFE brackets fail twelve times out of twelve, their fitted amplitude collapsing to α̂ ≈ 0.5–0.6, i.e. to the field-suppressed value — and **decisively reject Newton under every model class** (+71 to +108, 24/24 fits), but cannot distinguish local from trajectory-global boosts once the suppression amplitude is present. The data pin the *amplitude* while remaining agnostic on its *mechanism*.
+
+**The paradox and its open door.** Modified gravity fits the binaries and breaks Saturn; naive isolated modified inertia survives Saturn and breaks on the binaries; but external-field-respecting modified inertia matches the binaries *and* need not produce the quadrupole. The surviving theory space, squeezed from both sides by this paper's own results, is: (i) a modified-gravity completion whose quadrupole is screened ~4× below the AQUAL/QUMOND value while preserving the binary boost — not currently constructed; (ii) a time-nonlocal modified inertia whose emergent external-field effect supplies the suppression amplitude the binaries demand — also not currently constructed (our brackets are its adiabatic limits); or (iii) a systematic not yet imagined, kept honestly alive by (i) and (ii)'s nonexistence. [`calcs/stage4l_mi_runner.py`]
+
+## 9. Predictions and program
+
+The framework's falsifiers, with their current reach stated:
+
+1. **Rung 2 of the Bernoulli ladder** (1/12 vs 1/8) decides the quantum-versus-classical bath question of §2.3. Present reach: 0.1σ (§4.4). Requirements: lensing stellar-mass cross-calibration at ~0.02 dex, or the Gaia DR4 distribution-level test.
+2. **The perpendicular ceiling** (§7.2) becomes a sharp near-term prediction: DR4 multiplies the forbidden band's occupancy ~tenfold; the band fills and the cliff stays at √(2×1.36), or the boosted reading fails.
+3. **The MI/MG discrimination** sharpens two ways: at DR4 statistics the eccentricity-resolved boost separates the brackets we could not; and on the theory side, either ghost of §8.2 — the screened-MG completion or the nonlocal-MI construction — is a concrete target whose success or failure is decisive. The Cassini quadrupole remains the standing arbiter (Desmond et al. 2024).
+4. **a₀ ∝ H(z)**: the thermal reading ties the acceleration scale to the horizon temperature; high-z rotation curves (JWST/ALMA-era) test whether a₀ tracks H. Present high-z kinematics are dispersion-dominated and cannot yet decide.
+5. **The reconciliation prescription** (§7.3) is itself a falsifiable program: any analysis of this catalog that bounds companions photometrically, retains a deep anchor bin, and convolves noise should find the anomaly at Δ lnL ≥ +30 regardless of its other choices. We invite its execution on the published pipelines.
+
+## 10. Conclusions
+
+We set out to test a specific, elegant reading of the radial acceleration relation — gravity's low-acceleration boost as the thermal occupation of a horizon bath — and to measure the wide-binary anomaly with systematics treated as measurements rather than priors. The program returned:
+
+- an independent, strength-one confirmation of the anomaly: **α = 1.18 ± 0.11 / 1.13 ± 0.13** at the physical external field, Newton excluded in 2000/2000 bootstrap contests and under five distinct boost-model classes;
+- a nuisance sector with externally validated identities, anchored by the **w_rad = 0.20 ↔ Hwang et al. superthermal (20–22%)** cross-validation and a measured 2.4% mass error;
+- a new class of evidence in the **perpendicular velocity ceiling** — eleven pairs where bound Newtonian dynamics permits none, ending at the boosted escape edge;
+- the first coefficient-level tests of the thermal reading: the ½-branch confirmed (as a dual-likelihood robust lean), the ¼-branch disfavored, rung 2 honestly out of reach, and the identity's priority correctly assigned to Cadoni & Tuveri;
+- a quantitative anatomy of the field's disagreement: **two-thirds of the published 16σ-Newton significance is manufactured** by an unfenced companion fraction the photometry forbids and a missing deep anchor;
+- and a self-inflicted, load-bearing tension: our own boost, through our own solver, predicts a solar quadrupole **4× above Cassini's bound** for every modified-gravity reading — with the external-field-respecting modified-inertia branch surviving as the Saturn-safe alternative that the binaries cannot currently distinguish from modified gravity.
+
+The anomaly, in our accounting, is ~70% likely to be real physics. What it *is* remains genuinely open: the two simplest realizations are each wounded by a different one of our results, and the surviving candidates do not yet exist as theories. We regard this as the correct state for a measurement program to leave its field in — with the anomaly standing, the easy explanations executed, the discriminating observables identified, and every step reproducible.
+
+---
+
+## Appendix A: the transparency record (ten corrections)
+
+This program logged every correction and retraction in its lab notebook at the time it occurred. We reproduce the list because it is the paper's credibility spine: a reader can weigh our positive claims against our demonstrated willingness to kill our own results.
+
+1. **Axial-angle double-fold.** An early orientation statistic returned R = 2/π exactly — a geometry bug (double-folded angle), caught by its suspicious round value.
+2. **Non-conservative EFE recipe.** A first external-field implementation pumped orbital energy (ṽ → 7.4 over ten orbits); replaced by the conservative quadrature recipe, gated on energy conservation.
+3. **Acceleration-scale and external-field conventions.** Multiple a₀/IC convention biases, culminating in the cross-formulation error of §6.2 (an AQUAL-total field fed to a QUMOND solver for five fit generations); resolved by our own RAR inversion and validated externally in §8.1.
+4. **The v1 "α = 1 bullseye."** An early headline localization was a grid-edge artifact; retracted, and edge-flagging added to all subsequent fits.
+5. **The mass-error hypothesis.** The ṽ-broadening was attributed to photometric mass errors until the error was measured (σ_m = 0.024, twelve times too small); refuted.
+6. **The circular-mixture reading.** The high-γ arm of the U-shape was read as a circular sub-population; the joint 2D fit vetoed it (w_circ → 0; circularity narrows ṽ).
+7. **The identity priority.** The Bose–Einstein occupation identity, its horizon derivation, and a₀ = H/2π were claimed as apparently novel until a primary-source read of Cadoni & Tuveri (2019) showed all three published there; every such claim was retracted and this paper reframed as the framework's test.
+8. **Raw-χ² inflation.** The 198–200/200 branch verdict and an apparent within-branch "simple lean" were shown to be likelihood-model dependent; the scatter-marginalized treatment deflates the former to a robust lean and reverses the latter into noise (three galaxies).
+9. **The U-shape priority.** The superthermal wide-binary eccentricity distribution and its v-r-angle signature were published by Hwang, Ting & Zakamska (2022), whose headline number our own notebook had quoted while claiming novelty; retracted, and converted into the cross-validation of §7.1.
+10. **The single-seed MI sweep.** A first modified-inertia comparison favored modified gravity in all eight contests; the six-seed budget showed this was realization luck, and the EFE-respecting MI brackets are statistical ties.
+
+Two full-text verification items remain open at this draft and are flagged rather than asserted: the exact external-field sentence of Chae (2023), and the "Timeflow Gravity" (2024) claim adjacent to our §2.3 identity.
+
+## Appendix B: reproducibility
+
+Every quantitative claim in this paper is produced by a named script in the public repository (github.com/TheCake/Horizon-Coupled-Inertia), which also contains the chronological lab notebook (NOTES) with all ten corrections logged in place. Large datasets are re-fetched by documented URLs: SPARC (Lelli et al. 2016; Zenodo), the El-Badry et al. (2021) EDR3 binary catalog (Zenodo), the Brouwer et al. (2021) KiDS release (KiDS portal), and the Mistele et al. (2024) table (arXiv source, extracted verbatim). Key claim→script mappings: screening index — `sparc_rar_fit.py`, `stage4h_p_ml.py`; branch and rung tests — `stage4a`–`stage4f`; boost anchor and stress tests — `stage2c`, `stage2d`, `stage4i`; hierarchical fits and budgets — `stage3o`, `stage3p` (+ `stage3u/3v` summaries); ceiling — `stage4j`, `stage4m`; quadrupole — `stage4k`; MI/MG — `stage4l_mi_runner.py`; reconciliation — `stage4n_banikstyle.py`. GPU population engine: `stage2b_population.py`; EFE solver: `qumond_efe_solver.py`.
+
+## References (to be completed at the INSPIRE pass)
+
+- Banik, I., et al. 2024, MNRAS 527, 4573 (arXiv:2311.03436)
+- Blanchet, L., & Novak, J. 2011, MNRAS 412, 2530 (arXiv:1010.1349)
+- Brouwer, M. M., et al. 2021, A&A 650, A113 (arXiv:2106.11677)
+- Cadoni, M., & Tuveri, M. 2019, PRD 100, 024029 (arXiv:1904.11835)
+- Chae, K.-H. 2023, ApJ 952, 128 (arXiv:2309.10404); 2024 (arXiv:2402.05720)
+- Desmond, H., Hees, A., & Famaey, B. 2024, MNRAS (arXiv:2401.04796)
+- El-Badry, K., Rix, H.-W., & Heintz, T. M. 2021, MNRAS 506, 2269
+- Famaey, B., & Binney, J. 2005, MNRAS 363, 603
+- Hees, A., Folkner, W. M., Jacobson, R. A., & Park, R. S. 2014, PRD 89, 102002 (arXiv:1402.6950)
+- Hernandez, X., & Chae, K.-H. 2024 (arXiv:2312.03162)
+- Hwang, H.-C., Ting, Y.-S., & Zakamska, N. L. 2022, MNRAS 512, 3383 (arXiv:2111.01789)
+- Jones-Smith/Brown, K., & Mathur, H. 2023, AJ 166, 141 (arXiv:2304.00576) *(byline to verify)*
+- Lelli, F., McGaugh, S. S., & Schombert, J. M. 2016, AJ 152, 157 (SPARC)
+- McGaugh, S. S., Lelli, F., & Schombert, J. M. 2016, PRL 117, 201101
+- Milgrom, M. 1983, ApJ 270, 365; 2011 (arXiv:1111.1611)
+- Mistele, T., McGaugh, S., Lelli, F., Schombert, J., & Li, P. 2024, JCAP 04, 020 (arXiv:2310.15248)
+- Paci, F., et al. 2020, A&A 636, A56 (arXiv:2001.03348)
+- Pazy, E., & Argaman, N. 2011 (arXiv:1106.4108)
+- Pittordis, C., & Sutherland, W. 2025 (arXiv:2504.07569)
+- Tokovinin, A. 1998, AstL 24, 178
+- Vokrouhlický, D., et al. 2024 (arXiv:2403.09555)
+

@@ -179,7 +179,10 @@ level, or Gaia DR4), the MI-vs-MG discrimination, and a₀ ∝ H(z).
    a₀ ∝ H(z); DR4 forecasts (ceiling band ×10, per-mille orientations).
 
 ### To do before any submission
-- [ ] Assemble sections from NOTES (fresh session; NOTES Stages 1→4D are the source)
+- [x] **ASSEMBLED → [PAPER.md](PAPER.md) (draft v1, 2026-07-23, Stages 1→4N complete
+      — abstract, 10 sections, ten-correction transparency appendix, reproducibility
+      appendix, reference skeleton). This file (PAPER-DRAFT) is now the meta/checklist
+      document only.**
 - [ ] Final INSPIRE pass on all priority claims (coth, Bernoulli, coefficient tests,
       U-shape, realization systematic)
 - [ ] Verify Chae 2023's exact external-field sentence against full text

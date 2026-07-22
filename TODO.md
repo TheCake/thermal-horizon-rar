@@ -138,7 +138,12 @@
     bookkeeping in NOTES 4K.
 
 ## Publication path
-10. **Paper assembly** from [PAPER-DRAFT.md](PAPER-DRAFT.md) once items 1–5 land.
+10. ~~**Paper assembly**~~ — DRAFT v1 DONE ([PAPER.md](PAPER.md), 2026-07-23): full
+    manuscript from NOTES Stages 1→4N — abstract, §1–10, Appendix A (ten corrections),
+    Appendix B (reproducibility), reference skeleton. Remaining before circulation:
+    prose polish pass, INSPIRE reference pass, Chae-text + Timeflow full-text checks,
+    byline verification (2304.00576), author/acknowledgment decisions (user's call),
+    then colleague review (#11).
 11. **External review** — hand the repo to a professional (ask them to break Stages 1, 2C,
     3B specifically); they are also the arXiv endorsement path.
 12. **Zenodo DOI snapshot** for a citable timestamp; arXiv preprint after review.

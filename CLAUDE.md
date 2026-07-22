@@ -135,9 +135,11 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   (+30–38 under full freedom); the γ channel = the parameter-protector (vtonly
   α̂_BE→1.55). Residual leg = H&C's unconvolved sub-error binning (not ablatable in
   our always-convolved pipeline) + the 3A realization systematic.**
-  NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4N —
-  ALL PRE-PAPER COMPUTATIONS DONE; open items disclosed in TODO (Chae text,
-  NNLO=parked, a₀∝H(z), #7 lit-hardening, #8 theory, 4L-b nonlocal-MI).** Paper
+  **PAPER DRAFT v1 ASSEMBLED ([PAPER.md](PAPER.md), 2026-07-23, Stages 1→4N).**
+  NEXT = polish pass + INSPIRE reference pass + the flagged full-text checks (Chae
+  sentence, Timeflow, 2304.00576 byline) + author decisions → colleague review (#11)
+  → Zenodo → arXiv. Open science items in TODO (NNLO=parked, a₀∝H(z), #7, #8,
+  nonlocal-MI construction).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization
