@@ -48,14 +48,18 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   but the **v5 physical-multiplicity fit (Stage 3K) exonerated it: α stays interior ≥1,
   Newton +108/+120, companion model fits −420 lnL worse than the smear, f_comp capped at
   0.1 by the ṽ data. Hidden-triples hypothesis disfavored by shape, amplitude, and α's
-  survival.** σ_m identity: v-angle measurement (Stage 3L, mass-immune direction channel)
-  found the data γ distributions U-SHAPED ⇒ p(e) is a circular+radial MIXTURE no power law
-  can express — the e-mixture is σ_m's face (3J/3K refuted the other two candidates).
-  **Next fit = v6: JOINT (ṽ, γ) likelihood with the e-mixture + aligned-contaminant
-  component + sigv/√2 noise fix — if α≈1 survives, every nuisance has a measured
-  identity.** Paper leads with: 1.086 boost, s-dependence of the excess, α≈1 with combined
-  ±0.23/0.30 (v6-gated), triples-exoneration, the U-shaped γ discovery (standalone
-  publishable), realization systematic, BE identity.
+  survival.** v-angle measurement (3L, mass-immune): data γ distributions are U-SHAPED —
+  unpublished per two verified-with-caution scouts (γ method = Tokovinin 1998; Hwang's
+  e^1.3 at >1 kAU is exactly our power family; P&S 2025 finds Newton-favored with
+  ṽ-histograms only, no direction statistics — v6 adjudicates that split). **v6 joint 2D
+  (ṽ×γ) fit (Stage 3M, [calcs/stage3m_v6fit.py](calcs/stage3m_v6fit.py)): α interior
+  again (flat top [1.0,1.5], Newton +107/+112), and the circular-mixture reading of 3L
+  was REFUTED — w_circ=0 vetoed at −174 lnL (circular orbits NARROW ṽ; 3L interpretation
+  corrected in NOTES). σ_m scoreboard: not masses, not companions, not circular orbits;
+  fences maxed on contaminants ⇒ v6b queue in TODO #2b (extend fences, 2D residual dump,
+  f_pm noise nuisance, radial-excess component).** Paper leads with: 1.086 boost,
+  s-dependence, α = 0.98±0.23 / 1.21±0.30 (σ_m caveat, sharpened), triples-exoneration,
+  U-shaped γ (standalone), realization systematic, BE identity.
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.

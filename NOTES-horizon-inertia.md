@@ -736,6 +736,45 @@ published, flyby-at-γ≈0 as a measured signature is not; (4) all Hwang-method 
 reportedly assume single power-law families. Action unchanged: READ El-Badry 2024 and
 P&S 2025 properly before building v6 or claiming anything.
 
+## Stage 3M: v6 joint (ṽ,γ) fit — α robust again; the circular-mixture reading of 3L REFUTED; the broadening's identity narrows further (2026-07-22 night, [calcs/stage3m_v6fit.py](calcs/stage3m_v6fit.py))
+
+First joint 2D likelihood (per s-bin 20×6 histograms in ṽ×γ — no independence
+approximation), NO σ_m anywhere, e-mixture w_circ·U(0,0.2)+(1−w)·power(η), 3K companion
+sector, two contaminants with distinct 2D signatures (chance: flat×flat; flyby:
+ṽ~U(0.5,3) × γ triangular [0°,30°]), corrected sigv/√2 noise. Grids: α∈[0,2] (5), η
+∈{1.05,1.3}, w_circ∈[0,0.3], f_comp∈{0,0.1}, f_c0∈[0,0.1], f_fly∈[0,0.05]. Summary:
+[data/stage3m_summary.txt](data/stage3m_summary.txt), cubes data/hier6_cube_*.npy.
+
+| law | α profile [0,0.5,1,1.5,2] | Newton ΔlnL | w_circ | fences |
+|---|---|---|---|---|
+| simple | [−111.5, −42.1, −3.1, 0, −6.2] | +111.5 | **0.0** | f_comp, f_c0, f_fly at max |
+| BE | [−107.3, −50.5, −5.8, 0, −17.3] | +107.3 | **0.0** | same |
+
+1. **α remains interior with a flat top over [1.0, 1.5]** (1.0-vs-1.5 differences of 3–6
+   lnL are within single-realization noise) under a likelihood that sees directions —
+   Newton loses by +107/+112 even with both contaminants and companions at their fences.
+   BE−simple = −4.2: still no shape verdict.
+2. **RETRACTION-GRADE CORRECTION of the 3L interpretation: the joint fit VETOES the
+   circular component** (w_circ=0.1 costs −174/−179; 0.3 costs ~−890). The physics I got
+   backwards in 3L: circular orbits NARROW the ṽ distribution — they cannot be the σ_m
+   broadening, and the ṽ channel punishes them harder than the γ 90°-arm rewards them.
+   The U-shape's 0°-arm is being absorbed by flybys+chance (both at fence values); whether
+   the 90°-arm is genuinely unfit at the best point needs a residual dump (next session).
+3. Without σ_m the broadening deficit persists (α's flat top drifts up, all contaminant
+   fences engaged). **Identity scoreboard: NOT mass errors (3J), NOT companion wobble at
+   capped levels (3K), NOT a circular e-component (3M).** Still standing: larger
+   contaminant populations than gridded (extend fences), radial-side e-structure beyond
+   the power family (e.g., excess weight at e>0.9), PM-error underestimation (a factor
+   f_pm on the noise), intra-bin a/s-distribution.
+4. The quotable α stays the 3F–3I number — **α = 0.98 ± 0.23 (simple) / 1.21 ± 0.30 (BE)**
+   with the σ_m caveat now sharpened to: "a smooth broadening of undetermined origin,
+   shown NOT to be masses, companions, or circular orbits, and which does not remove the
+   anomaly under any tested physical identity."
+
+Next-session queue (v6b): extend f_c0/f_fly/f_comp fences; dump best-fit 2D residuals
+(is the γ 90°-arm unfit? which cells drive Newton's loss?); add f_pm noise-scale nuisance;
+try a radial-excess e-component instead of the circular one.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
