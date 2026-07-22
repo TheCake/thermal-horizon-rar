@@ -13,15 +13,14 @@
    smear σ_m ≈ 0.2–0.25 localizes interior, collapses the α corner-seeking (α=1 beats α=2),
    and deflates the Newton rejection to ≈ +63/+66 lnL. v4 fit with the σ_m axis =
    [calcs/stage3f_v4fit.py](calcs/stage3f_v4fit.py).
-2b. **Decompose σ_m physically** — two of three candidates now CLOSED: mass errors refuted
-   (3J: measured σ_m(mass)=0.024 vs fitted 0.30); companion wobble refuted (3K/v5: fits
-   −420 lnL worse, f_comp capped at 0.1 by the ṽ data, α survives at ≥1 interior).
-   REMAINING: eccentricity-distribution shape beyond the power-law family — a smooth
-   s-independent ṽ-widener. Two attacks: (a) v6 fit with a flexible e-mixture (e.g.
-   thermal + circular components); (b) MEASURE p(e|s) directly on the data via Hwang's
-   v-angle method (= TODO #15, promoted: closes the last systematic and is a standalone
-   result). Until then the α interval carries the caveat "conditional on the σ_m nuisance
-   being e-model mismatch or similar benign shape effect".
+2b. **Decompose σ_m physically** — all three candidates now adjudicated: mass errors
+   REFUTED (3J); companion wobble REFUTED (3K); **e-mixture SUPPORTED (3L: data γ
+   distributions are U-shaped — circular + radial/aligned components — which no single
+   power-law p(e) can produce; direction-only channel, mass-immune)**.
+   → **v6 fit = the definitive one: JOINT (ṽ, γ) likelihood** with p(e) = w_circ·low-e +
+   (1−w)·power-law, aligned/unbound γ≈0 component tied to f_c0, and the sigv/√2
+   per-component noise fix. γ pins the e-mixture; ṽ then measures α with every nuisance
+   physically identified. If α≈1 survives v6, the result is armored.
 3. ~~**Error budget on lnL**~~ — DONE (Stages 3H+3I). Realization (6 seeds): simple
    0.93±0.11, BE 1.30±0.15, interior 12/12, Newton +55±4. Bootstrap (1000 replicates):
    simple 0.98±0.20, BE 1.21±0.26, Newton +60±11 (min +30). **Combined: simple

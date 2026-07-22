@@ -48,10 +48,14 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   but the **v5 physical-multiplicity fit (Stage 3K) exonerated it: α stays interior ≥1,
   Newton +108/+120, companion model fits −420 lnL worse than the smear, f_comp capped at
   0.1 by the ṽ data. Hidden-triples hypothesis disfavored by shape, amplitude, and α's
-  survival.** σ_m identity still open; last live candidate = eccentricity-distribution
-  shape (v6 e-mixture fit and/or Hwang v-angle measurement on the data = promoted
-  TODO #15). Paper leads with: 1.086 boost, s-dependence of the excess, α≈1 with combined
-  ±0.23/0.30 (e-model caveat), triples-exoneration, realization systematic, BE identity.
+  survival.** σ_m identity: v-angle measurement (Stage 3L, mass-immune direction channel)
+  found the data γ distributions U-SHAPED ⇒ p(e) is a circular+radial MIXTURE no power law
+  can express — the e-mixture is σ_m's face (3J/3K refuted the other two candidates).
+  **Next fit = v6: JOINT (ṽ, γ) likelihood with the e-mixture + aligned-contaminant
+  component + sigv/√2 noise fix — if α≈1 survives, every nuisance has a measured
+  identity.** Paper leads with: 1.086 boost, s-dependence of the excess, α≈1 with combined
+  ±0.23/0.30 (v6-gated), triples-exoneration, the U-shaped γ discovery (standalone
+  publishable), realization systematic, BE identity.
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.

@@ -677,6 +677,50 @@ Low-acceleration anomaly is one law (galaxies+binaries): ~60%. α ≈ 1 (given e
 real): ~75% within ±0.3. Horizon/BE microphysics specifically: ~15–20% (unchanged — needs
 NLO=½ and a₀∝H(z) tests, not more binary fits).
 
+## Stage 3L: v-angle eccentricity measurement — the e-distribution is a MIXTURE; σ_m's identity found? (2026-07-22 morning, [calcs/stage3l_vangle.py](calcs/stage3l_vangle.py))
+
+γ = sky angle between separation and relative-PM vectors, folded [0°,90°] — uses only
+DIRECTIONS, hence immune to the mass normalization by construction: the clean channel for
+p(e|s). Forward-modeled with our orbit engine (Newton + BE α=1), matched per-pair noise,
+S/N>3 on both sides. 13,929 usable pairs. [data/stage3l_summary.txt](data/stage3l_summary.txt).
+
+Gates: G2 mock-recovery PASSES (η=1.3 recovered sharply). G1 required recalibration — my
+"circular ⇒ γ≈90°" expectation was WRONG (projection does not preserve perpendicularity;
+an edge-on circular orbit gives γ=0). Pure-geometry MC: circular ⇒ 47% in [70°,90°], mean
+γ=60° — the engine reproduces it (50%). Gate passes with the corrected target. (Logged
+as a lesson: calibrate gates from first principles, not intuition.)
+
+Naive per-bin power-law fits: η̂ = 2.4(EDGE), 2.4/2.1, 1.7–1.8, 0.6–1.0 by s-bin — the
+close bin runs to the fence, in tension with Hwang's ~1.3. Histograms show why the
+power-law family cannot fit AT ALL:
+
+**The data γ distributions are U-SHAPED** (excess at BOTH γ<20° and γ>80°, deficit in the
+middle; strongest in the wide bins — widest: 0.169 at [0,10] and 0.159 at [80,90] vs
+model ~0.09/0.11), while EVERY single-power-law model is a smooth gentle tilt. A U-shape
+requires a MIXTURE: (a) a near-circular subpopulation (projection piles circular orbits
+at 90°: 31% in [80,90], pure geometry); (b) a radial/aligned component — e→1 orbits give
+γ≈0 at ANY viewing angle (parallel 3D vectors project parallel), and unbound flybys/
+chance-alignments do the same, growing toward wide s exactly like the f_c0 ∝ s²
+contamination scaling. The close-bin η̂=2.4 edge was the power-law family chasing the
+low-γ arm with its only knob.
+
+**Interpretation: the missing σ_m broadening now has a face.** A circular+radial e-mixture
+broadens ṽ smoothly at all s (circular ⇒ ṽ concentrated; radial ⇒ ṽ spread wide; mixture ⇒
+broader than any single power law ≈ a multiplicative smear) — and the direction channel
+demands the mixture INDEPENDENTLY of everything the previous stages used. All three σ_m
+candidates now: mass errors REFUTED (3J), companion wobble REFUTED (3K), e-mixture
+SUPPORTED (3L, direction-only evidence).
+
+Also logged: the main pipeline applies sigv per sky component; the data's per-component
+error is sigv/√2 — the model has been mildly OVER-noised throughout (conservative: works
+AGAINST the too-narrow-model finding, cannot have caused σ_m; fix in v6).
+
+**Next (the definitive fit): v6 = JOINT (ṽ, γ) likelihood** with p(e) = w_circ·(low-e
+component) + (1−w)·power-law(α_e), plus the aligned/unbound γ-0 component tied to the
+existing f_c0 contamination. The γ data pin the e-mixture; the ṽ data then measure α_grav
+with the broadening PHYSICAL instead of phenomenological. If α ≈ 1 survives v6, every
+nuisance in the fit has a measured identity.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
