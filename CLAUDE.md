@@ -29,13 +29,19 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
 - **Realization systematic** (likely novel, field-relevant): orbit-population realization
   shifts distribution lnL by MORE than the Newton-vs-MOND gap; no published quantification
   (scout-confirmed). [calcs/stage3a_likelihood.py](calcs/stage3a_likelihood.py).
-- Hierarchical fits v2/v3: **Newton rejected ΔlnL +264…+338 across four configurations
-  with nuisances free** (robust); **α NOT localized** — v3 ([calcs/stage3c_v3fit.py](calcs/stage3c_v3fit.py),
-  Stage 3C in NOTES) added contamination + Hwang η prior and the ridge did NOT collapse:
-  α corner-seeks even with η pinned at 1.3 (misspecification fingerprint). The v1 "α=1
-  bullseye" was RETRACTED (grid-edge artifact). **There is no α headline number; do NOT
-  extend the α grid.** Blocking item = TODO #2 (control-bin autopsy, per-bin lnL). Paper
-  leads with: 1.086 boost, Newton rejection, realization systematic, BE identity.
+- Hierarchical fits (Stages 3B→3F in NOTES): v3 contamination + η prior did NOT stop α
+  corner-seeking. Stage 3D autopsy found why: data ṽ distribution is BROADER than every
+  model in every s-bin (the model lacks a broadening convolution; data ṽ uses error-laden
+  photometric masses). Stage 3E: multiplicative smear σ_m localizes at ≈0.2–0.25, α
+  corner-seeking collapses (α=1 beats α=2), and the **honest Newton rejection deflates to
+  ≈ +63/+66 lnL** (earlier +264…+338 was misfit-inflated; retraction-grade correction,
+  logged). Median boost 1.086 is smear-immune (the anchor). σ_m ≈ 0.25 implies ~50%
+  effective mass error — physically undecomposed; TODO #2b (independent σ_m measurement →
+  prior) now blocks the α interval. **v4 fit = [calcs/stage3f_v4fit.py](calcs/stage3f_v4fit.py)**,
+  results auto-saved to **data/stage3f_summary.txt** + data/hier4_cube_*.npy; if NOTES has
+  no Stage-3F entry, read that summary, interpret (α interval with σ_m free vs ≤0.15),
+  log, commit to `main`, push. Paper leads with: 1.086 boost, s-dependence of the excess
+  (what smearing cannot fake), realization systematic, BE identity.
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.

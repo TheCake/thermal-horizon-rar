@@ -7,11 +7,18 @@
    Stage 3C in NOTES). Outcome: hypothesis FALSIFIED — ridge did NOT collapse; α still
    corner-seeks even with η pinned at 1.3; contamination worth only +8/+12 lnL. Newton
    rejection robust (+296/+264). No α headline exists; #2 is now the blocking item.
-2. **Control-bin autopsy** ← **BLOCKING** — models differ by ~140 lnL in the 0.2–2 kAU bin
-   where force laws should barely matter (soft-tail contamination of the Newtonian regime
-   and/or data spread mimicry), and Stage 3C showed α gains are misspecification-driven.
-   First step: re-run the fit saving PER-BIN lnL contributions to localize which s-bins
-   generate the α preference. Resolve before any lnL is quoted externally. See Stage 3A/3C.
+2. ~~**Control-bin autopsy**~~ — DONE (Stages 3D+3E in NOTES,
+   [calcs/stage3d_autopsy.py](calcs/stage3d_autopsy.py), [calcs/stage3e_smear.py](calcs/stage3e_smear.py)).
+   Verdict: data ṽ distribution is broader than every model in every bin; a multiplicative
+   smear σ_m ≈ 0.2–0.25 localizes interior, collapses the α corner-seeking (α=1 beats α=2),
+   and deflates the Newton rejection to ≈ +63/+66 lnL. v4 fit with the σ_m axis =
+   [calcs/stage3f_v4fit.py](calcs/stage3f_v4fit.py).
+2b. **Decompose σ_m physically** ← **NEW BLOCKING** — 0.2–0.25 implies ~50% effective mass
+   error; the accounted photometric budget is far smaller. Candidates: M_G→mass table
+   scatter (age/metallicity/extinction), unresolved binarity beyond f_t, e-model mismatch,
+   intra-bin selection. Measure it independently (main-sequence width of the sample;
+   FLAME/spectroscopic masses for a subsample) and turn σ_m into a PRIOR, not a free float —
+   the α interval inherits the (α,σ_m) degeneracy until then.
 3. **Error budget on lnL** — bootstrap data + Monte Carlo repeats (population noise at
    N=500k is ±few lnL); finer grid near the optimum; report α with honest intervals.
 4. **Mass-model systematic** — marginalize M/L in the Stage-1 screening-index fit and
