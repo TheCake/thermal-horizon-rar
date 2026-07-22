@@ -59,9 +59,13 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   closed the catalog-selection systematic (envelope measured from data: physical bound
   ceiling v·√s≈2.2, catalog cut ≈3.0; acceptance on model+templates): **α INVARIANT
   (interior 1.5, Newton +98/+105), w_rad strengthens, tail residuals gone, BE leads
-  simple a 2nd time (7.5 lnL). LAST GATE = v7 error budget (TODO #2d: 3H seeds + 3I
-  bootstrap on the v7 model; also tests if the BE lead survives). γ≈82° perpendicular
-  excess = last unexplained structure (TODO #2e, non-blocking if disclosed).** Paper
+  simple a 2nd time (7.5 lnL). v7 budget (3P, 6 seeds): simple α̂ 1.57±0.35 (2/6 flat-top edges), **BE α̂
+  1.462±0.042 interior 6/6 — the physical model's best-conditioned number**; Newton
+  +100±9/+104±5; w_rad=0.20 12/12; **BE-over-simple lead NOT significant (+3.3±2.2 SE) —
+  no ν-family discrimination**. LAST GATE = v7 data-bootstrap (TODO #2d, 3I machinery on
+  v7) → then paper assembly. Also explain physical model's α>1 preference (flagged in
+  NOTES; BE-EFE weakness rationalizes only part). γ≈82° perpendicular excess = last
+  unexplained structure (TODO #2e, non-blocking if disclosed).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the radial-excess population discovery + U-shaped γ
   (standalone), triples-exoneration, realization systematic, BE identity.

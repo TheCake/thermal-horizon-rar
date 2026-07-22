@@ -24,9 +24,13 @@
    (physical bound ceiling v·√s≈2.2 well inside the 5 M⊙ catalog cut ≈3.0); acceptance
    applied to model + templates; tail residuals vanish (+376 lnL); **α INVARIANT
    (interior 1.5, Newton +98/+105); w_rad strengthens; BE leads simple 2nd time (7.5)**.
-2d. **v7 error budget** ← **THE LAST GATE before paper assembly** — re-run the 3H
-   (6 seeds) + 3I (bootstrap) machinery on the v7 model; report α̂ ± (combined) and
-   whether the BE-over-simple lead (8.7, 7.5 lnL same-seed) survives across seeds.
+2d. **v7 error budget** — realization half DONE (Stage 3P, 6 seeds): simple α̂ 1.57±0.35
+   (2/6 flat-top edge hits), **BE α̂ 1.462±0.042 (interior 6/6 — remarkably
+   well-conditioned)**, Newton +100±9/+104±5, w_rad=0.20 in 12/12; **BE-over-simple lead
+   NOT significant (+3.3±2.2 SE, sign flips)**. REMAINING: data-bootstrap half (3I
+   machinery on the v7 model, save per-grid p vectors for seed 31 → 1000 replicates) →
+   then quote α ± (combined) and assemble the paper. Also explain the physical model's
+   α>1 preference (EFE mismatch? residual ingredient?) — flagged in NOTES.
 2e. **The γ≈82° perpendicular excess** (ṽ≈0.07 and ≈1.66 cells, wide bins, z≈+5, present
    in every model) — the last unexplained structure. Candidates: genuinely circular
    sub-population entering only at wide s (formation?), resolved-triple outer pairs,

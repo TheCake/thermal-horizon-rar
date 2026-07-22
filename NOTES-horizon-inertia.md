@@ -853,6 +853,43 @@ two contaminants, catalog selection, noise scale, all localized interior — and
 anomaly stands. Remaining before paper assembly: the v7-model error budget (seeds ×
 bootstrap, the 3H/3I machinery re-run on this model — the LAST gate) and the γ≈82° chase.
 
+## Stage 3P: v7 realization budget — BE's α̂ is startlingly stable; the BE-vs-simple lead is NOT significant (2026-07-22 night, [calcs/stage3p_v7budget.py](calcs/stage3p_v7budget.py))
+
+Six seeds on the v7 model (radial mixture + companions + contaminants + catalog
+acceptance; f_pm fixed 1.5). [data/stage3p_summary.txt](data/stage3p_summary.txt).
+
+| seed | simple α̂ | BE α̂ | Newton s/BE | BE−simple |
+|---|---|---|---|---|
+| 31 | 1.50 | 1.52 | +98.4/+105.8 | +7.4 |
+| 101 | 1.44 | 1.45 | +114.2/+111.8 | −2.4 |
+| 202 | 1.30 | 1.46 | +93.4/+104.0 | +10.6 |
+| 303 | 1.19 | 1.50 | +94.5/+98.1 | +3.6 |
+| 404 | 2.00(edge) | 1.43 | +109.0/+106.1 | −2.9 |
+| 505 | 2.00(edge) | 1.41 | +93.8/+97.4 | +3.6 |
+
+**Aggregates: simple α̂ = 1.57 ± 0.35 (interior 4/6; the two edge hits are flat tops with
+α=1.0 only 7–9 lnL down); BE α̂ = 1.462 ± 0.042 (interior 6/6); Newton = +100.5 ± 8.9 /
++103.9 ± 5.4; w_rad = 0.20 in 12/12 fits.**
+
+1. **The BE-vs-simple lead is NOT significant: mean +3.3 ± 2.2 (SE), sign flips 2/6.**
+   The v6b/v7 same-seed leads were realization noise. No ν-family discrimination —
+   honest verdict logged before anyone got attached.
+2. **Under the fully-physical v7 model, the BE law yields an extraordinarily
+   well-conditioned α measurement: α̂ = 1.46 ± 0.04 realization scatter** (vs the σ_m
+   model's ±0.15). The simple law's profile is flatter and wanders to fences on 2/6
+   seeds. (Realization scatter only; the data-bootstrap half for v7 — 3I machinery on
+   this model — still owed before quoting a total ±.)
+3. Newton rejection: +94…+114 across every seed and law. w_rad = 0.20 is as stable as
+   σ_m = 0.30 was — same underlying structure, now physically named.
+4. **Model-dependence, final statement for the paper: α̂ = 0.98±0.23 / 1.21±0.30 under
+   the phenomenological σ_m model; α̂ ≈ 1.5 / 1.46±0.04(real.) under the physical v7
+   model. Across every model class: α interior, α > 0 overwhelming, Newton ΔlnL
+   +55…+114.** The α>1 preference of the physical model (both laws) is now the
+   interesting open question: either the boost really is stronger than the galactic
+   calibration (EFE mismatch? a₀ environment dependence?) or a residual model ingredient
+   still leans on α. For the BE reading specifically: α=1.46 with the BE-EFE being ~4% weaker
+   than simple-ν partially rationalizes BE α̂ > 1, but not to 1.46 — flag, don't spin.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

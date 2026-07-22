@@ -1,0 +1,28 @@
+STAGE 3P batch, seeds [31]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 simple: a_hat=1.50 (grid 1.5, interior=True), dlnL(Newton)=+98.4, wr=0.2, prof=[-98.4, -32.4, -5.0, 0.0, -4.9]
+seed 31 BE: a_hat=1.52 (grid 1.5, interior=True), dlnL(Newton)=+105.8, wr=0.2, prof=[-105.8, -48.3, -22.6, 0.0, -19.8]
+  seed 31: BE-minus-simple best lnL = +7.4  (6.0 min)
+STAGE 3P batch, seeds [101]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 101 simple: a_hat=1.44 (grid 1.5, interior=True), dlnL(Newton)=+114.2, wr=0.2, prof=[-114.2, -39.7, -3.9, 0.0, -6.3]
+seed 101 BE: a_hat=1.45 (grid 1.5, interior=True), dlnL(Newton)=+111.8, wr=0.2, prof=[-111.8, -55.4, -18.6, 0.0, -28.6]
+  seed 101: BE-minus-simple best lnL = -2.4  (5.8 min)
+STAGE 3P batch, seeds [202]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 202 simple: a_hat=1.30 (grid 1.5, interior=True), dlnL(Newton)=+93.4, wr=0.2, prof=[-93.4, -35.6, -1.2, 0.0, -10.2]
+seed 202 BE: a_hat=1.46 (grid 1.5, interior=True), dlnL(Newton)=+104.0, wr=0.2, prof=[-104.0, -59.9, -18.6, 0.0, -26.1]
+  seed 202: BE-minus-simple best lnL = +10.6  (5.8 min)
+STAGE 3P batch, seeds [303]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 303 simple: a_hat=1.19 (grid 1.0, interior=True), dlnL(Newton)=+94.5, wr=0.2, prof=[-94.5, -31.6, 0.0, -4.6, -3.6]
+seed 303 BE: a_hat=1.50 (grid 1.5, interior=True), dlnL(Newton)=+98.1, wr=0.2, prof=[-98.1, -42.8, -16.0, 0.0, -15.5]
+  seed 303: BE-minus-simple best lnL = +3.6  (5.8 min)
+STAGE 3P batch, seeds [404]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 404 simple: a_hat=2.00 (grid 2.0, interior=False), dlnL(Newton)=+109.0, wr=0.2, prof=[-109.0, -52.0, -8.7, -14.8, 0.0]
+seed 404 BE: a_hat=1.43 (grid 1.5, interior=True), dlnL(Newton)=+106.1, wr=0.2, prof=[-106.1, -53.8, -16.8, 0.0, -30.6]
+  seed 404: BE-minus-simple best lnL = -2.9  (5.8 min)
+STAGE 3P batch, seeds [505]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 505 simple: a_hat=2.00 (grid 2.0, interior=False), dlnL(Newton)=+93.8, wr=0.2, prof=[-93.8, -38.2, -6.9, -2.9, 0.0]
+seed 505 BE: a_hat=1.41 (grid 1.5, interior=True), dlnL(Newton)=+97.4, wr=0.2, prof=[-97.4, -47.5, -14.1, 0.0, -30.1]
+  seed 505: BE-minus-simple best lnL = +3.6  (5.8 min)
+AGGREGATE (6 seeds, v7 model): simple a_hat 1.57+/-0.35 (interior 4/6, two flat-top edge hits); BE a_hat 1.462+/-0.042 (interior 6/6)
+Newton dlnL: simple 100.5+/-8.9; BE 103.9+/-5.4
+BE-minus-simple: [7.4, -2.4, 10.6, 3.6, -2.9, 3.6] -> mean +3.3 +/- 2.2 (SE) -- NOT significant
+w_rad = 0.20 selected in 12/12 fits
