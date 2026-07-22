@@ -1,0 +1,26 @@
+STAGE 3F v4 fit (sigma_m broadening axis + contamination + eta prior), grids:
+alpha=[0.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0]
+eta=[0.8, 1.05, 1.3, 1.55, 1.8]
+sigma_m=[0.05, 0.1, 0.15, 0.2, 0.25, 0.3]
+f_t=[0.0, 0.05, 0.1]
+f_c0=[0.0, 0.02, 0.1]
+seed 31; cap profile at sigma_m<=0.15
+
+simple: 5.0 min
+  best: alpha=1.0, eta=1.05, sigma_m=0.3, f_t=0.0, f_c0=0.02
+  [sigma_m free] alpha profile: [-59.6, -32.1, -17.5, -1.0, 0.0, -2.7, -8.1, -22.8, -10.9]
+  [sigma_m free] alpha = 0.94  1sig [0.87, 1.05]  (interior max: True)
+  [sigma_m free] Newton dlnL: +59.6
+  [sigma_m<=0.15] alpha profile: [-195.1, -162.6, -120.5, -63.6, -58.6, -53.8, -40.4, -0.2, 0.0]
+  [sigma_m<=0.15] alpha = 2.00  1sig [1.75, 2.00]  (interior max: False)
+  [sigma_m<=0.15] Newton dlnL: +195.1
+  sigma_m profile (all-model max): [-442.0, -381.3, -300.0, -101.8, -14.2, 0.0]
+BE: 4.6 min
+  best: alpha=1.0, eta=1.05, sigma_m=0.3, f_t=0.0, f_c0=0.02
+  [sigma_m free] alpha profile: [-58.1, -37.8, -26.8, -5.6, 0.0, -2.3, -2.0, -2.8, -12.2]
+  [sigma_m free] alpha = 1.05  1sig [0.98, 1.06]  (interior max: True)
+  [sigma_m free] Newton dlnL: +58.1
+  [sigma_m<=0.15] alpha profile: [-161.2, -132.3, -106.1, -69.6, -24.7, -31.2, -31.9, -15.2, 0.0]
+  [sigma_m<=0.15] alpha = 2.00  1sig [1.99, 2.00]  (interior max: False)
+  [sigma_m<=0.15] Newton dlnL: +161.2
+  sigma_m profile (all-model max): [-467.1, -399.1, -332.3, -120.5, -21.9, 0.0]

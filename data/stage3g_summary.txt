@@ -1,0 +1,26 @@
+STAGE 3G v4b fit (sigma_m EDGE EXTENSION + contamination + eta prior), grids:
+alpha=[0.0, 0.5, 0.75, 1.0, 1.25, 1.5, 2.0]
+eta=[0.8, 1.05, 1.3, 1.55]
+sigma_m=[0.2, 0.25, 0.3, 0.35, 0.4, 0.45]
+f_t=[0.0, 0.05, 0.1]
+f_c0=[0.0, 0.02, 0.1]
+seed 31; cap profile at sigma_m<=0.3
+
+simple: 3.0 min
+  best: alpha=1.0, eta=1.05, sigma_m=0.3, f_t=0.0, f_c0=0.02
+  [sigma_m free] alpha profile: [-59.6, -17.5, -1.0, 0.0, -2.7, -8.1, -10.9]
+  [sigma_m free] alpha = 0.88  1sig [0.87, 1.05]  (interior max: True)
+  [sigma_m free] Newton dlnL: +59.6
+  [sigma_m<=0.3] alpha profile: [-59.6, -17.5, -1.0, 0.0, -2.7, -8.1, -10.9]
+  [sigma_m<=0.3] alpha = 0.88  1sig [0.87, 1.05]  (interior max: True)
+  [sigma_m<=0.3] Newton dlnL: +59.6
+  sigma_m profile (all-model max): [-109.9, -15.4, 0.0, -42.3, -153.1, -309.8]
+BE: 2.9 min
+  best: alpha=1.0, eta=1.05, sigma_m=0.3, f_t=0.0, f_c0=0.02
+  [sigma_m free] alpha profile: [-58.1, -26.8, -5.6, 0.0, -2.3, -2.0, -12.2]
+  [sigma_m free] alpha = 1.11  1sig [0.98, 1.06]  (interior max: True)
+  [sigma_m free] Newton dlnL: +58.1
+  [sigma_m<=0.3] alpha profile: [-58.1, -26.8, -5.6, 0.0, -2.3, -2.0, -12.2]
+  [sigma_m<=0.3] alpha = 1.11  1sig [0.98, 1.06]  (interior max: True)
+  [sigma_m<=0.3] Newton dlnL: +58.1
+  sigma_m profile (all-model max): [-126.9, -21.9, 0.0, -35.0, -146.2, -308.2]

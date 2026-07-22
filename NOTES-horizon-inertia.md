@@ -484,6 +484,72 @@ Next: v4 fit ([calcs/stage3f_v4fit.py](calcs/stage3f_v4fit.py)) with σ_m as a f
 axis (α × η × σ_m × f_t × f_c0, η prior kept), reporting α both with σ_m free and capped
 at 0.15 — running.
 
+## Stage 3F: v4 fit — α localizes interior at ≈1.0 for BOTH laws (2026-07-22, same night, [calcs/stage3f_v4fit.py](calcs/stage3f_v4fit.py))
+
+Full grid α(9) × η(5) × σ_m(6) × f_t(3) × f_c0(3), η prior kept, seed 31. Cubes:
+[data/hier4_cube_*.npy](data/), summary: [data/stage3f_summary.txt](data/stage3f_summary.txt).
+
+With σ_m free:
+| law | α̂ (parabolic) | grid 1σ | interior? | Newton ΔlnL |
+|---|---|---|---|---|
+| simple | 0.94 | [0.87, 1.05] | **YES** | +59.6 |
+| BE | 1.05 | [0.98, 1.06] | **YES** | +58.1 |
+
+Supporting structure: η peaks interior at 1.05 (prior-consistent — the superthermal-η
+pathology is gone, σ_m replaced it, confirming the 3D diagnosis); BE vs simple at each's
+best: −1.5 lnL — statistically indistinguishable, no shape verdict; with σ_m capped ≤0.15
+α runs back to the 2.0 fence (the (α,σ_m) trade made explicit — the bracket is the honest
+statement until σ_m is independently measured).
+
+**Caveats before anyone gets excited (v1-bullseye silhouette — treat accordingly):**
+1. **σ_m best = 0.30 = its grid edge** in this cube (the richer nuisance freedom pushed it
+   past 3E's 0.25 turnover). Edge-extension run (Stage 3G) required before the result
+   stands. [RESOLVED in Stage 3G below: σ_m=0.30 is a clean interior optimum.]
+2. **The near-peak profile differences (−1.0, −2.7 lnL) are within single-realization
+   noise** — the tight 1σ intervals are NOT yet quotable; MC repeats (TODO #3) must set the
+   real interval width.
+3. f_t flipped from the previously stable 0.05 to 0.00 (−311 lnL for 0.05!): σ_m and
+   triple-wobble broadening are strongly degenerate; the broadening sector's internal
+   decomposition is unconstrained by this data. α appears robust to it (marginalized), but
+   quote nothing about triples from this fit.
+4. Same-realization caveat as always: one seed (31), one noise-pick convention.
+
+Reading: after mechanically breaking the ridge with the broadening nuisance, the fit's
+preferred boost strength is the parameter-free prediction α=1 — for both interpolating-
+function families, from a distribution-level fit with five nuisances marginalized. This is
+what the retracted v1 "bullseye" would have looked like if it had been real. It is now
+allowed to be interesting — after 3G and the MC error budget it may be allowed to be true.
+
+## Stage 3G: σ_m edge extension — the localization stands (2026-07-22, same night, [calcs/stage3g_smedge.py](calcs/stage3g_smedge.py))
+
+Extended σ_m grid [0.20…0.45] (α and η grids coarsened for runtime; same seed). Summary:
+[data/stage3g_summary.txt](data/stage3g_summary.txt), cubes data/hier4b_cube_*.npy.
+
+- **σ_m = 0.30 is a clean INTERIOR optimum**: profile [−110, −15, 0, −42, −153, −310]
+  (simple), [−127, −22, 0, −35, −146, −308] (BE). Falls off steeply on both sides. Caveat 1
+  of Stage 3F is closed — the v4 best point is a real maximum, not a fence artifact.
+- **The α result is unchanged with the extra σ_m room**: grid best α=1.0 for both laws,
+  interior, Newton ΔlnL +59.6/+58.1 — identical profile values to v4 (consistency check on
+  the shared realization passes). (The parabolic α̂ shifts to 0.88/1.11 purely because the
+  coarser α grid changes the interpolation neighbors — grid artifact, ignore; the statement
+  is "α consistent with 1", not a third decimal.)
+- Every axis is now interior or at a physical (not artificial) boundary: α=1.0, η=1.05,
+  σ_m=0.30, f_t=0.00 (physical floor), f_c0=0.02.
+
+**Standing result of the night (2026-07-22):** the distribution-level hierarchical fit,
+with broadening + eccentricity + triples + contamination marginalized and the η prior
+active, prefers boost strength α ≈ 1 (the parameter-free MOND-scale prediction) for both
+ν-families, and disfavors Newton by ΔlnL ≈ +58–60. Remaining gates before the α interval
+is quotable: MC error budget (TODO #3 — near-peak lnL differences are within
+single-realization noise), and the physical decomposition/independent measurement of
+σ_m ≈ 0.30 (TODO #2b — it implies ~60% effective mass error, which photometry alone cannot
+supply; whatever it really is, the fit needs its prior).
+
+Credence update (2026-07-22, post-3G): excess is real physics ~65% (back up from 60: the
+α=1 localization with all nuisances free is a genuine positive; the undecomposed σ_m keeps
+it from going higher). Anomaly pattern is one law: ~55% (unchanged pending MC + σ_m
+physics). BE-vs-simple shape discrimination: none (−1.5 lnL).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
