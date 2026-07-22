@@ -64,15 +64,16 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   +100±9/+104±5; w_rad=0.20 12/12; **BE-over-simple lead NOT significant (+3.3±2.2 SE) —
   no ν-family discrimination**. Error budget COMPLETE (3P+3Q): **FINAL v7 numbers:
   simple α = 1.52 ± 0.46, BE α = 1.54 ± 0.13; Newton loses in all 1000 bootstrap
-  replicates (min +38/+59)**. g_ext scan DONE (3S): **simple law recovers α=1 SHARPLY at
-  g_ext=1.4–1.6a₀ with the scan's best likelihoods (tension = EFE-calibration
-  degeneracy); BE law NOT rescued at any g_ext (α̂ 1.5–2.0 everywhere) — first
-  α-structure separation between ν-families; w_rad=0.20 at all 7 model variations.
-  DECIDING FACT NEEDED (TODO #2g): the MW's true Newtonian g_N,ext at the Sun in our
-  convention (baryonic model, McMillan-style) vs C&M's e_N=1.9 — if ≈1.5a₀ the simple
-  story closes at α=1.** γ≈82° excess = last unexplained structure (TODO #2e,
-  non-blocking). NEXT SESSION: TODO #2g (g_N,ext number), then paper assembly from
-  PAPER-DRAFT.md + NOTES Stages 3B→3S.** Paper
+  replicates (min +38/+59)**. g_ext arc RESOLVED (3S+3T): the old e_N=1.9 was a
+  **cross-formulation convention bug from Stage 2G** (AQUAL-total value fed to our
+  QUMOND solver; correct QUMOND input = NEWTONIAN g_N,ext = 1.15±0.05a₀ from RAR
+  inversion — our own arithmetic). **At the physical field (tables at 1.2a₀) BOTH laws
+  localize at the parameter-free α=1: α̂ = 1.17 (simple) / 1.11 (BE), interior, Newton
+  +108.7/+98.8. This supersedes 3Q's α=1.54±0.13 (wrong-convention conditional).**
+  w_rad=0.20 at all 8 model variations. LAST MECHANICAL GATE (TODO #2h): re-run 3P/3Q
+  budgets at g=1.2 → paper headline α± (expect ≈1.1±0.15); verify Chae's exact
+  external-field text (full read). γ≈82° excess non-blocking (TODO #2e). THEN: paper
+  assembly from PAPER-DRAFT.md + NOTES 3B→3T.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the radial-excess population discovery + U-shaped γ
   (standalone), triples-exoneration, realization systematic, BE identity.

@@ -946,6 +946,47 @@ across the scan. [data/stage3s_summary.txt](data/stage3s_summary.txt).
    ~5 lnL ≈ jitter; the SHARP α=1 preferences at 1.4–1.6 are not); scan grid is coarse;
    w_rad=0.20 selected at every point (7th consecutive model variation).
 
+## Stage 3T: the external-field convention resolved — α = 1 for BOTH laws at the physical field; the 2G convention bug found and owned (2026-07-23)
+
+Three converging pieces ([data/stage3s_summary.txt](data/stage3s_summary.txt) g=1p2 rows;
+scout + Chae 2023 abstract):
+
+1. **Our own arithmetic**: inverting the RAR at the solar circle (v_c = 233±4 km/s,
+   R₀ = 8.178 kpc) gives the QUMOND-relevant NEWTONIAN external field
+   **g_N,ext = 1.15 ± 0.05 a₀** (simple-ν: 1.10–1.21; BE: 1.13–1.25); direct baryonic
+   estimates (v_bary 165–185 km/s) give 0.9–1.13a₀. The 1.9 value cannot be a baryonic
+   Newtonian field (it would need v_bary ≈ 240 km/s > total).
+2. **The fit at the physical field (g_N,ext = 1.2a₀, tables re-solved)**:
+
+   | law | α̂ | grid best | Newton ΔlnL | α=1.5 penalty | α=2 penalty |
+   |---|---|---|---|---|---|
+   | simple | 1.17 | **1.0 (interior)** | +108.7 | −4.2 | −76.6 |
+   | BE | 1.11 | **1.0 (interior)** | +98.8 | −10.5 | −31.6 |
+
+   **Both ν-families localize at the parameter-free α = 1.** The Stage-3S "BE not
+   rescued" verdict was an artifact of scanning 1.4–2.4 — the physical value lies BELOW
+   the old floor. Stage-3S conclusions superseded accordingly.
+3. **Where the 1.9 came from — the bug is OURS, not the field's**: Chae 2023 is an AQUAL
+   analysis (abstract explicitly), where the self-consistent external input is the TOTAL
+   field ≈ 1.8–1.9a₀; Banik uses the kinematic total in an AQUAL-family library —
+   internally consistent too. Stage 2G imported the AQUAL-appropriate 1.9 into our
+   QUMOND solver, whose correct input is the NEWTONIAN 1.2 — a cross-formulation
+   convention error (the a₀/IC-convention trap family; caught in our own kitchen, again).
+   Sanity check: QUMOND boost @g_N=1.2 (1.40 at y=1) ≈ what AQUAL@total-1.8 should give,
+   consistent with formulation near-equivalence. (Scout's claim that Chae labels 1.9
+   "purely baryonic" remains to be verified against the full text — Haiku citation risk;
+   non-blocking for our pipeline, which is now self-consistent.)
+
+**REVISED HEADLINE (supersedes 3Q's α=1.54±0.13, which was conditional on the wrong
+convention): at the physical external field, the wide-binary data prefer the
+parameter-free galactic-calibrated boost, α ≈ 1.1 ± ~0.15 (error budget to be re-run at
+g=1.2), for BOTH interpolating families, with Newton rejected by ΔlnL ≈ +99–109.** The
+w_rad = 0.20 radial population persists (8th consecutive model variation). Remaining
+before the paper: re-run 3P/3Q budgets at g=1.2 (mechanical), verify Chae's exact text,
+γ≈82° disclosure. Credence updates: anomaly-is-real unchanged ~70–75%; one-law-spanning-
+scales UP to ~65% (the α=1 consilience at the physical field is exactly its prediction);
+BE microphysics recovers to ~15–20% (the 3S "BE tension" was the convention artifact).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -31,12 +31,16 @@
    g_ext = 1.4–1.6a₀ with the scan's best likelihoods — the α>1 tension is an
    EFE-calibration degeneracy, not a data demand. BE law: NOT rescued at any scanned
    g_ext (α̂ 1.5–2.0 everywhere) — first α-structure separation between the ν-families.**
-2g. **Pin down the MW's Newtonian external field in our convention** ← decides 2f's
-   meaning — compute g_N,ext at the Sun from a standard baryonic MW model (McMillan 2017
-   or similar; no dark halo — Newtonian baryons only, the QUMOND EFE input) and compare
-   to the C&M e_N=1.9 convention. If ≈1.4–1.6a₀: simple-law story closes at α=1. If
-   ≈1.9a₀ robust: tension returns. Literature + short calc; also re-examine what C&M's
-   1.9 actually parameterizes (total vs Newtonian field).
+2g. ~~**Pin down the MW's Newtonian external field**~~ — DONE (Stage 3T). RAR inversion:
+   g_N,ext = 1.15±0.05a₀. **At the physical field BOTH laws localize at the
+   parameter-free α=1 (α̂ 1.17/1.11, interior, Newton +109/+99).** Root cause of the
+   old 1.9: Stage 2G imported the AQUAL-total convention into our QUMOND solver —
+   OUR cross-formulation bug, owned in NOTES; published Chae (AQUAL+total) and Banik
+   are each internally consistent.
+2h. **Re-run the 3P/3Q error budgets at g_N,ext=1.2** ← final mechanical gate — 6 seeds +
+   1000-replicate bootstrap on the corrected tables; produces the paper's headline
+   α ± (expected ≈1.1±0.15). Also verify Chae 2023's exact external-field sentence
+   (full-text read, not scout) before writing the comparison paragraph.
 2e. **The γ≈82° perpendicular excess** (ṽ≈0.07 and ≈1.66 cells, wide bins, z≈+5, present
    in every model) — the last unexplained structure. Candidates: genuinely circular
    sub-population entering only at wide s (formation?), resolved-triple outer pairs,
