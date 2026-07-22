@@ -1,0 +1,15 @@
+# large downloaded datasets -- all re-fetchable via scripts in calcs/
+# (SPARC: Zenodo 16284118; EDR3 binaries: Zenodo 4435257; El-Badry-Rix: VizieR TAP)
+data/*.fits.gz
+data/*.csv
+data/pop_*.npy
+data/sparc/
+
+# derived tables and cubes are small; keep them:
+!data/efe_boost_*.npy
+!data/hier_cube_*.npy
+
+__pycache__/
+*.pyc
+
+private/

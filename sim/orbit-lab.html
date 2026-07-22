@@ -1,0 +1,413 @@
+<title>Wide-Orbit Lab</title>
+<style>
+  :root{
+    --bg:#0B0F1A; --panel:#131A2A; --panel-edge:#1E2740; --ink:#E8EDF7;
+    --muted:#8B96AC; --brass:#D9A441; --brass-dim:#8A6A2A; --field:#6C8CD5;
+    --ghost:#5A6478; --grid:#182136; --chart-line:#D9A441;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#EEF1F0; --panel:#FFFFFF; --panel-edge:#D5DAD8; --ink:#1A2233;
+      --muted:#5D6878; --brass:#A67418; --brass-dim:#C9A96A; --field:#3D5FB0;
+      --ghost:#9AA3B0; --grid:#DFE4E2; --chart-line:#A67418; }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0B0F1A; --panel:#131A2A; --panel-edge:#1E2740; --ink:#E8EDF7;
+    --muted:#8B96AC; --brass:#D9A441; --brass-dim:#8A6A2A; --field:#6C8CD5;
+    --ghost:#5A6478; --grid:#182136; --chart-line:#D9A441;
+  }
+  :root[data-theme="light"]{
+    --bg:#EEF1F0; --panel:#FFFFFF; --panel-edge:#D5DAD8; --ink:#1A2233;
+    --muted:#5D6878; --brass:#A67418; --brass-dim:#C9A96A; --field:#3D5FB0;
+    --ghost:#9AA3B0; --grid:#DFE4E2; --chart-line:#A67418;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:14px/1.45 "Avenir Next","Segoe UI",system-ui,sans-serif;
+    display:flex;flex-direction:column;min-height:100vh}
+  header{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;
+    padding:14px 20px 10px;border-bottom:1px solid var(--panel-edge)}
+  header h1{font-size:17px;font-weight:600;margin:0;letter-spacing:.02em}
+  header .sub{color:var(--muted);font-size:12.5px}
+  .presets{margin-left:auto;display:flex;gap:8px}
+  button{background:var(--panel);color:var(--ink);border:1px solid var(--panel-edge);
+    border-radius:6px;padding:6px 12px;font:600 12px/1 inherit;cursor:pointer;
+    letter-spacing:.04em}
+  button:hover{border-color:var(--brass)}
+  button:focus-visible{outline:2px solid var(--field);outline-offset:2px}
+  button.active{border-color:var(--brass);color:var(--brass)}
+  main{flex:1;display:flex;min-height:0}
+  #view{flex:1;position:relative;min-width:0}
+  #sky{position:absolute;inset:0;width:100%;height:100%;cursor:grab}
+  #hint{position:absolute;left:14px;bottom:10px;color:var(--muted);font-size:11.5px;
+    letter-spacing:.05em;text-transform:uppercase}
+  aside{width:318px;flex:none;border-left:1px solid var(--panel-edge);
+    background:var(--panel);overflow-y:auto;padding:14px 16px 20px;
+    display:flex;flex-direction:column;gap:14px}
+  .grp{display:flex;flex-direction:column;gap:8px}
+  .grp>.lbl{font-size:10.5px;font-weight:700;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--muted)}
+  .row{display:flex;align-items:center;gap:8px}
+  .row label{flex:1;color:var(--muted);font-size:12.5px}
+  .row output{font-family:"Cascadia Mono","SF Mono",Consolas,monospace;
+    font-size:12px;min-width:64px;text-align:right;
+    font-variant-numeric:tabular-nums}
+  input[type=range]{flex:1.3;accent-color:var(--brass);min-width:0}
+  input[type=range]:focus-visible{outline:2px solid var(--field);outline-offset:2px}
+  select{background:var(--bg);color:var(--ink);border:1px solid var(--panel-edge);
+    border-radius:5px;padding:4px 6px;font:12.5px inherit}
+  .readouts{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;
+    font-family:"Cascadia Mono","SF Mono",Consolas,monospace;font-size:12px;
+    font-variant-numeric:tabular-nums}
+  .readouts .k{color:var(--muted);font-size:10.5px;letter-spacing:.08em;
+    text-transform:uppercase;font-family:inherit}
+  .readouts .v{text-align:right}
+  .readouts .v.brass{color:var(--brass)}
+  .readouts .v.ghosty{color:var(--ghost)}
+  #chart{width:100%;height:92px;border:1px solid var(--panel-edge);border-radius:6px}
+  .legend{display:flex;gap:14px;font-size:11.5px;color:var(--muted);flex-wrap:wrap}
+  .legend span::before{content:"";display:inline-block;width:9px;height:9px;
+    border-radius:50%;margin-right:5px;vertical-align:-1px}
+  .legend .l-mod::before{background:var(--brass)}
+  .legend .l-new::before{background:var(--ghost)}
+  .legend .l-fld::before{background:var(--field)}
+  .try{font-size:12.5px;color:var(--muted);border-top:1px solid var(--panel-edge);
+    padding-top:10px}
+  .try b{color:var(--ink);font-weight:600}
+  .try p{margin:6px 0}
+  @media (max-width:820px){ main{flex-direction:column} #view{height:52vh}
+    aside{width:100%;border-left:none;border-top:1px solid var(--panel-edge)} }
+</style>
+
+<header>
+  <h1>Wide-Orbit Lab</h1>
+  <span class="sub">orbits under horizon-modified dynamics · galactic field as a live actor</span>
+  <div class="presets">
+    <button id="pTNO">Sedna-like TNO</button>
+    <button id="pWB" class="active">Wide binary</button>
+    <button id="pPause">Pause</button>
+    <button id="pReset">Reset</button>
+  </div>
+</header>
+<main>
+  <div id="view">
+    <canvas id="sky"></canvas>
+    <div id="hint">drag to rotate · wheel to zoom</div>
+  </div>
+  <aside>
+    <div class="grp"><div class="lbl">Force law</div>
+      <div class="row"><label for="law">family</label>
+        <select id="law">
+          <option value="rar" selected>Exponential (survives Cassini)</option>
+          <option value="toy">Toy √(g²+a₀g) (Saturn-killed)</option>
+          <option value="newton">Newton (control)</option>
+        </select></div>
+      <div class="row"><label for="a0m">a₀ scale</label>
+        <input type="range" id="a0m" min="-1" max="1" step="0.01" value="0">
+        <output id="oa0m">1.00×</output></div>
+    </div>
+    <div class="grp"><div class="lbl">Orbit</div>
+      <div class="row"><label for="sma">semi-major axis</label>
+        <input type="range" id="sma" min="2" max="4.7" step="0.01" value="4">
+        <output id="osma">10,000 AU</output></div>
+      <div class="row"><label for="ecc">eccentricity</label>
+        <input type="range" id="ecc" min="0" max="0.9" step="0.01" value="0.5">
+        <output id="oecc">0.50</output></div>
+      <div class="row"><label for="om0">start ω vs field</label>
+        <input type="range" id="om0" min="0" max="180" step="1" value="0">
+        <output id="oom0">0°</output></div>
+    </div>
+    <div class="grp"><div class="lbl">Galactic field (blue arrow)</div>
+      <div class="row"><label for="gext">strength</label>
+        <input type="range" id="gext" min="0" max="5" step="0.05" value="1.8">
+        <output id="ogext">1.80 a₀</output></div>
+      <div class="row"><label for="tilt">tilt out of orbit plane</label>
+        <input type="range" id="tilt" min="0" max="90" step="1" value="0">
+        <output id="otilt">0°</output></div>
+      <div class="row"><label for="trot">rotation period</label>
+        <input type="range" id="trot" min="0" max="1000" step="10" value="0">
+        <output id="otrot">static</output></div>
+    </div>
+    <div class="grp"><div class="lbl">Time</div>
+      <div class="row"><label for="spd">speed</label>
+        <input type="range" id="spd" min="0" max="3" step="0.01" value="1.4">
+        <output id="ospd"></output></div>
+    </div>
+    <div class="grp"><div class="lbl">Ephemeris</div>
+      <div class="readouts">
+        <span class="k">elapsed</span><span class="v" id="rT">0</span>
+        <span class="k">orbits</span><span class="v" id="rN">0</span>
+        <span class="k">precession</span><span class="v brass" id="rPrec">—</span>
+        <span class="k">period vs Kepler</span><span class="v brass" id="rPer">—</span>
+        <span class="k">r now</span><span class="v" id="rR">—</span>
+        <span class="k">ghost lag</span><span class="v ghosty" id="rLag">—</span>
+      </div>
+    </div>
+    <div class="grp"><div class="lbl">Apsis angle vs orbit №</div>
+      <canvas id="chart"></canvas>
+      <div class="legend"><span class="l-mod">modified</span>
+        <span class="l-new">Newtonian ghost</span><span class="l-fld">field arrow</span></div>
+    </div>
+    <div class="try">
+      <p><b>Try:</b> ghost vs brass at 10 kAU — the anomaly is the gap.</p>
+      <p><b>Try:</b> set rotation ≈ 230 Myr — precession now chases a moving
+        target; watch the apsis chart stop drifting monotonically.</p>
+      <p><b>Try:</b> switch to the toy law on the TNO preset — the extra
+        precession you see is exactly what Cassini forbids.</p>
+    </div>
+  </aside>
+</main>
+
+<script>
+"use strict";
+// ---------- physics (units: AU, yr, Msun; GM = 4pi^2 * M) ----------
+const TAU = Math.PI*2, GM1 = 4*Math.PI*Math.PI;
+const A0_BASE = 7.99e-7;                    // 1.2e-10 m/s^2 in AU/yr^2
+const S = {                                  // sim state
+  M:2, a:1e4, e:0.5, om0:0, law:"rar", a0m:1, gext:1.8, tilt:0, trot:0,
+  speed:1.4, paused:false,
+  t:0, orbits:0, mod:null, ghost:null, trailM:[], trailG:[],
+  apsM:[], apsN:[], lastPrec:NaN, perRatio:NaN,
+  decM:false, rPrevM:Infinity, decG:false, rPrevG:Infinity,
+  periTimesM:[], periTimesG:[]
+};
+function nu(y, law){
+  if(law==="newton") return 1;
+  if(law==="toy")    return Math.sqrt(1 + 1/Math.max(y,1e-12));
+  if(y>700) return 1;
+  if(y<1e-12) return 1e6;
+  return 1/(1-Math.exp(-Math.sqrt(y)));
+}
+function fieldDir(t){
+  const ti = S.tilt*Math.PI/180;
+  const ph = S.trot>0 ? TAU*t/(S.trot*1e6) : 0;
+  const x=Math.cos(ph), y=Math.sin(ph);
+  return [x, y*Math.cos(ti), y*Math.sin(ti)];   // rotation plane tilted by ti
+}
+function accel(p, t, law){
+  const r2=p[0]*p[0]+p[1]*p[1]+p[2]*p[2], r=Math.sqrt(r2);
+  const gs=GM1*S.M/r2, gx=-gs*p[0]/r, gy=-gs*p[1]/r, gz=-gs*p[2]/r;
+  if(law==="newton") return [gx,gy,gz];
+  const a0=A0_BASE*S.a0m, d=fieldDir(t), ge=S.gext*A0_BASE;
+  const tx=gx+ge*d[0], ty=gy+ge*d[1], tz=gz+ge*d[2];
+  const arg=Math.sqrt(tx*tx+ty*ty+tz*tz)/Math.max(a0,1e-12);
+  const n=nu(arg, law);
+  return [n*gx, n*gy, n*gz];
+}
+function rk4(st, dt, t, law){
+  const d=(s,tt)=>{const a=accel([s[0],s[1],s[2]],tt,law);
+    return [s[3],s[4],s[5],a[0],a[1],a[2]];};
+  const s=st, k1=d(s,t),
+    s2=s.map((v,i)=>v+0.5*dt*k1[i]), k2=d(s2,t+dt/2),
+    s3=s.map((v,i)=>v+0.5*dt*k2[i]), k3=d(s3,t+dt/2),
+    s4=s.map((v,i)=>v+dt*k3[i]),     k4=d(s4,t+dt);
+  return s.map((v,i)=>v+dt/6*(k1[i]+2*k2[i]+2*k3[i]+k4[i]));
+}
+function resetSim(){
+  const w=S.om0*Math.PI/180, rp=S.a*(1-S.e),
+    vp=Math.sqrt(GM1*S.M*(1+S.e)/(S.a*(1-S.e)));
+  const st=[rp*Math.cos(w), rp*Math.sin(w), 0,
+            -vp*Math.sin(w), vp*Math.cos(w), 0];
+  S.mod=st.slice(); S.ghost=st.slice();
+  S.t=0; S.orbits=0; S.trailM=[]; S.trailG=[]; S.apsM=[]; S.apsN=[];
+  S.lastPrec=NaN; S.perRatio=NaN; S.decM=false; S.decG=false;
+  S.rPrevM=Infinity; S.rPrevG=Infinity; S.periTimesM=[]; S.periTimesG=[];
+}
+function stepSim(nSteps){
+  const P=Math.sqrt(S.a*S.a*S.a/S.M), dt=P/3000;
+  for(let i=0;i<nSteps;i++){
+    S.mod=rk4(S.mod,dt,S.t,S.law);
+    S.ghost=rk4(S.ghost,dt,S.t,"newton");
+    S.t+=dt;
+    const rM=Math.hypot(S.mod[0],S.mod[1],S.mod[2]);
+    if(rM<S.rPrevM) S.decM=true;
+    else if(S.decM){                       // perihelion (modified)
+      S.decM=false; S.orbits++;
+      S.periTimesM.push(S.t);
+      const ang=Math.atan2(S.mod[1],S.mod[0])*180/Math.PI;
+      if(S.apsM.length){
+        let d=ang-S.apsM[S.apsM.length-1].raw;
+        while(d>180)d-=360; while(d<-180)d+=360;
+        S.lastPrec=d;
+      }
+      S.apsM.push({raw:ang, n:S.orbits});
+      if(S.apsM.length>400) S.apsM.shift();
+      if(S.periTimesM.length>2 && S.periTimesG.length>2){
+        const pm=(S.periTimesM[S.periTimesM.length-1]-S.periTimesM[0])/(S.periTimesM.length-1);
+        S.perRatio=pm/P;
+      }
+    }
+    S.rPrevM=rM;
+    const rG=Math.hypot(S.ghost[0],S.ghost[1],S.ghost[2]);
+    if(rG<S.rPrevG) S.decG=true;
+    else if(S.decG){ S.decG=false; S.periTimesG.push(S.t);
+      const ang=Math.atan2(S.ghost[1],S.ghost[0])*180/Math.PI;
+      S.apsN.push({raw:ang}); if(S.apsN.length>400) S.apsN.shift(); }
+    S.rPrevG=rG;
+    if((i&7)===0){
+      S.trailM.push([S.mod[0],S.mod[1],S.mod[2]]);
+      S.trailG.push([S.ghost[0],S.ghost[1],S.ghost[2]]);
+      if(S.trailM.length>2600){S.trailM.shift(); S.trailG.shift();}
+    }
+  }
+}
+// ---------- view ----------
+const cv=document.getElementById("sky"), cx=cv.getContext("2d");
+const ch=document.getElementById("chart"), chx=ch.getContext("2d");
+let yaw=-0.5, pitch=0.42, zoom=1;
+function proj(p,W,H,scale){
+  const cy=Math.cos(yaw), sy=Math.sin(yaw), cp=Math.cos(pitch), sp=Math.sin(pitch);
+  const x1=p[0]*cy-p[1]*sy, y1=p[0]*sy+p[1]*cy;
+  const y2=y1*cp-p[2]*sp,  z2=y1*sp+p[2]*cp;
+  return [W/2+x1*scale, H/2-z2*scale, y2];
+}
+function css(name){return getComputedStyle(document.documentElement)
+  .getPropertyValue(name).trim();}
+function draw(){
+  const dpr=window.devicePixelRatio||1,
+    W=cv.clientWidth, H=cv.clientHeight;
+  if(cv.width!==W*dpr||cv.height!==H*dpr){cv.width=W*dpr;cv.height=H*dpr;}
+  cx.setTransform(dpr,0,0,dpr,0,0);
+  cx.fillStyle=css("--bg"); cx.fillRect(0,0,W,H);
+  const scale=zoom*Math.min(W,H)/(2.6*S.a*(1+S.e));
+  // orbit-plane reference grid (rings)
+  cx.strokeStyle=css("--grid"); cx.lineWidth=1;
+  for(let k=1;k<=4;k++){
+    cx.beginPath();
+    const rr=k*0.5*S.a*(1+S.e);
+    for(let i=0;i<=72;i++){
+      const th=i/72*TAU, q=proj([rr*Math.cos(th),rr*Math.sin(th),0],W,H,scale);
+      i?cx.lineTo(q[0],q[1]):cx.moveTo(q[0],q[1]);
+    } cx.stroke();
+  }
+  const trail=(pts,col)=>{ if(pts.length<2)return;
+    cx.strokeStyle=col; cx.lineWidth=1.5; cx.beginPath();
+    for(let i=0;i<pts.length;i++){
+      const q=proj(pts[i],W,H,scale);
+      i?cx.lineTo(q[0],q[1]):cx.moveTo(q[0],q[1]); }
+    cx.stroke(); };
+  trail(S.trailG, css("--ghost"));
+  trail(S.trailM, css("--brass"));
+  // field arrow
+  if(S.gext>0){
+    const d=fieldDir(S.t), L=0.85*S.a*(1+S.e);
+    const o=proj([0,0,0],W,H,scale), q=proj([d[0]*L,d[1]*L,d[2]*L],W,H,scale);
+    cx.strokeStyle=css("--field"); cx.lineWidth=2;
+    cx.beginPath(); cx.moveTo(o[0],o[1]); cx.lineTo(q[0],q[1]); cx.stroke();
+    const an=Math.atan2(q[1]-o[1],q[0]-o[0]);
+    cx.beginPath(); cx.moveTo(q[0],q[1]);
+    cx.lineTo(q[0]-10*Math.cos(an-0.4),q[1]-10*Math.sin(an-0.4));
+    cx.lineTo(q[0]-10*Math.cos(an+0.4),q[1]-10*Math.sin(an+0.4));
+    cx.closePath(); cx.fillStyle=css("--field"); cx.fill();
+  }
+  // bodies
+  const pm=proj(S.mod,W,H,scale), pg=proj(S.ghost,W,H,scale),
+        o=proj([0,0,0],W,H,scale);
+  cx.fillStyle=css("--brass"); cx.beginPath();
+  cx.arc(o[0],o[1],4,0,TAU); cx.fill();
+  cx.fillStyle=css("--ghost"); cx.beginPath();
+  cx.arc(pg[0],pg[1],3,0,TAU); cx.fill();
+  cx.fillStyle=css("--brass"); cx.beginPath();
+  cx.arc(pm[0],pm[1],3.6,0,TAU); cx.fill();
+  drawChart();
+}
+function drawChart(){
+  const dpr=window.devicePixelRatio||1,
+    W=ch.clientWidth,H=ch.clientHeight;
+  if(ch.width!==W*dpr||ch.height!==H*dpr){ch.width=W*dpr;ch.height=H*dpr;}
+  chx.setTransform(dpr,0,0,dpr,0,0);
+  chx.fillStyle=css("--bg"); chx.fillRect(0,0,W,H);
+  chx.strokeStyle=css("--grid");
+  chx.beginPath(); chx.moveTo(0,H/2); chx.lineTo(W,H/2); chx.stroke();
+  if(S.apsM.length<2) return;
+  // unwrap for display
+  const un=[S.apsM[0].raw];
+  for(let i=1;i<S.apsM.length;i++){
+    let d=S.apsM[i].raw-S.apsM[i-1].raw;
+    while(d>180)d-=360; while(d<-180)d+=360;
+    un.push(un[i-1]+d);
+  }
+  const min=Math.min(...un), max=Math.max(...un),
+    span=Math.max(max-min,10);
+  chx.strokeStyle=css("--chart-line"); chx.lineWidth=1.5; chx.beginPath();
+  for(let i=0;i<un.length;i++){
+    const x=i/(un.length-1)*(W-8)+4,
+      y=H-6-((un[i]-min)/span)*(H-12);
+    i?chx.lineTo(x,y):chx.moveTo(x,y);
+  }
+  chx.stroke();
+  chx.fillStyle=css("--muted");
+  chx.font="10px Consolas,monospace";
+  chx.fillText(`Δω total ${ (un[un.length-1]-un[0]).toFixed(1) }°`,6,12);
+}
+// ---------- readouts + controls ----------
+const $=id=>document.getElementById(id);
+function fmtT(t){ return t>2e6? (t/1e6).toFixed(2)+" Myr"
+  : t>2e3? (t/1e3).toFixed(1)+" kyr" : t.toFixed(0)+" yr"; }
+function refresh(){
+  $("rT").textContent=fmtT(S.t);
+  $("rN").textContent=S.orbits;
+  $("rPrec").textContent=isNaN(S.lastPrec)?"—":S.lastPrec.toFixed(2)+"°/orb";
+  $("rPer").textContent=isNaN(S.perRatio)?"—":(100*S.perRatio).toFixed(1)+"%";
+  $("rR").textContent=Math.hypot(S.mod[0],S.mod[1],S.mod[2]).toFixed(0)+" AU";
+  const lag=Math.hypot(S.mod[0]-S.ghost[0],S.mod[1]-S.ghost[1],S.mod[2]-S.ghost[2]);
+  $("rLag").textContent=lag.toFixed(0)+" AU";
+}
+function bind(id,out,fmt,set){
+  $(id).addEventListener("input",e=>{
+    const v=parseFloat(e.target.value); $(out).textContent=fmt(v); set(v);
+  });
+}
+bind("a0m","oa0m",v=>Math.pow(10,v).toFixed(2)+"×",v=>{S.a0m=Math.pow(10,v);});
+bind("sma","osma",v=>Math.round(Math.pow(10,v)).toLocaleString()+" AU",
+  v=>{S.a=Math.pow(10,v); resetSim();});
+bind("ecc","oecc",v=>v.toFixed(2),v=>{S.e=v; resetSim();});
+bind("om0","oom0",v=>v+"°",v=>{S.om0=v; resetSim();});
+bind("gext","ogext",v=>v.toFixed(2)+" a₀",v=>{S.gext=v;});
+bind("tilt","otilt",v=>v+"°",v=>{S.tilt=v;});
+bind("trot","otrot",v=>v===0?"static":v+" Myr",v=>{S.trot=v;});
+bind("spd","ospd",()=>"" ,v=>{S.speed=v;});
+$("law").addEventListener("change",e=>{S.law=e.target.value;});
+$("pReset").addEventListener("click",resetSim);
+$("pPause").addEventListener("click",()=>{S.paused=!S.paused;
+  $("pPause").textContent=S.paused?"Run":"Pause";});
+function preset(kind){
+  $("pTNO").classList.toggle("active",kind==="tno");
+  $("pWB").classList.toggle("active",kind==="wb");
+  if(kind==="tno"){ S.M=1; S.a=500; S.e=0.7;
+    $("sma").value=Math.log10(500); $("osma").textContent="500 AU";
+    $("ecc").value=0.7; $("oecc").textContent="0.70";
+  } else { S.M=2; S.a=1e4; S.e=0.5;
+    $("sma").value=4; $("osma").textContent="10,000 AU";
+    $("ecc").value=0.5; $("oecc").textContent="0.50"; }
+  resetSim();
+}
+$("pTNO").addEventListener("click",()=>preset("tno"));
+$("pWB").addEventListener("click",()=>preset("wb"));
+// drag / zoom
+let drag=null;
+cv.addEventListener("pointerdown",e=>{drag=[e.clientX,e.clientY];
+  cv.setPointerCapture(e.pointerId); cv.style.cursor="grabbing";});
+cv.addEventListener("pointermove",e=>{ if(!drag)return;
+  yaw+=(e.clientX-drag[0])*0.008; pitch+=(e.clientY-drag[1])*0.008;
+  pitch=Math.max(-1.5,Math.min(1.5,pitch)); drag=[e.clientX,e.clientY];});
+cv.addEventListener("pointerup",()=>{drag=null; cv.style.cursor="grab";});
+cv.addEventListener("wheel",e=>{e.preventDefault();
+  zoom*=Math.exp(-e.deltaY*0.001); zoom=Math.max(0.2,Math.min(8,zoom));},
+  {passive:false});
+// main loop
+if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+  S.paused=true; $("pPause").textContent="Run";
+}
+resetSim();
+let frame=0;
+function loop(){
+  if(!S.paused){
+    stepSim(Math.round(30*Math.pow(10,S.speed)));
+    frame++;
+  }
+  draw(); if((frame&3)===0) refresh();
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+</script>
