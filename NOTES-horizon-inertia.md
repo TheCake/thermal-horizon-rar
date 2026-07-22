@@ -1026,6 +1026,40 @@ low-y data or a dedicated estimator. Credence (BE microphysics specifically): 15
 **~20–25%** (it faced a falsifier and the alternative branch died instead; capped
 because the test doesn't separate BE from simple within the branch).
 
+## Stage 3U/3V: final error budgets at the physical field — THE MEASUREMENT PROGRAM CLOSES (2026-07-23, [calcs/stage3p_v7budget.py](calcs/stage3p_v7budget.py) g=1p2, [calcs/stage3q_v7boot.py](calcs/stage3q_v7boot.py))
+
+Six seeds + 1000-replicate bootstrap on the v7 model with the g_N,ext = 1.2a₀ tables.
+[data/stage3u_summary.txt](data/stage3u_summary.txt), [data/stage3v_boot.txt](data/stage3v_boot.txt).
+
+Seeds (α̂ simple / BE): 1.17/1.11, 1.28/1.17, 1.23/1.09, 1.28/1.10, 1.29/1.07, 1.26/1.06
+→ realization scatter 0.045 / 0.039 (vs 0.35/0.04 at the wrong field — the physical model
+is beautifully conditioned for BOTH laws), interior 12/12, w_rad = 0.20 in 12/12.
+
+**FINAL HEADLINE NUMBERS:**
+| law | α (boot ⊕ realization) | interior | Newton ΔlnL (min over 1000) |
+|---|---|---|---|
+| simple | **1.18 ± 0.11** | 1000/1000 | +110.3 ± 18.3 (+53.0) |
+| BE | **1.13 ± 0.13** | 998/1000 | +100.0 ± 14.7 (+57.8) |
+
+Both consistent with the parameter-free α = 1 (1.6σ / 1.0σ); the mild common upward lean
+(~10–18%) is partially covered by the g_N,ext uncertainty (±0.05a₀ ⇒ ~±0.04 on α̂ from
+the scan slope) and is disclosed, not interpreted. **Newton is excluded in all 2000
+bootstrap contests across both laws.**
+
+Also logged: at the physical field the simple law out-fits BE on every seed
+(mean −12.3 ± 2.2 SE), echoing the galaxy-side 4B lean — two independent datasets now
+mildly prefer simple-ν over BE within the ½-branch. BE-specific credence trimmed to
+~15–20% (branch passed, within-branch leaning away); does not affect the α result.
+
+**The measurement program (Stages 1 → 3V, 22 stages) is COMPLETE. Every gate is closed:**
+screening index p = 0.443+0.063/−0.050; boost 1.086 (1.064–1.110); α = 1.18 ± 0.11 /
+1.13 ± 0.13 at g_N,ext = 1.15 ± 0.05a₀; Newton rejected universally; the w_rad = 0.20
+near-parabolic population and the U-shaped γ measurement as standalone discoveries; the
+NLO ½-branch confirmed on SPARC; six retraction-grade corrections caught and logged.
+Remaining work is WRITING (paper assembly, TODO #10) plus the disclosed open items
+(γ≈82° excess, Chae-text verification, NNLO, a₀∝H(z), Banik reproduction #6, deep
+priority check #7, two-field theory #8).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

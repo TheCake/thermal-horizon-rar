@@ -1,17 +1,19 @@
-"""
+﻿"""
 STAGE 3P: realization error budget for the v7 model (TODO #2d, seed half).
 Per seed: both laws on the v7 model (radial-excess mixture + companions +
 contaminants + catalog acceptance), reduced grids. Reports per (seed, law):
 alpha_hat (parabolic), Newton dlnL, w_rad_hat, and BE-minus-simple best lnL
 (does the BE lead survive across realizations?). f_pm fixed at 1.5 (flat in
-3N/3O). Seeds from argv; appends to data/stage3p_summary.txt.
+3N/3O). Seeds from argv; appends to data/stage3u_summary.txt.
 """
 import sys
 import time
 import numpy as np
 from astropy.io import fits
 
-SEEDS = [int(x) for x in sys.argv[1:]] or [31]
+# argv: [gtag] [seeds...]; gtag '1p9' = original tables, else g-scan tables
+GTAG = sys.argv[1] if len(sys.argv) > 1 else '1p9'
+SEEDS = [int(x) for x in sys.argv[2:]] or [31]
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -23,8 +25,13 @@ def load_tab(path):
     t = np.load(path); y, b = t[0][::-1], t[1][::-1]
     lny = np.log(y); lny_u = np.linspace(lny[0], lny[-1], 512)
     return lny_u, np.interp(lny_u, lny, b)
-LNY_U, TAB_S = load_tab('data/efe_boost_simple.npy')
-_,     TAB_B = load_tab('data/efe_boost_be.npy')
+if GTAG == '1p9':
+    PS, PB = 'data/efe_boost_simple.npy', 'data/efe_boost_be.npy'
+else:
+    PS = f'data/efe_boost_simple_g{GTAG}.npy'
+    PB = f'data/efe_boost_be_g{GTAG}.npy'
+LNY_U, TAB_S = load_tab(PS)
+_,     TAB_B = load_tab(PB)
 LNY0, DLNY = LNY_U[0], LNY_U[1]-LNY_U[0]
 
 d = fits.open('data/edr3_binaries.fits.gz', memmap=False)[1].data
@@ -201,11 +208,11 @@ def lnL_point(p, o):
 
 def P(s):
     print(s)
-    with open('data/stage3p_summary.txt', 'a') as f:
+    with open('data/stage3u_summary.txt', 'a') as f:
         f.write(s+"\n")
 
 prior = -0.5*((E_GRID-1.3)/0.3)**2
-P(f"STAGE 3P batch, seeds {SEEDS}: a={A_GRID.tolist()}, eta={E_GRID.tolist()}, "
+P(f"STAGE 3P g={GTAG} seeds {SEEDS}: a={A_GRID.tolist()}, eta={E_GRID.tolist()}, "
   f"wr={WR_GRID.tolist()}, fpm={FPM}, fcomp={FCOMP_GRID.tolist()}, "
   f"fc0={FC0_GRID.tolist()}, ffly={FFLY_GRID.tolist()}")
 for seed in SEEDS:
@@ -252,4 +259,5 @@ for seed in SEEDS:
     P(f"  seed {seed}: BE-minus-simple best lnL = "
       f"{best_lnl['BE']-best_lnl['simple']:+.1f}  "
       f"({(time.time()-t0)/60:.1f} min)")
-print("\nbatch done; appended data/stage3p_summary.txt")
+print("\nbatch done; appended data/stage3u_summary.txt")
+

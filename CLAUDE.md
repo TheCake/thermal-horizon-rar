@@ -70,10 +70,14 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   inversion — our own arithmetic). **At the physical field (tables at 1.2a₀) BOTH laws
   localize at the parameter-free α=1: α̂ = 1.17 (simple) / 1.11 (BE), interior, Newton
   +108.7/+98.8. This supersedes 3Q's α=1.54±0.13 (wrong-convention conditional).**
-  w_rad=0.20 at all 8 model variations. LAST MECHANICAL GATE (TODO #2h): re-run 3P/3Q
-  budgets at g=1.2 → paper headline α± (expect ≈1.1±0.15); verify Chae's exact
-  external-field text (full read). γ≈82° excess non-blocking (TODO #2e). THEN: paper
-  assembly from PAPER-DRAFT.md + NOTES 3B→3T.** Paper
+  w_rad=0.20 at all 8 model variations. **MEASUREMENT PROGRAM COMPLETE (3U/3V): FINAL
+  α = 1.18 ± 0.11 (simple) / 1.13 ± 0.13 (BE) at g_N,ext=1.2a₀, interior 1000/1000 &
+  998/1000, Newton excluded in all 2000 bootstrap contests (min +53); realization
+  scatter collapsed to 0.045/0.039 at the physical field; simple out-fits BE on every
+  seed (−12.3±2.2 — two datasets now lean simple within the ½-branch; BE credence
+  ~15–20%). NLO kill test (4A/4B): ½-branch PASSED 198–200/200, standard-μ branch dead.
+  NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4B; open
+  items disclosed in TODO (γ≈82°, Chae text, NNLO, a₀∝H(z), #6, #7, #8).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the radial-excess population discovery + U-shaped γ
   (standalone), triples-exoneration, realization systematic, BE identity.

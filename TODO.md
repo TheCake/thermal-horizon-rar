@@ -37,10 +37,11 @@
    old 1.9: Stage 2G imported the AQUAL-total convention into our QUMOND solver —
    OUR cross-formulation bug, owned in NOTES; published Chae (AQUAL+total) and Banik
    are each internally consistent.
-2h. **Re-run the 3P/3Q error budgets at g_N,ext=1.2** ← final mechanical gate — 6 seeds +
-   1000-replicate bootstrap on the corrected tables; produces the paper's headline
-   α ± (expected ≈1.1±0.15). Also verify Chae 2023's exact external-field sentence
-   (full-text read, not scout) before writing the comparison paragraph.
+2h. ~~**Re-run the error budgets at g_N,ext=1.2**~~ — DONE (Stages 3U/3V). **FINAL:
+   α = 1.18 ± 0.11 (simple) / 1.13 ± 0.13 (BE), interior 1000/1000 & 998/1000, Newton
+   excluded in all 2000 bootstrap contests (min +53). THE MEASUREMENT PROGRAM IS
+   COMPLETE — remaining work is writing (#10) + disclosed open items.** (Chae-text
+   verification still owed before the comparison paragraph.)
 2e. **The γ≈82° perpendicular excess** (ṽ≈0.07 and ≈1.66 cells, wide bins, z≈+5, present
    in every model) — the last unexplained structure. Candidates: genuinely circular
    sub-population entering only at wide s (formation?), resolved-triple outer pairs,

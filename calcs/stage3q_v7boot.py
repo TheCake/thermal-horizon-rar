@@ -1,10 +1,10 @@
-"""
+﻿"""
 STAGE 3Q: data-bootstrap half of the v7 error budget (completes TODO #2d).
 One seed-31 model evaluation over the 3P reduced grid, storing per-gridpoint
 2D log-probabilities; then 1000 bootstrap replicates of the 14,071 pairs
 re-scored by tensor contraction (no orbit re-runs). Combined with the 3P
 realization scatter (simple 0.35, BE 0.042) this yields the final v7-model
-alpha +/- for the paper. Writes data/stage3q_summary.txt.
+alpha +/- for the paper. Writes data/stage3v_boot.txt.
 """
 import time
 import numpy as np
@@ -20,8 +20,8 @@ def load_tab(path):
     t = np.load(path); y, b = t[0][::-1], t[1][::-1]
     lny = np.log(y); lny_u = np.linspace(lny[0], lny[-1], 512)
     return lny_u, np.interp(lny_u, lny, b)
-LNY_U, TAB_S = load_tab('data/efe_boost_simple.npy')
-_,     TAB_B = load_tab('data/efe_boost_be.npy')
+LNY_U, TAB_S = load_tab('data/efe_boost_simple_g1p2.npy')
+_,     TAB_B = load_tab('data/efe_boost_be_g1p2.npy')
 LNY0, DLNY = LNY_U[0], LNY_U[1]-LNY_U[0]
 
 d = fits.open('data/edr3_binaries.fits.gz', memmap=False)[1].data
@@ -225,7 +225,7 @@ prior = -0.5*((E_GRID-1.3)/0.3)**2
 NBOOT = 1000
 brng = np.random.default_rng(7)
 npairs = len(s_d)
-REAL = {'simple': 0.35, 'BE': 0.042}   # Stage 3P realization scatter
+REAL = {'simple': 0.045, 'BE': 0.039}   # Stage 3U realization scatter (g=1.2)
 res = {law: {'ahat': [], 'dnewt': [], 'interior': 0} for law in logp}
 for k in range(NBOOT):
     pk = brng.integers(0, npairs, npairs)
@@ -249,7 +249,7 @@ for k in range(NBOOT):
         res[law]['dnewt'].append(np.nanmax(prof)-prof[0])
         res[law]['interior'] += int(0 < imax < len(A_GRID)-1)
 
-L = [f"STAGE 3Q v7 bootstrap: seed {SEED} grid, {NBOOT} replicates"]
+L = [f"STAGE 3V v7 bootstrap at g_N,ext=1.2a0: seed {SEED} grid, {NBOOT} replicates"]
 for law in res:
     ah = np.array(res[law]['ahat']); dn = np.array(res[law]['dnewt'])
     tot = np.sqrt(ah.std(ddof=1)**2 + REAL[law]**2)
@@ -261,6 +261,7 @@ for law in res:
           f"{law}: COMBINED alpha sigma (boot + realization {REAL[law]}) = "
           f"{tot:.3f}  ==> alpha = {ah.mean():.2f} +/- {tot:.2f}"]
 for l in L: print(l)
-with open('data/stage3q_summary.txt','w') as f:
+with open('data/stage3v_boot.txt','w') as f:
     f.write("\n".join(L)+"\n")
-print("\nsaved: data/stage3q_summary.txt")
+print("\nsaved: data/stage3v_boot.txt")
+
