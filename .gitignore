@@ -13,3 +13,5 @@ __pycache__/
 *.pyc
 
 private/
+
+data/lensing_rar/brouwer2021_rar.tar

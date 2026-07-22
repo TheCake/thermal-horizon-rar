@@ -78,10 +78,17 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   α = 1.18 ± 0.11 (simple) / 1.13 ± 0.13 (BE) at g_N,ext=1.2a₀, interior 1000/1000 &
   998/1000, Newton excluded in all 2000 bootstrap contests (min +53); realization
   scatter collapsed to 0.045/0.039 at the physical field; simple out-fits BE on every
-  seed (−12.3±2.2 — two datasets now lean simple within the ½-branch; BE credence
-  ~15–20%). NLO kill test (4A/4B): ½-branch PASSED 198–200/200, standard-μ branch dead.
-  NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4B; open
-  items disclosed in TODO (γ≈82°, Chae text, NNLO, a₀∝H(z), #6, #7, #8).** Paper
+  seed (−12.3±2.2 — binaries lean simple; SPARC is AGNOSTIC per 4E, the earlier SPARC
+  simple-lean was a raw-χ² artifact, retracted; BE credence ~20–25%). NLO kill test
+  (4A/4B + 4E caveat): ½-branch beats standard-μ 198–200/200 under raw χ², deflating to
+  a sign-robust strong lean (Δ−2lnL −56, 166/200) under scatter-marginalized likelihood
+  — QUOTE BOTH. Rung-2 lensing test (4E, [calcs/stage4e_lensing_rar.py](calcs/stage4e_lensing_rar.py)):
+  Mistele+24 + Brouwer+21 KiDS data fetched (data/lensing_rar/); HONEST NULL — resolving
+  power 0.09–0.10σ (0.2-dex lensing mass systematic is the wall; needs 0.02 dex or DR4);
+  within-branch BE−simple −19±15, carried by 3/153 galaxies = no verdict; Newton
+  +2777/+1659 on 15 lensing points alone; correction #8 logged.
+  NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4E; open
+  items disclosed in TODO (γ≈82°, Chae text, NNLO=parked, a₀∝H(z), #6, #7, #8).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the radial-excess population discovery + U-shaped γ
   (standalone), triples-exoneration, realization systematic, BE identity.

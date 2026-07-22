@@ -1,0 +1,59 @@
+STAGE 4E rung-2 test with lensing anchor: 153 galaxies, 2700 SPARC points + 15 Mistele+24 lensing points (fiducial keeps log g_bar >= -14.25: 12)
+-2lnL = SPARC[r^2/(sig^2+s_int^2)+ln(.)] + lens[r^2/sig_L^2+ln(.)] + (dlt/0.2)^2; free (la0, f_ML, s_int, dlt) per family
+predictions within 1/2-branch: BE c2=1/12=0.0833 | simple c2=1/8=0.1250
+
+G2 regression (4B objective, y<30 as in 4B 'all y'):
+  G2 BE: recomputed 4B chi2 = 153954.7 vs stored 153954.7 -> OK
+  G2 simple: recomputed 4B chi2 = 153826.0 vs stored 153826.0 -> OK
+  G2 standard: recomputed 4B chi2 = 174013.2 vs stored 174013.2 -> OK
+
+Lensing-only fits (la0, dlt free; f_ML/s_int irrelevant):
+        BE: -2lnL =    -60.64  a0 = 1.569e-10  dlt = -0.048
+    simple: -2lnL =    -60.62  a0 = 1.573e-10  dlt = -0.049
+  standard: -2lnL =    -61.43  a0 = 1.488e-10  dlt = -0.006
+    Newton: -2lnL =   2716.53  a0 = 2.512e-11  dlt = +0.590
+  (G3: Newton must be catastrophic; a0-dlt near-degenerate at LO -> lensing-only a0 is prior-limited by design)
+
+JOINT fiducial (all SPARC + lensing >= -14.25, dlt ~ N(0,0.2)):
+        BE: -2lnL =   -8397.72 (SPARC   -8338.11 | lens  -59.61)  a0=9.947e-11  f_ML=1.16  s_int=0.122  dlt=+0.133
+    simple: -2lnL =   -8379.01 (SPARC   -8319.32 | lens  -59.70)  a0=1.022e-10  f_ML=1.11  s_int=0.122  dlt=+0.122
+  standard: -2lnL =   -8341.95 (SPARC   -8280.81 | lens  -61.15)  a0=1.165e-10  f_ML=1.43  s_int=0.124  dlt=+0.096
+  Delta(-2lnL) BE - simple   = -18.71  (joint shape statistic; NOT a pure rung-2 readout -- see stage4e_diag for the regime decomposition and galaxy jackknife)
+  Delta(-2lnL) BE - standard = -55.77  (G4 branch control)
+
+G5 verdict stability [Delta(-2lnL) BE - simple]:
+  SPARC y<0.5  lens all15     : BE-simple     -3.28 | BE-standard      +9.22
+  SPARC y<0.5  lens>=-14.25   : BE-simple     -3.28 | BE-standard      +9.54
+  SPARC y<0.5  lens>=-13.25   : BE-simple     -3.28 | BE-standard     +10.05
+  SPARC y<1    lens all15     : BE-simple     -4.76 | BE-standard      -0.36
+  SPARC y<1    lens>=-14.25   : BE-simple     -4.76 | BE-standard      -0.04
+  SPARC y<1    lens>=-13.25   : BE-simple     -4.75 | BE-standard      +0.47
+  SPARC all    lens all15     : BE-simple    -18.72 | BE-standard     -56.08
+  SPARC all    lens>=-14.25   : BE-simple    -18.71 | BE-standard     -55.77
+  SPARC all    lens>=-13.25   : BE-simple    -18.70 | BE-standard     -55.23
+  SPARC all    dlt=0 (face)   : BE-simple    -16.47 | BE-standard     -48.82
+  SPARC all    EFE e=0.01 L15 : BE-simple    -23.08 | BE-standard     -57.30
+  SPARC all    EFE e=0.02 L15 : BE-simple    -23.40 | BE-standard     -54.45
+  SPARC all    EFE e=0.03 L15 : BE-simple    -23.46 | BE-standard     -52.78
+  SPARC all    EFE e=0.05 L15 : BE-simple    -22.80 | BE-standard     -65.65
+
+Brouwer+21 release cross-check (GLS, full covariance, face-value masses; their SIS-approx conversion):
+        BE: chi2 =     46.61 (n=15)  a0 = 1.894e-10
+    simple: chi2 =     46.72 (n=15)  a0 = 1.894e-10
+  standard: chi2 =     38.30 (n=15)  a0 = 1.977e-10
+    Newton: chi2 =   1658.95 (n=15)  a0 = 1.200e-10
+
+c2 estimator: a0 anchored on lensing (c1=1/2; window >= -14.25), then SPARC WLS on 0.05 <= y < ymax (s_floor 0.06 dex; f_ML profiled):
+  ymax=0.5 c1=1/2 fixed    : c2 = -0.0692 +/- 0.3416 (stat) +/- 0.3419 (mass syst)  a0_lens=1.394e-10 f_ML=0.8
+      vs BE 1/12: -0.32 sig | vs simple 1/8: -0.40 sig | rung-2 resolving power: 0.09 sig
+  ymax=0.5 c1 free (-0.442): c2 = +1.1998 +/- 0.4160 (stat) +/- 0.9727 (mass syst)  a0_lens=1.394e-10 f_ML=1.0
+      vs BE 1/12: +1.06 sig | vs simple 1/8: +1.02 sig | rung-2 resolving power: 0.04 sig
+  ymax=1.0 c1=1/2 fixed    : c2 = +0.1406 +/- 0.2274 (stat) +/- 0.3692 (mass syst)  a0_lens=1.394e-10 f_ML=0.7
+      vs BE 1/12: +0.13 sig | vs simple 1/8: +0.04 sig | rung-2 resolving power: 0.10 sig
+  ymax=1.0 c1 free (-0.583): c2 = +0.8695 +/- 0.3190 (stat) +/- 0.5684 (mass syst)  a0_lens=1.394e-10 f_ML=1.3
+      vs BE 1/12: +1.21 sig | vs simple 1/8: +1.14 sig | rung-2 resolving power: 0.06 sig
+
+Bootstrap (200 reps: SPARC galaxies x lensing perturbation):
+  Delta(-2lnL) BE - simple = -19.48 +/- 15.35; BE better in 183/200
+  BE beats standard in 166/200 (G4 at depth)
+  joint a0 (BE) = 1.000e-10 +/- 9.43e-12 (G1: 4B all-y gave 1.206e-10)

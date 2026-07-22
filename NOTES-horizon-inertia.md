@@ -1143,6 +1143,81 @@ to 5e-13; sympy's simplify fails on it — algebra: ½+½coth(x/2) = e^x/(e^x−
    two rungs run. Frame as sharpening C&T, not as independent theory. (Negative scout
    claims stay provisional until the write-time INSPIRE pass — thrice-learned lesson.)
 
+## Stage 4E: the rung-2 lensing test — an honest null with structure; correction #8 (2026-07-23, [calcs/stage4e_lensing_rar.py](calcs/stage4e_lensing_rar.py), [calcs/stage4e_diag.py](calcs/stage4e_diag.py))
+
+TODO #16 executed: can the weak-lensing RAR (2 dex deeper than SPARC) decide rung 2 of
+the Bernoulli ladder (BE 1/12 vs simple 1/8)? Answer: **no — and the attempt taught us
+two things about our own earlier claims.** [data/stage4e_lensing.txt](data/stage4e_lensing.txt),
+[data/stage4e_diag.txt](data/stage4e_diag.txt).
+
+**Data acquired** (data/lensing_rar/, URLs + provenance in script header):
+- PRIMARY: Mistele–McGaugh–Lelli–Schombert–Li 2024 (JCAP 04, 020) Table 1 — 15 stacked
+  exact-deprojection points, isolated KiDS-1000 lenses, log g_bar ∈ [−14.86, −11.41],
+  extracted verbatim from the arXiv LaTeX source (primary-source rule). Their global
+  0.2-dex stellar-mass systematic modeled as a log-g_bar offset nuisance δ ~ N(0, 0.2).
+- CROSS-CHECK: Brouwer+21 KiDS-1000 release (ESD + full covariance; their Eq.-7
+  SIS-approx conversion — the one Mistele+24 showed distorts the shape at both ends).
+
+**Method upgrade over 4B (and the caveat it forces).** 4B compared families with raw χ²
+(χ²/dof ≈ 57 — no intrinsic scatter; the most precise points carry everything). 4E uses
+−2lnL with a per-family profiled intrinsic scatter s_int (≈ 0.12 dex, matching the known
+RAR scatter) + the lensing block + the δ prior; free (a₀, f_ML, s_int, δ) per family.
+Gates: G1 a₀ sane ✓; G2 exact regression to stored 4B numbers (the first run's "FAIL"
+was 4B's 'all y' actually being y<30 — config, not code) ✓; G3 Newton catastrophic on
+lensing alone (+2777 Mistele / +1659 Brouwer GLS over 15 points) ✓; G4/G5 below.
+
+**Results:**
+1. **Rung 2 is UNRESOLVED — an honest null with the power quantified.** The direct c₂
+   estimator, even with the lensing-anchored a₀: c₂ = +0.14 ± 0.23 (stat) ± 0.37 (mass
+   syst) in the best window — **resolving power for 1/12-vs-1/8: 0.09–0.10σ.** The
+   0.2-dex lensing stellar-mass calibration is the wall (rung 2 needs ~0.01–0.02 dex).
+   The c₁-free variant reproduces 4A's collinearity pathology (c₁ ≈ −0.5 ± nonsense) —
+   consistent with 4A's power-null, now WITH the anchor: the truncated estimator is dead
+   as an instrument at current calibration, full stop.
+2. **Full-function within-branch: Δ(−2lnL) BE − simple = −18.7 (BE better), bootstrap
+   −19.5 ± 15.4, BE better in 183/200.** Sign stable across all 14 variants (SPARC
+   window × lensing depth cut × EFE-nuisance grid e_N ∈ {0.01–0.05} × face-value
+   masses), magnitude −3…−23. BUT the diagnostics kill any verdict reading: the entire
+   lead is carried by **3 of 153 galaxies** (UGC03580 −7.1, NGC4217 −5.9, UGC02916 −5.4;
+   refit without them: +0.8), and the deep regime where c₂ actually lives (y<0.1,
+   960 points) contributes only −7.8. **No within-branch discrimination — again.**
+3. **CORRECTION #8a (to 4B/3V's "two datasets lean simple"):** the SPARC-side "slight
+   sign-consistent simple lean" (+129…+797 raw Δχ²) does NOT survive scatter
+   marginalization — it flips to the small, 3-galaxy-fragile BE lean above. The SPARC
+   within-branch comparison is likelihood-model-dependent noise, not a lean. RETRACTED
+   to: "the wide binaries lean simple (3V: −12.3 ± 2.2 SE, stands); SPARC is agnostic."
+4. **CORRECTION #8b (the 4B branch kill gets its likelihood caveat):** under the honest
+   likelihood the ½-branch vs 0-branch verdict deflates from 198–200/200 to
+   **Δ(−2lnL) = −56, BE better in 166/200** joint — and the deep window (y<0.5) alone
+   flips to +8…+10 FOR standard-μ (it buys the shape back with f_ML=1.69 + scatter
+   freedom once precise points lose their veto). The ½-branch preference is sign-robust
+   in every joint variant and both likelihood treatments — **the conclusion stands as a
+   strong lean, not a kill** — and the paper must quote both treatments (raw-χ²
+   198–200/200 AND scatter-marginalized 166/200) or it is overclaiming.
+5. a₀ (joint, BE) = (1.000 ± 0.094)e-10 under the honest likelihood vs 1.206e-10 raw —
+   a ~20% likelihood-model sensitivity (f_ML-correlated), bracketing Stage-1's
+   (1.03 ± 0.13)e-10 and C&T's H₀/2π ≈ 1.08e-10. Not a claim; a disclosed sensitivity.
+6. Lensing alone is family-agnostic (Mistele: −60.6/−60.6/−61.4 across BE/simple/
+   standard) — it anchors, it does not discriminate. The Brouwer-release GLS cross-check
+   mildly prefers standard (38.3 vs 46.6, a₀ ≈ 1.9e-10) — attributed (not proven) to
+   their SIS-approx conversion + face-value masses; noted as a caution, outweighed by
+   the primary deprojection dataset.
+7. **In-session artifact caught (logged as method discipline):** the first diagnostic's
+   per-decade table binned points by each family's OWN fitted y — bin migration between
+   columns manufactured a spectacular fake story ("simple wins the deep side +136, BE
+   wins the Wien tail −113"). Common-membership binning (v2) shows every regime delta is
+   single-digit-to-±11 and columns reconcile exactly with the fit totals. Decomposition
+   tables must bin on common membership; the pretty version was the wrong version, again.
+
+**Kill-test scoreboard after 4E:** NLO = ½: PASSED as a robust-sign strong lean (both
+likelihoods, every window, plus lensing consistency) — no longer quoted as 198–200/200
+alone. NNLO (1/12 vs 1/8): **open and NOT reachable with current data** — needs either
+lensing mass cross-calibration at the 0.02-dex level (a survey problem, not ours) or the
+Gaia DR4 distribution-level binary measurement. a₀ ∝ H(z): future. Credences: BE
+microphysics stays ~20–25% (the feared SPARC simple-lean evaporated — relaxing pressure —
+but no positive discrimination appeared either; net wash). All wide-binary numbers
+untouched (this stage is galaxy-side).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

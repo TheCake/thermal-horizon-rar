@@ -69,12 +69,15 @@
 8. **Two-field BE theory** — a proper Lagrangian whose EFE structure follows from the
    occupation postulate (the sphericalized QUMOND solve is a stand-in); predict the
    anisotropic (curl) component; feed back through the orbit engine.
-9. ~~**NLO test**~~ — DONE (Stages 4A/4B). Truncated-expansion estimator is power-limited
-   on SPARC (c₁ ± 0.4–0.6, honest null); the truncation-free full-function branch
-   comparison is decisive: **c₁=½ branch (BE/simple) beats c₁=0 branch (standard-μ) in
-   198–200/200 galaxy bootstraps — the BE identity's parameter-free NLO prediction
-   PASSED its kill test**; within-branch (NNLO 1/12 vs 1/8) unresolved, slight simple
-   lean. a₀=1.206e-10, f_ML=1.10 recovered free. Remaining BE kill test: a₀∝H(z) (#14).
+9. ~~**NLO test**~~ — DONE (Stages 4A/4B; caveat added by 4E). Truncated-expansion
+   estimator is power-limited on SPARC (c₁ ± 0.4–0.6, honest null); the truncation-free
+   full-function branch comparison: **c₁=½ branch (BE/simple) beats c₁=0 branch
+   (standard-μ) in 198–200/200 galaxy bootstraps under raw χ²; Stage 4E's
+   scatter-marginalized likelihood deflates this to a strong sign-robust lean (Δ−2lnL
+   −56, 166/200, deep-window alone agnostic) — quote BOTH treatments.** Within-branch
+   (NNLO 1/12 vs 1/8): no verdict in either treatment (the earlier "slight simple lean"
+   was a raw-χ² artifact — retracted in 4E). a₀=1.206e-10 (raw) / 1.00e-10 (honest
+   likelihood), f_ML ≈ 1.1 recovered free. Remaining BE kill test: a₀∝H(z) (#14).
 
 ## Publication path
 10. **Paper assembly** from [PAPER-DRAFT.md](PAPER-DRAFT.md) once items 1–5 land.
@@ -87,8 +90,14 @@
 14. High-z rotation curves (JWST/ALMA): a₀ ∝ H(z) vs constant — the BE reading's kill test.
 15. Wide-binary eccentricity distribution at 10–50 kAU (the η=edge hint): measurable with
     Hwang's v-angle method on the EDR3 catalog — possible standalone paper.
-16. **The Bernoulli-ladder test on the lensing RAR** (Stage 4D) — rung 2 (1/12 vs 1/8)
-    and rung 3 (−1/720 vs −1/128) on Brouwer+2021 KiDS weak-lensing RAR (~2 dex deeper
-    than SPARC; data public). Decides BE-vs-simple within the ½-branch — a kill test
-    aimed at our own favorite (current lean is toward simple's 1/8). Fetch the Brouwer
-    binned g_obs(g_bar) table, extend the 4A two-step estimator to the deeper window.
+16. ~~**The Bernoulli-ladder test on the lensing RAR**~~ — DONE (Stage 4E,
+    [calcs/stage4e_lensing_rar.py](calcs/stage4e_lensing_rar.py)). Both public datasets
+    fetched (Mistele+24 Table 1 exact-deprojection = primary; Brouwer+21 ESD+covariance
+    = cross-check). **Verdict: honest null — rung 2 is NOT reachable: resolving power
+    0.09–0.10σ (the 0.2-dex lensing stellar-mass systematic is the wall; needs ~0.02
+    dex or Gaia DR4). Full-function within-branch: BE −19 ± 15, carried by 3/153
+    galaxies = no discrimination. Bonus corrections (#8a/b): the SPARC "simple lean"
+    was a raw-χ² artifact (retracted — binaries lean simple, SPARC agnostic), and the
+    4B branch kill deflates to a strong sign-robust lean (166/200 scatter-marginalized
+    vs 198–200/200 raw — paper must quote both).** Newton +2777/+1659 on 15 lensing
+    points alone; joint a₀ = (1.00±0.09)e−10 under the honest likelihood.

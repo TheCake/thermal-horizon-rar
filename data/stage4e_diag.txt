@@ -1,0 +1,46 @@
+STAGE 4E DIAGNOSTICS v2 (common-bin membership by y_fid)
+
+D1: 4B regression, sel = y_fid<30 (n=2693):
+        BE: 153954.7 vs stored 153954.7 -> OK
+    simple: 153826.0 vs stored 153826.0 -> OK
+  standard: 174013.2 vs stored 174013.2 -> OK
+
+D2: fiducial joint fits; Delta(-2lnL) by COMMON y_fid bin:
+  y_fid bin        n     BE-simple   BE-standard
+  [   0.00,   0.03)   203       +0.51        -2.31
+  [   0.03,   0.10)   757       -8.30       +17.86
+  [   0.10,   0.30)   559       +0.32        -9.87
+  [   0.30,   1.00)   554       -0.33       -22.22
+  [   1.00,   3.00)   353       -0.57       -20.18
+  [   3.00,  10.00)   210      -10.83       -20.74
+  [  10.00,1000000000.00)    64       +0.40        +0.16
+  column sums       2700      -18.80       -57.30
+  SPARC-only fit deltas:          -18.80       -57.30  (must match sums)
+  full joint deltas:              -18.71       -55.77
+
+D3: y_fid<0.5 window joint fits:
+        BE: -2lnL= -5433.72 a0=9.086e-11 f_ML=1.28 s_int=0.124 dlt=+0.168
+    simple: -2lnL= -5430.44 a0=9.192e-11 f_ML=1.25 s_int=0.124 dlt=+0.163
+  standard: -2lnL= -5443.26 a0=9.879e-11 f_ML=1.69 s_int=0.124 dlt=+0.165
+  y_fid bin        n     BE-simple   BE-standard
+  [   0.00,   0.01)    11       -0.15        +2.90
+  [   0.01,   0.03)   192       +0.48        -3.84
+  [   0.03,   0.10)   757       -3.58       +23.80
+  [   0.10,   0.20)   367       +0.50        -6.99
+  [   0.20,   0.35)   268       +0.18        -5.05
+  [   0.35,   0.50)   172       -0.72        -2.77
+  column sums       1767       -3.30        +8.06
+  SPARC-only fit deltas:           -3.30        +8.06  (must match sums)
+  full joint deltas:               -3.28        +9.54
+
+D4a: per-galaxy contribution to fiducial BE-simple (all points):
+  5 most BE-favoring:  UGC03580 -7.09  NGC4217 -5.92  UGC02916 -5.42  NGC6195 -2.19  DDO161 -1.94
+  5 most simple-favoring:  UGC06787 +1.55  IC2574 +1.63  UGC06786 +1.86  NGC2841 +4.87  UGC11914 +8.01
+  refit dropping top-1 BE-favoring: Delta(BE-simple) = -11.35  (was -18.71)
+  refit dropping top-3 BE-favoring: Delta(BE-simple) = +0.76  (was -18.71)
+
+D4b: per-galaxy contribution to the DEEP-regime (y_fid<0.1) BE-simple delta (at fiducial best fits):
+  deep-regime total = -7.79 over 960 points, 115 galaxies
+  5 most BE-favoring:  DDO161 -1.94  UGC08286 -0.80  UGC00128 -0.73  F568-V1 -0.69  KK98-251 -0.68
+  5 most simple-favoring:  NGC3741 +0.47  UGC05764 +0.51  NGC5055 +0.52  NGC3109 +0.56  IC2574 +1.63
+  top-5 simple-favoring share of deep total: -47%
