@@ -27,13 +27,16 @@
 2d. ~~**v7 error budget**~~ — DONE (3P seeds + 3Q bootstrap). **FINAL v7 numbers:
    simple α = 1.52 ± 0.46; BE α = 1.54 ± 0.13; Newton loses in all 1000 replicates
    (min +38/+59).** Fit program v1→v7 complete.
-2f. **g_ext scan** ← **HIGHEST-LEVERAGE NEXT COMPUTATION** — the EFE tables have used
-   g_ext = 1.9a₀ fixed since Stage 2G; the v7 α = 1.54 ± 0.13 (BE) sits ~4σ above the
-   parameter-free 1.0, and a weaker true local field would push α̂ down toward 1.
-   Regenerate EFE tables for g_ext ∈ {1.4, 1.6, 1.9, 2.2, 2.4}a₀
-   ([calcs/qumond_efe_solver.py](calcs/qumond_efe_solver.py)), rerun the v7 fit per
-   table, profile α vs g_ext. Decides whether the α>1 tension is an EFE-calibration
-   artifact or physics.
+2f. ~~**g_ext scan**~~ — DONE (Stage 3S). **Simple law: α=1 recovered sharply at
+   g_ext = 1.4–1.6a₀ with the scan's best likelihoods — the α>1 tension is an
+   EFE-calibration degeneracy, not a data demand. BE law: NOT rescued at any scanned
+   g_ext (α̂ 1.5–2.0 everywhere) — first α-structure separation between the ν-families.**
+2g. **Pin down the MW's Newtonian external field in our convention** ← decides 2f's
+   meaning — compute g_N,ext at the Sun from a standard baryonic MW model (McMillan 2017
+   or similar; no dark halo — Newtonian baryons only, the QUMOND EFE input) and compare
+   to the C&M e_N=1.9 convention. If ≈1.4–1.6a₀: simple-law story closes at α=1. If
+   ≈1.9a₀ robust: tension returns. Literature + short calc; also re-examine what C&M's
+   1.9 actually parameterizes (total vs Newtonian field).
 2e. **The γ≈82° perpendicular excess** (ṽ≈0.07 and ≈1.66 cells, wide bins, z≈+5, present
    in every model) — the last unexplained structure. Candidates: genuinely circular
    sub-population entering only at wide s (formation?), resolved-triple outer pairs,

@@ -912,6 +912,40 @@ computation. (2) Residual model ingredient leaning on α (the γ≈82° excess i
 unfit). (3) Real physics: the binary-regime boost genuinely exceeds the
 galactic-calibrated law. Do not pick a favorite in print; scan g_ext first.
 
+## Stage 3S: the g_ext scan — the α>1 tension dissolves for the simple law, persists for BE (2026-07-23, [calcs/stage3r_gext_tables.py](calcs/stage3r_gext_tables.py), [calcs/stage3s_gext_fit.py](calcs/stage3s_gext_fit.py))
+
+EFE tables re-solved (validated stage-2G machinery) at g_ext/a₀ ∈ {1.4, 1.6, 2.2, 2.4};
+v7 fit (seed 31) at each; Newton is table-independent so ΔlnL(Newton) is comparable
+across the scan. [data/stage3s_summary.txt](data/stage3s_summary.txt).
+
+| g_ext/a₀ | simple α̂ | simple ΔlnL | α=1 penalty | BE α̂ | BE ΔlnL |
+|---|---|---|---|---|---|
+| 1.4 | **1.02 (sharp)** | **+109.5** | 0 | 2.0 (edge) | +96.5 |
+| 1.6 | **1.03 (sharp)** | +108.4 | 0 | 1.55 | +99.6 |
+| 1.9 | 1.50 | +98.4 | −5.0 | 1.52 | +105.8 |
+| 2.2 | 1.31 | +109.3 | −6.1 | 2.0 (edge) | +101.9 |
+| 2.4 | 1.41 | +108.3 | −9.7 | 2.0 (edge) | +108.1 |
+
+1. **For the simple-ν law, the α>1 tension is NOT demanded by the data.** At
+   g_ext = 1.4–1.6a₀ the fit prefers α = 1.0 SHARPLY (α=1.5 penalized 25–27 lnL — far
+   above the ~5-lnL jitter) and achieves the best overall likelihoods of the whole scan.
+   (α≈1, g_ext_eff≈1.5a₀) is the global sweet spot: **the parameter-free galactic
+   strength is recovered if the effective EFE suppression is ~25% weaker than the
+   C&M-convention 1.9a₀.** Elsewhere the (α, g_ext) surface is degenerate at ±1–2 lnL.
+2. **The BE law is NOT rescued by g_ext anywhere in the scan**: its α̂ stays 1.5–2.0
+   (edges at three of five points). The BE-EFE (Wien-suppressed) is intrinsically weaker,
+   and no scanned external field lets it reach the data at α=1. Under the v7 model, the
+   parameter-free BE reading is in genuine tension — flag honestly; this is the first
+   quantitative separation between the two ν-families the program has produced (the lnL
+   totals still don't discriminate; the α-structure does).
+3. **The decisive next fact is not a fit — it is the true Newtonian external field of
+   the solar neighborhood in our convention.** If MW baryonic models give
+   g_N,ext ≈ 1.4–1.6a₀, the simple-law story closes clean at α=1; if 1.9a₀ is robust,
+   the tension returns. Calculable/literature number — queued.
+4. Caveats: single seed (the α̂ lobe-hopping between 1.0 and 1.5 at g≥1.9 is decided by
+   ~5 lnL ≈ jitter; the SHARP α=1 preferences at 1.4–1.6 are not); scan grid is coarse;
+   w_rad=0.20 selected at every point (7th consecutive model variation).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

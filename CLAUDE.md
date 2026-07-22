@@ -64,12 +64,15 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   +100±9/+104±5; w_rad=0.20 12/12; **BE-over-simple lead NOT significant (+3.3±2.2 SE) —
   no ν-family discrimination**. Error budget COMPLETE (3P+3Q): **FINAL v7 numbers:
   simple α = 1.52 ± 0.46, BE α = 1.54 ± 0.13; Newton loses in all 1000 bootstrap
-  replicates (min +38/+59)**. The α>1 tension (BE ~4σ above the parameter-free 1.0 under
-  the physical model; σ_m model gave 1.21±0.30) is the headline interpretive question —
-  HIGHEST-LEVERAGE NEXT: g_ext scan (TODO #2f; tables fixed at 1.9a₀ since 2G; weaker
-  local field ⇒ α̂ falls toward 1). γ≈82° excess = last unexplained structure (TODO #2e,
-  non-blocking). NEXT SESSION: g_ext scan, then paper assembly from PAPER-DRAFT.md +
-  NOTES Stages 3B→3Q.** Paper
+  replicates (min +38/+59)**. g_ext scan DONE (3S): **simple law recovers α=1 SHARPLY at
+  g_ext=1.4–1.6a₀ with the scan's best likelihoods (tension = EFE-calibration
+  degeneracy); BE law NOT rescued at any g_ext (α̂ 1.5–2.0 everywhere) — first
+  α-structure separation between ν-families; w_rad=0.20 at all 7 model variations.
+  DECIDING FACT NEEDED (TODO #2g): the MW's true Newtonian g_N,ext at the Sun in our
+  convention (baryonic model, McMillan-style) vs C&M's e_N=1.9 — if ≈1.5a₀ the simple
+  story closes at α=1.** γ≈82° excess = last unexplained structure (TODO #2e,
+  non-blocking). NEXT SESSION: TODO #2g (g_N,ext number), then paper assembly from
+  PAPER-DRAFT.md + NOTES Stages 3B→3S.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the radial-excess population discovery + U-shaped γ
   (standalone), triples-exoneration, realization systematic, BE identity.
