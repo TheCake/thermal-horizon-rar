@@ -1362,6 +1362,62 @@ cut ([data/stage4i_rchance.txt](data/stage4i_rchance.txt)):
   already sits past the dose-response knee.
 Chance alignments cannot be driving the boost; consistent with v7's fenced f_chance.
 
+## Stage 4J: the γ≈82° excess resolved in identity — and a perpendicular velocity CEILING at the boosted escape speed (2026-07-23, [calcs/stage4j_gamma82.py](calcs/stage4j_gamma82.py), TODO #2e)
+
+Data-side autopsy of the last unexplained structure (top-γ cells at ṽ≈0.07 and ≈1.66,
+wide bins, z≈+5 vs every model). Framing identity (vis-viva at γ_3D = 90°): apocenter
+ṽ² = 1−e (ṽ=0.07 ⟺ e≈0.995); pericenter ṽ² = 1+e ≤ 2 — **a bound Newtonian pair can
+NEVER exceed ṽ = √2 = 1.414 (any phase, any e, any geometry); the boosted α=1 law
+raises the ceiling to √(2·1.36) ≈ 1.65 at wide s.** The observed island at 1.66 sits
+exactly there. [data/stage4j_gamma82.txt](data/stage4j_gamma82.txt).
+
+Findings (wide pairs s ≥ 6 kAU):
+1. **T1 identity:** both islands are γ-STRUCTURED, not flat — apo island 35% in
+   [75,90°] (z=+2.9 vs uniform); peri window bimodal (40% at [0,30°] = asymptote arm,
+   24% at [75,90°] = closest-approach arm, [60,75°] DEPLETED z=−2.5) — the geometry of
+   extreme-phase orbits, not of comoving noise. T3: slow top-γ pairs imply e median
+   0.957 (16–84%: 0.90–0.99), at 4.9× the noise floor — the APO FACE of the w_rad
+   population, real velocities. (The S/N>3 cut used in the γ channel removes 92% of
+   the apo island — the fits saw it only through the noise-convolved ṽ channel.)
+2. **T2 THE CEILING (the new result):** top-γ column (γ≥75, N=256): 11 pairs in
+   [1.2,1.414), **11 pairs in the Newton-forbidden band [1.414,1.67) at nearly equal
+   density (43 vs 51 per unit), then a CLIFF: 1 pair in [1.67,2.2), 0 beyond.** The
+   γ<30 comparison column (the flyby/unbound continuum) shows NO edge: 17, 14, 9, 4, 1
+   out to ṽ=6 — and the catalog's own selection admits pairs to ṽ≈3, so the cliff is
+   not the catalog cut.
+3. **T2b leakage null (the decisive number):** with the measured per-pair σ_ṽ = 0.044,
+   a TRUE Newtonian edge at √2 predicts 0.9 pairs in the forbidden band —
+   **11 observed, P(≥11) = 3.8e-9.** A true edge at the boosted 1.65 predicts 11.6 in
+   the band (11 observed, P=0.62) and 0.5 beyond (1 observed, P=0.91). **The
+   perpendicular speed distribution terminates at the α=1 boosted escape ceiling, not
+   the Newtonian one — with no parameter tuned to this test** (1.36 is the α=1 table
+   boost at wide s from the physical-field fits).
+4. **Rival identities, each killed by its own numbers:** field-star flybys at closest
+   approach arrive at ṽ ~ v∞/v_c ~ 100, not 1.5, and have no cliff mechanism; the
+   fast island's astrometry is PRISTINE (RUWE_max median 1.06 vs 1.28 for the same-ṽ
+   low-γ continuum; S/N=30; Rch ~ 8e-4 — physical pairs at 99.9%); 3J's measured
+   2.4% mass error cannot produce +15% ṽ shifts; hidden companions inflate by ≤ q-cubed
+   amounts on 12% of pairs — order 1–2 pairs, not 11, and would smear past 1.67.
+5. **Model-gap diagnosis (why the residual existed):** v7's flyby template puts ALL
+   unbound weight at γ∈[0,30°] (asymptote regime) — the 90° closest-approach arm is
+   unmodeled by construction; and the bound radial component under-produces the
+   extreme-phase cells (e-band capped at 0.995; peri dwell under-sampled). The excess
+   was a MODEL-SHAPE gap, and its content is PRO-boost, not a threat.
+
+Honest caveats, stated with the claim: N=11 in the forbidden band (small); the ceiling
+location inherits the ±few-% spread of boost(s, g_ext) per pair (consistent with the
+1 pair at 1.67–2.2); the islands were FLAGGED by earlier residual maps (the
+ceiling-EDGE test itself is new and was not used to find them — partial independence);
+per-pair line-of-sight projection can only LOWER ṽ below the 3D value, so projection
+cannot fake the band (it thins it). **Verdict: TODO #2e resolved in identity; the
+"excess" is the near-parabolic population's pericenter/apocenter faces plus an
+unmodeled closest-approach arm — and it contains the program's most direct single
+signature of the boost: eleven perpendicular-moving pairs that Newton forbids and the
+α=1 law places exactly at its own escape edge.** Queued (#2e-b): GPU model variant
+(closest-approach arm + e-ceiling lift) to confirm the cell closes with α invariant;
+DR4 multiplies the band's N by ~10. Paper: new §7 subsection "the perpendicular
+ceiling" with the caveats verbatim.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

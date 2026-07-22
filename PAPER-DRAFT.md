@@ -53,8 +53,12 @@ which plausibly contributes to the published disagreement between wide-binary
 analyses. The velocity-direction (v-r angle) distributions confirm and extend
 — to 50 kAU and inside a joint gravity-law fit — the superthermal trend of
 Hwang, Ting & Zakamska (2022), executing the gravity application those
-authors proposed; a folded γ ≈ 82° perpendicular excess remains open and is
-disclosed. The framework's remaining falsifiers are stated: the rung-2
+authors proposed; and the perpendicular-moving wide pairs exhibit a velocity
+CEILING at the boosted escape edge — eleven pairs populate the
+Newtonian-forbidden band ṽ ∈ [√2, 1.67) (P = 4e-9 against Newton plus
+measured noise) and terminate at √(2·1.36) (P = 0.62), with flyby, triple,
+chance, and selection identities each excluded; the small count is stated.
+The framework's remaining falsifiers are stated: the rung-2
 coefficient (1/12 vs the simple family's 1/8 — shown here to require lensing
 mass cross-calibration at the ~0.02-dex level, or Gaia DR4), and a₀ ∝ H(z).
 
@@ -110,11 +114,14 @@ mass cross-calibration at the ~0.02-dex level, or Gaia DR4), and a₀ ∝ H(z).
    mapped; the external-field convention analysis (our 2G bug owned; the
    AQUAL-total vs QUMOND-Newtonian distinction made explicit for the field).
   [Stages 3P–3V, 3S/3T]
-7. **The eccentricity sector and the realization systematic** — the radial
-   excess as CONFIRMATION + extension of Hwang, Ting & Zakamska 2022
-   (w_rad = 0.20 vs their implied 20–22% e>0.9 fraction — lead with the
-   cross-validation); circular vetoed; the γ≈82° residual disclosed as open;
-   the realization systematic (still apparently ours). [Stages 3D, 3L–3N, 4G]
+7. **The eccentricity sector, the perpendicular ceiling, and the realization
+   systematic** — the radial excess as CONFIRMATION + extension of Hwang,
+   Ting & Zakamska 2022 (w_rad = 0.20 vs their implied 20–22% e>0.9 fraction
+   — lead with the cross-validation); circular vetoed; **the perpendicular
+   velocity ceiling (4J): the γ≈82° residual resolved as peri/apo faces, with
+   the Newton-forbidden band populated (P=4e-9) and terminating at the α=1
+   boosted edge — small-N caveats verbatim from NOTES**; the realization
+   systematic (still apparently ours). [Stages 3D, 3L–3N, 4G, 4J]
 8. **Transparency appendix** — the nine logged corrections, verbatim from
    NOTES (axial 2/π; non-conservative EFE; a₀ conventions; grid-edge bullseye
    retraction; mass-error hypothesis; circular-mixture reading; identity

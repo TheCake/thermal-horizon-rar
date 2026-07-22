@@ -42,11 +42,17 @@
    excluded in all 2000 bootstrap contests (min +53). THE MEASUREMENT PROGRAM IS
    COMPLETE — remaining work is writing (#10) + disclosed open items.** (Chae-text
    verification still owed before the comparison paragraph.)
-2e. **The γ≈82° perpendicular excess** (ṽ≈0.07 and ≈1.66 cells, wide bins, z≈+5, present
-   in every model) — the last unexplained structure. Candidates: genuinely circular
-   sub-population entering only at wide s (formation?), resolved-triple outer pairs,
-   or a projection/selection artifact. Standalone puzzle; not blocking the paper if
-   disclosed.
+2e. ~~**The γ≈82° perpendicular excess**~~ — RESOLVED IN IDENTITY (Stage 4J,
+   [calcs/stage4j_gamma82.py](calcs/stage4j_gamma82.py)): the islands are the
+   pericenter/apocenter faces of the near-parabolic population + an unmodeled
+   closest-approach arm (v7's flyby template is γ∈[0,30°]-only). **NEW RESULT: the
+   perpendicular velocity CEILING — 11 pairs in the Newton-forbidden band
+   [√2, 1.67) (leakage null P=3.8e-9), cliff exactly at the α=1 boosted escape edge
+   √(2·1.36)≈1.65 (P=0.62/0.91 consistent); flybys/triples/chance/selection each
+   excluded by their own numbers. Small-N caveat (11 pairs) stated.**
+2e-b. **GPU model variant** — add the closest-approach (γ≈90°) unbound arm + lift the
+   radial e-ceiling; refit v7 at seed 31; confirm the residual cells close with α
+   invariant. One GPU evening; strengthens the §7 ceiling subsection.
 3. ~~**Error budget on lnL**~~ — DONE (Stages 3H+3I). Realization (6 seeds): simple
    0.93±0.11, BE 1.30±0.15, interior 12/12, Newton +55±4. Bootstrap (1000 replicates):
    simple 0.98±0.20, BE 1.21±0.26, Newton +60±11 (min +30). **Combined: simple

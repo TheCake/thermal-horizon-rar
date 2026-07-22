@@ -101,8 +101,14 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   ¼-branch (c₁=¼, c₂=7/96) tested: dead-grade raw (4–7/200), disfavored honest
   (+27/+9), sign-consistent; c₁ dose-response peaks at ½ (0 dead, ¼ disfavored, ½
   preferred, 1 Cassini-dead).
-  NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4F; open
-  items disclosed in TODO (γ≈82°, Chae text, NNLO=parked, a₀∝H(z), #6, #7, #8).** Paper
+  γ≈82° RESOLVED (4J, [calcs/stage4j_gamma82.py](calcs/stage4j_gamma82.py)): the
+  islands = peri/apo faces of the near-parabolic population + unmodeled
+  closest-approach arm; **NEW: the perpendicular velocity CEILING — 11 wide pairs in
+  the Newton-forbidden band [√2, 1.67), leakage null P=3.8e-9, cliff at the α=1
+  boosted escape edge √(2·1.36)≈1.65 (P=0.62/0.91); flybys (v∞ absurdity), triples,
+  chance, selection each excluded; N=11 caveat stated; GPU variant queued (#2e-b).**
+  NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4J; open
+  items disclosed in TODO (#2e-b, Chae text, NNLO=parked, a₀∝H(z), #6, #7, #8).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

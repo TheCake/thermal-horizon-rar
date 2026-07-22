@@ -1,0 +1,43 @@
+STAGE 4J gamma~82 autopsy: 14071 pairs after baseline cuts
+
+=== no S/N cut: wide pairs (s>=6 kAU) N=1437 ===
+T1 gamma-profile of each vt window (fraction of the window's pairs per gamma column; flat = noise/comoving, 90-peaked = orbital):
+  apo  0.05-0.10: N=   34  [0-30) 0.294(z-0.5)  [30-60) 0.206(z-1.6)  [60-75) 0.147(z-0.3)  [75-90) 0.353(z+2.9)
+  mid  0.30-0.90: N=  868  [0-30) 0.350(z+1.1)  [30-60) 0.326(z-0.5)  [60-75) 0.156(z-0.9)  [75-90) 0.168(z+0.1)
+  peri 1.35-2.05: N=   62  [0-30) 0.403(z+1.2)  [30-60) 0.306(z-0.4)  [60-75) 0.048(z-2.5)  [75-90) 0.242(z+1.6)
+T2 ceiling edge, top-gamma column (gamma>=75, N=256): counts per vt window
+  [1.2-1.414): 11 (51.4/unit)  [1.414-1.67): 11 (43.0/unit)  [1.67-2.2): 1 (1.9/unit)  [2.2-3.0): 0 (0.0/unit)  [3.0-6.0): 0 (0.0/unit)
+  Newtonian-bound ceiling 1.414 | boosted ceiling ~1.67 | beyond = unbound/noise only
+  gamma<30 comparison: [1.2-1.414): 17  [1.414-1.67): 14  [1.67-2.2): 9  [2.2-3.0): 4  [3.0-6.0): 1
+  T2b Newtonian edge sqrt(2): median sigma_vt=0.044; expect 0.9 in [1.414,1.67) vs 11 obs (P(>=obs)=3.75e-09); expect 0.0 in [1.67,2.2) vs 1 obs (P(<=obs)=1.00)
+  T2b boosted edge sqrt(2*1.36): median sigma_vt=0.044; expect 11.6 in [1.414,1.67) vs 11 obs (P(>=obs)=6.15e-01); expect 0.5 in [1.67,2.2) vs 1 obs (P(<=obs)=0.91)
+T3 implied e (apo reading) of slow top-gamma pairs (N=63): median 0.9575, 16-84% 0.9004-0.9910
+   median vt/noise_floor = 4.88 (~1 => island IS the noise floor)
+T4 medians island vs control (top-gamma):
+                 set     N    S/N    sigv  RUWEmax  Rch*1e3  dist[pc]  dplx/sig  s[kAU]
+          apo island    12    1.9  0.0197     1.08    0.446       107      0.80     9.0
+         peri island    15   30.2  0.0202     1.06    0.836       130      0.81    16.4
+         mid control   146   13.1  0.0209     1.08    0.908       116      0.83    11.1
+    same-vt lowg apo    10    1.8  0.0200     1.04    0.520       153      0.93     9.5
+   same-vt lowg peri    25   37.4  0.0181     1.28    0.544        70      1.21    13.3
+
+=== S/N>3 (3L/v7 convention): wide pairs (s>=6 kAU) N=1367 ===
+T1 gamma-profile of each vt window (fraction of the window's pairs per gamma column; flat = noise/comoving, 90-peaked = orbital):
+  apo  0.05-0.10: N=4 (too few)
+  mid  0.30-0.90: N=  867  [0-30) 0.351(z+1.1)  [30-60) 0.325(z-0.5)  [60-75) 0.156(z-0.9)  [75-90) 0.168(z+0.1)
+  peri 1.35-2.05: N=   62  [0-30) 0.403(z+1.2)  [30-60) 0.306(z-0.4)  [60-75) 0.048(z-2.5)  [75-90) 0.242(z+1.6)
+T2 ceiling edge, top-gamma column (gamma>=75, N=239): counts per vt window
+  [1.2-1.414): 11 (51.4/unit)  [1.414-1.67): 11 (43.0/unit)  [1.67-2.2): 1 (1.9/unit)  [2.2-3.0): 0 (0.0/unit)  [3.0-6.0): 0 (0.0/unit)
+  Newtonian-bound ceiling 1.414 | boosted ceiling ~1.67 | beyond = unbound/noise only
+  gamma<30 comparison: [1.2-1.414): 17  [1.414-1.67): 14  [1.67-2.2): 9  [2.2-3.0): 4  [3.0-6.0): 1
+  T2b Newtonian edge sqrt(2): median sigma_vt=0.044; expect 0.9 in [1.414,1.67) vs 11 obs (P(>=obs)=3.75e-09); expect 0.0 in [1.67,2.2) vs 1 obs (P(<=obs)=1.00)
+  T2b boosted edge sqrt(2*1.36): median sigma_vt=0.044; expect 11.6 in [1.414,1.67) vs 11 obs (P(>=obs)=6.15e-01); expect 0.5 in [1.67,2.2) vs 1 obs (P(<=obs)=0.91)
+T3 implied e (apo reading) of slow top-gamma pairs (N=46): median 0.9451, 16-84% 0.8933-0.9752
+   median vt/noise_floor = 5.57 (~1 => island IS the noise floor)
+T4 medians island vs control (top-gamma):
+                 set     N    S/N    sigv  RUWEmax  Rch*1e3  dist[pc]  dplx/sig  s[kAU]
+          apo island     3 (too few)
+         peri island    15   30.2  0.0202     1.06    0.836       130      0.81    16.4
+         mid control   146   13.1  0.0209     1.08    0.908       116      0.83    11.1
+    same-vt lowg apo     1 (too few)
+   same-vt lowg peri    25   37.4  0.0181     1.28    0.544        70      1.21    13.3
