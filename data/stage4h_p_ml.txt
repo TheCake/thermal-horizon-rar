@@ -1,0 +1,9 @@
+STAGE 4H: M/L-marginalized screening index (153 galaxies, 2700 points)
+(a) regression (f_d=1): p = 0.442, a0 = 1.028e-10, rms = 0.1324 dex  (Stage-1 point fit to reproduce)
+    bootstrap: p = 0.443 +0.063 / -0.050  (stored Stage 1: 0.443 +0.063/-0.050)
+(b) global f_d free: p = 0.572, a0 = 1.041e-10, f_d = 1.23 (M/L_disk = 0.61), rms = 0.1316 dex
+    bootstrap: p = 0.578 +0.103 / -0.097;  a0 = 1.053e-10 +/- 9.65e-12;  f_d = 1.22 +/- 0.10
+(c) per-galaxy 0.1-dex M/L jitter (200 realizations): p shift = +0.041, scatter = 0.047
+FINAL: p = 0.578 +0.121 / -0.115 (stat boot + M/L-jitter syst + jitter-shift, quadrature)
+Cassini: requires p > 0.234; M/L-marginalized 16th pct = 0.462 -> CONSISTENT
+distance of p=1/2 from marginalized fit: 0.7 sigma

@@ -52,10 +52,14 @@
    simple 0.98±0.20, BE 1.21±0.26, Newton +60±11 (min +30). **Combined: simple
    α = 0.98 ± 0.23; BE α = 1.21 ± 0.30** — conditional on the σ_m nuisance being benign
    (see #2b/v5).
-4. **Mass-model systematic** — marginalize M/L in the Stage-1 screening-index fit and
-   propagate photometric-mass errors into ṽ (affects both p and α).
-5. **Chance-alignment stress test** — scan R_chance thresholds (0.01 → 0.001) in the
-   20–50 kAU bin (N=214); check boost stability.
+4. ~~**Mass-model systematic**~~ — DONE (Stage 4H, [calcs/stage4h_p_ml.py](calcs/stage4h_p_ml.py)).
+   **p = 0.578 +0.121/−0.115 with M/L marginalized** (f_d = 1.22±0.10; error doubles;
+   p=½ now 0.7σ inside; Cassini floor comfortably passed). The ṽ mass-error leg was
+   closed by 3J (σ_m(mass) = 0.024, 12× below the broadening). Quote the marginalized
+   p as primary.
+5. ~~**Chance-alignment stress test**~~ — DONE (Stage 4I, [calcs/stage4i_rchance.py](calcs/stage4i_rchance.py)).
+   R_chance scanned 0.1 → 0.0005: boost ratio stable (max drift 0.033, all CIs
+   overlap); wide-bin median drift runs OPPOSITE to a contamination bias. Closed.
 
 ## Reconciliation (the paper's credibility keystone)
 6. **Reproduce the Banik-style statistic** (binomial pixel likelihood, their cuts) on OUR

@@ -1281,6 +1281,87 @@ claims stay PROVISIONAL until the write-time INSPIRE pass (thrice-learned rule).
 Credences: BE microphysics unchanged ~20–25% (its prescription survived a rival; its
 statistics remain untested vs classical).
 
+## Stage 4G: priority audit of the U-shape — Hwang, Ting & Zakamska 2022 have the superthermal trend; our w_rad becomes their confirmation (2026-07-23, correction #9)
+
+Primary-source read of arXiv:2111.01789 (MNRAS 512, 3383) — the "verify" item Stage 3L
+flagged and never closed (we even quoted "Hwang's ~1.3" secondhand while claiming the
+U-shape unpublished — the C&T failure mode, fourth instance; the rule is now: primary
+reads at CLAIM time, not write time). Verbatim findings from the PDF:
+
+- **Method**: "v-r angles" = our γ (their convention unfolded 0–180°), on the SAME
+  El-Badry EDR3 catalog, s = 10^1.5–10^4.5 AU. Method lineage: Tokovinin 1998/2020,
+  Shatsky 2001.
+- **Their headline**: e-distribution "close to uniform at ~100 AU… thermal at
+  ~10^2.7 AU… superthermal (α > 1) at > 10³ AU". Table 1: α = 1.30±0.05 (1–3.16 kAU),
+  1.32 +0.09/−0.08 (3.16–10 kAU), 1.17 +0.14/−0.15 (10–31.6 kAU). Multi-step variant:
+  "e < 0.3 suppressed, e > 0.9 enhanced."
+- They explicitly attribute the enhanced 0°/180° arms of the v-r distributions to the
+  superthermal e (their Fig. 6) — **the radial arm of our U-shape, published, with the
+  same explanation.**
+- They explicitly propose the gravity application (their §4, crediting Banik & Zhao
+  2018, 2021): "For non-Newtonian gravity, wide binaries at ≳ 7000 AU would deviate
+  from Keplerian orbits and thus the v-r angle distribution can be an independent test
+  on gravity theory."
+
+**RETRACTED/AMENDED (correction #9): "U-shaped γ apparently unpublished" and "U-shaped
+γ = standalone discovery" (3L, 3V summary, CLAUDE.md, paper-leads).** The superthermal/
+radial-heavy e-distribution at wide separations and its v-angle signature are Hwang,
+Ting & Zakamska's. The 53-search scout sweeps missed content sitting in a paper whose
+headline number 3L itself quoted.
+
+**What survives as ours:** (1) the joint 2D (ṽ×γ) gravity-law × e-mixture likelihood
+EXECUTED — they proposed the test, we ran it, with contaminant fences, at 2–50 kAU
+(including 31.6–50 kAU, beyond their range); (2) w_rad quantified INSIDE a gravity fit;
+(3) the σ_m-identity chain (what the ṽ-broadening IS); (4) the folded γ≈82°
+perpendicular excess (no 90° structure reported by them; still open, TODO #2e).
+
+**THE DIVIDEND — the collision is a validation.** The e>0.9 mass fraction of their
+superthermal law is 1 − 0.9^(α+1) = **20.4–21.7%** across their three wide bins —
+against our independently-fitted **w_rad = 0.20** (12/12 fits, 8 model variations,
+2–50 kAU). Two pipelines with disjoint assumptions — theirs directions-only, Bayesian,
+Newton-assumed, ≤31.6 kAU; ours joint 2D, gravity-law free — agree on the
+near-parabolic fraction to ≲1.5 percentage points. **The paper's largest nuisance
+parameter is now externally validated.** (Also imported: their <3% contamination
+estimate at s > 10⁴ AU — consistent with our fenced contaminant fractions.)
+
+Paper effects: abstract and §7 recast from "standalone discovery" to "confirms and
+extends Hwang+22 (to 50 kAU, inside a joint gravity fit) with the w_rad ↔ α
+cross-validation as the new headline of that section"; cite Banik & Zhao 2018/2021 for
+the γ-gravity proposal. Credences: w_rad-is-real-physics UP (hostile-assumptions
+replication); the α measurement untouched (γ pinned the nuisances; ṽ carries α).
+
+## Stage 4H: the M/L-marginalized screening index — p = 0.58 ± 0.12 (2026-07-23, [calcs/stage4h_p_ml.py](calcs/stage4h_p_ml.py), TODO #4 closed)
+
+Stage 1 held M/L fixed at (0.5, 0.7). Three-step closure
+([data/stage4h_p_ml.txt](data/stage4h_p_ml.txt)):
+(a) regression: the Stage-1 fit reproduces EXACTLY (p = 0.443 +0.063/−0.050, seed 42);
+(b) global disk-M/L scale free: **p = 0.578 +0.103/−0.097, f_d = 1.22 ± 0.10
+(M/L_disk = 0.61 — consistent with the 4B/4E f_ML ≈ 1.1–1.2 and stellar-population
+values), a₀ = (1.05 ± 0.10)e−10** — the fit is M/L-degenerate at nearly constant rms
+(0.1316 vs 0.1324 dex), so freeing M/L moves p by +0.14 while barely improving the fit;
+(c) per-galaxy 0.1-dex M/L jitter: +0.041 shift, 0.047 scatter.
+**FINAL: p = 0.578 +0.121/−0.115 (stat ⊕ jitter syst ⊕ shift).** Consequences:
+p = ½ (the RAR/BE form) now sits 0.7σ INSIDE the band (the fixed-M/L 0.443 sat 1.1σ
+below — the marginalization moves the data TOWARD the ½-branch); Cassini stays
+comfortably passed (16th pct 0.462 vs required 0.234). Honest reading: p is a soft
+discriminator (M/L-sensitive at the ±0.1 level; quote the marginalized number as
+primary); the Cassini screening floor is the robust part of the Stage-1 result.
+
+## Stage 4I: chance-alignment stress test — STABLE under a 20× tightening (2026-07-23, [calcs/stage4i_rchance.py](calcs/stage4i_rchance.py), TODO #5 closed)
+
+R_chance threshold scanned 0.1 → 0.0005 (baseline 0.01), full re-derivation of ṽ per
+cut ([data/stage4i_rchance.txt](data/stage4i_rchance.txt)):
+- Boost ratio median ṽ(6–30)/median ṽ(0.2–2): 1.091, 1.090, **1.086 (baseline)**,
+  1.094, 1.077, 1.088, 1.119 — max drift 0.033; every tightened subsample's 68% CI
+  overlaps the baseline CI. VERDICT: STABLE.
+- Direction check: the 20–50 kAU median RISES as the cut tightens (0.667 → 0.810 at
+  N = 45) — the OPPOSITE of a chance-contamination bias (flat-ṽ chance pairs inflate
+  medians; removing them harder would lower it). The (noisy, N=45) drift direction if
+  anything strengthens the wide-bin signal.
+- Loosening to 0.1 (N_20–50: 214 → 358) moves the ratio by < 0.005 — the baseline cut
+  already sits past the dose-response knee.
+Chance alignments cannot be driving the boost; consistent with v7's fenced f_chance.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

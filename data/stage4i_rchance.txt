@@ -1,0 +1,14 @@
+STAGE 4I: R_chance stress test (baseline cut = 0.01, bold row)
+cut       N_tot  N[6-20] N[20-50]  med[0.2-0.6] med[0.6-2] med[2-6] med[6-20] med[20-50]   ratio (68% CI)      tail>2 [20-50]
+ 0.1000  14275     1280      358      0.551     0.557     0.580     0.595     0.679   1.091 (1.071-1.113)    0.017
+ 0.0200  14167     1261      271      0.551     0.557     0.580     0.595     0.656   1.090 (1.070-1.114)    0.015
+ 0.0100  14071     1223      214      0.551     0.557     0.580     0.595     0.667   1.086 (1.066-1.109)    0.019 <== baseline
+ 0.0050  13948     1159      163      0.551     0.557     0.579     0.597     0.685   1.094 (1.073-1.123)    0.018
+ 0.0020  13666      973      109      0.551     0.557     0.576     0.582     0.698   1.077 (1.035-1.102)    0.028
+ 0.0010  13357      790       73      0.551     0.556     0.576     0.586     0.756   1.088 (1.053-1.124)    0.014
+ 0.0005  12980      616       45      0.551     0.556     0.577     0.611     0.810   1.119 (1.077-1.147)    0.022
+
+CI-overlap test vs baseline (each tightened subsample's own 68% CI):
+  cut 0.005: overlap  cut 0.002: overlap  cut 0.001: overlap  cut 0.0005: overlap
+VERDICT: STABLE - boost ratio consistent across a 20x tightening
+Direction check: the 20-50 kAU median RISES as the cut tightens (0.667 -> 0.810 at N=45) - the OPPOSITE of a chance-contamination bias (flat-vtilde chance pairs would inflate the median, so removing them harder would lower it). The boost cannot be attributed to chance alignments; the loosened rows (0.1, 0.02) bound the effect the baseline cut already removes at <0.005 in the ratio.

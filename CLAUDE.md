@@ -17,8 +17,11 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   for literature checks; do the physics/code in the main loop.
 
 ## Key results (all in NOTES with scripts)
-- Screening index of the RAR transition: **p = 0.443 +0.063/−0.050**, a₀=(1.03±0.13)e−10
-  ([calcs/sparc_rar_fit.py](calcs/sparc_rar_fit.py)); Cassini independently requires p>0.234.
+- Screening index of the RAR transition: fixed-M/L p = 0.443 +0.063/−0.050
+  ([calcs/sparc_rar_fit.py](calcs/sparc_rar_fit.py)); **M/L-marginalized (4H, primary):
+  p = 0.578 +0.121/−0.115, f_d=1.22±0.10, a₀=(1.05±0.10)e−10 — p=½ sits 0.7σ inside**;
+  Cassini independently requires p>0.234 (16th pct 0.462, comfortably passed). Chance
+  alignments: boost stable under 20× R_chance tightening (4I).
 - **Bose–Einstein identity** (exact): RAR ν = 1 + n_BE(x), x=√(g_N/a₀) — **PUBLISHED
   PRIOR ART: Cadoni & Tuveri 2019 (arXiv:1904.11835), Eq. 23 + derivation from thermal
   dS-horizon bosonic excitations, a₀=H/2π derived. Priority claim RETRACTED (Stage 4C;
@@ -52,8 +55,13 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   but the **v5 physical-multiplicity fit (Stage 3K) exonerated it: α stays interior ≥1,
   Newton +108/+120, companion model fits −420 lnL worse than the smear, f_comp capped at
   0.1 by the ṽ data. Hidden-triples hypothesis disfavored by shape, amplitude, and α's
-  survival.** v-angle (3L, mass-immune): γ distributions U-SHAPED, apparently unpublished
-  (γ method = Tokovinin 1998; P&S 2025 = Newton-favored, ṽ-only, no directions). Joint 2D
+  survival.** v-angle (3L, mass-immune): γ distributions U-SHAPED — **PRIOR ART (4G,
+  correction #9): Hwang, Ting & Zakamska 2022 (arXiv:2111.01789) published the
+  superthermal e-distribution (α≈1.2–1.3 at 1–31.6 kAU, e>0.9 enhanced) via the same
+  v-r angles on the same catalog, and proposed the gravity application (crediting Banik
+  & Zhao 2018/2021); DIVIDEND: their law implies 20–22% at e>0.9 vs our fitted
+  w_rad=0.20 — external validation; ours = executing the joint law×e fit, 31.6–50 kAU,
+  the γ≈82° residual** (P&S 2025 = Newton-favored, ṽ-only, no directions). Joint 2D
   (ṽ×γ) fits: v6 (3M) vetoed the circular reading (w_circ=0, −174; circular NARROWS ṽ —
   3L corrected); **v6b (3N, [calcs/stage3n_v6b.py](calcs/stage3n_v6b.py)) IDENTIFIED the
   broadening: w_rad=0.20 interior both laws (+129/+141) — a ~20% near-parabolic (e>0.9)
@@ -96,8 +104,9 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4F; open
   items disclosed in TODO (γ≈82°, Chae text, NNLO=parked, a₀∝H(z), #6, #7, #8).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
-  Newton +55…+112 always), the radial-excess population discovery + U-shaped γ
-  (standalone), triples-exoneration, realization systematic, BE identity.
+  Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
+  (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization
+  systematic, BE identity (C&T's; we test).
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.
