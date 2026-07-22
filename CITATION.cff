@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+type: software
+title: "Testing the Thermal-Horizon Reading of the Radial Acceleration Relation, from Galaxies to Wide Binaries"
+authors:
+  - family-names: "Hájek"
+    given-names: "Filip"
+repository-code: "https://github.com/TheCake/Horizon-Coupled-Inertia"
+abstract: >-
+  Measurement and theory-testing program for gravity at low accelerations:
+  coefficient-level tests of the radial acceleration relation on SPARC and
+  KiDS-1000 lensing data; a joint two-dimensional (velocity, direction-angle)
+  likelihood measurement of the low-acceleration velocity boost in 14,071 Gaia
+  EDR3 wide binaries with full seed and bootstrap error budgets; the solar-system
+  quadrupole consequences of the measured boost; a modified-inertia versus
+  modified-gravity discrimination on the binary data; and a reconciliation by
+  ablation of the conflicting published wide-binary analyses. The manuscript is
+  PAPER.md; the chronological lab notebook (including all corrections and
+  retractions) is NOTES-horizon-inertia.md; every claimed number is reproduced
+  by a named script under calcs/.
+keywords:
+  - MOND
+  - radial acceleration relation
+  - wide binaries
+  - Gaia
+  - modified gravity
+  - modified inertia
+  - external field effect
+  - galactic dynamics

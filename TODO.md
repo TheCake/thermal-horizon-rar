@@ -138,15 +138,25 @@
     bookkeeping in NOTES 4K.
 
 ## Publication path
-10. ~~**Paper assembly**~~ — DRAFT v1 DONE ([PAPER.md](PAPER.md), 2026-07-23): full
-    manuscript from NOTES Stages 1→4N — abstract, §1–10, Appendix A (ten corrections),
-    Appendix B (reproducibility), reference skeleton. Remaining before circulation:
-    prose polish pass, INSPIRE reference pass, Chae-text + Timeflow full-text checks,
-    byline verification (2304.00576), author/acknowledgment decisions (user's call),
-    then colleague review (#11).
-11. **External review** — hand the repo to a professional (ask them to break Stages 1, 2C,
-    3B specifically); they are also the arXiv endorsement path.
-12. **Zenodo DOI snapshot** for a citable timestamp; arXiv preprint after review.
+10. ~~**Paper assembly + verification pass**~~ — DONE. Draft v1 ([PAPER.md](PAPER.md)):
+    full manuscript from NOTES Stages 1→4N. **Verification pass DONE (Stage 4O,
+    2026-07-22) → v1.1: author = Filip Hájek (independent researcher); nine-agent
+    primary-source sweep of every novelty claim; all flagged full-text checks closed
+    (Chae sentence verified + quoted, Timeflow = Trofimov CQG 43, 135020 — distinct
+    mechanism, 2304.00576 = Jones-Smith & Mathur); references INSPIRE-verified;
+    CORRECTION #11 (√2-ceiling crediting) and the phantom "Paci 2020" → Petersen &
+    Lelli 2020 fix applied; CITATION.cff + .zenodo.json added for the DOI record.**
+10b. **Desmond et al. 2026 (arXiv:2602.24035) full methodological read** — the
+    Feb-2026 quality-framework "No Evidence for MOND" WB analysis; cited in §1 with
+    an explicit pending-read label. MUST close before arXiv: run it through the §7.3
+    reconciliation lens (companion bounding? deep anchor? noise convolution?).
+11. **External review** — hand the repo to a professional (ask them to break the
+    ceiling null, the quadrupole conversions, and the ablation fairness — the three
+    targeted asks now in COLLEAGUE-BRIEF.md, final numbers, held uncommitted);
+    they are also the arXiv endorsement path.
+12. **Zenodo DOI snapshot** — metadata files in place; next action is the user's:
+    enable the repo in Zenodo's GitHub integration, tag release v1.0, DOI mints
+    automatically; then send the brief with the DOI. arXiv preprint after review.
 
 ## Longer horizon (data that decides things)
 13. Gaia DR4: per-mille orientation statistic; α at distribution level with 10× pairs.

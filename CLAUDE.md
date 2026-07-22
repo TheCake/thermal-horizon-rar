@@ -135,11 +135,24 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   (+30–38 under full freedom); the γ channel = the parameter-protector (vtonly
   α̂_BE→1.55). Residual leg = H&C's unconvolved sub-error binning (not ablatable in
   our always-convolved pipeline) + the 3A realization systematic.**
-  **PAPER DRAFT v1 ASSEMBLED ([PAPER.md](PAPER.md), 2026-07-23, Stages 1→4N).**
-  NEXT = polish pass + INSPIRE reference pass + the flagged full-text checks (Chae
-  sentence, Timeflow, 2304.00576 byline) + author decisions → colleague review (#11)
-  → Zenodo → arXiv. Open science items in TODO (NNLO=parked, a₀∝H(z), #7, #8,
-  nonlocal-MI construction).** Paper
+  **PAPER v1.1 VERIFIED ([PAPER.md](PAPER.md), Stage 4O 2026-07-22): author =
+  Filip Hájek (independent researcher); nine-agent primary-source pass on every
+  novelty claim; CORRECTION #11 = √2 ceiling is P&S-2018/B&Z-2018 founding prior
+  art ("the key discriminant", P&S 2023) — ours is the perpendicular census + edge
+  termination, §7.2 reframed, Appendix A now eleven corrections; phantom citation
+  "Paci 2020" → Petersen & Lelli 2020 (A&A 636, A56); Chae numbers fixed (2023:
+  1.43±0.06/10σ at arXiv:2305.04613; 2024: 1.37/5.8–9.2σ); H&C critique gains
+  third author Aguayo-Ortiz; refs INSPIRE-verified + 8 missing added; C&T citation
+  chain (31 papers) contains no empirical test — first-test claim SUPPORTED;
+  simple-ν bath identity unclaimed anywhere (Famaey & Durakovic 2025 "no existing
+  clear derivation" cited); Timeflow = Trofimov, CQG 43, 135020, distinct
+  mechanism; Vokrouhlický+24 de-orphaned into §8.1; CITATION.cff + .zenodo.json
+  added (title/author for the DOI record).**
+  NEXT = user reviews the v1.1 diff → enable Zenodo GitHub integration + tag
+  v1.0 release (DOI mints) → send COLLEAGUE-BRIEF (final numbers, uncommitted)
+  with DOI → arXiv via endorsement. MUST before arXiv: full read of Desmond et
+  al. 2026 (arXiv:2602.24035; TODO #10b). Open science items in TODO
+  (NNLO=parked, a₀∝H(z), #7, #8, nonlocal-MI construction).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

@@ -1629,6 +1629,72 @@ freecomp Newton fits presumably sit at fence-forbidden fcomp (cube stores it;
 summary prints wr only — noted). TODO #6 EXECUTED at proxy grade; a line-by-line
 Banik reproduction remains future work if referees demand it.
 
+## Stage 4O — the verification day (pre-circulation pass, 2026-07-22)
+
+Purpose: every novelty claim and flagged quote in PAPER.md checked against primary
+sources before the Zenodo tag (nine Haiku scout agents + one direct fetch; arXiv /
+ar5iv / INSPIRE; verbatim retrieval only, NOT-FOUND reported as such). Author line
+set: **Filip Hájek (independent researcher)**; CITATION.cff + .zenodo.json added so
+the DOI record carries the paper title and author regardless of repo metadata.
+
+**CORRECTION #11 (crediting, logged):** the √2 ceiling is the FIELD'S founding
+bound — P&S 2018 (1711.10867: "the well-known result that u_3D < √2 for any bound
+orbit"), Banik & Zhao 2018 (1805.12273: ṽ "can't exceed √2 in Newtonian gravity. In
+MOND, we expect the upper limit to be somewhat higher"), and P&S 2023 (2205.02846)
+name the band above the Newtonian decline "the key discriminant between models";
+Banik 2019 (1902.01857) uses the above-√2 population as a contamination diagnostic.
+Our 4J language ("the test itself is new") was overbroad. What IS new: the
+perpendicular-column census and the edge-termination statistic. §7.2 now leads with
+the crediting; Appendix A gains item 11; all "ten corrections" counts → eleven.
+
+**Phantom citation caught:** "Paci et al. 2020" never existed — arXiv:2001.03348 is
+**Petersen & Lelli 2020, A&A 636, A56** ("A first attempt to differentiate between
+modified gravity and modified inertia with galaxy rotation curves"; MG mildly
+favored within 1.5σ, 15 galaxies). Also found and now cited: Chae 2022 (2207.11069;
+rotation curves disfavor MI at 6.9σ — complementary regime to our binary MI tie),
+McCulloch & Lucio 2019 (1908.01434; quantised inertia on binaries — nearest miss to
+the first-of-kind claim, different framework, no MI-vs-MG contrast), Milgrom 2023
+(2310.14334: MI predicts "possibly a stronger external-field effect" on very wide
+binaries — the qualitative anticipation of our no-EFE-dead result).
+
+**Verified verbatim:** Chae 2023 (2305.04613) AQUAL-external-field sentence quoted
+in §6.2; his numbers are γ = 1.43 ± 0.06 at 10σ — the 5.8–9.2σ our draft carried is
+Chae 2024 (2402.05720, γ_g = 1.37), intro now quotes both correctly (our ref list
+had the wrong 2023 arXiv ID, fixed). P&S 2025 triple-population caveat exact;
+byline gains a third author (Pittordis, Sutherland & Shepherd, OJAp). 2304.00576 =
+Jones-Smith & Mathur (AJ) — flag closed. DHF 2024: "an 8.7σ tension under fiducial
+model assumptions" + both escapes verified (M/L → 7.2σ; bulge removal → 2.7σ) +
+their own remark that Cassini already beats the wide-binary constraint — nobody has
+run the binary-CALIBRATED direction; ours stands.
+
+**Priority sweeps:** C&T citation chain (INSPIRE recid 1731589, 31 citations, 24
+retrieved): no empirical test of their form anywhere in it, no author follow-up
+fitting data — "apparently the first empirical test" SUPPORTED (7 unfetchable
+entries disclosed in §2.2). Simple-ν self-consistency identity: no prior derivation
+found; Famaey & Durakovic 2025 (2501.17006) review states "There is no existing
+clear derivation of such a transition from first principles" — now cited as the
+anchor; the "Timeflow" flag resolved = Trofimov 2026, CQG 43, 135020, a vacuum
+phase-interference mechanism, distinct from our identity; its paywalled full text
+is the one unexecuted read (disclosed in Appendix A). Realization systematic:
+re-scouted, still no published quantification. Reference pass: 10 arXiv IDs
+verified, 8 missing citations resolved (QUMOND = Milgrom 2010, MNRAS 403, 886;
+El-Badry 2101.05282; Raghavan 1007.0414; Pecaut & Mamajek 1307.2657; Chae & Milgrom
+2022 = 2201.02109; Bekenstein & Milgrom 1984, ApJ 286, 7; P&S/B&Z volumes); byline
+fixes: Hernandez, Chae & **Aguayo-Ortiz** 2024 (third author we had dropped), Pazy
+& Argaman is **2012**, PRD 85, 104021.
+
+**De-orphaned:** Vokrouhlický, Nesvorný & Tremaine 2024 (2403.09555) — AQUAL fails
+Oort-cloud comet binding energies and the detached disk; integrated into §8.1 as
+the population-dynamics bracket of our ephemerides veto (their escape clause =
+screened theories, same as our §8.2). **New arrival flagged:** Desmond et al. 2026
+(2602.24035), quality-framework WB analysis, "No Evidence for MOND" — cited in §1
+with an explicit pending-full-read label; the full methodological read is a new
+TODO item that must close before arXiv.
+
+PAPER.md → **v1.1** (verification pass stamped in the header). COLLEAGUE-BRIEF.md
+rewritten to the final numbers (still uncommitted by design). Verification scripts:
+none (literature pass); agent reports summarized here are the record.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
