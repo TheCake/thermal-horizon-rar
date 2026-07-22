@@ -29,9 +29,13 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
 - **Realization systematic** (likely novel, field-relevant): orbit-population realization
   shifts distribution lnL by MORE than the Newton-vs-MOND gap; no published quantification
   (scout-confirmed). [calcs/stage3a_likelihood.py](calcs/stage3a_likelihood.py).
-- Hierarchical fit v2: **Newton rejected ΔlnL +306/+338 with nuisances free** (robust);
-  α NOT localized — (α,η) degeneracy ridge runs to grid corners. The v1 "α=1 bullseye" was
-  RETRACTED (grid-edge artifact). Fix = TODO items 1–2.
+- Hierarchical fits v2/v3: **Newton rejected ΔlnL +264…+338 across four configurations
+  with nuisances free** (robust); **α NOT localized** — v3 ([calcs/stage3c_v3fit.py](calcs/stage3c_v3fit.py),
+  Stage 3C in NOTES) added contamination + Hwang η prior and the ridge did NOT collapse:
+  α corner-seeks even with η pinned at 1.3 (misspecification fingerprint). The v1 "α=1
+  bullseye" was RETRACTED (grid-edge artifact). **There is no α headline number; do NOT
+  extend the α grid.** Blocking item = TODO #2 (control-bin autopsy, per-bin lnL). Paper
+  leads with: 1.086 boost, Newton rejection, realization systematic, BE identity.
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.

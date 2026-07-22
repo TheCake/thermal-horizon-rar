@@ -390,6 +390,47 @@ dip at 1.25, rise to the edge).
 - Meta-note: this happened AFTER the git commit and BEFORE any public claim — the discipline
   working as intended.
 
+## Stage 3C: v3 fit — contamination + η prior did NOT collapse the ridge (2026-07-22, [calcs/stage3c_v3fit.py](calcs/stage3c_v3fit.py))
+
+TODO #1 implemented as designed: chance-alignment component flat in ṽ with weight
+f_c0·(s_b/31.6 kAU)², Hwang-anchored prior η ~ N(1.3, 0.3), denser η grid (0.8–1.9),
+α ≤ 2.0. 119 GPU population realizations, ~13 min total. Cubes (prior included):
+[data/hier3_cube_*.npy](data/), summary: [data/stage3c_summary.txt](data/stage3c_summary.txt).
+
+**Result: the collapse hypothesis of Stage 3B v2 is FALSIFIED.** Both laws again maximize
+at a corner — (α=2.0, η=1.9, f_t=0.05, f_c0=0.1), interior max = False for both, α "1σ
+range" degenerate at the fence. Newton rejection: simple +296.4, BE +263.8 (fourth
+consecutive configuration in the +220…+340 band).
+
+Cube diagnostics (why the fix failed):
+1. **The η prior is powerless against the likelihood slope.** lnL still gains ≈ +17–21 per
+   grid step from η=1.6→1.9 while the prior charges only −2.0 at η=1.9. A N(1.3,0.3) prior
+   cannot hold a ridge this steep; the fit's preference for superthermal e at wide s is a
+   likelihood feature, not a flat-prior artifact.
+2. **Contamination is real but small: +8.3 (simple) / +12.0 (BE) lnL total** — it soaks a
+   little tail but was never the ~300-lnL missing ingredient. (f_c0 sits at its 0.1 fence;
+   extending it is cosmetic at this gain scale.)
+3. **The killer: α runs to the 2.0 corner even with η pinned at 1.3** (conditional profile
+   monotonic, gaining ≈ +89 (simple) / +51 (BE) from α=1→2). So this is NOT just an (α,η)
+   trade — the fit wants ever-more boost (or is absorbing a shape misfit through it)
+   independent of the eccentricity population. Double-strength MOND out-fitting MOND is a
+   misspecification fingerprint, not physics.
+4. f_t = 0.05 again sharply preferred (hundreds of lnL penalty either side) — the most
+   stable nuisance in the problem.
+
+Interpretation: the missing ingredient is upstream of the nuisance layer — prime suspect is
+the Stage-3A control-bin anomaly (~140 lnL of model discrimination generated in the 0.2–2
+kAU bin where the force effect is per-mille; the likelihood is evidently not shape-faithful
+in the Newtonian regime, and α gains cannot be read as gravity until it is).
+**Consequence for the paper: there is no α ± interval headline. Do NOT extend the α grid
+further (v2's lesson: chasing the ridge outward just moves the corner).** The paper leads
+with what is robust: the 1.086 boost measurement, Newton rejection with nuisances free, the
+realization systematic, and the BE identity as theory motivation.
+
+Next (blocking): TODO #2 control-bin autopsy, with one instrumentation change — modify the
+fit to save per-bin lnL contributions so we can localize which s-bins generate the α
+preference before touching any more nuisances.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

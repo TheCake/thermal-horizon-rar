@@ -3,13 +3,15 @@
 *Priority-ordered. Each item names its blocking question and the script it extends.*
 
 ## Hardening the hierarchical fit (the α number)
-1. **v3 fit: contamination + priors** — add a chance-alignment/unbound-pair nuisance
-   component (flat high-ṽ tail, own fraction per s-bin) and replace the flat η prior with
-   Hwang-anchored η ~ N(1.3, 0.3). Expect the (α,η) degeneracy ridge to collapse and α to
-   localize. Extends [calcs/stage3b_hierarchical.py](calcs/stage3b_hierarchical.py).
-2. **Control-bin autopsy** — models differ by ~140 lnL in the 0.2–2 kAU bin where force
-   laws should barely matter (soft-tail contamination of the Newtonian regime and/or data
-   spread mimicry). Resolve before any lnL is quoted externally. See Stage 3A notes.
+1. ~~**v3 fit: contamination + priors**~~ — DONE ([calcs/stage3c_v3fit.py](calcs/stage3c_v3fit.py),
+   Stage 3C in NOTES). Outcome: hypothesis FALSIFIED — ridge did NOT collapse; α still
+   corner-seeks even with η pinned at 1.3; contamination worth only +8/+12 lnL. Newton
+   rejection robust (+296/+264). No α headline exists; #2 is now the blocking item.
+2. **Control-bin autopsy** ← **BLOCKING** — models differ by ~140 lnL in the 0.2–2 kAU bin
+   where force laws should barely matter (soft-tail contamination of the Newtonian regime
+   and/or data spread mimicry), and Stage 3C showed α gains are misspecification-driven.
+   First step: re-run the fit saving PER-BIN lnL contributions to localize which s-bins
+   generate the α preference. Resolve before any lnL is quoted externally. See Stage 3A/3C.
 3. **Error budget on lnL** — bootstrap data + Monte Carlo repeats (population noise at
    N=500k is ±few lnL); finer grid near the optimum; report α with honest intervals.
 4. **Mass-model systematic** — marginalize M/L in the Stage-1 screening-index fit and
