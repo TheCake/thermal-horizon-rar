@@ -62,10 +62,14 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   simple a 2nd time (7.5 lnL). v7 budget (3P, 6 seeds): simple α̂ 1.57±0.35 (2/6 flat-top edges), **BE α̂
   1.462±0.042 interior 6/6 — the physical model's best-conditioned number**; Newton
   +100±9/+104±5; w_rad=0.20 12/12; **BE-over-simple lead NOT significant (+3.3±2.2 SE) —
-  no ν-family discrimination**. LAST GATE = v7 data-bootstrap (TODO #2d, 3I machinery on
-  v7) → then paper assembly. Also explain physical model's α>1 preference (flagged in
-  NOTES; BE-EFE weakness rationalizes only part). γ≈82° perpendicular excess = last
-  unexplained structure (TODO #2e, non-blocking if disclosed).** Paper
+  no ν-family discrimination**. Error budget COMPLETE (3P+3Q): **FINAL v7 numbers:
+  simple α = 1.52 ± 0.46, BE α = 1.54 ± 0.13; Newton loses in all 1000 bootstrap
+  replicates (min +38/+59)**. The α>1 tension (BE ~4σ above the parameter-free 1.0 under
+  the physical model; σ_m model gave 1.21±0.30) is the headline interpretive question —
+  HIGHEST-LEVERAGE NEXT: g_ext scan (TODO #2f; tables fixed at 1.9a₀ since 2G; weaker
+  local field ⇒ α̂ falls toward 1). γ≈82° excess = last unexplained structure (TODO #2e,
+  non-blocking). NEXT SESSION: g_ext scan, then paper assembly from PAPER-DRAFT.md +
+  NOTES Stages 3B→3Q.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the radial-excess population discovery + U-shaped γ
   (standalone), triples-exoneration, realization systematic, BE identity.

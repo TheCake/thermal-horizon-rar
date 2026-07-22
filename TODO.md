@@ -24,13 +24,16 @@
    (physical bound ceiling v·√s≈2.2 well inside the 5 M⊙ catalog cut ≈3.0); acceptance
    applied to model + templates; tail residuals vanish (+376 lnL); **α INVARIANT
    (interior 1.5, Newton +98/+105); w_rad strengthens; BE leads simple 2nd time (7.5)**.
-2d. **v7 error budget** — realization half DONE (Stage 3P, 6 seeds): simple α̂ 1.57±0.35
-   (2/6 flat-top edge hits), **BE α̂ 1.462±0.042 (interior 6/6 — remarkably
-   well-conditioned)**, Newton +100±9/+104±5, w_rad=0.20 in 12/12; **BE-over-simple lead
-   NOT significant (+3.3±2.2 SE, sign flips)**. REMAINING: data-bootstrap half (3I
-   machinery on the v7 model, save per-grid p vectors for seed 31 → 1000 replicates) →
-   then quote α ± (combined) and assemble the paper. Also explain the physical model's
-   α>1 preference (EFE mismatch? residual ingredient?) — flagged in NOTES.
+2d. ~~**v7 error budget**~~ — DONE (3P seeds + 3Q bootstrap). **FINAL v7 numbers:
+   simple α = 1.52 ± 0.46; BE α = 1.54 ± 0.13; Newton loses in all 1000 replicates
+   (min +38/+59).** Fit program v1→v7 complete.
+2f. **g_ext scan** ← **HIGHEST-LEVERAGE NEXT COMPUTATION** — the EFE tables have used
+   g_ext = 1.9a₀ fixed since Stage 2G; the v7 α = 1.54 ± 0.13 (BE) sits ~4σ above the
+   parameter-free 1.0, and a weaker true local field would push α̂ down toward 1.
+   Regenerate EFE tables for g_ext ∈ {1.4, 1.6, 1.9, 2.2, 2.4}a₀
+   ([calcs/qumond_efe_solver.py](calcs/qumond_efe_solver.py)), rerun the v7 fit per
+   table, profile α vs g_ext. Decides whether the α>1 tension is an EFE-calibration
+   artifact or physics.
 2e. **The γ≈82° perpendicular excess** (ṽ≈0.07 and ≈1.66 cells, wide bins, z≈+5, present
    in every model) — the last unexplained structure. Candidates: genuinely circular
    sub-population entering only at wide s (formation?), resolved-triple outer pairs,

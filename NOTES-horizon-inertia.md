@@ -890,6 +890,28 @@ acceptance; f_pm fixed 1.5). [data/stage3p_summary.txt](data/stage3p_summary.txt
    still leans on α. For the BE reading specifically: α=1.46 with the BE-EFE being ~4% weaker
    than simple-ν partially rationalizes BE α̂ > 1, but not to 1.46 — flag, don't spin.
 
+## Stage 3Q: v7 bootstrap — the error budget completes; α = 1.54 ± 0.13 (BE), and the α>1 tension becomes the headline question (2026-07-23 morning, [calcs/stage3q_v7boot.py](calcs/stage3q_v7boot.py))
+
+1000 bootstrap replicates against the stored seed-31 v7 grid ([data/stage3q_summary.txt](data/stage3q_summary.txt)):
+
+- simple: α̂ = 1.52 ± 0.30 (boot) ⊕ 0.35 (real.) → **α = 1.52 ± 0.46**; interior 792/1000;
+  Newton +101.0 ± 19.2 (min +38.5).
+- BE: α̂ = 1.54 ± 0.12 (boot) ⊕ 0.042 (real.) → **α = 1.54 ± 0.13**; interior 953/1000;
+  Newton +106.3 ± 14.6 (min +59.3).
+
+**Newton loses in all 1000 replicates for both laws.** TODO #2d is closed; the fit
+program (v1→v7, Stages 3B→3Q) is complete.
+
+The interpretive centerpiece the paper must own: under the most physical model the BE-law
+α is measured PRECISELY, and it is ~4σ above the parameter-free α=1 — while the
+phenomenological σ_m model gave 1.21 ± 0.30 (consistent with 1). Candidate explanations,
+in order of checkability: (1) **g_ext = 1.9a₀ has never been varied** — the EFE table's
+external-field strength was fixed at Stage 2G; a weaker true local field ⇒ stronger boost
+⇒ α̂ falls toward 1. A g_ext scan (1.4–2.4a₀) is the single highest-leverage next
+computation. (2) Residual model ingredient leaning on α (the γ≈82° excess is still
+unfit). (3) Real physics: the binary-regime boost genuinely exceeds the
+galactic-calibrated law. Do not pick a favorite in print; scan g_ext first.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

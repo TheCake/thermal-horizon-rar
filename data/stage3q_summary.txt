@@ -1,0 +1,7 @@
+STAGE 3Q v7 bootstrap: seed 31 grid, 1000 replicates
+simple: boot alpha_hat = 1.520 +/- 0.300 (16-84%: [1.20, 2.00]); interior 792/1000
+simple: boot Newton dlnL = 101.0 +/- 19.2 (min 38.5)
+simple: COMBINED alpha sigma (boot + realization 0.35) = 0.461  ==> alpha = 1.52 +/- 0.46
+BE: boot alpha_hat = 1.539 +/- 0.119 (16-84%: [1.46, 1.59]); interior 953/1000
+BE: boot Newton dlnL = 106.3 +/- 14.6 (min 59.3)
+BE: COMBINED alpha sigma (boot + realization 0.042) = 0.126  ==> alpha = 1.54 +/- 0.13
