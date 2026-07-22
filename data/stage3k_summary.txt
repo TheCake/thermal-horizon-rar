@@ -1,0 +1,22 @@
+STAGE 3K v5 fit (physical companion continuum, NO sigma_m), grids:
+alpha=[0.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0]
+eta=[0.8, 1.05, 1.3]
+f_comp=[0.0, 0.1, 0.2, 0.3, 0.45, 0.6]
+f_c0=[0.0, 0.02, 0.1]
+seed 31; T_supp=17.8 yr; A_res=130.0 AU
+
+overluminous-consistency: f_c * 0.111 vs measured 0.123 -> f_c ~ 1.11 would match
+simple: 3.0 min
+  best: alpha=1.25, eta=1.3, f_comp=0.1, f_c0=0.1
+  best total lnL: -41063.3
+  alpha profile: [-119.8, -81.9, -48.5, -27.3, -18.9, 0.0, -8.7, -37.8, -20.2]
+  interior max: True
+  Newton dlnL: +119.8
+  f_comp profile: [-795.8, 0.0, -380.3, -920.1, -1873.2, -3000.7]
+BE: 3.0 min
+  best: alpha=1.75, eta=1.3, f_comp=0.1, f_c0=0.1
+  best total lnL: -41075.1
+  alpha profile: [-108.1, -70.8, -47.2, -28.7, -7.3, -9.1, -0.7, 0.0, -13.2]
+  interior max: True
+  Newton dlnL: +108.1
+  f_comp profile: [-938.5, 0.0, -371.1, -898.2, -1861.4, -2988.9]

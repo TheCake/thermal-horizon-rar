@@ -635,6 +635,48 @@ NOT safe — the s-dependence that survived the s-INDEPENDENT smear could be par
 an s-DEPENDENT one.** This is now the sharpest known threat to the result and the next
 mandatory computation (supersedes the generic TODO #2b phrasing).
 
+## Stage 3K: v5 physical-multiplicity fit — α SURVIVES; hidden triples disfavored (2026-07-22 morning, [calcs/stage3k_v5fit.py](calcs/stage3k_v5fit.py))
+
+The decisive test from 3J: replace σ_m entirely with a physical companion continuum
+(per-star fraction f_comp gridded 0→0.6; q~U(0.1,1); Raghavan lognormal periods; Kepler
+a_in; unresolved <130 AU + stability <a/5 cuts; PM-averaging suppression S=min(1,P/17.8yr);
+signed reflex wobble from both components; hidden-mass boost). This channel's broadening
+GROWS with s — if multiplicity were faking the signal, f_comp would run high and α → 0.
+Summary: [data/stage3k_summary.txt](data/stage3k_summary.txt), cubes data/hier5_cube_*.npy.
+
+| law | α̂ | interior? | Newton ΔlnL | f̂_comp | total lnL vs v4-σ_m |
+|---|---|---|---|---|---|
+| simple | 1.25 | YES | +119.8 | 0.10 | **−417** |
+| BE | 1.75 (flat 1.0–2.0) | YES | +108.1 | 0.10 | **−427** |
+
+Findings:
+1. **α does NOT collapse under the s-dependent broadening channel.** It stays interior at
+   ≥1 (and drifts UP, because companions under-supply the broadening the data need, mildly
+   re-opening the old absorption direction). Newton rejection grows to +108/+120.
+2. **The companion model fits ~420 lnL WORSE than the phenomenological σ_m smear** on the
+   same data/seed — the wobble+hidden-mass shape (heavy tail, s-growing) is the wrong
+   shape; the data want smooth, s-independent, log-symmetric broadening.
+3. **The ṽ data cap f_comp at 0.10** (0.20 costs −380, 0.30 costs −920) while the
+   photometric census (12.3% overluminous) would need f_c ≈ 1.1 under this model's
+   q-uniform assumption — i.e., real companions are mostly in configurations this wobble
+   channel suppresses (short-P, PM-averaged), and the velocity data independently forbid
+   the rest from being large. **The Clarke-style "hidden triples fake the wide-binary
+   anomaly" hypothesis is disfavored by shape, by amplitude, and by α's survival.**
+4. Model-crudeness caveats: S(P) kernel is rough, M_h=M_s/2, q-uniform, resolved-companion
+   selection approximated. A determined skeptic can tune the population; the reply is that
+   the fit was free to use the channel at any strength and declined at −420 lnL.
+
+**σ_m's physical identity remains open.** Refuted: mass errors (3J), companion wobble (3K).
+Leading remaining candidate: eccentricity-distribution SHAPE beyond our power-law family
+(a smooth ṽ-widener at all s) — measurable directly on the data via Hwang's v-angle method
+(TODO #15, now promoted: it closes the last systematic AND is a standalone result).
+
+Credence update (2026-07-22, post-3K): wide-binary excess is real physics: **~70%** (the
+canonical killer hypothesis was given a physical channel and the data rejected it).
+Low-acceleration anomaly is one law (galaxies+binaries): ~60%. α ≈ 1 (given excess is
+real): ~75% within ±0.3. Horizon/BE microphysics specifically: ~15–20% (unchanged — needs
+NLO=½ and a₀∝H(z) tests, not more binary fits).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
