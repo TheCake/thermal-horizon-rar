@@ -1218,6 +1218,69 @@ microphysics stays ~20–25% (the feared SPARC simple-lean evaporated — relaxi
 but no positive discrimination appeared either; net wash). All wide-binary numbers
 untouched (this stage is galaxy-side).
 
+## Stage 4F: the bath matrix — simple-ν IS the classical bath; the ¼-branch tested and disfavored (2026-07-23, [calcs/stage4f_bathmatrix.py](calcs/stage4f_bathmatrix.py))
+
+Theory-driven stage: taking the Planck-oscillator reading seriously generates a 2×2
+matrix of bath laws (occupation statistics × mode-frequency prescription), and it turns
+out we had been testing three of its four cells without knowing:
+
+| | source-driven ω ~ √(g_N a₀) | self-consistent ω ~ g_tot |
+|---|---|---|
+| **quantum (Planck n)** | BE/RAR: ν = 1+n_BE(√y) — c₁=½, c₂=1/12 | **boot: ν = 1+n_BE(νy) — c₁=¼, c₂=7/96 (NEW)** |
+| **classical (n = kT/ℏω)** | ν = 1+1/√y — c₁=1 (Cassini-dead a priori) | **ν = ½+√(¼+1/y) = EXACTLY simple-ν** |
+
+**The identity in the lower-right cell is exact and (pending scout) possibly unremarked:
+solving classical equipartition self-consistently, ν = 1 + 1/(νy), gives νy² − νy… →
+ν = ½ + √(¼ + 1/y) — the Famaey–Binney "simple" function, the empirical workhorse of
+the MOND literature, derived in two lines as a classical thermal bath.** Consequence:
+the BE-vs-simple stalemate (4B/4E, wide binaries 3V) is secretly the question "is the
+bath quantum or classical at the transition?" — and the ½ that 4B confirmed has TWO
+readings (zero-point occupation, or self-consistency algebra), which tempers 4D's
+"detected the vacuum half-quantum" rhetoric into "confirmed the ½-branch, whose two
+members are the two thermal-bath readings."
+
+The untested cell — the self-consistent QUANTUM bath ("boot", solved per point by
+seeded Newton iteration; gates: series c₁ = 0.2500 exact / c₂ = 0.0741 vs 7/96 = 0.0729
+✓, solver residual 5e-15 ✓, exact regression to 4E fiducials ✓) — was fit under BOTH
+likelihood treatments ([data/stage4f_bathmatrix.txt](data/stage4f_bathmatrix.txt)):
+
+- **Raw χ² (4B objective): boot is dead-grade.** +4693…+12313 vs BE/simple across all
+  windows; galaxy bootstrap at y<1: boot beats BE in 4/200, simple in 7/200. It does
+  beat standard-μ everywhere (−2746…−7874) — ¼ > 0.
+- **Scatter-marginalized joint (4E objective): boot is disfavored, not dead.** Fiducial
+  Δ(−2lnL): +27.3 vs BE, +8.6 vs simple, −28.5 vs standard; bootstrap +25.8 ± 61.6
+  (boot better in 62/200) and +5.6 ± 74.1 (89/200). Spreads are 4× the BE−simple
+  spread — partly genuine (boot's residual pattern is more galaxy-lumpy), possibly
+  optimizer-jitter-inflated (caveat logged; point estimates match bootstrap means, so
+  no systematic bias). Boot also drags f_ML up (1.40 fiducial; 1.58–1.84 raw windows) —
+  the same buying-shape-with-M/L tell that marked standard-μ.
+- Both treatments AGREE IN SIGN: the ¼-branch loses to both ½-branch members.
+- CSD (classical/source-driven, c₁=1): best raw fit in the deep windows (the known
+  deep-end upturn likes extra boost) but worst overall (−8169 honest, +228 vs BE) and
+  solar-system-dead independently — included only to complete the matrix.
+
+**The c₁ dose-response now has four tested points: c₁ = 0 dead (4B), ¼ disfavored (4F),
+½ preferred (4B/4E, both members), 1 screened out (4F + Cassini). The likelihood along
+the branch axis peaks at ½.** (Caveat: these functions differ beyond c₁ — high-y
+behavior varies from e^−y to 1/√y — so this is a function-family ranking, not a pure
+coefficient scan.)
+
+Fantasy scoreboard (the reading stays a reading): within the thermal picture, the
+SOURCE-DRIVEN frequency prescription — C&T's original — survives its first structured
+alternative; the quantum-vs-classical bath question is exactly the rung-2 discriminator
+and stays parked with it (4E: 0.1σ reach). Priority scout (Haiku, 12 searches): **no
+exact match found for either result** — not the ν = 1+1/(νy) ⇒ simple-ν identity, not
+the BE bootstrap/¼-branch. Nearest art: the equipartition-on-holographic-screen family
+(Pazy & Argaman arXiv:1106.4108; Debye-entropic arXiv:1206.1030, 1302.4411 — modified
+equipartition on a screen, NOT self-consistent mode frequency) and a 2024 "Timeflow
+Gravity" paper (IOP) claiming simple-μ as a thermodynamic equilibrium form — **full-text
+checks owed at write time on Timeflow-2024 and Zhao astro-ph/0512425** (whose √(1+4x)
+is probably just simple-family algebra, but verify). C&T's own derivation is
+source-driven (our 4C primary read), so the bootstrap cell is not theirs. All novelty
+claims stay PROVISIONAL until the write-time INSPIRE pass (thrice-learned rule).
+Credences: BE microphysics unchanged ~20–25% (its prescription survived a rival; its
+statistics remain untested vs classical).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

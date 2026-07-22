@@ -60,17 +60,21 @@ mass cross-calibration at the ~0.02-dex level, or Gaia DR4), and a₀ ∝ H(z).
   zero-point form and its reading (Newton = frozen vacuum response); the
   Bernoulli-ladder statement; the first coefficient test (4B) and its
   power-analysis (4A); the dual-likelihood branch re-test and the rung-2
-  lensing power analysis with its honest null (4E); the entire wide-binary
-  program (Stages 2–3V); the U-shaped γ measurement; the realization
-  systematic; the screening-index p; the g_N,ext convention analysis
-  (AQUAL-total vs QUMOND-Newtonian inputs).
+  lensing power analysis with its honest null (4E); the bath matrix — the
+  simple-ν-as-classical-bath identity and the ¼-branch test (4F, scout
+  pending); the entire wide-binary program (Stages 2–3V); the U-shaped γ
+  measurement; the realization systematic; the screening-index p; the
+  g_N,ext convention analysis (AQUAL-total vs QUMOND-Newtonian inputs).
 
 ### Section skeleton → assets (assemble from NOTES next session)
 
 1. **Introduction** — anomaly framing; the Chae/Banik/P&S three-way split as
    motivation for a systematics-first re-measurement.
 2. **The structure of the RAR** — C&T attribution; coth/zero-point; Bernoulli
-   ladder (sympy-verified); what is and is not claimed. [Stage 4C/4D notes]
+   ladder (sympy-verified); the bath matrix as a table (simple-ν = exact
+   classical self-consistent bath ⇒ BE-vs-simple = quantum-vs-classical;
+   the ½'s two readings honestly stated); what is and is not claimed.
+   [Stage 4C/4D/4F notes; INSPIRE pass owed on the simple-ν derivation]
 3. **Screening index** — ν_p family, p = 0.443 (+0.063/−0.050), Cassini p > 0.234.
    [calcs/sparc_rar_fit.py — M/L marginalization still owed]
 4. **Coefficient tests, SPARC + lensing RAR** — 4A estimator + honest

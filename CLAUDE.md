@@ -86,8 +86,14 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   Mistele+24 + Brouwer+21 KiDS data fetched (data/lensing_rar/); HONEST NULL — resolving
   power 0.09–0.10σ (0.2-dex lensing mass systematic is the wall; needs 0.02 dex or DR4);
   within-branch BE−simple −19±15, carried by 3/153 galaxies = no verdict; Newton
-  +2777/+1659 on 15 lensing points alone; correction #8 logged.
-  NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4E; open
+  +2777/+1659 on 15 lensing points alone; correction #8 logged. Bath matrix (4F,
+  [calcs/stage4f_bathmatrix.py](calcs/stage4f_bathmatrix.py)): **simple-ν IS the exact
+  classical self-consistent thermal bath (ν=1+1/(νy) ⇒ ½+√(¼+1/y); scout/INSPIRE pass
+  pending) — BE-vs-simple = quantum-vs-classical bath**; the new quantum-bootstrap
+  ¼-branch (c₁=¼, c₂=7/96) tested: dead-grade raw (4–7/200), disfavored honest
+  (+27/+9), sign-consistent; c₁ dose-response peaks at ½ (0 dead, ¼ disfavored, ½
+  preferred, 1 Cassini-dead).
+  NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4F; open
   items disclosed in TODO (γ≈82°, Chae text, NNLO=parked, a₀∝H(z), #6, #7, #8).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the radial-excess population discovery + U-shaped γ

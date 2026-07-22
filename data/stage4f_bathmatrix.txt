@@ -1,0 +1,41 @@
+STAGE 4F bath matrix: 153 galaxies, 2700 SPARC points + 12 lensing points (4E fiducial config)
+        BE: quantum/source (c1=1/2, c2=1/12)
+    simple: classical/self-consistent (c1=1/2, c2=1/8)
+      boot: quantum/self-consistent (c1=1/4, c2=7/96)
+  standard: dead-branch control (c1=0)
+       CSD: classical/source (c1=1; Cassini-dead a priori)
+
+G1 series: c1 = 0.2500 (pred 0.2500), c2 = 0.0741 (pred 0.0729) -> OK
+G2 solver: max|F| = 4.71e-15; nu*sqrt(y)@1e-10 = 1.000003 (->1); nu(100)-1 = 0.0e+00 -> OK
+
+(a) RAW chi2 (4B objective, (a0,f_ML) free):
+  [y<0.5]       BE: chi2=  83646.4  a0=8.971e-11  f_ML=1.46
+  [y<0.5]   simple: chi2=  83272.0  a0=9.081e-11  f_ML=1.42
+  [y<0.5]     boot: chi2=  88339.4  a0=8.968e-11  f_ML=1.84
+  [y<0.5] standard: chi2=  91084.8  a0=9.562e-11  f_ML=2.01
+  [y<0.5]      CSD: chi2=  79454.1  a0=8.343e-11  f_ML=1.09
+  [y<0.5] boot - BE =   +4693.0 | boot - simple =   +5067.4 | boot - standard =   -2745.5
+  [y<1  ]       BE: chi2= 114979.7  a0=1.057e-10  f_ML=1.25
+  [y<1  ]   simple: chi2= 114182.7  a0=1.070e-10  f_ML=1.21
+  [y<1  ]     boot: chi2= 124034.1  a0=1.060e-10  f_ML=1.58
+  [y<1  ] standard: chi2= 128878.2  a0=1.136e-10  f_ML=1.71
+  [y<1  ]      CSD: chi2= 107515.3  a0=9.780e-11  f_ML=0.93
+  [y<1  ] boot - BE =   +9054.4 | boot - simple =   +9851.4 | boot - standard =   -4844.2
+  [y<30 ]       BE: chi2= 153954.7  a0=1.206e-10  f_ML=1.10
+  [y<30 ]   simple: chi2= 153826.0  a0=1.234e-10  f_ML=1.05
+  [y<30 ]     boot: chi2= 166139.0  a0=1.246e-10  f_ML=1.36
+  [y<30 ] standard: chi2= 174013.2  a0=1.411e-10  f_ML=1.38
+  [y<30 ]      CSD: chi2= 156367.9  a0=1.089e-10  f_ML=0.81
+  [y<30 ] boot - BE =  +12184.3 | boot - simple =  +12313.0 | boot - standard =   -7874.2
+  raw bootstrap (y<1, 200 reps): boot beats BE in 4/200; boot beats simple in 7/200
+
+(b) SCATTER-MARGINALIZED joint SPARC+lensing (4E fiducial):
+        BE: -2lnL =   -8397.72  a0=9.947e-11  f_ML=1.16  s_int=0.122  dlt=+0.133
+    simple: -2lnL =   -8379.01  a0=1.022e-10  f_ML=1.11  s_int=0.122  dlt=+0.122
+      boot: -2lnL =   -8370.46  a0=1.045e-10  f_ML=1.40  s_int=0.123  dlt=+0.128
+  standard: -2lnL =   -8341.95  a0=1.165e-10  f_ML=1.43  s_int=0.124  dlt=+0.096
+       CSD: -2lnL =   -8169.32  a0=9.072e-11  f_ML=0.87  s_int=0.128  dlt=+0.139
+  G3 regression vs 4E fiducial: BE -8397.72 (ref -8397.72), simple -8379.01 (ref -8379.01), standard -8341.95 (ref -8341.95) -> OK
+  Delta(-2lnL): boot - BE = +27.27 | boot - simple = +8.55 | boot - standard = -28.51 | CSD - BE = +228.41
+  bootstrap (200 reps): boot - BE = +25.83 +/- 61.64 (boot better in 62/200)
+                        boot - simple = +5.59 +/- 74.12 (boot better in 89/200)

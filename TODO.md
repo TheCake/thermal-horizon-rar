@@ -90,6 +90,17 @@
 14. High-z rotation curves (JWST/ALMA): a₀ ∝ H(z) vs constant — the BE reading's kill test.
 15. Wide-binary eccentricity distribution at 10–50 kAU (the η=edge hint): measurable with
     Hwang's v-angle method on the EDR3 catalog — possible standalone paper.
+17. ~~**The bath matrix / ¼-branch test**~~ — DONE (Stage 4F,
+    [calcs/stage4f_bathmatrix.py](calcs/stage4f_bathmatrix.py)). The thermal reading's
+    2×2 matrix (statistics × frequency prescription): **simple-ν IS the classical
+    self-consistent bath (exact two-line identity — priority scout pending)**; the new
+    quantum-bootstrap cell (c₁=¼, c₂=7/96) is **dead-grade under raw χ² (4–7/200),
+    disfavored under the honest likelihood (+27/+9, 62–89/200), sign-consistent**;
+    c₁ dose-response peaks at ½ (0 dead, ¼ disfavored, ½ preferred, 1 screened out).
+    BE-vs-simple = quantum-vs-classical bath = rung 2, still parked. Scout: no exact
+    prior for either result; residue = write-time full-text checks on Timeflow-2024
+    (IOP, claims simple-μ as thermodynamic equilibrium) + Zhao astro-ph/0512425, and
+    the INSPIRE pass.
 16. ~~**The Bernoulli-ladder test on the lensing RAR**~~ — DONE (Stage 4E,
     [calcs/stage4e_lensing_rar.py](calcs/stage4e_lensing_rar.py)). Both public datasets
     fetched (Mistele+24 Table 1 exact-deprojection = primary; Brouwer+21 ESD+covariance
