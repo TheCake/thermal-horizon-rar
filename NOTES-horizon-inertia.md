@@ -987,6 +987,45 @@ before the paper: re-run 3P/3Q budgets at g=1.2 (mechanical), verify Chae's exac
 scales UP to ~65% (the α=1 consilience at the physical field is exactly its prediction);
 BE microphysics recovers to ~15–20% (the 3S "BE tension" was the convention artifact).
 
+## Stage 4A/4B: the NLO kill test — the ½-branch survives; the 0-branch dies (2026-07-23, [calcs/stage4a_nlo_test.py](calcs/stage4a_nlo_test.py), [calcs/stage4b_branchcomp.py](calcs/stage4b_branchcomp.py))
+
+The BE identity's first kill test (TODO #9): deep-MOND expansion g = √(g_N a₀)(1 + c₁x +
+c₂x² + …), x=√(g_N/a₀); BE predicts c₁ = ½ exactly (shared with simple-ν; the standard-μ
+branch predicts c₁ = 0; they differ at c₂: BE 1/12, simple 1/8, standard 1/4).
+
+**4A (truncated-expansion estimator): INCONCLUSIVE by design flaw then by power.** First
+attempt was ill-conditioned (a₀–c₁–c₂ collinearity; fitted a₀ 3e-11 nonsense — caught
+immediately). The two-step asymptotic-matching v2 is honest but power-limited: c₁ to
+±0.4–0.6 with window see-saw (x vs x² are ~99% collinear over one window) and f_ML
+edge-hopping. SPARC cannot measure c₁ through a truncated series. [data/stage4a_nlo.txt](data/stage4a_nlo.txt).
+
+**4B (truncation-free full-function comparison): DECISIVE.** Fit complete ν-functions
+with only (a₀, f_ML) free; galaxy-bootstrap sign-stability:
+
+| window | ΔlnL-proxy Δχ²(BE−standard) | BE better in | Δχ²(BE−simple) |
+|---|---|---|---|
+| y<0.5 | −7439 | 198/200 | +374 |
+| y<1.0 | −13899 | **200/200** | +797 |
+| all | −20059 | 199/200 | +129 |
+
+- **The c₁=½ branch defeats the c₁=0 branch at 198–200/200 bootstrap stability** (raw Δχ²
+  magnitudes inflated by underestimated per-point errors — quote the bootstrap fraction,
+  not σ). Standard-μ also drags f_ML to 1.7–2.0 (unphysical) trying to fake the shape.
+  **The BE identity's parameter-free NLO prediction PASSES its kill test; the rival
+  branch is excluded on the low-acceleration side** (localizing what the Wien-tail/
+  high-y arguments said before to the deep-MOND expansion structure itself).
+- Within-branch (BE vs simple, NNLO 1/12 vs 1/8): small sign-consistent lean toward
+  simple (+129…+797) — NOT resolved; stays open (consistent with Stage-1's
+  p = 0.443 +0.063/−0.050 sitting 1.1σ below the BE p=½).
+- Bonus consilience: full-sample fit gives a₀ = 1.206e-10, f_ML = 1.10 — canonical
+  values recovered with nothing pinned.
+
+Kill-test scoreboard for the BE identity: **NLO=½: PASSED (branch-level).**
+a₀ ∝ H(z): awaiting high-z data (TODO #14). NNLO (1/12 vs 1/8): open, needs better
+low-y data or a dedicated estimator. Credence (BE microphysics specifically): 15–20% →
+**~20–25%** (it faced a falsifier and the alternative branch died instead; capped
+because the test doesn't separate BE from simple within the branch).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

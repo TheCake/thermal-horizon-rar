@@ -68,8 +68,12 @@
 8. **Two-field BE theory** — a proper Lagrangian whose EFE structure follows from the
    occupation postulate (the sphericalized QUMOND solve is a stand-in); predict the
    anisotropic (curl) component; feed back through the orbit engine.
-9. **NLO test** — the identity predicts the next-to-leading RAR coefficient = 1/2 exactly;
-   test on SPARC with M/L marginalized (extends [calcs/sparc_rar_fit.py](calcs/sparc_rar_fit.py)).
+9. ~~**NLO test**~~ — DONE (Stages 4A/4B). Truncated-expansion estimator is power-limited
+   on SPARC (c₁ ± 0.4–0.6, honest null); the truncation-free full-function branch
+   comparison is decisive: **c₁=½ branch (BE/simple) beats c₁=0 branch (standard-μ) in
+   198–200/200 galaxy bootstraps — the BE identity's parameter-free NLO prediction
+   PASSED its kill test**; within-branch (NNLO 1/12 vs 1/8) unresolved, slight simple
+   lean. a₀=1.206e-10, f_ML=1.10 recovered free. Remaining BE kill test: a₀∝H(z) (#14).
 
 ## Publication path
 10. **Paper assembly** from [PAPER-DRAFT.md](PAPER-DRAFT.md) once items 1–5 land.

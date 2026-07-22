@@ -1,0 +1,17 @@
+STAGE 4B branch comparison: 153 galaxies, 2700 points
+full-nu fits, (a0, f_ML) free; windows in y (fiducial a0)
+  [y<0.5]       BE: chi2=  83646.4  a0=8.971e-11  f_ML=1.46  (n=1767)
+  [y<0.5]   simple: chi2=  83272.0  a0=9.081e-11  f_ML=1.42  (n=1767)
+  [y<0.5] standard: chi2=  91084.8  a0=9.562e-11  f_ML=2.01  (n=1767)
+  [y<0.5] Delta-chi2 (BE - standard) = -7438.5 (negative = BE better); BE better in 198/200 bootstraps
+  [y<0.5] Delta-chi2 (BE - simple)   = +374.4
+  [y<1.0]       BE: chi2= 114979.7  a0=1.057e-10  f_ML=1.25  (n=2073)
+  [y<1.0]   simple: chi2= 114182.7  a0=1.070e-10  f_ML=1.21  (n=2073)
+  [y<1.0] standard: chi2= 128878.2  a0=1.136e-10  f_ML=1.71  (n=2073)
+  [y<1.0] Delta-chi2 (BE - standard) = -13898.6 (negative = BE better); BE better in 200/200 bootstraps
+  [y<1.0] Delta-chi2 (BE - simple)   = +797.0
+  [all y]       BE: chi2= 153954.7  a0=1.206e-10  f_ML=1.10  (n=2693)
+  [all y]   simple: chi2= 153826.0  a0=1.234e-10  f_ML=1.05  (n=2693)
+  [all y] standard: chi2= 174013.2  a0=1.411e-10  f_ML=1.38  (n=2693)
+  [all y] Delta-chi2 (BE - standard) = -20058.6 (negative = BE better); BE better in 199/200 bootstraps
+  [all y] Delta-chi2 (BE - simple)   = +128.7
