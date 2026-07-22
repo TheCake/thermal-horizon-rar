@@ -55,12 +55,16 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   broadening: w_rad=0.20 interior both laws (+129/+141) — a ~20% near-parabolic (e>0.9)
   sub-population; all contaminant fences localize; f_pm minor; α interior at 1.5 (span
   across broadening models: α̂ 1.0–1.5 — report the span); Newton +93/+102; first
-  BE-over-simple lead (8.7 lnL, near noise). TOP REMAINING SYSTEMATIC (TODO #2c/v7):
-  emulate the catalog's R_chance/boundedness culling of high-Δμ pairs (model overpredicts
-  ṽ≈5 cells, z≈−6) then redo the error budget for the v6b model.** Paper leads with:
-  1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5, Newton
-  +55…+112 always), the radial-excess population discovery + U-shaped γ (standalone),
-  triples-exoneration, realization systematic, BE identity.
+  BE-over-simple lead (8.7 lnL, near noise). v7 (3O, [calcs/stage3o_v7fit.py](calcs/stage3o_v7fit.py))
+  closed the catalog-selection systematic (envelope measured from data: physical bound
+  ceiling v·√s≈2.2, catalog cut ≈3.0; acceptance on model+templates): **α INVARIANT
+  (interior 1.5, Newton +98/+105), w_rad strengthens, tail residuals gone, BE leads
+  simple a 2nd time (7.5 lnL). LAST GATE = v7 error budget (TODO #2d: 3H seeds + 3I
+  bootstrap on the v7 model; also tests if the BE lead survives). γ≈82° perpendicular
+  excess = last unexplained structure (TODO #2e, non-blocking if disclosed).** Paper
+  leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
+  Newton +55…+112 always), the radial-excess population discovery + U-shaped γ
+  (standalone), triples-exoneration, realization systematic, BE identity.
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.

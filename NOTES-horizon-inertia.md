@@ -816,6 +816,43 @@ cubes data/hier6b_cube_*.npy.
    ṽ≈1.25–1.66 with ORBITAL-looking angles (γ 38°–82°), not flyby-like ones — the
    anomaly's directions are bound-orbit directions.
 
+## Stage 3O: v7 — catalog selection closed; α invariant; the BE lead persists (2026-07-22 night, [calcs/stage3o_v7fit.py](calcs/stage3o_v7fit.py))
+
+First, the selection was MEASURED before modeled: the data's velocity envelope sits at
+v·√s ≤ 2.2 km/s·kAU^½ — the PHYSICAL escape ceiling of the heaviest pairs (bound orbits
+obey ṽ ≤ √2 identically; a virial identity worth writing down), well inside El-Badry's
+nominal Δμ_orbit cut (5 M⊙ escape + 2σ ≈ 3.0; every data pair below 80% of it). So the
+v6b ṽ≈5 overprediction was companion-wobble pairs the real catalog would have CULLED.
+v7 = v6b + that acceptance applied to model pairs and both contamination templates.
+[data/stage3o_summary.txt](data/stage3o_summary.txt), cubes data/hier7_cube_*.npy.
+
+| law | α profile [0,.5,1,1.5,2] | Newton | w_rad | best lnL |
+|---|---|---|---|---|
+| simple | [−97.7,−29.8,−5.0,0,−4.9] | +97.7 | 0.20 | −56339.7 |
+| BE | [−105.1,−48.3,−22.3,0,−19.8] | +105.1 | 0.20 | **−56332.2** |
+
+1. **The selection systematic is closed and α is INVARIANT under it.** Total lnL improves
+   +376/+375 (the phantom tail mass removed); the ṽ≈5 residual cells vanish; the α
+   profiles are statistically unchanged from v6b. The feared bias (catalog cut punishing
+   high-boost models) is empirically ~nil at this grid resolution.
+2. **w_rad = 0.20 strengthens** (−196/−207 without it): the near-parabolic sub-population
+   is more demanded, not less, once the tail is handled honestly.
+3. **BE out-fits simple for the second consecutive model class (7.5 lnL after 8.7 in
+   v6b).** Same-realization, so not independent evidence — but the sign is stable under
+   two structural model changes. If it survives the v7 error budget over seeds, it is the
+   first shape-level discrimination between ν-families in the program.
+4. Newton's failure cells remain at ṽ≈1.25–1.66 with orbital angles — the anomaly is
+   untouched by selection modeling. Sixth→seventh model class, same verdict:
+   **Newton ΔlnL ≈ +93…+112, α interior every time.**
+5. Last unexplained structure: the γ≈82° perpendicular excess (cells at ṽ≈0.07 AND
+   ṽ≈1.66, wide bins, z≈+5) — present in every model generation. Everything else in the
+   2D space now fits.
+
+**v7 is the program's most complete model** — physical e-mixture, physical companions,
+two contaminants, catalog selection, noise scale, all localized interior — and the
+anomaly stands. Remaining before paper assembly: the v7-model error budget (seeds ×
+bootstrap, the 3H/3I machinery re-run on this model — the LAST gate) and the γ≈82° chase.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

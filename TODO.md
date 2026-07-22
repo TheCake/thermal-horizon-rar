@@ -19,14 +19,19 @@
    Full refutation chain: masses (3J) → companions (3K) → circular (3M) → radial excess
    CONFIRMED (3N). Remaining caveat: α̂ is model-dependent across broadening identities
    (1.0 with σ_m → 1.5 with w_rad); report the span.
-2c. **v7: emulate the catalog's R_chance/boundedness selection** ← **NOW THE TOP
-   SYSTEMATIC** — the v6b best model overpredicts ṽ≈5 cells (z≈−6): El-Badry's pipeline
-   culls high-Δμ pairs, a data-side cut we don't apply to the model, sitting exactly
-   where boost signatures live. Implement a ṽ-dependent acceptance in the model (read
-   El-Badry+21's chance-alignment construction for the exact form), refit v6b, and redo
-   the realization+bootstrap error budget for the v6b model (the ±0.23/0.30 was for the
-   σ_m model). Also: the γ≈82° column stays underfit — a perpendicular-excess population
-   to chase after v7.
+2c. ~~**v7: emulate the catalog's velocity-consistency selection**~~ — DONE (Stage 3O,
+   [calcs/stage3o_v7fit.py](calcs/stage3o_v7fit.py)): envelope measured from data first
+   (physical bound ceiling v·√s≈2.2 well inside the 5 M⊙ catalog cut ≈3.0); acceptance
+   applied to model + templates; tail residuals vanish (+376 lnL); **α INVARIANT
+   (interior 1.5, Newton +98/+105); w_rad strengthens; BE leads simple 2nd time (7.5)**.
+2d. **v7 error budget** ← **THE LAST GATE before paper assembly** — re-run the 3H
+   (6 seeds) + 3I (bootstrap) machinery on the v7 model; report α̂ ± (combined) and
+   whether the BE-over-simple lead (8.7, 7.5 lnL same-seed) survives across seeds.
+2e. **The γ≈82° perpendicular excess** (ṽ≈0.07 and ≈1.66 cells, wide bins, z≈+5, present
+   in every model) — the last unexplained structure. Candidates: genuinely circular
+   sub-population entering only at wide s (formation?), resolved-triple outer pairs,
+   or a projection/selection artifact. Standalone puzzle; not blocking the paper if
+   disclosed.
 3. ~~**Error budget on lnL**~~ — DONE (Stages 3H+3I). Realization (6 seeds): simple
    0.93±0.11, BE 1.30±0.15, interior 12/12, Newton +55±4. Bootstrap (1000 replicates):
    simple 0.98±0.20, BE 1.21±0.26, Newton +60±11 (min +30). **Combined: simple
