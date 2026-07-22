@@ -1,0 +1,34 @@
+STAGE 4K: solar EFE quadrupole from the validated Stage-2G solver
+units: r_M = 7032 AU; q unit a0/r_M = 1.141e-25 s^-2; Q2 = 3|q| * unit (B&N convention); anomaly scales linearly with alpha
+G2 Newton control: max|phi_2| = 0.00e+00 -> OK
+G5 analytic l=2 test: integrator q = -0.050654 vs exact -0.050654 (0.00%) -> OK
+  simple eN=1.0: q = -0.08394  plateau dev 1.3%
+  simple eN=1.2: q = -0.09779  plateau dev 1.7%  [G1 vs stored table: 0.00% OK]  [G4: hi-res q = -0.09775, 0.0% OK]
+  simple eN=1.4: q = -0.11100  plateau dev 2.0%
+      BE eN=1.0: q = -0.08504  plateau dev 0.5%
+      BE eN=1.2: q = -0.09878  plateau dev 0.6%  [G1 vs stored table: 0.00% OK]  [G4: hi-res q = -0.09875, 0.0% OK]
+      BE eN=1.4: q = -0.11171  plateau dev 0.8%
+
+Q2 [s^-2] = 3|q| * a0/r_M, scaled by the measured alpha:
+  simple: Q2 = 3.95e-26 +/- 3.9e-27 s^-2   (alpha 1.18+/-0.11; g_ext +/-0.05a0 -> +/-1.4e-27)
+      BE: Q2 = 3.82e-26 +/- 4.6e-27 s^-2   (alpha 1.13+/-0.13; g_ext +/-0.05a0 -> +/-1.3e-27)
+
+Comparison anchors (scout + primary abstracts, 2026-07-23):
+  Blanchet & Novak 2011 (arXiv:1010.1349, AQUAL, g_ext=1.9e-10 total,
+    Phi = -GM/r - (Q2/2) x^i x^j (e_i e_j - delta_ij/3)):
+    Q2 = 2.1e-27 ... 4.1e-26 s^-2 across mu-functions; their mu_1
+    (=simple) top end 4.1e-26 vs OUR QUMOND simple at the matched
+    physical config (e_N=1.2 Newtonian): 3.95e-26/alpha=3.35e-26 raw
+    -> cross-formulation agreement at the ~15% level (G6 PASS; also
+    validates the Stage-3T AQUAL-total vs QUMOND-Newtonian mapping).
+  Hees et al. 2014 (arXiv:1402.6950, 9 yr Cassini radio tracking):
+    Q2 = (3 +/- 3)e-27 s^-2  -> 2-sigma cap 9e-27.
+  VERDICT: our binary-calibrated Q2 = 3.8-4.0e-26 exceeds the Cassini
+  cap by ~4.3x (~12 sigma vs the measured value). Independent,
+  binary-calibrated reproduction of the Desmond-Hees-Famaey 2024
+  (arXiv:2401.04796) RAR-vs-Cassini tension (8.7 sigma fiducial) --
+  and their M/L + bulge escape routes do NOT apply to this version
+  (binaries: no bulges; mass errors measured at 2.4%, Stage 3J).
+  BE and simple give the SAME Q2 (1% apart): the quadrupole is
+  sourced in the transition region where the two nus are near-
+  identical -- the Wien tail does not rescue BE here.

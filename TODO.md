@@ -78,7 +78,10 @@
    comparison (their statistics-on-screens vs our occupation reading).
 8. **Two-field BE theory** — a proper Lagrangian whose EFE structure follows from the
    occupation postulate (the sphericalized QUMOND solve is a stand-in); predict the
-   anisotropic (curl) component; feed back through the orbit engine.
+   anisotropic (curl) component; feed back through the orbit engine. **Post-4K job
+   description: produce the binary boost (α≈1.15 at e_N=1.2) while keeping the solar
+   quadrupole under the Cassini cap Q₂ ≤ 9e-27 s⁻² — a 4.3× suppression that
+   AQUAL/QUMOND cannot deliver with RAR-compatible ν.**
 9. ~~**NLO test**~~ — DONE (Stages 4A/4B; caveat added by 4E). Truncated-expansion
    estimator is power-limited on SPARC (c₁ ± 0.4–0.6, honest null); the truncation-free
    full-function branch comparison: **c₁=½ branch (BE/simple) beats c₁=0 branch
@@ -88,6 +91,25 @@
    (NNLO 1/12 vs 1/8): no verdict in either treatment (the earlier "slight simple lean"
    was a raw-χ² artifact — retracted in 4E). a₀=1.206e-10 (raw) / 1.00e-10 (honest
    likelihood), f_ML ≈ 1.1 recovered free. Remaining BE kill test: a₀∝H(z) (#14).
+
+18. **MI-vs-MG on our own data — THE post-4K question.** Stage 4K showed the
+    modified-gravity (AQUAL/QUMOND) reading of our boost predicts a solar quadrupole
+    4× over the Cassini cap (binary-calibrated DHF-2024 tension; escapes: modified
+    inertia or EFE-screened theories). Milgrom's modified-inertia predicts
+    TRAJECTORY-DEPENDENT boosts (circular vs radial orbits differ) and no EFE
+    quadrupole of the capped type. Our 2D (ṽ×γ) likelihood + fitted e-mixture +
+    the 4J perpendicular ceiling are exactly the discriminating instrument: implement
+    an e-dependent/phase-dependent boost variant in the orbit engine, refit v7,
+    compare lnL vs the MG (field-side) boost. Apparently nobody has run an MI-vs-MG
+    test on binary eccentricity structure (scout owed). 1–2 GPU evenings.
+19. ~~**Solar quadrupole from our solver**~~ — DONE (Stage 4K,
+    [calcs/stage4k_quadrupole.py](calcs/stage4k_quadrupole.py)): Q₂ = 3.9e-26·(α/1.15)
+    s⁻² for BOTH families (transition-sourced, family-blind); exceeds Hees+ 2014
+    Cassini (3±3)e-27 by ~4.3× — independent binary-calibrated reproduction of the
+    Desmond–Hees–Famaey 2024 tension, immune to their M/L + bulge escapes; solver
+    cross-validated against Blanchet–Novak μ₁ at 15% (G6). MOND-Planet-9 mechanism
+    (2304.00576) runs on the same capped term — disfavored. Full credence
+    bookkeeping in NOTES 4K.
 
 ## Publication path
 10. **Paper assembly** from [PAPER-DRAFT.md](PAPER-DRAFT.md) once items 1–5 land.

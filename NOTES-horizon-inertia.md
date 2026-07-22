@@ -1418,6 +1418,68 @@ signature of the boost: eleven perpendicular-moving pairs that Newton forbids an
 DR4 multiplies the band's N by ~10. Paper: new §7 subsection "the perpendicular
 ceiling" with the caveats verbatim.
 
+## Stage 4K: the solar quadrupole — our own boost, fed to our own solver, breaks Saturn (2026-07-23, [calcs/stage4k_quadrupole.py](calcs/stage4k_quadrupole.py))
+
+The Planet-9/Oort question ("can our numbers predict outer-solar-system dynamics?")
+turned into the program's most consequential NEGATIVE result. The EFE solve is
+scale-free: the same (GM=1, a₀=1) solution that produced the wide-binary boost tables
+IS the Sun-in-the-galactic-field solution, with r_M = 7,032 AU and the anomalous
+interior quadrupole δφ = q·r²·P₂(cosθ) along the galactic axis. Extracting the ℓ=2
+moment from the validated Stage-2G solver ([data/stage4k_quadrupole.txt](data/stage4k_quadrupole.txt)):
+
+**Gates (all pass):** G1 exact regression of the ℓ-averaged boost against the stored
+g1p2 tables (0.00%); G2 Newton control φ₂ ≡ 0; G3 interior plateau flat to 1–2% over
+r ∈ [0.02, 0.2] r_M; G4 resolution doubling 0.0%; G5 analytic ℓ=2 integrator test
+exact to machine precision; **G6 external cross-validation: Blanchet & Novak 2011
+(arXiv:1010.1349, AQUAL at g_ext = 1.9e-10 TOTAL) report Q₂ up to 4.1e-26 s⁻² for
+μ₁ = simple — our QUMOND solve at the matched physical config (e_N = 1.2 NEWTONIAN,
+the Stage-3T mapping) gives 3.35e-26 raw: ~15% agreement across formulations AND an
+independent validation of our AQUAL-total ↔ QUMOND-Newtonian convention resolution.**
+
+**Numbers.** q̂ = −0.0978 (simple) / −0.0988 (BE) at e_N = 1.2, in units a₀/r_M =
+1.141e-25 s⁻²; B&N convention Q₂ = 3|q̂|·(a₀/r_M)·α:
+
+| law | Q₂ (α-scaled) | Cassini (Hees+ 2014: (3±3)e-27, 2σ cap 9e-27) |
+|---|---|---|
+| simple | (3.95 ± 0.39)e-26 s⁻² | **exceeds the cap ~4.4× (~12σ from the measured Q₂)** |
+| BE | (3.82 ± 0.46)e-26 s⁻² | **exceeds the cap ~4.2× (~12σ)** |
+
+1. **BE = simple here (1% apart).** The quadrupole is sourced in the TRANSITION region
+   (r ~ r_M), where the two RAR-compatible ν's are near-identical — the same fact that
+   made rung 2 hard makes the quadrupole family-blind. **The Wien tail does NOT rescue
+   BE**: exponential screening kills the local (ℓ=0) anomaly at Saturn (the p > 0.234
+   test we pass) but not the long-range ℓ=2 moment of the transition region.
+2. **Priority: the tension is Desmond, Hees & Famaey 2024's (arXiv:2401.04796 — "8.7σ
+   under fiducial assumptions; requires a sharper transition than the RAR allows";
+   verified via abstract).** Ours is an INDEPENDENT, differently-calibrated
+   reproduction: their amplitude came from RAR fits (escapable via M/L freedom →
+   1.9σ, and bulge removal); **ours comes from the wide binaries — which have no
+   bulges and whose mass errors we MEASURED at 2.4% (3J). The two DHF mitigation
+   routes do not apply to the binary-calibrated version.** What survives as escapes:
+   (a) **modified inertia** (no EFE quadrupole of this type — and our
+   trajectory-sensitive data (w_rad e-mixture, the 2D ṽ×γ likelihood, the 4J
+   perpendicular ceiling) are exactly the MI-vs-MG discriminating instrument — this
+   becomes the program's top theory question, TODO #18); (b) EFE-screened /
+   two-field formulations (TODO #8 now has a sharp job description: produce the
+   binary boost with Q₂ ≤ 9e-27); (c) the boost is not gravity (the tension is
+   honest evidence FOR the systematics reading of our own measurement — logged).
+3. **Consequence for the MOND-Planet-9 story** (arXiv:2304.00576 — byline verify at
+   write time, Jones-Smith vs Brown & Mathur; critique arXiv:2403.09555): their ETNO
+   clustering mechanism RUNS on this same capped term — the P9-alternative inherits
+   the Cassini tension (as Vokrouhlický+ noted). Our α-calibrated amplitude
+   quantifies it.
+4. Systematics on our side, stated: the α-scaling of the anomaly is linear-order
+   (±10%-grade); QUMOND-vs-AQUAL formulation difference ~15% (G6); g_ext ± 0.05a₀ →
+   ±4%. None approach the 4.3× gap.
+
+**Credence bookkeeping (the honest hit):** anomaly-is-real: unchanged (~70–75% — the
+binary data are untouched). One-law-spanning-scales as PHENOMENOLOGY: 65% → ~55%
+(coherence hit). **The law realized as modified GRAVITY (AQUAL/QUMOND-type): major
+haircut — the same field configuration that boosts the binaries misses Saturn by 4× —
+conditional credence ≤ 30%; modified-INERTIA realization correspondingly up (~50%
+conditional); BE microphysics (a force-side framework) inherits the hit: ~20–25% →
+~15%.** The next decisive computation is ours to run: MI-vs-MG on our own 2D data.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

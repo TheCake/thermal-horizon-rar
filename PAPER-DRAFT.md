@@ -58,9 +58,18 @@ CEILING at the boosted escape edge — eleven pairs populate the
 Newtonian-forbidden band ṽ ∈ [√2, 1.67) (P = 4e-9 against Newton plus
 measured noise) and terminate at √(2·1.36) (P = 0.62), with flyby, triple,
 chance, and selection identities each excluded; the small count is stated.
-The framework's remaining falsifiers are stated: the rung-2
-coefficient (1/12 vs the simple family's 1/8 — shown here to require lensing
-mass cross-calibration at the ~0.02-dex level, or Gaia DR4), and a₀ ∝ H(z).
+Feeding the measured boost back through the same external-field solver
+yields the solar-system anomalous quadrupole Q₂ = 3.9×10⁻²⁶ (α/1.15) s⁻²
+for BOTH interpolating families — exceeding the Cassini bound of Hees et
+al. (2014) by ~4×: an independent, wide-binary-calibrated confirmation of
+the Desmond–Hees–Famaey (2024) tension that their mass-to-light and bulge
+mitigations cannot reach. Within modified-gravity formulations the boost
+and Saturn's ephemeris are in direct conflict; modified-inertia
+formulations evade the quadrupole, and our trajectory-sensitive
+eccentricity data provide the test. The framework's remaining falsifiers
+are stated: the rung-2 coefficient (1/12 vs the simple family's 1/8 —
+shown here to require lensing mass cross-calibration at the ~0.02-dex
+level, or Gaia DR4), the MI-vs-MG discrimination, and a₀ ∝ H(z).
 
 ### Claims map (post-retraction, Stage 4C/4D — the paper must respect this)
 
@@ -128,10 +137,19 @@ mass cross-calibration at the ~0.02-dex level, or Gaia DR4), and a₀ ∝ H(z).
    priority; raw-χ² branch-verdict inflation + the retracted SPARC simple-lean,
    4E; U-shape priority → Hwang+22, 4G). This appendix is the paper's
    credibility spine — do not trim it.
+8b. **Solar-system consistency: the quadrupole tension (4K)** — the
+   scale-free EFE solution; Q₂ extraction with six gates incl. the
+   Blanchet–Novak cross-validation; the binary-calibrated DHF-2024 tension
+   (immune to M/L+bulge escapes); BE=simple (transition-sourced,
+   family-blind); the escape map (modified inertia — testable with our own
+   e-mixture data; EFE-screened theories; systematics reading). The paper
+   REPORTS its own tension — this section is mandatory, not optional.
+   [calcs/stage4k_quadrupole.py, NOTES 4K]
 9. **Predictions & program** — rung 2: tested and shown to need ~0.02-dex
    lensing mass cross-calibration or Gaia DR4 (4E — a kill test the authors
    aim at their own preferred reading, with the current power stated);
-   a₀ ∝ H(z); DR4 forecasts.
+   the MI-vs-MG trajectory test on the eccentricity structure (TODO #18);
+   a₀ ∝ H(z); DR4 forecasts (ceiling band ×10, per-mille orientations).
 
 ### To do before any submission
 - [ ] Assemble sections from NOTES (fresh session; NOTES Stages 1→4D are the source)
