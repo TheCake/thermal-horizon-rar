@@ -1,104 +1,98 @@
-# The Radial Acceleration Relation as a Thermal Occupation Law
-## (working draft — priority check pending; do not circulate)
+# Testing the Thermal-Horizon Reading of the Radial Acceleration Relation, from Galaxies to Wide Binaries
+## (working draft v2 — rewritten 2026-07-23 after Stages 3B–4D; do not circulate)
 
 **Candidate titles:**
-1. *The radial acceleration relation as a Bose–Einstein occupation law: a joint
-   galactic, solar-system, and wide-binary test*
-2. *A measured screening index for low-acceleration gravity, and its thermal reading*
+1. *The radial acceleration relation as a Planck-oscillator law: first coefficient
+   tests and an independent wide-binary measurement*
+2. *Gravity's low-acceleration expansion: the Bernoulli ladder, its zero-point
+   term, and a strength-one wide-binary anomaly*
 
 ---
 
-### Abstract (draft)
+### Abstract (draft v2 — numbers final, prose to polish)
 
 The interpolating function preferred by the radial acceleration relation (RAR),
-ν(y) = [1−e^(−√y)]⁻¹, is algebraically identical to 1 + n_BE, where n_BE is a
-Bose–Einstein occupation number in the variable x = √(g_N/a₀) = r_M/r. In this
-reading, the deep-MOND regime is the Rayleigh–Jeans (equipartition) limit of a
-thermally occupied mode and the Newtonian regime is its Wien tail; the RAR is a
-Planck curve. We test this reading three ways. (1) We introduce a one-parameter
-screening family ν_p ≡ (1−e^(−y^p))^(−1/2p) that contains the occupation law at
-p = ½, and measure p = 0.443 (+0.063/−0.050) from 2,700 SPARC points, with
-Cassini radio tracking independently requiring p > 0.234: two datasets eight
-decades apart in acceleration select overlapping regions of one parameter, and
-the thermal value p = ½ lies within 1.1σ. (2) We measure the wide-binary
-velocity excess in the Gaia EDR3 catalog (14,071 pairs after cuts): a separation-
-dependent boost reaching 1.202 ± 0.058 at 20–50 kAU, excluding Newtonian
-dynamics at ≈7σ in our pipeline, with hierarchical-triple contamination bounded
-≲5% by distribution-tail shape and RUWE insensitivity. (3) The occupation
-reading fixes how an external field must enter (inside the mode energy); this
-naive embedding is disfavored (Δχ² ≈ 5) relative to the full AQUAL external-
-field solution, indicating the reading requires a two-field completion. The
-framework makes falsifiable commitments: an NLO RAR coefficient of exactly ½,
-and a₀ ∝ H(z) if the occupying bath is the instantaneous horizon.
+ν = (1−e^(−√y))⁻¹, was shown by Cadoni & Tuveri (2019) to equal 1 + n_BE(x),
+x = √(g_bar/a₀) — the Bose–Einstein occupation of thermal excitations of the
+de Sitter horizon, with a₀ = H/2π derived. That framework has remained untested
+beyond rotation-curve fitting. We present its first empirical stress-tests.
+(1) We note two exact structural consequences, apparently unremarked: ν equals
+½ + ½·coth(x/2) — the Planck oscillator mean-energy law, whose frozen (x → ∞)
+limit ν → 1 identifies Newtonian gravity with the pure zero-point response —
+and the low-acceleration expansion coefficients are the Bernoulli numbers,
+ν = Σ B_n⁺ x^(n−1)/n!, a ladder of parameter-free predictions. (2) We test the
+first nontrivial rung on 2,700 SPARC points: the NLO-coefficient-½ branch
+(shared by the occupation law and the simple-ν family) is preferred over the
+c₁ = 0 branch (standard-μ family) in 198–200 of 200 galaxy-level bootstrap
+resamplings; the truncated-expansion estimator alone is shown to be
+power-limited (σ(c₁) ≈ 0.5), making the full-function comparison the honest
+instrument. (3) We independently measure the low-acceleration anomaly in
+14,071 Gaia EDR3 wide binaries with a joint 2D (velocity, direction-angle)
+likelihood, a physically-identified nuisance set (a ~20% near-parabolic orbit
+sub-population; companions bounded jointly by photometry and kinematics; two
+contamination channels with distinct 2D signatures; the catalog's velocity-
+consistency selection emulated), and full seed + bootstrap error budgets:
+the boost strength is α = 1.18 ± 0.11 (simple-ν) / 1.13 ± 0.13 (occupation
+law) relative to the galactic calibration at the RAR-inverted Newtonian
+external field g_N,ext = 1.15 ± 0.05 a₀, with Newtonian dynamics excluded in
+all 2000 bootstrap contests (min ΔlnL +53). Two further observational results
+stand alone: the wide-binary velocity-direction distributions are U-shaped —
+inconsistent with any single power-law eccentricity family — and an
+orbit-population "realization systematic" larger than the Newton-vs-MOND gap,
+which plausibly contributes to the published disagreement between wide-binary
+analyses. The framework's remaining falsifiers are stated: the rung-2
+coefficient (1/12 vs the simple family's 1/8, measurable on the deeper
+weak-lensing RAR), and a₀ ∝ H(z).
 
-### Sections → existing assets
+### Claims map (post-retraction, Stage 4C/4D — the paper must respect this)
 
-1. **Introduction** — anomaly census framing; the a₀–horizon coincidences
-   ([calcs/coincidences.py](calcs/coincidences.py)).
-2. **The identity** — exact algebra + Planck-curve reading; NLO series
-   (verified symbolically). *Priority sweep (2 agents, 2026-07-22): the identity is
-   not explicitly published. Milgrom corpus: phenomenological only. McGaugh+16:
-   empirical fit, no thermal reading. Desmond+23 symbolic regression: no BE remark.
-   Nearest neighbors, must cite: Pazy & Argaman (PRD 85, 104021; PRD 87, 084063) —
-   quantum statistics with freeze-out on holographic screens, different function;
-   q-deformed heat-capacity derivations (arXiv:2010.03530); Smolin (PRD 96, 083523);
-   Ho–Minic–Ng. CAVEAT: Haiku-grade sweep, not exhaustive — a citation-graph walk
-   of McGaugh+16 is due before submission; frame as "we note that..." regardless.*
+- **Cadoni & Tuveri 2019 (cite prominently; one-line independent-arrival note
+  permitted)**: the identity ν = 1 + n_BE, its derivation from dS-horizon
+  thermal excitations, a₀ = H/2π.
+- **Ours (scout-clean, final INSPIRE pass owed at submission)**: the coth /
+  zero-point form and its reading (Newton = frozen vacuum response); the
+  Bernoulli-ladder statement; the first coefficient test (4B) and its
+  power-analysis (4A); the entire wide-binary program (Stages 2–3V); the
+  U-shaped γ measurement; the realization systematic; the screening-index p;
+  the g_N,ext convention analysis (AQUAL-total vs QUMOND-Newtonian inputs).
 
-#### Section 2 draft text
+### Section skeleton → assets (assemble from NOTES next session)
 
-> The function selected by the radial acceleration relation admits an exact
-> rewriting. With x ≡ √(g_bar/a₀), the McGaugh–Lelli–Schombert form
-> g_obs = g_bar/(1−e^(−x²)^(1/2))... [notation: ν(y) = (1−e^(−√y))⁻¹] satisfies
->
->   ν = 1 + 1/(e^x − 1) ≡ 1 + n_BE(x),
->
-> where n_BE is the Bose–Einstein occupation of a mode of energy ε at temperature
-> T with ε/k_BT = x. The observed acceleration is therefore
->
->   g_obs = g_bar·[1 + n_BE(x)],  x = √(g_bar/a₀) = r_M/r,
->
-> with r_M ≡ √(GM/a₀) the MOND radius. Three structural consequences follow.
-> (i) The deep-MOND limit is the Rayleigh–Jeans regime: n_BE → 1/x yields
-> g_obs → √(g_bar·a₀), i.e. the scale invariance of the deep limit is the
-> classical equipartition of the occupied mode. (ii) The Newtonian limit is the
-> Wien regime: the anomalous component freezes out as e^(−x), consistent with
-> the solar-system bounds that exclude power-law tails. (iii) The expansion
-> g_obs = √(g_bar·a₀) + g_bar/2 + O(x·g_bar) fixes the next-to-leading
-> coefficient at exactly ½ — a parameter-free target for precision RAR fits.
-> The mode variable has a natural reading: ε(r) is the Unruh quantum of the
-> deep-MOND acceleration √(g_bar·a₀), and the bath temperature corresponds to
-> the acceleration a₀ ≈ cH₀/2π, i.e. the de Sitter horizon. If the bath is the
-> instantaneous horizon, a₀ ∝ H(z); if it is set by Λ alone, a₀ is constant —
-> a dichotomy resolvable with high-redshift rotation curves. We emphasize what
-> is and is not claimed: the identity is exact algebra about an empirical fit;
-> whether nature computes n_BE is the hypothesis the remainder of this paper
-> constrains — the measured screening index p = 0.443(+0.063/−0.050) is
-> consistent at 1.1σ with the thermal value p = ½, and the naive embedding of
-> an external field inside the mode energy is disfavored (Δχ² ≈ 5) relative to
-> the full AQUAL solution, indicating any completion requires genuine two-field
-> structure rather than a scalar shortcut.
-3. **The screening index** — ν_p family; SPARC fit + bootstrap; Cassini bound;
-   joint constraint figure ([calcs/sparc_rar_fit.py](calcs/sparc_rar_fit.py)).
-4. **Wide binaries** — EDR3 pipeline, cuts, ṽ statistic; GPU forward model
-   (conservative law, self-consistent ICs — [calcs/stage2b_population.py](calcs/stage2b_population.py),
-   [calcs/stage2e_refined.py](calcs/stage2e_refined.py), [calcs/stage2f_nup_test.py](calcs/stage2f_nup_test.py));
-   triple bounds (tails + RUWE — [calcs/stage2d_ruwe_variant.py](calcs/stage2d_ruwe_variant.py));
-   verdict table (Newton χ²=55; AQUAL 2.0; ν_p 3.6).
-5. **The EFE-embedding test** — BE-naive vs AQUAL (χ² 7.2 vs 2.0) — the data
-   discriminate embeddings ([calcs/stage2g_be_efe.py](calcs/stage2g_be_efe.py)).
-6. **Predictions & falsifiers** — NLO ½; a₀(z) ∝ H(z) (high-z Tully–Fisher);
-   occupation-fluctuation noise (to be computed); DR4 family discrimination.
-7. **Systematics & bias autopsy** — the three self-caught errors (axial folding
-   2/π fingerprint; non-conservative EFE recipe energy pumping; IC and a₀-
-   convention biases) as a transparency appendix.
-8. **The Banik tension** — stated openly; reconciliation-on-one-sample as the
-   necessary next work.
+1. **Introduction** — anomaly framing; the Chae/Banik/P&S three-way split as
+   motivation for a systematics-first re-measurement.
+2. **The structure of the RAR** — C&T attribution; coth/zero-point; Bernoulli
+   ladder (sympy-verified); what is and is not claimed. [Stage 4C/4D notes]
+3. **Screening index** — ν_p family, p = 0.443 (+0.063/−0.050), Cassini p > 0.234.
+   [calcs/sparc_rar_fit.py — M/L marginalization still owed]
+4. **Coefficient tests on SPARC** — 4A estimator + honest power-null; 4B
+   branch verdict 198–200/200; a₀ = 1.206e−10, f_ML = 1.10 recovered free.
+   [calcs/stage4a_nlo_test.py, calcs/stage4b_branchcomp.py]
+5. **Wide binaries: pipeline and model** — data cuts; joint 2D (ṽ, γ)
+   likelihood; nuisance identities (w_rad = 0.20 stable across 8 model
+   variations; companion sector photometry+kinematics-bounded; contaminants;
+   catalog selection; sigv/√2 noise convention). [Stages 2B–3O]
+6. **Wide binaries: results** — α = 1.18 ± 0.11 / 1.13 ± 0.13 at
+   g_N,ext = 1.15 ± 0.05a₀; Newton excluded in 2000/2000; α(g_ext) degeneracy
+   mapped; the external-field convention analysis (our 2G bug owned; the
+   AQUAL-total vs QUMOND-Newtonian distinction made explicit for the field).
+  [Stages 3P–3V, 3S/3T]
+7. **Standalone discoveries** — U-shaped γ / eccentricity mixture (radial
+   excess confirmed, circular vetoed); the realization systematic; the γ≈82°
+   residual disclosed as open. [Stages 3D, 3L–3N]
+8. **Transparency appendix** — the seven logged corrections, verbatim from
+   NOTES (axial 2/π; non-conservative EFE; a₀ conventions; grid-edge bullseye
+   retraction; mass-error hypothesis; circular-mixture reading; identity
+   priority). This appendix is the paper's credibility spine — do not trim it.
+9. **Predictions & program** — rung 2 on Brouwer+21 lensing RAR (1/12 vs 1/8 —
+   a kill test the authors aim at their own preferred reading); a₀ ∝ H(z);
+   DR4 forecasts.
 
 ### To do before any submission
-- [ ] Priority sweep verdict (two agents out)
-- [ ] M/L marginalization on the p measurement (widens error bar — quantify)
-- [ ] Proper two-field BE theory or drop to "phenomenological reading"
-- [ ] Chance-alignment robustness in the 20–50 kAU bin (N=214)
-- [ ] Reproduce Banik-style statistic on our sample
-- [ ] Occupation-fluctuation noise estimate
+- [ ] Assemble sections from NOTES (fresh session; NOTES Stages 1→4D are the source)
+- [ ] Final INSPIRE pass on all priority claims (coth, Bernoulli, coefficient tests,
+      U-shape, realization systematic)
+- [ ] Verify Chae 2023's exact external-field sentence against full text
+- [ ] M/L marginalization on the p measurement
+- [ ] Rung-2 lensing-RAR test (TODO #16) — include if it lands in time
+- [ ] Colleague review (COLLEAGUE-BRIEF.md — update numbers to 3V finals first)
+- [ ] Zenodo DOI snapshot; then arXiv (endorsement via colleague)
