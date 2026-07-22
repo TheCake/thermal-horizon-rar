@@ -1588,6 +1588,47 @@ moves by ≤0.06 across all four variants (1.03–1.16, interior 8/8; w_rad = 0.
 impact on the boost measurement.** TODO #2e-b done; the paper's §7 ceiling subsection
 gains its model-side confirmation.
 
+## Stage 4N: the reconciliation — two modeling choices manufacture two-thirds of the "16σ Newton" result (2026-07-23, [calcs/stage4n_banikstyle.py](calcs/stage4n_banikstyle.py), TODO #6)
+
+Scout-verified context (primary IDs in the scout log): Banik+ 2024 (arXiv:2311.03436)
+fit 540 (r_sky, ṽ) count cells on 8,611 pairs (2–30 kAU, <250 pc) with the
+hidden-triple fraction FREE — it lands at **f_HT ≈ 69% under Newton** — and quote
+16–19σ for Newton. Hernandez & Chae (arXiv:2312.03162) name three defects: the
+fitted f_HT exceeds every independent calibration (≤50%; OUR 3J photometry: 12.3%
+overluminous, kinematic fence 0.1); ṽ bins narrower than the measurement errors with
+no noise convolution in the comparison; and no deep Newtonian anchor (their window
+STARTS at the 2 kAU transition). Chae's own analyses get boost 1.37–1.49, Newton
+rejected 5.8–9.2σ. No side-by-side exists in print. Stage 4N runs the ablations on
+OUR pipeline (Banik-STYLE, honestly labeled — not line-by-line), seed 31, stored
+baselines +108.7/+98.8 ([data/stage4n_summary.txt](data/stage4n_summary.txt)):
+
+| ablation | ΔlnL(Newton) s/BE | α̂ s/BE | reading |
+|---|---|---|---|
+| vtonly (γ channel removed) | +105.3 / +98.4 | 1.18 / 1.55 | detection INTACT; the measurement degrades (BE α̂ 1.11→1.55, w_rad→0.3 both laws) — **the direction channel protects the parameters, not the detection** |
+| freecomp (fence 0.1→0.8) | +42.8 / +43.8 | 0.71 / 0.83 | **THE MECHANISM: unfencing the companion fraction absorbs ~60% of the Newton deficit** — while requiring fractions the photometry forbids (3J: 12%; Banik's fit: 69%) |
+| banikproxy (both + 2–30 kAU, anchor bin dropped) | +37.5 / +29.8 | 0.68 / 0.73 | **~2/3 of the significance manufactured away; α̂ biased low (~0.7)** |
+
+Conclusions:
+1. **The detection never flips.** Even under full Banik-style freedom our data retain
+   ΔlnL = +30–38 for the boost — Newton does not win here under any ablation.
+2. **The disagreement's anatomy, measured:** the unfenced companion fraction is the
+   dominant manufactured component (~60 lnL); dropping the 0.2–2 kAU anchor + going
+   ṽ-only adds ~5–14 more and biases α̂ to ~0.7. The residual distance to an actual
+   "Newton wins" verdict plausibly lives in the H&C-documented noise-binning defect
+   (sub-error bins, models compared unconvolved — our pipeline ALWAYS convolves
+   per-pair noise, so that leg cannot be honestly ablated here) plus the Stage-3A
+   realization systematic.
+3. **The fix is measurement, not argument:** companion fractions are photometrically
+   boundable (3J) and deep anchor bins exist. An analysis that uses both cannot land
+   on Newton with this catalog.
+4. Bonus: vtonly shows the γ dimension is what pins α near the parameter-free 1
+   (without it BE's α̂ wanders to 1.55) — the direction channel is the field's
+   missing instrument, quantified.
+Caveats: single seed; α-grid coarse near the low α̂ of the ablated fits; the
+freecomp Newton fits presumably sit at fence-forbidden fcomp (cube stores it;
+summary prints wr only — noted). TODO #6 EXECUTED at proxy grade; a line-by-line
+Banik reproduction remains future work if referees demand it.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -48,9 +48,15 @@ external field g_N,ext = 1.15 ± 0.05 a₀, with Newtonian dynamics excluded in
 all 2000 bootstrap contests (min ΔlnL +53). Two further observational results
 stand alone: the wide-binary velocity-direction distributions are U-shaped —
 inconsistent with any single power-law eccentricity family — and an
-orbit-population "realization systematic" larger than the Newton-vs-MOND gap,
-which plausibly contributes to the published disagreement between wide-binary
-analyses. The velocity-direction (v-r angle) distributions confirm and extend
+orbit-population "realization systematic" larger than the Newton-vs-MOND gap.
+We further localize the published wide-binary disagreement by ablation:
+unfencing the hidden-companion fraction — the Newton-favored analyses' free
+parameter, fitted there at 69% — absorbs ~60% of our Newtonian rejection
+while requiring fractions the photometry forbids (our measured overluminous
+fraction is 12%), and additionally dropping the deep Newtonian anchor bin
+with a velocity-only statistic removes two-thirds of the significance and
+biases the boost estimate low; the detection itself never flips (ΔlnL ≥ 30
+survives every ablation). The velocity-direction (v-r angle) distributions confirm and extend
 — to 50 kAU and inside a joint gravity-law fit — the superthermal trend of
 Hwang, Ting & Zakamska (2022), executing the gravity application those
 authors proposed; and the perpendicular-moving wide pairs exhibit a velocity
@@ -108,7 +114,8 @@ level, or Gaia DR4), the MI-vs-MG discrimination, and a₀ ∝ H(z).
 ### Section skeleton → assets (assemble from NOTES next session)
 
 1. **Introduction** — anomaly framing; the Chae/Banik/P&S three-way split as
-   motivation for a systematics-first re-measurement.
+   motivation for a systematics-first re-measurement (resolved by ablation
+   in §7c/4N: the split's anatomy is measurable).
 2. **The structure of the RAR** — C&T attribution; coth/zero-point; Bernoulli
    ladder (sympy-verified); the bath matrix as a table (simple-ν = exact
    classical self-consistent bath ⇒ BE-vs-simple = quantum-vs-classical;
@@ -148,6 +155,15 @@ level, or Gaia DR4), the MI-vs-MG discrimination, and a₀ ∝ H(z).
    priority; raw-χ² branch-verdict inflation + the retracted SPARC simple-lean,
    4E; U-shape priority → Hwang+22, 4G). This appendix is the paper's
    credibility spine — do not trim it.
+7c. **Reconciliation by ablation (4N)** — the Banik-style ablation table
+   (companion unfencing −60 lnL needing photometry-forbidden fractions;
+   anchor-drop + ṽ-only → 2/3 of significance gone, α̂ biased to 0.7;
+   detection never flips, ≥+30 under full freedom); the H&C noise-binning
+   defect cited for the residual leg (our pipeline always convolves — state
+   it); the γ channel as the parameter-protector (vtonly: α̂ wanders to
+   1.55 without it); the realization systematic (3A) as the frame.
+   Honest label: Banik-STYLE proxy, not line-by-line.
+   [calcs/stage4n_banikstyle.py, scout log in NOTES 4N]
 8b. **Solar-system consistency: the quadrupole tension (4K)** — the
    scale-free EFE solution; Q₂ extraction with six gates incl. the
    Blanchet–Novak cross-validation; the binary-calibrated DHF-2024 tension

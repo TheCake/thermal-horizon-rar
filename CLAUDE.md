@@ -128,9 +128,16 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   formally closed as model-shape, boost untouched. Credences: anomaly-real ~70%;
   conditional: EFE-respecting MI ~40%, MG-with-quadrupole-fix ~30%, unknown ~30%;
   BE ~15%.**
-  NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4K; open
-  items disclosed in TODO (#2e-b, #18 MI-vs-MG, Chae text, NNLO=parked, a₀∝H(z),
-  #6, #7, #8).** Paper
+  Reconciliation EXECUTED (4N, [calcs/stage4n_banikstyle.py](calcs/stage4n_banikstyle.py),
+  proxy-grade): **unfencing the companion fraction absorbs ~60% of the Newton deficit
+  (needs fractions 3J forbids; Banik's free fit = 69%); +anchor-drop+ṽ-only → 2/3 of
+  the significance manufactured away, α̂ biased to 0.7; the detection never flips
+  (+30–38 under full freedom); the γ channel = the parameter-protector (vtonly
+  α̂_BE→1.55). Residual leg = H&C's unconvolved sub-error binning (not ablatable in
+  our always-convolved pipeline) + the 3A realization systematic.**
+  NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4N —
+  ALL PRE-PAPER COMPUTATIONS DONE; open items disclosed in TODO (Chae text,
+  NNLO=parked, a₀∝H(z), #7 lit-hardening, #8 theory, 4L-b nonlocal-MI).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

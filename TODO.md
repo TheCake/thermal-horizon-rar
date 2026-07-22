@@ -69,9 +69,16 @@
    overlap); wide-bin median drift runs OPPOSITE to a contamination bias. Closed.
 
 ## Reconciliation (the paper's credibility keystone)
-6. **Reproduce the Banik-style statistic** (binomial pixel likelihood, their cuts) on OUR
-   sample, and our statistic on their cuts — localize exactly where the 10σ-vs-16σ
-   disagreement is created. The realization-systematic measurement (Stage 3A) is the frame.
+6. ~~**Reproduce the Banik-style statistic**~~ — EXECUTED at proxy grade (Stage 4N,
+   [calcs/stage4n_banikstyle.py](calcs/stage4n_banikstyle.py)): **two modeling choices
+   manufacture ~2/3 of the "16σ Newton" result on our own data — unfencing the
+   companion fraction absorbs ~60 lnL (needing fractions 3J photometry forbids;
+   Banik's free fit lands at 69%), dropping the deep anchor + ṽ-only adds ~5–14 and
+   biases α̂ to 0.7; the detection never flips (+30–38 survives full freedom); the γ
+   channel is what protects the α measurement (vtonly: α̂_BE wanders to 1.55).**
+   Residual future work: line-by-line reproduction incl. their sub-error unconvolved
+   binning (H&C's third defect — not honestly ablatable in our always-convolved
+   pipeline); multi-seed budget of the ablations if referees ask.
 
 ## Theory
 7. **Literature hardening** — citation-graph walk of McGaugh+16 (~1000 citing papers) for
