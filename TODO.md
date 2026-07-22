@@ -87,3 +87,8 @@
 14. High-z rotation curves (JWST/ALMA): a₀ ∝ H(z) vs constant — the BE reading's kill test.
 15. Wide-binary eccentricity distribution at 10–50 kAU (the η=edge hint): measurable with
     Hwang's v-angle method on the EDR3 catalog — possible standalone paper.
+16. **The Bernoulli-ladder test on the lensing RAR** (Stage 4D) — rung 2 (1/12 vs 1/8)
+    and rung 3 (−1/720 vs −1/128) on Brouwer+2021 KiDS weak-lensing RAR (~2 dex deeper
+    than SPARC; data public). Decides BE-vs-simple within the ½-branch — a kill test
+    aimed at our own favorite (current lean is toward simple's 1/8). Fetch the Brouwer
+    binned g_obs(g_bar) table, extend the 4A two-step estimator to the deeper window.

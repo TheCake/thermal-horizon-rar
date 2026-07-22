@@ -1133,11 +1133,15 @@ to 5e-13; sympy's simplify fails on it — algebra: ½+½coth(x/2) = e^x/(e^x−
    rung-2/3 measurement there = the within-branch decider = new TODO #16. (Current lean:
    both SPARC full-function fits and the binary fits mildly favor simple's 1/8 — the
    ladder test could KILL the BE reading; that is what makes it worth running.)
-4. Priority: the citation-tree scouts found ZERO expansion-coefficient literature; a
-   dedicated sweep on the Bernoulli/coth/zero-point framing is running. If clean, the
-   paper's theory section gains: "C&T derived the law; we identify its expansion as the
-   Bernoulli/Planck-oscillator structure, note that Newtonian gravity is its zero-point
-   limit, and test the first two rungs."
+4. Priority: dedicated sweep (15 searches) — **both the coth/zero-point statement and
+   the Bernoulli-ladder statement: NOT FOUND anywhere** (nearest: Pazy & Argaman, no coth,
+   no expansion; C&T themselves never expand — verified by our own read). Honest
+   qualifier for the paper: since C&T published ν = 1+n_BE, the coth form is an
+   ELEMENTARY COROLLARY of their identity that nobody stated — our claim is the
+   statement, the zero-point READING (Newton = frozen vacuum response; the tested ½ IS
+   the zero-point occupation), and the LADDER as a falsification program with its first
+   two rungs run. Frame as sharpening C&T, not as independent theory. (Negative scout
+   claims stay provisional until the write-time INSPIRE pass — thrice-learned lesson.)
 
 ## Honest credences (2026-07-21, end of Stage 2)
 
