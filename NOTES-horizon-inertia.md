@@ -1108,6 +1108,37 @@ identity + bath + a₀=H/2π = C&T 2019 (cite; one-line independent-arrival note
 NLO=½ extraction + SPARC branch test (4B), NNLO discriminator, wide-binary program
 (α=1.18±0.11/1.13±0.13), radial population, U-shaped γ, realization systematic = ours.
 
+## Stage 4D: the Bernoulli ladder and the zero-point half — the expansion program becomes a structure (2026-07-23)
+
+Two exact statements, both verified symbolically/numerically (sympy series; coth identity
+to 5e-13; sympy's simplify fails on it — algebra: ½+½coth(x/2) = e^x/(e^x−1) = ν ✓):
+
+1. **ν_RAR(x) = ½ + ½·coth(x/2)** — the RAR interpolating function IS the Planck
+   quantum-oscillator mean-energy law E/ħω = ½coth(ħω/2kT), zero-point term included.
+   Readings: deep MOND = classical equipartition; **Newton = the FROZEN oscillator:
+   ν(∞) = ½ + ½ = 1 — Newtonian gravity as the pure zero-point response, the thermal
+   part switched off. The NLO constant ½ that Stage 4B tested and confirmed (198–200/200
+   over the 0-branch) is the ZERO-POINT OCCUPATION of the bath modes.** "We empirically
+   detected the vacuum half-quantum of the gravitational bath" is the sharp form of what
+   4B measured.
+2. **The low-acceleration expansion coefficients are exactly the Bernoulli numbers**:
+   ν = Σ_{n≥0} B_n⁺ x^{n−1}/n! = 1/x + 1/2 + x/12 − x³/720 + x⁵/30240 − … (all even
+   powers of x vanish with the odd Bernoullis). The ladder vs simple-ν (1/x + 1/2 + x/8
+   − x³/128 + x⁵/1024): rung 0 (BTFR) shared; rung 1 (½) shared — TESTED ✓; rung 2:
+   **1/12 vs 1/8 (ratio 2:3)**; rung 3: **−1/720 vs −1/128 (5.6×)**; rung 4: 1/30240 vs
+   1/1024 (~30×). **Discrimination grows exponentially with depth** — the within-branch
+   BE-vs-simple question is decidable in principle by a deep-enough RAR.
+3. Program: SPARC lacks depth for rung 2 (4A: σ(c₁)≈0.5). The dataset with the reach is
+   the **weak-lensing RAR (Brouwer et al. 2021, KiDS: ~2 dex deeper in acceleration)** —
+   rung-2/3 measurement there = the within-branch decider = new TODO #16. (Current lean:
+   both SPARC full-function fits and the binary fits mildly favor simple's 1/8 — the
+   ladder test could KILL the BE reading; that is what makes it worth running.)
+4. Priority: the citation-tree scouts found ZERO expansion-coefficient literature; a
+   dedicated sweep on the Bernoulli/coth/zero-point framing is running. If clean, the
+   paper's theory section gains: "C&T derived the law; we identify its expansion as the
+   Bernoulli/Planck-oscillator structure, note that Newtonian gravity is its zero-point
+   limit, and test the first two rungs."
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
