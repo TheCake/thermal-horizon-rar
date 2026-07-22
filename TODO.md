@@ -100,8 +100,21 @@
     quadrupole of the capped type. Our 2D (ṽ×γ) likelihood + fitted e-mixture +
     the 4J perpendicular ceiling are exactly the discriminating instrument: implement
     an e-dependent/phase-dependent boost variant in the orbit engine, refit v7,
-    compare lnL vs the MG (field-side) boost. Apparently nobody has run an MI-vs-MG
-    test on binary eccentricity structure (scout owed). 1–2 GPU evenings.
+    compare lnL vs the MG (field-side) boost. Scout verdicts (2026-07-23): the
+    binary-eccentricity MI-vs-MG test = NOT FOUND in the literature (nearest: Paci+
+    2020 arXiv:2001.03348, rotation-curve MG-vs-MI, MG favored 6.9σ — cite as the
+    general-question prior); Milgrom 2011 (arXiv:1111.1611) gives the eccentric-orbit
+    MI principle QUALITATIVELY only (no closed form → we bracket with mi_a/mi_t
+    prescriptions, labeled as representative); MI-evades-Cassini NOT claimed in print
+    (DHF frame the quadrupole as the diagnostic). **EXECUTED (Stage 4L,
+    [calcs/stage4l_mi_runner.py](calcs/stage4l_mi_runner.py), seed 31, 4 MI brackets
+    × 2 laws): MG WINS ALL 8 CONTESTS — MI-EFE −9…−16 lnL, MI-no-EFE −26…−31 with
+    α̂→0.5 sharply (the data DEMAND the EFE suppression); Newton loses under every
+    model class (+71…+109); w_rad=0.20 in all 8; BE−simple ≈ −6…−8 everywhere. The
+    4K paradox fully quantified: MG fits best but breaks Saturn; MI brackets survive
+    Saturn but fit worse; naive no-EFE MI dead. Surviving theory space: EFE-screened
+    MG (#8), time-nonlocal MI (unconstructed), or systematics. First-of-kind
+    (provisional). Residual 4L-b: 6-seed budget on the MI−MG deltas.**
 19. ~~**Solar quadrupole from our solver**~~ — DONE (Stage 4K,
     [calcs/stage4k_quadrupole.py](calcs/stage4k_quadrupole.py)): Q₂ = 3.9e-26·(α/1.15)
     s⁻² for BOTH families (transition-sourced, family-blind); exceeds Hees+ 2014

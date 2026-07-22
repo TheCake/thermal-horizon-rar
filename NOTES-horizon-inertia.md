@@ -1456,10 +1456,13 @@ independent validation of our AQUAL-total ↔ QUMOND-Newtonian convention resolu
    1.9σ, and bulge removal); **ours comes from the wide binaries — which have no
    bulges and whose mass errors we MEASURED at 2.4% (3J). The two DHF mitigation
    routes do not apply to the binary-calibrated version.** What survives as escapes:
-   (a) **modified inertia** (no EFE quadrupole of this type — and our
-   trajectory-sensitive data (w_rad e-mixture, the 2D ṽ×γ likelihood, the 4J
-   perpendicular ceiling) are exactly the MI-vs-MG discriminating instrument — this
-   becomes the program's top theory question, TODO #18); (b) EFE-screened /
+   (a) **modified inertia** (NEED NOT produce this quadrupole — MI's time-nonlocal
+   EFE depends on frequency ratios, Milgrom 2011 arXiv:1111.1611; 4L-scout
+   correction: evasion is NOT demonstrated in print, and DHF 2024 explicitly frame
+   the quadrupole as the MI-vs-MG *diagnostic* — and our trajectory-sensitive data
+   (w_rad e-mixture, the 2D ṽ×γ likelihood, the 4J perpendicular ceiling) are
+   exactly the discriminating instrument — this becomes the program's top theory
+   question, TODO #18); (b) EFE-screened /
    two-field formulations (TODO #8 now has a sharp job description: produce the
    binary boost with Q₂ ≤ 9e-27); (c) the boost is not gravity (the tension is
    honest evidence FOR the systematics reading of our own measurement — logged).
@@ -1479,6 +1482,61 @@ haircut — the same field configuration that boosts the binaries misses Saturn 
 conditional credence ≤ 30%; modified-INERTIA realization correspondingly up (~50%
 conditional); BE microphysics (a force-side framework) inherits the hit: ~20–25% →
 ~15%.** The next decisive computation is ours to run: MI-vs-MG on our own 2D data.
+
+## Stage 4L: MI-vs-MG on our own data — the binaries vote for modified gravity; the paradox is now fully ours (2026-07-23, [calcs/stage4l_mi_runner.py](calcs/stage4l_mi_runner.py), TODO #18 executed)
+
+The post-4K question, run same-day. Design: modified inertia = the boost is a
+per-ORBIT functional (Milgrom 2011 gives the principle, no closed form — we BRACKET),
+so an MI orbit is exact Kepler dynamics with G_eff = B·G: implemented as the engine's
+Newton mode with M_eff = M·B(y_char), ṽ normalized downstream by the TRUE mass —
+**the entire v7 nuisance machinery is bit-identical between MI and MG; the lnL
+difference is pure theory.** Four brackets: y_char at the a-scale (mi_a) or the exact
+Kepler time-average ⟨1/r²⟩ (mi_t), each with the EFE tables (conservative) or bare
+isolated ν (Milgrom's frequency-decoupling guess). Same seed-31 population and grids
+as the stored MG run (3U) ⇒ identical Newton baseline; differences subtract exactly.
+[data/stage4l_summary.txt](data/stage4l_summary.txt).
+
+| model | α̂ (simple/BE) | ΔlnL(Newton) s/BE | vs MG s/BE |
+|---|---|---|---|
+| **MG (3U, stored)** | 1.17 / 1.11 | **+108.7 / +98.8** | — |
+| MI-t (EFE) | 1.40 / 1.55 | +97.6 / +89.4 | −11.1 / −9.4 |
+| MI-a (EFE) | 1.18 / 1.36 | +92.6 / +85.0 | −16.1 / −13.8 |
+| MI-t (no-EFE) | 0.59 / 0.59 | +78.8 / +72.6 | −29.9 / −26.2 |
+| MI-a (no-EFE) | 0.51 / 0.51 | +77.5 / +71.2 | −31.2 / −27.6 |
+
+1. **MG wins all 8 contests.** Ordering: MG > MI-EFE (−9…−16) > MI-no-EFE (−26…−31)
+   > Newton (−71…−109). The 2D (ṽ×γ) shape wants the LOCAL, phase-dependent boost —
+   the apocenter-boosted structure of the radial population (the same physics as the
+   4J islands) is where per-orbit-global MI underperforms even with α̂ free (it
+   inflates to 1.4–1.55 chasing the shape and still loses).
+2. **The data demand the EFE.** Within MI, EFE-on beats EFE-off by 14–19 lnL, and the
+   no-EFE variants localize α̂ ≈ 0.5 sharply — the data force the isolated boost DOWN
+   to the EFE-suppressed amplitude. Milgrom's frequency-decoupling guess in its naive
+   (fully isolated) form is rejected by the binaries themselves.
+3. Newton loses under every model class yet tested (MG + 4 MI brackets): the anomaly's
+   model-class robustness extends again. w_rad = 0.20 selected in all 8 fits (11th and
+   12th consecutive model variations). BE−simple ≈ −6…−8 everywhere: the within-branch
+   stalemate is formulation-independent.
+4. **The paradox, fully quantified on one dataset + one ephemeris:** MG fits the
+   binaries best (+9…+16 over the MI brackets) but predicts the Cassini-forbidden
+   quadrupole (4K, ×4.3); the MI brackets need not produce the quadrupole but fit the
+   binaries worse; naive no-EFE MI is dead. Surviving corners: (i) EFE-screened MG
+   (TODO #8's sharpened target: boost with Q₂ ≤ 9e-27), (ii) time-NONLOCAL MI that
+   mimics MG's phase structure (not yet constructed by anyone; our per-orbit-average
+   brackets are its adiabatic limit), (iii) an unmodeled systematic (Newton still
+   loses by ≥71 under every class — but 4K keeps this live).
+5. Caveats: single seed (the 3U cross-seed scatter on ΔlnL was ±4–9; differences share
+   the population so are stabler — the 6-seed budget is queued as 4L-b); the two
+   prescriptions are representative members of an unbounded MI family, labeled as
+   such; iso-variant α-grid coarse near 0.5 (interior, sharp profiles).
+6. Priority (scout, provisional): the binary-eccentricity MI-vs-MG test appears to be
+   FIRST-OF-KIND (nearest art: Paci+ 2020 rotation-curve MG-vs-MI, MG favored 6.9σ —
+   convergent verdict from an independent observable; cite).
+
+**Credences after 4K+4L:** anomaly-is-real ~70% (unchanged). Conditional on real:
+EFE-screened-MG-like ~40%, nonlocal-MI ~30%, neither/unknown ~30%. BE microphysics
+~15%. The theory space is now pinched from BOTH sides by our own results — which is
+exactly what a measurement program is for.
 
 ## Honest credences (2026-07-21, end of Stage 2)
 

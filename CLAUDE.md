@@ -115,9 +115,14 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   their M/L+bulge escapes; solver cross-validated vs Blanchet–Novak μ₁ at 15% (G6,
   also confirms the 3T convention mapping). ESCAPES: modified inertia (→ TODO #18,
   MI-vs-MG on our 2D data = top theory question) or EFE-screened theories (#8).
-  Credences: MG realization ≤30%, MI ~50% conditional; BE microphysics ~15%;
-  anomaly-is-real unchanged. MOND-Planet-9 (2304.00576) runs on the capped term —
-  disfavored.**
+  MOND-Planet-9 (2304.00576) runs on the capped term — disfavored. **MI-vs-MG
+  EXECUTED (4L, [calcs/stage4l_mi_runner.py](calcs/stage4l_mi_runner.py), seed 31):
+  MG wins all 8 contests (MI-EFE −9…−16, MI-no-EFE −26…−31 with α̂→0.5 = data demand
+  the EFE; Newton +71…+109 under every class; w_rad=0.20 all 8). Paradox quantified:
+  MG fits best/breaks Saturn; MI survives Saturn/fits worse. Surviving: EFE-screened
+  MG (#8), nonlocal MI, or systematics. First-of-kind (provisional; Paci+2020 =
+  rotation-curve prior). Residual: 4L-b 6-seed budget. Credences: anomaly-real ~70%;
+  conditional: screened-MG ~40%, nonlocal-MI ~30%, unknown ~30%; BE ~15%.**
   NEXT = WRITING: paper assembly (#10) from PAPER-DRAFT.md + NOTES Stages 1→4K; open
   items disclosed in TODO (#2e-b, #18 MI-vs-MG, Chae text, NNLO=parked, a₀∝H(z),
   #6, #7, #8).** Paper

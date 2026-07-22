@@ -65,8 +65,15 @@ al. (2014) by ~4×: an independent, wide-binary-calibrated confirmation of
 the Desmond–Hees–Famaey (2024) tension that their mass-to-light and bulge
 mitigations cannot reach. Within modified-gravity formulations the boost
 and Saturn's ephemeris are in direct conflict; modified-inertia
-formulations evade the quadrupole, and our trajectory-sensitive
-eccentricity data provide the test. The framework's remaining falsifiers
+formulations need not produce the quadrupole, and our trajectory-sensitive
+eccentricity data provide the test — which we execute: the binaries prefer
+the modified-gravity (local, phase-dependent) boost over two bracketing
+modified-inertia prescriptions by 9–16 in −2lnL with the external field on,
+reject the no-external-field variants by 26–31 (the fitted amplitude
+collapses to the field-suppressed value — the data demand the external
+field effect), and reject Newton under every model class by ≥71. The
+tension is thereby sharpened, not resolved: the surviving theory space is
+field-screened modified gravity or time-nonlocal modified inertia. The framework's remaining falsifiers
 are stated: the rung-2 coefficient (1/12 vs the simple family's 1/8 —
 shown here to require lensing mass cross-calibration at the ~0.02-dex
 level, or Gaia DR4), the MI-vs-MG discrimination, and a₀ ∝ H(z).
