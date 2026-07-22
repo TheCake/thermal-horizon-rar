@@ -19,9 +19,13 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
 ## Key results (all in NOTES with scripts)
 - Screening index of the RAR transition: **p = 0.443 +0.063/−0.050**, a₀=(1.03±0.13)e−10
   ([calcs/sparc_rar_fit.py](calcs/sparc_rar_fit.py)); Cassini independently requires p>0.234.
-- **Bose–Einstein identity** (exact): RAR ν = 1 + n_BE(x), x=√(g_N/a₀); deep MOND =
-  Rayleigh–Jeans, Newton = Wien; NLO coefficient prediction = 1/2. Priority sweep (Haiku-
-  grade): apparently unpublished; nearest = Pazy & Argaman PRD 85,104021. Needs deep check.
+- **Bose–Einstein identity** (exact): RAR ν = 1 + n_BE(x), x=√(g_N/a₀) — **PUBLISHED
+  PRIOR ART: Cadoni & Tuveri 2019 (arXiv:1904.11835), Eq. 23 + derivation from thermal
+  dS-horizon bosonic excitations, a₀=H/2π derived. Priority claim RETRACTED (Stage 4C;
+  three scout sweeps misread the paper — primary sources only). Ours: the NLO=½ TEST
+  (4B: ½-branch 198–200/200 over standard-μ — apparently the first empirical test of
+  the C&T structure), NNLO discriminator (open, leans simple), a₀∝H(z) (future). Paper
+  §2 = "C&T derived it; we test it." Map their citation chain before writing.**
 - Wide-binary ṽ boost (our EDR3 pipeline, 14,071 pairs): **1.086 (CI 1.064–1.110)**;
   RUWE-stable; triples capped ≲5% by tail shape ([calcs/stage2c/2d](calcs/)).
 - QUMOND EFE solver (validated, gates G1=0.01%): BE-EFE ~4% weaker than simple-ν, Wien tail

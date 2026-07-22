@@ -1060,6 +1060,45 @@ Remaining work is WRITING (paper assembly, TODO #10) plus the disclosed open ite
 (γ≈82° excess, Chae-text verification, NNLO, a₀∝H(z), Banik reproduction #6, deep
 priority check #7, two-field theory #8).
 
+## Stage 4C: PRIORITY RETRACTION — the BE identity IS published: Cadoni & Tuveri 2019 (2026-07-23)
+
+Deep priority sweep (25+ searches) surfaced arXiv:1904.11835 (Cadoni & Tuveri, "Galactic
+dynamics and long-range quantum gravity", May 2019) with the verdict "close but does not
+state the identity." **Reading the primary source shows the verdict was wrong — the
+scouts misread it, twice.** Direct quotes from the paper:
+
+- Their Eq. (23): "The McGaugh form for F(x) leads to the additional acceleration term
+  a_DF = a_B/(e^√(a_B/a₀) − 1)" — **this IS a_B · n_BE(√(a_B/a₀)), i.e. exactly our
+  identity ν = 1 + n_BE(x).**
+- Their Eq. (22), DERIVED from physics (soft spin-2 bosonic excitations of the dark
+  energy in thermal equilibrium with the dS horizon at T_dS = ℏ/2πL, occupation N(ε)):
+  a_DF = 2π·a_B/(e^{2π√a_B/H} − 1), matching Eq. (23) with **a₀ = H/2π derived** via a
+  generalized thermal equivalence principle (their §4).
+- Even the limits-reading is theirs in substance: "the Newtonian regime corresponds to
+  hard DE bosonic excitations… N goes to zero exponentially [Wien]; the MOND regime
+  corresponds to a huge number N≫1 of extremely soft excitations [Rayleigh–Jeans]."
+
+**RETRACTED: every "apparently unpublished" claim about the identity (Stages from
+2026-07-22 onward, both memory files, PAPER-DRAFT §2 framing). The identity, the
+horizon-bath reading, and a₀ = cH₀/2π are Cadoni & Tuveri's (and companion papers —
+citation chain to be mapped: their refs [22,23,39,73]).** Seventh correction of the
+project; caught by our own primary-source read after three scout sweeps failed to.
+
+What remains OURS: (1) the NLO=½ expansion coefficient as an explicit falsifiable
+prediction AND its SPARC branch test (4B: ½-branch 198–200/200 over standard-μ) — C&T
+do not extract or test expansion coefficients; (2) the entire wide-binary program
+(α = 1.18±0.11/1.13±0.13, independent of them); (3) the NNLO 1/12-vs-1/8 discriminator;
+(4) the screening-index p measurement. **The paper's §2 becomes: "Cadoni & Tuveri derived
+the RAR as a Bose–Einstein occupation effect; we subject that framework to two new
+falsification tests and an independent low-acceleration measurement." Honestly, this
+STRENGTHENS the paper (the theory has refereed pedigree; we are its testers, not its
+parents) while ending our novelty claim on the identity itself.**
+
+Credence bookkeeping: horizon/BE microphysics as the true story: ~15–20% → **~25%**
+(independent professional derivation existed all along — the idea has more legs than we
+knew); OUR contribution being the identity: 0% (it never was). The project's empirical
+results are untouched.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
