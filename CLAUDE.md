@@ -35,14 +35,16 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   photometric masses). Stage 3E: multiplicative smear σ_m localizes at ≈0.2–0.25, α
   corner-seeking collapses (α=1 beats α=2), and the **honest Newton rejection deflates to
   ≈ +63/+66 lnL** (earlier +264…+338 was misfit-inflated; retraction-grade correction,
-  logged). Median boost 1.086 is smear-immune (the anchor). **v4 fit (Stage 3F) + σ_m edge
-  check (3G): α localizes INTERIOR at ≈1.0 for BOTH laws** (σ_m=0.30 clean interior
-  optimum, η interior 1.05, Newton ΔlnL +58–60 with five nuisances free; BE vs simple
-  −1.5 lnL = no shape verdict). Gates before quoting an α interval: MC error budget
-  (TODO #3; near-peak lnL differences are within one-realization noise) and physical
-  decomposition of σ_m≈0.30 → prior (TODO #2b; ~60% effective mass error — photometry
-  alone can't supply it). Paper leads with: 1.086 boost, s-dependence of the excess (what
-  smearing cannot fake), α≈1 localization (caveated), realization systematic, BE identity.
+  logged). Median boost 1.086 is smear-immune (the anchor). **v4 fit (Stages 3F/3G/3H):
+  α localizes INTERIOR for both laws, seed-robust 12/12** — MC over 6 realizations gives
+  **simple α̂ = 0.93±0.11, BE α̂ = 1.30±0.15 (realization scatter, flat profile top over
+  [0.75,1.5]), Newton ΔlnL = +55±4**; σ_m=0.30 chosen by all 12 fits; BE>simple α̂ offset
+  every seed (consistent with BE-EFE being ~4% weaker); BE vs simple lnL: no shape
+  verdict. Gates before quoting α ± : physical decomposition of σ_m≈0.30 → prior
+  (TODO #2b; ~60% effective mass error — photometry alone can't supply it) and the data-
+  bootstrap half of TODO #3. Paper leads with: 1.086 boost, s-dependence of the excess
+  (what smearing cannot fake), α≈1 localization (caveated), realization systematic, BE
+  identity.
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.

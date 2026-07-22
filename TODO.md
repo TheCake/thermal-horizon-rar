@@ -19,10 +19,12 @@
    intra-bin selection. Measure it independently (main-sequence width of the sample;
    FLAME/spectroscopic masses for a subsample) and turn σ_m into a PRIOR, not a free float —
    the α interval inherits the (α,σ_m) degeneracy until then.
-3. **Error budget on lnL** ← **gates the α interval** — MC repeats of the v4 fit
-   ([calcs/stage3f_v4fit.py](calcs/stage3f_v4fit.py)) over seeds + data bootstrap; the v4
-   near-peak profile differences (1–3 lnL) are within single-realization noise, so the
-   [0.87, 1.05]-style intervals are NOT quotable until this lands. Finer α grid near 1.0.
+3. **Error budget on lnL** — realization half DONE (Stage 3H,
+   [calcs/stage3h_mcbudget.py](calcs/stage3h_mcbudget.py)): 6 seeds → simple α̂ 0.93±0.11,
+   BE α̂ 1.30±0.15, interior 12/12, Newton ΔlnL +55±4; realization scatter dominates the
+   per-seed profile width ×2–3. REMAINING: data bootstrap (resample the 14,071 pairs,
+   redo per-bin histograms, rerun reduced fit) and finer α grid; then quote α ± interval
+   (combined realization ⊕ bootstrap).
 4. **Mass-model systematic** — marginalize M/L in the Stage-1 screening-index fit and
    propagate photometric-mass errors into ṽ (affects both p and α).
 5. **Chance-alignment stress test** — scan R_chance thresholds (0.01 → 0.001) in the

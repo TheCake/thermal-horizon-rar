@@ -550,6 +550,46 @@ Credence update (2026-07-22, post-3G): excess is real physics ~65% (back up from
 it from going higher). Anomaly pattern is one law: ~55% (unchanged pending MC + σ_m
 physics). BE-vs-simple shape discrimination: none (−1.5 lnL).
 
+## Stage 3H: MC realization budget — localization is seed-robust; the interval is realization-dominated (2026-07-22, same night, [calcs/stage3h_mcbudget.py](calcs/stage3h_mcbudget.py))
+
+Six independent population realizations (seeds 31/101/202/303/404/505), reduced v4 grid
+around the optimum. Full lines: [data/stage3h_summary.txt](data/stage3h_summary.txt).
+
+| seed | simple α̂ | BE α̂ | ΔlnL(Newton) s/BE |
+|---|---|---|---|
+| 31 | 0.94 | 1.05 | +59.6 / +58.1 |
+| 101 | 1.13 | 1.27 | +50.5 / +52.4 |
+| 202 | 0.83 | 1.47 | +58.6 / +55.1 |
+| 303 | 0.84 | 1.45 | +52.2 / +52.9 |
+| 404 | 0.94 | 1.24 | +51.2 / +54.8 |
+| 505 | 0.87 | 1.30 | +54.7 / +55.6 |
+
+**Aggregates: simple α̂ = 0.93 ± 0.11, BE α̂ = 1.30 ± 0.15 (realization scatter);
+interior 12/12; Newton ΔlnL = +54.5 ± 3.9 (simple), +54.8 ± 2.0 (BE).**
+
+Findings:
+1. **The interior localization is realization-robust: 12/12 fits, never a corner.** The α
+   profile has a genuinely flat top over ≈[0.75, 1.5] with per-seed maxima decided by
+   sub-lnL wiggles — the per-seed parabolic "1σ" intervals of Stage 3F (±0.05) are
+   confirmed meaningless; the realization systematic dominates the α error budget by ×2–3.
+   This closes the loop on the Stage-3A discovery: the realization systematic is now
+   measured ON the headline parameter itself.
+2. **Newton rejection is the stable number: ΔlnL ≈ +55 ± 4 across all seeds and laws.**
+3. **BE α̂ > simple α̂ on every seed** (offsets +0.11…+0.64): systematic, direction
+   consistent with the Stage-2G finding that the BE-EFE boost is ~4% weaker than simple-ν
+   (a weaker per-α law needs higher α̂ to match the same excess; the boost enters
+   nonlinearly so the offset amplifies). Both laws bracket α=1 within ~2σ_realization.
+4. σ_m = 0.30 selected by every one of the 12 fits — eerily stable; whatever it is, it is
+   a property of the data, not of the realization.
+5. Caveat: the reduced η grid's floor (0.8) was active in several fits — mildly subthermal
+   η preferred with σ_m free; harmless for α given the flat top, but the full-grid fit
+   should extend η below 0.8 once σ_m has a physical prior.
+
+**End-of-night statement (2026-07-22, ~4am):** α = 1 is consistent with both ν-families at
+realization-dominated precision ~±0.15–0.2; Newton is disfavored by ΔlnL ≈ +55 ± 4 with
+five nuisances marginalized; the two remaining gates on a quotable α ± interval are the
+physical decomposition of σ_m ≈ 0.30 (TODO #2b) and the data-bootstrap half of TODO #3.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
