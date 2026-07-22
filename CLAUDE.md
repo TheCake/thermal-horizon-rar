@@ -48,18 +48,19 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   but the **v5 physical-multiplicity fit (Stage 3K) exonerated it: α stays interior ≥1,
   Newton +108/+120, companion model fits −420 lnL worse than the smear, f_comp capped at
   0.1 by the ṽ data. Hidden-triples hypothesis disfavored by shape, amplitude, and α's
-  survival.** v-angle measurement (3L, mass-immune): data γ distributions are U-SHAPED —
-  unpublished per two verified-with-caution scouts (γ method = Tokovinin 1998; Hwang's
-  e^1.3 at >1 kAU is exactly our power family; P&S 2025 finds Newton-favored with
-  ṽ-histograms only, no direction statistics — v6 adjudicates that split). **v6 joint 2D
-  (ṽ×γ) fit (Stage 3M, [calcs/stage3m_v6fit.py](calcs/stage3m_v6fit.py)): α interior
-  again (flat top [1.0,1.5], Newton +107/+112), and the circular-mixture reading of 3L
-  was REFUTED — w_circ=0 vetoed at −174 lnL (circular orbits NARROW ṽ; 3L interpretation
-  corrected in NOTES). σ_m scoreboard: not masses, not companions, not circular orbits;
-  fences maxed on contaminants ⇒ v6b queue in TODO #2b (extend fences, 2D residual dump,
-  f_pm noise nuisance, radial-excess component).** Paper leads with: 1.086 boost,
-  s-dependence, α = 0.98±0.23 / 1.21±0.30 (σ_m caveat, sharpened), triples-exoneration,
-  U-shaped γ (standalone), realization systematic, BE identity.
+  survival.** v-angle (3L, mass-immune): γ distributions U-SHAPED, apparently unpublished
+  (γ method = Tokovinin 1998; P&S 2025 = Newton-favored, ṽ-only, no directions). Joint 2D
+  (ṽ×γ) fits: v6 (3M) vetoed the circular reading (w_circ=0, −174; circular NARROWS ṽ —
+  3L corrected); **v6b (3N, [calcs/stage3n_v6b.py](calcs/stage3n_v6b.py)) IDENTIFIED the
+  broadening: w_rad=0.20 interior both laws (+129/+141) — a ~20% near-parabolic (e>0.9)
+  sub-population; all contaminant fences localize; f_pm minor; α interior at 1.5 (span
+  across broadening models: α̂ 1.0–1.5 — report the span); Newton +93/+102; first
+  BE-over-simple lead (8.7 lnL, near noise). TOP REMAINING SYSTEMATIC (TODO #2c/v7):
+  emulate the catalog's R_chance/boundedness culling of high-Δμ pairs (model overpredicts
+  ṽ≈5 cells, z≈−6) then redo the error budget for the v6b model.** Paper leads with:
+  1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5, Newton
+  +55…+112 always), the radial-excess population discovery + U-shaped γ (standalone),
+  triples-exoneration, realization systematic, BE identity.
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.

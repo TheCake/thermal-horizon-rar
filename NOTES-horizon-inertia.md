@@ -775,6 +775,47 @@ Next-session queue (v6b): extend f_c0/f_fly/f_comp fences; dump best-fit 2D resi
 (is the γ 90°-arm unfit? which cells drive Newton's loss?); add f_pm noise-scale nuisance;
 try a radial-excess e-component instead of the circular one.
 
+## Stage 3N: v6b — the broadening IDENTIFIED: a ~20% near-parabolic sub-population; all fences localize; α model-dependence made explicit (2026-07-22 night, [calcs/stage3n_v6b.py](calcs/stage3n_v6b.py))
+
+Four queue items in one joint-2D fit: radial-excess e-component w_rad·[e~0.9–0.995]
+(replacing the vetoed circular one), extended contaminant/companion fences, f_pm noise
+scale, best-fit residual dump. [data/stage3n_summary.txt](data/stage3n_summary.txt),
+cubes data/hier6b_cube_*.npy.
+
+| law | α̂ | α profile [0,.5,1,1.5,2] | Newton | w_rad | best lnL |
+|---|---|---|---|---|---|
+| simple | 1.5 | [−92.9,−29.2,−6.5,0,−4.3] | +92.9 | **0.20 (interior)** | −56715.7 |
+| BE | 1.5 | [−101.6,−46.8,−26.3,0,−24.3] | +101.6 | **0.20 (interior)** | **−56707.0** |
+
+1. **σ_m's identity found (primary component): w_rad = 0.20 is a clean interior optimum
+   for BOTH laws** (+129/+141 lnL over none; 0.3 costs −51/−58). A ~20% near-parabolic
+   (e>0.9) sub-population at wide separations, ON TOP of the e^1.3 family — beyond
+   Hwang's published 22%-of-e>0.9 (which our power family already contains). This is the
+   3L U-shape's low-γ arm made quantitative, and it's what the σ_m smear was mimicking.
+   The scoreboard closes: not masses (3J), not companions (3K), not circular (3M),
+   **radial excess (3N) — plus small localized contaminants**.
+2. **Every v6 fence localizes with room to spare**: f_comp=0.1 (of {0,.1,.2}), f_c0=0.1
+   (of {0,.1,.2}), f_fly=0.05/0.10 (of {0,.05,.1,.15}). f_pm nearly flat (+5–7 for 1.5×):
+   noise scale is a minor player.
+3. **α localizes interior at 1.5 for both laws** — but note the model-dependence honestly:
+   α̂ = 0.94–1.05 under the σ_m model (3F), 1.25–1.75 under v5, 1.0–1.5 flat under v6,
+   1.5 under v6b. **Across broadening identities the anomaly's preferred strength spans
+   α ≈ 1.0–1.5; the invariants are: interior localization every time, α > 0 at enormous
+   significance, Newton ΔlnL ≈ +55…+112 in every model class.** The α̂-vs-nuisance-model
+   covariance is itself a reportable systematic (realization/bootstrap budget for the
+   v6b model still owed).
+4. **First time ever: BE out-fits simple (−56707.0 vs −56715.7, ΔlnL 8.7)** — near
+   realization noise, but the sign is new; track it.
+5. Residual map (the v7 agenda): (a) the γ≈82° column stays underfit (+2.7/+2.8 marginal
+   z) — a genuinely perpendicular-excess population the ṽ channel won't let us buy with
+   circular orbits at current weights; (b) the model OVERpredicts the extreme tail
+   (ṽ≈5.2, z≈−6): almost certainly the catalog's own R_chance/boundedness selection
+   culling high-Δμ pairs — **a data-side selection we don't emulate, sitting exactly
+   where boost signatures live; modeling it could move α̂ either way and is the single
+   most important remaining systematic (v7)**. (c) Newton's failure cells are at
+   ṽ≈1.25–1.66 with ORBITAL-looking angles (γ 38°–82°), not flyby-like ones — the
+   anomaly's directions are bound-orbit directions.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

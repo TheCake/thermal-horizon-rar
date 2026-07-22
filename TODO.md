@@ -13,13 +13,20 @@
    smear σ_m ≈ 0.2–0.25 localizes interior, collapses the α corner-seeking (α=1 beats α=2),
    and deflates the Newton rejection to ≈ +63/+66 lnL. v4 fit with the σ_m axis =
    [calcs/stage3f_v4fit.py](calcs/stage3f_v4fit.py).
-2b. **Decompose σ_m physically** — scoreboard after v6 (Stage 3M): mass errors REFUTED
-   (3J); companion wobble REFUTED (3K); circular e-component REFUTED (3M joint fit vetoes
-   w_circ at −174 lnL — circular orbits narrow ṽ, they can't broaden; 3L's mixture
-   reading corrected). α stays interior (flat [1.0,1.5], Newton +107/+112) under the
-   joint (ṽ,γ) likelihood. **v6b queue: extend contaminant/companion fences (all three
-   maxed); dump best-fit 2D residuals (is the γ 90°-arm unfit?); add f_pm noise-scale
-   nuisance; try a radial-excess (e>0.9) component instead of circular.**
+2b. ~~**Decompose σ_m physically**~~ — RESOLVED (Stage 3N/v6b): the broadening is a
+   **~20% near-parabolic (e>0.9) sub-population** (w_rad=0.20 interior for both laws,
+   +129/+141 lnL) plus small localized contaminants (all fences now interior); f_pm minor.
+   Full refutation chain: masses (3J) → companions (3K) → circular (3M) → radial excess
+   CONFIRMED (3N). Remaining caveat: α̂ is model-dependent across broadening identities
+   (1.0 with σ_m → 1.5 with w_rad); report the span.
+2c. **v7: emulate the catalog's R_chance/boundedness selection** ← **NOW THE TOP
+   SYSTEMATIC** — the v6b best model overpredicts ṽ≈5 cells (z≈−6): El-Badry's pipeline
+   culls high-Δμ pairs, a data-side cut we don't apply to the model, sitting exactly
+   where boost signatures live. Implement a ṽ-dependent acceptance in the model (read
+   El-Badry+21's chance-alignment construction for the exact form), refit v6b, and redo
+   the realization+bootstrap error budget for the v6b model (the ±0.23/0.30 was for the
+   σ_m model). Also: the γ≈82° column stays underfit — a perpendicular-excess population
+   to chase after v7.
 3. ~~**Error budget on lnL**~~ — DONE (Stages 3H+3I). Realization (6 seeds): simple
    0.93±0.11, BE 1.30±0.15, interior 12/12, Newton +55±4. Bootstrap (1000 replicates):
    simple 0.98±0.20, BE 1.21±0.26, Newton +60±11 (min +30). **Combined: simple
