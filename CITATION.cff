@@ -5,7 +5,7 @@ title: "Testing the Thermal-Horizon Reading of the Radial Acceleration Relation,
 authors:
   - family-names: "Hájek"
     given-names: "Filip"
-repository-code: "https://github.com/TheCake/Horizon-Coupled-Inertia"
+repository-code: "https://github.com/TheCake/thermal-horizon-rar"
 abstract: >-
   Measurement and theory-testing program for gravity at low accelerations:
   coefficient-level tests of the radial acceleration relation on SPARC and

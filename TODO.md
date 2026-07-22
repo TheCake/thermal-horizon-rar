@@ -146,10 +146,20 @@
     mechanism, 2304.00576 = Jones-Smith & Mathur); references INSPIRE-verified;
     CORRECTION #11 (√2-ceiling crediting) and the phantom "Paci 2020" → Petersen &
     Lelli 2020 fix applied; CITATION.cff + .zenodo.json added for the DOI record.**
-10b. **Desmond et al. 2026 (arXiv:2602.24035) full methodological read** — the
-    Feb-2026 quality-framework "No Evidence for MOND" WB analysis; cited in §1 with
-    an explicit pending-read label. MUST close before arXiv: run it through the §7.3
-    reconciliation lens (companion bounding? deep anchor? noise convolution?).
+10b. ~~**Cookson et al. 2026 (arXiv:2602.24035) full methodological read**~~ — DONE
+    (Stage 4P; the "Desmond" byline was a scout hallucination — lead author is
+    Cookson, an independent researcher, with Banik/El-Badry/Sutherland/Penoyre/
+    Pittordis/Clarke). Median-ṽ flatness test, 1,421 RV-clean pairs ≤130 pc, ~1500×
+    Newton preference (2.7σ). Engaged in PAPER §7.4: their e-constancy assumption
+    contradicts the Hwang+22 trend they cite (measured sign SUPPRESSES a step);
+    their √2-band-impractical remark is answered by our perpendicular column; their
+    g_N,e=1.184a₀ confirms our 3T conversion to 3%. **The read caught a real gap in
+    OUR pipeline → 4Q/correction #12 (below).**
+2i. **Corrected-velocity v7 re-fit** (pre-arXiv hardening, from Stage 4Q): apply the
+    per-pair spherical-projection correction (Δv += RV_sys·θ·ŝ, catalog RVs) at the
+    stage3o data build, re-run the v7 fit + 1 seed budget; expected α shift ≤ the
+    1.6%-of-ratio exposure bound. Also reconcile the 4J-vs-4Q ceiling census
+    boundary convention (11 vs 10 raw; ±1 at edges).
 11. **External review** — hand the repo to a professional (ask them to break the
     ceiling null, the quadrupole conversions, and the ablation fairness — the three
     targeted asks now in COLLEAGUE-BRIEF.md, final numbers, held uncommitted);

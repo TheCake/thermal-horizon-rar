@@ -148,10 +148,27 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   clear derivation" cited); Timeflow = Trofimov, CQG 43, 135020, distinct
   mechanism; Vokrouhlický+24 de-orphaned into §8.1; CITATION.cff + .zenodo.json
   added (title/author for the DOI record).**
-  NEXT = user reviews the v1.1 diff → enable Zenodo GitHub integration + tag
-  v1.0 release (DOI mints) → send COLLEAGUE-BRIEF (final numbers, uncommitted)
-  with DOI → arXiv via endorsement. MUST before arXiv: full read of Desmond et
-  al. 2026 (arXiv:2602.24035; TODO #10b). Open science items in TODO
+  **4P/4Q (2026-07-22, PAPER → v1.2): the 2602.24035 gate read — byline is
+  COOKSON et al. (lead = independent researcher; Banik/El-Badry/Sutherland/
+  Penoyre/Pittordis/Clarke; "Desmond" was a scout hallucination, 3rd phantom
+  byline caught) — 1,421-pair median-ṽ flatness test, ~1500×/2.7σ Newton.
+  The read caught OUR gap: no spherical-projection (systemic-RV perspective)
+  correction anywhere in the program → Stage 4Q audit, CORRECTION #12
+  ([calcs/stage4q_perspective.py](calcs/stage4q_perspective.py)): effect
+  PRESENT at predicted size (slope 0.92; Cookson fig 7 on our selection),
+  too small ×5 (Newton+perspective → 1.016 of 1.086), immune ṽ_perp component
+  boosts MORE (1.151 CI 1.115–1.197) = opposite of artifact; **corrected
+  anchor 1.078 (CI 1.052–1.103)** — quote both; ceiling census ±1 at edges
+  (cliff intact, null ≤1e-8); α exposure inside ±0.11. §7.4 written (checklist
+  mapping; their e-constancy assumption vs the Hwang trend they cite —
+  measured sign SUPPRESSES a step; √2-band objection answered by the
+  perpendicular column). Twelve corrections in Appendix A. Repo renamed
+  thermal-horizon-rar (user clicks the GitHub rename; files/remote updated);
+  LICENSE = CC-BY-4.0 added.**
+  NEXT = user: GitHub rename click → Zenodo GitHub toggle → tag v1.0 (DOI
+  mints) → send COLLEAGUE-BRIEF (final numbers, uncommitted) with DOI →
+  arXiv via endorsement. Pre-arXiv hardening: #2i corrected-velocity v7
+  re-fit + ceiling-census convention reconcile. Open science items in TODO
   (NNLO=parked, a₀∝H(z), #7, #8, nonlocal-MI construction).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation

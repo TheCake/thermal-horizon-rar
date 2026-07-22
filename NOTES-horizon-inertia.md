@@ -1695,6 +1695,68 @@ PAPER.md → **v1.1** (verification pass stamped in the header). COLLEAGUE-BRIEF
 rewritten to the final numbers (still uncommitted by design). Verification scripts:
 none (literature pass); agent reports summarized here are the record.
 
+## Stage 4P — the Cookson et al. 2026 full read (the pre-arXiv gate, 2026-07-22)
+
+**Byline correction first (notebook discipline):** the 4O entry called arXiv:2602.24035
+"Desmond et al. 2026" — that byline was a scout-agent hallucination (the third phantom
+byline caught this cycle). The full read (PDF, all 22 pages) gives: **Cookson, Banik,
+El-Badry, Sutherland, Penoyre, Pittordis & Clarke 2026, MNRAS** — lead author Stephen
+A. Cookson, *Independent Researcher, Crawley, UK* (the co-author list spans the
+Newton-favored wing of the field). PAPER/TODO/CLAUDE fixed; the error stands here in
+4O as logged.
+
+Content: a quality checklist for the WBT + a median-ṽ flatness test on 1,421 RV-clean
+DR3 pairs within 130 pc (both stars need RVs; ΔRV<10; RUWE<1.25; HR parallelogram;
+ipd_frac_multi_peak=0; ṽ<2.5; degrouping; 1–30 kAU). Result: flat medians, Newton
+χ²=2.48 vs MOND 15.10 (5 dof) → ~500–1500× likelihood ratio (2.6–2.7σ equivalent).
+Their meta-analysis: MOND signals shrink as checklist scores rise. Useful gifts:
+g_N,e = 1.184a₀ (their eq 4) — independently confirms our 3T conversion (1.15±0.05)
+to 3%; exact volumes for several refs; and their §7.2 demonstration that omitting
+the **spherical projection correction** inflates median ṽ by ~0.15 beyond r_M.
+Their vulnerabilities (for §7.4): the flatness test assumes e-distribution constant
+with s while citing Hwang+22 — who MEASURED it to steepen (uniform→superthermal);
+the measured trend's sign SUPPRESSES a step (apocenter lingering) rather than faking
+one; no forward model by design. Their "counting ṽ>√2 is not a practical MOND test
+(contaminants)" = precisely the objection our perpendicular column answers.
+
+**The gate finding: our pipeline never applied the spherical projection correction
+(their item 4.1.6) — no mention anywhere in calcs/ or NOTES.** Triggered 4Q immediately.
+
+## Stage 4Q — the perspective audit (correction #12, 2026-07-22)
+
+The omitted term: Δv_spur = −RV_sys·θ·ŝ (receding pairs appear to shrink) — purely
+RADIAL in the (ṽ,γ) plane, growing ~s^1.5 in ṽ units: shaped like the signal, aimed
+at the w_rad arm. [calcs/stage4q_perspective.py](calcs/stage4q_perspective.py),
+output data/stage4q_perspective.txt; gates G1/G2/G3 all PASS.
+
+- **Exposure (G1):** median κ=25 km/s·θ/v_c by bin: 0.0006 (anchor — immune), 0.006,
+  0.029 (6–20), 0.119 (20–50 kAU; 84th pct 0.22). The anchor bins cannot carry it;
+  the widest bin genuinely could.
+- **Q1 (Newton+perspective-only):** predicted anchor ratio 1.016 vs observed 1.086 —
+  the effect can supply ≤1.6 of the 8.6 points.
+- **Q2 (component split — the kill test):** ṽ ratio 1.086 (reproduces 2C exactly);
+  **ṽ_perp (immune) 1.151 (CI 1.115–1.197)** — the immune component boosts MORE, the
+  OPPOSITE of the artifact signature — monotonic per-bin rise 0.298→0.301→0.332→0.384
+  against the radialization headwind; ṽ_rad 1.052.
+- **Q3 (direct correction, catalog RVs ~100% on this bright subsample):** slope of
+  observed widening vs −RV·θ = **0.923 (CI 0.795–1.082; predict 1)** — Cookson's
+  fig 7 reproduced on our own selection, the systematic is REAL and now measured;
+  exact per-pair correction: anchor **1.086 → 1.078 (CI 1.052–1.103)** — the honest
+  haircut. G2 injection round-trip passes to <0.5%.
+- **Ceiling addendum** ([calcs/stage4q_ceilingcheck.py](calcs/stage4q_ceilingcheck.py)):
+  independent reimplementation of the γ machinery counts 10 raw in-band vs 4J's 11
+  (boundary-convention fuzz, ±1); correction moves ONE pair 1.662→1.675±0.044 (edge
+  pile-up, cliff-consistent) and tightens another to γ=89.8°; corrected census 9–10,
+  leakage null degrades to no worse than ~1e-8. Conclusion intact.
+- α exposure: bounded by the 1.6%-of-ratio contribution — inside ±0.11 and the g_ext
+  systematic. **Corrected-velocity v7 re-fit queued as TODO #2i (pre-arXiv hardening).**
+
+Verdict: the systematic is present, measured, and too small by 5×; the immune-component
+boost is stronger than the full-statistic boost. The anomaly stands at **1.078
+(CI 1.052–1.103)** on the corrected anchor. Correction #12 logged; PAPER → v1.2 with
+new §7.4 (checklist mapping, audit, and the e-trend/forward-model reply to their null).
+Twelve corrections now in Appendix A.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
