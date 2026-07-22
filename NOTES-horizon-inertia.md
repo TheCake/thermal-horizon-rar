@@ -1099,6 +1099,15 @@ Credence bookkeeping: horizon/BE microphysics as the true story: ~15–20% → *
 knew); OUR contribution being the identity: 0% (it never was). The project's empirical
 results are untouched.
 
+Addendum — citation-tree walk (scout-grade, 24 searches): C&T's companion papers
+(corpuscular-gravity lineage: Cadoni/Casadio/Giusti/Tuveri 2017–2020, Symmetry 2020,
+PRD 102) and ~65 citing works stay on rotation curves; **no expansion-coefficient
+extraction, no coefficient tests, no wide-binary application anywhere in the tree.**
+Claims map for the paper (provisional until a final INSPIRE pass at write-time):
+identity + bath + a₀=H/2π = C&T 2019 (cite; one-line independent-arrival note);
+NLO=½ extraction + SPARC branch test (4B), NNLO discriminator, wide-binary program
+(α=1.18±0.11/1.13±0.13), radial population, U-shaped γ, realization systematic = ours.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
