@@ -1,0 +1,34 @@
+STAGE 5R: the binary beta-profile (6 seeds x 5 beta; members from 5K/5O/5F, b025/b075/boot-completion new)
+
+per-seed lnL(beta) - lnL(0)  [negative = worse than beta=0]:
+  seed  31:   +0.00   -4.57  -18.58  -11.31  -22.26
+  seed 101:   +0.00   -6.23   -7.78   -6.36  -17.07
+  seed 202:   +0.00   -0.47   -7.66  -14.68  -15.97
+  seed 303:   +0.00   -6.85   -7.45   -6.08  -17.23
+  seed 404:   +0.00   -5.62   -3.21   -7.36  -10.92
+  seed 505:   +0.00   -1.11   -6.34   -1.62   -8.65
+  ----------------------------------------------------------
+  mean    :   +0.00   -4.14   -8.50   -7.90  -15.35
+  seed SE :    0.00    1.11    2.13    1.85    1.99
+  sign<0  : 0/6 6/6 6/6 6/6 6/6
+  a_hat   :   1.078   1.568   1.358   1.952   1.845
+  interior: 6/6 5/6 6/6 1/6 3/6
+
+binary upper bounds (mean profile, DlnL crossings): beta < 0.030 (1 sigma, DlnL=0.5), beta < 0.121 (2 sigma, DlnL=2.0)
+NOTE: realization scatter dominates -- the seed SE column is the honest per-beta uncertainty; the crossing uses the seed-mean.
+
+two-system profile [Delta(-2lnL) vs beta=0; negative = preferred]:
+   beta   gal plain   gal vert   binaries(-2*DlnL, +-2SE)
+   0.00       +0.00      +0.00      -0.00 +- 0.00
+   0.25      -62.63     -38.11      +8.29 +- 4.43
+   0.50      -84.79     -42.69     +17.00 +- 8.53
+   0.75      -85.59     -30.91     +15.80 +- 7.41
+   1.00      -75.62     -11.08     +30.70 +- 7.97
+
+joint (vertical-hardened galaxies + binaries, additive -2lnL):
+  beta=0.00:    +0.00
+  beta=0.25:   -29.82
+  beta=0.50:   -25.69
+  beta=0.75:   -15.11
+  beta=1.00:   +19.62
+CAVEAT: the galaxy yardstick under galaxy-bootstrap (5N) is +-~50 on this contrast (population variance) -- the joint row is indicative, not a likelihood-ratio verdict.

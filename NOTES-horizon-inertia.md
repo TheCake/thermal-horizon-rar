@@ -2381,6 +2381,150 @@ surviving lead bootstrapped.** Full-fit regression reproduces 5M exactly
 detection — quote it as such everywhere (the 5D pre-vertical flip was 86%;
 the vertical channel took half the effect and half the significance).
 
+## Stage 5Q (2026-07-23): the c₃(β) NNLO ladder — the family's algebra one rung deeper (O13c)
+
+[calcs/stage5q_c3ladder.py](calcs/stage5q_c3ladder.py) → data/stage5q_c3ladder.txt.
+Writing x = √y and S = xν, the family's implicit equation is exactly
+S = x/2 + S^(−β) + x²S^β/12 − x⁴S^(3β)/720 + O(x⁶). Symbolic series to x⁴
+(sympy; G1 reproduces the 5P c₁, c₂ formulas EXACTLY; G2 mpmath 50-digit
+roots, residual scaling exponent 5.00/4.99):
+
+- **c₃(β) = β(3β+1)/(24(1+β)³)** — its ONLY zero is β = 0: the Bernoulli
+  zero of the pure occupation law (the x² term of 1/(1−e^(−x)) vanishes
+  because odd Bernoulli numbers beyond B₁ vanish) is UNIQUE in the family.
+  Any admixture of self-consistency (β > 0) switches the NNLO rung on.
+- c₄(β) = (502β³+51β²−54β−8)/(5760(1+β)⁴); c₄(0) = −1/720 = −B₄/4! ✓ (the
+  exact BE check). Member values: β=¼ → c₃ = 7/750; β=½ → 5/324; β=¾ →
+  13/686; β=1 → 1/48.
+- **In the p_tail-rescaled variable the ladder goes polynomial**: c₁p = ¼
+  (5P), c₂p² = 1/48 + 5β/96 (linear!), c₃p³ = β(3β+1)/192. The (1+β)
+  denominators are an artifact of the x-variable; the natural-variable
+  ladder is polynomial in β.
+- **Bonus structure: the third log-cumulant d₃ = c₃ − c₁c₂ + c₁³/3 =
+  β(2β−1)/(16(1+β)³) vanishes at β = ½** (and β=0) — the geometric-mean
+  member is the unique β > 0 point where the deep expansion of ln(xν) has
+  no cubic term. Another independent algebraic distinction of the
+  symmetric point, logged as an observation (no derivation claimed).
+
+Observational size: Δc₃(0→½) = 0.0154 ⇒ Δν/ν ~ 1.5e−5 at x = 0.1 —
+structural algebra, not an instrument. The measurable discriminators stay
+c₁, p_tail, ν(1).
+
+**Verdict: SUCCESS (algebra complete, gates exact; two new structural
+facts — BE's Bernoulli zero is unique in the family, and β=½ kills the
+third log-cumulant).**
+
+## Stage 5T (2026-07-23): configuration-dependent β — the galaxy vote decomposed by depth (O13b)
+
+[calcs/stage5t_betasplit.py](calcs/stage5t_betasplit.py) → data/stage5t_betasplit.txt.
+Three instruments on the plain-hier machinery. G1: the full-sample β
+profile reproduces 5P to d = ±0.00 at every node (warm-chained, exact).
+G2: the decomposition rows sum to the profile totals to 1e−6.
+
+**B. The decomposition** (Δ(−2lnL) vs β=0 by fixed y-bin, evaluated at
+each β's joint best fit — pure evaluation, zero convergence risk):
+**the galaxies' β̂ ≈ 0.5–0.64 is a COMPROMISE between opposing arms.**
+At β=½: ultra-deep y<0.03 (56 pts) votes AGAINST +9.3 (the deep zero
+point wants the occupation c₁=½; the penalty grows monotonically to
++13.2 at β=1); 0.03–0.1 mild FOR (−4.3); 0.1–0.3 strong FOR (−20.0);
+transition 0.3–1 mild FOR (−5.5) but flips AGAINST at β=1 (+6.9 — the
+transition defends its 1.58 boost); the Newtonian side carries the vote
+(y 1–3: −24.4; y>3: −36.8 — the screening tail again, convergent with
+the 5G tail decomposition); lensing −1.0; M/L prior mild FOR (−2.2:
+sharper functions need less per-galaxy M/L bending).
+
+**C. Free arm fits**: HIGH arm alone (y_fid≥1, 627 pts): **β̂ = 0.76
+INTERIOR, Δ +5.8** (la0 edge-rides at β=0 only — BE's soft tail is
+unfittable there without pushing a₀ into the bound; interior at all
+β≥0.25). LOW arm (y_fid<1, 2073 pts + lensing): monotone to the β=1
+edge (−65.8) but **RIDGE-COMPROMISED — f inflates 1.57→1.94 across the
+grid** (the deep-arm a₀·f degeneracy with no Newtonian anchor); flagged
+and NOT interpreted. The decomposition is the trustworthy localizer.
+
+**The finding: β is not one number for the galaxies — the effective
+mixing exponent READS β→0 in the deep limit and β ≈ ½–¾ in the
+screening tail, within the single SPARC dataset.** Cross-system, the
+pattern is now uniform: every regime that measures the TRANSITION or
+the DEEP ZERO POINT votes β ≈ 0 (binaries at the transition, 5K/5O;
+galaxy ultra-deep; galaxy transition bin at high β), and the single
+vote for β > 0 is the Newtonian screening tail. Structurally: the
+family locks c₁·p_tail = ¼, so no member can deliver what the joint
+data ask — c₁ ≈ 0.4–0.5 (deep + binaries, 4S/4X) AND p ≈ 0.65–0.75
+(tail, 5G/5T) — a product of ~0.30–0.35. **The data strain against the
+family's own lock; the construction target for O5 is now "break the ¼
+lock upward": BE-grade deep zero point + sharpened screening,
+decoupled.** (Caution registered: the ultra-deep objection is 56 points
+and ~2σ-grade in bin terms; nuisance-locked evaluation.)
+
+**Verdict: SUCCESS as an instrument — and the answer points at
+DIFFERENT PHYSICS: β runs with regime rather than being one number.
+The reconciliation hypothesis graduates from speculation to a measured
+pattern, and the microphysics question sharpens from "which β" to "why
+does the response admixture vanish deep and grow through the
+screening tail".**
+
+## Stage 5R (2026-07-23): the binary β-profile — β pinned at zero, 24/24 (O13a)
+
+[calcs/stage5r_binbeta.py](calcs/stage5r_binbeta.py) → data/stage5r_summary.txt,
+data/stage5r_profile.txt. Dedicated ν_β tables at β = 0.25/0.75
+(e_N = 1.2a₀); G1 end-to-end member regression — the β=0 table through
+the solver reproduces the stored BE table to 1.3e-15; G2 spherical
+identities 0.01%; G3 the EFE boost is strictly monotone DECREASING in β
+at every y (B(y=1) = 1.354/1.276/1.220/1.179/1.147 across the dial).
+Boot completed on seeds 202–505. Full 6-seed × 5-β lnL matrix on one
+machinery footing (4X/5K patch set, exact-count asserts).
+
+- **β = 0 preferred over every β > 0 on every seed: 24/24
+  sign-consistent.** Mean ΔlnL behind β=0: −4.14 ± 1.11 (β=¼), −8.50 ±
+  2.13 (½), −7.90 ± 1.85 (¾), −15.35 ± 1.99 (1) (SE over 6 seeds).
+- **Mean-profile crossings: β < 0.030 (1σ, ΔlnL=0.5), β < 0.121 (2σ,
+  ΔlnL=2.0).** The binaries' β = 0 is SHARP, not shallow — O13a's
+  question answered.
+- Shape-rejection texture: b075 edge-rides α̂→2.0 in 5/6 seeds (boot
+  3/6) — high-β members cannot buy their weakened transition back with
+  amplitude. b025 stays interior 5/6 at α̂ = 1.57 ± 0.11 (interior-only
+  mean 1.48; per-seed spread 1.16–2.0 — the α̂ flat-top scatter).
+- Two-system table + an indicative additive joint (vertical-hardened
+  galaxies + binaries in −2lnL): joint minimum at β ≈ 0.25 (−29.8) —
+  carried with the 5N caveat (galaxy bootstrap yardstick ±~50 on this
+  contrast) and SUPERSEDED by 5T: the galaxy Δ is itself a tail/deep
+  compromise, so the additive joint double-counts a structural tension.
+  Do not lean on it; the regime decomposition is the honest frame.
+
+**Verdict: SUCCESS — the binary mixing dial reads β = 0 sharply (1σ
+upper bound 0.03). Combined with 5T: the two-system split is a REGIME
+split. Every probe of the transition and the deep zero point — binaries,
+galaxy ultra-deep, galaxy transition bin — holds β ≈ 0; the galaxy
+screening tail is the lone β > 0 voter in the program.**
+
+## Stage 5S (2026-07-23): the β-family quadrupole scan — Saturn's veto is β-blind (O13d)
+
+[calcs/stage5s_betaquad.py](calcs/stage5s_betaquad.py) →
+data/stage5s_betaquad.txt (solver cache data/stage5s_q.npy). 4K/5I
+multipole machinery verbatim; G2 Newton control 0; G1 simple regression
+0.1% vs 4K; member gate β=½ reproduces the 5I gm q to 0.00%; G4 hi-res
+≤ 0.1% all members. q(e_N=1.2) runs −0.0988 → −0.0901 → −0.0833 →
+−0.0777 → −0.0731 across β = 0→1 (monotone; transition-sourced as
+always). Lock join with the 5R/5O six-seed amplitudes:
+
+    β      Q₂(α̂)      × Cassini   status
+    0.00   3.64e-26    4.0×        interior 6/6 (measurement)
+    0.25   4.83e-26    5.4×        interior 5/6
+    0.50   3.88e-26    4.3×        interior 6/6 (measurement)
+    0.75   5.19e-26    5.8×        interior 1/6 → LOWER BOUND
+    1.00   4.61e-26    5.1×        interior 3/6 → lower-bound-grade
+
+**Every member sits ≥ 4× the Cassini cap; the edge-ridden members are
+lower bounds (α capped at 2.0). The mixing dial provides no
+interpolating-function escape — the 4K/5I amplitude-lock is now
+family-complete.** The ±20% wobble in Q₂·α̂ across members is α̂
+realization scatter (flat profile tops), not structure. The MI and
+EFE-screened doors (§8.2/#8) are unchanged — and strengthened, since
+the last function-space escape hatch inside this family is now shut.
+
+**Verdict: SUCCESS (the expected no-escape verified at family level;
+Saturn's veto is β-blind).**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

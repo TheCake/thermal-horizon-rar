@@ -223,15 +223,35 @@ O12. ~~**Binary 6-seed completion**~~ — DONE (Stage 5O): **occupation law
     preferred 18/18 (p065 +5.2±0.9, gm +8.5±2.1)**; α̂ six-seed 1.078±0.023
     / 1.41±0.04 / 1.36±0.07, all interior; sharp-function a₀ translations
     1.59 (+5.1σ) / 1.51 (+4.3σ) vs occupation ≈ +1.8σ.
-O13. **The β-family follow-ons** (opened by 5P — the mixing dial): (a)
-    binary β-profile with dedicated β-tables (0.25/0.75) + 6 seeds — is
-    the binaries' β̂ = 0 sharp or shallow? (b) configuration-dependent β
-    (e_N-dependent mixing) as the two-system reconciliation hypothesis —
-    testable: β̂ per separation bin in binaries, β̂ vs depth in galaxies;
-    (c) c₃(β) NNLO ladder algebra; (d) β-family quadrupole scan (expect
-    amplitude-locked per 5I, verify).
-O5. Theory question (parked with #8/#18): a construction meeting the §2.4
-    six-point specification; the Unruh-ratio reading (x = T_U/T_dS) is the hint.
+O13. ~~**The β-family follow-ons**~~ — DONE (Stages 5Q/5R/5S/5T, 2026-07-23):
+    (a) binary β-profile (5R): **SHARP — β=0 beats every β>0 on every seed
+    (24/24); bounds β<0.030 (1σ), β<0.121 (2σ)**; b075/boot edge-ride α̂→2
+    (shape rejection); b025 interior α̂=1.57±0.11. (b) configuration test
+    (5T): **the galaxy β-vote DECOMPOSES — ultra-deep votes AGAINST β>0
+    (+9.3 at ½: wants c₁=½), tail carries it (−61 at y>1), transition flips
+    against at β=1; HIGH-arm free fit β̂=0.76 interior; LOW-arm free fit
+    ridge-flagged (f→1.94). β RUNS WITH REGIME: deep+transition→0, tail→½–¾
+    — same pattern as the two-system split, now intra-SPARC. The family's
+    c₁·p_tail=¼ lock is what the data strain against (they ask ~0.3).**
+    (c) c₃(β)=β(3β+1)/(24(1+β)³) (5Q): β=0 the unique Bernoulli zero;
+    c₄(0)=−1/720 exact; rescaled ladder polynomial (c₂p²=1/48+5β/96,
+    c₃p³=β(3β+1)/192); third log-cumulant vanishes at β=½. (d) quadrupole
+    scan (5S): **every member 4.0–5.8× Cassini (edge members = lower
+    bounds) — Saturn's veto is β-blind, no family escape.**
+O14. **The lock-breaking function** (opened by 5T — the concrete instrument):
+    build ν with c₁=½ deep AND p≈0.7–0.75 tail decoupled — the natural
+    candidate is running mixing β(n): 0 at n≫1 (classical/deep) → ~½ at
+    n≪1 (quantum/tail), e.g. β = β_∞/(1+n(u)) solved self-consistently;
+    asymptotic tail then p=(1+β_∞)/2 = ¾ at the symmetric β_∞=½. Gates:
+    series (c₁=½ exact), tail exponent, ν(1) vs binary transition. Run
+    hier-galaxy (plain+vertical) AND 6-seed binary. If it beats BE on BOTH
+    systems where gm/p065 split them, the regime pattern has a function.
+O5. Theory question (parked with #8/#18), SHARPENED by 5T: derive from the
+    horizon microphysics WHY the response admixture switches on where the
+    occupation is low (β: 0 → ½ across the classical→quantum boundary) —
+    equivalently, break c₁·p_tail=¼ upward to ~0.3 from first principles.
+    The Unruh-ratio reading (x = T_U/T_dS) is the hint; exchange symmetry
+    fixes the asymptote at ½ (5P), n≪1 spontaneity is the candidate driver.
 
 ## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)
 10. ~~**Paper assembly + verification pass**~~ — DONE. Draft v1 ([PAPER.md](PAPER.md)):

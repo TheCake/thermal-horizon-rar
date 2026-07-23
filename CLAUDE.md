@@ -286,10 +286,31 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   interior; sharp a₀ 1.59 (+5.1σ) / 1.51 (+4.3σ) vs ≈ +1.8σ at ½.
   O5-remaining = derive WHICH β from horizon microphysics.** Near-miss logged: 5A's tanh-EFE template had an
   ambiguous curvature sign (5A unaffected — free-sign coefficients);
-  5B/5E use Chae+21's exact Eq. (2), gated. PUBLICATION still DEFERRED;
-  remaining: O5 construction (now spec'd by the tail+transition split),
-  O1b anchors, p-profile on binaries, ν_p quadrupole vs 4K, 6-seed
-  budgets. Zenodo/colleague (#11/#12) parked until called.** Paper
+  5B/5E use Chae+21's exact Eq. (2), gated.
+  **5Q–5T (2026-07-23, O13 COMPLETE, PAPER → v2.0): 5Q c₃(β) =
+  β(3β+1)/(24(1+β)³) — β=0 is the family's UNIQUE Bernoulli zero
+  (c₄(0)=−1/720 exact); rescaled ladder polynomial (c₁p=¼, c₂p²=
+  1/48+5β/96, c₃p³=β(3β+1)/192); third log-cumulant c₃−c₁c₂+c₁³/3 =
+  β(2β−1)/(16(1+β)³) VANISHES at β=½. 5R binary β-profile (b025/b075
+  tables gated 1.3e-15/0.01%, boot completed; 6 seeds × 5 β): **β=0
+  beats every β>0 24/24; mean Δ −4.1/−8.5/−7.9/−15.4; bounds β<0.030
+  (1σ), β<0.121 (2σ)** — sharp; b075 edge-rides 5/6 (shape rejection).
+  5T galaxy decomposition (regression d=0.00 all nodes; identity 1e-6):
+  **the galaxy β̂=0.5–0.64 is a COMPROMISE — ultra-deep votes AGAINST
+  β>0 (+9.3 at ½, wants c₁=½), tail carries it (−61 at y>1), transition
+  flips against at β=1; HIGH-arm free β̂=0.76 interior, LOW-arm free
+  fit ridge-flagged (f→1.94, not interpreted). β RUNS WITH REGIME:
+  deep+transition→0 EVERYWHERE (binaries, SPARC-deep, SPARC-transition),
+  tail→½–¾ = the lone β>0 voter. The c₁·p_tail=¼ LOCK is what the data
+  strain against (want c₁≈0.4–0.5 AND p≈0.65–0.75 → ~0.3). MI-mimicry
+  reading of the split DEMOTED (intra-SPARC split is all circular
+  orbits = MI≡MG there).** 5S quadrupole scan: q monotone −0.099→−0.073
+  but **every member 4.0–5.8× Cassini (edge members = lower bounds) —
+  Saturn's veto is β-blind**. NEW TODO O14: the lock-breaking function
+  (running β(n): 0 at n≫1 → ½ at n≪1, tail p=¾) — testable in both
+  pipelines as they stand. O5 sharpened: derive the classical→quantum
+  β-switch. PUBLICATION still DEFERRED; O1b anchors parked;
+  Zenodo/colleague (#11/#12) parked until called.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization
