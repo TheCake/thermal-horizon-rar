@@ -1,0 +1,4 @@
+STAGE 5N dv-ON bootstrap: 153 galaxies, 2700 points + 12 lensing; 40 paired reps, warm-started lite
+full-fit regression: BE -12152.49 (5M -12152.49), gm -12193.04 (5M -12193.04), d = -40.55 -> PASS
+bootstrap (40 reps): gm - BE = -29.27 +/- 52.98  (gm better in 29/40)
+percentiles 16/50/84: [-72.8, -21.0, 21.4]

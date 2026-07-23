@@ -216,11 +216,20 @@ O11. ~~**Vertical-channel disambiguation**~~ — DONE (Stage 5M): G1/nesting
     p065 −32); boot COLLAPSES (−9, coherent with its binary veto)**.
     Verdict: partial absorption; residual sharp-tail preference carried
     with the 4W identifiability caveat.
-O11b. **dv-ON galaxy bootstrap** for the surviving gm−BE = −41 contrast
-    (the 5D-grade population σ was ~65 — quote significance only after
-    this; ~50 reps of the 5M machinery, warm-started).
-O12. **Binary 6-seed completion** for gm/p065 (seeds 404/505 to match the
-    3V budget grade) — cheap, firms the +6/+10 counter-lean.
+O11b. ~~**dv-ON galaxy bootstrap**~~ — DONE (Stage 5N): **gm − BE = −29 ±
+    53, gm ahead 29/40 (72%)** — the vertical-robust lead is a LEAN, not a
+    detection; quoted as such everywhere. Regression vs 5M exact.
+O12. ~~**Binary 6-seed completion**~~ — DONE (Stage 5O): **occupation law
+    preferred 18/18 (p065 +5.2±0.9, gm +8.5±2.1)**; α̂ six-seed 1.078±0.023
+    / 1.41±0.04 / 1.36±0.07, all interior; sharp-function a₀ translations
+    1.59 (+5.1σ) / 1.51 (+4.3σ) vs occupation ≈ +1.8σ.
+O13. **The β-family follow-ons** (opened by 5P — the mixing dial): (a)
+    binary β-profile with dedicated β-tables (0.25/0.75) + 6 seeds — is
+    the binaries' β̂ = 0 sharp or shallow? (b) configuration-dependent β
+    (e_N-dependent mixing) as the two-system reconciliation hypothesis —
+    testable: β̂ per separation bin in binaries, β̂ vs depth in galaxies;
+    (c) c₃(β) NNLO ladder algebra; (d) β-family quadrupole scan (expect
+    amplitude-locked per 5I, verify).
 O5. Theory question (parked with #8/#18): a construction meeting the §2.4
     six-point specification; the Unruh-ratio reading (x = T_U/T_dS) is the hint.
 

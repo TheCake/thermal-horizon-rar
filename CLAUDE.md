@@ -268,10 +268,23 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   p065 −32); boot COLLAPSES (−9) = the ¼ cell dead everywhere.** END
   STATE: the ladder digit is three-cornered — ½ (binary-anchored, mildest
   a₀), ⅓ (gm: best cross-system profile, leads every galaxy treatment),
-  ¼ (excluded); two-system tension real but halved, carried with the 4W
-  identifiability caveat; O11b = dv-ON galaxy bootstrap before quoting
-  gm−BE significance; O12 = binary 6-seed completion; O5-remaining = WHY
-  geometric-mean (microphysics).** Near-miss logged: 5A's tanh-EFE template had an
+  ¼ (excluded).**
+  **5N/5O/5P (2026-07-23 close, PAPER → v1.9): THE MIXING FAMILY (5P, the
+  "why" instrument) — ω = ω_src^(1−β)·ω_tot^β ⇒ EXACT c₁ = 1/(2(1+β)),
+  c₂ = 1/(12(1+β)) + β/(8(1+β)²), p_tail = (1+β)/2, relation c₁·p_tail =
+  ¼; β=0/½/1 = BE/gm/boot (member regressions 1e-13); Bernoulli 1/12
+  recurs at β=½; β=½ = unique exchange-symmetric fixed point (impedance-
+  matching / Curzon–Ahlborn / source-stiffness+response-inertia readings —
+  stated as readings, not derivations). MEASURED: galaxy β̂ = 0.64 (plain
+  hier, Δ+86) / 0.45 (vertical-hardened, Δ+43, implied c₁ = 0.35 ≈ ⅓ —
+  ON the symmetric point); binaries hold β ≈ 0. Final two-system form:
+  β ≈ ½ (galaxies) vs β ≈ 0 (binaries) — one falsifiable parameter;
+  configuration-dependent β (e_N-dependent mixing) = reconciliation
+  hypothesis → O13. 5N bootstrap: vertical-robust gm lead = −29 ± 53,
+  29/40 (72%) = a LEAN, quoted as such. 5O six-seed: occupation preferred
+  18/18 (p065 +5.2±0.9, gm +8.5±2.1); α̂ 1.078±0.023 / 1.41 / 1.36 all
+  interior; sharp a₀ 1.59 (+5.1σ) / 1.51 (+4.3σ) vs ≈ +1.8σ at ½.
+  O5-remaining = derive WHICH β from horizon microphysics.** Near-miss logged: 5A's tanh-EFE template had an
   ambiguous curvature sign (5A unaffected — free-sign coefficients);
   5B/5E use Chae+21's exact Eq. (2), gated. PUBLICATION still DEFERRED;
   remaining: O5 construction (now spec'd by the tail+transition split),

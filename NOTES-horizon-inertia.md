@@ -2321,6 +2321,66 @@ galaxy-side preference (anchors = O1b remain the unlock). Quadrupole:
 amplitude-locked at ~4× Cassini for ALL of them (5I); the MI door is the
 program's standing escape, unchanged.
 
+## Stage 5N/5P — THE MIXING DIAL: β measured; the why sharpened to one exponent (2026-07-23)
+
+**5P theory ([calcs/stage5p_betafam.py](calcs/stage5p_betafam.py)): the three
+bath cells are one family.** Mix the two frequency prescriptions
+geometrically — ω = ω_source^(1−β)·ω_total^β, i.e. occupation argument
+u = y^((1+β)/2)·ν^β — and derive (hand algebra, gate-verified to 2e-3 on the
+coefficients and 1e-13 on the member functions):
+
+  **c₁(β) = 1/(2(1+β));  c₂(β) = 1/(12(1+β)) + β/(8(1+β)²);
+  p_tail = (1+β)/2;  hence c₁·p_tail = ¼ EXACTLY across the family.**
+
+β=0 = occupation law (½, 1/12); β=½ = geometric mean (⅓, 1/12 — the
+Bernoulli 1/12 RECURS at the symmetric point); β=1 = quantum bootstrap
+(¼, 7/96). Structural facts: (i) deep scale invariance cannot choose β
+(both frequencies coincide deep); (ii) **β=½ is the unique fixed point of
+the source↔response exchange symmetry** (β→1−β) — symmetry forces c₁=⅓;
+(iii) the geometric mean is where maximal coupling lands in canonical
+settings: impedance matching (√(Z₁Z₂)), Curzon–Ahlborn maximum power
+(√(T_hT_c)), and the normal mode with source-stiffness/response-inertia
+(ω²=ω₁ω₂ — an MI-flavored reading). Stated as readings; the sharpened
+construction problem = derive WHICH mix the horizon modes carry (C&T's
+implicit choice was β=0). The "why ⅓" is now "why symmetric mixing" — one
+exponent, measurable.
+
+**And measured: galaxy β̂ = 0.64 (plain hier, interior, Δ+85.6 over β=0) /
+0.45 (with the measured vertical channel — the most-controlled treatment —
+interior, Δ+42.7; implied c₁ = 0.346 ≈ ⅓, p_tail = 0.72).** The
+vertical-hardened galaxy measurement lands ON the exchange-symmetric point.
+The binaries hold β ≈ 0 (5K/5O: the occupation law beats the β=½ and β=1
+members sign-consistently). Endpoint regressions exact; the warm-chained
+profile converged 2 lnL deeper than the 5M one-shot fits at b=0.5/1
+(logged; direction benign). The two-system statement in final form: **the
+degree of self-consistency of the bath frequency reads β ≈ ½ in galaxies
+and β ≈ 0 in binaries** — a one-parameter, falsifiable disagreement.
+Candidate physics for the split (noted, untested): the binaries sit in a
+DOMINANT external field at the transition while the deep galaxy points are
+quasi-isolated — if the response fraction β is configuration-dependent
+(the bath sees the total field only where internal response dominates),
+both readings can be right; alternatively the MI reading (trajectory
+functional) naturally mimics β=0 for the binaries' statistic. Theory
+target for O5. NNLO c₃(β) ladder: open.
+
+**5O (O12, [calcs/stage5o_seeds.py](calcs/stage5o_seeds.py)): binary
+six-seed completion.** Seeds 404/505 added for {p050, p065, gm}: the
+counter-lean FIRMS — **occupation law preferred 18/18 across six seeds:
+p065 +5.2 ± 0.9, gm +8.5 ± 2.1 (SE over seeds; gm's seed-31 +18.6 remains
+the outlier, median ~+7)**; α̂ six-seed: p050 = 1.078 ± 0.023 (softens the
+4V binary-a₀ pull to ≈ +1.8σ), p065 = 1.41 ± 0.04, gm = 1.36 ± 0.07 — all
+interior 18/18; Newton dead 18/18 (+77…+98). Six-seed a₀ translations:
+p065 → 1.59 ± 0.11 (+5.1σ), gm → 1.51 ± 0.11 (+4.3σ) — the sharp-function
+temperature break stands at six seeds.
+
+**5N (O11b, [calcs/stage5n_dvboot.py](calcs/stage5n_dvboot.py)): the
+surviving lead bootstrapped.** Full-fit regression reproduces 5M exactly
+(BE −12152.49, gm −12193.04). 40 paired galaxy reps (warm-started lite):
+**gm − BE = −29.3 ± 53.0, gm better in 29/40 (72.5%), percentiles
+[−72.8, −21.0, +21.4].** The vertical-robust gm lead is a LEAN, not a
+detection — quote it as such everywhere (the 5D pre-vertical flip was 86%;
+the vertical channel took half the effect and half the significance).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

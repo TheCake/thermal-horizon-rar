@@ -1,0 +1,28 @@
+STAGE 5P mixing family: 153 galaxies, 2700 points + 12 lensing
+
+G0 series gates (numeric vs derived c1 = 1/(2(1+b)), c2 = 1/(12(1+b)) + b/(8(1+b)^2)):
+  b=0.00: c1 = 0.5000 (0.5000), c2 = 0.0833 (0.0833) OK
+  b=0.25: c1 = 0.4000 (0.4000), c2 = 0.0872 (0.0867) OK
+  b=0.50: c1 = 0.3333 (0.3333), c2 = 0.0842 (0.0833) OK
+  b=0.75: c1 = 0.2857 (0.2857), c2 = 0.0793 (0.0782) OK
+  b=1.00: c1 = 0.2500 (0.2500), c2 = 0.0741 (0.0729) OK
+member regressions: |b=0 vs BE| 1.2e-13, |b=.5 vs gm| 8.2e-14, |b=1 vs boot| 8.5e-14 -> OK
+family relation: c1*p_tail = 1/4 exactly (p_tail = (1+b)/2)
+G0 -> PASS
+
+beta profile, plain hier (5D machinery):
+  b=0.00:  -10435.00  [ref -10435.00 OK]
+  b=0.25:  -10497.63
+  b=0.50:  -10519.79  [ref -10519.78 OK]
+  b=0.75:  -10520.59
+  b=1.00:  -10510.62  [ref -10510.60 OK]
+  beta-hat = 0.64 (edge=no); D vs b=0: +85.6; implied c1 = 0.304, p_tail = 0.822
+
+beta profile, with vertical channel (5M machinery):
+  b=0.00:  -12152.49  [ref -12152.49 OK]
+  b=0.25:  -12190.60
+  b=0.50:  -12195.18  [ref -12193.04 DIFF]
+  b=0.75:  -12183.40
+  b=1.00:  -12163.57  [ref -12161.04 DIFF]
+  beta-hat = 0.45 (edge=no); D vs b=0: +42.7; implied c1 = 0.346, p_tail = 0.723
+
