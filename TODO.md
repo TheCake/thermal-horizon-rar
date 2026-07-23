@@ -191,13 +191,36 @@ O9. ~~**Unification check**~~ — DONE (Stage 5H): **the binaries ACCEPT
     hier-galaxy gain: **the only function tested viable on BOTH systems**.
     The §2.4 construction spec is now: ½-grade transition + p≈0.6–0.65
     tail + thermal deep structure.
-O10. **p-family follow-ups** (opened by 5G/5H): (a) joint-treatment p
-    measurement adding the binary channel (finer p grid on binaries, 6
-    seeds); (b) self-consistent p-family a₀ scorecard (binary α̂≈1.4–1.5
-    under p065 moves the naive translation worse, but the galaxy-side a₀
-    moves too — recompute the ladder jointly before any tension claim);
-    (c) ν_p(0.65) solar quadrupole through the 4K machinery (sharper tail
-    should relieve; verify); (d) 5F/5H six-seed budgets.
+O10. ~~**p-family follow-ups**~~ — DONE (Stages 5I/5K/5L, 2026-07-23):
+    (a) binary p-profile at FOUR seeds: **the binaries prefer p=½
+    sign-consistently 12/12** (p0578 +7.7±0.7, p065 +5.8±1.3, gm +10.4±2.8);
+    sharp functions stay viable (α̂ interior; p065 1.40±0.04, gm 1.44±0.08).
+    (b) a₀ ladder (κ gates pass; κ=1.22/1.34): **sharp-function binary a₀ =
+    1.58/1.57±0.11 = +4.9σ off cH₀/2π (vs +1.9σ at ½); galaxy FLAT legs ON
+    the horizon (gm −0.2σ)**. (c) quadrupole: **AMPLITUDE-LOCKED** — raw q
+    drops (0.81×/0.85×) but α̂ rises in proportion; Q₂·α̂ ≈ 4.2–4.4× Cassini
+    for every function; no interpolating-function escape; MI door stands.
+O5. **Construction** — MAJOR PROGRESS (Stage 5J): the geometric-mean bath
+    **ν_gm = 1 + n_BE(y^¾√ν)** (ω = √(ω_source·ω_total); zero parameters;
+    derived c₁=⅓, c₂=1/12 both gate-verified; ν(1)=1.433; tail p≡¾) —
+    **LEADS every hierarchical galaxy treatment** (−85 vs BE plain-hier,
+    −41 with the vertical channel), ties flat, binary-viable. Priority:
+    scout NOT FOUND (exact form, geometric-mean argument, coefficient ⅓);
+    Pazy–Argaman closed by direct read (FD statistics, O(e^{−1/x}) deep
+    corrections — cannot anticipate). REMAINING: the microphysics of WHY
+    the frequency is the geometric mean (the sharpened construction
+    problem); ν_gm NNLO/Bernoulli structure vs the C&T ladder.
+O11. ~~**Vertical-channel disambiguation**~~ — DONE (Stage 5M): G1/nesting
+    pass; **the a₀/f_ML anomaly RESOLVES (all hier fits return to a₀ =
+    1.04–1.13e-10 = horizon); the tail vote HALVES but survives (gm −41,
+    p065 −32); boot COLLAPSES (−9, coherent with its binary veto)**.
+    Verdict: partial absorption; residual sharp-tail preference carried
+    with the 4W identifiability caveat.
+O11b. **dv-ON galaxy bootstrap** for the surviving gm−BE = −41 contrast
+    (the 5D-grade population σ was ~65 — quote significance only after
+    this; ~50 reps of the 5M machinery, warm-started).
+O12. **Binary 6-seed completion** for gm/p065 (seeds 404/505 to match the
+    3V budget grade) — cheap, firms the +6/+10 counter-lean.
 O5. Theory question (parked with #8/#18): a construction meeting the §2.4
     six-point specification; the Unruh-ratio reading (x = T_U/T_dS) is the hint.
 

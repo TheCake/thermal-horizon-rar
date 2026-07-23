@@ -1,0 +1,18 @@
+STAGE 5I: solar quadrupole for nu_p(0.65) and the geometric-mean bootstrap (4K machinery verbatim)
+units: q unit a0/r_M = 1.141e-25 s^-2; Q2 = 3|q|*unit*alpha; Cassini 2-sigma cap 9e-27
+G5 nu_gm: c1 = 0.3333 (pred 0.3333), c2 = 0.0842 (pred 0.0833); max|H| = 1.0e-12; nu(1) = 1.433 -> PASS
+G2 Newton control: max|phi_2| = 0.00e+00 -> OK
+G1 regression simple eN=1.2: q = -0.09779 (4K -0.09788) 0.1% -> OK
+
+   p065 eN=1.0: q = -0.07015  plateau dev 0.0%
+   p065 eN=1.2: q = -0.07932  plateau dev 0.1%  [G4 hi-res -0.07928, 0.1% OK]
+   p065 eN=1.4: q = -0.08738  plateau dev 0.1%
+     gm eN=1.0: q = -0.07384  plateau dev 0.0%
+     gm eN=1.2: q = -0.08327  plateau dev 0.0%  [G4 hi-res -0.08322, 0.1% OK]
+     gm eN=1.4: q = -0.09136  plateau dev 0.0%
+
+Q2 [s^-2] = 3|q|*unit*alpha  (4K comparators: simple/BE q ~ 0.098 -> Q2(alpha=1) = 3.35e-26):
+   p065: q(1.2) = -0.07932; Q2(alpha=1) = 2.71e-26 (vs 1/2-branch 3.35e-26: x0.81); g_ext +/-0.05a0 -> +/-7.4e-28
+         vs Cassini cap: 3.0x at alpha=1; at alpha=1.45+/-0.11: Q2 = 3.94e-26 = 4.4x cap
+     gm: q(1.2) = -0.08327; Q2(alpha=1) = 2.85e-26 (vs 1/2-branch 3.35e-26: x0.85); g_ext +/-0.05a0 -> +/-7.5e-28
+         vs Cassini cap: 3.2x at alpha=1  (alpha from the 5K binary fit; Q2 scales linearly)

@@ -1,0 +1,11 @@
+STAGE 5J geometric-mean bootstrap: 153 galaxies, 2700 points + 12 lensing
+G0 nu_gm: c1 = 0.3333 (1/3), c2 = 0.0842 (1/12 = 0.0833); max|H| = 8.8e-13; nu*sqrt(y)@1e-10 = 1.00000; nu(100)-1 = 1.9e-14; nu(1) = 1.433 -> PASS
+
+FLAT-M/L joint fits (4E objective; a0 ladder legs):
+  BE regression: -8397.72 (4E -8397.72) -> PASS
+   p065: -2lnL =   -8395.51  a0 = 1.084e-10  f_ML = 1.29  s_int = 0.122  dlt = +0.116
+     gm: -2lnL =   -8395.72  a0 = 1.023e-10  f_ML = 1.31  s_int = 0.122  dlt = +0.132
+
+HIERARCHICAL converged (5D machinery; comparators: boot -10510.60, p065 -10491.38, BE -10435.00, standard -10424.49):
+  gm hier:  -10519.78  a0 = 8.363e-11  f_ML = 1.55  s_int = 0.069  dlt = +0.212
+  gm - boot = -9.18 | gm - p065 = -28.40 | gm - BE = -84.78

@@ -245,12 +245,33 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   of boot's flip from the TAIL alone** at ½-grade transition (ν(1)=1.42);
   convergent with §3's p=0.578±0.12 → the hier galaxies vote for SHARPER
   SCREENING (Cassini-friendly direction); ¼-vs-½ deep digit stays OPEN.
-  O9 (5H, unification): **binaries ACCEPT ν_p(0.65)** — α̂ 1.53/1.38
-  INTERIOR, Newton +93/+91, only 4.6/7.6 behind BE (realization grade) vs
-  −56.4 hier-galaxy gain = **the only function viable on BOTH systems;
-  the §2.4 spec is now ½-grade transition + p≈0.6–0.65 tail + thermal
-  deep (¼-vs-½ open)**; amplitude bookkeeping under the p-family queued
-  (O10: binary α̂≈1.4–1.5 → a₀ ladder must be recomputed jointly). Near-miss logged: 5A's tanh-EFE template had an
+  O9 (5H, unification): binaries ACCEPT ν_p(0.65) — α̂ interior, Newton
+  +93/+91; firmed by O10.
+  **O10/O5/O11 (5I–5M, 2026-07-23 night, PAPER → v1.8): 5I quadrupole =
+  AMPLITUDE-LOCKED (raw q drops 0.81×/0.85× but binary α̂ rises in exact
+  proportion; Q₂·α̂ ≈ 4.2–4.4× Cassini for EVERY function — no
+  interpolating-function escape; MI door unchanged). 5J THE CONSTRUCTION:
+  geometric-mean bath ν_gm = 1+n_BE(y^¾√ν) (ω=√(ω_source·ω_total), ZERO
+  params, derived c₁=⅓ c₂=1/12 gate-verified, ν(1)=1.433, tail p≡¾) —
+  LEADS hier galaxy ladder −10519.8 (−85 vs BE), ties flat (Δ2.0);
+  priority scout NOT FOUND + Pazy–Argaman closed by direct read (FD
+  stats, O(e^{−1/x}) deep corrections — cannot anticipate; gitignored
+  data/pazy_argaman_text.txt). 5K binary budget (4 seeds × 4 functions,
+  regression exact): binaries prefer p=½ SIGN-CONSISTENT 12/12 (+5.8…
+  +10.4 per seed); sharp functions viable (α̂ interior: p065 1.40±0.04,
+  gm 1.44±0.08); Newton dead +77…+98. 5L a₀ ladder (κ gates pass): sharp
+  binary a₀ = 1.58±0.11 = +4.9σ off cH₀/2π (vs +1.9σ at ½); galaxy flat
+  legs ON horizon (gm −0.2σ). 5M vertical-channel control (measured σ_v,
+  G1 exact, nesting OK): **the a₀/f_ML anomaly RESOLVES — all hier fits
+  return to a₀ = 1.04–1.13e-10 = horizon (the program's strongest
+  temperature-lock statement); tail vote HALVES but survives (gm −41,
+  p065 −32); boot COLLAPSES (−9) = the ¼ cell dead everywhere.** END
+  STATE: the ladder digit is three-cornered — ½ (binary-anchored, mildest
+  a₀), ⅓ (gm: best cross-system profile, leads every galaxy treatment),
+  ¼ (excluded); two-system tension real but halved, carried with the 4W
+  identifiability caveat; O11b = dv-ON galaxy bootstrap before quoting
+  gm−BE significance; O12 = binary 6-seed completion; O5-remaining = WHY
+  geometric-mean (microphysics).** Near-miss logged: 5A's tanh-EFE template had an
   ambiguous curvature sign (5A unaffected — free-sign coefficients);
   5B/5E use Chae+21's exact Eq. (2), gated. PUBLICATION still DEFERRED;
   remaining: O5 construction (now spec'd by the tail+transition split),

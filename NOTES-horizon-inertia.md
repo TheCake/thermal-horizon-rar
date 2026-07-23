@@ -2184,6 +2184,143 @@ measurement with the binary channel added is the natural next instrument.
 help; verify with the solver). (4) 6-seed budgets for 5F/5H (2 seeds
 tonight, 4X footing).
 
+## Stage 5I — the quadrupole is AMPLITUDE-LOCKED (2026-07-23)
+
+O10a executed ([calcs/stage5i_quadrupole2.py](calcs/stage5i_quadrupole2.py),
+4K multipole machinery verbatim; G1 regression on simple 0.1%, Newton
+control exact, plateaus flat, resolution-doubling 0.1%). The hope: sharper
+screening → smaller solar quadrupole → Cassini relief. The result kills the
+hope cleanly: **ν_p(0.65) has q(1.2) = −0.0793 = 0.81× the ½-branch raw
+quadrupole — but the binaries demand α̂ ≈ 1.45 under it, and 0.81 × 1.28 ≈
+1.04: Q₂·α̂ = 3.9e-26 = 4.4× the Cassini cap, unchanged.** Same for the
+geometric-mean bootstrap (raw 0.85×, α̂ pending 5K). **The Cassini tension
+is amplitude-locked: the binaries pin the transition boost, the quadrupole
+is transition-sourced, and the product is invariant under the tail-sharpness
+dial.** No ν-function escape exists in this family direction; the 4K/4L
+verdict stands — modified-gravity readings carry the 4× excess, the
+EFE-respecting MI branch remains the Saturn-safe door. (In plain terms:
+a null that strengthens the MI door rather than softening the paradox.)
+
+## Stage 5J — the geometric-mean bootstrap LEADS the galaxies (2026-07-23)
+
+O5 construction attempt, galaxy leg
+([calcs/stage5j_gmboot.py](calcs/stage5j_gmboot.py)). The candidate from the
+5B–5H spec: **ν_gm = 1 + n_BE(y^(3/4)√ν)** — mode frequency ω =
+√(ω_source·ω_total), the geometric mean of the source-driven and
+self-consistent prescriptions; equivalently the occupation argument is
+x² = [T_U(g_N)/T_dS]·[T_U(g_obs)/T_dS]. Zero free parameters. Derived and
+gate-verified series: **ν√y = 1 + x/3 + x²/12 — c₁ = ⅓ exactly (inside both
+measured bands), c₂ = 1/12 (the occupation law's Bernoulli coefficient
+SURVIVES the geometric mean)**; transition ν(1) = 1.433 (the 5H-accepted
+grade); Newtonian tail e^(−y^(3/4)) (p-equivalent ¾, the top of the 5G hier
+band). Numerics: Newton solver on w=√ν, monotone H, relative residual 1e-12
+(first pass used an absolute-residual gate that false-FAILed on the deep
+end's n~1e8 — machine precision misread; gate corrected to relative, logged).
+
+Results: **flat M/L — gm concedes 2.0 to BE (−8395.72 vs −8397.72,
+statistical silence; a₀ = 1.023e-10, f_ML = 1.31). Hierarchical converged —
+gm = −10519.78, the NEW LEADER: −9.2 vs boot, −28.4 vs the fitted-p optimum,
+−84.8 vs BE.** Honest sizing: gm-vs-boot (−9.2) is inside population
+variance (the boot-BE bootstrap σ was ~65) — the robust statement is that
+the sharp-tail class leads and gm is its parameter-free member sitting on
+top; gm-vs-BE (−85) is the same grade as the 86%-bootstrap 5D flip. A
+derived function with no dials matching the fitted-p family's optimum (and
+nudging past it) is exactly what a correct construction should do. Binary
+leg = 5K (running). Scout EXECUTED same day (Haiku sweep + primary read):
+(a) the exact implicit form NOT FOUND; (c) NO published interpolating
+function with deep NLO coefficient ⅓ (Milgrom's reviews + families searched);
+(b) the one flagged candidate — Pazy & Argaman 1106.4108 ("a general
+expression for the MOND interpolating function") — CLOSED BY DIRECT READ
+(data/pazy_argaman_text.txt): their construction is FERMI–DIRAC (a₀ ↔ Fermi
+energy), μ-side with total-acceleration argument, evaluated as a
+dilog/numerical curve, and their own text states its deep-MOND corrections
+are "exponentially small in 1/x, i.e., O(exp[−1/x])" — no polynomial NLO
+at all, no implicit closure, no geometric mean. It cannot anticipate ν_gm.
+Status: apparently unpublished (scout-grade negative, nearest candidate
+primary-checked).
+
+## Stage 5K/5L — the binary p-profile and the a₀ ladder: the tension gets two more axes (2026-07-23)
+
+**5K (O10c + O5 binary, [calcs/stage5k_binprofile.py](calcs/stage5k_binprofile.py)):
+four seeds × four functions**, all through the identical v7 machinery
+(regression: p050 seeds 31/101 reproduce the 4X λ=1.00 values to the third
+decimal; all six new EFE tables spherical-identity-gated at 0.01%). Per-seed
+ΔlnL vs the occupation law (positive = worse): **p0578 +7.7±0.7, p065
++5.8±1.3, gm +10.4±2.8 (seed-31 outlier +18.6, others ~+7.6) — sign-consistent
+12/12: the binaries measurably prefer the pure p=½ occupation transition.**
+The sharper functions stay VIABLE (α̂ interior: p065 1.40±0.04 4/4, gm
+1.44±0.08 4/4; p0578 mixed with one flat-top edge; no shape rejections) and
+Newton is dead under every function (+77…+98). The 5H two-seed "realization
+grade" phrasing is hereby FIRMED: at four seeds the binary counter-lean is a
+real, modest, consistent preference — an order of magnitude smaller than the
+hier-galaxy gains in the other direction (56–85).
+
+**5L (O10b, [calcs/stage5l_ladder.py](calcs/stage5l_ladder.py)): the a₀
+ladder under the sharp functions** (κ from the new e_N = 1.0/1.2/1.4 tables;
+gates: BE-κ regression vs 4V exact at +0.916, α=1 identity, κ>0; κ(p065) =
++1.22, κ(gm) = +1.34). **Galaxy FLAT legs sit ON the horizon temperature:
+gm a₀ = 1.02±0.09 (−0.2σ vs cH₀/2π), p065 1.08±0.09 (+0.5σ). Binary legs
+under the sharp functions blow up: a₀ = 1.58/1.57 ± 0.11 = +4.9σ/+4.8σ**
+(vs +1.9σ under the occupation law, 4V). The larger κ softens the exponent
+but the α̂ ≈ 1.4 dominates.
+
+**The synthesis after 5I+5K+5L: the two-system tension is now measured on
+three axes and they cohere.** The hierarchical galaxies vote for sharper
+tails (+56…+85); the binaries vote against (−6…−10), their amplitude under
+sharp functions breaks the a₀–horizon lock (+4.9σ), and the quadrupole is
+amplitude-locked regardless (5I). Meanwhile the FLAT galaxy treatment has no
+tail preference (5J: BE best by 2) and sits exactly on cH₀/2π. The suspicious
+alignment: everything anomalous lives in the hierarchical treatment, exactly
+where a₀ runs low (0.84–0.89e-10) and f_ML runs high (1.5+) — and the 4W
+lesson says the vertical (distance/inclination) channel is the great absorber
+at SPARC depth. **Sober hypothesis: the hier tail vote is per-galaxy vertical
+structure in disguise; if true, the coherent picture is the occupation law +
+horizon a₀ (flat galaxies −0.2σ, binaries +1.9σ, binary function-preference
+p=½).** Disambiguator = Stage 5M (function ladder WITH the measured-prior
+vertical channel): collapse → sober reading wins; survive → the tension is
+physical.
+
+## Stage 5M — the vertical channel: HALF the tail vote absorbs, the a₀ anomaly RESOLVES (2026-07-23)
+
+O11 executed ([calcs/stage5m_hierv.py](calcs/stage5m_hierv.py)): the function
+ladder {BE, p065, gm, boot} re-run with the 4W vertical channel added to the
+5D machinery — per-galaxy δv with MEASURED priors (σ_v from the SPARC table's
+own distance & inclination errors, median 0.097 dex), closed-form profiled
+alongside δd, converged. Gates: G1 σ_v→0 reproduces 5D's BE to 0.01;
+nesting holds for all four; std(δv) = 0.106 ≈ the prior median (the channel
+spends its budget, doesn't blow through it).
+
+**Result 1 — the a₀/f_ML anomaly was vertical structure: with δv active,
+every function's hierarchical a₀ returns to the horizon value** (BE 1.044,
+gm 1.052, boot 1.073, p065 1.125 ×10⁻¹⁰ vs cH₀/2π = 1.042; f_ML back to
+1.16–1.41; s_int → 0.044). The low-a₀/high-f_ML coupling that shadowed every
+hier fit tonight is gone — the full hierarchy now AGREES with the flat
+treatment and the binaries on the temperature. (Scorecard-grade: the
+strongest a₀ = cH₀/2π statement the program has.)
+
+**Result 2 — the tail vote HALVES but survives: Δ vs BE goes gm −84.8 →
+−40.6, p065 −56.4 → −31.7. Result 3 — boot COLLAPSES: −75.6 → −8.6.** The
+¼-cell's galaxy case was mostly vertical-degenerate; combined with its
+binary veto (5F), the quantum self-consistent bootstrap is now out
+everywhere. Only the ½-branch-transition sharp-tail functions (gm, p065)
+keep real gains — exactly the two the binaries accept.
+
+**End-of-night synthesis.** The geometric-mean bath ν = 1 + n_BE(y^¾√ν)
+(c₁=⅓, c₂=1/12, parameter-free, apparently unpublished) leads the galaxy
+ladder in EVERY treatment tried (hier −85, hier+vertical −41, flat tie) and
+is binary-viable (α̂ interior 4/4). The occupation law (½) remains the
+binaries' preferred function (sign-consistent +6…+10 over every sharper one)
+and carries the mildest binary a₀ translation (+1.9σ vs +4.9σ). The residual
+two-system tension: galaxies-with-full-hierarchy prefer gm by ~40 (point
+estimate; a dv-ON galaxy bootstrap = O11b before quoting significance — the
+5D-grade population σ was ~65); binaries prefer ½ by ~8 with the sharp-α̂
+a₀ break as the harder objection. The ladder digit is now three-cornered —
+½ (binary-anchored), ⅓ (geometric mean, best cross-system profile), ¼
+(dead) — and the identifiability caveat of 4W applies to the surviving
+galaxy-side preference (anchors = O1b remain the unlock). Quadrupole:
+amplitude-locked at ~4× Cassini for ALL of them (5I); the MI door is the
+program's standing escape, unchanged.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -1,0 +1,14 @@
+STAGE 5M vertical-channel disambiguation: 153 galaxies, 2700 points + 12 lensing; sigma_v measured 16/50/84 = [0.046, 0.097, 0.139] dex
+
+G1 sigma_v->0 (BE): -10434.99 (5D -10435.00) -> PASS
+
+Function ladder WITH the measured vertical channel (dv-ON):
+     BE:  -12152.49  (15 rd)  a0=1.044e-10  f_ML=1.16  s_int=0.045  std(dv)=0.106  [G2 nesting vs -10435.00: OK]
+   p065:  -12184.17  (15 rd)  a0=1.125e-10  f_ML=1.30  s_int=0.044  std(dv)=0.106  [G2 nesting vs -10491.38: OK]
+     gm:  -12193.04  (15 rd)  a0=1.052e-10  f_ML=1.32  s_int=0.044  std(dv)=0.106  [G2 nesting vs -10519.78: OK]
+   boot:  -12161.04  (15 rd)  a0=1.073e-10  f_ML=1.41  s_int=0.045  std(dv)=0.105  [G2 nesting vs -10510.60: OK]
+
+Delta vs BE, dv-ON:  gm -40.55 | p065 -31.68 | boot -8.55
+Delta vs BE, dv-OFF: gm -84.78 | p065 -56.38 | boot -75.59
+
+VERDICT: partial absorption -- the tail vote is vertical-degenerate at SPARC depth; decision needs anchors (O1b).

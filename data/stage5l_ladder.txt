@@ -1,0 +1,25 @@
+STAGE 5L a0 ladder; deep pairs (6-30 kAU): 1361, y 16/50/84 = [0.219, 0.649, 1.483]
+
+alpha-hat (5K, mean +- realization SE over seeds):
+    p050: 1.113 +- 0.010  (4 seeds)
+   p0578: 1.593 +- 0.176  (4 seeds)
+    p065: 1.402 +- 0.043  (4 seeds)
+      gm: 1.435 +- 0.076  (4 seeds)
+
+kappa(   be) = +0.916 (16/84 +0.907/+0.914)
+kappa( p065) = +1.219 (16/84 +1.196/+1.215)
+kappa(   gm) = +1.341 (16/84 +1.310/+1.332)
+G3 BE-kappa regression vs 4V (+0.916): +0.916 -> PASS
+G2 kappa > 0 all families -> PASS
+G1 alpha=1 -> 1.200e-10 (1.200e-10) -> PASS
+
+THE p-FAMILY a0 LADDER  [1e-10 m/s^2]
+  cH0/2pi: Planck 1.042+-0.008, SH0ES 1.129+-0.015
+   p065 galaxy FLAT (5J):  1.08+-0.09   pull vs Planck +0.5s
+   p065 binary (kappa):    1.58+-0.11   pull vs Planck +4.9s   (alpha 1.40+-0.12, kappa +1.22)
+   p065 galaxy HIER:       0.89 (f_ML=1.53 -- a0/f_ML-traded, not scorecard-grade; disclosed only)
+     gm galaxy FLAT (5J):  1.02+-0.09   pull vs Planck -0.2s
+     gm binary (kappa):    1.57+-0.11   pull vs Planck +4.8s   (alpha 1.44+-0.13, kappa +1.34)
+     gm galaxy HIER:       0.84 (f_ML=1.55 -- a0/f_ML-traded, not scorecard-grade; disclosed only)
+
+  [4V comparators: BE binary a0 = 1.37+-0.17 (+1.9s); galaxy flat rows 1.05/1.00 (+0.1/-0.5s)]

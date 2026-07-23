@@ -10,9 +10,10 @@ data/sparc/
 !data/hier_cube_*.npy
 !data/chae2021_table3.csv
 
-# third-party full texts (re-fetch documented in calcs/stage5b_envtest.py):
+# third-party full texts (re-fetch documented in calcs/stage5b_envtest.py / NOTES):
 data/chae2021.pdf
 data/chae2021_text.txt
+data/pazy_argaman_text.txt
 
 __pycache__/
 *.pyc
