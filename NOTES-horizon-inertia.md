@@ -2525,6 +2525,114 @@ the last function-space escape hatch inside this family is now shut.
 **Verdict: SUCCESS (the expected no-escape verified at family level;
 Saturn's veto is β-blind).**
 
+## Stage 5U (2026-07-23): the spontaneous-fraction bath — the running β DERIVED (O5 construction)
+
+[calcs/stage5u_runbeta.py](calcs/stage5u_runbeta.py) → data/stage5u_runbeta.txt.
+The 5T pattern (β = 0 where occupation is high, β → ½ where it is low)
+gets a mechanism. The mixing weight β is the RESPONSE share of the mode
+frequency; in a driven thermal mode the channel split is
+Einstein-coefficient physics — stimulated processes (rate ∝ n) follow
+the DRIVE (the source-prepared field), spontaneous emission (rate ∝ 1)
+probes the mode's OWN structure. Weighting the response by the channel
+share gives two zero-parameter candidates:
+
+- **F1 (rate share): β = ½·1/(1+n) = 1/(2ν)**
+- F2 (zero-point energy share): β = ½·(½)/(n+½) = 1/(2(2ν−1))
+
+Both: classical limit n≫1 → β→0 (source-driven — Cadoni–Tuveri's
+implicit choice becomes the CLASSICAL limit of the bath); quantum limit
+n≪1 → β→½ (the exchange-symmetric point, now WITH a reason: it is where
+only spontaneous processes remain). The ½ asymptote is inherited from
+5P's exchange symmetry; the running is the new derived content. The
+weighting CHOICE is a stated reading, not a proof — but the form's
+consequences are exact and were written down before any fit:
+
+- **c₁ = ½ EXACTLY for both** (the running dies fast enough deep that
+  the occupation zero point survives untouched) — the 5T ultra-deep vote.
+- **tail p = ¾ EXACTLY** (the β∞ = ½ asymptote) — the sharpened
+  screening the galaxy tail votes for, at the symmetric-point value.
+- **lock product c₁·p = ⅜ = 0.375** — the constant-β family's ¼ lock
+  broken UPWARD into the band the data ask for (~0.3–0.375).
+- c₂ goes negative: −1/6 (F1), −1/24 (F2) vs BE's +1/12 — a rung-2
+  signature, unmeasurable at the current 0.1σ reach (disclosed);
+  c₃ = 13/48 (F1), 1/24 (F2). ν(1) = 1.4702 (F1) / 1.4943 (F2) — between
+  gm (1.433) and BE (1.582): the binaries decide (5W).
+
+Gates: G1 sympy series exact (c₁ = ½ symbolic identity both); G2 solver
+residual 8.4e-13/9.5e-13 relative over y ∈ [1e-8, 1e4] + root-uniqueness
+scans PASS; G3 mpmath 50-digit series residual scaling 3.98/3.99
+(expect 4); G4 numeric tail exponent 0.7500/0.7501. Priority scout
+(Haiku, 4 targeted sweeps): running/occupation-dependent interpolating
+exponent NOT FOUND; Einstein-coefficient (spontaneous/stimulated)
+derivation of an interpolating function NOT FOUND; the (c₁=½, p=¾)
+combination NOT FOUND; no Cadoni–Tuveri follow-up modifying the
+occupation argument — all scout-level negatives, quoted as "apparently
+unpublished" pending the pre-circulation primary-source pass.
+
+**Verdict: SUCCESS (construction stage) — the O5 question "why would β
+run?" has a derived, zero-parameter, exactly-gated candidate answer:
+because the response enters through the spontaneous channel. Whether it
+is TRUE is 5V/5W's job — c₁ = ½ and p = ¾ were fixed before the fits.**
+
+## Stages 5V/5W/5X (2026-07-23): the derived function tested — galaxies crown it, the transition still tithes, Saturn unmoved (O14)
+
+[calcs/stage5v_rungal.py](calcs/stage5v_rungal.py),
+[calcs/stage5w_runbin.py](calcs/stage5w_runbin.py),
+[calcs/stage5x_runquad.py](calcs/stage5x_runquad.py) →
+data/stage5v_rungal.txt, stage5w_verdict.txt, stage5x_runquad.txt.
+
+**5V galaxies (BE regression gates d = −0.00 both treatments):**
+
+    treatment    F1        F2        [gm comparator]
+    plain hier   −101.29   −107.22   [−84.79]   (Δ vs BE)
+    vertical     −44.31    −51.89    [−42.69]
+
+**F2 is the new outright leader of the galaxy ladder under BOTH
+treatments** (beats gm by 22.4 plain / 9.2 vertical); F1 second. The
+5T-decomposition prediction — keep the tail's gain, recover the
+ultra-deep bins — landed. Vertical-hardened a₀ = 0.98–1.0e-10
+(horizon-adjacent), f_ML = 1.32–1.34, s_int unchanged.
+
+**5W binaries (six seeds, same machinery as 5K/5O/5R; all gates pass):**
+
+    law   mean ΔlnL vs p050   worse   interior   α̂
+    gm    −8.50 ± 2.13        6/6     6/6        1.358 ± 0.068
+    rb1   −5.77 ± 1.93        5/6     6/6        1.395 ± 0.039
+    rb2   −5.47 ± 2.27        5/6     6/6        1.487 ± 0.017
+
+The pre-stated bands (−3 = accepted, −6 = gm-grade rejection) are
+STRADDLED — the honest middle verdict: **the running functions close
+about a third of the transition gap (no edge-riding anywhere, seed 303
+flips positive) but the binaries still lean to the pure occupation law
+by ~2.4 SE.** The residual is localized exactly where 5T pointed: the
+transition wants even less admixture than β(ν(1)) ≈ 0.29–0.34 — the
+weighting's refinement target is a faster-than-1/ν die-off through the
+transition.
+
+**Open ledger item (flagged, not computed): the a₀ translation.** κ
+tables (e_N = 1.0/1.4) were not built for F1/F2. At gm-grade κ ≈ 1.34,
+α̂ = 1.49 would translate to a₀ ≈ 1.6e-10 (+4–5σ — the sharp-function
+temperature strain repeats); at BE-grade κ it would not. Queued (O15a);
+until then the temperature lock's binary row still votes pure-BE.
+
+**5X Saturn:** q(1.2) = −0.0903 (F1) / −0.0943 (F2), hi-res 0.0%;
+with the 5W amplitudes: **Q₂ = 4.31e-26 (4.8×) / 4.80e-26 (5.3×
+Cassini)** — inside the family band (4.0–5.8×), the amplitude lock
+holds. No escape; the MI door unchanged.
+
+Indicative additive two-system ledger (−2lnL vs BE, vertical-hardened
+galaxies + binaries; 5N caveat applies): **F2 nets −41** (gm: −25.7) —
+the best cross-system function the program has, and it was DERIVED:
+c₁ = ½ and p = ¾ were on paper before any fit touched data.
+
+**Verdict: SUCCESS with one honest reservation. The derivation held its
+pre-registered predictions and took the galaxy ladder outright; the
+binaries upgraded it from gm-grade to two-thirds-accepted; Saturn is
+unmoved (as for every MG reading). NEEDS REFINEMENT on exactly one
+localized number — the transition admixture — plus the pending κ/a₀
+leg. The spontaneous-fraction bath is now the program's leading
+candidate function.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

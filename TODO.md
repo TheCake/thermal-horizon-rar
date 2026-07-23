@@ -238,20 +238,38 @@ O13. ~~**The β-family follow-ons**~~ — DONE (Stages 5Q/5R/5S/5T, 2026-07-23):
     c₃p³=β(3β+1)/192); third log-cumulant vanishes at β=½. (d) quadrupole
     scan (5S): **every member 4.0–5.8× Cassini (edge members = lower
     bounds) — Saturn's veto is β-blind, no family escape.**
-O14. **The lock-breaking function** (opened by 5T — the concrete instrument):
-    build ν with c₁=½ deep AND p≈0.7–0.75 tail decoupled — the natural
-    candidate is running mixing β(n): 0 at n≫1 (classical/deep) → ~½ at
-    n≪1 (quantum/tail), e.g. β = β_∞/(1+n(u)) solved self-consistently;
-    asymptotic tail then p=(1+β_∞)/2 = ¾ at the symmetric β_∞=½. Gates:
-    series (c₁=½ exact), tail exponent, ν(1) vs binary transition. Run
-    hier-galaxy (plain+vertical) AND 6-seed binary. If it beats BE on BOTH
-    systems where gm/p065 split them, the regime pattern has a function.
-O5. Theory question (parked with #8/#18), SHARPENED by 5T: derive from the
-    horizon microphysics WHY the response admixture switches on where the
-    occupation is low (β: 0 → ½ across the classical→quantum boundary) —
-    equivalently, break c₁·p_tail=¼ upward to ~0.3 from first principles.
-    The Unruh-ratio reading (x = T_U/T_dS) is the hint; exchange symmetry
-    fixes the asymptote at ½ (5P), n≪1 spontaneity is the candidate driver.
+O14. ~~**The lock-breaking function**~~ — DONE (Stages 5U/5V/5W/5X,
+    2026-07-23): DERIVED, not engineered — the spontaneous-fraction
+    weighting β = 1/(2ν) (F1; energy-share sibling F2 = 1/(2(2ν−1))),
+    c₁=½ and p=¾ EXACT and pre-registered (5U, all gates). **5V: F2/F1
+    lead the ENTIRE galaxy ladder both treatments (−107.2/−101.3 plain,
+    −51.9/−44.3 vertical vs BE; gm was −84.8/−42.7) at horizon-adjacent
+    a₀. 5W: binaries close a third of the gap (−5.5±2.3 / −5.8±1.9 vs
+    gm's −8.5), interior 12/12, one seed flips positive — pre-stated
+    bands straddled: improved, NOT accepted (residual lean ~2.4 SE).
+    5X: Q₂ = 4.8×/5.3× Cassini — amplitude lock holds.** The
+    spontaneous-fraction bath = the program's best cross-system function
+    (indicative joint −41 vs gm's −26). Scout: running exponent /
+    Einstein-coefficient derivation / (½,¾) combo all NOT FOUND.
+O15. **The running-β completion** (opened by 5W's localized residual):
+    (a) κ tables (e_N=1.0/1.4) for F1/F2 + the a₀-ladder translation —
+    does α̂≈1.4–1.5 repeat the sharp-function temperature strain (gm-κ)
+    or not (BE-κ)? The binary temperature row hinges on it. (b) The
+    weighting refinement: the transition wants LESS admixture than
+    1/(2ν) — derive (not scan) a faster die-off; candidates with
+    reasons: β = ½·e^(−n) (Poisson no-quantum weight), β = ½/(1+n)²
+    (squared rate share), β weighted by n(u) at the SOURCE argument.
+    Same gates: c₁=½, p=¾ preserved; ν(1) must rise toward ~1.55 without
+    losing the galaxy tail. (c) 5N-style paired bootstrap of the F2
+    galaxy lead (is −52 vertical a detection or a lean?). (d) full
+    bath-matrix re-run with F1/F2 vs the 5D ladder for the record.
+O5. Theory (parked with #8/#18), NOW PARTIALLY ANSWERED by 5U: the
+    running β has a derived candidate mechanism (response enters through
+    the spontaneous channel; classical limit = C&T). REMAINING: promote
+    the weighting CHOICE from reading to derivation (why the rate share
+    and not the energy share — or the 5W residual may be saying: neither
+    exactly), and derive it from the horizon side (dS mode counting)
+    rather than the oscillator side.
 
 ## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)
 10. ~~**Paper assembly + verification pass**~~ — DONE. Draft v1 ([PAPER.md](PAPER.md)):

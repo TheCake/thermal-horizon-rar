@@ -1,0 +1,16 @@
+STAGE 5W: derived running-beta functions on the binaries (vs stored p050/gm, same machinery)
+
+per-seed lnL - lnL(p050)  [negative = behind the occupation law]:
+  seed      gm      rb1(F1)  rb2(F2)   a_hat(rb1/rb2)
+    31:  -18.58    -7.03   -10.81    1.49/1.56
+   101:   -7.78    -0.47    -1.69    1.44/1.46
+   202:   -7.66    -9.31   -10.31    1.38/1.50
+   303:   -7.45    +0.62    +2.79    1.47/1.49
+   404:   -3.21    -7.65    -3.34    1.36/1.44
+   505:   -6.34   -10.77    -9.44    1.23/1.47
+
+   gm: mean -8.50 +- 2.13 SE  (worse in 6/6; interior 6/6; a_hat 1.358 +- 0.068)
+  rb1: mean -5.77 +- 1.93 SE  (worse in 5/6; interior 6/6; a_hat 1.395 +- 0.039)
+  rb2: mean -5.47 +- 2.27 SE  (worse in 5/6; interior 6/6; a_hat 1.487 +- 0.017)
+
+pre-stated read: mean within ~-3 of p050 = ACCEPTED at the transition; worse than -6 = gm-grade rejection.

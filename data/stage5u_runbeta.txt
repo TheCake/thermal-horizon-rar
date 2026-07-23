@@ -1,0 +1,16 @@
+STAGE 5U: the spontaneous-fraction bath (running beta) -- derivation + exact algebra
+
+G1 F1: c1 = 1/2, c2 = -1/6, c3 = 13/48   (c1 = 1/2 exact: PASS)
+G1 F2: c1 = 1/2, c2 = -1/24, c3 = 1/24   (c1 = 1/2 exact: PASS)
+   (constant-beta family: c1*p_tail = 1/4 locked; here c1 = 1/2 with p = 3/4 -> product 3/8 = 0.375, the lock broken upward)
+
+G2 solver residual (relative, y in [1e-8,1e4]): F1 8.4e-13, F2 9.5e-13 -> PASS
+G2b root-uniqueness scan (6 y-values x both) -> PASS
+
+G3 F1: |resid|(x=0.02) = 5.04e-08, scaling exponent 3.98 (expect ~4) PASS
+G3 F2: |resid|(x=0.02) = 2.26e-09, scaling exponent 3.99 (expect ~4) PASS
+
+G4 F1: tail exponent p_hat = 0.7500 (pred 0.7500) PASS;  nu(1) = 1.4702  (BE 1.5820, gm 1.4330)
+G4 F2: tail exponent p_hat = 0.7501 (pred 0.7500) PASS;  nu(1) = 1.4943  (BE 1.5820, gm 1.4330)
+
+status: form derived from the stimulated/spontaneous channel split (weighting choice = stated reading); c1 = 1/2 and p = 3/4 are EXACT consequences, not fits. c2 goes negative (-1/6, -1/24) -- a rung-2 signature vs BE's +1/12, unmeasurable at current 0.1-sigma reach (disclosed). nu(1) sits between gm and BE: the binaries decide (5W).

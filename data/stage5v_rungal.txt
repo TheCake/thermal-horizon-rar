@@ -1,0 +1,14 @@
+STAGE 5V: running-beta functions on the hierarchical galaxies -- 153 galaxies, 2700 points + 12 lensing
+
+plain hier:
+  BE:  -10435.00  la0=-10.104 f=1.398 s_int=0.070  [5P -10435.00, d=-0.00 OK]  (0.0 min)
+  F1:  -10536.29  la0=-10.107 f=1.551 s_int=0.068  (0.6 min)
+  F2:  -10542.22  la0=-10.114 f=1.540 s_int=0.068  (0.3 min)
+  Delta vs BE: F1 -101.29, F2 -107.22   (gm comparator -84.79)
+
+vertical-hardened:
+  BE:  -12152.49  la0=-9.981 f=1.164 s_int=0.045  [5P -12152.49, d=-0.00 OK]  (0.0 min)
+  F1:  -12196.80  la0=-10.004 f=1.337 s_int=0.044  (1.9 min)
+  F2:  -12204.38  la0=-10.008 f=1.322 s_int=0.044  (0.9 min)
+  Delta vs BE: F1 -44.31, F2 -51.89   (gm comparator -42.69)
+

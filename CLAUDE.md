@@ -309,7 +309,29 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   Saturn's veto is β-blind**. NEW TODO O14: the lock-breaking function
   (running β(n): 0 at n≫1 → ½ at n≪1, tail p=¾) — testable in both
   pipelines as they stand. O5 sharpened: derive the classical→quantum
-  β-switch. PUBLICATION still DEFERRED; O1b anchors parked;
+  β-switch.
+  **5U–5X (2026-07-23, O14 EXECUTED = the derived function, PAPER →
+  v2.1): 5U the spontaneous-fraction bath — response admixture weighted
+  by the spontaneous channel (Einstein coefficients): β = ½/(1+n) =
+  1/(2ν) (F1) / energy-share β = 1/(2(2ν−1)) (F2); ZERO parameters;
+  c₁=½ EXACT, p=¾ EXACT, lock→⅜, c₂ = −1/6/−1/24, ν(1)=1.470/1.494;
+  all gates (sympy exact, mpmath 50-digit, residual 9e-13, uniqueness);
+  C&T's β=0 = the CLASSICAL limit; exchange-symmetric ½ = the quantum
+  endpoint (only spontaneous processes remain). Scout: running
+  exponent / Einstein-coefficient derivation / (½,¾) combo / C&T
+  follow-up all NOT FOUND (scout-level). **5V: F2/F1 LEAD THE ENTIRE
+  GALAXY LADDER both treatments (−107.2/−101.3 plain, −51.9/−44.3
+  vertical vs BE; gm −84.8/−42.7), BE regressions d=0.00, a₀
+  horizon-adjacent. 5W: binaries −5.5±2.3 (F2) / −5.8±1.9 (F1) vs gm
+  −8.5±2.1 — a third of the gap closed, interior 12/12, α̂ 1.487±0.017
+  / 1.395±0.039, pre-stated bands straddled = improved NOT accepted
+  (residual ~2.4 SE, localized at the transition = the refinement
+  target). 5X: Q₂ 4.8×/5.3× Cassini — lock holds.** The
+  spontaneous-fraction bath = the program's best cross-system function
+  (indicative joint −41 vs gm −26), its two predictions pre-registered.
+  OPEN: O15 (κ/a₀ ladder for F1/F2 — temperature-strain adjudication;
+  faster-die-off weighting refinement; 5N-grade bootstrap of the F2
+  lead). PUBLICATION still DEFERRED; O1b anchors parked;
   Zenodo/colleague (#11/#12) parked until called.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
