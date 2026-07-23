@@ -1823,6 +1823,23 @@ cycle). Scout launched on prior continuous-c₁ fits + scatter-vs-acceleration
 literature (the §4.3/§4.6 novelty wording is scout-conditional; "first" is not
 printed until it returns).
 
+**4T addendum — scout returned (2026-07-23): BOTH channels open.** (1) c₁: no
+published fit of the deep-expansion coefficient; nearest art = DHF24's δ/γ/n
+families (continuous, but transition-SHARPNESS — same axis as our §3 p; their
+family definitions fetched and checked) — §4.3 now credits and distinguishes.
+(2) Scatter: Lelli+17 = global scatter, residuals property-uncorrelated;
+Desmond 2023 (MNRAS 525, 6130) = hierarchically-marginalized intrinsic scatter
+0.034±0.002 dex — as a ceiling on the thermal term this sharpens the mode bound
+to N ≳ 10² (added to §4.6); NO acceleration-binned intrinsic-scatter
+measurement and NO fluctuation-statistics reading found anywhere. **Phantom #4
+caught:** the scout attributed a covariant-error quote to arXiv:1907.04501; a
+direct fetch shows that ID is Tian & Ko 2019 "Halo Acceleration Relation" —
+no such content. The covariant-error point (distance/inclination errors enter
+both RAR axes and project harder where the relation flattens) is retained as
+our own unattributed methodological observation in §4.6; the phantom ID is not
+cited. Four phantom attributions this cycle, all caught by direct fetch —
+primary-sources-only discipline validated a fourth time.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
