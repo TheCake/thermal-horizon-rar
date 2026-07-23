@@ -165,11 +165,20 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   perpendicular column). Twelve corrections in Appendix A. Repo renamed
   thermal-horizon-rar (user clicks the GitHub rename; files/remote updated);
   LICENSE = CC-BY-4.0 added.**
-  NEXT = user: GitHub rename click → Zenodo GitHub toggle → tag v1.0 (DOI
-  mints) → send COLLEAGUE-BRIEF (final numbers, uncommitted) with DOI →
-  arXiv via endorsement. Pre-arXiv hardening: #2i corrected-velocity v7
-  re-fit + ceiling-census convention reconcile. Open science items in TODO
-  (NNLO=parked, a₀∝H(z), #7, #8, nonlocal-MI construction).** Paper
+  **4S (2026-07-23): ĉ₁ MEASURED ([calcs/stage4s_c1fit.py](calcs/stage4s_c1fit.py)):
+  continuous-λ family (c₁=λ/2, series-gated); marginalized joint SPARC+lensing:
+  ĉ₁ = 0.450 (profile 0.385–0.519; galaxy-bootstrap 0.43 +0.29/−0.25), ½
+  INTERIOR at 0.7σ, c₁=0 excluded (Δ−2lnL 56.3: 7.5σ profile / 95.5%
+  bootstrap — the gap = population variance, bootstrap primary), ¼ disfavored
+  3.1σ; raw-χ² EDGE-RUNS on continuous families (can rank, cannot measure —
+  the #8 lesson demonstrated). Paper: new §4.3, old 4.3/4.4 → 4.4/4.5,
+  abstract+conclusions upgraded.**
+  NEXT = 4R corrected-velocity v7 budget RUNNING (background; on landing:
+  replace §7.4(b)/§6.3 queued-language with final corrected α, commit) →
+  user: GitHub rename click → Zenodo GitHub toggle → tag v1.0 (DOI mints) →
+  send COLLEAGUE-BRIEF (final numbers, uncommitted) with DOI → arXiv via
+  endorsement. Open science items in TODO (NNLO=parked, a₀∝H(z), #7, #8,
+  nonlocal-MI construction).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

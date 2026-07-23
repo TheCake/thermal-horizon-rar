@@ -1757,6 +1757,40 @@ boost is stronger than the full-statistic boost. The anomaly stands at **1.078
 new §7.4 (checklist mapping, audit, and the e-trend/forward-model reply to their null).
 Twelve corrections now in Appendix A.
 
+## Stage 4S — the zero-point coefficient measured (2026-07-23)
+
+User directive: stop treating the ½ as a contest, make it a measurement ("if this
+thing is genuinely new, that must be our opus magnum"). Instrument: promote c₁ to a
+continuous parameter via ν_λ = (1−λ)·ν_standard + λ·ν_RAR, c₁ = λ/2 EXACTLY on the
+slice (G1: numerical series extraction reproduces λ/2 to 2e-3 at λ=0/½/1; c₂ rides
+along: 0.25 → 0.167 → 0.0833). Grid λ ∈ [−0.30, 1.50]; (a₀, f_ML[, s_int, δ_lens])
+profiled per node, warm-started; 200-galaxy-bootstrap × full 5-param refit.
+[calcs/stage4s_c1fit.py](calcs/stage4s_c1fit.py) → data/stage4s_c1fit.txt.
+
+**Marginalized joint SPARC+lensing (the honest instrument): λ̂ = 0.900, INTERIOR,
+parabolic profile; ĉ₁ = 0.450, profile interval 0.385–0.519; galaxy-bootstrap
+ĉ₁ = 0.427 +0.290/−0.246.** Placements: c₁ = ½ at Δ(−2lnL) = 0.5 (0.7σ — dead
+center); c₁ = 0 at +56.3 (7.5σ profile; 95.5% of bootstraps ≈ 1.7σ one-sided);
+c₁ = ¼ at +9.7 (3.1σ profile; 73.5% of bootstraps above ¼). c₂(λ̂) = 0.100 —
+between BE 1/12 and simple 1/8 (rung 2 still unresolvable, §4.5). G2 endpoint
+regression: λ=1 → −8397.72, λ=0 → −8341.95, both EXACT vs the stored 4E/4F fits.
+
+Two disclosures logged with the number:
+1. **Profile-vs-bootstrap gap (7.5σ vs 1.7σ)** = galaxy-population variance — the
+   SPARC sibling of the 3A realization systematic. Bootstrap quoted as primary.
+2. **Raw-χ² FAILS STRUCTURALLY on continuous families**: λ̂ edge-runs to the grid
+   boundary in both windows (Δχ² thousands; bootstrap pinned at the parameter
+   bound) — at χ²/dof ≈ 57 the unmodeled scatter rewards unbounded shape-bending.
+   The 4B/4E deflation was the warning; this is the demonstration. Raw χ² can rank
+   discrete families; it cannot measure a coefficient. (No correction number — the
+   raw treatment was never quoted as a coefficient measurement — but the §4.2
+   caveat is now a theorem-by-example.)
+
+Paper: new §4.3 (old 4.3/4.4 → 4.4/4.5), abstract (2) upgraded, conclusions
+bullet upgraded. The ½ now enters the paper as a measured quantity with the
+prediction sitting 0.7σ from center — the coefficient-level spine the user asked
+for. Rung 2 remains the wall (0.1σ); no enthusiasm spent pretending otherwise.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
