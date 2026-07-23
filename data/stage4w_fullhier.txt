@@ -1,0 +1,14 @@
+STAGE 4W full hierarchy: 153 galaxies (31 with bulges), 2700 points; priors: M/L 0.1 dex, vertical = measured (sigma_v 16/50/84 = [0.046, 0.097, 0.139] dex)
+
+M0w  const:        obj =  -12416.89  s0 = 0.0414
+M1bw osc+floor:    obj =  -12392.53  N-hat =    189.2  floor = 0.0354
+M2w  free 6-bin:   obj =  -12500.92  s_b = [0.054, 0.0415, 0.035, 0.026, 0.0542, 0.0387]
+M3w  local (area): obj =  -12508.59  sigA = 13.276/kpc^2  floor = 0.0355
+D: M1bw-M0w = +24.36 | M2w-M0w = -84.03 | M3w-M1bw = -116.06
+4U comparators (disk-M/L only): M1bh-M0h = -22.77; s_b = [0.1045,0.0778,0.0545,0.0272,0.0646,0.0837] (V-shaped)
+
+offsets (M1bw): std(dd) = 0.1175 dex; std(db|bulge) = 0.1287; std(dv) = 0.1004 dex (prior median 0.097)
+corr(|dd|, med x_g) = -0.180; corr(|dv|, med x_g) = -0.173
+
+G1 priors->0: M0w -8338.12 (4T -8338.12), M1bw -8363.17 (4T -8363.17) -> PASS
+G2 calibrated injection: slope_obs = 0.225, slope_exp (shrinkage) = 0.931, corr = 0.481 -> FAIL

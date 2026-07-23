@@ -1908,6 +1908,39 @@ T_dS, exact in the deep limit) and the geometric-mean frequency ω = √(g_N a�
 C&T Eq. 23, which correction #7 established; only the Unruh-ratio FRAMING is
 unclaimed.) Nearest adjacent: arXiv:0908.4239 (Unruh-like MOND), cited by ID.
 
+## Stage 4W — the full hierarchy: an identifiability boundary (2026-07-23)
+
+O1 executed ([calcs/stage4w_fullhier.py](calcs/stage4w_fullhier.py)): per-galaxy
+disk M/L + bulge M/L (31 bulge galaxies) + a VERTICAL offset with MEASURED priors
+(SPARC's own e_D/D and e_inc: both move g_obs at fixed g_bar under our loader;
+median σ_v = 0.097 dex). Scatter contest on the residual.
+
+**Verdict: NOT a survival, NOT a refutation — a demonstrated identifiability
+boundary.** With vertical freedom on, osc+floor LOSES to constant (+24.4), N̂
+inflates to 189 (amplitude ≈ 0), floor → 0.035 dex (≈ Desmond-2023's 0.034 —
+our hierarchy converges to his intrinsic number, good cross-check). BUT the
+CALIBRATED injection gate FAILS decisively: slope_obs 0.225 vs shrinkage-expected
+0.931 — the machinery itself proves per-galaxy M/L and vertical offsets are
+degenerate on SPARC (a disk-M/L shift IS mostly a vertical shift for
+disk-dominated galaxies at low x), and any between-galaxy part of a real
+x-shaped signal is eaten with them. G1 (priors→0 → 4T repro) PASS.
+
+Honest chain across the ladder: 4T raw trend (real) → 4U survives disk-M/L
+(−22.8) → 4W not identifiable vs distance/inclination freedom. The channel's
+decision needs EXTERNAL distance anchors (Cepheid/TRGB — Desmond's inputs) or an
+independent dataset. Paper §4.6 rewritten to say exactly this; scorecard N row
+= "20–60 if thermal; identity unresolved"; §2.4 item 4 conditioned.
+
+**The surviving fact — the transition bump:** free bins STILL beat constant
+(−84) with all offsets free, and the x≈1 excess persists at 0.054 dex vs
+0.026–0.035 neighbors — it survived disk-M/L (4U), bulge-M/L AND vertical
+freedom (4W). NOT bulge, NOT distance/inclination, NOT the monotone thermal
+term. New hypothesis logged: environmental EXTERNAL-FIELD scatter projects onto
+g_obs maximally at the transition — exactly where the bump sits. O4 (the
+environment-split RAR) inherits a sharp, falsifiable target: the excess must
+CORRELATE with per-galaxy g_ext estimates. M3w area-scaling verdict remains
+unresolved (same G2 caveat as 4U, now demonstrated rather than suspected).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -138,10 +138,17 @@
     bookkeeping in NOTES 4K.
 
 ## Oscillator program (the current front, opened 2026-07-23)
-O1. **Full-hierarchy second moment** (the decisive 4U successor): per-galaxy bulge
-    M/L + distance + inclination nuisances (Desmond-2023-grade) under the scatter
-    models. Decides: the V-shape's identity (bulge M/L vs new structure) and the
-    local-vs-global mode contest (annulus-area scaling) that 4U's gate deferred.
+O1. ~~**Full-hierarchy second moment**~~ — DONE (Stage 4W): **identifiability
+    boundary demonstrated** — vertical (distance/inclination) freedom absorbs the
+    thermal term (N̂→189, osc+floor +24 vs const) but the calibrated injection
+    gate FAILS (slope 0.23 vs 0.93 expected) = the channels are degenerate on
+    SPARC; decision needs external distance anchors (Cepheid/TRGB). **The x≈1
+    transition bump SURVIVES everything** (0.054 vs 0.026–0.035 dex; not bulge,
+    not vertical) → the environmental-g_ext-scatter hypothesis feeds O4. Floor
+    converged to 0.035 dex ≈ Desmond-2023's 0.034 (cross-check ✓).
+O1b. **External-anchor second moment** (the unlock): import Cepheid/TRGB distance
+    subsample (SPARC f_D flags) → refit 4W with those galaxies' σ_v pinned small;
+    the thermal-vs-vertical degeneracy breaks where distances are known.
 O2. **Binary-side c₁**: generate EFE tables on a λ-grid through the QUMOND solver
     and profile the binary v7 likelihood over the same continuous family as 4S —
     an independent, x≈1-regime dial reading; also the instrument for the a₀-lean
