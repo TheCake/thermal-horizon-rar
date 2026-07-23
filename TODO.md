@@ -293,9 +293,13 @@ O16. **The system-level split — FIRST PASS RESOLVED** (6D exclusion +
     out-of-sample deciders.
 O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     now PART-MEASURED — the JC (2n+1) anchor makes the energy-share
-    branch derivation-grade (6H G1), and the leg count is EMPIRICAL:
-    **L = 2 measured (6I: −52.8/−59.1/−54.5, both flanks rejected via
-    the Bernoulli-break rung c_{L+1} — 6H's correspondence)**. New
+    branch derivation-grade (6H G1), and the leg count is READ but not
+    measured: **L = 2 point-preferred (6I: −52.8/−59.1/−54.5), 6L
+    bootstrap DEFLATED the measurement claim — CORRECTION #13 (L1
+    rejection 29/40 = lean; L2-vs-L3 21/40 = unresolved; strictly-best
+    10/40; the deep arm of 153 galaxies is too thin to read the
+    c_{L+1} rung at population grade — deeper samples read the dial
+    directly)**. New
     exact rung on file: c₄(L=2) = s²/192 − 1/720 (sign flip at galaxy
     gates; future-data falsifier). Lab-native form (6K G0):
     **β = ½·tanh²(x_loc/2)·e^(−2x_amb)** — the squared gate = the

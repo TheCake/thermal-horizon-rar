@@ -398,9 +398,8 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   than fiducial (median g 0.868 maxclust/0.952 noclust vs 0.754);
   6I bars pre-registered on disk. 6I
   ([calcs/stage6i_chaegate.py](calcs/stage6i_chaegate.py), regressions
-  d=−0.00/dd=+0.00 exact): **L = 2 MEASURED (vertical: L1 −52.76, L2
-  −59.05, L3 −54.52 — both flanks rejected, deep arm resolves the c₂
-  rung against L1's sharper tail); measured ambients IMPROVE both
+  d=−0.00/dd=+0.00 exact): **L = 2 point-preferred (vertical: L1
+  −52.76, L2 −59.05, L3 −54.52) — but see 6L/CORRECTION #13 below; measured ambients IMPROVE both
   treatments (vertical PGmax −61.68; plain −100.51 maxclust/−105.94
   noclust = the 6F ≤−100 bar RESOLVED — the miss was the fiducial-e
   artifact); joint ledger ≈ −59.9.** Honest residuals: galaxy leg
@@ -415,7 +414,29 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   −29.3±53.0 29/40): **DONE — AMB(pgmax) − BE = −56.71 ± 35.65, 37/40
   (92.5%), percentiles [−88.7, −59.9, −15.7] = the program's top
   bootstrap grade, tied with F4, binary-compatible where F4 is not; a
-  strong lean, not a detection (3/40 flip).** O5 remaining sharpened:
+  strong lean, not a detection (3/40 flip).**
+  **6K/6L (2026-07-23 close, PAPER → v2.5): 6K desktop analog
+  ([calcs/stage6k_analog.py](calcs/stage6k_analog.py), pre-registered
+  at ddc83bc BEFORE execution; lab-native identity β =
+  ½·tanh²(x_loc/2)·e^(−2x_amb) gated): **rate-based realizations of
+  the grammar EXCLUDED** — vanilla two-channel = constant β (sky-dead
+  per 5T), mediated jump class = wrong-sign running + G4 estimator
+  pathology (exponents unquotable); κ-dependence 0.3–0.5/decade both
+  configs = the grammar's rate-freedom does NOT emerge from jump
+  competition; **pre-committed strike LOGGED: bath-microphysics
+  conditional ~20–25% → ~15%, surviving mass on the coherent-pull
+  reading; NEXT = 6K-v2 coherent susceptibility calculation (driven
+  Kerr Liouvillian + quantum regression — the object the JC anchor
+  actually describes), now the sharpest O5 item.** 6L leg-count
+  bootstrap ([calcs/stage6l_legboot.py](calcs/stage6l_legboot.py)):
+  **CORRECTION #13 — the "L=2 measured" claim DEFLATES: d(L1−L2) =
+  +9.9±21.4 (29/40 = lean), d(L3−L2) = +1.6±13.1 (21/40 =
+  UNRESOLVED), L2 strictly best 10/40; reframed everywhere as
+  point-preference (the deep arm of 153 galaxies too thin to read the
+  c_{L+1} rung at population grade). Unaffected: 6H correspondence
+  (exact math), Part B measured-ambients + 6J 37/40, quadrupole
+  record, 6K strike. Paper → v2.5, Appendix A = thirteen
+  corrections.** O5 remaining sharpened:
   why exactly TWO legs from dS mode counting (the round trip is now
   the measured target, not an assumption); MI-trajectory alternative
   standing.** Paper

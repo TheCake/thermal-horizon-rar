@@ -1,0 +1,8 @@
+STAGE 6L leg-count bootstrap: 153 galaxies, 2700 points + 12 lensing; 40 paired reps; gate s = 0.8681; 6I point estimates d12 = +6.29, d32 = +4.53
+full-fit regression L2: -12209.98 (6I -12211.54, d=+1.56) -> PASS
+full-fit regression L1: -12204.90 (6I -12205.26, d=+0.36) -> PASS
+full-fit regression L3: -12206.61 (6I -12207.01, d=+0.40) -> PASS
+bootstrap (40 reps): d12 = L1 - L2 = +9.94 +/- 21.39 (L2 better in 29/40)
+                     d32 = L3 - L2 = +1.56 +/- 13.13 (L2 better in 21/40)
+L2 strictly best of three: 10/40
+percentiles d12 16/50/84: [-10.7, 11.1, 28.4]; d32: [-8.9, 0.4, 16.9]

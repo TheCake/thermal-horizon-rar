@@ -3041,6 +3041,43 @@ gates clean, every branch informative) — STRIKE LOGGED for the
 rate-based mechanism reading; the analog program continues at v2
 (coherent susceptibility), now the sharpest open item under O5.**
 
+## Stage 6L — CORRECTION #13: the leg-count "measurement" deflates under its own bootstrap (2026-07-23)
+
+The error bar the round owed came back and took the headline with it.
+[calcs/stage6l_legboot.py](calcs/stage6l_legboot.py) →
+data/stage6l_legboot.txt. 40 paired galaxy-resample reps (6C/6J
+machinery, rng 53), all three L-laws per rep; full-fit regressions
+PASS (d = +1.56/+0.36/+0.40 vs 6I).
+
+**Result: d(L1−L2) = +9.94 ± 21.39 — L2 better in 29/40 (72.5%) = a
+LEAN; d(L3−L2) = +1.56 ± 13.13 — L2 better in 21/40 (52.5%) =
+UNRESOLVED; L2 strictly best of three in 10/40 (25%).** Percentiles:
+d12 [−10.7, +11.1, +28.4]; d32 [−8.9, +0.4, +16.9].
+
+**CORRECTION #13 (logged in paper Appendix A; v2.4 → v2.5):** the
+claim "L = 2 MEASURED against both flanking integers" (6I, v2.4) was
+too strong. Under galaxy-population resampling the three-way ordering
+shuffles: the one-leg rejection survives at lean grade (carried by the
+c₂ Bernoulli break), the two-vs-three-leg contest carries essentially
+no population-grade information, and the strict three-way win is
+realization-lucky. Diagnosis: the discrimination lives in the
+ultra-deep arm, which a 153-galaxy sample populates thinly — the 3A
+realization-systematic lesson recurring at the function-structure
+level. **Reframed everywhere: L = 2 is the point-preferred process
+order with a lean-grade one-leg rejection; the round trip is the
+PREDICTED order with a first empirical vote, not a measured one.**
+
+What is UNAFFECTED: the 6H Bernoulli-break↔leg-count correspondence
+(exact mathematics — the instrument is sound; the sample can't read
+the dial at grade); the measured-ambient results (6I Part B) and
+their 37/40 bootstrap (6J — a different, stronger statement); the
+quadrupole record; the 6K strike. Deeper rotation-curve samples read
+the rung directly — added to the future-data ledger beside c₄.
+
+**Verdict: the stage — SUCCESS (it did exactly what it was built to
+do); the claim — DEFLATED, correction #13 logged. The program's
+yardstick applied to its own newest headline, same day.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
