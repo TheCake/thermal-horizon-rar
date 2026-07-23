@@ -1,0 +1,26 @@
+STAGE 5E environmental control, converged: S = 94 galaxies, 1347 points; e_N median 0.00502; adaptive tol 0.05, max 15 rounds
+
+E-contest (converged; rounds shown):
+  E0 const:              -5166.33  (12 rd)  s0=0.0692
+  E1 osc+floor:          -5170.89  (13 rd)  N-hat=    98.3  floor=0.0616
+  E2 const+EFE:          -5173.52  (12 rd)  beta=0.044  s0=0.0689
+  E3 osc+floor+EFE:      -5176.00  (13 rd)  beta=0.034  N-hat=   128.9  floor=0.0630
+  D: thermal E1-E0 = -4.55 | env E2-E0 = -7.19 | E3-E1 = -5.11 | E3-E2 = -2.48
+  M2h free-bin beta=0:      [0.1019, 0.0787, 0.0559, 0.0271, 0.0523, 0.1017]  (-5353.75)
+  M2h free-bin beta=0.04:   [0.1011, 0.0783, 0.055, 0.0264, 0.0533, 0.102]  (-5356.42)
+NESTING gate: E1<=E0 -4.55, E2<=E0 -7.19, E3<=min(E1,E2) -2.48, M2h<=E0 -187.41 -> PASS
+
+beta profile (const scatter, warm-chained globals+offsets):
+  0:-5166.01  0.25:-5154.74  0.5:-5111.10  1:-4997.58  2:-4761.36  4:-4414.17  8:-4026.16
+  min at beta=0; upper D1 = 0.02; beta=0 node vs E0: +0.32 (must be ~0); beta=1 penalty +168.43
+
+scramble gate (8 perms): real credit = 7.19 vs scrambled [5.15, 0.04, 0.03, 0.16, 10.13, 0.04, 0.04, 0.04]
+  nested-sanity (all >= -0.5): PASS; scrambles beaten: 7/8
+
+correlation channel (62 galaxies, >=2 deep points):
+  raw Spearman(deep resid, log e) = -0.165 (p=0.200)
+  depth-partialed Spearman = -0.123 (p=0.343)   [EFE predicts negative]
+  depth-partialed slope obs-on-pred(beta=1) = +0.71   [~beta if pattern present]
+
+G2 injection beta_true=3: beta_rec = 2.97 -> PASS
+G2 injection beta_true=0: beta_rec = 0.00 -> PASS

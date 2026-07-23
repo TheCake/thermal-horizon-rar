@@ -1,0 +1,34 @@
+STAGE 5B environmental control: Chae+21 Table 3 parsed 109 rows; matched 94/153 kept galaxies -> subsample S: 94 galaxies, 1347 points
+e_N (max clustering): median 0.00502, 16/84 pct 0.00288/0.00689; log-err median 0.29 dex
+
+G0 formula: e->0 max|diff| = 8.88e-16; y->0 cap 7.5843 (analytic 7.5843); suppression at y=0.02 for e=(.001,.005,.02): [-0.0889, -0.1906, -0.3409] -> PASS
+  template size at (y,e)=(0.01, 0.0045): -0.2544 dex
+
+G1 full-sample regression: M0h -10371.19 (4U -10371.19), M1bh -10393.96 (4U -10393.96) -> PASS
+
+E-contest on S (hierarchical delta_d, BE mean, SPARC only):
+  E0 const:              -5152.73  s0=0.0705
+  E1 osc+floor:          -5155.13  N-hat=    78.5  floor=0.0611
+  E2 const+EFE:          -5158.63  beta=0.06  s0=0.0703
+  E3 osc+floor+EFE:      -5159.59  beta=0.04  N-hat=   113.8  floor=0.0636
+  D: thermal E1-E0 = -2.40 | env E2-E0 = -5.90 | both E3-E0 = -6.87 | E3-E1 (env credit after thermal) = -4.46 | E3-E2 (thermal credit after env) = -0.97
+
+free 6-bin scatter (frozen 4T edges), beta=0:      [0.104, 0.0813, 0.0607, 0.036, 0.0447, 0.0968]  (-5327.21)
+free 6-bin scatter,                beta=0.06: [0.1029, 0.0805, 0.0593, 0.0362, 0.0461, 0.0976]  (-5326.94)
+  [bins deep->Newtonian; bin4 = the x~1 bump bin on full-sample edges]
+
+beta profile (const-scatter treatment):
+  0:-5068.6  0.25:-5058.1  0.5:-5023.4  1:-4919.9  2:-4690.4  3:-4499.7  5:-4221.8  8:-3956.7  12:-3733.3  20:-3468.3
+  min at beta = 0; D1 interval [<0, 0.02]; D(-2lnL) beta=0 vs min = +0.00
+
+scramble gate (10 perms of e_g): real EFE credit = 5.90 vs scrambled [-87.19, -85.29, -84.13, -84.98, -80.51, -84.09, -84.04, -83.75, -92.28, -90.28]
+  scrambles beaten: 10/10; scramble mean -85.65 +/- 3.43
+
+correlation channel (62 galaxies with >=2 deep-bin points):
+  Spearman(deep residual, log e_N) rho = -0.168 (p = 0.193)   [EFE predicts NEGATIVE]
+  slope of observed on predicted(beta=1) = +0.95   [~beta if Eq.(2) pattern right]
+
+G2 injection beta_true=3: beta_rec = 3.42  -> PASS
+G2 injection beta_true=0: beta_rec = 0.00  -> PASS
+
+VERDICT LOGIC: env real => E2 credit ~ E1 credit, pattern-specific (beats scrambles), rho<0, slope~beta; thermal survives control => E2 credit small/unspecific, E3 keeps the osc term.

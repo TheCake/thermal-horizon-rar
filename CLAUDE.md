@@ -225,12 +225,37 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   channel); EFE template absorbs deep bins (0.063→0.045) = the
   thermal-vs-environmental rivalry for the deep trend awaits real g_ext
   data (agent hunting Chae tables).**
-  **PUBLICATION DEFERRED BY USER (2026-07-23): oscillator program is the
-  front — remaining: O4 environment data (agent out); O6 bath matrix
-  under hierarchical M/L (the live rung: ¼ vs ½); O5 the §2.4-spec
-  construction; O1b parked pending more distance anchors. Zenodo/colleague
-  (#11/#12) parked until called. Open science items in TODO (NNLO=parked,
-  a₀∝H(z), #7, #8, nonlocal-MI construction).** Paper
+  **5B–5H (2026-07-23, the O4→O9 cascade, PAPER → v1.7): O4 (5B/5E,
+  convergence-hardened after a self-caught 80-lnL coordinate-descent trap —
+  ALL verdict fits now adaptive+nesting-gated): Chae+21 Table 3 per-galaxy
+  g_N,ext extracted (94 matched, data/chae2021_table3.csv committed) —
+  **thermal SURVIVES the environmental control: β̂=0.044, β=1 (collinear
+  max-clustering) excluded +168, credit scramble-generic, correlation null;
+  deep-end EFE visibility ≲2–5%** (Desmond-23's "weak EFE evidence"
+  convergent; scout: monotone deep-scatter growth still unpublished). O6
+  (5C/5D): bath matrix under hier M/L FLIPS — **boot (¼, ν=1+n_BE(νy))
+  beats BE by 75.6, truth-calibrated injections (obs gap ≈ boot-truth
+  −98, not BE-truth +38), 43/50 bootstrap; simple falls LAST (−99 behind
+  BE)**; scout: implicit boot function NOT FOUND in literature (nor
+  simple's implicit identity — both stay ours, "apparently unpublished").
+  O7 (5F): **binaries VETO boot** (+17–24 behind ½-branch, α̂ edge-rides
+  = shape rejection of ν(1)=1.35 transition; Newton dead +75/+81). O8
+  (5G): **the decomposition — 5D's ladder is monotone in Newtonian-tail
+  sharpness; ν_p (≡BE at p=½) hier-converged gives p̂≈0.65, −56.4 = 75%
+  of boot's flip from the TAIL alone** at ½-grade transition (ν(1)=1.42);
+  convergent with §3's p=0.578±0.12 → the hier galaxies vote for SHARPER
+  SCREENING (Cassini-friendly direction); ¼-vs-½ deep digit stays OPEN.
+  O9 (5H, unification): **binaries ACCEPT ν_p(0.65)** — α̂ 1.53/1.38
+  INTERIOR, Newton +93/+91, only 4.6/7.6 behind BE (realization grade) vs
+  −56.4 hier-galaxy gain = **the only function viable on BOTH systems;
+  the §2.4 spec is now ½-grade transition + p≈0.6–0.65 tail + thermal
+  deep (¼-vs-½ open)**; amplitude bookkeeping under the p-family queued
+  (O10: binary α̂≈1.4–1.5 → a₀ ladder must be recomputed jointly). Near-miss logged: 5A's tanh-EFE template had an
+  ambiguous curvature sign (5A unaffected — free-sign coefficients);
+  5B/5E use Chae+21's exact Eq. (2), gated. PUBLICATION still DEFERRED;
+  remaining: O5 construction (now spec'd by the tail+transition split),
+  O1b anchors, p-profile on binaries, ν_p quadrupole vs 4K, 6-seed
+  budgets. Zenodo/colleague (#11/#12) parked until called.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

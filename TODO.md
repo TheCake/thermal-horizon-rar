@@ -160,19 +160,44 @@ O3. ~~**Hierarchical-M/L ĉ₁**~~ — DONE (Stage 4Z), and it RESHAPED the clai
     ±0.2 profile spread is real structure, not bias); bootstraps agree across
     treatments (≈0.4±0.3). **Galaxy dial: c₁ ∈ 0.26–0.45, 0 excluded everywhere,
     ¼-vs-½ OPEN** (hier profile peaks AT ¼). Paper updated throughout.
-O6. **Bath-matrix contest under hierarchical M/L**: the §4.4 ¼-function
-    disfavoring (3.1σ) is flat-M/L-conditional; re-run stage4f's four-function
-    contest with per-galaxy offsets — does the boot function revive when the
-    profile relocates? (The ¼-vs-½ digit is now the ladder's live rung.)
-O4. **EFE-curve test** (data LOCATED, scout 2026-07-23): **Chae et al. 2021,
-    ApJ 921, 104 (arXiv:2109.04745) Table 3 = per-galaxy g_N,ext in a₀ units,
-    109 SPARC galaxies in the SDSS footprint — our exact convention**; stable
-    PDF: astroweb.case.edu/ssm/papers/Chae_2021_ApJ_921_104.pdf; also Chae 2020
-    ApJ 904, 51 Table 2 (153 galaxies, e_env = g_env/g_†; NOTE published
-    erratum corrects Table 2 values). VizieR not indexed; check arXiv ancillary
-    files first, else PDF table extraction (pypdf). Targets: (a) the deep-trend
-    rivalry — corr(per-galaxy deep-bin residual scatter, e_N) decides thermal
-    vs environmental; (b) the ν-family environmental-response dial.
+O6. ~~**Bath-matrix contest under hierarchical M/L**~~ — DONE (Stages 5C/5D,
+    convergence-hardened): **the matrix FLIPS — boot (¼, quantum
+    self-consistent, ν=1+n_BE(νy)) beats BE by 75.6 and simple by 174;
+    truth-calibrated injections all recover (observed gap ≈ the boot-truth
+    calibration −98, not the BE-truth +38); bootstrap 43/50 (86%) boot.**
+    Simple falls to LAST hierarchically. Scout: the implicit boot function is
+    NOT FOUND in the literature (nor the simple-ν implicit identity) —
+    apparently unpublished, "first" withheld pending deeper pass. → opened O7.
+O4. ~~**EFE-curve test**~~ — DONE (Stages 5B/5E, convergence-hardened): Chae+21
+    Table 3 extracted (94/153 matched); exact Eq.-(2) collinear template; all
+    gates pass (nesting, β-injections 3→2.97 / 0→0.00). **Thermal SURVIVES the
+    environmental control: β̂=0.044, upper D1 ≈0.02; β=1 EXCLUDED at +168; the
+    −7 credit is scramble-generic; correlation channel null (depth-partialed
+    ρ=−0.12, p=0.34); the x≈1 bump untouched.** Deep-end EFE visibility limit
+    ≲2–5% of collinear max-clustering. Caveats logged (collinear=maximal;
+    fixed SPARC distances; S-sample thermal credit −4.6 vs −22.8 full).
+O7. ~~**Boot on the binaries**~~ — DONE (Stage 5F): **the binaries VETO boot**
+    (+17–24 lnL behind the ½-branch, α̂ grid-edge-riding both seeds = shape
+    rejection of the weak transition ν(1)=1.35; Newton still dead +75/+81).
+O8. ~~**Tail-vs-coefficient decomposition**~~ — DONE (Stage 5G): the 5D
+    hier ladder is monotone in tail sharpness; ν_p (≡ occupation at p=½)
+    through the converged hier machinery gives **p̂_hier ≈ 0.65, −56.4 over
+    p=½ = 75% of boot's flip from the tail dial alone** at ½-branch-grade
+    transition; convergent with §3's p=0.578±0.12. ¼-vs-½ deep digit stays
+    OPEN; the hierarchical galaxies vote for SHARPER SCREENING.
+O9. ~~**Unification check**~~ — DONE (Stage 5H): **the binaries ACCEPT
+    ν_p(0.65)** — α̂ 1.53/1.38 INTERIOR (no edge-ride), Newton +93/+91,
+    concession to BE only 4.6/7.6 (realization grade) vs the −56.4
+    hier-galaxy gain: **the only function tested viable on BOTH systems**.
+    The §2.4 construction spec is now: ½-grade transition + p≈0.6–0.65
+    tail + thermal deep structure.
+O10. **p-family follow-ups** (opened by 5G/5H): (a) joint-treatment p
+    measurement adding the binary channel (finer p grid on binaries, 6
+    seeds); (b) self-consistent p-family a₀ scorecard (binary α̂≈1.4–1.5
+    under p065 moves the naive translation worse, but the galaxy-side a₀
+    moves too — recompute the ladder jointly before any tension claim);
+    (c) ν_p(0.65) solar quadrupole through the 4K machinery (sharper tail
+    should relieve; verify); (d) 5F/5H six-seed budgets.
 O5. Theory question (parked with #8/#18): a construction meeting the §2.4
     six-point specification; the Unruh-ratio reading (x = T_U/T_dS) is the hint.
 

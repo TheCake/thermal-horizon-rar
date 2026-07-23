@@ -2024,6 +2024,166 @@ measured, its second digit does not. The §4.4 ¼-FUNCTION contest (c₂=7/96
 function, not the λ-slice) is now labeled flat-M/L-conditional; re-running the
 bath-matrix contest under hierarchical M/L = new TODO O6.
 
+## Stage 5B/5E — the environmental control: THERMAL SURVIVES (2026-07-23)
+
+O4 executed. Chae et al. 2021 (ApJ 921, 104) Table 3 — per-galaxy environmental
+Newtonian fields log₁₀ e_N,env for 109 SPARC galaxies (SDSS footprint), "max
+clustering" and "no clustering" columns — extracted from the PDF
+(data/chae2021.pdf → data/chae2021_text.txt; the two columns are a near-constant
+0.9-dex offset apart, so one global amplitude β × the max-clustering pattern
+spans both). Matched 94/153 of our kept galaxies (1347 points, 52% of the deep
+bins — proportionate). EFE model: **the exact 1D QUMOND/AQUAL collinear ratio,
+their Eq. (2)** (ν_e = ½ + [D−C]/2y), applied as a suppression template on the
+BE mean; formula gated (e→0 identity 9e-16, y→0 cap analytic, monotone).
+NOTE: 5A's tanh-form EFE template (Chae–Milgrom fitting-function style) had an
+ambiguous sign in its curvature term as we transcribed it; 5A's conclusions are
+unaffected (its per-galaxy template coefficients were free-sign) but 5B/5E use
+the exact Eq. (2). Near-miss logged, no published number affected.
+
+First pass (5B, [calcs/stage5b_envtest.py](calcs/stage5b_envtest.py)) exposed a
+convergence trap in our own machinery: fixed 3-round coordinate descent leaves
+up to ~80-lnL slop (the β=0 profile node sat 84 above the identical E0 model;
+"scrambled" nested fits landed BELOW the base model — impossible at
+convergence). Same trap quantified on the 5C side by the 4Z-vs-5C benchmark
+(~10 lnL at 3 rounds, full sample). **All verdict-bearing numbers therefore
+come from the convergence-hardened re-runs** (adaptive descent, tol 0.05, max
+15 rounds, nesting-inequality gates): 5E
+([calcs/stage5e_envtest_conv.py](calcs/stage5e_envtest_conv.py)), and 5D for
+the bath matrix. Instrument gates all PASS: nesting inequalities hold; the
+warm-chained β=0 node reproduces E0 (+0.32); injections recover β_true=3 →
+2.97 and β_true=0 → 0.00; full-sample machinery reproduces 4U exactly (5B G1).
+
+**The verdict: the real environmental pattern takes NO significant credit on
+the hierarchical-M/L RAR.** β̂ = 0.044 with upper D1 ≈ 0.02–0.05; **β=1 (max
+clustering at face value, collinear) is excluded at Δ(−2lnL) = +168**; even
+β=0.25 costs +11. The tiny E2−E0 = −7.2 credit sits INSIDE the scramble
+distribution (8 perms: 0.03…10.13, one scramble beats it) — generic freedom,
+not pattern. Correlation channel (model-light): raw Spearman(deep residual,
+log e_N) = −0.165 (p=0.20); depth-partialed −0.123 (p=0.34) — null. The x≈1
+bump: untouched by the EFE term (expected — EFE dead at x≈1), still
+point-level. Thermal credit on S: E1−E0 = −4.6 (vs −22.8 full-sample; S holds
+52% of deep points, so the credit is sample-dependent beyond point counting —
+the S galaxies' deep ends are less scatter-elevated; logged as a caveat, the
+4T/4U claim was always CONSTRAINT not detection).
+
+Read: **the deep-end scatter trend is NOT environmental at published
+amplitudes — the thermal (oscillator shot-noise) candidate survives its
+sharpest control to date.** Secondary finding: our pipeline sets a tight upper
+limit on EFE visibility in SPARC deep ends (≲2–5% of the collinear
+max-clustering amplitude, at fixed SPARC distances/inclinations with
+hierarchical disk-M/L). Stated caveats: collinear = maximal geometry (random
+orientation ~halves the effective e, softening the β=1 exclusion to roughly
+β_eff=0.5, still +55); e_N log-errors 0.29 dex attenuate β̂ but cannot
+manufacture a +168 rejection; our channel (point-level RAR with measured
+distances) ≠ Chae's channel (within-galaxy outer-decline shapes with free
+per-galaxy distance/inclination/e) — we do NOT adjudicate their detection,
+we close OUR deep trend's environmental escape.
+
+## Stage 5C/5D — the bath matrix FLIPS under hierarchical M/L (2026-07-23)
+
+O6 executed. The 4F four-cell contest (+ dead-branch control) re-ranked with
+per-galaxy disk-M/L profiled (4Z treatment, joint SPARC+lensing objective):
+5C ([calcs/stage5c_hierbath.py](calcs/stage5c_hierbath.py)) found the flip at
+3 rounds; 5D ([calcs/stage5d_hierbath_conv.py](calcs/stage5d_hierbath_conv.py))
+confirmed it CONVERGED (adaptive descent; CONV gate: BE reaches −10435.00 vs
+4Z's warm-chained λ=1 benchmark −10435.06 ✓).
+
+**Converged ladder: boot −10510.6 < BE −10435.0 < standard −10424.5 < simple
+−10336.3.** Under flat M/L (4F) the order was BE > simple > boot > standard;
+hierarchically the quantum SELF-CONSISTENT cell — ν = 1 + n_BE(ν·y), c₁ = ¼,
+c₂ = 7/96, e^−y screening, frequency set by the TOTAL acceleration (the §2.4
+Unruh-ratio reading ω = g_obs/c) — **wins by 75.6 over BE and 174 over
+simple.** Coherent with 4Z's continuous profile peaking at ĉ₁ = 0.258 ≈ ¼:
+two independent instruments (mixture-family slice; exact function contest)
+relocate to the same cell once per-galaxy M/L is real.
+
+Truth-calibrated injections (all three truths recovered by the converged
+machinery): BE-truth → BE wins (boot +38 behind); boot-truth → boot wins (BE
++98 behind); simple-truth → simple wins. **The observed real-data gap (−75.6)
+sits near the boot-truth calibration (−98), far from the BE-truth one (+38).**
+Galaxy bootstrap (50 reps, converged-warm): boot−BE = −69 ± 65, **boot better
+in 43/50 (86%)** — a strong lean, not yet decisive (population variance
+dominates, as everywhere in this program). Also notable: simple falls to LAST
+(even standard beats it by 88) — the flat-M/L "simple-lean" of the galaxy side
+does not survive hierarchy either.
+
+Scout verdict (Haiku, arXiv/INSPIRE, direct-quote discipline): the implicit
+self-consistent function ν = 1 + n_BE(ν·y) — **NOT FOUND anywhere**; no
+self-consistent-argument variant of Cadoni–Tuveri exists; even the simple-ν
+implicit identity ν = 1 + 1/(ν·y) is unpublished as a stated claim (consistent
+with Famaey & Durakovic 2025's "no clear derivation" line we already cite).
+Both stay "apparently unpublished" pending a deeper pass — no "first" printed.
+
+Hier caveats, stated: the hier optimum trades a₀ down (boot 8.7e−11) against
+f_ML up (1.64) — the a₀-vs-cH₀/2π scorecard row is defined on the fiducial
+treatments and a hier-boot scorecard is future work; the binary side read
+c₁ = 0.37–0.50 through the λ-MIXTURE family whose low-c₁ members carry
+standard-μ's shape — boot is a different function at the same c₁, so the
+binary cross-check needs boot's own EFE tables → executed as Stage 5F (O7).
+
+## Stage 5F/5G — the binaries veto boot; the flip decomposes as a TAIL story (2026-07-23)
+
+**5F (O7, [calcs/stage5f_bootbin.py](calcs/stage5f_bootbin.py)): the binaries
+REJECT the boot function.** QUMOND-EFE boot table generated at g_N,ext=1.2a₀
+(spherical-identity gate 0.01%; ν_boot(1)=1.350 vs BE 1.582); v7
+perspective-corrected 2D fit, seeds 31/101, on the 4X grid footing. Result:
+boot lnL = −56360.6 / −56369.1 — **+22.3 / +17.1 behind BE, +19.9 / +24.1
+behind λ0.75, with α̂ riding the grid edge (2.00, non-interior) in both
+seeds** — the same edge-riding-and-still-losing signature that rejected the
+low-λ mixtures in 4X: a SHAPE rejection, not an amplitude trade. Newton stays
+dead under boot (+75/+81). The x≈1 sample refuses boot's weak transition.
+
+**5G (O8, [calcs/stage5g_tailtest.py](calcs/stage5g_tailtest.py)): what the
+hierarchical galaxies actually vote for is the TAIL.** Observation: the 5D
+ladder (boot < BE < standard < simple) is monotone in Newtonian-tail
+sharpness (e^−y, e^−√y, ~y⁻², ~y⁻¹). Probe: the §3 screening family ν_p —
+which IS the occupation law at p=½ — run through the converged hierarchical
+machinery (G1: p=½ reproduces hier BE −10435.00 exactly): **p̂_hier ≈ 0.65,
+gain −56.4 over p=½ — 75% of boot's −75.6 flip from the tail dial alone**,
+with the transition kept at ½-branch grade (ν_p(0.65)(1)=1.423) and the deep
+NLO structure off-boot (exponent 2p, disclosed). Convergent with the §3
+flat-treatment measurement p = 0.578 ± 0.12: two treatments bracket
+**p ≈ 0.58–0.65, sharper than the pure occupation tail** — and Cassini wants
+sharp. The ¼-vs-½ deep digit therefore stays OPEN (boot's residual non-tail
+gain is only ~−19, and its ¼-carrying transition is binary-vetoed); what
+moved tonight is the SCREENING: three independent instruments (p-fit, hier
+function ladder, Cassini floor) now point the same direction. Paper: §3
+sharpened, §4.4 carries the decomposition, §6.4 the binary veto. Unification
+check (does ν_p(0.65) fit the binaries too?) = Stage 5H.
+
+## Stage 5H — the unification check: ν_p(0.65) is VIABLE on both systems (2026-07-23)
+
+O9 executed ([calcs/stage5h_punified.py](calcs/stage5h_punified.py)): ν_p(0.65)
+QUMOND-EFE table at g_N,ext=1.2a₀ (spherical identity 0.01%, ν(1)=1.423), v7
+perspective-corrected 2D fit, seeds 31/101. **The binaries ACCEPT the
+sharpened-screening occupation law: α̂ = 1.53 / 1.38 INTERIOR (no edge-riding
+— the shape-rejection signature that killed boot is absent), Newton dead at
++92.8/+90.8, at a modest lnL concession to BE of 4.6/7.6** (comparable to the
+per-seed realization scatter on the 4X footing; boot was +22.3/+17.1 WITH
+edge-riding). Bookkeeping across systems, honestly stated side-by-side (the
+two likelihoods are not summable): hierarchical SPARC+lensing prefers p065
+over BE by **−56.4**; the binaries counter-lean toward BE by **+4.6/+7.6**.
+ν_p(0.65) is thus the only function tested that is viable on BOTH systems —
+BE loses the hierarchical galaxies by 56, boot loses the binaries by ~20 with
+a shape rejection.
+
+**Standing synthesis after the 5B–5H cascade: the data triangulate a
+screening-sharpened occupation law — ½-branch-grade transition (binary-held),
+p ≈ 0.58–0.65 Newtonian tail (hier-galaxy-held, §3-convergent,
+Cassini-friendly direction), thermal deep structure with the ¼-vs-½ digit
+open.** That is a sharper §2.4 construction spec than we had this morning.
+
+Open flags carried forward (queued in TODO): (1) the binary amplitude under
+p065 runs α̂ ≈ 1.4–1.5 interior — the a₀ translation under the sharpened tail
+moves the binary-side high-tension direction naively worse, but the
+galaxy-side a₀ moves too (hier p065 a₀ = 8.9e−11); the scorecard a₀ ladder
+needs a self-consistent p-family recomputation before any tension claim.
+(2) The exact p: hier profile 0.65, flat 0.578±0.12 — a joint-treatment p
+measurement with the binary channel added is the natural next instrument.
+(3) ν_p(0.65) quadrupole vs the 4K Cassini bound (sharper tail should
+help; verify with the solver). (4) 6-seed budgets for 5F/5H (2 seeds
+tonight, 4X footing).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

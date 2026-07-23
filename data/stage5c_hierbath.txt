@@ -1,0 +1,31 @@
+STAGE 5C bath matrix under hierarchical M/L: 153 galaxies, 2700 points + 12 lensing; delta prior 0.1 dex
+
+        BE: quantum/source (c1=1/2, c2=1/12)
+    simple: classical/self-consistent (c1=1/2, c2=1/8)
+      boot: quantum/self-consistent (c1=1/4, c2=7/96)
+  standard: dead-branch control (c1=0)
+       CSD: classical/source (c1=1; Cassini-dead a priori)
+
+G1 prior->0 regression vs 4F flat table:
+        BE:   -8397.72  (4F   -8397.72)  OK
+    simple:   -8379.01  (4F   -8379.01)  OK
+      boot:   -8370.46  (4F   -8370.46)  OK
+  standard:   -8341.95  (4F   -8341.95)  OK
+       CSD:   -8169.32  (4F   -8169.32)  OK
+G1 -> PASS
+
+Hierarchical contest (delta_d profiled, 0.1-dex prior):
+        BE: -2lnL+prior =  -10423.69  a0=8.102e-11  f_ML=1.33  s_int=0.070  dlt=+0.212  std(dml)=0.169 dex
+    simple: -2lnL+prior =  -10326.41  a0=8.324e-11  f_ML=1.26  s_int=0.072  dlt=+0.201  std(dml)=0.169 dex
+      boot: -2lnL+prior =  -10496.97  a0=8.944e-11  f_ML=1.55  s_int=0.069  dlt=+0.191  std(dml)=0.168 dex
+  standard: -2lnL+prior =  -10413.70  a0=1.013e-10  f_ML=1.57  s_int=0.071  dlt=+0.155  std(dml)=0.167 dex
+       CSD: -2lnL+prior =   -9798.58  a0=7.039e-11  f_ML=1.01  s_int=0.082  dlt=+0.230  std(dml)=0.167 dex
+  Delta: boot - BE = -73.28 | boot - simple = -170.56 | BE - simple = -97.28 | boot - standard = -83.26
+  [flat 4F comparators: boot-BE +27.27, boot-simple +8.55, BE-simple -18.71, boot-standard -28.51]
+
+G2 injection (BE truth + offsets): hier BE -10408.03 vs hier boot -10368.59 (BE - boot = -39.44) -> PASS
+
+bootstrap (100 reps, hierarchical, offsets refit per rep):
+  boot - BE     =  -55.63 +/-  66.49  (boot better in 76/100)
+  boot - simple = -145.46 +/-  84.01  (boot better in 99/100)
+  BE - simple   =  -89.83 +/-  30.52  (BE better in 100/100)

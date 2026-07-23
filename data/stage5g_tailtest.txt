@@ -1,0 +1,12 @@
+STAGE 5G tail-vs-coefficient: 153 galaxies, 2700 points + 12 lensing; nu_p family, hierarchical converged
+comparators (5D converged): boot -10510.60, BE -10435.00, standard -10424.49, simple -10336.28
+
+  p=0.500:  -10435.00  nu(1)=1.582  a0=7.878e-11  f_ML=1.40  s_int=0.070  dlt=+0.223
+  p=0.578:  -10476.26  nu(1)=1.487  a0=8.478e-11  f_ML=1.47  s_int=0.069  dlt=+0.208
+  p=0.650:  -10491.38  nu(1)=1.423  a0=8.876e-11  f_ML=1.53  s_int=0.069  dlt=+0.197
+  p=0.750:  -10490.47  nu(1)=1.358  a0=9.268e-11  f_ML=1.59  s_int=0.069  dlt=+0.186
+  p=0.900:  -10465.16  nu(1)=1.290  a0=9.638e-11  f_ML=1.65  s_int=0.070  dlt=+0.174
+
+G1 p=0.5 == hier BE: -10435.00 (5D -10435.00) -> PASS
+minimum at p=0.65; gain vs BE = -56.38; boot's gain was -75.59
+fraction of the boot flip reproduced by the tail dial alone: 75%
