@@ -1,0 +1,32 @@
+STAGE 4V oscillator scorecard; deep pairs (6-30 kAU): 1361, y 16/50/84 = [0.219, 0.649, 1.483]
+
+kappa(simple) = dln(B-1)/dln a0: mean +0.784 (16/84 pct +0.777/+0.788)
+kappa(be) = dln(B-1)/dln a0: mean +0.916 (16/84 pct +0.907/+0.914)
+G2 kappa positive + family-stable -> PASS
+G1 alpha=1 -> a0 = 1.200e-10 (must be 1.200e-10) -> PASS
+
+a0(binaries, simple) = (1.48 +- 0.18)e-10
+a0(binaries, BE)     = (1.37 +- 0.17)e-10
+
+cH0/2pi (Planck 67.4+-0.5)  = 1.042e-10
+cH0/2pi (SH0ES 73.0+-1.0)   = 1.129e-10
+
+THE OSCILLATOR SCORECARD
+quantity                                              measured   predicted   pull
+a0 [1e-10 m/s^2]  SPARC p-fit (4H)                  1.05+-0.10       1.04   +0.1s
+a0                joint SPARC+lensing (4E)          1.00+-0.09       1.04   -0.5s
+a0                wide binaries (simple)            1.48+-0.18       1.04   +2.5s
+a0                wide binaries (BE)                1.37+-0.17       1.04   +1.9s
+(same rows vs SH0ES cH0/2pi = 1.13)                     pulls:  -0.8s -1.4s +2.0s +1.4s
+
+screening index p (Wien tail; 4H)                  0.578+-0.118     0.500   +0.7s
+zero-point coefficient c1 (4S bootstrap)           0.427+-0.268     0.500   -0.3s
+binary amplitude alpha (simple; 3U/3V)             1.180+-0.110     1.000   +1.6s
+binary amplitude alpha (BE; 3U/3V)                 1.130+-0.130     1.000   +1.0s
+ceiling edge sqrt(2B) (4J; P of fit)                  1.65 obs      1.65   P=0.62
+rung 2: c2 (1/12 vs 1/8)                            unresolved      1/12    0.1s
+mode count N (4T/4U; no prediction yet)       ~21 (constraint)        --     --
+
+note: a0(binaries) assumes the alpha->a0 mapping through the EFE
+tables (kappa above); it is a TRANSLATION of the disclosed alpha>1
+lean, not an independent dataset, and shares its systematics.

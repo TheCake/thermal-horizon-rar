@@ -137,7 +137,23 @@
     (2304.00576) runs on the same capped term — disfavored. Full credence
     bookkeeping in NOTES 4K.
 
-## Publication path
+## Oscillator program (the current front, opened 2026-07-23)
+O1. **Full-hierarchy second moment** (the decisive 4U successor): per-galaxy bulge
+    M/L + distance + inclination nuisances (Desmond-2023-grade) under the scatter
+    models. Decides: the V-shape's identity (bulge M/L vs new structure) and the
+    local-vs-global mode contest (annulus-area scaling) that 4U's gate deferred.
+O2. **Binary-side c₁**: generate EFE tables on a λ-grid through the QUMOND solver
+    and profile the binary v7 likelihood over the same continuous family as 4S —
+    an independent, x≈1-regime dial reading; also the instrument for the a₀-lean
+    question (the scorecard's +2σ binary rows).
+O3. **Hierarchical-M/L ĉ₁**: re-run 4S with per-galaxy M/L (4U machinery merged);
+    expected σ(ĉ₁) ±0.27 → ~±0.15.
+O4. **EFE-curve test**: fetch Chae's environment-split RAR data; the ν-family
+    shape sets the environmental response — a further dial the oscillator fixes.
+O5. Theory question (parked with #8/#18): a construction meeting the §2.4
+    six-point specification; the Unruh-ratio reading (x = T_U/T_dS) is the hint.
+
+## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)
 10. ~~**Paper assembly + verification pass**~~ — DONE. Draft v1 ([PAPER.md](PAPER.md)):
     full manuscript from NOTES Stages 1→4N. **Verification pass DONE (Stage 4O,
     2026-07-22) → v1.1: author = Filip Hájek (independent researcher); nine-agent

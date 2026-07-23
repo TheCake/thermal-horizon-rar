@@ -187,12 +187,24 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   Newton cedes ~5 lnL (+103±9/+90±7, min +84); w_rad 12/12; simple-over-BE
   lean unchanged (−12.6±2.4). §6.3 numbers STAND, correction EXECUTED, all
   queued-language deleted; PAPER → v1.3 (Stages 1–4T). PAPER IS TAG-READY.**
-  NEXT = user: GitHub rename click (thermal-horizon-rar) → Zenodo GitHub
-  toggle → tag v1.0 (DOI mints) → send COLLEAGUE-BRIEF (final numbers,
-  uncommitted) with DOI → arXiv via endorsement. Post-DR4 cycle: the
-  dedicated ½ paper (ĉ₁ tightening via hierarchical M/L = 4U candidate,
-  binary-side λ-EFE tables, M/L-marginalized second moment). Open science
-  items in TODO (NNLO=parked, a₀∝H(z), #7, #8, nonlocal-MI construction).** Paper
+  **4U/4V/§2.4 (2026-07-23, PAPER v1.4): 4U hierarchical disk-M/L second
+  moment — thermal trend SURVIVES (−22.8/1p; floor 0.101→0.059; N̂ 21.5→63;
+  constraint now N ~ 20–60), no galaxy-level draw (r=−0.02); V-shaped free
+  bins (Newtonian arm = probable un-marginalized BULGE M/L); G2 injection
+  gate FAILED r=0.74 → area/local-mode contest REPORTED UNRESOLVED (honest
+  fail, logged). 4V scorecard (§9.1 table): galaxy a₀ vs cH₀/2π +0.1σ/−0.5σ
+  (the temperature check PASSES); binary a₀ translation (κ=0.78/0.92) =
+  1.48±0.18/1.37±0.17e−10 → +2.5σ/+1.9σ = the sharpest internal tension,
+  carried openly; five dials ≲1.6σ. §2.4 = the six-point mechanism
+  specification; Unruh scout: Milgrom-1999 + Deser–Levin-1997 VERIFIED and
+  cited; the occupation-ratio reading (x = T_U(g_obs)/T_dS) and ω = √(g_N
+  a₀)/c = g_obs/c NOT FOUND anywhere = ours, stated as observations.**
+  **PUBLICATION DEFERRED BY USER (2026-07-23): oscillator program is the
+  front — TODO section "Oscillator program" (O1 full-hierarchy second
+  moment; O2 binary-side λ-EFE c₁; O3 hierarchical ĉ₁; O4 Chae EFE-curve;
+  O5 the §2.4-spec construction). Zenodo/colleague (#11/#12) parked until
+  called. Open science items in TODO (NNLO=parked, a₀∝H(z), #7, #8,
+  nonlocal-MI construction).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

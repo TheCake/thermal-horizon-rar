@@ -1,0 +1,15 @@
+STAGE 4U hierarchical M/L second moment: 153 galaxies, 2700 points; prior sigma_ML = 0.1 dex; family = BE
+annulus area percentiles (kpc^2): [4.09, 28.64, 207.51]
+
+M0h  const:        -2lnL+prior =  -10371.19  s0 = 0.0700
+M1bh osc+floor:    -2lnL+prior =  -10393.96  N-hat =     62.9  floor = 0.0591
+M2h  free 6-bin:   -2lnL+prior =  -10720.38  s_b = [0.1045, 0.0778, 0.0545, 0.0272, 0.0646, 0.0837]
+M3h  local (area): -2lnL+prior =  -10623.26  sigA = 2.435 modes/kpc^2  floor = 0.0521
+D: M1bh-M0h = -22.77 | M2h-M0h = -349.19 | M3h-M1bh = -229.30 (local-vs-global thermal)
+
+4T (unmarginalized) comparators: M0 -8338.12, M1b -8363.17 (N=21.5, floor 0.1014), M2 [0.1438,0.1268,0.1146,0.1112,0.1262,0.1073]
+
+delta_g diagnostics (M1bh): std(delta_hat) = 0.1680 dex (prior 0.1); corr(|delta_hat|, median x_g) = -0.024
+
+G1 prior->0: M0h -8338.12 (4T -8338.12), M1bh -8363.17 (4T -8363.17) -> PASS
+G2 injection: corr(delta_hat, delta_true) = 0.739 -> FAIL

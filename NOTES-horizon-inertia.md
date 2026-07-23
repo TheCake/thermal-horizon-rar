@@ -1866,6 +1866,48 @@ closed with the shift numbers; PAPER → v1.3. (A corrected-data 3V-style 1000-
 bootstrap would move the center by ≤0.02 against ±0.11 quoted — completeness
 theater, not run; stated here for the record.)
 
+## Stages 4U + 4V — the hierarchical second moment, the scorecard, and §2.4 (2026-07-23)
+
+User redirected: publication DEFERRED, oscillator = the program's front. Three
+instruments executed same-day.
+
+**4U ([calcs/stage4u_mlmarg.py](calcs/stage4u_mlmarg.py)):** per-galaxy disk-M/L
+offsets (0.1-dex lognormal prior) profiled jointly with globals; scatter models
+recompete on the residual. **The thermal-direction trend SURVIVES marginalization**
+(osc+floor −22.8/1 param vs constant; floor drops 0.101 → 0.059 dex; N̂ 21.5 → 62.9
+— 4T was floor-limited; constraint now quoted N ~ 20–60, nuisance-depth-dependent).
+No galaxy-level draw (corr(|δ̂_g|, ⟨x⟩_g) = −0.02). std(δ̂_g) = 0.168 dex > the 0.1
+prior (δ absorbs distance/inclination too — expected). DISCLOSURES: (1) the
+marginalized free shape is V-SHAPED — s_b = [0.105, 0.078, 0.055, 0.027, 0.065,
+0.084] — the Newtonian-side rise sits where BULGE M/L (not marginalized; only disk
+was) surfaces; (2) **G2 injection gate FAILED at r = 0.74 vs the 0.8 target** —
+partial recovery; therefore cross-model comparisons that re-optimize δ_g (the M2h
+−349 and the M3h area-scaling −229, σ_A = 2.4 modes/kpc²) are REPORTED AS
+UNRESOLVED, not measured. G1 prior→0 reproduces 4T exactly (PASS). Decisive next:
+the full hierarchy (bulge+distance+inclination) = TODO O1.
+
+**4V ([calcs/stage4v_scorecard.py](calcs/stage4v_scorecard.py)):** the scorecard +
+the binary a₀ translation. κ = dln(B−1)/dln a₀ from the g-scan tables: 0.784
+(simple) / 0.916 (BE), gates pass (α=1 → 1.2e−10 exact). **a₀(binaries) =
+(1.48 ± 0.18) / (1.37 ± 0.17)e−10** — the disclosed α>1 lean in temperature
+language: +2.5σ/+1.9σ vs Planck cH₀/2π, +2.0σ/+1.4σ vs SH0ES — the reading's
+sharpest internal tension, carried openly (either g_ext calibration owns it or
+the deep amplitude is not fully H₀-locked → a₀∝H(z) adjudicates). Galaxy-side
+rows: +0.1σ / −0.5σ vs Planck — the temperature check passes where it is
+cleanest. Five dials within ≲1.6σ. Paper: §9 restructured (9.1 scorecard table,
+9.2 falsifiers).
+
+**§2.4 written (the mechanism specification):** six measured requirements any
+construction must clear. Unruh scout (primary sources): Milgrom 1999 (astro-ph/
+9805346; T(a)−T(0) "depends on a in the same way that MOND inertia does";
+mechanism "still a far cry off") and Deser & Levin 1997 (gr-qc/9706018; 2πT =
+√(a²+Λ/3)) VERIFIED and now cited; the OCCUPATION-RATIO reading (x = T_U(g_obs)/
+T_dS, exact in the deep limit) and the geometric-mean frequency ω = √(g_N a₀)/c
+= g_obs/c: NOT FOUND anywhere — stated in §2.4 as observations, not derivations.
+(Scout's sloppy "nobody wrote ν=1+n_BE" side-claim discarded — it contradicts
+C&T Eq. 23, which correction #7 established; only the Unruh-ratio FRAMING is
+unclaimed.) Nearest adjacent: arXiv:0908.4239 (Unruh-like MOND), cited by ID.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
