@@ -331,7 +331,33 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   (indicative joint −41 vs gm −26), its two predictions pre-registered.
   OPEN: O15 (κ/a₀ ladder for F1/F2 — temperature-strain adjudication;
   faster-die-off weighting refinement; 5N-grade bootstrap of the F2
-  lead). PUBLICATION still DEFERRED; O1b anchors parked;
+  lead).
+  **5Y/5Z/6A–6D (2026-07-23 night, O15+O16 EXECUTED, PAPER → v2.2):
+  THE SPLIT IS SYSTEM-LEVEL. 5Z two-leg functions (β=1/(2ν²),
+  1/(2(2ν−1)²)): c₁=½ AND c₂=1/12 EXACT, ν(1)=1.503/1.537, all gates.
+  6A: galaxies reward again — F3 −111.4/−50.9, **F4 −108.7/−64.2 =
+  biggest controlled lead ever**, a₀ horizon-adjacent; 6C bootstrap
+  **F4−BE = −57.4±38.3, 37/40 (92.5%)** = strongest function grade in
+  program (still a lean). 6B: binaries REJECT the two-leg too (−6.84
+  interior / −6.96 with α̂-EDGE 6/6) — across EIGHT sharpened functions
+  the binary penalty −5…−8.5 is ~independent of ν(1): **they reject the
+  screening behavior under the dominant external field, not the
+  transition.** 5Y κ ladder: κ=1.26–1.35 all running fns → a₀ +5.2σ/
+  +6.3σ/+6.2σ (F4 edge-n/a); ONLY pure BE passes (+1.9σ). 6D the
+  decisive control: pointwise drive-weighted rule (β·g_int/(g_int+g_ext),
+  solver-level, gates exact: isolated→F4 0.01%, wide→BE 0.35%)
+  **EXCLUDED — −9.64±1.49, 0/6, punished exactly at its predicted
+  mid-separation sag — while PASSING temperature (α̂=1.098±0.021,
+  κ=1.033, a₀=1.31±0.13 = +2.1σ): the two binary vetoes are
+  independent.** END STATE: two systems carry DIFFERENT effective baths
+  (BE under dominant ambient field; two-leg-sharpened when isolated),
+  difference NOT a function of local field configuration. Surviving
+  (post-hoc-flagged): ambient-GATED bath (test: Chae high-e_N galaxies,
+  power ≲2–5%; real test DR4 weak-ambient binaries → should sharpen) vs
+  MI trajectory functional (split follows orbit class; DR4
+  eccentricity-resolved). TODO O15 closed, O16 opened, O5 sharpened to
+  "why would the ambient gate at system level — or is the trajectory
+  the carrier". PUBLICATION still DEFERRED; O1b anchors parked;
   Zenodo/colleague (#11/#12) parked until called.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation

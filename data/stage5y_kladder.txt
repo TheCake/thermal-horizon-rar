@@ -1,0 +1,19 @@
+STAGE 5Y kappa/a0 ladder for the running functions; deep pairs (6-30 kAU): 1361
+
+kappa(  be) = +0.916 (16/84 +0.907/+0.914)
+kappa( rb1) = +1.347 (16/84 +1.315/+1.339)
+kappa( rb2) = +1.326 (16/84 +1.294/+1.326)
+kappa( rb3) = +1.336 (16/84 +1.303/+1.335)
+kappa( rb4) = +1.259 (16/84 +1.223/+1.281)
+G3 BE-kappa regression vs 4V (+0.916): +0.916 -> PASS
+G2 kappa > 0 -> PASS
+G1 alpha=1 -> 1.200e-10 -> PASS
+
+binary a0 = 1.2e-10 * alpha^(1/kappa)  [x1e-10; alpha error = realization SE (+) 0.11 systematic in quadrature, 5L convention]
+  cH0/2pi (Planck) = 1.042 +- 0.008
+   rb1: alpha 1.395+-0.117 (6 seeds), kappa +1.347 -> a0 = 1.54+-0.10  pull +5.2 sigma
+   rb2: alpha 1.487+-0.111 (6 seeds), kappa +1.326 -> a0 = 1.62+-0.09  pull +6.3 sigma
+   rb3: alpha 1.500+-0.115 (6 seeds), kappa +1.336 -> a0 = 1.63+-0.09  pull +6.2 sigma
+   rb4: alpha 2.000+-0.110 (6 seeds), kappa +1.259 -> a0 = 2.08+-0.09  pull +11.4 sigma
+
+  [comparators (5L/4V): BE 1.37+-0.17 (+1.9s); p065 1.59+-0.11 (+5.1s); gm 1.51+-0.11 (+4.3s); galaxy vertical-hier a0 for rb1/rb2 = 0.99/0.98 (5V, controlled treatment)]

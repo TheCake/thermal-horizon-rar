@@ -1,0 +1,17 @@
+STAGE 6D: the drive-weighted bath -- beta = w_self * (1/2)/(2nu-1)^2, w_self = g_int/(g_int+g_ext)
+
+G1 isolated identity (w=1 -> F4): 0.01% -> PASS
+G2 sandwich (between BE and F4 tables at eN=1.2, 1.5% slack): PASS
+G3 wide-limit approach to BE (y<0.1): max dev 0.35%
+  B(y) [BE / drive-weighted / F4] at eN=1.2:
+    y= 0.1: 1.3651 / 1.3603 / 1.3023
+    y= 0.3: 1.3642 / 1.3515 / 1.3011
+    y= 1.0: 1.3545 / 1.3242 / 1.2886
+    y= 3.0: 1.2012 / 1.1427 / 1.1208
+(0.0 min tables)
+
+binary verdict (vs p050 per seed): -16.74 -6.37 -8.50 -7.89 -9.76 -8.58
+  mean -9.64 +- 1.49 SE; better in 0/6; interior 6/6; a_hat 1.098 +- 0.021
+  [comparators: gm -8.50, rb2 -5.47, rb3 -6.84; reconciliation target: within ~ -2 of p050]
+kappa: be +0.916 (regression vs 4V +0.916 -> PASS), dwf +1.033
+a0 translation: alpha 1.098+-0.112, kappa +1.033 -> a0 = 1.31+-0.13  pull +2.1 sigma  [BE +1.9; sharp functions +4.3..+6.3]

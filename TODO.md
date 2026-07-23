@@ -251,25 +251,45 @@ O14. ~~**The lock-breaking function**~~ — DONE (Stages 5U/5V/5W/5X,
     spontaneous-fraction bath = the program's best cross-system function
     (indicative joint −41 vs gm's −26). Scout: running exponent /
     Einstein-coefficient derivation / (½,¾) combo all NOT FOUND.
-O15. **The running-β completion** (opened by 5W's localized residual):
-    (a) κ tables (e_N=1.0/1.4) for F1/F2 + the a₀-ladder translation —
-    does α̂≈1.4–1.5 repeat the sharp-function temperature strain (gm-κ)
-    or not (BE-κ)? The binary temperature row hinges on it. (b) The
-    weighting refinement: the transition wants LESS admixture than
-    1/(2ν) — derive (not scan) a faster die-off; candidates with
-    reasons: β = ½·e^(−n) (Poisson no-quantum weight), β = ½/(1+n)²
-    (squared rate share), β weighted by n(u) at the SOURCE argument.
-    Same gates: c₁=½, p=¾ preserved; ν(1) must rise toward ~1.55 without
-    losing the galaxy tail. (c) 5N-style paired bootstrap of the F2
-    galaxy lead (is −52 vertical a detection or a lean?). (d) full
-    bath-matrix re-run with F1/F2 vs the 5D ladder for the record.
-O5. Theory (parked with #8/#18), NOW PARTIALLY ANSWERED by 5U: the
-    running β has a derived candidate mechanism (response enters through
-    the spontaneous channel; classical limit = C&T). REMAINING: promote
-    the weighting CHOICE from reading to derivation (why the rate share
-    and not the energy share — or the 5W residual may be saying: neither
-    exactly), and derive it from the horizon side (dS mode counting)
-    rather than the oscillator side.
+O15. ~~**The running-β completion**~~ — DONE (Stages 5Y/5Z/6A/6B/6C,
+    2026-07-23 late), verdict = THE SPLIT IS SYSTEM-LEVEL: (a) κ ladder:
+    κ = 1.26–1.35 for ALL running functions → **a₀ translations +5.2σ/
+    +6.3σ/+6.2σ (F4 edge-invalidated); only pure BE passes (+1.9σ)** —
+    the temperature wall. (b) two-leg refinement (5Z: β=1/(2ν²),
+    1/(2(2ν−1)²); c₁=½ AND c₂=1/12 EXACT; ν(1)=1.503/1.537): galaxies
+    reward it AGAIN (6A: F3 −111.4/−50.9, **F4 −108.7/−64.2 = biggest
+    controlled lead ever**) but binaries REJECT it like every sharpened
+    function (6B: −6.8/−7.0, rb4 α̂-edge 6/6) — the penalty is ~constant
+    −5…−8.5 across eight functions INDEPENDENT of ν(1): **the binaries
+    reject the screening-region behavior under the dominant external
+    field, not the transition value.** (c) 6C bootstrap: **F4 − BE =
+    −57.4 ± 38.3, 37/40 (92.5%)** — strongest function-lead grade in the
+    program, still a lean. (d) bath-matrix re-run: skipped (6A subsumes
+    the ladder question for the new functions).
+O16. **The system-level split** (the 6D exclusion + what remains):
+    the pointwise drive-weighted rule (β × g_int/(g_int+g_ext)) is
+    **EXCLUDED** (6D: −9.64±1.49, 0/6, punished at its predicted
+    mid-separation sag; temperature row PASSES +2.1σ — the two binary
+    vetoes are independent). Remaining candidates, both flagged
+    post-hoc: (a) AMBIENT-GATED bath (the system's environment as a
+    whole sets mode character; binaries n_amb≈0.5 quantum → BE,
+    galaxies n_amb~7 classical → F4) — anchors-only by construction;
+    in-sample test = Chae high-e_N galaxies through 5B/5E machinery
+    (power ≲2–5%, honest); real test = DR4 halo/outer-disk binaries
+    (weak ambient → should SHARPEN toward F4). (b) MI trajectory
+    functional — the cross-system split follows orbit class, not
+    environment; eccentricity-resolved boosts at DR4 (§9.2-3; 4L tie
+    keeps it open; NB the intra-SPARC tail/deep split is function-shape,
+    not MI-attributable). Either signature decides.
+O5. Theory (parked with #8/#18), status after 5U–6D: the spontaneous-
+    channel mechanism DERIVED and galaxy-validated (the isolated-system
+    bath is two-leg spontaneous-fraction, F4-grade); the external-field
+    regime holds pure source-driven BE and REFUSES the pointwise
+    interpolation. The derivation question is now: WHY would the ambient
+    bath gate the admixture at the SYSTEM level (dS mode counting with
+    an environment horizon? decoherence by the ambient drive?) — or is
+    the trajectory (MI) the real carrier. Horizon-side derivation still
+    open.
 
 ## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)
 10. ~~**Paper assembly + verification pass**~~ — DONE. Draft v1 ([PAPER.md](PAPER.md)):

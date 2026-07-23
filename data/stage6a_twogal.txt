@@ -1,0 +1,14 @@
+STAGE 6A: two-leg functions on the hierarchical galaxies -- 153 galaxies, 2700 points + 12 lensing
+
+plain hier:
+  BE:  -10435.00  la0=-10.104 f=1.398 s_int=0.070  [5P -10435.00, d=-0.00 OK]  (0.0 min)
+  F3:  -10546.41  la0=-10.119 f=1.538 s_int=0.068  (1.1 min)
+  F4:  -10543.72  la0=-10.122 f=1.513 s_int=0.068  (0.5 min)
+  Delta vs BE: F3 -111.41, F4 -108.71   [gm -84.79, F1 -101.29, F2 -107.22]
+
+vertical-hardened:
+  BE:  -12152.49  la0=-9.981 f=1.164 s_int=0.045  [5P -12152.49, d=-0.00 OK]  (0.0 min)
+  F3:  -12203.39  la0=-10.013 f=1.315 s_int=0.044  (2.5 min)
+  F4:  -12216.70  la0=-10.011 f=1.284 s_int=0.044  (1.3 min)
+  Delta vs BE: F3 -50.90, F4 -64.21   [gm -42.69, F1 -44.31, F2 -51.89]
+

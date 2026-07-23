@@ -2633,6 +2633,125 @@ localized number — the transition admixture — plus the pending κ/a₀
 leg. The spontaneous-fraction bath is now the program's leading
 candidate function.**
 
+## Stages 5Y/5Z/6A/6B (2026-07-23 late): the two-leg refinement — galaxies converge, the binaries veto through the EFE, the a₀ wall (O15a/b)
+
+[calcs/stage5z_twoleg.py](calcs/stage5z_twoleg.py),
+[calcs/stage6a_twogal.py](calcs/stage6a_twogal.py),
+[calcs/stage6b_twobin.py](calcs/stage6b_twobin.py),
+[calcs/stage5y_kladder.py](calcs/stage5y_kladder.py).
+
+**5Z (algebra, all gates exact):** two-leg spontaneity — the
+self-frequency requires the round trip (emission AND reabsorption
+spontaneous), squaring the share: F3: β = 1/(2ν²), F4: β = 1/(2(2ν−1)²).
+**Both Bernoulli rungs now survive exactly (c₁ = ½ AND c₂ = 1/12)**;
+c₃ = −¼ / −1/16; tail p = ¾ preserved; ν(1) = 1.5032/1.5373 (raised
+toward BE's 1.582). Verdict: SUCCESS.
+
+**6A (galaxies):** the ladder improves AGAIN — plain: F3 −111.4,
+F4 −108.7 (F2 was −107.2, gm −84.8); vertical-hardened: F3 −50.9,
+**F4 −64.2 — the largest controlled-treatment lead any function has
+held** (F2 −51.9, gm −42.7); a₀ = 0.97e-10 horizon-adjacent. The galaxy
+ladder is now MONOTONE toward "occupation-deep + sharp-tail" in both
+treatments. Verdict: SUCCESS.
+
+**6B (binaries): THE INFORMATIVE VETO.** rb3 −6.84 ± 1.58 (interior,
+α̂ = 1.500); **rb4 −6.96 ± 2.08 with α̂ EDGE-RIDING 2.0 on ALL SIX
+seeds** — despite rb4 having the closest-to-BE transition of any
+sharpened function. The two-leg refinement did NOT close the 5W
+residual; it worsened it. Across all eight sharpened functions now
+tested (gm, p0578, p065, F1–F4), the binaries pay −5…−8.5 nearly
+INDEPENDENT of ν(1): **what they reject is not the transition value but
+the function's behavior in the screening region UNDER THE DOMINANT
+EXTERNAL FIELD** (the EFE evaluates the function at argument
+~e_N + y ≈ 1.2–1.5; the fits at e_N = 1.2a₀ read the early-screening
+shape, and they want BE's SOFT p = ½ screening there — while the galaxy
+Newtonian arm at the same y-range wants p ≈ ¾). Verdict: DIFFERENT
+PHYSICS — no local ν(y) reshaping can satisfy both systems, because
+they probe the same region under different ambient fields.
+
+**5Y (the a₀ wall):** κ = 1.35/1.33/1.34/1.26 for F1–F4 (all gm-grade;
+G3 BE regression +0.916 exact). Binary a₀ translations: **F1 1.54±0.10
+(+5.2σ), F2 1.62±0.09 (+6.3σ), F3 1.63±0.09 (+6.2σ), F4 formally
++11.4σ but α̂ = 2.0 edge → n/a as measurement.** Only pure BE passes
+(+1.9σ). The temperature lock is the binaries' second, independent veto
+of every sharpened function under the external field. Verdict: SUCCESS
+as instrument; the wall is real.
+
+**Synthesis — the tension's final form and its one open door:** the
+hierarchical galaxies reward sharp screening monotonically (best-ever
+−64 with a derived function); the binaries, probing the SAME functions
+through the dominant external field, reject every one (−5…−8.5 lnL AND
++4–6σ in temperature). The residual physics is IN THE EFE REGION.
+Reading with a mechanism (O13's configuration-dependence, now
+concrete): **the drive is whichever field dominates** — a mode prepared
+by the ambient Galactic field is externally driven (β → 0, BE-like)
+regardless of local occupation; a self-sourced galaxy point keeps the
+spontaneous-share admixture. Simplest realization: β = w_self ·
+(two-leg share), w_self = g_int/(g_int+g_ext). Isolated limit → F4
+exactly (all 6A results carry over); external-dominated limit → pure
+BE exactly. This abandons "ν is a local function of |g_N| alone" —
+NON-LOCALITY, converging with the 4K MI door and the 4L MI-tie from
+independent directions. Executed as Stage 6D.
+
+## Stage 6C (2026-07-23 late): the F4 galaxy lead bootstrapped — the strongest grade yet (O15c)
+
+[calcs/stage6c_f4boot.py](calcs/stage6c_f4boot.py) → data/stage6c_f4boot.txt.
+40 paired galaxy-resample reps (5N machinery verbatim; full-fit
+regression: BE −12152.49 exact, F4 −12215.07 vs 6A's −12216.70, d PASS):
+**F4 − BE = −57.4 ± 38.3, F4 better in 37/40 (92.5%), percentiles
+[−89.4, −60.5, −16.9].** Comparator (5N): gm − BE = −29.3 ± 53.0,
+29/40 (72.5%). The derived two-leg function's vertical-hardened lead
+survives the galaxy-population bootstrap at ~1.5σ with 92.5%
+sign-consistency — the strongest bootstrap grade any function lead has
+achieved in this program; still a LEAN by the 5N yardstick (not a
+detection), and quoted as such. Verdict: SUCCESS.
+
+## Stage 6D (2026-07-23 late): the drive-weighted bath — EXCLUDED by shape, passed by temperature (O16 first pass)
+
+[calcs/stage6d_drivebath.py](calcs/stage6d_drivebath.py) →
+data/stage6d_verdict.txt. The simplest configuration rule — β = w_self ·
+(two-leg share), w_self = g_int/(g_int+g_ext) pointwise — implemented at
+solver level (one changed line; barycenter response = BE(e_N) exactly at
+w_self = 0). Gates: G1 isolated identity → F4 at 0.01%; G2 BE/F4
+sandwich PASS; G3 wide-pair limit → BE at 0.35% (the deep pairs are
+essentially pure occupation law, as designed).
+
+**Binary six-seed: mean −9.64 ± 1.49 vs p050, better in 0/6 — WORSE
+than F4 (−7.0) and gm (−8.5), despite BE-grade interior amplitudes
+(α̂ = 1.098 ± 0.021, 6/6).** The likelihood punishes exactly the rule's
+predicted signature: the mid-separation sag (B(1) = 1.324 vs BE 1.354;
+B(3) = 1.143 vs 1.201) where w_self ≈ 0.5–0.7 pulls toward sharp
+screening. **The binaries want the soft p = ½ screening at ALL their
+separations, including where their internal field dominates the
+ambient — the pointwise-field-ratio configuration rule is REFUTED.**
+The two binary vetoes now split cleanly: κ(dwf) = 1.033 → a₀ = 1.31 ±
+0.13 (+2.1σ) — dwf PASSES the temperature row while failing the shape
+row; amplitude and shape are independent verdicts.
+
+Surviving readings, both flagged as formed AFTER this exclusion:
+(i) ambient-GATED mixing — the system's environment as a whole, not the
+local ratio, sets the bath character (binary modes sit in the Galaxy's
+e_N ≈ 1.2a₀ ambient at every separation → n_amb ≈ 0.5, quantum-ish →
+source-driven; galaxy disk points sit in e ~ 0.02a₀ → n_amb ~ 7,
+classical → admixture allowed). At the two anchors this reduces to
+"binaries = BE, galaxies = F4" BY CONSTRUCTION — no in-sample
+discrimination beyond them except the Chae high-e_N galaxy leg (power
+≲ 2–5% per 5B/5E); parked as O16-remaining with that status stated.
+(ii) The modified-inertia reading: a trajectory functional can carry
+different effective screening for eccentric bound orbits in a strong
+ambient field than for circular rotation at the same local field — the
+cross-system function split is exactly where MI would show, and the 4L
+tie keeps it open (while 5T's INTRA-galaxy tail-vs-deep split still
+needs the function shape, MI cannot produce that part).
+
+**Verdict: DIFFERENT PHYSICS, confirmed by exclusion — the two-system
+function split is real, sharp (shape −5…−10 lnL AND temperature +4…+6σ
+against every sharpened function on the binary side; −64 for the
+sharpest derived function on the galaxy side), and NOT reconcilable by
+any local ν(y) or by the pointwise drive-weighted rule. What remains:
+system-level configuration dependence (ambient-gated, weakly testable
+in-sample) or trajectory dependence (MI, the standing door).**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

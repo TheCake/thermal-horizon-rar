@@ -1,0 +1,5 @@
+STAGE 6C F4-vs-BE dv-ON bootstrap: 153 galaxies, 2700 points + 12 lensing; 40 paired reps
+full-fit regression: BE -12152.49 (5M -12152.49), F4 -12215.07 (6A -12216.70), d = -62.58 -> PASS
+bootstrap (40 reps): F4 - BE = -57.42 +/- 38.31  (F4 better in 37/40)
+percentiles 16/50/84: [-89.4, -60.5, -16.9]
+(5N comparator: gm - BE = -29.3 +/- 53.0, 29/40)
