@@ -2979,6 +2979,68 @@ F4, also passing the binaries. Still a strong LEAN, not a detection
 bootstrap-graded at the program's top mark (37/40), tied with F4 and
 binary-compatible where F4 is not.**
 
+## Stage 6K — the desktop analog, v1: rate-based realizations EXCLUDED, the pre-committed strike logged (2026-07-23, O5 lab leg)
+
+User asked the right question before the run: "would open-quantum-systems
+math actually work on this? What if the math won't predict this?" —
+answered by pre-registration: mapping, estimator, fingerprint bands
+(p_s ∈ [1.6,2.4], p_n ∈ [−2.4,−1.6], κ-slope ∈ [−0.2,0.2]), outcome
+tree, and credence commitments were committed (ddc83bc) BEFORE
+execution. [calcs/stage6k_analog.py](calcs/stage6k_analog.py) →
+data/stage6k_analog.txt. One post-commit patch: a float-range guard
+(e^700 overflow) — numerical, no design change, disclosed.
+
+**The lab-native identity (G0, new, exact):** the rule rewrites as
+**β = ½·tanh²(x_loc/2)·e^(−2x_amb)** — since 1/(2n+1) = tanh(x/2) and
+n/(1+n) = e^(−x), the squared ambient gate IS the Boltzmann cost of
+borrowing two ambient quanta, one per leg (gal 0.7536 / bin 0.1171
+reproduced to 1e-16). Both factors are standard thermal functions; only
+their per-vertex assignment is nonstandard.
+
+**The model:** exactly solvable birth–death NESS of a Kerr mode
+(E_n = n·w0 + (K/2)n(n−1)) between a frequency-blind source channel
+(pins n₀ = n_S; the β=0 endpoint) and an ambient channel in two
+configurations: CFG-V (vanilla Davies bath) and CFG-M (mediated
+two-vertex jump: source quantum + ambient mismatch quantum; its
+detailed balance alone → dressed Gibbs = the β=1 endpoint, verified
+2.6e-13). All gates pass (endpoints exact, K=0 closed form 0.0e+0,
+truncation 0.0e+0).
+
+**RESULT — pre-registered verdict: ALT (with a G4 pathology in CFG-M):**
+- CFG-V: λ ≈ 0.50–0.54 FLAT in both shares (p_s = +0.04, p_n = −0.00),
+  κ-slope +0.50 — pure rate-weighted mixing. As a gravity law this is
+  CONSTANT β — **already sky-excluded** (5T: constant-β family dead,
+  binaries 24/24 + the regime decomposition).
+- CFG-M: λ RISES with occupation (p_n = +0.57 — opposite sign to the
+  grammar's −2 AND to the sky's deep→0 demand) and overshoots λ > 1 in
+  the hot-ambient corner → **G4 estimator-pathology FAIL flagged** —
+  its exponents are parameterization-contaminated and NOT quotable as
+  measurements (the honest AMBIG sub-branch).
+- Robust cross-config negative: **κ-dependence 0.3–0.5/decade in both —
+  the grammar's rate-freedom does not emerge from jump-rate
+  competition anywhere in the scan.**
+
+**The insight that reshapes the lab program:** 6H's q_loc came from the
+dispersive PULL — a COHERENT second-order Hamiltonian shift — while
+v1's model class contains only INCOHERENT jump competition. The strike
+therefore lands on the **rate-based reading** of the grammar
+(excluded: it yields constant or wrong-sign running, both sky-dead —
+the pre-committed −10-point strike applies to that reading), while the
+**coherent-pull reading remains untested**: v2 must compute the
+driven-Kerr susceptibility-peak admixture (full Liouvillian + quantum
+regression, n_max ~ 100 — feasible on this machine) — the object the
+JC (2n+1) anchor actually describes. Bath-microphysics conditional
+credence: ~20–25% → **~15%**, surviving mass now concentrated on the
+coherent-pull/non-Markovian corner. The user's "what if the math won't
+predict this?" has its live answer: the first standard class doesn't,
+the strike is logged per pre-commitment, and the question sharpened
+into a specific next calculation instead of dying vaguely.
+
+**Verdict: SUCCESS as a test (pre-registration honored end-to-end,
+gates clean, every branch informative) — STRIKE LOGGED for the
+rate-based mechanism reading; the analog program continues at v2
+(coherent susceptibility), now the sharpest open item under O5.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

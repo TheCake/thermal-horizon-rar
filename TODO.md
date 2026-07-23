@@ -291,18 +291,30 @@ O16. **The system-level split — FIRST PASS RESOLVED** (6D exclusion +
     detection.** REMAINING: (c) DR4 weak-ambient binaries (sharpen
     toward p=0.69) and eccentricity-resolved MI discrimination — the
     out-of-sample deciders.
-O5. Theory, status after 6H/6I: the grammar β = ½·[q_loc·s_amb]^L is
+O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     now PART-MEASURED — the JC (2n+1) anchor makes the energy-share
     branch derivation-grade (6H G1), and the leg count is EMPIRICAL:
     **L = 2 measured (6I: −52.8/−59.1/−54.5, both flanks rejected via
     the Bernoulli-break rung c_{L+1} — 6H's correspondence)**. New
     exact rung on file: c₄(L=2) = s²/192 − 1/720 (sign flip at galaxy
-    gates; future-data falsifier). Remaining: the horizon-side WHY —
-    why exactly two legs (round trip) from dS mode counting with the
-    system/ambient split; why the ambient share enters per leg — and
-    the standing alternative that the trajectory (MI) is the real
-    carrier. Scout-level: Bernoulli-break↔leg-count and (2n+1)
-    selection both NOT FOUND (post-6H sweep).
+    gates; future-data falsifier). Lab-native form (6K G0):
+    **β = ½·tanh²(x_loc/2)·e^(−2x_amb)** — the squared gate = the
+    Boltzmann cost of two borrowed ambient quanta. **6K v1 (desktop
+    analog, pre-registered at ddc83bc BEFORE execution): rate-based
+    realizations EXCLUDED — vanilla two-channel competition gives
+    CONSTANT β (sky-dead per 5T) and the mediated jump class gives
+    wrong-sign running (λ rises with occupation) + a flagged estimator
+    pathology; κ-dependence 0.3–0.5/decade everywhere = the grammar's
+    rate-freedom does not emerge from jump competition. Pre-committed
+    strike LOGGED: bath-microphysics conditional ~20–25% → ~15%,
+    surviving mass on the coherent-pull reading.** NEXT: **6K-v2 = the
+    coherent susceptibility calculation** (driven Kerr mode, full
+    Liouvillian + quantum regression, susceptibility-peak admixture —
+    the object the JC anchor actually describes; feasible on this
+    machine) — now the sharpest O5 item, ahead of the horizon-side
+    derivation (why two legs from dS mode counting) and the standing
+    MI-trajectory alternative. Scout-level: Bernoulli-break↔leg-count
+    and (2n+1) selection both NOT FOUND (post-6H sweep).
 
 ## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)
 10. ~~**Paper assembly + verification pass**~~ — DONE. Draft v1 ([PAPER.md](PAPER.md)):

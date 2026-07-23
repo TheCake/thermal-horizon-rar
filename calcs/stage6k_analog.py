@@ -81,6 +81,10 @@ L = ["STAGE 6K: the desktop analog -- vanilla vs mediated two-vertex "
 def n_be(x):
     return 1.0/(math.exp(x) - 1.0)
 
+def n_be_safe(x):
+    # float-range guard only (x > ~700 overflows expm1); n_BE -> 0 there
+    return 0.0 if x > 700.0 else 1.0/math.expm1(x)
+
 # ---------- G0: the lab-native identity
 for tag, e in (("gal", 0.02), ("bin", 1.15)):
     x = math.sqrt(e)
@@ -108,12 +112,12 @@ def ness(nS, kS, chan, N):
         Dn = W0 + KK*n
         up, dn = kS*nS, kS*(nS + 1.0)
         if chan[0] == 'V':
-            nA = 1.0/math.expm1(Dn/chan[2])
+            nA = n_be_safe(Dn/chan[2])
             up += chan[1]*nA
             dn += chan[1]*(nA + 1.0)
         elif chan[0] == 'M':
             dmis = KK*n
-            nA = 1.0/math.expm1(max(dmis, 1e-12)/chan[2])
+            nA = n_be_safe(max(dmis, 1e-12)/chan[2])
             up += chan[1]*nS*nA
             dn += chan[1]*(nS + 1.0)*(nA + 1.0)
         lr[n] = math.log(up) - math.log(dn)
@@ -136,7 +140,7 @@ def n1_mediated(nS, TA):
     TS = W0/math.log(1.0 + 1.0/nS)
     n = nS
     for _ in range(500):
-        n = 1.0/math.expm1(W0/TS + KK*n/TA)
+        n = n_be_safe(W0/TS + KK*n/TA)
     return n
 
 # ---------- G1/G2/G3 gates
