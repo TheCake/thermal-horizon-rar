@@ -2835,6 +2835,129 @@ the reconciliation makes falsifiable out-of-sample predictions with a
 quantitative dial. The program's function, as of tonight: ν = 1 +
 n_BE(y^((1+β)/2)ν^β), β = [n_amb/(1+n_amb)]²·½/(2ν−1)².**
 
+## Stage 6H — the grammar formalized: β = ½·[q_loc·s_amb]^L, the leg count as a measurable (2026-07-23, O5 second pass)
+
+User asked two things: keep deriving ("that's the only way we might find
+some other possible predictors... I really wanna see something truly
+original"), and define "local quantumness" precisely ("to me that would
+almost seem random and might not fit the simulations properly"). The
+answer to the second: it is NOT stochastic — it is the zero-point share
+of the mode's energy, ½/(n_loc+½) = 1/(2ν−1), a deterministic function
+of the local field through the self-consistent occupation n_loc = ν−1;
+it is already inside every amb table via the implicit Newton solve
+(6E gates, residual ~1e-12). The genuinely prescriptive joint is the
+AMBIENT split (one n_amb per system) — which this stage + 6I target.
+
+[calcs/stage6h_grammar.py](calcs/stage6h_grammar.py) →
+data/stage6h_grammar.txt. All gates PASS first run.
+
+**G1 — branch selection is now derivation-grade.** The dispersive
+frequency pull of a system coupled to a mode of occupation n is
+λ²(2n+1)/Δ EXACTLY (JC manifold block, sympy) — vacuum 1 + thermal 2n,
+an energy-type (n+½) weight, not a rate-type (n+1) weight. A
+frequency-dressing process therefore carries the zero-point share
+1/(2n+1) = 1/(2ν−1): this SELECTS the F2/F4 lineage over F1/F3
+(a-posteriori explanation of the 6A/6B pattern) and fixes the local
+factor of the 6E rule. Still reading-grade: that horizon dressing is
+dispersive.
+
+**G2 — THE BERNOULLI-BREAK RUNG IS THE LEG COUNT** (the stage's
+discovery; symbolic-s ladders, c₄(s→0) = −1/720 = 5Q's BE value all L):
+
+    L=1: c₂ = 1/12 − s/8 (Bernoulli c₂ KILLED), c₃ = s(3s+1)/96
+    L=2: c₂ = 1/12 survives, c₃ = −s²/16 (= 6E), c₄ = s²/192 − 1/720  ← NEW rung
+    L=3: c₂ AND c₃ = 0 survive, c₄ = −s³/32 − 1/720
+
+The first deep coefficient the admixture touches is c_{L+1} — the
+grammar's structural exponent is readable off the deep ladder, so the
+5T instrument (the ultra-deep arm's Bernoulli vote) can MEASURE L.
+Note the new L=2 rung flips c₄'s sign at galaxy gates (+0.0025 at
+g=0.754). Tails: p = ½ + s^L/4 (numerics 0.717/0.689/0.665 at the
+fiducial gate, all solver gates 1e-12, uniqueness scanned); ν(1) =
+1.505/1.548/1.568. Binary-side tails 0.586/0.529/0.510 — the binary leg
+is NOT the L discriminator (L=1's 0.586 sits between the 5K-tested ½
+and 0.65); the deep rung is.
+
+**G5 — the measured ambients (Chae+21 Table 3, 109 galaxies):**
+maxclust median e_N = 0.0050 → g = 0.868, p = 0.717 (span 0.691–0.729);
+noclust median e_N = 0.0006 → g = 0.952, p = 0.738. Both SHARPER than
+the 6E/6F fiducial e = 0.02 (g = 0.754, p = 0.688) — the fiducial was
+conservative. Honest note: the measured-ambient tail postdiction moves
+to p ≈ 0.71–0.74, still inside the 5G/5T band 0.65–0.75 but nearer its
+upper edge. (Value coincidence flagged to prevent confusion: median
+per-galaxy g = 0.868 numerically equals the fiducial s = 0.8681.)
+
+**Pre-registered 6I bars (on disk before any 6I fit):** A — grammar
+survives iff L=2 ranks best of {L1, L2, L3} vertical (an L=1 win =
+tail out-votes deep = grammar strike). B — per-galaxy measured gates
+must not hurt (≥ global both treatments); plain reaching ≤−100
+RESOLVES the 6F disclosed partial. C — quadrupole record expected ~4×
+Cassini, no rescue.
+
+**Verdict: SUCCESS (construction + two new exact structures: the
+Bernoulli-break↔leg-count correspondence and the c₄ rung; the JC
+(2n+1) anchor upgrades branch selection from reading to derivation).
+The falsifiable content is deferred to 6I by construction.**
+
+## Stage 6I — the leg count measured (L = 2) + the measured ambients resolve the plain bar (2026-07-23, O16a/O16c + the 6H contest)
+
+[calcs/stage6i_chaegate.py](calcs/stage6i_chaegate.py) →
+data/stage6i_chaegate.txt (+ cache data/stage6i_q.npy). 153 galaxies,
+2700 points + 12 lensing; Chae matched 91/149 (unmatched + lensing
+carry the matched median — disclosed). Regressions EXACT: BE both
+treatments d = −0.00 vs 5P; AMBg deltas dd = +0.00 vs 6F (−59.05
+vertical / −92.40 plain) — the unified per-point-gate solver path
+reproduces 6F to the hundredth.
+
+**Part A — the leg-count contest (vertical-hardened, fiducial gate
+s = 0.8681, pre-registered in 6H): L = 2 WINS.**
+
+    L1 −52.76 | L2 −59.05 | L3 −54.52   (Δ vs BE; lower = better)
+
+Both flanking integers lose — a DISCRETE INTERIOR measurement of the
+grammar's structural exponent. The deep arm resolved the c₂ rung: L1
+(Bernoulli c₂ broken to −0.0252, sharpest tail p = 0.717) fell 6.3
+lnL behind L2 — the tail did NOT out-vote the deep. L3 (c₂ and c₃
+both Bernoulli, first break at c₄) fell 4.5 behind. **The round trip
+is now an empirical statement: the dressing exchange has two legs.**
+
+**Part B — the measured-ambient leg (O16a): both bars PASS, the 6F
+partial RESOLVES.** Vertical PGmax −61.68 vs global −59.05 (measured
+environments improve the rule; gap to undiluted F4 narrows 5.2 → 2.5).
+Plain: **PGmax −100.51, PGno −105.94 — BOTH cross the original ≤ −100
+bar** that 6F's fiducial-e run missed by 8. The miss is now explained
+and closed by measurement: the 0.02 fiducial was too soft (measured
+medians s = 0.9317 maxclust / 0.9756 noclust vs 0.8681). Zero new
+parameters anywhere. Honest residuals carried: (i) the galaxy leg
+alone still rewards sharper gates monotonically (F4 = s→1 stays its
+formal ceiling, +2.5 ahead vertical) — the gate AMPLITUDE is pinned by
+the binaries, not by the galaxy leg; the content is the two-system
+joint. (ii) The noclust column (more isolated) fits better than
+maxclust — same direction, sharper; the column choice is a ~5-lnL
+ambiguity we carry, not hide. Updated joint two-system ledger vs BE:
+**≈ −59.9** (gal −61.68 ⊕ binary +1.8 from 6G's −0.88 lnL).
+
+**Part C — the AMB quadrupole record (O16c):** per-eN solar gates
+g(1.0/1.2/1.4) = 0.135/0.112/0.094; q = −0.0855/−0.0992/−0.1120; amb
+within +0.38% of BE at 1.2 (gates: Newton 0, simple-vs-4K 0.1%,
+BE-vs-5S-cache 0.00%, hi-res 0.0%). Lock join with 6G's α̂ = 1.060 ±
+0.024: **Q₂ = 3.60e−26 s⁻² = 4.0× Cassini** — BE-grade, no rescue, as
+pre-stated; the MI door remains the standing escape (4L).
+
+**Priority scout (Haiku, post-6H, scout-level):** the Bernoulli-break↔
+leg-count correspondence and the (2n+1)-dispersive selection argument
+both NOT FOUND (also re-confirmed: no environment-dependent exponent,
+no mixing-family analogue; Famaey & Durakovic's "no existing clear
+derivation" line re-surfaced). Quoted as scout-level negatives.
+
+**Verdict: SUCCESS — the derivation round paid out in full. The
+grammar's discrete exponent was measured (L = 2, both flanks rejected),
+the measured environments strengthened every galaxy number at zero
+parameters and retro-resolved the one bar the rule had missed, and the
+quadrupole record is on file at 4.0× with no escape claimed. 6J
+(bootstrap grade of the PGmax lead, 40 paired reps) launched — running
+at close of entry.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

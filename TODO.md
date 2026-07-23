@@ -279,20 +279,29 @@ O16. **The system-level split — FIRST PASS RESOLVED** (6D exclusion +
     program); 6F galaxies hold −59.05 vertical (PASS ≤−50 bar;
     second-best ever) / −92.4 plain (MISS ≤−100 bar by 8, disclosed;
     ambient band −82.6…−97.4). Joint −57.3 = FIRST single function to
-    pass both systems.** Post-hoc flag carried. REMAINING: (a) Chae
-    per-galaxy g_amb(e) leg (softening dial, power ≲2–5%); (b) 6C-style
-    bootstrap of the AMB galaxy lead; (c) DR4 weak-ambient binaries
-    (sharpen toward p=0.69) and eccentricity-resolved MI discrimination
-    — the out-of-sample deciders; (d) AMB quadrupole (expect BE-grade
-    4.0×, no rescue — run for the record).
-O5. Theory (parked with #8/#18), status after 6E: the ambient gate has
-    a DERIVED form (stimulated-assistance squared, same Einstein-
-    coefficient grammar end-to-end: local zero-point share × ambient
-    stimulated share, both squared by the two legs). Remaining: promote
-    the grammar to a horizon-side derivation (dS mode counting with the
-    system/ambient split; why shares SQUARE per leg; why the energy
-    share and not the rate share locally) — and the standing alternative
-    that the trajectory (MI) is the real carrier.
+    pass both systems.** Post-hoc flag carried. UPDATE (6H/6I,
+    2026-07-23): **(a) Chae per-galaxy leg DONE — measured ambients
+    IMPROVE both treatments (vertical −61.68 vs −59.05; plain −100.51
+    maxclust / −105.94 noclust = the 6F ≤−100 bar RESOLVED; zero
+    params; noclust-vs-maxclust ≈ 5-lnL ambiguity carried); (d) AMB
+    quadrupole DONE — Q₂ = 3.60e−26 = 4.0× Cassini, no rescue,
+    recorded.** REMAINING: (b) 6J bootstrap of the PGmax lead —
+    RUNNING at session close (40 paired reps, rng 53); (c) DR4
+    weak-ambient binaries (sharpen toward p=0.69) and
+    eccentricity-resolved MI discrimination — the out-of-sample
+    deciders.
+O5. Theory, status after 6H/6I: the grammar β = ½·[q_loc·s_amb]^L is
+    now PART-MEASURED — the JC (2n+1) anchor makes the energy-share
+    branch derivation-grade (6H G1), and the leg count is EMPIRICAL:
+    **L = 2 measured (6I: −52.8/−59.1/−54.5, both flanks rejected via
+    the Bernoulli-break rung c_{L+1} — 6H's correspondence)**. New
+    exact rung on file: c₄(L=2) = s²/192 − 1/720 (sign flip at galaxy
+    gates; future-data falsifier). Remaining: the horizon-side WHY —
+    why exactly two legs (round trip) from dS mode counting with the
+    system/ambient split; why the ambient share enters per leg — and
+    the standing alternative that the trajectory (MI) is the real
+    carrier. Scout-level: Bernoulli-break↔leg-count and (2n+1)
+    selection both NOT FOUND (post-6H sweep).
 
 ## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)
 10. ~~**Paper assembly + verification pass**~~ — DONE. Draft v1 ([PAPER.md](PAPER.md)):

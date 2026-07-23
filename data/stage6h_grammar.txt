@@ -1,0 +1,27 @@
+STAGE 6H: the grammar formalized -- beta = (1/2)*[q_loc*s_amb]^L; the leg count as a measurable
+
+G1 dispersive pull (exact JC manifold block, O(lambda^2)): delta_omega_q = lambda^2*(2*n + 1)/Delta -> PASS
+   = 2(n + 1/2): vacuum 1/2 included -- an ENERGY-type weight, not a rate-type (n+1) weight. The local gate of a frequency-dressing process is the zero-point share 1/(2n+1) = 1/(2nu-1): selects the F2/F4 lineage (derivation-grade); 'horizon dressing is dispersive' stays reading-grade.
+
+G2 L=1: c1 = 1/2, c2 = 1/12 - s/8, c3 = s*(3*s + 1)/96, c4 = -s**3/128 - 5*s**2/192 + s/48 - 1/720
+G2 L=2: c1 = 1/2, c2 = 1/12, c3 = -s**2/16, c4 = s**2/192 - 1/720
+G2 L=3: c1 = 1/2, c2 = 1/12, c3 = 0, c4 = -s**3/32 - 1/720
+G2 gates: c1 = 1/2 all L PASS; L=1 c2-break = 1/12 - s/8 PASS; L=2 = 6E (c2 Bernoulli, c3 = -s^2/16) PASS; L=3 keeps c2 AND c3 PASS; c4(s->0) = -1/720 all L (5Q) PASS
+   => THE BERNOULLI-BREAK RUNG IS THE LEG COUNT: the first deep coefficient the admixture touches is c_{L+1}. NEW rung of record (L=2): c4 = s**2/192 - 1/720
+
+G3/G4 numeric (fiducial galaxy gate s = 0.8681, binary s = 0.3422):
+  L=1: resid 1.0e-12, unique True, tail p_hat = 0.7172 (pred 0.7170), nu(1) = 1.5048 -> PASS
+  L=2: resid 9.7e-13, unique True, tail p_hat = 0.6891 (pred 0.6884), nu(1) = 1.5482 -> PASS
+  L=3: resid 1.0e-12, unique True, tail p_hat = 0.6653 (pred 0.6636), nu(1) = 1.5682 -> PASS
+  binary-side tails (e = 1.15): p(L=1) = 0.586, p(L=2) = 0.529, p(L=3) = 0.510 (measured: they hold 1/2; L=1's 0.586 sits between the 5K-tested 0.5 and 0.65 -- the binary side is NOT the L discriminator, the deep rung is)
+
+G5 Chae+21 Table 3 gates (109 galaxies):
+  maxclust: median e_N = 0.00501 -> median g = 0.868, median p = 0.717 (span 0.691-0.729)
+  noclust:  median e_N = 0.00061 -> median g = 0.952, median p = 0.738 (span 0.727-0.742)
+  fiducial (6E/6F, e = 0.02): g = 0.754, p = 0.688
+  => the MEASURED ambients are sharper than the 0.02 fiducial (both columns); the measured-ambient tail postdiction moves to p ~ 0.71-0.74 -- still inside the 5G/5T band 0.65-0.75, now nearer its upper edge (stated plainly, no spin).
+
+PRE-REGISTERED 6I BARS (fixed before any 6I fit runs):
+  A (L contest, vertical-hardened, global fiducial s = 0.8681): the grammar survives iff L=2 ranks BEST of {L1, L2, L3}. L=1 carries the deep Bernoulli break (c2 = -0.0252) and the strongest tail (p = 0.717): an L=1 WIN would mean the tail out-votes the deep = grammar strike. Whether the ultra-deep arm resolves the c2 rung is exactly what the contest measures.
+  B (measured-ambient leg, L=2): per-galaxy Chae gates (maxclust fiducial, noclust variant; unmatched + lensing carry the matched-median gate, disclosed). Pre-register: per-galaxy >= global on both treatments (the measured ambients must not hurt); plain reaching <= -100 RESOLVES the 6F disclosed partial (the miss was the fiducial-e artifact). STRIKE if per-galaxy < global.
+  C (quadrupole record): amb at the solar ambient (per-eN gates) expected within ~2% of BE's q; lock join with the 6G alpha-hat = 1.060 +/- 0.024 expected ~4x Cassini -- no rescue, recorded.

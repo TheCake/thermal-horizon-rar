@@ -1,0 +1,29 @@
+STAGE 6I: measured ambients + the leg count -- 153 galaxies, 2700 points + 12 lensing; Chae matched 91/149 (unmatched + lensing carry the matched median, disclosed)
+gates: fiducial s = 0.8681 (g = 0.7536); measured medians s(maxclust) = 0.9317, s(noclust) = 0.9756
+
+vertical-hardened:
+  BE:  -12152.49  la0=-9.981 f=1.164 s_int=0.045  [5P -12152.49, d=-0.00 OK]  (2.3 min)
+  AMBg:  -12211.54  la0=-10.005 f=1.256 s_int=0.044  [6F delta -59.05, dd=+0.00 OK]  (2.0 min)
+  PGmax:  -12214.17  la0=-10.008 f=1.269 s_int=0.044  (0.5 min)
+  L3g:  -12207.01  la0=-10.000 f=1.232 s_int=0.044  (0.8 min)
+  L1g:  -12205.26  la0=-10.006 f=1.306 s_int=0.044  (1.2 min)
+  Delta vs BE: AMBg -59.05, PGmax -61.68, L3g -54.52, L1g -52.76
+
+plain hier:
+  BE:  -10435.00  la0=-10.104 f=1.398 s_int=0.070  [5P -10435.00, d=-0.00 OK]  (2.2 min)
+  AMBg:  -10527.40  la0=-10.119 f=1.486 s_int=0.068  [6F delta -92.40, dd=+0.00 OK]  (0.7 min)
+  PGmax:  -10535.52  la0=-10.120 f=1.499 s_int=0.068  (0.4 min)
+  PGno:  -10540.95  la0=-10.121 f=1.508 s_int=0.068  (0.4 min)
+  Delta vs BE: AMBg -92.40, PGmax -100.51, PGno -105.94
+
+Part C: AMB quadrupole record (per-eN solar gates):
+  G2 Newton control: max|phi_2| = 0.00e+00 -> OK
+  G1 regression simple eN=1.2: q = -0.09779 (4K -0.09788) 0.1% -> OK
+  G-member BE vs 5S cache: q = -0.09878 (5S -0.09878) 0.00% -> OK
+  G4 hi-res: -0.09913 vs -0.09916 (0.0%) -> OK
+  amb gates g(1.0/1.2/1.4) = 0.1353 0.1118 0.0938; q = -0.08549 -0.09916 -0.11200 (BE q(1.2) = -0.09878, amb/BE - 1 = +0.38%)
+  lock join: Q2 = 3|q|*unit*alpha-hat = 3.60e-26 s^-2 = 4.0x Cassini (alpha-hat 1.06+-0.024; g_ext +-0.05a0 -> +-1.1e-27)
+
+VERDICT BLOCK:
+  A (leg count, vertical): L1 -52.76, L2 -59.05, L3 -54.52 vs BE -> ranking L2 < L3 < L1 (lower = better); winner L2 -> GRAMMAR PASSES (L=2)
+  B (measured ambients): vertical PGmax -61.68 vs AMBg -59.05 (improves); plain PGmax -100.51, PGno -105.94 vs AMBg -92.40; plain <= -100 bar: RESOLVED

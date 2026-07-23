@@ -384,7 +384,39 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   bootstrap, AMB quadrupole (expect BE-grade), DR4. O5 remaining:
   horizon-side derivation of the share-squared grammar. PUBLICATION
   still DEFERRED; O1b anchors parked; Zenodo/colleague (#11/#12)
-  parked until called.** Paper
+  parked until called.**
+  **6H/6I/6J (2026-07-23, the grammar round, PAPER → v2.4): 6H
+  ([calcs/stage6h_grammar.py](calcs/stage6h_grammar.py), all gates
+  first-run): grammar β = ½·[q_loc·s_amb]^L; JC dispersive pull =
+  λ²(2n+1)/Δ EXACT ⇒ zero-point share 1/(2ν−1) is derivation-grade
+  (selects F2/F4 over F1/F3; "local quantumness" = vacuum fraction of
+  the frequency pull, deterministic, user's randomness worry answered);
+  **THE BERNOULLI-BREAK RUNG IS THE LEG COUNT** (L=1 kills c₂=1/12−s/8;
+  L=2 keeps c₂, c₃=−s²/16; L=3 keeps c₂+c₃; c₄(0)=−1/720 all L); NEW
+  rung c₄(L=2) = s²/192 − 1/720 (sign flip at galaxy gates, future
+  falsifier); tails p=½+s^L/4; Chae 109-galaxy gates MEASURED sharper
+  than fiducial (median g 0.868 maxclust/0.952 noclust vs 0.754);
+  6I bars pre-registered on disk. 6I
+  ([calcs/stage6i_chaegate.py](calcs/stage6i_chaegate.py), regressions
+  d=−0.00/dd=+0.00 exact): **L = 2 MEASURED (vertical: L1 −52.76, L2
+  −59.05, L3 −54.52 — both flanks rejected, deep arm resolves the c₂
+  rung against L1's sharper tail); measured ambients IMPROVE both
+  treatments (vertical PGmax −61.68; plain −100.51 maxclust/−105.94
+  noclust = the 6F ≤−100 bar RESOLVED — the miss was the fiducial-e
+  artifact); joint ledger ≈ −59.9.** Honest residuals: galaxy leg
+  alone still monotone toward F4 (+2.5 ahead vertical) — the gate
+  amplitude is pinned by the BINARIES (two-system content);
+  noclust-vs-maxclust ≈ 5 lnL input ambiguity carried. AMB quadrupole
+  RECORDED: Q₂ = 3.60e−26 = 4.0× Cassini (amb q within 0.4% of BE; MI
+  door standing). Scout (Haiku): Bernoulli-break↔leg-count and (2n+1)
+  selection both NOT FOUND (scout-level). 6J bootstrap of the PGmax
+  lead ([calcs/stage6j_ambboot.py](calcs/stage6j_ambboot.py), 40
+  paired reps, rng 53, comparators 6C F4 −57.4±38.3 37/40 / 5N gm
+  −29.3±53.0 29/40): full-fit regression PASS (AMB −61.62) — RUNNING
+  at handoff; integrate its grade when landed. O5 remaining sharpened:
+  why exactly TWO legs from dS mode counting (the round trip is now
+  the measured target, not an assumption); MI-trajectory alternative
+  standing.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization
