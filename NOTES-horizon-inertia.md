@@ -1840,6 +1840,32 @@ our own unattributed methodological observation in §4.6; the phantom ID is not
 cited. Four phantom attributions this cycle, all caught by direct fetch —
 primary-sources-only discipline validated a fourth time.
 
+## Stage 4R — the corrected-velocity budget (correction #12 executed, 2026-07-23)
+
+TODO #2i run to completion instead of footnoted (user directive: "they are gonna
+stop reading the damn thing if there's a footnote that we will fix something" —
+correct, and now moot). Patch-runner [calcs/stage4r_corrected_refit.py](calcs/stage4r_corrected_refit.py)
+applies the 4Q spherical-projection correction at the stage3p data build (both ṽ
+and γ inherit it; RV column names resolved dynamically — the FITS carries
+dr2_radial_velocity*), same six seeds as the stored 3U baseline, physical-field
+tables, both laws. Output data/stage4r_summary.txt; baseline untouched.
+
+**Paired per-seed verdict (corrected − baseline):**
+- simple α̂: Δ = −0.012 ± 0.012 (per-seed: +0.01, −0.02, +0.04, −0.03, −0.03, −0.04)
+- BE α̂:     Δ = −0.022 ± 0.015 (−0.01, −0.04, 0.00, +0.03, −0.08, −0.03)
+- Newton ΔlnL cedes ~5 (≈5%): corrected +102.8 ± 9.2 (simple) / +90.1 ± 6.5 (BE),
+  minimum across 12 fits +83.6 — exclusion untouched.
+- w_rad = 0.2 in 12/12; α̂ interior 12/12.
+- **BE-minus-simple lean UNCHANGED: −12.6 ± 2.4 (was −12.3 ± 2.2)** — the binaries'
+  classical-bath lean survives the perspective correction.
+
+Verdict: exactly what the 4Q audit bounded — the correction is real, small, and
+changes no conclusion. §6.3 final numbers (α = 1.18 ± 0.11 / 1.13 ± 0.13) STAND,
+now correction-executed; §7.4(b) queued-language deleted; Appendix A item 12
+closed with the shift numbers; PAPER → v1.3. (A corrected-data 3V-style 1000-
+bootstrap would move the center by ≤0.02 against ±0.11 quoted — completeness
+theater, not run; stated here for the record.)
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

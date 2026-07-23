@@ -155,11 +155,13 @@
     their √2-band-impractical remark is answered by our perpendicular column; their
     g_N,e=1.184a₀ confirms our 3T conversion to 3%. **The read caught a real gap in
     OUR pipeline → 4Q/correction #12 (below).**
-2i. **Corrected-velocity v7 re-fit** (pre-arXiv hardening, from Stage 4Q): apply the
-    per-pair spherical-projection correction (Δv += RV_sys·θ·ŝ, catalog RVs) at the
-    stage3o data build, re-run the v7 fit + 1 seed budget; expected α shift ≤ the
-    1.6%-of-ratio exposure bound. Also reconcile the 4J-vs-4Q ceiling census
-    boundary convention (11 vs 10 raw; ±1 at edges).
+2i. ~~**Corrected-velocity v7 re-fit**~~ — DONE (Stage 4R,
+    [calcs/stage4r_corrected_refit.py](calcs/stage4r_corrected_refit.py), six paired
+    seeds, both laws): **α̂ shift −0.012±0.012 (simple) / −0.022±0.015 (BE) —
+    consistent with zero; Newton cedes ~5 lnL, stands at +103±9/+90±7; w_rad=0.2
+    12/12; simple-over-BE lean unchanged (−12.6±2.4). §6.3 numbers stand,
+    correction executed.** Residual sub-item: reconcile the 4J-vs-4Q ceiling census
+    boundary convention (11 vs 10 raw; ±1 at edges) — cosmetic, pre-arXiv.
 11. **External review** — hand the repo to a professional (ask them to break the
     ceiling null, the quadrupole conversions, and the ablation fairness — the three
     targeted asks now in COLLEAGUE-BRIEF.md, final numbers, held uncommitted);

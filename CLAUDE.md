@@ -182,12 +182,17 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   Paper §4.6 + §9 #6 + §1 "one-half threads the paper" spine (user directive
   executed structurally; dedicated ½ paper = post-DR4). Novelty scout on
   continuous-c₁ + scatter-shape prior art PENDING — "first" not printed.**
-  NEXT = 4R corrected-velocity v7 budget RUNNING (background; on landing:
-  replace §7.4(b)/§6.3 queued-language with final corrected α, commit) →
-  user: GitHub rename click → Zenodo GitHub toggle → tag v1.0 (DOI mints) →
-  send COLLEAGUE-BRIEF (final numbers, uncommitted) with DOI → arXiv via
-  endorsement. Open science items in TODO (NNLO=parked, a₀∝H(z), #7, #8,
-  nonlocal-MI construction).** Paper
+  **4R DONE (2026-07-23): corrected-velocity budget, six paired seeds —
+  α̂ shift −0.012±0.012 (simple) / −0.022±0.015 (BE) = zero within errors;
+  Newton cedes ~5 lnL (+103±9/+90±7, min +84); w_rad 12/12; simple-over-BE
+  lean unchanged (−12.6±2.4). §6.3 numbers STAND, correction EXECUTED, all
+  queued-language deleted; PAPER → v1.3 (Stages 1–4T). PAPER IS TAG-READY.**
+  NEXT = user: GitHub rename click (thermal-horizon-rar) → Zenodo GitHub
+  toggle → tag v1.0 (DOI mints) → send COLLEAGUE-BRIEF (final numbers,
+  uncommitted) with DOI → arXiv via endorsement. Post-DR4 cycle: the
+  dedicated ½ paper (ĉ₁ tightening via hierarchical M/L = 4U candidate,
+  binary-side λ-EFE tables, M/L-marginalized second moment). Open science
+  items in TODO (NNLO=parked, a₀∝H(z), #7, #8, nonlocal-MI construction).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization
