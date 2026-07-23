@@ -357,8 +357,34 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   MI trajectory functional (split follows orbit class; DR4
   eccentricity-resolved). TODO O15 closed, O16 opened, O5 sharpened to
   "why would the ambient gate at system level — or is the trajectory
-  the carrier". PUBLICATION still DEFERRED; O1b anchors parked;
-  Zenodo/colleague (#11/#12) parked until called.** Paper
+  the carrier".
+  **6E/6F/6G (2026-07-23 night, O5→O16 RESOLVED FIRST-PASS, PAPER →
+  v2.3): THE AMBIENT-GATED BATH — the theory question answered with a
+  SIGN LESSON (weak fields = deep = classical occupied ambients;
+  n_amb = n_BE(√(e_N/a₀)): gal 6.6, bin 0.52) and the rule with the
+  right sign: self-consistent dressing needs STIMULATED reservoir
+  assistance → **β = [n_amb/(1+n_amb)]²·½/(2ν−1)² — admixture = local
+  quantumness × ambient classicality, ZERO parameters, system-level
+  (explains the 6D no-sag pattern)**. Exact: c₁=½, c₂=1/12
+  g-INDEPENDENT, c₃=−g/16; **p = ½+g/4 POST-DICTS both measured tails
+  (0.689 gal vs 0.65–0.75; 0.529 bin vs ½)**; ν(1)=1.548/1.577; g=0→BE
+  1e-12. Scout: env-dependent SHAPE / decoherence gating / Einstein-
+  coeff modulation / two-function MOND all NOT FOUND. Pre-registered
+  tests: **6G binaries ACCEPT (−0.88±2.66, 2/6 prefer, interior 6/6,
+  α̂=1.060±0.024, κ=0.924, a₀=1.28±0.15 = +1.6σ — BEST temperature row
+  in program, better than BE's +1.9σ); 6F galaxies −59.05 vertical
+  (PASS ≤−50 bar, 2nd-best ever, dilution cost only 5.2 vs F4) /
+  −92.4 plain (MISS ≤−100 bar by 8, disclosed; band −82.6…−97.4).
+  JOINT −57.3 vs BE = THE FIRST SINGLE FUNCTION TO PASS BOTH SYSTEMS**
+  (F4 −50.3 binary-vetoed, gm −25.7, BE 0). Post-hoc flag carried
+  everywhere; non-guaranteed content that landed: vertical survival,
+  κ/a₀ +1.6σ, both p-postdictions. Out-of-sample: Chae g_amb(e)
+  softening dial, DR4 weak-ambient sharpening toward p=0.69, MI
+  eccentricity discrimination. O16 remaining: Chae leg, AMB-lead
+  bootstrap, AMB quadrupole (expect BE-grade), DR4. O5 remaining:
+  horizon-side derivation of the share-squared grammar. PUBLICATION
+  still DEFERRED; O1b anchors parked; Zenodo/colleague (#11/#12)
+  parked until called.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

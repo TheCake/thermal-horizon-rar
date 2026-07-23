@@ -266,30 +266,33 @@ O15. ~~**The running-β completion**~~ — DONE (Stages 5Y/5Z/6A/6B/6C,
     −57.4 ± 38.3, 37/40 (92.5%)** — strongest function-lead grade in the
     program, still a lean. (d) bath-matrix re-run: skipped (6A subsumes
     the ladder question for the new functions).
-O16. **The system-level split** (the 6D exclusion + what remains):
-    the pointwise drive-weighted rule (β × g_int/(g_int+g_ext)) is
-    **EXCLUDED** (6D: −9.64±1.49, 0/6, punished at its predicted
-    mid-separation sag; temperature row PASSES +2.1σ — the two binary
-    vetoes are independent). Remaining candidates, both flagged
-    post-hoc: (a) AMBIENT-GATED bath (the system's environment as a
-    whole sets mode character; binaries n_amb≈0.5 quantum → BE,
-    galaxies n_amb~7 classical → F4) — anchors-only by construction;
-    in-sample test = Chae high-e_N galaxies through 5B/5E machinery
-    (power ≲2–5%, honest); real test = DR4 halo/outer-disk binaries
-    (weak ambient → should SHARPEN toward F4). (b) MI trajectory
-    functional — the cross-system split follows orbit class, not
-    environment; eccentricity-resolved boosts at DR4 (§9.2-3; 4L tie
-    keeps it open; NB the intra-SPARC tail/deep split is function-shape,
-    not MI-attributable). Either signature decides.
-O5. Theory (parked with #8/#18), status after 5U–6D: the spontaneous-
-    channel mechanism DERIVED and galaxy-validated (the isolated-system
-    bath is two-leg spontaneous-fraction, F4-grade); the external-field
-    regime holds pure source-driven BE and REFUSES the pointwise
-    interpolation. The derivation question is now: WHY would the ambient
-    bath gate the admixture at the SYSTEM level (dS mode counting with
-    an environment horizon? decoherence by the ambient drive?) — or is
-    the trajectory (MI) the real carrier. Horizon-side derivation still
-    open.
+O16. **The system-level split — FIRST PASS RESOLVED** (6D exclusion +
+    6E/6F/6G, 2026-07-23 night): the pointwise drive-weighted rule
+    EXCLUDED (6D: −9.64±1.49, 0/6; temperature row passes +2.1σ). Then
+    the AMBIENT-GATED bath DERIVED (6E, sign lesson logged: weak fields
+    = classical occupied ambients; the gate is stimulated reservoir
+    assistance): **β = [n_amb/(1+n_amb)]²·½/(2ν−1)², zero params;
+    c₁=½, c₂=1/12 g-independent, c₃=−g/16 exact; p = ½+g/4 post-dicts
+    BOTH measured tails (0.689 gal / 0.529 bin).** Tested vs
+    pre-registered bars: **6G binaries ACCEPT (−0.88±2.66, interior
+    6/6, κ=0.924, a₀ = 1.28±0.15 = +1.6σ — best temperature row in
+    program); 6F galaxies hold −59.05 vertical (PASS ≤−50 bar;
+    second-best ever) / −92.4 plain (MISS ≤−100 bar by 8, disclosed;
+    ambient band −82.6…−97.4). Joint −57.3 = FIRST single function to
+    pass both systems.** Post-hoc flag carried. REMAINING: (a) Chae
+    per-galaxy g_amb(e) leg (softening dial, power ≲2–5%); (b) 6C-style
+    bootstrap of the AMB galaxy lead; (c) DR4 weak-ambient binaries
+    (sharpen toward p=0.69) and eccentricity-resolved MI discrimination
+    — the out-of-sample deciders; (d) AMB quadrupole (expect BE-grade
+    4.0×, no rescue — run for the record).
+O5. Theory (parked with #8/#18), status after 6E: the ambient gate has
+    a DERIVED form (stimulated-assistance squared, same Einstein-
+    coefficient grammar end-to-end: local zero-point share × ambient
+    stimulated share, both squared by the two legs). Remaining: promote
+    the grammar to a horizon-side derivation (dS mode counting with the
+    system/ambient split; why shares SQUARE per leg; why the energy
+    share and not the rate share locally) — and the standing alternative
+    that the trajectory (MI) is the real carrier.
 
 ## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)
 10. ~~**Paper assembly + verification pass**~~ — DONE. Draft v1 ([PAPER.md](PAPER.md)):

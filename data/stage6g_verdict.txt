@@ -1,0 +1,7 @@
+STAGE 6G: the ambient-gated bath on the binaries
+
+per-seed lnL - lnL(p050): -0.26 -0.75 -12.52 +4.67 +5.78 -2.18
+  mean -0.88 +- 2.66 SE; amb better in 2/6; interior 6/6; a_hat 1.060 +- 0.024
+  [6E pre-registered: within ~ -2 of p050. comparators: gm -8.50, rb2 -5.47, rb4 -6.96, dwf -9.64]
+kappa: be +0.916 (vs 4V +0.916 -> PASS), amb +0.924
+a0: alpha 1.060+-0.113, kappa +0.924 -> a0 = 1.28+-0.15  pull +1.6 sigma  [BE +1.9; 6E pre-registered ~ +2]

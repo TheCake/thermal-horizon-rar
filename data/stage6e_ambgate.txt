@@ -1,0 +1,15 @@
+STAGE 6E: the ambient-gated bath -- beta = g_amb * (1/2)/(2nu-1)^2, g_amb = [n_amb/(1+n_amb)]^2, n_amb = n_BE(sqrt(e_N/a0))
+
+gates of record: n_amb(gal, e=0.02) = 6.583 -> g = 0.7536;  n_amb(bin, e=1.15) = 0.5202 -> g = 0.1171
+
+G1 series at symbolic g: c1 = 1/2, c2 = 1/12, c3 = -g/16 -> PASS (c1, c2 g-independent)
+G2 solver residual (gal, g=0.754): 9.7e-13
+G2 solver residual (bin, g=0.117): 1.0e-12
+G2b uniqueness -> PASS
+G3 mpmath (gal gate): |resid|(x=0.02) = 4.57e-10, scaling 4.08 -> PASS
+
+G4 gal: tail p_hat = 0.6891 (pred 0.6884) PASS;  nu(1) = 1.5482
+G4 bin: tail p_hat = 0.5326 (pred 0.5293) PASS;  nu(1) = 1.5767
+G5 limits: g=0 vs BE 1.3e-12 -> PASS (g=1 is F4 by definition)
+
+predictions of record (pre-registered for 6F/6G): galaxy leg must hold >= F3-grade under the 0.754 dilution; binary leg lands within ~ -2 of p050 with BE-grade a0 (~ +2 sigma); out-of-sample: Chae high-e_N outskirts soften with g(n_amb(e)), DR4 weak-ambient binaries sharpen toward p = 0.69.

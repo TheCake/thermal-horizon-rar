@@ -2752,6 +2752,89 @@ any local ν(y) or by the pointwise drive-weighted rule. What remains:
 system-level configuration dependence (ambient-gated, weakly testable
 in-sample) or trajectory dependence (MI, the standing door).**
 
+## Stage 6E (2026-07-23 night): the ambient-gated bath DERIVED — admixture = local quantumness × ambient classicality (O5)
+
+[calcs/stage6e_ambgate.py](calcs/stage6e_ambgate.py) → data/stage6e_ambgate.txt.
+The theory question attacked head-on, and the first guess FAILED ON
+SIGN — instructively: "ambient traffic dilutes the spontaneous share"
+predicts suppression for WEAK ambients, but weak fields mean deep,
+highly occupied (classical) ambient baths (n_amb = n_BE(√(e_N/a₀)):
+galaxies e~0.02 → n_amb ≈ 6.6; binaries e≈1.15 → n_amb ≈ 0.52). The
+measured pattern is the REVERSE: sparse ambient → no admixture. The
+reading that carries the right sign, same Einstein-coefficient grammar
+as 5U/5Z: **a mode can only dress itself to its self-consistent
+frequency if the ambient reservoir can assist the exchange — and
+reservoir assistance is a STIMULATED process (∝ n_amb/(1+n_amb)). A
+classical ambient is a floppy medium (mode re-equilibrates); a quantum
+ambient is stiff (mode pinned at the drive frequency).** The unified
+zero-parameter rule:
+
+    β = ½ · [local zero-point share]² · [ambient stimulated share]²
+      = g_amb · ½/(2ν−1)²,   g_amb = [n_amb/(1+n_amb)]²
+
+Admixture = (local quantumness) × (ambient classicality). System-level
+by construction (one n_amb per system — explains the 6D exclusion
+pattern with no mid-separation sag). POST-HOC STATUS FLAGGED
+throughout: built after 6B/6D; pre-registered content = the exact
+algebra + two p-postdictions + the 6F/6G bars. Exact consequences
+(all gates pass; sympy at SYMBOLIC g): c₁ = ½ and c₂ = 1/12
+g-INDEPENDENT; **c₃ = −g/16 exactly — the entire ambient dependence
+enters the deep series at one rung, linearly in the gate**; tail
+p = ½ + g/4: **galaxies g = 0.754 → p = 0.688 (measured band
+0.65–0.75 ✓), binaries g = 0.117 → p = 0.529 (their held ½ ✓)** — both
+measured screening exponents post-dicted from zero parameters; ν(1) =
+1.548/1.577; g = 0 → BE at 1e-12, g = 1 ≡ F4. Priority scout (4
+sweeps): environment-dependent interpolating-function SHAPE, decoherence
+gating, Einstein-coefficient environmental modulation, and two-function
+MOND all NOT FOUND (nearest art = Pazy 1106.4108's holographic
+quantum-classical crossover, closed by direct read in 5J).
+
+**Verdict: SUCCESS (construction) — the O5 question "why would the
+ambient gate at system level" has a derived answer with the right sign:
+because self-consistent dressing needs stimulated reservoir assistance,
+and only classical (deep, occupied) ambients provide it.**
+
+## Stages 6F/6G (2026-07-23 night): the ambient gate tested — ONE FUNCTION PASSES BOTH SYSTEMS (O16)
+
+[calcs/stage6f_ambgal.py](calcs/stage6f_ambgal.py),
+[calcs/stage6g_ambbin.py](calcs/stage6g_ambbin.py) →
+data/stage6f_ambgal.txt, stage6g_verdict.txt.
+
+**6F galaxies (the falsifiable leg; BE regressions d = −0.00 both):**
+vertical-hardened AMB(g=0.754) = **−59.05 vs BE — PASSES the
+pre-registered ≤−50 bar**; second-best ever (F4's undiluted −64.2 above
+it, F3/F2 below); dilution cost only 5.2 vs F4. Plain: −92.40 —
+**MISSES the pre-registered ≤−100 bar by ~8** (the ambient-band ends:
+e=0.01 → −97.4 grazes it; e=0.05 → −82.6); disclosed as a partial. The
+sensitivity ordering (more isolated → sharper → better) is the
+in-sample Chae dial.
+
+**6G binaries (pre-registered: within ~−2 of p050): mean −0.88 ± 2.66,
+better in 2/6, interior 6/6, α̂ = 1.060 ± 0.024 — ACCEPTED** (per-seed
+−0.3/−0.8/−12.5/+4.7/+5.8/−2.2; seed 202 the lone objector; the mean
+is noise-grade). κ = 0.924 (BE-grade, as predicted). **a₀ = 1.28 ±
+0.15 → +1.6σ — the best binary temperature row in the program** (pure
+BE itself: +1.9σ). Both binary vetoes — shape AND temperature — passed
+by the same function that holds −59 on the galaxies.
+
+**The joint ledger (vertical galaxies + binaries, additive −2lnL vs
+BE): AMB nets −57.3** — best cross-system function ever measured here
+(F4: −50.3 and binary-vetoed; BE: 0 and galaxy-inferior; gm: −25.7).
+**For the first time in the program, ONE zero-parameter function
+passes both systems.** Carried caveats: post-hoc construction (the
+binary pass was near-guaranteed by design; the NON-guaranteed content
+that landed: the vertical galaxy survival, the κ/a₀ = +1.6σ, the two
+p-postdictions, the plain-bar shortfall honestly against); the
+out-of-sample tests are the Chae per-galaxy softening dial and DR4
+weak-ambient binaries (predicted to sharpen toward p = 0.69).
+
+**Verdict: SUCCESS — with the post-hoc flag carried openly. The
+two-system tension that 5Y/6B/6D sharpened into "different baths" is
+reconciled by the derived ambient gate at every in-sample number, and
+the reconciliation makes falsifiable out-of-sample predictions with a
+quantitative dial. The program's function, as of tonight: ν = 1 +
+n_BE(y^((1+β)/2)ν^β), β = [n_amb/(1+n_amb)]²·½/(2ν−1)².**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

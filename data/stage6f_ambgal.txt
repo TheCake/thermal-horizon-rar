@@ -1,0 +1,15 @@
+STAGE 6F: ambient-gated bath on the hierarchical galaxies -- 153 galaxies, 2700 points + 12 lensing
+gates: fiducial g(e=0.02) = 0.7536; range g(e=0.05) = 0.6394, g(e=0.01) = 0.8187
+
+plain hier:
+  BE:  -10435.00  la0=-10.104 f=1.398 s_int=0.070  [5P -10435.00, d=-0.00 OK]  (0.0 min)
+  AMB:  -10527.40  la0=-10.119 f=1.486 s_int=0.068  (0.7 min)
+  AMBlo:  -10517.61  la0=-10.117 f=1.476 s_int=0.068  (0.4 min)
+  AMBhi:  -10532.38  la0=-10.120 f=1.495 s_int=0.068  (0.4 min)
+  Delta vs BE: AMB -92.40, AMBlo -82.61, AMBhi -97.37   [F3 -111.41/-50.90, F4 -108.71/-64.21, F2 -107.22/-51.89, gm -84.79/-42.69]
+
+vertical-hardened:
+  BE:  -12152.49  la0=-9.981 f=1.164 s_int=0.045  [5P -12152.49, d=-0.00 OK]  (0.0 min)
+  AMB:  -12211.54  la0=-10.005 f=1.256 s_int=0.044  (2.0 min)
+  Delta vs BE: AMB -59.05   [F3 -111.41/-50.90, F4 -108.71/-64.21, F2 -107.22/-51.89, gm -84.79/-42.69]
+

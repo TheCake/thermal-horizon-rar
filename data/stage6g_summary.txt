@@ -1,0 +1,13 @@
+STAGE 3P g=1p2 seeds [31, 101, 202, 303, 404, 505]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 amb: a_hat=1.11 (grid 1.0, interior=True), dlnL(Newton)=+97.2, wr=0.2, prof=[-97.2, -29.0, 0.0, -11.5, -26.3]
+  seed 31: best lnL = -56338.636  (3.0 min)
+seed 101 amb: a_hat=1.12 (grid 1.0, interior=True), dlnL(Newton)=+97.7, wr=0.2, prof=[-97.7, -29.8, 0.0, -10.8, -23.0]
+  seed 101: best lnL = -56352.808  (3.1 min)
+seed 202 amb: a_hat=1.07 (grid 1.0, interior=True), dlnL(Newton)=+78.4, wr=0.2, prof=[-78.4, -12.2, 0.0, -6.6, -15.2]
+  seed 202: best lnL = -56356.162  (3.4 min)
+seed 303 amb: a_hat=1.01 (grid 1.0, interior=True), dlnL(Newton)=+89.6, wr=0.2, prof=[-89.6, -26.5, 0.0, -23.8, -29.4]
+  seed 303: best lnL = -56344.954  (3.3 min)
+seed 404 amb: a_hat=1.08 (grid 1.0, interior=True), dlnL(Newton)=+91.1, wr=0.2, prof=[-91.1, -23.7, 0.0, -12.2, -29.8]
+  seed 404: best lnL = -56341.852  (3.2 min)
+seed 505 amb: a_hat=0.97 (grid 1.0, interior=True), dlnL(Newton)=+81.4, wr=0.2, prof=[-81.4, -11.4, 0.0, -14.0, -29.6]
+  seed 505: best lnL = -56349.241  (3.3 min)
