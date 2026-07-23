@@ -285,11 +285,12 @@ O16. **The system-level split — FIRST PASS RESOLVED** (6D exclusion +
     maxclust / −105.94 noclust = the 6F ≤−100 bar RESOLVED; zero
     params; noclust-vs-maxclust ≈ 5-lnL ambiguity carried); (d) AMB
     quadrupole DONE — Q₂ = 3.60e−26 = 4.0× Cassini, no rescue,
-    recorded.** REMAINING: (b) 6J bootstrap of the PGmax lead —
-    RUNNING at session close (40 paired reps, rng 53); (c) DR4
-    weak-ambient binaries (sharpen toward p=0.69) and
-    eccentricity-resolved MI discrimination — the out-of-sample
-    deciders.
+    recorded.** **(b) 6J bootstrap DONE — AMB(pgmax) − BE = −56.7 ± 35.7,
+    37/40 (92.5%), percentiles [−88.7, −59.9, −15.7]: same top grade
+    as 6C's F4 (37/40) while binary-compatible; a strong lean, not a
+    detection.** REMAINING: (c) DR4 weak-ambient binaries (sharpen
+    toward p=0.69) and eccentricity-resolved MI discrimination — the
+    out-of-sample deciders.
 O5. Theory, status after 6H/6I: the grammar β = ½·[q_loc·s_amb]^L is
     now PART-MEASURED — the JC (2n+1) anchor makes the energy-share
     branch derivation-grade (6H G1), and the leg count is EMPIRICAL:

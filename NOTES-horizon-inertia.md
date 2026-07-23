@@ -2958,6 +2958,27 @@ quadrupole record is on file at 4.0× with no escape claimed. 6J
 (bootstrap grade of the PGmax lead, 40 paired reps) launched — running
 at close of entry.**
 
+## Stage 6J — bootstrap grade of the measured-ambient lead (2026-07-23, O16b)
+
+[calcs/stage6j_ambboot.py](calcs/stage6j_ambboot.py) →
+data/stage6j_ambboot.txt. 40 paired galaxy-resample reps (dv-ON
+vertical, lensing noise redraws, rng 53 — 6C/5N machinery verbatim),
+referent = the rule as prescribed (per-galaxy Chae maxclust gates,
+median s = 0.9317; lensing carries the matched median). Full-fit
+regression PASS (BE exact −12152.49; AMB −61.62 vs 6I's −61.68).
+
+**AMB(pgmax) − BE = −56.71 ± 35.65, AMB better in 37/40 (92.5%);
+percentiles 16/50/84 = [−88.7, −59.9, −15.7].** Comparators: 6C F4
+−57.4 ± 38.3 (37/40); 5N gm −29.3 ± 53.0 (29/40). The ambient-gated
+rule with measured environments carries the SAME bootstrap grade as
+the best undiluted function ever measured here (F4) — while, unlike
+F4, also passing the binaries. Still a strong LEAN, not a detection
+(3/40 reps flip; spread ±36), and quoted as such.
+
+**Verdict: SUCCESS — O16b closed; the two-system rule's galaxy lead is
+bootstrap-graded at the program's top mark (37/40), tied with F4 and
+binary-compatible where F4 is not.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

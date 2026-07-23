@@ -412,8 +412,10 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   selection both NOT FOUND (scout-level). 6J bootstrap of the PGmax
   lead ([calcs/stage6j_ambboot.py](calcs/stage6j_ambboot.py), 40
   paired reps, rng 53, comparators 6C F4 −57.4±38.3 37/40 / 5N gm
-  −29.3±53.0 29/40): full-fit regression PASS (AMB −61.62) — RUNNING
-  at handoff; integrate its grade when landed. O5 remaining sharpened:
+  −29.3±53.0 29/40): **DONE — AMB(pgmax) − BE = −56.71 ± 35.65, 37/40
+  (92.5%), percentiles [−88.7, −59.9, −15.7] = the program's top
+  bootstrap grade, tied with F4, binary-compatible where F4 is not; a
+  strong lean, not a detection (3/40 flip).** O5 remaining sharpened:
   why exactly TWO legs from dS mode counting (the round trip is now
   the measured target, not an assumption); MI-trajectory alternative
   standing.** Paper
