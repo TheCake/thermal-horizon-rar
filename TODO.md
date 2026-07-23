@@ -154,10 +154,25 @@ O2. ~~**Binary-side c₁**~~ — DONE (Stage 4X): **binary ĉ₁ = 0.37–0.50**
     per seed, α grid-edge-riding at low λ = shape rejection**; two disconnected
     systems now read the same dial (galaxies 0.43±0.27). Optional deepening:
     the full 6-seed budget on the λ grid; a finer grid near 0.75–1.0.
-O3. **Hierarchical-M/L ĉ₁**: re-run 4S with per-galaxy M/L (4U machinery merged);
-    expected σ(ĉ₁) ±0.27 → ~±0.15.
-O4. **EFE-curve test**: fetch Chae's environment-split RAR data; the ν-family
-    shape sets the environmental response — a further dial the oscillator fixes.
+O3. ~~**Hierarchical-M/L ĉ₁**~~ — DONE (Stage 4Z), and it RESHAPED the claim
+    instead of tightening it: hierarchical profile λ̂=0.516 → **ĉ₁ = 0.258
+    (0.208–0.309)** vs flat-M/L 0.450; gates PASS (injection λ=1 → 1.03, so the
+    ±0.2 profile spread is real structure, not bias); bootstraps agree across
+    treatments (≈0.4±0.3). **Galaxy dial: c₁ ∈ 0.26–0.45, 0 excluded everywhere,
+    ¼-vs-½ OPEN** (hier profile peaks AT ¼). Paper updated throughout.
+O6. **Bath-matrix contest under hierarchical M/L**: the §4.4 ¼-function
+    disfavoring (3.1σ) is flat-M/L-conditional; re-run stage4f's four-function
+    contest with per-galaxy offsets — does the boot function revive when the
+    profile relocates? (The ¼-vs-½ digit is now the ladder's live rung.)
+O4. **EFE-curve test** (data LOCATED, scout 2026-07-23): **Chae et al. 2021,
+    ApJ 921, 104 (arXiv:2109.04745) Table 3 = per-galaxy g_N,ext in a₀ units,
+    109 SPARC galaxies in the SDSS footprint — our exact convention**; stable
+    PDF: astroweb.case.edu/ssm/papers/Chae_2021_ApJ_921_104.pdf; also Chae 2020
+    ApJ 904, 51 Table 2 (153 galaxies, e_env = g_env/g_†; NOTE published
+    erratum corrects Table 2 values). VizieR not indexed; check arXiv ancillary
+    files first, else PDF table extraction (pypdf). Targets: (a) the deep-trend
+    rivalry — corr(per-galaxy deep-bin residual scatter, e_N) decides thermal
+    vs environmental; (b) the ν-family environmental-response dial.
 O5. Theory question (parked with #8/#18): a construction meeting the §2.4
     six-point specification; the Unruh-ratio reading (x = T_U/T_dS) is the hint.
 

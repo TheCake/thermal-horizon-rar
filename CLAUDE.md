@@ -211,12 +211,26 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   at low λ = shape rejection) — TWO DISCONNECTED SYSTEMS READ THE SAME
   DIAL (galaxies 0.43±0.27) = the program's strongest oscillator statement.
   Paper v1.5: §6.4 new (old 6.4→6.5), scorecard 10 rows.**
+  **4Y/4Z/5A (2026-07-23, PAPER v1.6): 4Z hierarchical ĉ₁ RESHAPED the
+  claim — hier profile ĉ₁ = 0.258 (0.208–0.309) vs flat 0.450, gates PASS
+  (injection unbiased → the ±0.2 spread is real structure); bootstraps
+  agree (≈0.4±0.3); **galaxy dial = c₁ ∈ 0.26–0.45, 0 excluded everywhere,
+  ¼-vs-½ OPEN (hier profile peaks AT ¼; §4.4 ¼-function contest now
+  flat-M/L-conditional → O6)**; binaries stay 0.37–0.50 independent.
+  4Y anchored subsample (43 gal): thermal not required there (+0.02),
+  identifiability improves not restored (slope 0.42), Newtonian-end spike
+  flagged. 5A template contest self-disqualified (injection produces no
+  bump — per-galaxy templates degenerate with vertical), yielding the
+  sharp fact: **the x≈1 bump is POINT-LEVEL** (survives every per-galaxy
+  channel); EFE template absorbs deep bins (0.063→0.045) = the
+  thermal-vs-environmental rivalry for the deep trend awaits real g_ext
+  data (agent hunting Chae tables).**
   **PUBLICATION DEFERRED BY USER (2026-07-23): oscillator program is the
-  front — remaining: O1b external-anchor second moment; O3 hierarchical
-  ĉ₁; O4 Chae EFE-curve (now carries the transition-bump hypothesis); O5
-  the §2.4-spec construction. Zenodo/colleague (#11/#12) parked until
-  called. Open science items in TODO (NNLO=parked, a₀∝H(z), #7, #8,
-  nonlocal-MI construction).** Paper
+  front — remaining: O4 environment data (agent out); O6 bath matrix
+  under hierarchical M/L (the live rung: ¼ vs ½); O5 the §2.4-spec
+  construction; O1b parked pending more distance anchors. Zenodo/colleague
+  (#11/#12) parked until called. Open science items in TODO (NNLO=parked,
+  a₀∝H(z), #7, #8, nonlocal-MI construction).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

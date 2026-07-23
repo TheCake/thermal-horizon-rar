@@ -1,0 +1,12 @@
+STAGE 4Y anchored second moment: e_D/D <= 0.1 subsample = 43/153 galaxies, 695 points (7 with bulges)
+sigma_v 16/50/84 = [0.024, 0.044, 0.102] dex (4W full sample: [0.046, 0.097, 0.139])
+
+M0  const:      obj =  -2976.94  s0 = 0.0462
+M1b osc+floor:  obj =  -2976.92  N-hat = 162754.8  floor = 0.0462
+M2  free 6-bin: obj =  -3051.38  s_b = [0.0487, 0.0406, 0.048, 0.0198, 0.0374, 0.1158]
+D: M1b-M0 = +0.02 | M2-M0 = -74.44
+(4W full-sample comparators: M1bw-M0w = +24.36; bump bin4 0.054)
+
+G2 calibrated injection (anchored subsample): slope_obs = 0.422, slope_exp = 0.930, corr = 0.799 -> FAIL
+(4W full-sample gate for contrast: slope 0.225 vs expected 0.931 FAIL)
+G1 nesting: PASS

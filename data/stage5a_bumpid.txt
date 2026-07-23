@@ -1,0 +1,21 @@
+STAGE 5A bump identity: 153 galaxies, 2700 points; templates t_p (transition-peaked) and t_e (deep-weighted)
+G2 template overlap: corr(t_p, t_e) = -0.606 over points (contest valid)
+template shapes by bin (median t_p | t_e):
+  bin0: -0.2086 | -1.5978
+  bin1: -0.2572 | -0.2166
+  bin2: -0.3092 | +0.1059
+  bin3: -0.3680 | +0.0757
+  bin4: -0.3994 | +0.0248
+  bin5: -0.3261 | +0.0026
+
+  V0 (+vertical only): obj = -11543.39  s_b = [0.0718, 0.055, 0.0462, 0.0318, 0.0584, 0.0672]
+  VP (+p): obj = -11849.49  s_b = [0.0671, 0.0488, 0.0421, 0.0285, 0.0557, 0.0634]
+  VE (+e): obj = -11924.24  s_b = [0.0414, 0.0494, 0.0468, 0.0309, 0.0579, 0.0671]
+ VPE (+p+e): obj = -12213.90  s_b = [0.0397, 0.044, 0.0427, 0.0279, 0.0555, 0.0634]
+
+bump statistic s_b[4] - mean(s_b[3], s_b[5]): V0 +0.0089 | VP +0.0098 | VE +0.0088 | VPE +0.0098
+deep bins (0+1) mean: V0 0.0634 | VE 0.0454  (EFE-template absorption of the deep trend)
+delta_p spread (VP): std = 0.1110 (prior 0.1)
+delta_e spread (VE): std = 0.0264 (prior 0.03); note: fit symmetric, physical e_N is one-sided (disclosed)
+
+G1 injection (p-scatter 0.1): V0 bump -0.0029 -> VP bump -0.0028; corr(dp_hat, dp_true) = 0.661 -> FAIL

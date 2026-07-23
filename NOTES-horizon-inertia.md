@@ -1966,6 +1966,64 @@ Caveats logged: 2 seeds (full budget queued if wanted), Δλ=0.25 grid, g_N,ext
 systematic shared with 6.3, family-conditional as 4S. Paper: new §6.4 (old
 6.4→6.5, cross-refs fixed), abstract (3) + conclusions + scorecard row added.
 
+## Stages 4Y + 5A — the anchored subsample and the bump's identity (2026-07-23)
+
+**4Y (O1b, [calcs/stage4y_anchored.py](calcs/stage4y_anchored.py)):** e_D/D ≤ 0.10
+subsample = 43/153 galaxies, 695 points; σ_v halves (median 0.044 vs 0.097) —
+anchoring works. Verdicts: thermal term NOT required there (M1b−M0 = +0.02,
+N̂→∞); identifiability IMPROVES but is not restored (calibrated injection slope
+0.42 vs expected 0.93 — cf. 0.225 full-sample; corr 0.80) — 43 galaxies is
+underpowered, gate honestly FAILED again; deep bins mildly elevated
+(0.049/0.041 vs 0.020 mid); NEW oddity: Newtonian-end spike s_b[5] = 0.116 on
+the anchored subsample (few-galaxy inner/bulge points, 7 bulge galaxies —
+flagged, not interpreted). Conclusion: the unlock needs MORE anchors, not
+better machinery — parked until a distance-ladder expansion.
+
+**5A (O4a, [calcs/stage5a_bumpid.py](calcs/stage5a_bumpid.py)):** the template
+contest DISQUALIFIED ITSELF — G1 injection FAILED in the informative way:
+injected per-galaxy p-scatter produces NO transition bump (within one galaxy
+t_p is nearly constant in x → the vertical channel eats it; dp̂ recovery 0.66).
+Per-galaxy templates cannot answer the bump question, PROVEN. The residual
+value: (1) **the bump survives EVERY per-galaxy channel (vertical, disk M/L,
+bulge M/L, sharpness, environment) → it is POINT-LEVEL structure at the
+transition** — no galaxy-wide nuisance can make it; candidates now: beam
+smearing at the RAR knee, intrinsic transition structure, or (thermal reading)
+the transition shell. (2) The deep-weighted EFE template DOES absorb the deep
+bins (0.063→0.045) — environmental scatter stays alive as the thermal term's
+rival for the monotone trend; only real per-galaxy environment estimates
+resolve it (agent hunting the Chae 2020/2021 tables). (3) Template overlap
+corr(t_p,t_e) = −0.61 (contest would have been valid had the channels been
+identifiable). Paper §4.6 + §9.2 #6 updated; hypothesis-churn logged openly:
+EFE-at-transition (wrong, corrected same day) → sharpness-scatter (instrument
+impossible, proven) → point-level (current, characterization not yet identity).
+
+## Stage 4Z — the hierarchical c₁ RELOCATES the profile (2026-07-23)
+
+O3 executed ([calcs/stage4z_hierc1.py](calcs/stage4z_hierc1.py)): the 4S λ-profile
+with per-galaxy disk-M/L offsets (0.1-dex prior) profiled at every node; 100-rep
+galaxy bootstrap with full joint refits. **BOTH GATES PASS** (endpoints reproduce
+4S exactly; injection at λ-truth=1 WITH offsets recovers 1.032 — the machinery
+does not bias λ̂ down).
+
+**The result reshapes the ĉ₁ claim: profile λ̂ = 0.516 → ĉ₁ = 0.258 (interval
+0.208–0.309)** — vs 4S's flat-M/L 0.450 (0.385–0.519). The two PROFILE intervals
+don't overlap: the profile estimator is nuisance-model-dependent at ±0.2, and
+since the injection gate passed, that spread is REAL per-galaxy structure doing
+work in the global fit, not machinery. Bootstraps agree across treatments
+(0.427 +0.290/−0.246 flat; 0.377 +0.234/−0.311 hier) — population variance
+dominates both. c₁=0: +28.9 profile (5.4σ), P(λ>0)=0.89. c₁=½: +17.6 from the
+hierarchical peak — **the hierarchical galaxy profile peaks AT the ¼ value.**
+
+Honest synthesis (paper updated everywhere — abstract, §1 spine, §4.3, §2.4,
+§6.4, scorecard, conclusions): **galaxy ĉ₁ ∈ 0.26–0.45 (profile, treatment-
+spanning), ≈ 0.4 ± 0.3 (bootstrap); c₁ = 0 excluded in EVERY treatment (Δ 29–56,
+≥89% bootstraps); the second digit — ¼ vs ½ — is OPEN on the galaxy side;
+binaries independently 0.37–0.50.** The 4S headline "ĉ₁ = 0.450, ½ at 0.7σ" was
+flat-M/L-conditional; corrected the same day it was minted — the dial stays
+measured, its second digit does not. The §4.4 ¼-FUNCTION contest (c₂=7/96
+function, not the λ-slice) is now labeled flat-M/L-conditional; re-running the
+bath-matrix contest under hierarchical M/L = new TODO O6.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
