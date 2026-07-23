@@ -199,10 +199,22 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   specification; Unruh scout: Milgrom-1999 + Deser–Levin-1997 VERIFIED and
   cited; the occupation-ratio reading (x = T_U(g_obs)/T_dS) and ω = √(g_N
   a₀)/c = g_obs/c NOT FOUND anywhere = ours, stated as observations.**
+  **4W (O1 DONE): full hierarchy = IDENTIFIABILITY BOUNDARY — vertical
+  (distance/inclination, measured priors) freedom absorbs the thermal term
+  (N̂→189, +24 vs const) but calibrated G2 FAILS (slope 0.23 vs 0.93) =
+  channels degenerate on SPARC; floor converged to Desmond's 0.034; **the
+  x≈1 transition bump SURVIVES all marginalizations** (0.054 vs 0.026–0.035
+  dex) → environmental-g_ext-scatter hypothesis feeds O4; unlock = O1b
+  (Cepheid/TRGB-anchored subsample). 4X (O2 DONE): **binary ĉ₁ = 0.37–0.50
+  ([calcs/stage4x_binlam.py](calcs/stage4x_binlam.py); λ-tables gated;
+  seeds 31/101 peak λ=0.75/1.00; c₁=0 rejected ΔlnL≈20/seed, α edge-riding
+  at low λ = shape rejection) — TWO DISCONNECTED SYSTEMS READ THE SAME
+  DIAL (galaxies 0.43±0.27) = the program's strongest oscillator statement.
+  Paper v1.5: §6.4 new (old 6.4→6.5), scorecard 10 rows.**
   **PUBLICATION DEFERRED BY USER (2026-07-23): oscillator program is the
-  front — TODO section "Oscillator program" (O1 full-hierarchy second
-  moment; O2 binary-side λ-EFE c₁; O3 hierarchical ĉ₁; O4 Chae EFE-curve;
-  O5 the §2.4-spec construction). Zenodo/colleague (#11/#12) parked until
+  front — remaining: O1b external-anchor second moment; O3 hierarchical
+  ĉ₁; O4 Chae EFE-curve (now carries the transition-bump hypothesis); O5
+  the §2.4-spec construction. Zenodo/colleague (#11/#12) parked until
   called. Open science items in TODO (NNLO=parked, a₀∝H(z), #7, #8,
   nonlocal-MI construction).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

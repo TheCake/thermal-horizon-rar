@@ -1941,6 +1941,31 @@ environment-split RAR) inherits a sharp, falsifiable target: the excess must
 CORRELATE with per-galaxy g_ext estimates. M3w area-scaling verdict remains
 unresolved (same G2 caveat as 4U, now demonstrated rather than suspected).
 
+## Stage 4X — the binaries read the same dial (2026-07-23)
+
+O2 executed ([calcs/stage4x_binlam.py](calcs/stage4x_binlam.py)): six λ-family
+tables through the QUMOND solver at e_N=1.2 (gates: λ=1 reproduces the stored
+BE table <1%; λ=½ isolated-sphere identity <2%), then the v7 likelihood
+(perspective-corrected data, all nuisances, α refit per node) profiled over λ,
+seeds 31+101. Absolute best-lnL per (λ, seed) → data/stage4x_summary.txt.
+
+Combined profile (Δ from max): λ=0: −41.1; 0.25: −13.0; 0.50: −4.6; 0.75: 0;
+1.00: −4.7; 1.25: −9.5. Per-seed peaks: seed 31 at λ=1.00, seed 101 at 0.75 —
+realization scatter ≈ the grid step. **Binary ĉ₁ = 0.37–0.50** (curvature σ_λ ≈
+0.08; honest span quoted). **c₁ = 0 rejected at ΔlnL ≈ 20 PER SEED (−23.0/−20.5)
+— sign-robust**; and at λ ≤ 0.25 the fits ride the α grid edge (α̂→2,
+interior=False) and STILL lose = shape rejection, not amplitude trade. At λ ≥
+0.5, α̂ interior (1.1–1.4, consistent with the standing lean). w_rad = 0.2 in
+12/12.
+
+**The program's strongest single oscillator statement: two disconnected
+systems — rotation curves (ĉ₁ = 0.43 +0.29/−0.25, 4S) and wide binaries at the
+external-field transition (0.37–0.50, this stage) — independently return the
+same leading coefficient, each consistent with ½, each excluding 0 on its own.**
+Caveats logged: 2 seeds (full budget queued if wanted), Δλ=0.25 grid, g_N,ext
+systematic shared with 6.3, family-conditional as 4S. Paper: new §6.4 (old
+6.4→6.5, cross-refs fixed), abstract (3) + conclusions + scorecard row added.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

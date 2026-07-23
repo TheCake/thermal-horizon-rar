@@ -149,10 +149,11 @@ O1. ~~**Full-hierarchy second moment**~~ — DONE (Stage 4W): **identifiability
 O1b. **External-anchor second moment** (the unlock): import Cepheid/TRGB distance
     subsample (SPARC f_D flags) → refit 4W with those galaxies' σ_v pinned small;
     the thermal-vs-vertical degeneracy breaks where distances are known.
-O2. **Binary-side c₁**: generate EFE tables on a λ-grid through the QUMOND solver
-    and profile the binary v7 likelihood over the same continuous family as 4S —
-    an independent, x≈1-regime dial reading; also the instrument for the a₀-lean
-    question (the scorecard's +2σ binary rows).
+O2. ~~**Binary-side c₁**~~ — DONE (Stage 4X): **binary ĉ₁ = 0.37–0.50** (peaks
+    λ=0.75/1.00 across seeds 31/101; σ_λ≈0.08 curvature); **c₁=0 rejected ΔlnL≈20
+    per seed, α grid-edge-riding at low λ = shape rejection**; two disconnected
+    systems now read the same dial (galaxies 0.43±0.27). Optional deepening:
+    the full 6-seed budget on the λ grid; a finer grid near 0.75–1.0.
 O3. **Hierarchical-M/L ĉ₁**: re-run 4S with per-galaxy M/L (4U machinery merged);
     expected σ(ĉ₁) ±0.27 → ~±0.15.
 O4. **EFE-curve test**: fetch Chae's environment-split RAR data; the ν-family
