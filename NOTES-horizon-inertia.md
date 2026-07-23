@@ -1791,6 +1791,38 @@ bullet upgraded. The ½ now enters the paper as a measured quantity with the
 prediction sitting 0.7σ from center — the coefficient-level spine the user asked
 for. Rung 2 remains the wall (0.1σ); no enthusiasm spent pretending otherwise.
 
+## Stage 4T — the bath's second moment (2026-07-23)
+
+The Planck-oscillator reading's first NEW falsifiable channel beyond the mean:
+Var(n) = n(n+1) per Bose mode ⇒ the RAR's intrinsic scatter should carry the
+shape σ_rel(x) = √(n/(n+1))/√N — rising into deep MOND, dying ~e^(−x/2) on the
+Newtonian side, amplitude 1/√N = the effective mode count. Four scatter models
+fitted jointly with (a₀, f_ML) on 2,700 SPARC points (per-point errors always
+in): constant / pure oscillator / oscillator+floor / six free x-sextiles.
+[calcs/stage4t_bathnoise.py](calcs/stage4t_bathnoise.py) → data/stage4t_bathnoise.txt.
+
+Results (BE; simple identical):
+- Scatter is NOT constant: free 6-bin beats constant by Δ(−2lnL)=42.7/5 params;
+  monotone decline 0.144 dex (deepest sextile) → 0.107 (most Newtonian).
+- Floorless oscillator DEAD (+382): the data demand a floor everywhere.
+- **Oscillator+floor: −25.1 for ONE extra param over constant; N̂ = 21.5 modes
+  over a 0.101-dex floor.** Floor-free bound from the deepest bin alone: N ≥ 7.
+- Residual: a bump at x≈1 keeps free-shape ahead of osc+floor by 17.6/4 params —
+  exactly where per-galaxy M/L scatter projects maximally onto g_obs. Flagged as
+  the probable mundane term; the M/L-marginalized second-moment fit = the
+  required next instrument (queued as the 4U candidate).
+- Gates: G1 nesting PASS; G2 injection (truth N=30) recovers N̂=30.4 PASS.
+- Framing enforced: CONSTRAINT, not detection. Caveat: per-point independence;
+  a galaxy-level correlated draw loosens N.
+
+Paper: new §4.6, §9 falsifier #6, abstract clause, conclusions bullet; §1 gains
+the "one-half threads the paper" spine paragraph (user directive: the ½ is the
+through-line — executed structurally, not by rebuilding the measurement paper
+around a 1.7σ-bootstrap-grade exclusion; the dedicated ½ paper is the post-DR4
+cycle). Scout launched on prior continuous-c₁ fits + scatter-vs-acceleration
+literature (the §4.3/§4.6 novelty wording is scout-conditional; "first" is not
+printed until it returns).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

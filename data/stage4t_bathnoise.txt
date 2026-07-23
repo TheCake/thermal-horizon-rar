@@ -1,0 +1,37 @@
+STAGE 4T bath second moment: 153 galaxies, 2700 SPARC points
+x-bin edges (fiducial): [0.217, 0.3, 0.459, 0.734, 1.282]
+
+[BE]
+  M0  const:          -2lnL =   -8338.12  s0 = 0.1219
+  M1  oscillator:     -2lnL =   -7956.07  N-hat =      5.7
+  M1b osc + floor:    -2lnL =   -8363.17  N-hat =     21.5  floor = 0.1014
+  M2  free 6-bin:     -2lnL =   -8380.78  s_b = [0.1438, 0.1268, 0.1146, 0.1112, 0.1262, 0.1073]
+  D(-2lnL): M1-M0 = +382.05 | M1b-M0 = -25.05 (1 extra param) | M2-M0 = -42.66 (5 extra)
+  G1 nesting: PASS
+  per-bin: median x | osc+floor pred | free-fit s_b
+    bin0:  0.199 | 0.1322 | 0.1438
+    bin1:  0.292 | 0.1298 | 0.1268
+    bin2:  0.427 | 0.1265 | 0.1146
+    bin3:  0.673 | 0.1215 | 0.1112
+    bin4:  1.082 | 0.1151 | 0.1262
+    bin5:  2.189 | 0.1061 | 0.1073
+
+[simple]
+  M0  const:          -2lnL =   -8319.32  s0 = 0.1224
+  M1  oscillator:     -2lnL =   -7962.57  N-hat =      5.8
+  M1b osc + floor:    -2lnL =   -8342.58  N-hat =     22.1  floor = 0.1022
+  M2  free 6-bin:     -2lnL =   -8360.45  s_b = [0.1443, 0.1276, 0.1147, 0.1109, 0.1258, 0.1092]
+  D(-2lnL): M1-M0 = +356.75 | M1b-M0 = -23.26 (1 extra param) | M2-M0 = -41.13 (5 extra)
+  G1 nesting: PASS
+  per-bin: median x | osc+floor pred | free-fit s_b
+    bin0:  0.195 | 0.1322 | 0.1443
+    bin1:  0.283 | 0.1299 | 0.1276
+    bin2:  0.412 | 0.1268 | 0.1147
+    bin3:  0.652 | 0.1220 | 0.1109
+    bin4:  1.049 | 0.1159 | 0.1258
+    bin5:  2.135 | 0.1070 | 0.1092
+
+G2 injection (truth N=30): N-hat = 30.4 -> PASS
+
+caveat: per-point independence assumed; galaxy-level correlated draw
+(shared modes along a curve) is the next refinement and would loosen N.

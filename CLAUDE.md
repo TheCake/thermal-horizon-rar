@@ -173,6 +173,15 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   3.1σ; raw-χ² EDGE-RUNS on continuous families (can rank, cannot measure —
   the #8 lesson demonstrated). Paper: new §4.3, old 4.3/4.4 → 4.4/4.5,
   abstract+conclusions upgraded.**
+  **4T (2026-07-23): the bath's SECOND MOMENT ([calcs/stage4t_bathnoise.py](calcs/stage4t_bathnoise.py)):
+  RAR intrinsic scatter is x-DEPENDENT (free-bin −42.7/5p vs constant; 0.144→
+  0.107 dex deep→Newtonian); oscillator+floor captures it at 1 param (−25.1):
+  N̂ ≈ 21 modes over 0.101-dex floor; floorless bath dead (+382); N ≥ 7
+  floor-free bound; x≈1 bump = probable M/L scatter (M/L-marginalized 4U =
+  next instrument); CONSTRAINT not detection; gates pass (injection 30→30.4).
+  Paper §4.6 + §9 #6 + §1 "one-half threads the paper" spine (user directive
+  executed structurally; dedicated ½ paper = post-DR4). Novelty scout on
+  continuous-c₁ + scatter-shape prior art PENDING — "first" not printed.**
   NEXT = 4R corrected-velocity v7 budget RUNNING (background; on landing:
   replace §7.4(b)/§6.3 queued-language with final corrected α, commit) →
   user: GitHub rename click → Zenodo GitHub toggle → tag v1.0 (DOI mints) →
