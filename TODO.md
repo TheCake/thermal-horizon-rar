@@ -364,10 +364,15 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     exponent RUNS with H(z) (p_gal 0.688→0.702 at z=1) → folded into
     #14. O5 remaining (reading-grade seams): the borrowing microphysics
     (non-Markovian horizon formalism); the formal per-leg pairing
-    Hamiltonian; the untied-L contest (L1≠L2) as a future falsifier;
-    the ½ ceiling (5P exchange-symmetric reading). Optional refinement:
-    AMB-vs-[resolution×ambient] local-factor contest (w(R) vs
-    1/(2ν−1)² at fixed gate).**
+    Hamiltonian; the ½ ceiling (5P exchange-symmetric reading).
+    ~~untied-L contest~~ — EXECUTED same day (Stage 6V, pre-reg
+    6ebf545): **tied form SURVIVES (B1 TOLERATED — worst untied
+    margin +3.33, inside 6L population noise; no strike, no proof);
+    B2 instrument-split FAILED as pre-registered and logged (the
+    likelihood reads L1 via the TRANSITION channel too; dividend:
+    one-leg disfavored −7.1 through a rung-independent channel).**
+    Optional refinement: AMB-vs-[resolution×ambient] local-factor
+    contest (w(R) vs 1/(2ν−1)² at fixed gate).**
     FROZEN-BATH SUB-READING (the Hubble-correlation-time argument):
     both accessible tests EXECUTED 2026-07-24 and closed — 6O galaxy
     coherence AMBIG (unmeasurable vs per-galaxy systematics even with

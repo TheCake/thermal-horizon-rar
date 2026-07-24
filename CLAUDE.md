@@ -550,7 +550,22 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   variance nulls do not strike it (mean-level). Ledger row mech-gate;
   world-table 18 tokens green; PAPER §2.4 gate paragraph + App B
   script map. AMB = a DERIVED structure with one reading-grade seam,
-  not a post-hoc rule.** Paper
+  not a post-hoc rule.**
+  **6V (2026-07-24, the 6U falsifier, pre-reg 6ebf545,
+  [calcs/stage6v_untied.py](calcs/stage6v_untied.py)): untied contest
+  β = ½q^L1·s^L2 on the vertical ladder (BE d=−0.00, tied-cell
+  dd=+0.00) — margins vs tied (2,2): U21 +3.33, U32 +0.74, U23 −3.72,
+  U12 −7.11. **B1 TOLERATED (tied survives — no strike, no proof; grid
+  flat inside 6L's ±13–21 noise). B2 FAILED as pre-registered and
+  LOGGED (my instrument model wrong: the likelihood reads L1 through
+  the TRANSITION-suppression channel, not only the deep rung —
+  dividend: one-leg disfavored −7.1 via a second, rung-independent
+  channel, convergent with 6L's 29/40 lean; L1=3-vs-2 blind).**
+  Ledger row gal-untied (19 tokens green); PAPER → v2.6 (header names
+  the full 2026-07-24 arc: lab closures, frozen tests, LEDGER,
+  triangulation, KMS gate + rungs, untied contest; abstract §7 §2.4
+  conclusions all carry the derived-gate status with the one seam).**
+  Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

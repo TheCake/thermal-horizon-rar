@@ -3526,6 +3526,49 @@ tail); priority scout-clean. The ambient-gated bath is now a DERIVED
 structure with one reading-grade seam (the borrowing microphysics),
 not a post-hoc rule.**
 
+## Stage 6V — the untied-exponent contest: the 6U falsifier (2026-07-24)
+
+**The derivation was given its own way to fail the same day.** The loop
+derivation REQUIRES tied exponents (one L: each vertex carries the local
+share AND the ambient KMS ratio together). 6V contests the off-diagonal
+cells β = ½·q^L1·s^L2 on the vertical-hardened ladder at the fiducial
+gate ([calcs/stage6v_untied.py](../calcs/stage6v_untied.py), pre-reg
+6ebf545 BEFORE execution; BE regression d = −0.00; tied-(2,2) regression
+vs 6I dd = +0.00).
+
+**Results (Δ vs BE, point grade):** tied (2,2) −59.05; U12 (q¹s²)
+−51.94; U32 (q³s²) −59.79; U21 (q²s¹) −62.38; U23 (q²s³) −55.33.
+Margins vs tied: U21 +3.33, U32 +0.74, U23 −3.72, U12 −7.11.
+
+- **B1 (tied survival): TOLERATED — no strike, no proof.** Worst untied
+  margin +3.33, far below the +5 strike bar and far inside the ±13–21
+  population noise 6L measured for these very cells. The tied form
+  survives; the grid is statistically flat at this sample (expected
+  under correction #13).
+- **B2 (instrument split): FAILED as pre-registered — logged.** I
+  predicted L1-varied cells move less than L2-varied (deep rung reads
+  L1, tail reads L2; vertical fit tail-dominated). Measured: 3.92 vs
+  3.52 — the prediction is wrong. Autopsy: the deep-series mapping is
+  exact algebra and stands, but the likelihood ALSO reads L1 through
+  the TRANSITION-suppression profile (q^L1 sets where in ν the
+  admixture turns on), and the transition votes β = 0 (5T). U12's
+  −7.11 — the only large signal on the grid — is exactly that channel
+  punishing one-leg. The failed bar impeaches my model of the
+  instrument, not the loop pairing; it goes in the ledger as a failed
+  pre-registered bar regardless.
+- **Dividend:** L1 = 1 is now disfavored through a SECOND channel
+  (transition shape, −7.1 point grade), independent of the deep
+  Bernoulli rung the 6L bootstrap said this sample cannot read. The
+  one-leg rejection (6L: 29/40 lean) gains a convergent line of
+  evidence; L1 = 3 vs 2 stays blind (+0.74).
+
+**Verdict: the contest — SUCCESS (both bars answered at their
+pre-registered grades); the tied-loop form — SURVIVES (tolerated, not
+proven; the untied family buys at most 3.3 lnL of point-grade noise);
+B2 — my prediction FAILED and is logged as such (the instrument reads
+L1 via the transition, a better instrument model than the one I
+pre-registered).**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

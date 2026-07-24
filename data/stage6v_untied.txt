@@ -1,0 +1,17 @@
+STAGE 6V: the untied-exponent contest -- 153 galaxies, 2700 points + 12 lensing; vertical-hardened; fiducial gate s = 0.8681
+pre-registered: B1 no untied cell beats (2,2) by > +5 (point grade); B2 |d| over {(1,2),(3,2)} < |d| over {(2,1),(2,3)}; 6L population caveat carried
+
+  BE:  -12152.49  la0=-9.981 f=1.164 s_int=0.045  [5P -12152.49, d=-0.00 OK]  (0.0 min)
+  U22:  -12211.54  la0=-10.005 f=1.256 s_int=0.044  [6I delta -59.05, dd=+0.00 OK]  (1.9 min)
+  U12:  -12204.43  la0=-10.004 f=1.289 s_int=0.044  (1.0 min)
+  U32:  -12212.28  la0=-10.002 f=1.241 s_int=0.044  (1.1 min)
+  U21:  -12214.87  la0=-10.007 f=1.273 s_int=0.044  (0.6 min)
+  U23:  -12207.82  la0=-10.003 f=1.254 s_int=0.044  (0.3 min)
+
+Delta vs BE (vertical, point grade): U22 -59.05, U12 -51.94, U32 -59.79, U21 -62.38, U23 -55.33
+6I tied comparators: (1,1) -52.76, (2,2) -59.05, (3,3) -54.52
+
+untied-beats-(2,2) margins (positive = untied better): U12 -7.11, U32 +0.74, U21 +3.33, U23 -3.72
+B1 (tied survival): worst margin +3.33 -> TOLERATED (within point-grade noise)
+B2 (instrument split): mean|d| L1-varied 3.92 vs L2-varied 3.52 -> FAIL (prediction: tail reads L2, rung reads L1)
+[point grade; population-grade caveat per correction #13]
