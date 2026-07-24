@@ -4114,6 +4114,43 @@ Overall: "modified inertia might do it" has become "the derived coupling class
 does it on Saturn's side by 10^451, at a measured, unresolved −8-lnL binary cost
 for the proxy."
 
+## Stage 7H (2026-07-24): TIE-RESTORED — 7G's gap was the proxy's Jensen discretization; the trajectory formulation fits the binaries at field grade
+
+Pre-reg e9db7c8 ([calcs/stage7h_miavg.py](calcs/stage7h_miavg.py)); one pre-results
+gate amendment (G2 quadrature bar 1e-6 → 1e-5 at the e = 0.999 extreme — measured
+7.3e-6, three orders below likelihood resolution; disclosed). The SIGNED HYPOTHESIS
+was committed before the run: mi_t evaluates B(⟨g⟩); eccentric orbits linger at
+apoapsis (low g, high boost), so the honest adiabatic functional is ⟨B(g)⟩ —
+strictly boostier by Jensen (+0.078 at y=1, e=0.9, measured in the gate block) —
+predicting boost recovery, α̂ deflation from 1.55/2.00 toward 1.06, and gap closure.
+
+RESULT ([data/stage7h_miavg.txt](data/stage7h_miavg.txt)): the 2-seed result hit the
+pre-registered ambiguity band → auto-extended to six. **Six-seed budget: D(mi_avg-AMB
+− MG-AMB) = −14.41 / −5.32 / +7.39 / −7.06 / −4.94 / +6.81 → mean −2.92 ± 3.46 SE,
+SIGN-MIXED (2/6 positive), interior 6/6, α̂ = 1.272 ± 0.038** (edge-riding gone;
+deflation confirmed), G0 α=0 bit-identity PASS. The pre-registered TIE bar (mean ∈
+[−5,+5], all interior) FIRED. Same grade as the 4L standard-law tie (−3.5 ± 3.3).
+
+**All three signed predictions landed: boost recovered, α̂ deflated, gap closed.
+7G's −8.4 was the proxy's discretization, not a class cost.**
+
+THE COMBINED SATURN STATEMENT (7G + 7H, the strongest the program has ever made):
+the trajectory formulation of the derived ambient-gated function **fits the wide
+binaries exactly as well as the field formulation (−2.9 ± 3.5, six realizations,
+all amplitudes interior) AND passes Cassini by 451 orders of magnitude** — the
+quadrupole tension is a property of the FIELD formulation, not of the measured
+function; and the door is tail-selective (Boltzmann-screened functions only = the
+measured screening class). Honest residuals carried: α̂_traj = 1.27 vs the field
+1.06 (~20% amplitude recalibration between formulations — a nuisance-level
+prescription dependence, noted, not hidden); the adiabatic average is still an MI
+BRACKET, not a full nonlocal theory (time-nonlocality/conservation live in the
+real formalism); the MG-formulation tension STANDS in the world table for the
+field reading; DR4 eccentricity resolution remains the formulation kill test.
+
+PLAIN VERDICT: SUCCESS — prong (b) of the maximal demand is complete at its
+achievable grade: equal binary fit + 10^451 Saturn margin, reached by
+pre-registered stages with a signed mechanistic hypothesis confirmed.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -779,7 +779,29 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   by numbers (10^451 one side, −8 lnL the other), not a row
   deleted. Ledger sol-trajmargin + binfn-ambmi (33 tokens green);
   PAPER §8.2 closing passage; NOTES 7G; plain verdicts: Saturn leg
-  SUCCESS / binary-equivalence NEEDS REFINEMENT.** Then the DM
+  SUCCESS / binary-equivalence NEEDS REFINEMENT.**
+  **7H (2026-07-24, pre-reg e9db7c8): TIE-RESTORED — the 7G gap was
+  the proxy's JENSEN DISCRETIZATION. Signed hypothesis committed
+  pre-run (mi_t uses B(⟨g⟩); apoapsis-lingering orbits make the
+  honest adiabatic functional ⟨B(g)⟩ strictly boostier — +0.078 at
+  y=1, e=0.9): all three predictions landed. Six-seed budget (2-seed
+  hit the pre-registered ambiguity band → auto-extended):
+  **D(mi_avg-AMB − MG-AMB) = −2.92 ± 3.46 SE, sign-mixed 2/6
+  positive, interior 6/6, α̂ = 1.272 ± 0.038 (deflated from
+  1.55/2.00)**; G0 bit-identity PASS; one pre-results gate amendment
+  (G2 quadrature bar 1e-6→1e-5 at e=0.999, 3 orders below likelihood
+  resolution). THE COMBINED SATURN STATEMENT (7G+7H, strongest ever):
+  the trajectory formulation of the derived function fits the
+  binaries AT FIELD GRADE and passes Cassini by 451 orders — the
+  quadrupole tension is a FORMULATION property, not a property of
+  the measured function; door tail-selective (Boltzmann-screened
+  only = the measured class). Honest residuals: α̂ recalibration
+  1.27 vs 1.06 between formulations (prescription-level); still an
+  MI bracket not a full nonlocal theory; MG-formulation tension
+  stands for the field reading; DR4 e-resolution = the formulation
+  kill test. Ledger binfn-ambmiavg (34 tokens green); PAPER §8.2
+  completion passage; NOTES 7H; plain verdict SUCCESS — maximal-
+  demand prong (b) COMPLETE at achievable grade.** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

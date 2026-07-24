@@ -95,6 +95,7 @@ CHECKS = [
     ('mech-mixmean',    '0.7445', 'data/stage7f_mixmean.txt'),
     ('sol-trajmargin',  '451', 'data/stage7g_trajsaturn.txt'),
     ('binfn-ambmi',     '-8.43', 'data/stage7g_trajsaturn.txt'),
+    ('binfn-ambmiavg',  '-2.92', 'data/stage7h_miavg.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

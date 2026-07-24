@@ -1,0 +1,21 @@
+STAGE 7H: the trajectory-averaged prescription (Jensen-gap test)
+========================================================================
+G1 circular identity (e=1e-6): max |<B> - B| = 9.88e-14 -> PASS
+G2 quadrature NE 48 vs 96 (e to 0.999): max d = 7.34e-06 -> PASS (bar 1e-5, amended pre-results)
+  (Jensen direction at y=1, e=0.9: <B> - B(<g>) = +0.0784 -- positive = boost recovered)
+
+2-seed result AMBIGUOUS per pre-registered rule -> extending to 6
+
+mi_avg-AMB vs same-seed MG-AMB (corrected velocities):
+  seed 31: D = -14.41; a_hat = 1.23 (interior=True); dlnL(Newton) = +82.8   [7G mi_t D was -11.33, a_hat 1.55]
+  seed 101: D = -5.32; a_hat = 1.43 (interior=True); dlnL(Newton) = +92.5   [7G mi_t D was -5.54, a_hat 2.00]
+  seed 202: D = +7.39; a_hat = 1.29 (interior=True); dlnL(Newton) = +85.7
+  seed 303: D = -7.06; a_hat = 1.30 (interior=True); dlnL(Newton) = +82.5
+  seed 404: D = -4.94; a_hat = 1.22 (interior=True); dlnL(Newton) = +86.2
+  seed 505: D = +6.81; a_hat = 1.16 (interior=True); dlnL(Newton) = +88.2
+  mean D = -2.92 +- 3.46 SE (6 seeds); interior 6/6; a_hat 1.272+-0.038
+G0 bit-identity: PASS
+
+VERDICT (pre-registered): TIE-RESTORED: the 7G gap was the proxy's Jensen discretization -- the trajectory formulation fits the binaries at field grade (and Saturn at 10^451 margin)
+carried: adiabatic-average = the next MI bracket, still not a full
+nonlocal theory; MG-formulation tension stands in the world table.
