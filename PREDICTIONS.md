@@ -81,6 +81,17 @@ and the "quantum bath" language gets demoted program-wide). Symmetrically: γ = 
 excluded at ≥ 9 under the same gates = the particle term is present = the first
 in-sample uniquely-quantum signature. Both directions pre-stated.
 
+**STATUS (flipped 2026-07-24, Stage 7A executed same day): LIVE — UNRESOLVED at
+per-point (4T) grade.** The instrument is validated (calibration gate PASSED: paired
+quantum/classical injections recovered at γ̂ = 1.03 / 2.05), the corpuscular rival is
+EXCLUDED (+25.05, collapses onto the floor), but quantum-vs-classical returned no vote
+(EQ−EC = −0.43; γ profile bimodal, whole axis ≤ 4.4 units). Structural reason
+identified: the two laws differ maximally at x ≈ 0.4–1.2, and the point-level x ≈ 1
+bump (4W: survives every marginalization) occupies the discriminant window. Unlock:
+bump-source identification/subtraction, a hier-hardened γ instrument on
+distance-anchored data, or DR4-era samples. Both kill directions remain pre-committed.
+[data/stage7a_einstein.txt]
+
 ---
 
 ## C. Live — out-of-sample (the DR4-era ledger)

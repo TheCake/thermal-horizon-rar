@@ -85,6 +85,8 @@ CHECKS = [
     ('binfn-scalarefe', '-10.35', 'data/stage6w_verdict.txt'),
     ('mech-reservoir',  '0.9524', 'data/stage6y_reservoir.txt'),
     ('gal-ordering',    '-62.91', 'data/stage6z_ordering.txt'),
+    ('galfn-shotbath',  '-25.05', 'data/stage7a_einstein.txt'),
+    ('gal-scatter-gamma', '-0.43', 'data/stage7a_einstein.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

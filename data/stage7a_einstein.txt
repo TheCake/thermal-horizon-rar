@@ -1,0 +1,29 @@
+STAGE 7A Einstein fluctuation test: 153 galaxies, 2700 points
+pre-registered P6 (PREDICTIONS.md); bars in script header
+
+[BE mean law]  -2lnL (lower is better)
+  E0 const:              -8338.12  s0 = 0.1219
+  EQ quantum  e^-x:      -8363.17  N =    21.5  floor = 0.1014
+  EC classical e^-2x:    -8362.74  N =    21.1  floor = 0.1089
+  ES shot  e^-x(1-e^-x): -8338.12  N = 1202603.6  floor = 0.1219
+  EG free gamma:         -8366.36  gamma_hat = 0.356  S0 = 1.254e-02  floor = 0.0730
+  M2 free 6-bin:         -8380.78
+  contest: EQ-EC = -0.43  EQ-ES = -25.05  EC-ES = -24.63   (negative favors first)
+
+G0 regression: EQ = -8363.17 vs 4T M1b = -8363.17 (d = -0.001) -> PASS
+G1 nesting: EG<=EQ -3.185, EG<=EC -3.612, M2<=EG+2 -14.42 -> PASS
+
+gamma profile: min at 3.500 (-2lnL -8366.71)  ** EDGE **
+  1-unit interval: [3.163, None]   2-unit-equv(4): [1.979, None]
+  D(-2lnL): gamma=1 +3.54 | gamma=2 +3.97   (>= 9 = pre-registered exclusion)
+  profile: 0.25:+0.8 0.50:+0.8 0.75:+2.4 1.00:+3.5 1.25:+4.2 1.50:+4.4 1.75:+4.3 2.00:+4.0 2.25:+3.5 2.50:+2.9 2.75:+2.2 3.00:+1.5 3.25:+0.7 3.50:+0.0
+
+G2 separability: gammaQ = [0.976, 1.13, 0.981] (mean 1.029); gammaC = [2.18, 2.19, 1.773] (mean 2.048); min-gap = 0.643 -> PASS
+G3a masked x in [0.8,1.4] (433 pts dropped): gamma_hat = 6.000 (shift +5.644)
+G3b bump-modeled: gamma_hat = 6.000 (shift +5.644)  b = 0.0829  -2lnL = -8390.71 (vs EG -8366.36)
+G4 simple-nu mean: gamma_hat = 0.332  -2lnL = -8345.58
+
+VERDICT (pre-registered bars): UNRESOLVED
+caveats: 4T grade (per-point independence); hier-hardening is the
+immediate follow-up before any strong language; amplitude-deflation
+risk under M/L+vertical marginalization carried from 4U/4W.

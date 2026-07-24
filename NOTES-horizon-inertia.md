@@ -3817,6 +3817,59 @@ in-sample leg withdrawn (correction #14); the ambient-gated rule —
 evidential basis NARROWED to its amplitude-level legs, which are the
 strong ones.**
 
+## Stage 7A (2026-07-24): the Einstein fluctuation test — UNRESOLVED at 4T grade; shot bath EXCLUDED; the discriminant window is occupied by the bump
+
+Pre-reg 21e7d28 (PREDICTIONS.md P6 + [calcs/stage7a_einstein.py](calcs/stage7a_einstein.py)
+committed BEFORE execution). The question: does the RAR's intrinsic scatter carry
+Einstein's 1909 PARTICLE term? Var(n) = n̄ + n̄² (quantum) vs n̄² (classical wave — the
+fluctuation law of ANY classical continuous-field bath, incl. 4F's simple-ν) vs n̄
+(pure shot). Through δlogg = δn/((1+n̄)ln10): s² ∝ e^(−x) (γ=1) vs e^(−2x) (γ=2) vs
+e^(−x)(1−e^(−x)). Same parameter count, a₀ locked to the mean fit. 4T had fit ONLY
+the quantum shape; γ had never been measured.
+
+Results (data/stage7a_einstein.txt; G0 regression: EQ reproduces 4T M1b to 0.001):
+- **SHOT EXCLUDED**: its best fit collapses onto the constant floor (N → 1.2e6 = zero
+  amplitude), −25.05 behind both rivals. A purely corpuscular bath cannot produce
+  deep-end scatter that persists to x → 0. Real exclusion.
+- **Quantum vs classical: NO VOTE** — EQ−EC = −0.43 (bar was ≥ 9).
+- **Free γ does not localize**: the profile is BIMODAL — minima at BOTH edges (γ ≈
+  0.25–0.5 and ≥ 3.5), the middle worst (+4.4 at γ = 1.5); the whole axis spans ≤ 4.4
+  units. With the bump masked OR explicitly modeled, γ̂ runs to the 6.0 bound: the
+  preferred structure is a deep-concentrated excess + the x≈1 bump (b = 0.083) + floor,
+  which beats even the 6-bin free fit by 10.
+- **G2 CALIBRATED PASS**: injected quantum truth recovered at γ̂ = 0.98/1.13/0.98
+  (mean 1.03), classical truth at 2.18/2.19/1.77 (mean 2.05), min-gap 0.64. The
+  instrument WORKS on clean truth — the non-verdict is data-side misspecification,
+  not power. G4: simple-ν mean gives the same non-localization.
+
+THE STRUCTURAL FINDING: the quantum–classical discriminant |e^(−x) − e^(−2x)| peaks at
+x = ln 2 ≈ 0.69 and carries its weight over x ≈ 0.4–1.2 — and the 4W point-level bump
+(the one scatter feature that survives every marginalization) sits at 0.8–1.4. **The
+bump occupies the discriminant window.** SPARC at per-point grade cannot vote on the
+particle term until the bump's source is identified or subtracted. The scatter x-shape
+is not a single exponential: deep-concentrated excess + bump + floor (convergent with
+the 4W/5A/5B autopsy: deep arm vertical-contested, bump point-level, environment
+bounded ≲ 2–5%).
+
+P6 status: LIVE, unkilled and unconfirmed — status-flipped in PREDICTIONS.md with this
+stage as its first test; both kill directions stay pre-committed for the hardened
+instrument. Unlocks named: (a) bump-source identification/subtraction; (b) hier-hardened
+γ (vertical + M/L + measured ambients on distance-anchored data — with the honest 4W
+expectation that SPARC depth may not resolve it); (c) DR4-era samples.
+
+Deliverable alongside: **PREDICTIONS.md, the signed prediction ledger** (registered-
+before-test rule, status-flips only, never edit; P1–P8 with uniqueness classes —
+DM-immune / classical-immune / MOND-generic — and numeric kill conditions; section A =
+the record, incl. the anti-classical votes already banked: the Boltzmann tail + c₁ = ½
+exclude the power-law classical bath; section D = what we do NOT claim, incl. that
+thermal bunching alone is classical — the quantum claim rides only on the particle
+term).
+
+PLAIN VERDICT: NEEDS REFINEMENT — the instrument is built and calibrated (that part is
+SUCCESS-grade and new), the shot bath is dead (a real exclusion), but the headline
+question is UNRESOLVED at this grade for a now-understood structural reason. No
+credence move (no bar fired).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

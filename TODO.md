@@ -425,6 +425,26 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     the self-shift (the C&T-vs-boot dichotomy in one line). Scout-level: Bernoulli-break↔leg-count
     and (2n+1) selection both NOT FOUND (post-6H sweep).
 
+O17. **The Einstein fluctuation test + the signed prediction ledger**
+    (Stage 7A, 2026-07-24, pre-reg 21e7d28). [PREDICTIONS.md](PREDICTIONS.md)
+    created: registered-before-test rule, status-flips only; P1–P8 with
+    uniqueness classes (DM-immune / classical-immune / generic) + numeric
+    kill conditions. P6 (the particle term: scatter γ = 1 quantum vs 2
+    classical, a₀ locked to the mean — Einstein 1909 pointed at the RAR)
+    EXECUTED same day: **shot/corpuscular bath EXCLUDED (−25.05)**;
+    quantum-vs-classical **NO VOTE** (EQ−EC = −0.43; γ profile bimodal,
+    axis ≤ 4.4 units); instrument CALIBRATED (G2: paired injections
+    recovered 1.03/2.05) ⇒ data-side misspecification, not power — **the
+    x≈1 bump occupies the discriminant window (x ≈ 0.4–1.2)**. P6 LIVE,
+    both kill directions pre-committed. UNLOCKS in leverage order:
+    (a) bump-source identification (the 4W point-level mystery is now
+    ALSO the γ blocker — doubles its priority); (b) 7B hier-hardened γ
+    (vertical + M/L + measured ambients; honest 4W expectation: may stay
+    unidentifiable at SPARC depth); (c) DR4-era samples. Flagship
+    out-of-sample unique prediction = P3, the z-LOCKED PAIR (a₀(z) =
+    cH(z)/2π AND p_gal(z) rise together — one function moves two
+    observables; numbers tabled in PREDICTIONS.md).
+
 ## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)
 10. ~~**Paper assembly + verification pass**~~ — DONE. Draft v1 ([PAPER.md](PAPER.md)):
     full manuscript from NOTES Stages 1→4N. **Verification pass DONE (Stage 4O,

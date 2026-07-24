@@ -646,7 +646,33 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   theorem, 6X mechanics) UNTOUCHED; ordering prediction now fully
   out-of-sample (DR4) where failure = REAL strike, pre-stated.
   Ledger rows gal-ordering + gal-chae-ambients note (23 tokens
-  green).** Paper
+  green).**
+  **7A (2026-07-24, pre-reg 21e7d28): THE EINSTEIN FLUCTUATION TEST +
+  [PREDICTIONS.md](PREDICTIONS.md) (the signed prediction ledger:
+  registered-before-test, status-flips only; P1–P8 with uniqueness
+  classes + numeric kill conditions; A = the record incl. banked
+  anti-classical votes — Boltzmann tail + c₁=½ exclude the power-law
+  classical bath; D = non-claims, bunching alone is classical). P6 =
+  Einstein 1909 on the RAR scatter: Var(n) = n̄+n̄² (quantum γ=1) vs
+  n̄² (classical wave γ=2) vs n̄ (shot), a₀ locked to the mean, same
+  param count ([calcs/stage7a_einstein.py](calcs/stage7a_einstein.py)).
+  EXECUTED same day: **shot bath EXCLUDED (−25.05, collapses onto the
+  floor); quantum-vs-classical NO VOTE (EQ−EC = −0.43; γ profile
+  BIMODAL, both edges beat the middle, axis ≤4.4 units); G2
+  calibration PASS (paired injections recovered γ̂ 1.03/2.05) ⇒
+  misspecification not power — THE x≈1 BUMP OCCUPIES THE DISCRIMINANT
+  WINDOW (laws differ maximally x≈0.4–1.2; bump 0.8–1.4). Scatter
+  x-shape = deep-concentrated excess + bump + floor (bump-modeled
+  γ̂→bound, b=0.083, beats 6-bin free by 10).** P6 LIVE both
+  directions; unlocks: bump source (the 4W mystery now ALSO the γ
+  blocker), 7B hier-hardened γ (4W caveat: may stay unidentifiable at
+  SPARC depth), DR4. Flagship out-of-sample unique prediction = P3
+  z-LOCKED PAIR: a₀(z) = cH(z)/2π AND p_gal(z) run together (0.689→
+  0.702 at z=1; table in PREDICTIONS.md) — one function, two locked
+  drifts, no classical-MOND/DM mimic. Ledger rows galfn-shotbath +
+  gal-scatter-gamma (25 tokens green); NOTES 7A; PAPER §4.6 closing
+  paragraph; plain verdict NEEDS REFINEMENT (instrument+ledger =
+  SUCCESS-grade; headline question blocked by the bump).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization
