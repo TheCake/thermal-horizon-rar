@@ -92,6 +92,20 @@ bump-source identification/subtraction, a hier-hardened γ instrument on
 distance-anchored data, or DR4-era samples. Both kill directions remain pre-committed.
 [data/stage7a_einstein.txt]
 
+**STATUS 2 (flipped 2026-07-24, Stages 7B/7C — the bump hunt): LIVE, MOVED fully
+out-of-sample.** The bump was identified in locality: it is an inner-disk (R < 1.5 R_d)
+phenomenon — its fitted amplitude on outer-disk points is exactly zero, and the
+radius-mix shift explains two-thirds of the window excess (PARTIAL vs the 0.75 bar;
+candidate drivers scout-anchored: non-circular streaming 10–40 km/s, beam smearing,
+decomposition — inner-disk astrophysics, not the law). With the inner term modeled, the
+γ profile de-bimodalizes (interior γ̂ = 0.52, γ = 2 nominally +12) BUT the calibrated
+injection gate FAILS on the informed design, the clean-subset variant leans the
+opposite way (+4.5), and 7B measured within-curve residual coherence ρ ≈ 0.87 — the
+quantum-classical difference sits below SPARC's correlated-systematics floor.
+**Verdict: γ is NOT MEASURABLE on SPARC at any grade tried; neither pre-committed kill
+direction fired. P6 now awaits anchored-distance / DR4-era / IFU samples with explicit
+non-circular modeling.** [data/stage7b_bumphunt.txt, data/stage7c_gammaclean.txt]
+
 ---
 
 ## C. Live — out-of-sample (the DR4-era ledger)

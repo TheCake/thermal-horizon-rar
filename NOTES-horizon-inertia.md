@@ -3870,6 +3870,66 @@ SUCCESS-grade and new), the shot bath is dead (a real exclusion), but the headli
 question is UNRESOLVED at this grade for a now-understood structural reason. No
 credence move (no bar fired).
 
+## Stages 7B/7C (2026-07-24): THE BUMP HUNT — caught in the inner disk; the Einstein γ closes at SPARC grade
+
+Pre-reg d82cc4b (7B matrix) and 59c582a (7C confirmation; the 7B inner-disk finding
+was post-hoc → its own pre-registered stage per house rule). Scout (Haiku, logged in
+commit): transition-localized RAR scatter excess NOT FOUND at scout level — the 4T/4W
+bump measurement itself appears unpublished; non-circular streaming documented at
+10–40 km/s at 1–3 R_d (the mundane driver class is well-motivated).
+
+**7B ([calcs/stage7b_bumphunt.py](calcs/stage7b_bumphunt.py)): pre-registered verdict
+MIXED/UNRESOLVED — correctly, because the data broke the matrix's assumptions
+informatively.** All gates PASS (G0 regression exact; G2a/b/c calibrated splits).
+Discoveries in the descriptive cells:
+- **Within-curve coherence MEASURED: lag-1 ρ = +0.876 (window) / +0.844 (controls),
+  perm p = 0.0000, null ±0.10.** Smooth per-galaxy radial misfit dominates raw
+  scatter; the 4T independence caveat now has a number; every point-level −2lnL gap
+  in the program is nominally calibrated only. Offset-subtracted deciles put the
+  genuinely point-level scatter at 0.04–0.07 dex (vs 0.10–0.15 raw) — convergent
+  with Desmond's 0.034 hier floor.
+- **The scatter is INNER-DISK-organized at fixed x**: R < 1.5 R_d cells carry ~2.4×
+  the variance of outer cells in BOTH x-slices; within R/R_d strata the window-vs-C1
+  excess vanishes or goes negative. The window samples 49% inner points vs 16% in
+  the deep control → radius-mix candidate.
+- Composition test structurally power-limited: in-window f_* terciles are
+  0.986/0.998 — everything at x ≈ 1 is star-dominated; D bounds nothing.
+
+**7C ([calcs/stage7c_gammaclean.py](calcs/stage7c_gammaclean.py)): the confirmation +
+the unblocked contest.**
+- **C2 (locality): DECISIVE — b_clean = 0.0000**: on outer-disk points (n = 1932) the
+  explicit bump component fits to exactly zero (7A full-data: 0.083). The bump lives
+  entirely in inner-disk points.
+- **C1 (accounting): EXPLAINED = 0.67 — PARTIAL** (bar 0.75, miss disclosed): the mix
+  explains two-thirds; the residual third is x-dependence of the inner-disk excess
+  itself (inner points at x ≈ 1 are noisier than inner points elsewhere).
+- **C3 (the γ contest, unblocked): UNRESOLVED by the gates, and rightly.** Variant B
+  (full data + shared inner term, ĉ_in = 0.105 ≈ the 7B-predicted 0.114; the term is
+  worth ~83 lnL for ONE param — standing error-model fact): profile DE-BIMODALIZES to
+  interior γ̂ = 0.52, γ=2 nominally +12.1, γ=1 +7.3 — but **G2 FAILS on the informed
+  design** (recoveries 0.7–6.0, no separation; the cin–floor–γ degeneracy eats the
+  estimator). Variant A (clean subset): OPPOSITE lean (EQ−EC = +4.48, edge-running).
+  G5 thinning: +0.14 = nothing. Two variants disagreeing in sign at few-lnL under
+  measured ρ ≈ 0.87 = systematics, not physics. NO VERDICT QUOTED.
+
+**THE CLOSE: the bump is caught — inner-disk astrophysics (streaming/beam-smearing/
+decomposition class), not the law; and the Einstein particle term is NOT MEASURABLE
+on SPARC** — the discriminant sits below the correlated-systematics floor at every
+grade tried (raw, informed, clean-subset, thinned). P6 status-flipped: fully
+out-of-sample (anchored distances / DR4-era / IFU with explicit non-circular
+modeling). Neither pre-committed kill direction fired; the quantum-statistical
+reading is UNTESTED in the scatter channel, not supported and not struck.
+
+Ledger: gal-curve-coherence + gal-bump-inner + gal-gamma-final added;
+gal-scatter-gamma flipped SUPERSEDED → gal-gamma-final. The 4T/4U/4W "N ~ 20–60
+constraint" language stands (already hedged as constraint-not-detection) with the ρ
+annotation now attached program-wide.
+
+PLAIN VERDICTS: the hunt — SUCCESS (the 4W point-level mystery is resolved in
+locality and driver class, and the program gained two standing methodological
+numbers: ρ ≈ 0.87 and the 83-lnL inner term). The in-sample Einstein test — CLOSED
+HONESTLY, NEEDS DIFFERENT DATA (P6 out-of-sample, pre-registered both ways).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -672,7 +672,35 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   drifts, no classical-MOND/DM mimic. Ledger rows galfn-shotbath +
   gal-scatter-gamma (25 tokens green); NOTES 7A; PAPER §4.6 closing
   paragraph; plain verdict NEEDS REFINEMENT (instrument+ledger =
-  SUCCESS-grade; headline question blocked by the bump).** Paper
+  SUCCESS-grade; headline question blocked by the bump).**
+  **7B/7C (2026-07-24, THE BUMP HUNT, pre-reg d82cc4b/59c582a):
+  the bump is CAUGHT — INNER-DISK (R < 1.5 R_d) astrophysics, not
+  the law. 7B matrix (composition/coherence/geometry at fixed x,
+  gates all PASS): verdict MIXED per bars but two discoveries —
+  (1) within-curve lag-1 ρ = 0.876/0.844 MEASURED (perm null ±0.10):
+  smooth radial misfit dominates raw scatter, every point-level
+  −2lnL in the program nominally calibrated only, offsub point floor
+  0.04–0.07 dex ≈ Desmond 0.034; (2) scatter INNER-DISK-organized at
+  fixed x (R<1.5R_d ~2.4× outer, both slices; window = 49% inner vs
+  16% deep-control → radius mix); composition structurally powerless
+  (window f_* terciles 0.986/0.998). 7C confirmation: **b_clean =
+  0.0000 on outer points (locality DECISIVE; 7A full 0.083);
+  EXPLAINED = 0.67 PARTIAL (miss vs 0.75 bar disclosed; residual =
+  x-dependence of the inner excess); γ contest with inner term
+  (ĉ_in=0.105 ≈ predicted 0.114, worth ~83 lnL/1p): profile
+  de-bimodalizes, interior γ̂=0.52, γ=2 nominally +12 — but G2 FAILS
+  on the informed design, clean-subset variant leans OPPOSITE
+  (+4.48), thinning +0.14 ⇒ NO VERDICT (systematics, not physics).
+  THE CLOSE: γ NOT MEASURABLE on SPARC at any grade tried; P6 fully
+  out-of-sample (anchored/DR4/IFU + non-circular modeling); neither
+  kill direction fired — the quantum reading UNTESTED in the scatter
+  channel, not struck.** Scout: the acceleration-binned scatter
+  measurement (4T/4W) apparently unpublished; streaming 10–40 km/s
+  documented. Ledger: gal-curve-coherence + gal-bump-inner +
+  gal-gamma-final, gal-scatter-gamma→SUPERSEDED (27 tokens green);
+  PAPER §4.6 hunt paragraph; plain verdicts: hunt = SUCCESS (mystery
+  resolved in locality+driver class), in-sample Einstein = CLOSED
+  HONESTLY / NEEDS DIFFERENT DATA.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

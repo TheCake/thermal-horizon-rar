@@ -1,0 +1,32 @@
+STAGE 7C: 153 galaxies, 2700 points; INNER (R<1.5Rd) n=768, CLEAN n=1932, no-Rd n=0
+G0 frozen mean: -8363.17 vs 7A EQ -8363.17 -> PASS
+
+C1 stratified excess (s^2 cells; e_str = W - baseline per stratum):
+  R/Rd 0-1.5: W 0.02334 (n=211) vs C1+C2 0.02118 (n=103/143) -> e_str = +0.00216  w = 0.49
+  R/Rd 1.5-3: W 0.00976 (n=180) vs C1+C2 0.01001 (n=211/72) -> e_str = -0.00024  w = 0.42
+  R/Rd 3-99: W 0.01066 (n=42) vs C1-only 0.00972 (n=346/0) -> e_str = +0.00093  w = 0.10
+  unstratified e_all = +0.00349; residual (weighted, positive parts) = +0.00114; EXPLAINED = 0.67
+  C1 bar (>=0.75): PARTIAL
+
+C2 clean-subset EGB: b_clean = 0.0000 (7A full: 0.083) -> BUMP GONE
+
+C3 variant B (PRIMARY: full data + shared inner term):
+[full+inner] E0 -8420.88 | EQ -8486.74 | EC -8481.94 | EG -8494.12 gamma_hat = 0.520 c_in = 0.1052
+    EQ-EC = -4.80
+    profile min 0.500; D(g=1) +7.29  D(g=2) +12.09
+    0.25:+17.8 0.62:+1.6 1.00:+7.3 1.38:+10.2 1.75:+11.6 2.12:+12.2 2.50:+12.4 2.88:+12.4 3.25:+12.3
+
+C3 variant A (robustness: clean subset, no inner term):
+[clean] E0 -6341.90 | EQ -6365.52 | EC -6370.00 | EG -6374.62 gamma_hat = 5.015
+    EQ-EC = +4.48
+    profile min 3.500 EDGE; D(g=1) +8.14  D(g=2) +3.66
+    0.25:+13.8 0.62:+10.3 1.00:+8.1 1.38:+6.3 1.75:+4.6 2.12:+3.2 2.50:+2.1 2.88:+1.1 3.25:+0.4
+
+G2 (variant B design): gammaQ = [2.105, 0.655, 3.485] (mean 2.082); gammaC = [6.0, 1.109, 3.667] (mean 3.592); gap = -2.376 -> FAIL
+G5 thinning (every 3rd, n=950): EQ-EC = +0.14 (nominal-independence caveat carried; 7B measured lag-1 rho ~ 0.87)
+
+C3 VERDICT (variant B, pre-registered): UNRESOLVED (instrument fails on this design)
+C1/C2 IDENTIFICATION: explained = 0.67; b_clean = 0.0000 -> PARTIAL identification
+caveats: nominal-independence -2lnL everywhere (rho ~ 0.87 measured
+in 7B); inner term is x-independent first order; stratified cells
+share galaxies between W and controls (partial pairing only).

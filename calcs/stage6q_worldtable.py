@@ -86,7 +86,9 @@ CHECKS = [
     ('mech-reservoir',  '0.9524', 'data/stage6y_reservoir.txt'),
     ('gal-ordering',    '-62.91', 'data/stage6z_ordering.txt'),
     ('galfn-shotbath',  '-25.05', 'data/stage7a_einstein.txt'),
-    ('gal-scatter-gamma', '-0.43', 'data/stage7a_einstein.txt'),
+    ('gal-curve-coherence', '+0.8761', 'data/stage7b_bumphunt.txt'),
+    ('gal-bump-inner',  '0.0000', 'data/stage7c_gammaclean.txt'),
+    ('gal-gamma-final', '-2.376', 'data/stage7c_gammaclean.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

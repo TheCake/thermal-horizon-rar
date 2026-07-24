@@ -436,14 +436,24 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     axis ≤ 4.4 units); instrument CALIBRATED (G2: paired injections
     recovered 1.03/2.05) ⇒ data-side misspecification, not power — **the
     x≈1 bump occupies the discriminant window (x ≈ 0.4–1.2)**. P6 LIVE,
-    both kill directions pre-committed. UNLOCKS in leverage order:
-    (a) bump-source identification (the 4W point-level mystery is now
-    ALSO the γ blocker — doubles its priority); (b) 7B hier-hardened γ
-    (vertical + M/L + measured ambients; honest 4W expectation: may stay
-    unidentifiable at SPARC depth); (c) DR4-era samples. Flagship
+    both kill directions pre-committed. Flagship
     out-of-sample unique prediction = P3, the z-LOCKED PAIR (a₀(z) =
     cH(z)/2π AND p_gal(z) rise together — one function moves two
     observables; numbers tabled in PREDICTIONS.md).
+    **THE HUNT EXECUTED same day (7B/7C, pre-reg d82cc4b/59c582a):
+    the bump is CAUGHT — an INNER-DISK (R < 1.5 R_d) phenomenon
+    (b_clean = 0.0000 on outer points; radius-mix EXPLAINED = 0.67
+    PARTIAL vs 0.75 bar; driver class = streaming/beam-smearing/
+    decomposition, scout-anchored). Standing methodological numbers:
+    within-curve lag-1 ρ ≈ 0.876/0.844 (every point-level −2lnL in
+    the program nominally calibrated only; offsub point floor
+    0.04–0.07 dex) and the inner-disk term c_in ≈ 0.105 worth ~83
+    lnL/1p. THE CLOSE: γ NOT MEASURABLE on SPARC (informed-design G2
+    fails; variants sign-disagree ±5; thinning +0.14) — P6 fully
+    out-of-sample (anchored/DR4/IFU with non-circular modeling);
+    neither kill direction fired. Scout: the 4T/4W acceleration-binned
+    scatter measurement itself apparently unpublished (Stone &
+    Courteau/Desmond quote global only — scout-level).**
 
 ## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)
 10. ~~**Paper assembly + verification pass**~~ — DONE. Draft v1 ([PAPER.md](PAPER.md)):
