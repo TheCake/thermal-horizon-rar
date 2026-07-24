@@ -436,7 +436,24 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   c_{L+1} rung at population grade). Unaffected: 6H correspondence
   (exact math), Part B measured-ambients + 6J 37/40, quadrupole
   record, 6K strike. Paper → v2.5, Appendix A = thirteen
-  corrections.** O5 remaining sharpened:
+  corrections.**
+  **6M (= 6K-v2, 2026-07-24, pre-reg 2b3bf78 before execution): the
+  structured-bath calculation — ONE thermal bath, finite spectral
+  resolution b (Ohmic-Gaussian golden-rule kernel), κ cancels EXACTLY
+  (fixes v1's rate-ratio objection); endpoints gated (Davies 0.0e+0,
+  source 0.67%). VERDICT: AMBIG per bands — share test FAILED 205×
+  where clean, resolution collapse failed 5.3× because the estimator
+  drowns (endpoint gap K-order vs kernel systematic b²-order;
+  overshoot columns flagged). Beyond-band observations (no committed
+  credence move on AMBIG; ~15% HELD, lean noted): (a) clean-region
+  monotonicity OPPOSITE to grammar — occupied modes sit fully
+  dressed, sparse modes source-pin first (resolution physics:
+  spread K·√(n(n+1))); (b) resolution-β in gravity = ρ = x(√ν−1),
+  transition-peaked (0.26 at x≈1–1.5), tail-zero = wrong sky shape
+  in both non-deep regimes. Pull lemma exact: thermal comb centroid
+  = 2K·n̄ (statistics, not shares). NEXT = 6K-v3 pseudomode (exact
+  two-mode Lindblad, true Lorentzian bath — the closing instrument);
+  paper §2.4 updated in place (still v2.5).** O5 remaining sharpened:
   why exactly TWO legs from dS mode counting (the round trip is now
   the measured target, not an assumption); MI-trajectory alternative
   standing.** Paper

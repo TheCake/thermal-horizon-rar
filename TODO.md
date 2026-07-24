@@ -311,13 +311,23 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     pathology; κ-dependence 0.3–0.5/decade everywhere = the grammar's
     rate-freedom does not emerge from jump competition. Pre-committed
     strike LOGGED: bath-microphysics conditional ~20–25% → ~15%,
-    surviving mass on the coherent-pull reading.** NEXT: **6K-v2 = the
-    coherent susceptibility calculation** (driven Kerr mode, full
-    Liouvillian + quantum regression, susceptibility-peak admixture —
-    the object the JC anchor actually describes; feasible on this
-    machine) — now the sharpest O5 item, ahead of the horizon-side
-    derivation (why two legs from dS mode counting) and the standing
-    MI-trajectory alternative. Scout-level: Bernoulli-break↔leg-count
+    surviving mass on the coherent-pull reading.** 6K-v2 EXECUTED as
+    **6M (structured-bath, pre-reg 2b3bf78): AMBIG per bands** — the
+    single-bath finite-resolution interpolation is κ-free by
+    construction (fixes v1's objection) but the estimator drowned
+    (endpoint gap K-order vs kernel systematic b²-order; overshoot
+    columns); share test failed 205× where clean. Beyond-band
+    observations logged: (a) clean-region monotonicity OPPOSITE to
+    the grammar (occupied → fully dressed, sparse → source-pinned);
+    (b) resolution-β's gravity shape = transition-peaked, tail-zero =
+    wrong sky shape both non-deep regimes. Credence HELD ~15% per
+    discipline (AMBIG carries no committed move), lean noted. NEXT:
+    **6K-v3 = the pseudomode calculation** (Kerr mode + damped
+    thermal auxiliary mode, exact two-mode Lindblad steady state +
+    spectrum — true Lorentzian bath, no kernel heuristics; the
+    closing instrument for the lab leg) — then the horizon-side
+    derivation (why two legs) and the standing MI-trajectory
+    alternative. Scout-level: Bernoulli-break↔leg-count
     and (2n+1) selection both NOT FOUND (post-6H sweep).
 
 ## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)

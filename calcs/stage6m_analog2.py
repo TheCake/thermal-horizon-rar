@@ -90,15 +90,26 @@ def n_be(x):
 
 # ---------- kernel machinery (Ohmic-weighted Gaussian, w > 0)
 WGRID = np.concatenate([np.linspace(1e-6, 0.2, 400),
-                        np.linspace(0.2, 6.0, 4000)])
+                        np.linspace(0.2, 11.0, 7500)])
+B_ANALYTIC = 5e-3     # below grid resolution: kernel -> delta exactly
 def n_eff_links(T, K, b, N):
     D = W0 + K*np.arange(N)
-    G = np.exp(-0.5*((WGRID[None, :] - D[:, None])/b)**2)
+    ana = 1.0/np.expm1(np.clip(D/T, 1e-9, 700.0))
+    if b < B_ANALYTIC:
+        return ana
+    # kernel integral where the grid covers the line +-5b; analytic
+    # beyond (occupations exponentially small there; smearing
+    # correction O(b^2) relative -- negligible in the NESS product)
+    mk = D + 5.0*b <= WGRID[-1]
+    Dk = D[mk]
+    G = np.exp(-0.5*((WGRID[None, :] - Dk[:, None])/b)**2)
     wgt = G*WGRID[None, :]
     nbe = 1.0/np.expm1(np.clip(WGRID/T, 1e-9, 700.0))
-    num = np.trapz(wgt*nbe[None, :], WGRID, axis=1)
-    den = np.trapz(wgt, WGRID, axis=1)
-    return num/den
+    num = np.trapezoid(wgt*nbe[None, :], WGRID, axis=1)
+    den = np.trapezoid(wgt, WGRID, axis=1)
+    out = ana.copy()
+    out[mk] = num/np.maximum(den, 1e-300)
+    return out
 
 def ness_nbar(T, K, b, N):
     ne = n_eff_links(T, K, b, N)
@@ -122,9 +133,16 @@ K = 0.02
 g_davies = ness_nbar(T, K, 1e-4*K, N)[0]
 g_ref = gibbs_mean(T, K, N)
 g1 = abs(g_davies - g_ref)
-L.append(f"G1 b->0 (Davies): nbar = {g_davies:.8f} vs Gibbs {g_ref:.8f} "
-         f"-> d = {g1:.1e} {'PASS' if g1 < 1e-6 else 'FAIL'}")
+L.append(f"G1a b->0 (Davies, analytic branch): nbar = {g_davies:.8f} vs "
+         f"Gibbs {g_ref:.8f} -> d = {g1:.1e} "
+         f"{'PASS' if g1 < 1e-6 else 'FAIL'}")
 assert g1 < 1e-6
+ne_k = n_eff_links(T, K, 0.02, N)
+ne_a = n_eff_links(T, K, 1e-6, N)
+g1b = float(np.max(np.abs(ne_k/ne_a - 1.0)[:200]))
+L.append(f"G1b kernel-vs-delta at b=0.02 (grid-resolved): max rel d = "
+         f"{g1b:.2%} -> {'PASS' if g1b < 0.02 else 'FAIL'}")
+assert g1b < 0.02
 n0_ref = n_be(0.5)
 g_wide = ness_nbar(T, 0.0005, 0.4*W0, N)[0]   # K*nmax tiny vs b
 g2 = abs(g_wide - n0_ref)/n0_ref

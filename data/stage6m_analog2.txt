@@ -1,0 +1,42 @@
+STAGE 6M (6K-v2): structured-bath admixture -- shares vs resolution, pre-registered
+
+G1a b->0 (Davies, analytic branch): nbar = 1.43909781 vs Gibbs 1.43909781 -> d = 0.0e+00 PASS
+G1b kernel-vs-delta at b=0.02 (grid-resolved): max rel d = 0.00% -> PASS
+G2 wide-b (source): nbar = 1.531101 vs n0 = 1.541494 -> rel d = 0.67% PASS
+G3 truncation doubling: rel d = 0.0e+00 PASS
+G4 pull lemma (thermal): (<n^2>-<n>)/<n> = 3.400000 vs 2*nbar = 3.400000 -> PASS (the coherent pull weighs the state's STATISTICS; the vacuum share tanh(x/2) sits in the (n+1/2) bookkeeping, not the dynamics)
+
+lam(r) curves (r = b/K; cap b <= 0.4 w0; '--' = capped):
+  K=0.005 x0=0.2 (n0= 4.517, n1= 4.315): 1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  0.999  0.997    --     -- 
+  K=0.005 x0=0.5 (n0= 1.541, n1= 1.513): 1.000  1.000  1.000  1.000  1.000  1.000  0.999  0.996  0.985  0.941    --     -- 
+  K=0.005 x0=1.0 (n0= 0.582, n1= 0.577): 1.000  1.000  1.000  1.000  0.999  0.997  0.989  0.958  0.840  0.390    --     -- 
+  K=0.005 x0=2.0 (n0= 0.157, n1= 0.156): 1.000  1.000  1.000  1.000  0.989  0.959  0.844  0.405  -1.272  -7.665    --     -- 
+  K=0.005 x0=3.5 (n0= 0.031, n1= 0.031): 1.000  1.000  1.000  1.000  0.852  0.435  -1.157  -7.246  -30.653  -122.220    --     -- 
+  K=0.020 x0=0.2 (n0= 4.517, n1= 3.885): 1.000  1.000  1.000  1.000  1.000  1.000  1.000  0.999    --     --     --     -- 
+  K=0.020 x0=0.5 (n0= 1.541, n1= 1.439): 1.000  1.000  1.000  1.000  1.000  0.999  0.996  0.983    --     --     --     -- 
+  K=0.020 x0=1.0 (n0= 0.582, n1= 0.562): 1.000  1.000  1.000  0.999  0.997  0.988  0.955  0.829    --     --     --     -- 
+  K=0.020 x0=2.0 (n0= 0.157, n1= 0.154): 1.000  1.000  0.997  0.989  0.956  0.833  0.364  -1.425    --     --     --     -- 
+  K=0.020 x0=3.5 (n0= 0.031, n1= 0.031): 1.000  1.000  0.958  0.841  0.392  -1.326  -7.931  -33.816    --     --     --     -- 
+  r grid: ['0.1', '0.2', '0.38', '0.75', '1.5', '2.8', '5.6', '11', '21', '42', '81', '1.6e+02']
+
+  share test: most-transitional column K=0.005, r=2.8: lam = ['1.000', '1.000', '0.997', '0.959', '0.435'], lam/tanh^2 spread = 204.9 (band was < 1.69) -> FAIL
+(i) SHARE TEST: FAIL
+(ii) RESOLUTION TEST: transition midpoints r50 spread raw 28.4x -> in r_eff 5.3x (band < 2) -> FAIL
+    K=0.005 x0=1.0: r50 =   35.22, r_eff50 =  36.84
+    K=0.005 x0=2.0: r50 =    9.40, r_eff50 =  22.13
+    K=0.005 x0=3.5: r50 =    2.57, r_eff50 =  14.33
+    K=0.020 x0=2.0: r50 =    4.58, r_eff50 =  10.82
+    K=0.020 x0=3.5: r50 =    1.24, r_eff50 =   6.93
+
+(iii) resolution shape translated to gravity (rho = x*(sqrt(nu)-1), the self-shift over the bath scale T):
+    x = 0.05: nu =  20.504, rho = 0.1764
+    x = 0.20: nu =   5.517, rho = 0.2698
+    x = 0.50: nu =   2.541, rho = 0.2971
+    x = 1.00: nu =   1.582, rho = 0.2578
+    x = 1.50: nu =   1.287, rho = 0.2018
+    x = 2.00: nu =   1.157, rho = 0.1508
+    x = 3.00: nu =   1.052, rho = 0.0776
+    x = 5.00: nu =   1.007, rho = 0.0169
+    -> rho vanishes deep (~sqrt(x)) AND in the tail (~x e^-x/2), peaking ~0.26 at x ~ 1-1.5: a resolution-beta is zero deep, MAXIMAL at the transition, zero in the tail. The sky (5T) measures beta = 0 deep AND transition, beta ~ 1/2-3/4 in the TAIL alone -- opposite in both non-deep regimes, for every O(1) zeta.
+
+PRE-REGISTERED VERDICT: AMBIG

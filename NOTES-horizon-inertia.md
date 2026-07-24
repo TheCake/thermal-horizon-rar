@@ -3078,6 +3078,61 @@ the rung directly — added to the future-data ledger beside c₄.
 do); the claim — DEFLATED, correction #13 logged. The program's
 yardstick applied to its own newest headline, same day.**
 
+## Stage 6M (= 6K-v2) — the structured-bath calculation: AMBIG per bands, with two clean beyond-band observations (2026-07-24)
+
+The physical interpolation v1 lacked: ONE thermal bath of finite
+spectral resolution b (Ohmic-weighted Gaussian golden-rule kernel) on
+the Kerr ladder — b ≪ K resolves the comb (Davies → dressed Gibbs =
+the β=1 endpoint), K·n ≪ b ≪ ω₀ cannot (singular → populates at the
+source frequency = the β=0 endpoint) — and the overall rate κ cancels
+EXACTLY in the NESS, removing v1's κ objection by construction.
+Pre-registered at 2b3bf78 BEFORE execution (share band, resolution-
+collapse band, outcome tree, credence commitments).
+[calcs/stage6m_analog2.py](calcs/stage6m_analog2.py) →
+data/stage6m_analog2.txt. Gates: Davies endpoint 0.0e+0; kernel-vs-
+delta 0.00%; source endpoint 0.67%; truncation 0.0e+0; pull lemma
+exact (thermal comb centroid = 2K·n̄ — the coherent pull weighs the
+state's STATISTICS; tanh(x/2) lives in the (n+½) bookkeeping, not the
+dynamics). Two numerics patches post-commit (np.trapezoid rename;
+kernel/grid coverage with analytic branch beyond) — disclosed, no
+design change.
+
+**Pre-registered verdict: AMBIG.** The share test FAILED decisively
+(λ/tanh² spread 205× at the most transitional column — no share
+organization anywhere), but the resolution-collapse test ALSO failed
+(5.3× vs the <2 band) — because at practical K the endpoint gap
+(K-order) is smaller than the kernel's frequency-sampling systematic
+(b²-order) through the mid-scan: λ overshoots (−1…−122) once the wide
+kernel feeds the mode off-resonant thermal content. The estimator
+drowned in exactly the way the AMBIG branch anticipated: kernel-detail
+sensitivity → **a pseudomode v3 (mode + damped auxiliary mode, exact
+Lindblad, true Lorentzian bath — no kernel heuristics) is required
+before any lab-grade claim.**
+
+**Beyond-band observations (logged as observations, not verdicts;
+no pre-committed credence move fires on AMBIG):**
+1. **In the clean region the monotonicity is OPPOSITE to the grammar:**
+   λ(x₀) at fixed r runs 1.000 → 0.435 as occupation falls (K=0.005,
+   r=2.8) — occupied/classical modes sit FULLY self-consistent (their
+   larger level spread K·√(n(n+1)) is easier to resolve), sparse/
+   quantum modes get source-pinned first. The grammar runs the other
+   way (occupied → source-pinned, sparse → dressed). Sign-level, robust
+   to the estimator issues.
+2. **The gravity translation of the resolution dial (analytic, part
+   iii): ρ = x(√ν−1) peaks ≈ 0.26 at x ≈ 1–1.5 and vanishes BOTH deep
+   (√x) and in the tail (x·e^(−x)/2)** — a resolution-β would be
+   maximal at the transition and zero in the tail; the sky (5T) wants
+   β = 0 deep AND transition with the tail alone at ½–¾. Wrong shape
+   in both non-deep regimes for every O(1) bath-width ζ.
+Both lean against standard-bath realizations of the grammar; per
+discipline the ~15% bath-microphysics conditional HOLDS (the AMBIG
+branch carries no committed move) with the lean noted.
+
+**Verdict: the stage — SUCCESS (pre-registration honored; the AMBIG
+branch fired exactly as designed); the mechanism question — still
+open, now with a fully specified closing instrument (pseudomode v3)
+and two sign-level leans against, on the record.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
