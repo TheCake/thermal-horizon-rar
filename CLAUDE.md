@@ -612,7 +612,32 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   lopsidedness literature = paper-level engagement item. PAPER §8.1
   composition paragraph + App B; ledger row binfn-scalarefe (21
   tokens green); NOTES verdict: my hypothesis EXCLUDED in ninety
-  minutes — Saturn SHARPENED, not solved.** Paper
+  minutes — Saturn SHARPENED, not solved.**
+  **6Y/6Z (2026-07-24, pre-reg 0e0f4fc): THE RESERVOIR IDENTIFICATION
+  ([calcs/stage6y_reservoir.py](calcs/stage6y_reservoir.py), gates
+  first-run): EXCLUSION THEOREM — one collective thermal mode gives
+  the measured s^L; M≥2 democratic modes give the negative-binomial
+  tail 1−(1−q)^M(1+Mq) which saturates the galaxy gate at M=2 (0.952
+  vs measured 0.754), washes out the 6I-measured e_N-dependence, and
+  pushes the binary postdiction to the rejected edge (0.565) ⇒ **the
+  gate data select M=1: one collective ambient mode per system**
+  (counting-statistics route converging with the dynamical 6D/6T/6G
+  route). Identification (reading): the BARYCENTRIC mode = the
+  environment's dressing cloud, n_amb = ν(e_N)−1; e→0 rejoins the
+  horizon soft sector (gate→1); ambient GAPS the soft sector.
+  **PREDICTIONS: P1 tail ceiling p ≤ ¾ EXACT (parameter-free; void
+  asymptote ~0.72; one galaxy beyond ¾ kills the gate); P2 p(e_N)
+  ordering (→6Z); P3 z-rung; P4 DR4 pair; P5 nested-ambient rule.
+  SATURN COROLLARY (reading, 3 measured legs): collective-mode
+  coupling = trajectory-state = the EFE-respecting MI class — ties
+  MG on binaries (4L), meets the 6W composition demand, no capped
+  quadrupole ⇒ the thermal rule lands in the one door Saturn left
+  open BY DERIVATION; kill test = DR4 eccentricity resolution.**
+  Ledger row mech-reservoir (22 tokens green); PAPER §2.4
+  identification paragraph. 6Z = the ordering shuffle test (TRUE
+  gates vs 8 permutation nulls, distribution-preserving; bars
+  SUPPORT 8/8 / LEAN ≥6/8 / NULL / ANTI) — running at close of
+  entry.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

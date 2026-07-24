@@ -3706,6 +3706,69 @@ minutes, as it should be); the Saturn problem — SHARPENED, not solved:
 the tension is now demonstrably data-forced by our own binaries, and
 the honest remaining escape is still modified inertia.**
 
+## Stage 6Y — the reservoir identification: the exclusion theorem, the
+## predictions, and the Saturn corollary (2026-07-24)
+
+**The dS-side seam attacked and substantially closed
+([calcs/stage6y_reservoir.py](../calcs/stage6y_reservoir.py), pre-reg
+0e0f4fc with 6Z, all gates first-run).**
+
+**The exclusion theorem (exact, GY1/GY2):** who lends the L quanta? A
+single collective thermal mode gives the measured P(n≥L) = s^L (the 6X
+geometric tail). M democratic thermal modes give the negative-binomial
+tail 1−(1−q)^M(1+Mq) — and already at **M = 2 the galaxy gate saturates
+(0.952 vs the measured 0.754)**, the e_N-dependence that 6I measured
+as improving every treatment washes out, and the binary p-postdiction
+moves to 0.565 = the band edge the binaries reject; M = 10 is fully
+open everywhere. **The measured gate SELECTS M = 1: one collective
+ambient mode per system** — converging with the dynamically measured
+system-level scalar structure (6D pointwise dead / 6T local dead / 6G
+system-level accepted). Two independent routes, one structure.
+
+**The identification (reading, stated plainly):** the collective mode
+= the system's barycentric coordinate in the ambient field — one
+degree of freedom per system, occupation n_amb = n_BE(x_amb) =
+ν(e_N) − 1 = **the environment's own dressing cloud. Systems borrow
+from their environment's boost.** Continuity: e_N → 0 sends the
+collective mode into the horizon's soft (IR) sector (n → ∞, gate → 1)
+— the isolated limit rejoins the one-bath picture; a strong ambient
+GAPS the soft sector and closes the gate. The ω = g/c frequency
+assignment remains the program's standing §2.4 postulate — inherited,
+not re-derived.
+
+**THE SATURN COROLLARY (the user's "different theory" question
+answered; reading-grade, three measured legs):** a coupling to the
+barycentric collective mode is a TRAJECTORY-STATE coupling — the
+modified-inertia class. That class (i) ties vector-MG on the binaries
+(4L: mi_t −3.5±3.3), (ii) thereby meets the 6W composition demand at
+current resolving power, (iii) carries no capped-type solar quadrupole
+(4K's standing escape). **The borrowing mechanics lands the thermal
+rule in the one door Saturn left open — by derivation, not
+preference.** This upgrades "MI might do it" to "the mechanism's
+formalization IS MI-class." Kill test: DR4 eccentricity-resolved
+boosts (trajectory-dependence vs field-dependence).
+
+**The prediction ledger extracted (the falsifiers):**
+- **P1 (exact): the tail-exponent CEILING p ≤ ¾** — gate = P(n≥2) ≤ 1;
+  void asymptote p ≈ 0.72–0.73. One population-grade galaxy tail
+  beyond ¾ kills the gate. New, quotable, parameter-free.
+- **P2: the ambient ordering** p(e_N) monotone decreasing (curve:
+  0.735 at e=0.001 → 0.528 at e=1.2) — being tested NOW at full
+  sample power (6Z, pre-registered in the same commit).
+- P3: the z-rung (6U) — p runs with H(z).
+- P4: DR4 — weak-ambient sharpening toward 0.69 + the
+  source-vs-dressed convention split (Δp ≈ 0.03).
+- P5: nested ambients gate by the LOCAL total field (operationally
+  what 6G/6I already used — consistency, not freedom).
+
+**Verdict: SUCCESS — the reservoir is pinned by an exact exclusion
+theorem plus a continuity statement; the mechanism chain (6U→6X→6Y)
+now runs: sky selects ratio² → mechanics produces ratio = lending
+probability → gate = P(n≥L) of ONE collective ambient mode → the
+coupling class is MI = the Saturn door. Remaining reading-grade: the
+barycentric identification itself and the ω = g/c assignment; the ½
+ceiling candidate stands.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

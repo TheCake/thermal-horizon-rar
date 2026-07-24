@@ -376,11 +376,20 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     (ratio slope +0.989, 6.2×/29× margins; P(n≥L) = s^L = e^(−Lx)
     exact; the sky's ratio² = the real-exchange channel; detuned
     virtual control carries raw-n = the discriminating physics).
-    Remaining: the dS-side reservoir identification (why the ambient
-    field's modes at x_amb are the resonant partners) + multimode
-    generalization; the ½ ceiling now has a candidate dynamical
-    reading (resonant equal-time-sharing — the toy's ½ prefactor),
-    flagged reading-grade.**
+    ~~Remaining: the dS-side reservoir identification + multimode~~ —
+    **DONE (Stage 6Y, pre-reg 0e0f4fc): the EXCLUSION THEOREM — the
+    measured gate selects ONE collective ambient mode (M≥2 democratic
+    lending saturates the galaxy gate 0.95 and pushes the binary
+    postdiction to the rejected edge; negative-binomial tail exact);
+    identification (reading): the barycentric mode = the environment's
+    dressing cloud (n_amb = ν(e_N)−1); e→0 rejoins the horizon soft
+    sector. NEW FALSIFIERS: tail ceiling p ≤ ¾ EXACT (one void galaxy
+    beyond ¾ kills the gate); p(e_N) ordering (6Z shuffle test);
+    SATURN COROLLARY: the coupling is trajectory-state = the
+    EFE-respecting MI class — the 4K door reached BY DERIVATION (kill
+    test: DR4 eccentricity resolution). Remaining reading-grade: the
+    barycentric identification itself; ω = g/c (standing §2.4
+    postulate); the ½ ceiling candidate (resonant equal-time-sharing).**
     ~~untied-L contest~~ — EXECUTED same day (Stage 6V, pre-reg
     6ebf545): **tied form SURVIVES (B1 TOLERATED — worst untied
     margin +3.33, inside 6L population noise; no strike, no proof);

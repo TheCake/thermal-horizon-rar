@@ -83,6 +83,7 @@ CHECKS = [
     ('gal-untied',      '+3.33',  'data/stage6v_untied.txt'),
     ('mech-borrow',     '+0.989', 'data/stage6x_borrow.txt'),
     ('binfn-scalarefe', '-10.35', 'data/stage6w_verdict.txt'),
+    ('mech-reservoir',  '0.9524', 'data/stage6y_reservoir.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

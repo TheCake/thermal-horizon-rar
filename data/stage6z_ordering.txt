@@ -1,0 +1,4 @@
+STAGE 6Z: the gate-assignment ordering test -- 153 galaxies (91 Chae-matched), vertical-hardened, K = 8 shuffles (rng 71)
+pre-registered: SUPPORT beats 8/8; LEAN >= 6/8; NULL bulk; ANTI 0/8
+
+  BE:  -12152.49  [5P -12152.49, d=-0.00 OK]  (2.3 min)

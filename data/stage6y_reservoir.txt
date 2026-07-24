@@ -1,0 +1,40 @@
+STAGE 6Y: the reservoir identification -- exclusion theorem + predictions
+========================================================================
+GY1: P(N_tot >= 2 | M geometric modes) = 1 - (1-q)^M (1+Mq): NB check PASS; M=1 reduces to q^2 = s^2: PASS
+
+GY2: the democratic-multimode gate vs M (measured M=1 values: galaxy 0.754, binary 0.112):
+      M  gate_gal   p_gal  gate_bin   p_bin
+      1    0.7536  0.6884    0.1118  0.5280
+      2    0.9524  0.7381    0.2607  0.5652
+      3    0.9917  0.7479    0.4093  0.6023
+      5    0.9998  0.7499    0.6509  0.6627
+     10    1.0000  0.7500    0.9259  0.7315
+GY2 (M=1 regression to the measured gate): PASS
+    => M >= 2: the galaxy gate saturates (0.95+) and the measured
+       e_N-dependence (6I: per-galaxy gates IMPROVE every treatment)
+       washes out; the binary p-postdiction moves to the band edge
+       the binaries reject. THE MEASURED GATE SELECTS M = 1: one
+       collective ambient mode per system -- the same system-level
+       scalar structure measured dynamically (6D/6T/6G).
+
+GY3: predictions P1/P2 -- the tail ceiling and the ambient ordering:
+    p_max = 1/2 + 1/4 = 0.75 EXACT (gate <= 1). The curve p(e_N):
+      e_N =  0.001 a0: gate = 0.9387, p = 0.7347
+      e_N =  0.005 a0: gate = 0.8681, p = 0.7170
+      e_N =  0.020 a0: gate = 0.7536, p = 0.6884
+      e_N =  0.050 a0: gate = 0.6394, p = 0.6599
+      e_N =  0.100 a0: gate = 0.5313, p = 0.6328
+      e_N =  0.400 a0: gate = 0.2823, p = 0.5706
+      e_N =  1.200 a0: gate = 0.1118, p = 0.5280
+    -> void asymptote ~0.72; monotone DECREASING in e_N (the 6Z
+       shuffle test = this ordering at full sample power); ANY
+       population-grade tail beyond 3/4 kills the gate.
+
+THE SATURN COROLLARY (reading-grade; three measured legs): the
+collective-mode coupling is a trajectory-state (modified-inertia-
+class) structure; that class ties vector-MG on the binaries (4L),
+meets the 6W composition demand at current resolving power, and
+carries no capped-type quadrupole (4K). The borrowing mechanics
+lands the thermal rule in the one door Saturn left open -- by
+derivation, not preference. Kill test: DR4 eccentricity-resolved
+boosts (MI trajectory-dependence vs MG).
