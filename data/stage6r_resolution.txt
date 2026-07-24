@@ -1,0 +1,38 @@
+STAGE 6R: the resolution bath -- derivation gates
+========================================================================
+G1-sym: phi_R - phi_BE series coefficients (rungs 0..7):
+        0, 0, 0, 0, 0, -1/16, -1/64, 1/192
+G1-sym (rungs 1-4 preserved; break c5 = -1/16 exact): PASS
+        full nu_R ladder: c1=1/2, c2=1/12, c3=0, c4=-1/720, c5=-1/16
+        (BE Bernoulli:    c1=1/2, c2=1/12, c3=0, c4=-1/720, c5=0)
+
+G1-num: (phi_R - phi_BE)/x^5 at x=1e-2, 5e-3: -0.062656, -0.062578  (exact -1/16 = -0.0625)
+G1-num: PASS
+
+G2: x_eff/(y^0.75 sqrt(nu)) - 1 at y=1e4, 1e6: -2.35e-08, -3.46e-12
+G2 (tail = gm argument, p = 3/4): PASS
+
+G3: production-solver residual |nu-1-n(x_eff)| max over y in [1e-6,1e6]: 8.27e-11  PASS
+G3b: numpy vs mpmath fixed point (7 spots): max |d| = 1.11e-12  PASS
+G4: wfac=0 regression to pure BE: max rel 8.50e-14  PASS
+
+FACTS:
+  nu_R(1) = 1.5386  [BE 1.582, gm 1.433, F4 1.537, AMB(bin) 1.577]
+  resolution crossover R=1 at y* = 1.88  (the 5T beta turn-on arm is y > 1; binaries sit at y_tot ~ 1.2)
+  y= 0.10: nu_R= 3.6879  R=  0.053  beta=0.001  (nu_BE= 3.6886)
+  y= 0.30: nu_R= 2.3653  R=  0.162  beta=0.013  (nu_BE= 2.3712)
+  y= 1.00: nu_R= 1.5386  R=  0.539  beta=0.112  (nu_BE= 1.5820)
+  y= 1.20: nu_R= 1.4487  R=  0.643  beta=0.146  (nu_BE= 1.5024)
+  y= 1.90: nu_R= 1.2580  R=  1.012  beta=0.253  (nu_BE= 1.3369)
+  y= 3.00: nu_R= 1.1236  R=  1.639  beta=0.364  (nu_BE= 1.2150)
+  y=10.00: nu_R= 1.0038  R=  6.876  beta=0.490  (nu_BE= 1.0442)
+
+THE DESER-LEVIN MATRIX (T_eff = sqrt(T_dS^2 + T_U^2), exact closures):
+  source-frequency branch: NO finite fixed point at y=100 (runaway confirmed: True); small-occupation branch nu-1 ~ sqrt(y)/2pi = 1.59 and growing -- anti-Newtonian catastrophe: EXCLUDED analytically
+  total-frequency branch: deep -> boot (DEAD, 5F/5M); tail -> constant floor n_BE(2pi) = 0.00187 = pure G-renormalization (invisible): EXCLUDED by inheritance
+  free-fall detector (geodesic, zero proper acceleration): T_U = 0 exactly -> pure C&T (beta = 0) -- the binary beta < 0.03 (5R) IS the free-fall answer; the resolution channel is what remains
+
+PRE-REGISTERED BARS (this file precedes 6S/6T execution in git):
+  6S galaxies (hier vs BE): PASS <= -40 vertical; STRONG <= -55; STRIKE > -20; else partial.
+  6T binaries (vs p050, 6 seeds): ACCEPT >= -3 mean; REJECT <= -5; else unresolved. Interior alpha-hat required; edge = shape rejection. a0 pull PASS <= +2.5 sigma.
+  PRIOR RISK stated: nu_R(1) = 1.539 (F4-grade), beta(1.2) = 0.15, no ambient gate -> prior leans binary-REJECT; the test discriminates ambient-gating vs pure-resolution as the split's carrier.
