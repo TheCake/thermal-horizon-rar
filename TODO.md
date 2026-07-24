@@ -89,7 +89,14 @@
    anisotropic (curl) component; feed back through the orbit engine. **Post-4K job
    description: produce the binary boost (α≈1.15 at e_N=1.2) while keeping the solar
    quadrupole under the Cassini cap Q₂ ≤ 9e-27 s⁻² — a 4.3× suppression that
-   AQUAL/QUMOND cannot deliver with RAR-compatible ν.**
+   AQUAL/QUMOND cannot deliver with RAR-compatible ν.** **SHARPENED by Stage 6W
+   (2026-07-24): the natural scalar-sum EFE ν(y+e) is EXCLUDED by the binaries
+   (−10.35±2.03, 0/6, interior 6/6 — the composition is now MEASURED; tension
+   composition-locked). The surviving MG target: reproduce the ANGLE-AVERAGED
+   vector-EFE radial profile at e≈1.2a₀ while suppressing its P₂ component —
+   ad hoc unless derived (can the thermal reading derive the isotropized
+   kernel? O5-side). MI (#18) meets it naturally and remains the standing
+   escape.**
 9. ~~**NLO test**~~ — DONE (Stages 4A/4B; caveat added by 4E). Truncated-expansion
    estimator is power-limited on SPARC (c₁ ± 0.4–0.6, honest null); the truncation-free
    full-function branch comparison: **c₁=½ branch (BE/simple) beats c₁=0 branch

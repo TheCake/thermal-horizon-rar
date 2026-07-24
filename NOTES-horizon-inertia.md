@@ -3634,6 +3634,78 @@ closed QM — not that the horizon does it.
 borrowing reading's central factor is now derived-at-toy-grade
 mechanics, not narrative.**
 
+## Stage 6W — scalar vs vector EFE: the binaries demand the vector
+## composition (2026-07-24; the Saturn round's honest verdict)
+
+**The non-MI door tested and CLOSED by the data.** The idea (pre-reg
+2193672 with the consequence map stated both ways; scout: scalar/
+direction-blind EFE = apparently novel, never contested on any data;
+Chae+21 primary read: their EFE detection is MAGNITUDE-level, direction
+"has a minor effect" [1/6 modulation, their words], orientation-resolved
+tests = their future work): if the EFE is thermodynamic (scalar bath
+state) rather than vector field composition, the solar transition-shell
+phantom is spherical ⇒ shell theorem ⇒ Q₂ = the true galactic tide
+≈ 7.5e-31 s⁻² = **12,000× below the Cassini cap** — the 4K tension
+removed at theory-class level. The binaries are the only data probing
+the EFE's shape at the transition: scalar tables B(y) = ν(y+e) vs our
+sphericalized vector-QUMOND tables (profile difference: ln(B−1) spans
+−0.33…+0.28 over the data window — a large discriminating signal).
+
+**Result ([calcs/stage6w_scalarefe.py](../calcs/stage6w_scalarefe.py),
+6 seeds × 2 laws, corrected velocities):**
+- **sbe vs vector-BE: EXCLUDED — mean −10.35 ± 2.03, 0/6, interior 6/6
+  (a VALID shape rejection, not edge pathology)** — beyond the
+  eight-function band; the strongest single-model rejection of the
+  program's function contests.
+- samb vs vector-AMB: −11.24 ± 1.90, 0/6, interior 4/6 (shape
+  rejection + edge).
+- The twist, recorded: the scalar reading's temperature row would have
+  been the program's best — **α̂ = 1.002 ± 0.049 (parameter-free α = 1
+  dead center), κ = 0.934, a₀ = 1.20 ± 0.16 = +1.0σ** — moot under the
+  shape exclusion, but a marker of how close the scalar reading came
+  everywhere EXCEPT the s-profile. Newton dead +70…+93; w_rad 0.2 6/6.
+
+**What the round actually bought (three things, all new):**
+1. **The first measurement of the EFE's composition character.** The
+   wide binaries measure the VECTOR (directional-composition) radial
+   profile at ~10 lnL per realization over the natural scalar
+   alternative — a novel result on the same data everyone uses for the
+   boost amplitude (scout-level: no prior contest exists). Precision:
+   our tables are angle-AVERAGED, so strictly the binaries demand the
+   vector composition's radial profile, not its anisotropy directly.
+2. **The Saturn tension is now COMPOSITION-LOCKED, not just
+   amplitude-locked** (5I): the same data that calibrate the boost
+   demand the vector structure in exactly the regime (ambient ~1.2a₀,
+   transition-shell y) that sources the solar quadrupole. The tension
+   is data-forced at a deeper level than DHF-2024's formulation-side
+   statement.
+3. **The sharpened job description for any Saturn-safe MG (#8):** it
+   must reproduce the ANGLE-AVERAGED vector-EFE radial profile B(y) at
+   e ≈ 1.2a₀ (the binaries demand it) while suppressing the P₂
+   component (Cassini forbids it). The logically-open cell — an
+   "isotropized-vector-kernel" theory that posits exactly the
+   sphericalized profile as an isotropic response — is flagged as
+   currently AD HOC (indistinguishable from vector on binaries by
+   construction; distinguishable only at Saturn; interesting only if
+   the thermal reading can DERIVE the isotropic kernel — an O5-side
+   question, noted). Caveat: one scalar prescription was tested (the
+   natural ν(y+e)); the exclusion covers the natural scalar-sum class,
+   not every conceivable magnitude-only rule.
+
+**Standing after the round: Saturn's doors are (a) EFE-respecting MI
+(ties MG on binaries, 4L — unchanged), (b) the ad-hoc isotropized
+kernel (needs a derivation to be physics), (c) unknown. The scalar-sum
+door is closed. Engagement item logged: the cluster-lopsidedness
+literature (1706.07825, 1808.05962) as claimed EFE-direction
+signatures — to be engaged at paper level (statistical asymmetries,
+contested interpretations; not constraint-grade).**
+
+**Verdict: the contest — SUCCESS (decisively answered, both ways
+pre-stated); my scalar-EFE hypothesis — EXCLUDED (killed in ninety
+minutes, as it should be); the Saturn problem — SHARPENED, not solved:
+the tension is now demonstrably data-forced by our own binaries, and
+the honest remaining escape is still modified inertia.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

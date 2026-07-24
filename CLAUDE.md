@@ -587,7 +587,32 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   equal-time-sharing (flagged). Credence HELD ~8% (only the STRIKE
   branch was pre-committed); lean now constructive. Ledger row
   mech-borrow (20 tokens green); NOTES entry; PAPER §2.4 paragraph.**
-  Paper
+  **6W (2026-07-24, pre-reg 2193672, the Saturn round,
+  [calcs/stage6w_scalarefe.py](calcs/stage6w_scalarefe.py)): SCALAR
+  vs VECTOR EFE on the binaries — my scalar-EFE hypothesis (direction-
+  blind thermodynamic EFE ⇒ spherical phantom shell ⇒ shell theorem ⇒
+  Q₂ = galactic tide ~8e-31 = 12,000× under Cassini) **EXCLUDED by
+  the data: scalar-BE trails vector-BE −10.35±2.03, 0/6, interior 6/6
+  = valid shape rejection (the program's strongest single-model
+  exclusion); scalar-AMB −11.24±1.90.** The moot twist recorded: the
+  scalar temperature row would have been the best ever (α̂=1.002±0.049,
+  a₀=1.20±0.16=+1.0σ). Scout: scalar-EFE class = apparently novel,
+  never contested anywhere; Chae+21 PRIMARY READ: their EFE detection
+  is magnitude-level, direction "has a minor effect" (1/6 modulation)
+  — the scout's "directional detection" claim was a mischaracterization
+  (4th scout misread caught by primary source). **THREE DIVIDENDS:
+  (1) FIRST measurement of the EFE composition character (strictly:
+  the vector composition's angle-averaged radial profile — our
+  likelihood is direction-blind); (2) the Cassini tension is now
+  COMPOSITION-locked as well as amplitude-locked (data-forced, not
+  formulation-chosen); (3) #8's job description sharpened: reproduce
+  the angle-averaged vector profile at e≈1.2a₀ while suppressing P₂ —
+  ad hoc unless derived; MI remains the standing escape.** Caveat:
+  ν(y+e) class tested, not every magnitude-only rule; cluster-
+  lopsidedness literature = paper-level engagement item. PAPER §8.1
+  composition paragraph + App B; ledger row binfn-scalarefe (21
+  tokens green); NOTES verdict: my hypothesis EXCLUDED in ninety
+  minutes — Saturn SHARPENED, not solved.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

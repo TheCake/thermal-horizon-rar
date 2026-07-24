@@ -82,6 +82,7 @@ CHECKS = [
     ('mech-gate',       '0.6884', 'data/stage6u_gatederiv.txt'),
     ('gal-untied',      '+3.33',  'data/stage6v_untied.txt'),
     ('mech-borrow',     '+0.989', 'data/stage6x_borrow.txt'),
+    ('binfn-scalarefe', '-10.35', 'data/stage6w_verdict.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

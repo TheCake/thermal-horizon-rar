@@ -22,3 +22,5 @@ seed 303 samb: a_hat=1.05 (grid 1.0, interior=True), dlnL(Newton)=+73.2, wr=0.2,
   seed 303: best lnL = -56361.409  (3.1 min)
 seed 404 samb: a_hat=1.14 (grid 1.0, interior=True), dlnL(Newton)=+76.6, wr=0.2, prof=[-76.6, -8.6, 0.0, -2.6, -5.7]
   seed 404: best lnL = -56356.313  (3.0 min)
+seed 505 samb: a_hat=1.00 (grid 1.0, interior=True), dlnL(Newton)=+73.7, wr=0.2, prof=[-73.7, -6.9, 0.0, -6.9, -11.6]
+  seed 505: best lnL = -56356.931  (3.0 min)
