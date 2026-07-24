@@ -262,7 +262,7 @@ for nmx, msk in (('C1 [0.4,0.8)', C1), ('W  [0.8,1.4]', W)):
     row = []
     for lo, hi in ((0, 1.5), (1.5, 3.0), (3.0, 99.0)):
         m = msk & rd_ok & (rrd >= lo) & (rrd < hi)
-        row.append(f"R/Rd {lo:.0f}-{hi:.0f}: {s2cell(RES, m):.5f} "
+        row.append(f"R/Rd {lo:g}-{hi:g}: {s2cell(RES, m):.5f} "
                    f"(n={int(m.sum())})")
     L.append(f"  {nmx}: " + " | ".join(row))
 mid_c1 = C1 & rd_ok & (rrd >= 1.5) & (rrd < 3.0)
