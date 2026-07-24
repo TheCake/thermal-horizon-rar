@@ -89,6 +89,7 @@ CHECKS = [
     ('gal-curve-coherence', '+0.8761', 'data/stage7b_bumphunt.txt'),
     ('gal-bump-inner',  '0.0000', 'data/stage7c_gammaclean.txt'),
     ('gal-gamma-final', '-2.376', 'data/stage7c_gammaclean.txt'),
+    ('mech-platform',   '+0.987', 'data/stage7e_platform.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

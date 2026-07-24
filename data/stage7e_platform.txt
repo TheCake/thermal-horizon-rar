@@ -1,0 +1,69 @@
+STAGE 7E: the lending gate in circuit-QED language
+========================================================================
+platform card (3D circuit QED):
+  transmon omega_a/2pi = 5.000 GHz, chi/2pi = 250 MHz, T1 = 200 us, Tphi = 100 us
+  cavity kappa/2pi = 5 kHz (Q = 1e6); beam-splitter lambda/2pi = 2 MHz
+  averaging window T = 2.0 us; nbar grid [0.25, 0.5, 1.0, 2.0, 4.0, 8.0]
+GP0 scale separations:
+  chi/lambda = 125 (>> 1: channel selectivity)
+  lambda/kappa = 400 (>> 1: exchange beats cavity decay)
+  kappa(1+2nbar)*T at nbar=1: 0.188
+  kappa(1+2nbar)*T at nbar=8: 1.068
+  Gamma1*T = 0.010, Gphi*T = 0.020
+
+GP1 closed-system regression, L=1 config (omega_b = omega_a + chi):
+  nbar =  0.25: P2bar = 0.09998  vs (1/2)n/(1+n) = 0.10000  ratio 0.9998
+  nbar =  0.50: P2bar = 0.16662  vs (1/2)n/(1+n) = 0.16667  ratio 0.9997
+  nbar =  1.00: P2bar = 0.24990  vs (1/2)n/(1+n) = 0.25000  ratio 0.9996
+  nbar =  2.00: P2bar = 0.33311  vs (1/2)n/(1+n) = 0.33333  ratio 0.9993
+  nbar =  4.00: P2bar = 0.39951  vs (1/2)n/(1+n) = 0.40000  ratio 0.9988
+  nbar =  8.00: P2bar = 0.44333  vs (1/2)n/(1+n) = 0.44444  ratio 0.9975
+GP1: PASS (band < 2.5%)
+
+GP2 dissipation at platform rates (kappa up/down, Gamma1, Gphi):
+  nbar = 1: dissipative time-avg = 0.25360 vs closed (same NB) = 0.24984  shift = +1.5%
+  nbar = 4: dissipative time-avg = 0.39642 vs closed (same NB) = 0.39225  shift = +1.1%
+GP2: PASS (|shift| < 10%)
+
+GP3a saturation discriminator (lending law vs linear response):
+  linear extrapolation from nbar=0.25: predicts 3.199 at nbar=8; lending law measures 0.443 -> separation x7.2
+GP3a: PASS (>= 3x)
+
+GP3b the two-quantum rung, L=2 config (omega_b = omega_a + 1.5 chi):
+  nbar =  0.25: P3bar = 0.019896   [n/(1+n)]^2 = 0.0400
+  nbar =  0.50: P3bar = 0.055095   [n/(1+n)]^2 = 0.1111
+  nbar =  1.00: P3bar = 0.123277   [n/(1+n)]^2 = 0.2500
+  nbar =  2.00: P3bar = 0.217229   [n/(1+n)]^2 = 0.4444
+  nbar =  4.00: P3bar = 0.308995   [n/(1+n)]^2 = 0.6400
+  nbar =  8.00: P3bar = 0.375615   [n/(1+n)]^2 = 0.7901
+  regression on [n/(1+n)]^2: slope +0.987 rms 0.0077  (raw-n^1: slope +0.842 rms 0.2644)
+  prefactor e^c = 0.4799 (recorded; the FORM is the claim)
+GP3b: PASS (slope 1 +- 0.2 on the geometric-tail rung)
+
+GP4 platform comparison (order-of-magnitude, stated as such):
+  cQED (3D):   chi/2pi 200-300 MHz, lam/2pi 1-10 MHz, kappa/2pi
+               1-50 kHz, nbar 0.01-8 calibrated -> ALL separations
+               met with standard hardware; THE platform.
+  trapped ion: effective Kerr (laser-induced) chi/2pi ~ 1-10 kHz,
+               exchange g ~ 0.1-1 kHz, heating 10-100 quanta/s;
+               engineered thermal reservoirs excellent, but
+               chi/g ~ 10 marginal for channel selectivity.
+  optomech:    single-photon Kerr negligible; not suitable.
+
+the 6N resolution-crossover on the same chip (design note):
+  flat regime:     broadband 50-Ohm environment, bandwidth >> chi
+                   (ratio > 10) -> theorem predicts SOURCE-LOCKING
+                   (zero occupation pull, 6N max|lambda| grade)
+  resolved regime: Purcell-style filter, linewidth/2pi = 1-10 MHz
+                   << chi/2pi = 250 MHz (ratio 25-250) -> the
+                   KMS-contrast carrier appears (6N)
+  both regimes are switchable on one device (tunable coupler to
+  either port); the crossover parameter chi/bandwidth spans ~0.1
+  to ~250 across settings.
+
+VERDICT: the platform translation is FEASIBLE at standard cQED
+parameters: the lending law (1/2) n/(1+n), its saturation, and the
+L=2 geometric rung [n/(1+n)]^2 are all measurable curves; the
+dissipative shift at the chosen rates is quantified above. Honest
+frame: validates the MECHANISM CLASS (6X grammar), not the sky rule
+(6N cancellation theorem); a clean negative WOULD strike 6X.

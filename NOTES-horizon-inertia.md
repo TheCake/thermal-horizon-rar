@@ -3930,6 +3930,44 @@ locality and driver class, and the program gained two standing methodological
 numbers: ρ ≈ 0.87 and the 83-lnL inner term). The in-sample Einstein test — CLOSED
 HONESTLY, NEEDS DIFFERENT DATA (P6 out-of-sample, pre-registered both ways).
 
+## Stage 7E (2026-07-24): the platform translation — the lending gate is a buildable cQED experiment
+
+Pre-reg ff1de37 ([calcs/stage7e_platform.py](calcs/stage7e_platform.py)); the queued
+lab-platform stage (user directive: concrete platforms, real numbers). HONEST FRAME
+FIRST: nothing here tests gravity — our own 6N cancellation theorem says flat-bath
+configs measure zero, and the sky's tail-only β is anti-standard. What IS testable:
+the MECHANISM CLASS — the 6X lending gate and the 6N resolution crossover. A clean
+lab negative WOULD strike the 6X mechanics.
+
+Platform card (3D circuit QED, all standard): transmon χ/2π = 250 MHz (T1 = 200 μs),
+3D cavity κ/2π = 5 kHz, parametric beam-splitter λ/2π = 2 MHz, injected-noise thermal
+n̄ = 0.25–8 (photon-number-splitting calibration); L=1 config ω_b = ω_a + χ; L=2
+config ω_b = ω_a + 1.5χ (single-quantum channels detuned χ/2 ≫ λ). Protocol:
+thermalize (~160 μs) → reset + π-pulse to |1⟩ → pump beam-splitter 2 μs → dispersive
+readout of P(|2⟩) (or P(|3⟩) in the L=2 config).
+
+ALL GATES PASS FIRST RUN (data/stage7e_platform.txt):
+- GP1: closed-system weight at platform parameters = ½·n̄/(1+n̄) to 0.02–0.25%
+  across the n̄ grid (tighter than 6X's band — smaller λ/χ).
+- GP2: dissipative Lindblad at the real rates (cavity up/down + Γ1 + Γφ, sparse
+  expm_multiply): shift +1.5% (n̄=1) / +1.1% (n̄=4) — the experiment survives
+  decoherence with an order of magnitude of margin.
+- GP3a: saturation discriminator — linear response extrapolates to 3.20 at n̄=8,
+  the lending law measures 0.443: ×7.2 separation, unmissable at %-level readout.
+- GP3b: **the L=2 geometric rung is a measurable curve** — level-3 weight regresses
+  on [n̄/(1+n̄)]² with slope +0.987, rms 0.0077 (raw-n rms 0.264 = 34× worse).
+  **NEW OBSERVATION: the L=2 prefactor = 0.480 ≈ ½ — the equal-time-sharing ½
+  (the 6X ceiling candidate reading) persists at second order.** Logged as a second
+  data point for that reading, still reading-grade.
+- GP4: cQED is THE platform (ions: χ_eff/g ~ 10 marginal; optomech: no Kerr). The 6N
+  resolution crossover is switchable on the same chip (broadband 50Ω ↔ Purcell-filter
+  port; χ/bandwidth spans ~0.1–250).
+
+PLAIN VERDICT: SUCCESS — the mechanism's building blocks (the lending law ½·P(n≥1),
+its saturation, the s² geometric rung) are concrete, currently-buildable measurements
+with quantified error budgets; framed honestly as mechanism-class validation, not a
+gravity test.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
