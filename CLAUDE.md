@@ -565,6 +565,28 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   the full 2026-07-24 arc: lab closures, frozen tests, LEDGER,
   triangulation, KMS gate + rungs, untied contest; abstract §7 §2.4
   conclusions all carry the derived-gate status with the one seam).**
+  **6X (2026-07-24 afternoon, pre-reg 67626f7, user-prompted
+  recalibration "decompose the months-scale item and try",
+  [calcs/stage6x_borrow.py](calcs/stage6x_borrow.py)): THE BORROWING
+  DYNAMICS — SUPPORT, the first CONSTRUCTIVE mechanism result (after
+  three exclusion rounds). Frozen-horizon limit = closed dynamics
+  (no bath during evolution); Kerr mode + one thermal ambient mode;
+  dress-ward transition resonant (must absorb a real quantum).
+  **Dress-ward weight = ½·P(n≥1) = ½·n/(1+n) to 0.2–2.2% over n_amb
+  0.25–8; ratio slope +0.989 rms 0.0046 (6.2×/29× over share/raw) —
+  SUPPORT bar cleared. GL exact: P(n≥L) = s^L = e^(−Lx) — the KMS
+  ratio IS the lending probability; the gate = P(ambient can supply
+  the L quanta). Resonant channel λ-independent (0.997) = REAL
+  exchange; detuned virtual control λ² + raw-n — the sky's ratio²
+  selects the real channel (frozen bath cannot absorb virtual
+  imbalances). Dephasing closes the channel (6N direction).**
+  Amendments post-commit PRE-RESULTS logged (linear modes carry no
+  pull — measured; per-Fock anchor now 0.998–1.000; NB budget).
+  Per-leg factor DERIVED at toy grade; seam = dS-side reservoir
+  identification + multimode; ceiling ½ candidate reading = resonant
+  equal-time-sharing (flagged). Credence HELD ~8% (only the STRIKE
+  branch was pre-committed); lean now constructive. Ledger row
+  mech-borrow (20 tokens green); NOTES entry; PAPER §2.4 paragraph.**
   Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation

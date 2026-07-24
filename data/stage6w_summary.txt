@@ -1,0 +1,24 @@
+STAGE 3P g=1p2 seeds [31, 101, 202, 303, 404, 505]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 sbe: a_hat=0.87 (grid 1.0, interior=True), dlnL(Newton)=+78.8, wr=0.2, prof=[-78.8, -4.1, 0.0, -12.7, -5.8]
+  seed 31: best lnL = -56357.033  (3.0 min)
+seed 101 sbe: a_hat=1.06 (grid 1.0, interior=True), dlnL(Newton)=+93.4, wr=0.2, prof=[-93.4, -16.2, 0.0, -10.2, -17.1]
+  seed 101: best lnL = -56357.101  (3.0 min)
+seed 202 sbe: a_hat=1.18 (grid 1.0, interior=True), dlnL(Newton)=+82.4, wr=0.2, prof=[-82.4, -18.8, 0.0, -3.1, -14.3]
+  seed 202: best lnL = -56352.176  (3.0 min)
+seed 303 sbe: a_hat=1.01 (grid 1.0, interior=True), dlnL(Newton)=+78.7, wr=0.2, prof=[-78.7, -5.1, 0.0, -4.7, -19.7]
+  seed 303: best lnL = -56355.909  (3.0 min)
+seed 404 sbe: a_hat=1.03 (grid 1.0, interior=True), dlnL(Newton)=+74.7, wr=0.2, prof=[-74.7, -4.2, 0.0, -3.3, -5.6]
+  seed 404: best lnL = -56358.244  (3.0 min)
+seed 505 sbe: a_hat=0.86 (grid 1.0, interior=True), dlnL(Newton)=+70.6, wr=0.2, prof=[-70.6, -2.8, 0.0, -10.1, -7.9]
+  seed 505: best lnL = -56360.001  (3.0 min)
+STAGE 3P g=1p2 seeds [31, 101, 202, 303, 404, 505]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 samb: a_hat=2.00 (grid 2.0, interior=False), dlnL(Newton)=+83.0, wr=0.2, prof=[-83.0, -11.0, -9.6, -16.7, 0.0]
+  seed 31: best lnL = -56352.853  (3.0 min)
+seed 101 samb: a_hat=2.00 (grid 2.0, interior=False), dlnL(Newton)=+87.4, wr=0.2, prof=[-87.4, -11.3, -1.3, -9.5, 0.0]
+  seed 101: best lnL = -56363.134  (3.1 min)
+seed 202 samb: a_hat=1.08 (grid 1.0, interior=True), dlnL(Newton)=+74.1, wr=0.2, prof=[-74.1, -11.2, 0.0, -5.9, -0.3]
+  seed 202: best lnL = -56360.477  (3.1 min)
+seed 303 samb: a_hat=1.05 (grid 1.0, interior=True), dlnL(Newton)=+73.2, wr=0.2, prof=[-73.2, -5.8, 0.0, -3.8, -10.7]
+  seed 303: best lnL = -56361.409  (3.1 min)
+seed 404 samb: a_hat=1.14 (grid 1.0, interior=True), dlnL(Newton)=+76.6, wr=0.2, prof=[-76.6, -8.6, 0.0, -2.6, -5.7]
+  seed 404: best lnL = -56356.313  (3.0 min)

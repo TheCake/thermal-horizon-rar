@@ -3569,6 +3569,71 @@ B2 — my prediction FAILED and is logged as such (the instrument reads
 L1 via the transition, a better instrument model than the one I
 pre-registered).**
 
+## Stage 6X — the borrowing dynamics: SUPPORT (2026-07-24, the first
+## constructive mechanism result)
+
+**The user's challenge ("your time estimates are human-calibrated —
+decompose it and try") executed same-afternoon: the borrowing
+narrative's per-leg factor tested in exact closed-system quantum
+mechanics — and it PASSED.**
+([calcs/stage6x_borrow.py](../calcs/stage6x_borrow.py), pre-reg
+67626f7; amendments post-commit PRE-RESULTS logged in-script per the
+6O precedent: (a) two linearly-coupled harmonic modes carry NO
+occupation pull — the first crash MEASURED that, exactly λ²/Δ flat —
+so the (2n+1) anchor was re-seated on the qubit sub-case where it is
+now exact (ratios 1.000/0.999/0.998); (b) channel-physics split:
+resonant = Rabi/λ-independent, detuned = virtual/λ²; (c) NB budget.)
+
+**The setting the 6N survivors permit:** frozen horizon bath
+(correlation ~1/H) ⇒ on orbital timescales the only dynamical
+reservoir is the ambient — the extreme non-Markovian limit is CLOSED
+dynamics. Kerr-anharmonic local mode, one thermal ambient mode,
+dress-ward transition resonant (dressing must ABSORB a real ambient
+quantum), source transition detuned.
+
+**Result: the dress-ward weight = ½·P(n_amb ≥ 1) = ½·n/(1+n) to
+0.2–2.2% over n_amb = 0.25–8** (0.09979 vs 0.10000 … 0.43449 vs
+0.44444). Form regression: **ratio slope +0.989, rms 0.0046 — 6.2×
+better than share, 29× better than raw n — the pre-registered SUPPORT
+bar cleared decisively.** G2a: λ-independence 0.997 (real-exchange
+Rabi channel). G2b: the detuned virtual control scales λ² (3.51) and
+carries RAW-n weighting — **the two channels carry different forms,
+and the sky's ratio² (6U) identifies the borrowing as the
+REAL-EXCHANGE channel** — consistent with a frozen bath that cannot
+absorb virtual imbalances. G3: dephasing the exchange suppresses the
+channel ×1.7 (the 6N locking direction). GL (sympy exact): **P(n ≥ L)
+= [n̄/(1+n̄)]^L = e^(−Lx) — the geometric-tail identity: the KMS ratio
+IS the lending probability, and the gate s^L = P(the ambient can
+supply the L quanta the L-leg dressing needs).** The Boltzmann-cost
+(6U) and lending-availability readings are the same number; the
+availability reading derives the exponent-to-quanta tie directly (the
+structure 6V could only tolerate).
+
+**The mechanism chain now:** sky selects ratio² (6U uniqueness) →
+exact closed dynamics produces ratio = the per-leg lending
+probability (6X) → s^L = P(n≥L) exact (GL) → L = 2 = the loop's own
+order (6H exact) → the frozen one-scale horizon is what opens the
+real channel and locks the deep regime (6N theorem + 6R). **The
+per-leg factor of the borrowing reading is DERIVED at toy grade.**
+Seam narrowed to: the dS-side identification of the lending reservoir
+(why the ambient field's modes at x_amb are the resonant partners) +
+the multimode generalization. Observation, reading-grade and flagged:
+the toy's ½ prefactor = resonant equal-time-sharing between source
+and dressed configurations — a candidate dynamical origin of the
+grammar's ½ ceiling (the 5P exchange-symmetric point, given
+dynamics).
+
+**Credence discipline:** the pre-commit specified only the STRIKE
+branch (→ ~5%); SUPPORT carries no pre-committed number. Bath-
+microphysics conditional HELD at ~8% with the lean flipped from
+negative to constructive; the next pre-registered test (dS-side) owns
+any upward move. A toy result shows the structure is natural in
+closed QM — not that the horizon does it.
+
+**Verdict: SUCCESS — SUPPORT at the pre-registered margins; the
+borrowing reading's central factor is now derived-at-toy-grade
+mechanics, not narrative.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

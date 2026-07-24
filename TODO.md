@@ -362,9 +362,18 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     structures NOT FOUND (scout-level). New falsifiable rungs: DR4
     source-vs-dressed x_amb split (Δp≈0.03 at weak ambients); the tail
     exponent RUNS with H(z) (p_gal 0.688→0.702 at z=1) → folded into
-    #14. O5 remaining (reading-grade seams): the borrowing microphysics
-    (non-Markovian horizon formalism); the formal per-leg pairing
-    Hamiltonian; the ½ ceiling (5P exchange-symmetric reading).
+    #14. O5 remaining (reading-grade seams): ~~the borrowing
+    microphysics~~ — **FIRST CONSTRUCTIVE RESULT (Stage 6X, pre-reg
+    67626f7): exact closed-system dynamics in the frozen-horizon limit
+    produces the per-leg KMS ratio as the LENDING PROBABILITY
+    (ratio slope +0.989, 6.2×/29× margins; P(n≥L) = s^L = e^(−Lx)
+    exact; the sky's ratio² = the real-exchange channel; detuned
+    virtual control carries raw-n = the discriminating physics).
+    Remaining: the dS-side reservoir identification (why the ambient
+    field's modes at x_amb are the resonant partners) + multimode
+    generalization; the ½ ceiling now has a candidate dynamical
+    reading (resonant equal-time-sharing — the toy's ½ prefactor),
+    flagged reading-grade.**
     ~~untied-L contest~~ — EXECUTED same day (Stage 6V, pre-reg
     6ebf545): **tied form SURVIVES (B1 TOLERATED — worst untied
     margin +3.33, inside 6L population noise; no strike, no proof);

@@ -1,0 +1,36 @@
+STAGE 6X: the borrowing dynamics -- exact closed-system channel test
+========================================================================
+GL: P(n >= L) = [n/(1+n)]^L for a thermal state (exact): PASS;  n/(1+n) = e^-x: PASS
+    => the KMS ratio IS the lending probability; the gate s^L = P(ambient can supply L quanta).
+
+G1: qubit dispersive anchor (NA=2, per-Fock-sector; a thermal probe dephases across sectors -- amendment (a)):
+  n_b= 0: measured +3.999e-04, predicted +4.000e-04, ratio 1.000
+  n_b= 2: measured +1.998e-03, predicted +2.000e-03, ratio 0.999
+  n_b= 5: measured +4.391e-03, predicted +4.400e-03, ratio 0.998
+G1: PASS
+
+G0: thermal-tail truncation at nbar=8.0, NB=56: P(n>=56) = 1.4e-03  PASS
+G2a: resonant lambda-independence P2(lam)/P2(lam/2) = 0.997 (expect ~1): PASS
+
+the scan: dress-ward weight P2bar(n_amb), resonant channel (prediction: (1/2) P(n>=1) = (1/2) n/(1+n)):
+  n_amb =  0.25: P2bar = 0.09979   [(1/2)ratio = 0.10000]
+  n_amb =  0.50: P2bar = 0.16621   [(1/2)ratio = 0.16667]
+  n_amb =  1.00: P2bar = 0.24900   [(1/2)ratio = 0.25000]
+  n_amb =  2.00: P2bar = 0.33114   [(1/2)ratio = 0.33333]
+  n_amb =  4.00: P2bar = 0.39524   [(1/2)ratio = 0.40000]
+  n_amb =  8.00: P2bar = 0.43449   [(1/2)ratio = 0.44444]
+
+form regression ln(P2bar) = s*ln(form) + c:
+  ratio n/(1+n)   : slope +0.989, rms 0.0046
+  share n/(2n+1)  : slope +1.420, rms 0.0283
+  raw n           : slope +0.422, rms 0.1332
+
+G2b: detuned control (delta = 0.3*chi; the virtual channel):
+  lambda-scaling 3.51 (expect ~4): PASS
+  detuned form: raw-n slope +0.814 (rms 0.0772) vs ratio slope +1.821 (rms 0.1675)
+  -> the two channels carry different forms: resonant/real = lending-probability, detuned/virtual = matrix-element-weighted
+
+G3: dress-ward weight at n=2: frozen 0.3311 vs strongly dephased 0.1920 -> suppression x1.7
+    (dephasing the exchange coherence closes the borrow channel = the 6N locking direction; recorded)
+
+VERDICT vs pre-registered bars: SUPPORT: exact closed dynamics follows the KMS RATIO = the lending probability P(n>=1); the per-leg factor of the borrowing reading is DERIVED at toy grade (s^L = P(n>=L); L = 2 from the loop order, 6H/6U exact)
