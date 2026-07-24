@@ -97,7 +97,13 @@ def n_be_scalar(u):
     if u < 1e-12: return 1.0/u - 0.5
     return 1.0/math.expm1(u)
 
-def solve_nu(y, g, p, bcap=None):
+# AMENDMENT (post-commit a4696c1, PRE-RESULTS -- GF4 fired before the
+# window table existed): the first p_eff estimator read -ln(nu-1) after
+# nu-1 UNDERFLOWED at far-tail y (u ~ 2760 at y = 1e5), flatlining the
+# gradient. The index is now read from the solution's own argument u,
+# via the exact stable identity -ln(nu-1) = ln(e^u - 1) (= u - e^(-u)
+# corrections); no underflow at any scale. Estimator fix only.
+def solve_nu(y, g, p, bcap=None, want_u=False):
     """nu = 1 + n_BE(u_p(nu)) with the AMB gate beta = g/2 (2nu-1)^-2."""
     lA = 0.5*math.log(y)
     def uofnu(nu):
@@ -107,18 +113,28 @@ def solve_nu(y, g, p, bcap=None):
             lu = (1 - beta)*lA + beta*lB
         else:
             m = max(p*lA, p*lB)
-            lu = m/1.0
             s = (1 - beta)*math.exp(p*lA - m) + beta*math.exp(p*lB - m)
             lu = (m + math.log(s))/p
         return math.exp(min(lu, 700.0))
     def F(nu):
         return nu - 1.0 - n_be_scalar(uofnu(nu))
     lo, hi = 1.0 + 1e-14, 2.0/math.sqrt(min(y, 1.0)) + 10.0
-    if F(lo)*F(hi) > 0: return 1.0 + n_be_scalar(uofnu(1.0 + 1e-14))
-    return brentq(F, lo, hi, xtol=1e-14, rtol=1e-13)
+    if F(lo)*F(hi) > 0:
+        nu = 1.0 + n_be_scalar(uofnu(1.0 + 1e-14))
+    else:
+        nu = brentq(F, lo, hi, xtol=1e-14, rtol=1e-13)
+    return (nu, uofnu(nu)) if want_u else nu
 
 def solve_grid(ys, g, p):
     return np.array([solve_nu(y, g, p) for y in ys])
+
+def w_grid(ys, g, p):
+    """-ln(nu-1) computed stably from the solution's argument u."""
+    out = []
+    for y in ys:
+        _, u = solve_nu(y, g, p, want_u=True)
+        out.append(u if u > 30.0 else math.log(math.expm1(u)))
+    return np.array(out)
 
 # GF2 continuity + regression vs the 6G-form Newton solver
 YT = np.geomspace(1e-3, 300.0, 120)
@@ -220,9 +236,8 @@ assert okd
 # ---------------- GF4 + the windowed bound ----------------------------------
 say('')
 def p_eff(ys, g, p):
-    """effective nu_p-family tail index: dln(-ln(nu-1))/dln y."""
-    nu = solve_grid(ys, g, p)
-    w = -np.log(np.maximum(nu - 1.0, 1e-300))
+    """effective nu_p-family tail index: dln(-ln(nu-1))/dln y (stable)."""
+    w = w_grid(ys, g, p)
     return np.gradient(np.log(w), np.log(ys))
 YF = np.geomspace(1e3, 1e5, 40)
 pf_gal = p_eff(YF, G_GAL, 0.0)[-1]

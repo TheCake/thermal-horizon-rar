@@ -1,0 +1,43 @@
+STAGE 7F: the mixing-mean uniqueness contest
+========================================================================
+GF1 exact tail endpoints (beta = b symbolic in (0,1)):
+  p = 1: tail exponent = 1  (expect 1)
+  p = 1/2: tail exponent = 1  (expect 1)
+  p = -1/2: tail exponent = 1/2  (expect 1/2)
+  p = -1: tail exponent = 1/2  (expect 1/2)
+  p = 0: tail exponent = b/2 + 1/2  (expect (1+b)/2 -> 1/2 + g/4 at the gate's tail beta = g/2)
+GF1: PASS
+GF2 solver: p=0 vs Newton-AMB max dev 2.46e-14; p=+-1e-4 continuity 1.55e-06 -> PASS
+GF3 member p=0 beta=0 vs BE: max dev 2.2e-16
+GF3 member p=0 beta=0.5 vs gm: max dev 0.0e+00
+GF3 member p=0 beta=1 vs boot: max dev 0.0e+00
+GF3: PASS
+
+GF-deep: order-by-order deep ladder with symbolic p (phi = nu*sqrt(y) = 1 + a1 x + a2 x^2 + a3 x^3 + a4 x^4):
+  a1 = 1/2
+  a2 = 1/12
+  a3 = -g/16
+  a4 = -g*p/64 + g/192 - 1/720
+  d a1..a3 / dp = 0, 0, 0 (expect 0, 0, 0)
+  d a4 / dp = -g/64  (nonzero: the mixing choice first enters at c4)
+GF-deep: PASS -- the Bernoulli ladder is p-blind through c3; the tail must do the selecting
+
+GF4 far-tail regression (p=0): gal 0.6885 vs 1/2+g/4 = 0.6885; bin 0.5280 vs 0.5280 -> PASS
+
+windowed effective tail index (mean over y in [3, 30]):
+  p_mix |  galaxy (band 0.65-0.75) |  binary (band 0.45-0.60)
+  -2.00 |  0.6018 OUT          |  0.5582 IN 
+  -1.00 |  0.6476 OUT          |  0.5641 IN 
+  -0.50 |  0.6888 IN           |  0.5704 IN 
+  -0.25 |  0.7150 IN           |  0.5752 IN 
+  -0.10 |  0.7324 IN           |  0.5787 IN 
+  +0.00 |  0.7445 IN           |  0.5815 IN 
+  +0.10 |  0.7570 OUT          |  0.5845 IN 
+  +0.25 |  0.7762 OUT          |  0.5897 IN 
+  +0.50 |  0.8085 OUT          |  0.6005 OUT
+  +1.00 |  0.8688 OUT          |  0.6319 OUT
+  +2.00 |  0.9488 OUT          |  0.7359 OUT
+  both-in-band range: [-0.50, +0.00]
+
+VERDICT (pre-registered): PARTIAL -- see table
+caveats: bands are the nu_p-family measurements (approximate mapping, same estimator family as GF4); gates g fixed at the fiducial table values; window [3, 30] pre-registered.

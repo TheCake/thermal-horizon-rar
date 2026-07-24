@@ -733,7 +733,39 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   rows galfn-qcl + binfn-rja + mech-platform (30 tokens green);
   PREDICTIONS.md §A vacuum-share row; PAPER §2.4 two closing
   passages; NOTES 7D+7E; plain verdicts: 7D galaxy leg SUCCESS /
-  two-system NEEDS REFINEMENT / RJA UNRESOLVED; 7E SUCCESS.** Paper
+  two-system NEEDS REFINEMENT / RJA UNRESOLVED; 7E SUCCESS.**
+  **README.md ADDED (f5beebd, user-requested): the public front door
+  — ELI12 physics, the honesty machine, the open human+AI
+  collaboration statement (user wants the repo "open for all" incl.
+  the Claude-developer audience); no private/-origin references.
+  7F (2026-07-24, pre-reg a4696c1, seam-iv contest): THE MIXING-MEAN
+  UNIQUENESS — power-mean family u_p vs the geometric mixing.
+  **Asymptotic uniqueness PROVEN (sympy exact, symbolic β: p>0 →
+  tail 1 = boot-dead; p<0 → ½ = the measured two-system split
+  impossible; ONLY p=0 continuous → ½+g/4 = the measured pair);
+  deep ladder p-BLIND through c₃ (symbolic a₄ = −gp/64 + g/192 −
+  1/720, da₄/dp = −g/64 — and the p=0 value = 6H's c₄(L=2) EXACT
+  cross-validation, two derivations one rung); window bound (y∈
+  [3,30] vs measured bands): positive flank excluded at p ≥ +0.1
+  (boot direction dies), negative flank bounded at −0.5, both-in-
+  band [−0.50, 0.00] ⇒ p_mix ∈ [−0.5, +0.1), p=0 interior both.**
+  Formal verdict PARTIAL per the (too-symmetric) pre-reg bar —
+  negative flank window-degenerate (snap beyond y~30; coincidence-
+  of-scales objection stated soft); seam (iv) upgraded chosen→
+  measured; full closure = deeper tails or the c₄ rung. One
+  pre-results estimator amendment (far-tail underflow → index from
+  u, logged). GF4 regression: window estimator reproduces the known
+  postdictions 0.6885/0.5280 at 4 digits. Ledger mech-mixmean (31
+  tokens green); PAPER §2.4 passage; plain verdict: theorem+cross-
+  validation+positive-flank SUCCESS / negative flank NEEDS
+  REFINEMENT (window-limited). NEXT QUEUED = 7G: the trajectory-
+  formulation Saturn quantification (4L mi_t machinery + AMB
+  function; Saturn trajectory y≈5e5 ⇒ occupation e^(−734) ⇒ the
+  transition shell never on the worldline; residual = galactic tide
+  ~8e-31 = 4 orders under Cassini per 6W's moot block; honest MI
+  costs to carry: time-nonlocality/conservation/Petersen-Lelli
+  rotation-curve constraints); then the DM mimicry-ledger paper
+  section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

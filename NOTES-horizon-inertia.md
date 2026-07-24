@@ -4021,6 +4021,49 @@ measured). The two-system headline — NEEDS REFINEMENT (binary leg needs either
 cliff-capable 1D solver or a softer classical variant; queued as a refinement, not
 promised). RJA — UNRESOLVED (weak rung stayed weak, honestly).
 
+## Stage 7F (2026-07-24): the mixing-mean uniqueness contest — asymptotic uniqueness proven; window bound p_mix ∈ [−0.5, +0.1); the 6H c₄ cross-validated
+
+Pre-reg a4696c1 ([calcs/stage7f_mixmean.py](calcs/stage7f_mixmean.py)); one
+pre-results estimator amendment (far-tail underflow → index read stably from the
+solution's own argument u; logged in-script). Seam (iv) of the derivation — WHY the
+geometric mixing between the source argument A = √y and the total/boot argument
+B = νy — contested against the full power-mean family u_p = [(1−β)A^p + βB^p]^(1/p)
+with the AMB running gate. All gates PASS (data/stage7f_mixmean.txt):
+
+- **GF1, the exact endpoint theorem (sympy, symbolic β)**: p > 0 snaps the tail
+  exponent to 1 (boot grade — binary-vetoed program-wide); p < 0 snaps to ½ (ungated
+  BE — the measured two-system tail SPLIT becomes impossible); **only p = 0
+  interpolates continuously**, p_tail = (1+β)/2 → ½ + g/4 = the measured pair.
+  Asymptotic uniqueness of the geometric mean: PROVEN.
+- **GF-deep (symbolic p, order-by-order)**: a₁ = ½, a₂ = 1/12, a₃ = −g/16 all
+  p-INDEPENDENT; **a₄ = −gp/64 + g/192 − 1/720** — the mixing choice first enters at
+  the c₄ rung (da₄/dp = −g/64). Two dividends: (i) WHY the Bernoulli ladder never saw
+  the mixing choice (it is p-blind through c₃ under the running gate — the tail must
+  do the selecting); (ii) **at p = 0 the a₄ value reproduces 6H's independently
+  derived c₄(L=2) = s²/192 − 1/720 EXACTLY** — two derivations, different routes,
+  same rung: strong cross-validation.
+- GF2/GF3/GF4 regressions: p=0 vs the 6G Newton solver 2.5e-14; BE/gm/boot members
+  0–2e-16; far-tail index regresses to ½+g/4 at 4 digits (0.6885/0.5280 = the known
+  postdictions).
+- **The windowed bound (y ∈ [3,30] vs the measured bands)**: positive flank SHARPLY
+  excluded — p ≥ +0.1 exits the galaxy band (the boot direction dies immediately);
+  negative flank bounded at −0.5 (galaxy exits below); **both-in-band range
+  [−0.50, 0.00]; p_mix = 0 comfortably inside both systems.**
+
+FORMAL VERDICT per the pre-registered (symmetric) bar: **PARTIAL** — my bar demanded
+|p| ≥ 0.5 excluded on BOTH signs; the negative flank retains window slack (a p < 0
+member with |p| ≲ 0.5 shows geometric-grade in-window behavior because its snap to ½
+lies beyond the measured window). The honest content: **asymptotic uniqueness proven
++ an asymmetric measured bound p_mix ∈ [−0.5, +0.1)** — the boot-ward side is
+data-excluded, the BE-ward side is scale-degenerate today (choosing p < 0 requires
+the observation window to sit before the snap — a coincidence-of-scales objection,
+stated but soft). Seam (iv) upgraded: from "chosen algebra" to "measured index with
+an exact uniqueness theorem at asymptotic grade"; fully closing it = a tail
+measurement beyond y ~ 30 (deep-window galaxies / DR4-era) or the c₄ rung.
+
+PLAIN VERDICT: SUCCESS on the theorem + the cross-validation + the positive-flank
+exclusion; NEEDS REFINEMENT on the negative flank (window-limited, stated).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
