@@ -526,7 +526,31 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   free-fall + one-scale resolution).** Ledger rows galfn-resn/
   binfn-resn/mech-resolution added; world table has the RESN row +
   triangulation line (17 spot-checks, gates green); PAPER §2.4
-  paragraph + App B (ledger cited, "thirteen" fixed).** Paper
+  paragraph + App B (ledger cited, "thirteen" fixed).**
+  **6U (2026-07-24, same day): THE GATE DERIVED
+  ([calcs/stage6u_gatederiv.py](calcs/stage6u_gatederiv.py), gates
+  first-run) — path-resolving the 6H JC loop splits the (2n+1) pull
+  into absorption (n) / emission (n+1) time-orderings; per-leg ratio
+  n/(1+n) = e^(−x) EXACT = the KMS detailed-balance weight; **s^L =
+  the Boltzmann cost of L borrowed ambient quanta, L=2 = the loop's
+  own order — ONE loop, two vertices, both grammar factors per vertex
+  (local zero-point share × ambient KMS ratio)**. Uniqueness on
+  measured facts, no new fits: rate-balance s²/(1+s²) (p_gal 0.607)
+  + absorption-SHARE² (0.554: **data choose detailed balance over the
+  share from the same decomposition**) + inverse² (both tails, wrong
+  sign) + n² (absurd) excluded by tail bands; pointwise by 6D;
+  local-only by 6T; **s² = unique survivor**; postdictions regress to
+  6E (0.6884/0.5280). Dividends: DR4 source-vs-dressed x_amb rung
+  (Δp≈0.025 at e_N=0.4); **the tail exponent RUNS with H(z)** (p_gal
+  0.688→0.702 at z=1; gate now inside kill test #14). Scout (Haiku):
+  KMS gate / Boltzmann EFE / reservoir assistance / path-resolved JC
+  in gravity / C&T env follow-ups — ALL NOT FOUND (scout-level;
+  near-misses logged). Honest seam carried: the borrowing NARRATIVE
+  stays reading-grade (non-Markovian horizon microphysics); 6O/6P
+  variance nulls do not strike it (mean-level). Ledger row mech-gate;
+  world-table 18 tokens green; PAPER §2.4 gate paragraph + App B
+  script map. AMB = a DERIVED structure with one reading-grade seam,
+  not a post-hoc rule.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

@@ -79,6 +79,7 @@ CHECKS = [
     ('gal-legcount',    '10/40',  'data/stage6l_legboot.txt'),
     ('galfn-resn',      '-113.72', 'data/stage6s_resngal.txt'),
     ('binfn-resn',      '-7.38',  'data/stage6t_verdict.txt'),
+    ('mech-gate',       '0.6884', 'data/stage6u_gatederiv.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

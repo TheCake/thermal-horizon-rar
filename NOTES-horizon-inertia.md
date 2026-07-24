@@ -3451,6 +3451,81 @@ discrimination did its job: the ambient gate is REQUIRED). The round —
 DIFFERENT PHYSICS excluded cleanly: the two-system split is NOT local-in-y;
 it is system-level, as AMB encodes.**
 
+## Stage 6U — the gate derivation: the KMS cost of borrowed quanta (2026-07-24)
+
+**The O5 question left by 6R/6T — derive the s_amb² gate — executed the
+same day, from the same object that gave the local factor.**
+([calcs/stage6u_gatederiv.py](../calcs/stage6u_gatederiv.py), all gates
+first-run; no new fits — the empirical half is scored entirely against
+LEDGER rows.)
+
+**The algebra (exact, sympy):** path-resolving the 6H dispersive loop
+separates the (2n+1) pull into its two time-ordered exchanges — the
+absorption-side path (weight n: the partner mode must SUPPLY a quantum)
+and the emission-side path (weight n+1: the vacuum rides along). Their
+ratio is **n/(1+n) = e^(−x) EXACTLY — the KMS/detailed-balance weight.**
+A per-leg net-borrowing channel is Boltzmann-taxed at the partner's
+occupation; L legs cost **s^L = e^(−L·x_amb) = the Boltzmann cost of L
+borrowed ambient quanta**, with L = 2 the loop's own (Lamb-shift) order.
+Each vertex of ONE loop carries both measured factors: the local
+zero-point share 1/(2ν−1) on one side (6H), the ambient KMS ratio on the
+other (this stage). The user's original two questions ("why two?", "why
+local quantumness?") now have one answer: one second-order loop, two
+vertices, two faces per vertex.
+
+**The uniqueness selection (the derivation's empirical half):** of the
+loop's algebraically natural weights, measured facts exclude every rival:
+- rate-balance s²/(1+s²): p_gal = 0.607, below the measured tail band
+  [0.65, 0.75] — EXCLUDED;
+- absorption SHARE [n/(2n+1)]²: p_gal = 0.554 — EXCLUDED (**the data
+  choose detailed balance over the share from the same decomposition** —
+  the sharpest new fact);
+- inverse ratio [1/(1+n)]²: fails BOTH tails, wrong environmental sign
+  (the 6E sign lesson formalized);
+- raw amplitude n²: p_gal ≈ 11, absurd + ceiling violation — EXCLUDED;
+- pointwise s(y_loc)²: EXCLUDED by measurement (6D);
+- ambient-free local running: EXCLUDED by measurement (6T);
+- s¹/s³: at their 6L bootstrap grades (disfavored-lean / open — the tail
+  instrument is blind to the L digit; the Bernoulli rung is not).
+**s² is the unique survivor.** Postdiction regression: p_gal = 0.6884 /
+p_bin = 0.5280 reproduce 6E's 0.689/0.529.
+
+**Dividends (both quantified):** (1) the source-vs-dressed ambient
+frequency convention is DEGENERATE today (Δp = 0.004 at galaxy ambients)
+but separates at weak-ambient binaries (Δp ≈ 0.025 at e_N = 0.4) — a DR4
+discriminator; (2) the gate is a Boltzmann cost at T_dS = H(z)/2π ⇒ **the
+tail exponent runs with redshift at fixed physical environment** (p_gal
+0.688 → 0.702 at z = 1) — the gate is now part of kill test #14.
+
+**Priority scout (Haiku, five structures, 15+ query variations):** the
+KMS-ratio/detailed-balance gate, the Boltzmann-suppressed EFE, the
+reservoir-assistance mechanism for gravity dressing, the path-resolved
+JC decomposition in any gravitational context, and any C&T environmental
+follow-up — **all NOT FOUND (scout-level)**. Near-misses disclosed:
+2024–25 stimulated-graviton papers (2502.10221, 2407.11929 — graviton
+scattering, not dressing/EFE); entropic-MOND EFE derivations (1201.4160
+— entropic force, no occupation gating); modified-inertia environmental
+dependence via time-averaging (2208.07073 — no Boltzmann structure).
+
+**Honest labels, carried:** the KMS algebra and the uniqueness selection
+are exact/measured; the borrowing NARRATIVE (frozen one-scale horizon
+bath cannot supply dressing quanta ⇒ the occupied ambient reservoir
+does) stays reading-grade — its microphysics lives with the
+non-Markovian horizon formalism (6K/6M/6N showed standard OQS cannot
+produce it). The 6O/6P frozen nulls do NOT strike it: they tested draw
+VARIANCE; borrowing enters at mean level. Remaining open: the formal
+per-leg pairing Hamiltonian; the untied-L contest (β = ½q^L1·s^L2,
+L1 ≠ L2) as a future falsifier; the ceiling ½ stays at its 5P
+exchange-symmetric reading.
+
+**Verdict: SUCCESS — the grammar's last underived factor now has the
+same grade as the local one: exact algebra from the shared loop, plus
+unique survival against every natural rival under already-measured
+facts; two new falsifiable rungs (DR4 convention split, z-running
+tail); priority scout-clean. The ambient-gated bath is now a DERIVED
+structure with one reading-grade seam (the borrowing microphysics),
+not a post-hoc rule.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

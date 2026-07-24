@@ -1,0 +1,66 @@
+STAGE 6U: the ambient gate -- path-resolved KMS derivation + uniqueness selection
+==========================================================================
+G0a: absorption-path (n) + emission-path (n+1) = the 6H pull (2n+1)*lambda^2/Delta: PASS
+G0b: per-leg ratio n/(1+n) = e^(-x) (the KMS/detailed-balance identity), exact: PASS
+G0c: s^L = e^(-L x) = the Boltzmann cost of L borrowed ambient quanta: PASS
+     => the gate and the local factor come from the SAME loop: per
+        vertex, local zero-point share x ambient KMS ratio; L = 2 =
+        the loop's own (Lamb-shift) order.
+
+G1a: tail exponent p = 1/2 + g/4 (from the mixing family, q->1 tail): PASS
+G1b: s^2 postdictions reproduce 6E: p_gal = 0.6884 (6E 0.689), p_bin = 0.5280 (6E 0.529): PASS
+
+G2: the rival-form table (no new fits; bands: gal tail [0.65,0.75] 5G/5T; bin [0.45,0.60] 5K/5R):
+    ambient occupations: n_gal = 6.583 (e = 0.02), n_bin = 0.502 (e = 1.2)
+
+    form                     g_gal   p_gal  gal   g_bin   p_bin  bin  verdict
+    -------------------------------------------------------------------------
+    KMS ratio^2  (s^2)       0.754   0.688   ok   0.112   0.528   ok  SURVIVES  <- THE GATE
+    KMS ratio^1  (s^1)       0.868   0.717   ok   0.334   0.584   ok  DISFAVORED (6H c2-break 1/12-s/8; 6L lean 29/40)
+    KMS ratio^3  (s^3)       0.654   0.664   ok   0.037   0.509   ok  OPEN at population grade (6L 21/40; tails blind to L2/L3)
+    rate balance s2/(1+s2)   0.430   0.607    X   0.101   0.525   ok  EXCLUDED (gal tail)
+    absorption share^2       0.216   0.554    X   0.063   0.516   ok  EXCLUDED (gal tail)
+    inverse ratio^2          0.017   0.504    X   0.443   0.611    X  EXCLUDED (gal tail, bin tail)  [wrong sign: gates OPEN at sparse ambients = the 6E lesson]
+    raw amplitude n^2       43.334  11.333    X   0.252   0.563   ok  EXCLUDED (gal tail)  [also violates the beta <= 1/2 ceiling]
+    pointwise s(y_loc)^2         -       -    -       -       -    -  EXCLUDED by measurement (6D: -9.64+-1.49, 0/6)
+    local-R, no ambient          -       -    -       -       -    -  EXCLUDED by measurement (6T: shape rejection)
+    s^2 at dressed x_amb     0.738   0.685   ok   0.027   0.507   ok  DEGENERATE with the gate today (disclosed; DR4 separates)
+
+G2 verdict: the KMS-ratio-squared form is the UNIQUE survivor of the loop's natural weights: PASS
+
+G3: the source-vs-dressed ambient-frequency degeneracy, quantified:
+    e_N = 0.02: p(source) = 0.6884, p(dressed) = 0.6846, dp = +0.0038
+    e_N = 0.40: p(source) = 0.5706, p(dressed) = 0.5454, dp = +0.0252
+    e_N = 1.20: p(source) = 0.5280, p(dressed) = 0.5068, dp = +0.0212
+    -> invisible at galaxy ambients, ~0.03 at weak-ambient binaries:
+       a DR4 discriminator, folded into the out-of-sample ledger.
+
+G4: the z-rung -- the gate is a Boltzmann cost at T_dS = H(z)/2pi,
+    so at FIXED physical ambient e_N the tail exponent runs with z
+    (illustrative, fixed-e_N; folds into kill test #14):
+    z = 0.0 (H/H0 = 1.000): p_gal = 0.6884, p_bin = 0.5280
+    z = 0.5 (H/H0 = 1.322): p_gal = 0.6955, p_bin = 0.5372
+    z = 1.0 (H/H0 = 1.790): p_gal = 0.7024, p_bin = 0.5486
+    z = 2.0 (H/H0 = 3.032): p_gal = 0.7125, p_bin = 0.5710
+
+THE GRAMMAR'S STATUS LEDGER after this stage:
+  x = occupation ratio sqrt(g_N/a0)      C&T 2019 (derived there)
+  nu = 1 + n_BE(x)                       C&T 2019 (derived there)
+  q_loc = 1/(2nu-1) zero-point share     derivation-grade (6H, JC pull)
+  deep source-locking (beta -> 0)        derivation-grade (6N theorem +
+                                         6R free-fall T_U = 0 + one-scale
+                                         resolution)
+  gate = s_amb^2 KMS-ratio form          THIS STAGE: exact KMS algebra +
+                                         unique survivor of the loop's
+                                         weights under measured facts
+  system-level (not pointwise)           measured (6D, 6T); enforced by a
+                                         shared environmental reservoir
+  L = 2                                  = the loop's perturbative order;
+                                         measured lean (6I point / 6L)
+  ceiling 1/2                            exchange-symmetric point (5P);
+                                         reading-grade
+  REMAINING reading-grade: the borrowing narrative's microphysics
+  (frozen horizon bath => ambient reservoir supplies the quanta) --
+  standard OQS cannot produce it (6K/6M/6N); lives with the
+  non-Markovian horizon formalism. The 6O/6P nulls do not strike it
+  (they tested draw VARIANCE; borrowing enters at mean level).

@@ -349,12 +349,25 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     plain = plain record) but binaries SHAPE-REJECT (α̂ edge 5/6, 0/6,
     −7.4±2.1 = the eight-function band) ⇒ THE TRIANGULATION:
     local-only dead (6T) + ambient-pointwise dead (6D) + two-factor
-    accepted (6G) — the ambient gate is REQUIRED, not chosen. O5 is
-    now exactly: derive the AMBIENT gate (s_amb², system-level)
-    horizon-side; the local factor's deep-locking is done (free-fall
-    + resolution). Optional follow-up: AMB-vs-[resolution×ambient]
-    local-factor contest (w(R) vs 1/(2ν−1)² at fixed gate) — a
-    refinement, not a blocker.**
+    accepted (6G) — the ambient gate is REQUIRED, not chosen.
+    **THE GATE DERIVED same day (Stage 6U,
+    [calcs/stage6u_gatederiv.py](calcs/stage6u_gatederiv.py)):
+    path-resolving the 6H loop splits the (2n+1) pull into absorption
+    (n) and emission (n+1) paths; per-leg ratio n/(1+n) = e^(−x) EXACT
+    (KMS detailed balance); s^L = Boltzmann cost of L borrowed ambient
+    quanta, L=2 = the loop's order — one loop, two vertices, both
+    grammar factors per vertex. Uniqueness on measured facts (no new
+    fits): rate-balance, absorption-share, inverse-ratio, n², pointwise
+    (6D), local-only (6T) ALL excluded; s² unique survivor. Scout: five
+    structures NOT FOUND (scout-level). New falsifiable rungs: DR4
+    source-vs-dressed x_amb split (Δp≈0.03 at weak ambients); the tail
+    exponent RUNS with H(z) (p_gal 0.688→0.702 at z=1) → folded into
+    #14. O5 remaining (reading-grade seams): the borrowing microphysics
+    (non-Markovian horizon formalism); the formal per-leg pairing
+    Hamiltonian; the untied-L contest (L1≠L2) as a future falsifier;
+    the ½ ceiling (5P exchange-symmetric reading). Optional refinement:
+    AMB-vs-[resolution×ambient] local-factor contest (w(R) vs
+    1/(2ν−1)² at fixed gate).**
     FROZEN-BATH SUB-READING (the Hubble-correlation-time argument):
     both accessible tests EXECUTED 2026-07-24 and closed — 6O galaxy
     coherence AMBIG (unmeasurable vs per-galaxy systematics even with
