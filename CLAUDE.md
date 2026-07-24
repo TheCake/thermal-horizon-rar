@@ -635,9 +635,18 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   open BY DERIVATION; kill test = DR4 eccentricity resolution.**
   Ledger row mech-reservoir (22 tokens green); PAPER §2.4
   identification paragraph. 6Z = the ordering shuffle test (TRUE
-  gates vs 8 permutation nulls, distribution-preserving; bars
-  SUPPORT 8/8 / LEAN ≥6/8 / NULL / ANTI) — running at close of
-  entry.** Paper
+  gates vs 8 permutation nulls, distribution-preserving): **ANTI
+  FIRED — true −61.62 loses to ALL 8 shuffles (null −62.91±0.80;
+  empirical p≈0.11) ⇒ CORRECTION #14: the 6I measured-ambient gains
+  are gate HETEROGENEITY (generic under permutation), NOT ordering —
+  the shuffle control does to 6I what the s-flat control did to 6P.
+  In-sample environmental-ordering leg WITHDRAWN; paper claim sites
+  annotated (App A = fourteen corrections); amplitude-level legs
+  (two-system split, 6G acceptance, postdictions, p≤¾ ceiling, M=1
+  theorem, 6X mechanics) UNTOUCHED; ordering prediction now fully
+  out-of-sample (DR4) where failure = REAL strike, pre-stated.
+  Ledger rows gal-ordering + gal-chae-ambients note (23 tokens
+  green).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

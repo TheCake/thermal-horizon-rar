@@ -84,6 +84,7 @@ CHECKS = [
     ('mech-borrow',     '+0.989', 'data/stage6x_borrow.txt'),
     ('binfn-scalarefe', '-10.35', 'data/stage6w_verdict.txt'),
     ('mech-reservoir',  '0.9524', 'data/stage6y_reservoir.txt'),
+    ('gal-ordering',    '-62.91', 'data/stage6z_ordering.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
@@ -208,6 +209,8 @@ W = [
    'TAILP':('MIXED', 'p=3/4 exact (gm argument): galaxy edge, binaries reject', 'mech-resolution'),
    'QUAD': ('na',    'not separately computed (amplitude-lock pattern expects ~4-5x)', 'sol-quadrupole')},
   'derived pre-hoc from the 6N corollary; galaxy-best-in-class, binary-vetoed: proves the ambient gate REQUIRED'),
+ # note: the AMB measured-ambient gains are heterogeneity-generic per 6Z
+ # (correction #14); its amplitude-level legs are the load-bearing ones.
  ('drive-weighted (pointwise)', {
    'BIN':  ('VETO',  'EXCLUDED -9.64+-1.49, 0/6; predicted mid-separation sag observed', 'binfn-drive'),
    'GALH': ('na',    'isolated limit reduces to F4 (gate-verified)', 'binfn-drive'),

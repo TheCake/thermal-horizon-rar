@@ -2,3 +2,15 @@ STAGE 6Z: the gate-assignment ordering test -- 153 galaxies (91 Chae-matched), v
 pre-registered: SUPPORT beats 8/8; LEAN >= 6/8; NULL bulk; ANTI 0/8
 
   BE:  -12152.49  [5P -12152.49, d=-0.00 OK]  (2.3 min)
+  TRUE:  -12214.11  delta -61.62  [6I -61.68, dd=+0.06 OK]  (2.0 min)
+  shuffle 0: delta -63.07  (0.3 min)
+  shuffle 1: delta -62.69  (0.3 min)
+  shuffle 2: delta -62.40  (0.3 min)
+  shuffle 3: delta -63.17  (0.3 min)
+  shuffle 4: delta -62.09  (0.3 min)
+  shuffle 5: delta -63.07  (0.3 min)
+  shuffle 6: delta -62.17  (0.3 min)
+  shuffle 7: delta -64.59  (0.3 min)
+
+true delta -61.62 vs shuffle null: mean -62.91 +- 0.80, range [-64.59, -62.09]; true beats 0/8
+VERDICT vs pre-registered bars: ANTI (strike against the gate ordering)

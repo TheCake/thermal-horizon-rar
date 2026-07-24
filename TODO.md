@@ -384,7 +384,11 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     identification (reading): the barycentric mode = the environment's
     dressing cloud (n_amb = ν(e_N)−1); e→0 rejoins the horizon soft
     sector. NEW FALSIFIERS: tail ceiling p ≤ ¾ EXACT (one void galaxy
-    beyond ¾ kills the gate); p(e_N) ordering (6Z shuffle test);
+    beyond ¾ kills the gate); p(e_N) ordering — **6Z EXECUTED: ANTI at
+    weak grade (true loses to all 8 shuffles, p≈0.11) ⇒ CORRECTION
+    #14: the 6I measured-ambient gains are gate HETEROGENEITY, not
+    ordering; the prediction is now fully out-of-sample (DR4-era),
+    where failure would be a REAL strike — pre-stated;**
     SATURN COROLLARY: the coupling is trajectory-state = the
     EFE-respecting MI class — the 4K door reached BY DERIVATION (kill
     test: DR4 eccentricity resolution). Remaining reading-grade: the

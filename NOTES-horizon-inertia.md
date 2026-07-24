@@ -3769,6 +3769,54 @@ coupling class is MI = the Saturn door. Remaining reading-grade: the
 barycentric identification itself and the ω = g/c assignment; the ½
 ceiling candidate stands.**
 
+## Stage 6Z — the ordering shuffle test: ANTI, and CORRECTION #14
+## (2026-07-24; the shuffle control does to 6I what the s-flat control
+## did to 6P)
+
+**The 6Y ordering prediction (P2) given its full-power in-sample test
+([calcs/stage6z_ordering.py](../calcs/stage6z_ordering.py), pre-reg
+0e0f4fc; regressions exact: BE d=−0.00, TRUE delta −61.62 vs 6I's
+−61.68 dd=+0.06): the pre-registered ANTI bar FIRED.** The true Chae
+gate assignment loses to ALL EIGHT distribution-preserving shuffles:
+true −61.62 vs null −62.91 ± 0.80, range [−64.59, −62.09], 0/8.
+
+**CORRECTION #14 (logged here and in PAPER Appendix A):** the 6I
+claim "measured ambients IMPROVE both treatments" stands as a NUMBER
+but its ATTRIBUTION was wrong: the gain over the global gate (−59.05 →
+−61.68 controlled; the plain-bar crossing) is **gate HETEROGENEITY —
+generic under permutation — not the physical ordering.** Any
+assignment of the same gate values does as well or better (shuffles
+average 1.3 points BETTER). The in-sample environmental-ordering leg
+of the ambient-gated rule's evidence is withdrawn; the plain-bar
+"resolution by measurement" is reattributed (real, ordering-blind).
+All paper claim sites annotated (abstract, §2.4 grammar passage, the
+6Y paragraph, conclusions, Appendix A #14, App B count → fourteen).
+
+**Grade honesty both ways:** ANTI at K=8 carries empirical p ≈ 0.11
+(one-in-nine under exchangeability) — a lean against the ordering,
+not a demonstration of anti-ordering; and Chae e_N noise dilutes a
+true ordering toward null (though noise alone cannot produce ANTI).
+Post-hoc shuffles were NOT added to soften the verdict (that would be
+p-hacking; K=8 was the pre-registered bar).
+
+**What is and is not struck:** struck — the intra-SPARC cross-galaxy
+ordering channel at current grade, and 6I's ordering attribution.
+Untouched — everything amplitude-level: the two-system split (the
+gate's strongest evidence: galaxy-vs-binary gate difference), the 6G
+binary acceptance, the tail postdictions (median-gate), the p ≤ ¾
+ceiling (P1), the M=1 exclusion theorem (6Y), the 6X lending
+mechanics, and the 6J function-level bootstrap (37/40, with the
+heterogeneity asterisk on its measured-ambient component). The
+ordering prediction P2 moves FULLY out-of-sample: environment-resolved
+DR4-era samples remain its signed falsifier — and after today a
+DR4-grade ordering failure would be a REAL strike, pre-stated.
+
+**Verdict: the test — SUCCESS (the control did exactly its job,
+second time today); the ordering prediction — ANTI at weak grade,
+in-sample leg withdrawn (correction #14); the ambient-gated rule —
+evidential basis NARROWED to its amplitude-level legs, which are the
+strong ones.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
