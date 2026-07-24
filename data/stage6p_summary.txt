@@ -1,0 +1,40 @@
+--- 6P run off (SQN=1e+12) ---
+STAGE 3P g=1p2 seeds [31]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 BE: a_hat=1.11 (grid 1.0, interior=True), dlnL(Newton)=+97.3, wr=0.2, prof=[-97.3, -27.0, 0.0, -10.6, -28.6]
+  seed 31: best lnL = -56346.45  (3.0 min)
+--- 6P run N=60 (SQN=7.746) ---
+STAGE 3P g=1p2 seeds [31]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 BE: a_hat=1.14 (grid 1.0, interior=True), dlnL(Newton)=+98.5, wr=0.2, prof=[-98.5, -28.8, 0.0, -8.1, -24.6]
+  seed 31: best lnL = -56345.21  (3.0 min)
+--- 6P run N=20 (SQN=4.472) ---
+STAGE 3P g=1p2 seeds [31]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 BE: a_hat=1.14 (grid 1.0, interior=True), dlnL(Newton)=+103.6, wr=0.2, prof=[-103.6, -31.5, 0.0, -8.8, -24.3]
+  seed 31: best lnL = -56340.14  (3.0 min)
+--- 6P run N=8 (SQN=2.828) ---
+STAGE 3P g=1p2 seeds [31]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 BE: a_hat=1.16 (grid 1.0, interior=True), dlnL(Newton)=+108.4, wr=0.2, prof=[-108.4, -30.6, 0.0, -6.4, -24.3]
+  seed 31: best lnL = -56335.35  (3.1 min)
+--- 6Pb run N=4 (mode=shaped, SQN=2, seed=31) ---
+STAGE 3P g=1p2 seeds [31]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 BE: a_hat=1.19 (grid 1.0, interior=True), dlnL(Newton)=+113.4, wr=0.2, prof=[-113.4, -29.8, 0.0, -4.2, -26.3]
+  seed 31: best lnL = -56330.30  (3.1 min)
+--- 6Pb run N=2 (mode=shaped, SQN=1.414, seed=31) ---
+STAGE 3P g=1p2 seeds [31]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 BE: a_hat=1.15 (grid 1.0, interior=True), dlnL(Newton)=+120.8, wr=0.2, prof=[-120.8, -30.2, 0.0, -7.4, -34.8]
+  seed 31: best lnL = -56322.94  (3.1 min)
+--- 6Pb run flat-8 (mode=flat, SQN=2.828, seed=31) ---
+STAGE 3P g=1p2 seeds [31]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 BE: a_hat=1.18 (grid 1.0, interior=True), dlnL(Newton)=+134.3, wr=0.2, prof=[-134.3, -38.1, 0.0, -5.7, -23.5]
+  seed 31: best lnL = -56309.45  (3.1 min)
+--- 6Pb run flat-20 (mode=flat, SQN=4.472, seed=31) ---
+STAGE 3P g=1p2 seeds [31]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 BE: a_hat=1.16 (grid 1.0, interior=True), dlnL(Newton)=+116.3, wr=0.2, prof=[-116.3, -35.6, 0.0, -7.9, -23.1]
+  seed 31: best lnL = -56327.45  (3.1 min)
+--- 6Pb run off-s101 (mode=shaped, SQN=1e+12, seed=101) ---
+STAGE 3P g=1p2 seeds [101]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 101 BE: a_hat=1.10 (grid 1.0, interior=True), dlnL(Newton)=+106.0, wr=0.2, prof=[-106.0, -23.6, 0.0, -10.3, -32.8]
+  seed 101: best lnL = -56346.31  (3.1 min)
+--- 6Pb run N=8-s101 (mode=shaped, SQN=2.828, seed=101) ---
+STAGE 3P g=1p2 seeds [101]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 101 BE: a_hat=1.12 (grid 1.0, interior=True), dlnL(Newton)=+119.4, wr=0.2, prof=[-119.4, -27.7, 0.0, -9.4, -28.0]
+  seed 101: best lnL = -56332.86  (3.1 min)

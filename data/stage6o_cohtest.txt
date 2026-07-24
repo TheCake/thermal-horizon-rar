@@ -1,0 +1,30 @@
+STAGE 6O galaxy-coherence contest: 153 galaxies, 2700 points + 12 lensing; template t(x) = e^(-x/2), one draw per galaxy; A = 1/(sqrt(N) ln10)
+
+  real A=0.000 (N=    inf):  -12152.49  (0.0 min)
+  real A=0.020 (N=  471.5):  -12287.06  (0.0 min)
+  real A=0.035 (N=  154.0):  -12457.43  (0.0 min)
+  real A=0.050 (N=   75.4):  -12613.70  (0.0 min)
+  real A=0.065 (N=   44.6):  -12733.31  (0.0 min)
+  real A=0.080 (N=   29.5):  -12819.48  (0.0 min)
+  real A=0.100 (N=   18.9):  -12896.74  (0.0 min)
+  real A=0.125 (N=   12.1):  -12954.59  (0.0 min)
+  real A=0.150 (N=    8.4):  -12987.43  (0.0 min)
+G0 A=0 regression: -12152.49 (5P -12152.49, d=-0.00) -> PASS
+profile: best A = 0.150 (N = 8.4), Delta = -834.93
+
+G-INJ-R: A_inj = 0.1 with fresh draws:
+  injR A=0.000 (N=    inf):  -11859.53  (0.0 min)
+  injR A=0.050 (N=   75.4):  -12460.30  (0.0 min)
+  injR A=0.080 (N=   29.5):  -12724.86  (0.0 min)
+  injR A=0.100 (N=   18.9):  -12823.00  (0.0 min)
+  injR A=0.130 (N=   11.2):  -12906.36  (0.0 min)
+  injR A=0.160 (N=    7.4):  -12949.61  (0.0 min)
+G-INJ-R: recovered A_hat = 0.160 -> FAIL (absorption = 4W echo)
+
+G-INJ-N: real data, template x-shape shuffled within galaxy:
+  injN A=0.000 (N=    inf):  -12152.49  (0.0 min)
+  injN A=0.080 (N=   29.5):  -12234.45  (0.0 min)
+  injN A=0.150 (N=    8.4):  -12220.16  (0.0 min)
+G-INJ-N: best Delta with shuffled template = -81.95 -> FAIL
+
+PRE-REGISTERED VERDICT: AMBIG (injection gate failure -- the 4W identifiability echo)

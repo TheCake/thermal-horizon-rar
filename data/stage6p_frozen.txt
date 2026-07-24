@@ -1,0 +1,11 @@
+STAGE 6P: frozen per-system boost scatter on the v7 binaries -- seed 31, BE law, g=1.2a0 tables, paired SQN grid
+
+G1 baseline: a_hat = 1.110 interior=True, dlnL(Newton) = +97.3, wr = 0.2 -> PASS
+
+   run    a_hat  interior  dlnL(Newt)   wr    best lnL    Delta vs off
+    off  1.110   True      +97.3   0.20   -56346.45     +0.00
+   N=60  1.140   True      +98.5   0.20   -56345.21     +1.24
+   N=20  1.140   True     +103.6   0.20   -56340.14     +6.31
+    N=8  1.160   True     +108.4   0.20   -56335.35    +11.10
+
+PRE-REGISTERED VERDICT: PREFERRED: Delta = +11.1 at N=8 -- first binary-side frozen evidence; galaxy-N compatibility: NO

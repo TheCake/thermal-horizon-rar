@@ -3206,6 +3206,99 @@ three pre-registered calculations and one theorem: it doesn't, we
 know exactly why, and the program knows precisely where the mechanism
 must live if it lives anywhere.**
 
+## Stage 6O — frozen-bath Test 1 (galaxy coherence): AMBIG — the identifiability boundary survives shape leverage (2026-07-24)
+
+The frozen-bath reading (bath correlation time ~ 1/H ≫ orbital times;
+mode wavelength ≫ galaxy ⇒ one coherent draw per galaxy) predicts a
+per-galaxy MEAN channel with the thermal shape t(x) = e^(−x/2) —
+against the x-FLAT astrometric channels (distance: g_bar-invariant
+uniform log g_obs shift; inclination: uniform — both derived exactly).
+Pre-registered at 53a7395; ESTIMATOR CORRECTED post-commit,
+pre-results (disclosed in-script): the committed MAP z-channel was
+monotone-degenerate (a new per-galaxy parameter always lowers a
+penalized objective — the first launch crashed on its own G0 gate);
+fixed by EXACT z-marginalization (per-galaxy 2×2 Occam determinant,
+identically zero at A = 0 ⇒ the historic baseline objective and G0
+regression preserved). [calcs/stage6o_cohtest.py](calcs/stage6o_cohtest.py)
+→ data/stage6o_cohtest.txt.
+
+**Result: G0 EXACT (−12152.49, d = −0.00) — and both injection gates
+FAIL, so the pre-registered verdict is AMBIG.** The profile runs away
+to the grid edge (Δ = −835 at N = 8.4, no interior minimum); the
+recovery injection over-recovers (Â = 0.16 for A_inj = 0.10); and the
+decisive null: the within-galaxy SHUFFLED template still gains −82.
+The z-channel is soaking up real per-galaxy radial residual structure
+(M/L gradients, warps, non-circular motions) that dwarfs any
+thermal-draw amplitude. One informative number for the record: the
+true x-shape beats the shuffled one ~10× (−835 vs −82) — the
+residuals ARE strongly x-monotone across galaxies — but that is
+exactly what ordinary radial systematics produce too, and the gates
+correctly refused to let it be read as a detection.
+
+**Verdict: AMBIG (the honest 4W echo, now established at shape
+level): the galaxy-coherent channel is UNMEASURABLE on SPARC against
+real per-galaxy systematics — radial-shape leverage does not unlock
+the boundary. No credence move (pre-committed). The frozen reading's
+galaxy-side test is closed as boundary-limited; its binary-side test
+(6P, orthogonal noise model) is the live one.**
+
+## Stage 6P/6P-b — frozen-bath Test 2: the edge preference is NOT shape-specific — the s-flat control WINS; no frozen evidence; a v7 error-model finding logged (2026-07-24)
+
+Pre-registered at ac89f1b (6P) and 15c1e81 (6P-b), both before
+execution. [calcs/stage6p_frozen.py](calcs/stage6p_frozen.py) +
+[calcs/stage6pb_extend.py](calcs/stage6pb_extend.py) →
+data/stage6p_summary.txt, stage6p_frozen.txt, stage6pb_extend.txt.
+Implementation: per-system draw on the boost occupation (proxy-grade,
+disclosed), patched into the full v7 machinery (exact-count patches;
+fz = 1 at SQN→∞ recovers the unpatched model; same seed ⇒ identical
+population/orbits/draws across the grid — perfectly paired).
+G1 baseline: α̂ = 1.110 interior, dlnL(Newton) = +97.3, wr = 0.20
+(3S-era regression PASS).
+
+**6P: the likelihood WANTS the component — monotonically.** Δ vs off:
++1.2 (N=60), +6.3 (N=20), +11.1 (N=8, GRID EDGE); α̂ interior
+throughout; Newton rejection strengthens (+97→+108). The PREFERRED
+branch fired AT THE EDGE — flagged immediately per the correction-#4
+edge discipline, and 6P-b supplied the three missing legs.
+
+**6P-b: the discriminator lands hard.** (i) Extension: STILL no
+turnover — +16.2 (N=4), +23.5 (N=2): the appetite for scatter runs to
+70%-grade draws, deep into generic-broadening territory. (ii) THE
+s-FLAT CONTROL (matched generously at the wide-bin amplitude): **+37.0
+at matched-8 — BEATS the shaped +11.1 by 25.9 lnL** (flat-20: +19.0
+vs shaped +6.3). Given equal strength, the data prefer the scatter
+WITHOUT the frozen s-shape. (iii) Seed 101: shaped Δ = +13.5 —
+sign-consistent: the appetite is real across realizations; its SHAPE
+is not the frozen one. Formal verdict per the written bands: AMBIG
+(spec = −25.9 sits outside both bands — the pre-registration did not
+anticipate flat WINNING); substantive verdict: **GENERIC, decisively —
+the 6P gain is s-blind broadening absorption, NOT frozen evidence.**
+
+**The v7 error-model finding (real, useful, non-mechanism):** the
+pipeline underfits an s-FLAT per-system velocity scatter worth ~+37
+lnL (echoing the 3E/3J smear residual — the fitted broadening that
+measured mass errors could not supply). α̂ exposure across all these
+scatter variants: 1.110 → 1.190 max = **≤ +0.08, inside the quoted
+±0.11 systematic** — the anchor and the α measurement stand as
+published. Queued as a low-priority error-model refinement, not a
+re-opening.
+
+**The frozen-bath reading after both tests:** Test 1 (6O)
+boundary-limited (unmeasurable vs galaxy systematics); Test 2
+control-rejected (its fingerprint subdominant — the data prefer
+non-frozen scatter shapes). No formal strike (the pre-registered
+STRIKE band did not fire), no support anywhere; the ~8%
+bath-microphysics conditional HOLDS with its frozen sub-branch
+weakened — both of its accessible near-term signatures are now spent.
+Remaining mechanism homes unchanged: the horizon-side non-Markovian
+derivation (theory), MI/trajectory (DR4), or sky-phenomenology.
+
+**Verdict: the stages — SUCCESS (the control did exactly its job: a
+lesser protocol would have announced a two-seed, +11/+13 "detection"
+tonight; ours converted it into an error-model fact in four hours);
+the frozen reading — NO SUPPORT from either test, honestly closed at
+current data.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -464,10 +464,28 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   all fail ⇒ bath-microphysics conditional 15% → ~8% per pre-commit;
   NO v4; fridge moot. Survivors: horizon-specific non-Markovian, MI/
   trajectory, or pure sky-phenomenology (~92% complement — function
-  record untouched). Paper §2.4 closed-out in place (still v2.5).** O5 remaining sharpened:
-  why exactly TWO legs from dS mode counting (the round trip is now
-  the measured target, not an assumption); MI-trajectory alternative
-  standing.** Paper
+  record untouched). Paper §2.4 closed-out in place (still v2.5).**
+  **6O/6P/6P-b (2026-07-24, the frozen-bath tests, both pre-reg'd):
+  the frozen sub-reading (bath correlation ~1/H ≫ orbital times ⇒
+  quenched draws; mode wavelength ≫ galaxy ⇒ coherent) given its two
+  accessible tests. 6O galaxy coherence: AMBIG per gates — estimator
+  corrected post-commit (exact z-marginalization Occam determinant;
+  the MAP version was monotone-degenerate, its own G0 caught it),
+  then the data-side failure: profile edge-runs −835, injection
+  over-recovers, SHUFFLED template still gains −82 ⇒ per-galaxy
+  radial systematics dwarf any draw (x-shape beats shuffled 10× but
+  non-specific). 6P/6P-b binary s-shaped scatter (v7 patch-runner,
+  paired SQN grid, seeds 31+101): edge-PREFERRED +11.1/+13.5,
+  monotone to N=2 (+23.5), BUT the s-FLAT matched control WINS by
+  25.9 lnL (flat-8 = +37.0) ⇒ GENERIC broadening absorption, NOT the
+  frozen fingerprint. v7 error-model finding logged: an s-flat
+  per-system scatter worth ~+37 lnL exists (3E/3J echo); α̂ exposure
+  ≤ +0.08 = inside the ±0.11 systematic — the measurement stands.
+  Frozen sub-branch: no support, no formal strike, both near-term
+  signatures spent; ~8% holds. QUEUED: the curated measurement
+  LEDGER (CSV, supersession discipline) + world-table consistency
+  audit (user-endorsed protocol). O5 remaining: horizon-side
+  non-Markovian derivation; MI-trajectory (DR4); phenomenology.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

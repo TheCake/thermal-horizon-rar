@@ -1,0 +1,15 @@
+STAGE 6P-b: edge extension + s-flat control + seed 101 -- paired on the 6P baseline
+
+   run       a_hat  interior   best lnL    Delta vs off
+       off  1.110   True   -56346.45     +0.00
+      N=60  1.140   True   -56345.21     +1.24
+      N=20  1.140   True   -56340.14     +6.31
+       N=8  1.160   True   -56335.35    +11.10
+       N=4  1.190   True   -56330.30    +16.15
+       N=2  1.150   True   -56322.94    +23.51
+    flat-8  1.180   True   -56309.45    +37.00
+   flat-20  1.160   True   -56327.45    +19.00
+  seed 101: off -56346.31; shaped N=8 Delta = +13.45
+
+shaped(N=8) - flat(matched-8) = -25.90; seed-101 shaped Delta = +13.45; turnover on extended grid: False (profile ['11.1', '16.1', '23.5'])
+PRE-REGISTERED VERDICT: AMBIG: between bands or seed inconsistency; park

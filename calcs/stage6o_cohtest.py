@@ -22,6 +22,16 @@ dv_g ~ N(0, sigma_v_g) (measured), z_g ~ N(0,1), A >= 0 global
 linear solves; dml as before; lensing leg carries NO template
 (stacked ensembles average the draw; disclosed).
 
+ESTIMATOR CORRECTION (post-commit, pre-results; disclosed): the
+committed MAP treatment of z_g was monotone-degenerate (a new
+per-galaxy parameter always lowers a penalized objective; the first
+launch crashed on its own G0 gate before any result was read). The
+z-channel is now EXACTLY MARGINALIZED: the per-galaxy 2x2 Gaussian
+integral over (dv_g, z_g) adds the Occam term
+ln[det M_g] - ln[M11_g], M_g = [[Sw+1/sv^2, S_At],[S_At, S_A2t2+1]],
+which is IDENTICALLY ZERO at A = 0 — the historic baseline objective
+and the G0 regression are unchanged. Bands and outcome tree unchanged.
+
 GATES: G0 A=0 regression = the 5P/6I BE vertical fit (-12152.49,
 |d| < 2 — same model). G-INJ-R (recovery): inject A_inj = 0.10 with
 fresh draws into the real data -> profiled A_hat in [0.06, 0.14]
@@ -130,6 +140,16 @@ def m2(th, dml, dv, zz, A, lgobs, tperm=None):
          - A*zz[gidx]*tt)
     se2 = sig2 + s_int*s_int
     out = np.sum(r*r/se2 + np.log(se2))
+    # exact z-marginalization: the per-galaxy Occam determinant
+    # (identically zero at A = 0 -> baseline objective preserved)
+    w = 1.0/se2
+    At = A*tt
+    Sw_g = np.bincount(gidx, w, minlength=NGal)
+    St_g = np.bincount(gidx, w*At, minlength=NGal)
+    Stt_g = np.bincount(gidx, w*At*At, minlength=NGal)
+    M11 = Sw_g + 1.0/(SIGV*SIGV)
+    out += np.sum(np.log(np.maximum(M11*(Stt_g + 1.0) - St_g*St_g,
+                                    1e-300)) - np.log(M11))
     lg = l_gbar[lmask] + dlt
     rl = l_gobs[lmask] - (lg + np.log10(nu_be(10**lg/a0)))
     out += np.sum(rl*rl/l_sig2[lmask] + np.log(l_sig2[lmask]))
@@ -139,7 +159,7 @@ def m2(th, dml, dv, zz, A, lgobs, tperm=None):
     return out
 
 def fit_t(A, lgobs, th0=None, dml0=None, dv0=None, zz0=None,
-          tol=0.1, max_rounds=8, tperm=None):
+          tol=0.05, max_rounds=15, tperm=None):
     dml = np.zeros(NGal) if dml0 is None else dml0.copy()
     dv = np.zeros(NGal) if dv0 is None else dv0.copy()
     zz = np.zeros(NGal) if zz0 is None else zz0.copy()

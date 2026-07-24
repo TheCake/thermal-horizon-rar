@@ -338,6 +338,20 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     home; (b) the MI/trajectory reading (never bath-dependent; DR4
     eccentricity test stands); (c) accept the function as sky
     phenomenology (the ~92% complement — costs nothing observational).
+    FROZEN-BATH SUB-READING (the Hubble-correlation-time argument):
+    both accessible tests EXECUTED 2026-07-24 and closed — 6O galaxy
+    coherence AMBIG (unmeasurable vs per-galaxy systematics even with
+    shape leverage; shuffled-null −82); 6P/6P-b binary s-shaped
+    scatter: edge-preferred +11/+13 (2 seeds) but the s-FLAT control
+    WINS by 26 lnL = generic broadening, NOT the frozen fingerprint.
+    No support, no formal strike; sub-branch weakened, ~8% holds.
+    NEW low-priority item: v7 error-model refinement — an s-flat
+    per-system scatter worth ~+37 lnL exists (3E/3J echo); α̂
+    exposure ≤ +0.08 (inside the ±0.11 systematic; measurement
+    stands). QUEUED (user-suggested, protocol agreed): the curated
+    MEASUREMENT LEDGER (CSV with supersession discipline) + the
+    world-table consistency audit of all candidate functions against
+    all ledger rows.
     The corollary worth keeping: WHICH occupation a self-shifting
     mode takes = whether the bath's KMS structure is resolved across
     the self-shift (the C&T-vs-boot dichotomy in one line). Scout-level: Bernoulli-break↔leg-count
