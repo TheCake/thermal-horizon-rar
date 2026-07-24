@@ -482,10 +482,27 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   per-system scatter worth ~+37 lnL exists (3E/3J echo); α̂ exposure
   ≤ +0.08 = inside the ±0.11 systematic — the measurement stands.
   Frozen sub-branch: no support, no formal strike, both near-term
-  signatures spent; ~8% holds. QUEUED: the curated measurement
-  LEDGER (CSV, supersession discipline) + world-table consistency
-  audit (user-endorsed protocol). O5 remaining: horizon-side
-  non-Markovian derivation; MI-trajectory (DR4); phenomenology.** Paper
+  signatures spent; ~8% holds. O5 remaining: horizon-side
+  non-Markovian derivation; MI-trajectory (DR4); phenomenology.**
+  **6Q (2026-07-24): THE MEASUREMENT LEDGER + WORLD TABLE —
+  [LEDGER.csv](LEDGER.csv) (75 hand-curated rows: value in NOTES
+  convention, stage, script, output, data-deps, status CURRENT/
+  CO-QUOTED/SUPERSEDED/RETRACTED + pointer; spec [LEDGER.md](LEDGER.md);
+  hand-curation BY RULE — scraping would resurrect α=1.54/+264/e_N=1.9/
+  "SPARC leans simple"/"L=2 measured", all kept as marked rows) +
+  [calcs/stage6q_worldtable.py](calcs/stage6q_worldtable.py) (six gates
+  ALL PASS: provenance-on-disk, supersession resolution, 15 verbatim
+  value greps vs stage outputs; gates caught 3 transcription slips
+  first run). World table (13 laws × 7 tests): formal vetoes = Newton,
+  F4, boot, drive-weighted, no-EFE MI; no-veto = simple (hier-rejected
+  −99 strong-lean), BE, p065, gm, F1/F2, F3 (all binary-lean +
+  a₀-strained), AMB, mi_t; **mechanical sentence: AMB uniquely (a)
+  binary-unvetoed (tie), (b) top galaxy bootstrap 37/40, (c) best a₀
+  row +1.6σ, (d) postdicts both tails — post-hoc flag + shared 4.0×
+  Cassini carried; independence explicit (2 data votes + Cassini);
+  ladder digit ½/⅓/sharper stays OPEN**. STANDING RULE: every stage
+  with a headline number adds its ledger row in the same commit;
+  supersede = flip status + pointer, never delete.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

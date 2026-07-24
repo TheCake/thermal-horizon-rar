@@ -348,10 +348,14 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     NEW low-priority item: v7 error-model refinement — an s-flat
     per-system scatter worth ~+37 lnL exists (3E/3J echo); α̂
     exposure ≤ +0.08 (inside the ±0.11 systematic; measurement
-    stands). QUEUED (user-suggested, protocol agreed): the curated
-    MEASUREMENT LEDGER (CSV with supersession discipline) + the
-    world-table consistency audit of all candidate functions against
-    all ledger rows.
+    stands). ~~The curated MEASUREMENT LEDGER + world-table audit~~ —
+    DONE (Stage 6Q, 2026-07-24): [LEDGER.csv](LEDGER.csv) (75 rows,
+    supersession discipline, spec in [LEDGER.md](LEDGER.md)) +
+    [calcs/stage6q_worldtable.py](calcs/stage6q_worldtable.py) (six
+    gates all PASS; 13 laws × 7 tests). **Standing rule: every future
+    stage that produces a headline number adds its ledger row in the
+    same commit; superseding = flipping status + pointer, never
+    deleting.**
     The corollary worth keeping: WHICH occupation a self-shifting
     mode takes = whether the bath's KMS structure is resolved across
     the self-shift (the C&T-vs-boot dichotomy in one line). Scout-level: Bernoulli-break↔leg-count

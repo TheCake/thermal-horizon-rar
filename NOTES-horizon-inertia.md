@@ -3299,6 +3299,78 @@ tonight; ours converted it into an error-model fact in four hours);
 the frozen reading — NO SUPPORT from either test, honestly closed at
 current data.**
 
+## Stage 6Q — the measurement ledger + the world-table consistency audit (2026-07-24)
+
+**The user's question from last night ("are we keeping the values? could we
+retroactively fit an answer equation?") executed as infrastructure.** No new
+fits — this is the bookkeeping stage that turns four layers of record (stage
+outputs, NOTES, paper scorecard, git) into ONE machine-checkable table with
+supersession discipline, and then scores every candidate law against every
+ledger row mechanically.
+
+**Deliverables:**
+- **[LEDGER.csv](../LEDGER.csv)** (repo root; spec in [LEDGER.md](../LEDGER.md)):
+  75 hand-curated rows — every headline number with value (NOTES convention,
+  direction words), stage, script, output file, data dependence, status
+  (CURRENT / CO-QUOTED / SUPERSEDED / RETRACTED), and supersession pointer.
+  Hand-curated BY RULE: auto-scraping stage outputs is exactly the mechanism
+  that would resurrect a superseded number (the wrong-convention α=1.54, the
+  inflated +264, the e_N=1.9 field, the "SPARC leans simple" artifact, the
+  "L=2 measured" claim — all present as visibly-marked SUPERSEDED/RETRACTED
+  rows so they can never quietly come back).
+- **[calcs/stage6q_worldtable.py](../calcs/stage6q_worldtable.py)** →
+  [data/stage6q_worldtable.txt](../data/stage6q_worldtable.txt): six
+  mechanical gates, then the world table.
+
+**Gates (all PASS on 75 rows):** G1 ids/status/fields; G2 every cited script
+and output file exists on disk; G3 every supersession pointer resolves to a
+live row; G4 no two CURRENT rows claim the same quantity; G5 fifteen ledger
+values grepped verbatim out of their stage output files; G6 every world-table
+cell cites a live (non-retracted) ledger row. The gates caught three of my
+own transcription slips on the first run — a CSV quoting bug that shifted the
+α-final row, a rounding that didn't match 5N's file (−29.27±52.98, now quoted
+at file precision), and a wrong output-file pointer for 6G — which is the
+audit doing for the ledger what the fit gates do for the physics.
+
+**The world table** (13 laws × 7 test columns, per-cell ledger provenance):
+- **Formal sky vetoes:** Newton (everywhere, 24/24 + 2000/2000), F4
+  (binary α-edge 6/6), boot (binary edge + vertical collapse), the pointwise
+  drive-weighted rule (0/6), no-EFE MI (12/12). These five are out.
+- **No formal veto:** simple (but hier-galaxy-rejected at strong-lean grade
+  −99 — the two-system tension in one row), BE, ν_p(0.65), gm, F1/F2, F3
+  (all binary-lean-against and a₀-strained at +4.3…+6.3σ), **AMB**, and
+  EFE-respecting MI (the Saturn door).
+- **The mechanical sentence the table proves:** AMB is the only candidate
+  simultaneously (a) un-vetoed on the binaries (−0.88±2.66 tie, interior
+  6/6), (b) at the top galaxy bootstrap grade (37/40 — same as F4, which IS
+  binary-vetoed), (c) best on the binary temperature row (+1.6σ), and (d)
+  postdicting both measured tail exponents (0.689/0.529). It carries the
+  post-hoc flag and the same 4.0× Cassini quadrupole as every MG member.
+- **Independence made explicit:** all galaxy columns share SPARC-153
+  (+Chae21) = one data vote; all binary columns share EDR3-14071 = one data
+  vote; Cassini is the third, independent, and 4.0–5.8× against every MG
+  member (escape: mi_t, which ties the binary contest). "Passes both
+  systems" = exactly two independent votes, not five.
+- The ladder digit (½ vs ⅓ vs sharper) is confirmed OPEN at population
+  grade by the assembled table — no row closes it.
+
+On the "answer equation" half of the user's question: the audit shows the
+retro-fit is already done in the legitimate direction — the rigid candidate
+(AMB + a₀ = cH₀/2π + α = 1) postdicts the ledger's sky rows; what it does
+NOT absorb is exactly the residue the table isolates (Saturn ×4, the binary
+a₀ +1.6σ, N ~ 20–60, the mechanism). Any future function proposal can now
+be scored against the full table in one script run instead of a NOTES
+archaeology session.
+
+**Discipline note:** the ledger is append-only in spirit — replacing a number
+means flipping the old row to SUPERSEDED with a pointer, never deleting.
+Every future stage that produces a headline number should add its row in the
+same commit.
+
+**Verdict: SUCCESS — infrastructure stage; no physics changed, every number
+now has one canonical home, and the "which function survives what" question
+is answered by a script instead of memory.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

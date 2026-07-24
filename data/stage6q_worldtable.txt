@@ -1,0 +1,143 @@
+STAGE 6Q: ledger audit + world table  (75 ledger rows)
+==============================================================================
+G1 (ids/status/fields): PASS
+G2 (script/output on disk): PASS
+G3 (supersession resolves): PASS
+G4 (current-quantity collisions): PASS
+G5 (value spot-checks, 15 tokens): PASS
+
+G6 (world-table provenance): PASS
+
+THE WORLD TABLE  (columns: BIN binary contest | GALH hier-galaxy ladder |
+  GBOOT galaxy bootstrap | A0 binary temperature | C1 dial | TAILP dial |
+  QUAD Cassini)
+------------------------------------------------------------------------------
+Newton
+  BIN    DEAD         +90..+103 lnL behind, min +84; 24/24 contests  [bin-newton-v7corr]
+  GALH   DEAD         +1659/+2777 on 15 lensing points alone; loses every SPARC fit  [gal-newton-lensing]
+  GBOOT  DEAD         excluded 2000/2000, min +53  [bin-newton-final]
+  C1     na           nu=1: c1 undefined; c1=0 branch dead-to-strong-lean  [gal-nlo-honest]
+  QUAD   PASS         no anomalous quadrupole  [sol-quadrupole]
+  => DEAD on the sky; alive only at Saturn
+
+simple-nu (classical bath)
+  BIN    LEAD         beats BE by 12.6+-2.4 SE  [bin-lean-simple]
+  GALH   REJECT       falls LAST hierarchically: 99 behind BE (strong lean; no bootstrap)  [galfn-simple-hier]
+  GBOOT  na           flat SPARC agnostic (raw-chi2 lean retracted)  [ret-sparc-simple]
+  A0     PASS         +2.5 sigma  [bin-a0-half]
+  C1     OK           c1=1/2 exact (c2=1/8)  [gal-c1-hier]
+  TAILP  na           power-law tail; outside the p-family
+  QUAD   SHARED-FAIL  4.3x Cassini  [sol-quadrupole]
+  => binary-favored, hier-galaxy-rejected: the two-system tension in one row
+
+BE (C&T reference)
+  BIN    PASS         the reference; beats every sharpened function here  [binfn-pref-half]
+  GALH   REJECT       trailed by every sharpened function (-42..-64 vertical)  [galfn-f3f4]
+  GBOOT  REJECT       behind F4 and AMB 37/40 (lean grade)  [boot-amb]
+  A0     PASS         +1.9 sigma  [bin-a0-half]
+  C1     OK           c1=1/2, c2=1/12 exact  [gal-c1-hier]
+  TAILP  MIXED        p=1/2: binaries OK, galaxies want 0.65-0.75  [gal-tail-p]
+  QUAD   SHARED-FAIL  4.3x Cassini  [sol-quadrupole]
+  => binary-anchored baseline; galaxies have outgrown it at lean grade
+
+nu_p(0.65)
+  BIN    LEAN-        trails BE by 5.2+-0.9; interior = accepted  [binfn-p065]
+  GALH   LEAD         -56.4 plain (tail dial alone); -32 vertical  [gal-tail-p]
+  A0     REJECT       +4.9 sigma (sharp translation)  [bin-a0-sharp]
+  C1     na           p-family axis, not a c1 member
+  TAILP  MIXED        p=0.65: galaxies OK, binaries want 1/2  [binfn-pref-half]
+  QUAD   SHARED-FAIL  amplitude-locked  [sol-quadrupole]
+  => first both-systems-viable function; superseded in role by AMB
+
+gm (beta=1/2)
+  BIN    LEAN-        trails BE by 8.5+-2.1  [binfn-gm]
+  GALH   LEAD         -84.8 plain / -42.7 vertical  [galfn-gm]
+  GBOOT  LEAN+        -29.27+-52.98, 29/40  [boot-gm]
+  A0     REJECT       +4.3 sigma  [bin-a0-sharp]
+  C1     MIXED        c1=1/3: galaxy dial OK; binary dial 0.37-0.50 excludes it narrowly  [bin-c1]
+  TAILP  MIXED        p=3/4: galaxy edge, binaries reject  [binfn-pref-half]
+  QUAD   SHARED-FAIL  4.0-5.8x (beta-blind)  [sol-quadrupole]
+  => best zero-param galaxy function of the mixing family; binary-strained
+
+F1/F2 (spontaneous fraction)
+  BIN    LEAN-        trail BE by 5.8/5.5+-2; interior 12/12  [binfn-f1f2]
+  GALH   LEAD         F2 -107.2/-51.9; F1 -101.3/-44.3  [galfn-f1f2]
+  A0     REJECT       +5.2..+6.3 sigma  [bin-a0-sharp]
+  C1     OK           c1=1/2 exact; p=3/4 exact  [gal-c1-hier]
+  TAILP  MIXED        p=3/4: galaxy edge, binaries reject  [binfn-pref-half]
+  QUAD   SHARED-FAIL  4.8-5.3x  [sol-quadrupole]
+  => derived not fitted; improved-not-accepted on binaries; a0 wall
+
+F3 (two-leg)
+  BIN    LEAN-        trails BE by 6.84; interior  [binfn-f3f4]
+  GALH   LEAD         -111.4 plain / -50.9 vertical  [galfn-f3f4]
+  A0     REJECT       +6.2 sigma grade (kappa 1.26-1.35)  [bin-a0-sharp]
+  C1     OK           c1=1/2 AND c2=1/12 exact  [gal-c1-hier]
+  TAILP  na           sharp-screening class (the rejected behavior is screening-region)
+  QUAD   SHARED-FAIL    [sol-quadrupole]
+  => galaxy-strong, binary- and a0-strained
+
+F4 (two-leg)
+  BIN    VETO         alpha-EDGE 6/6 = shape rejection (trails 6.96)  [binfn-f3f4]
+  GALH   LEAD         -108.7/-64.2 = biggest controlled galaxy lead  [galfn-f3f4]
+  GBOOT  LEAN+        -57.4+-38.3, 37/40  [boot-f4]
+  A0     na           edge-invalidated  [bin-a0-sharp]
+  C1     OK           c1=1/2 AND c2=1/12 exact  [gal-c1-hier]
+  QUAD   SHARED-FAIL    [sol-quadrupole]
+  => best pure-galaxy function; binary-vetoed
+
+boot (quarter cell)
+  BIN    VETO         +17-24 behind half-branch; alpha edge-rides = shape rejection  [binfn-boot]
+  GALH   VETO         hier lead +75.6 COLLAPSES to -9 under the measured vertical channel  [galfn-boot-hier]
+  GBOOT  na           43/50 was the no-vertical conditional  [galfn-boot-hier]
+  C1     MIXED        c1=1/4: hier profile peaks there but flat-joint disfavors 3.1 sigma; binary dial excludes  [gal-c1-flat]
+  TAILP  na           nu(1)=1.35 weak transition = the rejected shape
+  QUAD   SHARED-FAIL    [sol-quadrupole]
+  => DEAD everywhere once vertical freedom and binaries are counted
+
+AMB (ambient-gated, L=2)
+  BIN    TIE          -0.88+-2.66 vs BE; interior 6/6; ACCEPTED  [binfn-amb]
+  GALH   LEAD         -61.68 vertical / -100.5..-105.9 plain (measured ambients)  [galfn-amb]
+  GBOOT  LEAN+        -56.71+-35.65, 37/40 = top grade, binary-compatible  [boot-amb]
+  A0     PASS         +1.6 sigma = best temperature row in the program  [bin-a0-amb]
+  C1     OK           c1=1/2, c2=1/12 gate-independent  [gal-c1-hier]
+  TAILP  OK           postdicts BOTH: 0.689 gal / 0.529 bin  [amb-p-postdict]
+  QUAD   SHARED-FAIL  3.60e-26 = 4.0x  [sol-quadrupole]
+  => the unique two-system pass; post-hoc flag carried; DR4 = out-of-sample decider
+
+drive-weighted (pointwise)
+  BIN    VETO         EXCLUDED -9.64+-1.49, 0/6; predicted mid-separation sag observed  [binfn-drive]
+  GALH   na           isolated limit reduces to F4 (gate-verified)  [binfn-drive]
+  A0     PASS         +2.1 sigma (the two vetoes are independent)  [binfn-drive]
+  C1     OK           c1=1/2 isolated
+  QUAD   na           not separately computed
+  => the local-field version of the gate is excluded; the gate is system-level
+
+MI (EFE-respecting, mi_t)
+  BIN    TIE          ties MG: -3.5+-3.3 / -0.8+-2.5  [binfn-mi]
+  GALH   na           MI = MG on circular orbits (rotation curves blind)  [binfn-mi]
+  A0     na           shares the MG tables
+  QUAD   ESCAPE       no capped-type EFE quadrupole  [sol-quadrupole]
+  => the open door through Saturn; DR4 eccentricity-resolved data decides
+
+MI (no-EFE)
+  BIN    VETO         dead 12/12: -20..-28 with alpha driven to 0.5-0.6 = the data demand the EFE amplitude  [binfn-mi]
+  QUAD   ESCAPE         [sol-quadrupole]
+  => dead
+
+------------------------------------------------------------------------------
+Formal sky vetoes (VETO/DEAD in some row): Newton; F4 (two-leg); boot (quarter cell); drive-weighted (pointwise); MI (no-EFE)
+No formal sky veto: simple-nu (classical bath); BE (C&T reference); nu_p(0.65); gm (beta=1/2); F1/F2 (spontaneous fraction); F3 (two-leg); AMB (ambient-gated, L=2); MI (EFE-respecting, mi_t)
+
+Independence: all GALH/GBOOT rows share SPARC-153 (+Chae21 ambients) = ONE
+data vote; all BIN/A0 rows share EDR3-14071 = ONE data vote; QUAD (Cassini)
+is independent and 4.0-5.8x AGAINST every MG member (escape: EFE-respecting
+MI, which ties the binary contest). "Passes both systems" therefore means
+exactly two independent data votes, plus one shared solar tension.
+
+The mechanical sentence the table proves: AMB is the only candidate that is
+(a) un-vetoed on the binaries (tie with BE), (b) at the top galaxy bootstrap
+grade (37/40, lean not detection), (c) best on the binary temperature row
+(+1.6 sigma), and (d) postdicts both measured tail exponents - carrying the
+post-hoc flag and the same Cassini quadrupole as every other MG member.
+The ladder digit (1/2 vs 1/3 vs sharper) remains OPEN at population grade.
