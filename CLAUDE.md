@@ -758,13 +758,29 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   postdictions 0.6885/0.5280 at 4 digits. Ledger mech-mixmean (31
   tokens green); PAPER §2.4 passage; plain verdict: theorem+cross-
   validation+positive-flank SUCCESS / negative flank NEEDS
-  REFINEMENT (window-limited). NEXT QUEUED = 7G: the trajectory-
-  formulation Saturn quantification (4L mi_t machinery + AMB
-  function; Saturn trajectory y≈5e5 ⇒ occupation e^(−734) ⇒ the
-  transition shell never on the worldline; residual = galactic tide
-  ~8e-31 = 4 orders under Cassini per 6W's moot block; honest MI
-  costs to carry: time-nonlocality/conservation/Petersen-Lelli
-  rotation-curve constraints); then the DM mimicry-ledger paper
+  REFINEMENT (window-limited). **7G EXECUTED (pre-reg 8ce8466): THE
+  SATURN CANCELLATION QUANTIFIED — trajectory formulation of AMB:
+  Saturn worldline y = 5.38e5 ⇒ u = 1060.8 ⇒ anomaly 10^(−460.7) =
+  451 ORDERS under Cassini (B2 PASS; residual = galactic tide
+  4026× under; r_M = 7030 AU ⇒ Oort/extreme-aphelion trajectories
+  = the residual solar probe; CONTRAST: power-law tails leave
+  r-dependent G_eff ~1.9e-6 = ephemeris-dead ⇒ the trajectory door
+  is open ONLY for Boltzmann-screened functions = the measured
+  screening class — the two program halves point at each other).
+  Binary equivalence PARTIAL: mi_t-AMB proxy trails MG-AMB −8.43
+  mean (seeds −11.33/−5.54; α̂ 1.55 interior / 2.00 EDGE; G0 α=0
+  bit-identity PASS to 0.07) — neither tie (|D|≤5 + interior both)
+  nor formal narrows (mean ≤ −10); proxy-crudeness vs genuine
+  class-cost UNRESOLVED (α̂ inflation points at discretization
+  loss, unproven); the 4L standard-law tie does NOT auto-transfer
+  to AMB; refinement = 6 seeds + beyond-proxy implementation
+  (unpromised); no post-hoc seed extension (pre-reg fixed 31/101).
+  MG-formulation tension STANDS in the world table — a door opened
+  by numbers (10^451 one side, −8 lnL the other), not a row
+  deleted. Ledger sol-trajmargin + binfn-ambmi (33 tokens green);
+  PAPER §8.2 closing passage; NOTES 7G; plain verdicts: Saturn leg
+  SUCCESS / binary-equivalence NEEDS REFINEMENT.** Then the DM
+  mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation

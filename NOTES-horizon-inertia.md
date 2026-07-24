@@ -4064,6 +4064,56 @@ measurement beyond y ~ 30 (deep-window galaxies / DR4-era) or the c₄ rung.
 PLAIN VERDICT: SUCCESS on the theorem + the cross-validation + the positive-flank
 exclusion; NEEDS REFINEMENT on the negative flank (window-limited, stated).
 
+## Stage 7G (2026-07-24): the trajectory formulation vs Saturn — the cancellation QUANTIFIED (451 orders); the binary equivalence PARTIAL at proxy grade
+
+Pre-reg 8ce8466 ([calcs/stage7g_trajsaturn.py](calcs/stage7g_trajsaturn.py)); the 6Y
+Saturn corollary converted to numbers. Machinery: the 4L mi_t prescription verbatim
+(per-orbit boost at the Kepler time-average, EFE-respecting via the gated AMB table,
+exact-Newton engine) on the corrected-velocity v7 pipeline; 6G MG-AMB rows as
+same-seed comparators; G0 α=0 bit-identity PASS (Newton rows match to 0.07).
+
+**Q2 — SATURN, the headline ([data/stage7g_trajsaturn.txt](data/stage7g_trajsaturn.txt)):
+in the trajectory formulation the anomaly attaches to the worldline's own occupation.
+Saturn: y = 5.38e5 → occupation argument u = 1060.8 → trajectory anomaly ν−1 ~
+10^(−460.7) vs the Cassini-equivalent δa/a = 6.7e-11 ⇒ THE TRAJECTORY OBSERVABLE
+SITS 451 ORDERS OF MAGNITUDE UNDER CASSINI (bar: ≥2). B2 PASS.** The transition
+shell that sources the 4K quadrupole never exists on Saturn's trajectory; the
+residual observable is the ordinary galactic tide (7.5e-31 s⁻² = 4026× under the
+bound, the 6W moot block). Dividends: (i) trajectories crossing r_M = 7030 AU (Oort
+bodies, extreme-aphelion comets) DO sample the transition = the residual solar
+probe; (ii) the CONTRAST row (order-of-magnitude, labeled): a power-law tail leaves
+an r-dependent G_eff at ν−1 ~ 1.9e-6 at Saturn — ephemeris-dead by orders — **the
+trajectory door is open ONLY for Boltzmann-screened functions, i.e. exactly the
+screening class the data selected. The two halves of the program point at each
+other.**
+
+**Q1 — the binary equivalence: PARTIAL, honestly.** mi_t-AMB vs MG-AMB same-seed:
+−11.33 (seed 31, α̂ = 1.55 interior) and −5.54 (seed 101, α̂ = 2.00 EDGE); mean
+−8.43; interior 1/2. Per the pre-registered bars this is neither TIE (needed |D| ≤
+5/seed + interior both) nor formally NARROWS (needed mean ≤ −10): **the trajectory
+PROXY trails the field formulation by ~8.4 ± ~3 at 2 seeds** — in the same band as
+the eight-function sharpened penalty, and with α̂ inflated (1.55/2.00 vs MG's 1.06:
+the per-orbit averaging washes out boost and buys it back with amplitude —
+consistent with proxy-discretization loss, but not provably so). Cannot distinguish
+"the proxy is too crude for the AMB shape" from "the class genuinely fits worse"
+at this grade. The 4L STANDARD-law tie (mi_t ties MG, −3.5±3.3, 6 seeds) does NOT
+automatically transfer to AMB. Refinement (unpromised): budget-grade 6 seeds + a
+better-than-proxy trajectory implementation. No post-hoc seed extension — the
+pre-registration fixed 31/101.
+
+Carried costs (stated in-output): mi_t is a per-orbit proxy, not a full nonlocal MI
+theory (time-nonlocality + conservation need the real formalism); Petersen & Lelli
+2020 constrain specific MI models on rotation curves; **the MG-formulation
+quadrupole tension STANDS in the world table — this stage opened a door by numbers,
+it did not delete the row.**
+
+PLAIN VERDICTS: the Saturn cancellation — SUCCESS (quantified at 451 orders; the
+4K paradox now has a numerical open door within the derived class). The binary
+formulation-equivalence — NEEDS REFINEMENT (proxy trails −8.4 ± ~3, one α̂ edge).
+Overall: "modified inertia might do it" has become "the derived coupling class
+does it on Saturn's side by 10^451, at a measured, unresolved −8-lnL binary cost
+for the proxy."
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

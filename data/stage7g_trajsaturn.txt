@@ -1,0 +1,34 @@
+STAGE 7G: the trajectory formulation vs Saturn
+========================================================================
+Q2 the Saturn worldline (trajectory formulation of AMB):
+  y_Sat = g_Sun(r_Sat)/a0 = 5.382e+05
+  occupation argument u = y^((1+beta)/2) with tail beta = g/2 = 0.0559: u = 1060.8
+  trajectory anomaly nu - 1 ~ 10^(-460.7)
+  Cassini-equivalent da/a = Q2*r/g = 6.66e-11 (Q2 = 3e-27 s^-2, Hees+14)
+  MARGIN: the trajectory observable sits 451 ORDERS OF MAGNITUDE under Cassini
+  residual quadrupole = the galactic tide ~ 7.5e-31 s^-2 = 4026x under the bound (6W)
+  transition radius r_M = sqrt(GM/a0) = 7030 AU:
+  trajectories crossing ~7 kAU (Oort bodies, extreme-aphelion
+  comets) DO sample the transition -- the residual solar probe.
+  CONTRAST (order-of-magnitude, labeled): a power-law tail leaves
+  nu-1 ~ 1/y = 1.86e-06 at Saturn as an r-DEPENDENT G_eff --
+  ephemeris-dead by ~3-4 orders; the trajectory door is open ONLY
+  for Boltzmann-screened functions (the measured screening class).
+B2: PASS (>= 2 orders; got 451)
+
+binary runs done
+
+Q1 binaries (corrected velocities; MG-AMB comparators = 6G same-seed):
+  seed 31: mi_t-AMB lnL -56349.96 vs MG-AMB -56338.64 -> D = -11.33; a_hat = 1.55 (interior=True); dlnL(Newton) = +85.8; G0 Newton-row match d = +0.072 OK
+  seed 101: mi_t-AMB lnL -56358.34 vs MG-AMB -56352.81 -> D = -5.54; a_hat = 2.00 (interior=False); dlnL(Newton) = +92.2; G0 Newton-row match d = -0.036 OK
+G0 (bit-identity of the alpha=0 rows): PASS
+  mean D = -8.43; interior 1/2
+B1: see rows
+
+VERDICT (pre-registered): PARTIAL -- see components
+carried costs: mi_t is a per-orbit PROXY, not a full nonlocal MI
+theory (time-nonlocality + conservation need the full formalism);
+Petersen & Lelli 2020 constrain specific MI models on rotation
+curves; the MG-formulation quadrupole tension STANDS in the world
+table -- this stage opens a door by numbers, it does not delete the
+row. The r-dependent-G contrast is order-of-magnitude, labeled.

@@ -93,6 +93,8 @@ CHECKS = [
     ('galfn-qcl',       '+556.51', 'data/stage7d_vacuumshare.txt'),
     ('binfn-rja',       '+1.68', 'data/stage7d_vacuumshare.txt'),
     ('mech-mixmean',    '0.7445', 'data/stage7f_mixmean.txt'),
+    ('sol-trajmargin',  '451', 'data/stage7g_trajsaturn.txt'),
+    ('binfn-ambmi',     '-8.43', 'data/stage7g_trajsaturn.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
