@@ -451,9 +451,20 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   spread K·√(n(n+1))); (b) resolution-β in gravity = ρ = x(√ν−1),
   transition-peaked (0.26 at x≈1–1.5), tail-zero = wrong sky shape
   in both non-deep regimes. Pull lemma exact: thermal comb centroid
-  = 2K·n̄ (statistics, not shares). NEXT = 6K-v3 pseudomode (exact
-  two-mode Lindblad, true Lorentzian bath — the closing instrument);
-  paper §2.4 updated in place (still v2.5).** O5 remaining sharpened:
+  = 2K·n̄ (statistics, not shares). 6N (=6K-v3, pre-reg 6724597):
+  **THE LAB LEG CLOSED — CLOSE-OPP. The cancellation theorem: flat
+  bath ⇒ exact source-locking (full two-mode Lindblad confirms:
+  max|λ| = 0.0065, g-independent — the buildable fridge config
+  measures ZERO); which occupation a self-shifting mode takes =
+  whether the bath's KMS structure is resolved across the self-shift
+  (C&T-vs-boot in one line). KMS-contrast carrier works but is
+  bath-geographic (34× off tanh²; λ rises with x₀ — recorded, not a
+  rescue); contrast dial's sky shape transition-peaked/tail-vanishing
+  ⇒ the sky's tail-only β is ANTI-STANDARD. Three classes (6K/6M/6N)
+  all fail ⇒ bath-microphysics conditional 15% → ~8% per pre-commit;
+  NO v4; fridge moot. Survivors: horizon-specific non-Markovian, MI/
+  trajectory, or pure sky-phenomenology (~92% complement — function
+  record untouched). Paper §2.4 closed-out in place (still v2.5).** O5 remaining sharpened:
   why exactly TWO legs from dS mode counting (the round trip is now
   the measured target, not an assumption); MI-trajectory alternative
   standing.** Paper

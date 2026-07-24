@@ -3133,6 +3133,79 @@ branch fired exactly as designed); the mechanism question — still
 open, now with a fully specified closing instrument (pseudomode v3)
 and two sign-level leans against, on the record.**
 
+## Stage 6N (= 6K-v3) — the pseudomode calculation CLOSES the lab leg: CLOSE-OPP, credence 15% → ~8% (2026-07-24)
+
+Pre-registered at 6724597 BEFORE execution.
+[calcs/stage6n_pseudomode.py](calcs/stage6n_pseudomode.py) →
+data/stage6n_pseudomode.txt. All gates pass (linear composite 2.7e-7;
+theorem gate exact; truncation 4.7e-7; solve residual 2e-16;
+positivity −3e-17; GB1/GB2 machine-zero; GB3 Davies endpoint 1.05).
+
+**THE CANCELLATION THEOREM (stated in design, confirmed exactly):**
+for any FLAT reservoir — occupation constant across its line — the
+up/down ratio of every mediated transition is the same Boltzmann
+factor, so a self-shifting mode stays source-locked EXACTLY: the
+Lorentzian lineshape cancels in the weak-coupling ratio, and every
+composite eigen-transition pays the same constant ratio in the
+strong-coupling secular limit. **Part A (exact two-mode Lindblad, the
+buildable circuit-QED configuration: Kerr mode + damped thermal
+filter): max |λ| = 0.0065 over the FULL scan (three x₀ × three κ/K ×
+three g/κ; g-independent to 4 digits)** — the non-secular residual is
+sub-1% and unorganized; the single-filter fridge experiment measures
+zero, by theorem. (Secular source-locking is presumably quantum-optics
+folklore — stated as such, no novelty claimed without a scout.)
+Corollary worth one line: **which occupation a self-shifting mode
+takes is decided ENTIRELY by whether the bath's thermal (KMS)
+structure is resolved across the self-shift** — the C&T-vs-boot
+dichotomy in one sentence.
+
+**Part B (the KMS-contrast carrier, two filters with local thermal
+occupations — the minimal resolved-structure bath):** λ runs 0.22–3.06
+across the scan — the carrier WORKS (GB1/GB2/GB3 establish the
+organization: zero without contrast, zero with equal occupations,
+Davies with a fine bank) — and it is **NOT share-organized: λ/tanh²
+spread 34× in the best window (band was 1.69)**. Honest note: λ RISES
+with x₀ in all four rows — superficially the grammar's direction —
+but the organization is by BATH GEOGRAPHY (which lines exist, where,
+at what occupations: contrast 1−e^(−δx₀) at fixed δ), not by the
+mode's own occupation share; the grammar's β depends on the mode
+alone. Recorded, not spun; it does not rescue the share form
+(quantitatively 34× off) and 6M's resolution dial ran the OTHER way —
+both are standard physics, neither is the grammar.
+
+**Part C (analytic):** the physical contrast dial in gravity,
+C = [n(x)−n(x+Δx)]/n(x) with Δx = x(√ν−1): 0.80 deep → 0.32 at x=1 →
+0.02 at x=5 — again transition-weighted, VANISHING in the tail. The
+sky's tail-only β ≈ ½–¾ (5T) is unreachable by any monotone map of
+this dial: **within standard bath physics, the tail is the regime
+LEAST able to sustain admixture — the sky's pattern is
+anti-standard.**
+
+**PRE-REGISTERED VERDICT: CLOSE-OPP. The lab leg CLOSES.** Three
+realization classes — jump-rate competition (6K), golden-rule
+structured bath (6M), exact-Lindblad filter dynamics (6N) — and none
+produces the grammar's share-squared, rate-free, mode-local gating;
+the one exact theorem says the flat-bath endpoint is source-locking,
+and the one physical carrier (KMS contrast) is bath-geographic with
+the wrong sky shape. Per the pre-commitment: **bath-microphysics
+conditional 15% → ~8%. NO v4; a fridge experiment is moot — it would
+re-measure the standard physics computed here (Part A IS the
+buildable configuration, and its answer is zero).** The mechanism's
+remaining homes: (a) horizon-specific non-Markovian physics (the dS
+"bath" is causal structure, not a filter bank — explicitly not
+fridge-buildable; the ~T bath-width loophole noted), (b) the
+MI/trajectory reading (which never lived in a bath), or (c) no
+microphysics at all — the ambient-gated function as pure sky
+phenomenology, which is the ~92% complement and takes nothing from
+its function-level record (joint two-system pass, 37/40 bootstrap,
+measured environments, tail postdictions).
+
+**Verdict: SUCCESS — the question the user asked two nights ago
+("what if the math won't predict this?") is now fully answered by
+three pre-registered calculations and one theorem: it doesn't, we
+know exactly why, and the program knows precisely where the mechanism
+must live if it lives anywhere.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

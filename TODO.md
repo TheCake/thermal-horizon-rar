@@ -321,13 +321,26 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     the grammar (occupied → fully dressed, sparse → source-pinned);
     (b) resolution-β's gravity shape = transition-peaked, tail-zero =
     wrong sky shape both non-deep regimes. Credence HELD ~15% per
-    discipline (AMBIG carries no committed move), lean noted. NEXT:
-    **6K-v3 = the pseudomode calculation** (Kerr mode + damped
-    thermal auxiliary mode, exact two-mode Lindblad steady state +
-    spectrum — true Lorentzian bath, no kernel heuristics; the
-    closing instrument for the lab leg) — then the horizon-side
-    derivation (why two legs) and the standing MI-trajectory
-    alternative. Scout-level: Bernoulli-break↔leg-count
+    discipline (AMBIG carries no committed move), lean noted. 6K-v3 EXECUTED as
+    **6N (pseudomode, pre-reg 6724597): CLOSE-OPP — THE LAB LEG IS
+    CLOSED.** The cancellation theorem (flat bath ⇒ exact
+    source-locking; confirmed to |λ| ≤ 0.0065 in the full two-mode
+    Lindblad = the buildable fridge configuration measures ZERO);
+    the KMS-contrast carrier works but is bath-geographic, not
+    share-organized (34× off tanh²); the contrast dial's sky shape is
+    transition-peaked/tail-vanishing = the sky's tail-only β is
+    ANTI-STANDARD. Three realization classes (6K jump / 6M structured
+    / 6N exact) all fail to produce the grammar. **Pre-committed:
+    bath-microphysics conditional 15% → ~8%; NO v4; fridge moot.**
+    O5 REMAINING (the ~8% + alternatives): (a) horizon-specific
+    non-Markovian derivation (dS bath = causal structure, not a
+    filter bank; bath-width ~T loophole) — the only surviving bath
+    home; (b) the MI/trajectory reading (never bath-dependent; DR4
+    eccentricity test stands); (c) accept the function as sky
+    phenomenology (the ~92% complement — costs nothing observational).
+    The corollary worth keeping: WHICH occupation a self-shifting
+    mode takes = whether the bath's KMS structure is resolved across
+    the self-shift (the C&T-vs-boot dichotomy in one line). Scout-level: Bernoulli-break↔leg-count
     and (2n+1) selection both NOT FOUND (post-6H sweep).
 
 ## Publication path (DEFERRED by user 2026-07-23 — oscillator program first; #11/#12 parked until called)

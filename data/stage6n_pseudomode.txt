@@ -1,0 +1,44 @@
+STAGE 6N (6K-v3): pseudomode/filter closing calculation -- pre-registered
+
+GA1 K=0 (g=0.24, kap=0.3): nbar_a = 0.58197643 vs n_r = 0.58197671 -> d = 2.7e-07 PASS [res 2.1e-16, herm 7.4e-18]
+GA2 theorem (g/kap=0.05, kap/K=8): lam = +0.0000 -> PASS
+GA3 truncation doubling: rel d = 4.7e-07 PASS
+
+Part A scan (lam; K = 0.1; filter at the source frequency):
+  x0=0.5 kap/K=0.5: lam(g/kap=0.3,1,2) = +0.0065  +0.0065  +0.0065
+  x0=0.5 kap/K=2.0: lam(g/kap=0.3,1,2) = +0.0065  +0.0065  +0.0065
+  x0=0.5 kap/K=8.0: lam(g/kap=0.3,1,2) = +0.0065  +0.0065  +0.0065
+  x0=1.0 kap/K=0.5: lam(g/kap=0.3,1,2) = +0.0000  +0.0000  +0.0000
+  x0=1.0 kap/K=2.0: lam(g/kap=0.3,1,2) = +0.0000  +0.0000  +0.0000
+  x0=1.0 kap/K=8.0: lam(g/kap=0.3,1,2) = +0.0000  +0.0000  +0.0000
+  x0=2.0 kap/K=0.5: lam(g/kap=0.3,1,2) = -0.0000  -0.0000  +0.0000
+  x0=2.0 kap/K=2.0: lam(g/kap=0.3,1,2) = +0.0000  -0.0000  -0.0000
+  x0=2.0 kap/K=8.0: lam(g/kap=0.3,1,2) = +0.0000  +0.0000  +0.0000
+  GA4 min eigenvalue across scan: -3.1e-17 PASS
+  Part A non-secular residual: max |lam| = 0.0065
+
+GB1 single filter (theorem): lam = 0.0e+00 -> PASS
+GB2 two filters, equal occupation: lam = 0.0e+00 -> PASS
+GB3 fine KMS bank (Davies endpoint): lam = 1.0543 -> PASS
+
+Part B scan (two filters, c2 = w0 + delta, local KMS occupations):
+  delta=0.10 kf=0.05: lam(x0=0.3..3) = +0.2201  +0.3301  +0.5762  +0.9468  +1.3880
+  delta=0.10 kf=0.15: lam(x0=0.3..3) = +0.2138  +0.3184  +0.5851  +1.3301  +3.0603
+  delta=0.30 kf=0.05: lam(x0=0.3..3) = +0.6192  +0.7750  +0.8506  +0.7082  +0.6698
+  delta=0.30 kf=0.15: lam(x0=0.3..3) = +0.6096  +0.7681  +0.9026  +1.0654  +1.7305
+
+  (i) SHARE TEST FAIL: best window delta=0.3, kf=0.05: lam/tanh^2 spread = 34.2 (band < 1.69); lam = ['0.619', '0.775', '0.851', '0.708', '0.670']
+  (ii) monotonicity: lam vs x0 per row: d=0.1,kf=0.05: rising; d=0.1,kf=0.15: rising; d=0.3,kf=0.05: rising; d=0.3,kf=0.15: rising
+
+Part C: KMS-contrast dial translated to gravity (C = [n(x) - n(x + dx)]/n(x), dx = x(sqrt(nu)-1)):
+    x = 0.05: dx = 0.1764, contrast = 0.7982
+    x = 0.20: dx = 0.2698, contrast = 0.6307
+    x = 0.50: dx = 0.2971, contrast = 0.4679
+    x = 1.00: dx = 0.2578, contrast = 0.3175
+    x = 1.50: dx = 0.2018, contrast = 0.2235
+    x = 2.00: dx = 0.1508, contrast = 0.1584
+    x = 3.00: dx = 0.0776, contrast = 0.0783
+    x = 5.00: dx = 0.0169, contrast = 0.0169
+    -> the contrast is small deep, PEAKS at the transition, and stays O(dx) in the tail where dx -> 0: the standard-bath interpolation dial again has no tail plateau -- the sky's tail-only beta ~ 1/2-3/4 (5T) is not reproduced by any monotone map of this dial.
+
+PRE-REGISTERED VERDICT: CLOSE-OPP (lab leg closes: three realization classes, no share gating; B is KMS/geometry-organized)
