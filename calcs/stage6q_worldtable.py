@@ -90,6 +90,8 @@ CHECKS = [
     ('gal-bump-inner',  '0.0000', 'data/stage7c_gammaclean.txt'),
     ('gal-gamma-final', '-2.376', 'data/stage7c_gammaclean.txt'),
     ('mech-platform',   '+0.987', 'data/stage7e_platform.txt'),
+    ('galfn-qcl',       '+556.51', 'data/stage7d_vacuumshare.txt'),
+    ('binfn-rja',       '+1.68', 'data/stage7d_vacuumshare.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

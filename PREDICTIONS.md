@@ -29,6 +29,7 @@ against Newton/DM).
 | Radial-orbit excess w_rad = 0.20 | matches Hwang+22 superthermal law (20–22% at e > 0.9) — external cross-validation | MOND-agnostic consistency | 3N/4G |
 | Untied-exponent falsifier | tied gate (2,2) survives the untied contest (margins within noise) | — | 6V |
 | Cassini screening bound | p > 0.234 required; measured 16th pct 0.462 — passed | — | 3 (RAR fit) |
+| Vacuum share in the gate's local factor | classical-pull replacement (no "+1") rejected at +556.5 on the galaxy ladder (cap-robust lower bound; worse than no admixture at all); binary direct leg instrument-N/A, indirect support via 6G acceptance + β < 0.03 | **classical-immune** (the "+1" is spontaneous emission — absent from any classical field bath; conditional on the admixture grammar) | 7D |
 
 Corrections record: fourteen logged in [PAPER.md](PAPER.md) Appendix A. In-sample
 environmental ordering WITHDRAWN (correction #14, Stage 6Z) — moved to C/P2.

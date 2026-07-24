@@ -1,0 +1,43 @@
+STAGE 7D: the vacuum-share contest (bars in script header)
+
+GQ1 g->0 recovers BE on y<=30: dev(1e-12) = 2.78e-10, dev ratio 1e-12/1e-13 = 10.0 (linear-in-g) -> PASS
+GQ2 Newton residual: amb 5.33e-15, qcl 4.44e-15 -> PASS
+GQ3 cap (galaxy g=0.754): binds for y >= 1.13
+nu(1) galaxy-gate: AMB 1.5482 | QCL 1.4317 | RJA 1.5476
+
+table data/efe_boost_qcl_g1p0.npy exists (g=0.1353)
+table data/efe_boost_qcl_g1p2.npy (eN=1.2, g=0.1118)  [spherical identity 10.61% ABORT-LEG]
+table data/efe_boost_qcl_g1p4.npy exists (g=0.0938)
+table data/efe_boost_rja_g1p0.npy exists (g=0.2500)
+table data/efe_boost_rja_g1p2.npy exists (g=0.2277)
+table data/efe_boost_rja_g1p4.npy exists (g=0.2098)
+(0.1 min tables, NR=2048)
+binary leg SKIPPED for qcl (identity >= 5%)
+binary runs done
+vertical-hardened:
+  BE:  -12152.49  la0=-9.981 f=1.164 s_int=0.045  [5P -12152.49, d=-0.00 OK]  (0.0 min)
+  AMB:  -12211.54  la0=-10.005 f=1.256 s_int=0.044  [6F fiducial delta was -59.05; here -59.05]  (2.9 min)
+  QCL:  -11655.03  la0=-10.015 f=1.456 s_int=0.053  (42.6 min)
+  QCL16:  -11631.48  la0=-10.015 f=1.456 s_int=0.053  (71.7 min)
+  RJA:  -12211.30  la0=-10.001 f=1.279 s_int=0.044  (3.5 min)
+  Delta AMB vs AMB: +0.00   (vs BE: -59.05)
+  Delta QCL vs AMB: +556.51   (vs BE: +497.46)
+  Delta QCL16 vs AMB: +580.06   (vs BE: +521.01)
+  Delta RJA vs AMB: +0.24   (vs BE: -58.80)
+
+plain hier:
+  BE:  -10435.00  la0=-10.104 f=1.398 s_int=0.070  [5P -10435.00, d=-0.00 OK]  (0.0 min)
+  AMB:  -10527.40  la0=-10.119 f=1.486 s_int=0.068  (1.1 min)
+  QCL:  -10253.34  la0=-10.133 f=1.725 s_int=0.074  (7.9 min)
+  Delta AMB vs AMB: +0.00   (vs BE: -92.40)
+  Delta QCL vs AMB: +274.06   (vs BE: +181.67)
+
+binaries (corrected velocities; vs amb and p050 comparators):
+  qcl: NO RUNS PARSED
+  rja: lnL-amb per seed -2.01 -2.73 +10.27 +1.17  (mean +1.68); vs p050 mean -0.54; a_hat 1.070+-0.016; interior 4/4
+
+QCL: galaxy vertical +556.51 (cap16 +580.06; plain +274.06); binary see above
+RJA: galaxy vertical +0.24 (near-null expected)
+VERDICT: PARTIAL/UNRESOLVED -- see components
+caveats: conditional on the admixture grammar (like all 6U
+rivals); beta cap disclosed; binary comparators share seeds.

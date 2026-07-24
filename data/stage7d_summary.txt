@@ -1,0 +1,9 @@
+STAGE 3P g=1p2 seeds [31, 101, 202, 303]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 rja: a_hat=1.11 (grid 1.0, interior=True), dlnL(Newton)=+95.2, wr=0.2, prof=[-95.2, -34.4, 0.0, -13.6, -20.7]
+  seed 31: best lnL = -56340.648  (3.0 min)
+seed 101 rja: a_hat=1.07 (grid 1.0, interior=True), dlnL(Newton)=+95.0, wr=0.2, prof=[-95.0, -29.9, 0.0, -16.3, -17.0]
+  seed 101: best lnL = -56355.533  (3.0 min)
+seed 202 rja: a_hat=1.07 (grid 1.0, interior=True), dlnL(Newton)=+88.7, wr=0.2, prof=[-88.7, -26.0, 0.0, -14.2, -15.8]
+  seed 202: best lnL = -56345.893  (3.0 min)
+seed 303 rja: a_hat=1.03 (grid 1.0, interior=True), dlnL(Newton)=+90.8, wr=0.2, prof=[-90.8, -34.5, 0.0, -26.5, -24.1]
+  seed 303: best lnL = -56343.784  (3.0 min)

@@ -425,6 +425,24 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     the self-shift (the C&T-vs-boot dichotomy in one line). Scout-level: Bernoulli-break↔leg-count
     and (2n+1) selection both NOT FOUND (post-6H sweep).
 
+O18. **The vacuum rung + the platform translation** (Stages 7D/7E,
+    2026-07-24, pre-reg c53f2e2/ff1de37). 7D: the classical vacuum-free
+    local share (q_cl = 1/(2(ν−1)), no "+1") REJECTED on the galaxy
+    ladder at kill-grade ×22 (+556.5 vertical, cap-robust lower bound,
+    worse than no admixture at all); binary direct leg instrument-N/A
+    (the cliff defeats the solver's identity gate at 10.6% — refinement
+    item: a cliff-capable 1D spherical integrator, NOT promised); RJA
+    classical-ambient rung UNRESOLVED (weak as pre-stated). Quantum-
+    ladder status: occupation rung banked, vacuum-share rung galaxy-
+    direct + binary-indirect, ambient-statistics open, fluctuation
+    (P6) out-of-sample. 7E: the lending gate as a buildable cQED
+    experiment (χ/2π = 250 MHz transmon + thermal 3D cavity + 2 MHz
+    beam-splitter): lending law to 0.25%, dissipative shift < 2%,
+    saturation ×7.2, the L=2 geometric rung slope 0.987 — mechanism-
+    class validation, not a gravity test (6N frame); L=2 prefactor
+    0.480 ≈ ½ = 2nd data point for the equal-time-sharing ceiling
+    reading.
+
 O17. **The Einstein fluctuation test + the signed prediction ledger**
     (Stage 7A, 2026-07-24, pre-reg 21e7d28). [PREDICTIONS.md](PREDICTIONS.md)
     created: registered-before-test rule, status-flips only; P1–P8 with

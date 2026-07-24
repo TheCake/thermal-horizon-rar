@@ -3968,6 +3968,59 @@ its saturation, the s² geometric rung) are concrete, currently-buildable measur
 with quantified error budgets; framed honestly as mechanism-class validation, not a
 gravity test.
 
+## Stage 7D (2026-07-24): the VACUUM-SHARE contest — the galaxies demand the "+1" at kill grade ×22; the binary direct leg is instrument-limited
+
+Pre-reg c53f2e2 ([calcs/stage7d_vacuumshare.py](calcs/stage7d_vacuumshare.py)); three
+gate amendments logged pre-results (non-uniform g→0 limit; its O(g/(ν−1))
+amplification; the resolution cliff → NR=2048 + graded identity gate) + one caught
+stale-table hazard (run-1's g1p2 table written before its own gate fired, silently
+reused by the resume check — purged, exists-branch now prints). All gates green on
+the final run: GQ1 2.78e-10 with linear-in-g ratio 10.0; GQ2 5e-15; BE regressions
+d = −0.00 both treatments; AMB node reproduces 6F to the hundredth (−59.05).
+
+THE QUESTION: the AMB local factor q = 1/(2ν−1) is the vacuum share of the quantum
+(2n+1) pull. A classical bath's pull carries 2n only — no zero-point. QCL = the same
+admixture grammar on the classical share q_cl = 1/(2(ν−1)); RJA = classical-
+equipartition ambient occupation (n_RJ = 1/x). 6U never contested the local factor.
+
+RESULTS ([data/stage7d_vacuumshare.txt](data/stage7d_vacuumshare.txt)):
+- **QCL galaxies: ANNIHILATED — Δ(QCL−AMB) = +556.51 vertical (bar: reject ≥ +10,
+  kill ≥ +25 → exceeded 22×); cap16 = +580.06 (looser cap = WORSE ⇒ the rejection is
+  a LOWER bound, not a cap artifact); plain +274.06; worse than pure BE by +497/+521/
+  +182 — adding the classical admixture is worse than no admixture at all** (the R0
+  structure, now measured directly). Mechanism visible in the numbers: without the
+  vacuum floor, q_cl = 1/(2n) grows as e^x in the tail → β_cl diverges → screening
+  sharpens toward a step (p_eff = 4.5 at cap 8) — and the RAR tail, which measured
+  p ≈ 0.65–0.75, destroys it. **The quantum +1 is load-bearing: it caps q ≤ 1 and
+  keeps the admixture finite exactly where the data demand finiteness.** The fit's
+  compensation attempts (f → 1.456/1.725) fail.
+- **QCL binaries: INSTRUMENT-N/A** — the e_N = 1.2 table failed the spherical
+  identity at 10.61% even at NR = 2048 (the capped function's cliff, ν−1 ~
+  e^(−y^4.5), defeats the multipole solver); the pre-registered ≥5% abort fired and
+  the leg was skipped rather than fit on an untrustworthy table. Not a contrary
+  vote; a solver limitation, disclosed. (Indirect binary support stands: binaries
+  ACCEPT the quantum-share AMB (6G) and bound β < 0.03 (5R).)
+- **RJA: null/unresolved both, as pre-stated for the weak rung** — galaxy +0.24
+  (deep-ambient BE→RJ convergence, near-null by construction); binaries mean +1.68
+  vs AMB with per-seed scatter −2.7…+10.3 (4 seeds; the +10 is one realization —
+  the 4L-b lesson) = UNRESOLVED; α̂ = 1.070 ± 0.016 interior 4/4. The
+  ambient-statistics digit is not readable at current precision.
+
+FORMAL VERDICT per the pre-registered bars: **PARTIAL — "vacuum rung measured in
+both systems" is NOT claimable** (the binary direct leg never ran). The claimable
+statement: **the galaxy ladder demands the vacuum "+1" in the local factor at
+kill-grade ×22, cap-robust, both treatments — conditional on the admixture grammar
+(like every 6U rival exclusion)** — sitting alongside the banked rungs R0 (β=0 pure
+BE excluded by the gate credit −59/−100) and R1 (c₁ = 0 excluded in both systems,
+4S/4X). Quantum-ladder status: occupation rung (banked), vacuum-share rung (galaxy
+direct + binary indirect), ambient-statistics rung (open), fluctuation rung (P6,
+out-of-sample).
+
+PLAIN VERDICTS: the galaxy vacuum-share leg — SUCCESS (a kill-grade exclusion,
+measured). The two-system headline — NEEDS REFINEMENT (binary leg needs either a
+cliff-capable 1D solver or a softer classical variant; queued as a refinement, not
+promised). RJA — UNRESOLVED (weak rung stayed weak, honestly).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

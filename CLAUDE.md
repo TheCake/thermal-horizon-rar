@@ -700,7 +700,40 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   gal-gamma-final, gal-scatter-gamma→SUPERSEDED (27 tokens green);
   PAPER §4.6 hunt paragraph; plain verdicts: hunt = SUCCESS (mystery
   resolved in locality+driver class), in-sample Einstein = CLOSED
-  HONESTLY / NEEDS DIFFERENT DATA.** Paper
+  HONESTLY / NEEDS DIFFERENT DATA.**
+  **7D/7E (2026-07-24, the vacuum rung + the platform, pre-reg
+  c53f2e2/ff1de37): 7D THE VACUUM-SHARE CONTEST — the classical
+  vacuum-free local share q_cl = 1/(2(ν−1)) (pull 2n, no "+1")
+  ANNIHILATED on the galaxy ladder: **+556.51 vertical vs AMB (bar
+  ≥+25 kill ⇒ ×22 past), cap16 +580.06 = cap-robust LOWER bound,
+  plain +274.06, worse than pure BE by +497 — the vacuum +1 is
+  LOAD-BEARING (caps q ≤ 1, keeps β finite where the tail data
+  demand it)**; binary direct leg instrument-N/A (capped-cliff
+  function fails spherical identity 10.61% at NR=2048 → pre-reg'd
+  abort; indirect: binaries accept quantum-share AMB, bound β<0.03);
+  RJA classical-ambient rung null gal (+0.24, BE→RJ converge
+  deep-ambient) / UNRESOLVED bin (+1.68 mean, scatter −2.7…+10.3,
+  4 seeds); formal verdict PARTIAL (two-system headline not
+  claimable — pre-registered honesty); three gate amendments
+  pre-results + one stale-table hazard caught (run-1 table written
+  before its gate fired, silently reused — purged). Quantum-ladder
+  status: occupation banked / vacuum-share gal-direct+bin-indirect /
+  ambient-stats open / fluctuation out-of-sample. 7E THE PLATFORM
+  TRANSLATION: the lending gate as a buildable 3D-cQED experiment
+  (transmon χ/2π=250 MHz, cavity κ/2π=5 kHz, beam-splitter λ/2π=2
+  MHz, thermal n̄ 0.25–8 calibrated): **lending law ½n/(1+n) to
+  0.25% at platform params, dissipative shift +1.5%/+1.1%,
+  saturation ×7.2, THE L=2 GEOMETRIC RUNG [n/(1+n)]² slope +0.987
+  rms 0.0077 (raw-n 34× worse) — the sky's s^L as a bench curve;
+  L=2 prefactor 0.480 ≈ ½ = 2nd data point for equal-time-sharing
+  ceiling (reading-grade)**; honest frame: mechanism-class
+  validation, NOT a gravity test (6N theorem); clean lab negative
+  would strike 6X; cQED is THE platform (ions marginal, optomech
+  unsuitable); 6N resolution crossover switchable on-chip. Ledger
+  rows galfn-qcl + binfn-rja + mech-platform (30 tokens green);
+  PREDICTIONS.md §A vacuum-share row; PAPER §2.4 two closing
+  passages; NOTES 7D+7E; plain verdicts: 7D galaxy leg SUCCESS /
+  two-system NEEDS REFINEMENT / RJA UNRESOLVED; 7E SUCCESS.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization
