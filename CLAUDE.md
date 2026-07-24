@@ -502,7 +502,31 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   Cassini carried; independence explicit (2 data votes + Cassini);
   ladder digit ½/⅓/sharper stays OPEN**. STANDING RULE: every stage
   with a headline number adds its ledger row in the same commit;
-  supersede = flip status + pointer, never delete.** Paper
+  supersede = flip status + pointer, never delete.**
+  **6R/6S/6T (2026-07-24, O5 horizon-side round, pre-reg 85dcc72): THE
+  RESOLUTION BATH — 6N corollary + one-scale dS bath (KMS width =
+  temperature = the a₀ scale) FORCE R = νy−√y; β = ½·R²/(1+R²) in the
+  5P mixing (Lorentzian = flagged representative choice). Exact+gated
+  ([calcs/stage6r_resolution.py](calcs/stage6r_resolution.py)): ladder
+  preserved through c₄, **break c₅ = −1/16** (deepest preservation;
+  AMB breaks at c₃); tail = gm argument (p=¾); ν_R(1)=1.539; crossover
+  y* = 1.88 = the 5T β turn-on arm; Deser–Levin matrix CLOSED (source
+  branch: no finite fixed point; total: boot + invisible n_BE(2π)
+  floor; **geodesic detector T_U = 0 exactly = the free-fall
+  derivation of binary β<0.03**). SKY: 6S galaxies STRONG — **−58.59
+  vertical (AMB grade) / −113.72 plain = largest plain lead on
+  record**, BE regressions d=−0.00; 6T binaries **SHAPE REJECTION**
+  (α̂ edge 2.00 in 5/6, 0/6 prefer, −7.38±2.08 = the eight-function
+  band, Newton +82.7±1.8, κ=1.351 a₀-row edge-invalidated). **THE
+  TRIANGULATION COMPLETE: local-resolution-only dead (6T) +
+  ambient-pointwise-only dead (6D) + two-factor accepted (6G) ⇒ the
+  ambient gate is REQUIRED — the two-system split is system-level,
+  not local-in-y. O5 sharpened to: derive the s_amb² gate
+  horizon-side (the local factor's deep half is now derivation-grade:
+  free-fall + one-scale resolution).** Ledger rows galfn-resn/
+  binfn-resn/mech-resolution added; world table has the RESN row +
+  triangulation line (17 spot-checks, gates green); PAPER §2.4
+  paragraph + App B (ledger cited, "thirteen" fixed).** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
   Newton +55…+112 always), the w_rad=0.20 ↔ Hwang+22 superthermal cross-validation
   (radial excess = confirmation, not discovery — 4G), triples-exoneration, realization

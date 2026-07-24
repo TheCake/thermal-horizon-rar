@@ -1,0 +1,9 @@
+STAGE 6T: the resolution bath on the binaries
+
+per-seed lnL - lnL(p050): -16.16 -8.30 -6.15 -4.14 -8.40 -1.11
+  mean -7.38 +- 2.08 SE; resn better in 0/6; interior 1/6; a_hat 1.945 +- 0.055; Newton +82.7+-1.8
+  [6R pre-registered: ACCEPT >= -3, REJECT <= -5. comparators: amb -0.88, gm -8.50, rb2 -5.47, rb4 -6.96, dwf -9.64]
+kappa: be +0.916 (vs 4V +0.916 -> PASS), resn +1.351
+a0: alpha 1.945+-0.123, kappa +1.351 -> a0 = 1.96+-0.09  pull +10.0 sigma  [pre-registered PASS <= +2.5; BE +1.9, AMB +1.6, sharp +4.3..+6.3]
+
+VERDICT vs pre-registered bars: mean -7.38, interior 1/6 -> SHAPE REJECTION (alpha-hat edge-rides; invalid read)

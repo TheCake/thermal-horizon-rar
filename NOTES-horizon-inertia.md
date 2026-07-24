@@ -3371,6 +3371,86 @@ same commit.
 now has one canonical home, and the "which function survives what" question
 is answered by a script instead of memory.**
 
+## Stage 6R/6S/6T — the resolution bath: the horizon-side round (2026-07-24)
+
+**O5's top item executed: the 6N cancellation-theorem corollary applied to
+the one thing that makes the dS bath unlike every lab bath — it has ONE
+scale.** The corollary said: which occupation a self-shifting mode takes =
+whether the bath's KMS structure is resolved across the self-shift. For lab
+baths the resolution scale is arbitrary geography (why 6K/6M/6N all failed
+with transition-peaked, tail-vanishing sky shapes). The dS bath's occupation
+structure varies on the scale of its own temperature, and T_dS = H/2π IS the
+a₀ scale — so the resolution criterion is a forced function of the field:
+
+    R = (ω_tot − ω_src)/T_dS = νy − √y
+
+**Stage 6R ([calcs/stage6r_resolution.py](../calcs/stage6r_resolution.py),
+pre-registered at 85dcc72 BEFORE the fits; all gates PASS):**
+- Deep: R → x²/2 (quadratic vanishing) ⇒ EXACT source-locking — the measured
+  β = 0 of every deep+transition arm (5T, 5R) is the deep half of this
+  reading. Tail: R → y ⇒ dressing on. **Crossover R = 1 at y* = 1.88 — the
+  5T turn-on arm (y > 1).** No lab bath puts it there; this bath can't put
+  it anywhere else.
+- The zero-parameter function: β(y) = ½·R²/(1+R²) in the 5P frequency mixing
+  (Lorentzian profile = the one representative choice, flagged). Exact:
+  **Bernoulli ladder preserved through c₄; break at c₅ = −1/16** (sympy
+  exact + mpmath 50-digit; deepest ladder preservation of any candidate —
+  AMB breaks at c₃). **Tail = the gm argument exactly (p = ¾).** ν_R(1) =
+  1.539 (F4-grade sharp). Solver gates: residual 8e-11, mpmath agreement
+  1e-12, wfac=0 → BE at 9e-14.
+- **The Deser–Levin exact-temperature matrix CLOSED analytically:**
+  source-frequency branch has NO finite fixed point (runaway; anti-Newtonian
+  catastrophe); total-frequency branch = boot deep (dead 5F/5M) + invisible
+  constant floor n_BE(2π) = 0.00187 (pure G-renormalization); **a geodesic
+  (free-fall) detector has T_U = 0 exactly ⇒ pure C&T — the binary β < 0.03
+  (5R) is the free-fall answer, now derivation-grade.**
+- Pre-registered bars + the honest prior risk (no ambient gate, F4-grade
+  transition ⇒ leans binary-REJECT) committed before execution.
+
+**Stage 6S (galaxies, [calcs/stage6s_resngal.py](../calcs/stage6s_resngal.py),
+6I machinery, BE regression gates d = −0.00 both treatments): STRONG.**
+Vertical-hardened **−58.59** vs BE (bar ≤ −55; AMB fiducial −59.05,
+measured-ambients −61.68; F4 −64.2); plain hier **−113.72 = the largest
+plain-treatment lead ever recorded** (F3 −111.4, F4 −108.7, AMB-measured
+−100.5/−105.9). A zero-parameter pre-hoc function leads the ladder.
+
+**Stage 6T (binaries, [calcs/stage6t_resnbin.py](../calcs/stage6t_resnbin.py),
+6G machinery verbatim: tables gated 0.01% spherical identity, corrected
+velocities, 6 seeds): SHAPE REJECTION — the pre-registered discrimination
+fired.** α̂ edge-rides at 2.00 in 5/6 seeds (interior 1/6 at 1.67); 0/6
+seeds prefer it; mean **−7.38 ± 2.08 vs p050** = squarely the
+eight-function band (gm −8.50, rb4 −6.96, dwf −9.64; AMB −0.88); Newton
+still dead (+82.7 ± 1.8); w_rad = 0.2 in 6/6. κ = 1.351 → the a₀ row is
+edge-invalidated (formally +10σ at the edge value — quoted as invalid,
+direction noted).
+
+**THE TRIANGULATION IS NOW COMPLETE AND MECHANICAL:**
+- local-resolution running alone: galaxy-excellent, binary-DEAD (6T);
+- pointwise ambient weighting alone: binary-DEAD (6D);
+- the two-factor rule (local quantumness × ambient classicality): the only
+  structure that passes both systems (6G/6F/6I).
+Three independent exclusions now *require* the grammar's two-factor form —
+the ambient gate is not a modeling choice, it is what the binaries demand.
+What survives of the resolution reading is its deep half (why deep+transition
+source-lock everywhere, parameter-free); what died is "resolution alone,
+system-blind." The mechanism ledger: the ~8% bath-microphysics conditional
+now lives specifically in "one-scale non-Markovian dS bath supplies the
+local factor; the ambient gate needs its own horizon-side derivation" — the
+sharpest remaining O5 formulation.
+
+Numbers appended to LEDGER.csv (per the 6Q standing rule): galfn-resn,
+binfn-resn, mech-resolution; world table updated with the RESN row and the
+triangulation line ([calcs/stage6q_worldtable.py](../calcs/stage6q_worldtable.py)
+rerun, gates green).
+
+**Verdicts: 6R (derivation) — SUCCESS (five exact structures, all gated;
+two analytic closures; the free-fall reading of β_bin = 0). 6S (galaxies) —
+SUCCESS at STRONG grade (−58.6/−113.7; plain record). 6T (binaries) —
+SUCCESS as a test, REJECTION as a candidate (the pre-registered
+discrimination did its job: the ambient gate is REQUIRED). The round —
+DIFFERENT PHYSICS excluded cleanly: the two-system split is NOT local-in-y;
+it is system-level, as AMB encodes.**
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

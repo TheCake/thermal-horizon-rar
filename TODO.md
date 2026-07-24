@@ -338,6 +338,23 @@ O5. Theory, status after 6H/6I/6K: the grammar β = ½·[q_loc·s_amb]^L is
     home; (b) the MI/trajectory reading (never bath-dependent; DR4
     eccentricity test stands); (c) accept the function as sky
     phenomenology (the ~92% complement — costs nothing observational).
+    **(a) FIRST-PASS EXECUTED (Stages 6R/6S/6T, 2026-07-24, pre-reg
+    85dcc72): the RESOLUTION BATH — the 6N corollary + the one-scale
+    dS bath (KMS width = temperature) force R = νy−√y; β = ½R²/(1+R²);
+    exact: ladder preserved through c₄, break c₅ = −1/16, tail = gm
+    (p=¾), crossover y* = 1.88 = the 5T turn-on arm; Deser–Levin
+    matrix closed analytically (source = no fixed point; total = boot
+    + invisible floor; geodesic T_U = 0 = the free-fall derivation of
+    binary β<0.03). SKY: galaxies STRONG (−58.6 vertical / −113.7
+    plain = plain record) but binaries SHAPE-REJECT (α̂ edge 5/6, 0/6,
+    −7.4±2.1 = the eight-function band) ⇒ THE TRIANGULATION:
+    local-only dead (6T) + ambient-pointwise dead (6D) + two-factor
+    accepted (6G) — the ambient gate is REQUIRED, not chosen. O5 is
+    now exactly: derive the AMBIENT gate (s_amb², system-level)
+    horizon-side; the local factor's deep-locking is done (free-fall
+    + resolution). Optional follow-up: AMB-vs-[resolution×ambient]
+    local-factor contest (w(R) vs 1/(2ν−1)² at fixed gate) — a
+    refinement, not a blocker.**
     FROZEN-BATH SUB-READING (the Hubble-correlation-time argument):
     both accessible tests EXECUTED 2026-07-24 and closed — 6O galaxy
     coherence AMBIG (unmeasurable vs per-galaxy systematics even with

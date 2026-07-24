@@ -77,6 +77,8 @@ CHECKS = [
     ('binfn-amb',       '-0.88',  'data/stage6g_verdict.txt'),
     ('binfn-drive',     '-9.64',  'data/stage6d_verdict.txt'),
     ('gal-legcount',    '10/40',  'data/stage6l_legboot.txt'),
+    ('galfn-resn',      '-113.72', 'data/stage6s_resngal.txt'),
+    ('binfn-resn',      '-7.38',  'data/stage6t_verdict.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
@@ -192,6 +194,15 @@ W = [
    'TAILP':('OK',    'postdicts BOTH: 0.689 gal / 0.529 bin', 'amb-p-postdict'),
    'QUAD': ('SHARED-FAIL', '3.60e-26 = 4.0x', 'sol-quadrupole')},
   'the unique two-system pass; post-hoc flag carried; DR4 = out-of-sample decider'),
+ ('RESN (resolution bath)', {
+   'BIN':  ('VETO',  'SHAPE REJECTION: alpha edge 5/6, 0/6 prefer, -7.38+-2.08 = the eight-function band', 'binfn-resn'),
+   'GALH': ('LEAD',  '-58.59 vertical (STRONG bar) / -113.72 plain = largest plain lead on record', 'galfn-resn'),
+   'GBOOT':('na', '', ''),
+   'A0':   ('na',    'edge-invalidated (kappa 1.351; formally +10 sigma at the edge value)', 'binfn-resn'),
+   'C1':   ('OK',    'c1=1/2..c4=-1/720 ALL preserved; break c5=-1/16 (deepest preservation)', 'mech-resolution'),
+   'TAILP':('MIXED', 'p=3/4 exact (gm argument): galaxy edge, binaries reject', 'mech-resolution'),
+   'QUAD': ('na',    'not separately computed (amplitude-lock pattern expects ~4-5x)', 'sol-quadrupole')},
+  'derived pre-hoc from the 6N corollary; galaxy-best-in-class, binary-vetoed: proves the ambient gate REQUIRED'),
  ('drive-weighted (pointwise)', {
    'BIN':  ('VETO',  'EXCLUDED -9.64+-1.49, 0/6; predicted mid-separation sag observed', 'binfn-drive'),
    'GALH': ('na',    'isolated limit reduces to F4 (gate-verified)', 'binfn-drive'),
@@ -258,6 +269,11 @@ say('grade (37/40, lean not detection), (c) best on the binary temperature row')
 say('(+1.6 sigma), and (d) postdicts both measured tail exponents - carrying the')
 say('post-hoc flag and the same Cassini quadrupole as every other MG member.')
 say('The ladder digit (1/2 vs 1/3 vs sharper) remains OPEN at population grade.')
+say('')
+say('The 6R/6T triangulation (three independent exclusions force the two-factor')
+say('grammar): local-resolution running alone = binary-dead (RESN); pointwise')
+say('ambient weighting alone = binary-dead (drive-weighted); local quantumness x')
+say('ambient classicality = the only structure passing both systems (AMB).')
 
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 open(OUT, 'w', encoding='utf-8').write('\n'.join(L) + '\n')

@@ -1,0 +1,14 @@
+STAGE 6S: the resolution bath on the hier galaxy ladder -- 153 galaxies, 2700 points + 12 lensing
+pre-registered (6R): PASS <= -40 vertical; STRONG <= -55; STRIKE > -20; comparators vertical: gm -42.7, AMB -59.05/-61.68, F4 -64.2
+
+vertical-hardened:
+  BE:  -12152.49  la0=-9.981 f=1.164 s_int=0.045  [5P -12152.49, d=-0.00 OK]  (0.0 min)
+  RESN:  -12211.08  la0=-10.012 f=1.282 s_int=0.044  (3.3 min)
+  Delta RESN vs BE: -58.59
+
+plain hier:
+  BE:  -10435.00  la0=-10.104 f=1.398 s_int=0.070  [5P -10435.00, d=-0.00 OK]  (0.0 min)
+  RESN:  -10548.73  la0=-10.126 f=1.522 s_int=0.068  (1.2 min)
+  Delta RESN vs BE: -113.72
+
+VERDICT vs pre-registered bars: vertical -58.59, plain -113.72 -> STRONG (F4/AMB grade)
