@@ -1,10 +1,10 @@
-STAGE 6Q: ledger audit + world table  (105 ledger rows)
+STAGE 6Q: ledger audit + world table  (106 ledger rows)
 ==============================================================================
 G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
 G3 (supersession resolves): PASS
 G4 (current-quantity collisions): PASS
-G5 (value spot-checks, 47 tokens): PASS
+G5 (value spot-checks, 49 tokens): PASS
 
 G6 (world-table provenance): PASS
 
@@ -144,12 +144,19 @@ is independent and 4.0-5.8x AGAINST every MG member (escape: EFE-respecting
 MI, which ties the binary contest). "Passes both systems" therefore means
 exactly two independent data votes, plus one shared solar tension.
 
-7J CONDITIONALITY BANNER: every BIN/A0 row above was measured inside the
-multiplicity fence (f_comp <= 0.1).  Stage 7J measured the true host
-multiplicity at 0.42-0.57 and the fence-free marginalized alpha is 0.00
-(COMPANION-WIN; bin-7j-marginal): the binary DATA VOTE is suspended
-pending 7K (model-light channels under measured multiplicity) and the
-contest re-run under the 7J posterior.  Galaxy rows are untouched.
+7J CONDITIONALITY BANNER (as re-graded by corrections #17/#18): every
+BIN/A0 row above was measured inside the multiplicity fence (f_comp <=
+0.1).  Stage 7J ran the companion marginalization; its completeness
+measurement was then retracted by the within-pair correlation test
+(bin-7j-paircorr, rho = +0.47 common-mode), leaving literature
+subsystem rates primary.  The anchoring-invariant finding stands: the
+fenced +99-110 Newton rejection is DEAD at every defensible companion
+prior (alpha_marg <= ~0.5, Newton within single digits).  Verdict
+label: COMPANION-WIN at the retracted measured prior, AMBIGUOUS at the
+primary literature anchoring (six-seed budget = the decider).  The
+binary DATA VOTE stays suspended pending 7J-z (repaired completeness),
+7K (model-light attribution), and 7J-d (contest re-run).  Galaxy rows
+are untouched.
 
 The mechanical sentence the table proves: AMB is the only candidate that is
 (a) un-vetoed on the binaries (tie with BE), (b) at the top galaxy bootstrap

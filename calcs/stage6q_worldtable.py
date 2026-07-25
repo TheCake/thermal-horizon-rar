@@ -112,6 +112,8 @@ CHECKS = [
      'data/stage7j_lowend.txt'),
     ('ret-73-manufactured', 'f_host in [0.42, 0.57] (peak 0.51)',
      'data/stage7j_completeness.txt'),
+    ('bin-7j-paircorr',     'rho_att=+0.465', 'data/stage7j_paircorr.txt'),
+    ('bin-7j-paircorr',     '==> C-FAIL', 'data/stage7j_paircorr.txt'),
     ('ret-7i-median-immune', 'completeness of the -0.4 flag: C(companion) = 0.410',
      'data/stage7j_completeness.txt'),
 ]
@@ -300,12 +302,19 @@ say('is independent and 4.0-5.8x AGAINST every MG member (escape: EFE-respecting
 say('MI, which ties the binary contest). "Passes both systems" therefore means')
 say('exactly two independent data votes, plus one shared solar tension.')
 say('')
-say('7J CONDITIONALITY BANNER: every BIN/A0 row above was measured inside the')
-say('multiplicity fence (f_comp <= 0.1).  Stage 7J measured the true host')
-say('multiplicity at 0.42-0.57 and the fence-free marginalized alpha is 0.00')
-say('(COMPANION-WIN; bin-7j-marginal): the binary DATA VOTE is suspended')
-say('pending 7K (model-light channels under measured multiplicity) and the')
-say('contest re-run under the 7J posterior.  Galaxy rows are untouched.')
+say('7J CONDITIONALITY BANNER (as re-graded by corrections #17/#18): every')
+say('BIN/A0 row above was measured inside the multiplicity fence (f_comp <=')
+say('0.1).  Stage 7J ran the companion marginalization; its completeness')
+say('measurement was then retracted by the within-pair correlation test')
+say('(bin-7j-paircorr, rho = +0.47 common-mode), leaving literature')
+say('subsystem rates primary.  The anchoring-invariant finding stands: the')
+say('fenced +99-110 Newton rejection is DEAD at every defensible companion')
+say('prior (alpha_marg <= ~0.5, Newton within single digits).  Verdict')
+say('label: COMPANION-WIN at the retracted measured prior, AMBIGUOUS at the')
+say('primary literature anchoring (six-seed budget = the decider).  The')
+say('binary DATA VOTE stays suspended pending 7J-z (repaired completeness),')
+say('7K (model-light attribution), and 7J-d (contest re-run).  Galaxy rows')
+say('are untouched.')
 say('')
 say('The mechanical sentence the table proves: AMB is the only candidate that is')
 say('(a) un-vetoed on the binaries (tie with BE), (b) at the top galaxy bootstrap')

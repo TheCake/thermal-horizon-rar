@@ -1,0 +1,10 @@
+STAGE 7J-y: 13784 pairs with both components valid; median parallax-mag noise 0.004/0.005 mag
+ALL pairs (N=13784): rho_raw=+0.238  rho_att=+0.238  (1/sqrt(N) = 0.009)
+CORE all (N=7437): rho_raw=+0.552  rho_att=+0.553
+CORE |dcol|<0.15 (N=2014): rho_raw=+0.795  rho_att=+0.796
+CORE |dcol|>=0.15 [BAR] (N=5423): rho_raw=+0.464  rho_att=+0.465
+CORE |dcol|>=0.4 (N=3827): rho_raw=+0.393  rho_att=+0.394
+TAIL incidence: P(flag1)=0.1421 P(flag2)=0.1003 P(both)=0.0391  ratio P(both)/(P1*P2)=2.74
+CROSS: median delta2 | (flag1, !flag2) = -0.033 mag (N=1420); median delta2 | (!flag1, !flag2) = +0.081 (N=10981)
+
+==> C-FAIL (rho_core_att = +0.465 against bars 0.10 / 0.30)

@@ -4542,6 +4542,126 @@ un-pinned, honesty improved). Power-gate scope: NEEDS REFINEMENT
 (conceded; runs in flight under pre-registered bars). Correction #16:
 executed as a hard retraction, the kind that hurts and holds.
 
+## Stage 7J-y (2026-07-25, review round 3): C-FAIL — the within-pair
+## correlation retracts Part A's scale; CORRECTIONS #17 + #18; the
+## verdict label moves to AMBIGUOUS at the now-primary anchoring
+
+Round 3 of the Opus exchange. Two reviewer catches booked as
+corrections, one reviewer premise corrected, and the reviewer's new
+instrument executed — firing against our Part A.
+
+CORRECTION #17 (label grammar; reviewer-caught inconsistency between
+two same-day criteria of ours): the amendment-6 boundary-free
+criterion (interior a_marg or gap > -5 -> AMBIGUOUS) was applied to
+the seed axis but not the prior-anchor axis. Applied consistently:
+"COMPANION-WIN fires at every plausible anchoring" (b5205e2, PAPER
+6.3) was WRONG AS LABELED — at the literature anchoring seed 31 is
+interior (0.37/0.50) with positive gaps. Correct statement: **the
+fenced +99-110 Newton rejection is dead at every anchoring (the
+durable result); the LABEL is prior-dependent — COMPANION-WIN at the
+measured prior, AMBIGUOUS at the literature prior.** Adopted with the
+reviewer's presentation fix: a_marg AS A FUNCTION OF THE PRIOR ANCHOR
+is the primary result; verdict labels are annotations on that curve.
+
+7J-y (pre-reg 3f7212e BEFORE execution;
+[calcs/stage7j_paircorr.py](calcs/stage7j_paircorr.py),
+data/stage7j_paircorr.txt): the reviewer's over-attribution
+discriminant — wide-pair components are coeval/co-chemical, so
+metallicity/age/extinction displace BOTH deltas (common-mode) while a
+companion displaces ONE. Guards designed in: dcolor slicing (ridge-
+error confound), attenuation correction (per-component parallax noise
+DILUTES here — reviewer's partial-out premise inverted for our
+construction, MG uses per-component parallaxes), tail-incidence
+channel separated (Tokovinin correlated-subsystem confound). RESULT:
+**rho_core_att = +0.465 on the bar slice (N=5423; bars 0.10/0.30);
++0.394 at |dcol| >= 0.4; tail incidence ratio 2.74; flagged star's
+partner sits 0.114 mag bright of baseline ==> C-FAIL, decisively.**
+~Half the core variance is common-mode astrophysics the 1D mixture
+read as companions.
+
+CORRECTION #18 (measurement retraction): **Part A's absolute scale is
+RETRACTED — C = 0.41 biased LOW, f_photo = 0.22-0.30 and f_host =
+0.42-0.57 biased HIGH, by common-mode over-attribution** (the round-2
+scout tension — literature 2-3x below us — is hereby EXPLAINED in the
+literature's favor; the round-2 "both branches open" closes onto the
+scale-bias branch). The completeness FORMALISM survives; the
+single-star model (independent per-star delta) does not. Repair path
+= 7J-z: joint 2D (delta1, delta2) mixture — common-mode pair-level
+component (diagonal) + per-star noise + companion shoulders
+(axis-aligned) — the geometry that separates the channels. QUEUED,
+CPU-grade. Until then the literature-anchored prior (peak ~0.22,
+sigma ~0.08, scout-grade pending primary sources) is PRIMARY per the
+pre-registered C-FAIL branch.
+
+CASCADE, honestly propagated:
+  (a) 7J verdict at the primary anchoring = **AMBIGUOUS** (a_marg
+      seed-mean ~0.2, seed 31 interior 0.37-0.50, Newton within
+      +5-7). Per the original 7J tree, AMBIGUOUS -> seed extension
+      decides — and the 4-seed extension is ALREADY RUNNING; its
+      cubes are prior-independent, so the literature-prior marginal
+      over 6 seeds comes free on completion. THE DURABLE RESULT
+      UNCHANGED: the fenced Newton rejection does not survive
+      companion marginalization at ANY defensible multiplicity
+      (alpha_marg <= ~0.5 everywhere; >= 93% of the +99 gap gone
+      even in the most boost-friendly cell).
+  (b) The "-768 fence pricing" DEFLATES: under the literature prior
+      the old f <= 0.1 fence is ~1.5 sigma low (ln pi ~ -1.1), not
+      absurd. 6.3/abstract lines rewritten.
+  (c) Correction #16 SOFTENED in one clause (correction-on-
+      correction): "Banik substantially closer to the truth than our
+      fenced fits" was conditioned on Part A's scale; under
+      literature rates (~0.2) our 0.1 fence is CLOSER to the truth
+      than their 0.69. What stands of #16: the "photometry forbids"
+      LOGIC was invalid regardless (no completeness accounting), the
+      companion freedom was directionally legitimate, their 0.69
+      stays excluded under every reading, the manufactured-framing
+      retraction stands.
+  (d) The raw-law "internal inconsistency" claim RESCALES: at
+      literature f ~ 0.2 the as-published law's cost is ~ -100..-170
+      (not -505..-1078); still a real defect (photocenter
+      cancellation is exact physics), milder grade. bin-7j-rawcond
+      annotated.
+  (e) Correction #15 moves to UNDETERMINED-pending-7J-z: its
+      retraction of the 7I cut-survival argument assumed C = 0.41;
+      if true C is high (0.6-0.8), the cut-survival argument regains
+      power and the median's companion-immunity partially returns.
+      No flip-flop: status = pending the repaired completeness.
+  (f) The injections in flight validate power at the (now-demoted)
+      measured-prior operating point; the literature-anchored power
+      test (fullpowlit: truth companions at 0.22 through the
+      literature prior) is QUEUED for after batch completion (the
+      running batch's script must not be edited mid-flight).
+  (g) fpm: the reviewer's round-3 premise was factually wrong (the
+      grid WAS extended to 2.4 in amendment 5) but its diagnosis is
+      right and sharpened by the facts: the marginal puts 82-99% at
+      the NEW edge — the error model lacks a variance channel (the
+      6P s-flat scatter object, worth ~+37 lnL there). The proper
+      instrument is the per-system scatter component in the marginal
+      model, queued with 7J-z; the fpm=1.5-pinned invariance of the
+      verdict is the standing guard.
+  (h) CREDENCE: anomaly-real ~35% -> **~45%** (stated reasoning: the
+      durable negative — fenced rejection dead at every anchoring —
+      keeps it well below the pre-7J 60-65; the exact-zero collapse
+      was partly manufactured by our own over-scaled prior, which
+      returns some mass; pending seeds, arms, 7J-z, 7K).
+  (i) Reviewer refinements adopted: the per-pair (q, l) wobble-bound
+      instrument for the 11 band pairs (upper bound on companion-
+      induced vtilde per pair — decides all eleven on measurement)
+      folded into 7K-b; the abstract-(2) dial sentence and the
+      one-half-thread/conclusions "measured twice in disconnected
+      systems" framings get the fence-conditional flag explicitly
+      (round-3 checklist item).
+
+PLAIN VERDICTS: 7J-y instrument: SUCCESS (cheap, decisive, and it cut
+against us — the discipline working). Part A: DIFFERENT PHYSICS in
+the small — the overluminosity distribution is common-mode-dominated,
+which is an astrophysical measurement of this sample in its own right
+(metallicity/age coherence of wide pairs) and the reason its
+companion reading failed. 7J verdict: NEEDS REFINEMENT — AMBIGUOUS at
+the primary anchoring, seeds in flight, 7J-z is the repair, and the
+durable finding (no fenced Newton rejection survives marginalization)
+stands at every anchoring.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

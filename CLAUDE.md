@@ -882,7 +882,48 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   the surviving anomaly. 7K-b census leakage null at the same cell**
   (folds in the tail-calibration design). Then 7J-d, 7L, ĉ₁ budget,
   THE SPLIT (Paper 1 binary chapter now leads with completeness +
-  marginalized null).** Then the DM
+  marginalized null).**
+  **7J-x/7J-y (2026-07-25, the Opus review rounds 2-3, PAPER → v2.9,
+  App A = EIGHTEEN): round 2 = amendment 6 (per-arm injection standard,
+  pre-reg 0045eea: fullpow/fullpowbe/strictpowbe + seeds 202-505;
+  standing rules: both-full-arms-fail → PROVISIONAL + ~50%; seed gap
+  > −5 or interior α → AMBIGUOUS) + low-end prior stress (verdict
+  survives, zero un-pins) + CORRECTION #16 (the "manufactured/
+  photometry-forbids" claim retracted hard) + §8.1/§2.4/abstract
+  propagations. Round 3 = **CORRECTION #17** (our boundary-free
+  criterion applied to the prior axis too: the α_marg(prior-anchor)
+  CURVE is the primary statement, labels = annotations) and the big
+  one: **7J-y (pre-reg 3f7212e, [calcs/stage7j_paircorr.py](calcs/stage7j_paircorr.py))
+  — within-pair overluminosity correlation ρ_core = +0.465 (bar 0.30)
+  ⇒ C-FAIL ⇒ CORRECTION #18: Part A's scale RETRACTED (common-mode
+  metallicity/age/extinction over-attributed as companions; C = 0.41
+  biased LOW, f_host = 0.42-0.57 biased HIGH = the verdict-
+  manufacturing direction; the scout's 2-3× literature tension —
+  Tokovinin ~0.1/component — resolved in the literature's favor).**
+  END STATE: literature-anchored prior (per-pair ~0.22) PRIMARY;
+  verdict label = COMPANION-WIN at the retracted measured prior /
+  **AMBIGUOUS at the primary anchoring** (seed 31 interior 0.37/0.50,
+  seed 101 zero; the in-flight 6-seed budget decides — cubes are
+  prior-independent, so the literature-prior marginal comes free on
+  completion); DURABLE at every anchoring: **the fenced +99-110
+  Newton rejection is DEAD (α_marg ≤ ~0.5, Newton within single
+  digits)**. Credence anomaly-real ~35% → **~45%** (the collapse was
+  partly manufactured by our own over-scaled prior). #16 one clause
+  re-graded (at literature rates our 0.1 fence is NEARER truth than
+  Banik's 0.69); #15 → undetermined-pending-repair. fpm note: Opus's
+  round-3 premise wrong (grid WAS extended; marginal rides the NEW
+  edge 82-99% at 2.4) but diagnosis right = missing variance channel
+  (the 6P s-flat object) → add per-system scatter to the marginal
+  model (queued). QUEUE: **7J-z = the repaired Part A (joint 2D
+  (δ₁,δ₂) mixture: common-mode diagonal vs companion axis-aligned —
+  THE gating item)**; fullpowlit (literature-anchored power test,
+  AFTER batch — never edit stage7j_marginal.py mid-batch); 7K-b now
+  carries the per-pair (q,ℓ) wobble-bound instrument (Opus design:
+  max companion-induced ṽ per band pair from per-component δ); the
+  paircorr ρ = +0.47 is ALSO a standing astrophysical measurement
+  (wide-pair photometric coherence). Ledger: completeness→RETRACTED,
+  marginal→CO-QUOTED, +bin-7j-paircorr; audit 49 tokens/106 rows
+  green.** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
