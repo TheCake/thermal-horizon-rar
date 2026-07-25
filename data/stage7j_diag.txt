@@ -1,0 +1,66 @@
+[photo full 31 simple] alpha-marginal lm-lm[0]=[0.0, -44.1, -79.5, -139.2, -284.0]
+[photo full 31 simple] P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.02, 0.98]
+[photo full 31 simple] fpm<=1.8: PROF a_hat=0.62 (interior=True) dN=+14.8 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo full 31 simple] fpm=1.5: PROF a_hat=0.57 (interior=True) dN=+16.7 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo full 31 simple] cond: lnL(fcomp)-lnL(0.1)=[-660.5, 0.0, 11.5, -97.6, -380.2, -893.4]  a_prof(fcomp)=[2.0, 0.96, 0.36, 0.0, 0.0, 0.0]
+[raw   full 31 simple] cond: lnL(fcomp)-lnL(0.1)=[-635.0, 0.0, -125.8, -524.8, -1077.8, -2009.6]  a_prof(fcomp)=[2.0, 1.09, 0.75, 0.0, 0.0, 0.0]
+[photo full 101 simple] alpha-marginal lm-lm[0]=[0.0, -61.4, -86.5, -140.0, -296.0]
+[photo full 101 simple] P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.18, 0.82]
+[photo full 101 simple] fpm<=1.8: PROF a_hat=0.60 (interior=True) dN=+2.9 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo full 101 simple] fpm=1.5: PROF a_hat=0.76 (interior=True) dN=+7.0 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo full 101 simple] cond: lnL(fcomp)-lnL(0.1)=[-671.4, 0.0, 12.9, -82.5, -353.6, -867.5]  a_prof(fcomp)=[2.0, 1.07, 0.0, 0.0, 0.0, 0.0]
+[raw   full 101 simple] cond: lnL(fcomp)-lnL(0.1)=[-629.7, 0.0, -118.8, -505.3, -1046.1, -1978.8]  a_prof(fcomp)=[2.0, 1.22, 0.83, 0.0, 0.0, 0.0]
+[photo full 31 BE] alpha-marginal lm-lm[0]=[0.0, -25.2, -46.4, -127.1, -200.3]
+[photo full 31 BE] P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.02, 0.98]
+[photo full 31 BE] fpm<=1.8: PROF a_hat=0.70 (interior=True) dN=+19.4 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo full 31 BE] fpm=1.5: PROF a_hat=0.66 (interior=True) dN=+21.4 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo full 31 BE] cond: lnL(fcomp)-lnL(0.1)=[-783.8, 0.0, 21.4, -90.2, -372.9, -886.1]  a_prof(fcomp)=[2.0, 0.93, 0.49, 0.0, 0.0, 0.0]
+[raw   full 31 BE] cond: lnL(fcomp)-lnL(0.1)=[-760.6, 0.0, -110.8, -516.4, -1069.4, -2001.2]  a_prof(fcomp)=[2.0, 1.04, 0.84, 0.0, 0.0, 0.0]
+[photo full 101 BE] alpha-marginal lm-lm[0]=[0.0, -31.6, -61.0, -144.5, -209.6]
+[photo full 101 BE] P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.18, 0.82]
+[photo full 101 BE] fpm<=1.8: PROF a_hat=0.62 (interior=True) dN=+10.2 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo full 101 BE] fpm=1.5: PROF a_hat=0.59 (interior=True) dN=+11.7 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo full 101 BE] cond: lnL(fcomp)-lnL(0.1)=[-810.7, 0.0, 28.2, -67.2, -338.3, -852.2]  a_prof(fcomp)=[2.0, 0.93, 0.0, 0.0, 0.0, 0.0]
+[raw   full 101 BE] cond: lnL(fcomp)-lnL(0.1)=[-783.8, 0.0, -95.7, -486.4, -1034.4, -1967.2]  a_prof(fcomp)=[2.0, 1.06, 0.85, 0.39, 0.0, 0.0]
+[photo strict 31 simple] alpha-marginal lm-lm[0]=[0.0, -28.5, -61.4, -91.8, -199.3]
+[photo strict 31 simple] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.01, 0.99]
+[photo strict 31 simple] fpm<=1.8: PROF a_hat=0.25 (interior=True) dN=+0.1 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo strict 31 simple] fpm=1.5: PROF a_hat=0.30 (interior=True) dN=+1.9 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo strict 31 simple] cond: lnL(fcomp)-lnL(0.1)=[-113.9, 0.0, -59.8, -247.9, -500.1, -889.3]  a_prof(fcomp)=[1.48, 0.0, 0.0, 0.0, 0.0, 0.0]
+[raw   strict 31 simple] cond: lnL(fcomp)-lnL(0.1)=[-42.5, 0.0, -170.0, -499.2, -910.7, -1540.2]  a_prof(fcomp)=[1.53, 0.45, 0.0, 0.0, 0.0, 0.0]
+[photo strict 101 simple] alpha-marginal lm-lm[0]=[0.0, -31.3, -58.9, -95.6, -205.5]
+[photo strict 101 simple] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.01, 0.08, 0.91]
+[photo strict 101 simple] fpm<=1.8: PROF a_hat=0.00 (interior=False) dN=+0.0 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo strict 101 simple] fpm=1.5: PROF a_hat=0.00 (interior=False) dN=+0.0 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo strict 101 simple] cond: lnL(fcomp)-lnL(0.1)=[-110.8, 0.0, -56.2, -245.7, -495.5, -885.3]  a_prof(fcomp)=[1.44, 0.0, 0.0, 0.0, 0.0, 0.0]
+[raw   strict 101 simple] cond: lnL(fcomp)-lnL(0.1)=[-34.0, 0.0, -152.2, -477.9, -885.0, -1520.8]  a_prof(fcomp)=[1.51, 0.53, 0.0, 0.0, 0.0, 0.0]
+[photo strict 31 BE] alpha-marginal lm-lm[0]=[0.0, -17.0, -40.9, -94.5, -145.0]
+[photo strict 31 BE] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.01, 0.99]
+[photo strict 31 BE] fpm<=1.8: PROF a_hat=0.42 (interior=True) dN=+8.7 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo strict 31 BE] fpm=1.5: PROF a_hat=0.45 (interior=True) dN=+7.4 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo strict 31 BE] cond: lnL(fcomp)-lnL(0.1)=[-145.6, 0.0, -59.8, -247.9, -500.1, -889.3]  a_prof(fcomp)=[2.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[raw   strict 31 BE] cond: lnL(fcomp)-lnL(0.1)=[-64.9, 0.0, -165.6, -499.7, -911.3, -1540.8]  a_prof(fcomp)=[2.0, 0.53, 0.35, 0.0, 0.0, 0.0]
+[photo strict 101 BE] alpha-marginal lm-lm[0]=[0.0, -20.2, -38.3, -95.8, -142.8]
+[photo strict 101 BE] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.01, 0.08, 0.91]
+[photo strict 101 BE] fpm<=1.8: PROF a_hat=0.00 (interior=False) dN=+0.0 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo strict 101 BE] fpm=1.5: PROF a_hat=0.41 (interior=True) dN=+4.2 | MARG a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(kw)=[1.0, 0.0, 0.0]
+[photo strict 101 BE] cond: lnL(fcomp)-lnL(0.1)=[-144.6, 0.0, -56.2, -245.7, -495.5, -885.3]  a_prof(fcomp)=[1.55, 0.0, 0.0, 0.0, 0.0, 0.0]
+[raw   strict 101 BE] cond: lnL(fcomp)-lnL(0.1)=[-68.7, 0.0, -153.2, -478.9, -885.9, -1521.8]  a_prof(fcomp)=[2.0, 0.54, 0.0, 0.0, 0.0, 0.0]
+
+READINGS (7J-c):
+ R1 the COMPANION-WIN marginal is NOT carried by the fpm grid edge:
+    restricting to fpm<=1.8 or fpm=1.5 leaves a_marg=0.00 dN_marg=+0.0
+    and the posterior cell (fcomp=0.35 full / 0.20 strict, kw=0.7)
+    unchanged in all 8 sample x law x seed reads.
+ R2 mechanism: the likelihood alone still prefers (alpha~1, fcomp~0.1)
+    but the measured-multiplicity prior prices that cell at -768/-608;
+    at the prior-allowed fcomp the fitted alpha is 0.  The posterior
+    chooses 'Newton + measured companions, kinematic misfit -60..-116'
+    over 'alpha~1 + forbidden multiplicity'.
+ R3 the winning cell is itself a poor absolute fit (-60..-116 vs the
+    unconstrained optimum): under this forward model NO cell fits both
+    the kinematics and the measured multiplicity.  The photocenter
+    correction softened the multiplicity cost ~5x (raw -505..-525 at
+    fcomp=0.35; photo -67..-116) without closing it.
+ R4 kw pins to 0.7 (lowest wobble amplitude) everywhere - soft edge,
+    second-order for the verdict (fpm slices leave it unchanged).

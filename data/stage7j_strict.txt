@@ -1,0 +1,19 @@
+STAGE 7J-B strict seeds [31, 101]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8]; ln pi(fcomp) = [-1584.82, -103.98, -15.61, -161.28, -803.77, -1000000000.0]
+GB0 strict seed 31 simple: sub-cube a_hat=0.47 (ref 0.47), dN=+11.2 (ref +11.2) -> PASS
+PROF strict seed 31 simple: a_hat=0.45 (interior=True), dN=+9.9, wr=0.3, fcomp=0.1, fpm=1.8
+MARG strict seed 31 simple: a_marg=0.45, dN_marg=+9.9, P(wr>=0.4)=0.00
+RIDGE strict seed 31 simple: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+GB0 strict seed 31 BE: sub-cube a_hat=0.57 (ref 0.57), dN=+8.7 (ref +8.7) -> PASS
+PROF strict seed 31 BE: a_hat=0.53 (interior=True), dN=+10.5, wr=0.3, fcomp=0.1, fpm=1.8
+MARG strict seed 31 BE: a_marg=0.53, dN_marg=+10.4, P(wr>=0.4)=0.00
+RIDGE strict seed 31 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+  seed 31 done (11.3 min)
+GB0 strict seed 101 simple: sub-cube a_hat=0.75 (ref 0.75), dN=+6.9 (ref +6.9) -> PASS
+PROF strict seed 101 simple: a_hat=0.53 (interior=True), dN=+5.3, wr=0.3, fcomp=0.1, fpm=1.8
+MARG strict seed 101 simple: a_marg=0.53, dN_marg=+5.3, P(wr>=0.4)=0.00
+RIDGE strict seed 101 simple: corr(wr,fcomp)=-0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+GB0 strict seed 101 BE: sub-cube a_hat=0.68 (ref 0.68), dN=+13.7 (ref +13.7) -> PASS
+PROF strict seed 101 BE: a_hat=0.54 (interior=True), dN=+6.2, wr=0.3, fcomp=0.1, fpm=1.8
+MARG strict seed 101 BE: a_marg=0.56, dN_marg=+6.3, P(wr>=0.4)=0.00
+RIDGE strict seed 101 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+  seed 101 done (11.2 min)

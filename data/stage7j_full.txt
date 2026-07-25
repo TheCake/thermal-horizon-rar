@@ -1,0 +1,15 @@
+STAGE 7J-B full seeds [31, 101]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8]; ln pi(fcomp) = [-1584.82, -382.35, -12.81, -20.54, -382.29, -1000000000.0]
+GB0 full seed 31 simple: sub-cube a_hat=1.18 (ref 1.18), dN=+106.2 (ref +106.2) -> PASS
+PROF full seed 31 simple: a_hat=1.09 (interior=True), dN=+105.2, wr=0.2, fcomp=0.1, fpm=1.8
+MARG full seed 31 simple: a_marg=0.75, dN_marg=+34.3, P(wr>=0.4)=0.00
+GB0 full seed 31 BE: sub-cube a_hat=1.10 (ref 1.10), dN=+97.4 (ref +97.4) -> PASS
+PROF full seed 31 BE: a_hat=1.04 (interior=True), dN=+96.8, wr=0.2, fcomp=0.1, fpm=1.8
+MARG full seed 31 BE: a_marg=0.84, dN_marg=+40.9, P(wr>=0.4)=0.00
+  seed 31 done (11.2 min)
+GB0 full seed 101 simple: sub-cube a_hat=1.26 (ref 1.26), dN=+117.1 (ref +117.1) -> PASS
+PROF full seed 101 simple: a_hat=1.22 (interior=True), dN=+111.2, wr=0.2, fcomp=0.1, fpm=1.8
+MARG full seed 101 simple: a_marg=0.83, dN_marg=+37.2, P(wr>=0.4)=0.00
+GB0 full seed 101 BE: sub-cube a_hat=1.13 (ref 1.13), dN=+98.4 (ref +98.4) -> PASS
+PROF full seed 101 BE: a_hat=1.06 (interior=True), dN=+99.5, wr=0.2, fcomp=0.1, fpm=1.8
+MARG full seed 101 BE: a_marg=0.85, dN_marg=+48.3, P(wr>=0.4)=0.00
+  seed 101 done (11.3 min)

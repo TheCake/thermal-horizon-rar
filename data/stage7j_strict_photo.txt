@@ -1,0 +1,19 @@
+STAGE 7J-B strict seeds [31, 101]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4]; ln pi(fcomp) = [-1584.82, -608.39, -150.5, -2.45, -3.38, -68.11]
+GB0p strict seed 31 simple: max|photo-raw| at fcomp=0 = 0.00e+00 -> PASS
+PROF strict seed 31 simple: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 31 simple: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 31 simple: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+GB0p strict seed 31 BE: max|photo-raw| at fcomp=0 = 0.00e+00 -> PASS
+PROF strict seed 31 BE: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 31 BE: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 31 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+  seed 31 done (14.0 min)
+GB0p strict seed 101 simple: max|photo-raw| at fcomp=0 = 0.00e+00 -> PASS
+PROF strict seed 101 simple: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 101 simple: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 101 simple: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+GB0p strict seed 101 BE: max|photo-raw| at fcomp=0 = 0.00e+00 -> PASS
+PROF strict seed 101 BE: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 101 BE: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 101 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+  seed 101 done (14.1 min)

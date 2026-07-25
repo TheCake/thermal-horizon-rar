@@ -1,0 +1,5 @@
+# STALE verdicts (blended-axis prior, pre-amendment-3; quarantined per the 7D no-silent-reuse rule; superseded by the host-prior photo-mode verdicts)
+
+7J full verdict (2 seeds): simple a_marg=0.79 dN=+35.8; BE a_marg=0.84 dN=+44.6  ==> AMBIGUOUS
+
+7J strict verdict (2 seeds): simple a_marg=0.49 dN=+7.6; BE a_marg=0.55 dN=+8.3  ==> COMPANION-CONFIRMED

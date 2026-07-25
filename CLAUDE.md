@@ -841,7 +841,48 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   selection w/ ablation ladder (after 7J); ĉ₁ six-seed budget; THE SPLIT
   (Paper 1 binaries+ablation+completeness, Paper 2 coefficients+
   quadrupole; §2.4 stays in the log; STRUCTURAL-INDEPENDENCE drafting
-  rule — no §2.4 gestures in Paper 1).** Then the DM
+  rule — no §2.4 gestures in Paper 1).**
+  **7J EXECUTED (2026-07-25, pre-reg d2dc7eb + amendments c893827/a2ecf2e/
+  a9e8b16, PAPER → v2.8): THE DECISIVE INSTRUMENT FIRED AGAINST US.
+  Part A ([calcs/stage7j_completeness.py](calcs/stage7j_completeness.py)):
+  flag completeness C=0.410 (false-flag 0.023), f_photo 0.22–0.30 →
+  f_host = 0.42–0.57 (peak 0.51, Raghavan-consistent); fence f≤0.1
+  priced at ln π = −768/−608; Banik 0.69 at −36. As-published wobble law
+  (q/(1+q), no photocenter cancellation — twins wobble ZERO; correct =
+  |q/(1+q) − ℓ/(1+ℓ)|) INTERNALLY INCONSISTENT with measured
+  multiplicity: forcing it costs −486…−2010 lnL (why 3K capped at 0.1).
+  Part B ([calcs/stage7j_marginal.py](calcs/stage7j_marginal.py), photo
+  law + κ_w + fpm→2.4 + host prior; GB0/GB0p exact 8/8): **full sample
+  COMPANION-WIN — α_marg = 0.00, dN = +0.0, both laws 2/2 seeds; strict
+  COMPANION-CONFIRMED but formally weightless (power gate POWER-FAIL:
+  BE arm rode 2.00 edge; simple arm RECOVERED injected α=1.18 at
+  1.27/+48.8 = sensitivity proven).** Diagnostics
+  ([calcs/stage7j_diag.py](calcs/stage7j_diag.py)): NOT fpm-edge-carried
+  (unchanged at fpm=1.5, 8/8); posterior 100% at fcomp=0.35/0.20,
+  kw=0.7; α=1 disfavored 38–87 in the marginal; **winning cell itself
+  misfits −60…−116 (NO cell fits kinematics AND multiplicity); fcomp=0
+  rejected −660…−811 (data demand companions, just fewer than the sky
+  hosts)**. CORRECTION #15: 7I instrument-1 "companions-as-median-carrier
+  refuted" RETRACTED — under-powered at C=0.41 (cut barely moves the
+  companion FRACTION 0.51→0.47); median VALUES stand, immunity inference
+  does not; ceiling census leakage null inherits the same audit.
+  Quadrant C fired per pre-commit: **credence anomaly-real ~60-65% →
+  ~35%** (low end: #15 removed the floor argument; not lower: the −100
+  residual misfit + galaxy legs untouched). Binary DATA VOTE SUSPENDED
+  in the world table (banner added); all binfn-* contests fence-
+  conditional pending re-run under the 7J posterior (7J-d). Ledger:
+  bin-7j-completeness/-marginal/-rawcond + ret-7i-median-immune; α/
+  Newton/boost rows → CO-QUOTED; audit 44 tokens green. PAPER v2.8:
+  §6.3 completion, §7.3 ablation-conditional relabel, abstract/§1/§10
+  reframed, App A = FIFTEEN corrections. Forward-modelability caveat
+  carried BOTH ways (injection validates against own companion model
+  only). NEW DECISIVE QUEUE: **7K-a forward 2C median at the winning
+  cell (α=0, fcomp=0.35, kw=0.7) vs observed 1.078 (CI 1.052–1.103) —
+  if Newton+companions reproduces it, the median falls; if not, it's
+  the surviving anomaly. 7K-b census leakage null at the same cell**
+  (folds in the tail-calibration design). Then 7J-d, 7L, ĉ₁ budget,
+  THE SPLIT (Paper 1 binary chapter now leads with completeness +
+  marginalized null).** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

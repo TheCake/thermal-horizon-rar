@@ -4269,6 +4269,142 @@ per-slice); 7L v7 on the Cookson selection carrying the ablation ladder
 (after 7J); c1 six-seed budget; THE SPLIT (Paper 1 / Paper 2; 2.4 stays in
 the log; structural-independence rule).
 
+## Stage 7J (2026-07-25): the decisive instrument fired — COMPANION-WIN at the measured multiplicity; CORRECTION #15; the binary data vote suspended pending 7K
+
+Pre-registered d2dc7eb; amendments c893827 (Part A restructure + envelope),
+a2ecf2e (host-axis remap + photocenter law — Opus's units point, code-
+verified), a9e8b16 (provenance disclosure, raw conditional record, ell(q)
+validation leg, fpm extension to 2.4, single-seed rule). Scripts:
+[calcs/stage7j_completeness.py], [calcs/stage7j_marginal.py],
+[calcs/stage7j_diag.py]; outputs data/stage7j_completeness.txt,
+data/stage7j_{full,strict}_photo.txt, data/stage7j_verdict.txt,
+data/stage7j_diag.txt; cubes data/stage7j_cube_*.npy (raw + photo).
+
+PART A — THE COMPLETENESS MEASUREMENT (the program's first): binned
+Poisson mixture fit of the overluminosity delta distribution on the
+sample's own MS locus, flux-weighted blend photometry, q^-0.5 systematic
+folded into the envelope. Results: flag completeness C = 0.410
+(false-flag 0.023); f_photo in [0.22, 0.30]; host-axis remap through
+P_blend = 0.53-0.59 gives f_host in [0.42, 0.57] (peak 0.51 — consistent
+with Raghavan 2010 ~46% solar-type multiplicity = external validation);
+strict residual r_host in [0.37, 0.53]. Reference prices: the old fence
+f_comp <= 0.1 sits at ln pi = -768 (full) / -608 (strict); Banik's free-fit
+0.69 at -36. Gates GA1-GA3 PASS.
+
+THE RAW CONDITIONAL (as-published amplitude law, q/(1+q) wobble): at the
+measured host fraction the full-sample fit returns alpha = 0 with Newton
+tying, at a likelihood cost of -486..-525 (fcomp 0.35) / -1034..-1078
+(0.5) / -1967..-2010 (0.7) relative to its own (0.1, alpha~1.1) optimum
+— the as-published law is INTERNALLY INCONSISTENT with the measured
+multiplicity (it cannot host the companions the sky demands). This is
+why 3K's physical-multiplicity fit capped f_comp at 0.1: the law it
+tested overstates high-q wobble (no photocenter cancellation — twins
+wobble zero; the astrometric amplitude is |q/(1+q) - ell/(1+ell)|).
+Provenance carried honestly: the correction was registered before the
+conditional was READ but not provably before it existed on disk.
+
+PART B — THE PHOTO-MODE VERDICTS (photocenter-corrected amplitudes,
+kappa_w in {0.7,1.0,1.4}, fpm extended to 2.4 per correction-#4, GB0p
+cross-mode gate 0.00e+00 exact 8/8, host prior on axis fcomp):
+
+  full   (2 seeds): a_marg = 0.00, dN_marg = +0.0, both laws
+                    ==> COMPANION-WIN (bar: <=0.7 or <=+15 either)
+  strict (2 seeds): a_marg = 0.00 ==> COMPANION-CONFIRMED — but
+                    FORMALLY WEIGHTLESS: the power gate fired POWER-FAIL
+  strictpow: injected truth alpha=1.18 (simple) + r_host companions;
+                    simple arm RECOVERED a_marg=1.27, dN=+48.8 (in-band);
+                    BE arm rode to the 2.00 grid edge -> the both-laws
+                    bar failed. Honest reading: the instrument HAS power
+                    (simple-arm recovery through the same prior), the BE
+                    edge is a cross-family recalibration artifact at 1
+                    seed; formally the strict quadrant carries no weight
+                    and the verdict rests on the FULL sample alone.
+
+7J-c DIAGNOSTICS (pre-registered pipeline rule "watch grid-edge riding";
+[calcs/stage7j_diag.py], no refitting): (R1) the COMPANION-WIN is NOT
+carried by the fpm edge — restricting to fpm <= 1.8 or fpm = 1.5 leaves
+a_marg = 0.00, dN_marg = +0.0 and the posterior cell unchanged in 8/8
+reads (the PROF rows do ride fpm to 2.4, but the marginal doesn't need
+it). (R2) mechanism: the likelihood alone still prefers (alpha ~ 1,
+fcomp ~ 0.1-0.2) — the prior prices that at -768/-268 — and at the
+prior-allowed fcomp (posterior 100% at 0.35 full / 0.20 strict, kw=0.7)
+the fitted alpha is 0. The posterior chooses "Newton + measured
+companions, kinematic misfit -60..-116" over "alpha ~ 1 + forbidden
+multiplicity". alpha = 0.5 / 1.0 are disfavored by 17-61 / 38-87 lnL in
+the marginal. (R3) the winning cell is itself a POOR ABSOLUTE FIT: under
+this forward model NO cell fits both the kinematics and the measured
+multiplicity; the photocenter correction softened the multiplicity cost
+~5x without closing it. Which channel carries the residual -60..-116
+(the median offset? the gamma structure?) is not derivable from the
+cubes — that is 7K-a. (R4) fcomp = 0 is REJECTED kinematically
+(-660..-811 full, -111..-146 strict): the data demand companions; they
+demand FEWER than the sky hosts; at the measured rate the boost dies.
+(R5) kw pins to 0.7 everywhere — soft edge, second-order.
+
+CORRECTION #15 (retraction of an inference, not a value): 7I
+instrument-1 concluded "companions-as-median-carrier refuted" from the
+median's survival of the strict cut. At measured C = 0.410 that argument
+is UNDER-POWERED: the cut removes only flagged companions AND shrinks
+the denominator, so the companion FRACTION barely moves (0.51 -> ~0.47)
+— a fully companion-carried median would survive the cut within CI. The
+median VALUES stand (1.078/1.086/1.151, model-light facts); the immunity
+inference does not. Ledger row ret-7i-median-immune; the ceiling census
+inherits the same audit (its leakage null predates the completeness
+measurement) -> 7K-b.
+
+SYNTHESIS (quadrant C fired, pre-committed): credence anomaly-real
+~60-65% -> ~35% (low end of the pre-committed 35-45 band, because
+correction #15 removes the "floor" argument the band was written with;
+not lower, because the winning cell's own -60..-116 misfit means the
+forward model still cannot actually explain these data, and the galaxy
+legs are untouched). The binary DATA VOTE in the world table is
+SUSPENDED (banner added): every BIN/A0 row was measured inside the
+fence; all binfn-* function contests are fence-conditional pending
+re-run under the 7J posterior (7J-d). Standing caveat BOTH ways: the
+forward-modelability limit — the injection recovery validates the
+instrument against ITS OWN companion model; a real companion population
+differing in q-distribution / inner periods could drag alpha to 0
+through mismatch the self-consistent gate cannot expose. And the same
+limit cuts the other way: it also cannot manufacture a boost.
+
+WHAT 7J CHANGES STRUCTURALLY: the anomaly's binary evidence now rests
+entirely on the MODEL-LIGHT channels, and both need re-derivation under
+measured multiplicity: 7K-a = forward 2C median at the 7J winning cell
+(alpha=0, fcomp=0.35, kw=0.7, photo wobble) vs the observed 1.078 (CI
+1.052-1.103) — if Newton+measured-companions reproduces the median, the
+median falls as evidence; if not, it stands as the unexplained residual
+R3 points at. 7K-b = ceiling-census leakage null under the same cell —
+11 forbidden-band pairs with the cliff structure, or not. These are now
+THE decisive binary instruments (the tail-calibration design from the
+review folds into 7K-b). 7L (Cookson selection) unchanged. The galaxy
+program (coefficients, screening index, scatter, ambient gate) does not
+touch any of this and proceeds on its own grades.
+
+LEDGER: rows bin-7j-completeness, bin-7j-marginal, bin-7j-rawcond,
+ret-7i-median-immune added; bin-alpha-final, bin-newton-final,
+bin-newton-v7corr -> CO-QUOTED (fence-conditional, pointer
+bin-7j-marginal); bin-boost-corr, bin-boost-perp -> CO-QUOTED (pointer
+bin-7j-completeness); bin-ceiling note gains the 7K-b audit; worldtable
++6 tokens (44 total) + the conditionality banner; all six gates PASS.
+
+PLAIN VERDICTS: Part A (completeness measurement): SUCCESS — the
+program's first measured companion function, externally validated.
+Raw conditional: SUCCESS as an instrument finding (the as-published law
+is internally inconsistent; the field's wide-binary companion modeling
+inherits this). Part B (the decisive question "does the boost survive
+the measured multiplicity at fit level?"): DIFFERENT PHYSICS — the
+pre-registered answer is NO: at the measured companion rate the forward
+likelihood prefers Newton + companions, and this is not an fpm-edge
+artifact. The anomaly is not dead — the winning model misfits its own
+data by -60..-116 and the model-light channels are unadjudicated — but
+the burden has moved to 7K, and the credence moved with it (~35%).
+
+QUEUE: 7K-a forward median at the winning cell + 7K-b census null under
+measured multiplicity [BOTH DECISIVE]; 7J-d function-contest re-run
+under the 7J posterior; 7L Cookson selection; c1 six-seed budget; THE
+SPLIT after 7K (Paper 1's binary chapter now leads with the marginalized
+null + the completeness measurement).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

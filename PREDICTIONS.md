@@ -85,8 +85,25 @@ x-shape and its environmental control, 4T/5B, stand). Within-program grading lan
 | Cassini screening bound | p > 0.234 required; measured 16th pct 0.462 — passed | — | 3 (RAR fit) |
 | Vacuum share in the gate's local factor | classical-pull replacement (no "+1") rejected at +556.5 on the galaxy ladder (cap-robust lower bound; worse than no admixture at all); binary direct leg instrument-N/A, indirect support via 6G acceptance + β < 0.03 | **classical-immune** (the "+1" is spontaneous emission — absent from any classical field bath; conditional on the admixture grammar) | 7D |
 
-Corrections record: fourteen logged in [PAPER.md](PAPER.md) Appendix A. In-sample
+**7J annotation (2026-07-25; rows above not edited, per Rule 2):** Stage 7J measured
+the companion completeness (flag C = 0.410; true host multiplicity f_host 0.42–0.57,
+Raghavan-consistent) and ran the multiplicity-marginalized fit with the
+photocenter-corrected amplitude law. The pre-registered verdict fired **COMPANION-WIN**:
+at the measured host rate the forward likelihood prefers Newton + companions
+(α_marg = 0.00 both laws, both seeds; NOT an f_pm-grid artifact — unchanged at
+f_pm = 1.5; the winning cell itself misfits by −60…−116, so no cell fits both the
+kinematics and the multiplicity). The quadrant map registered at d2dc7eb resolved to
+**quadrant C**; the pre-committed credence move executed: anomaly-real → ~35%.
+Consequences for this table: the three binary rows (boost, ceiling census, EFE
+amplitude) are model-light *measurements* whose gravity attribution is SUSPENDED
+pending 7K-a (forward median at the 7J winning cell) and 7K-b (census leakage null
+under measured multiplicity); correction #15 retracts the 7I cut-survival immunity
+inference. Galaxy rows untouched. Full record: NOTES Stage 7J; ledger rows
+bin-7j-completeness / bin-7j-marginal / bin-7j-rawcond / ret-7i-median-immune.
+
+Corrections record: fifteen logged in [PAPER.md](PAPER.md) Appendix A. In-sample
 environmental ordering WITHDRAWN (correction #14, Stage 6Z) — moved to C/P2.
+7I cut-survival immunity inference RETRACTED (correction #15, Stage 7J).
 
 ---
 

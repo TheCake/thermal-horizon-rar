@@ -100,6 +100,15 @@ CHECKS = [
     ('bin-ablation-strict', '-0.740', 'data/stage7i_verdict.txt'),
     ('bin-ablation-strict', 'COMPANION-DIRECTION', 'data/stage7i_verdict.txt'),
     ('bin-ceilingpairs',    '11/11 reproduced', 'data/stage7i_verdict.txt'),
+    ('bin-7j-completeness', 'f_host in [0.42, 0.57] (peak 0.51)',
+     'data/stage7j_completeness.txt'),
+    ('bin-7j-completeness', 'C(companion) = 0.410',
+     'data/stage7j_completeness.txt'),
+    ('bin-7j-marginal',     '==> COMPANION-WIN', 'data/stage7j_verdict.txt'),
+    ('bin-7j-marginal',     'a_marg=0.00', 'data/stage7j_full_photo.txt'),
+    ('bin-7j-rawcond',      '-1034.4', 'data/stage7j_diag.txt'),
+    ('ret-7i-median-immune', 'completeness of the -0.4 flag: C(companion) = 0.410',
+     'data/stage7j_completeness.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
@@ -285,6 +294,13 @@ say('data vote; all BIN/A0 rows share EDR3-14071 = ONE data vote; QUAD (Cassini)
 say('is independent and 4.0-5.8x AGAINST every MG member (escape: EFE-respecting')
 say('MI, which ties the binary contest). "Passes both systems" therefore means')
 say('exactly two independent data votes, plus one shared solar tension.')
+say('')
+say('7J CONDITIONALITY BANNER: every BIN/A0 row above was measured inside the')
+say('multiplicity fence (f_comp <= 0.1).  Stage 7J measured the true host')
+say('multiplicity at 0.42-0.57 and the fence-free marginalized alpha is 0.00')
+say('(COMPANION-WIN; bin-7j-marginal): the binary DATA VOTE is suspended')
+say('pending 7K (model-light channels under measured multiplicity) and the')
+say('contest re-run under the 7J posterior.  Galaxy rows are untouched.')
 say('')
 say('The mechanical sentence the table proves: AMB is the only candidate that is')
 say('(a) un-vetoed on the binaries (tie with BE), (b) at the top galaxy bootstrap')
