@@ -1,0 +1,20 @@
+STAGE 3P g=1p2 seeds [31, 101]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 31 simple: a_hat=0.47 (grid 0.5, interior=True), dlnL(Newton)=+11.2, wr=0.3, prof=[-11.2, 0.0, -14.8, -40.1, -64.4]
+seed 31 BE: a_hat=0.57 (grid 0.5, interior=True), dlnL(Newton)=+8.7, wr=0.3, prof=[-8.7, 0.0, -4.8, -40.0, -63.4]
+  seed 31: BE-minus-simple best lnL = -2.4  (6.0 min)
+seed 101 simple: a_hat=0.75 (grid 1.0, interior=True), dlnL(Newton)=+6.9, wr=0.3, prof=[-6.9, -0.0, 0.0, -24.9, -60.1]
+seed 101 BE: a_hat=0.68 (grid 0.5, interior=True), dlnL(Newton)=+13.7, wr=0.3, prof=[-13.7, 0.0, -2.3, -39.8, -72.3]
+  seed 101: BE-minus-simple best lnL = +6.8  (5.9 min)
+STAGE 3P g=1p2 seeds [202, 303, 404, 505]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+seed 202 simple: a_hat=0.39 (grid 0.5, interior=True), dlnL(Newton)=+4.1, wr=0.3, prof=[-4.1, 0.0, -10.9, -35.7, -70.1]
+seed 202 BE: a_hat=0.54 (grid 0.5, interior=True), dlnL(Newton)=+12.1, wr=0.3, prof=[-12.1, 0.0, -8.4, -42.3, -77.4]
+  seed 202: BE-minus-simple best lnL = +8.0  (6.0 min)
+seed 303 simple: a_hat=0.44 (grid 0.5, interior=True), dlnL(Newton)=+9.5, wr=0.3, prof=[-9.5, 0.0, -14.9, -35.4, -70.5]
+seed 303 BE: a_hat=0.63 (grid 0.5, interior=True), dlnL(Newton)=+10.7, wr=0.3, prof=[-10.7, 0.0, -3.3, -38.2, -60.3]
+  seed 303: BE-minus-simple best lnL = +1.2  (5.9 min)
+seed 404 simple: a_hat=0.55 (grid 0.5, interior=True), dlnL(Newton)=+19.8, wr=0.3, prof=[-19.8, 0.0, -12.9, -32.3, -58.8]
+seed 404 BE: a_hat=0.76 (grid 1.0, interior=True), dlnL(Newton)=+19.0, wr=0.3, prof=[-19.0, -1.3, 0.0, -40.7, -64.4]
+  seed 404: BE-minus-simple best lnL = -0.8  (6.0 min)
+seed 505 simple: a_hat=0.40 (grid 0.5, interior=True), dlnL(Newton)=+5.0, wr=0.3, prof=[-5.0, 0.0, -11.3, -28.4, -62.1]
+seed 505 BE: a_hat=0.55 (grid 0.5, interior=True), dlnL(Newton)=+11.1, wr=0.3, prof=[-11.1, 0.0, -7.4, -45.3, -71.1]
+  seed 505: BE-minus-simple best lnL = +6.0  (5.9 min)

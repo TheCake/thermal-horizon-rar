@@ -1,0 +1,21 @@
+STAGE 7I verdicts (bars pre-registered in the module docstring)
+
+W (w_rad frozen 0.21, external Hwang value; 2 seeds):
+  simple: d_alpha = -0.010 +- 0.000; Newton +111.2 (baseline +111.7); interior 2/2
+      BE: d_alpha = +0.005 +- 0.005; Newton +96.5 (baseline +97.9); interior 2/2
+  BW verdict: CLOSED (max|D|=0.010, max|dNewton|=1.4)
+
+S (strict multiplicity: RUWE<1.2 both + no overluminous; 8047/14071 pairs = 0.572; 6 seeds, EXTENDED):
+  simple: d_alpha = -0.740 +- 0.053; Newton +9.4 (baseline +102.8; per-pair ratio 0.16 of N-scaled expectation); interior 6/6
+      BE: d_alpha = -0.457 +- 0.048; Newton +12.5 (baseline +90.1; per-pair ratio 0.24 of N-scaled expectation); interior 6/6
+  BS verdict: MATERIAL (max|D|=0.740, min Newton=+9.4)
+
+census: raw 11/11 reproduced, corrected 9; data/ceiling_pairs.csv released (23 rows)
+(40.5 min total)
+
+FPM profile on the strict sample (7I MATERIAL part 2; H2 = prefers FPM<1.5 with a_hat recovering >=0.9):
+  seed 31 simple: lnL(1.0/1.2/1.5) = -31978.2/-31976.9/-31972.7 -> FPM_hat 1.5, a_hat 0.47 (interior True), Newton +11.2, wr 0.3
+  seed 31 BE: lnL(1.0/1.2/1.5) = -31984.5/-31982.4/-31975.1 -> FPM_hat 1.5, a_hat 0.57 (interior True), Newton +8.7, wr 0.3
+  seed 101 simple: lnL(1.0/1.2/1.5) = -31986.6/-31982.1/-31981.1 -> FPM_hat 1.5, a_hat 0.75 (interior True), Newton +6.9, wr 0.3
+  seed 101 BE: lnL(1.0/1.2/1.5) = -31981.0/-31979.6/-31974.3 -> FPM_hat 1.5, a_hat 0.68 (interior True), Newton +13.7, wr 0.3
+  FPM<1.5 preferred 0/4; recovered a_hat>=0.9 at FPM_hat 0/4  ==> H1 SUPPORTED (bars in module docstring)

@@ -1,0 +1,21 @@
+STAGE 3P g=1p2 seeds [31, 101]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.5, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+fpm 1.5 seed 31 simple: a_hat=0.47 (grid 0.5, interior=True), dlnL(Newton)=+11.2, wr=0.3, prof=[-11.2, 0.0, -14.8, -40.1, -64.4]
+fpm 1.5 seed 31 BE: a_hat=0.57 (grid 0.5, interior=True), dlnL(Newton)=+8.7, wr=0.3, prof=[-8.7, 0.0, -4.8, -40.0, -63.4]
+  seed 31: abs best lnL simple -31972.669 BE -31975.113  (5.9 min)
+fpm 1.5 seed 101 simple: a_hat=0.75 (grid 1.0, interior=True), dlnL(Newton)=+6.9, wr=0.3, prof=[-6.9, -0.0, 0.0, -24.9, -60.1]
+fpm 1.5 seed 101 BE: a_hat=0.68 (grid 0.5, interior=True), dlnL(Newton)=+13.7, wr=0.3, prof=[-13.7, 0.0, -2.3, -39.8, -72.3]
+  seed 101: abs best lnL simple -31981.108 BE -31974.322  (5.9 min)
+STAGE 3P g=1p2 seeds [31, 101]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.2, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+fpm 1.2 seed 31 simple: a_hat=0.47 (grid 0.5, interior=True), dlnL(Newton)=+12.5, wr=0.3, prof=[-12.5, 0.0, -16.0, -41.8, -65.7]
+fpm 1.2 seed 31 BE: a_hat=0.61 (grid 0.5, interior=True), dlnL(Newton)=+7.1, wr=0.3, prof=[-7.1, 0.0, -2.8, -34.1, -61.7]
+  seed 31: abs best lnL simple -31976.902 BE -31982.379  (5.9 min)
+fpm 1.2 seed 101 simple: a_hat=0.66 (grid 0.5, interior=True), dlnL(Newton)=+15.3, wr=0.3, prof=[-15.3, 0.0, -3.3, -26.3, -65.2]
+fpm 1.2 seed 101 BE: a_hat=0.71 (grid 0.5, interior=True), dlnL(Newton)=+17.7, wr=0.3, prof=[-17.7, 0.0, -1.5, -36.5, -72.8]
+  seed 101: abs best lnL simple -31982.063 BE -31979.633  (5.9 min)
+STAGE 3P g=1p2 seeds [31, 101]: a=[0.0, 0.5, 1.0, 1.5, 2.0], eta=[1.05, 1.3], wr=[0.1, 0.2, 0.3], fpm=1.0, fcomp=[0.0, 0.1], fc0=[0.1], ffly=[0.05, 0.1]
+fpm 1.0 seed 31 simple: a_hat=0.45 (grid 0.5, interior=True), dlnL(Newton)=+13.4, wr=0.3, prof=[-13.4, 0.0, -20.3, -36.5, -64.6]
+fpm 1.0 seed 31 BE: a_hat=0.67 (grid 0.5, interior=True), dlnL(Newton)=+7.1, wr=0.3, prof=[-7.1, 0.0, -1.4, -35.0, -67.1]
+  seed 31: abs best lnL simple -31978.222 BE -31984.497  (5.9 min)
+fpm 1.0 seed 101 simple: a_hat=0.67 (grid 0.5, interior=True), dlnL(Newton)=+13.4, wr=0.3, prof=[-13.4, 0.0, -2.7, -25.6, -59.8]
+fpm 1.0 seed 101 BE: a_hat=0.69 (grid 0.5, interior=True), dlnL(Newton)=+19.0, wr=0.3, prof=[-19.0, 0.0, -2.4, -38.2, -71.8]
+  seed 101: abs best lnL simple -31986.612 BE -31981.050  (5.9 min)
