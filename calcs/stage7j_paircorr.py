@@ -153,6 +153,52 @@ v = ('C-PASS' if rbar <= 0.10 else
      'C-PARTIAL' if rbar < 0.30 else 'C-FAIL')
 P(f"\n==> {v} (rho_core_att = {rbar:+.3f} against bars 0.10 / 0.30)")
 
+# --- 7J-y2: the BLENDING discriminant (review round 4) --------------------
+# Reviewer's confound-in-the-same-slot: Gaia BP/RP windows are several
+# arcsec wide, so below a few arcsec both components' fluxes contaminate
+# each other -> both go bright -> positive correlated delta that MIMICS
+# shared metallicity.  Discriminant (free): rho as a function of ANGULAR
+# separation.  Astrophysical common-mode (metallicity/age/extinction) is
+# separation-independent; blending dies by ~5-10 arcsec.  GUARD on the
+# extinction-distance confound (theta correlates with distance at fixed
+# s_AU; nearer pairs = larger theta AND less extinction, which would
+# also make rho fall with theta): rho(theta) is reported within two
+# distance slices as well.  READING RULES (stated before the numbers
+# were seen): blending signature = rho(theta<4") elevated by > 50%
+# relative over rho(theta>20"); astrophysical = flat within Fisher
+# errors.  THE DECISIVE DERIVED NUMBER: the bar-slice rho recomputed
+# EXCLUDING theta < 8" ("the blending-safe bar") - if it stays >= 0.30
+# the C-FAIL stands independent of blending; if it falls below, #18's
+# basis is re-graded accordingly.
+P("")
+P("7J-y2: rho(theta) - the blending discriminant")
+theta = (sep[ok][both]*np.maximum(plx[ok][both], 1e-6)/1e6)*1e3  # arcsec
+dists = 1000.0/np.maximum(plx[ok][both], 1e-6)
+P(f"theta: median {np.median(theta):.1f}\"  range "
+  f"{np.percentile(theta,1):.1f}-{np.percentile(theta,99):.1f}\" (1-99%)")
+TB = [(0, 4), (4, 8), (8, 20), (20, 60), (60, 1e9)]
+def row(lab, base):
+    out = []
+    for lo, hi in TB:
+        mm = base & (theta >= lo) & (theta < hi)
+        if mm.sum() > 60:
+            _, r = rho_att(d1[mm], d2[mm], s1[mm]**2, s2[mm]**2)
+            ez = 1.0/np.sqrt(max(mm.sum()-3, 4))
+            out.append(f"[{lo:g}-{hi if hi<1e9 else 250:g}\") "
+                       f"{r:+.3f}+-{ez:.3f} N={int(mm.sum())}")
+        else:
+            out.append(f"[{lo:g}-{hi if hi<1e9 else 250:g}\") n/a")
+    P(f"{lab}: " + "  ".join(out))
+row("CORE all-d       ", core)
+row("CORE d<100pc     ", core & (dists < 100))
+row("CORE d>=100pc    ", core & (dists >= 100))
+row("BAR-slice        ", core & (dcol >= 0.15))
+msafe = core & (dcol >= 0.15) & (theta >= 8)
+_, rsafe = rho_att(d1[msafe], d2[msafe], s1[msafe]**2, s2[msafe]**2)
+P(f"BLENDING-SAFE BAR (|dcol|>=0.15 core, theta >= 8\"): "
+  f"rho_att = {rsafe:+.3f} (N={int(msafe.sum())}) against 0.30 -> "
+  f"{'C-FAIL STANDS' if rsafe >= 0.30 else 'C-FAIL RE-GRADED'}")
+
 with open('data/stage7j_paircorr.txt', 'w') as f:
     f.write("\n".join(L) + "\n")
 print("saved: data/stage7j_paircorr.txt")
