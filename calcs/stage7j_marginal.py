@@ -91,6 +91,35 @@ instrument ('photo' mode, the DECISIVE one for the bars):
   - photo-mode extension on ambiguity is +2 seeds (202/303), not +4
     (cost honesty: ~45-55 min per seed-law).
 
+AMENDMENT 5 (logged before any photo-mode fit ran):
+  (a) FPM grid-edge: raw-mode PROF rows chose fpm = 1.8 = the grid
+      maximum — the correction-#4 standard applies; photo mode carries
+      FPM_GRID = [1.2, 1.5, 1.8, 2.1, 2.4]. GB0p compares the shared
+      first three fpm cells.
+  (b) PROVENANCE OF THE PHOTOCENTER CORRECTION, disclosed: amendment 4
+      was derived from part A's host inversion (f_host ~ 0.5 matching
+      Raghavan vs 3K's 0.1 cap = amplitude-model overstrength; the
+      a2ecf2e commit message's reasoning references no conditional),
+      BUT the strict seed-31 stress row (fcomp = 0.5 -> alpha = 0) had
+      already been written to disk, unread, before that commit.
+      Registered-before-reading is not provably-before-existence, so
+      THE AS-PUBLISHED (raw) CONDITIONAL VERDICT TRAVELS ALONGSIDE the
+      corrected one everywhere. The raw conditional verdict, read from
+      the cached cubes before any photo fit: at the measured host
+      fraction (fcomp = 0.35/0.50) the full-sample fit returns
+      alpha = 0 with Newton tying — at a likelihood cost of −505 to
+      −1078 (−2000 at Banik's 0.69) relative to its own (0.1, ~1.1)
+      optimum: the as-published amplitude law is internally
+      inconsistent with the measured multiplicity; it cannot host it.
+      Quote both halves together or not at all.
+  (c) INDEPENDENT VALIDATION of the photocenter law: the same l(q)
+      light-ratio table entering wfac = |q/(1+q) - l/(1+l)| is what
+      part A's delta-distribution fit validated against the data
+      (GA1/GA2; the twin shoulder at −0.75 mag is the high-q end where
+      the cancellation is strongest).
+  (d) Single-seed interim numbers are never verdict-grade (correction
+      #10); bars evaluate on seed means only.
+
 argv: <sample: full|strict|strictpow> [photo] <seeds...>
 Appends rows to data/stage7j_<sample>[_photo].txt; verdict appended to
 data/stage7j_verdict.txt once both laws of all requested seeds exist.
@@ -113,6 +142,10 @@ SEEDS_REQ = [int(x) for x in _rest] or [31, 101]
 TAG = '_photo' if AMP == 'photo' else ''
 OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
 KW_GRID = np.array([0.7, 1.0, 1.4]) if AMP == 'photo' else np.array([1.0])
+# amendment 5: fpm rode the 1.8 grid edge in raw-mode PROF rows — the
+# correction-#4 standard (grid-edge = artifact until the grid extends)
+# applies; photo mode carries the extended grid
+FPM_EXT = np.array([1.2, 1.5, 1.8, 2.1, 2.4])
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -223,6 +256,8 @@ FCOMP_GRID = np.array([0.0, 0.10, 0.20, 0.35, 0.50, 0.70])
 FC0_GRID = np.array([0.10])
 FFLY_GRID = np.array([0.05, 0.10])
 FPM_GRID = np.array([1.2, 1.5, 1.8])
+if AMP == 'photo':
+    FPM_GRID = FPM_EXT
 
 def build_pop(seed):
     rng = np.random.default_rng(seed)
@@ -500,8 +535,9 @@ def run_seed(seed):
                 rw = np.load(rawp)
                 if rw.ndim == 7:
                     rw = rw[..., None]
+                np_ = rw.shape[6]      # raw fpm axis length (3)
                 dmax = float(np.nanmax(np.abs(
-                    cube[:, :, :, 0:1, :, :, :, 0:1]
+                    cube[:, :, :, 0:1, :, :, :np_, 0:1]
                     - rw[:, :, :, 0:1, :, :, :, 0:1])))
                 P(f"GB0p {SAMPLE} seed {seed} {law}: max|photo-raw| at "
                   f"fcomp=0 = {dmax:.2e} -> "
