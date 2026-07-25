@@ -120,7 +120,50 @@ AMENDMENT 5 (logged before any photo-mode fit ran):
   (d) Single-seed interim numbers are never verdict-grade (correction
       #10); bars evaluate on seed means only.
 
-argv: <sample: full|strict|strictpow> [photo] <seeds...>
+AMENDMENT 6 (7J-x, registered BEFORE the validation runs; adopted from
+the second-review pass, whose per-arm standard we accept):
+  (a) PER-ARM POWER VALIDATION. The 7J strictpow gate injected a
+      simple-law truth into the STRICT selection only: the full sample
+      carried the verdict without its own injection, and the BE arm was
+      never asked to recover its own truth anywhere (the 2.00-edge
+      failure was a cross-family read). Standard adopted: an arm's
+      real-data null is VALIDATED only by an own-truth interior in-band
+      recovery through the same prior on the same sample. New modes:
+        fullpow      simple truth alpha = 1.18, full selection,
+                     companions at the full-sample host peak; BAR (the
+                     simple-full arm): a_marg in [0.9, 1.5] AND
+                     dN_marg >= +25 on the simple row; the BE row is a
+                     cross-family diagnostic, not a bar.
+        fullpowbe    BE truth alpha = 1.13, full selection; BAR (the
+                     BE-full arm): BE a_marg in [0.85, 1.45] AND
+                     dN_marg >= +20.
+        strictpowbe  BE truth alpha = 1.13, strict selection; BAR: as
+                     fullpowbe (validates/repairs the BE strict arm
+                     whose cross-family read failed).
+      STANDING RULE (pre-committed): the COMPANION-WIN verdict is an
+      either-law bar, so it STANDS if at least one full-sample arm
+      validates; if BOTH full arms fail their own-truth injections, the
+      verdict downgrades to PROVISIONAL-INSTRUMENT and the 7J credence
+      move partially reverts (anomaly-real ~35% -> ~50%) pending
+      instrument repair. A grid edge in a power gate disqualifies that
+      arm exactly as it would a fit.
+  (b) SEED BUDGET at the boundary (correction-#10 standard; agreement
+      at a bound compresses the luck-detecting scatter): seeds 202,
+      303, 404, 505 appended to full+strict photo. The boundary-free
+      check statistic is the alpha-marginal gap lm(0.5) - lm(0).
+      STANDING RULE: the verdict stands unless any new seed shows
+      gap > -5 lnL or an interior a_marg > 0 at the peak prior; either
+      event downgrades the verdict to AMBIGUOUS per the original tree.
+  (c) LOW-END PRIOR CO-QUOTE (7J-e, stage7j_lowend.py): a_marg is
+      quoted at the envelope peak AND at the 1-sigma-low recentring
+      (full peak 0.51 -> 0.42). Result already on disk: the verdict
+      survives the low end (a_marg seed means 0.19/0.25, bar <= 0.7
+      fires) but the exact zero is peak-specific — at the low end the
+      posterior sits at fcomp = 0.2 with a residual-boost scrap and
+      Newton within +2..+7. Quote both.
+
+argv: <sample: full|strict|strictpow|fullpow|fullpowbe|strictpowbe>
+      [photo] <seeds...>
 Appends rows to data/stage7j_<sample>[_photo].txt; verdict appended to
 data/stage7j_verdict.txt once both laws of all requested seeds exist.
 """
@@ -133,7 +176,8 @@ import numpy as np
 from astropy.io import fits
 
 SAMPLE = sys.argv[1] if len(sys.argv) > 1 else 'full'
-assert SAMPLE in ('full', 'strict', 'strictpow'), SAMPLE
+POWS = ('strictpow', 'fullpow', 'fullpowbe', 'strictpowbe')
+assert SAMPLE in ('full', 'strict') + POWS, SAMPLE
 _rest = sys.argv[2:]
 AMP = 'photo' if (_rest and _rest[0] == 'photo') else 'raw'
 if AMP == 'photo':
@@ -174,7 +218,7 @@ sigv = 4.74047/plx*np.sqrt(d['pmra_error1']**2+d['pmdec_error1']**2
 ok = (Rch<0.01)&(plx1>5)&(plx2>5)&(plx1/np.maximum(eplx1,1e-6)>20) \
    &(plx2/np.maximum(eplx2,1e-6)>20)&(np.abs(plx1-plx2)<3*np.hypot(eplx1,eplx2)) \
    &(sep>200)&(sep<50000)&(MG1>2.6)&(MG1<14.2)&(MG2>2.6)&(MG2<14.2)&(sigv<0.03)
-if SAMPLE in ('strict', 'strictpow'):
+if SAMPLE in ('strict', 'strictpow', 'strictpowbe'):
     ok0 = int(ok.sum())
     ok = ok & np.load('data/stage7i_strictmask.npy')
     print(f"strict sample: {int(ok.sum())}/{ok0} pairs", flush=True)
@@ -430,7 +474,7 @@ def P(s):
 
 # --- the completeness prior on FCOMP_GRID ---------------------------------
 pr = np.load('data/stage7j_prior.npz')
-if SAMPLE == 'full':
+if SAMPLE in ('full', 'fullpow', 'fullpowbe'):
     xg, lp = pr['f_grid'], pr['lnpi_full']
 else:
     xg, lp = pr['r_grid'], pr['lnpi_strict']
@@ -441,11 +485,16 @@ P(f"STAGE 7J-B {SAMPLE} seeds {SEEDS_REQ}: wr={WR_GRID.tolist()}, "
   f"fcomp={FCOMP_GRID.tolist()}, fpm={FPM_GRID.tolist()}; "
   f"ln pi(fcomp) = {np.round(LNPI, 2).tolist()}")
 
-if SAMPLE == 'strictpow':
-    R_TR = float(np.load('data/stage7j_prior.npz')['r_host_hat'])
+if SAMPLE in POWS:
+    if SAMPLE in ('strictpow', 'strictpowbe'):
+        R_TR = float(np.load('data/stage7j_prior.npz')['r_host_hat'])
+    else:
+        R_TR = float(pr['f_grid'][int(np.argmax(pr['lnpi_full']))])
+    A_TR, TAB_TR, LAWN = ((1.13, TAB_B, 'BE') if SAMPLE.endswith('be')
+                          else (1.18, TAB_S, 'simple'))
     pt = build_pop(777)
     e_t = e_of(pt, 1.3, 0.2)
-    tab_t = 1.0 + 1.18*(TAB_S-1.0)
+    tab_t = 1.0 + A_TR*(TAB_TR-1.0)
     vp_t = vp_c(pt, e_t, tab_t)
     ot = run(pt['a_s'], e_t, pt['psi0'], pt['f_ip'], pt['M_s'],
              pt['uph'], 8, 2500, 5, a0=A0_CAN, tab=tab_t, lny0=LNY0,
@@ -456,15 +505,15 @@ if SAMPLE == 'strictpow':
         n_obs = int(data_2d[bi].sum())
         cnt = rgs.multinomial(n_obs, (pps[bi]/pps[bi].sum()).ravel())
         data_2d[bi] = cnt.reshape(NV, NG).astype(float)
-    P(f"strictpow: injected alpha=1.18 truth at r_host={R_TR:.2f} "
-      f"(truth pop 777, count draws 888, strict-bin totals)")
+    P(f"{SAMPLE}: injected {LAWN} alpha={A_TR} truth at host rate "
+      f"{R_TR:.2f} (truth pop 777, count draws 888, observed-bin totals)")
 
 # --- GB0 references -------------------------------------------------------
 ROWRE = re.compile(r"seed (\d+) (simple|BE): a_hat=([0-9.]+) \(grid [0-9.]+, "
                    r"interior=(\w+)\), dlnL\(Newton\)=([+-][0-9.]+), "
                    r"wr=([0-9.]+)")
 REF = {}
-if SAMPLE != 'strictpow':
+if SAMPLE not in POWS:
     REFF = ('data/stage4r_summary.txt' if SAMPLE == 'full'
             else 'data/stage7i_s.txt')
     for m in ROWRE.finditer(open(REFF).read()):
@@ -548,7 +597,7 @@ def run_seed(seed):
             else:
                 P(f"GB0p {SAMPLE} seed {seed} {law}: raw cube absent - "
                   f"SKIPPED (disclosed)")
-        if SAMPLE != 'strictpow' and AMP != 'photo':
+        if SAMPLE not in POWS and AMP != 'photo':
             # GB0: legacy sub-cube (wr<=0.3, fcomp<=0.1, fpm=1.5)
             sub = cb[:, :, :3, :2, :, :, 1:2, 0:1]
             _, ah_sub, _ = profile_of(sub)
@@ -628,6 +677,19 @@ if all(('simple', s) in have and ('BE', s) in have for s in seeds) and seeds:
         v = ('POWER-OK' if (amin >= 0.9 and max(am_.values()) <= 1.5
                             and dmin >= 25) else
              'POWER-FAIL (the strict-companion quadrant carries no weight)')
+    elif SAMPLE == 'fullpow':
+        # amendment 6: per-arm bar on the truth-matched (simple) row only
+        v = ('ARM-VALIDATED (simple-full)' if
+             (0.9 <= am_['simple'] <= 1.5 and dn_['simple'] >= 25) else
+             'ARM-FAIL (simple-full null UNVALIDATED)')
+        v += f" [BE cross-family diagnostic: {am_['BE']:.2f}/{dn_['BE']:+.1f}]"
+    elif SAMPLE in ('fullpowbe', 'strictpowbe'):
+        arm = 'BE-full' if SAMPLE == 'fullpowbe' else 'BE-strict'
+        v = (f'ARM-VALIDATED ({arm})' if
+             (0.85 <= am_['BE'] <= 1.45 and dn_['BE'] >= 20) else
+             f'ARM-FAIL ({arm} null UNVALIDATED)')
+        v += (f" [simple cross-family diagnostic: "
+              f"{am_['simple']:.2f}/{dn_['simple']:+.1f}]")
     elif SAMPLE == 'full':
         v = ('ANCHOR-CONFIRMED' if (amin >= 0.9 and dmin >= 30) else
              'COMPANION-WIN' if (amin <= 0.7 or dmin <= 15) else 'AMBIGUOUS')

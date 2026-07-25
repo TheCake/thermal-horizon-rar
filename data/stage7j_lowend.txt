@@ -1,0 +1,23 @@
+[full peak] ln pi(fcomp) = [-1584.82, -768.17, -268.1, -7.78, -1.06, -42.57]
+[full peak 31 simple] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-44.1 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[full peak 101 simple] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-61.4 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[full peak 31 BE] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-25.2 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[full peak 101 BE] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-31.6 P(fcomp)=[0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[full low] ln pi(fcomp) = [-841.13, -303.04, -62.07, -2.62, -2.11, -128.69]
+[full low 31 simple] a_marg=0.37 dN_marg=+4.9 gap(0.5-0)=+4.9 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[full low 101 simple] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-11.2 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[full low 31 BE] a_marg=0.50 dN_marg=+7.3 gap(0.5-0)=+7.3 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[full low 101 BE] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-2.7 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[strict peak] ln pi(fcomp) = [-1584.82, -608.39, -150.5, -2.45, -3.38, -68.11]
+[strict peak 31 simple] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-28.5 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[strict peak 101 simple] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-31.3 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[strict peak 31 BE] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-17.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[strict peak 101 BE] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-20.2 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[strict low] ln pi(fcomp) = [-608.39, -150.5, -5.21, -1.84, -14.83, -175.14]
+[strict low 31 simple] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-28.5 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[strict low 101 simple] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-31.3 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[strict low 31 BE] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-17.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[strict low 101 BE] a_marg=0.00 dN_marg=+0.0 gap(0.5-0)=-20.2 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+
+Bar reference (unchanged, from the 7J pre-reg): full COMPANION-WIN if
+a_marg <= 0.7 or dN <= +15 (either law, seed mean).
