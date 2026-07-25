@@ -101,9 +101,17 @@ under measured multiplicity); correction #15 retracts the 7I cut-survival immuni
 inference. Galaxy rows untouched. Full record: NOTES Stage 7J; ledger rows
 bin-7j-completeness / bin-7j-marginal / bin-7j-rawcond / ret-7i-median-immune.
 
-Corrections record: fifteen logged in [PAPER.md](PAPER.md) Appendix A. In-sample
+Corrections record: sixteen logged in [PAPER.md](PAPER.md) Appendix A. In-sample
 environmental ordering WITHDRAWN (correction #14, Stage 6Z) — moved to C/P2.
 7I cut-survival immunity inference RETRACTED (correction #15, Stage 7J).
+§7.3 "manufactured significance" claim RETRACTED (correction #16, Stage 7J-x):
+the completeness measurement vindicated the direction of the Newton-favored
+analyses' companion freedom; their specific 0.69 stays excluded. The Raghavan
+external-validation comparison withdrawn as wrong-population (the correct
+comparison is the wide-binary subsystem fraction, Tokovinin-style; requote in
+the notebook). 7J standing additions: the low-end prior co-quote (verdict
+survives; the exact zero is peak-specific) and the per-arm injection standard
+(amendment 6, pre-registered at 0045eea) with its committed downgrade rule.
 
 ---
 

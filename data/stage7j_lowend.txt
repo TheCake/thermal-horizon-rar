@@ -21,3 +21,13 @@
 
 Bar reference (unchanged, from the 7J pre-reg): full COMPANION-WIN if
 a_marg <= 0.7 or dN <= +15 (either law, seed mean).
+
+7J-e2: literature-anchored conditionals (scout-grade external rates)
+[full lit 31 simple] cond(fcomp=0.2): a_prof=0.36 dN=+4.7 | lit-prior marg: a_marg=0.39 dN_marg=+4.9 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[full lit 101 simple] cond(fcomp=0.2): a_prof=0.00 dN=+0.0 | lit-prior marg: a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[full lit 31 BE] cond(fcomp=0.2): a_prof=0.49 dN=+7.2 | lit-prior marg: a_marg=0.50 dN_marg=+7.3 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[full lit 101 BE] cond(fcomp=0.2): a_prof=0.00 dN=+0.0 | lit-prior marg: a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[strict lit 31 simple] cond(fcomp=0.2): a_prof=0.00 dN=+0.0 | lit-prior marg: a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[strict lit 101 simple] cond(fcomp=0.2): a_prof=0.00 dN=+0.0 | lit-prior marg: a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[strict lit 31 BE] cond(fcomp=0.2): a_prof=0.00 dN=+0.0 | lit-prior marg: a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[strict lit 101 BE] cond(fcomp=0.2): a_prof=0.00 dN=+0.0 | lit-prior marg: a_marg=0.00 dN_marg=+0.0 P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]

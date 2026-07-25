@@ -4405,6 +4405,143 @@ under the 7J posterior; 7L Cookson selection; c1 six-seed budget; THE
 SPLIT after 7K (Paper 1's binary chapter now leads with the marginalized
 null + the completeness measurement).
 
+## Stage 7J-x (2026-07-25): the second-review hardening round — per-arm
+## injections, the low-end prior stress, CORRECTION #16, and the wrong-
+## population citation withdrawn
+
+The second solicited review (Opus 5.0) audited the 7J close. Its points,
+each resolved by computation or booked as a correction — not argued:
+
+(1) POWER-GATE SCOPE (load-bearing, conceded): the strictpow injection
+ran on the STRICT selection under the SIMPLE truth only — the full
+sample carried the verdict without its own injection, and the BE arm
+was never asked to recover its own truth anywhere (the 2.00-edge
+POWER-FAIL was a cross-family read, not a BE-arm validation). Standard
+adopted verbatim: any arm carrying a verdict needs its own passing
+injection through the same prior on the same sample; a grid edge in a
+power gate disqualifies exactly as in a fit. AMENDMENT 6 pre-registered
+(commit 0045eea, BEFORE execution): modes fullpow (simple truth 1.18,
+full selection, host-peak companions; bar a_marg in [0.9,1.5] AND
+dN >= +25 on the simple row), fullpowbe + strictpowbe (BE truth 1.13;
+bar BE a_marg in [0.85,1.45] AND dN >= +20). STANDING RULES committed:
+COMPANION-WIN is an either-law bar -> stands if >= 1 full arm
+validates; if BOTH full arms fail, verdict downgrades to
+PROVISIONAL-INSTRUMENT and the credence move partially reverts
+(~35% -> ~50%) pending repair.
+
+(2) TWO SEEDS AT A BOUNDARY (conceded; correction-#10 is our own
+precedent): agreement at alpha = 0 compresses the luck-detecting
+scatter. Seeds 202/303/404/505 launched on full+strict photo; the
+boundary-free check statistic is the alpha-marginal gap lm(0.5)-lm(0);
+the verdict stands unless any new seed shows gap > -5 lnL or an
+interior a_marg > 0 at the peak prior (either -> AMBIGUOUS per the
+original tree). Pre-registered in amendment 6, same commit.
+
+(3) LOW-END PRIOR (the reviewer's sharpest scenario — "if the prior is
+20% too high the bound is where alpha goes regardless"): EXECUTED
+immediately from the cached cubes ([calcs/stage7j_lowend.py],
+data/stage7j_lowend.txt). Result: recentring the measured envelope at
+its 1-sigma-low end (full peak 0.51 -> 0.42; strict 0.47 -> 0.37)
+leaves COMPANION-WIN standing (full seed means a_marg 0.19 simple /
+0.25 BE, bar <= 0.7 fires; strict unchanged) but UN-PINS the zero: the
+full posterior moves to fcomp = 0.2 with a residual-boost scrap
+(seed 31: a_marg 0.37/0.50, Newton within +4.9/+7.3; seed 101: 0.00) —
+the exact zero is peak-prior-specific and is now co-quoted with the
+low-end row everywhere. The 16-lnL seed scatter at the low end
+independently supports the seed budget of (2).
+
+(4) MISFIT SAME ORDER AS THE GAP (conceded): the winning cell's
+-60..-116 misfit is the same order as the +99 Newton-rejection gap the
+fenced fits had won by — the marginalization selects the less-bad of
+two misspecified models, and that ordering is provisional against the
+missing component. Promoted from a residuals paragraph into the same
+breath as the verdict (PAPER abstract (3) + 6.3).
+
+(5) PHOTOCENTER PROVENANCE (the reviewer asked twice; answered
+plainly): the correction was registered (a2ecf2e) AFTER part A's host
+inversion raised the amplitude question and AFTER an interim verdict
+under the misspecified blended-axis prior had already shown the
+companion direction (quarantined in
+data/stage7j_verdict_stale_blendprior.txt), but BEFORE the as-published
+conditional was explicitly read (a9e8b16). The physics is
+sequence-independent (exact twin cancellation, validated by the ell(q)
+leg); the adoption environment was NOT neutral; the as-published
+conditional travels alongside everywhere as the guard. Sentence added
+to PAPER App A item 15 and 6.3.
+
+(6) CORRECTION #16 (the hard one, stated generously as demanded):
+7.3's claim that the 16-sigma-Newton result was "manufactured" by a
+companion fraction "the photometry forbids" is RETRACTED — the
+completeness measurement shows the photometry never forbade ~0.5 (the
+flagged 12% at C = 0.41 implies 0.42-0.57), our own f <= 0.1 fence was
+the excluded assumption (ln pi = -768), and our marginalized verdict
+landed on the Newton-favored side of the fit-level question. **Banik
+et al.'s companion-dominated reading was substantially closer to the
+truth than our fenced fits.** Retracted in the normative sense for ALL
+THREE ablation legs (the arithmetic stands as an as-published-law map).
+Still standing, each specific: their fitted 0.69 excluded (ln pi = -36;
+~-2000 in our 2D likelihood); the shared as-published amplitude law
+internally inconsistent without photocenter cancellation; H&C's
+sub-error-binning critique (theirs); the direction channel's
+information advantage. 7.3 retitled + rewritten; abstract (4), intro
+Third, and the conclusions bullet rewritten hard; App A item 16.
+
+(7) RAGHAVAN = WRONG POPULATION (conceded) — AND THE SCOUT RETURNED A
+REAL EXTERNAL TENSION: 46% overall solar-type multiplicity counts the
+wide companion itself; our f_host is HIGHER-ORDER multiplicity — the
+subsystem fraction among components of already-selected wide pairs
+(per-component 0.24-0.34). The scout (Haiku, scout-grade, primary-
+source verification NOW REQUIRED per the 4-misread rule) reports the
+published rates SIT A FACTOR ~2-3 BELOW US: Tokovinin 2014 (AJ 147,
+86-87) 10.0%/7.3% per primary/secondary component; Tokovinin 2010
+12+-4% (5-100 AU subsystems); Hwang 2022 field wide-tertiary baseline
+5.35%; Moe & Di Stefano triples ~7-8% of systems. If the literature is
+right, part A's completeness C = 0.41 is the suspect quantity (it
+divides the hard 12.3% flagged rate; C ~ 0.8 would reconcile) and the
+host prior is over-scaled. RESOLVED AT VERDICT LEVEL IMMEDIATELY
+(7J-e2, same script, cached cubes): **the COMPANION-WIN does not hinge
+on the prior scale — at the literature-anchored cell (fcomp = 0.2) the
+full-sample conditional is alpha = 0.36/0.49 (seed 31) and 0.00 (seed
+101) with Newton within +4.7/+7.3, and a literature-centred prior
+(peak 0.22, sigma 0.08) gives seed-mean a_marg 0.20/0.25, dN +2.5/
++3.7 — COMPANION-WIN fires at every plausible prior anchoring
+(measured peak 0.51 / measured low 0.42 / literature 0.22); what
+changes is only the null's flavor (exact zero -> a one-seed scrap of
+~0.4). Even in the most boost-friendly plausible cell, >= 93% of the
+fenced +99 Newton rejection is gone.** Part A's ABSOLUTE scale carries
+the external-tension flag until the primary-source requote (candidate
+correction #17 if C is confirmed biased; the scout also reports NO
+published subsystem-vs-separation curve in our 0.2-50 kAU regime =
+part A may be measuring something genuinely new at these separations
+— both branches stated, neither claimed). "Raghavan-consistent"
+withdrawn from PAPER/LEDGER.
+
+(8) PROPAGATIONS the reviewer demanded and got: 8.1's binary-calibrated
+quadrupole novelty SUSPENDED with the binary amplitude (status headnote;
+the tension reverts to the DHF24 galaxy-calibrated form; the 6W
+composition contest and 8.2 MI/MG brackets carry the same flag);
+the AMB "passes both systems" claim now carries the second flag (the
+binary leg fence-conditional; the two-system split it reconciles is
+suspended pending 7J-d) in the abstract and conclusions; PREDICTIONS.md
+corrections record extended.
+
+(9) The reviewer's Part-A-as-standalone-paper reading and the 7K
+twin-check design (are the 11 band pairs' components in the
+wobble-capable regime? — with the stated hole: low-q companions are
+wobble-capable but photometrically dim, so the per-pair delta test
+exonerates only the twin-flagged end) are ADOPTED into the 7K design
+and THE SPLIT plan.
+
+In flight at close of entry: fullpow/fullpowbe/strictpowbe + 4 seed
+extension (pre-reg 0045eea). Credence: ~35% HELD pending the arms/seed
+verdicts under the committed standing rules (both-full-arms-fail ->
+~50%; seed break -> AMBIGUOUS).
+
+PLAIN VERDICTS: low-end stress: SUCCESS (verdict robust, zero
+un-pinned, honesty improved). Power-gate scope: NEEDS REFINEMENT
+(conceded; runs in flight under pre-registered bars). Correction #16:
+executed as a hard retraction, the kind that hurts and holds.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

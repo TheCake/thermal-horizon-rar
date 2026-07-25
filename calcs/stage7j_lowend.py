@@ -67,6 +67,50 @@ P("")
 P("Bar reference (unchanged, from the 7J pre-reg): full COMPANION-WIN if")
 P("a_marg <= 0.7 or dN <= +15 (either law, seed mean).")
 
+# --- 7J-e2: the LITERATURE-ANCHORED conditional (scout follow-up) ---------
+# Published subsystem rates for wide-binary components (scout-grade,
+# primary-source verification pending: Tokovinin 2014 AJ 147, 86-87:
+# 10.0%/7.3% per component; Tokovinin 2010: 12+-4%; Hwang 2022 field
+# tertiary baseline ~5%) sit a factor ~2-3 BELOW part A's 0.24-0.34 per
+# component (0.42-0.57 per pair).  If the literature is right, the
+# per-pair host rate is ~0.2-0.25 and the relevant posterior cell is
+# fcomp = 0.2.  Report that cell's conditional alpha and Newton margin
+# (profile over all nuisances at fixed fcomp), and a marginal under a
+# literature-centred prior (Gaussian on the fcomp axis, peak 0.22,
+# sigma 0.08 - assumption-light stand-in pending the verified requote).
+P("")
+P("7J-e2: literature-anchored conditionals (scout-grade external rates)")
+for sample in ('full', 'strict'):
+    for law in ('simple', 'BE'):
+        for seed in (31, 101):
+            cube = np.load(
+                f'data/stage7j_cube_{sample}_photo_{seed}_{law}.npy')
+            cb = cube + prior_eta[None, :, None, None, None, None, None, None]
+            sub = cb[:, :, :, 2:3]            # the fcomp = 0.2 cell
+            prof = np.nanmax(sub, axis=(1, 2, 3, 4, 5, 6, 7))
+            ima = int(np.nanargmax(prof)); ah = A_GRID[ima]
+            if 0 < ima < 4:
+                x = A_GRID[ima-1:ima+2]; y = prof[ima-1:ima+2]
+                c2, c1, _ = np.polyfit(x, y, 2)
+                if c2 < 0: ah = -c1/(2*c2)
+            dn = float(np.nanmax(prof) - prof[0])
+            lit = -0.5*((FCOMP - 0.22)/0.08)**2
+            cbl = cb + lit[None, None, None, :, None, None, None, None]
+            m0 = np.nanmax(cbl)
+            ex = np.exp(np.nan_to_num(cbl - m0, nan=-np.inf))
+            lm = np.log(np.maximum(
+                ex.sum(axis=(1, 2, 3, 4, 5, 6, 7)), 1e-300)) + m0
+            iml = int(np.argmax(lm)); am = A_GRID[iml]
+            if 0 < iml < 4:
+                x = A_GRID[iml-1:iml+2]; y = lm[iml-1:iml+2]
+                c2, c1, _ = np.polyfit(x, y, 2)
+                if c2 < 0: am = -c1/(2*c2)
+            dnm = float(lm.max() - lm[0])
+            fp = ex.sum(axis=(0, 1, 2, 4, 5, 6, 7)); fp /= fp.sum()
+            P(f"[{sample} lit {seed} {law}] cond(fcomp=0.2): a_prof={ah:.2f} "
+              f"dN={dn:+.1f} | lit-prior marg: a_marg={am:.2f} "
+              f"dN_marg={dnm:+.1f} P(fcomp)={np.round(fp, 2).tolist()}")
+
 with open('data/stage7j_lowend.txt', 'w') as f:
     f.write("\n".join(OUT) + "\n")
 print("\nsaved: data/stage7j_lowend.txt")

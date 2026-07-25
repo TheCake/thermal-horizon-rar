@@ -107,6 +107,11 @@ CHECKS = [
     ('bin-7j-marginal',     '==> COMPANION-WIN', 'data/stage7j_verdict.txt'),
     ('bin-7j-marginal',     'a_marg=0.00', 'data/stage7j_full_photo.txt'),
     ('bin-7j-rawcond',      '-1034.4', 'data/stage7j_diag.txt'),
+    ('bin-7j-lowend',       'a_marg=0.37', 'data/stage7j_lowend.txt'),
+    ('bin-7j-lowend',       'lit-prior marg: a_marg=0.39',
+     'data/stage7j_lowend.txt'),
+    ('ret-73-manufactured', 'f_host in [0.42, 0.57] (peak 0.51)',
+     'data/stage7j_completeness.txt'),
     ('ret-7i-median-immune', 'completeness of the -0.4 flag: C(companion) = 0.410',
      'data/stage7j_completeness.txt'),
 ]
