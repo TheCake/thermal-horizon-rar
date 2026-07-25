@@ -4,7 +4,11 @@ Registered predictions of the thermal-horizon reading (the ambient-gated bath an
 parents), separated from postdictions, with kill conditions stated in numbers.
 
 **Rules.** (1) Every live prediction is registered by git commit BEFORE its test
-executes; the commit hash is its timestamp. (2) Entries are never edited after
+executes; the commit hash is its timestamp. (Terminology: this is *bar-locking* —
+committed thresholds with knowledge of all previous stages. It guards against post-hoc
+bar-moving and outcome-shopping, and several locked bars have fired against us; it is
+not prospective pre-registration and does not control the sequential-search error rate —
+see §0.) (2) Entries are never edited after
 registration — status flips only (LIVE → CONFIRMED / KILLED / MOVED, with a pointer),
 mirroring [LEDGER.md](LEDGER.md) discipline. (3) "Parameter-free" means no dial of the
 rule can absorb a failure; every kill condition is quantitative. (4) Postdictions are
@@ -42,6 +46,10 @@ likelihood = the vertical-hardened hierarchical ladder
 likelihood = the corrected-velocity six-seed v7 budget
 ([calcs/stage3p_v7budget.py](calcs/stage3p_v7budget.py) + the 4R data patch, seeds
 31/101/202/303/404/505, g1p2 tables).
+
+The in-sample function comparisons carry an uncorrected sequential-search multiplicity
+(~30 forms tested along a data-guided path); no post-hoc trials correction can repair
+that, and none is attempted — closure plus out-of-sample routing is the repair.
 
 **The rule.** (1) No further functional-form iteration is scored on the in-sample data
 (SPARC 153 + its hierarchical treatments, EDR3 14,071 + the ceiling census, the Chae

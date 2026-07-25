@@ -1,0 +1,6 @@
+STAGE 7I: 14071 baseline pairs
+census [1.414,1.67), gamma>=75, s>=6: raw no-cut 11, raw S/N>3 11 (4J: 11/11), corrected 9 (gate [9,12])
+GATE GC: PASS
+data/ceiling_pairs.csv: 23 rows (band + [1.20,1.414) context + above-cliff, both conventions)
+overluminous star fraction (baseline sample, 3J criterion): 0.123  GATE GS (3J 0.123, band [0.11,0.14]): PASS
+strict cut: RUWE<1.2 both 9848/14071; + no-overluminous + valid color -> 8047/14071 pairs (0.572)
