@@ -91,6 +91,33 @@ P("    enters at marginalization); power ARMS at a new anchor require")
 P("    NEW injected data - no arm is validated at the operative prior;")
 P("    fullpowlit runs at whatever anchor 7J-z lands (reviewer order).")
 
+# --- 7J-w2: injection informativeness vs the sky (round 6) ----------------
+# The reviewer's asymmetry: on injected data the likelihood pins
+# fcomp = 0.50 through a mismatched prior; on real data alpha moves as
+# the anchor moves - the injected likelihood is MORE informative about
+# fcomp than the sky's, so power validated on injections overstates
+# power on data.  Quantify from cached cubes at matched N: the
+# fcomp lnL profile (max over all other axes), real vs injected.
+P("")
+P("7J-w2: fcomp informativeness, real vs injected (full sample, lnL")
+P("profile relative to its own maximum; more negative = sharper)")
+for tag, path in (('real 31', 'data/stage7j_cube_full_photo_31_simple.npy'),
+                  ('real 101', 'data/stage7j_cube_full_photo_101_simple.npy'),
+                  ('inj-fullpow', 'data/stage7j_cube_fullpow_photo_31_simple.npy'),
+                  ('inj-fullpowbe(BE arm)',
+                   'data/stage7j_cube_fullpowbe_photo_31_BE.npy')):
+    c = np.load(path)
+    cb = c + prior_eta[None, :, None, None, None, None, None, None]
+    prof = np.nanmax(cb, axis=(0, 1, 2, 4, 5, 6, 7))
+    prof = prof - prof.max()
+    P(f"  [{tag}] lnL(fcomp)-max = "
+      f"{np.round(prof, 1).tolist()}  (cells {FCOMP.tolist()})")
+P(" reading: the real profiles are shallow across 0.1-0.35 (tens of")
+P(" lnL) where the injected profiles cliff by hundreds around their")
+P(" truth cell - if so, the sky's companion signature is weaker than")
+P(" the model's own, and every arm validation inherits that optimism;")
+P(" quantified here so the post-7J-z arm suite states it.")
+
 with open('data/stage7j_armdiag.txt', 'w') as f:
     f.write("\n".join(OUT) + "\n")
 print("\nsaved: data/stage7j_armdiag.txt")

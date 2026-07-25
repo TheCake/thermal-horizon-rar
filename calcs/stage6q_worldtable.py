@@ -117,6 +117,11 @@ CHECKS = [
     ('bin-7j-paircorr',     'C-FAIL STANDS', 'data/stage7j_paircorr.txt'),
     ('bin-7j-armdiag',      'PROF=1.47/+71.1  meas=1.48/+94.5',
      'data/stage7j_armdiag.txt'),
+    ('bin-7j-anchorcurve',  '0.06:0.31/+2', 'data/stage7j_lowend.txt'),
+    ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
+     'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
+    ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',
+     'data/stage7j_armdiag.txt'),
     ('ret-7i-median-immune', 'completeness of the -0.4 flag: C(companion) = 0.410',
      'data/stage7j_completeness.txt'),
 ]
@@ -310,9 +315,12 @@ say('BIN/A0 row above was measured inside the multiplicity fence (f_comp <=')
 say('0.1).  Stage 7J ran the companion marginalization; its completeness')
 say('measurement was then retracted by the within-pair correlation test')
 say('(bin-7j-paircorr, rho = +0.47 common-mode), leaving literature')
-say('subsystem rates primary.  The anchoring-invariant finding stands: the')
-say('fenced +99-110 Newton rejection is DEAD at every defensible companion')
-say('prior (alpha_marg <= ~0.5, Newton within single digits).  Verdict')
+say('subsystem rates primary.  The measured curve (7J-e3): the fenced')
+say('+99-110 Newton rejection is DEAD under ANY smooth companion prior')
+say('(alpha_marg ~ 0.2-0.3, Newton within +2..+4, anchors 0.06-0.30);')
+say('it returns only behind a hard exclusion of f >= 0.2; the revival')
+say('mechanism is the model-side missing width channel, not the rate.')
+say('Verdict')
 say('label: COMPANION-WIN at the retracted measured prior, AMBIGUOUS at the')
 say('primary literature anchoring (six-seed budget = the decider).  The')
 say('binary DATA VOTE stays suspended pending 7J-z (repaired completeness),')

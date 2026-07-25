@@ -117,6 +117,53 @@ for sample in ('full', 'strict'):
                   f"dN={dn:+.1f} | lit-prior marg: a_marg={am:.2f} "
                   f"dN_marg={dnm:+.1f} P(fcomp)={np.round(fp, 2).tolist()}")
 
+# --- 7J-e3: THE FINE ANCHOR CURVE (review round 6) ------------------------
+# The round-6 catch: the sampled curve ran anchors >= 0.166 while the
+# fenced fit (hard wall f <= 0.1) returned alpha = 1.06 / Newton +99.5
+# - so the entire detection lives between anchor 0.10 and 0.166, and a
+# pending instrument (7J-z) CAN un-kill the rejection.  This section
+# samples the marginal finely (Gaussian anchors, centres 0.06..0.30
+# step 0.02, sigma 0.05 and 0.03) and reports alpha_marg(anchor) as
+# the lookup 7J-z will read.  RESOLUTION CAVEAT (stated before the
+# numbers): the cube's fcomp axis has NO cells between 0.1 and 0.2, so
+# the curve between those anchors is the marginalization's true output
+# on this grid but cannot resolve conditional structure inside the
+# gap; a denser-fcomp cube (0.125/0.15/0.175 cells) is queued with the
+# post-batch runner edit.  Note also the structural fact the fine
+# curve exposes either way: the full-sample LIKELIHOOD alone prefers
+# the 0.2 cell over the 0.1 cell by +12..+28, so the fenced alpha ~ 1
+# is recoverable only by a hard exclusion of f >= 0.2, not by any
+# smooth prior - the "knee" lives jointly in the prior AND in the
+# missing-variance channel (the s-flat scatter object) that lets the
+# 0.2 cell buy its likelihood advantage.
+P("")
+P("7J-e3: the fine anchor curve (full sample; seed-mean over 31/101)")
+for sg in (0.05, 0.03):
+    for law in ('simple', 'BE'):
+        cubes = [np.load(f'data/stage7j_cube_full_photo_{s}_{law}.npy')
+                 for s in (31, 101)]
+        cbs = [c + prior_eta[None, :, None, None, None, None, None, None]
+               for c in cubes]
+        rows = []
+        for cen in np.arange(0.06, 0.3001, 0.02):
+            lit = -0.5*((FCOMP - cen)/sg)**2
+            ams, dns = [], []
+            for cb in cbs:
+                cbl = cb + lit[None, None, None, :, None, None, None, None]
+                m0 = np.nanmax(cbl)
+                ex = np.exp(np.nan_to_num(cbl - m0, nan=-np.inf))
+                lm = np.log(np.maximum(
+                    ex.sum(axis=(1, 2, 3, 4, 5, 6, 7)), 1e-300)) + m0
+                ima = int(np.argmax(lm)); am = A_GRID[ima]
+                if 0 < ima < 4:
+                    x = A_GRID[ima-1:ima+2]; y = lm[ima-1:ima+2]
+                    c2, c1, _ = np.polyfit(x, y, 2)
+                    if c2 < 0: am = -c1/(2*c2)
+                ams.append(am); dns.append(float(lm.max() - lm[0]))
+            rows.append(f"{cen:.2f}:{np.mean(ams):.2f}/{np.mean(dns):+.0f}")
+        P(f"[full {law} sigma={sg:.2f}] anchor:a_marg/dN = " + " ".join(rows))
+P("hard-wall reference (f <= 0.1 fence, 4R): a_hat = 1.06, dN = +99.5")
+
 with open('data/stage7j_lowend.txt', 'w') as f:
     f.write("\n".join(OUT) + "\n")
 print("\nsaved: data/stage7j_lowend.txt")

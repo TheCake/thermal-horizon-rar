@@ -1,10 +1,10 @@
-STAGE 6Q: ledger audit + world table  (107 ledger rows)
+STAGE 6Q: ledger audit + world table  (108 ledger rows)
 ==============================================================================
 G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
 G3 (supersession resolves): PASS
 G4 (current-quantity collisions): PASS
-G5 (value spot-checks, 51 tokens): PASS
+G5 (value spot-checks, 54 tokens): PASS
 
 G6 (world-table provenance): PASS
 
@@ -149,9 +149,12 @@ BIN/A0 row above was measured inside the multiplicity fence (f_comp <=
 0.1).  Stage 7J ran the companion marginalization; its completeness
 measurement was then retracted by the within-pair correlation test
 (bin-7j-paircorr, rho = +0.47 common-mode), leaving literature
-subsystem rates primary.  The anchoring-invariant finding stands: the
-fenced +99-110 Newton rejection is DEAD at every defensible companion
-prior (alpha_marg <= ~0.5, Newton within single digits).  Verdict
+subsystem rates primary.  The measured curve (7J-e3): the fenced
++99-110 Newton rejection is DEAD under ANY smooth companion prior
+(alpha_marg ~ 0.2-0.3, Newton within +2..+4, anchors 0.06-0.30);
+it returns only behind a hard exclusion of f >= 0.2; the revival
+mechanism is the model-side missing width channel, not the rate.
+Verdict
 label: COMPANION-WIN at the retracted measured prior, AMBIGUOUS at the
 primary literature anchoring (six-seed budget = the decider).  The
 binary DATA VOTE stays suspended pending 7J-z (repaired completeness),

@@ -952,7 +952,27 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   amplitude+scatter free — global slope would recreate the
   over-attribution). **ORDER FIXED: 7J-z → 7J-g → arm suite at the
   landed anchor.** PAPER v2.9 updated in place; ledger
-  +bin-7j-armdiag (107 rows, 51 tokens green).** Then the DM
+  +bin-7j-armdiag (107 rows, 51 tokens green).**
+  **ROUND 6 (Opus's last — exchange CLOSED): (1) THE KNEE MEASURED
+  OUT (7J-e3): my "no pending instrument un-kills it" RETRACTED —
+  but the fine curve (anchors 0.06–0.30, both σ) is nearly FLAT:
+  α_marg 0.18–0.31, Newton +2…+4 everywhere incl. below the old
+  fence, because the likelihood alone pays +12…+28 to sit at
+  fcomp=0.2; **the fenced +99–110 returns ONLY behind a hard
+  exclusion of f≥0.2 — no rate measurement revives it; the revival
+  mechanism is the MISSING WIDTH CHANNEL** (= the −60…−116 misfit =
+  the fpm edge = 6P's s-flat scatter, all one object) → the
+  variance repair folds into 7J-z's modeling round; grid caveat: no
+  cube cells in (0.1, 0.2), denser cells queued. (2) INJECTION
+  OPTIMISM QUANTIFIED (7J-w2): injections 4–30× more informative
+  about fcomp than the sky (real: tens across 0.1–0.35; injected:
+  cliffs of hundreds) — post-7J-z arm suite must degrade injections
+  with the measured common-mode. Ledger +bin-7j-anchorcurve (108
+  rows, 54 tokens green). NEXT CONVERSATION = 7J-z (per-pair-slope
+  2D mixture + width channel) then 7J-g (γ-collapse separability);
+  everything else queues behind. Seeds batch (b9u9qwduz) may still
+  be finishing — commit its outputs + 6-seed both-anchor marginals
+  on arrival (measurements only, cadence rule).** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

@@ -16,3 +16,15 @@ READINGS (measurements, per the cadence rule):
     enters at marginalization); power ARMS at a new anchor require
     NEW injected data - no arm is validated at the operative prior;
     fullpowlit runs at whatever anchor 7J-z lands (reviewer order).
+
+7J-w2: fcomp informativeness, real vs injected (full sample, lnL
+profile relative to its own maximum; more negative = sharper)
+  [real 31] lnL(fcomp)-max = [-672.0, -11.5, 0.0, -109.1, -391.7, -904.9]  (cells [0.0, 0.1, 0.2, 0.35, 0.5, 0.7])
+  [real 101] lnL(fcomp)-max = [-684.2, -12.9, 0.0, -95.4, -366.5, -880.3]  (cells [0.0, 0.1, 0.2, 0.35, 0.5, 0.7])
+  [inj-fullpow] lnL(fcomp)-max = [-4726.2, -1014.4, -367.8, -60.3, 0.0, -54.3]  (cells [0.0, 0.1, 0.2, 0.35, 0.5, 0.7])
+  [inj-fullpowbe(BE arm)] lnL(fcomp)-max = [-5446.1, -1129.1, -426.9, -81.3, 0.0, -64.8]  (cells [0.0, 0.1, 0.2, 0.35, 0.5, 0.7])
+ reading: the real profiles are shallow across 0.1-0.35 (tens of
+ lnL) where the injected profiles cliff by hundreds around their
+ truth cell - if so, the sky's companion signature is weaker than
+ the model's own, and every arm validation inherits that optimism;
+ quantified here so the post-7J-z arm suite states it.

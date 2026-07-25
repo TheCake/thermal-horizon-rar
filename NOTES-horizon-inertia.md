@@ -4819,6 +4819,76 @@ is unchanged by round 5 — AMBIGUOUS at the primary anchoring, the
 durable Newton-rejection collapse at every anchoring, everything
 else queued behind 7J-z -> 7J-g.
 
+## Stage 7J-e3/7J-w2 + round 6 (2026-07-25): the review exchange
+## closes — the knee measured OUT, the revival mechanism relocated,
+## the injection optimism quantified
+
+Round 6 (Opus's last: "the curve-sampling and the curvature check are
+the last two things I'd do before 7J-z"). Both executed from cached
+cubes; both returned answers sharper than the questions.
+
+(1) THE KNEE (7J-e3, [calcs/stage7j_lowend.py]): Opus's catch — my
+"no pending instrument un-kills it" was carried over a curve sampled
+only at anchors >= 0.166, while the fenced fit (hard wall f <= 0.1)
+sits at alpha = 1.06 / +99.5, so the whole detection appeared to live
+between 0.10 and 0.166, with 7J-z able to revive it at 0.12. The
+CLAUSE IS RETRACTED — and the fine curve replaces the interpolation
+with a measurement that changes the geometry: **the curve is nearly
+FLAT — alpha_marg = 0.18-0.31, Newton within +2..+4, for EVERY smooth
+anchor 0.06-0.30 (sigma 0.05 AND 0.03, both laws), including anchors
+BELOW the old fence — because the likelihood alone pays +12..+28 to
+sit at the fcomp = 0.2 cell. The fenced detection returns ONLY behind
+a hard exclusion of f >= 0.2, which no rate measurement can justify.
+THERE IS NO KNEE IN SMOOTH-ANCHOR SPACE.** Consequences: (a) 7J-z at
+0.12 revives nothing — its output reads position on a nearly flat
+curve, so the precision-requirement question dissolves (any honest
+sigma_f suffices for the lookup); (b) THE REVIVAL MECHANISM
+RELOCATES: what could materially move alpha is the forward model's
+MISSING WIDTH CHANNEL — the 0.2 cell buys its +12..+28 by supplying
+variance the model otherwise lacks (the same object as the winning
+cell's -60..-116 misfit, the fpm edge, and 6P's s-flat scatter) — so
+the model-side variance repair, not the rate, is the pending
+instrument that can un-kill the rejection; (c) grid caveat stated:
+no cube cells between 0.1 and 0.2, so the curve is the exact marginal
+output on this grid but cannot resolve conditional structure inside
+the gap (denser-fcomp cells queued with the post-batch runner edit).
+Every "dead at every defensible anchoring" claim in PAPER/banner
+replaced by the measured form.
+
+(2) INJECTION OVER-INFORMATIVENESS (7J-w2,
+[calcs/stage7j_armdiag.py]): confirmed and quantified — real
+full-sample fcomp profiles vary by TENS across 0.1-0.35 (0.1 vs 0.2:
+~12; 0.2 vs 0.35: ~100) where the injected profiles CLIFF by
+hundreds-to-thousands around their truth cell (0.5 vs 0.35: -60/-81;
+vs 0.2: -368/-427; vs 0.1: -1014/-1129) — a 4-30x informativeness
+excess. The model's own companions carry a cleaner fcomp signature
+than the sky's width budget permits (the same missing-channel object
+again, seen from a third side). Consequence, stated for the
+post-7J-z arm suite: **arm validations at any anchor overstate power
+on data; the suite must degrade its injections with the measured
+common-mode or state the excess alongside every recovery.**
+
+(3) THE EXCHANGE CLOSES (Opus's own framing accepted): five rounds
+of checklist->execution->checklist is the 2.4 dynamic and it stops
+here. The two runs that determine everything are 7J-z (per-pair-
+slope 2D completeness = the first subsystem-rate measurement at
+these separations, WITH the width-channel repair folded into the
+same modeling round) and 7J-g (does gamma separate the four
+absorbers = whether Paper 1's methodological claim operates in the
+regime that matters). Everything else — arm suite at the landed
+anchor with degraded injections, denser-fcomp cubes, Tokovinin
+primary-source requote — queues behind them. Next conversation =
+their results.
+
+PLAIN VERDICTS: 7J-e3: SUCCESS — the knee question answered by
+measurement (flat curve; revival mechanism relocated model-side; my
+"no pending instrument" clause retracted and replaced by a sharper
+true statement). 7J-w2: SUCCESS — the optimism quantified before it
+could inflate an arm verdict. Review exchange: closed with the
+program better than it entered — one Part A scale retracted, one
+coherence measurement gained, one discipline rule adopted, and the
+two decisive instruments named and ordered.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
