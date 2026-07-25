@@ -16,6 +16,52 @@ against Newton/DM).
 
 ---
 
+## 0. The frozen package (registered 2026-07-25, this commit)
+
+Adopted from an external review solicited by the author (2026-07-24; the point-by-point
+response is logged in NOTES Stage 7I): the successive-refinement construction of the
+function family — each step motivated by the previous round's results on the same data —
+is legitimate exploration but cannot certify its own survivor. **The function search is
+therefore CLOSED on the in-sample data as of this commit.**
+
+**Frozen function list** (exact forms, all previously registered; y = g_N/a₀):
+- **Newton** (control): ν = 1.
+- **simple-ν** (control; the classical self-consistent bath, 4F): ν = ½ + √(¼ + 1/y).
+- **BE** — the occupation law (Cadoni & Tuveri 2019): ν = 1 + n_BE(√y).
+- **gm** — the β = ½ exchange-symmetric fixed point (5J): ν = 1 + n_BE(y^¾ √ν).
+- **AMB** — the derived ambient-gated bath (6E/6U, post-hoc flag carried):
+  β = ½·[q_loc·s_amb]², q_loc = 1/(2ν−1), s_amb = n_amb/(1+n_amb),
+  n_amb = n_BE(√(e_N/a₀)); solver form u = y^((1+β)/2)·ν^β; trajectory formulation
+  per 7G/7H.
+
+**Frozen conventions:** a₀ = 1.2e−10 m s⁻² fiducial (fitted where stated); binary
+external field = Newtonian g_N,ext = 1.2 a₀ (3S/3T RAR inversion); QUMOND EFE tables
+from [calcs/qumond_efe_solver.py](calcs/qumond_efe_solver.py); galaxy primary
+likelihood = the vertical-hardened hierarchical ladder
+([calcs/stage5m_hierv.py](calcs/stage5m_hierv.py) machinery); binary primary
+likelihood = the corrected-velocity six-seed v7 budget
+([calcs/stage3p_v7budget.py](calcs/stage3p_v7budget.py) + the 4R data patch, seeds
+31/101/202/303/404/505, g1p2 tables).
+
+**The rule.** (1) No further functional-form iteration is scored on the in-sample data
+(SPARC 153 + its hierarchical treatments, EDR3 14,071 + the ceiling census, the Chae
+fields, the lensing set) *as evidence*. Theory work continues; a newly constructed form
+may be registered here with its predictions, but its in-sample fit joins the record as a
+consistency row only. (2) Function-level claims from here on route through out-of-sample
+tests (Section C; the anchored subsample; held-out selections — Cookson-catalog overlap
+check pending; DR4). (3) The world table (Stage 6Q) is the closed in-sample record of
+the thirteen laws tested.
+
+**Primary analyses (multiplicity control, same review).** Each headline claim has ONE
+pre-declared primary treatment; every other treatment is a sensitivity row. Galaxies:
+the vertical-hardened hierarchical ladder. Binaries: the six-seed corrected-velocity v7
+budget. Scatter channel: outer-disk / anchored subsets only (7C); the mode-count N is
+not identifiable at SPARC depth (4W) and is retired from the claims list (the measured
+x-shape and its environmental control, 4T/5B, stand). Within-program grading language
+("largest lead", "top mark") is notebook vocabulary, not evidence — capped in PAPER.md.
+
+---
+
 ## A. The record (postdictions and survived kill tests)
 
 | item | value | uniqueness class | stage |
