@@ -47,8 +47,52 @@ SYNTHESIS QUADRANTS (credence moves pre-committed, NOTES-grade):
       census; the mimicry ledger is reframed.
   (D) ambiguous after extension             -> reported as-is, carried.
 
-argv: <sample: full|strict> <seeds...>
-Appends rows to data/stage7j_<sample>.txt; verdict appended to
+PRE-VERDICT ADDITIONS (review exchange; logged before any MARG verdict
+is read):
+  PRIOR AXIS (amendment 3): the part-A prior is remapped to the HOST
+  fraction — the axis the v7 fcomp parameter actually lives on (the
+  blended-axis prior was restrictive-misspecified, biasing alpha HIGH).
+  MARG rows produced under the earlier blended-axis prior are STALE and
+  are purged before the verdict is read; cubes are prior-independent.
+  STRICTPOW (the power gate; run as sample 'strictpow'): inject an
+  alpha = 1.18 truth at the measured residual host rate into the strict
+  selection (truth pop seed 777, count draws 888, multinomial at the
+  strict bins' observed totals). GP bar: a_marg in [0.9, 1.5] and
+  dN_marg >= +25 -> POWER-OK; otherwise POWER-FAIL and the
+  strict-companion quadrant carries no weight (pre-stated).
+  RIDGE + STRESS per seed-law: the (wr, fcomp) joint-posterior
+  correlation (does the fit trade the two absorbers?) and the stress
+  conditionals a_prof at fcomp = 0.5 and 0.7 (the conservative
+  high-end quote a referee will ask for).
+
+AMENDMENT 4 (logged pre-verdict; the third axis): the part-A host
+inversion gives f_host = 0.42-0.57 (peak 0.51) — reproducing the known
+solar-type multiplicity (~46%, Raghavan 2010) — which exposes the
+model-side half of the units problem: 3K's fcomp <= 0.1 preference
+under a TRUE ~0.5 host rate means the v7 companion amplitude law is
+too strong per companion. The missing physics is identified: Gaia
+astrometry tracks the PHOTOCENTER, whose wobble is
+|q/(1+q) - l/(1+l)| * v_orb (l = L2/L1 from the same mass-magnitude
+table) — the luminosity term cancels the mass wobble, exactly for
+twins (the as-published law gives twins the maximum). The corrected
+instrument ('photo' mode, the DECISIVE one for the bars):
+  - photocenter amplitude law in the companion sector (mh unchanged —
+    dynamical mass is real regardless of light);
+  - amplitude-scale nuisance KW_GRID = [0.7, 1.0, 1.4] profiled
+    jointly (residual amplitude-model error absorbed in BOTH
+    directions; the S period-smearing factor is kept as published and
+    NOT relitigated);
+  - GATE GB0p (cross-mode regression): the photo-mode cube at
+    fcomp = 0 must equal the as-published cube at fcomp = 0 to 1e-6
+    (companions off => identical models);
+  - the as-published ('raw') cubes are kept and reported as the
+    continuity row (PROF only; the host prior does not apply to the
+    raw fcomp axis);
+  - photo-mode extension on ambiguity is +2 seeds (202/303), not +4
+    (cost honesty: ~45-55 min per seed-law).
+
+argv: <sample: full|strict|strictpow> [photo] <seeds...>
+Appends rows to data/stage7j_<sample>[_photo].txt; verdict appended to
 data/stage7j_verdict.txt once both laws of all requested seeds exist.
 """
 import os
@@ -60,9 +104,15 @@ import numpy as np
 from astropy.io import fits
 
 SAMPLE = sys.argv[1] if len(sys.argv) > 1 else 'full'
-assert SAMPLE in ('full', 'strict'), SAMPLE
-SEEDS_REQ = [int(x) for x in sys.argv[2:]] or [31, 101]
-OUT = f'data/stage7j_{SAMPLE}.txt'
+assert SAMPLE in ('full', 'strict', 'strictpow'), SAMPLE
+_rest = sys.argv[2:]
+AMP = 'photo' if (_rest and _rest[0] == 'photo') else 'raw'
+if AMP == 'photo':
+    _rest = _rest[1:]
+SEEDS_REQ = [int(x) for x in _rest] or [31, 101]
+TAG = '_photo' if AMP == 'photo' else ''
+OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
+KW_GRID = np.array([0.7, 1.0, 1.4]) if AMP == 'photo' else np.array([1.0])
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -91,7 +141,7 @@ sigv = 4.74047/plx*np.sqrt(d['pmra_error1']**2+d['pmdec_error1']**2
 ok = (Rch<0.01)&(plx1>5)&(plx2>5)&(plx1/np.maximum(eplx1,1e-6)>20) \
    &(plx2/np.maximum(eplx2,1e-6)>20)&(np.abs(plx1-plx2)<3*np.hypot(eplx1,eplx2)) \
    &(sep>200)&(sep<50000)&(MG1>2.6)&(MG1<14.2)&(MG2>2.6)&(MG2<14.2)&(sigv<0.03)
-if SAMPLE == 'strict':
+if SAMPLE in ('strict', 'strictpow'):
     ok0 = int(ok.sum())
     ok = ok & np.load('data/stage7i_strictmask.npy')
     print(f"strict sample: {int(ok.sum())}/{ok0} pairs", flush=True)
@@ -204,7 +254,17 @@ def build_pop(seed):
         valid = (a_in < 130.0) & (a_in < p['a_s']/5.0)
         v_orb = 29.78*np.sqrt(M_h*(1+q)/np.maximum(a_in,1e-3))
         S = np.minimum(1.0, P_yr/17.8)
-        w = (q/(1+q))*v_orb*S/4.74047*valid
+        if AMP == 'photo':
+            # photocenter wobble: astrometry follows the light, not the
+            # mass — |q/(1+q) - l/(1+l)|, l = L2/L1 from the mass-mag
+            # table; exactly zero for twins
+            MGp = np.interp(-np.clip(M_h, MS_T[-1], MS_T[0]), -MS_T, MG_T)
+            MGs = np.interp(-np.clip(q*M_h, MS_T[-1], MS_T[0]), -MS_T, MG_T)
+            l_ = 10**(-0.4*(MGs-MGp))
+            wfac = np.abs(q/(1+q) - l_/(1+l_))
+        else:
+            wfac = q/(1+q)
+        w = wfac*v_orb*S/4.74047*valid
         wd = rng.normal(size=(N,3)); wd /= np.linalg.norm(wd,axis=1,keepdims=True)
         p['comp'][k] = dict(w=w, wd=wd, uc=rng.random(N), mh=q*M_h*valid)
     return p
@@ -242,42 +302,91 @@ def lnL_point(p, o):
     vper = np.sum(vsky*b2,axis=1)
     s_kau = smag/1e3
     out = np.zeros((len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
-                    len(FPM_GRID)))
+                    len(FPM_GRID), len(KW_GRID)))
     for bi, b in enumerate(SBINS):
         idx = np.where((s_kau>=b[0])&(s_kau<b[1]))[0]
         if len(idx) < 500 or len(noise_pool[bi]) == 0: continue
         vc = 2*np.pi*np.sqrt(p['M_s'][idx]/smag[idx])
         sg0 = noise_pool[bi][p['pick'][bi][idx] % len(noise_pool[bi])]/4.74047
         for fi, fcm in enumerate(FCOMP_GRID):
-            vp_b = vpar[idx].copy(); vq_b = vper[idx].copy()
+            cvp = np.zeros(len(idx)); cvq = np.zeros(len(idx))
             mh_tot = np.zeros(len(idx))
             for k in (1, 2):
                 c = p['comp'][k]
                 act = c['uc'][idx] < fcm
                 mh_tot += act*c['mh'][idx]
-                vp_b += act*c['w'][idx]*c['wd'][idx,0]
-                vq_b += act*c['w'][idx]*c['wd'][idx,1]
+                cvp += act*c['w'][idx]*c['wd'][idx,0]
+                cvq += act*c['w'][idx]*c['wd'][idx,1]
             boost = np.sqrt(1+mh_tot/p['M_s'][idx])
-            for pi, fpm in enumerate(FPM_GRID):
-                vp_n = vp_b*boost + p['gn1'][idx]*sg0*fpm
-                vq_n = vq_b*boost + p['gn2'][idx]*sg0*fpm
-                vmag = np.hypot(vp_n, vq_n)
-                keep = vmag*4.74047 <= (2.978/np.sqrt(s_kau[idx])
-                                        + 2.8284*sg0*4.74047)
-                vtn = (vmag/vc)[keep]
-                gmn = np.degrees(np.arccos(np.clip(
-                    np.abs(vp_n[keep])/np.maximum(vmag[keep],1e-12), 0, 1)))
-                h,_,_ = np.histogram2d(np.clip(vtn,0.021,5.9), gmn,
-                                       bins=[VE, GE])
-                p0 = np.maximum(h/max(h.sum(),1), 1e-5); p0 /= p0.sum()
-                for ci, fc in enumerate(FC0_GRID):
-                    for yi, ff in enumerate(FFLY_GRID):
-                        wch = min(fc*SC2[bi], 0.5); wfl = min(ff*SC2[bi], 0.5)
-                        wtot = min(wch+wfl, 0.6)
-                        mixc = (wch*UNI_B[bi] + wfl*FLY_B[bi])/(wch+wfl)
-                        pp = (1-wtot)*p0 + wtot*mixc
-                        out[fi, ci, yi, pi] += np.sum(data_2d[bi]*np.log(pp))
+            for ki, kwv in enumerate(KW_GRID):
+                vp_b = vpar[idx] + kwv*cvp
+                vq_b = vper[idx] + kwv*cvq
+                for pi, fpm in enumerate(FPM_GRID):
+                    vp_n = vp_b*boost + p['gn1'][idx]*sg0*fpm
+                    vq_n = vq_b*boost + p['gn2'][idx]*sg0*fpm
+                    vmag = np.hypot(vp_n, vq_n)
+                    keep = vmag*4.74047 <= (2.978/np.sqrt(s_kau[idx])
+                                            + 2.8284*sg0*4.74047)
+                    vtn = (vmag/vc)[keep]
+                    gmn = np.degrees(np.arccos(np.clip(
+                        np.abs(vp_n[keep])/np.maximum(vmag[keep],1e-12),
+                        0, 1)))
+                    h,_,_ = np.histogram2d(np.clip(vtn,0.021,5.9), gmn,
+                                           bins=[VE, GE])
+                    p0 = np.maximum(h/max(h.sum(),1), 1e-5); p0 /= p0.sum()
+                    for ci, fc in enumerate(FC0_GRID):
+                        for yi, ff in enumerate(FFLY_GRID):
+                            wch = min(fc*SC2[bi], 0.5)
+                            wfl = min(ff*SC2[bi], 0.5)
+                            wtot = min(wch+wfl, 0.6)
+                            mixc = (wch*UNI_B[bi] + wfl*FLY_B[bi])/(wch+wfl)
+                            pp = (1-wtot)*p0 + wtot*mixc
+                            out[fi, ci, yi, pi, ki] += \
+                                np.sum(data_2d[bi]*np.log(pp))
     return out
+
+def forward_pp(p, o, fcm, fpm, fc, ff):
+    ef, e2, los = p['ef'], p['e2'], p['los']
+    s3 = o[:,0,None]*ef+o[:,1,None]*e2
+    v3 = o[:,2,None]*ef+o[:,3,None]*e2
+    ssky = s3-los*np.sum(s3*los,axis=1,keepdims=True)
+    vsky = v3-los*np.sum(v3*los,axis=1,keepdims=True)
+    smag = np.linalg.norm(ssky,axis=1)
+    b1 = ssky/np.maximum(smag[:,None],1e-12)
+    b2 = np.cross(los, b1)
+    b2 /= np.maximum(np.linalg.norm(b2,axis=1,keepdims=True),1e-12)
+    vpar = np.sum(vsky*b1,axis=1)
+    vper = np.sum(vsky*b2,axis=1)
+    s_kau = smag/1e3
+    pps = []
+    for bi, b in enumerate(SBINS):
+        idx = np.where((s_kau>=b[0])&(s_kau<b[1]))[0]
+        vc = 2*np.pi*np.sqrt(p['M_s'][idx]/smag[idx])
+        sg0 = noise_pool[bi][p['pick'][bi][idx] % len(noise_pool[bi])]/4.74047
+        vp_b = vpar[idx].copy(); vq_b = vper[idx].copy()
+        mh_tot = np.zeros(len(idx))
+        for k in (1, 2):
+            c = p['comp'][k]
+            act = c['uc'][idx] < fcm
+            mh_tot += act*c['mh'][idx]
+            vp_b += act*c['w'][idx]*c['wd'][idx,0]
+            vq_b += act*c['w'][idx]*c['wd'][idx,1]
+        boost = np.sqrt(1+mh_tot/p['M_s'][idx])
+        vp_n = vp_b*boost + p['gn1'][idx]*sg0*fpm
+        vq_n = vq_b*boost + p['gn2'][idx]*sg0*fpm
+        vmag = np.hypot(vp_n, vq_n)
+        keep = vmag*4.74047 <= (2.978/np.sqrt(s_kau[idx])
+                                + 2.8284*sg0*4.74047)
+        vtn = (vmag/vc)[keep]
+        gmn = np.degrees(np.arccos(np.clip(
+            np.abs(vp_n[keep])/np.maximum(vmag[keep],1e-12), 0, 1)))
+        h,_,_ = np.histogram2d(np.clip(vtn,0.021,5.9), gmn, bins=[VE, GE])
+        p0 = np.maximum(h/max(h.sum(),1), 1e-5); p0 /= p0.sum()
+        wch = min(fc*SC2[bi], 0.5); wfl = min(ff*SC2[bi], 0.5)
+        wtot = min(wch+wfl, 0.6)
+        mixc = (wch*UNI_B[bi] + wfl*FLY_B[bi])/(wch+wfl)
+        pps.append((1-wtot)*p0 + wtot*mixc)
+    return pps
 
 def P(s):
     print(s, flush=True)
@@ -297,19 +406,39 @@ P(f"STAGE 7J-B {SAMPLE} seeds {SEEDS_REQ}: wr={WR_GRID.tolist()}, "
   f"fcomp={FCOMP_GRID.tolist()}, fpm={FPM_GRID.tolist()}; "
   f"ln pi(fcomp) = {np.round(LNPI, 2).tolist()}")
 
+if SAMPLE == 'strictpow':
+    R_TR = float(np.load('data/stage7j_prior.npz')['r_host_hat'])
+    pt = build_pop(777)
+    e_t = e_of(pt, 1.3, 0.2)
+    tab_t = 1.0 + 1.18*(TAB_S-1.0)
+    vp_t = vp_c(pt, e_t, tab_t)
+    ot = run(pt['a_s'], e_t, pt['psi0'], pt['f_ip'], pt['M_s'],
+             pt['uph'], 8, 2500, 5, a0=A0_CAN, tab=tab_t, lny0=LNY0,
+             dlny=DLNY, vp=vp_t)
+    pps = forward_pp(pt, ot, R_TR, 1.5, 0.10, 0.05)
+    rgs = np.random.default_rng(888)
+    for bi in range(len(SBINS)):
+        n_obs = int(data_2d[bi].sum())
+        cnt = rgs.multinomial(n_obs, (pps[bi]/pps[bi].sum()).ravel())
+        data_2d[bi] = cnt.reshape(NV, NG).astype(float)
+    P(f"strictpow: injected alpha=1.18 truth at r_host={R_TR:.2f} "
+      f"(truth pop 777, count draws 888, strict-bin totals)")
+
 # --- GB0 references -------------------------------------------------------
 ROWRE = re.compile(r"seed (\d+) (simple|BE): a_hat=([0-9.]+) \(grid [0-9.]+, "
                    r"interior=(\w+)\), dlnL\(Newton\)=([+-][0-9.]+), "
                    r"wr=([0-9.]+)")
-REFF = 'data/stage4r_summary.txt' if SAMPLE == 'full' else 'data/stage7i_s.txt'
 REF = {}
-for m in ROWRE.finditer(open(REFF).read()):
-    s_, law, ah, _, dn, _wr = m.groups()
-    REF[(law, int(s_))] = (float(ah), float(dn))
+if SAMPLE != 'strictpow':
+    REFF = ('data/stage4r_summary.txt' if SAMPLE == 'full'
+            else 'data/stage7i_s.txt')
+    for m in ROWRE.finditer(open(REFF).read()):
+        s_, law, ah, _, dn, _wr = m.groups()
+        REF[(law, int(s_))] = (float(ah), float(dn))
 
 prior_eta = -0.5*((E_GRID-1.3)/0.3)**2
 def profile_of(cb):
-    prof = np.nanmax(cb, axis=(1,2,3,4,5,6))
+    prof = np.nanmax(cb, axis=(1,2,3,4,5,6,7))
     imax = int(np.nanargmax(prof))
     ahat = A_GRID[imax]
     if 0 < imax < len(A_GRID)-1:
@@ -332,13 +461,15 @@ def run_seed(seed):
     t0 = time.time()
     p = build_pop(seed)
     for law, TAB in (("simple", TAB_S), ("BE", TAB_B)):
-        cpath = f'data/stage7j_cube_{SAMPLE}_{seed}_{law}.npy'
+        cpath = f'data/stage7j_cube_{SAMPLE}{TAG}_{seed}_{law}.npy'
         if os.path.exists(cpath):
             cube = np.load(cpath)
+            if cube.ndim == 7:      # legacy raw cube without the K axis
+                cube = cube[..., None]
         else:
             cube = np.full((len(A_GRID), len(E_GRID), len(WR_GRID),
                             len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
-                            len(FPM_GRID)), np.nan)
+                            len(FPM_GRID), len(KW_GRID)), np.nan)
             newt_cache = {}
             for ai, al in enumerate(A_GRID):
                 tab_a = 1.0 + al*(TAB-1.0)
@@ -360,20 +491,41 @@ def run_seed(seed):
             np.save(cpath, cube)
         # Newton cache trick above only fills BE from simple within one
         # process run; cube files are per-law so reruns are consistent.
-        cb = cube + prior_eta[None,:,None,None,None,None,None]
-        # GB0: legacy sub-cube (wr<=0.3, fcomp<=0.1, fpm=1.5)
-        sub = cb[:, :, :3, :2, :, :, 1:2]
-        _, ah_sub, _ = profile_of(sub)
-        prof_sub = np.nanmax(sub, axis=(1,2,3,4,5,6))
-        dn_sub = float(np.nanmax(prof_sub) - prof_sub[0])
-        ra, rd = REF[(law, seed)]
-        gb0 = (abs(ah_sub-ra) <= 0.02) and (abs(dn_sub-rd) <= 2.0)
-        P(f"GB0 {SAMPLE} seed {seed} {law}: sub-cube a_hat={ah_sub:.2f} "
-          f"(ref {ra:.2f}), dN={dn_sub:+.1f} (ref {rd:+.1f}) -> "
-          f"{'PASS' if gb0 else 'FAIL'}")
-        if not gb0:
-            P(f"ABORT {SAMPLE} seed {seed} {law}: GB0 failed")
-            continue
+        cb = cube + prior_eta[None,:,None,None,None,None,None,None]
+        if AMP == 'photo':
+            # GB0p: cross-mode regression at fcomp = 0 (companions off
+            # => the two amplitude laws are the same model)
+            rawp = f'data/stage7j_cube_{SAMPLE}_{seed}_{law}.npy'
+            if os.path.exists(rawp):
+                rw = np.load(rawp)
+                if rw.ndim == 7:
+                    rw = rw[..., None]
+                dmax = float(np.nanmax(np.abs(
+                    cube[:, :, :, 0:1, :, :, :, 0:1]
+                    - rw[:, :, :, 0:1, :, :, :, 0:1])))
+                P(f"GB0p {SAMPLE} seed {seed} {law}: max|photo-raw| at "
+                  f"fcomp=0 = {dmax:.2e} -> "
+                  f"{'PASS' if dmax <= 1e-3 else 'FAIL'}")
+                if dmax > 1e-3:
+                    P(f"ABORT {SAMPLE} seed {seed} {law}: GB0p failed")
+                    continue
+            else:
+                P(f"GB0p {SAMPLE} seed {seed} {law}: raw cube absent - "
+                  f"SKIPPED (disclosed)")
+        if SAMPLE != 'strictpow' and AMP != 'photo':
+            # GB0: legacy sub-cube (wr<=0.3, fcomp<=0.1, fpm=1.5)
+            sub = cb[:, :, :3, :2, :, :, 1:2, 0:1]
+            _, ah_sub, _ = profile_of(sub)
+            prof_sub = np.nanmax(sub, axis=(1,2,3,4,5,6,7))
+            dn_sub = float(np.nanmax(prof_sub) - prof_sub[0])
+            ra, rd = REF[(law, seed)]
+            gb0 = (abs(ah_sub-ra) <= 0.02) and (abs(dn_sub-rd) <= 2.0)
+            P(f"GB0 {SAMPLE} seed {seed} {law}: sub-cube a_hat={ah_sub:.2f} "
+              f"(ref {ra:.2f}), dN={dn_sub:+.1f} (ref {rd:+.1f}) -> "
+              f"{'PASS' if gb0 else 'FAIL'}")
+            if not gb0:
+                P(f"ABORT {SAMPLE} seed {seed} {law}: GB0 failed")
+                continue
         # PROF: full freedom, no prior
         prof, ahat, imax = profile_of(cb)
         best = np.unravel_index(np.nanargmax(cb), cb.shape)
@@ -383,11 +535,11 @@ def run_seed(seed):
           f"wr={WR_GRID[best[2]]}, fcomp={FCOMP_GRID[best[3]]}, "
           f"fpm={FPM_GRID[best[6]]}")
         # MARG: discrete-cell marginal with the completeness prior
-        cbp = cb + LNPI[None, None, None, :, None, None, None]
+        cbp = cb + LNPI[None, None, None, :, None, None, None, None]
         m0 = np.nanmax(cbp)
         with np.errstate(over='ignore'):
             ex = np.exp(np.nan_to_num(cbp - m0, nan=-np.inf))
-        lm = np.log(np.maximum(ex.sum(axis=(1,2,3,4,5,6)), 1e-300)) + m0
+        lm = np.log(np.maximum(ex.sum(axis=(1,2,3,4,5,6,7)), 1e-300)) + m0
         ima = int(np.argmax(lm))
         am = A_GRID[ima]
         if 0 < ima < len(A_GRID)-1:
@@ -396,10 +548,29 @@ def run_seed(seed):
             if c2_ < 0: am = -c1_/(2*c2_)
         dnm = float(lm.max() - lm[0])
         # wr posterior mass beyond the Hwang band
-        wmass = ex.sum(axis=(0,1,3,4,5,6))
+        wmass = ex.sum(axis=(0,1,3,4,5,6,7))
         whi = float(wmass[3:].sum()/wmass.sum())
+        kmass = ex.sum(axis=(0,1,2,3,4,5,6))
+        kpost = np.round(kmass/max(kmass.sum(), 1e-300), 2).tolist()
         P(f"MARG {SAMPLE} seed {seed} {law}: a_marg={am:.2f}, "
-          f"dN_marg={dnm:+.1f}, P(wr>=0.4)={whi:.2f}")
+          f"dN_marg={dnm:+.1f}, P(wr>=0.4)={whi:.2f}, P(kw)={kpost}")
+        # ridge + stress diagnostics (pre-verdict additions)
+        mw = ex.sum(axis=(0,1,4,5,6,7))
+        ww = mw/np.maximum(mw.sum(), 1e-300)
+        wrv = WR_GRID[:, None]*np.ones_like(ww)
+        fcv = FCOMP_GRID[None, :]*np.ones_like(ww)
+        mwr = float((ww*wrv).sum()); mfc = float((ww*fcv).sum())
+        cov = float((ww*(wrv-mwr)*(fcv-mfc)).sum())
+        sd = np.sqrt(max(float((ww*(wrv-mwr)**2).sum()), 1e-24)
+                     * max(float((ww*(fcv-mfc)**2).sum()), 1e-24))
+        rho = cov/max(sd, 1e-12)
+        st = {}
+        for fv in (0.5, 0.7):
+            fi_ = int(np.argmin(np.abs(FCOMP_GRID-fv)))
+            _, a_c, _ = profile_of(cb[:, :, :, fi_:fi_+1])
+            st[fv] = a_c
+        P(f"RIDGE {SAMPLE} seed {seed} {law}: corr(wr,fcomp)={rho:+.2f}; "
+          f"stress a_prof(fcomp=0.5)={st[0.5]:.2f}, (0.7)={st[0.7]:.2f}")
     P(f"  seed {seed} done ({(time.time()-t0)/60:.1f} min)")
 
 for seed in SEEDS_REQ:
@@ -417,13 +588,17 @@ if all(('simple', s) in have and ('BE', s) in have for s in seeds) and seeds:
     dn_ = {law: np.mean([have[(law, s)][1] for s in seeds])
            for law in ('simple', 'BE')}
     amin, dmin = min(am_.values()), min(dn_.values())
-    if SAMPLE == 'full':
+    if SAMPLE == 'strictpow':
+        v = ('POWER-OK' if (amin >= 0.9 and max(am_.values()) <= 1.5
+                            and dmin >= 25) else
+             'POWER-FAIL (the strict-companion quadrant carries no weight)')
+    elif SAMPLE == 'full':
         v = ('ANCHOR-CONFIRMED' if (amin >= 0.9 and dmin >= 30) else
              'COMPANION-WIN' if (amin <= 0.7 or dmin <= 15) else 'AMBIGUOUS')
     else:
         v = ('RESOLVED-INSTRUMENTAL' if (amin >= 0.9 and dmin >= 25) else
              'COMPANION-CONFIRMED' if max(am_.values()) <= 0.7 else 'MIDDLE')
-    lines = [f"", f"7J {SAMPLE} verdict ({len(seeds)} seeds): "
+    lines = [f"", f"7J {SAMPLE} [{AMP}] verdict ({len(seeds)} seeds): "
              f"simple a_marg={am_['simple']:.2f} dN={dn_['simple']:+.1f}; "
              f"BE a_marg={am_['BE']:.2f} dN={dn_['BE']:+.1f}  ==> {v}"]
     print("\n".join(lines))

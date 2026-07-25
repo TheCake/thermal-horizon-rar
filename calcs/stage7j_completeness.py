@@ -217,9 +217,8 @@ lnpi_full = prof - prof.max()
 r_grid = R_OF_F
 lnpi_strict = lnpi_full.copy()
 f_resid_hat = float(resid_rate(f_hat))
-P(f"strict-sample residual companion rate r(f_hat) = {f_resid_hat:.3f} "
-  f"[{resid_rate(f_16):.3f}, {resid_rate(f_84):.3f}]  (photometric-only "
-  f"= upper bound; RUWE removes more)")
+P(f"[diagnostic, BLENDED axis only - superseded by the host remap "
+  f"below] r_photo(f_hat) = {f_resid_hat:.3f}")
 
 # q-distribution SYSTEMATIC (amendment, logged before part B ran): the
 # statistical profile is razor-thin (+-0.005 at 28k stars), so the
@@ -244,32 +243,81 @@ P(f"sensitivity q^-0.5: f_true = {f_alt:.3f} (flat-q {f_hat:.3f}), "
 lnpi_alt = prof_alt - prof_alt.max()
 lnpi_env = np.maximum(lnpi_full, lnpi_alt)
 env1 = F_GRID[(lnpi_env.max()-lnpi_env) <= 0.5]
-P(f"prior envelope (statistical x q-systematic): f in "
-  f"[{env1.min():.2f}, {env1.max():.2f}] at 1-sigma")
+P(f"prior envelope on the BLENDED axis (statistical x q-systematic): "
+  f"f_photo in [{env1.min():.2f}, {env1.max():.2f}] at 1-sigma")
 
-def resid_rate_v(f, Cc, Cs):
-    num = f*(1-Cc)
-    den = f*(1-Cc) + (1-f)*(1-Cs)
-    return num/np.maximum(den, 1e-12)
-r_flat = resid_rate_v(F_GRID, C_flag, C_single)
-r_alt = resid_rate_v(F_GRID, C_flag_a, C_single_a)
-r_common = np.linspace(0.0, float(max(r_flat.max(), r_alt.max())), 200)
-def onto_r(rv, lnp):
-    out = np.full(len(r_common), -1e9)
-    m = (r_common >= rv.min()) & (r_common <= rv.max())
-    out[m] = np.interp(r_common[m], rv, lnp)
-    return out
-lnpi_r_env = np.maximum(onto_r(r_flat, lnpi_full), onto_r(r_alt, lnpi_alt))
-renv1 = r_common[(lnpi_r_env.max()-lnpi_r_env) <= 0.5]
-f_resid_hat = float(resid_rate_v(f_hat, C_flag, C_single))
-P(f"strict residual-rate prior envelope: r in "
-  f"[{renv1.min():.3f}, {renv1.max():.3f}] at 1-sigma "
-  f"(flat-q point {f_resid_hat:.3f}; photometric-only = upper bound)")
+# --- HOST-FRACTION REMAP (amendment 3, logged pre-verdict; the Opus
+# units point, code-verified) ----------------------------------------------
+# v7's fcomp parameter is the HOST fraction of the full Raghavan (q,P)
+# population (kinematic effectiveness self-suppressed inside the model);
+# the delta-fit measures the BLENDED fraction f_photo = f_host * P_blend
+# (only companions inside Gaia's resolution brighten anything; the
+# template is P-blind, so its f IS the blended fraction). The prior must
+# live on the HOST axis or part B is restrictive-misspecified (alpha
+# biased HIGH). P_blend from the model's own laws (M_s ~ 0.6+1.8u,
+# M_h = 0.5 M_s, logP ~ N(5.03, 2.28) days, q per law) at the sample's
+# empirical distances, with the resolution limit a_res in {0.6", 1.0"}
+# carried as a systematic. The strict residual on the host axis keeps
+# the never-blended companions (they cannot be photometrically flagged).
+dists = 1000.0/plx[ok]
+NB2 = 200000
+rgb = np.random.default_rng(31415)
+Ms_b = 0.6+1.8*rgb.random(NB2)
+Mh_b = 0.5*Ms_b
+Pyr_b = 10**rgb.normal(5.03, 2.28, NB2)/365.25
+db = rgb.choice(np.asarray(dists, float), NB2)
+Q_FLAT = 0.1+0.9*rgb.random(NB2)
+Q_ALTD = rgb.choice(QG, NB2, p=wq/wq.sum())
+COMBOS = []
+for qtag, qd, lnpiA, Cc, Cs in (('flat', Q_FLAT, lnpi_full, C_flag, C_single),
+                                ('qalt', Q_ALTD, lnpi_alt, C_flag_a,
+                                 C_single_a)):
+    a_in = (Mh_b*(1+qd)*Pyr_b**2)**(1/3)
+    for ares in (0.6, 1.0):
+        Pb = float(np.mean(a_in < ares*db))
+        COMBOS.append((qtag, ares, Pb, lnpiA, Cc, Cs))
+        P(f"P_blend({qtag}, {ares}\") = {Pb:.3f}")
 
-np.savez('data/stage7j_prior.npz', f_grid=F_GRID, lnpi_full=lnpi_env,
-         r_grid=r_common, lnpi_strict=lnpi_r_env, C_flag=C_flag,
+FH_GRID = np.arange(0.0, 0.9001, 0.01)
+env_fh = np.full(len(FH_GRID), -1e9)
+rcurves = []
+for qtag, ares, Pb, lnpiA, Cc, Cs in COMBOS:
+    lnH = np.full(len(FH_GRID), -1e9)
+    fA = FH_GRID*Pb
+    m = fA <= F_GRID.max()
+    lnH[m] = np.interp(fA[m], F_GRID, lnpiA)
+    num = FH_GRID*(Pb*(1-Cc) + (1-Pb))
+    den = num + (1-FH_GRID)*(1-Cs)
+    rH = num/np.maximum(den, 1e-12)
+    env_fh = np.maximum(env_fh, lnH)
+    rcurves.append((rH, lnH))
+r_common = np.linspace(0.0, float(max(r[0].max() for r in rcurves)), 250)
+env_rh = np.full(len(r_common), -1e9)
+for rH, lnH in rcurves:
+    m = (r_common >= rH.min()) & (r_common <= rH.max())
+    tmp = np.full(len(r_common), -1e9)
+    tmp[m] = np.interp(r_common[m], rH, lnH)
+    env_rh = np.maximum(env_rh, tmp)
+fh1 = FH_GRID[(env_fh.max()-env_fh) <= 0.5]
+rh1 = r_common[(env_rh.max()-env_rh) <= 0.5]
+fh_hat = float(FH_GRID[int(np.argmax(env_fh))])
+r_host_hat = float(r_common[int(np.argmax(env_rh))])
+P(f"HOST-axis prior envelope: f_host in [{fh1.min():.2f}, {fh1.max():.2f}] "
+  f"(peak {fh_hat:.2f}) at 1-sigma")
+P(f"HOST-axis strict residual envelope: r_host in [{rh1.min():.2f}, "
+  f"{rh1.max():.2f}] (peak {r_host_hat:.2f}; photometric-only = upper "
+  f"bound on removal, so this residual is a LOWER-bounded band)")
+i069 = int(np.argmin(np.abs(FH_GRID-0.69)))
+i010 = int(np.argmin(np.abs(FH_GRID-0.10)))
+P(f"reference points: ln pi_host(0.69 = Banik free fit) = "
+  f"{env_fh[i069]-env_fh.max():.1f}; ln pi_host(0.10 = old fence) = "
+  f"{env_fh[i010]-env_fh.max():.1f}")
+
+np.savez('data/stage7j_prior.npz', f_grid=FH_GRID, lnpi_full=env_fh,
+         r_grid=r_common, lnpi_strict=env_rh, C_flag=C_flag,
          C_flag_alt=C_flag_a, C_single=C_single, f_hat=f_hat, f_16=f_16,
-         f_84=f_84, f_alt=f_alt, f_resid_hat=f_resid_hat,
+         f_84=f_84, f_alt=f_alt, fh_hat=fh_hat, r_host_hat=r_host_hat,
+         fphoto_grid=F_GRID, lnpi_photo_env=lnpi_env,
          lnpi_flatq=lnpi_full, lnpi_qalt=lnpi_alt)
 gates = ga1 and ga2_ok and ga3
 P(f"\nGATES {'ALL PASS -> part B may launch' if gates else 'FAIL -> HOLD'}")

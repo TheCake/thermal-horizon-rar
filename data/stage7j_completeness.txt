@@ -6,9 +6,15 @@ GA2 injection f=0.15: recovered 0.150 (rel 0%)  -> PASS
 GA2 injection f=0.35: recovered 0.360 (rel 3%)  -> PASS
 GA3 width: sigma_MS = 0.220 in [0.22, 0.32]  -> PASS
 completeness of the -0.4 flag: C(companion) = 0.410; false-flag(single) = 0.023
-strict-sample residual companion rate r(f_hat) = 0.145 [0.145, 0.145]  (photometric-only = upper bound; RUWE removes more)
+[diagnostic, BLENDED axis only - superseded by the host remap below] r_photo(f_hat) = 0.145
 sensitivity q^-0.5: f_true = 0.300 (flat-q 0.220), C(companion) = 0.311 (flat-q 0.410)
-prior envelope (statistical x q-systematic): f in [0.22, 0.30] at 1-sigma
-strict residual-rate prior envelope: r in [0.145, 0.235] at 1-sigma (flat-q point 0.145; photometric-only = upper bound)
+prior envelope on the BLENDED axis (statistical x q-systematic): f_photo in [0.22, 0.30] at 1-sigma
+P_blend(flat, 0.6") = 0.530
+P_blend(flat, 1.0") = 0.587
+P_blend(qalt, 0.6") = 0.532
+P_blend(qalt, 1.0") = 0.589
+HOST-axis prior envelope: f_host in [0.42, 0.57] (peak 0.51) at 1-sigma
+HOST-axis strict residual envelope: r_host in [0.37, 0.53] (peak 0.47; photometric-only = upper bound on removal, so this residual is a LOWER-bounded band)
+reference points: ln pi_host(0.69 = Banik free fit) = -36.2; ln pi_host(0.10 = old fence) = -768.1
 
 GATES ALL PASS -> part B may launch
