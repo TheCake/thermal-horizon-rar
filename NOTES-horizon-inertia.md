@@ -4662,6 +4662,87 @@ the primary anchoring, seeds in flight, 7J-z is the repair, and the
 durable finding (no fenced Newton rejection survives marginalization)
 stands at every anchoring.
 
+## Stage 7J-y2 + round 4 (2026-07-25): the blending audit CLEARS #18;
+## the cadence rule; the four-absorber diagnosis; 7J-g queued
+
+Round 4 (Opus). Executed and adopted:
+
+(1) BLENDING DISCRIMINANT (pre-reg fa29f33; the reviewer's confound-
+in-the-same-slot: BP/RP windows are arcsec-wide, so close pairs
+cross-contaminate — both go bright — mimicking shared metallicity):
+**rho(theta) is FLAT 2"-250"** (core: +0.62/+0.60/+0.52/+0.51/+0.54;
+close-end elevation ~15% relative, far under the pre-stated 50%
+blending signature); the extinction-distance guard shows the
+d-dependence an astrophysical story predicts (d>=100pc rho ~0.6-0.69
+vs d<100pc ~0.39-0.52 at ALL theta — blending would track theta, not
+d); **THE BLENDING-SAFE BAR (|dcol|>=0.15 core, theta>=8"): rho =
++0.448 -> C-FAIL STANDS independent of blending.** Correction #18
+survives its audit; the coherence measurement UPGRADES (genuinely
+astrophysical, separation-independent). 7J-z design consequences: no
+theta-dependent common-mode component needed; the reviewer's free-
+slope note ADOPTED (unit-slope diagonal would push mass-dependent
+metallicity/age response off-diagonal onto the companion axes =
+recreating the over-attribution subtly; slope + off-diagonal scatter
+free, checked against the mass-ratio distribution).
+
+(2) LITERATURE CENTER RECENTERED 0.22 -> 0.166 (Tokovinin 10.0%/7.3%
+per component combined per-pair; reviewer arithmetic accepted): all
+conclusions center-insensitive across 0.16-0.22 (lit16 rows: full
+posterior still fcomp=0.2, a_marg 0.40/0.50 seed 31, 0.00 seed 101;
+strict at 0.1). Adopted framing: **the companion prior at 0.2-50 kAU
+is UNMEASURED — not "measured high, retracted, defaulting to
+literature" — and 7J-z is the FIRST measurement at these
+separations: a contribution, not a repair.** Our old fence 0.1 vs
+literature ~0.16: low but not dramatic; "nearer the truth than 0.69"
+holds without being vindication.
+
+(3) ARM RESULTS (interim, batch mid-flight): fullpow ARM-VALIDATED
+(simple recovers own truth through the measured prior: a_marg=1.48,
+dN=+94.5; note the ~+0.3 upward marginalization bias — the real-data
+simple zero is not arm compression); fullpowbe ARM-FAIL (BE recovers
+own truth at 0.73 vs band [0.85,1.45] — the BE-full null is formally
+UNVALIDATED; the ~0.65 compression cannot arithmetically explain a
+0.00, but the arm carries no formal weight until repaired). Per the
+amendment-6 standing rule (>= 1 full arm validated), no PROVISIONAL
+downgrade. strictpowbe + 4-seed extension still running.
+
+(4) THE CADENCE RULE (adopted verbatim, effective immediately):
+**credence FROZEN at ~45%. No further credence re-booking until BOTH
+decisive instruments land (7J-z repaired completeness; 7J-g direction-
+channel decomposition). Interim rounds record MEASUREMENTS, not
+verdicts.** The reviewer's diagnosis accepted: eighteen corrections
+and a 65->35->45 credence in two days means verdicts were being
+booked faster than the quantities settled; correction-on-correction
+is the signal. The durable statement (the fenced +99-110 Newton
+rejection is dead at every anchoring) carries no credence and needs
+none.
+
+(5) THE FOUR-ABSORBER DIAGNOSIS (adopted as the structural frame —
+the real finding of these three days): excess vtilde width has four
+absorbers — boost, near-parabolic orbits, hidden companions, noise
+inflation — and one width budget. The verdict has tracked whichever
+absorber carries the tightest CURRENT external constraint (tighten
+the companion prior -> companions win; retract it -> boost partly
+returns; free fpm -> 82-99% to the new edge). Better priors on any
+one absorber RELOCATE the degeneracy; only a shape observable breaks
+it, and gamma is that observable (companions: direction uncorrelated
+with separation vector -> flattens the angular distribution; near-
+parabolic: concentrates it; noise: ~isotropic broadening; boost:
+scales vtilde). **NEW STAGE 7J-g QUEUED (priority ABOVE further
+injections): re-run the four-way contest with gamma COLLAPSED
+(vtilde-only likelihood) and quantify the share of (alpha, w_rad,
+f_comp, f_pm) discrimination carried by the direction channel. This
+is the test that decides whether Paper 1 exists: if gamma carries
+the separation, the 2D methodological claim is answered on
+measurement; if it does not, no companion-prior work settles the
+boost on this catalog.** Implementation after the running batch
+(script frozen mid-flight).
+
+PLAIN VERDICTS: blending audit: SUCCESS (#18 confirmed astrophysical,
+the safe bar decisive). Recentering: SUCCESS (conclusions center-
+insensitive). Cadence rule + four-absorber frame: adopted — the
+program's verdict-booking discipline just got its own correction.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

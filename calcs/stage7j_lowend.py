@@ -80,36 +80,42 @@ P("a_marg <= 0.7 or dN <= +15 (either law, seed mean).")
 # sigma 0.08 - assumption-light stand-in pending the verified requote).
 P("")
 P("7J-e2: literature-anchored conditionals (scout-grade external rates)")
+# round-4 recentring: Tokovinin per-component 10.0%/7.3% combines to a
+# per-pair ~0.166, not the 0.22 first used - both centres reported
+# ('lit' = 0.22 kept for continuity/regression; 'lit16' = 0.16 primary)
 for sample in ('full', 'strict'):
-    for law in ('simple', 'BE'):
-        for seed in (31, 101):
-            cube = np.load(
-                f'data/stage7j_cube_{sample}_photo_{seed}_{law}.npy')
-            cb = cube + prior_eta[None, :, None, None, None, None, None, None]
-            sub = cb[:, :, :, 2:3]            # the fcomp = 0.2 cell
-            prof = np.nanmax(sub, axis=(1, 2, 3, 4, 5, 6, 7))
-            ima = int(np.nanargmax(prof)); ah = A_GRID[ima]
-            if 0 < ima < 4:
-                x = A_GRID[ima-1:ima+2]; y = prof[ima-1:ima+2]
-                c2, c1, _ = np.polyfit(x, y, 2)
-                if c2 < 0: ah = -c1/(2*c2)
-            dn = float(np.nanmax(prof) - prof[0])
-            lit = -0.5*((FCOMP - 0.22)/0.08)**2
-            cbl = cb + lit[None, None, None, :, None, None, None, None]
-            m0 = np.nanmax(cbl)
-            ex = np.exp(np.nan_to_num(cbl - m0, nan=-np.inf))
-            lm = np.log(np.maximum(
-                ex.sum(axis=(1, 2, 3, 4, 5, 6, 7)), 1e-300)) + m0
-            iml = int(np.argmax(lm)); am = A_GRID[iml]
-            if 0 < iml < 4:
-                x = A_GRID[iml-1:iml+2]; y = lm[iml-1:iml+2]
-                c2, c1, _ = np.polyfit(x, y, 2)
-                if c2 < 0: am = -c1/(2*c2)
-            dnm = float(lm.max() - lm[0])
-            fp = ex.sum(axis=(0, 1, 2, 4, 5, 6, 7)); fp /= fp.sum()
-            P(f"[{sample} lit {seed} {law}] cond(fcomp=0.2): a_prof={ah:.2f} "
-              f"dN={dn:+.1f} | lit-prior marg: a_marg={am:.2f} "
-              f"dN_marg={dnm:+.1f} P(fcomp)={np.round(fp, 2).tolist()}")
+    for cen, tag in ((0.22, 'lit'), (0.16, 'lit16')):
+        for law in ('simple', 'BE'):
+            for seed in (31, 101):
+                cube = np.load(
+                    f'data/stage7j_cube_{sample}_photo_{seed}_{law}.npy')
+                cb = cube + prior_eta[None, :, None, None, None, None,
+                                      None, None]
+                sub = cb[:, :, :, 2:3]        # the fcomp = 0.2 cell
+                prof = np.nanmax(sub, axis=(1, 2, 3, 4, 5, 6, 7))
+                ima = int(np.nanargmax(prof)); ah = A_GRID[ima]
+                if 0 < ima < 4:
+                    x = A_GRID[ima-1:ima+2]; y = prof[ima-1:ima+2]
+                    c2, c1, _ = np.polyfit(x, y, 2)
+                    if c2 < 0: ah = -c1/(2*c2)
+                dn = float(np.nanmax(prof) - prof[0])
+                lit = -0.5*((FCOMP - cen)/0.08)**2
+                cbl = cb + lit[None, None, None, :, None, None, None, None]
+                m0 = np.nanmax(cbl)
+                ex = np.exp(np.nan_to_num(cbl - m0, nan=-np.inf))
+                lm = np.log(np.maximum(
+                    ex.sum(axis=(1, 2, 3, 4, 5, 6, 7)), 1e-300)) + m0
+                iml = int(np.argmax(lm)); am = A_GRID[iml]
+                if 0 < iml < 4:
+                    x = A_GRID[iml-1:iml+2]; y = lm[iml-1:iml+2]
+                    c2, c1, _ = np.polyfit(x, y, 2)
+                    if c2 < 0: am = -c1/(2*c2)
+                dnm = float(lm.max() - lm[0])
+                fp = ex.sum(axis=(0, 1, 2, 4, 5, 6, 7)); fp /= fp.sum()
+                P(f"[{sample} {tag} {seed} {law}] cond(fcomp=0.2): "
+                  f"a_prof={ah:.2f} "
+                  f"dN={dn:+.1f} | lit-prior marg: a_marg={am:.2f} "
+                  f"dN_marg={dnm:+.1f} P(fcomp)={np.round(fp, 2).tolist()}")
 
 with open('data/stage7j_lowend.txt', 'w') as f:
     f.write("\n".join(OUT) + "\n")

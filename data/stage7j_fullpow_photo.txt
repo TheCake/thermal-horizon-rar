@@ -1,0 +1,11 @@
+STAGE 7J-B fullpow seeds [31]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4]; ln pi(fcomp) = [-1584.82, -768.17, -268.1, -7.78, -1.06, -42.57]
+fullpow: injected simple alpha=1.18 truth at host rate 0.51 (truth pop 777, count draws 888, observed-bin totals)
+GB0p fullpow seed 31 simple: raw cube absent - SKIPPED (disclosed)
+PROF fullpow seed 31 simple: a_hat=1.47 (interior=True), dN=+71.1, wr=0.2, fcomp=0.5, fpm=2.4
+MARG fullpow seed 31 simple: a_marg=1.48, dN_marg=+94.5, P(wr>=0.4)=0.00, P(kw)=[0.0, 1.0, 0.0]
+RIDGE fullpow seed 31 simple: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=1.47, (0.7)=0.59
+GB0p fullpow seed 31 BE: raw cube absent - SKIPPED (disclosed)
+PROF fullpow seed 31 BE: a_hat=2.00 (interior=False), dN=+76.0, wr=0.2, fcomp=0.5, fpm=1.2
+MARG fullpow seed 31 BE: a_marg=2.00, dN_marg=+99.0, P(wr>=0.4)=0.00, P(kw)=[0.0, 1.0, 0.0]
+RIDGE fullpow seed 31 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=2.00, (0.7)=0.63
+  seed 31 done (14.1 min)
