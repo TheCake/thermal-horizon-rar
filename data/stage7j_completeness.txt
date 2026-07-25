@@ -1,0 +1,14 @@
+STAGE 7J-A: 14071 pairs, 27855 stars with color; observed P(delta<-0.4) = 0.123 (3J 0.123)
+companion shift: q=1 twins -0.753 mag (exact -0.753); q=0.5 -0.220; q=0.3 -0.089
+fit: f_true = 0.220 [0.220, 0.220] (1-sigma profile), sigma_MS = 0.220, mu0 = +0.040, lnL = -81381.1
+GA1 predictive: model P(delta<-0.4) = 0.108 vs observed 0.123  -> PASS
+GA2 injection f=0.15: recovered 0.150 (rel 0%)  -> PASS
+GA2 injection f=0.35: recovered 0.360 (rel 3%)  -> PASS
+GA3 width: sigma_MS = 0.220 in [0.22, 0.32]  -> PASS
+completeness of the -0.4 flag: C(companion) = 0.410; false-flag(single) = 0.023
+strict-sample residual companion rate r(f_hat) = 0.145 [0.145, 0.145]  (photometric-only = upper bound; RUWE removes more)
+sensitivity q^-0.5: f_true = 0.300 (flat-q 0.220), C(companion) = 0.311 (flat-q 0.410)
+prior envelope (statistical x q-systematic): f in [0.22, 0.30] at 1-sigma
+strict residual-rate prior envelope: r in [0.145, 0.235] at 1-sigma (flat-q point 0.145; photometric-only = upper bound)
+
+GATES ALL PASS -> part B may launch

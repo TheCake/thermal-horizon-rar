@@ -221,21 +221,56 @@ P(f"strict-sample residual companion rate r(f_hat) = {f_resid_hat:.3f} "
   f"[{resid_rate(f_16):.3f}, {resid_rate(f_84):.3f}]  (photometric-only "
   f"= upper bound; RUWE removes more)")
 
-# sensitivity: q-distribution variant ~ q^-0.5 (more low-q, harder to see)
+# q-distribution SYSTEMATIC (amendment, logged before part B ran): the
+# statistical profile is razor-thin (+-0.005 at 28k stars), so the
+# prior's true width is the q-law choice. The saved prior is the
+# ENVELOPE over both q-laws (flat and q^-0.5), each with its own fitted
+# (sigma, mu), completeness, and residual mapping — otherwise part B's
+# marginal is secretly conditional on flat-q.
 wq = QG**-0.5
 W_ALT = (np.ones((len(MPRI), 1))*wq[None, :]).ravel()
 W_ALT /= W_ALT.sum()
 W_KEEP = W_FLAT.copy()
 W_FLAT = W_ALT
-(_, (f_alt, sig_alt, _)), _ = fit(hist_obs)
+(_, (f_alt, sig_alt, mu_alt)), prof_alt = fit(hist_obs)
+z_th_a = (-0.4 - mu_alt - CD_FLAT)/(sig_alt*np.sqrt(2))
+C_flag_a = float(np.sum(W_ALT*0.5*(1+erf(z_th_a))))
+z_s_a = (-0.4 - mu_alt)/(sig_alt*np.sqrt(2))
+C_single_a = float(0.5*(1+erf(z_s_a)))
 W_FLAT = W_KEEP
-P(f"sensitivity q^-0.5: f_true = {f_alt:.3f} (flat-q {f_hat:.3f}) - "
-  f"spread carried into the prior width")
+P(f"sensitivity q^-0.5: f_true = {f_alt:.3f} (flat-q {f_hat:.3f}), "
+  f"C(companion) = {C_flag_a:.3f} (flat-q {C_flag:.3f})")
 
-np.savez('data/stage7j_prior.npz', f_grid=F_GRID, lnpi_full=lnpi_full,
-         r_grid=r_grid, lnpi_strict=lnpi_strict, C_flag=C_flag,
-         C_single=C_single, f_hat=f_hat, f_16=f_16, f_84=f_84,
-         f_alt=f_alt, f_resid_hat=f_resid_hat)
+lnpi_alt = prof_alt - prof_alt.max()
+lnpi_env = np.maximum(lnpi_full, lnpi_alt)
+env1 = F_GRID[(lnpi_env.max()-lnpi_env) <= 0.5]
+P(f"prior envelope (statistical x q-systematic): f in "
+  f"[{env1.min():.2f}, {env1.max():.2f}] at 1-sigma")
+
+def resid_rate_v(f, Cc, Cs):
+    num = f*(1-Cc)
+    den = f*(1-Cc) + (1-f)*(1-Cs)
+    return num/np.maximum(den, 1e-12)
+r_flat = resid_rate_v(F_GRID, C_flag, C_single)
+r_alt = resid_rate_v(F_GRID, C_flag_a, C_single_a)
+r_common = np.linspace(0.0, float(max(r_flat.max(), r_alt.max())), 200)
+def onto_r(rv, lnp):
+    out = np.full(len(r_common), -1e9)
+    m = (r_common >= rv.min()) & (r_common <= rv.max())
+    out[m] = np.interp(r_common[m], rv, lnp)
+    return out
+lnpi_r_env = np.maximum(onto_r(r_flat, lnpi_full), onto_r(r_alt, lnpi_alt))
+renv1 = r_common[(lnpi_r_env.max()-lnpi_r_env) <= 0.5]
+f_resid_hat = float(resid_rate_v(f_hat, C_flag, C_single))
+P(f"strict residual-rate prior envelope: r in "
+  f"[{renv1.min():.3f}, {renv1.max():.3f}] at 1-sigma "
+  f"(flat-q point {f_resid_hat:.3f}; photometric-only = upper bound)")
+
+np.savez('data/stage7j_prior.npz', f_grid=F_GRID, lnpi_full=lnpi_env,
+         r_grid=r_common, lnpi_strict=lnpi_r_env, C_flag=C_flag,
+         C_flag_alt=C_flag_a, C_single=C_single, f_hat=f_hat, f_16=f_16,
+         f_84=f_84, f_alt=f_alt, f_resid_hat=f_resid_hat,
+         lnpi_flatq=lnpi_full, lnpi_qalt=lnpi_alt)
 gates = ga1 and ga2_ok and ga3
 P(f"\nGATES {'ALL PASS -> part B may launch' if gates else 'FAIL -> HOLD'}")
 with open('data/stage7j_completeness.txt', 'w') as f_:
