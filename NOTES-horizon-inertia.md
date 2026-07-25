@@ -4151,6 +4151,124 @@ PLAIN VERDICT: SUCCESS — prong (b) of the maximal demand is complete at its
 achievable grade: equal binary fit + 10^451 Saturn margin, reached by
 pre-registered stages with a signed mechanistic hypothesis confirmed.
 
+## Stage 7I (2026-07-25): the external-review round — the freeze, the robustness rows, the census release, and a MATERIAL branch worked to ground
+
+CONTEXT. Two external reviews solicited by the user (an LLM review 2026-07-24;
+an Opus 5.0 review + follow-up exchange 2026-07-25); point-by-point responses
+in the session record; the adopted items became this stage and the language
+pass (commits 2aa6ef9, a17d3a5, 3ef57c7 — each BEFORE its execution).
+Conceded in full from review 2: (i) the ambient gate's two-system pass is a
+DESIGN PROPERTY, not a measurement (the gate places AMB within 0.3% of the
+occupation law at the binary ambient by construction — our own 6G pre-reg
+called that leg "near-guaranteed"); reframed at all four claim sites. (ii)
+Our "pre-registration" is BAR-LOCKING (same-session committed thresholds;
+guards bar-moving and outcome-shopping, NOT the sequential-search error
+rate) — defined at first use in PAPER §1 and PREDICTIONS.md rules. (iii) The
+~30-form search multiplicity is uncorrected and uncorrectable post hoc — the
+FREEZE + out-of-sample routing is the repair (PREDICTIONS.md §0: search
+closed at the world-table thirteen; new forms = consistency rows only;
+primary analyses declared: vertical-hardened hier / six-seed
+corrected-velocity v7; scatter channel restricted to outer/anchored;
+mode-count N retired). (iv) Binary c1 = 0.37-0.50 regraded to
+TWO-REALIZATION INDICATION at all six claim sites (the thinnest headline
+number in the paper; six-seed budget queued). Also adopted: section 2.4
+stays out of anything circulated (research log until a Lagrangian); the
+split (Paper 1 binaries+ablation, Paper 2 coefficients+quadrupole) with
+STRUCTURAL INDEPENDENCE from 2.4 as a standing drafting rule. Pushbacks
+that landed: 3K's kinematic cap is threshold-free (conceded by the
+reviewer, with the right consequence — 7J must MARGINALIZE f_comp under a
+completeness prior, not re-fence); the ceiling band pairs are
+astrometrically CLEANER than the same-vt low-gamma continuum (RUWE 1.06 vs
+1.28 — wrong direction for an error-tail identity; granted in full); F&B
+2005 has no binary leg (granted; the galaxy-side c1 lean = the field's old
+simple-over-standard preference promoted to coefficient language; F&B
+cited). Correction in our own mouth, adopted from the exchange: the
+"termination at the boosted edge" is non-contradiction (P = 0.62), not
+positive evidence — the band count carries the census, which is where the
+tail objection bites (-> 7K).
+
+PART C — THE CEILING-PAIR RELEASE (GATE GC PASS). data/ceiling_pairs.csv
+committed (gitignore exception): 23 rows — the 11-pair census + below-edge
+context + above-cliff; per pair: source IDs, both velocity conventions, gamma
+both ways, systemic RV + perspective exposure, direction S/N, sigma_vt, RUWE
+both, R_chance, |dplx|/sigma. 4J reproduced 11/11 (both S/N conventions);
+corrected recount 9 (4Q's sqrt2-edge construction gave 10->9; the +-1 edge
+sensitivity was already logged). Re-countable under any convention without
+our pipeline.
+
+PART W — w_rad FROZEN TO THE EXTERNAL HWANG 0.21 (BW: CLOSED). d_alpha =
+-0.010+-0.000 (simple) / +0.005+-0.005 (BE); Newton within 1.4 of baseline;
+interior 2/2. The "eccentricity mixture fitted jointly with the boost"
+objection is closed with the reviewer's own instrument (free fit had chosen
+0.20 in 12/12; Hwang-implied 20-22%).
+
+PART S — STRICT MULTIPLICITY CUT (BS: MATERIAL, extension fired, 6 seeds).
+RUWE < 1.2 both + no overluminous component (3J delta < -0.4 ridge; star
+fraction reproduced 0.123 = GATE GS PASS) retains 8,047/14,071 = 57.2%. The
+v7 fits COLLAPSE: d_alpha = -0.740+-0.053 (simple) / -0.457+-0.048 (BE),
+Newton +9.4/+12.5 = 16/24% of the N-scaled expectation, interior 6/6, w_rad
+at the GRID EDGE 0.3 in 6/6 (vs 0.2 interior 12/12 full-sample).
+
+THE INVESTIGATION (three bar-locked instruments; both rescue hypotheses
+died on their own bars):
+1. Model-light discriminator (stage7i_material.py): the 2C anchor-relative
+   median boost — no forward model — SURVIVES and slightly strengthens
+   under every cut component: raw 1.086 -> 1.103 [boot 1.071-1.142];
+   overluminous-free alone 1.099; corrected 1.078 -> 1.099; perpendicular
+   (mass-immune) 1.151 -> 1.185. Companions-as-the-median-carrier REFUTED:
+   removing the flagged 43% RAISES the ratio.
+2. FPM profile (stage7i_fpm.py, bars at a17d3a5): the named suspect —
+   fixed noise inflation 1.5 over-broadening the clean subsample — REFUTED
+   under its own locked bar: the strict sample PREFERS 1.5 in 4/4 rows
+   (+2..+7 lnL over 1.2) and a_hat stays collapsed at every FPM. My miss,
+   caught by the bar.
+3. SW (stage7i_sw.py, bars at 3ef57c7): the surviving flag — the
+   alpha<->w_rad degeneracy on thinned gamma statistics (wide bins
+   776/131 pairs) — REFUTED: strict + w_rad frozen at the external 0.21
+   gives a_hat 0.55 (0.46/0.64) / 0.65 (0.60/0.70), Newton +9.9/+13.4,
+   interior 4/4 ==> COMPANION-DIRECTION per the pre-committed tree.
+
+FACT CHECK ON THE CENSUS: 5/11 forbidden-band pairs survive the strict cut
+vs 6.3 expected at 57% retention — base-rate, no multiplicity enrichment of
+the band; the census stays a full-sample statement (a 5-pair strict band is
+below census grade on its own).
+
+END STATE (stated, not resolved): at full-likelihood level the cleanest 57%
+of the catalog genuinely prefers ~half the boost amplitude and a Newton
+margin of only +10-14, and no instrument correction we locked in advance
+explains it away — while on the SAME cleaned pairs the model-light median
+boost is 1.10, the perpendicular boost 1.19, and the band survives at base
+rate. The model-free statistics see the boost where the forward model's
+likelihood does not; both cannot be right. This is the reviews' companion
+concern given empirical teeth at fit level — disclosed in PAPER 6.3 in
+exactly these terms. DECISIVE INSTRUMENT = 7J: photometric completeness
+forward model -> prior on the TRUE multiplicity fraction; v7 refit with
+(f_comp, w_rad, f_pm, alpha) freed jointly; report the MARGINALIZED
+(f_comp, alpha) posterior (the Opus design, adopted before this result made
+it urgent). CREDENCE MOVED (honest pricing): anomaly-real 70% -> ~60-65%
+pending 7J — the fit-level wound is real; the floor under it is that the
+median cannot be companion-carried (instrument 1) and the galaxy legs are
+untouched.
+
+PIPELINE RULES ADOPTED: noise inflation and nuisance grids are sample
+properties — any subsample row must profile FPM and watch grid-edge riding
+(w_rad); every future robustness row inherits the three-instrument pattern
+(model-light discriminator first).
+
+PLAIN VERDICTS: freeze + census release + language pass: SUCCESS. Part W:
+SUCCESS (the w_rad objection closed at d_alpha <= 0.01). Part S +
+investigation: NEEDS REFINEMENT, honestly disclosed — three locked
+instruments, three hypotheses dead (two of them mine), the tension stated
+and handed to 7J. The measurement-grade statement that stands today: the
+median boost is stable at 1.09-1.10 under the strictest multiplicity
+cleaning this catalog supports.
+
+QUEUE: 7J completeness + marginalized (f_comp, alpha) posterior [DECISIVE];
+7K ceiling tail control (empirical error tail from gamma>=75 anchor pairs,
+per-slice); 7L v7 on the Cookson selection carrying the ablation ladder
+(after 7J); c1 six-seed budget; THE SPLIT (Paper 1 / Paper 2; 2.4 stays in
+the log; structural-independence rule).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -96,6 +96,10 @@ CHECKS = [
     ('sol-trajmargin',  '451', 'data/stage7g_trajsaturn.txt'),
     ('binfn-ambmi',     '-8.43', 'data/stage7g_trajsaturn.txt'),
     ('binfn-ambmiavg',  '-2.92', 'data/stage7h_miavg.txt'),
+    ('bin-ablation-wrad',   '-0.010', 'data/stage7i_verdict.txt'),
+    ('bin-ablation-strict', '-0.740', 'data/stage7i_verdict.txt'),
+    ('bin-ablation-strict', 'COMPANION-DIRECTION', 'data/stage7i_verdict.txt'),
+    ('bin-ceilingpairs',    '11/11 reproduced', 'data/stage7i_verdict.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

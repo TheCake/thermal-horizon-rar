@@ -801,7 +801,47 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   stands for the field reading; DR4 e-resolution = the formulation
   kill test. Ledger binfn-ambmiavg (34 tokens green); PAPER §8.2
   completion passage; NOTES 7H; plain verdict SUCCESS — maximal-
-  demand prong (b) COMPLETE at achievable grade.** Then the DM
+  demand prong (b) COMPLETE at achievable grade.**
+  **7I (2026-07-25, THE EXTERNAL-REVIEW ROUND, pre-reg 2aa6ef9/a17d3a5/
+  3ef57c7, PAPER → v2.7): two solicited reviews (LLM + Opus 5.0) adopted
+  point-by-point. THE FREEZE (PREDICTIONS.md §0): in-sample function search
+  CLOSED at the world-table 13; new forms = consistency rows only;
+  primary analyses declared (vertical-hardened hier / six-seed v7corr);
+  scatter channel outer/anchored-only, mode-count N retired; ~30-form
+  search multiplicity stated uncorrectable. Language: "pre-registered" =
+  BAR-LOCKING defined at first use; AMB two-system pass = DESIGN PROPERTY
+  not measurement (4 sites); binary ĉ₁ 0.37–0.50 → TWO-REALIZATION
+  INDICATION (6 sites); superlatives ledger-scoped; correction counts
+  synced (fourteen). Census RELEASED: data/ceiling_pairs.csv (23 rows,
+  11/11 reproduced, corrected 9, both conventions per pair; gitignore
+  exception). Robustness rows ([calcs/stage7i_ablations.py](calcs/stage7i_ablations.py)):
+  **W (w_rad frozen to external Hwang 0.21): CLOSED — Δα̂ ≤ 0.01, the
+  eccentricity-nuisance objection dead. S (strict multiplicity, RUWE<1.2
+  both + no overluminous, 8047 pairs = 57%): MATERIAL FIRED — fit α̂
+  COLLAPSES (Δ −0.740±0.053/−0.457±0.048, Newton +9.4/+12.5 = 16–24% of
+  N-scaled, w_rad grid-edge 6/6). Three bar-locked instruments: (1)
+  model-light median boost SURVIVES the cut (1.086→1.103 raw, 1.151→1.185
+  perp; [calcs/stage7i_material.py](calcs/stage7i_material.py)) =
+  companions-as-median-carrier REFUTED; (2) FPM-mismatch hypothesis
+  REFUTED on its own bar (strict prefers 1.5 4/4;
+  [calcs/stage7i_fpm.py](calcs/stage7i_fpm.py)); (3) α↔w_rad degeneracy
+  REFUTED (strict+wr=0.21 → α̂ 0.55/0.65;
+  [calcs/stage7i_sw.py](calcs/stage7i_sw.py)) ⇒ COMPANION-DIRECTION per
+  the pre-committed tree. Band survives cut at base rate (5/11). THE
+  TENSION IS OPEN: model-free statistics see the boost on the cleaned 57%
+  where the forward likelihood does not — both cannot be right; credence
+  anomaly-real 70% → ~60–65% pending 7J. Pipeline rules: FPM/nuisance
+  grids are sample properties (profile them; watch grid-edge riding).
+  Ledger rows bin-ablation-wrad/-strict/bin-ceilingpairs (38 tokens
+  green); PAPER §6.3 full disclosure + §7.2 CSV citation + §4.6
+  end-state-first + freeze/primary declarations (abstract+§1).
+  QUEUE (Opus-designed): 7J completeness + MARGINALIZED (f_comp, w_rad,
+  f_pm, α) posterior = THE DECISIVE INSTRUMENT; 7K ceiling tail control
+  (empirical error tail from γ≥75 anchor pairs); 7L v7 on the Cookson
+  selection w/ ablation ladder (after 7J); ĉ₁ six-seed budget; THE SPLIT
+  (Paper 1 binaries+ablation+completeness, Paper 2 coefficients+
+  quadrupole; §2.4 stays in the log; STRUCTURAL-INDEPENDENCE drafting
+  rule — no §2.4 gestures in Paper 1).** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

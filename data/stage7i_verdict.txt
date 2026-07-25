@@ -19,3 +19,8 @@ FPM profile on the strict sample (7I MATERIAL part 2; H2 = prefers FPM<1.5 with 
   seed 101 simple: lnL(1.0/1.2/1.5) = -31986.6/-31982.1/-31981.1 -> FPM_hat 1.5, a_hat 0.75 (interior True), Newton +6.9, wr 0.3
   seed 101 BE: lnL(1.0/1.2/1.5) = -31981.0/-31979.6/-31974.3 -> FPM_hat 1.5, a_hat 0.68 (interior True), Newton +13.7, wr 0.3
   FPM<1.5 preferred 0/4; recovered a_hat>=0.9 at FPM_hat 0/4  ==> H1 SUPPORTED (bars in module docstring)
+
+SW: strict + wr frozen 0.21, FPM 1.5 (2 seeds):
+  simple: a_hat mean 0.55 (per-seed 0.46 0.64), Newton +9.9
+      BE: a_hat mean 0.65 (per-seed 0.60 0.70), Newton +13.4
+  interior 4/4  ==> COMPANION-DIRECTION (bars in stage7i_sw.py docstring)
