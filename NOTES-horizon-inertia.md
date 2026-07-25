@@ -4889,6 +4889,45 @@ program better than it entered — one Part A scale retracted, one
 coherence measurement gained, one discipline rule adopted, and the
 two decisive instruments named and ordered.
 
+## Stage 7J-s6 (2026-07-25): the six-seed budget closes the batch —
+## no seed break; the operative-anchor measurement gets error bars
+
+Batch complete (pre-reg 0045eea; [calcs/stage7j_seed6.py],
+data/stage7j_seed6.txt). Measurements only (cadence rule).
+
+STRICTPOWBE (final arm leg): ARM-FAIL (BE-strict null unvalidated) —
+but in the OTHER failure mode: position IN band (a_marg = 0.90 vs
+truth 1.13, band [0.85, 1.45]) with margin below bar (dN = +14.7 vs
+>= +20). Note logged: the +20 bar was not N-scaled to the 57% strict
+sample, so this failure is partly bar calibration; the bar is the
+bar. Arm scorecard final: simple-full VALIDATED (at the retracted
+anchor), BE-full FAIL (position), BE-strict FAIL (margin); no arm at
+the operative anchor (unchanged); suite re-runs post-7J-z with
+degraded injections.
+
+THE SIX-SEED READ (both anchorings, 6 seeds x 2 samples x 2 laws):
+- Measured prior (continuity row; its prior retracted): a_marg = 0.00
+  in 24/24 reads, gaps lm(0.5)-lm(0) = -17..-61. **AMENDMENT-6 SEED
+  RULE: NO BREAK in 16 new-seed reads** — the measured-prior verdict
+  stands on the seed axis.
+- Literature anchor 0.16 (operative): **full a_marg = 0.13 +- 0.07 SE
+  (simple) / 0.30 +- 0.09 (BE), Newton within +1.0/+4.1; interior
+  scraps persist on 2/6 (simple) and 4/6 (BE) seeds (0.31-0.55, gaps
+  to +12.9); strict = 0.00 in 12/12.** The flat-curve statement now
+  carries six-seed error bars: the operative-anchor residual is a
+  scrap at 0.1-0.3 — an order below the fenced 1.06-1.18 and below
+  any detection grade — consistent with the split-width-budget
+  reading 7J-g decodes. The BE-over-simple ordering of the scrap
+  (0.30 vs 0.13) is noted, not interpreted (the BE arm is the
+  unvalidated one).
+
+No label motion, no credence motion (frozen ~45%): these numbers ARE
+the interim record. NEXT = 7J-z -> 7J-g as fixed.
+
+PLAIN VERDICT: batch SUCCESS — the seed axis is closed (no luck
+break), the operative-anchor measurement is now error-barred, and
+the program's full attention moves to the two deciders.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

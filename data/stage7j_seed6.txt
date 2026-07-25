@@ -1,0 +1,13 @@
+[full simple] measured prior: a_marg per seed ['0.00', '0.00', '0.00', '0.00', '0.00', '0.00']  gap(0.5-0) ['-44.1', '-61.4', '-47.7', '-44.2', '-45.8', '-46.5']
+[full simple] lit-0.16:      a_marg per seed ['0.40', '0.00', '0.00', '0.00', '0.35', '0.00']  gap ['+4.9', '-11.2', '-2.5', '-1.3', '+1.0', '-2.1']  -> mean a_marg = 0.13 +- 0.07 SE, mean dN = +1.0
+[full BE] measured prior: a_marg per seed ['0.00', '0.00', '0.00', '0.00', '0.00', '0.00']  gap(0.5-0) ['-25.2', '-31.6', '-31.3', '-33.0', '-22.6', '-25.8']
+[full BE] lit-0.16:      a_marg per seed ['0.50', '0.00', '0.31', '0.00', '0.55', '0.42']  gap ['+7.3', '-2.7', '+2.1', '-2.4', '+12.9', '+2.2']  -> mean a_marg = 0.30 +- 0.09 SE, mean dN = +4.1
+[strict simple] measured prior: a_marg per seed ['0.00', '0.00', '0.00', '0.00', '0.00', '0.00']  gap(0.5-0) ['-28.5', '-31.3', '-36.0', '-28.5', '-30.6', '-35.9']
+[strict simple] lit-0.16:      a_marg per seed ['0.00', '0.00', '0.00', '0.00', '0.00', '0.00']  gap ['-7.1', '-3.1', '-10.4', '-9.7', '-7.2', '-14.6']  -> mean a_marg = 0.00 +- 0.00 SE, mean dN = +0.0
+[strict BE] measured prior: a_marg per seed ['0.00', '0.00', '0.00', '0.00', '0.00', '0.00']  gap(0.5-0) ['-17.0', '-20.2', '-21.6', '-18.7', '-21.7', '-23.4']
+[strict BE] lit-0.16:      a_marg per seed ['0.00', '0.00', '0.00', '0.00', '0.00', '0.00']  gap ['-1.7', '-1.4', '-3.6', '-3.1', '-3.3', '-8.9']  -> mean a_marg = 0.00 +- 0.00 SE, mean dN = +0.0
+
+AMENDMENT-6 SEED RULE: no break in 16 new-seed reads (all gaps
+<= -5 and a_marg = 0 at the measured prior) -> the measured-prior
+verdict STANDS on the seed axis (its prior remains retracted; the
+operative statement is the lit-anchor row above + the flat curve).

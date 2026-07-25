@@ -4,3 +4,13 @@
 7J strict [photo] verdict (2 seeds): simple a_marg=0.00 dN=+0.0; BE a_marg=0.00 dN=+0.0  ==> COMPANION-CONFIRMED
 
 7J strictpow [photo] verdict (1 seeds): simple a_marg=1.27 dN=+48.8; BE a_marg=2.00 dN=+49.7  ==> POWER-FAIL (the strict-companion quadrant carries no weight)
+
+7J fullpow [photo] verdict (1 seeds): simple a_marg=1.48 dN=+94.5; BE a_marg=2.00 dN=+99.0  ==> ARM-VALIDATED (simple-full) [BE cross-family diagnostic: 2.00/+99.0]
+
+7J fullpowbe [photo] verdict (1 seeds): simple a_marg=0.93 dN=+33.3; BE a_marg=0.73 dN=+31.1  ==> ARM-FAIL (BE-full null UNVALIDATED) [simple cross-family diagnostic: 0.93/+33.3]
+
+7J strictpowbe [photo] verdict (1 seeds): simple a_marg=1.06 dN=+15.1; BE a_marg=0.90 dN=+14.7  ==> ARM-FAIL (BE-strict null UNVALIDATED) [simple cross-family diagnostic: 1.06/+15.1]
+
+7J full [photo] verdict (6 seeds): simple a_marg=0.00 dN=+0.0; BE a_marg=0.00 dN=+0.0  ==> COMPANION-WIN
+
+7J strict [photo] verdict (6 seeds): simple a_marg=0.00 dN=+0.0; BE a_marg=0.00 dN=+0.0  ==> COMPANION-CONFIRMED

@@ -1,0 +1,11 @@
+STAGE 7J-B strictpowbe seeds [31]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4]; ln pi(fcomp) = [-1584.82, -608.39, -150.5, -2.45, -3.38, -68.11]
+strictpowbe: injected BE alpha=1.13 truth at host rate 0.47 (truth pop 777, count draws 888, observed-bin totals)
+GB0p strictpowbe seed 31 simple: raw cube absent - SKIPPED (disclosed)
+PROF strictpowbe seed 31 simple: a_hat=1.06 (interior=True), dN=+14.7, wr=0.2, fcomp=0.5, fpm=1.8
+MARG strictpowbe seed 31 simple: a_marg=1.06, dN_marg=+15.1, P(wr>=0.4)=0.00, P(kw)=[0.0, 1.0, 0.0]
+RIDGE strictpowbe seed 31 simple: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=1.06, (0.7)=0.00
+GB0p strictpowbe seed 31 BE: raw cube absent - SKIPPED (disclosed)
+PROF strictpowbe seed 31 BE: a_hat=0.91 (interior=True), dN=+14.4, wr=0.2, fcomp=0.5, fpm=2.1
+MARG strictpowbe seed 31 BE: a_marg=0.90, dN_marg=+14.7, P(wr>=0.4)=0.00, P(kw)=[0.0, 1.0, 0.0]
+RIDGE strictpowbe seed 31 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.91, (0.7)=0.00
+  seed 31 done (14.7 min)

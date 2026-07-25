@@ -118,6 +118,8 @@ CHECKS = [
     ('bin-7j-armdiag',      'PROF=1.47/+71.1  meas=1.48/+94.5',
      'data/stage7j_armdiag.txt'),
     ('bin-7j-anchorcurve',  '0.06:0.31/+2', 'data/stage7j_lowend.txt'),
+    ('bin-7j-seed6', 'mean a_marg = 0.30 +- 0.09 SE', 'data/stage7j_seed6.txt'),
+    ('bin-7j-seed6', 'AMENDMENT-6 SEED RULE: no break', 'data/stage7j_seed6.txt'),
     ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
      'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
     ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',

@@ -17,3 +17,40 @@ PROF strict seed 101 BE: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1
 MARG strict seed 101 BE: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
 RIDGE strict seed 101 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
   seed 101 done (14.1 min)
+STAGE 7J-B strict seeds [202, 303, 404, 505]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4]; ln pi(fcomp) = [-1584.82, -608.39, -150.5, -2.45, -3.38, -68.11]
+GB0p strict seed 202 simple: raw cube absent - SKIPPED (disclosed)
+PROF strict seed 202 simple: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 202 simple: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 202 simple: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+GB0p strict seed 202 BE: raw cube absent - SKIPPED (disclosed)
+PROF strict seed 202 BE: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 202 BE: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 202 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+  seed 202 done (13.8 min)
+GB0p strict seed 303 simple: raw cube absent - SKIPPED (disclosed)
+PROF strict seed 303 simple: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 303 simple: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 303 simple: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+GB0p strict seed 303 BE: raw cube absent - SKIPPED (disclosed)
+PROF strict seed 303 BE: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 303 BE: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 303 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+  seed 303 done (13.9 min)
+GB0p strict seed 404 simple: raw cube absent - SKIPPED (disclosed)
+PROF strict seed 404 simple: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 404 simple: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 404 simple: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+GB0p strict seed 404 BE: raw cube absent - SKIPPED (disclosed)
+PROF strict seed 404 BE: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 404 BE: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 404 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+  seed 404 done (13.9 min)
+GB0p strict seed 505 simple: raw cube absent - SKIPPED (disclosed)
+PROF strict seed 505 simple: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 505 simple: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 505 simple: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+GB0p strict seed 505 BE: raw cube absent - SKIPPED (disclosed)
+PROF strict seed 505 BE: a_hat=0.00 (interior=False), dN=+0.0, wr=0.3, fcomp=0.1, fpm=2.4
+MARG strict seed 505 BE: a_marg=0.00, dN_marg=+0.0, P(wr>=0.4)=0.00, P(kw)=[1.0, 0.0, 0.0]
+RIDGE strict seed 505 BE: corr(wr,fcomp)=+0.00; stress a_prof(fcomp=0.5)=0.00, (0.7)=0.00
+  seed 505 done (13.9 min)
