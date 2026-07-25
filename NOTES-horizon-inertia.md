@@ -4743,6 +4743,82 @@ the safe bar decisive). Recentering: SUCCESS (conclusions center-
 insensitive). Cadence rule + four-absorber frame: adopted — the
 program's verdict-booking discipline just got its own correction.
 
+## Stage 7J-w + round 5 (2026-07-25): the arm diagnosis — prior-free
+## offsets, no arm at the operative anchor, per-pair 7J-z slopes
+
+Round 5 (Opus). All points executed or adopted; measurements only
+(cadence rule in force — no credence motion, no new verdict labels).
+
+(1) NO VALIDATED ARM AT THE OPERATIVE PRIOR (conceded, made explicit
+everywhere): fullpow validated the simple arm THROUGH THE RETRACTED
+MEASURED PRIOR — a cell that no longer exists. Scope facts stated in
+PAPER 6.3 + here: cube re-use is free on the SEED axis only (the
+prior enters at marginalization); power ARMS at a new anchor need
+NEWLY INJECTED companion populations (different truth data = new
+cubes). fullpowlit is the only injection bearing on the reportable
+number — and per the reviewer's own ordering it runs at whatever
+anchor 7J-z lands (GPU at soon-to-be-vacated cells is waste):
+**ORDER FIXED: 7J-z -> 7J-g -> the arm suite at the landed anchor
+(incl. the BE alpha=0.4 additive-vs-multiplicative discriminator).**
+
+(2) THE +0.3 DIAGNOSED ([calcs/stage7j_armdiag.py], zero GPU, from
+cached pow cubes): the answer is the dichotomy's third way — the
+offsets are PRIOR-FREE. PROF (no prior) = 1.47 vs matched-prior MARG
+1.48 (simple, truth 1.18); PROF = MARG = 0.73 (BE, truth 1.13). And
+re-marginalizing the SAME injected data under the literature prior
+(0.16/0.22) moves NOTHING (a-hat identical; the injected likelihood
+is informative enough about fcomp to override a mismatched prior —
+posterior stays at 0.50 against the penalty): prior-misspecification
+does not mechanically manufacture alpha when the likelihood is
+informative. Remaining candidates for the +0.30/-0.40 pair: the
+Stage-3A realization layer (one truth pop, one fitting pop) or a
+genuine estimator bias — SINGLE-INJECTION GRADE, multi-truth
+recovery map queued with the post-7J-z arm suite. Cross-family
+consistency note: BE-truth 1.13 read by the simple arm at 0.94 =
+the standard BE/simple ratio — the arms disagree only about their
+OWN truths, opposite signs.
+
+(3) BE ARITHMETIC CLAUSE RETRACTED (reviewer-caught, unnumbered
+interim-note fix): my "a 0.65 compression cannot produce 0.00 from
+1.13" assumed a multiplicative recovery map; an additive -0.40
+offset fits the same single point and sends any truth below 0.4 to
+zero. One injection cannot distinguish them; the disputed region IS
+alpha 0.2-0.5. The BE alpha=0.4 injection resolves it (queued at the
+landed anchor). Meanwhile the phrasing rule adopted: "both laws" is
+DROPPED from the verdict sentences — the simple arm is quoted, the
+BE arm is flagged pending (PAPER abstract + 6.3 edited).
+
+(4) 7J-z DESIGN SHARPENED (adopted verbatim): the common-mode
+diagonal slope must be PER-PAIR, set from the two components' colors
+via a mass-dependent metallicity response (0.1 dex moves a mid-M
+dwarf several times further than an F star; M_G span 2.6-14.2 means
+F+M diagonals far from unit slope, twins near it); only amplitude
+and scatter free. A single global slope would land the unequal-mass
+pairs' common-mode on the companion axes = the retracted over-
+attribution returning through the door being closed. Implementation
+note: the response ratio can be self-calibrated from the data
+(slope field vs (col1, col2) on the core, iterated against the
+mixture's posterior singles) with an isochrone cross-check.
+
+(5) THE INTERIOR READING NAMED AS A RESULT (adopted): at the
+literature anchor the fit sits at a SPECIFIC value — alpha ~ 0.4-0.5,
+roughly HALF the galactic calibration, interior on one realization —
+the split-width-budget signature, precisely the object 7J-g decodes.
+Stated so in PAPER 6.3 (not as a label failure).
+
+(6) Blending-audit caution clause logged (reviewer): the rho
+d-gradient has a second reading — distance shifts the sampled mass
+range through the magnitude limit, and metallicity sensitivity is
+mass-dependent — which does not touch the blending conclusion but
+belongs next to the coherence measurement's interpretation.
+
+PLAIN VERDICTS: arm diagnosis: SUCCESS as a measurement (prior-free,
+mismatch-immune at informative likelihood; single-injection grade
+stated). Scope corrections: executed. The stage's standing summary
+is unchanged by round 5 — AMBIGUOUS at the primary anchoring, the
+durable Newton-rejection collapse at every anchoring, everything
+else queued behind 7J-z -> 7J-g.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

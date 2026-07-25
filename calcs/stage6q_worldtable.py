@@ -115,6 +115,8 @@ CHECKS = [
     ('bin-7j-paircorr',     'rho_att=+0.465', 'data/stage7j_paircorr.txt'),
     ('bin-7j-paircorr',     '==> C-FAIL', 'data/stage7j_paircorr.txt'),
     ('bin-7j-paircorr',     'C-FAIL STANDS', 'data/stage7j_paircorr.txt'),
+    ('bin-7j-armdiag',      'PROF=1.47/+71.1  meas=1.48/+94.5',
+     'data/stage7j_armdiag.txt'),
     ('ret-7i-median-immune', 'completeness of the -0.4 flag: C(companion) = 0.410',
      'data/stage7j_completeness.txt'),
 ]

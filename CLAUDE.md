@@ -923,7 +923,36 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   paircorr ρ = +0.47 is ALSO a standing astrophysical measurement
   (wide-pair photometric coherence). Ledger: completeness→RETRACTED,
   marginal→CO-QUOTED, +bin-7j-paircorr; audit 49 tokens/106 rows
-  green.** Then the DM
+  green.**
+  **ROUNDS 4-5 (2026-07-25, same day): blending audit CLEARS #18
+  (ρ(θ) flat 2-250″; blending-safe bar θ≥8″ = +0.448 → C-FAIL STANDS;
+  d-gradient astrophysical, with the mass-sampling second-reading
+  caveat logged); lit center 0.166 (insensitive); prior = UNMEASURED
+  at 0.2-50 kAU (7J-z = first measurement, a contribution); **THE
+  CADENCE RULE: credence FROZEN ~45% until 7J-z + 7J-g land;
+  measurements not verdicts in interim rounds**; the four-absorber
+  diagnosis adopted (boost/near-parabolic/companions/noise share ONE
+  width budget; verdicts track the tightest current external
+  constraint; only γ separates them) → **7J-g = γ-collapsed four-way
+  contest = the Paper-1-deciding test**; arms: fullpow ARM-VALIDATED
+  but AT THE RETRACTED CELL (no arm validated at the operative
+  literature anchor — cube reuse is seed-axis-only, arms need new
+  injected data); fullpowbe ARM-FAIL (BE own-truth 0.73, "both laws"
+  DROPPED from verdict phrasing — simple quoted, BE pending);
+  7J-w armdiag ([calcs/stage7j_armdiag.py](calcs/stage7j_armdiag.py)):
+  own-truth offsets +0.30/−0.40 are PRIOR-FREE (PROF=MARG both arms;
+  lit-prior re-marg moves nothing — mismatch does not manufacture α
+  at informative likelihood) = likelihood/realization layer at
+  single-injection grade; my multiplicative-map clause retracted (an
+  additive −0.40 fits the same point; BE α=0.4 injection = the
+  discriminator); at the lit anchor the interior fit is NAMED A
+  RESULT: α ≈ 0.4-0.5 = HALF the galactic calibration = the
+  split-budget signature 7J-g decodes; 7J-z slopes must be PER-PAIR
+  (mass-dependent metallicity response from the components' colors;
+  amplitude+scatter free — global slope would recreate the
+  over-attribution). **ORDER FIXED: 7J-z → 7J-g → arm suite at the
+  landed anchor.** PAPER v2.9 updated in place; ledger
+  +bin-7j-armdiag (107 rows, 51 tokens green).** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

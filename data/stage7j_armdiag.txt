@@ -1,0 +1,18 @@
+[fullpow truth=simple 1.18 arm=simple] PROF=1.47/+71.1  meas=1.48/+94.5  lit0.22=1.48/+83.4 fpost@0.50  lit0.16=1.48/+85.3 fpost@0.50
+[fullpow truth=simple 1.18 arm=BE] PROF=2.00/+76.0  meas=2.00/+99.0  lit0.22=2.00/+87.9 fpost@0.50  lit0.16=2.00/+89.8 fpost@0.50
+[fullpowbe truth=BE 1.13 arm=simple] PROF=0.94/+33.5  meas=0.93/+33.3  lit0.22=0.93/+33.3 fpost@0.50  lit0.16=0.93/+33.3 fpost@0.50
+[fullpowbe truth=BE 1.13 arm=BE] PROF=0.73/+30.3  meas=0.73/+31.1  lit0.22=0.73/+31.1 fpost@0.50  lit0.16=0.73/+31.1 fpost@0.50
+
+READINGS (measurements, per the cadence rule):
+ R1 the +0.3/-0.40 own-truth anomalies are PRIOR-FREE (PROF equals
+    the matched-prior MARG on both arms): likelihood/realization
+    layer, single-injection grade; recovery map queued post-7J-z.
+ R2 the lit-prior rows read the prior-MISMATCH direction: truth
+    companions at 0.51 marginalized under a ~0.16-0.22 prior - if
+    alpha-hat inflates, an understated companion prior biases alpha
+    HIGH, making the real-data interior ~0.4 at the literature
+    anchor an upper bound under the high-multiplicity branch.
+ R3 explicit scope note: cube reuse is free on the SEED axis (prior
+    enters at marginalization); power ARMS at a new anchor require
+    NEW injected data - no arm is validated at the operative prior;
+    fullpowlit runs at whatever anchor 7J-z lands (reviewer order).
