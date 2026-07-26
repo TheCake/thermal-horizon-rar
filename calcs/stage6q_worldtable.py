@@ -124,9 +124,9 @@ CHECKS = [
     ('bin-7jz-v1', '[0.15, 0.22]', 'data/stage7jz_mixture.txt'),
     ('bin-7jz-v2b', '[0.29, 0.32]', 'data/stage7jz2b_exact.txt'),
     ('bin-7jz-v2b', 'f_hat=0.000', 'data/stage7jz2b_exact.txt'),
-    ('bin-7jz-width', 'a_marg=0.74', 'data/stage7jz_read.txt'),
+    ('bin-7jz-width', 'a_marg=0.74', 'data/stage7jz_read_lit.txt'),
     ('bin-7jz-width', 'AMBIGUOUS-CARRIED (LIT-CONDITIONAL)',
-     'data/stage7jz_read.txt'),
+     'data/stage7jz_read_lit.txt'),
     ('bin-7jg-gamma', 'ABSORBER-LEVEL SEPARATION', 'data/stage7jg_read.txt'),
     ('bin-7jg-gamma', 'SEPARATION-CONFIRMED (alpha grade; M3(simple))',
      'data/stage7jg_read.txt'),
@@ -136,6 +136,15 @@ CHECKS = [
     ('bin-7j-qmoments', 'sigma* = 0.02', 'data/stage7j_qmoments.txt'),
     ('bin-7j-qmoments', 'fce_joint(wobble) = [0.10, 0.39]',
      'data/stage7j_qmoments.txt'),
+    ('bin-7jz-v2c', 'GATES ALL PASS -> THE CERTIFICATE SHIPS',
+     'data/stage7jz2c_cert.txt'),
+    ('bin-7jz-v2c', 'f_host per component in [0.29, 0.32] (peak 0.32)',
+     'data/stage7jz2c_cert.txt'),
+    ('bin-7jz-qshape', 'twin t=5: dlnL=+0.0, f=0.124',
+     'data/stage7jz2c_cert.txt'),
+    ('bin-7jz-qshape', 'flat: dlnL=-162.0', 'data/stage7jz2c_cert.txt'),
+    ('bin-7jz-anchored', 'VERDICT @ LANDED-CONV: AMBIGUOUS-CARRIED',
+     'data/stage7jz_read.txt'),
     ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
      'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
     ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',
@@ -337,9 +346,15 @@ say('at P = 1.00 - the 3E/6P object), alpha_marg = 0.70-0.74 at')
 say('dN = +23.2-23.8 with the anchor curve FLAT to 0.01-0.03 across every')
 say('companion anchor 0.06-0.34 - the alpha answer is companion-prior-')
 say('INDEPENDENT and the old COMPANION-WIN lives in the sq = 0 slice.')
-say('Verdict label AMBIGUOUS-CARRIED (missed the pre-registered detection')
-say('bar by 1.2-1.8 lnL; LIT-CONDITIONAL - the measured subsystem rate')
-say('[0.29, 0.32] host/component is UNSHIPPED pending the v2c certificate).')
+say('Verdict label AMBIGUOUS-CARRIED at the LANDED operative anchor')
+say('(missed the pre-registered detection bar by 1.2-1.8 lnL; the v2c')
+say('certificate SHIPPED: rate six-way stable 0.159, host [0.29, 0.32]')
+say('flat-convention; the GV7 q-shape table measures the subsystems')
+say('TWIN-HEAVY (t=5 beats flat +162, f 0.124, host ~0.23) = the')
+say('wobble-quiet population - the x3 multiplicity tension DISSOLVING')
+say('in the round-10 direction; the FACE flat-q read = the fifth move')
+say('fired live, alpha 0.00, quoted as the conditional whose premise')
+say('the q-table rejects).')
 say('7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid')
 say('step, all mass on the 0.20 node); in the four-absorber configuration')
 say('vt-only fitting reports a PHANTOM alpha = 0.5 that the direction')

@@ -5548,6 +5548,105 @@ Tokovinin trend, raising the stakes on the q-resolution; the
 primary read before any paper use: El-Badry & Rix 2018's ~20%
 per-component unresolved-companion characterization (scout-level).
 
+## 7J-z2c + the anchored re-read (2026-07-26): THE CERTIFICATE SHIPS — and the photometry measures the subsystems TWIN-HEAVY
+
+**The certificate (135.8 min, ALL GATES PASS, npz v2c-cert shipped).**
+The two v2b blockers closed structurally, not by finer grids: the
+twin-spiked q-direction integrated in closed form (segment-erf;
+GV0c certifies it at 1.7e-8 relative against a 30001-node reference;
+GV0b f=0 identity exact 0.0; GV0 identity-point regression 2973.83 vs
+v2b's printed 2973.8), the only remaining numeric axis converged at
+GV1 d = 0.010 (vs GZS11's failing 2.08), and profiling λ killed the
+start-dispersion direction outright: **top-two gap 0.03** (vs v2b's
+failing 2.8), λ* = 1.64 interior with a clean peak (neighbors −26,
+extremes −103/−126). **f̂ chain: v1 0.166 → v2b 0.159 → v2c
+(exact-cont) 0.159 — six-way stable across three model classes,
+three integration schemes, and every basin tried.** Injections sharp
+(f=0 truth → 0.000, the kernel-blind acquittal repeating; 0.10 →
+0.099; 0.25 → 0.253); postdiction bars all pass. Host conversion
+(flat/qalt convention, v2b machinery verbatim): **[0.29, 0.32] peak
+0.32 per component.** Amendment trail on the way in (all
+instrument-level, each caught by its own STOP or output, logged
+pre-quote): A3 (GV0 print-rounding reference + np.trapezoid), A4/A5
+(the GV0c metric — far-tail float cancellation is not a math error;
+the reference's own discretization is not the erf's error; the
+relevance floor is the full mixture, not P00 — third design stuck).
+
+**THE Q-SHAPE DELIVERABLE (GV7) IS A DISCOVERY: the blended-δ
+photometry itself measures the inner-subsystem mass-ratio
+distribution TWIN-HEAVY — twin t=5 beats flat by 162.0 lnL (t=2:
+−19.9 behind t=5; flat −162.0; q^-0.5 −267.4), with f̂ = 0.124
+blended per component under the winning law** (host ≈ 0.124/0.53 ≈
+0.23 — closer to the field than the flat-convention 0.29–0.32). The
+population the photometry demands is exactly the wobble-quiet one
+round 10 identified as conversion-flexible: twins are photometrically
+LOUD (Δm = 0.75) and kinematically QUIET (photocenter cancellation
+exact at q = 1). Reading (joint fit = future work, stated as such):
+the twin-convention host ~0.23 carries a flat-q kinematic equivalent
+of roughly 0.10–0.15 by the 7J-z4 moments — **consistent with the
+kinematic preference fcomp ≈ 0.1: the ×3 multiplicity tension is
+DISSOLVING under the measured q-shape, in the direction round 10
+predicted.** The Tokovinin surprise softens the same way: the
+field-like published subsystem rates were flat-q-convention
+inferences; our twin-convention host ~0.23 sits nearer the field
+than the 0.29–0.32 headline. FLAG: this q-shape is an in-window
+blended-δ shape measurement (0.4 ≲ Δm window sensitivity) — the
+low-q completion remains prior-bracketed; conv_band and the
+face-invalidity note are stored in the shipped npz itself.
+
+**The anchored re-read (amendment 11 operative; 11b = the OPER
+wiring fix, c272bef — the amendment-11 edit added the LANDED-CONV
+anchor but omitted the one-line OPER flip, so the first anchored run's
+verdict block read the face anchor; caught in the output, fixed to
+the d437921 pre-committed spec, re-run):**
+- **OPERATIVE (LANDED-CONV): α_marg = 0.74 (simple) / 0.70 (BE) at
+  dN = +23.8/+23.2 — VERDICT AMBIGUOUS-CARRIED at the LANDED
+  anchor** (no longer LIT-conditional; the extension rule is silent
+  at OPER, BE seed gap 0.10 ≤ 0.25; identical to the LIT16 read to
+  the last digit — the widened prior and the literature anchor agree
+  because the curve is flat). D1 CHANNEL-USED; D2 NOT-CLOSED
+  (1.41/1.39); D3 BE still rides fpm = 2.4 (P = 0.95–0.98 → the
+  E-arm extension queued).
+- **FACE (flat-q at face precision, the diagnostic): THE FIFTH MOVE
+  FIRED LIVE — α_marg = 0.00/0.00 (simple), 0.37/0.00 (BE), the
+  posterior pinned at fcomp = 0.2** — exactly as σ* = 0.02
+  predicted. Quoted as the flat-q conditional whose premise the
+  certificate's own q-table rejects at −162.
+- 7J-g at LANDED-CONV: tiers unchanged (ABSORBER-LEVEL primary,
+  SEPARATION-CONFIRMED α-grade co-read) — now at the landed
+  operative anchor.
+
+CREDENCE: HELD ~45%. The cadence rule named v2c + the arm suite as
+the deciders; one has landed (and it landed threat-side: the
+sharpest Newton-rescue — many companions — lost its q-convention
+teeth), the other is pending. No move until the arms report.
+
+PLAIN VERDICTS: 7J-z2c certificate = SUCCESS (the resolution cascade
+closed structurally; the rate certificated; the acquittal repeated).
+The q-shape deliverable = SUCCESS and the round's discovery
+(first mass-ratio-shape measurement for inner subsystems at 0.2–50
+kAU; twin-heavy at +142 over the nearest alternative). The anchored
+re-read = SUCCESS as machinery (both anchors read, the verdict
+landed, one wiring amendment logged); the verdict itself remains
+AMBIGUOUS-CARRIED — honest, at 1.2–1.8 below the bar, now with a
+landed anchor under it.
+
+ELI12: The star-counter got its certification stamp — every check
+passed, and the count (about 1 in 6) has now come out the same six
+different ways. But the certificate came with a twist we didn't
+order: the flavor question. The hidden companions aren't a random
+mix — they're mostly look-alike TWINS of their host stars (the data
+prefer that reading by a landslide). Twins are the one kind of
+companion that glows brightly in photos but barely wiggles anything
+— so the old fight ("your photos say 0.30, the motions want 0.10")
+was two people using different units: in wiggle-units, 0.23 worth of
+twins IS about 0.10 worth of average companions. The fight is
+dissolving. The gravity-boost answer at the properly-cautious anchor:
+0.74 strength, 23 points, still two points shy of the official
+detection bar — same as before, but now standing on a certified
+foundation. Confidence stays 45% until the final validation round
+(the "arm suite") reports.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

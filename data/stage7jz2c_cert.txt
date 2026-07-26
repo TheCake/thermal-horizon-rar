@@ -1,0 +1,40 @@
+GZ0: N=13784, rho_core_att=+0.465 -> PASS
+window: 12084 pairs; windowed flag 0.107
+v2b full-precision MAP loaded: f=0.1595, lam=1.635
+GV0 identity-point regression: lnL_disc(v2b x_map) = 2973.83 (printed 2973.8, bar 0.15) -> PASS
+GV0b f=0 cont/disc identity: d = 0.00e+00 -> PASS
+GV0c (A5): rel(where I>=1e-12) = 1.66e-08 (bar 1e-3); abs-in-envelope = yes; Lp-relevance = 3.87e-06 (bar 1e-4) -> PASS
+  lam=1.64: lnL=2950.5, f=0.1593 (7.6 min)
+  lam=0.5: lnL=2824.7, f=0.1595 (16.5 min)
+  lam=1.0: lnL=2924.5, f=0.1575 (24.9 min)
+  lam=2.5: lnL=2924.8, f=0.1595 (33.5 min)
+  lam=4.0: lnL=2847.8, f=0.1605 (42.0 min)
+profile peak lam* = 1.64 (interior)
+v2c MAP (cont, profiled-lam): lnL=2950.5, f=0.1593, lam*=1.64; top-two gap 0.03 -> PASS (62.9 min)
+GV1 outer-node doubling at MAP: d = 0.010 -> PASS
+GV3 nesting: L_cont(MAP)=2950.5 >= L_cont(v2b params)=2950.4 -> PASS
+f_hat chain: v1 0.166 -> v2b 0.159 -> v2c (exact-cont) 0.159
+GZ1c-a kernel-truth f=0: f_hat=0.000 -> PASS (67.5 min)
+GZ1c-b kernel-blind diagnostic: f_hat=0.000
+GZ2a f=0.1: recovered 0.099 -> PASS (77.4 min)
+GZ2b f=0.25: recovered 0.253 -> PASS (83.1 min)
+GV6: bar +0.449 vs +0.465 -> PASS; slices (+0.741,+0.383) vs (+0.796,+0.394) -> PASS; flag 0.093 vs 0.107 -> PASS; incidence 2.31 vs 2.39 (no bar)
+q-law flat: lnL=2950.6, f_hat=0.1587 (87.9 min)
+q-law q^-0.5: lnL=2845.2, f_hat=0.1948 (92.7 min)
+q-law twin t=2: lnL=3092.6, f_hat=0.1400 (97.3 min)
+q-law twin t=5: lnL=3112.5, f_hat=0.1241 (101.9 min)
+  q-shape table: flat: dlnL=-162.0, f=0.159
+  q-shape table: q^-0.5: dlnL=-267.4, f=0.195
+  q-shape table: twin t=2: dlnL=-19.9, f=0.140
+  q-shape table: twin t=5: dlnL=+0.0, f=0.124
+profile flat-q: [-4964.4, -668.0, -114.4, 0.0, -130.2, -486.0] on [0.0, 0.06, 0.11, 0.17, 0.23, 0.3]
+profile q^-0.5: [-4886.9, -1215.0, -243.6, 0.0, -8.6, -188.2]
+BLENDED envelope: f in [0.17, 0.17]
+P_blend(flat, 0.6") = 0.530
+P_blend(flat, 1.0") = 0.587
+P_blend(qalt, 0.6") = 0.532
+P_blend(qalt, 1.0") = 0.589
+HOST-axis (v2c): f_host per component in [0.29, 0.32] (peak 0.32)
+
+GATES ALL PASS -> THE CERTIFICATE SHIPS (data/stage7jz_prior.npz, version v2c-cert, q-resolved block)
+[total 135.8 min]

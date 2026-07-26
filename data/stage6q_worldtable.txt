@@ -1,10 +1,10 @@
-STAGE 6Q: ledger audit + world table  (115 ledger rows)
+STAGE 6Q: ledger audit + world table  (118 ledger rows)
 ==============================================================================
 G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
 G3 (supersession resolves): PASS
 G4 (current-quantity collisions): PASS
-G5 (value spot-checks, 68 tokens): PASS
+G5 (value spot-checks, 73 tokens): PASS
 
 G6 (world-table provenance): PASS
 
@@ -153,9 +153,15 @@ at P = 1.00 - the 3E/6P object), alpha_marg = 0.70-0.74 at
 dN = +23.2-23.8 with the anchor curve FLAT to 0.01-0.03 across every
 companion anchor 0.06-0.34 - the alpha answer is companion-prior-
 INDEPENDENT and the old COMPANION-WIN lives in the sq = 0 slice.
-Verdict label AMBIGUOUS-CARRIED (missed the pre-registered detection
-bar by 1.2-1.8 lnL; LIT-CONDITIONAL - the measured subsystem rate
-[0.29, 0.32] host/component is UNSHIPPED pending the v2c certificate).
+Verdict label AMBIGUOUS-CARRIED at the LANDED operative anchor
+(missed the pre-registered detection bar by 1.2-1.8 lnL; the v2c
+certificate SHIPPED: rate six-way stable 0.159, host [0.29, 0.32]
+flat-convention; the GV7 q-shape table measures the subsystems
+TWIN-HEAVY (t=5 beats flat +162, f 0.124, host ~0.23) = the
+wobble-quiet population - the x3 multiplicity tension DISSOLVING
+in the round-10 direction; the FACE flat-q read = the fifth move
+fired live, alpha 0.00, quoted as the conditional whose premise
+the q-table rejects).
 7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid
 step, all mass on the 0.20 node); in the four-absorber configuration
 vt-only fitting reports a PHANTOM alpha = 0.5 that the direction

@@ -1017,12 +1017,11 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   AMBIGUOUS → **anomaly-real HELD ~45% by the map** (freeze released,
   value re-affirmed; miss direction noted). Ledger +bin-7jz-v1/-v2b/
   -width/+bin-7jg-gamma, anchorcurve→CO-QUOTED; audit 113 rows/64
-  tokens green; worldtable banner = width-channel form. NEXT (fixed
-  order): **v2c-PLUS certificate (round-10 requirement: (q,P)-resolved
-  rate + v2b posterior q-extraction, never a scalar) → anchored
-  re-read (free, cubes prior-independent) → arm suite at the landed
-  anchor (injections DEGRADED with the measured kernel per 7J-w2 +
-  fpm→3.0 + BE α=0.4 discriminator + kw=0.7-residual attribution)**;
+  tokens green; worldtable banner = width-channel form. NEXT:
+  **v2c-plus DONE + anchored re-read DONE (see the certificate-round
+  block below) → the ARM SUITE (pre-reg f6916e0; implementation =
+  the immediate next work block; E-arm fpm→3.0 first, then the A–D
+  twin-mismatch injection arms)**;
   then 7K-a/b, 7J-d, 7L, ĉ₁ budget, THE SPLIT
   (Paper 1 leads: completeness+kernel discovery+width channel+
   phantom-veto+census). Review rounds 7-8 (Opus): axis chain written
@@ -1088,7 +1087,49 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   forced world; the likelihood pays 135–153 to avoid it);
   "tension-as-result" adopted for Paper 1's spine. Ledger
   +bin-7j-qmoments (115 rows/68 tokens); credence HELD ~45%
-  (cadence).** Then the DM
+  (cadence).**
+  **THE CERTIFICATE ROUND (7J-z2c + anchored re-read, 2026-07-26
+  night, PAPER → v3.3): v2c-plus SHIPPED, ALL GATES
+  ([calcs/stage7jz2c_cert.py](calcs/stage7jz2c_cert.py), 135.8 min;
+  pre-reg 4c3fc89; amendments A3/A4/A5 = gate-metric designs each
+  caught by its own STOP, logged pre-quote): both v2b protocol
+  objects closed STRUCTURALLY — segment-erf exact q-integration
+  (certified 1.7e-8 vs 30001-node reference; f=0 identity exact) +
+  profiled-λ (start gap 0.03 vs v2b's failing 2.8; λ*=1.64 interior;
+  GV1 outer-doubling 0.010 vs GZS11's 2.08). **f̂ chain 0.166 →
+  0.159 → 0.159 six-way stable; host [0.29, 0.32] flat/qalt; the
+  acquittal repeats (kernel-truth f=0 → 0.000); npz v2c-cert carries
+  the GV7 q-table + conv_band + face-invalidity note. THE GV7
+  DISCOVERY: the photometry measures the subsystems TWIN-HEAVY —
+  twin t=5 beats flat +162.0 (q^-0.5 −267; t=2 −19.9 behind t=5),
+  f̂ = 0.124 → host ≈ 0.23 ≈ field-adjacent; twins = the
+  wobble-quiet population ⇒ twin-convention host ≡ flat-q kinematic
+  ~0.10–0.15 = the kinematic preference — THE ×3 TENSION DISSOLVES
+  in round-10's predicted direction** (reading-grade; joint fit =
+  future). Scout (pre-committed with the round): Opus's "3×
+  expected from triple dynamics" UNSUPPORTED — Tokovinin 2014 finds
+  field-like wide-binary subsystem rates ("does not affect
+  inner-subsystem formation"); the 3× literature = contact-binary/
+  2+2-specific; El-Badry-Rix ~20%/component flagged for primary
+  read. ANCHORED RE-READ (amendment 11 = LANDED-CONV operative,
+  d437921 pre-committed; 11b = OPER wiring fix c272bef — first
+  anchored run's verdict block read the face anchor, caught in
+  output, fixed to spec, re-run): **OPERATIVE α_marg = 0.74/0.70 @
+  +23.8/+23.2 = AMBIGUOUS-CARRIED at the LANDED anchor** (no longer
+  LIT-conditional; extension rule silent, BE gap 0.10; = LIT16 to
+  the last digit — flat curve); **FACE (flat-q face-precision
+  diagnostic): THE FIFTH MOVE FIRED LIVE (α → 0.00, fcomp → 0.2,
+  exactly per σ* = 0.02)** — quoted as the conditional whose premise
+  the q-table rejects at −162; 7J-g tiers unchanged at LANDED-CONV;
+  D3: BE rides fpm 2.4 at 0.95–0.98 (E-arm). Ledger +bin-7jz-v2c/
+  -qshape/-anchored, width→CO-QUOTED (118 rows/73 tokens); credence
+  HELD ~45% (cadence: the ARM SUITE = the remaining decider).
+  ARM SUITE pre-reg committed f6916e0 (bars locked pre-anchor):
+  A null ≤0.3 / B simple 0.74±0.25 / C BE 0.70±0.25 / D BE 0.40
+  discriminator / E sky fpm→3.0 + identity regression; injections
+  q-MISMATCHED (draw twin t=5 = the GV7 winner, fit flat-q) + sq_true
+  0.2 + fpm_true at posterior mode; implementation = the next work
+  block.** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
