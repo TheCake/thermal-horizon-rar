@@ -240,7 +240,16 @@ SQ_GRID = (np.array([0.0, 0.1, 0.2, 0.3]) if AMP == 'photow'
 # amendment 5: fpm rode the 1.8 grid edge in raw-mode PROF rows — the
 # correction-#4 standard (grid-edge = artifact until the grid extends)
 # applies; photo mode carries the extended grid
-FPM_EXT = np.array([1.2, 1.5, 1.8, 2.1, 2.4])
+# E-ARM (7J-z5 pre-reg f6916e0): FPME=1 extends the grid to 3.0 (the
+# D3 BE edge at 2.4, P = 0.95-0.98) and RETAGS the outputs '_photow3'
+# so the operative decider cubes are never overwritten; the <=2.4
+# slice must reproduce the operative photow cube <= 1e-3 (GB0e).
+FPME = os.environ.get('FPME', '0') == '1'
+FPM_EXT = np.array([1.2, 1.5, 1.8, 2.1, 2.4] + ([3.0] if FPME else []))
+if FPME:
+    assert AMP == 'photow', 'FPME is a photow-mode extension'
+    TAG = '_photow3'
+    OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -673,10 +682,13 @@ def run_seed(seed):
         cb = cube + pe
         if PHW:
             # GB0w: the sq=0 slice must reproduce the cached photo cube
+            # (fpm axis sliced to the photo grid length under FPME)
             php = f'data/stage7j_cube_{SAMPLE}_photo_{seed}_{law}.npy'
             if os.path.exists(php):
                 pc = np.load(php)
-                dmax = float(np.nanmax(np.abs(cube[..., 0] - pc)))
+                nf = pc.shape[6]
+                dmax = float(np.nanmax(np.abs(
+                    cube[:, :, :, :, :, :, :nf, :, 0] - pc)))
                 P(f"GB0w {SAMPLE} seed {seed} {law}: max|photow(sq=0)-"
                   f"photo| = {dmax:.2e} -> "
                   f"{'PASS' if dmax <= 1e-3 else 'FAIL'}")
@@ -686,6 +698,24 @@ def run_seed(seed):
             else:
                 P(f"GB0w {SAMPLE} seed {seed} {law}: photo cube absent - "
                   f"SKIPPED (disclosed)")
+            if FPME:
+                # GB0e (E-arm identity, pre-reg f6916e0): the <=2.4
+                # slice must reproduce the OPERATIVE photow cube
+                pwp = f'data/stage7j_cube_{SAMPLE}_photow_{seed}_{law}.npy'
+                if os.path.exists(pwp):
+                    pw = np.load(pwp)
+                    nf = pw.shape[6]
+                    dmax = float(np.nanmax(np.abs(
+                        cube[:, :, :, :, :, :, :nf] - pw)))
+                    P(f"GB0e {SAMPLE} seed {seed} {law}: max|photow3"
+                      f"(fpm<=2.4)-photow| = {dmax:.2e} -> "
+                      f"{'PASS' if dmax <= 1e-3 else 'FAIL'}")
+                    if dmax > 1e-3:
+                        P(f"ABORT {SAMPLE} seed {seed} {law}: GB0e failed")
+                        continue
+                else:
+                    P(f"GB0e {SAMPLE} seed {seed} {law}: operative photow "
+                      f"cube absent - SKIPPED (disclosed)")
         if AMP == 'photo':
             # GB0p: cross-mode regression at fcomp = 0 (companions off
             # => the two amplitude laws are the same model)
