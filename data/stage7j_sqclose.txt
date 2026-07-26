@@ -1,0 +1,17 @@
+[simple 31] G0 D2 regression: photo 109.1 (shipped 109.1) photow 153.3 (shipped 153.3) PASS | G1 a_marg 0.74 (shipped 0.74) PASS
+[simple 31] S1 anchor strain = 0.0 | S2 free cell: a=1.0 wr=0.20 fcomp=0.10 fpm=2.1 sq=0.2 | free a_hat=0.75 dN=+24.0
+[simple 31] S3 FORCED fcomp>=0.35: a_hat=0.00 (interior=False) dN=+0.0
+[simple 101] G0 D2 regression: photo 95.4 (shipped 95.4) photow 135.2 (shipped 135.2) PASS | G1 a_marg 0.74 (shipped 0.74) PASS
+[simple 101] S1 anchor strain = 0.0 | S2 free cell: a=0.5 wr=0.20 fcomp=0.10 fpm=2.1 sq=0.2 | free a_hat=0.75 dN=+22.9
+[simple 101] S3 FORCED fcomp>=0.35: a_hat=0.00 (interior=False) dN=+0.0
+[BE 31] G0 D2 regression: photo 111.6 (shipped 111.6) photow 153.4 (shipped 153.4) PASS | G1 a_marg 0.75 (shipped 0.75) PASS
+[BE 31] S1 anchor strain = 0.0 | S2 free cell: a=0.5 wr=0.20 fcomp=0.10 fpm=2.4 sq=0.2 | free a_hat=0.75 dN=+24.2
+[BE 31] S3 FORCED fcomp>=0.35: a_hat=0.00 (interior=False) dN=+0.0
+[BE 101] G0 D2 regression: photo 95.4 (shipped 95.4) photow 134.8 (shipped 134.8) PASS | G1 a_marg 0.65 (shipped 0.65) PASS
+[BE 101] S1 anchor strain = 0.0 | S2 free cell: a=0.5 wr=0.20 fcomp=0.10 fpm=2.4 sq=0.2 | free a_hat=0.65 dN=+22.5
+[BE 101] S3 FORCED fcomp>=0.35: a_hat=0.00 (interior=False) dN=+0.0
+
+GATES: ALL PASS
+S1 mean anchor strain = 0.0 (near 0 -> the quoted alpha is the width-complete model's own optimum)
+S3 seed-means: simple a_hat(forced)=0.00 dN=+0.0; BE a_hat(forced)=0.00 dN=+0.0
+==> READING (pre-stated bands): FIFTH-MOVE-LIVE

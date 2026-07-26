@@ -5246,6 +5246,128 @@ acquittal (v1's rate), one unshipped first-of-kind measurement
 (subsystem rate at 0.2–50 kAU ≈ 3× field), five corrections of our
 own instruments logged pre-results, zero bars moved.
 
+## Round 9 (2026-07-26): the adequacy decomposition — the reviewer's completeness question lands (7J-z3)
+
+Opus round 9, same day as the deciders' close. Adjudication point by
+point, then the executed item.
+
+**Adopted-and-executed: the absorber-set completeness question.** His
+premise was wrong in the letter — the statistic he asked for ("does the
+−60…−116 close?") was pre-registered and shipped as D2 (bars ratio ≤0.5
+CLOSED / ≥0.8 NOT-CLOSED; fired NOT-CLOSED at 1.37–1.42, printed in the
+verdict line) — but the question behind it had not been decomposed, and
+the decomposition is the decision-relevant object. Stage 7J-z3
+([calcs/stage7j_sqclose.py](calcs/stage7j_sqclose.py), read-only cube
+arithmetic, frame + reading bands committed 5024ecb BEFORE execution;
+G0/G1 regressions vs the shipped read exact, 4/4 PASS):
+
+- S1 anchor strain = 0.0 in all four seed-law reads — α_marg = 0.74/0.70
+  IS the width-complete model's own unconstrained optimum; the LIT16
+  anchor does no work at all. The kinematic face of adequacy is CLOSED.
+- S2 free-optimum cell: α interior (refined 0.65–0.75), wr = 0.20,
+  fcomp = 0.10, sq = 0.2, fpm 2.1 (simple) / 2.4-edge (BE — extension
+  to 3.0 stays queued).
+- S3 THE FIFTH-MOVE EXPOSURE: forcing fcomp ≥ 0.35 (the measured-host
+  grid cell) collapses α̂ to 0.00 at dN = +0.0 in ALL FOUR reads —
+  **FIFTH-MOVE-LIVE by the pre-stated band.** α is fully exposed to the
+  multiplicity tension. If the ~0.3 host rate certificates AND the
+  per-companion kinematic signature is as modeled, α goes to zero — at
+  a cell that still misfits the kinematics by 135–153, so nothing fits
+  there and the model-light channels remain. Three resolutions, two
+  already first in the queue: (a) the rate fails its v2c certificate;
+  (b) rate + signature both right → α → 0 (the fifth move, openly
+  priced now); (c) rate right but the per-companion ṽ signature
+  over-predicted — the kernel discovery's own direction (common-mode
+  vector displacement masquerading as companion light inflates the
+  modeled wobble/ℓ per companion) — decided by the arm suite with
+  kernel-degraded injections. Queue order unchanged (v2c → anchored
+  re-read → arm suite), now carrying the exposure explicitly. NO
+  credence move (cadence rule: v2c + the arm suite are the deciders;
+  AMBIGUOUS-CARRIED already withheld detection status with D2 open).
+
+**Adopted: sq's identity is open, and that is a real gap vs our own
+§5.3 standard.** Concessions made explicit in PAPER §6.3: (i) his
+arithmetic is right — sq = 0.2 (20% per-system velocity scale) exceeds
+the α = 0.74 signal (~12% in ṽ at wide separations); (ii) identity
+candidates with current bounds: photometric-mass channel measured 12×
+too small (3J: 0.024), the v2b coherent common mode ≲3% in ṽ by the
+same MS translation even taken fully coherent, distance errors 1–2%,
+companion-shaped broadening rejected on shape (3K: −420), measurement-
+error inflation separately carried (fpm) and STILL edge-riding — no
+named channel produces 20%; identity = open item. What keeps it from
+being "a free parameter that resurrected the boost": the channel's
+EXISTENCE was measured four independent ways BEFORE it was
+parameterized (3E σ_m ≈ 0.2–0.25; 6P s-flat +37; the −60…−116 misfit;
+the fpm edge), the parameterization was queued by the reviewer himself
+in round 3, pre-registered, and the data then demanded it interior with
+zero edge mass. And the median boost 1.078/1.086 is sq-IMMUNE (a
+symmetric per-system smear moves widths, not medians) — the same
+immunity he grants Cookson's flatness null protects our model-light
+anchor.
+
+**Adopted-and-made-explicit: the structural-robustness argument.** With
+a γ-invisible width absorber free, further γ-invisible systematics load
+onto sq, not α — α is identified by direction-resolved shape. This does
+make w_rad load-bearing, and w_rad has an EXTERNAL anchor: freezing it
+to Hwang's 0.21 moved α̂ by ≤0.01 (7I ablation W, v7 pipeline; stated
+with that provenance). Booked in §6.3.
+
+**Adopted: grid-quantization phrasing.** "SD(w_rad) → 0.000 exactly" is
+wrong — WR_GRID step is 0.10, SQ step 0.1; correct statement: ALL
+POSTERIOR MASS ON ONE GRID NODE (SD below one step). Fixed in PAPER
+§6.3, the worldtable banner, and the bin-7jg-gamma ledger note. Same
+round: the constant SD(sq) = 0.927 in the sq0 rows of
+stage7jg_read.txt explained = sqrt(0.86), a broadcasting artifact of
+the pinned length-1 sq axis against the full length-4 grid (μ
+spuriously 0.6) — cosmetic; no verdict metric (M1–M4) reads it; the
+sqfree SDs are length-matched and sound.
+
+**Adopted (framing): Paper 1 leads with the instrument, α as a
+conditional result.** His reframe = our 7I SPLIT plan sharpened: spine
+= the width channel + the phantom-veto + the absorber accounting (the
+mechanistic reading of the field's decade of disagreement: one
+unmodeled width budget of order the signal, and what each group
+concludes depends on which absorber they let eat it — Banik's 69%
+companions, the fenced detections, Chae — stated as a READING);
+deliverables = completeness, the kernel discovery, the subsystem rate
+(post-certificate), the wobble-law inconsistency, the census; α quoted
+on its flat curve with the sq-identity flag and the S3 exposure. His
+Cookson caveat adopted verbatim (a symmetric smear inflates width
+without moving a median → their flatness null is NOT explained by the
+width channel; stays the sharpest external tension; 7L unchanged in
+queue). His "3× field is expected from triple-dynamics formation" =
+plausible, NOT printed pending a scout (queued with v2c).
+
+**Refuted/refined:** (1) "you have a direct test and you haven't
+reported it" — D2 was pre-registered, computed, and printed with its
+NOT-CLOSED token in the shipped read; what was missing was the
+decomposition, now done. (2) "each move was caused by changing the
+absorber set rather than by new data" — the 0.00 → 0.13–0.30 move was
+caused by DATA (7J-y's ρ = +0.47 paircorr measurement → correction #18
+→ literature anchoring); the trajectory is absorber accounting
+converging under measurement pressure, every move logged. (3)
+"everything rides on w_rad" — softened by the external anchor
+(Δα̂ ≤ 0.01 frozen at Hwang's value).
+
+PLAIN VERDICT: round 9 = SUCCESS as a review round (one new read
+executed against pre-stated bands, gates 4/4, three phrasing/identity
+gaps closed, zero bars moved) — and the read itself went AGAINST us in
+the sharpest honest way: FIFTH-MOVE-LIVE. The α result is now
+explicitly conditional on the multiplicity tension resolving toward
+the kinematic preference, and the two instruments that decide it are
+already first in the queue.
+
+ELI12: The referee asked: "your new answer of 0.74 — is it just what
+the model wants, or did your assumptions push it there?" We checked:
+zero push — the model picks 0.74 entirely on its own. But his second
+worry landed hard: if our own (not-yet-stamped) count of hidden
+companion stars is right, and we force the model to use it, the gravity
+boost drops to zero. So everything hangs on one question — is that
+companion count right, and does each companion really shake the
+velocities as hard as our model assumes? The next two instruments in
+the queue answer exactly that. Our confidence number stays at 45%
+because the rule says only those instruments get to change it.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

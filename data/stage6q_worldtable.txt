@@ -1,10 +1,10 @@
-STAGE 6Q: ledger audit + world table  (109 ledger rows)
+STAGE 6Q: ledger audit + world table  (114 ledger rows)
 ==============================================================================
 G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
 G3 (supersession resolves): PASS
 G4 (current-quantity collisions): PASS
-G5 (value spot-checks, 56 tokens): PASS
+G5 (value spot-checks, 66 tokens): PASS
 
 G6 (world-table provenance): PASS
 
@@ -144,22 +144,29 @@ is independent and 4.0-5.8x AGAINST every MG member (escape: EFE-respecting
 MI, which ties the binary contest). "Passes both systems" therefore means
 exactly two independent data votes, plus one shared solar tension.
 
-7J CONDITIONALITY BANNER (as re-graded by corrections #17/#18): every
-BIN/A0 row above was measured inside the multiplicity fence (f_comp <=
-0.1).  Stage 7J ran the companion marginalization; its completeness
-measurement was then retracted by the within-pair correlation test
-(bin-7j-paircorr, rho = +0.47 common-mode), leaving literature
-subsystem rates primary.  The measured curve (7J-e3): the fenced
-+99-110 Newton rejection is DEAD under ANY smooth companion prior
-(alpha_marg ~ 0.2-0.3, Newton within +2..+4, anchors 0.06-0.30);
-it returns only behind a hard exclusion of f >= 0.2; the revival
-mechanism is the model-side missing width channel, not the rate.
-Verdict
-label: COMPANION-WIN at the retracted measured prior, AMBIGUOUS at the
-primary literature anchoring (six-seed budget = the decider).  The
-binary DATA VOTE stays suspended pending 7J-z (repaired completeness),
-7K (model-light attribution), and 7J-d (contest re-run).  Galaxy rows
-are untouched.
+7J CONDITIONALITY BANNER (through the 7J-z/7J-g deciders, 2026-07-26):
+every BIN/A0 row above was measured inside the multiplicity fence
+(f_comp <= 0.1) and WITHOUT the per-system width channel.  The fenced
++99-110 Newton rejection stays DEAD.  The width-channel round
+(bin-7jz-width): once sq is a parameter (sq = 0.2 interior, demanded
+at P = 1.00 - the 3E/6P object), alpha_marg = 0.70-0.74 at
+dN = +23.2-23.8 with the anchor curve FLAT to 0.01-0.03 across every
+companion anchor 0.06-0.34 - the alpha answer is companion-prior-
+INDEPENDENT and the old COMPANION-WIN lives in the sq = 0 slice.
+Verdict label AMBIGUOUS-CARRIED (missed the pre-registered detection
+bar by 1.2-1.8 lnL; LIT-CONDITIONAL - the measured subsystem rate
+[0.29, 0.32] host/component is UNSHIPPED pending the v2c certificate).
+7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid
+step, all mass on the 0.20 node); in the four-absorber configuration
+vt-only fitting reports a PHANTOM alpha = 0.5 that the direction
+data veto (SEPARATION-CONFIRMED, M3).  Round-9 decomposition
+(bin-7j-sqclose): anchor strain 0.0 - the quoted alpha is the
+width-complete model's own optimum - but forcing the measured ~0.3
+host rate collapses alpha to 0.00 in 4/4 reads: FIFTH-MOVE-LIVE,
+alpha fully exposed to the multiplicity tension.  The binary DATA
+VOTE stays suspended pending v2c + the anchored re-read + the arm
+suite (degraded injections, fpm -> 3.0), which now also adjudicate
+the exposure; 7K and 7J-d queue behind.  Galaxy rows are untouched.
 
 The mechanical sentence the table proves: AMB is the only candidate that is
 (a) un-vetoed on the binaries (tie with BE), (b) at the top galaxy bootstrap

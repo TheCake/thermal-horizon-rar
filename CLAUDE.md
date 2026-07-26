@@ -1026,7 +1026,36 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   phantom-veto+census). Review rounds 7-8 (Opus): axis chain written
   (P/H/PAIR; the 1−(1−0.24)²=0.42 trap named), his pair-map +
   fence/anchor claims withdrawn by him, dual-config + anchor-curve
-  re-read adopted from him.** Then the DM
+  re-read adopted from him.**
+  **ROUND 9 (2026-07-26, same day, PAPER → v3.1): the adequacy
+  decomposition (7J-z3, [calcs/stage7j_sqclose.py](calcs/stage7j_sqclose.py),
+  read-only, frame+bands pre-committed 5024ecb, G0/G1 regressions vs
+  the shipped read exact 4/4): **S1 anchor strain = 0.0 in 4/4 —
+  α_marg 0.74/0.70 IS the width-complete model's own free optimum
+  (the LIT16 anchor does no work); S3 FORCED fcomp≥0.35 → α̂ = 0.00,
+  dN +0.0 in 4/4 = FIFTH-MOVE-LIVE — α is FULLY exposed to the
+  multiplicity tension** (if the ~0.3 host rate certificates AND the
+  per-companion signature is as modeled, α collapses — at a cell that
+  still misfits by 135–153; escapes: v2c certificate fails, or the
+  kernel direction — common-mode masquerading as companion light —
+  which the DEGRADED-injection arm suite decides; the D2 NOT-CLOSED
+  token had already shipped — Opus's "unreported" premise wrong, his
+  question right). Also booked: sq IDENTITY = open flag in §6.3
+  (existence measured 4× — 3E/6P/misfit/fpm-edge — but no traced
+  channel makes 20%; size concession: sq=0.2 > the ~12% signal;
+  median 1.078 sq-IMMUNE); structural argument made explicit
+  (γ-invisible absorber soaks γ-invisible systematics, α identified
+  by direction shape; w_rad externally anchored, 7I-W Δα̂≤0.01);
+  grid-step phrasing corrections (WR/SQ SD "0.000" → single-node,
+  steps 0.10/0.1; cosmetic SD(sq)=0.927 = sqrt(0.86) pinned-axis
+  broadcasting artifact, explained); Paper-1 reframe ADOPTED (spine =
+  width channel + phantom-veto + absorber accounting as the field's
+  mechanistic reconciliation, stated as READING; α conditional on its
+  flat curve; Cookson median-flatness NOT explained by symmetric
+  width — stays independent, 7L unchanged); "3× field from triple
+  dynamics" NOT printed pending scout. No bar moved, credence HELD
+  ~45% (cadence: v2c + arm suite are the deciders). Ledger
+  +bin-7j-sqclose (114 rows/66 tokens green).** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

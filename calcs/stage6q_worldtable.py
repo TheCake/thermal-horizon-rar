@@ -130,6 +130,9 @@ CHECKS = [
     ('bin-7jg-gamma', 'ABSORBER-LEVEL SEPARATION', 'data/stage7jg_read.txt'),
     ('bin-7jg-gamma', 'SEPARATION-CONFIRMED (alpha grade; M3(simple))',
      'data/stage7jg_read.txt'),
+    ('bin-7j-sqclose', 'S1 mean anchor strain = 0.0',
+     'data/stage7j_sqclose.txt'),
+    ('bin-7j-sqclose', 'FIFTH-MOVE-LIVE', 'data/stage7j_sqclose.txt'),
     ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
      'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
     ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',
@@ -334,12 +337,17 @@ say('INDEPENDENT and the old COMPANION-WIN lives in the sq = 0 slice.')
 say('Verdict label AMBIGUOUS-CARRIED (missed the pre-registered detection')
 say('bar by 1.2-1.8 lnL; LIT-CONDITIONAL - the measured subsystem rate')
 say('[0.29, 0.32] host/component is UNSHIPPED pending the v2c certificate).')
-say('7J-g: gamma pins the absorbers (SD(w_rad) -> 0.000); in the')
-say('four-absorber configuration vt-only fitting reports a PHANTOM')
-say('alpha = 0.5 that the direction data veto (SEPARATION-CONFIRMED, M3).')
-say('The binary DATA VOTE stays suspended pending v2c + the anchored')
-say('re-read + the arm suite (degraded injections, fpm -> 3.0); 7K and')
-say('7J-d queue behind.  Galaxy rows are untouched.')
+say('7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid')
+say('step, all mass on the 0.20 node); in the four-absorber configuration')
+say('vt-only fitting reports a PHANTOM alpha = 0.5 that the direction')
+say('data veto (SEPARATION-CONFIRMED, M3).  Round-9 decomposition')
+say('(bin-7j-sqclose): anchor strain 0.0 - the quoted alpha is the')
+say('width-complete model\'s own optimum - but forcing the measured ~0.3')
+say('host rate collapses alpha to 0.00 in 4/4 reads: FIFTH-MOVE-LIVE,')
+say('alpha fully exposed to the multiplicity tension.  The binary DATA')
+say('VOTE stays suspended pending v2c + the anchored re-read + the arm')
+say('suite (degraded injections, fpm -> 3.0), which now also adjudicate')
+say('the exposure; 7K and 7J-d queue behind.  Galaxy rows are untouched.')
 say('')
 say('The mechanical sentence the table proves: AMB is the only candidate that is')
 say('(a) un-vetoed on the binaries (tie with BE), (b) at the top galaxy bootstrap')
