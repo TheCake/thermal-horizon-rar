@@ -1,0 +1,29 @@
+GZ0 regression: N=13784 (ref 13784), rho_core_att=+0.465 (ref +0.465) -> PASS
+fit window [-1.2, +0.6] both: 12084 pairs (1700 dropped)
+ALS prefit r(c) at knots [0.68, 1.21, 2.03, 2.87]: [0.16, 0.147, 0.205, 0.218]; rank-1 residual/scale = 0.0136/0.0375 = 0.36
+  start f0=0.05: lnL=2163.4, f_hat=0.166 (2.2 min)
+  start f0=0.2: lnL=2163.4, f_hat=0.166 (4.8 min)
+rank-1 MAP (flat-q): lnL=2163.4, f=0.1657, mu=(+0.014,+0.038), r=[0.165, 0.11, 0.188, 0.289], sn=[0.17, 0.037, 0.059, 0.233]; start agreement 0.0 lnL
+nested: lnL(f=0)=-2198.0 (dL vs rank-1 = +4361.4); rank-2 lnL=2497.9 (dL = +334.5), sigma_g=0.058, f_rank2=0.1684
+GZ3 nesting/convergence -> PASS
+GZ1a f=0 rank1-truth: recovered f_hat=0.000 (truth 0.0) -> PASS  (27.6 min)
+GZ1b f=0 rank2-truth: recovered f_hat=0.000 (truth 0.0) -> PASS  (30.5 min)
+GZ2a f=0.10: recovered f_hat=0.103 (truth 0.1) -> PASS  (31.6 min)
+GZ2b f=0.25: recovered f_hat=0.251 (truth 0.25) -> PASS  (32.7 min)
+GZ6 postdiction: rho_bar model +0.453 vs data +0.465 -> PASS; slices (+0.474,+0.436) vs (+0.796,+0.394) -> FAIL; P(flag) 0.096 vs 0.121 -> FAIL; incidence ratio model 2.12 vs data 2.74 (reported, no bar)
+profile (flat-q): [-4353.0, -1233.8, -572.5, -171.0, 0.0, -73.8, -414.4] on f = [0.0, 0.03, 0.06, 0.1, 0.15, 0.22, 0.3]  (42.7 min)
+q^-0.5 MAP: f=0.2133; profile: [-4277.8, -1456.6, -809.1, -359.0, -92.3, 0.0, -121.2]
+BLENDED-axis envelope: f_photo(per component) in [0.15, 0.22] 1-sigma; MAPs 0.166/0.213
+P_blend(flat, 0.6") = 0.530
+P_blend(flat, 1.0") = 0.587
+P_blend(qalt, 0.6") = 0.532
+P_blend(qalt, 1.0") = 0.589
+HOST-axis prior (LANDED ANCHOR): f_host(per component) in [0.26, 0.41] (peak 0.41) at 1-sigma
+  ln pi_host(0.10 = old fence) = -598.8
+  ln pi_host(0.16 = lit-16 anchor) = -229.7
+  ln pi_host(0.35 = posterior cell) = -15.9
+  ln pi_host(0.51 = retracted part-A peak) = -75.5
+  ln pi_host(0.69 = Banik free fit) = -999999997.6
+
+COMPARATORS: retracted part-A f_photo 0.22-0.30 / f_host peak 0.51; literature per-component ~0.10 (per-pair 0.166); measured here: blended [0.15, 0.22], host peak 0.41
+GATES FAIL branch -> NEEDS REFINEMENT: anchor NOT shipped (part 2 reads lit only)  [total 54.8 min]
