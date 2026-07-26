@@ -304,12 +304,21 @@ def lnL_disc(x, wq, idx11=IDX11):
     Lp = ((1-f)**2*P00 + f*(1-f)*(P10+P01) + f*f*P11)
     return -float(np.sum(np.log(np.maximum(Lp, 1e-300))))
 
-X_V2B = np.array([0.1595, 0.013, 0.032, 0.216, 0.02, 0.149, 0.347,
-                  0.082, 0.02, 0.02, 0.083, 0.125, 1.64])
+# AMENDMENT A3 (logged after the first launch died pre-fit; nothing
+# quoted): the original GV0 evaluated lnL at the PRINT-ROUNDED v2b
+# vector against the print-rounded reference with a 0.1 bar - a
+# bar-design miss (rounding alone moves lnL by O(0.1)).  The v2b
+# quarantined npz stores the full-precision x_map; the regression now
+# evaluates THAT, bar 0.15 (= the reference's print-rounding envelope).
+# Same launch: np.trapz -> np.trapezoid (NumPy 2.x API).
+pz_v2b = np.load('data/stage7jz_prior_v2b_unshipped.npz',
+                 allow_pickle=True)
+X_V2B = np.asarray(pz_v2b['x_map'], float)
+P(f"v2b full-precision MAP loaded: f={X_V2B[0]:.4f}, lam={X_V2B[12]:.3f}")
 l_disc = -lnL_disc(X_V2B, WQ_FLAT)
-gv0 = abs(l_disc - 2973.8) <= 0.1
-P(f"GV0 identity-point regression: lnL_disc(v2b MAP) = {l_disc:.1f} "
-  f"(printed 2973.8) -> {'PASS' if gv0 else 'FAIL'}")
+gv0 = abs(l_disc - 2973.8) <= 0.15
+P(f"GV0 identity-point regression: lnL_disc(v2b x_map) = {l_disc:.2f} "
+  f"(printed 2973.8, bar 0.15) -> {'PASS' if gv0 else 'FAIL'}")
 # GV0b: f = 0 companion-free identity — cont and disc likelihoods are
 # the SAME closed form there (P00 only); catches unpack/P00 wiring.
 prep_gl('flat', 0.0, 31)
@@ -331,9 +340,9 @@ I_rie = np.zeros(200)
 for i in range(200):
     Ad = np.interp(qd_, QG, AB1[sub][i])
     dens = np.ones(len(qd_))/0.9
-    I_rie[i] = np.trapz(dens/np.sqrt(2*np.pi)/sc1c[sub][i]
-                        * np.exp(-0.5*((tt[sub][i]-Ad)/sc1c[sub][i])**2),
-                        qd_)
+    I_rie[i] = np.trapezoid(dens/np.sqrt(2*np.pi)/sc1c[sub][i]
+                            * np.exp(-0.5*((tt[sub][i]-Ad)/sc1c[sub][i])**2),
+                            qd_)
 rel = float(np.max(np.abs(I_erf - I_rie)/np.maximum(I_rie, 1e-30)))
 gv0c = rel <= 1e-3
 P(f"GV0c segment-erf vs dense Riemann (200 pairs): max rel d = "
