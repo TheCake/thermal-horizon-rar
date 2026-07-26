@@ -121,7 +121,12 @@ lnm = np.full(len(FCOMP), -1e9)
 inr = (FCOMP >= pa['f_grid'].min()) & (FCOMP <= pa['f_grid'].max())
 lnm[inr] = np.interp(FCOMP[inr], pa['f_grid'], pa['lnpi_full'])
 anchors['MEAS(retracted)'] = lnm
-OPER = 'LANDED' if LANDED_OK else 'LIT16'
+# amendment 11b: the original amendment-11 edit added the LANDED-CONV
+# anchor but omitted this line's flip - the verdict block therefore
+# read the face anchor on the first anchored run (caught in the
+# output; the operative choice was pre-committed at d437921 before
+# any number was seen, so this is a wiring fix to spec, not a choice).
+OPER = ('LANDED-CONV' if V2C else 'LANDED') if LANDED_OK else 'LIT16'
 
 def read(cb9, lnpi):
     cbp = cb9 + lnpi.reshape((1, 1, 1, -1, 1, 1, 1, 1, 1))
