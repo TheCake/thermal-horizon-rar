@@ -5065,6 +5065,56 @@ every companion number now carries its axis):
       the shipped envelope's WIDTH is quoted next to its position and
       the readers interpolate the actual envelope, never a label.
 
+## Stage 7J-z part 1, v1 VERDICT (2026-07-26): honest GZ6 fail — the
+## branch fires, and the failure is the discovery
+
+v1 ([calcs/stage7jz_mixture.py](calcs/stage7jz_mixture.py)) ran to its
+gates: GZ0 exact PASS; convergence perfect (two starts Δ0.0);
+**rank-1 MAP f̂ = 0.1657 (blended, per component)**, r(c) 0.11-0.29
+rising redward, σ_n collapses to 0.04-0.06 mid-MS (the pair
+correlation carries the width); companions demanded at +4361 over
+f=0; gray rank-2 preferred +334.5 (σ_g=0.058) with **f̂ STABLE at
+0.168**; GZ3 PASS. ALL FOUR INJECTION GATES PASS AT ~EXACT (GZ1a
+0.000, GZ1b 0.000 — the #18 over-attribution mechanism is dead in
+this estimator even under rank-2 mis-specification; GZ2 0.103/0.251).
+**GZ6 postdiction FAILED (ii)+(iii)** → per the pre-registered
+branch: NO PRIOR SHIPS from v1; deciders read LIT16 unless a repaired
+instrument passes its own gates.
+
+The diagnosis (read-only, logged): (iii) was OUR BAR'S construction
+mismatch — model simulates on the 12,084 windowed pairs, bar compared
+to the full-sample 0.121; like-for-like the windowed data give 0.107
+vs model 0.096 = INSIDE ±0.02. (ii) is REAL: the measured ρ(dcol)
+profile decays smoothly +0.86/+0.77/+0.71/+0.71/+0.60/+0.48/+0.36
+across the full range (ridge-error confound 80× too small to matter)
+— **the pair-common displacement is a VECTOR (abundance pattern +
+age) whose projections decorrelate as the component masses separate;
+twins project identically.** A scalar-z model structurally cannot
+make ρ(dcol→0) ≈ 0.86 (v1 postdicts 0.47). Unmodeled twin-end
+correlation is an over-attribution channel the GZ1 injections could
+not see (their truths lacked the structure) — the exact #18
+direction, at the q≈1 corner. Excess correlated variance at
+dcol<0.1: ~0.084 mag (20.7% of core pairs).
+
+## Stage 7J-z2 PRE-REGISTRATION (v2, the coherence-kernel instrument;
+## committed before execution)
+
+[calcs/stage7jz2_twin.py](calcs/stage7jz2_twin.py): v1 + k(dcol) =
+exp(−dcol/λ) coherence kernel — common displacement split into
+pair-shared (√k·z) and component-private (√(1−k), merges EXACTLY into
+per-star variance; quadrature stays 2D; 13 params). Gates: GZ0; GZQ
+quadrature (13×5 vs 15×7 ≤ 1.0); GZ1c-a over-attribution on
+kernel-truth (≤0.03); GZ1c-b DIAGNOSTIC = v1-style (λ pinned) fit on
+kernel-truth → measures v1's kernel-blind over-attribution; GZ2
+0.10/0.25; GZ3 nesting incl. L(v2) ≥ L(v1)=2497.9 and λ interior;
+GZ6′ like-for-like (windowed flag 0.107 ±0.02; both ρ slices ±0.07 —
+the failed one now reachable). DECISION RULE: all pass → v2 envelope
+= THE LANDED ANCHOR; any fail → LIT16 stands, no third instrument
+today. THE NUMBER: f̂(v2) vs v1's 0.166 = the data-level
+over-attribution measurement either way. v1's npz quarantined as
+_v1_unshipped on its completion (existence ≠ shipped — reader treats
+existence as landed, so the quarantine is load-bearing).
+
 9 — THE ANCHOR CURVE RE-READ (review round 8, adopted pre-results):
 the 7J-e3 flatness was measured under the OLD absorber configuration;
 the width channel competes for the same budget, so stage7jz_read now
