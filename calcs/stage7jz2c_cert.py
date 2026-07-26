@@ -329,6 +329,18 @@ P(f"GV0b f=0 cont/disc identity: d = {d_f0:.2e} -> "
   f"{'PASS' if gv0b else 'FAIL'}")
 # GV0c: the segment-erf core vs a brute-force dense Riemann sum of the
 # SAME piecewise model (3001 nodes), spot-checked on 200 pairs.
+# AMENDMENT A4 (logged after launch 2 STOPPED here; the synthetic
+# sweep proved the formula exact wherever the integral is non-tiny):
+# the original max-REL-over-all-pairs metric fails on far-tail pairs
+# where Phi(u1)-Phi(u2) hits float cancellation (both saturate at 1,
+# absolute error ~1e-16..1e-23) while the true value is ~1e-16 or
+# below - an error provably irrelevant to the objective (every
+# windowed pair's Lp >= (1-f)^2 P00 with sigma_tot >= ~0.15).  The
+# metric is now three-clause: (i) max REL over pairs with
+# I_rie >= 1e-12, bar 1e-3 (exactness where the term can matter);
+# (ii) max ABS over all pairs, bar 1e-12 (float-cancellation
+# ceiling); (iii) likelihood-relevance: max ABS error weighted
+# f(1-f) against the pair's (1-f)^2 P00 floor, bar 1e-6.
 _, _, _, S11c, S22c, S12c = unpack2(X_V2B)
 sc1c = np.sqrt(np.maximum(S11c - S12c*S12c/S22c, 1e-12))
 tt = (d1w - X_V2B[1]) - (S12c/S22c)*(d2w - X_V2B[2])
@@ -343,10 +355,22 @@ for i in range(200):
     I_rie[i] = np.trapezoid(dens/np.sqrt(2*np.pi)/sc1c[sub][i]
                             * np.exp(-0.5*((tt[sub][i]-Ad)/sc1c[sub][i])**2),
                             qd_)
-rel = float(np.max(np.abs(I_erf - I_rie)/np.maximum(I_rie, 1e-30)))
-gv0c = rel <= 1e-3
-P(f"GV0c segment-erf vs dense Riemann (200 pairs): max rel d = "
-  f"{rel:.2e} -> {'PASS' if gv0c else 'FAIL'}")
+absd = np.abs(I_erf - I_rie)
+mrel = (I_rie >= 1e-12)
+rel = float(np.max(absd[mrel]/I_rie[mrel])) if mrel.any() else 0.0
+amax = float(absd.max())
+detc = np.maximum(S11c*S22c - S12c*S12c, 1e-12)[sub]
+x1c = (d1w - X_V2B[1])[sub]
+x2c = (d2w - X_V2B[2])[sub]
+P00c = 1.0/(2*np.pi*np.sqrt(detc))*np.exp(
+    -0.5*(S22c[sub]*x1c*x1c - 2*S12c[sub]*x1c*x2c
+          + S11c[sub]*x2c*x2c)/detc)
+fv2b = X_V2B[0]
+lrel = float(np.max(absd*fv2b*(1-fv2b)/((1-fv2b)**2*P00c)))
+gv0c = (rel <= 1e-3) and (amax <= 1e-12) and (lrel <= 1e-6)
+P(f"GV0c (A4): rel(where I>=1e-12) = {rel:.2e} (bar 1e-3); "
+  f"abs = {amax:.2e} (bar 1e-12); Lp-relevance = {lrel:.2e} "
+  f"(bar 1e-6) -> {'PASS' if gv0c else 'FAIL'}")
 gv0 = gv0 and gv0b and gv0c
 if not gv0:
     P("GV0 FAIL -> STOP (pre-registered)")

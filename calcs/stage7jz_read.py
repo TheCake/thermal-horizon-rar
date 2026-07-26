@@ -76,8 +76,10 @@ SEEDS = (31, 101)
 
 anchors = {}
 LANDED_OK = os.path.exists('data/stage7jz_prior.npz')
+V2C = False
 if LANDED_OK:
     pz = np.load('data/stage7jz_prior.npz', allow_pickle=True)
+    V2C = str(pz['version']).startswith('v2c')
     lnp = np.full(len(FCOMP), -1e9)
     fg, lp = pz['fh_grid'], pz['lnpi_host']
     sup = lp > -1e8
@@ -85,6 +87,31 @@ if LANDED_OK:
     lnp[inr] = np.interp(FCOMP[inr], fg, lp)
     anchors['LANDED'] = lnp
     P(f"landed anchor loaded: ln pi(fcomp) = {np.round(lnp, 2).tolist()}")
+    if V2C:
+        # AMENDMENT 11 (round 10; committed BEFORE the anchored run):
+        # the certificate npz itself declares face-precision imposition
+        # on the flat-q fcomp axis INVALID (sigma* = 0.02 measured,
+        # bin-7j-qmoments) - the fcomp axis and the host axis are
+        # differently-q-weighted moments.  OPERATIVE anchor = the
+        # conversion-widened profile over the measured fce band:
+        # lnpi_conv(fc) = max_g lnpi_host(fc/g), g in [0.33, 1.30]
+        # (= [0.10, 0.39]/0.30).  The face 'LANDED' read is kept and
+        # printed as the flat-q CONDITIONAL diagnostic.  Verdict bars
+        # UNCHANGED, evaluated at OPER.
+        gband = (pz['conv_band']/0.30 if 'conv_band' in pz.files
+                 else np.array([0.33, 1.30]))
+        GS = np.linspace(float(gband[0]), float(gband[1]), 25)
+        fhmin, fhmax = fg[sup].min(), fg[sup].max()
+        lnc = np.full(len(FCOMP), -1e9)
+        for gi in GS:
+            fh_eq = FCOMP/gi
+            m = (fh_eq >= fhmin) & (fh_eq <= fhmax)
+            cand = np.full(len(FCOMP), -1e9)
+            cand[m] = np.interp(fh_eq[m], fg, lp)
+            lnc = np.maximum(lnc, cand)
+        anchors['LANDED-CONV'] = lnc
+        P(f"conversion-widened anchor (OPERATIVE, amendment 11): "
+          f"ln pi(fcomp) = {np.round(lnc, 2).tolist()}")
 else:
     P("part-1 prior ABSENT -> LIT-CONDITIONAL mode (pre-registered "
       "fallback)")

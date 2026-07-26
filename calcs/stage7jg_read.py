@@ -101,9 +101,26 @@ lnp = np.full(len(FCOMP), -1e9)
 if LANDED_OK:
     pz = np.load('data/stage7jz_prior.npz', allow_pickle=True)
     fg, lp = pz['fh_grid'], pz['lnpi_host']
-    inr = (FCOMP >= fg.min()) & (FCOMP <= fg.max())
-    lnp[inr] = np.interp(FCOMP[inr], fg, lp)
-    OPER = 'LANDED'
+    sup = lp > -1e8
+    if str(pz['version']).startswith('v2c'):
+        # AMENDMENT 11 (round 10; committed before the anchored run):
+        # operative anchor = conversion-widened profile, factors
+        # g in conv_band/0.30 (see stage7jz_read.py for the full note).
+        gband = (pz['conv_band']/0.30 if 'conv_band' in pz.files
+                 else np.array([0.33, 1.30]))
+        GS = np.linspace(float(gband[0]), float(gband[1]), 25)
+        fhmin, fhmax = fg[sup].min(), fg[sup].max()
+        for gi in GS:
+            fh_eq = FCOMP/gi
+            m = (fh_eq >= fhmin) & (fh_eq <= fhmax)
+            cand = np.full(len(FCOMP), -1e9)
+            cand[m] = np.interp(fh_eq[m], fg, lp)
+            lnp = np.maximum(lnp, cand)
+        OPER = 'LANDED-CONV (amendment 11)'
+    else:
+        inr = (FCOMP >= fg[sup].min()) & (FCOMP <= fg[sup].max())
+        lnp[inr] = np.interp(FCOMP[inr], fg, lp)
+        OPER = 'LANDED'
 else:
     lnp = -0.5*((FCOMP-0.16)/0.08)**2
     OPER = 'LIT16 (fallback)'
