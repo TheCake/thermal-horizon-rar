@@ -5153,6 +5153,99 @@ thought to write" — every new mode gets a regression against the old
 mode at its identity point (goes to CLAUDE.md discipline at
 close-out).
 
+## Stage 7J-z2b + THE TWO DECIDERS (2026-07-26): the day closes
+
+7J-z2b ([calcs/stage7jz2b_exact.py](calcs/stage7jz2b_exact.py), exact
+BVN likelihood): the resolution cascade ended honestly — GZS11 failed
+at d = 2.08 (with twins modeled correctly their kernels are ~0.04 mag
+wide, comparable to the q-grid spacing; every discreteness now shows
+at multi-lnL scale) and GZ3 failed on the pre-polish top-two start
+gap 2.8 vs 2.0 (a λ-ridge multimodality; every OTHER GZ3 condition
+passed: +475.9 over v1, companions +4918, λ interior). Everything
+else PASSED: GZ0; GZ1c-a = 0.000; **GZ1c-b THE ACQUITTAL: a
+kernel-BLIND (v1-style) fit on a full-kernel companion-free sky also
+returns f̂ = 0.000 — the twin-coherence over-attribution channel is
+measured ABSENT; v1's 0.166 was never inflated by it**; GZ2 exact
+(0.099/0.254); **GZ6′ FULL PASS incl. the twin slice (+0.743 vs
++0.796) and like-for-like flag (0.093 vs 0.107) — the kernel model
+postdicts every measured structure that killed v1**. Per the
+pre-committed rule: NOTHING SHIPS today (two numerical-protocol
+bars), no third same-day iteration; **v2c queued** (profiled-λ +
+resolution-gated continuous q-integral — a certificate job: the
+physics is already five-basin, two-integrator, three-model-class
+stable). UNSHIPPED RECORD: **f̂ chain 0.166 → 0.162 → 0.159; blended
+envelope [0.17, 0.17]; host axis [0.29, 0.32] peak 0.32** — pricing
+the literature host center 0.09 at −1634: the wide-binary subsystem
+rate at 0.2–50 kAU is ~3× the field rate (the direction Tokovinin's
+separation trend predicted; a publishable measurement once
+certificated).
+
+DECIDER 1 — 7J-z part 2 ([calcs/stage7jz_read.py](calcs/stage7jz_read.py),
+LIT-CONDITIONAL per the fallback rule): **AMBIGUOUS-CARRIED** — the
+seed-mean missed the pre-registered detection bar by 1.2–1.8 lnL
+(α_marg = 0.74/0.70, dN = +23.8/+23.2 vs the ≥ +25 bar). The
+boundary-free statement (the #17 standard, and the day's headline):
+**given the width channel, α_marg ≈ 0.70–0.74 at ΔlnL ≈ +23 with the
+ANCHOR CURVE FLAT TO 0.01–0.03 ACROSS EVERY ANCHOR 0.06–0.34** —
+the α answer is companion-prior-INDEPENDENT; at v2b's would-be
+measured anchor (0.29–0.32) it reads 0.67–0.74 at +12…+16. The
+width channel is demanded (D1: P(sq>0) = 1.00, sq = 0.2 interior,
+zero edge mass — the 3E/6P object finally has its parameter and its
+value) and it does NOT close the multiplicity cost — it INVERTS it
+(D2 ratio 1.4: with sq available the kinematics want fcomp = 0.1 at
+every anchor; the tension between measured multiplicity ~0.3 and
+kinematic preference 0.1 is now a named object, absorbed as dN
+attrition at high anchors, not α motion). D3: BE still rides
+fpm = 2.4 at the marginal (P = 0.97; simple 0.43) — correction-#4
+flag, FPM extension to 3.0 queued with the arm suite. Continuity:
+the retracted-prior read still gives α = 0 (the old COMPANION-WIN
+lives in the sq = 0 slice); the ledger keeps both. Anchor-curve
+label INTERMEDIATE by the letter of the pre-registered rule — the
+rule conflated "flat" with "null"; the measured shape is FLAT-α at
+NON-null dN, the flattest curve in the program (disclosed as a
+bar-design miss, no renumbering).
+
+DECIDER 2 — 7J-g ([calcs/stage7jg_read.py](calcs/stage7jg_read.py),
+dual-configuration per amendment 8): **PRIMARY (sq free) =
+ABSORBER-LEVEL SEPARATION** (M4: SD(w_rad) 0.015–0.035 → 0.000 both
+laws; α channel-robust: 2D 0.74/0.70 vs vt 0.62/0.66, dN diffs
++3.6/+4.6) — under the width model the boost is in the SPEEDS and
+the direction channel's job is pinning the absorbers. **CO-READ
+(sq = 0, the four-absorber configuration) = SEPARATION-CONFIRMED at
+α grade (M3)**: ṽ-only fitting reports a PHANTOM α ≈ 0.50/0.52 at
++12.8/+12.2 which the direction data veto to 0.20/0.25 at +2.4/+3.7
+— **in the width-less configuration every published ṽ-only pipeline
+occupies, the γ channel is the difference between a fake detection
+and honesty** (stated as a reading; published models differ in their
+error sectors). THE TIER DIFFERENCE IS THE FINDING: γ and the
+per-system width channel are partially interchangeable
+absorber-police; γ's α-grade power exists exactly when the width
+channel is absent. GVT: α = 0 rows law-blind at 0.00e+00 both
+channels.
+
+PAPER-1 RULE APPLIED (pre-committed): ABSORBER-LEVEL primary + α-grade
+co-read ⇒ **Paper 1 PROCEEDS** — the 2D methodological claim operates:
+at nuisance grade in the five-absorber model (and the α bottom line is
+quoted as channel-independent, a STRONGER reality statement than
+γ-dependence would have been), at α grade in the four-absorber
+configuration (the phantom-veto demonstration = the methods chapter's
+centerpiece). CREDENCE MAP APPLIED (pre-committed): the 7J-z verdict
+is AMBIGUOUS ⇒ **anomaly-real HELD AT ~45% by the map's own rule**
+(the cadence-rule freeze is RELEASED — both deciders reported — and
+the value is re-affirmed, not inherited; the miss against the
+detection bar was 1.2–1.8 lnL, direction noted, no motion booked).
+
+PLAIN VERDICTS: 7J-z part 1 = NEEDS REFINEMENT (v2c certificate
+queued; the measurement itself is stable and the acquittal is in);
+7J-z part 2 = SUCCESS as an instrument (the width channel measured,
+the anchor dependence dissolved), AMBIGUOUS-CARRIED as a verdict;
+7J-g = SUCCESS (both tiers informative; Paper 1 exists). The day's
+scoreboard: two phantom results prevented (the GB0w wobble-law bug;
+the [sq0 vt] phantom boost), one channel measured (sq = 0.2), one
+acquittal (v1's rate), one unshipped first-of-kind measurement
+(subsystem rate at 0.2–50 kAU ≈ 3× field), five corrections of our
+own instruments logged pre-results, zero bars moved.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

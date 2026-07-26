@@ -968,11 +968,65 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   about fcomp than the sky (real: tens across 0.1–0.35; injected:
   cliffs of hundreds) — post-7J-z arm suite must degrade injections
   with the measured common-mode. Ledger +bin-7j-anchorcurve (108
-  rows, 54 tokens green). NEXT CONVERSATION = 7J-z (per-pair-slope
-  2D mixture + width channel) then 7J-g (γ-collapse separability);
-  everything else queues behind. Seeds batch (b9u9qwduz) may still
-  be finishing — commit its outputs + 6-seed both-anchor marginals
-  on arrival (measurements only, cadence rule).** Then the DM
+  rows, 54 tokens green). 7J-s6 closed the batch (c06ecb2): NO seed
+  break 16/16; lit-anchor 0.13±0.07/0.30±0.09, Newton +1/+4.**
+  **THE TWO DECIDERS EXECUTED (2026-07-26, 7J-z/7J-z2/7J-z2b/7J-g,
+  PAPER → v3.0, review rounds 7-8 absorbed in-flight): pre-reg chain
+  f991372→96a72ad→ffc0195→e6bf62e→08d2ec5 (every bar before every
+  run). 7J-z v1 ([calcs/stage7jz_mixture.py](calcs/stage7jz_mixture.py)):
+  estimator gates ALL ~exact (GZ1a/b = 0.000 — the #18 mechanism dead
+  even under mis-spec; GZ2 0.103/0.251), f̂ = 0.166 blended/component
+  — GZ6 postdiction FAILED informatively → THE VECTOR COMMON MODE
+  (ρ(dcol) decays 0.86→0.36 smoothly; twins project identically;
+  0.084 mag excess coherence at dcol<0.1) — no anchor shipped, npz
+  quarantined. v2 (kernel, GH quadrature) KILLED by its own GZQ
+  (d=18.7 — twin-spike integrand; + start-gap 43) mid-run; v2b
+  ([calcs/stage7jz2b_exact.py](calcs/stage7jz2b_exact.py), EXACT BVN
+  likelihood): +476 over v1, GZ6′ FULL PASS incl. twin slice,
+  **GZ1c-b ACQUITTAL (kernel-blind fit on kernel-truth sky = 0.000)**,
+  f̂ chain 0.166→0.162→0.159 (3 model classes, 2 integrators, 5
+  basins), **host 0.29-0.32/component = ~3× field (prices lit 0.09 at
+  −1634; first measurement at 0.2-50 kAU, scout-confirmed unmeasured
+  range)** — UNSHIPPED on two numerical-protocol bars (GZS11 2.08,
+  start-gap 2.8; no-third-iteration rule held) → **v2c queued =
+  certificate job (profiled-λ + resolution-gated continuous
+  q-integral)**. THE WIDTH CHANNEL (amendment 7 photow mode,
+  [calcs/stage7j_marginal.py](calcs/stage7j_marginal.py); GB0w caught
+  a wobble-law wiring bug first firing, fixed, 4/4 retests 0.00e+00;
+  8 cubes + γ-collapsed twins committed): sq = 0.2 INTERIOR demanded
+  (P(sq>0)=1.00, zero edge mass, 4/4) = the 3E/6P object
+  parameterized. **DECIDER 1 ([calcs/stage7jz_read.py](calcs/stage7jz_read.py)):
+  α_marg = 0.74/0.70 at ΔlnL +23.8/+23.2, ANCHOR CURVE FLAT to
+  0.01-0.03 across 0.06-0.34 (α companion-prior-INDEPENDENT; at the
+  unshipped measured anchor: 0.67-0.74 at +12..+16); the old
+  COMPANION-WIN lives in the sq=0 slice; D2 INVERTED (multiplicity
+  cost ×1.4 — with sq the kinematics want fcomp=0.1; tension vs
+  measured ~0.3 host = named object); D3 BE rides fpm=2.4 at 0.97
+  (extension to 3.0 queued); VERDICT AMBIGUOUS-CARRIED
+  (LIT-CONDITIONAL) — missed the pre-registered α≥0.5 AND dN≥+25 bar
+  by 1.2-1.8 lnL. DECIDER 2 ([calcs/stage7jg_read.py](calcs/stage7jg_read.py),
+  dual-config amendment 8): PRIMARY (sq free) = ABSORBER-LEVEL (γ
+  pins SD(w_rad) 0.015-0.035→0.000; α channel-robust 0.70-0.74 vs
+  vt 0.62-0.66); CO-READ (sq=0, four-absorber) = SEPARATION-CONFIRMED
+  α grade — **ṽ-only reports a PHANTOM α≈0.50/0.52 at +12.8/+12.2
+  that the γ data veto to 0.20/0.25 at +2.4/+3.7** (the width-less
+  configuration = every published ṽ-only pipeline; reading). Tier
+  difference = the finding (γ and sq are partially interchangeable
+  absorber-police). PAPER-1 RULE: PROCEEDS (2D claim operates;
+  phantom-veto = the methods centerpiece). CREDENCE MAP APPLIED:
+  AMBIGUOUS → **anomaly-real HELD ~45% by the map** (freeze released,
+  value re-affirmed; miss direction noted). Ledger +bin-7jz-v1/-v2b/
+  -width/+bin-7jg-gamma, anchorcurve→CO-QUOTED; audit 113 rows/64
+  tokens green; worldtable banner = width-channel form. NEXT (fixed
+  order): **v2c certificate → anchored re-read (free, cubes
+  prior-independent) → arm suite at the landed anchor (injections
+  DEGRADED with the measured kernel per 7J-w2 + fpm→3.0 + BE α=0.4
+  discriminator)**; then 7K-a/b, 7J-d, 7L, ĉ₁ budget, THE SPLIT
+  (Paper 1 leads: completeness+kernel discovery+width channel+
+  phantom-veto+census). Review rounds 7-8 (Opus): axis chain written
+  (P/H/PAIR; the 1−(1−0.24)²=0.42 trap named), his pair-map +
+  fence/anchor claims withdrawn by him, dual-config + anchor-curve
+  re-read adopted from him.** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
@@ -982,6 +1036,12 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.
+- Every new pipeline MODE gets a regression against the old mode at its identity
+  point (the GB0w precedent — it caught a silent amplitude-law fallthrough on first
+  firing; review-adopted corollary: gates only catch what someone thought to write).
+- Never edit PAPER.md (or any Unicode-heavy file) via PowerShell Get/Set-Content —
+  PS 5.1 double-encodes; one full-file corruption caught by git diff --stat
+  (2026-07-26). Use the Edit tool.
 - Known trap fingerprints already caught here: axial-angle double-fold (R→2/π exactly);
   non-conservative EFE recipe (energy pumping, ṽ→7.4); IC/a₀-convention biases; phantom-
   source sign (repulsive halo, boost<1); grid-edge maxima (the retracted bullseye). Suspect

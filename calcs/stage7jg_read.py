@@ -176,44 +176,51 @@ for tagf, nm in (('stage7j_cube', '2D'), ('stage7j_cubevt', 'vt')):
       f"{['%.2e' % v for v in d0]} (diagnostic)")
 
 P("")
-fired, quiet_a, m4_fired, m4_quiet = [], True, False, True
-for law in ('simple', 'BE'):
-    a2 = np.mean([R[(law, s, '2D')][0] for s in SEEDS])
-    av = np.mean([R[(law, s, 'vt')][0] for s in SEEDS])
-    d2 = np.mean([R[(law, s, '2D')][1] for s in SEEDS])
-    dv = np.mean([R[(law, s, 'vt')][1] for s in SEEDS])
-    W2 = np.mean([R[(law, s, '2D')][2] for s in SEEDS])
-    Wv = np.mean([R[(law, s, 'vt')][2] for s in SEEDS])
-    shrink = 1 - W2/max(Wv, 1e-9)
-    shift = abs(a2-av)
-    dnd = d2-dv
-    P(f"{law} seed-mean: a_marg 2D {a2:.2f} vs vt {av:.2f} "
-      f"(shift {shift:.2f}); dN 2D {d2:+.1f} vs vt {dv:+.1f} "
-      f"(diff {dnd:+.1f}); W_a 2D {W2:.2f} vs vt {Wv:.2f} "
-      f"(shrink {shrink:+.2f})")
-    if shrink >= 0.30: fired.append(f"M1({law})")
-    if dnd >= 15: fired.append(f"M2({law})")
-    if shift >= 0.30: fired.append(f"M3({law})")
-    if not (shrink < 0.15 and shift < 0.15 and dnd < 7):
-        quiet_a = False
-    for ab in ('wr', 'fcomp'):
-        s2 = np.mean([R[(law, s, '2D')][3][ab] for s in SEEDS])
-        sv = np.mean([R[(law, s, 'vt')][3][ab] for s in SEEDS])
-        sh = 1 - s2/max(sv, 1e-9)
-        P(f"  M4 {law} SD({ab}): vt {sv:.3f} -> 2D {s2:.3f} "
-          f"(shrink {sh:+.2f})")
-        if sh >= 0.30: m4_fired = True
-        if sh >= 0.15: m4_quiet = False
-
-if fired:
-    tier = f"SEPARATION-CONFIRMED (alpha grade; {', '.join(fired)})"
-elif m4_fired:
-    tier = "ABSORBER-LEVEL SEPARATION (M4 only)"
-elif quiet_a and m4_quiet:
-    tier = "SEPARATION-ABSENT"
-else:
-    tier = "AMBIGUOUS (reported as-is)"
-P(f"\n==> 7J-g VERDICT: {tier}")
+tiers = {}
+for cfg in CONFIGS:
+    fired, quiet_a, m4_fired, m4_quiet = [], True, False, True
+    for law in ('simple', 'BE'):
+        a2 = np.mean([R[(law, s, '2D', cfg)][0] for s in SEEDS])
+        av = np.mean([R[(law, s, 'vt', cfg)][0] for s in SEEDS])
+        d2 = np.mean([R[(law, s, '2D', cfg)][1] for s in SEEDS])
+        dv = np.mean([R[(law, s, 'vt', cfg)][1] for s in SEEDS])
+        W2 = np.mean([R[(law, s, '2D', cfg)][2] for s in SEEDS])
+        Wv = np.mean([R[(law, s, 'vt', cfg)][2] for s in SEEDS])
+        shrink = 1 - W2/max(Wv, 1e-9)
+        shift = abs(a2-av)
+        dnd = d2-dv
+        P(f"[{cfg}] {law} seed-mean: a_marg 2D {a2:.2f} vs vt {av:.2f} "
+          f"(shift {shift:.2f}); dN 2D {d2:+.1f} vs vt {dv:+.1f} "
+          f"(diff {dnd:+.1f}); W_a 2D {W2:.2f} vs vt {Wv:.2f} "
+          f"(shrink {shrink:+.2f})")
+        if shrink >= 0.30: fired.append(f"M1({law})")
+        if dnd >= 15: fired.append(f"M2({law})")
+        if shift >= 0.30: fired.append(f"M3({law})")
+        if not (shrink < 0.15 and shift < 0.15 and dnd < 7):
+            quiet_a = False
+        for ab in ('wr', 'fcomp'):
+            s2 = np.mean([R[(law, s, '2D', cfg)][3][ab] for s in SEEDS])
+            sv = np.mean([R[(law, s, 'vt', cfg)][3][ab] for s in SEEDS])
+            sh = 1 - s2/max(sv, 1e-9)
+            P(f"  [{cfg}] M4 {law} SD({ab}): vt {sv:.3f} -> 2D {s2:.3f} "
+              f"(shrink {sh:+.2f})")
+            if sh >= 0.30: m4_fired = True
+            if sh >= 0.15: m4_quiet = False
+    if fired:
+        tiers[cfg] = (f"SEPARATION-CONFIRMED (alpha grade; "
+                      f"{', '.join(fired)})")
+    elif m4_fired:
+        tiers[cfg] = "ABSORBER-LEVEL SEPARATION (M4 only)"
+    elif quiet_a and m4_quiet:
+        tiers[cfg] = "SEPARATION-ABSENT"
+    else:
+        tiers[cfg] = "AMBIGUOUS (reported as-is)"
+P(f"\n==> 7J-g VERDICT (PRIMARY, sq free): {tiers['sqfree']}")
+P(f"==> 7J-g co-read (sq pinned 0, the four-absorber configuration): "
+  f"{tiers['sq0']}")
+if tiers['sqfree'] != tiers['sq0']:
+    P("(tiers differ -> the difference is itself the finding: it "
+      "localizes the width channel's dilution share, amendment 8)")
 P("(Paper-1 rule and the credence map are pre-committed in the "
   "docstring; applied in NOTES at booking.)")
 with open('data/stage7jg_read.txt', 'w') as f:

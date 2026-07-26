@@ -1,0 +1,32 @@
+GZ0: N=13784, rho_core_att=+0.465 -> PASS
+window: 12084 pairs; windowed flag 0.107; slices (+0.796, +0.394)
+  start f0=0.08 lam0=0.5: lnL=2962.7, f=0.166, lam=1.27 (1.5 min)
+  start f0=0.16 lam0=1.0: lnL=2965.0, f=0.162, lam=1.95 (3.0 min)
+  start f0=0.16 lam0=3.0: lnL=2958.0, f=0.163, lam=1.70 (4.5 min)
+  start f0=0.25 lam0=2.0: lnL=2967.8, f=0.160, lam=1.51 (6.1 min)
+  start f0=0.1 lam0=4.0: lnL=2896.0, f=0.162, lam=2.85 (7.6 min)
+v2b MAP (flat-q, EXACT): lnL=2973.8, f=0.1595, mu=(+0.013,+0.032), r=[0.216, 0.02, 0.149, 0.347], sn=[0.082, 0.02, 0.02, 0.083], sg=0.125, lam=1.64; top-two start gap 2.8
+GZS11 state-11 thinning (21^2 vs 31^2 at MAP): d=2.080 -> FAIL
+GZ3: L(v2b)=2973.8 vs v1 floor 2497.9 (d=+475.9, floor approx-quadrature, disclosed); L(f=0)=-1944.3 (companions +4918.1); gap 2.8; lam interior -> FAIL
+GZ1c-a kernel-truth f=0, v2b fit: f_hat=0.000 -> PASS (11.1 min)
+GZ1c-b DIAGNOSTIC same sky, v1-style fit (lam pinned): f_hat=0.000 — the kernel-blind over-attribution
+GZ2a f=0.1: recovered 0.099 -> PASS (13.6 min)
+GZ2b f=0.25: recovered 0.254 -> PASS (14.6 min)
+GZ6': bar +0.449 vs +0.465 -> PASS; slices (+0.743,+0.382) vs (+0.796,+0.394) -> PASS; windowed P(flag) 0.093 vs 0.107 -> PASS; incidence 2.30 vs 2.39 (no bar)
+profile flat-q: [-5474.1, -1112.9, -170.7, 0.0, -173.2, -572.2] on [0.0, 0.06, 0.11, 0.17, 0.23, 0.3] (17.4 min)
+q^-0.5 MAP f=0.2004; profile [-5996.1, -1310.5, -236.0, 0.0, -17.7, -206.1]
+BLENDED envelope: f in [0.17, 0.17]; MAPs 0.159/0.200
+P_blend(flat, 0.6") = 0.530
+P_blend(flat, 1.0") = 0.587
+P_blend(qalt, 0.6") = 0.532
+P_blend(qalt, 1.0") = 0.589
+HOST-axis (v2b): f_host per component in [0.29, 0.32] (peak 0.32)
+  ln pi_host(0.09 = literature (H)) = -1634.2
+  ln pi_host(0.10 = old fence) = -1207.6
+  ln pi_host(0.20 = likelihood optimum) = -149.6
+  ln pi_host(0.35 = posterior cell) = -4.7
+  ln pi_host(0.51 = retracted part-A peak) = -129.1
+
+f_hat chain: v1 0.166 -> v2 (approx) 0.162 -> v2b (exact) 0.159
+GATE FAIL -> nothing ships; the deciders read LIT16 (pre-registered fallback); quarantined npz written
+[total 21.4 min]

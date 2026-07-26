@@ -1,0 +1,53 @@
+7J-g operative anchor: LIT16 (fallback)
+[simple 31 2D sqfree] a_marg=0.74 dN=+24.4 W_a=0.52 | SD(wr)=0.000 SD(fcomp)=0.000 SD(sq)=0.000 SD(fpm)=0.169 | corr(a,wr)=+0.00 corr(a,fcomp)=-0.00 corr(a,sq)=-0.00
+   P(wr)=[0.0, 1.0, 0.0, 0.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0]
+[simple 31 2D sq0] a_marg=0.40 dN=+4.9 W_a=0.08 | SD(wr)=0.038 SD(fcomp)=0.000 SD(sq)=0.927 SD(fpm)=0.056 | corr(a,wr)=-0.03 corr(a,fcomp)=-0.03 corr(a,sq)=+0.00
+   P(wr)=[0.0, 0.17, 0.83, 0.0, 0.0] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(sq)=[1.0]
+[simple 31 vt sqfree] a_marg=0.62 dN=+17.4 W_a=0.06 | SD(wr)=0.018 SD(fcomp)=0.000 SD(sq)=0.000 SD(fpm)=0.307 | corr(a,wr)=+0.01 corr(a,fcomp)=-0.00 corr(a,sq)=-0.00
+   P(wr)=[0.03, 0.97, 0.0, 0.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0]
+[simple 31 vt sq0] a_marg=0.47 dN=+12.8 W_a=0.03 | SD(wr)=0.000 SD(fcomp)=0.000 SD(sq)=0.927 SD(fpm)=0.137 | corr(a,wr)=+0.00 corr(a,fcomp)=-0.14 corr(a,sq)=+0.00
+   P(wr)=[0.0, 0.0, 1.0, 0.0, 0.0] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(sq)=[1.0]
+[simple 101 2D sqfree] a_marg=0.74 dN=+23.2 W_a=0.51 | SD(wr)=0.000 SD(fcomp)=0.000 SD(sq)=0.000 SD(fpm)=0.148 | corr(a,wr)=-0.00 corr(a,fcomp)=-0.00 corr(a,sq)=-0.00
+   P(wr)=[0.0, 1.0, 0.0, 0.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0]
+[simple 101 2D sq0] a_marg=0.00 dN=+0.0 W_a=0.03 | SD(wr)=0.007 SD(fcomp)=0.000 SD(sq)=0.927 SD(fpm)=0.010 | corr(a,wr)=-0.02 corr(a,fcomp)=-0.57 corr(a,sq)=+0.00
+   P(wr)=[0.0, 0.01, 0.99, 0.0, 0.0] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(sq)=[1.0]
+[simple 101 vt sqfree] a_marg=0.62 dN=+23.0 W_a=0.04 | SD(wr)=0.013 SD(fcomp)=0.000 SD(sq)=0.000 SD(fpm)=0.404 | corr(a,wr)=+0.00 corr(a,fcomp)=-0.00 corr(a,sq)=-0.08
+   P(wr)=[0.02, 0.98, 0.0, 0.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0]
+[simple 101 vt sq0] a_marg=0.54 dN=+12.8 W_a=0.04 | SD(wr)=0.001 SD(fcomp)=0.001 SD(sq)=0.927 SD(fpm)=0.406 | corr(a,wr)=-0.00 corr(a,fcomp)=-0.89 corr(a,sq)=+0.00
+   P(wr)=[0.0, 0.0, 1.0, 0.0, 0.0] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(sq)=[1.0]
+[BE 31 2D sqfree] a_marg=0.75 dN=+24.1 W_a=0.51 | SD(wr)=0.000 SD(fcomp)=0.000 SD(sq)=0.000 SD(fpm)=0.073 | corr(a,wr)=-0.00 corr(a,fcomp)=-0.00 corr(a,sq)=-0.00
+   P(wr)=[0.0, 1.0, 0.0, 0.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0]
+[BE 31 2D sq0] a_marg=0.50 dN=+7.3 W_a=0.07 | SD(wr)=0.029 SD(fcomp)=0.000 SD(sq)=0.927 SD(fpm)=0.087 | corr(a,wr)=-0.02 corr(a,fcomp)=-0.00 corr(a,sq)=+0.00
+   P(wr)=[0.0, 0.09, 0.91, 0.0, 0.0] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(sq)=[1.0]
+[BE 31 vt sqfree] a_marg=0.70 dN=+13.8 W_a=0.16 | SD(wr)=0.044 SD(fcomp)=0.000 SD(sq)=0.000 SD(fpm)=0.229 | corr(a,wr)=+0.21 corr(a,fcomp)=-0.00 corr(a,sq)=-0.00
+   P(wr)=[0.26, 0.74, 0.0, 0.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0]
+[BE 31 vt sq0] a_marg=0.51 dN=+11.3 W_a=0.05 | SD(wr)=0.002 SD(fcomp)=0.000 SD(sq)=0.927 SD(fpm)=0.225 | corr(a,wr)=-0.00 corr(a,fcomp)=-0.00 corr(a,sq)=-0.00
+   P(wr)=[0.0, 0.0, 1.0, 0.0, 0.0] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(sq)=[1.0]
+[BE 101 2D sqfree] a_marg=0.65 dN=+22.4 W_a=0.06 | SD(wr)=0.000 SD(fcomp)=0.000 SD(sq)=0.000 SD(fpm)=0.040 | corr(a,wr)=-0.00 corr(a,fcomp)=-0.00 corr(a,sq)=+0.00
+   P(wr)=[0.0, 1.0, 0.0, 0.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0]
+[BE 101 2D sq0] a_marg=0.00 dN=+0.0 W_a=0.10 | SD(wr)=0.019 SD(fcomp)=0.000 SD(sq)=0.927 SD(fpm)=0.038 | corr(a,wr)=-0.64 corr(a,fcomp)=-0.00 corr(a,sq)=-0.00
+   P(wr)=[0.0, 0.04, 0.96, 0.0, 0.0] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(sq)=[1.0]
+[BE 101 vt sqfree] a_marg=0.62 dN=+23.4 W_a=0.05 | SD(wr)=0.027 SD(fcomp)=0.000 SD(sq)=0.000 SD(fpm)=0.195 | corr(a,wr)=-0.02 corr(a,fcomp)=-0.00 corr(a,sq)=-0.00
+   P(wr)=[0.08, 0.92, 0.0, 0.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0]
+[BE 101 vt sq0] a_marg=0.52 dN=+13.0 W_a=0.04 | SD(wr)=0.001 SD(fcomp)=0.000 SD(sq)=0.927 SD(fpm)=0.193 | corr(a,wr)=+0.00 corr(a,fcomp)=-0.00 corr(a,sq)=+0.00
+   P(wr)=[0.0, 0.0, 1.0, 0.0, 0.0] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0] P(sq)=[1.0]
+alpha=0 cross-law max|diff| (2D): ['0.00e+00', '0.00e+00'] (diagnostic)
+alpha=0 cross-law max|diff| (vt): ['0.00e+00', '0.00e+00'] (diagnostic)
+
+[sqfree] simple seed-mean: a_marg 2D 0.74 vs vt 0.62 (shift 0.12); dN 2D +23.8 vs vt +20.2 (diff +3.6); W_a 2D 0.52 vs vt 0.05 (shrink -9.30)
+  [sqfree] M4 simple SD(wr): vt 0.015 -> 2D 0.000 (shrink +1.00)
+  [sqfree] M4 simple SD(fcomp): vt 0.000 -> 2D 0.000 (shrink +0.99)
+[sqfree] BE seed-mean: a_marg 2D 0.70 vs vt 0.66 (shift 0.04); dN 2D +23.2 vs vt +18.6 (diff +4.6); W_a 2D 0.29 vs vt 0.11 (shrink -1.71)
+  [sqfree] M4 BE SD(wr): vt 0.035 -> 2D 0.000 (shrink +1.00)
+  [sqfree] M4 BE SD(fcomp): vt 0.000 -> 2D 0.000 (shrink +0.97)
+[sq0] simple seed-mean: a_marg 2D 0.20 vs vt 0.50 (shift 0.31); dN 2D +2.4 vs vt +12.8 (diff -10.4); W_a 2D 0.06 vs vt 0.04 (shrink -0.57)
+  [sq0] M4 simple SD(wr): vt 0.000 -> 2D 0.022 (shrink -47.86)
+  [sq0] M4 simple SD(fcomp): vt 0.000 -> 2D 0.000 (shrink +0.47)
+[sq0] BE seed-mean: a_marg 2D 0.25 vs vt 0.52 (shift 0.26); dN 2D +3.7 vs vt +12.2 (diff -8.5); W_a 2D 0.09 vs vt 0.04 (shrink -0.89)
+  [sq0] M4 BE SD(wr): vt 0.002 -> 2D 0.024 (shrink -11.75)
+  [sq0] M4 BE SD(fcomp): vt 0.000 -> 2D 0.000 (shrink -2.28)
+
+==> 7J-g VERDICT (PRIMARY, sq free): ABSORBER-LEVEL SEPARATION (M4 only)
+==> 7J-g co-read (sq pinned 0, the four-absorber configuration): SEPARATION-CONFIRMED (alpha grade; M3(simple))
+(tiers differ -> the difference is itself the finding: it localizes the width channel's dilution share, amendment 8)
+(Paper-1 rule and the credence map are pre-committed in the docstring; applied in NOTES at booking.)

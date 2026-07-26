@@ -1,0 +1,6 @@
+GZ0: N=13784, rho_core_att=+0.465 -> PASS
+window: 12084 pairs; windowed flag fraction 0.107 (the like-for-like (iii) reference); slices (+0.796, +0.394)
+  start f0=0.08 lam0=0.6: lnL=2804.3, f=0.157, lam=1.36 (15.7 min)
+  start f0=0.2 lam0=1.5: lnL=2847.4, f=0.163, lam=2.87 (30.2 min)
+v2 MAP (flat-q): lnL=2847.9, f=0.1619, mu=(+0.012,+0.034), r=[0.213, 0.104, 0.188, 0.363], sn=[0.107, 0.02, 0.02, 0.114], sg=0.050, lam=2.95; start gap 43.1
+GZQ quadrature (13x5 vs 15x7 at MAP): d=18.671 -> FAIL

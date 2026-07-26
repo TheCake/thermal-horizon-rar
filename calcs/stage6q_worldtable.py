@@ -122,6 +122,14 @@ CHECKS = [
     ('bin-7j-seed6', 'AMENDMENT-6 SEED RULE: no break', 'data/stage7j_seed6.txt'),
     ('bin-7jz-v1', 'anchor NOT shipped', 'data/stage7jz_mixture.txt'),
     ('bin-7jz-v1', '[0.15, 0.22]', 'data/stage7jz_mixture.txt'),
+    ('bin-7jz-v2b', '[0.29, 0.32]', 'data/stage7jz2b_exact.txt'),
+    ('bin-7jz-v2b', 'f_hat=0.000', 'data/stage7jz2b_exact.txt'),
+    ('bin-7jz-width', 'a_marg=0.74', 'data/stage7jz_read.txt'),
+    ('bin-7jz-width', 'AMBIGUOUS-CARRIED (LIT-CONDITIONAL)',
+     'data/stage7jz_read.txt'),
+    ('bin-7jg-gamma', 'ABSORBER-LEVEL SEPARATION', 'data/stage7jg_read.txt'),
+    ('bin-7jg-gamma', 'SEPARATION-CONFIRMED (alpha grade; M3(simple))',
+     'data/stage7jg_read.txt'),
     ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
      'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
     ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',
@@ -314,22 +322,24 @@ say('is independent and 4.0-5.8x AGAINST every MG member (escape: EFE-respecting
 say('MI, which ties the binary contest). "Passes both systems" therefore means')
 say('exactly two independent data votes, plus one shared solar tension.')
 say('')
-say('7J CONDITIONALITY BANNER (as re-graded by corrections #17/#18): every')
-say('BIN/A0 row above was measured inside the multiplicity fence (f_comp <=')
-say('0.1).  Stage 7J ran the companion marginalization; its completeness')
-say('measurement was then retracted by the within-pair correlation test')
-say('(bin-7j-paircorr, rho = +0.47 common-mode), leaving literature')
-say('subsystem rates primary.  The measured curve (7J-e3): the fenced')
-say('+99-110 Newton rejection is DEAD under ANY smooth companion prior')
-say('(alpha_marg ~ 0.2-0.3, Newton within +2..+4, anchors 0.06-0.30);')
-say('it returns only behind a hard exclusion of f >= 0.2; the revival')
-say('mechanism is the model-side missing width channel, not the rate.')
-say('Verdict')
-say('label: COMPANION-WIN at the retracted measured prior, AMBIGUOUS at the')
-say('primary literature anchoring (six-seed budget = the decider).  The')
-say('binary DATA VOTE stays suspended pending 7J-z (repaired completeness),')
-say('7K (model-light attribution), and 7J-d (contest re-run).  Galaxy rows')
-say('are untouched.')
+say('7J CONDITIONALITY BANNER (through the 7J-z/7J-g deciders, 2026-07-26):')
+say('every BIN/A0 row above was measured inside the multiplicity fence')
+say('(f_comp <= 0.1) and WITHOUT the per-system width channel.  The fenced')
+say('+99-110 Newton rejection stays DEAD.  The width-channel round')
+say('(bin-7jz-width): once sq is a parameter (sq = 0.2 interior, demanded')
+say('at P = 1.00 - the 3E/6P object), alpha_marg = 0.70-0.74 at')
+say('dN = +23.2-23.8 with the anchor curve FLAT to 0.01-0.03 across every')
+say('companion anchor 0.06-0.34 - the alpha answer is companion-prior-')
+say('INDEPENDENT and the old COMPANION-WIN lives in the sq = 0 slice.')
+say('Verdict label AMBIGUOUS-CARRIED (missed the pre-registered detection')
+say('bar by 1.2-1.8 lnL; LIT-CONDITIONAL - the measured subsystem rate')
+say('[0.29, 0.32] host/component is UNSHIPPED pending the v2c certificate).')
+say('7J-g: gamma pins the absorbers (SD(w_rad) -> 0.000); in the')
+say('four-absorber configuration vt-only fitting reports a PHANTOM')
+say('alpha = 0.5 that the direction data veto (SEPARATION-CONFIRMED, M3).')
+say('The binary DATA VOTE stays suspended pending v2c + the anchored')
+say('re-read + the arm suite (degraded injections, fpm -> 3.0); 7K and')
+say('7J-d queue behind.  Galaxy rows are untouched.')
 say('')
 say('The mechanical sentence the table proves: AMB is the only candidate that is')
 say('(a) un-vetoed on the binaries (tie with BE), (b) at the top galaxy bootstrap')
