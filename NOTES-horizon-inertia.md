@@ -5115,6 +5115,27 @@ over-attribution measurement either way. v1's npz quarantined as
 _v1_unshipped on its completion (existence ≠ shipped — reader treats
 existence as landed, so the quarantine is load-bearing).
 
+10 — v2 KILLED BY ITS OWN GZQ MID-RUN; v2b = EXACT INTEGRATION
+(logged before any v2 gate verdict printed; ordering disclosed): v2's
+GZQ fired at d = 18.7 (bar 1.0) — with the kernel fitted, twin pairs'
+effective variance collapses and the z-integrand becomes a spike
+narrower than the GH node spacing; the quadrature carries O(10-20)
+lnL error, and its five-start dispersion also tripped the convergence
+bar (gap 43.1, short-λ basin). Run ABORTED (the GB0w precedent). The
+fix is EXACT, not finer: every companion state's (z, gray) integral
+is a closed-form bivariate-normal marginal — no nodes, ~10× faster
+([calcs/stage7jz2b_exact.py](calcs/stage7jz2b_exact.py); GZQ replaced
+by GZS11 state-11-thinning ≤ 0.5; five dispersed starts, top-two ≤
+2.0; SAME model, SAME bars, SAME decision rule — not a third
+instrument: the model never changed, its integration was corrected by
+its own gate). RETRO-FLAG: v1's GH quadrature is the same class
+(injection-validated and self-consistent, so its f̂ calibration
+stands; its lnL SCALE carries undisclosed-magnitude quadrature error
+— noted on the v1 ledger row at close-out). v2 interim record (approx,
+nothing shipped): lnL 2847.9, f = 0.162, λ = 2.95 — the kernel worth
+~+350 and f stable across all three model classes (0.166/0.168/0.162)
+at approximate grade; v2b's exact numbers decide.
+
 9 — THE ANCHOR CURVE RE-READ (review round 8, adopted pre-results):
 the 7J-e3 flatness was measured under the OLD absorber configuration;
 the width channel competes for the same budget, so stage7jz_read now
