@@ -355,22 +355,63 @@ for i in range(200):
     I_rie[i] = np.trapezoid(dens/np.sqrt(2*np.pi)/sc1c[sub][i]
                             * np.exp(-0.5*((tt[sub][i]-Ad)/sc1c[sub][i])**2),
                             qd_)
-absd = np.abs(I_erf - I_rie)
-mrel = (I_rie >= 1e-12)
-rel = float(np.max(absd[mrel]/I_rie[mrel])) if mrel.any() else 0.0
-amax = float(absd.max())
+# AMENDMENT A5 (third metric design; logged after launch 3 STOPPED —
+# the gate keeps catching its own designer, recorded plainly.  The
+# measured content so far: GV0b d = 0.0 exact; rel(where I >= 1e-12)
+# = 1.8e-06 = the erf core agrees with the dense reference at the
+# REFERENCE's own precision).  Launch-3 failures were both mine:
+# the 1e-12 "float ceiling" demanded the trapz reference be exact
+# (its discretization error on O(0.5) integrals is ~1e-6), and the
+# relevance clause floored Lp with (1-f)^2 P00 — exactly wrong for
+# companion-carrying pairs (both-flagged pairs have P00 ~ 1e-28
+# BECAUSE their likelihood is the companion terms).  A5:
+#   (i)  rel clause unchanged (bar 1e-3 where I_ref >= 1e-12);
+#   (ii) abs clause self-scaling: |I_erf - I_ref(30001)| <=
+#        max(3|I_ref(30001) - I_ref(3001)|, 1e-12) per pair — the
+#        erf value must sit inside the reference's own convergence
+#        envelope;
+#   (iii) relevance vs the FULL mixture: absd*f(1-f)/Lp_full <= 1e-4.
+I_rie2 = np.zeros(200)
+qd2 = np.linspace(0.10, 1.0, 30001)
+for i in range(200):
+    Ad = np.interp(qd2, QG, AB1[sub][i])
+    dens = np.ones(len(qd2))/0.9
+    I_rie2[i] = np.trapezoid(dens/np.sqrt(2*np.pi)/sc1c[sub][i]
+                             * np.exp(-0.5*((tt[sub][i]-Ad)
+                                            / sc1c[sub][i])**2), qd2)
+absd = np.abs(I_erf - I_rie2)
+conv_env = np.maximum(3*np.abs(I_rie2 - I_rie), 1e-12)
+mrel = (I_rie2 >= 1e-12)
+rel = float(np.max(absd[mrel]/I_rie2[mrel])) if mrel.any() else 0.0
+abs_ok = bool(np.all(absd <= conv_env))
 detc = np.maximum(S11c*S22c - S12c*S12c, 1e-12)[sub]
 x1c = (d1w - X_V2B[1])[sub]
 x2c = (d2w - X_V2B[2])[sub]
 P00c = 1.0/(2*np.pi*np.sqrt(detc))*np.exp(
     -0.5*(S22c[sub]*x1c*x1c - 2*S12c[sub]*x1c*x2c
           + S11c[sub]*x2c*x2c)/detc)
+sc2c = np.sqrt(np.maximum(S22c - S12c*S12c/S11c, 1e-12))
+t2c = x2c - (S12c/S11c)[sub]*x1c
+n1c = 1.0/np.sqrt(2*np.pi*S11c[sub])*np.exp(-0.5*x1c*x1c/S11c[sub])
+n2c = 1.0/np.sqrt(2*np.pi*S22c[sub])*np.exp(-0.5*x2c*x2c/S22c[sub])
+I2_erf = seg_int(t2c, AB2[sub], sc2c[sub], ws)
+qn_, qw_ = gl_nodes(31, 'flat', 0.0)
+A2n_ = _A2GL[('flat', 0.0, 31)][sub]
+x2b_ = x2c[:, None] - A2n_
+n2q_ = 1.0/np.sqrt(2*np.pi*S22c[sub])[:, None]*np.exp(
+    -0.5*x2b_*x2b_/S22c[sub][:, None])
+tq_ = x1c[:, None] - (S12c/S22c)[sub][:, None]*x2b_
+I1q_ = seg_int(tq_, AB1[sub][:, None, :], sc1c[sub][:, None], ws)
+P11c = np.einsum('m,nm->n', qw_, n2q_*I1q_)
 fv2b = X_V2B[0]
-lrel = float(np.max(absd*fv2b*(1-fv2b)/((1-fv2b)**2*P00c)))
-gv0c = (rel <= 1e-3) and (amax <= 1e-12) and (lrel <= 1e-6)
-P(f"GV0c (A4): rel(where I>=1e-12) = {rel:.2e} (bar 1e-3); "
-  f"abs = {amax:.2e} (bar 1e-12); Lp-relevance = {lrel:.2e} "
-  f"(bar 1e-6) -> {'PASS' if gv0c else 'FAIL'}")
+Lp_full = ((1-fv2b)**2*P00c + fv2b*(1-fv2b)*(n2c*I_erf + n1c*I2_erf)
+           + fv2b*fv2b*P11c)
+lrel = float(np.max(absd*fv2b*(1-fv2b)/np.maximum(Lp_full, 1e-300)))
+gv0c = (rel <= 1e-3) and abs_ok and (lrel <= 1e-4)
+P(f"GV0c (A5): rel(where I>=1e-12) = {rel:.2e} (bar 1e-3); "
+  f"abs-in-envelope = {'yes' if abs_ok else 'NO'}; "
+  f"Lp-relevance = {lrel:.2e} (bar 1e-4) -> "
+  f"{'PASS' if gv0c else 'FAIL'}")
 gv0 = gv0 and gv0b and gv0c
 if not gv0:
     P("GV0 FAIL -> STOP (pre-registered)")

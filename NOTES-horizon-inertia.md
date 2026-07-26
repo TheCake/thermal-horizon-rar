@@ -5478,6 +5478,76 @@ through. Verdict: our next instrument must report not just HOW MANY
 companions, but WHICH KIND — and until it does, nobody gets to say
 whether the boost survives. Confidence stays 45%.
 
+## PRE-REGISTRATION: the v2c round + the degraded-arm suite (2026-07-26, committed before execution)
+
+Queue execution ordered by the user ("do all the next parts"). Order:
+v2c-plus certificate → anchored re-read (amendment-11 operative
+anchor) → the arm suite. Bars locked here BEFORE any v2c number is
+seen.
+
+**7J-z2c (the certificate)**: pre-reg in the script docstring
+(commit 4c3fc89; amendments A3/A4 = instrument-level, logged
+pre-quote: the GV0 print-rounding reference fix + np.trapezoid API +
+the GV0c three-clause metric after the far-tail float-cancellation
+false alarm — the synthetic sweep proving seg_int exact is in the
+scratchpad record). Ship rule: GV0–GV6 all pass → v2c-cert npz with
+the GV7 q-resolved block; any fail → quarantine, LIT16 stands, STOP.
+
+**Anchored re-read (amendment 11, committed BEFORE the anchored run,
+commit d437921)**: operative anchor = LANDED-CONV = the
+conversion-widened profile lnpi_conv(fc) = max_g lnpi_host(fc/g),
+g ∈ conv_band/0.30 = [0.33, 1.30] (bin-7j-qmoments); the face
+'LANDED' read is printed as the flat-q CONDITIONAL diagnostic.
+Verdict bars UNCHANGED (BOOST-REVIVES α ≥ 0.5 AND dN ≥ +25 /
+NO-DETECTION α ≤ 0.3 AND dN ≤ +10 / else AMBIGUOUS-CARRIED),
+evaluated at OPER = LANDED-CONV; seed-extension rule unchanged.
+
+**7J-z5 (the degraded-arm suite; implementation AFTER the re-read)**:
+per-arm injection validation at the operative anchor per the 7I
+standard and the round-5 rule (no arm is validated at the operative
+anchor until injected data exist there). THE DEGRADATION (7J-w2
+requirement, design locked now): injected skies carry the sky's
+confusion channels — (i) sq_true = 0.2 (the demanded width channel);
+(ii) fpm_true at the per-law posterior mode (2.1 simple / 2.4 BE);
+(iii) companion q-MISMATCH: injected companions drawn from the
+v2c-preferred q-law (GV7 winner; fallback twin t=2 if v2c does not
+ship) while the fitting model stays flat-q as run — the
+model-misspecification injection that prices 7J-w2's 4–30×
+informativeness excess honestly.
+ARMS (each = one injected dataset + full photow cube + read at OPER;
+seed 31; extension to 101 pre-authorized if any bar lands within 0.1
+of its edge):
+  A (null/false-positive): α_true = 0, fcomp_true = 0.20 → bar:
+    recovered α_marg ≤ 0.3, else ARM-FAIL.
+  B (simple own-truth): α_true = 0.74, fcomp 0.10 → bar:
+    |α̂ − 0.74| ≤ 0.25 AND dN ≥ +10.
+  C (BE own-truth): α_true = 0.70 → same bars.
+  D (BE discriminator): α_true = 0.40 (the 7J-w
+    additive-vs-multiplicative probe) → bar: within 0.25; PROF vs
+    MARG offsets reported.
+  E (sky re-run, fpm → 3.0): FPM grid extended [1.2 … 2.4, 3.0] on
+    the REAL sky, both laws both seeds; identity-point regression:
+    the ≤2.4 slice of the new cube reproduces the old cube ≤ 1e-3
+    (the GB0w rule); then D3 re-read (does the BE edge release?) +
+    the kw-residual attribution at fpm = 3.0.
+GATES: GB-regressions for every touched build path; injection
+determinism; arms VALIDATE — no physics verdict moves from arms;
+the sky verdict machinery stands as pre-registered.
+
+Scout result (Haiku, primary-source, logged with this pre-reg): the
+round-10 "3× field expected from triple dynamics" claim is
+UNSUPPORTED for general wide binaries and actively contradicted —
+Tokovinin 2014 (AJ 147, 87): wide-binary subsystem rates are
+field-like ("the presence of a wide companion does not affect
+inner-subsystem formation"); the literature's 3× enhancements are
+contact-binary (Gao+21) and 2+2-quadruple (Fezenko+22) specific;
+the 0.2–50 kAU subsystem-fraction range confirmed unmeasured. ⇒ if
+the ~0.3 host rate certificates, it is a SURPRISE against the
+Tokovinin trend, raising the stakes on the q-resolution; the
+"expected from formation" framing is NOT printed. Flag for a
+primary read before any paper use: El-Badry & Rix 2018's ~20%
+per-component unresolved-companion characterization (scout-level).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
