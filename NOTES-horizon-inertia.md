@@ -5368,6 +5368,116 @@ velocities as hard as our model assumes? The next two instruments in
 the queue answer exactly that. Our confidence number stays at 45%
 because the rule says only those instruments get to change it.
 
+## Round 10 (2026-07-26): the reviewer's close — the conversion audit (7J-z4)
+
+Opus round 10 = his exit (he owns the D2 misclaim — his third false
+execution claim in four rounds — and ends round-by-round auditing; door
+left open for 7L and the split). Adjudication, then the executed
+instrument.
+
+**His knee mechanics: wrong in the letter, right in substance —
+so the missing axis was MEASURED.** His claim: "the knee was one grid
+step past the top of the sampled range." Not the mechanism: the anchor
+curve varied the CENTER at fixed width (σ = 0.05/0.03), and a smooth
+σ = 0.03 anchor centered even at 0.35+ would NOT collapse α (the
+likelihood pays the ~30 lnL prior penalty to hold fcomp = 0.1; the
+kinematic gain is 135–153). The collapse axis is anchor STRENGTH, and
+Part A of 7J-z4 measured it: **α_marg holds 0.67–0.75 at every σ ≥
+0.03 and collapses at σ* = 0.02 (both laws), the posterior jumping
+0.10 → 0.20 (not 0.35 — the collapse routes through the cell the grid
+caveat already flags) and reaching 0.35 only at σ = 0.005.** The
+unshipped rate's apparent precision is ~0.015 < σ*: a certificate at
+face precision FIRES the fifth move on the flat-q axis. His substance
+("the flat-curve claim shipped without the axis that carries the
+risk") is adopted as a standing discipline line.
+
+**His two-moments objection: VINDICATED as mechanism, INCOMPLETE as
+stated — both halves now measured** ([calcs/stage7j_qmoments.py](calcs/stage7j_qmoments.py),
+pre-framed 3cbedbe, amendments A1/A2 logged post-fail pre-quote,
+all gates PASS on the amended run; GA0/GA1/GC0 regressions exact):
+- His anticorrelation is real and large: hard-flag threshold q_min =
+  0.70–0.88 (M_h 0.35–0.75); wfac peaks at q ≈ 0.4–0.6; **detected
+  companions carry 0.13–0.17 of the undetected wobble variance**
+  (6–8× suppression) — the companions the photometry counts are the
+  ones that wobble least, quantitatively.
+- His gap: the model's second companion channel — the hidden-mass
+  velocity inflation √(1+q/2), TWIN-MAXIMAL (+22% per system at
+  q = 1), one-sided, γ-invisible, s-flat (the sq-shaped channel).
+  Twins are wobble-invisible but mass-channel-loud.
+- The channel attribution (the cubes' own kw axis, which scales only
+  the wobble kicks): **the forced-multiplicity rejection is
+  WOBBLE-BINDING — Dwob = +314/+306 (doubling the wobble amplitude
+  triples the cost 153 → 470)** — so the flexible (wobble) moment is
+  the operative one at the margin. Residual attribution AT kw = 0.7
+  (the fitted edge) stays open for the arm suite.
+- THE JOINT CONVERSION BAND (amendment A2's corrected object):
+  fce_joint(wobble) = **[0.10, 0.39]** across π(q) brackets — the
+  detection-shaped bracket makes measured host 0.30 kinematically
+  equivalent to **0.10–0.12 = the kinematic preference exactly (his
+  "~0.12" reproduced)**; the q^-0.5 bracket makes the tension WORSE
+  (0.35–0.39). The mass-channel joint is π-STABLE (0.25–0.30;
+  completeness and mass-weight co-vary and cancel) but non-binding.
+- FORMAL reading by the pre-stated letter: **MIXED** (the original
+  band read the det-shape moment ratio, 0.69 > 0.5, without the
+  completeness rescaling any π re-attribution implies — a band-design
+  miss, logged as A2, the joint reported alongside; no silent
+  re-labeling). A1: GB0's dark-companion clause tested a limit the
+  shared implementation intentionally clips away (MS-table floor
+  0.102 M_sun; ℓ(q=0.1) = 0.001–0.024 printed as a model property);
+  replaced by the law's true identities (twin-zero exact, ℓ(1) = 1
+  exact, interior maximum).
+
+**CONSEQUENCE — the fifth-move exposure is RE-SHAPED, not resolved:**
+S3's forced fcomp ≥ 0.35 forced the FLAT-Q axis; identifying
+"measured host 0.30 ≡ the model's 0.35 cell" is exactly the
+scalar-passing the review flagged. The exposure's true coordinates
+are (rate, precision, π_q) jointly: the fifth move fires iff the
+certificate lands tight (σ ≤ 0.02) on the flat-q-EQUIVALENT axis,
+which cannot be evaluated without the q-resolved conversion.
+**v2c is UPGRADED to v2c-plus by requirement: the certificate must
+ship a (q, P)-resolved rate (and the v2b posterior's q-information
+extracted), not a scalar.** His "the tension is itself the result"
+framing: adopted for Paper 1's spine (first group to measure its own
+sample's companion rate AND check it against its own kinematics'
+preference), with one correction — his "the likelihood is indifferent
+at ΔlnL +0.0 either way" misreads dN(forced) = +0.0 (that is
+α-indifference WITHIN the forced world; the likelihood pays 135–153
+to avoid that world — the indifference is between laws there, not
+between worlds). The tension statement that survives: the photometry
+demands a world the kinematics price at 135–153, and whether that
+price is real physics or q-weighting is precisely the open
+conversion.
+
+His exit note is answered in kind: three false execution claims in
+four rounds is his honest self-diagnosis of prose-granularity review,
+and the audit function inverting (our gates refuting his assertions)
+is real — but rounds 7–10 also contributed the dual-config read, the
+anchor-curve re-read, the width-channel push, the q-moments
+question, and the Paper-1 spine. Net positive, gratefully logged.
+
+PLAIN VERDICT: round 10 = SUCCESS (two instruments in one stage, all
+gates pass on the amended run, two bar-design misses logged openly,
+zero bars moved, no credence move — cadence holds at ~45%). The
+program's binary headline is now fully coordinatized: α = 0.74/0.70
+prior-independent for σ ≥ 0.03, σ* = 0.02, conversion band
+[0.10, 0.39], and one required instrument (the q-resolved
+certificate) that closes it.
+
+ELI12: The referee's parting shot: "the companions your camera can
+see are exactly the ones that barely jiggle the star — so your star
+count and your jiggle model are counting different things." We
+checked: he's right, 6–8× right. And the model's complaint about
+"too many companions" is indeed about jiggling (turning the jiggle
+knob up makes it much angrier). So the "your count says 0.30 but the
+motion wants 0.10" fight might be no fight at all — if hidden
+companions cluster near look-alike twins, 0.30 of them jiggle exactly
+like 0.10 of the model's average ones. He missed one thing: twins DO
+shake the system another way (extra hidden weight speeds everything
+up 22%) — but that's not the channel the model is complaining
+through. Verdict: our next instrument must report not just HOW MANY
+companions, but WHICH KIND — and until it does, nobody gets to say
+whether the boost survives. Confidence stays 45%.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -1,0 +1,43 @@
+== PART A: the anchor-strength curve (center 0.30) ==
+[simple 31] GA0 PASS | s0.05:0.74/+24 s0.03:0.74/+20 s0.02:0.00/+0 s0.015:0.00/+0 s0.012:0.00/+0 s0.01:0.00/+0 s0.0075:0.00/+0 s0.005:0.00/+0
+[simple 31]   P(fcomp) mode per sigma: 0.05:0.10 0.03:0.10 0.02:0.20 0.015:0.20 0.012:0.20 0.01:0.20 0.0075:0.20 0.005:0.35
+[simple 31] GC0 PASS | cost(kw=0.7/1.0/1.4) = 153.3/310.2/470.1  Dwob = +316.8
+[simple 101] GA0 PASS | s0.05:0.74/+22 s0.03:0.73/+12 s0.02:0.00/+0 s0.015:0.00/+0 s0.012:0.00/+0 s0.01:0.00/+0 s0.0075:0.00/+0 s0.005:0.00/+0
+[simple 101]   P(fcomp) mode per sigma: 0.05:0.10 0.03:0.10 0.02:0.20 0.015:0.20 0.012:0.20 0.01:0.20 0.0075:0.20 0.005:0.35
+[simple 101] GC0 PASS | cost(kw=0.7/1.0/1.4) = 135.2/290.5/447.2  Dwob = +311.9
+[BE 31] GA0 PASS | s0.05:0.75/+24 s0.03:0.75/+20 s0.02:0.46/+3 s0.015:0.37/+3 s0.012:0.37/+3 s0.01:0.37/+3 s0.0075:0.37/+3 s0.005:0.00/+0
+[BE 31]   P(fcomp) mode per sigma: 0.05:0.10 0.03:0.10 0.02:0.20 0.015:0.20 0.012:0.20 0.01:0.20 0.0075:0.20 0.005:0.35
+[BE 31] GC0 PASS | cost(kw=0.7/1.0/1.4) = 153.4/307.9/460.7  Dwob = +307.2
+[BE 101] GA0 PASS | s0.05:0.65/+21 s0.03:0.59/+11 s0.02:0.00/+0 s0.015:0.00/+0 s0.012:0.00/+0 s0.01:0.00/+0 s0.0075:0.00/+0 s0.005:0.00/+0
+[BE 101]   P(fcomp) mode per sigma: 0.05:0.10 0.03:0.10 0.02:0.20 0.015:0.20 0.012:0.20 0.01:0.20 0.0075:0.20 0.005:0.35
+[BE 101] GC0 PASS | cost(kw=0.7/1.0/1.4) = 134.8/291.2/439.6  Dwob = +304.8
+
+GA1 simple: sigma=0.03 mean 0.74/+16.0 (shipped 0.74/+16) PASS
+  simple alpha_marg(sigma): 0.05:0.74 0.03:0.74 0.02:0.00 0.015:0.00 0.012:0.00 0.01:0.00 0.0075:0.00 0.005:0.00  -> sigma* = 0.02
+  simple Part C: mean Dwob = +314.4 -> WOBBLE-BINDING
+GA1 BE: sigma=0.03 mean 0.67/+15.4 (shipped 0.67/+15) PASS
+  BE alpha_marg(sigma): 0.05:0.70 0.03:0.67 0.02:0.23 0.015:0.19 0.012:0.19 0.01:0.19 0.0075:0.19 0.005:0.00  -> sigma* = 0.02
+  BE Part C: mean Dwob = +306.0 -> WOBBLE-BINDING
+
+== PART B: q-moment table (model-verbatim; prices the conversion) ==
+[M_h=0.35] clip floor: l(q=0.1) = 0.024 (the model's companions are never fully dark); wfac max at q = 0.39; q_min(hard flag) = 0.70; <Wwob|detected>/<Wwob|undetected> = 0.16; <dmass|detected>/<dmass|undet> = 2.05
+  pi=flat     : completeness x1.00 | wobble x1.00 (fce_joint 0.300) | mass x1.00 (fce_joint 0.300)
+  pi=q^-0.5   : completeness x0.81 | wobble x1.05 (fce_joint 0.391) | mass x0.79 (fce_joint 0.295)
+  pi=twin25   : completeness x1.27 | wobble x0.81 (fce_joint 0.190) | mass x1.27 (fce_joint 0.299)
+  pi=det-shape: completeness x1.60 | wobble x0.55 (fce_joint 0.104) | mass x1.58 (fce_joint 0.296)
+[M_h=0.50] clip floor: l(q=0.1) = 0.007 (the model's companions are never fully dark); wfac max at q = 0.40; q_min(hard flag) = 0.80; <Wwob|detected>/<Wwob|undetected> = 0.17; <dmass|detected>/<dmass|undet> = 1.92
+  pi=flat     : completeness x1.00 | wobble x1.00 (fce_joint 0.300) | mass x1.00 (fce_joint 0.300)
+  pi=q^-0.5   : completeness x0.81 | wobble x0.99 (fce_joint 0.368) | mass x0.79 (fce_joint 0.295)
+  pi=twin25   : completeness x1.35 | wobble x0.81 (fce_joint 0.180) | mass x1.27 (fce_joint 0.281)
+  pi=det-shape: completeness x1.72 | wobble x0.69 (fce_joint 0.121) | mass x1.62 (fce_joint 0.283)
+[M_h=0.75] clip floor: l(q=0.1) = 0.001 (the model's companions are never fully dark); wfac max at q = 0.56; q_min(hard flag) = 0.88; <Wwob|detected>/<Wwob|undetected> = 0.13; <dmass|detected>/<dmass|undet> = 1.86
+  pi=flat     : completeness x1.00 | wobble x1.00 (fce_joint 0.300) | mass x1.00 (fce_joint 0.300)
+  pi=q^-0.5   : completeness x0.81 | wobble x0.93 (fce_joint 0.345) | mass x0.79 (fce_joint 0.295)
+  pi=twin25   : completeness x1.50 | wobble x0.82 (fce_joint 0.164) | mass x1.27 (fce_joint 0.254)
+  pi=det-shape: completeness x2.04 | wobble x0.69 (fce_joint 0.102) | mass x1.68 (fce_joint 0.248)
+GB0 law identities (amended A1): PASS
+
+GATES: ALL PASS
+==> READING: Part C = WOBBLE-BINDING (Dwob +314.4/+306.0); FORMAL (pre-stated letter; det-shape moment x0.69 vs the 0.5 bar) = MIXED
+==> JOINT CONVERSION BAND (amendment A2): fce_joint(wobble) = [0.10, 0.39], fce_joint(mass) = [0.25, 0.30] across pi brackets (references: kinematic preference 0.10, scalar-passed 0.30).
+    the detection-informed bracket REACHES the kinematic preference (<= 0.15): the wobble-channel tension is conversion-flexible; the mass-channel joint is pi-stable (completeness and mass-weight co-vary) - the certificate must ship (q, P)-resolved output either way (v2c-plus, per the review's principled version).

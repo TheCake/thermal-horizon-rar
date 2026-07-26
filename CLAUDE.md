@@ -1018,10 +1018,12 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   value re-affirmed; miss direction noted). Ledger +bin-7jz-v1/-v2b/
   -width/+bin-7jg-gamma, anchorcurve→CO-QUOTED; audit 113 rows/64
   tokens green; worldtable banner = width-channel form. NEXT (fixed
-  order): **v2c certificate → anchored re-read (free, cubes
-  prior-independent) → arm suite at the landed anchor (injections
-  DEGRADED with the measured kernel per 7J-w2 + fpm→3.0 + BE α=0.4
-  discriminator)**; then 7K-a/b, 7J-d, 7L, ĉ₁ budget, THE SPLIT
+  order): **v2c-PLUS certificate (round-10 requirement: (q,P)-resolved
+  rate + v2b posterior q-extraction, never a scalar) → anchored
+  re-read (free, cubes prior-independent) → arm suite at the landed
+  anchor (injections DEGRADED with the measured kernel per 7J-w2 +
+  fpm→3.0 + BE α=0.4 discriminator + kw=0.7-residual attribution)**;
+  then 7K-a/b, 7J-d, 7L, ĉ₁ budget, THE SPLIT
   (Paper 1 leads: completeness+kernel discovery+width channel+
   phantom-veto+census). Review rounds 7-8 (Opus): axis chain written
   (P/H/PAIR; the 1−(1−0.24)²=0.42 trap named), his pair-map +
@@ -1055,7 +1057,38 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   width — stays independent, 7L unchanged); "3× field from triple
   dynamics" NOT printed pending scout. No bar moved, credence HELD
   ~45% (cadence: v2c + arm suite are the deciders). Ledger
-  +bin-7j-sqclose (114 rows/66 tokens green).** Then the DM
+  +bin-7j-sqclose (114 rows/66 tokens green).**
+  **ROUND 10 (2026-07-26, Opus's exit — he owns the D2 misclaim, 3rd
+  false execution claim in 4 rounds, ends round-by-round audit; door
+  open for 7L/split reads; PAPER → v3.2): 7J-z4
+  ([calcs/stage7j_qmoments.py](calcs/stage7j_qmoments.py), pre-framed
+  3cbedbe, amendments A1/A2 logged post-fail pre-quote at 2a3821d,
+  amended run ALL GATES PASS): **(A) anchor-STRENGTH curve — his knee
+  mechanics wrong (collapse axis is width, not center-range: σ=0.03
+  anchors hold α even centered 0.35+), substance right and MEASURED:
+  σ* = 0.02 both laws (α holds 0.67–0.75 at σ≥0.03; collapse routes
+  via the fcomp=0.2 cell; 0.35 only at σ=0.005); unshipped-rate
+  precision ~0.015 < σ* ⇒ a face-precision certificate FIRES the
+  fifth move on the flat-q axis. (C) kw attribution: the 135–153
+  forced-multiplicity rejection is WOBBLE-BINDING (Dwob +314/+306 —
+  kw 0.7→1.4 triples the cost). (B) his two-moments objection
+  VINDICATED-and-completed: detected companions carry 0.13–0.17 of
+  undetected wobble variance (6–8×; hard-flag q_min 0.70–0.88; wfac
+  peaks q≈0.4–0.6); his gap = the hidden-mass channel √(1+q/2),
+  twin-maximal, π-stable (0.25–0.30), non-binding; JOINT conversion
+  band fce_joint(wobble) = [0.10, 0.39] — the detection-shaped
+  bracket makes host 0.30 ≡ 0.10–0.12 kinematically (his "~0.12"
+  reproduced); formal letter = MIXED (A2: first band missed the
+  completeness rescaling — logged, joint reported alongside).
+  CONSEQUENCE: the exposure lives on (rate, precision, π_q) JOINTLY —
+  the ×3 multiplicity tension is NOT YET KINEMATIC; **v2c UPGRADED
+  to v2c-plus BY REQUIREMENT: ship a (q,P)-resolved rate + extract
+  the v2b posterior's q-information, never a scalar**; his
+  "indifferent at +0.0" corrected (that's α-indifference WITHIN the
+  forced world; the likelihood pays 135–153 to avoid it);
+  "tension-as-result" adopted for Paper 1's spine. Ledger
+  +bin-7j-qmoments (115 rows/68 tokens); credence HELD ~45%
+  (cadence).** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
@@ -1071,6 +1104,12 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
 - Never edit PAPER.md (or any Unicode-heavy file) via PowerShell Get/Set-Content —
   PS 5.1 double-encodes; one full-file corruption caught by git diff --stat
   (2026-07-26). Use the Edit tool.
+- A flatness/robustness claim is only as strong as the reason the scanned range
+  or axis ended where it did — ship the risk axis with the curve (round-10
+  standing note: the anchor curve was flat in CENTER while the collapse lived on
+  WIDTH at σ* = 0.02, one measurement away; scalar conversions between
+  differently-weighted moments of a distribution are the same trap — pass the
+  distribution, per the q-moments audit).
 - Known trap fingerprints already caught here: axial-angle double-fold (R→2/π exactly);
   non-conservative EFE recipe (energy pumping, ṽ→7.4); IC/a₀-convention biases; phantom-
   source sign (repulsive halo, boost<1); grid-edge maxima (the retracted bullseye). Suspect

@@ -133,6 +133,9 @@ CHECKS = [
     ('bin-7j-sqclose', 'S1 mean anchor strain = 0.0',
      'data/stage7j_sqclose.txt'),
     ('bin-7j-sqclose', 'FIFTH-MOVE-LIVE', 'data/stage7j_sqclose.txt'),
+    ('bin-7j-qmoments', 'sigma* = 0.02', 'data/stage7j_qmoments.txt'),
+    ('bin-7j-qmoments', 'fce_joint(wobble) = [0.10, 0.39]',
+     'data/stage7j_qmoments.txt'),
     ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
      'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
     ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',
@@ -344,10 +347,18 @@ say('data veto (SEPARATION-CONFIRMED, M3).  Round-9 decomposition')
 say('(bin-7j-sqclose): anchor strain 0.0 - the quoted alpha is the')
 say('width-complete model\'s own optimum - but forcing the measured ~0.3')
 say('host rate collapses alpha to 0.00 in 4/4 reads: FIFTH-MOVE-LIVE,')
-say('alpha fully exposed to the multiplicity tension.  The binary DATA')
-say('VOTE stays suspended pending v2c + the anchored re-read + the arm')
-say('suite (degraded injections, fpm -> 3.0), which now also adjudicate')
-say('the exposure; 7K and 7J-d queue behind.  Galaxy rows are untouched.')
+say('alpha fully exposed to the multiplicity tension.  Round-10')
+say('conversion audit (bin-7j-qmoments) RESHAPES the exposure: the')
+say('collapse needs anchor width sigma <= 0.02 (sigma* measured; alpha')
+say('holds 0.67-0.75 at sigma >= 0.03), the rejection is WOBBLE-BINDING')
+say('(+310 per amplitude doubling), and the joint q-conversion band')
+say('[0.10, 0.39] brackets the kinematic preference - detection and')
+say('wobble are 6-8x anticorrelated in q, so the x3 multiplicity')
+say('tension is NOT YET KINEMATIC: the certificate must ship a')
+say('(q,P)-resolved rate (v2c-plus, required).  The binary DATA VOTE')
+say('stays suspended pending v2c-plus + the anchored re-read + the arm')
+say('suite (degraded injections, fpm -> 3.0, kw-residual attribution);')
+say('7K and 7J-d queue behind.  Galaxy rows are untouched.')
 say('')
 say('The mechanical sentence the table proves: AMB is the only candidate that is')
 say('(a) un-vetoed on the binaries (tie with BE), (b) at the top galaxy bootstrap')
