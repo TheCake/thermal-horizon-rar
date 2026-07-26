@@ -4996,6 +4996,75 @@ GROW with outer separation — the lit anchor may sit low for our range.
 Part 1 is then the first measurement in its range if gates pass
 (claim held at scout grade until the paper's own novelty pass).
 
+AMENDMENTS (2026-07-26, in-flight, all logged BEFORE any decider
+result was read; review round 7 = Opus's post-batch note):
+
+7e — GB0w FIRST FIRING (gate catch, pre-results): the photow batch
+aborted seed-31-simple at max|photow(sq=0)−photo| = 8.19e+02. The
+diagnostic localizes it exactly: diff = 0.000 at fcomp = 0, growing
+monotonically along the fcomp axis (−29/−117/−244/−377/−574),
+kw-dependent — the companion-sector signature. Cause: build_pop's
+photocenter amplitude branch still tested AMP == 'photo', so photow
+fell through to the AS-PUBLISHED raw wobble law. One-line fix
+(AMP in ('photo','photow')); the invalid cube pair DELETED before
+relaunch (the exists-check would have resurrected it — the 7D
+stale-table lesson applied); the diagnostic's peek at the invalid
+cube's sq-axis means is disclosed and superseded. The gate class
+earns its keep: this was invisible in the PROF row and would have
+poisoned both deciders.
+
+8 — 7J-g DUAL-CONFIGURATION READ (review round 7, adopted): the
+width channel sq is γ-blind by PHYSICS (normalization errors do not
+rotate velocities) and by construction, so its inclusion dilutes the
+γ-carried share of total information and pulls the M-metrics toward
+"no separation" partly by design. stage7jg_read now reads BOTH
+configurations from the SAME cubes: sq FREE (pre-registered primary)
+and sq PINNED to 0 (the original four-absorber diagnosis). Primary
+tier from sq-free as pre-registered; the sq-pinned co-read is the
+interpretation guard; if the tiers differ, the difference is itself
+the finding. (Cheaper than the reviewer's request — no second batch:
+the sq=0 slice of the same cubes IS the pinned configuration.)
+
+THE AXIS CHAIN (review round 7's demand, written before GZ1 landed;
+every companion number now carries its axis):
+  (P) = blended-photometric fraction PER COMPONENT — what any
+      δ-distribution fit measures (only companions inside Gaia's
+      resolution blend and brighten);
+  (H) = host fraction PER COMPONENT = (P) ÷ P_blend, with P_blend ≈
+      0.52-0.65 from the model's own (q, logP) laws at the sample's
+      distances (part A's four combos). THIS is v7's fcomp axis (the
+      code draws each component's companion independently at fcomp).
+  (PAIR) = 1 − (1−H)² — comparison-only; never enters v7.
+  Literature (Tokovinin, scout-confirmed): subsystem rates are REAL
+      companion rates → (H) ≈ 0.09-0.10; (PAIR) ≈ 0.166. The 7J-s6
+      "lit-0.16" anchor therefore read a (PAIR)-flavored number onto
+      the (H) axis — ~1.7× high. Conclusion immune (the 7J-e3 curve
+      is flat 0.06-0.30 at smooth anchors), but the row gains this
+      annotation; the operative anchor is about to be the measured
+      one regardless.
+  Retracted part A: f_photo 0.22-0.30 = (P); f_host 0.42-0.57 (peak
+      0.51) = (H) PER COMPONENT via ÷P_blend — NOT via the pair map;
+      the numerical coincidence 1−(1−0.24)² = 0.42 is a trap, named
+      here so nobody falls into it again.
+  Part 1 interim MAP (envelope + gates pending): f̂ = 0.166 = (P) →
+      (H) ≈ 0.26-0.32 → v7-axis position between the 0.2 cell and the
+      0.35 posterior cell; (PAIR) ≈ 0.45-0.54; vs literature on (H):
+      ×2.6-3.2. CORRECTED interim comparison (supersedes the mixed-
+      axis sentence "between the literature and the retracted scale"):
+      on (P) the repair pulls the blended fraction DOWN from part A's
+      0.22-0.30, as the #18 mechanism predicts; on (H) the landed
+      position is in the companion-favored region of the grid and
+      ~3× the literature host rate (the scout's incidence-grows-with-
+      separation caveat and the evolved-interloper upper-bound caveat
+      both push that same direction).
+  The knee, stated precisely: 7J-e3 measured NO knee for smooth
+      anchors (σ 0.03/0.05) anywhere in 0.06-0.30 — the +99.5 row
+      lives behind a HARD WALL only. But a measured prior tighter
+      than σ ≈ 0.02 landing LOW would begin to reconstruct the wall
+      (penalty at 0.2 ≥ +16 vs the likelihood's +12..+28 payment), so
+      the shipped envelope's WIDTH is quoted next to its position and
+      the readers interpolate the actual envelope, never a label.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

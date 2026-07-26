@@ -196,6 +196,16 @@ photow run; batch may not be edited while running, as always):
       lives in the pre-registered readers (stage7jz_read /
       stage7jg_read), because the landed anchor does not exist until
       part 1 ships it and cubes are prior-independent.
+  (e) GB0w FIRST FIRING (2026-07-26, logged pre-results): the gate
+      ABORTED seed-31-simple at 8.19e+02 — build_pop's photocenter
+      amplitude branch was still gated on AMP == 'photo', so photow
+      silently used the as-published raw wobble law (diff exactly 0 at
+      fcomp = 0, growing monotonically along fcomp, kw-dependent = the
+      companion-sector signature). Fixed to AMP in ('photo','photow');
+      the invalid photow cube pair was DELETED before relaunch (the
+      exists-check would otherwise resurrect it — the 7D stale-table
+      lesson). Diagnostic peek at the invalid cube's sq-axis means is
+      disclosed and superseded; no anchor read was performed on it.
 
 argv: <sample: full|strict|strictpow|fullpow|fullpowbe|strictpowbe>
       [photo|photow] <seeds...>
@@ -374,10 +384,12 @@ def build_pop(seed):
         valid = (a_in < 130.0) & (a_in < p['a_s']/5.0)
         v_orb = 29.78*np.sqrt(M_h*(1+q)/np.maximum(a_in,1e-3))
         S = np.minimum(1.0, P_yr/17.8)
-        if AMP == 'photo':
+        if AMP in ('photo', 'photow'):
             # photocenter wobble: astrometry follows the light, not the
             # mass — |q/(1+q) - l/(1+l)|, l = L2/L1 from the mass-mag
-            # table; exactly zero for twins
+            # table; exactly zero for twins. (photow inherits the photo
+            # amplitude law; the omission of 'photow' here was caught by
+            # GB0w on its first firing — amendment 7e.)
             MGp = np.interp(-np.clip(M_h, MS_T[-1], MS_T[0]), -MS_T, MG_T)
             MGs = np.interp(-np.clip(q*M_h, MS_T[-1], MS_T[0]), -MS_T, MG_T)
             l_ = 10**(-0.4*(MGs-MGp))

@@ -54,6 +54,20 @@ verdict x this tier; pre-committed):
                                           binaries decline the boost)
   NO-DETECTION   + ABSENT              -> ~30-35% + Paper-1 reframe
   AMBIGUOUS anywhere                   -> hold ~45%, carried
+AMENDMENT 8 (2026-07-26, review-prompted, logged BEFORE any vt cube
+existed to read): the width channel sq is gamma-blind BY PHYSICS
+(normalization errors do not rotate velocities) and by construction —
+so including it in the absorber set dilutes the gamma-carried share of
+total information and pulls the M-metrics toward "no separation" for a
+design reason as well as a physical one. BOTH configurations are
+therefore read from the SAME cubes: (i) sq FREE (the pre-registered
+primary — separability of the full absorber set as fitted), and
+(ii) sq PINNED to 0 (the sq=0 slice; the original FOUR-absorber
+diagnosis of review rounds 4-6). The primary verdict tier comes from
+(i) as pre-registered; (ii) is the interpretation guard — if the two
+tiers differ, both are reported and the difference is itself the
+finding (it localizes how much gamma-nullness the width channel
+contributes by dilution).
 GATES: both cubes finite everywhere; alpha=0 cross-law agreement
 reported for both channels (determinism grade, diagnostic — the
 Newton row is law-blind physics); the vt construction is a collapse of
@@ -128,24 +142,28 @@ def read(cb9):
     return am, float(lm.max()-lm[0]), Wa, sds, cors, posts
 
 R = {}
+CONFIGS = ('sqfree', 'sq0')
 for law in ('simple', 'BE'):
     for seed in SEEDS:
         c2d = np.load(f'data/stage7j_cube_full_photow_{seed}_{law}.npy')
         cvt = np.load(f'data/stage7j_cubevt_full_photow_{seed}_{law}.npy')
         assert np.isfinite(c2d).all() and np.isfinite(cvt).all(), "NaN cube"
         for ch, cc in (('2D', c2d), ('vt', cvt)):
-            cb9 = cc + prior_eta.reshape((1, 2, 1, 1, 1, 1, 1, 1, 1))
-            R[(law, seed, ch)] = read(cb9)
-            am, dn, Wa, sds, cors, posts = R[(law, seed, ch)]
-            P(f"[{law} {seed} {ch}] a_marg={am:.2f} dN={dn:+.1f} "
-              f"W_a={Wa:.2f} | SD(wr)={sds['wr']:.3f} "
-              f"SD(fcomp)={sds['fcomp']:.3f} SD(sq)={sds['sq']:.3f} "
-              f"SD(fpm)={sds['fpm']:.3f} | corr(a,wr)={cors['wr']:+.2f} "
-              f"corr(a,fcomp)={cors['fcomp']:+.2f} "
-              f"corr(a,sq)={cors['sq']:+.2f}")
-            P(f"   P(wr)={np.round(posts['wr'],2).tolist()} "
-              f"P(fcomp)={np.round(posts['fcomp'],2).tolist()} "
-              f"P(sq)={np.round(posts['sq'],2).tolist()}")
+            for cfg in CONFIGS:
+                cs = cc if cfg == 'sqfree' else cc[..., :1]
+                cb9 = cs + prior_eta.reshape((1, 2, 1, 1, 1, 1, 1, 1, 1))
+                R[(law, seed, ch, cfg)] = read(cb9)
+                am, dn, Wa, sds, cors, posts = R[(law, seed, ch, cfg)]
+                P(f"[{law} {seed} {ch} {cfg}] a_marg={am:.2f} "
+                  f"dN={dn:+.1f} W_a={Wa:.2f} | SD(wr)={sds['wr']:.3f} "
+                  f"SD(fcomp)={sds['fcomp']:.3f} SD(sq)={sds['sq']:.3f} "
+                  f"SD(fpm)={sds['fpm']:.3f} | "
+                  f"corr(a,wr)={cors['wr']:+.2f} "
+                  f"corr(a,fcomp)={cors['fcomp']:+.2f} "
+                  f"corr(a,sq)={cors['sq']:+.2f}")
+                P(f"   P(wr)={np.round(posts['wr'],2).tolist()} "
+                  f"P(fcomp)={np.round(posts['fcomp'],2).tolist()} "
+                  f"P(sq)={np.round(posts['sq'],2).tolist()}")
 
 # alpha=0 cross-law agreement (diagnostic, determinism grade)
 for tagf, nm in (('stage7j_cube', '2D'), ('stage7j_cubevt', 'vt')):
