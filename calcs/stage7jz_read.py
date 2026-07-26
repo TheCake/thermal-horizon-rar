@@ -35,6 +35,24 @@ VERDICT BARS at the LANDED anchor (seed means, evaluated per law):
   Seed-extension rule (amendment 7d): |a_marg(31) - a_marg(101)| > 0.25
   at the landed anchor (either law) -> verdict deferred, seeds 202/303
   appended first.
+
+AMENDMENT 9 (2026-07-26, review round 8, logged before any photow cube
+existed to read): THE ANCHOR CURVE RE-READ. The 7J-e3 flatness
+(a_marg 0.18-0.31, Newton +2..+4 over smooth anchors 0.06-0.30) was
+measured under the OLD absorber configuration; the width channel
+competes for the same width budget, so the flatness the landed-anchor
+logic relies on is re-measured on the new cubes (same centers, step
+0.02, extended to 0.34 to cover the interim MAP region; sigma 0.05 and
+0.03; seed means per law). Reading rules (pre-registered):
+  KNEE-REAPPEARS   any anchor in 0.06-0.30 gives a_marg >= 0.5 AND
+                   dN_marg >= +25 (a detection-grade point exists on
+                   the smooth curve under the new model);
+  FLAT-PRESERVED   sigma=0.03 span (max-min a_marg, centers 0.06-0.30)
+                   <= 0.25 AND all dN_marg <= +10, both laws;
+  else INTERMEDIATE (reported as-is).
+This tells us whether the flatness is a property of the data or of
+the model that was running when it was measured (reviewer's phrasing,
+adopted).
 Output: data/stage7jz_read.txt
 """
 import os
@@ -160,6 +178,40 @@ if not ext_needed:
     P(f"\n==> 7J-z part 2 VERDICT @ {OPER}: {v}  [D1 {d1}"
       f"{' +SQ-EDGE-FLAG' if ef else ''}; D2 {d2}; "
       f"D3 fpm-edge {'RELEASED' if d3 else 'STILL RIDING'}]")
+
+# --- AMENDMENT 9: the anchor curve re-read on the photow cubes -----------
+P("")
+P("ANCHOR CURVE under the width channel (7J-e3 reference: a_marg "
+  "0.18-0.31, dN +2..+4 over 0.06-0.30):")
+CENS = np.arange(0.06, 0.3401, 0.02)
+knee, spans, dmaxs = False, [], []
+cubes = {(law, s): np.load(f'data/stage7j_cube_full_photow_{s}_{law}.npy')
+         + prior_eta.reshape((1, 2, 1, 1, 1, 1, 1, 1, 1))
+         for law in ('simple', 'BE') for s in SEEDS}
+for sg in (0.05, 0.03):
+    for law in ('simple', 'BE'):
+        row = []
+        for cen in CENS:
+            lnpi_c = -0.5*((FCOMP-cen)/sg)**2
+            ams, dns = [], []
+            for s in SEEDS:
+                am, dn, _, = read(cubes[(law, s)], lnpi_c)[:3]
+                ams.append(am); dns.append(dn)
+            am_, dn_ = float(np.mean(ams)), float(np.mean(dns))
+            row.append((cen, am_, dn_))
+            if cen <= 0.301 and am_ >= 0.5 and dn_ >= 25:
+                knee = True
+        if sg == 0.03:
+            in_ = [r for r in row if r[0] <= 0.301]
+            spans.append(max(r[1] for r in in_) - min(r[1] for r in in_))
+            dmaxs.append(max(r[2] for r in in_))
+        P(f"  sg={sg} {law}: " + " ".join(
+            f"{c:.2f}:{a:.2f}/{d:+.0f}" for c, a, d in row))
+flat = (max(spans) <= 0.25) and (max(dmaxs) <= 10)
+cv = ('KNEE-REAPPEARS' if knee else
+      'FLAT-PRESERVED' if flat else 'INTERMEDIATE')
+P(f"==> ANCHOR-CURVE READING: {cv} (sigma=0.03 spans "
+  f"{[round(s,2) for s in spans]}, max dN {[round(d,1) for d in dmaxs]})")
 with open('data/stage7jz_read.txt', 'w') as f:
     f.write("\n".join(L) + "\n")
 print("saved: data/stage7jz_read.txt")

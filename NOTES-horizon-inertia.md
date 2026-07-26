@@ -5065,6 +5065,23 @@ every companion number now carries its axis):
       the shipped envelope's WIDTH is quoted next to its position and
       the readers interpolate the actual envelope, never a label.
 
+9 — THE ANCHOR CURVE RE-READ (review round 8, adopted pre-results):
+the 7J-e3 flatness was measured under the OLD absorber configuration;
+the width channel competes for the same budget, so stage7jz_read now
+re-measures the smooth-anchor curve on the photow cubes (same centers,
+extended to 0.34; σ 0.05/0.03; reading rules pre-registered:
+KNEE-REAPPEARS if any 0.06-0.30 anchor reaches a_marg ≥ 0.5 with
+dN ≥ +25; FLAT-PRESERVED if σ=0.03 span ≤ 0.25 with all dN ≤ +10;
+else INTERMEDIATE). Round 8 also: the reviewer's pair-map arithmetic
+withdrawn by the reviewer (the 1−(1−0.24)² = 0.42 match confirmed as
+the named trap — his own warning's failure mode, executed one
+paragraph after warning about it, conceded openly); the fence/anchor
+conflation withdrawn; his standing caution adopted verbatim into
+discipline: "the gate that catches a bug is always one someone
+thought to write" — every new mode gets a regression against the old
+mode at its identity point (goes to CLAUDE.md discipline at
+close-out).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
