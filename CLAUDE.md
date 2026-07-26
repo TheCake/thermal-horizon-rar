@@ -1128,8 +1128,20 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   A null ≤0.3 / B simple 0.74±0.25 / C BE 0.70±0.25 / D BE 0.40
   discriminator / E sky fpm→3.0 + identity regression; injections
   q-MISMATCHED (draw twin t=5 = the GV7 winner, fit flat-q) + sq_true
-  0.2 + fpm_true at posterior mode; implementation = the next work
-  block.** Then the DM
+  0.2 + fpm_true at posterior mode. **E-ARM EXECUTED (7J-z5-E,
+  [calcs/stage7jz5_eread.py](calcs/stage7jz5_eread.py), FPME wiring
+  fca062e, GB0w+GB0e 0.00e+00 ×4, GE0 exact 4/4): THE NOISE EDGE
+  CHASES — P(fpm=3.0) = 0.54/0.97, mode at the new edge both laws,
+  α 0.74→0.68 / 0.70→0.67, dN +23.8→+14.5 / +23.2→+16.1 (~8 lnL
+  ceded); Dwob stable +305/+310. fpm=3.0 = 3× Gaia formal errors =
+  past the Lindegren+21 ceiling (~1.4) ⇒ the missing-width-SHAPE
+  signature (the 3E→6P→sq ladder's next rung); pre-registered
+  decision clause: NO further extension (unphysical direction);
+  operative α CO-QUOTED with the band 0.68–0.74 / +14.5–23.8
+  (ledger bin-7jz5-earm, 119 rows/75 tokens); A–D twin-mismatch
+  arms = the next work block (do twin-drawn skies reproduce the
+  edge-chasing?) + width-shape refinement queued behind them.**
+  Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

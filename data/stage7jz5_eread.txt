@@ -1,0 +1,9 @@
+operative anchor (LANDED-CONV): [-4886.95, -0.96, -0.43, -0.29, -4.97, -153.72]
+[simple 31] GE0 0.74/+24.4 vs shipped 0.74/+24.4 PASS | EXT: a_marg=0.63 dN=+16.2 P(fpm)=[0.0, 0.0, 0.0, 0.0, 0.0, 1.0] | Dwob=+311.9
+[simple 101] GE0 0.74/+23.2 vs shipped 0.74/+23.2 PASS | EXT: a_marg=0.74 dN=+12.7 P(fpm)=[0.0, 0.0, 0.0, 0.37, 0.53, 0.09] | Dwob=+308.0
+[BE 31] GE0 0.75/+24.1 vs shipped 0.75/+24.1 PASS | EXT: a_marg=0.75 dN=+12.8 P(fpm)=[0.0, 0.0, 0.0, 0.0, 0.06, 0.94] | Dwob=+308.4
+[BE 101] GE0 0.65/+22.4 vs shipped 0.65/+22.4 PASS | EXT: a_marg=0.59 dN=+19.3 P(fpm)=[0.0, 0.0, 0.0, 0.0, 0.0, 1.0] | Dwob=+301.3
+
+GATES: GE0 ALL PASS
+simple: P(fpm=3.0)=0.54, mode AT EDGE -> D3-EXT STILL-RIDING; a_marg=0.68 (shift -0.059) dN=+14.5; Dwob=+309.9
+BE: P(fpm=3.0)=0.97, mode AT EDGE -> D3-EXT STILL-RIDING; a_marg=0.67 (shift -0.030) dN=+16.1; Dwob=+304.9

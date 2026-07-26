@@ -5647,6 +5647,53 @@ detection bar — same as before, but now standing on a certified
 foundation. Confidence stays 45% until the final validation round
 (the "arm suite") reports.
 
+## 7J-z5-E (2026-07-26 night): the fpm → 3.0 extension — THE NOISE EDGE CHASES
+
+Four photow3 cubes built behind GB0w + GB0e identity gates (all
+0.00e+00 — the ≤2.4 slice reproduces the operative decider cubes
+bit-exactly; the E-arm wiring is clean); GE0 slice-identity
+regressions vs the shipped anchored read exact 4/4. THE FINDING:
+**the edge does not release — it chases. P(fpm = 3.0) = 0.54
+(simple) / 0.97 (BE), the posterior mode AT the new edge in both
+laws (D3-EXT STILL-RIDING), and this time it costs the signal:
+α_marg 0.74 → 0.68 / 0.70 → 0.67, dN +23.8 → +14.5 / +23.2 →
++16.1 — the Newton gap cedes ~8 lnL to the extra noise freedom.**
+Dwob unchanged (+310/+305; the wobble attribution is stable).
+
+Reading: fpm = 3.0 claims Gaia's formal PM errors are underestimated
+3× — beyond the published physical ceiling (Lindegren+21 ~1.1–1.4;
+the 7J-c diagnostic flagged 2.4 as already outside anything
+published). The fit is demanding noise the error model cannot
+physically supply = the missing-width-SHAPE signature, the
+3E → 6P → sq ladder's next rung (sq is a single global s-flat σ;
+the data evidently want structured width). DECISION per the
+pre-registered clause (a ride at 3.0 queues an extension DECISION,
+not an automatic run): **NO further mechanical extension** — more
+nodes chase an unphysical direction. The operative α stays the
+pre-registered ≤2.4 anchored read, now CO-QUOTED with the
+fpm-conditional band: **α 0.68–0.74, dN +14.5–23.8**. Attribution
+→ the A–D mismatch arms (do twin-drawn injected skies reproduce the
+edge-chasing?) + a width-shape refinement (queued behind the arms).
+
+PLAIN VERDICT: SUCCESS as an instrument (gates exact, the question
+answered decisively) — and the answer is adverse-leaning: the noise
+sector is still telling us the width model is incomplete, and it is
+willing to spend the boost's significance to say so. The honest
+binary headline after tonight: α = 0.74/0.70 at +23.8/+23.2 on the
+certificated anchor, with a −8 lnL / −0.06 α exposure to the
+noise-model ceiling, and the arm suite as the named adjudicator.
+
+ELI12: We gave the fit permission to blame even more of the spread
+on "the telescope's error bars are too small." It took the
+permission greedily — all the way past what the telescope's own
+calibration papers allow — and paid for it out of the gravity
+signal's pocket (23 points → 15). When a model keeps reaching for
+an excuse physics forbids, that's not the excuse being right —
+that's the model telling you its noise description is still missing
+a shape. We stopped feeding it new excuses (rule was pre-agreed),
+wrote down both readings, and the validation arms will now test
+whether twin companions produce exactly this kind of greed.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

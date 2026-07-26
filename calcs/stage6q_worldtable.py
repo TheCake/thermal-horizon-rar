@@ -145,6 +145,8 @@ CHECKS = [
     ('bin-7jz-qshape', 'flat: dlnL=-162.0', 'data/stage7jz2c_cert.txt'),
     ('bin-7jz-anchored', 'VERDICT @ LANDED-CONV: AMBIGUOUS-CARRIED',
      'data/stage7jz_read.txt'),
+    ('bin-7jz5-earm', 'D3-EXT STILL-RIDING', 'data/stage7jz5_eread.txt'),
+    ('bin-7jz5-earm', 'P(fpm=3.0)=0.97', 'data/stage7jz5_eread.txt'),
     ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
      'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
     ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',
@@ -354,7 +356,11 @@ say('TWIN-HEAVY (t=5 beats flat +162, f 0.124, host ~0.23) = the')
 say('wobble-quiet population - the x3 multiplicity tension DISSOLVING')
 say('in the round-10 direction; the FACE flat-q read = the fifth move')
 say('fired live, alpha 0.00, quoted as the conditional whose premise')
-say('the q-table rejects).')
+say('the q-table rejects).  E-read (bin-7jz5-earm): the fpm edge')
+say('CHASES to 3.0 (BE P=0.97) = an unphysical noise demand (Lindegren')
+say('ceiling ~1.4) = the missing-width-SHAPE signature; no further')
+say('extension; operative numbers co-quoted with the band alpha')
+say('0.68-0.74 / dN +14.5-23.8; A-D mismatch arms = next.')
 say('7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid')
 say('step, all mass on the 0.20 node); in the four-absorber configuration')
 say('vt-only fitting reports a PHANTOM alpha = 0.5 that the direction')
