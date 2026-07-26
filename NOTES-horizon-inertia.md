@@ -4928,6 +4928,74 @@ PLAIN VERDICT: batch SUCCESS — the seed axis is closed (no luck
 break), the operative-anchor measurement is now error-barred, and
 the program's full attention moves to the two deciders.
 
+## Stage 7J-z / 7J-g PRE-REGISTRATION (2026-07-26, committed before
+## execution; this commit's hash is the timestamp)
+
+THE TWO DECIDERS, instrumented in one round:
+
+7J-z part 1 — [calcs/stage7jz_mixture.py](calcs/stage7jz_mixture.py):
+the repaired completeness measurement. Joint 2D (δ₁, δ₂) mixture with
+PER-PAIR common-mode response slopes r(c₂)/r(c₁) (self-calibrated from
+the cross-component covariance field, which is companion-immune under
+centering + independence), companion sector = part A's combined-δ
+amplitude law unchanged, noise = per-component σ_n(c) + parallax term.
+Gates: GZ0 regression (ρ_core_att = +0.465, N = 13784); GZ1a/b the
+over-attribution control (companion-free rank-1 AND rank-2 truths →
+f̂ ≤ 0.03/0.05; GZ1b fail → rank-2 promoted, pre-registered); GZ2
+recovery (0.10/0.25 within max(0.03, 25%)); GZ3 nesting/convergence;
+GZ6 postdiction (ρ bar slice ±0.05, the dcol-slice TREND ±0.07 — the
+rank-1 geometry's own test — flag fraction ±0.02; incidence ratio
+reported, no bar). Output = the LANDED ANCHOR: f-profile envelope
+(flat-q × q^-0.5) through part A's host remap verbatim →
+data/stage7jz_prior.npz. Axes per component throughout (closes a
+convention ambiguity in the lit-0.16 anchor: Tokovinin's 10.0%/7.3%
+are per-decision-level population fractions; per-pair 0.166 ≈
+per-component ~0.09 — the flat curve made 7J-s6's conclusion immune,
+noted here, no numbered correction). Fail branch: anchor NOT shipped,
+part 2 reads lit-only.
+
+7J-z part 2 — amendment 7 in
+[calcs/stage7j_marginal.py](calcs/stage7j_marginal.py): 'photow' mode
+= photo + the per-system WIDTH CHANNEL (vtn → vtn·exp(sq·g_i), g_i
+drawn once per system, applied after the selection cut =
+normalization-error semantics, the 3E σ_m / 6P s-flat object;
+γ untouched by construction). SQ_GRID = [0, 0.1, 0.2, 0.3]. GB0w:
+sq = 0 slice must equal the cached photo cube ≤ 1e-3 (GB0p precedent
+bar). Batch: FULL sample, seeds 31/101, both laws. Reader bars
+([calcs/stage7jz_read.py](calcs/stage7jz_read.py)): D1 channel usage
+(P(sq>0) ≥ 0.7; edge flag at P(sq=0.3) ≥ 0.5), D2 multiplicity-cost
+closure (the −60…−116 object; ratio ≤ 0.5 CLOSED / ≥ 0.8 NOT-CLOSED),
+D3 fpm-edge release; VERDICT at the landed anchor: BOOST-REVIVES
+(a_marg ≥ 0.5 AND dN ≥ +25, either law) / NO-DETECTION (a_marg ≤ 0.3
+AND dN ≤ +10, both) / else AMBIGUOUS-CARRIED; extension rule
+|Δa_marg| > 0.25 between seeds → +202/303 first.
+
+7J-g — [calcs/stage7jg_read.py](calcs/stage7jg_read.py): the same
+batch emits γ-COLLAPSED TWIN cubes (same model histograms, γ summed
+out of data and model — the collapse is of the same model, disclosed,
+so the metrics isolate the γ CHANNEL). Metrics at the landed anchor,
+seed means: M1 α-width shrink ≥ 30%; M2 dN(2D) − dN(vt) ≥ +15; M3
+|a_marg(2D) − a_marg(vt)| ≥ 0.30; M4 absorber grade (SD of wr or
+fcomp shrinks ≥ 30%). THREE-TIER VERDICT: SEPARATION-CONFIRMED (α
+grade, M1-M3) / ABSORBER-LEVEL (M4 only) / SEPARATION-ABSENT (all
+quiet) / else AMBIGUOUS. PAPER-1 RULE pre-committed: ABSENT → the 2D
+methodological claim does not operate at the landed configuration →
+Paper 1 reframed around the model-light channels; CONFIRMED → the
+claim operates. CREDENCE MAP pre-committed (releases the ~45% freeze
+when BOTH deciders have reported): BOOST-REVIVES + separation ~55-60%
+(ABSENT: ~50-55%); NO-DETECTION + separation ~35-40% (ABSENT: ~30-35%
++ reframe); any AMBIGUOUS → hold ~45%.
+
+Scout note (Haiku, primary-source pass, this morning): Tokovinin's
+10.0%/7.3% CONFIRMED verbatim at AJ 147, 87 (products 0.464×0.214 and
+0.464×0.157; full 67-pc F/G sample, all separations); nearest direct
+wide-binary subsystem survey = Tokovinin 2011 (AJ 140, 510), 12±4% at
+outer 150-1000 AU only; "UNMEASURED at 0.2-50 kAU" SURVIVES
+(scout-grade), with the caveat that subsystem incidence is stated to
+GROW with outer separation — the lit anchor may sit low for our range.
+Part 1 is then the first measurement in its range if gates pass
+(claim held at scout grade until the paper's own novelty pass).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -162,10 +162,46 @@ the second-review pass, whose per-arm standard we accept):
       posterior sits at fcomp = 0.2 with a residual-boost scrap and
       Newton within +2..+7. Quote both.
 
+AMENDMENT 7 (7J-z part 2 + 7J-g instrumentation; registered before any
+photow run; batch may not be edited while running, as always):
+  (a) 'photow' mode = photo + the per-system WIDTH CHANNEL: each system
+      draws one g_i ~ N(0,1) (appended LAST in build_pop, so every
+      earlier draw — hence every legacy cube — is unchanged), and its
+      normalized velocity is smeared vtn -> vtn * exp(sq * g_i) AFTER
+      the selection cut (mass/normalization-error semantics: the 3E
+      sigma_m / 6P s-flat object; the cut acts on km/s observables,
+      which a normalization error does not move). gamma is untouched —
+      the channel is direction-neutral BY CONSTRUCTION, so 7J-g reads
+      it cleanly. SQ_GRID = [0, 0.1, 0.2, 0.3]; legacy modes carry
+      SQ_GRID = [0] and save 8-dim cubes exactly as before
+      (exp(0) = 1.0 is an exact multiply).
+  (b) GB0w regression gate: the photow cube's sq = 0 slice must equal
+      the cached photo cube cell-for-cell to <= 1e-3 (the GB0p
+      precedent bar — the reference cube comes from a different
+      process, so the bar is cross-process-reproducibility grade;
+      expected ~0). FAIL -> abort that seed-law.
+  (c) the gamma-COLLAPSED TWIN cube (the 7J-g instrument): lnL_vt is
+      accumulated from the SAME model histograms with the gamma axis
+      summed out of both data and model (pp.sum over gamma), written to
+      stage7j_cubevt_<sample>_photow_<seed>_<law>.npy. Gates: at
+      alpha = 0 both cubes are law-blind (the BE Newton row is the
+      simple row's cached array — bit-identical after save/load; the
+      readers check it); disclosed: the vt construction is a collapse
+      of the same model, not an independent reimplementation.
+  (d) batch scope (cost honesty): FULL sample only, seeds 31/101, both
+      laws (~40-55 min per seed-law). Extension rule: if
+      |a_marg(31) - a_marg(101)| > 0.25 at the landed anchor (either
+      law, read by stage7jz_read) -> +2 seeds (202/303). In photow
+      mode the MARG/verdict blocks are SKIPPED — every anchor read
+      lives in the pre-registered readers (stage7jz_read /
+      stage7jg_read), because the landed anchor does not exist until
+      part 1 ships it and cubes are prior-independent.
+
 argv: <sample: full|strict|strictpow|fullpow|fullpowbe|strictpowbe>
-      [photo] <seeds...>
-Appends rows to data/stage7j_<sample>[_photo].txt; verdict appended to
-data/stage7j_verdict.txt once both laws of all requested seeds exist.
+      [photo|photow] <seeds...>
+Appends rows to data/stage7j_<sample>[_photo|_photow].txt; verdict
+appended to data/stage7j_verdict.txt once both laws of all requested
+seeds exist (raw/photo modes only).
 """
 import os
 import re
@@ -179,13 +215,18 @@ SAMPLE = sys.argv[1] if len(sys.argv) > 1 else 'full'
 POWS = ('strictpow', 'fullpow', 'fullpowbe', 'strictpowbe')
 assert SAMPLE in ('full', 'strict') + POWS, SAMPLE
 _rest = sys.argv[2:]
-AMP = 'photo' if (_rest and _rest[0] == 'photo') else 'raw'
-if AMP == 'photo':
+AMP = _rest[0] if (_rest and _rest[0] in ('photo', 'photow')) else 'raw'
+if AMP != 'raw':
     _rest = _rest[1:]
 SEEDS_REQ = [int(x) for x in _rest] or [31, 101]
-TAG = '_photo' if AMP == 'photo' else ''
+TAG = {'photo': '_photo', 'photow': '_photow', 'raw': ''}[AMP]
 OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
-KW_GRID = np.array([0.7, 1.0, 1.4]) if AMP == 'photo' else np.array([1.0])
+KW_GRID = (np.array([0.7, 1.0, 1.4]) if AMP in ('photo', 'photow')
+           else np.array([1.0]))
+# amendment 7: the per-system width channel (photow only; legacy grids
+# carry the single sq=0 cell and save 8-dim cubes bit-identically)
+SQ_GRID = (np.array([0.0, 0.1, 0.2, 0.3]) if AMP == 'photow'
+           else np.array([0.0]))
 # amendment 5: fpm rode the 1.8 grid edge in raw-mode PROF rows — the
 # correction-#4 standard (grid-edge = artifact until the grid extends)
 # applies; photo mode carries the extended grid
@@ -300,7 +341,7 @@ FCOMP_GRID = np.array([0.0, 0.10, 0.20, 0.35, 0.50, 0.70])
 FC0_GRID = np.array([0.10])
 FFLY_GRID = np.array([0.05, 0.10])
 FPM_GRID = np.array([1.2, 1.5, 1.8])
-if AMP == 'photo':
+if AMP in ('photo', 'photow'):
     FPM_GRID = FPM_EXT
 
 def build_pop(seed):
@@ -346,6 +387,9 @@ def build_pop(seed):
         w = wfac*v_orb*S/4.74047*valid
         wd = rng.normal(size=(N,3)); wd /= np.linalg.norm(wd,axis=1,keepdims=True)
         p['comp'][k] = dict(w=w, wd=wd, uc=rng.random(N), mh=q*M_h*valid)
+    # amendment 7: the per-system width-channel draw — appended LAST so
+    # every earlier draw (and therefore every legacy cube) is unchanged
+    p['gs'] = rng.normal(size=N)
     return p
 
 def e_of(p, eta, wr):
@@ -381,12 +425,15 @@ def lnL_point(p, o):
     vper = np.sum(vsky*b2,axis=1)
     s_kau = smag/1e3
     out = np.zeros((len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
-                    len(FPM_GRID), len(KW_GRID)))
+                    len(FPM_GRID), len(KW_GRID), len(SQ_GRID)))
+    out_vt = np.zeros_like(out)
     for bi, b in enumerate(SBINS):
         idx = np.where((s_kau>=b[0])&(s_kau<b[1]))[0]
         if len(idx) < 500 or len(noise_pool[bi]) == 0: continue
         vc = 2*np.pi*np.sqrt(p['M_s'][idx]/smag[idx])
         sg0 = noise_pool[bi][p['pick'][bi][idx] % len(noise_pool[bi])]/4.74047
+        gfac = p['gs'][idx]
+        dvt = data_2d[bi].sum(axis=1)      # gamma-collapsed data (7J-g)
         for fi, fcm in enumerate(FCOMP_GRID):
             cvp = np.zeros(len(idx)); cvq = np.zeros(len(idx))
             mh_tot = np.zeros(len(idx))
@@ -410,21 +457,30 @@ def lnL_point(p, o):
                     gmn = np.degrees(np.arccos(np.clip(
                         np.abs(vp_n[keep])/np.maximum(vmag[keep],1e-12),
                         0, 1)))
-                    h,_,_ = np.histogram2d(np.clip(vtn,0.021,5.9), gmn,
-                                           bins=[VE, GE])
-                    p0 = np.maximum(h/max(h.sum(),1), 1e-5); p0 /= p0.sum()
-                    for ci, fc in enumerate(FC0_GRID):
-                        for yi, ff in enumerate(FFLY_GRID):
-                            wch = min(fc*SC2[bi], 0.5)
-                            wfl = min(ff*SC2[bi], 0.5)
-                            wtot = min(wch+wfl, 0.6)
-                            mixc = (wch*UNI_B[bi] + wfl*FLY_B[bi])/(wch+wfl)
-                            pp = (1-wtot)*p0 + wtot*mixc
-                            out[fi, ci, yi, pi, ki] += \
-                                np.sum(data_2d[bi]*np.log(pp))
-    return out
+                    gk = gfac[keep]
+                    for si, sqv in enumerate(SQ_GRID):
+                        # width channel: exp(0)=1.0 exactly, so sq=0
+                        # reproduces the photo path bit-for-bit (GB0w)
+                        vts = vtn*np.exp(sqv*gk)
+                        h,_,_ = np.histogram2d(np.clip(vts,0.021,5.9), gmn,
+                                               bins=[VE, GE])
+                        p0 = np.maximum(h/max(h.sum(),1), 1e-5)
+                        p0 /= p0.sum()
+                        for ci, fc in enumerate(FC0_GRID):
+                            for yi, ff in enumerate(FFLY_GRID):
+                                wch = min(fc*SC2[bi], 0.5)
+                                wfl = min(ff*SC2[bi], 0.5)
+                                wtot = min(wch+wfl, 0.6)
+                                mixc = (wch*UNI_B[bi]
+                                        + wfl*FLY_B[bi])/(wch+wfl)
+                                pp = (1-wtot)*p0 + wtot*mixc
+                                out[fi, ci, yi, pi, ki, si] += \
+                                    np.sum(data_2d[bi]*np.log(pp))
+                                out_vt[fi, ci, yi, pi, ki, si] += \
+                                    np.sum(dvt*np.log(pp.sum(axis=1)))
+    return out, out_vt
 
-def forward_pp(p, o, fcm, fpm, fc, ff):
+def forward_pp(p, o, fcm, fpm, fc, ff, sq=0.0):
     ef, e2, los = p['ef'], p['e2'], p['los']
     s3 = o[:,0,None]*ef+o[:,1,None]*e2
     v3 = o[:,2,None]*ef+o[:,3,None]*e2
@@ -457,6 +513,8 @@ def forward_pp(p, o, fcm, fpm, fc, ff):
         keep = vmag*4.74047 <= (2.978/np.sqrt(s_kau[idx])
                                 + 2.8284*sg0*4.74047)
         vtn = (vmag/vc)[keep]
+        if sq != 0.0:
+            vtn = vtn*np.exp(sq*p['gs'][idx][keep])
         gmn = np.degrees(np.arccos(np.clip(
             np.abs(vp_n[keep])/np.maximum(vmag[keep],1e-12), 0, 1)))
         h,_,_ = np.histogram2d(np.clip(vtn,0.021,5.9), gmn, bins=[VE, GE])
@@ -522,7 +580,7 @@ if SAMPLE not in POWS:
 
 prior_eta = -0.5*((E_GRID-1.3)/0.3)**2
 def profile_of(cb):
-    prof = np.nanmax(cb, axis=(1,2,3,4,5,6,7))
+    prof = np.nanmax(cb, axis=tuple(range(1, cb.ndim)))
     imax = int(np.nanargmax(prof))
     ahat = A_GRID[imax]
     if 0 < imax < len(A_GRID)-1:
@@ -533,34 +591,50 @@ def profile_of(cb):
 
 MROWRE = re.compile(r"MARG " + SAMPLE + r" seed (\d+) (simple|BE): "
                     r"a_marg=([0-9.]+), dN_marg=([+-][0-9.]+)")
+PROWRE = re.compile(r"PROF " + SAMPLE + r" seed (\d+) (simple|BE): "
+                    r"a_hat=([0-9.]+) ")
 def have_rows():
     out = {}
     if os.path.exists(OUT):
-        for m in MROWRE.finditer(open(OUT).read()):
-            out[(m.group(2), int(m.group(1)))] = (float(m.group(3)),
-                                                  float(m.group(4)))
+        txt = open(OUT).read()
+        rex = PROWRE if AMP == 'photow' else MROWRE
+        for m in rex.finditer(txt):
+            out[(m.group(2), int(m.group(1)))] = (
+                float(m.group(3)),
+                float(m.group(4)) if AMP != 'photow' else 0.0)
     return out
 
 def run_seed(seed):
     t0 = time.time()
     p = build_pop(seed)
+    PHW = (AMP == 'photow')
     for law, TAB in (("simple", TAB_S), ("BE", TAB_B)):
         cpath = f'data/stage7j_cube_{SAMPLE}{TAG}_{seed}_{law}.npy'
-        if os.path.exists(cpath):
+        vpath = f'data/stage7j_cubevt_{SAMPLE}{TAG}_{seed}_{law}.npy'
+        cubevt = None
+        if os.path.exists(cpath) and (not PHW or os.path.exists(vpath)):
             cube = np.load(cpath)
             if cube.ndim == 7:      # legacy raw cube without the K axis
                 cube = cube[..., None]
+            if PHW:
+                cubevt = np.load(vpath)
         else:
-            cube = np.full((len(A_GRID), len(E_GRID), len(WR_GRID),
-                            len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
-                            len(FPM_GRID), len(KW_GRID)), np.nan)
+            shp = (len(A_GRID), len(E_GRID), len(WR_GRID),
+                   len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
+                   len(FPM_GRID), len(KW_GRID))
+            if PHW:
+                shp = shp + (len(SQ_GRID),)
+            cube = np.full(shp, np.nan)
+            cubevt = np.full(shp, np.nan) if PHW else None
             newt_cache = {}
             for ai, al in enumerate(A_GRID):
                 tab_a = 1.0 + al*(TAB-1.0)
                 for ei, eta in enumerate(E_GRID):
                     for wi, wr in enumerate(WR_GRID):
                         if al == 0.0 and law == "BE" and (ei, wi) in newt_cache:
-                            cube[ai, ei, wi] = newt_cache[(ei, wi)]
+                            cube[ai, ei, wi], _vv = newt_cache[(ei, wi)]
+                            if PHW:
+                                cubevt[ai, ei, wi] = _vv
                             continue
                         e_s = e_of(p, eta, wr)
                         vp = vp_c(p, e_s, tab_a) if al > 0 else None
@@ -569,13 +643,37 @@ def run_seed(seed):
                                   vp=vp) if al > 0 else {}
                         o = run(p['a_s'], e_s, p['psi0'], p['f_ip'], p['M_s'],
                                 p['uph'], 8, 2500, mode, **kw)
-                        cube[ai, ei, wi] = lnL_point(p, o)
+                        l2, lv = lnL_point(p, o)
+                        if not PHW:
+                            l2 = l2[..., 0]
+                            lv = lv[..., 0]
+                        cube[ai, ei, wi] = l2
+                        if PHW:
+                            cubevt[ai, ei, wi] = lv
                         if al == 0.0:
-                            newt_cache[(ei, wi)] = cube[ai, ei, wi]
+                            newt_cache[(ei, wi)] = (l2, lv)
             np.save(cpath, cube)
+            if PHW:
+                np.save(vpath, cubevt)
         # Newton cache trick above only fills BE from simple within one
         # process run; cube files are per-law so reruns are consistent.
-        cb = cube + prior_eta[None,:,None,None,None,None,None,None]
+        pe = prior_eta.reshape((1, len(E_GRID)) + (1,)*(cube.ndim-2))
+        cb = cube + pe
+        if PHW:
+            # GB0w: the sq=0 slice must reproduce the cached photo cube
+            php = f'data/stage7j_cube_{SAMPLE}_photo_{seed}_{law}.npy'
+            if os.path.exists(php):
+                pc = np.load(php)
+                dmax = float(np.nanmax(np.abs(cube[..., 0] - pc)))
+                P(f"GB0w {SAMPLE} seed {seed} {law}: max|photow(sq=0)-"
+                  f"photo| = {dmax:.2e} -> "
+                  f"{'PASS' if dmax <= 1e-3 else 'FAIL'}")
+                if dmax > 1e-3:
+                    P(f"ABORT {SAMPLE} seed {seed} {law}: GB0w failed")
+                    continue
+            else:
+                P(f"GB0w {SAMPLE} seed {seed} {law}: photo cube absent - "
+                  f"SKIPPED (disclosed)")
         if AMP == 'photo':
             # GB0p: cross-mode regression at fcomp = 0 (companions off
             # => the two amplitude laws are the same model)
@@ -597,7 +695,7 @@ def run_seed(seed):
             else:
                 P(f"GB0p {SAMPLE} seed {seed} {law}: raw cube absent - "
                   f"SKIPPED (disclosed)")
-        if SAMPLE not in POWS and AMP != 'photo':
+        if SAMPLE not in POWS and AMP == 'raw':
             # GB0: legacy sub-cube (wr<=0.3, fcomp<=0.1, fpm=1.5)
             sub = cb[:, :, :3, :2, :, :, 1:2, 0:1]
             _, ah_sub, _ = profile_of(sub)
@@ -614,11 +712,16 @@ def run_seed(seed):
         # PROF: full freedom, no prior
         prof, ahat, imax = profile_of(cb)
         best = np.unravel_index(np.nanargmax(cb), cb.shape)
+        sqtxt = f", sq={SQ_GRID[best[8]]}" if PHW else ""
         P(f"PROF {SAMPLE} seed {seed} {law}: a_hat={ahat:.2f} "
           f"(interior={0<imax<len(A_GRID)-1}), "
           f"dN={float(np.nanmax(prof)-prof[0]):+.1f}, "
           f"wr={WR_GRID[best[2]]}, fcomp={FCOMP_GRID[best[3]]}, "
-          f"fpm={FPM_GRID[best[6]]}")
+          f"fpm={FPM_GRID[best[6]]}" + sqtxt)
+        if PHW:
+            # amendment 7(d): anchor reads live in the pre-registered
+            # readers; no MARG/verdict from the batch in photow mode
+            continue
         # MARG: discrete-cell marginal with the completeness prior
         cbp = cb + LNPI[None, None, None, :, None, None, None, None]
         m0 = np.nanmax(cbp)
@@ -664,10 +767,11 @@ for seed in SEEDS_REQ:
         continue
     run_seed(seed)
 
-# --- verdict on whatever seeds now exist ----------------------------------
+# --- verdict on whatever seeds now exist (raw/photo modes only) -----------
 have = have_rows()
 seeds = sorted({s for (_, s) in have})
-if all(('simple', s) in have and ('BE', s) in have for s in seeds) and seeds:
+if AMP != 'photow' and seeds \
+        and all(('simple', s) in have and ('BE', s) in have for s in seeds):
     am_ = {law: np.mean([have[(law, s)][0] for s in seeds])
            for law in ('simple', 'BE')}
     dn_ = {law: np.mean([have[(law, s)][1] for s in seeds])
