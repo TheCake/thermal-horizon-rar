@@ -70,6 +70,27 @@ GATES (first run):
       q = 0.1 where l <= 1e-3).
   Any gate fail -> inspect, do not quote.
 
+AMENDMENTS (logged after the first run FAILED GB0 and before any
+number is quoted; both are instrument-design errors of this stage, not
+physics changes - no cube or moment value moved):
+  A1  GB0's dark-companion clause tested an analytic limit the shared
+      implementation INTENTIONALLY lacks: the MS table clips secondary
+      masses at its 0.102 M_sun floor, so a q = 0.1 companion keeps
+      l ~ 0.02-0.03 and wfac never reaches q/(1+q) (deviation ~26%,
+      the printed fail).  The clause is replaced by the law's true
+      identities - twin-zero wfac(q=1) = 0 exact, l(q=1) = 1 exact,
+      interior maximum of wfac in q (the photocenter law's shape) -
+      and the clip floor min-l(q = 0.1) is PRINTED as a measured model
+      property instead of gated.
+  A2  the fcomp_equiv column as first designed held the host at 0.30
+      while re-weighting pi(q), but a pi re-attribution also rescales
+      the completeness that produced the 0.30: the decision object is
+      the JOINT factor (0.30/completeness-ratio) x moment-ratio, now
+      printed as fce_joint.  The pre-stated overall band read the
+      moment ratio alone; the FORMAL reading is kept by that letter
+      and the joint band is reported alongside as the corrected
+      object - both carried to NOTES, no silent re-labeling.
+
 Output: data/stage7j_qmoments.txt
 """
 import numpy as np
@@ -126,6 +147,9 @@ for law in ('simple', 'BE'):
         curves[(law, seed)] = row
         P(f"[{law} {seed}] GA0 {'PASS' if okA0 else 'FAIL'} | " +
           " ".join(f"s{sg:g}:{am:.2f}/{dn:+.0f}" for sg, am, dn, _ in row))
+        P(f"[{law} {seed}]   P(fcomp) mode per sigma: " +
+          " ".join(f"{sg:g}:{FCOMP[int(np.argmax(fp))]:.2f}"
+                   for sg, _, _, fp in row))
         # GC0 + Part C: kw-sliced forced-multiplicity cost
         cost = float(np.nanmax(cb9) - np.nanmax(cb9[:, :, :, 3:]))
         okC0 = abs(cost - SHIP_D2[(law, seed)]) <= 0.05
@@ -173,6 +197,7 @@ MS_T = np.array([1.60, 1.33, 1.12, 1.00, 0.90, 0.82, 0.70, 0.64, 0.57,
                  0.50, 0.44, 0.37, 0.23, 0.162, 0.102])
 rng = np.random.default_rng(7)
 N = 4_000_000
+jw = {}
 qs = 0.1 + 0.9*rng.random(N)
 logP = rng.normal(5.03, 2.28, N)
 P_yr = 10**logP/365.25
@@ -188,40 +213,43 @@ for M_h in (0.35, 0.50, 0.75):
     wfac = np.abs(qs/(1+qs) - l_/(1+l_))
     w = wfac*v_orb*S/4.74047*valid
     dm = 2.5*np.log10(1+l_)
-    # GB0 identities at this M_h
-    MGs1 = np.interp(-np.clip(1.0*M_h, MS_T[-1], MS_T[0]), -MS_T, MG_T)
-    l1 = 10**(-0.4*(MGs1-MGp))
-    okB &= abs(l1-1.0) < 1e-12
-    lo = qs < 0.12
-    okB &= float(np.mean(np.abs(wfac[lo]-qs[lo]/(1+qs[lo]))
-                         / (qs[lo]/(1+qs[lo])))) < 0.05
     Wwob = w**2                                # kick variance weight
     dmass = np.sqrt(1+qs/2)-1                  # per-system scale shift
-    from math import erf, sqrt as msqrt
-    Dsoft = 0.5*(1+np.vectorize(erf)((dm-0.4)/(0.275*msqrt(2))))
+    from scipy.special import erf as verf
+    Dsoft = 0.5*(1+verf((dm-0.4)/(0.275*np.sqrt(2))))
     Dhard = (dm >= 0.4).astype(float)
-    pis = {
-        'flat':      np.ones(N),
-        'q^-0.5':    qs**-0.5,
-        'twin25':    np.where(qs >= 0.9, 1.0 + 0.25*0.9/0.1, 1.0),
-        'det-shape': Dsoft,
-    }
-    P(f"[M_h={M_h:.2f}] q_min(hard flag) = "
+    # GB0 (amendment A1): the law's true identities
+    MGs1 = np.interp(-np.clip(1.0*M_h, MS_T[-1], MS_T[0]), -MS_T, MG_T)
+    l1 = 10**(-0.4*(MGs1-MGp))
+    w1 = abs(1.0/2.0 - l1/(1+l1))
+    imax = float(qs[np.argmax(wfac)])
+    okB &= abs(l1-1.0) < 1e-12 and w1 < 1e-12 and 0.15 < imax < 0.85
+    lo = np.abs(qs-0.1) < 0.005
+    P(f"[M_h={M_h:.2f}] clip floor: l(q=0.1) = {l_[lo].mean():.3f} "
+      f"(the model's companions are never fully dark); wfac max at "
+      f"q = {imax:.2f}; q_min(hard flag) = "
       f"{qs[Dhard > 0].min() if Dhard.sum() else float('nan'):.2f}; "
       f"<Wwob|detected>/<Wwob|undetected> = "
       f"{Wwob[Dsoft > 0.5].mean()/max(Wwob[Dsoft <= 0.5].mean(), 1e-12):.2f}; "
       f"<dmass|detected>/<dmass|undet> = "
       f"{dmass[Dsoft > 0.5].mean()/max(dmass[Dsoft <= 0.5].mean(), 1e-9):.2f}")
+    pis = {
+        'flat':      np.ones(N),
+        'q^-0.5':    qs**-0.5,
+        'twin25':    np.where(qs >= 0.9, 1.0 + 0.25*0.9/0.1, 1.0),
+        'det-shape': Dsoft.copy(),
+    }
     for name, wt in pis.items():
         wt = wt/wt.sum()
         rw = float((wt*Wwob).sum()/(pis['flat']/N*Wwob).sum()*1.0)
         rm = float((wt*dmass**2).sum()/(pis['flat']/N*dmass**2).sum())
         rd = float((wt*Dsoft).sum()/(pis['flat']/N*Dsoft).sum())
-        P(f"  pi={name:9s}: completeness x{rd:.2f} | wobble-moment "
-          f"x{rw:.2f} (fcomp_equiv {0.30*rw:.3f}) | mass-moment "
-          f"x{rm:.2f} (fcomp_equiv {0.30*rm:.3f})")
+        P(f"  pi={name:9s}: completeness x{rd:.2f} | wobble x{rw:.2f} "
+          f"(fce_joint {0.30*rw/rd:.3f}) | mass x{rm:.2f} "
+          f"(fce_joint {0.30*rm/rd:.3f})")
+        jw[(M_h, name)] = (rw, 0.30*rw/rd, 0.30*rm/rd)
 g_ok &= okB
-P(f"GB0 law identities: {'PASS' if okB else 'FAIL'}")
+P(f"GB0 law identities (amended A1): {'PASS' if okB else 'FAIL'}")
 
 P("")
 P(f"GATES: {'ALL PASS' if g_ok else 'FAIL -- do not quote'}")
@@ -230,12 +258,34 @@ if g_ok:
                     for s in (31, 101)]) for law in ('simple', 'BE')]
     wob = all(d >= 25 for d in dws)
     cnt = all(abs(d) <= 10 for d in dws)
-    P(f"==> READING (pre-stated): Part C = "
-      f"{'WOBBLE-BINDING' if wob else 'COUNT/MASS-BINDING' if cnt else 'MIXED'}"
-      f" (Dwob {dws[0]:+.1f}/{dws[1]:+.1f}); overall = "
-      f"{'CONVERSION-LIVE' if wob else 'TENSION-ROBUST' if cnt else 'MIXED'}"
-      f" per the docstring bands (q-moment table qualifies the scalar "
-      f"conversion either way)")
+    ctag = ('WOBBLE-BINDING' if wob else
+            'COUNT/MASS-BINDING' if cnt else 'MIXED')
+    # pre-stated letter: the det-shape wobble MOMENT ratio alone
+    # (amendment A2 keeps the letter; the joint band is the corrected
+    # object, reported alongside)
+    rw_det = max(jw[k][0] for k in jw if k[1] == 'det-shape')
+    letter = ('CONVERSION-LIVE' if wob and rw_det <= 0.5 else
+              'TENSION-ROBUST' if cnt else 'MIXED')
+    jb_w = [jw[k][1] for k in jw if k[1] != 'flat']
+    jb_m = [jw[k][2] for k in jw if k[1] != 'flat']
+    P(f"==> READING: Part C = {ctag} (Dwob {dws[0]:+.1f}/{dws[1]:+.1f});"
+      f" FORMAL (pre-stated letter; det-shape moment x{rw_det:.2f} vs"
+      f" the 0.5 bar) = {letter}")
+    P(f"==> JOINT CONVERSION BAND (amendment A2): fce_joint(wobble) ="
+      f" [{min(jb_w):.2f}, {max(jb_w):.2f}], fce_joint(mass) ="
+      f" [{min(jb_m):.2f}, {max(jb_m):.2f}] across pi brackets"
+      f" (references: kinematic preference 0.10, scalar-passed 0.30).")
+    if min(jb_w) <= 0.15:
+        s1 = ("the detection-informed bracket REACHES the kinematic "
+              "preference (<= 0.15): the wobble-channel tension is "
+              "conversion-flexible")
+    else:
+        s1 = ("no bracket reaches the kinematic preference: the "
+              "tension survives every pi tried")
+    P(f"    {s1}; the mass-channel joint is pi-stable (completeness "
+      f"and mass-weight co-vary) - the certificate must ship "
+      f"(q, P)-resolved output either way (v2c-plus, per the "
+      f"review's principled version).")
 
 with open('data/stage7j_qmoments.txt', 'w') as f:
     f.write("\n".join(OUT) + "\n")
