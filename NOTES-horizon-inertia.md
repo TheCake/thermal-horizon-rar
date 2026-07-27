@@ -6192,6 +6192,49 @@ is there. Also, two of our test alarms rang and turned out to be
 telling us true things about the model, not mistakes — logged, as
 always, before we looked at the answer.
 
+## Stage 7K-b pre-registration (2026-07-27, committed BEFORE execution): THE CENSUS LEAKAGE NULL AT THE LANDED CELL + the wobble-lite per-pair bounds
+
+Correction #15 flagged the ceiling census's leakage null as
+inheriting the companion audit. The landed-cell version is CLEANER
+than 4J's analytic leak: the forward Newton-best sky at the landed
+posterior mode ALREADY CONTAINS the companion wobble + hidden-mass
+machinery, the noise at its demanded fpm, and the smear — so its
+band occupancy IS the companion-marginalized null.
+
+**INSTRUMENT (stage7kb_census.py, the 7K-a machinery):** per seed
+(31/101), forward skies at (a) the landed NEWTON-BEST cell, (b)
+sensitivity variants fcomp = 0.2 and kw = 1.4 (posterior-adjacent
+cells), (c) the per-law PROF boost cells (descriptive consistency —
+the boost model should populate the band and starve [1.67, 2.2)).
+Band = ṽ ∈ [1.414, 1.67) ∧ γ ≥ 75° computed exactly as lnL_point
+(γ pre-sq, ṽ post-sq, keep-cut applied); μ = Σ_bins N_data(bin) ×
+f_band(bin) over the v7 s-bins (9950/2684/1223/214). Observed:
+**n_obs = 9 (corrected convention, the operative census; raw-sn3 11
+reported alongside).** The data-side census carries quality cuts the
+model does not model — an UNDERCOUNT direction, making P(≥ n_obs)
+conservative (stated).
+**WOBBLE-LITE per-pair bounds (no photometry needed):** for each of
+the 9 pairs, the UNCONDITIONAL maximum companion wobble shift:
+Δṽ_max = kw_max(1.4) · max_q wfac(q) · v_orb(P = 17.8 yr) / 4.74047
+/ vc_pair (the S·v_orb product peaks at the Gaia-baseline period;
+a_in ≈ 8 AU ≪ every validity cap). SAFE iff Δṽ_max < (ṽ_corr −
+1.414). The HIDDEN-MASS channel (boost √(1+m_h/M) — twin-maximal
+and photometrically LOUD at δ = 0.75 mag) is explicitly NOT boundable
+without per-pair photometry — disclosed; the photometric per-pair leg
+(7K-b2) fires ONLY if the population null breaks.
+**BARS (locked now, on the corrected n_obs = 9, seed 31; seed 101
+and the sensitivity variants must not change the category, else the
+weakest category is quoted):**
+- NULL-INTACT: P(≥ 9 | μ_Newton-best) ≤ 1e-4 → the census stands
+  companion-audited at the population level (the #15 inheritance
+  resolved).
+- NULL-BROKEN: P ≥ 0.01 → the landed absorbers explain the band;
+  census rows flip to ABSORBER-CONDITIONAL; 7K-b2 fires.
+- else GRAY (quoted; no flips).
+- Wobble-lite: if ≥ 7/9 pairs SAFE, the sentence "the wobble channel
+  cannot build the census pair-by-pair" is licensed (informational).
+No credence move (not a named decider).
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of
