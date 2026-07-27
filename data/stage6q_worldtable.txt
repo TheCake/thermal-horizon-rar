@@ -1,10 +1,10 @@
-STAGE 6Q: ledger audit + world table  (119 ledger rows)
+STAGE 6Q: ledger audit + world table  (120 ledger rows)
 ==============================================================================
 G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
 G3 (supersession resolves): PASS
 G4 (current-quantity collisions): PASS
-G5 (value spot-checks, 75 tokens): PASS
+G5 (value spot-checks, 77 tokens): PASS
 
 G6 (world-table provenance): PASS
 
@@ -163,9 +163,16 @@ in the round-10 direction; the FACE flat-q read = the fifth move
 fired live, alpha 0.00, quoted as the conditional whose premise
 the q-table rejects).  E-read (bin-7jz5-earm): the fpm edge
 CHASES to 3.0 (BE P=0.97) = an unphysical noise demand (Lindegren
-ceiling ~1.4) = the missing-width-SHAPE signature; no further
-extension; operative numbers co-quoted with the band alpha
-0.68-0.74 / dN +14.5-23.8; A-D mismatch arms = next.
+ceiling ~1.4); operative numbers co-quoted with the band alpha
+0.68-0.74 / dN +14.5-23.8.  ARM SUITE (bin-7jz5-arms): 4/4
+VALIDATED at the operative anchor - the null manufactures NOTHING
+under full twin-mismatch (alpha 0.00 both laws), own-truths
+recover conservatively, nuisances sharp 8/8; CHASE-UNEXPLAINED
+(0/4 arms ride 3.0) = the sky noise hunger is real width-SHAPE
+incompleteness, refinement promoted.  Both cadence deciders
+landed: anomaly-real ~45 -> ~50 pct (reasoned, disclosed).
+Binary DATA VOTE unsuspension awaits the 7J-d function-contest
+re-run under the landed posterior; 7K and 7L queue behind.
 7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid
 step, all mass on the 0.20 node); in the four-absorber configuration
 vt-only fitting reports a PHANTOM alpha = 0.5 that the direction

@@ -147,6 +147,8 @@ CHECKS = [
      'data/stage7jz_read.txt'),
     ('bin-7jz5-earm', 'D3-EXT STILL-RIDING', 'data/stage7jz5_eread.txt'),
     ('bin-7jz5-earm', 'P(fpm=3.0)=0.97', 'data/stage7jz5_eread.txt'),
+    ('bin-7jz5-arms', 'ARM A: ARM-PASS', 'data/stage7jz5_armread.txt'),
+    ('bin-7jz5-arms', 'CHASE-UNEXPLAINED', 'data/stage7jz5_armread.txt'),
     ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
      'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
     ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',
@@ -358,9 +360,16 @@ say('in the round-10 direction; the FACE flat-q read = the fifth move')
 say('fired live, alpha 0.00, quoted as the conditional whose premise')
 say('the q-table rejects).  E-read (bin-7jz5-earm): the fpm edge')
 say('CHASES to 3.0 (BE P=0.97) = an unphysical noise demand (Lindegren')
-say('ceiling ~1.4) = the missing-width-SHAPE signature; no further')
-say('extension; operative numbers co-quoted with the band alpha')
-say('0.68-0.74 / dN +14.5-23.8; A-D mismatch arms = next.')
+say('ceiling ~1.4); operative numbers co-quoted with the band alpha')
+say('0.68-0.74 / dN +14.5-23.8.  ARM SUITE (bin-7jz5-arms): 4/4')
+say('VALIDATED at the operative anchor - the null manufactures NOTHING')
+say('under full twin-mismatch (alpha 0.00 both laws), own-truths')
+say('recover conservatively, nuisances sharp 8/8; CHASE-UNEXPLAINED')
+say('(0/4 arms ride 3.0) = the sky noise hunger is real width-SHAPE')
+say('incompleteness, refinement promoted.  Both cadence deciders')
+say('landed: anomaly-real ~45 -> ~50 pct (reasoned, disclosed).')
+say('Binary DATA VOTE unsuspension awaits the 7J-d function-contest')
+say('re-run under the landed posterior; 7K and 7L queue behind.')
 say('7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid')
 say('step, all mass on the 0.20 node); in the four-absorber configuration')
 say('vt-only fitting reports a PHANTOM alpha = 0.5 that the direction')

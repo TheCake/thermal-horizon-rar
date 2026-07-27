@@ -5694,6 +5694,78 @@ a shape. We stopped feeding it new excuses (rule was pre-agreed),
 wrote down both readings, and the validation arms will now test
 whether twin companions produce exactly this kind of greed.
 
+## 7J-z5 A–D (2026-07-27): THE ARM SUITE — 4/4 VALIDATED, the chase is real structure
+
+Four twin-mismatch injection arms (pre-reg f6916e0; implementation
+bad6770; injections at sq_true = 0.2, per-law fpm_true, twin-t5
+companions vs a flat-q fitter, fc/ff 0.10/0.05, truth kw = 1.0;
+photow3 grid so the 3.0 node was available; seed 31; ~91 min GPU).
+Read at the operative LANDED-CONV anchor, bars as pre-registered:
+
+- **ARM A (null, α = 0, fcomp 0.20): ARM-PASS decisively** — α_marg
+  = 0.00 BOTH laws, dN +0.0, PROF 0.00. Under the full mismatch +
+  width + noise confusion the machinery manufactures NOTHING. The
+  7J-w2 injection-optimism worry is answered at the operative
+  anchor: honestly-degraded injections, honest machine.
+- **ARM B (simple 0.74): ARM-VALIDATED** — recovered 0.65 (offset
+  −0.09), dN +20.8. **ARM C (BE 0.70): ARM-VALIDATED** — 0.64
+  (−0.06), dN +38.7. **ARM D (BE 0.40): ARM-VALIDATED** — 0.48
+  (+0.08), PROF = MARG (offset 0.00): the 7J-w BE-arm pathology
+  does NOT reproduce at operative-curve values. No bar within 0.1
+  of its edge → no seed extension required.
+- Nuisance recovery sharp in all eight reads: P(sq) = δ(0.2) =
+  injected; P(fcomp) at injected; P(fpm) at injected mode.
+- Calibration note (single-injection grade, NOT applied as a
+  correction; the 3A realization layer covers part): own-truth
+  recovery biases are mildly CONSERVATIVE (−0.06…−0.09) — if
+  anything the sky's 0.74/0.70 slightly under-reads its truth.
+  Also: matched-α injected skies show dN ≈ +21…+39 vs the sky's
+  +23 — the sky sits at the low end, consistent with residual
+  unmodeled width eating significance (the same object as the
+  chase).
+- **THE CHASE: UNEXPLAINED — truth-law P(fpm = 3.0) = 0.00/0.00/
+  0.02/0.00, 0/4 arms ride the edge.** Twin-mismatch skies with the
+  full known confusion set do NOT reproduce the real sky's noise
+  hunger. The fpm chase (E-read: sky P(3.0) = 0.54/0.97, ~8 lnL)
+  is REAL missing width-SHAPE structure — not companions, not
+  twins, not the s-flat sq, not PM-error physics. Per the
+  pre-stated band: the width-shape refinement is PROMOTED to the
+  named next instrument.
+
+CREDENCE (both named deciders now landed; the freeze releases; no
+mechanical map was pre-committed for the arm outcomes — stated
+openly, so this is a reasoned move, not a map application):
+**anomaly-real ~45% → ~50%.** Up: the era's sharpest alternative
+(companions absorb the boost) lost its quantitative case across the
+certificate round (twin-heavy = kinematically quiet ≈ the kinematic
+preference; the ×3 tension dissolved), AND the measurement machinery
+survived adversarial validation 4/4 with a clean null. Capped: the
+verdict itself remains AMBIGUOUS-CARRIED (+23.8/+23.2, below the
++25 bar; honest band down to +14.5 under the fpm question), and a
+genuine model-incompleteness systematic (width shape) stands
+unattributed. Not lower: that systematic EATS significance in the
+validated direction (the arms show matched-truth skies scoring
+higher than the sky does).
+
+PLAIN VERDICT: SUCCESS — the strongest validation round the binary
+program has produced (clean null under honest mismatch, three
+own-truth recoveries, sharp nuisance identification), with one
+honest adverse residue carried forward by name (the width-shape
+object, now the sharpest open binary instrument).
+
+ELI12: We built four fake skies — seeded with exactly the twin
+companions, the width fuzz, and the noise the real sky has — and
+handed them to our measuring machine without telling it the answers.
+It aced all four: the sky with NO gravity boost read exactly zero
+(the machine can't be tricked into inventing one), and the skies
+with known boosts read them back correctly. One clue didn't
+reproduce: the real sky keeps begging for extra noise headroom that
+none of our fake skies need — so something about the real spread
+still isn't in the model, and hunting its shape is now the top job.
+Confidence: 45% → 50% — the "it's all hidden companions" story lost
+its numbers this week, and the machine proved honest; but the
+detection bar still hasn't been crossed, so only half-way it is.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

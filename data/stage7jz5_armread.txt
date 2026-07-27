@@ -1,0 +1,15 @@
+[fullarma simple] a_marg=0.00 dN=+0.0 (<=2.4: 0.00/+0.0) PROF a_hat=0.00 | P(fpm)=[0.01, 0.0, 0.01, 0.98, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[fullarma BE] a_marg=0.00 dN=+0.0 (<=2.4: 0.00/+0.0) PROF a_hat=0.00 | P(fpm)=[0.01, 0.0, 0.01, 0.98, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[fullarmb simple] a_marg=0.65 dN=+20.8 (<=2.4: 0.66/+24.3) PROF a_hat=0.64 | P(fpm)=[0.08, 0.01, 0.04, 0.81, 0.06, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[fullarmb BE] a_marg=0.65 dN=+20.4 (<=2.4: 0.66/+23.9) PROF a_hat=0.65 | P(fpm)=[0.05, 0.03, 0.05, 0.83, 0.05, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[fullarmc simple] a_marg=0.70 dN=+38.4 (<=2.4: 0.71/+43.6) PROF a_hat=0.70 | P(fpm)=[0.01, 0.03, 0.45, 0.2, 0.01, 0.3] P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[fullarmc BE] a_marg=0.64 dN=+38.7 (<=2.4: 0.65/+44.2) PROF a_hat=0.63 | P(fpm)=[0.0, 0.0, 0.0, 0.2, 0.77, 0.02] P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[fullarmd simple] a_marg=0.27 dN=+0.4 (<=2.4: 0.28/+0.5) PROF a_hat=0.28 | P(fpm)=[0.15, 0.41, 0.0, 0.36, 0.03, 0.05] P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[fullarmd BE] a_marg=0.48 dN=+8.2 (<=2.4: 0.48/+8.3) PROF a_hat=0.48 | P(fpm)=[0.01, 0.97, 0.0, 0.01, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+
+ARM A: ARM-PASS
+ARM B: ARM-VALIDATED
+ARM C: ARM-VALIDATED
+ARM D: ARM-VALIDATED
+CHASE: truth-law P(fpm=3.0) per arm = [0.0, 0.0, 0.02, 0.0] -> CHASE-UNEXPLAINED
+D PROF-vs-MARG: a_hat=0.48 vs a_marg=0.48 (offset +0.00)

@@ -1138,10 +1138,30 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   signature (the 3E→6P→sq ladder's next rung); pre-registered
   decision clause: NO further extension (unphysical direction);
   operative α CO-QUOTED with the band 0.68–0.74 / +14.5–23.8
-  (ledger bin-7jz5-earm, 119 rows/75 tokens); A–D twin-mismatch
-  arms = the next work block (do twin-drawn skies reproduce the
-  edge-chasing?) + width-shape refinement queued behind them.**
-  Then the DM
+  (ledger bin-7jz5-earm, 119 rows/75 tokens).
+  **THE ARM SUITE (7J-z5 A–D, 2026-07-27, PAPER → v3.4): 4/4
+  VALIDATED ([calcs/stage7jz5_armread.py](calcs/stage7jz5_armread.py),
+  implementation bad6770, bars f6916e0, chase bands pre-stated in
+  the reader commit before the batch; ~91 min GPU): **ARM A (null,
+  fcomp 0.20 twin-mismatch): α_marg = 0.00 BOTH laws — the
+  machinery manufactures NOTHING (7J-w2 answered at the operative
+  anchor); B 0.74→0.65/+20.8, C 0.70→0.64/+38.7, D 0.40→0.48
+  PROF=MARG — all within bars, no extension; nuisances sharp 8/8
+  (sq at injected 0.2 everywhere). CHASE-UNEXPLAINED: P(fpm=3.0) ≤
+  0.02 in 0/4 arms vs sky 0.54/0.97 ⇒ the sky's noise hunger =
+  REAL width-SHAPE incompleteness (not companions/twins/sq) —
+  width-shape refinement = the named next binary instrument;
+  matched-truth arms score +21…+39 vs the sky's +23 (residual
+  width eats sky significance, coherent). Own-truth biases mildly
+  conservative (−0.06…−0.09, single-injection grade, not applied).
+  CREDENCE: both cadence deciders landed → anomaly-real ~45% →
+  ~50% (reasoned move, disclosed: no mechanical map existed; up on
+  the companion-alternative collapse + machinery validation,
+  capped by AMBIGUOUS-CARRIED + the open width-shape systematic).
+  Ledger +bin-7jz5-arms (120 rows/77 tokens); worldtable banner =
+  validated form; NEXT: width-shape refinement → 7J-d (the
+  DATA-VOTE unsuspension item) → 7K-a/b → 7L → ĉ₁ budget → THE
+  SPLIT.** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,
