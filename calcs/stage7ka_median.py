@@ -279,6 +279,32 @@ for seed in (31, 101):
       f"{g0iii[1]:.3f} rw -> "
       f"{'PASS' if 0.995 <= g0iii[1] <= 1.005 else 'FAIL'} "
       f"[0.995, 1.005] (the wiring identity)")
+    # G0-iv (2nd amendment, logged pre-quote after G0-iii ALSO fired
+    # FAIL): the a_s prior is TRUNCATED at 0.15/60 kAU and both 2C
+    # bins sit near an edge (0.2-2 abuts the lower truncation at
+    # 1.33x; 30 vs the 60 ceiling at 2x with projection u up to ~1.9)
+    # — edge truncation distorts the within-bin shape mix, so exact
+    # scale-freeness holds only for INTERIOR bins.  The wiring
+    # identity: scale-free ratio between 1-2 and 3-6 kAU (both far
+    # from the edges) = 1.000 +/- 0.005.
+    ef_, e2_, los_ = p['ef'], p['e2'], p['los']
+    s3 = o_sf[:,0,None]*ef_+o_sf[:,1,None]*e2_
+    v3 = o_sf[:,2,None]*ef_+o_sf[:,3,None]*e2_
+    ssky = s3-los_*np.sum(s3*los_,axis=1,keepdims=True)
+    vsky = v3-los_*np.sum(v3*los_,axis=1,keepdims=True)
+    smag_ = np.linalg.norm(ssky,axis=1)
+    b1_ = ssky/np.maximum(smag_[:,None],1e-12)
+    b2_ = np.cross(los_, b1_)
+    b2_ /= np.maximum(np.linalg.norm(b2_,axis=1,keepdims=True),1e-12)
+    vmag_ = np.hypot(np.sum(vsky*b1_,axis=1), np.sum(vsky*b2_,axis=1))
+    sk_ = smag_/1e3
+    vc_ = 2*np.pi*np.sqrt(p['M_s']/smag_)
+    vt_ = vmag_/vc_
+    mA = (sk_ >= 1.0) & (sk_ < 2.0); mB = (sk_ >= 3.0) & (sk_ < 6.0)
+    g0iv = float(np.median(vt_[mB])/np.median(vt_[mA]))
+    P(f"G0-iv interior scale-free control (3-6 / 1-2 kAU): R = "
+      f"{g0iv:.3f} -> {'PASS' if 0.995 <= g0iv <= 1.005 else 'FAIL'} "
+      f"[0.995, 1.005] (the wiring identity, edge-free)")
     # cells from the photow3 cubes + LANDED-CONV
     cells = {}
     for law, TAB in (('simple', TAB_S), ('BE', TAB_B)):
