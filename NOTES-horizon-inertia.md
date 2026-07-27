@@ -5766,6 +5766,82 @@ Confidence: 45% → 50% — the "it's all hidden companions" story lost
 its numbers this week, and the machine proved honest; but the
 detection bar still hasn't been crossed, so only half-way it is.
 
+## Stage 7J-z6 pre-registration (2026-07-27, committed BEFORE execution): THE WIDTH-SHAPE REFINEMENT
+
+The arm suite's CHASE-UNEXPLAINED verdict promoted this instrument: the sky
+rides fpm = 3.0 (3x Gaia formal errors, past the Lindegren+21 ceiling ~1.4)
+with P = 0.54/0.97 while NO injected sky — twins, sq = 0.2, posterior-mode
+noise — puts more than 0.02 there. The sky's noise hunger is real structure
+the current width family (global error-proportional Gaussian fpm + s-flat
+lognormal sq) cannot express. This stage asks WHAT SHAPE it wants.
+
+**Composition probe (input, recorded before this pre-reg):** the
+perspective-residual candidate is CLOSED — 100.0% of the 14,071 ok-pairs
+carry at least one Gaia RV (nearby bright sample), and the RV-error-propagated
+along-separation residual is <= 0.06 sg0 even at 20–50 kAU (median 0.0008
+km/s vs sg0 0.015). The 4R correction is essentially complete; no likelihood
+was run. Live candidates: ADDITIVE FLOOR (error-independent jitter), TAIL
+(a fraction of pairs with badly underestimated errors), MAGNITUDE-dependence
+(the Lindegren inflation axis), or none-of-these (carried).
+
+**Part A — diagnostic (measurement, no verdict; conditional at the sky's
+PROF mode cells wr=0.2, fcomp=0.1, sq=0.2, per-law alpha cell, seed 31;
+the 5B coordinate-descent lesson applies: conditional previews steer the
+contest, they do not decide anything):**
+- A1 error-half split: within each s-bin, split pairs at the bin-median
+  formal error sg0; data histograms and model noise pools split identically;
+  read the per-half fpm profile. LOW-half-carried = the demand is
+  error-INDEPENDENT (floor family); HIGH-half-carried = error-CORRELATED
+  (tail/inflation family).
+- A2 cell attribution: per-(v-row, gamma-column) decomposition of the
+  data*log(pp) gain between fpm = 2.4 and 3.0 at the mode cell. Tail-rows
+  (v > 1.5) carrying >= 60% = tail family; shoulder-carried = width proper.
+- A3 magnitude split: halves by G_faint (the fainter component drives both
+  the PM error and the Lindegren inflation). Faint-carried = magnitude-
+  shaped inflation (tail-on-faint variant).
+- OUTCOME MAP (locks Part B's first mode): A1-LOW -> FLOOR first; A1-HIGH
+  or A3-faint-sharp -> TAIL first; ambiguous -> FLOOR first (declared
+  default). The second shape runs only if the first fails B1.
+
+**Part B — the shape contest (bars LOCKED NOW; grid VALUES for the shape
+axes set from Part A scales and logged as an amendment before Part B runs;
+kt = 4 fixed for tail, kt = 6 only as a disclosed sensitivity variant):**
+- Modes (new WSHAPE env in stage7j_marginal.py, one at a time):
+  FLOOR: per-pair sigma_eff = sqrt((sg0*fpm)^2 + floor^2), floor axis
+  appended; TAIL: per-pair fpm_eff = fpm*(1+(kt-1)*[u_t < ft]), ft axis
+  appended, u_t a NEW draw appended LAST in build_pop (the amendment-7
+  precedent — every earlier draw unchanged). The fpm core grid KEEPS the
+  3.0 node (the chase must dissolve voluntarily, not by amputation).
+- Gates: GW0 identity — the shape-param = 0 slice must reproduce the
+  photow3 cube <= 1e-3 (expect exact 0.0e+0 by stream construction; the
+  GB0e precedent); GW1 — the B4 arm's own-truth shape parameter recovered
+  within one grid step.
+- B1 SHAPE-WIN: profile-max(full shape cube) - profile-max(shape=0 slice)
+  >= +8.0 lnL in BOTH laws (one law only = PARTIAL). +8 = the scale the
+  sky ceded to the fpm extension; >> the 1-param AIC cost.
+- B2 CHASE-DISSOLVED: P(fpm = 3.0) <= 0.10 in the shape-mode marginal at
+  the LANDED-CONV anchor, per law.
+- B3 alpha-STABILITY: alpha_marg(shape) in [0.55, 0.90] AND dN >= +10 ->
+  band-stable (the co-quoted band extends to include the new value).
+  alpha_marg < 0.55 OR dN < +10 -> MATERIAL-LOW (the width-shape was
+  carrying alpha; reported without band protection). alpha_marg > 0.90 ->
+  MATERIAL-HIGH (the mis-shape was suppressing). Named, not protected.
+- B4 REPRODUCTION: one arm per law at the winning shape's posterior mode
+  (its own alpha_marg, shape params, fcomp, sq), FIT by the global-fpm
+  photow3 machinery: P(fpm = 3.0) >= 0.4 = REPRODUCED (the sky showed
+  0.54/0.97); 0.1–0.4 = PARTIAL; < 0.1 = FAILED (the shape is not the
+  chase's cause even if it fits better).
+- VERDICT GRAMMAR: RESOLVED = B1(both) AND B2 AND B4 >= 0.4, with B3
+  reported; PARTIAL = exactly one of B1/B2/B4 misses; UNRESOLVED-CARRIED =
+  neither shape clears B1 -> the co-quoted band 0.68–0.74 / +14.5–23.8
+  stands, the item CLOSES (no grid-extension chase; pre-stated), queue
+  proceeds to 7J-d.
+- Seeds: contest at seed 31 both laws; the winner re-run at seed 101 for
+  stability (reported, not a bar).
+- CREDENCE: this is a systematics instrument, not a named decider — NO
+  credence move this stage regardless of outcome. A MATERIAL B3 would
+  reopen the band and route the question to the next decider (stated now).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
