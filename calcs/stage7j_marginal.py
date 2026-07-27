@@ -223,7 +223,9 @@ from astropy.io import fits
 
 SAMPLE = sys.argv[1] if len(sys.argv) > 1 else 'full'
 POWS = ('strictpow', 'fullpow', 'fullpowbe', 'strictpowbe')
-assert SAMPLE in ('full', 'strict') + POWS, SAMPLE
+# 7J-z5 A-D arms (pre-reg f6916e0): twin-mismatch injections
+ARMS = ('fullarma', 'fullarmb', 'fullarmc', 'fullarmd')
+assert SAMPLE in ('full', 'strict') + POWS + ARMS, SAMPLE
 _rest = sys.argv[2:]
 AMP = _rest[0] if (_rest and _rest[0] in ('photo', 'photow')) else 'raw'
 if AMP != 'raw':
@@ -553,7 +555,7 @@ def P(s):
 
 # --- the completeness prior on FCOMP_GRID ---------------------------------
 pr = np.load('data/stage7j_prior.npz')
-if SAMPLE in ('full', 'fullpow', 'fullpowbe'):
+if SAMPLE in ('full', 'fullpow', 'fullpowbe') + ARMS:
     xg, lp = pr['f_grid'], pr['lnpi_full']
 else:
     xg, lp = pr['r_grid'], pr['lnpi_strict']
@@ -587,12 +589,69 @@ if SAMPLE in POWS:
     P(f"{SAMPLE}: injected {LAWN} alpha={A_TR} truth at host rate "
       f"{R_TR:.2f} (truth pop 777, count draws 888, observed-bin totals)")
 
+if SAMPLE in ARMS:
+    # 7J-z5 A-D twin-mismatch arms (pre-reg f6916e0): injected skies
+    # carry the sky's confusion channels — sq_true = 0.2, fpm_true at
+    # the per-law posterior mode, companions drawn TWIN t=5 (the GV7
+    # winner) while the fitting model stays flat-q; fc/ff at the
+    # pow-precedent 0.10/0.05; truth kw = 1.0 (forward_pp's implicit —
+    # the fit profiles kw).  Run with FPME=1 so the 3.0 node is
+    # available: whether twin-truth skies CHASE the fpm edge is the
+    # E-read's attribution question.
+    A_TR, TAB_TR, LAWN, FC_TR, FPM_TR = {
+        'fullarma': (0.00, TAB_S, 'null',   0.20, 2.4),
+        'fullarmb': (0.74, TAB_S, 'simple', 0.10, 2.1),
+        'fullarmc': (0.70, TAB_B, 'BE',     0.10, 2.4),
+        'fullarmd': (0.40, TAB_B, 'BE',     0.10, 2.4)}[SAMPLE]
+    pt = build_pop(777)
+    rga = np.random.default_rng(999)
+    M_ha = 0.5*pt['M_s']
+    NA = len(M_ha)
+    for k in (1, 2):
+        u = rga.random(NA)
+        q = np.where(u < 0.9/1.4, 0.1 + 0.8*rga.random(NA),
+                     0.9 + 0.1*rga.random(NA))
+        logP = rga.normal(5.03, 2.28, NA)
+        P_yr = 10**logP/365.25
+        a_in = (M_ha*(1+q)*P_yr**2)**(1/3)
+        valid = (a_in < 130.0) & (a_in < pt['a_s']/5.0)
+        v_orb = 29.78*np.sqrt(M_ha*(1+q)/np.maximum(a_in, 1e-3))
+        S_ = np.minimum(1.0, P_yr/17.8)
+        MGp = np.interp(-np.clip(M_ha, MS_T[-1], MS_T[0]), -MS_T, MG_T)
+        MGs = np.interp(-np.clip(q*M_ha, MS_T[-1], MS_T[0]), -MS_T, MG_T)
+        l_ = 10**(-0.4*(MGs-MGp))
+        wfac = np.abs(q/(1+q) - l_/(1+l_))
+        w = wfac*v_orb*S_/4.74047*valid
+        wd = rga.normal(size=(NA, 3))
+        wd /= np.linalg.norm(wd, axis=1, keepdims=True)
+        pt['comp'][k] = dict(w=w, wd=wd, uc=rga.random(NA),
+                             mh=q*M_ha*valid)
+    e_t = e_of(pt, 1.3, 0.2)
+    if A_TR > 0:
+        tab_t = 1.0 + A_TR*(TAB_TR-1.0)
+        vp_t = vp_c(pt, e_t, tab_t)
+        ot = run(pt['a_s'], e_t, pt['psi0'], pt['f_ip'], pt['M_s'],
+                 pt['uph'], 8, 2500, 5, a0=A0_CAN, tab=tab_t, lny0=LNY0,
+                 dlny=DLNY, vp=vp_t)
+    else:
+        ot = run(pt['a_s'], e_t, pt['psi0'], pt['f_ip'], pt['M_s'],
+                 pt['uph'], 8, 2500, 1)
+    pps = forward_pp(pt, ot, FC_TR, FPM_TR, 0.10, 0.05, sq=0.2)
+    rgs = np.random.default_rng(888)
+    for bi in range(len(SBINS)):
+        n_obs = int(data_2d[bi].sum())
+        cnt = rgs.multinomial(n_obs, (pps[bi]/pps[bi].sum()).ravel())
+        data_2d[bi] = cnt.reshape(NV, NG).astype(float)
+    P(f"{SAMPLE}: TWIN-MISMATCH injection {LAWN} alpha={A_TR} at "
+      f"fcomp={FC_TR}, fpm={FPM_TR}, sq=0.2, twin-t5 companions "
+      f"(truth pop 777, twin rng 999, count draws 888)")
+
 # --- GB0 references -------------------------------------------------------
 ROWRE = re.compile(r"seed (\d+) (simple|BE): a_hat=([0-9.]+) \(grid [0-9.]+, "
                    r"interior=(\w+)\), dlnL\(Newton\)=([+-][0-9.]+), "
                    r"wr=([0-9.]+)")
 REF = {}
-if SAMPLE not in POWS:
+if SAMPLE not in POWS + ARMS:
     REFF = ('data/stage4r_summary.txt' if SAMPLE == 'full'
             else 'data/stage7i_s.txt')
     for m in ROWRE.finditer(open(REFF).read()):
