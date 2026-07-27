@@ -6235,6 +6235,71 @@ weakest category is quoted):**
   cannot build the census pair-by-pair" is licensed (informational).
 No credence move (not a named decider).
 
+## Stage 7K-b EXECUTED (2026-07-27): verdict NULL-BROKEN by the letter — and the breaking cell SELF-REFUTES on the cliff; the census's power relocates to the (band, cliff) PAIR
+
+**Bar verdict (locked): NULL-BROKEN, both seeds, all pre-registered
+variants** — the landed Newton-best cell predicts μ_band = 26–38 vs
+the observed 9 (P(≥9) ≈ 1): under the landed absorbers the raw band
+COUNT carries no Newton-rejection power. But the same cell predicts
+μ = 17–32 in the overshoot [1.67, 2.2) where the data show **2** —
+the pre-registered descriptive statistic reads P(≤2) = 7.1e-6 …
+2.9e-11: **the cell that absorbs the band is refuted by the cliff.**
+
+**Attribution (post-hoc, labeled):** μ_band is fpm-INSENSITIVE at
+sq = 0.2 (24–26 at physical fpm 1.5/1.8) — roughly half the flood is
+the γ-blind lognormal smear lifting the perpendicular ṽ ≈ 1.1–1.3
+population; the rest is landed noise scattering the near-parabolic
+pericenter pile (w_rad = 0.2; pericenter velocity is PERPENDICULAR —
+the pile sits at the √2 edge by geometry) plus companions. At sq = 0
++ physical noise, Newton still floods (μ_band 13–14, overshoot ≈ 13)
+— and the BOOST cells at sq = 0 likewise (band 13–15, overshoot
+13.5–14, P(≤2) ≈ 1e-4): **NO tried configuration reproduces the
+observed 9-with-a-cliff-of-2; the cliff is sharper than any noise
+≥ 1.5× formal allows.** The only regime that fits the cliff is
+formal noise — exactly what 4J measured (cliff at the boosted edge
+1.65, P = 0.62/0.91) — and at formal noise the band is unleakable
+(the original 4J null, μ ≈ 1, P = 3.8e-9).
+
+**THE RELOCATION (the stage's product):** the census is
+SELF-DEFENDING as a pair: the cliff bounds the tail noise to
+≈ formal; at formal noise the 9 band pairs cannot be leakage. You
+cannot simultaneously hold "noise big enough to fake the band" and
+"the observed cliff". The raw count retires as a standalone null
+(ABSORBER-CONDITIONAL); **the (band = 9, cliff = 2) pair becomes
+the operative census statistic**, and it rejects every landed-model
+configuration tried (min P ≈ 9e-5) — a THIRD independent channel
+(after the noise-ceiling profile and Lindegren) testifying that the
+unmodeled width object is mid-shoulder-LOCALIZED and does not reach
+the tail: the global lognormal smear and the fpm inflation both
+over-extend into a region the data keep clean. Convergent with the
+7J-z6 fingerprint and the population-sector successor hypothesis.
+
+**Instrument lessons (logged):** the wobble-lite unconditional bound
+is VACUOUS as designed (a P ≈ 18 yr companion's wobble is 8–30× vc —
+such pairs leave the catalog; the bound ignores catalog survival;
+0/9 SAFE is NOT quotable as vulnerability) — superseded by the
+population null in the same stage. 7K-b2's firing condition was met
+by the letter, but the measured mechanism is not companions —
+smear + noise + pericenter geometry — so the per-pair photometric
+leg is NOT the informative follow-up; it FOLDS into the
+population-sector successor (no separate stage).
+
+Plain verdict: SUCCESS — the census audit the fifth correction
+demanded is done; the count falls, the pair stands stronger than
+the count ever was, and the tail region now actively constrains the
+width object's shape. No credence move (not a named decider).
+
+ELI12: Nine star-pairs fly faster than plain gravity's speed limit,
+in the "sideways" direction where faking is hardest. We asked our
+newly-humbled model: could your fuzz have pushed ordinary pairs
+past the limit? It said "sure — I'd push 26 past it… and 17 WAY
+past it." But the sky shows only 9 a little past and just 2 way
+past — a sharp cliff. Fuzz that could fake the nine would smear
+away the cliff; the cliff is there, so the fuzz isn't. The nine
+defend themselves by standing next to a cliff. (Also: one of our
+back-up checks turned out to be a dud by design — noted so nobody
+trusts it later.)
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of

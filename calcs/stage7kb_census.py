@@ -73,7 +73,13 @@ cens = [r for r in csv.DictReader(open('data/ceiling_pairs.csv'))
 NOBS = len(cens)
 NRAW = sum(1 for r in csv.DictReader(open('data/ceiling_pairs.csv'))
            if r['census_raw_sn3'] == 'True')
-P(f"observed census: corrected n_obs = {NOBS} (raw-sn3 {NRAW})")
+# the observed OVERSHOOT (gamma >= 75, vt_corr in [1.67, 2.2)) — the
+# cliff's far side; quality-cut caveat shared with the band count
+NHI = sum(1 for r in csv.DictReader(open('data/ceiling_pairs.csv'))
+          if float(r['gamma_corr_deg']) >= 75
+          and 1.67 <= float(r['vt_corr']) < 2.2)
+P(f"observed census: corrected n_obs = {NOBS} (raw-sn3 {NRAW}); "
+  f"observed overshoot [1.67, 2.2) at gamma>=75: {NHI}")
 qg = np.linspace(0.1, 1.0, 91)
 nsafe = 0
 for r in cens:
@@ -244,19 +250,42 @@ for seed in (31, 101):
     e_s = e_of(p, eta, wr)
     o_n = run(p['a_s'], e_s, p['psi0'], p['f_ip'], p['M_s'], p['uph'],
               8, 2500, 1)
-    variants = [('newton-best', fcm, kw), ('fcomp=0.2', 0.20, kw),
-                ('kw=1.4', fcm, 1.4)]
+    variants = [('newton-best', fcm, kw, fpm), ('fcomp=0.2', 0.20, kw, fpm),
+                ('kw=1.4', fcm, 1.4, fpm)]
     cats = []
-    for tag, f_, k_ in variants:
-        mu, mu_hi = band_mu(p, o_n, f_, k_, fpm, sq)
+    for tag, f_, k_, pm_ in variants:
+        mu, mu_hi = band_mu(p, o_n, f_, k_, pm_, sq)
         pv = float(poisson.sf(NOBS-1, max(mu, 1e-12)))
         cat = ('NULL-INTACT' if pv <= 1e-4 else
                'NULL-BROKEN' if pv >= 0.01 else 'GRAY')
         cats.append(cat)
-        P(f"{tag:<12} (fpm={fpm}, sq={sq}): mu_band = {mu:.2f}, "
-          f"P(>={NOBS}) = {pv:.2e} -> {cat}  [overshoot mu = {mu_hi:.2f}]")
+        P(f"{tag:<12} (fpm={pm_}, sq={sq}): mu_band = {mu:.2f}, "
+          f"P(>={NOBS}) = {pv:.2e} -> {cat}  [overshoot mu = {mu_hi:.2f}, "
+          f"P(<={NHI} obs | mu) = {float(poisson.cdf(NHI, mu_hi)):.2e}]")
     P(f"seed {seed} category (weakest of variants): "
       f"{'NULL-BROKEN' if 'NULL-BROKEN' in cats else 'GRAY' if 'GRAY' in cats else 'NULL-INTACT'}")
+    # POST-HOC variant (labeled as such — added AFTER the first run
+    # showed the fpm=3.0 corner over-leaking band AND cliff): the
+    # PHYSICAL noise envelope.  Does the census null return INTACT
+    # under physical noise?  Reported conditional, no bar.
+    for pm_ in (1.5, 1.8):
+        mu, mu_hi = band_mu(p, o_n, fcm, kw, pm_, sq)
+        pv = float(poisson.sf(NOBS-1, max(mu, 1e-12)))
+        P(f"POST-HOC PHYS fpm={pm_}: mu_band = {mu:.2f}, "
+          f"P(>={NOBS}) = {pv:.2e}  [overshoot mu = {mu_hi:.2f}, "
+          f"P(<={NHI} obs) = {float(poisson.cdf(NHI, mu_hi)):.2e}]")
+    # POST-HOC attribution (labeled): the smear-off legs — the PHYS
+    # runs showed mu_band ~ fpm-INDEPENDENT, i.e. the flood is the
+    # gamma-blind sq smear lifting the perpendicular 1.1-1.3
+    # population.  (a) Newton, sq=0, physical noise: does the census's
+    # Newton-rejection power RETURN once the vacuous smear tail is
+    # removed?  (b) at the end of the seed block: boost cells at
+    # sq=0 — does boost-without-smear reproduce band + cliff?
+    for pm_ in (1.5, 3.0):
+        mu, mu_hi = band_mu(p, o_n, fcm, kw, pm_, 0.0)
+        pv = float(poisson.sf(NOBS-1, max(mu, 1e-12)))
+        P(f"POST-HOC Newton sq=0 fpm={pm_}: mu_band = {mu:.2f}, "
+          f"P(>={NOBS}) = {pv:.2e}  [overshoot mu = {mu_hi:.2f}]")
     # boost cells (descriptive)
     for law, TAB in (('simple', TAB_S), ('BE', TAB_B)):
         cw = np.load(f'data/stage7j_cube_full_photow3_{seed}_{law}.npy')
@@ -276,5 +305,10 @@ for seed in (31, 101):
         mu, mu_hi = band_mu(p, o_b, fcm_, kw_, fpm_, sq_)
         P(f"boost {law} (alpha={al}): mu_band = {mu:.2f} vs obs {NOBS}; "
           f"overshoot [1.67,2.2) mu = {mu_hi:.2f}")
+        mu0, mu0_hi = band_mu(p, o_b, fcm_, kw_, 1.5, 0.0)
+        P(f"POST-HOC boost {law} sq=0 fpm=1.5: mu_band = {mu0:.2f} "
+          f"(obs {NOBS}), overshoot mu = {mu0_hi:.2f} (obs {NHI}) "
+          f"[P(>={NOBS})={float(poisson.sf(NOBS-1, max(mu0,1e-12))):.2e}, "
+          f"P(<={NHI})={float(poisson.cdf(NHI, mu0_hi)):.2e}]")
 
 P(f"\ndone ({(time.time()-t0)/60:.1f} min)")
