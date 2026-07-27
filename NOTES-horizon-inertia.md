@@ -5888,6 +5888,19 @@ The arm interprets B3; it cannot flip the B1/B2 outcomes or the locked
 verdict grammar. GW0 for the arm: its ws=0 slice vs the existing
 fullarmb photow3 cube (exact expected).
 
+**AMENDMENT 3 (logged BEFORE the tail/arm results are seen): the PHYS
+conditional** — a reported (non-operative) read of every contest cube
+under the PHYSICAL noise envelope: fpm ≤ 1.8 (Lindegren+21 inflation
+ceiling ~1.4; grid cell above it retained for margin) and ws ≤ 0.015
+km/s (the ~0.025–0.03 mas/yr angular-covariance systematic at ≤200
+pc). Purpose: locate the α detection's dependence on ALLOWING
+unphysical noise — if α rises under the physical envelope, the
+operative 0.74/+23.8 was noise-diluted and the exposure runs the
+OTHER way; if it collapses there too, the exchange is not
+noise-mediated at all. Reported alongside the verdict; the operative
+anchor/model does not change in an interim round (cadence rule).
+Exchangeability-arm reader block added in the same commit.
+
 **AMENDMENT 1 (grids from Part A scales, logged BEFORE Part B runs):**
 floor axis [0, 0.015, 0.030, 0.045] km/s (0.045 ≈ sg0_med·√(3²−1.2²),
 the value that mimics fpm=3.0 at the median error); tail axis

@@ -136,6 +136,29 @@ for law in ('simple', 'BE'):
       f"P(fpm=3.0)={p30:.2f} -> {grade}; a_marg={am:.2f} dN={dn:+.1f} "
       f"P(sq)={np.round(post['sq'], 2).tolist()}")
 
+# --- exchangeability arm (amendment 2, bars pre-stated at ec7514c) --------
+# The 7J-z5 arm-B injection (simple alpha=0.74 truth, twin-t5, sq=0.2,
+# fpm=2.1, NO floor in truth) read by the floor fitter:
+#   INFORMATIVE  a_marg(simple) >= 0.5 AND P(ws=0.045) <= 0.5
+#   EATER        a_marg <= 0.3 AND P(ws=0.045) >= 0.5
+#   else AMBIG.  Interprets B3; cannot flip B1/B2.
+for law in ('simple', 'BE'):
+    f = f'data/stage7j_cube_fullarmb_wfloor_31_{law}.npy'
+    if not os.path.exists(f):
+        continue
+    cb = eta9(np.load(f))
+    am, dn, post = read_marg(cb, 10)
+    pwse = float(post['ws'][-1])
+    p30 = float(post['fpm'][-1])
+    line = (f"[XCHG arm {law}] boost-truth under floor fitter: "
+            f"a_marg={am:.2f} dN={dn:+.1f} P(ws)="
+            f"{np.round(post['ws'], 2).tolist()} P(fpm=3.0)={p30:.2f}")
+    if law == 'simple':
+        x = ('INFORMATIVE' if (am >= 0.5 and pwse <= 0.5) else
+             'EATER' if (am <= 0.3 and pwse >= 0.5) else 'AMBIG')
+        line += f" ==> {x}"
+    P(line)
+
 # --- GW1 arm (own-truth shape recovery) -----------------------------------
 for shape in ('floor', 'tail'):
     WS = WS_OF[shape]
@@ -149,6 +172,29 @@ for shape in ('floor', 'tail'):
         P(f"[GW1 arm {shape} {law}] own-truth read: P(ws)="
           f"{np.round(post['ws'], 2).tolist()} mode ws={WS[wsm]}; "
           f"a_marg={am:.2f}")
+
+# --- PHYS conditional (amendment 3, logged BEFORE tail/arm results) -------
+# The physical noise envelope: Lindegren+21 inflation allows fpm <= ~1.4
+# (grid: <= 1.8) and an angular-covariance systematic floor <= ~0.025-0.03
+# mas/yr = ws <= ~0.015 km/s at <= 200 pc.  Reported CONDITIONAL, not
+# operative (changing the operative requires more than an interim round).
+P("")
+for law in ('simple', 'BE'):
+    f3 = f'data/stage7j_cube_full_photow3_31_{law}.npy'
+    if os.path.exists(f3):
+        cb = eta9(np.load(f3))[:, :, :, :, :, :, :3]
+        am, dn, post = read_marg(cb, 9)
+        P(f"[PHYS {law}] photow3 | fpm<=1.8: a_marg={am:.2f} dN={dn:+.1f} "
+          f"P(fpm)={np.round(post['fpm'], 2).tolist()}")
+for shape in ('floor', 'tail'):
+    for law in ('simple', 'BE'):
+        f = f'data/stage7j_cube_full_w{shape}_31_{law}.npy'
+        if not os.path.exists(f):
+            continue
+        cb = eta9(np.load(f))[:, :, :, :, :, :, :3, :, :, :2]
+        am, dn, post = read_marg(cb, 10)
+        P(f"[PHYS {law}] {shape} | fpm<=1.8, ws<=step1: a_marg={am:.2f} "
+          f"dN={dn:+.1f} P(ws)={np.round(post['ws'], 2).tolist()}")
 
 # --- verdict (contest + B4 present) ---------------------------------------
 shapes_read = sorted({s for (s, _) in res})
