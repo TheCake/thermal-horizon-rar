@@ -1,0 +1,17 @@
+STAGE 7L L3: data step (cook mask, vt<2.5, r/rM (1.0, 3.1)/(0.05, 0.5)) = 0.985 (68% CI 0.909-1.060; N = 795/148)
+
+== seed 31 ==
+G0-7L scale-free control: step = 0.995 -> PASS [0.990, 1.010]
+e-run Newton baseline (absorbers off, fpm=1.2): step = 0.999 (the honest zero point)
+newton-best  alpha=0.0: step = 1.029 (fcomp=0.1, fpm=3.0, kw=0.7, sq=0.2)
+boost-simple alpha=0.5: step = 1.101 (fcomp=0.1, fpm=3.0, kw=0.7, sq=0.2)
+boost-BE     alpha=1.0: step = 1.092 (fcomp=0.1, fpm=3.0, kw=0.7, sq=0.2)
+
+== seed 101 ==
+G0-7L scale-free control: step = 1.002 -> PASS [0.990, 1.010]
+e-run Newton baseline (absorbers off, fpm=1.2): step = 1.006 (the honest zero point)
+newton-best  alpha=0.0: step = 1.031 (fcomp=0.1, fpm=3.0, kw=0.7, sq=0.2)
+boost-simple alpha=0.5: step = 1.099 (fcomp=0.1, fpm=2.1, kw=0.7, sq=0.2)
+boost-BE     alpha=0.5: step = 1.100 (fcomp=0.1, fpm=3.0, kw=0.7, sq=0.2)
+
+done (1.0 min)
