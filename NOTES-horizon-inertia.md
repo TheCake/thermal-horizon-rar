@@ -6075,6 +6075,51 @@ posteriors (does any function un-ride the fpm edge?).
 - No credence move (not a named decider); the binary-vote statement
   feeds the world table, not the credence line.
 
+## Stage 7K-a pre-registration (2026-07-27, committed BEFORE execution): THE FORWARD MEDIAN — does the width-complete Newton-best cell reproduce the model-free anchor?
+
+The 2C statistic is model-light by construction: boost = median
+ṽ(6–30 kAU) / median ṽ(0.2–2 kAU); Newton predicts 1.000 exactly
+(ṽ's distribution is s-independent under Newton — that is the
+normalization's purpose). The corrected anchor: 1.078 (CI
+1.052–1.103; 4Q, correction #12). The absorbers are NOT ratio-blind:
+companion wobble in ṽ units grows as w·√(s/M) and the noise floor as
+sg0·√s — both rise toward the wide bin. 7K-a MEASURES how much of
+the 1.078 the landed Newton-best cell produces.
+
+**INSTRUMENT:** self-contained forward (the marginal machinery's
+population, companions incl. kw, noise, sq; own copy — the batch
+script stays frozen), seed 31 primary / 101 stability; the model
+median ratio computed on the model pairs DIRECTLY (no histogram
+coarsening), both naturally-weighted and s-REWEIGHTED to the data's
+within-bin s-distribution (10 sub-bins per 2C bin; the reweighted
+number is the bar-carrying one). Cells read from the photow3 cubes +
+LANDED-CONV prior in-script:
+- NEWTON-BEST: argmax of the α = 0 slice (nuisances free);
+- SANITY legs: the α = 0.5 and α = 1.0 cells (the operative 0.74/0.70
+  bracket) — expectation band R ∈ [1.04, 1.12]; outside → instrument
+  flag, investigate before quoting.
+**GATE G0-7ka (amended BEFORE execution — the baseline-noise clause):**
+two variants: (i) NOISE-OFF (α = 0, fcomp = 0, sq = 0, fpm term
+removed entirely) ⇒ R ∈ [0.995, 1.005] — the exact Newton-flat
+identity; (ii) BASELINE (fpm = 1.2, others off) ⇒ R ∈ [0.995, 1.015]
+— baseline measurement noise itself grows as sg0·√s in ṽ units and
+is PREDICTED to lift R by ~0.005–0.010; the gap between (i) and (ii)
+is the noise contribution to the ratio, reported (it also bounds how
+much of the data's 1.078 baseline noise alone explains).
+**BARS (locked now, on the s-reweighted Newton-best R_N, seed 31; 101
+must not flip the category or the result is AMBIG-quoted):**
+- R_N ≥ 1.052 (the data CI low edge) → MEDIAN-ABSORBED: the
+  model-free anchor falls as independent evidence — the absorber
+  budget covers it; the anchor's ledger rows flip to
+  ABSORBER-CONDITIONAL.
+- R_N ≤ 1.030 → MEDIAN-SURVIVES: the anchor is the surviving
+  model-free anomaly; the gap (1.078 − R_N) is quoted as the
+  unabsorbed excess with the data CI.
+- 1.030 < R_N < 1.052 → GRAY (partial absorption, quoted as such;
+  no status flips).
+No credence move (not a named decider); the result feeds the anchor
+rows and Paper 1's model-light chapter.
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of
