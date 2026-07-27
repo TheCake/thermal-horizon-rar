@@ -1,0 +1,145 @@
+STAGE 7J-B full seeds [31]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4, 3.0]; ln pi(fcomp) = [-1584.82, -768.17, -268.1, -7.78, -1.06, -42.57]
+FUNC p065: B(y=1) = 1.2251 (fingerprint)
+FUNC gm: B(y=1) = 1.2205 (fingerprint)
+FUNC rb1: B(y=1) = 1.2401 (fingerprint)
+FUNC rb2: B(y=1) = 1.2562 (fingerprint)
+FUNC rb3: B(y=1) = 1.2600 (fingerprint)
+FUNC rb4: B(y=1) = 1.2891 (fingerprint)
+FUNC boot: B(y=1) = 1.1475 (fingerprint)
+FUNC amb: B(y=1) = 1.3476 (fingerprint)
+FUNC resn: B(y=1) = 1.2794 (fingerprint)
+FUNC dwf: B(y=1) = 1.3250 (fingerprint)
+FUNC lam000: B(y=1) = 1.1182 (fingerprint)
+FUNC lam025: B(y=1) = 1.1774 (fingerprint)
+FUNC lam050: B(y=1) = 1.2366 (fingerprint)
+FUNC lam075: B(y=1) = 1.2957 (fingerprint)
+FUNC lam100: B(y=1) = 1.3549 (fingerprint)
+FUNC lam125: B(y=1) = 1.4141 (fingerprint)
+STAGE 7J-B full seeds [101]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4, 3.0]; ln pi(fcomp) = [-1584.82, -768.17, -268.1, -7.78, -1.06, -42.57]
+FUNC p065: B(y=1) = 1.2251 (fingerprint)
+FUNC gm: B(y=1) = 1.2205 (fingerprint)
+FUNC rb1: B(y=1) = 1.2401 (fingerprint)
+FUNC rb2: B(y=1) = 1.2562 (fingerprint)
+FUNC rb3: B(y=1) = 1.2600 (fingerprint)
+FUNC amb: B(y=1) = 1.3476 (fingerprint)
+FUNC lam000: B(y=1) = 1.1182 (fingerprint)
+FUNC lam025: B(y=1) = 1.1774 (fingerprint)
+FUNC lam050: B(y=1) = 1.2366 (fingerprint)
+FUNC lam075: B(y=1) = 1.2957 (fingerprint)
+FUNC lam100: B(y=1) = 1.3549 (fingerprint)
+FUNC lam125: B(y=1) = 1.4141 (fingerprint)
+G0a0 p065 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 p065: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 p065: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 p065: a_hat=1.11 (interior=True), dN=+13.7, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 p065 seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 p065: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 p065: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 p065: a_hat=1.34 (interior=True), dN=+27.1, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 gm seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 gm: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 gm: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 gm: a_hat=1.26 (interior=True), dN=+11.4, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 gm seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 gm: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 gm: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 gm: a_hat=1.33 (interior=True), dN=+17.5, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 rb1 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 rb1: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 rb1: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 rb1: a_hat=0.67 (interior=True), dN=+11.3, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 rb1 seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 rb1: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 rb1: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 rb1: a_hat=0.66 (interior=True), dN=+15.1, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 rb2 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 rb2: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 rb2: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 rb2: a_hat=0.91 (interior=True), dN=+9.9, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 rb2 seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 rb2: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 rb2: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 rb2: a_hat=0.55 (interior=True), dN=+15.7, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 rb3 seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 rb3: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 rb3: operative photow cube absent - SKIPPED (disclosed)
+G0a0 rb3 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+PROF full seed 101 rb3: a_hat=0.59 (interior=True), dN=+17.7, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+GB0e full seed 31 rb3: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 rb3: a_hat=0.63 (interior=True), dN=+11.1, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 amb seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 amb: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 amb: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 amb: a_hat=0.58 (interior=True), dN=+20.6, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 rb4 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 rb4: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 rb4: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 rb4: a_hat=0.68 (interior=True), dN=+12.7, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam000 seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 lam000: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 lam000: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 lam000: a_hat=1.52 (interior=True), dN=+23.5, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 boot seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 boot: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 boot: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 boot: a_hat=1.15 (interior=True), dN=+11.9, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 amb seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 amb: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 amb: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 amb: a_hat=0.77 (interior=True), dN=+15.8, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam025 seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 lam025: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 lam025: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 lam025: a_hat=0.64 (interior=True), dN=+21.4, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam050 seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 lam050: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 lam050: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 lam050: a_hat=0.65 (interior=True), dN=+19.6, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 resn seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 resn: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 resn: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 resn: a_hat=0.64 (interior=True), dN=+8.0, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 dwf seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 dwf: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 dwf: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 dwf: a_hat=0.70 (interior=True), dN=+11.8, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam075 seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 lam075: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 lam075: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 lam075: a_hat=0.55 (interior=True), dN=+19.9, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam100 seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GD1 lam100 seed 101: max|lam100-BE| = 0.00e+00 -> PASS
+GB0w full seed 101 lam100: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 lam100: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 lam100: a_hat=0.58 (interior=True), dN=+19.4, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam000 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 lam000: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 lam000: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 lam000: a_hat=1.27 (interior=True), dN=+15.6, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam025 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 lam025: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 lam025: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 lam025: a_hat=1.11 (interior=True), dN=+18.8, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam125 seed 101: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 101 lam125: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 101 lam125: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 101 lam125: a_hat=0.46 (interior=True), dN=+18.4, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+  seed 101 done (198.7 min)
+G0a0 lam050 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 lam050: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 lam050: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 lam050: a_hat=0.71 (interior=True), dN=+17.0, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam075 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 lam075: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 lam075: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 lam075: a_hat=0.58 (interior=True), dN=+19.6, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam100 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GD1 lam100 seed 31: max|lam100-BE| = 0.00e+00 -> PASS
+GB0w full seed 31 lam100: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 lam100: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 lam100: a_hat=0.75 (interior=True), dN=+12.8, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0a0 lam125 seed 31: max|alpha0-simple| = 0.00e+00 -> PASS
+GB0w full seed 31 lam125: photo cube absent - SKIPPED (disclosed)
+GB0e full seed 31 lam125: operative photow cube absent - SKIPPED (disclosed)
+PROF full seed 31 lam125: a_hat=0.49 (interior=True), dN=+18.2, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+  seed 31 done (244.0 min)

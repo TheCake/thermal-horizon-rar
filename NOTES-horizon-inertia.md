@@ -6300,6 +6300,78 @@ defend themselves by standing next to a cliff. (Also: one of our
 back-up checks turned out to be a dud by design — noted so nobody
 trusts it later.)
 
+## Stage 7J-d EXECUTED (2026-07-27): THE UNSUSPENSION — and the honest vote is NO FUNCTION DISCRIMINATION; Newton stays function-robustly dead
+
+Gates immaculate: G0-alpha0 = 0.00e+00 on every function cube
+(Newton is function-blind — the wiring identity) and **GD1 = the
+lam100 cube reproduces the BE cube BIT-FOR-BIT on both seeds** (the
+free end-to-end FUNC-path regression the lam100 ≡ BE table identity
+bought us). 16 functions × seed 31 + 12 × seed 101, ~4 h GPU
+each batch.
+
+**THE VERDICT: at the LANDED-CONV anchor, the binary function
+contest is a WASH.** All 16 functions sit within ±8 lnL of BE
+(seed 31: +6.15 lam075 … −5.35 resn; seed 101: +7.66 p065 … −6.08
+simple) with realization scatter of the same size. Per the
+pre-registered letter, all four fenced vetoes FLIP (rb4, boot,
+resn, dwf now indistinguishable from BE) — read correctly, this is
+**instrument resolution loss, not rehabilitation**: the same
+width/companion absorbers that ate half the median (7K-a) eat
+essentially all of the ν-shape differences. The fenced vetoes stand
+as fenced-model results, quoted with both conditions. Sign
+stability: the no-veto set is 6/6 stable (p065/amb positive,
+gm/rb1-rb3 negative — all tie-grade); lam125 and simple SIGN-FLIP
+across seeds (named). simple's fenced −12.6 lean over BE degrades
+to no-verdict — **the 3P "no ν-family discrimination" is now
+generalized to all 16 under the landed model. SPARC remains the
+program's function discriminator** (the 4E lesson, completed).
+
+**THE λ LEG: the landed binary ĉ₁ = NO CONSTRAINT.** The evidence
+profile over λ is flat within realization scatter (peak c₁ = 0.375
+at seed 31 with rejection margin +3.4; peak c₁ = 0.000 at seed 101
+with margin +0.0 — both inside the ±5 tie band). The 4X fenced
+result (c₁ = 0 rejected at ΔlnL ≈ 20/seed) was a FENCED-MODEL
+result; ledger row bin-c1 → CO-QUOTED. **The §6.4 "two systems
+read the same dial" claim now rests on the galaxy leg alone; the
+binary leg is fence-conditional.** (This supersedes the promised
+six-seed fenced budget by construction — more seeds of a retired
+model answer nothing.)
+
+**THE SURVIVING VOTE: Newton is function-robustly dead.** Every
+function × seed row rejects Newton at dN ≥ +7.9 (32 rows; seed-mean
+simple +14.5 / BE +16.1 on the extended grid = exactly the
+co-quoted band). The unsuspended world-table binary column reads:
+"votes against Newton at the band grade; agnostic among all 16
+modified laws." P(fpm = 3.0) ≈ 1.0 on every function row (one
+exception: simple seed 101 at 0.09) — **the noise chase is
+function-blind: the width object sits upstream of the ν-choice**,
+consistent with 7J-z6/7K-b.
+
+sbe/qcl stayed excluded-disclosed; the pre-registered sbe trigger
+did NOT fire (no veto moved by > 8 — the flips are compressions
+toward zero, not reversals).
+
+Plain verdict: SUCCESS — the unsuspension is executed and the
+honest answer ("no discrimination") is itself the finding; the
+binary program's evidential structure is now cleanly layered:
+model-light excess (7K-a, half-unabsorbed) + the (band, cliff) pair
+(7K-b) + the function-robust Newton rejection (7J-d) + the
+α measurement conditional on its noise-ceiling curve (7J-z6) — and
+NO binary claim about WHICH modified law. NEEDS REFINEMENT only in
+the pre-named direction (the population-sector width object, whose
+resolution would restore discrimination power).
+
+ELI12: We re-ran the beauty contest between all sixteen gravity
+formulas, this time letting the boring-stuff dials (hidden stars,
+noise, spread) turn freely. Result: the judges can no longer tell
+the formulas apart — the boring dials can imitate the differences
+between them. Two things survive: plain gravity STILL loses to
+every single formula, and the galaxies (where the dials don't
+reach) remain the place where formulas get told apart. Also, the
+earlier "the binaries measured the ½ knob" claim gets demoted
+honestly: that reading needed the old fenced dials; with free
+dials the binaries can't read that knob at all.
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of

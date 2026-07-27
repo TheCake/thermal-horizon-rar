@@ -1189,9 +1189,52 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   §2.4.1 verified — 10.5% measured (q≳0.5, twin-adjacent) / ~20%
   per component extrapolated / ~36% per pair ⇒ brackets the v2c
   host rate; the ×3-vs-literature tension = wrong-comparator,
-  externally confirmed. NEXT: 7J-d (DATA-VOTE unsuspension; fold
-  the ĉ₁ λ-family in as the landed-posterior budget; MI deferred
-  to DR4) → 7K-a/b → 7L → THE SPLIT.** Then the DM
+  externally confirmed.
+  **THE ACCOUNTING ROUND (7K-a/7K-b/7J-d, 2026-07-27, PAPER →
+  v3.6): 7K-a forward median (pre-reg 3c931d5 + two pre-quote gate
+  amendments — G0-i/iii FAILs = MEASURED model facts: the fitted
+  e-run makes model-Newton's 2C ratio ≈0.98 ("Newton predicts
+  1.000" is scale-free-conditional) + a_s-prior edge truncation;
+  G0-iv interior control PASS 1.005/1.002): **GRAY both seeds —
+  the landed Newton-best cell forward-produces R = 1.033/1.043 of
+  the 1.078 anchor (CI 1.052–1.103): absorbers cover 52–59% of the
+  model-referenced gap, unabsorbed excess +0.035–0.045; boost
+  cells OVER-produce (1.114–1.127); the median = model-light
+  EXCESS, no longer a standalone Newton-killer** (anchor rows
+  note-updated, no flips). 7K-b census null (pre-reg eb6084d;
+  post-hoc legs LABELED): **NULL-BROKEN by the letter (landed cell
+  floods the band 26–38 vs 9) and SELF-REFUTED by the cliff (17–32
+  predicted vs 2 observed above 1.67, P ≤ 7e-6; no config incl.
+  sq=0/PHYS/boost reproduces 9-with-cliff-2, min P ≈ 9e-5) ⇒ THE
+  RELOCATION: the (band=9, cliff=2) PAIR is the operative census
+  statistic, self-defending (cliff bounds tail noise to ≈formal,
+  where the band is unleakable at 4J's 3.8e-9); count retired
+  ABSORBER-CONDITIONAL; third mid-shoulder-localization witness;
+  wobble-lite bound logged VACUOUS (ignores catalog survival);
+  7K-b2 folded into the population successor.** 7J-d THE
+  UNSUSPENSION (pre-reg fdb4bfc; G0a0 exact ×16, GD1 lam100≡BE
+  cube BIT-EXACT both seeds; 16 fn × seed 31 + 12 × 101, ~4h GPU
+  each): **NO FUNCTION DISCRIMINATION at the landed anchor — all
+  16 within ±8 lnL of BE, seed scatter comparable; four fenced
+  vetoes (rb4/boot/resn/dwf) FLIP per the letter = instrument
+  resolution loss, not rehabilitation (fenced vetoes stand as
+  fenced-model results); simple's fenced −12.6 lean over BE →
+  no-verdict (3P generalized to all 16); λ profile FLAT (peak c₁
+  0.375 seed 31 / 0.000 seed 101) ⇒ the 4X binary ĉ₁ = 0.37–0.50
+  ERASED under the landed posterior — bin-c1 CO-QUOTED, the §6.4
+  "two systems read the dial" claim now GALAXY-LED (supersedes the
+  six-seed fenced budget by construction); NEWTON FUNCTION-ROBUSTLY
+  DEAD (dN ≥ +7.9 on all 32 fn×seed rows; seed-mean +14.5/+16.1 =
+  the co-quoted band); P(fpm=3.0) ≈ 1.0 function-blind = the width
+  object is upstream of the ν-choice; SPARC = the program's only
+  function discriminator (4E generalized); sbe/qcl excluded-
+  disclosed, trigger not fired.** Ledger +bin-7ka-median/
+  +bin-7kb-census/+bin-7jd-unsuspension, bin-c1→CO-QUOTED (126
+  rows/88 tokens green); worldtable banner = unsuspension form;
+  PAPER v3.6 (header, abstract-(3) rewrite, §6.3 7K-a passage,
+  §6.4 erasure passage, §7.2 7K-b passage, spine/§2.3/§4.3/
+  scorecard c₁ touches). NEXT: 7L (Cookson selection + ablation
+  ladder) → THE SPLIT.** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

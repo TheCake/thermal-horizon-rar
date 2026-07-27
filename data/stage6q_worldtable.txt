@@ -1,10 +1,10 @@
-STAGE 6Q: ledger audit + world table  (124 ledger rows)
+STAGE 6Q: ledger audit + world table  (125 ledger rows)
 ==============================================================================
 G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
 G3 (supersession resolves): PASS
 G4 (current-quantity collisions): PASS
-G5 (value spot-checks, 85 tokens): PASS
+G5 (value spot-checks, 88 tokens): PASS
 
 G6 (world-table provenance): PASS
 
@@ -184,8 +184,28 @@ data-driven; shape exclusion set floor/tail/fpm/sq/perspective;
 successor hypothesis (booked, not opened): the inner-bin
 eccentricity/radial-population sector (Part-A fingerprint:
 mid-shoulder v, radial 8-deg column, inner bins).
-Binary DATA VOTE unsuspension awaits the 7J-d function-contest
-re-run under the landed posterior; 7K and 7L queue behind.
+UNSUSPENSION DECLARED (bin-7jd-unsuspension, 2026-07-27): the
+7J-d re-run under the landed posterior returns NO FUNCTION
+DISCRIMINATION - all 16 functions within +/-8 lnL of BE with
+seed scatter of the same size; the four fenced vetoes (rb4,
+boot, resn, dwf) flip to indistinguishable per the letter =
+instrument resolution loss, not rehabilitation (fenced vetoes
+stand as fenced-model results); the lambda profile is FLAT (the
+landed binary c1 = no constraint; bin-c1 CO-QUOTED as
+fence-conditional); NEWTON FUNCTION-ROBUSTLY DEAD (dN >= +7.9
+on all 32 function x seed rows).  The BIN column of the table
+above is therefore FENCE-CONDITIONAL history: the unsuspended
+binary vote = against Newton at the band grade, agnostic among
+the 16.  SPARC remains the function discriminator (4E
+generalized).  7K-a: the landed Newton-best cell forward-
+produces R = 1.033/1.043 of the model-light 1.078 anchor (GRAY
+- half absorbed, excess +0.035-0.045 survives).  7K-b: the
+census count falls (landed cell floods the band) but SELF-
+REFUTES on the cliff (17-32 predicted vs 2 observed above 1.67,
+P <= 7e-6) - the (band=9, cliff=2) PAIR is the operative census
+statistic and rejects every landed configuration (min P ~ 9e-5):
+the cliff bounds tail noise to ~formal, where the band is
+unleakable (4J 3.8e-9).  7L queues next.
 7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid
 step, all mass on the 0.20 node); in the four-absorber configuration
 vt-only fitting reports a PHANTOM alpha = 0.5 that the direction

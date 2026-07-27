@@ -163,6 +163,12 @@ CHECKS = [
      'data/stage7kb_census.txt'),
     ('bin-7kb-census', 'observed overshoot [1.67, 2.2) at gamma>=75: 2',
      'data/stage7kb_census.txt'),
+    ('bin-7jd-unsuspension', 'GD1 lam100 seed 31: max|lam100-BE| = '
+     '0.00e+00 -> PASS', 'data/stage7jd_funcs.txt'),
+    ('bin-7jd-unsuspension', 'peak lambda=0.75, c1_hat=0.375',
+     'data/stage7jd_read.txt'),
+    ('bin-7jd-unsuspension', 'peak lambda=0.0, c1_hat=0.000',
+     'data/stage7jd_read.txt'),
     ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
      'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
     ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',
@@ -395,8 +401,28 @@ say('data-driven; shape exclusion set floor/tail/fpm/sq/perspective;')
 say('successor hypothesis (booked, not opened): the inner-bin')
 say('eccentricity/radial-population sector (Part-A fingerprint:')
 say('mid-shoulder v, radial 8-deg column, inner bins).')
-say('Binary DATA VOTE unsuspension awaits the 7J-d function-contest')
-say('re-run under the landed posterior; 7K and 7L queue behind.')
+say('UNSUSPENSION DECLARED (bin-7jd-unsuspension, 2026-07-27): the')
+say('7J-d re-run under the landed posterior returns NO FUNCTION')
+say('DISCRIMINATION - all 16 functions within +/-8 lnL of BE with')
+say('seed scatter of the same size; the four fenced vetoes (rb4,')
+say('boot, resn, dwf) flip to indistinguishable per the letter =')
+say('instrument resolution loss, not rehabilitation (fenced vetoes')
+say('stand as fenced-model results); the lambda profile is FLAT (the')
+say('landed binary c1 = no constraint; bin-c1 CO-QUOTED as')
+say('fence-conditional); NEWTON FUNCTION-ROBUSTLY DEAD (dN >= +7.9')
+say('on all 32 function x seed rows).  The BIN column of the table')
+say('above is therefore FENCE-CONDITIONAL history: the unsuspended')
+say('binary vote = against Newton at the band grade, agnostic among')
+say('the 16.  SPARC remains the function discriminator (4E')
+say('generalized).  7K-a: the landed Newton-best cell forward-')
+say('produces R = 1.033/1.043 of the model-light 1.078 anchor (GRAY')
+say('- half absorbed, excess +0.035-0.045 survives).  7K-b: the')
+say('census count falls (landed cell floods the band) but SELF-')
+say('REFUTES on the cliff (17-32 predicted vs 2 observed above 1.67,')
+say('P <= 7e-6) - the (band=9, cliff=2) PAIR is the operative census')
+say('statistic and rejects every landed configuration (min P ~ 9e-5):')
+say('the cliff bounds tail noise to ~formal, where the band is')
+say('unleakable (4J 3.8e-9).  7L queues next.')
 say('7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid')
 say('step, all mass on the 0.20 node); in the four-absorber configuration')
 say('vt-only fitting reports a PHANTOM alpha = 0.5 that the direction')
