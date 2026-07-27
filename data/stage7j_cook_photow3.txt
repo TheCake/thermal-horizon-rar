@@ -1,0 +1,15 @@
+STAGE 7J-B cook seeds [31, 101]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4, 3.0]; ln pi(fcomp) = [-1584.82, -768.17, -268.1, -7.78, -1.06, -42.57]
+GB0w cook seed 31 simple: photo cube absent - SKIPPED (disclosed)
+GB0e cook seed 31 simple: operative photow cube absent - SKIPPED (disclosed)
+PROF cook seed 31 simple: a_hat=0.49 (interior=True), dN=+1.4, wr=0.3, fcomp=0.0, fpm=3.0, sq=0.2
+GB0w cook seed 31 BE: photo cube absent - SKIPPED (disclosed)
+GB0e cook seed 31 BE: operative photow cube absent - SKIPPED (disclosed)
+PROF cook seed 31 BE: a_hat=0.67 (interior=True), dN=+2.2, wr=0.3, fcomp=0.0, fpm=3.0, sq=0.2
+  seed 31 done (22.9 min)
+GB0w cook seed 101 simple: photo cube absent - SKIPPED (disclosed)
+GB0e cook seed 101 simple: operative photow cube absent - SKIPPED (disclosed)
+PROF cook seed 101 simple: a_hat=0.80 (interior=True), dN=+0.1, wr=0.3, fcomp=0.0, fpm=3.0, sq=0.2
+GB0w cook seed 101 BE: photo cube absent - SKIPPED (disclosed)
+GB0e cook seed 101 BE: operative photow cube absent - SKIPPED (disclosed)
+PROF cook seed 101 BE: a_hat=0.71 (interior=True), dN=+0.4, wr=0.3, fcomp=0.0, fpm=3.0, sq=0.2
+  seed 101 done (22.6 min)

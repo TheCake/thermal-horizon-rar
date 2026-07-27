@@ -6421,6 +6421,64 @@ No credence move (not a named decider). The stage feeds §7.4 with
 numbers in place of (c)'s qualitative argument, and Paper 1's
 methods chapter (the modeling-philosophy fork, quantified).
 
+## Stage 7L EXECUTED (2026-07-27): THE COOKSON QUANTIFICATION — their flatness replicates, their power against the landed model is ~1.4σ, and the fork is now arithmetic
+
+Proxy mask: N = 1194 vs their 1,421 (16% — well inside the 2× bar;
+cut ladder printed: the |ΔRV| < 10 cut halves the both-RV sample,
+s ∈ 1–30 + d < 130 pc remove our deep anchor entirely).
+
+**L3 (their statistic on our model; G0-7L scale-free control PASS
+0.995/1.002; e-run baseline ≈ 1.00 on THIS statistic — their r/r_M
+range excludes the bins where the e-run bites):**
+- **Their flatness REPLICATES on our own catalog**: data step =
+  0.985 (68% CI 0.909–1.060; N = 795/148 in the two r/r_M bins).
+- **The landed boost cells predict step = 1.092–1.101, NOT 1.20**:
+  the measured e-trend, the absorbers, their ṽ < 2.5 ceiling and
+  their range cut the naive MOND step in half. Their 2.7σ against
+  the 20% step is ≈ 1.3–1.4σ against the landed prediction.
+- Newton-best predicts 1.029–1.031; boost-vs-Newton separation on
+  this statistic at this N ≈ 0.9σ_boot — **their instrument cannot
+  distinguish the landed boost from Newton at their sample size.**
+- Verdict by the locked letter: GRAY (prediction ≤ 1.11 ✓ but just
+  outside the data's 68% CI at ~1.5σ_boot; the ≥ 1.15 tension bar
+  not reached). The data lean 0.6σ Newton-side of Newton-best —
+  noise-grade.
+**L1 (the 2D likelihood on their selection, landed model,
+LANDED-CONV): CONSISTENT in ALL FOUR law × seed reads** (d_op =
+1.2–3.3, bar ≤ 4): the cook sample does not reject the operative α
+— it cannot distinguish 0 from 0.7 (α = 2 IS excluded at −25…−39,
+so the sample has power, just not at the level that matters);
+marginal dN = +0.0–0.1 (the N-scaling expectation was +1.2–2.0 —
+consistent, sub-noise). No signal-carrier-removal signature beyond
+the range restriction. **L2**: ṽ-only ≈ 2D at this N (nothing to
+phantom on 1.2k pairs).
+
+**THE FORK, QUANTIFIED (feeds §7.4):** their cleaning discards 92%
+of the joint sample — including the entire deep anchor — and what
+remains carries ~1σ of α-information on their statistic and ~3 lnL
+on ours. "No MOND evidence on 1,421 RV-clean pairs" and "Newton
+excluded at +14.5–23.8 on 14,071" are ARITHMETICALLY COMPATIBLE
+statements; the disagreement is entirely about whether the removed
+92% is data or contamination — the modeling-philosophy fork of
+§7.4(c), now with numbers in place of the qualitative suppression
+argument.
+
+Plain verdict: SUCCESS — both their headline observation and its
+compatibility with ours are now reproduced inside one pipeline;
+no bar fired against either side. No credence move (not a named
+decider).
+
+ELI12: The other team cleaned the star-pair list down to the 1,400
+most pristine pairs and saw no gravity boost. We rebuilt their
+exact cleaned list from our data — and saw the same flat nothing
+they did. Then we asked our model: what SHOULD the boost look like
+on that cleaned list? Answer: about half as big as what they tested
+for, and their list is too small to see even that. So both camps'
+numbers are true at once: their pristine subset genuinely shows
+nothing (it can't), and the full sample genuinely shows something.
+The real argument is whether the 92% they threw away is treasure
+or trash — and that's now a question with numbers on both sides.
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of

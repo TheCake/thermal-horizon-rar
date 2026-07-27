@@ -163,6 +163,10 @@ CHECKS = [
      'data/stage7kb_census.txt'),
     ('bin-7kb-census', 'observed overshoot [1.67, 2.2) at gamma>=75: 2',
      'data/stage7kb_census.txt'),
+    ('bin-7l-cookson', 'data step (cook mask, vt<2.5, r/rM (1.0, 3.1)/'
+     '(0.05, 0.5)) = 0.985', 'data/stage7l_step.txt'),
+    ('bin-7l-cookson', 'L1 d_op=3.2 -> CONSISTENT',
+     'data/stage7l_read.txt'),
     ('bin-7jd-unsuspension', 'GD1 lam100 seed 31: max|lam100-BE| = '
      '0.00e+00 -> PASS', 'data/stage7jd_funcs.txt'),
     ('bin-7jd-unsuspension', 'peak lambda=0.75, c1_hat=0.375',
@@ -422,7 +426,14 @@ say('REFUTES on the cliff (17-32 predicted vs 2 observed above 1.67,')
 say('P <= 7e-6) - the (band=9, cliff=2) PAIR is the operative census')
 say('statistic and rejects every landed configuration (min P ~ 9e-5):')
 say('the cliff bounds tail noise to ~formal, where the band is')
-say('unleakable (4J 3.8e-9).  7L queues next.')
+say('unleakable (4J 3.8e-9).  7L (bin-7l-cookson): their flatness')
+say('REPLICATES on our catalog (step 0.985, CI 0.909-1.060, N=1194')
+say('proxy of their 1421); the landed boost predicts 1.09-1.10 = HALF')
+say('their tested 20pct step (their 2.7 sigma = ~1.4 sigma vs the')
+say('landed model; boost-vs-Newton ~0.9 sigma at their N); L1')
+say('CONSISTENT 4/4 - their null and our detection are arithmetically')
+say('compatible; the fork = whether the removed 92 pct (incl. the')
+say('deep anchor) is data or contamination.')
 say('7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid')
 say('step, all mass on the 0.20 node); in the four-absorber configuration')
 say('vt-only fitting reports a PHANTOM alpha = 0.5 that the direction')

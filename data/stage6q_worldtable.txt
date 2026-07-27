@@ -1,10 +1,10 @@
-STAGE 6Q: ledger audit + world table  (125 ledger rows)
+STAGE 6Q: ledger audit + world table  (126 ledger rows)
 ==============================================================================
 G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
 G3 (supersession resolves): PASS
 G4 (current-quantity collisions): PASS
-G5 (value spot-checks, 88 tokens): PASS
+G5 (value spot-checks, 90 tokens): PASS
 
 G6 (world-table provenance): PASS
 
@@ -205,7 +205,14 @@ REFUTES on the cliff (17-32 predicted vs 2 observed above 1.67,
 P <= 7e-6) - the (band=9, cliff=2) PAIR is the operative census
 statistic and rejects every landed configuration (min P ~ 9e-5):
 the cliff bounds tail noise to ~formal, where the band is
-unleakable (4J 3.8e-9).  7L queues next.
+unleakable (4J 3.8e-9).  7L (bin-7l-cookson): their flatness
+REPLICATES on our catalog (step 0.985, CI 0.909-1.060, N=1194
+proxy of their 1421); the landed boost predicts 1.09-1.10 = HALF
+their tested 20pct step (their 2.7 sigma = ~1.4 sigma vs the
+landed model; boost-vs-Newton ~0.9 sigma at their N); L1
+CONSISTENT 4/4 - their null and our detection are arithmetically
+compatible; the fork = whether the removed 92 pct (incl. the
+deep anchor) is data or contamination.
 7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid
 step, all mass on the 0.20 node); in the four-absorber configuration
 vt-only fitting reports a PHANTOM alpha = 0.5 that the direction

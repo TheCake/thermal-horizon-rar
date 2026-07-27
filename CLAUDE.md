@@ -1233,8 +1233,30 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   rows/88 tokens green); worldtable banner = unsuspension form;
   PAPER v3.6 (header, abstract-(3) rewrite, §6.3 7K-a passage,
   §6.4 erasure passage, §7.2 7K-b passage, spine/§2.3/§4.3/
-  scorecard c₁ touches). NEXT: 7L (Cookson selection + ablation
-  ladder) → THE SPLIT.** Then the DM
+  scorecard c₁ touches).
+  **7L (2026-07-27, THE COOKSON QUANTIFICATION, pre-reg ad1e79e,
+  PAPER → v3.7): proxy mask N = 1194 vs their 1421 (16%, inside the
+  2× bar; |ΔRV|<10 halves both-RV; s∈1–30+130pc removes the deep
+  anchor). **L3 (their statistic, G0 scale-free PASS 0.995/1.002,
+  e-run baseline ≈1.00 on THIS statistic): their flatness
+  REPLICATES on our catalog (data step 0.985, CI 0.909–1.060);
+  the landed boost cells predict 1.092–1.101 = HALF their tested
+  20% step ⇒ their 2.7σ ≈ 1.3–1.4σ vs the landed model;
+  boost-vs-Newton ≈ 0.9σ_boot at their N; verdict GRAY by the
+  letter. L1: CONSISTENT 4/4 (d_op 1.2–3.3 ≤ 4 — the cook sample
+  cannot reject the operative α; α=2 excluded −25…−39); marginal
+  dN +0.0–0.1 = the N-scaling expectation. THE FORK IS ARITHMETIC:
+  their cleaning discards 92% of the joint sample incl. the whole
+  deep anchor; the remainder carries ~1σ of α-information — their
+  null and our +14.5–23.8 are COMPATIBLE; the disagreement is
+  entirely whether the removed 92% is data or contamination.**
+  Ledger +bin-7l-cookson (127 rows); PAPER §7.4(d) new; worldtable
+  banner + tokens. NEXT: THE SPLIT (Paper 1 = binaries: completeness
+  + kernel discovery + width channel + phantom-veto + census-pair +
+  noise-ceiling profile + accounting round + Cookson compatibility;
+  Paper 2 = coefficients; §2.4 stays in the log;
+  STRUCTURAL-INDEPENDENCE rule; tell the user before any
+  Opus-addressed draft).** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

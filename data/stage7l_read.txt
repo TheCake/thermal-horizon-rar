@@ -1,0 +1,8 @@
+[cook simple 31] 2D: a_marg=0.00 dN=+0.0 lm(alpha)-max = [0.0, -3.2, -7.4, -16.5, -39.2]; L1 d_op=3.2 -> CONSISTENT
+[cook simple 31] vt-only: a_marg=0.00 dN=+0.0 (L2 descriptive)
+[cook BE 31] 2D: a_marg=0.00 dN=+0.0 lm(alpha)-max = [0.0, -3.3, -4.7, -15.6, -26.4]; L1 d_op=3.3 -> CONSISTENT
+[cook BE 31] vt-only: a_marg=0.00 dN=+0.0 (L2 descriptive)
+[cook simple 101] 2D: a_marg=0.00 dN=+0.0 lm(alpha)-max = [0.0, -3.0, -6.1, -13.3, -37.4]; L1 d_op=3.0 -> CONSISTENT
+[cook simple 101] vt-only: a_marg=0.00 dN=+0.0 (L2 descriptive)
+[cook BE 101] 2D: a_marg=0.00 dN=+0.0 lm(alpha)-max = [0.0, -1.2, -4.7, -14.5, -24.9]; L1 d_op=1.2 -> CONSISTENT
+[cook BE 101] vt-only: a_marg=0.36 dN=+0.6 (L2 descriptive)
