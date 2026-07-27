@@ -5872,6 +5872,33 @@ isolation — the twin-mismatch axis was validated separately by the
 7J-z5 suite); truth passed via env WTRUTH, the SAME injection read
 twice (global-fpm fitter for B4, shape fitter for GW1).
 
+## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
+
+Flagged at scout level during the certificate round; primary read of
+arXiv:1807.06011 (MNRAS 480, 4884), §2.4.1 "Higher-order multiples":
+- MEASURED: "≈ 10.5% of primaries and secondaries with 1<(GBP−GRP)<2
+  fall above this line and likely have an unresolved companion with
+  q ≳ 0.5" (CMD cut MG = 2.8(GBP−GRP)+2.4 — the regime where the
+  binary sequence separates cleanly = the TWIN-ADJACENT regime).
+- EXTRAPOLATED: "∼ 20% of main-sequence primaries and secondaries have
+  an unresolved main-sequence companion, such that at least one
+  component has an unresolved main-sequence companion in ∼ 36% of the
+  wide binaries" + a few percent unresolved WD companions.
+CONSEQUENCE for Paper 1: the catalog authors' own photometric
+characterization brackets our v2c host rate (0.29–0.32 blended,
+0.23 twin-convention ≈ their 20% + WD few %) — the "×3 vs literature"
+tension was a comparison against short-period spectroscopic subsystem
+rates (Tokovinin ~0.1/component), not against the all-separation
+photometric census; the certificate round's resolution direction is
+externally confirmed. Their measured core (10.5% at q ≳ 0.5) is
+exactly the twin-heavy regime the GV7 q-table found. Caveats to carry:
+DR2 vs EDR3 catalog; their CMD method shares the photometric channel
+with ours (common-mode caveat applies to both; our kernel measurement
+7J-z quantified it); "unresolved" = all P below the ~1″ resolution
+limit, wider than the wobble-relevant window. Consistency, not
+circular confirmation — cite §2.4.1 in Paper 1's completeness
+discussion. (3J's 12.3% overluminous ≈ their 10.5% likewise.)
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
