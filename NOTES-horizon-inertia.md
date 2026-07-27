@@ -6008,6 +6008,73 @@ we can draw, and its footprint (medium speeds, radial directions,
 closer pairs) smells like orbits we haven't drawn quite right — the
 next thing to model, written down before we model it.
 
+## Stage 7J-d pre-registration (2026-07-27, committed BEFORE execution): THE FUNCTION-CONTEST RE-RUN UNDER THE LANDED POSTERIOR (the DATA-VOTE unsuspension)
+
+Since 7J the world table carries the suspension banner: every binfn-*
+contest was run inside the multiplicity fence (f ≤ 0.1) without the
+width channel. 7J-d re-scores the EXISTING world-table function set
+under the landed width-complete model. The freeze (PREDICTIONS.md §0)
+applies: NO new functions — a re-scoring of declared forms only.
+
+**MODEL (resolved by the 7J-z6 verdict):** the photow3 9-dim grid
+(fpm to 3.0, sq, kw, fcomp) at the LANDED-CONV anchor — no shape
+axis (UNRESOLVED-CARRIED left the operative model unchanged); the
+noise-ceiling exposure banner carries to every row.
+
+**FUNCTIONS (16 new cubes; all tables grid-identical to the
+reference, fingerprints printed at load):** p065, gm, rb1–rb4
+(= F1–F4), boot, amb (AMB), resn (RESN), dwf (drive-weighted), and
+the λ-family lam000/025/050/075/100/125 — **the λ leg IS the landed
+ĉ₁ budget**, superseding the promised six-seed fenced budget
+(supersession reasoning: two realizations under the landed model
+outrank six under the retired fenced model; the 4X ledger row flips
+to CO-QUOTED with a pointer on completion). simple/BE: the existing
+photow3 cubes ARE their 7J-d cubes (reused, not rebuilt).
+EXCLUDED-DISCLOSED: sbe (its solver grid lacks the 1e-4..1e-6 deep
+end — re-interpolation would extrapolate; TRIGGER pre-stated: if any
+veto MOVES by > 8 lnL between fenced and landed models, sbe gets a
+dedicated deep-end-regenerated run before the unsuspension is
+declared) and qcl (grid mismatch; its +556 annihilation is two
+orders beyond fence-sensitivity). OUT OF SCOPE: b025/b075 (the 5R
+β-bound stands as a fenced-model result; the β-direction is readable
+through gm), mi_t (not a table function; the 4L/7H formulation
+results are not fence results — DR4 item).
+
+**GATES:** G0-alpha0 — every function cube's α = 0 row must equal
+the simple sky cube's α = 0 row to ≤ 1e-9 (Newton is function-blind;
+the newt_cache precedent), ABORT on fail; GD1 — the lam100 table is
+bit-identical to BE (verified: array_equal True), so the lam100 cube
+must reproduce the BE photow3 cube to ≤ 1e-9 = the free end-to-end
+FUNC-path regression; per-function B(y=1) fingerprint printed at
+load (manual cross-check vs the known ν(1) ladder); GB0w/GB0e print
+SKIPPED-disclosed (no photo/photow references exist for function
+laws — G0-alpha0 + GD1 substitute).
+
+**METRICS per function (per seed):** α_marg + dN(Newton) at
+LANDED-CONV; PROF α̂ + interiority (edge-riding = shape rejection,
+the 6-series standard); the VOTE = ln-evidence(fn) − ln-evidence(BE)
+(logsumexp over the full cube + eta prior + LANDED-CONV fcomp prior
++ flat α grid — identical priors for every function); nuisance
+posteriors (does any function un-ride the fpm edge?).
+
+**BARS (locked now):**
+- VETO grammar: a previously vetoed member (rb4/F4, boot, resn, dwf)
+  STAYS vetoed iff (PROF α̂ edge-riding) OR (vote ≤ −8); a flip is
+  named and its world-table row updated with both model conditions
+  quoted.
+- LEAN grammar: |vote| < 5 = tie-grade (the 3P SE precedent); 5–15 =
+  lean; > 15 = strong lean; no detection language.
+- λ-family: the landed binary ĉ₁ = λ̂/2 from the evidence profile
+  over the six λ nodes, quoted with the lam000 (c₁ = 0) rejection
+  margin and the per-seed peak spread; two-realization grade stated.
+- UNSUSPENSION: declared when the full set has seed-31 rows AND the
+  no-veto set {p065, gm, rb1, rb2, rb3, amb} + λ-family has seed-101
+  rows with sign-stable votes; the world-table banner then flips to
+  the landed-vote form. Seed-31-only members carry "single-seed" in
+  their rows.
+- No credence move (not a named decider); the binary-vote statement
+  feeds the world table, not the credence line.
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of

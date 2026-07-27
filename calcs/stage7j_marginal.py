@@ -272,6 +272,20 @@ if WSHAPE:
                else np.array([0.0, 0.03, 0.08, 0.15]))
     TAG = f'_w{WSHAPE}'
     OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
+# 7J-d: FUNCS runs the function contest under the landed model — each
+# fn in the comma list gets its own photow3-grid cube named
+# ..._{seed}_{fn}.npy (the simple/BE naming pattern); OUT redirected so
+# have_rows never collides with the sky rows.  Gates: G0-alpha0 (every
+# function's alpha=0 row == the simple sky cube's, Newton is
+# function-blind) and GD1 (lam100's table is bit-identical to BE, so
+# its cube must reproduce the BE cube exactly = the free end-to-end
+# FUNC-path regression).
+FUNCS = os.environ.get('FUNCS', '')
+if FUNCS:
+    assert AMP == 'photow' and FPME and not WSHAPE, \
+        'FUNCS = the landed photow3 model (9-dim)'
+    assert SAMPLE == 'full', 'the function contest runs on the sky'
+    OUT = 'data/stage7jd_funcs.txt'
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -771,7 +785,18 @@ def run_seed(seed):
     t0 = time.time()
     p = build_pop(seed)
     PHW = (AMP == 'photow')
-    for law, TAB in (("simple", TAB_S), ("BE", TAB_B)):
+    if FUNCS:
+        law_list = []
+        for fn in FUNCS.split(','):
+            lu_f, tab_f = load_tab(f'data/efe_boost_{fn}_g1p2.npy')
+            assert lu_f.shape == LNY_U.shape and \
+                np.array_equal(lu_f, LNY_U), f'{fn}: grid mismatch'
+            P(f"FUNC {fn}: B(y=1) = "
+              f"{float(np.interp(0.0, LNY_U, tab_f)):.4f} (fingerprint)")
+            law_list.append((fn, tab_f))
+    else:
+        law_list = [("simple", TAB_S), ("BE", TAB_B)]
+    for li, (law, TAB) in enumerate(law_list):
         cpath = f'data/stage7j_cube_{SAMPLE}{TAG}_{seed}_{law}.npy'
         vpath = f'data/stage7j_cubevt_{SAMPLE}{TAG}_{seed}_{law}.npy'
         cubevt = None
@@ -796,7 +821,7 @@ def run_seed(seed):
                 tab_a = 1.0 + al*(TAB-1.0)
                 for ei, eta in enumerate(E_GRID):
                     for wi, wr in enumerate(WR_GRID):
-                        if al == 0.0 and law == "BE" and (ei, wi) in newt_cache:
+                        if al == 0.0 and li > 0 and (ei, wi) in newt_cache:
                             cube[ai, ei, wi], _vv = newt_cache[(ei, wi)]
                             if PHW:
                                 cubevt[ai, ei, wi] = _vv
@@ -828,6 +853,33 @@ def run_seed(seed):
         pe = prior_eta.reshape((1, len(E_GRID)) + (1,)*(cube.ndim-2))
         cb = cube + pe
         cube9 = cube[..., 0] if WSHAPE else cube
+        if FUNCS:
+            # G0-alpha0 (7J-d): Newton is function-blind — this cube's
+            # alpha=0 row must equal the simple sky cube's exactly
+            sref = f'data/stage7j_cube_{SAMPLE}_photow3_{seed}_simple.npy'
+            if os.path.exists(sref):
+                sc = np.load(sref)
+                d0 = float(np.nanmax(np.abs(cube[0] - sc[0])))
+                P(f"G0a0 {law} seed {seed}: max|alpha0-simple| = "
+                  f"{d0:.2e} -> {'PASS' if d0 <= 1e-9 else 'FAIL'}")
+                if d0 > 1e-9:
+                    P(f"ABORT {law} seed {seed}: G0-alpha0 failed")
+                    continue
+            else:
+                P(f"G0a0 {law} seed {seed}: simple reference absent - "
+                  f"SKIPPED (disclosed)")
+            if law == 'lam100':
+                # GD1: the lam100 table is bit-identical to BE, so the
+                # cube must reproduce the BE cube exactly
+                bref = f'data/stage7j_cube_{SAMPLE}_photow3_{seed}_BE.npy'
+                if os.path.exists(bref):
+                    bc = np.load(bref)
+                    d1 = float(np.nanmax(np.abs(cube - bc)))
+                    P(f"GD1 lam100 seed {seed}: max|lam100-BE| = "
+                      f"{d1:.2e} -> {'PASS' if d1 <= 1e-9 else 'FAIL'}")
+                    if d1 > 1e-9:
+                        P(f"ABORT lam100 seed {seed}: GD1 failed")
+                        continue
         if WSHAPE:
             # GW0 (7J-z6 pre-reg): the ws = 0 slice must reproduce the
             # photow3 cube EXACTLY (the ws=0 branch keeps the legacy
