@@ -1,0 +1,7 @@
+LANDED-CONV anchor: ln pi(fcomp) = [-4886.95, -0.96, -0.43, -0.29, -4.97, -153.72]
+[floor simple 31] B1 shape-gain = +7.12 (MISS); a_marg=0.00 dN=+0.0; B2 P(fpm=3.0)=0.60 (STILL-RIDING); P(ws)=[0.0, 0.0, 0.0, 1.0] (mode ws=0.045); P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[floor simple 31] B3: MATERIAL-LOW
+[floor BE 31] B1 shape-gain = +10.61 (>=+8 PASS); a_marg=0.00 dN=+0.0; B2 P(fpm=3.0)=0.81 (STILL-RIDING); P(ws)=[0.0, 0.0, 0.0, 1.0] (mode ws=0.045); P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[floor BE 31] B3: MATERIAL-LOW
+
+floor: B1 ONE-LAW (+7.1/+10.6), B2 MISS (P30 0.60/0.81), B4 pending

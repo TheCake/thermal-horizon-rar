@@ -1,0 +1,10 @@
+STAGE 7J-B full seeds [31]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4, 3.0]; ln pi(fcomp) = [-1584.82, -768.17, -268.1, -7.78, -1.06, -42.57]
+GW0 full seed 31 simple [floor]: max|ws0-photow3| = 0.00e+00 -> PASS
+GB0w full seed 31 simple: max|photow(sq=0)-photo| = 0.00e+00 -> PASS
+GB0e full seed 31 simple: max|photow3(fpm<=2.4)-photow| = 0.00e+00 -> PASS
+PROF full seed 31 simple: a_hat=0.00 (interior=False), dN=+0.0, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2, ws=0.045
+GW0 full seed 31 BE [floor]: max|ws0-photow3| = 0.00e+00 -> PASS
+GB0w full seed 31 BE: max|photow(sq=0)-photo| = 0.00e+00 -> PASS
+GB0e full seed 31 BE: max|photow3(fpm<=2.4)-photow| = 0.00e+00 -> PASS
+PROF full seed 31 BE: a_hat=0.00 (interior=False), dN=+0.0, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2, ws=0.045
+  seed 31 done (59.0 min)

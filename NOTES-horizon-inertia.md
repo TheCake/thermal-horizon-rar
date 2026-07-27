@@ -5863,6 +5863,31 @@ THE FINGERPRINT:**
   instrument-noise shape; the contest stays locked to FLOOR/TAIL and
   the fingerprint is booked as a dividend regardless of verdict.
 
+**AMENDMENT 2 (logged after the floor read, BEFORE the validation arm
+runs; the tail leg proceeds per the locked flow):** the floor read
+returned B1 ONE-LAW (+7.12 simple MISS / +10.61 BE PASS), B2 MISS both
+(P(fpm=3.0) = 0.60/0.81 — the chase DEEPENS: floor edge-rides 0.045
+km/s WITH fpm still at 3.0; total demanded noise ≈ 4.3× formal =
+deeply unphysical; the correction-#4 grid-edge fingerprint on the new
+axis), and B3 MATERIAL-LOW both laws: **α_marg → 0.00, dN → +0.0 at
+LANDED-CONV — the +23.8/+23.2 detection is exchangeable against one
+sub-bar isotropic width axis** (P(ws)=1.0 at the edge; fcomp pinned
+0.1, sq 0.2). Interpretation REQUIRES the exchangeability arm (bars
+pre-stated NOW, before it runs): the EXISTING 7J-z5 arm-B injection
+(simple α=0.74 truth, twin-t5, sq=0.2, fpm=2.1, NO floor in truth)
+read by the WSHAPE=floor fitter —
+- INFORMATIVE: α_marg(simple arm) ≥ 0.5 AND P(ws=0.045) ≤ 0.5 (a real
+  injected boost SURVIVES the floor axis → the sky's collapse would be
+  data-driven, and the exposure is a genuine verdict-level finding);
+- EATER: α_marg ≤ 0.3 AND P(ws=0.045) ≥ 0.5 (the axis eats its own
+  injected boost → the sky collapse is CONSTRUCTIONAL — the floor is a
+  boost-degenerate absorber, the collapse says nothing about the sky;
+  the exposure is named as a degeneracy, the band stands);
+- else AMBIG (reported as-is).
+The arm interprets B3; it cannot flip the B1/B2 outcomes or the locked
+verdict grammar. GW0 for the arm: its ws=0 slice vs the existing
+fullarmb photow3 cube (exact expected).
+
 **AMENDMENT 1 (grids from Part A scales, logged BEFORE Part B runs):**
 floor axis [0, 0.015, 0.030, 0.045] km/s (0.045 ≈ sg0_med·√(3²−1.2²),
 the value that mimics fpm=3.0 at the median error); tail axis
