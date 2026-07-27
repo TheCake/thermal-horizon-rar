@@ -5842,6 +5842,36 @@ kt = 4 fixed for tail, kt = 6 only as a disclosed sensitivity variant):**
   credence move this stage regardless of outcome. A MATERIAL B3 would
   reopen the band and route the question to the next decider (stated now).
 
+**Part A EXECUTED (same day; G0-diag EXACT 0.000 both laws — the
+recomputed mode cell reproduces the stored cube value bit-for-bit).
+THE FINGERPRINT:**
+- A1 (error split): AMBIGUOUS — simple's low-error half edge-rides
+  (+0.39) while its high half peaks at 2.4 (−0.63); BE's BOTH halves
+  edge-ride (+0.25/+1.74). Per the locked map: FLOOR RUNS FIRST.
+- A2 (cell attribution): NOT tail-shaped — tail (v>1.5) share only 0.18
+  both laws. The 2.4→3.0 gain lives in the MID-SHOULDER (v 0.7–1.7:
+  +23/+21 lnL summed) and the RADIAL gamma column (8°: +9.4/+15.7),
+  paid from the v 0.13–0.53 region (−26/−28); carried by the INNER/MID
+  s-bins (simple: 2–6 kAU +6.8 of +6.75 total; BE: 0.2–2 kAU +4.8 of
+  +2.87) — strongly s-GROWING shapes are dead (consistent with the
+  perspective closure).
+- A3 (magnitude): INCONSISTENT between laws (simple bright-carried
+  +7.38, BE faint peaks 2.1) — no clean Lindegren signature.
+- Honest reading logged BEFORE the contest: the fingerprint
+  (mid-shoulder + radial-column + inner-bin, tail-poor) looks as much
+  like a POPULATION shape (the 4J/4M radial-arm direction) as an
+  instrument-noise shape; the contest stays locked to FLOOR/TAIL and
+  the fingerprint is booked as a dividend regardless of verdict.
+
+**AMENDMENT 1 (grids from Part A scales, logged BEFORE Part B runs):**
+floor axis [0, 0.015, 0.030, 0.045] km/s (0.045 ≈ sg0_med·√(3²−1.2²),
+the value that mimics fpm=3.0 at the median error); tail axis
+[0, 0.03, 0.08, 0.15] with kt=4 fixed. B4/GW1 arm design note: the
+width arm injects with MODEL-MATCHED flat-q companions (channel
+isolation — the twin-mismatch axis was validated separately by the
+7J-z5 suite); truth passed via env WTRUTH, the SAME injection read
+twice (global-fpm fitter for B4, shape fitter for GW1).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

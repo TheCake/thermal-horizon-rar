@@ -225,7 +225,9 @@ SAMPLE = sys.argv[1] if len(sys.argv) > 1 else 'full'
 POWS = ('strictpow', 'fullpow', 'fullpowbe', 'strictpowbe')
 # 7J-z5 A-D arms (pre-reg f6916e0): twin-mismatch injections
 ARMS = ('fullarma', 'fullarmb', 'fullarmc', 'fullarmd')
-assert SAMPLE in ('full', 'strict') + POWS + ARMS, SAMPLE
+# 7J-z6 B4/GW1 arm (pre-reg 66a8045): width-shape truth injection
+ARMW = ('fullarmw',)
+assert SAMPLE in ('full', 'strict') + POWS + ARMS + ARMW, SAMPLE
 _rest = sys.argv[2:]
 AMP = _rest[0] if (_rest and _rest[0] in ('photo', 'photow')) else 'raw'
 if AMP != 'raw':
@@ -251,6 +253,24 @@ FPM_EXT = np.array([1.2, 1.5, 1.8, 2.1, 2.4] + ([3.0] if FPME else []))
 if FPME:
     assert AMP == 'photow', 'FPME is a photow-mode extension'
     TAG = '_photow3'
+    OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
+# 7J-z6 (pre-reg 66a8045): WSHAPE adds one width-SHAPE axis to the noise
+# model — 'floor': per-pair sigma_eff = sqrt((sg0*fpm)^2 + (ws/4.74047)^2)
+# (error-INDEPENDENT jitter, ws in km/s); 'tail': fpm_eff = fpm*(1+
+# (KT_TAIL-1)*[u_t < ws]) (a fraction ws of pairs at KT_TAIL x the core).
+# The fpm grid keeps the 3.0 node (the chase must dissolve voluntarily).
+# ws = 0 is BRANCHED to the legacy noise expression bit-for-bit, so the
+# ws=0 slice of a WSHAPE cube must equal the photow3 cube EXACTLY (GW0).
+# Grid values set from the Part A scales (amendment, logged pre-run).
+WSHAPE = os.environ.get('WSHAPE', '')
+WS_GRID = np.array([0.0])
+KT_TAIL = 4.0
+if WSHAPE:
+    assert WSHAPE in ('floor', 'tail'), WSHAPE
+    assert FPME and AMP == 'photow', 'WSHAPE needs the extended photow grid'
+    WS_GRID = (np.array([0.0, 0.015, 0.030, 0.045]) if WSHAPE == 'floor'
+               else np.array([0.0, 0.03, 0.08, 0.15]))
+    TAG = f'_w{WSHAPE}'
     OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
 
 src = open('calcs/stage2b_population.py').read()
@@ -413,6 +433,8 @@ def build_pop(seed):
     # amendment 7: the per-system width-channel draw — appended LAST so
     # every earlier draw (and therefore every legacy cube) is unchanged
     p['gs'] = rng.normal(size=N)
+    # 7J-z6: the tail-membership draw — appended after gs, same rule
+    p['ut'] = rng.random(N)
     return p
 
 def e_of(p, eta, wr):
@@ -448,7 +470,8 @@ def lnL_point(p, o):
     vper = np.sum(vsky*b2,axis=1)
     s_kau = smag/1e3
     out = np.zeros((len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
-                    len(FPM_GRID), len(KW_GRID), len(SQ_GRID)))
+                    len(FPM_GRID), len(KW_GRID), len(SQ_GRID),
+                    len(WS_GRID)))
     out_vt = np.zeros_like(out)
     for bi, b in enumerate(SBINS):
         idx = np.where((s_kau>=b[0])&(s_kau<b[1]))[0]
@@ -471,8 +494,21 @@ def lnL_point(p, o):
                 vp_b = vpar[idx] + kwv*cvp
                 vq_b = vper[idx] + kwv*cvq
                 for pi, fpm in enumerate(FPM_GRID):
-                    vp_n = vp_b*boost + p['gn1'][idx]*sg0*fpm
-                    vq_n = vq_b*boost + p['gn2'][idx]*sg0*fpm
+                  for wsi, ws in enumerate(WS_GRID):
+                    # 7J-z6: ws = 0 keeps the LEGACY expression verbatim
+                    # (same op order) so the slice is bit-exact (GW0)
+                    if ws == 0.0:
+                        vp_n = vp_b*boost + p['gn1'][idx]*sg0*fpm
+                        vq_n = vq_b*boost + p['gn2'][idx]*sg0*fpm
+                    elif WSHAPE == 'floor':
+                        sig_eff = np.sqrt((sg0*fpm)**2 + (ws/4.74047)**2)
+                        vp_n = vp_b*boost + p['gn1'][idx]*sig_eff
+                        vq_n = vq_b*boost + p['gn2'][idx]*sig_eff
+                    else:
+                        sig_eff = sg0*fpm*(1.0 + (KT_TAIL-1.0)
+                                           * (p['ut'][idx] < ws))
+                        vp_n = vp_b*boost + p['gn1'][idx]*sig_eff
+                        vq_n = vq_b*boost + p['gn2'][idx]*sig_eff
                     vmag = np.hypot(vp_n, vq_n)
                     keep = vmag*4.74047 <= (2.978/np.sqrt(s_kau[idx])
                                             + 2.8284*sg0*4.74047)
@@ -497,13 +533,13 @@ def lnL_point(p, o):
                                 mixc = (wch*UNI_B[bi]
                                         + wfl*FLY_B[bi])/(wch+wfl)
                                 pp = (1-wtot)*p0 + wtot*mixc
-                                out[fi, ci, yi, pi, ki, si] += \
+                                out[fi, ci, yi, pi, ki, si, wsi] += \
                                     np.sum(data_2d[bi]*np.log(pp))
-                                out_vt[fi, ci, yi, pi, ki, si] += \
+                                out_vt[fi, ci, yi, pi, ki, si, wsi] += \
                                     np.sum(dvt*np.log(pp.sum(axis=1)))
     return out, out_vt
 
-def forward_pp(p, o, fcm, fpm, fc, ff, sq=0.0):
+def forward_pp(p, o, fcm, fpm, fc, ff, sq=0.0, flr=0.0, ftl=0.0):
     ef, e2, los = p['ef'], p['e2'], p['los']
     s3 = o[:,0,None]*ef+o[:,1,None]*e2
     v3 = o[:,2,None]*ef+o[:,3,None]*e2
@@ -530,8 +566,19 @@ def forward_pp(p, o, fcm, fpm, fc, ff, sq=0.0):
             vp_b += act*c['w'][idx]*c['wd'][idx,0]
             vq_b += act*c['w'][idx]*c['wd'][idx,1]
         boost = np.sqrt(1+mh_tot/p['M_s'][idx])
-        vp_n = vp_b*boost + p['gn1'][idx]*sg0*fpm
-        vq_n = vq_b*boost + p['gn2'][idx]*sg0*fpm
+        # 7J-z6 truth channels (defaults 0.0 keep the legacy expression
+        # verbatim — every existing caller is bit-identical)
+        if flr > 0.0:
+            sig_eff = np.sqrt((sg0*fpm)**2 + (flr/4.74047)**2)
+            vp_n = vp_b*boost + p['gn1'][idx]*sig_eff
+            vq_n = vq_b*boost + p['gn2'][idx]*sig_eff
+        elif ftl > 0.0:
+            sig_eff = sg0*fpm*(1.0 + (KT_TAIL-1.0)*(p['ut'][idx] < ftl))
+            vp_n = vp_b*boost + p['gn1'][idx]*sig_eff
+            vq_n = vq_b*boost + p['gn2'][idx]*sig_eff
+        else:
+            vp_n = vp_b*boost + p['gn1'][idx]*sg0*fpm
+            vq_n = vq_b*boost + p['gn2'][idx]*sg0*fpm
         vmag = np.hypot(vp_n, vq_n)
         keep = vmag*4.74047 <= (2.978/np.sqrt(s_kau[idx])
                                 + 2.8284*sg0*4.74047)
@@ -555,7 +602,7 @@ def P(s):
 
 # --- the completeness prior on FCOMP_GRID ---------------------------------
 pr = np.load('data/stage7j_prior.npz')
-if SAMPLE in ('full', 'fullpow', 'fullpowbe') + ARMS:
+if SAMPLE in ('full', 'fullpow', 'fullpowbe') + ARMS + ARMW:
     xg, lp = pr['f_grid'], pr['lnpi_full']
 else:
     xg, lp = pr['r_grid'], pr['lnpi_strict']
@@ -646,12 +693,48 @@ if SAMPLE in ARMS:
       f"fcomp={FC_TR}, fpm={FPM_TR}, sq=0.2, twin-t5 companions "
       f"(truth pop 777, twin rng 999, count draws 888)")
 
+if SAMPLE in ARMW:
+    # 7J-z6 B4/GW1 arm: width-shape truth injection with MODEL-MATCHED
+    # (flat-q, own-stream) companions — the arm isolates the width-shape
+    # channel (design note logged in the amendment commit before any
+    # run).  Truth via env WTRUTH = 'law,alpha,fcomp,fpm,sq,flr,ftl'.
+    # The SAME injection is read twice: once with WSHAPE unset (B4 —
+    # does the global-fpm fitter chase 3.0?) and once with WSHAPE set
+    # (GW1 — own-truth shape recovery within one grid step); the
+    # injection below is WSHAPE-independent by construction.
+    wt = os.environ['WTRUTH'].split(',')
+    LAWN = wt[0]
+    A_TR, FC_TR, FPM_TR, SQ_TR, FLR_TR, FTL_TR = map(float, wt[1:])
+    TAB_TR = TAB_B if LAWN == 'BE' else TAB_S
+    pt = build_pop(777)
+    e_t = e_of(pt, 1.3, 0.2)
+    if A_TR > 0:
+        tab_t = 1.0 + A_TR*(TAB_TR-1.0)
+        vp_t = vp_c(pt, e_t, tab_t)
+        ot = run(pt['a_s'], e_t, pt['psi0'], pt['f_ip'], pt['M_s'],
+                 pt['uph'], 8, 2500, 5, a0=A0_CAN, tab=tab_t, lny0=LNY0,
+                 dlny=DLNY, vp=vp_t)
+    else:
+        ot = run(pt['a_s'], e_t, pt['psi0'], pt['f_ip'], pt['M_s'],
+                 pt['uph'], 8, 2500, 1)
+    pps = forward_pp(pt, ot, FC_TR, FPM_TR, 0.10, 0.05, sq=SQ_TR,
+                     flr=FLR_TR, ftl=FTL_TR)
+    rgs = np.random.default_rng(888)
+    for bi in range(len(SBINS)):
+        n_obs = int(data_2d[bi].sum())
+        cnt = rgs.multinomial(n_obs, (pps[bi]/pps[bi].sum()).ravel())
+        data_2d[bi] = cnt.reshape(NV, NG).astype(float)
+    P(f"{SAMPLE}: WIDTH-SHAPE injection {LAWN} alpha={A_TR} at "
+      f"fcomp={FC_TR}, fpm={FPM_TR}, sq={SQ_TR}, flr={FLR_TR}, "
+      f"ftl={FTL_TR} (truth pop 777, count draws 888, model-matched "
+      f"companions)")
+
 # --- GB0 references -------------------------------------------------------
 ROWRE = re.compile(r"seed (\d+) (simple|BE): a_hat=([0-9.]+) \(grid [0-9.]+, "
                    r"interior=(\w+)\), dlnL\(Newton\)=([+-][0-9.]+), "
                    r"wr=([0-9.]+)")
 REF = {}
-if SAMPLE not in POWS + ARMS:
+if SAMPLE not in POWS + ARMS + ARMW:
     REFF = ('data/stage4r_summary.txt' if SAMPLE == 'full'
             else 'data/stage7i_s.txt')
     for m in ROWRE.finditer(open(REFF).read()):
@@ -704,6 +787,8 @@ def run_seed(seed):
                    len(FPM_GRID), len(KW_GRID))
             if PHW:
                 shp = shp + (len(SQ_GRID),)
+            if WSHAPE:
+                shp = shp + (len(WS_GRID),)
             cube = np.full(shp, np.nan)
             cubevt = np.full(shp, np.nan) if PHW else None
             newt_cache = {}
@@ -724,6 +809,9 @@ def run_seed(seed):
                         o = run(p['a_s'], e_s, p['psi0'], p['f_ip'], p['M_s'],
                                 p['uph'], 8, 2500, mode, **kw)
                         l2, lv = lnL_point(p, o)
+                        if not WSHAPE:      # strip the ws axis (len 1)
+                            l2 = l2[..., 0]
+                            lv = lv[..., 0]
                         if not PHW:
                             l2 = l2[..., 0]
                             lv = lv[..., 0]
@@ -739,6 +827,24 @@ def run_seed(seed):
         # process run; cube files are per-law so reruns are consistent.
         pe = prior_eta.reshape((1, len(E_GRID)) + (1,)*(cube.ndim-2))
         cb = cube + pe
+        cube9 = cube[..., 0] if WSHAPE else cube
+        if WSHAPE:
+            # GW0 (7J-z6 pre-reg): the ws = 0 slice must reproduce the
+            # photow3 cube EXACTLY (the ws=0 branch keeps the legacy
+            # noise expression verbatim)
+            p3p = f'data/stage7j_cube_{SAMPLE}_photow3_{seed}_{law}.npy'
+            if os.path.exists(p3p):
+                p3 = np.load(p3p)
+                dmax = float(np.nanmax(np.abs(cube9 - p3)))
+                P(f"GW0 {SAMPLE} seed {seed} {law} [{WSHAPE}]: "
+                  f"max|ws0-photow3| = {dmax:.2e} -> "
+                  f"{'PASS' if dmax <= 1e-3 else 'FAIL'}")
+                if dmax > 1e-3:
+                    P(f"ABORT {SAMPLE} seed {seed} {law}: GW0 failed")
+                    continue
+            else:
+                P(f"GW0 {SAMPLE} seed {seed} {law}: photow3 cube absent "
+                  f"- SKIPPED (disclosed)")
         if PHW:
             # GB0w: the sq=0 slice must reproduce the cached photo cube
             # (fpm axis sliced to the photo grid length under FPME)
@@ -747,7 +853,7 @@ def run_seed(seed):
                 pc = np.load(php)
                 nf = pc.shape[6]
                 dmax = float(np.nanmax(np.abs(
-                    cube[:, :, :, :, :, :, :nf, :, 0] - pc)))
+                    cube9[:, :, :, :, :, :, :nf, :, 0] - pc)))
                 P(f"GB0w {SAMPLE} seed {seed} {law}: max|photow(sq=0)-"
                   f"photo| = {dmax:.2e} -> "
                   f"{'PASS' if dmax <= 1e-3 else 'FAIL'}")
@@ -765,7 +871,7 @@ def run_seed(seed):
                     pw = np.load(pwp)
                     nf = pw.shape[6]
                     dmax = float(np.nanmax(np.abs(
-                        cube[:, :, :, :, :, :, :nf] - pw)))
+                        cube9[:, :, :, :, :, :, :nf] - pw)))
                     P(f"GB0e {SAMPLE} seed {seed} {law}: max|photow3"
                       f"(fpm<=2.4)-photow| = {dmax:.2e} -> "
                       f"{'PASS' if dmax <= 1e-3 else 'FAIL'}")
@@ -814,6 +920,8 @@ def run_seed(seed):
         prof, ahat, imax = profile_of(cb)
         best = np.unravel_index(np.nanargmax(cb), cb.shape)
         sqtxt = f", sq={SQ_GRID[best[8]]}" if PHW else ""
+        if WSHAPE:
+            sqtxt += f", ws={WS_GRID[best[9]]}"
         P(f"PROF {SAMPLE} seed {seed} {law}: a_hat={ahat:.2f} "
           f"(interior={0<imax<len(A_GRID)-1}), "
           f"dN={float(np.nanmax(prof)-prof[0]):+.1f}, "
