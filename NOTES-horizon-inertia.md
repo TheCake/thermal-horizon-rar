@@ -6136,6 +6136,62 @@ Newton baseline (0.986/0.992 with noise), the data's 1.078 sits
 +0.092/+0.086 high — the model-referenced excess is LARGER than the
 naive 1.078/1.000 reading.
 
+## Stage 7K-a EXECUTED (2026-07-27): THE FORWARD MEDIAN — verdict GRAY, seed-stable; the anchor is half-absorbed and survives as an excess
+
+Instrument validated on the third gate design: **G0-iv interior
+scale-free control PASSES both seeds (R = 1.005 / 1.002)** — the
+wiring identity holds where it should; the G0-i/iii "failures" are
+MEASURED MODEL PROPERTIES, not errors: (a) the fitted eccentricity
+run (v7 al ramp) makes model-Newton's 2C ratio ≈ 0.98 — the "Newton
+predicts 1.000" narrative is scale-free-conditional; (b) the a_s
+prior's 0.15/60 kAU truncation distorts the edge-adjacent 2C bins.
+Data-side regression: the instrument reproduces the 4Q anchor
+exactly (1.078 from the corrected catalog).
+
+**VERDICT (pre-registered bars, s-reweighted): GRAY both seeds** —
+the landed Newton-best cell (fcomp = 0.1, fpm = 3.0, kw = 0.7,
+sq = 0.2, its own eta/wr) forward-produces **R_N = 1.033 (seed 31) /
+1.043 (seed 101)** vs the anchor 1.078 (CI 1.052–1.103): above the
+SURVIVES bar (1.030), below the data CI low edge (1.052). No status
+flips (per bars); the anchor rows gain the measured note.
+- Model-referenced accounting: the Newton+noise baseline at the
+  fitted e-run is 0.986/0.992, so the data sit +0.092/+0.086 above
+  model-Newton and the absorbers lift +0.047/+0.051 — **the landed
+  absorber budget covers ≈ 52–59% of the model-referenced gap;
+  unabsorbed excess +0.045/+0.035.**
+- The boost cells OVER-produce the ratio (prof cells: 1.127/1.119
+  seed 31, 1.119/1.114 seed 101 — the seed-31 simple leg 0.007 above
+  the [1.04, 1.12] sanity band = instrument flag per pre-reg,
+  investigated: the fpm = 3.0 chase lifts R; the fit trades the 2C
+  ratio against the 2D histograms it actually fits — the known
+  residual-width story's median face). **The data's 1.078 sits
+  almost equidistant between Newton-best (−0.035…−0.045) and the
+  boost cells (+0.036…+0.049): the 2C ratio ALONE no longer
+  discriminates at the landed absorber budget — the discrimination
+  lives in the full 2D likelihood (where Newton loses +14.5–23.8).**
+  The anchor's honest role: a model-light EXCESS over
+  Newton+absorbers (half-covered), no longer a standalone
+  Newton-killer.
+
+Plain verdict: SUCCESS — the question the queue asked ("does
+Newton+companions reproduce the median?") is answered with a
+measured number and a category (GRAY: half of it, not all of it,
+seed-stable), the instrument's three gate iterations are logged
+pre-quote, and the anchor's evidential role is now stated precisely.
+
+ELI12: Our cleanest single number says wide star-pairs move 7.8%
+faster than gravity-as-usual predicts. We asked: could the boring
+stuff we now know about — hidden third stars, measurement noise,
+spread — fake that number with NO new gravity? Answer: it fakes
+about half (3.3–4.3%), and can't reach the real 7.8%. Meanwhile the
+new-gravity versions overshoot it slightly. So this one number
+alone can't pick the winner anymore — the full detailed comparison
+still can (and there gravity-as-usual keeps losing) — but the
+number stays honest evidence that SOMETHING beyond the boring stuff
+is there. Also, two of our test alarms rang and turned out to be
+telling us true things about the model, not mistakes — logged, as
+always, before we looked at the answer.
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of

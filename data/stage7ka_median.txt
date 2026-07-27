@@ -1,0 +1,23 @@
+STAGE 7K-a: data corrected-velocity 2C ratio = 1.078 (anchor 1.078, CI 1.052-1.103; N = 9950/1361)
+
+== seed 31 ==
+G0-iii scale-free control: R = 0.976 nat / 0.985 rw -> FAIL [0.995, 1.005] (the wiring identity)
+G0-iv interior scale-free control (3-6 / 1-2 kAU): R = 1.005 -> PASS [0.995, 1.005] (the wiring identity, edge-free)
+G0-i  noise-off identity: R = 0.969 nat / 0.980 rw -> FAIL [0.995, 1.005]
+G0-ii baseline noise:     R = 0.976 nat / 0.986 rw -> FAIL [0.995, 1.015] (noise contribution +0.006)
+newton       alpha=0.0 eta=1.05 wr=0.2 fcomp=0.1 fpm=3.0 kw=0.7 sq=0.2: R = 1.028 nat / 1.033 reweighted
+  ==> R_N (reweighted) = 1.033 vs anchor 1.078 (CI 1.052-1.103): GRAY; unabsorbed excess = +0.045
+prof-simple  alpha=0.5 eta=1.05 wr=0.2 fcomp=0.1 fpm=3.0 kw=0.7 sq=0.2: R = 1.127 nat / 1.127 reweighted
+prof-BE      alpha=1.0 eta=1.05 wr=0.2 fcomp=0.1 fpm=3.0 kw=0.7 sq=0.2: R = 1.117 nat / 1.119 reweighted
+
+== seed 101 ==
+G0-iii scale-free control: R = 0.985 nat / 0.994 rw -> FAIL [0.995, 1.005] (the wiring identity)
+G0-iv interior scale-free control (3-6 / 1-2 kAU): R = 1.002 -> PASS [0.995, 1.005] (the wiring identity, edge-free)
+G0-i  noise-off identity: R = 0.977 nat / 0.988 rw -> FAIL [0.995, 1.005]
+G0-ii baseline noise:     R = 0.983 nat / 0.992 rw -> FAIL [0.995, 1.015] (noise contribution +0.005)
+newton       alpha=0.0 eta=1.05 wr=0.2 fcomp=0.1 fpm=3.0 kw=0.7 sq=0.2: R = 1.041 nat / 1.043 reweighted
+  ==> R_N (reweighted) = 1.043 vs anchor 1.078 (CI 1.052-1.103): GRAY; unabsorbed excess = +0.035
+prof-simple  alpha=0.5 eta=1.05 wr=0.2 fcomp=0.1 fpm=2.1 kw=0.7 sq=0.2: R = 1.118 nat / 1.119 reweighted
+prof-BE      alpha=0.5 eta=1.05 wr=0.2 fcomp=0.1 fpm=3.0 kw=0.7 sq=0.2: R = 1.115 nat / 1.114 reweighted
+
+done (1.4 min)

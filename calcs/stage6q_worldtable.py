@@ -155,6 +155,10 @@ CHECKS = [
     ('bin-7jz6-widthshape', 'a_marg=0.80 dN=+35.2',
      'data/stage7jz6_read.txt'),
     ('bin-7jz6-xchg', '==> INFORMATIVE', 'data/stage7jz6_read.txt'),
+    ('bin-7ka-median', 'GRAY; unabsorbed excess = +0.045',
+     'data/stage7ka_median.txt'),
+    ('bin-7ka-median', 'G0-iv interior scale-free control (3-6 / 1-2 '
+     'kAU): R = 1.005', 'data/stage7ka_median.txt'),
     ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
      'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
     ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',
