@@ -149,6 +149,12 @@ CHECKS = [
     ('bin-7jz5-earm', 'P(fpm=3.0)=0.97', 'data/stage7jz5_eread.txt'),
     ('bin-7jz5-arms', 'ARM A: ARM-PASS', 'data/stage7jz5_armread.txt'),
     ('bin-7jz5-arms', 'CHASE-UNEXPLAINED', 'data/stage7jz5_armread.txt'),
+    ('bin-7jz6-widthshape', 'UNRESOLVED-CARRIED', 'data/stage7jz6_read.txt'),
+    ('bin-7jz6-widthshape', 'B1 shape-gain = +7.12',
+     'data/stage7jz6_read.txt'),
+    ('bin-7jz6-widthshape', 'a_marg=0.80 dN=+35.2',
+     'data/stage7jz6_read.txt'),
+    ('bin-7jz6-xchg', '==> INFORMATIVE', 'data/stage7jz6_read.txt'),
     ('bin-7j-anchorcurve',  'hard-wall reference (f <= 0.1 fence, 4R): '
      'a_hat = 1.06, dN = +99.5', 'data/stage7j_lowend.txt'),
     ('bin-7j-armdiag',      '[inj-fullpow] lnL(fcomp)-max = [-4726.2',
@@ -368,6 +374,19 @@ say('recover conservatively, nuisances sharp 8/8; CHASE-UNEXPLAINED')
 say('(0/4 arms ride 3.0) = the sky noise hunger is real width-SHAPE')
 say('incompleteness, refinement promoted.  Both cadence deciders')
 say('landed: anomaly-real ~45 -> ~50 pct (reasoned, disclosed).')
+say('WIDTH-SHAPE CONTEST (bin-7jz6-widthshape, 2026-07-27): verdict')
+say('UNRESOLVED-CARRIED - floor one-law (+7.1/+10.6), tail dead (+0.0),')
+say('the band STANDS; the round product = the NOISE-CEILING PROFILE:')
+say('PHYS envelope (fpm<=1.8 Lindegren, ws<=0.015) alpha 0.80/0.80 at')
+say('dN +35.2/+32.3 -> operative band 0.68-0.74 / +14.5-23.8 ->')
+say('unphysical corner (4.3x formal) alpha 0.00 - the operative quote')
+say('is noise-DILUTED; the exchangeability arm (bin-7jz6-xchg) is')
+say('INFORMATIVE (a real injected boost SURVIVES the floor axis, floor')
+say('quiet, P(fpm=3.0)=0.00) so the sky corner preference is')
+say('data-driven; shape exclusion set floor/tail/fpm/sq/perspective;')
+say('successor hypothesis (booked, not opened): the inner-bin')
+say('eccentricity/radial-population sector (Part-A fingerprint:')
+say('mid-shoulder v, radial 8-deg column, inner bins).')
 say('Binary DATA VOTE unsuspension awaits the 7J-d function-contest')
 say('re-run under the landed posterior; 7K and 7L queue behind.')
 say('7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid')

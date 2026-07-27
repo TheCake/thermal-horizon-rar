@@ -1159,9 +1159,39 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   the companion-alternative collapse + machinery validation,
   capped by AMBIGUOUS-CARRIED + the open width-shape systematic).
   Ledger +bin-7jz5-arms (120 rows/77 tokens); worldtable banner =
-  validated form; NEXT: width-shape refinement → 7J-d (the
-  DATA-VOTE unsuspension item) → 7K-a/b → 7L → ĉ₁ budget → THE
-  SPLIT.** Then the DM
+  validated form.
+  **7J-z6 (2026-07-27, THE WIDTH-SHAPE CONTEST, pre-reg 66a8045 +
+  amendments 2/3 pre-stated ec7514c/ab0c399, PAPER → v3.5): verdict
+  UNRESOLVED-CARRIED (locked grammar) — floor B1 one-law
+  (+7.12/+10.61, edge-rides 0.045 km/s WITH fpm 3.0 = 4.3× formal),
+  tail DEAD (+0.0, axis unused); band 0.68–0.74/+14.5–23.8 STANDS.
+  THE ROUND'S PRODUCT = the NOISE-CEILING PROFILE ("ship the risk
+  axis" executed): PHYS envelope (fpm≤1.8 Lindegren, ws≤0.015) **α
+  = 0.80/0.80 at dN +35.2/+32.3 — the operative quote is
+  noise-DILUTED** → operative band → unphysical corner α = 0.00
+  (the floor-leg B3 MATERIAL-LOW). EXCHANGEABILITY ARM INFORMATIVE
+  (pre-stated bar): injected-0.74 sky under the floor fitter KEEPS
+  its boost (α 0.60, floor quiet, P(fpm=3.0)=0.00) ⇒ the sky's
+  corner preference is DATA-DRIVEN (~7–11 lnL genuinely unmodeled
+  width). VOLUME MECHANISM named: the tail axis unused at peak
+  still drains dN to +10.1/+6.2 (sub-B1 axes zero α_marg by
+  posterior volume — transferable caution). Shape EXCLUSION SET:
+  floor/tail/fpm/sq/perspective (perspective closed by composition:
+  100% RV coverage); Part-A fingerprint (G0-diag exact): mid-
+  shoulder ṽ 0.7–1.7 + radial γ=8° column + inner bins ⇒ successor
+  hypothesis BOOKED not opened: the inner-bin eccentricity/radial-
+  population sector (eta grid = 2 values, e-sector nearly frozen).
+  PHYS = reported conditional, non-operative (promotion = a
+  decider-grade question, flagged for the next external review).
+  All gates exact (GW0 0.00e+00 ×4; ws==0 branch verbatim-legacy).
+  NO credence move (pre-stated). Ledger +bin-7jz6-widthshape/-xchg
+  (122 rows/81 tokens). E&R 2018 PRIMARY READ done (18bb2ca):
+  §2.4.1 verified — 10.5% measured (q≳0.5, twin-adjacent) / ~20%
+  per component extrapolated / ~36% per pair ⇒ brackets the v2c
+  host rate; the ×3-vs-literature tension = wrong-comparator,
+  externally confirmed. NEXT: 7J-d (DATA-VOTE unsuspension; fold
+  the ĉ₁ λ-family in as the landed-posterior budget; MI deferred
+  to DR4) → 7K-a/b → 7L → THE SPLIT.** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

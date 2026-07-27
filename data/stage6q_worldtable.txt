@@ -1,10 +1,10 @@
-STAGE 6Q: ledger audit + world table  (120 ledger rows)
+STAGE 6Q: ledger audit + world table  (122 ledger rows)
 ==============================================================================
 G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
 G3 (supersession resolves): PASS
 G4 (current-quantity collisions): PASS
-G5 (value spot-checks, 77 tokens): PASS
+G5 (value spot-checks, 81 tokens): PASS
 
 G6 (world-table provenance): PASS
 
@@ -171,6 +171,19 @@ recover conservatively, nuisances sharp 8/8; CHASE-UNEXPLAINED
 (0/4 arms ride 3.0) = the sky noise hunger is real width-SHAPE
 incompleteness, refinement promoted.  Both cadence deciders
 landed: anomaly-real ~45 -> ~50 pct (reasoned, disclosed).
+WIDTH-SHAPE CONTEST (bin-7jz6-widthshape, 2026-07-27): verdict
+UNRESOLVED-CARRIED - floor one-law (+7.1/+10.6), tail dead (+0.0),
+the band STANDS; the round product = the NOISE-CEILING PROFILE:
+PHYS envelope (fpm<=1.8 Lindegren, ws<=0.015) alpha 0.80/0.80 at
+dN +35.2/+32.3 -> operative band 0.68-0.74 / +14.5-23.8 ->
+unphysical corner (4.3x formal) alpha 0.00 - the operative quote
+is noise-DILUTED; the exchangeability arm (bin-7jz6-xchg) is
+INFORMATIVE (a real injected boost SURVIVES the floor axis, floor
+quiet, P(fpm=3.0)=0.00) so the sky corner preference is
+data-driven; shape exclusion set floor/tail/fpm/sq/perspective;
+successor hypothesis (booked, not opened): the inner-bin
+eccentricity/radial-population sector (Part-A fingerprint:
+mid-shoulder v, radial 8-deg column, inner bins).
 Binary DATA VOTE unsuspension awaits the 7J-d function-contest
 re-run under the landed posterior; 7K and 7L queue behind.
 7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid

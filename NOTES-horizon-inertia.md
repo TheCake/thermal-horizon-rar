@@ -5910,6 +5910,104 @@ isolation — the twin-mismatch axis was validated separately by the
 7J-z5 suite); truth passed via env WTRUTH, the SAME injection read
 twice (global-fpm fitter for B4, shape fitter for GW1).
 
+## Stage 7J-z6 EXECUTED (2026-07-27): THE WIDTH-SHAPE CONTEST — verdict UNRESOLVED-CARRIED, and the NOISE-CEILING PROFILE is the round's real product
+
+All gates exact on every leg (GW0 = 0.00e+00 ×4 — the ws=0 slices
+reproduce photow3 bit-for-bit; GB0w/GB0e 0.00e+00; the ws==0 branch
+carries the legacy expression verbatim by construction).
+
+**The locked-grammar verdict: UNRESOLVED-CARRIED.** B1: floor +7.12
+(simple, MISS) / +10.61 (BE, PASS) = ONE-LAW; tail +0.00/+0.00 = DEAD
+(the axis is unused at the profile peak — ws mode 0.0 both laws).
+Neither shape clears B1 both laws; B2 never dissolved (P(fpm=3.0)
+0.60–0.99 across legs); B4 never ran (no winner). The co-quoted band
+0.68–0.74 / +14.5–23.8 STANDS; the item closes per the pre-registered
+closure rule — no grid-extension chase into the (already unphysical)
+width direction.
+
+**Dividend 1 — THE NOISE-CEILING PROFILE (the round-10 "ship the risk
+axis" rule, executed):** the α detection now has a measured
+three-point profile along the admitted-noise axis:
+- PHYSICAL envelope (fpm ≤ 1.8 Lindegren, ws ≤ 0.015; amendment-3
+  conditional, non-operative): **α_marg = 0.80/0.80, dN = +35.2/+32.3**
+  (photow3); floor-axis-open variant 0.71/0.72 at +33.5/+30.3; within
+  PHYS the fpm posterior still rides its sub-ceiling edge (1.8) —
+  the demand object persists at every cap; the cap sets who pays.
+- OPERATIVE (flat to fpm 3.0, the co-quoted band): 0.68–0.74 /
+  +14.5–23.8.
+- UNPHYSICAL CORNER ADMITTED (floor 0.045 + fpm 3.0 ≈ 4.3× formal):
+  **α_marg = 0.00, dN = +0.0 both laws** (the floor-leg B3
+  MATERIAL-LOW) — the detection is fully exchangeable against
+  isotropic noise ~3× beyond the published Gaia error budget.
+The operative quote is therefore noise-DILUTED, not noise-protected:
+every unphysical width cell admitted drains the Newton margin through
+the α=0 row (the tail leg shows the volume mechanism cleanly: an
+axis UNUSED at its peak still drains dN +23.8→+10.1 / +23.2→+6.2 by
+posterior volume — sub-B1 axes can zero α_marg without ever winning;
+B1-vs-B3 is peak-vs-volume). External physical anchors against the
+corner: Lindegren+21 (inflation ~1.1–1.4, systematic floor
+~0.025–0.03 mas/yr ≈ 0.012–0.024 km/s at ≤200 pc — the corner needs
+0.045 km/s ON TOP of 3× inflation) and the census cliff (an isotropic
+0.045 km/s floor would blur the 1.65 edge measured sharp in 7I/4J).
+
+**Dividend 2 — THE EXCHANGEABILITY ARM: INFORMATIVE** (pre-stated bar,
+amendment 2): the 7J-z5 arm-B sky (injected simple α = 0.74, twin-t5,
+sq = 0.2, fpm = 2.1, NO floor in truth) read by the floor fitter
+returns **α_marg = 0.60, floor QUIET (P(ws = 0) = 0.58), P(fpm = 3.0)
+= 0.00** (BE cross-read 0.60/+11.7, floor quiet). The floor axis does
+NOT eat real boosts — a matched-width sky keeps its α and rejects the
+floor. The sky's floor-corner preference is therefore DATA-DRIVEN:
+the real sky contains ~7–11 lnL of width the model lacks, and only
+the real sky offers it. (Own-truth under-read 0.74→0.60 consistent
+with the arm-suite conservative bias, single-injection grade.)
+
+**Dividend 3 — THE SHAPE EXCLUSION SET + the fingerprint:** the
+residual width object is now measured to be NOT floor-shaped (B1
+one-law, edge-riding into unphysical amplitude), NOT tail-shaped
+(+0.0 — kt=4 fraction axis wholly unused), NOT fpm-shaped (the chase
+runs past the physical ceiling), NOT sq-shaped (sq = 0.2 already in,
+demand persists), and NOT perspective (100% RV coverage, composition
+probe). Its Part-A fingerprint: mid-shoulder ṽ 0.7–1.7, the RADIAL
+γ = 8° column, inner/mid s-bins, spread across error and magnitude
+halves. Five noise costumes excluded while the location is
+population-like → **named successor hypothesis (booked, not opened):
+the inner-bin eccentricity/radial-orbit sector — the fit's e-shape
+freedom is nearly frozen (eta grid = 2 values; w_rad external), and
+a radial-population surplus at mid-ṽ is exactly what the sky keeps
+trying to buy as noise.** DR4-era or a dedicated stage; the freeze
+(§0) is untouched (this is an error-model/population refinement, not
+a new gravity function).
+
+No credence move (pre-stated: not a named decider). The operative
+anchor and band are unchanged; the PHYS conditional is REPORTED
+alongside them (promoting it to operative would need a decider-grade
+round — flagged as a candidate question for the next external
+review, alongside the exposure it inverts).
+
+**Plain verdict: SUCCESS as an exclusion-and-profile instrument**
+(the promoted question — what shape does the sky's noise hunger
+want? — is answered: NO physical noise shape; the risk axis is now a
+measured curve; the machinery re-validated under the new axis), with
+the object itself still unidentified — its identification is the
+named successor hypothesis, not this stage's claim. NEEDS REFINEMENT
+applies only to that successor.
+
+ELI12: The sky keeps asking for more measurement-blur than Gaia's
+own manual allows. We offered it two shaped blurs — a constant
+"everyone shakes a little" blur and a "a few stars shake a lot"
+blur. It ignored the second, grabbed the first only when we let the
+blur grow into impossible territory, and — tellingly — once the blur
+got impossible, the gravity signal vanished into it. So we ran the
+honesty check: feed a fake sky with a KNOWN gravity boost to the
+same machinery — it kept the boost and refused the blur. Real skies
+only. And when we cap the blur at what Gaia's manual actually
+permits, the gravity signal comes back STRONGER than our official
+number. Bottom line: our official number is the cautious one; the
+mystery extra spread is real, it isn't any kind of instrument noise
+we can draw, and its footprint (medium speeds, radial directions,
+closer pairs) smells like orbits we haven't drawn quite right — the
+next thing to model, written down before we model it.
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of

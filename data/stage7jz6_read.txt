@@ -3,5 +3,20 @@ LANDED-CONV anchor: ln pi(fcomp) = [-4886.95, -0.96, -0.43, -0.29, -4.97, -153.7
 [floor simple 31] B3: MATERIAL-LOW
 [floor BE 31] B1 shape-gain = +10.61 (>=+8 PASS); a_marg=0.00 dN=+0.0; B2 P(fpm=3.0)=0.81 (STILL-RIDING); P(ws)=[0.0, 0.0, 0.0, 1.0] (mode ws=0.045); P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
 [floor BE 31] B3: MATERIAL-LOW
+[tail simple 31] B1 shape-gain = +0.00 (MISS); a_marg=0.57 dN=+10.1; B2 P(fpm=3.0)=0.99 (STILL-RIDING); P(ws)=[0.5, 0.49, 0.0, 0.0] (mode ws=0.0); P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[tail simple 31] B3: band-stable
+[tail BE 31] B1 shape-gain = +0.00 (MISS); a_marg=0.73 dN=+6.2; B2 P(fpm=3.0)=0.82 (STILL-RIDING); P(ws)=[0.72, 0.24, 0.02, 0.01] (mode ws=0.0); P(sq)=[0.0, 0.0, 1.0, 0.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[tail BE 31] B3: MATERIAL-LOW
+[XCHG arm simple] boost-truth under floor fitter: a_marg=0.60 dN=+11.3 P(ws)=[0.58, 0.33, 0.07, 0.01] P(fpm=3.0)=0.00 ==> INFORMATIVE
+[XCHG arm BE] boost-truth under floor fitter: a_marg=0.60 dN=+11.7 P(ws)=[0.26, 0.42, 0.3, 0.01] P(fpm=3.0)=0.00
+
+[PHYS simple] photow3 | fpm<=1.8: a_marg=0.80 dN=+35.2 P(fpm)=[0.0, 0.0, 1.0]
+[PHYS BE] photow3 | fpm<=1.8: a_marg=0.80 dN=+32.3 P(fpm)=[0.0, 0.01, 0.99]
+[PHYS simple] floor | fpm<=1.8, ws<=step1: a_marg=0.71 dN=+33.5 P(ws)=[0.04, 0.96]
+[PHYS BE] floor | fpm<=1.8, ws<=step1: a_marg=0.72 dN=+30.3 P(ws)=[0.05, 0.95]
+[PHYS simple] tail | fpm<=1.8, ws<=step1: a_marg=0.80 dN=+32.1 P(ws)=[0.39, 0.61]
+[PHYS BE] tail | fpm<=1.8, ws<=step1: a_marg=0.80 dN=+29.9 P(ws)=[0.21, 0.79]
 
 floor: B1 ONE-LAW (+7.1/+10.6), B2 MISS (P30 0.60/0.81), B4 pending
+tail: B1 FAIL (+0.0/+0.0), B2 MISS (P30 0.99/0.82), B4 pending
+==> 7J-z6 VERDICT: UNRESOLVED-CARRIED — neither shape clears B1; the co-quoted band 0.68-0.74 / +14.5-23.8 stands; the item closes (pre-registered closure rule)
