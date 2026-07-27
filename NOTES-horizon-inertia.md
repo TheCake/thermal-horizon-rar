@@ -6372,6 +6372,55 @@ earlier "the binaries measured the ½ knob" claim gets demoted
 honestly: that reading needed the old fenced dials; with free
 dials the binaries can't read that knob at all.
 
+## Stage 7L pre-registration (2026-07-27, committed BEFORE execution): THE COOKSON SELECTION — our pipeline on their sample, their statistic on our model
+
+Cookson et al. (2602.24035): 1,421 RV-clean pairs, median-ṽ flatness
+vs r_sky/r_M, no 20% MOND step (Δχ² ≈ 12–16 ≈ 2.7σ, ~1500×). §7.4
+engaged the checklist and argued (c) qualitatively — the measured
+e-trend SUPPRESSES their step. 7L quantifies all of it on one
+pipeline.
+
+**THE PROXY MASK (their cuts on our EDR3 catalog; proxy-grade
+DECLARED — their catalog construction differs):** d < 130 pc (plx >
+7.6923), plx S/N > 40 both, RUWE < 1.25 both, both components with
+finite RVs and |ΔRV| < 10 km/s, s ∈ 1–30 kAU, velocity uncertainty
+< 0.1 in ṽ units, corrected ṽ < 2.5, both colors 0.5 < BP−RP < 3.5,
+no overluminous component (the 3J ridge criterion, δ ≥ −0.4 both —
+their HR filter's proxy). N reported against their 1,421; if N is
+off by more than 2× the stage downgrades to qualitative
+(PROXY-FAIL, pre-stated). ΔRV/RUWE cuts are data-side only (the
+forward model carries no RV/RUWE channel — neutral by construction,
+disclosed).
+
+**THE LADDER:**
+- L1 (2D likelihood on the cook sample, landed model, LANDED-CONV
+  anchor, seeds 31+101): CONSISTENCY BAR — the cook α-marginal must
+  not reject the operative band: d = lm_max − max(lm at the α = 0.5
+  and 1.0 cells) ≤ 4 → CONSISTENT; > 8 → TENSION-NAMED (their
+  cleaning genuinely removes our signal's carriers); else GRAY.
+  dN(Newton) reported with the N-scaling expectation (~N/14071 ×
+  the full-sample band ≈ +1.5–2.5) — explicitly NO detection claim
+  on ~1.4k pairs, power stated first.
+- L2 (descriptive): ṽ-only vs 2D on the cook sample (the 7J-g
+  phantom structure on their information content).
+- L3 (THEIR statistic on OUR model): step = median ṽ(r_sky/r_M ∈
+  [1, 3.1]) / median ṽ([0.05, 0.5]), computed with their ṽ < 2.5
+  ceiling on (i) our data under the cook mask (bootstrap CI), (ii)
+  the landed operative boost cells' forwards, (iii) the landed
+  Newton-best forwards. The 7K-a lessons are built in UP FRONT:
+  G0-7L = the scale-free control (al ≡ 1) on the same statistic
+  must give 1.000 ± 0.010 (wiring); the fitted-e-run model-Newton
+  baseline is the honest zero point and is reported FIRST (the
+  e-run is s-dependent and r_M mixes M with s — expect baseline ≠ 1).
+  BARS: RECONCILED-BY-DESIGN if the boost cells' predicted step ≤
+  1.11 (their ≈1.5σ sensitivity: 1σ ≈ 7.4% of the 20% step) AND the
+  data step is consistent with the prediction within the bootstrap
+  CI; GENUINE-TENSION if predicted ≥ 1.15 AND data step ≤ 1.05;
+  else GRAY (quoted).
+No credence move (not a named decider). The stage feeds §7.4 with
+numbers in place of (c)'s qualitative argument, and Paper 1's
+methods chapter (the modeling-philosophy fork, quantified).
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of
