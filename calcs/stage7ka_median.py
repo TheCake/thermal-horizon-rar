@@ -260,6 +260,25 @@ t0 = time.time()
 for seed in (31, 101):
     P(f"\n== seed {seed} ==")
     p = build_pop(seed)
+    # G0-iii (amendment, logged pre-quote after G0-i/ii fired FAIL on
+    # first run): the G0-i identity assumption was WRONG as designed —
+    # the FITTED population's eccentricity distribution runs with
+    # separation (the v7 al ramp), so model-Newton's 2C ratio is
+    # genuinely < 1 (more-eccentric wide orbits have lower median
+    # vtilde).  The wiring identity lives in the SCALE-FREE control:
+    # al frozen at 1.0, wr as-fitted (s-independent), noise off ->
+    # R = 1.000 +/- 0.005 exactly (the vtilde ceiling is s-independent
+    # by design, so the cut does not break it).
+    al_sf = np.full(N, 1.0)
+    e_sf = np.where(p['u_mix'] < 0.2, 0.9+0.095*p['u_e'],
+                    0.95*p['u_e']**(1/(1+al_sf)))
+    o_sf = run(p['a_s'], e_sf, p['psi0'], p['f_ip'], p['M_s'],
+               p['uph'], 8, 2500, 1)
+    g0iii = ratio_of(p, o_sf, 0.0, 1.0, 1.2, 0.0, noise=False)
+    P(f"G0-iii scale-free control: R = {g0iii[0]:.3f} nat / "
+      f"{g0iii[1]:.3f} rw -> "
+      f"{'PASS' if 0.995 <= g0iii[1] <= 1.005 else 'FAIL'} "
+      f"[0.995, 1.005] (the wiring identity)")
     # cells from the photow3 cubes + LANDED-CONV
     cells = {}
     for law, TAB in (('simple', TAB_S), ('BE', TAB_B)):

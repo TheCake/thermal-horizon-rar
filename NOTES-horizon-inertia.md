@@ -6120,6 +6120,22 @@ must not flip the category or the result is AMBIG-quoted):**
 No credence move (not a named decider); the result feeds the anchor
 rows and Paper 1's model-light chapter.
 
+**AMENDMENT (G0 design error, logged pre-quote after the gate fired
+FAIL on first run):** G0-i/ii read 0.969–0.992 — the identity
+assumption was WRONG as designed: the FITTED population's
+eccentricity distribution runs with separation (the v7 al ramp
+0.6→1.0→eta over 100–1000 AU), and more-eccentric wide orbits have
+lower median ṽ, so model-Newton's 2C ratio is genuinely ≈ 0.98, not
+1.000 — "Newton predicts 1.000" holds only for scale-free
+populations (the 2C narrative assumption, now measured). The wiring
+identity is re-housed in G0-iii: a SCALE-FREE control (al ≡ 1.0,
+noise off) must give R = 1.000 ± 0.005. The pre-registered VERDICT
+bars are unaffected (they compare R_N directly to the data CI, no
+1.000 reference). DIVIDEND recorded: relative to the model's own
+Newton baseline (0.986/0.992 with noise), the data's 1.078 sits
++0.092/+0.086 high — the model-referenced excess is LARGER than the
+naive 1.078/1.000 reading.
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of
