@@ -167,6 +167,15 @@ CHECKS = [
      '(0.05, 0.5)) = 0.985', 'data/stage7l_step.txt'),
     ('bin-7l-cookson', 'L1 d_op=3.2 -> CONSISTENT',
      'data/stage7l_read.txt'),
+    ('bin-7jz7-twinforce', 'FIFTH-MOVE-ALIVE (MATERIAL) (dead-count 0/4, '
+     'alive-count 4/4', 'data/stage7jz7_read.txt'),
+    ('bin-7jz7-twinforce', 'G0q full seed 31 simple: '
+     'max|qt5(fcomp=0)-photow3| = 0.00e+00 -> PASS',
+     'data/stage7j_full_qt5.txt'),
+    ('bin-7jz8-contained', '==> 7J-z8 VERDICT: EXPOSURE-CONTAINED',
+     'data/stage7jz8_adjacent.txt'),
+    ('bin-7jz8-contained', 'P(<=2) = 5.53e-14 -> REJECTED',
+     'data/stage7jz8_adjacent.txt'),
     ('bin-7jd-unsuspension', 'GD1 lam100 seed 31: max|lam100-BE| = '
      '0.00e+00 -> PASS', 'data/stage7jd_funcs.txt'),
     ('bin-7jd-unsuspension', 'peak lambda=0.75, c1_hat=0.375',
@@ -433,7 +442,18 @@ say('their tested 20pct step (their 2.7 sigma = ~1.4 sigma vs the')
 say('landed model; boost-vs-Newton ~0.9 sigma at their N); L1')
 say('CONSISTENT 4/4 - their null and our detection are arithmetically')
 say('compatible; the fork = whether the removed 92 pct (incl. the')
-say('deep anchor) is data or contamination.')
+say('deep anchor) is data or contamination.  THE ROUND-12 ARC')
+say('(bin-7jz7-twinforce / bin-7jz8-contained): the solver-level')
+say('twin-q forced scan fires FIFTH-MOVE-ALIVE (MATERIAL 4/4 - the')
+say('twin world trades wobble for hidden mass, cost-to-force halves')
+say('to 69-87) and the free twin-q marginal is q-law-ROBUST')
+say('(0.61-0.84 = the operative band); the adjacent statistics then')
+say('CONTAIN it: the census cliff rejects the twin-forced world at')
+say('5.5e-14 (overshoot 37 vs 2) while the median leg REPRODUCES')
+say('(1.085) and retires from this defense.  FINAL EXPOSURE FORM:')
+say('the (band=9, cliff=2) pair holds BOTH collapse flanks - noise')
+say('corner and forced multiplicity - one model-light statistic')
+say('guards both doors.')
 say('7J-g: gamma pins the absorbers (SD(w_rad) -> below one 0.10 grid')
 say('step, all mass on the 0.20 node); in the four-absorber configuration')
 say('vt-only fitting reports a PHANTOM alpha = 0.5 that the direction')

@@ -20,15 +20,19 @@ follows ratification of the OPEN DECISIONS at the bottom.
   census cliff + Lindegren; the forced-multiplicity cell by the
   certificate's q-table at −162 and its own 135–153 misfit) — NOT
   "0.0 to 0.8, each defensible" (Opus's phrasing, corrected).
-  (Round 12, his refinement, adopted:) the REJECTION BASIS travels
-  WITH the span in the abstract itself — "α ≈ 0.6–0.8, with lower
-  configurations excluded by the band–cliff consistency requirement
-  and the twin-weighted q-table" — the LOAD PATH visible up front,
-  so a reader sees what would have to change for the number to
-  move, and a later revision of either external statistic visibly
-  propagates. (Pending 7J-z7: if the twin-q forced scan lands
-  DEAD-IN-CODE, the q-table clause upgrades from paper-arithmetic
-  to solver-verified.)
+  (Round 12, his refinement, adopted; FINAL form after 7J-z7/z8:)
+  the REJECTION BASIS travels WITH the span in the abstract itself —
+  **"α ≈ 0.6–0.8, with the collapse configurations (noise beyond
+  the physical envelope; forced host multiplicity ≥ 0.35) each
+  excluded by the band–cliff consistency requirement"** — the LOAD
+  PATH visible up front. The z7/z8 arc reshaped the clause: the
+  q-table PRICES the forced world (cost 69–87 lnL + the certificated
+  rate below 0.35) but does not exclude it (the twin world reaches
+  α = 0 through the hidden-mass channel — FIFTH-MOVE-ALIVE,
+  MATERIAL); the CLIFF excludes it (5.5e-14) — one self-defending
+  statistic holds both flanks. The median is NOT cited in this
+  clause (it reproduces the forced world at 1.085 and retired from
+  this defense; its free-world role stands).
 - (Round 11:) the NOISE-CEILING CURVE is the primary reporting form
   for α's noise dependence — both envelopes marked (Gaia-physical;
   the sky's demanded 4.3×), the width object's identification stated

@@ -1251,12 +1251,37 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   null and our +14.5–23.8 are COMPATIBLE; the disagreement is
   entirely whether the removed 92% is data or contamination.**
   Ledger +bin-7l-cookson (127 rows); PAPER §7.4(d) new; worldtable
-  banner + tokens. NEXT: THE SPLIT (Paper 1 = binaries: completeness
-  + kernel discovery + width channel + phantom-veto + census-pair +
-  noise-ceiling profile + accounting round + Cookson compatibility;
-  Paper 2 = coefficients; §2.4 stays in the log;
-  STRUCTURAL-INDEPENDENCE rule; tell the user before any
-  Opus-addressed draft).** Then the DM
+  banner + tokens.
+  **ROUNDS 11–12 (2026-07-28, the Opus structural read + the
+  round-12 arc, PAPER → v3.9): round 11 adopted 1–6 with three
+  corrections (A: neither noise-curve endpoint is a candidate truth
+  unidentified — brackets; B: "0.0–0.8 each defensible" corrected;
+  C: the +0.0-indifference misread repeated + tension staleness);
+  curve-as-primary, conditional load-path abstract, named
+  multiplicity-interface section, Paper 2 spine REPLACED (two-dial
+  device retired; 16-law ±8 degeneracy = field-level methods
+  finding), 7K-b flagship + counts/search rules, 7L = well-posed
+  question (TODO 17/18). Round 12: he owns C; B-refinement adopted
+  (rejection basis IN the abstract); his solver question → **7J-z7
+  (pre-reg a03f3d0, G0-q EXACT ×4 stream-preserving): FIFTH-MOVE-
+  ALIVE (MATERIAL 4/4) — the twin world trades wobble for HIDDEN
+  MASS (cost halves 135–153→69–87); his premise corrected (S3 ran
+  on the corrected law), his instinct vindicated; round-11
+  rejected-premise defense self-corrected (q-table PRICES, does
+  not exclude); DIVIDEND: free twin-q marginal 0.61–0.84 =
+  q-law-ROBUST. 7J-z8 (pre-reg 285045a): EXPOSURE-CONTAINED — the
+  cliff rejects the twin-forced world at 5.5e-14 (overshoot 37 vs
+  2) in both laws; the MEDIAN REPRODUCES it (1.085) and RETIRES
+  from this defense (free-world 7K-a role unchanged); both
+  expectations missed, both logged. FINAL EXPOSURE FORM: the
+  (band=9, cliff=2) pair holds BOTH collapse flanks — the load-path
+  abstract clause is final.** Ledger +bin-7jz7-twinforce/
+  +bin-7jz8-contained (129 rows); split plan final abstract form +
+  decision-4 recommendations (coherence vector → standalone note;
+  rate stays abstract-as-result). NEXT: THE SPLIT prose assembly
+  awaits the author (titles, credence placement, author line,
+  spin-off notes) — tell the user before any Opus-addressed
+  draft.** Then the DM
   mimicry-ledger paper
   section.** Paper
   leads with: 1.086 boost, s-dependence, α interior in every model class (span 1.0–1.5,

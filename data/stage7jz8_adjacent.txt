@@ -1,0 +1,11 @@
+
+[simple] twin-forced cell: alpha=0.0, eta=1.05, wr=0.3, fcomp=0.35, fpm=3.0, kw=0.7, sq=0.0
+[simple] MEDIAN leg: R_forced = 1.085 vs anchor 1.078 (CI 1.052-1.103) -> REPRODUCES
+[simple] CENSUS leg: mu_band = 36.1 (obs 9), mu_overshoot = 37.1 (obs 2), P(<=2) = 5.53e-14 -> REJECTED
+
+[BE] twin-forced cell: alpha=0.0, eta=1.05, wr=0.3, fcomp=0.35, fpm=3.0, kw=0.7, sq=0.0
+[BE] MEDIAN leg: R_forced = 1.085 vs anchor 1.078 (CI 1.052-1.103) -> REPRODUCES
+[BE] CENSUS leg: mu_band = 36.1 (obs 9), mu_overshoot = 37.1 (obs 2), P(<=2) = 5.53e-14 -> REJECTED
+
+==> 7J-z8 VERDICT: EXPOSURE-CONTAINED ([('simple', '', 'cen-rej'), ('BE', '', 'cen-rej')])
+done (0.1 min)

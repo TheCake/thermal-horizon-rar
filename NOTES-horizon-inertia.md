@@ -6711,6 +6711,71 @@ argmax of the forced slice of the qt5 cubes, per law, seed 31; the
   scale-free control PASS carried over; the t5 redraw is the
   z7-verified stream-preserving one).
 
+## Stage 7J-z8 EXECUTED (2026-07-28): EXPOSURE-CONTAINED — the cliff holds both flanks, and the median honestly retires from this defense
+
+**Verdict per the locked grammar: EXPOSURE-CONTAINED** — the CENSUS
+leg REJECTS the twin-forced world in BOTH laws at **P(≤ 2) =
+5.5e-14** (μ_overshoot = 37.1 vs the observed 2 — the worst cliff
+violation of any configuration ever tried: the hidden-mass boost
+pushes the near-parabolic pericenter pile past 1.67 wholesale;
+μ_band = 36.1 vs 9). The forced cell (α = 0, fcomp = 0.35, wr = 0.3,
+fpm = 3.0, kw = 0.7, sq = 0.0 — identical both laws, α = 0 is
+law-blind ✓) is excluded by a statistic EXTERNAL to the 2D
+likelihood, at fourteen orders.
+
+**THE HONEST TWIST (expectation-miss #2 of the round, logged):** the
+MEDIAN leg came out the other way — **R_forced = 1.085: the
+twin-forced Newton world REPRODUCES the 1.078 anchor** (my "mass is
+ratio-flat so the median rejects" reasoning ignored that at
+fcomp = 0.35 the remaining ~57% non-twin companions DOUBLE the
+√s-rising wobble channel relative to the free Newton-best cell's
+fcomp = 0.1, and the noise at fpm = 3.0 adds its own rise). The
+median therefore RETIRES from the fifth-move defense: it cannot
+discriminate the forced-companion world from the boost world. Its
+7K-a role (half-absorbed excess over the FREE Newton-best world)
+stands unchanged — the retirement is specific to the forced
+conditional.
+
+**THE FINAL FORM OF THE EXPOSURE (the round-12 arc closed):** the α
+claim's multiplicity floor is held by (i) the forcing cost (69–87
+lnL) plus the certificated rate (0.23–0.32 by convention) sitting
+below the 0.35 collapse threshold, and decisively (ii) **the census
+cliff: ANY fcomp ≥ 0.35 world — flat-q via wobble texture, twin-q
+via mass inflation — floods the overshoot the data keep at 2.** The
+same statistic already held the noise flank (7K-b). ONE
+model-light, internally-self-defending statistic now guards BOTH
+collapse corners — the load-path abstract clause becomes exact:
+"α ≈ 0.6–0.8, with the collapse configurations (noise beyond the
+physical envelope; forced host multiplicity ≥ 0.35) each excluded
+by the band–cliff consistency requirement." Opus's round-12 closing
+("the census pair keeping its counts attached") is now true for a
+measured reason: the pair is the paper's floor-holder, full stop.
+
+Plain verdict (7J-z7 + 7J-z8 together): SUCCESS — the reviewer's
+code-level question was answered by running it (his premise wrong,
+his instinct right); the fifth move is ALIVE inside the 2D
+likelihood (MATERIAL, honestly booked, with the mechanism
+decomposed: wobble→mass channel swap, cost halved) and CONTAINED
+outside it (the cliff at 5.5e-14); both of my stated expectations
+missed and both misses are logged — the bars, locked before each
+run, did exactly the work they exist for. No credence move
+(cadence; the containment is content for the next named decider).
+
+ELI12: The reviewer asked "does your hidden-companion escape hatch
+stay shut when the companions are the twin-heavy kind you actually
+measured?" We ran it. Surprise one: the hatch OPENS — twins fake
+the boost through hidden weight instead of wobble, at half the
+old price. Surprise two: we then walked that twin-world outside to
+face the two independent witnesses, and the second witness
+demolished it — a sky full of hidden twin-weight would hurl
+thirty-seven pairs past the speed cliff where the real sky has
+two. The first witness (the median) turned out to be fooled by
+this world — noted honestly, it steps down from guard duty. End
+state: one incorruptible witness, the cliff, now guards both doors
+the signal could have escaped through — and both of my own wrong
+guesses along the way are in the log, because the rules were
+written down before each answer came back.
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of
