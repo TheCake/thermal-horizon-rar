@@ -533,3 +533,17 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     4B branch kill deflates to a strong sign-robust lean (166/200 scatter-marginalized
     vs 198–200/200 raw — paper must quote both).** Newton +2777/+1659 on 15 lensing
     points alone; joint a₀ = (1.00±0.09)e−10 under the honest likelihood.
+
+17. **The 7L settling instrument (round 11, named not opened)** — run the
+    completeness + width machinery ON the subsample Cookson-grade cuts
+    REMOVE (the ΔRV>10 / wide / distant 92%): either its kinematics
+    decompose into the measured companion + noise sectors, or they carry
+    the boost. Settles "data or contamination" — the now-well-posed form
+    of the field's fork (PAPER §7.4(d), ledger bin-7l-cookson).
+
+18. **The width-object identification (the 7J-z6 successor, the program's
+    top binary instrument)** — the inner-bin eccentricity/radial-population
+    sector (fingerprint: mid-shoulder ṽ, radial γ=8° column, inner bins;
+    floor/tail/fpm/sq/perspective excluded as shapes). Identifying it
+    collapses the noise-ceiling curve to a point (round-11 form) and
+    restores function-discrimination power lost at 7J-d.

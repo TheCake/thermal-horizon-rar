@@ -6479,6 +6479,97 @@ nothing (it can't), and the full sample genuinely shows something.
 The real argument is whether the 92% they threw away is treasure
 or trash — and that's now a question with numbers on both sides.
 
+## Review round 11 (2026-07-28): the Opus STRUCTURAL READ — adopted with four corrections
+
+His verdict: architecture right, spine right, protect the
+conditionals. Adjudication:
+
+**ADOPTED (1) — the noise-ceiling curve as the primary form, PHYS
+not promoted.** His structural argument is right and we sharpen it:
+his sub-claim "if the object is astrophysical, the physical envelope
+is correct and 0.80/+35 is the honest number" is TOO STRONG — with
+the width object UNMODELED, BOTH endpoints are biased brackets: the
+flat-to-3.0 branch lets noise absorb object AND boost (biased low);
+the physical-cap branch forces the object into the remaining
+channels, where masquerade-as-boost is unbounded a priori (the
+radial-column fingerprint sits where boost signatures live). Under
+the noise identification the low branch is right; under the
+astrophysical identification the honest number awaits the MODELED
+object — the curve brackets the noise axis and is silent on the
+population axis. CORRECTION #A to his text; his conclusion (report
+the curve, mark both envelopes, identification open, the successor
+collapses it to a point) is STRENGTHENED by it. → split plan + §6.3
+form updated.
+
+**ADOPTED-CORRECTED (2) — the conditional abstract.** The form is
+right (no bare "α = 0.74" in the abstract; AMBIGUOUS-CARRIED demands
+the conditional). His range sentence is WRONG: "runs from 0.0 to 0.8
+depending on assumptions each of which is separately defensible" —
+the 0-reaching configurations are NOT separately defensible; they are
+the configurations the data reject on ADJACENT statistics: the noise
+corner (floor 0.045 + fpm 3.0) is excluded by the census cliff
+(7K-b: tail noise ≈ formal) and by Lindegren; the forced-multiplicity
+cell misfits by 135–153 and its flat-q premise is rejected by the
+certificate's own q-table at −162. The defensible span is ≈ 0.6–0.8
+(noise-cap choices within the physical envelope + grid extension),
+with the 0-configurations quoted as REJECTED-PREMISE conditionals.
+Conceding "separately defensible" would give away ground the program
+measured. → abstract form fixed in the plan with this span.
+
+**ADOPTED (3) — the orphans**, with one staleness correction. The
+pair-common brightness vector and the 0.2–50 kAU subsystem rate get
+standalone-note flags (author decision added to the plan). The
+"tension needs a named home" point is structurally right —
+Paper 1 gains a named section, "The multiplicity interface" — but
+his content is STALE and repeats his own round-10 misread: (a) "the
+likelihood is indifferent at +0.0" — corrected in round 10 and
+re-corrected here: the likelihood PAYS 135–153 to avoid the forced
+cell; the +0.0 is α-indifference WITHIN the forced world only
+(CORRECTION #B, second occurrence of the same misread); (b) "the
+tension has no home and quietly becomes a caveat" — the ×3 tension
+DISSOLVED at measurement grade in the certificate round (twin-heavy
+q-table +162; conversion band [0.10, 0.39]; twin-convention host
+≈ 0.23 ≡ flat-q kinematic 0.10–0.15). What the named section houses
+is the INTERFACE result — a scalar companion fraction is the wrong
+interface between photometric and kinematic measurements; the
+q-resolved conversion is the right one; the residual open item is
+the joint population fit — stated as a resolved-then-residual
+structure, not an open tension (CORRECTION #C, staleness).
+
+**ADOPTED (4) — Paper 2's replacement spine.** The "two systems, one
+dial" device is retired outright (no caveated thread); the new spine
+is his cleaner statement, elevated to a finding: SPARC measures c₁
+interior with zero excluded across treatments; the binaries, once
+nuisances are honest, do not resolve it — an instrument-resolution
+result. His second point adopted prominently: the sixteen-law ±8
+degeneracy is a METHODS finding about every binary function contest
+in the field (including other groups'), stated as such in Paper 2.
+
+**ADOPTED (5) — 7K-b promoted to Paper 1's flagship empirical
+object**, with both cautions folded into standing rules: (i) the
+Poisson P is never quoted without the counts (9, 2) adjacent;
+(ii) "no configuration reproduces it" is a SEARCH statement — the
+searched space is enumerated wherever the claim appears (the landed
+grid + variants + smear-off + PHYS + boost cells; the same
+discipline as the flatness-axis rule).
+
+**ADOPTED (6) — the 7L reframe**: "modeling-philosophy fork" →
+"well-posed empirical question: is the removed 92% data or
+contamination?" — with the settling measurement NAMED: run the
+completeness + width machinery ON the removed subsample (do the
+ΔRV > 10 / wide / distant pairs' kinematics decompose into the
+measured companion + noise sectors, or carry the boost?). Logged as
+TODO (new instrument, not opened; the instrument freeze is on
+functions, and the queue is complete — it waits its turn).
+
+No credence move (interim round; cadence rule). PAPER → v3.8
+(three claim-hygiene edits in the monolith so the assembly source
+carries the round: the curve-form sentence in the 7J-z6 passage,
+the counts+search-space sentence in the 7K-b passage, the
+well-posed-question sentence in §7.4(d)). Split plan updated in
+place. Reply to Opus: NOT drafted (standing rule — awaiting the
+user's go-ahead).
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of
