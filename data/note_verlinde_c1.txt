@@ -1,0 +1,31 @@
+G1 BE ladder: nu = 1/x + 1/2 + x/12 (exact) -> PASS
+G2 simple-nu ladder: nu = 1/x + 1/2 + x/8 (exact) -> PASS
+G3 Verlinde ladder: nu = sqrt(pi/3)/x + 1 + 0*x + 0*x^2 (exact) -> PASS
+
+deep amplitude: sqrt(a_M/a0) = sqrt(pi/3) = 1.0233 -> a0 shift 4.7% (a_M = cH0/6 vs a0 = cH0/2pi) — INSIDE the galaxy a0 error (1.05 +/- 0.10 e-10): amplitude VIABLE
+constant term: c1(Verlinde) = 1 EXACTLY; c2 = 0 EXACTLY
+
+CONTEST vs the measured ladder (existing rows, no new fit):
+  c1 profile (flat M/L, 4S):     0.385 - 0.519  -> |1 - 0.45| = 0.55
+  c1 profile (hierarchical, 4Z): 0.208 - 0.309  -> |1 - 0.26| = 0.74
+  c1 bootstrap (both):           ~0.4 +/- 0.3
+  c1 = 0 exclusion grade: Delta(-2lnL) = 56.3 (7.5 sigma profile /
+    95.5% bootstrap) at distance 0.45 from the flat profile peak
+  => c1 = 1 sits FARTHER from every measured interval than the
+     excluded c1 = 0 (0.55-0.74 vs 0.26-0.45 away) — under the
+     family's profile curvature this is >= the c1 = 0 grade on the
+     opposite flank.
+
+VERDICT (consistency row): the additive emergent-gravity
+interpolation is EXCLUDED at LADDER level by the existing c1
+measurement, with its amplitude viable — the exclusion is about the
+digits, not the scale (the 1/6-vs-1/2pi near-coincidence, 4.7%, is
+why amplitude-level tests could not see this).
+
+Caveats (carried): Verlinde's derivation is spherical/quasi-static;
+the additive composition is the commonly tested reading (Brouwer+17
+lensing); disk-geometry corrections exist and are not computed here;
+the measured lambda grid ended at c1 = 0.625, so the exact Delta at
+c1 = 1 is curvature-extrapolation grade (stated, not overquoted);
+scout on prior coefficient-level Verlinde exclusions PENDING —
+no novelty claim printed.

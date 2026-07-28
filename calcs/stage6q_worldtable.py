@@ -176,6 +176,8 @@ CHECKS = [
      'data/stage7jz8_adjacent.txt'),
     ('bin-7jz8-contained', 'P(<=2) = 5.53e-14 -> REJECTED',
      'data/stage7jz8_adjacent.txt'),
+    ('galfn-verlinde', 'c1(Verlinde) = 1 EXACTLY; c2 = 0 EXACTLY',
+     'data/note_verlinde_c1.txt'),
     ('bin-7jd-unsuspension', 'GD1 lam100 seed 31: max|lam100-BE| = '
      '0.00e+00 -> PASS', 'data/stage7jd_funcs.txt'),
     ('bin-7jd-unsuspension', 'peak lambda=0.75, c1_hat=0.375',

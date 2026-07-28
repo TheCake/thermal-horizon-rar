@@ -6776,6 +6776,32 @@ the signal could have escaped through — and both of my own wrong
 guesses along the way are in the log, because the rules were
 written down before each answer came back.
 
+## Mechanism-consistency note (2026-07-28, ten-minute grade): VERLINDE EXCLUDED AT LADDER LEVEL
+
+Prompted by the "other interpretations" discussion: the emergent-
+gravity interpolation is a closed form, so its ladder is exact
+algebra against measurements we already own (freeze-compliant
+consistency row; [calcs/note_verlinde_c1.py](calcs/note_verlinde_c1.py),
+gates G1/G2/G3 sympy-exact). The additive apparent-DM reading
+(Brouwer+17-tested): ν_V = √(π/3)/x + 1 exactly — **c₁ = 1, c₂ = 0.
+The measured c₁ (0.21–0.52 across treatments; 0 excluded at 7.5σ
+grade at distance 0.45) puts c₁ = 1 farther outside every interval
+than the already-excluded 0 — while the AMPLITUDE is viable: a_M =
+cH₀/6 vs a₀ = cH₀/2π is a 4.7% shift, inside the a₀ error. The
+1/6-vs-1/2π near-coincidence is exactly why amplitude-level tests
+(lensing normalizations) could never see this; the digits see it.**
+Caveats carried (spherical/quasi-static derivation; disk corrections
+not computed; λ-grid ended at 0.625 → the Δ at c₁ = 1 is
+curvature-extrapolation grade); scout on prior coefficient-level
+Verlinde exclusions PENDING — no novelty claim printed. Plain
+verdict: SUCCESS (one of the six rival readings converted from
+philosophy to an excluded row, in ten minutes, on existing
+measurements). ELI12: the "stretchy vacuum" theory writes its own
+serial number — a 1 where our universe measures roughly one-half —
+and its disguise was that its VOLUME knob (1/6) accidentally
+matches ours (1/2π) to five percent, so everyone checking volume
+saw nothing wrong; we checked the digits.
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of
