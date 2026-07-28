@@ -287,6 +287,20 @@ if FUNCS:
         'FUNCS = the landed photow3 model (9-dim)'
     assert SAMPLE == 'full', 'the function contest runs on the sky'
     OUT = 'data/stage7jd_funcs.txt'
+# 7J-z7 (round 12): QLAW='t5' redraws the companion mass ratio from
+# the arm-suite twin-t5 marginal law via a SINGLE-UNIFORM inverse CDF
+# occupying the same rng slot as the flat draw — every other stream is
+# untouched, so the fcomp = 0 slice must reproduce the operative
+# photow3 cube BIT-FOR-BIT (G0-q; GB0w/GB0e are skipped-disclosed
+# under QLAW because the q-draw differs at fcomp > 0 by design).
+QLAW = os.environ.get('QLAW', '')
+if QLAW:
+    assert QLAW == 't5', QLAW
+    assert AMP == 'photow' and FPME and not WSHAPE and not FUNCS, \
+        'QLAW = the twin-q forced-scan mode on the photow3 grid'
+    assert SAMPLE == 'full'
+    TAG = '_qt5'
+    OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -427,7 +441,16 @@ def build_pop(seed):
     M_h = 0.5*p['M_s']
     p['comp'] = {}
     for k in (1, 2):
-        q = 0.1+0.9*rng.random(N)
+        u_q = rng.random(N)
+        if QLAW == 't5':
+            # twin-t5 marginal (the arm-suite convention: split 0.9/1.4,
+            # low branch uniform [0.1, 0.9], spike uniform [0.9, 1.0])
+            # from the SAME single uniform — stream-preserving
+            s_ = 0.9/1.4
+            q = np.where(u_q < s_, 0.1 + 0.8*(u_q/s_),
+                         0.9 + 0.1*((u_q-s_)/(1.0-s_)))
+        else:
+            q = 0.1+0.9*u_q
         logP = rng.normal(5.03, 2.28, N)
         P_yr = 10**logP/365.25
         a_in = (M_h*(1+q)*P_yr**2)**(1/3)
@@ -885,6 +908,25 @@ def run_seed(seed):
                     if d1 > 1e-9:
                         P(f"ABORT lam100 seed {seed}: GD1 failed")
                         continue
+        if QLAW:
+            # G0-q (7J-z7 pre-reg): companions off => the q-law is
+            # inert, and the redraw is stream-preserving, so the
+            # fcomp = 0 slice must reproduce the operative photow3
+            # cube EXACTLY
+            p3p = f'data/stage7j_cube_{SAMPLE}_photow3_{seed}_{law}.npy'
+            if os.path.exists(p3p):
+                p3 = np.load(p3p)
+                d0 = float(np.nanmax(np.abs(
+                    cube[:, :, :, 0:1] - p3[:, :, :, 0:1])))
+                P(f"G0q {SAMPLE} seed {seed} {law}: "
+                  f"max|qt5(fcomp=0)-photow3| = {d0:.2e} -> "
+                  f"{'PASS' if d0 <= 1e-9 else 'FAIL'}")
+                if d0 > 1e-9:
+                    P(f"ABORT {SAMPLE} seed {seed} {law}: G0-q failed")
+                    continue
+            else:
+                P(f"G0q {SAMPLE} seed {seed} {law}: photow3 reference "
+                  f"absent - SKIPPED (disclosed)")
         if WSHAPE:
             # GW0 (7J-z6 pre-reg): the ws = 0 slice must reproduce the
             # photow3 cube EXACTLY (the ws=0 branch keeps the legacy
@@ -902,7 +944,10 @@ def run_seed(seed):
             else:
                 P(f"GW0 {SAMPLE} seed {seed} {law}: photow3 cube absent "
                   f"- SKIPPED (disclosed)")
-        if PHW:
+        if PHW and QLAW:
+            P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under QLAW "
+              f"(q-draw differs at fcomp>0 by design; G0-q substitutes)")
+        if PHW and not QLAW:
             # GB0w: the sq=0 slice must reproduce the cached photo cube
             # (fpm axis sliced to the photo grid length under FPME)
             php = f'data/stage7j_cube_{SAMPLE}_photo_{seed}_{law}.npy'

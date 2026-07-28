@@ -6570,6 +6570,83 @@ well-posed-question sentence in §7.4(d)). Split plan updated in
 place. Reply to Opus: NOT drafted (standing rule — awaiting the
 user's go-ahead).
 
+## Review round 12 (2026-07-28): Opus's close — B-refinement adopted, decision-#4 recommendation logged, and THE TWIN-Q QUESTION answered in two layers + pre-registered as 7J-z7
+
+He owns C (second occurrence); takes A as stated (his restatement is
+clean: "an unmodeled object doesn't vanish at the physical envelope,
+it relocates, and if its fingerprint sits in the radial column the
+relocation target is α itself"); accepts B's substance.
+
+**ADOPTED — the B refinement (load-path abstract):** the rejection
+basis travels WITH the span in the abstract, not in §6: "α ≈ 0.6–0.8,
+with lower configurations excluded by the band–cliff consistency
+requirement and the twin-weighted q-table." His reason is the right
+one: α has been a confident number four times; what distinguishes
+this one is that its floor is held by two statistics EXTERNAL to the
+likelihood that produces it, and the abstract should show the load
+path so a revision of either statistic visibly moves the number.
+→ split-plan abstract form updated.
+
+**Decision #4 — his recommendation logged (the DECISION stays the
+author's):** photometric-coherence vector = standalone short note
+(self-contained stellar astrophysics, no gravity context needed);
+subsystem rate STAYS in Paper 1 (its credibility chain — completeness
+instrument + certificate — lives there) but titled and abstracted AS
+A RESULT, not a method. Both sensible; awaiting the author's yes.
+
+**THE SUBSTANTIVE ITEM — answered in two layers:**
+- LAYER 1 (his premise corrected): the S3/forced-fcomp collapse was
+  NOT produced by the retired as-published amplitude law. The GB0w
+  first-firing catch (amendment 7e) — the exact bug class he cites —
+  happened BEFORE any photow cube shipped: the invalid pair was
+  deleted, and every operative photow/photow3 cube since carries the
+  photocenter-cancellation law |q/(1+q) − ℓ/(1+ℓ)| (GB0w = 0.00e+00
+  vs the photo cubes on every run since, including all of
+  yesterday's). 7J-z3's S3 ran on those cubes with exact G0/G1
+  regressions. "The collapse was an artifact of a law you've since
+  retired" is therefore false as stated.
+- LAYER 2 (his underlying demand is right): the fitter's companion
+  q-DISTRIBUTION is still FLAT (0.1–1). Twins are wobble-quiet
+  through the law (wfac(q=1) = 0 exactly), but the FRACTION of
+  wobble-quiet companions at a forced fcomp is set by the q-draw —
+  and the twin-heavy conversion currently enters the operative
+  pipeline only at PRIOR level (the LANDED-CONV widening) and at
+  TRUTH level (the arm-suite injections). A solver-level forced scan
+  with the measured twin-t5 q-law has never run. His "dead in the
+  code, not just on paper" demand is well-posed and cheap.
+
+**7J-z7 pre-registration (committed BEFORE execution): THE TWIN-Q
+FORCED SCAN.**
+- IMPLEMENTATION: env QLAW='t5' in stage7j_marginal.py — build_pop's
+  companion q redrawn from the arm-suite twin-t5 marginal law (the
+  GV7 winner convention: split 0.9/1.4, low branch uniform [0.1,0.9],
+  spike uniform [0.9,1.0]) via SINGLE-UNIFORM inverse CDF from the
+  SAME rng slot that fed the flat draw — every other draw's stream is
+  untouched, so the fcomp = 0 slice must be BIT-IDENTICAL to the
+  operative photow3 cube.
+- GATE G0-q: max|twin-cube(fcomp=0) − photow3(fcomp=0)| ≤ 1e-9
+  (expect exact 0.0), ABORT on fail. TAG '_qt5' (operative cubes
+  never overwritten).
+- READ (stage7jz7_read.py, pre-framed): the S3-style forced read —
+  marginal at LANDED-CONV restricted to fcomp ≥ 0.35 — on the twin
+  cubes, both laws, seeds 31 + 101 (matching S3's 4/4 grammar); plus
+  the FREE marginal on the twin cubes (descriptive: does twin-q move
+  the unforced answer?) and the forced cell's misfit (descriptive:
+  S3's forced cell misfit 135–153 under flat-q).
+- BARS (locked now): FIFTH-MOVE-DEAD-IN-CODE = forced α̂_marg ≥ 0.5
+  AND dN ≥ +10 in ≥ 3/4 law × seed reads (the collapse was a
+  flat-q-convention artifact; the conversion arithmetic verified at
+  solver level). FIFTH-MOVE-ALIVE = forced α̂ ≤ 0.3 in ≥ 3/4 →
+  MATERIAL (the exposure reopens, routed to the next decider). Else
+  PARTIAL (quoted).
+- EXPECTATION (stated, not a bar): host 0.35 under twin-t5 ≈
+  kinematic-equivalent 0.12–0.18 (the conversion band) = inside the
+  anchor-flat region → α ≈ 0.65–0.75 → DEAD-IN-CODE predicted.
+- No credence move this round regardless (cadence; interim round).
+His exit standing: ping on structural events (referee report; the 7L
+settling measurement). Reply-to-Opus with this round's results:
+drafted only on the user's go-ahead, per the rule.
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of
