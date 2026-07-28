@@ -1,0 +1,6 @@
+[qt5 simple 31] FORCED(fcomp>=0.35): alpha=0.00 dN=+0.0 | FREE: alpha=0.61 dN=+18.1 | cost-to-force = 86.6 (S3 flat-q comparator 135-153)
+[qt5 BE 31] FORCED(fcomp>=0.35): alpha=0.00 dN=+0.0 | FREE: alpha=0.78 dN=+13.9 | cost-to-force = 81.9 (S3 flat-q comparator 135-153)
+[qt5 simple 101] FORCED(fcomp>=0.35): alpha=0.00 dN=+0.0 | FREE: alpha=0.84 dN=+14.7 | cost-to-force = 69.2 (S3 flat-q comparator 135-153)
+[qt5 BE 101] FORCED(fcomp>=0.35): alpha=0.00 dN=+0.0 | FREE: alpha=0.63 dN=+15.9 | cost-to-force = 70.0 (S3 flat-q comparator 135-153)
+
+==> 7J-z7 VERDICT: FIFTH-MOVE-ALIVE (MATERIAL) (dead-count 0/4, alive-count 4/4; bars pre-registered round 12)

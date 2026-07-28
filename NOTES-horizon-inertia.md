@@ -6647,6 +6647,70 @@ His exit standing: ping on structural events (referee report; the 7L
 settling measurement). Reply-to-Opus with this round's results:
 drafted only on the user's go-ahead, per the rule.
 
+## Stage 7J-z7 EXECUTED (2026-07-28): FIFTH-MOVE-ALIVE (MATERIAL, 4/4) — the expectation MISSED, the mechanism decomposes, and round-11's defense is self-corrected
+
+G0-q EXACT 0.00e+00 ×4 (the stream-preserving redraw verified — the
+fcomp = 0 slices are bit-identical to the operative cubes). **The
+pre-registered ALIVE bar fired 4/4: forced fcomp ≥ 0.35 under the
+measured twin-t5 q-law gives α = 0.00, dN = +0.0 in every law × seed
+read.** The stated expectation (DEAD at α ≈ 0.65–0.75 via the
+conversion band) was WRONG.
+
+**THE MECHANISM (why the conversion arithmetic missed):** the twin
+world trades channels. Twins are wobble-QUIET (photocenter
+cancellation — the conversion band converted exactly this, the
+wobble moment) but hidden-mass-MAXIMAL (boost = √(1+q·M_h/M_s), the
+round-10 "non-binding" clause — whose scope was the FREE optimum
+only). Mass inflation is multiplicative and γ-preserving — the most
+boost-degenerate absorber in the model. Under twin-q forcing the
+wobble damage the data reject shrinks (**cost-to-force HALVES:
+135–153 flat-q → 69.2–86.6 twin-q**) while the mass channel absorbs
+α entirely. Opus's round-12 instinct is VINDICATED in consequence
+(the solver-level scan was needed) though his premise was wrong
+(the S3 collapse never ran on the retired law).
+
+**SELF-CORRECTION to round 11 (correction B's multiplicity clause
+OVERSTATED):** "the forced-multiplicity cell is killed by the
+q-table at −162" is true only of the flat-q FACE premise; the
+twin-q forced conditional is NOT premise-rejected — it is
+disfavored (69–87 lnL + the certificated rate 0.23–0.32 sitting
+below the 0.35 threshold) but LIVE. The load-path abstract revises
+accordingly (see the split plan): the α floor's supports are the
+band–cliff consistency (noise side) and the measured-rate-vs-0.35
+margin + the forcing cost (multiplicity side); the q-table clause
+demotes from "excludes" to "prices".
+
+**DIVIDEND (positive):** the FREE twin-q marginal reads α =
+0.61/0.78/0.84/0.63 at dN +13.9–18.1 — the operative band under the
+solver-level q-law swap: **the unforced answer is q-law-ROBUST.**
+
+No credence move (pre-stated; the MATERIAL routes forward, below).
+
+**7J-z8 pre-registration (committed BEFORE execution): THE ADJACENT
+STATISTICS vs THE TWIN-FORCED WORLD.** The forced world's absorber
+is now hidden mass — which is ratio-FLAT in separation (it cannot
+produce an s-RISING median) and inflates the near-parabolic
+pericenter pile (it must flood the census overshoot). Both adjacent
+instruments exist; both are read AT the twin-forced cell (the
+argmax of the forced slice of the qt5 cubes, per law, seed 31; the
+7K machinery with the t5 q-draw):
+- MEDIAN leg (7K-a statistic): R_forced ≥ 1.052 → the forced world
+  reproduces the anchor; R ≤ 1.030 → REJECTED by the median; GRAY
+  between.
+- CENSUS leg (7K-b statistic): P(≤ 2 observed overshoot | μ_forced)
+  < 1e-3 → REJECTED by the cliff; ≥ 0.01 → consistent; GRAY
+  between.
+- VERDICT: EXPOSURE-CONTAINED if ≥ 1 leg REJECTS in both laws (the
+  fifth-move world is excluded by data external to the 2D
+  likelihood — the 7K-b self-defense structure applied to the
+  exposure itself); EXPOSURE-STANDS if both legs are consistent in
+  either law (flagged for the next named decider; credence
+  untouched either way this round — cadence).
+- Gate: the z8 forward at the forced cell with fcomp set to 0 must
+  reproduce the 7K-a G0 legs' behavior (the machinery identity —
+  scale-free control PASS carried over; the t5 redraw is the
+  z7-verified stream-preserving one).
+
 ## Literature note (2026-07-27): El-Badry & Rix 2018 PRIMARY READ — the flagged ~20%/component claim VERIFIED
 
 Flagged at scout level during the certificate round; primary read of

@@ -1,0 +1,15 @@
+STAGE 7J-B full seeds [31, 101]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4, 3.0]; ln pi(fcomp) = [-1584.82, -768.17, -268.1, -7.78, -1.06, -42.57]
+G0q full seed 31 simple: max|qt5(fcomp=0)-photow3| = 0.00e+00 -> PASS
+GB0w/GB0e full seed 31 simple: SKIPPED under QLAW (q-draw differs at fcomp>0 by design; G0-q substitutes)
+PROF full seed 31 simple: a_hat=0.60 (interior=True), dN=+18.6, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+G0q full seed 31 BE: max|qt5(fcomp=0)-photow3| = 0.00e+00 -> PASS
+GB0w/GB0e full seed 31 BE: SKIPPED under QLAW (q-draw differs at fcomp>0 by design; G0-q substitutes)
+PROF full seed 31 BE: a_hat=0.78 (interior=True), dN=+14.0, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+  seed 31 done (22.4 min)
+G0q full seed 101 simple: max|qt5(fcomp=0)-photow3| = 0.00e+00 -> PASS
+GB0w/GB0e full seed 101 simple: SKIPPED under QLAW (q-draw differs at fcomp>0 by design; G0-q substitutes)
+PROF full seed 101 simple: a_hat=0.85 (interior=True), dN=+15.1, wr=0.2, fcomp=0.1, fpm=2.4, sq=0.2
+G0q full seed 101 BE: max|qt5(fcomp=0)-photow3| = 0.00e+00 -> PASS
+GB0w/GB0e full seed 101 BE: SKIPPED under QLAW (q-draw differs at fcomp>0 by design; G0-q substitutes)
+PROF full seed 101 BE: a_hat=0.63 (interior=True), dN=+15.9, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+  seed 101 done (22.7 min)
