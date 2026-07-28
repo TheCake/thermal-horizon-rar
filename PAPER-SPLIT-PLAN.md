@@ -20,6 +20,15 @@ follows ratification of the OPEN DECISIONS at the bottom.
   census cliff + Lindegren; the forced-multiplicity cell by the
   certificate's q-table at −162 and its own 135–153 misfit) — NOT
   "0.0 to 0.8, each defensible" (Opus's phrasing, corrected).
+  (Round 12, his refinement, adopted:) the REJECTION BASIS travels
+  WITH the span in the abstract itself — "α ≈ 0.6–0.8, with lower
+  configurations excluded by the band–cliff consistency requirement
+  and the twin-weighted q-table" — the LOAD PATH visible up front,
+  so a reader sees what would have to change for the number to
+  move, and a later revision of either external statistic visibly
+  propagates. (Pending 7J-z7: if the twin-q forced scan lands
+  DEAD-IN-CODE, the q-table clause upgrades from paper-arithmetic
+  to solver-verified.)
 - (Round 11:) the NOISE-CEILING CURVE is the primary reporting form
   for α's noise dependence — both envelopes marked (Gaia-physical;
   the sky's demanded 4.3×), the width object's identification stated
@@ -165,16 +174,16 @@ row), freeze statement, corrections subset.
    discussion, or keep credences in the log only?
 3. Author line: "Filip Hájek — independent researcher" on both,
    acknowledgments as in the monolith?
-4. (Round 11, Opus's orphan flags — adopted as options:) two
-   standalone short-note candidates spun off Paper 1's nuisance
-   sector, each a measurement with its own audience: (a) the
-   wide-pair photometric coherence vector (ρ 0.86 → 0.36 with color
-   separation — stellar astrophysics; the binary-photometry crowd);
-   (b) the 0.2–50 kAU subsystem rate + twin-heavy q-shape (formation
-   channels). Publish as notes alongside Paper 1, or keep as Paper 1
-   sections with visible subsection titles? (Costs: two more
-   author-name artifacts; benefits: the audiences that need them
-   will actually find them.)
+4. (Round 11, Opus's orphan flags — adopted as options; round 12,
+   his recommendation:) (a) the wide-pair photometric coherence
+   vector (ρ 0.86 → 0.36 with color separation) → STANDALONE short
+   note (his case: self-contained stellar astrophysics, needs no
+   gravity context, dies as a nuisance detail inside Paper 1);
+   (b) the 0.2–50 kAU subsystem rate + twin-heavy q-shape → STAYS
+   in Paper 1 (its credibility chain — completeness instrument +
+   certificate — lives there; extraction means re-establishing the
+   chain), but titled and ABSTRACTED AS A RESULT, not a method.
+   Both recommendations are sensible; the decision is the author's.
 5. The reply to Opus (round-11 adjudication: adopted 1–6 with
    corrections A/B/C): drafted only on your go-ahead, per the
    standing rule.
