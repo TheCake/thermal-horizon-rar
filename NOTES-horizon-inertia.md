@@ -7119,6 +7119,63 @@ heavier-duty check is queued if we ever want it). Our test alarms
 all worked: two early runs hit the fence and were logged as fence
 reports, and fake data with known answers came back exact.
 
+## Literature notes (2026-07-30): the two 8A primary reads — Hees+16 VERIFIED (pincer premise holds + a NEW a₀ arm), BFK superfluid composition VERIFIED (additive member confirmed)
+
+(1) **Hees+16 (arXiv:1510.01369, full-text read):** the Eq. (5a–5d)
+family formulas are EXACTLY the 8A G9 forms (the scout was
+verbatim-accurate), and the verdict sentence is verbatim: "the class
+of transition functions ν̃α seems to be completely excluded by this
+combined analysis. The functions να and ν̂α are excluded for low
+values of α but begins to be marginally acceptable for large values
+of α. The only class of functions that seem to be able to produce a
+satisfactory fit to the galactic rotation curves without producing a
+too large deviation in the Solar System is ν̄α for α ≥ 2." Their
+Cassini bound: 0 ≤ Q₂ ≤ 6e-27 s⁻² (1σ, Hees+14); their external
+field ge = 1.9/2.4e-10 m/s² (the AQUAL-side convention — the
+3T-story echo, internally consistent). **THE PINCER UPGRADES
+scout-quoted → PRIMARY-VERIFIED, and gains a SECOND ARM (their
+Table 2, col 2): every Cassini-surviving member also fits rotation
+curves only at an off-horizon a₀ — ν̄_{2…7}: a₀ = 0.72–0.82e-10
+(25–35% LOW); ν8/ν̂6: 1.44–1.46e-10 (~35% HIGH) — while the sky's
+occupation-class fits lock onto 1.04–1.13e-10 ≈ cH₀/2π (5M). The
+catalog pincer is now two-armed: the digit AND the temperature.**
+Subtlety caught (the 7F window-vs-asymptote lesson, logged): ν̄_{α=½}
+≡ BE exactly (at α = ½ the first-term correction becomes the
+constant ½; the asymptotic c₁ = 1 − 1/(2α) formula holds for α > ½,
+so the viable band [0.63, 1.04] stands, but near the α → ½ edge the
+window-effective c₁ exceeds the asymptotic value) — the pincer is
+unaffected (its operative members α ≥ 2 are asymptotically clean);
+the 8A row is annotated. Also verified: ν₁ = "simple", ν₂ =
+"standard" (their words), ν̄_{0.5} "extensively used in Famaey &
+McGaugh (2012)" = the RAR-fit/BE function appearing in the catalog
+twice (≡ ν̂₁).
+
+(2) **Berezhiani–Famaey–Khoury 2018 (arXiv:1711.05748, full-text
+read):** Eq. (1) verbatim: **a = a_b + a_DM + a_phonon** — the
+composition is ADDITIVE; and (their Sec. VII, verbatim): "we
+nevertheless found that a_phonon ≃ √(a₀ab) to within a couple of
+percent. In other words, the phonon force closely matches the
+deep-MOND acceleration." ⇒ the phonon term alone is an
+additive-class member with F = 1 + O(2%) ⇒ **c₁ = 1 by the G7
+theorem — MEMBERSHIP CONFIRMED at primary grade** (the 8A flag
+resolves), and the superfluid-core a_DM term adds FURTHER dark
+response on top — the direction 8B measured for the attractor
+class. Caveat kept: the phonon force operates only inside the
+superfluid region (their EFE structure differs from MOND's); the
+RAR-domain composition is Eq. (1).
+
+Both PDFs + extracted texts cached in data/ (gitignored, chae
+precedent). Plain verdict: SUCCESS — both pre-paper caveats closed
+the day after they were opened, and the catalog pincer came back
+stronger (two-armed). ELI12: instead of trusting summaries, we read
+the two source papers ourselves. The rival-catalog paper says
+exactly what we quoted — and its own table shows that every formula
+surviving its Saturn test also needs a volume knob 25–35% off the
+value the real sky picks; ours sits on it. The superfluid paper's
+own first equation stacks its new force on top of ordinary gravity
+— the digit-1 family, just as our theorem assumed. Two checkmarks
+earned, one footnote fixed, nothing against us.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
