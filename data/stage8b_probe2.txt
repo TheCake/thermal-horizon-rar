@@ -1,0 +1,126 @@
+[page] 0.4s, 27935 chars
+name-like tokens on the page: AGNdT9L0050N0752_Aperture, AGNdT9L0050N0752_DustFit, AGNdT9L0050N0752_DustyFluxes, AGNdT9L0050N0752_DustyMagnitudes, AGNdT9L0050N0752_FOF, AGNdT9L0050N0752_Magnitudes, AGNdT9L0050N0752_MorphoKinem, AGNdT9L0050N0752_ParticleCounts, AGNdT9L0050N0752_Sizes, AGNdT9L0050N0752_Stars, AGNdT9L0050N0752_SubHalo, C15AGNdT8L0050N0752_Aperture, C15AGNdT8L0050N0752_FoF, C15AGNdT8L0050N0752_Sizes, C15AGNdT8L0050N0752_Subhalo, C15AGNdT9L0050N0752_Aperture, C15AGNdT9L0050N0752_FoF, C15AGNdT9L0050N0752_Sizes, C15AGNdT9L0050N0752_Subhalo, Eagle, RecalL0025N0752_Aperture, RecalL0025N0752_DustFit, RecalL0025N0752_DustyFluxes, RecalL0025N0752_DustyMagnitudes, RecalL0025N0752_FOF, RecalL0025N0752_Magnitudes, RecalL0025N0752_MorphoKinem, RecalL0025N0752_ParticleCounts, RecalL0025N0752_Sizes, RecalL0025N0752_Stars, RecalL0025N0752_SubHalo, RefL0012N0188_Aperture, RefL0012N0188_FoF, RefL0012N0188_MorphoKinem, RefL0012N0188_Sizes, RefL0012N0188_Subhalo, RefL0025N0376_Aperture, RefL0025N0376_DustFit, RefL0025N0376_DustyFluxes, RefL0025N0376_DustyMagnitudes, RefL0025N0376_FOF, RefL0025N0376_Magnitudes, RefL0025N0376_MorphoKinem, RefL0025N0376_ParticleCounts, RefL0025N0376_Sizes, RefL0025N0376_Stars, RefL0025N0376_SubHalo, RefL0025N0752_Aperture, RefL0025N0752_DustFit, RefL0025N0752_DustyFluxes, RefL0025N0752_DustyMagnitudes, RefL0025N0752_FOF, RefL0025N0752_Magnitudes, RefL0025N0752_ParticleCounts, RefL0025N0752_Sizes, RefL0025N0752_Stars, RefL0025N0752_SubHalo, RefL0050N0752_Aperture, RefL0050N0752_DustFit, RefL0050N0752_DustyFluxes
+
+[sys.databases] 1.1s, 14676 chars
+   #OK
+   #SQL= SELECT name FROM sys.databases
+   #MAXROWS UNLIMITED
+   #QUERYTIMEOUT 1800 sec
+   #QUERYTIME 61 millisec
+   #COLUMN 1 name=name JDBC_TYPE=-9 JDBC_TYPENAME=nvarchar
+   name
+   Alam2020a
+   AqA2
+   AqB2
+   AqC2
+   AqD2
+   AqE2
+   AqF2
+   ARTEMIS
+   Ayromlou2021a
+   bbf461_db
+   bbm590_db
+   bct874_db
+   bcx331_db
+   bcx958_db
+   bcz566_db
+   bdb682_db
+   bfc996_db
+   bfh888_db
+   bfm662_db
+   bgl090_db
+   bgr079_db
+   bhm249_db
+   bhq872_db
+   bht140_db
+   bht486_db
+   bhz030_db
+   bjg276_db
+   bjl223_db
+   bjm301_db
+   bjt359_db
+   bjw750_db
+   bkh290_db
+   bkl589_db
+   bkv647_db
+   blb628_db
+   bld025_db
+   blh748_db
+   blj618_db
+   blr534_db
+   blz357_db
+   bmc430_db
+   bmf974_db
+   bmr297_db
+   bnb238_db
+   bnb687_db
+   bnp209_db
+   Bower2006a
+   bph286_db
+   bpk896_db
+   bpt047_db
+   bpt928_db
+   bqd715_db
+   bqj157_db
+
+[info_schema default] 0.6s, 2129 chars
+   #OK
+   #SQL= SELECT TOP 60 TABLE_CATALOG, TABLE_NAME FROM information_schema.tables ORDER BY TABLE_NAME
+   #MAXROWS UNLIMITED
+   #QUERYTIMEOUT 1800 sec
+   #QUERYTIME 16 millisec
+   #COLUMN 1 name=TABLE_CATALOG JDBC_TYPE=-9 JDBC_TYPENAME=nvarchar
+   #COLUMN 2 name=TABLE_NAME JDBC_TYPE=-9 JDBC_TYPENAME=nvarchar
+   TABLE_CATALOG,TABLE_NAME
+   Eagle,AGNdT9L0050N0752_Aperture
+   Eagle,AGNdT9L0050N0752_DustFit
+   Eagle,AGNdT9L0050N0752_DustyFluxes
+   Eagle,AGNdT9L0050N0752_DustyMagnitudes
+   Eagle,AGNdT9L0050N0752_FoF
+   Eagle,AGNdT9L0050N0752_Magnitudes
+   Eagle,AGNdT9L0050N0752_MorphoKinem
+   Eagle,AGNdT9L0050N0752_ParticleCounts
+   Eagle,AGNdT9L0050N0752_Sizes
+   Eagle,AGNdT9L0050N0752_Stars
+   Eagle,AGNdT9L0050N0752_Subhalo
+   Eagle,LumDistances
+   Eagle,NoAGNL0025N0376_Aperture
+   Eagle,NoAGNL0025N0376_FoF
+   Eagle,NoAGNL0025N0376_Sizes
+   Eagle,NoAGNL0025N0376_Subhalo
+   Eagle,NoAGNL0050N0752_Aperture
+   Eagle,NoAGNL0050N0752_FoF
+   Eagle,NoAGNL0050N0752_Sizes
+   Eagle,NoAGNL0050N0752_Subhalo
+   Eagle,Recal_L0025N0752_corrections
+   Eagle,RecalL0025N0752_Aperture
+   Eagle,RecalL0025N0752_DustFit
+   Eagle,RecalL0025N0752_DustyFluxes
+   Eagle,RecalL0025N0752_DustyMagnitudes
+   Eagle,RecalL0025N0752_FoF
+   Eagle,RecalL0025N0752_Magnitudes
+   Eagle,RecalL0025N0752_MorphoKinem
+   Eagle,RecalL0025N0752_ParticleCounts
+   Eagle,RecalL0025N0752_Sizes
+   Eagle,RecalL0025N0752_Stars
+   Eagle,RecalL0025N0752_Subhalo
+   Eagle,RefL0012N0188_Aperture
+   Eagle,RefL0012N0188_FoF
+   Eagle,RefL0012N0188_MorphoKinem
+   Eagle,RefL0012N0188_Sizes
+   Eagle,RefL0012N0188_Subhalo
+   Eagle,RefL0025N0376_Aperture
+   Eagle,RefL0025N0376_DustFit
+   Eagle,RefL0025N0376_DustyFluxes
+   Eagle,RefL0025N0376_DustyMagnitudes
+   Eagle,RefL0025N0376_FoF
+   Eagle,RefL0025N0376_Magnitudes
+   Eagle,RefL0025N0376_MorphoKinem
+   Eagle,RefL0025N0376_ParticleCounts
+   Eagle,RefL0025N0376_Sizes
+   Eagle,RefL0025N0376_Stars
+   Eagle,RefL0025N0376_Subhalo
+   Eagle,RefL0025N0752_Aperture
+   Eagle,RefL0025N0752_DustFit
+   Eagle,RefL0025N0752_DustyFluxes
+   Eagle,RefL0025N0752_DustyMagnitudes

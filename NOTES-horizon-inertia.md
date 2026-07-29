@@ -6942,6 +6942,85 @@ different formula. Next up: check whether plain cold-dark-matter
 simulations accidentally print a ½ — that's the test that could
 shoot OUR reading down, which is exactly why we're running it.
 
+## Stage 8B pre-registration (2026-07-29, committed BEFORE execution): THE SIMULATION LADDER — does the ΛCDM attractor print the zero-point digit?
+
+THE SHOOT-DOWN-OURS INSTRUMENT. The measured c₁ ≈ ½-grade zero-point
+is the program's sharpest galaxy digit. If ΛCDM galaxy formation
+(halo response + baryon physics, no horizon input) produces a
+simulated RAR carrying the same digit, the digit's evidential weight
+for the thermal reading DEFLATES to galaxy-formation phenomenology;
+if the sim RAR carries a different fingerprint, the digit becomes a
+measured DISCRIMINANT against the ΛCDM attractor. Both directions
+are live; the bars are locked now, before any fit.
+
+**DATA (access granted by the EAGLE team 2026-07-29, John Helly;
+credentials in private/, never committed):** the public EAGLE
+database, RefL0100N1504 (the 100 Mpc flagship), SnapNum 28 (z≈0),
+Aperture table (enclosed Mass_Star/Gas/DM/BH at r = 1,3,5,10,20,30,
+40,50,70,100 pkpc — probe-verified) joined to Subhalo. SELECTION:
+SubGroupNumber = 0 (centrals; probe showed satellites carry
+tidally-truncated flat profiles), Spurious = 0, M*(30 pkpc) ∈
+[1e9, 1e11] M☉ (SPARC-like window) — **N = 7,239 galaxies
+(probe-counted)**. Radii used: r ∈ {5,10,20,30,40,50,70,100} pkpc
+(1 and 3 pkpc dropped: softening ~0.7 pkpc). Points: (g_bar, g_obs)
+= (G·(M_star+M_gas)(<r)/r², G·M_tot(<r)/r²) — the spherical-aperture
+proxy, stated as such. Cross-check box: RecalL0025N0752 (the
+high-resolution recalibrated 25 Mpc run), same selection. Server
+politeness: ~6 chunked queries (mass-bin chunks + MorphoKinem +
+Recal), seconds each, cached to data/eagle/ (gitignored), one-time.
+
+**ESTIMATOR (the 4S machinery, faithfully adapted):** family ν_λ =
+(1−λ)·standard + λ·BE, c₁ = λ/2 exactly; λ grid −0.30…1.50 step
+0.05; per λ profile (log a₀, s_int) — no M/L nuisance (sim masses
+exact; all scatter intrinsic, lognormal, s_int profiled); Δ=1
+profile interval + 200-rep GALAXY bootstrap (resample the 7,239,
+λ free per rep) = the primary error. PRIMARY fit: full sample,
+stars+gas baryons, all 8 radii.
+
+**GATES (ABORT on fail, no verdict quoted):**
+- G0 units: hand-check V_c(10 pkpc) for one probed galaxy against
+  the constant path (4.302e-6·(M/M☉)/(r/kpc) km²/s²); sane range.
+- G1 the λ-family series regression (c₁ = λ/2 at λ = 0, ½, 1 —
+  the verbatim 4S block).
+- G2 descriptive sanity: the sim RAR must be TIGHT and MONOTONE
+  (binned medians monotone in g_bar; raw scatter < 0.3 dex) — else
+  the aperture proxy failed as an instrument.
+- G3 λ̂ interior on the grid (edge-riding = no measurement).
+- G4 injection: synthetic skies at the same point distribution with
+  known λ_true = 0.0 and 0.75 (+ lognormal s = 0.1) must recover
+  λ̂ within ±0.05 — estimator-bias control.
+
+**BARS (locked now; on the PRIMARY fit's bootstrap 16–84 c₁
+interval and median):**
+- B1 REPRODUCES-THE-DIGIT: median c₁_sim ∈ [0.15, 0.60] AND
+  P(c₁ > 0.05) ≥ 0.975 AND P(c₁ < 0.95) ≥ 0.975 → the ΛCDM
+  attractor manufactures a half-grade zero-point; the sky digit's
+  horizon-uniqueness DEFLATES (named honest strike direction;
+  credence move deferred to the next named decider per cadence —
+  this stage books the fact).
+- B2 DISCRIMINATES: median c₁_sim outside [0.15, 0.60] AND the
+  bootstrap interval excludes [0.21, 0.52] entirely → the measured
+  digit separates the sky from the ΛCDM attractor (the rival-control
+  the coefficient measurement has lacked).
+- B3 AMBIG/UNSTABLE: anything else — OR any pre-named robustness
+  leg moving median c₁ by > 0.25: (a) stars-only g_bar (hot-gas
+  bracket), (b) r ≥ 10 pkpc (softening/inner-structure bracket),
+  (c) disk subset KappaCoRot > 0.4 (MorphoKinem), (d) M* > 10^9.5
+  (resolution bracket), (e) the Recal 25 Mpc box (volume/resolution
+  cross-check). Then: instrument-limited at aperture grade, quoted;
+  successor = the FIRE-2 snapshot pipeline (commissioned-only).
+**Secondary (report-grade, no bars):** a₀_sim both boxes vs cH₀/2π
+and vs Ludlow+17's published ballpark (~2.6e-10, scout-grade);
+scatter-vs-x shape (does the sim produce the 4T deep-growing trend
+and the x≈1 bump?); mass-tercile a₀ trend (the literature's
+mass-dependence claim). PRE-STATED CONFOUND: the aperture c₁ folds
+in sphericalization + hot-gas systematics — B1 is claimable only if
+it survives the (a)–(e) stability clause; the confound direction is
+NOT assumed benign.
+
+No credence move this stage regardless (cadence: not a named
+decider; a B1 outcome is flagged INTO the next named decider).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

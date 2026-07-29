@@ -1,0 +1,42 @@
+8B PROBE — EAGLE database, Aperture route feasibility
+
+[Q1 Aperture TOP5] 0.6s, 7 lines (showing <= 40):
+   #ERROR SQL
+   #SQL= SELECT TOP 5 GalaxyID, ApertureSize, Mass_Star, Mass_Gas, Mass_DM, Mass_BH FROM RefL0100N1504..Aperture ORDER BY GalaxyID, ApertureSize
+   #MAXROWS UNLIMITED
+   #QUERYTIMEOUT 1800 sec
+   #SQLSTATE S0002
+   #SQLERRORCODE 208
+   #SQLEXCEPTION =Invalid object name 'RefL0100N1504..Aperture'.
+[Q2 aperture sizes] 0.9s, 7 lines (showing <= 40):
+   #ERROR SQL
+   #SQL= SELECT DISTINCT ApertureSize FROM RefL0100N1504..Aperture WHERE GalaxyID = (SELECT MIN(GalaxyID) FROM RefL0100N1504..Aperture)
+   #MAXROWS UNLIMITED
+   #QUERYTIMEOUT 1800 sec
+   #SQLSTATE S0002
+   #SQLERRORCODE 208
+   #SQLEXCEPTION =Invalid object name 'RefL0100N1504..Aperture'.
+[Q3 SubHalo TOP5] 0.6s, 7 lines (showing <= 40):
+   #ERROR SQL
+   #SQL= SELECT TOP 5 GalaxyID, SnapNum, Redshift, SubGroupNumber, Spurious, MassType_Star, StarFormationRate, HalfMassRad_Star FROM RefL0100N1504..SubHalo WHERE SnapNum = 28
+   #MAXROWS UNLIMITED
+   #QUERYTIMEOUT 1800 sec
+   #SQLSTATE S0002
+   #SQLERRORCODE 208
+   #SQLEXCEPTION =Invalid object name 'RefL0100N1504..SubHalo'.
+[Q4 selection count] 1.9s, 7 lines (showing <= 40):
+   #ERROR SQL
+   #SQL= SELECT COUNT(*) AS n FROM RefL0100N1504..SubHalo AS sub, RefL0100N1504..Aperture AS ap WHERE ap.GalaxyID = sub.GalaxyID AND sub.SnapNum = 28 AND sub.SubGroupNumber = 0 AND sub.Spurious = 0 AND ap.ApertureSize = 30 AND ap.Mass_Star BETWEEN 1e9 AND 1e11
+   #MAXROWS UNLIMITED
+   #QUERYTIMEOUT 1800 sec
+   #SQLSTATE S0002
+   #SQLERRORCODE 208
+   #SQLEXCEPTION =Invalid object name 'RefL0100N1504..SubHalo'.
+[Q5 pull-size count] 0.5s, 7 lines (showing <= 40):
+   #ERROR SQL
+   #SQL= SELECT COUNT(*) AS n FROM RefL0100N1504..Aperture AS ap, RefL0100N1504..SubHalo AS sub WHERE ap.GalaxyID = sub.GalaxyID AND sub.SnapNum = 28 AND sub.SubGroupNumber = 0 AND sub.Spurious = 0 AND ap.GalaxyID IN (SELECT GalaxyID FROM RefL0100N1504..Aperture WHERE ApertureSize = 30 AND Mass_Star BETWEEN 1e9 AND 1e11)
+   #MAXROWS UNLIMITED
+   #QUERYTIMEOUT 1800 sec
+   #SQLSTATE S0002
+   #SQLERRORCODE 208
+   #SQLEXCEPTION =Invalid object name 'RefL0100N1504..Aperture'.
