@@ -562,16 +562,19 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     the measured window and their Cassini verdicts across the whole
     catalog.** Residue: primary read of the Hees table before paper
     use; superfluid composition equation primary check.
-20. **8B the simulation ladder — the shoot-down-OURS instrument**: run
-    the 4S c₁ ladder + 4T second-moment machinery on ΛCDM hydro-sim
-    RARs (does ΛCDM print c₁ ≈ ½ and the thermal scatter trend, or
-    not?). Scout verdicts: NO closed-form ΛCDM ν exists (no algebra
-    shortcut) and nobody publishes (g_bar, g_obs) points; FIRE-2
-    snapshots open (flathub, no login; Mercado+23 = 20 galaxies), TNG
-    registration, EAGLE database aperture-masses possible. Feasibility
-    scout (pre-computed profiles) PENDING → route decision: curve-level
-    route if one exists, else the snapshot pipeline is commissioned-only
-    (author call — days of work + tens of GB).
+20. ~~**8B the simulation ladder — the shoot-down-OURS instrument**~~ —
+    EXECUTED (2026-07-29, pre-reg c03604f; EAGLE SQL access granted by
+    the team; [calcs/stage8b_simladder.py](calcs/stage8b_simladder.py);
+    NOTES 8B; ledger galfn-eagle-ladder): **G3 GATE-FAIL / OFF-FAMILY —
+    the ΛCDM attractor does NOT print the digit.** The EAGLE aperture
+    RAR (7,239 centrals + the Recal box) rides the family boundary at
+    every c₁; where localizable it prints c₁ ≈ 1.1; the D1 fingerprint
+    contest has the ADDITIVE class beating BE by −6,005 = the 8A
+    theorem observed in silico; deep slope runs 0.51–0.62; a₀_sim
+    unlocked (1.2–2.5e-10). The sky's ½ stays unique against the
+    attractor at aperture grade. Successor (commissioned-only): the
+    FIRE-2 snapshot pipeline for beyond-aperture grade; the 4T
+    scatter-shape leg on sims likewise waits for disk-plane profiles.
 21. **8C ours-sharpening**: (a) the P1 tail-ceiling test (p ≤ ¾,
     parameter-free) on the deepest SPARC galaxies; (b) the c₄-rung
     Fisher forecast (which survey reads the next digit).

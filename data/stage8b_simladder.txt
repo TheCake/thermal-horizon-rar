@@ -1,0 +1,62 @@
+8B THE SIMULATION LADDER — EAGLE RefL0100N1504 z=0 aperture RAR
+points: 57912 (7239 galaxies x 8 radii; 0 zero-baryon points dropped)
+G0 units: first galaxy M_tot(<10 pkpc) = 1.710e+10 Msun -> V_c(10) = 86 km/s; g-constant = 1.39383e-19
+G0 -> PASS
+G1 series c1(lam) = lam/2 at lam = 0, 1/2, 1, 2, 3 -> PASS
+G1b family validity: contiguous valid run around BE = lam in [-0.10, 2.55] (54 nodes)
+G2 descriptive: medians monotone = True; raw scatter = 0.132 dex (bar < 0.3) -> PASS
+  point support per g_bar decade (all inside the sky joint support, which reaches 5.6e-15 via the 4E lensing leg):
+    [-14,-13): 5299 points
+    [-13,-12): 23326 points
+    [-12,-11): 21127 points
+    [-11,-10): 7573 points
+    [-10,-9): 587 points
+
+PRE-REGISTERED PRIMARY (full sample, stars+gas, r = 5-100 pkpc):
+  [primary full-range] lam_hat = 2.550 -> c1 = 1.275 (EDGE); a0 = 1.471e-10, s_int = 0.122; D(-2lnL) c1=0: +15976.8, c1=1/2: +7866.8 (nominal point grade; radial within-galaxy correlation caveat)
+==> G3 GATE-FAIL (OFF-FAMILY): the optimum rides the family-
+    validity boundary — the EAGLE aperture RAR is outside the
+    measured slice's neighborhood at EVERY c1. Per pre-reg:
+    no c1_sim quoted, B-bars UNFIRED, bootstrap skipped
+    (a boundary pile-up is not an interval).
+G4 injection lam_true = 0.00: lam_hat = -0.008 -> OK
+G4 injection lam_true = 0.75: lam_hat = 0.784 -> OK
+G4 -> PASS (the estimator recovers in-family truths; the edge is the data, not the tool)
+
+robustness legs (per pre-reg; REPORTS — no bars while G3 stands):
+  [(a) stars-only g_bar] lam_hat = 2.215 -> c1 = 1.108 (INTERIOR); a0 = 2.468e-10, s_int = 0.101; D(-2lnL) c1=0: +7537.9, c1=1/2: +2159.4 (nominal point grade; radial within-galaxy correlation caveat)
+  [(b) r >= 10 pkpc] lam_hat = 2.550 -> c1 = 1.275 (EDGE); a0 = 1.450e-10, s_int = 0.127; D(-2lnL) c1=0: +10439.4, c1=1/2: +5472.7 (nominal point grade; radial within-galaxy correlation caveat)
+  [(c) disks KappaCoRot>0.4 (2796 gal)] lam_hat = 2.550 -> c1 = 1.275 (EDGE); a0 = 1.178e-10, s_int = 0.102; D(-2lnL) c1=0: +11666.0, c1=1/2: +6395.1 (nominal point grade; radial within-galaxy correlation caveat)
+  [(d) M* > 10^9.5] lam_hat = 2.550 -> c1 = 1.275 (EDGE); a0 = 1.496e-10, s_int = 0.100; D(-2lnL) c1=0: +13777.9, c1=1/2: +6794.5 (nominal point grade; radial within-galaxy correlation caveat)
+  [(e) RecalL0025N0752 (165 gal)] lam_hat = 2.550 -> c1 = 1.275 (EDGE); a0 = 1.205e-10, s_int = 0.127; D(-2lnL) c1=0: +536.6, c1=1/2: +297.6 (nominal point grade; radial within-galaxy correlation caveat)
+
+D1 (labeled diagnostic): the fingerprint contest — which class
+   describes the sim RAR least badly (D(-2lnL) vs BE; each with
+   (a0, s_int) profiled; nominal point grade):
+   [Ref100] standard: +8110.0 (a0 1.95e-10, s 0.140) | simple: -262.8 (a0 1.73e-10, s 0.130) | BE: +0.0 (a0 1.74e-10, s 0.131) | additive: -6004.8 (a0 1.55e-10, s 0.124)
+   [Recal25] standard: +239.0 (a0 1.70e-10, s 0.156) | simple: -9.4 (a0 1.47e-10, s 0.142) | BE: +0.0 (a0 1.48e-10, s 0.142) | additive: -217.7 (a0 1.28e-10, s 0.131)
+
+D2 (labeled diagnostic): where does the sim leave the family?
+   per-decade log-log slope of the binned median relation
+   (MOND deep = 0.5; Newtonian = 1.0):
+    [-14,-13): slope = 0.51 (n = 5299)
+    [-13,-12): slope = 0.58 (n = 23326)
+    [-12,-11): slope = 0.62 (n = 21127)
+    [-11,-10): slope = 0.61 (n = 7573)
+   kinematic-window slice (g_bar >= 1e-12, the SPARC-kinematic support; 29287 points, 7239 galaxies):
+  [D2 kinematic window] lam_hat = 2.308 -> c1 = 1.154 (INTERIOR); a0 = 1.854e-10, s_int = 0.085; D(-2lnL) c1=0: +6800.5, c1=1/2: +2100.3 (nominal point grade; radial within-galaxy correlation caveat)
+
+==> 8B VERDICT (pre-registered gates, amendment 2): G3
+    GATE-FAIL / OFF-FAMILY — no c1_sim exists at aperture
+    grade: the LCDM attractor's RAR is SHAPE-INCOMPATIBLE
+    with the measured function family at every zero-point,
+    monotonically preferring more-than-BE dark response; the
+    sky's digit region c1 = 1/2 is rejected along the slice
+    by D(-2lnL) ~ +7.9k (nominal). The pre-registered B-bars
+    are UNFIRED by the letter; the successor instrument
+    (FIRE-2 snapshot pipeline) stays commissioned-only.
+    The digit does NOT lose uniqueness to the attractor at
+    this grade — the attractor fails one level earlier (the
+    functional class), with the D1/D2 diagnostics locating
+    the failure. Caveats: spherical-aperture proxy; nominal
+    point-grade Deltas (radial correlation); EAGLE-specific.

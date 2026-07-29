@@ -1,0 +1,9 @@
+[RefL0100N1504 M*[1e+09,3e+09)] 2.1s, ok=True, 30940 rows
+[RefL0100N1504 M*[3e+09,1e+10)] 1.4s, ok=True, 21060 rows
+[RefL0100N1504 M*[1e+10,3e+10)] 1.3s, ok=True, 12800 rows
+[RefL0100N1504 M*[3e+10,1e+11)] 1.4s, ok=True, 7590 rows
+  -> data/eagle/ref100_apertures.csv: 72390 rows
+[MorphoKinem] 4.6s, ok=True, 7239 rows
+  -> data/eagle/ref100_morphokinem.csv: 7239 rows
+[RecalL0025N0752 M*[1e+09,1e+11)] 4.7s, ok=True, 1650 rows
+  -> data/eagle/recal25_apertures.csv: 1650 rows

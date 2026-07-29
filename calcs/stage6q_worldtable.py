@@ -197,6 +197,12 @@ CHECKS = [
     ('mech-expmu-boot', 'THE IDENTITY exp-mu == boot: e^u = nu/(nu-1) from BOTH',
      'data/stage8a_ladder.txt'),
     ('galfn-hees-pincer', 'EMPTY INTERSECTION', 'data/stage8a_ladder.txt'),
+    ('galfn-eagle-ladder', 'G3 GATE-FAIL (OFF-FAMILY)',
+     'data/stage8b_simladder.txt'),
+    ('galfn-eagle-ladder', 'additive: -6004.8',
+     'data/stage8b_simladder.txt'),
+    ('galfn-eagle-ladder', 'lam_hat = 2.308 -> c1 = 1.154',
+     'data/stage8b_simladder.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

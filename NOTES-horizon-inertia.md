@@ -7021,6 +7021,104 @@ NOT assumed benign.
 No credence move this stage regardless (cadence: not a named
 decider; a B1 outcome is flagged INTO the next named decider).
 
+## Stage 8B EXECUTED (2026-07-29): THE SIMULATION LADDER — G3 GATE-FAIL / OFF-FAMILY: the ΛCDM attractor does not print the digit; it prints the ADDITIVE class, exactly as 8A's theorem predicts
+
+**The amendment chain (all logged pre-quote; no run's numbers were
+quoted as results before its gates were resolved):** AMENDMENT 1 —
+the first run rode the inherited 4S grid's λ = 1.50 edge (G3-serving
+grid extension to 3.0 + a family-validity guard; the guard's first
+implementation truncated from the wrong end — negative-λ members are
+tail-non-monotone — fixed to keep the contiguous valid run around
+BE, λ ∈ [−0.10, 2.55]). AMENDMENT 2 — the extended run rode the
+FAMILY-VALIDITY boundary itself (λ̂ → 2.55, still climbing):
+restructured to a formal G3 GATE-FAIL report (no c₁_sim, B-bars
+UNFIRED by the letter, bootstrap skipped — a boundary pile-up is not
+an interval) + two LABELED DIAGNOSTICS. Both edge runs stand as
+gate-fail records only.
+
+**Gates:** G0 units PASS; G1/G1b series + validity PASS; G2 PASS —
+the EAGLE aperture RAR is TIGHT (0.132 dex raw about the running
+median) and monotone; **G4 injections PASS sharply (λ_true 0.00 →
+−0.008; 0.75 → 0.784): the estimator recovers in-family truths —
+the edge is the DATA, not the tool.** Support check: every aperture
+point lies inside the sky measurement's joint support (deepest
+2.8e-14 > the 4E lensing leg's 5.6e-15) — the off-family behavior
+is physical, not a window artifact.
+
+**THE RESULT:**
+- PRIMARY (57,912 points): λ̂ = boundary-edge; along the slice the
+  sky's digit region is rejected by Δ(−2lnL) c₁=½: +7,867 and
+  c₁=0: +15,977 (NOMINAL point grade; 8 radially-correlated points
+  per galaxy ⇒ effective deflation up to ~×8 ⇒ still ~+1,000-grade —
+  decisive at any honest counting).
+- Legs: (b) r ≥ 10, (c) disks-only (2,796 gal), (d) M* > 10^9.5,
+  (e) the Recal 25 Mpc high-res box — ALL boundary-edge (the
+  off-family pull is selection- and resolution-robust). TWO legs
+  localize INTERIOR: **(a) stars-only g_bar → c₁ = 1.108 at a₀ =
+  2.47e-10 (Ludlow+17's published ~2.6e-10 reproduced — external
+  wiring consistency at scout grade); D2's kinematic window
+  (g_bar ≥ 1e-12) → c₁ = 1.154 at a₀ = 1.85e-10.** Where the sim
+  RAR can be localized on the slice at all, it prints ≈ 1.1 — the
+  ADDITIVE digit, not the sky's ½.
+- **D1, the fingerprint contest (the 8A classes head-to-head on the
+  sim):** additive −6,004.8 vs BE (Ref100) / −217.7 (Recal25);
+  simple −262.8; standard +8,110. **The ΛCDM attractor's RAR is
+  best-described by the ADDITIVE class — the G7 theorem (a dark
+  component tracking baryons ⇒ c₁ = 1 grammar) observed in silico.**
+- D2: the sim's deep slope RUNS (0.51 → 0.58 → 0.62 → 0.61 per
+  decade) — no fixed-a₀ MOND-form ν describes it globally (the
+  Mercado "hooks and bends" statement reproduced at aperture grade).
+- a₀_sim is UNLOCKED: 1.18–2.47e-10 across legs/boxes (2× spread)
+  vs the sky's hier-locked 1.04–1.13e-10 (5M) — the attractor
+  carries no temperature lock.
+
+**CONSEQUENCE (the arc's question answered at this grade):** the
+sky's zero-point digit c₁ ≈ ½ does NOT lose uniqueness to the ΛCDM
+attractor — the attractor fails one level EARLIER (the functional
+class): its RAR is additive-class, the sky's is occupation-class,
+and 8A's algebra is exactly the classifier that separates them. The
+sky's measured c₁ ∈ [0.21, 0.52] with c₁ = 0 and c₁ = 1 excluded is
+now flanked by BOTH rivals on the c₁ = 1 side (Verlinde/superfluid
+by theorem; the ΛCDM attractor by measurement) and the historical
+catalog on the c₁ = 0 side. Formal verdict stays GATE-FAIL by the
+pre-registered letter (B-bars unfired — no bootstrap interval
+exists for an off-family optimum); the B3 successor stands
+(FIRE-2 snapshot pipeline, commissioned-only, for beyond-aperture
+grade). Caveats carried: spherical-aperture proxy (not disk-plane
+kinematics — the class statement is aperture-grade); nominal
+point Δs (×8 correlation deflation stated); EAGLE(+Recal)-specific;
+sim scatter s_int ≈ 0.10–0.13 dex reported as-is (Desmond-direction,
+aperture-inflated, not over-quoted). Server load for the whole
+stage: ~15 queries, ~20 s total, one-time (cached).
+
+No credence move (cadence: not a named decider; the result is
+flagged INTO the next named decider alongside 8A).
+
+Plain verdict: SUCCESS — the shoot-down-OURS instrument fired and
+our digit survived it: the honest formal outcome is a gate-fail
+(no c₁_sim exists because the sim never enters the measured family's
+neighborhood), and the labeled diagnostics turn that into the
+sharpest form of the answer — the attractor prints the OTHER
+class's fingerprint, the one 8A proved belongs to
+dark-stuff-tracking-baryons.
+
+ELI12: We asked: if boring invisible-matter physics secretly runs
+galaxies, would a universe simulated with exactly that physics
+accidentally print our serial-number digit ½? We fed 7,239
+simulated galaxies through the same measuring machine as the real
+sky. Answer: the simulated universe doesn't print ½ — it can't
+even be read on our dial without pegging the needle, and when we
+check WHICH family of formulas it does match, it's the
+"invisible-stuff-shadowing-the-stars" family with digit 1 — the
+very family our theorem said dark matter must produce, and the
+very digit the real sky rules out. So the real universe's ½ is
+not an accident of galaxy formation — at least not in this
+simulation, measured this way (the fine print: our quick method
+reads each galaxy as a sphere, and it's one simulation code; a
+heavier-duty check is queued if we ever want it). Our test alarms
+all worked: two early runs hit the fence and were logged as fence
+reports, and fake data with known answers came back exact.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
