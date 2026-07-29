@@ -190,6 +190,13 @@ CHECKS = [
      'data/stage7j_armdiag.txt'),
     ('ret-7i-median-immune', 'completeness of the -0.4 flag: C(companion) = 0.410',
      'data/stage7j_completeness.txt'),
+    ('galfn-rivals-ladder', 'standard-mu family: c1 = 0 EXACTLY',
+     'data/stage8a_ladder.txt'),
+    ('galfn-rivals-ladder', 'additive-analytic class: c1 = 1 EXACTLY',
+     'data/stage8a_ladder.txt'),
+    ('mech-expmu-boot', 'THE IDENTITY exp-mu == boot: e^u = nu/(nu-1) from BOTH',
+     'data/stage8a_ladder.txt'),
+    ('galfn-hees-pincer', 'EMPTY INTERSECTION', 'data/stage8a_ladder.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

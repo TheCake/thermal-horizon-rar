@@ -225,6 +225,15 @@ constant; nothing else ties the two drifts. **Kill:** measured a₀(z) flat at z
 at 3σ, or the two drifts measured with incompatible ratio. (Stages 4V/6U; data era:
 high-z rotation curves with pressure-support control.)
 
+*Annotation 2026-07-29 (8A scout round; post-registration bookkeeping, no status
+change): Magneticum (Mayer+22, arXiv:2206.04333, scout-level) reports
+ΛCDM-simulated a₀ RISING ≈×3 by z = 2.3 — approximately the H(z) trajectory
+(×2.97 at z = 2). The a₀(z) leg ALONE is therefore not ΛCDM-immune, and the "DM
+holds the normalization roughly constant" clause above is too strong at
+simulation grade. P3's discriminating content is the LOCK — the paired p_gal(z)
+drift in fixed ratio — exactly as registered; the kill conditions are unchanged.
+Primary read of Mayer+22 owed before any use.*
+
 ### P4 — the DR4 weak-ambient pair
 Weak-ambient wide binaries sharpen toward p ≈ 0.69, and the source-vs-dressed
 convention split becomes resolvable (Δp ≈ 0.025 at e_N = 0.4). (Stage 6U.)

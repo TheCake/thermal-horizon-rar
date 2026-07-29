@@ -1,0 +1,160 @@
+G1 BE ladder regression: nu = 1/x + 1/2 + x/12 (exact) -> PASS
+G2 simple-nu ladder regression: nu = 1/x + 1/2 + x/8 (exact) -> PASS
+G3 Verlinde regression: nu = sqrt(pi/3)/x + 1 (c1 = 1, c2 = 0, exact) -> PASS
+
+G4 MASTER INVERSION (exact): for mu(z) = z + m2 z^2 + m3 z^3 + ...
+     c1 = -m2/2          c2 = 5 m2^2/8 - m3/2
+   the measured c1 is a measurement of mu''(0) = 2 m2:
+   c1 in [0.21, 0.52]  <=>  m2 in [-1.04, -0.42]
+   simple   mu = z/(1+z)        : c1 = 1/2, c2 = 1/8 -> CHECK
+   standard mu = z/sqrt(1+z^2)  : c1 = 0, c2 = 1/4 -> CHECK
+   exp-mu   mu = 1 - e^(-z)     : c1 = 1/4, c2 = 7/96 -> CHECK
+   BE (mu-side shadow)          : c1 = 1/2, c2 = 1/12 -> CHECK
+
+G5 n-FAMILY (Hees nu_alpha; exact series, cross-checked vs G4):
+   n = 1 (simple):   nu = 1/x + 1/2 + x/8            c1 = 1/2
+   n = 2 (standard): nu = 1/x + 0   + x/4 + x^3/32   standard-mu family: c1 = 0 EXACTLY
+   n = 3:            nu = 1/x + 0   + 0   + x^2/6    c1 = c2 = 0
+   -> the whole n >= 2 family (incl. the field's historical
+      'standard' function) carries NO zero-point term.
+
+G6 THE IDENTITY exp-mu == boot: e^u = nu/(nu-1) from BOTH
+   mu(z) = 1 - e^(-z) in AQUAL  <=>  nu = 1 + n_BE(nu*y) (the 4F
+   quantum-bootstrap bath) — EXACT equivalence, gated.
+   fingerprint via G4: c1 = 1/4, c2 = 7/96 = the 4F printed cell;
+   nu(1) = 1.3500 (4F boot transition amplitude).
+   SCOUT (2026-07-29): the bare exponential mu is apparently NOWHERE
+   named or tested in the MOND literature (attribution NOT FOUND;
+   the catalog's exponential families live in nu-space with other
+   arguments — G9).  The program's boot adjudication — raw dead
+   4-7/200 [4F]; hier-M/L flip +75.6 [5C]; binary veto [5F];
+   vertical-channel collapse -9 [5M] = 'the 1/4 cell dead
+   everywhere' — is then apparently this function's FIRST data
+   contest (scout-level), and it is dead on the primary treatment.
+   companion identity (4F, re-gated): mu = z/(1+z) <=> the classical
+   bath nu = 1 + 1/(nu*y) = 1/2 + sqrt(1/4 + 1/y) — exact.
+   READING: the mu-side's two natural one-parameter-free members are
+   the two SELF-CONSISTENT bath closures (classical & quantum); the
+   data kill both cells (5C -99, 5M -9) and keep the SOURCE-DRIVEN
+   occupation forms — the same exponential in the temperature
+   variable x = sqrt(y) (McGaugh's RAR fit = BE, surviving) vs in
+   the acceleration variable z = nu*y (exp-mu = boot, dead): the
+   data distinguish the exponential's ARGUMENT.
+
+G7 ADDITIVE CLASS THEOREM (exact, symbolic F): any
+   g_obs = g_N + sqrt(a0 g_N) * F(g_N/a0), F analytic, F(0) = 1
+   has nu = 1/x + 1 + F'(0) x + ...:
+   additive-analytic class: c1 = 1 EXACTLY (independent of F), and
+   the expansion carries ODD rungs only (no x^0-beyond-1, no x^2).
+   MEMBERS: Verlinde emergent gravity (F = 1, exact — note-V); the
+   superfluid-DM MOND-limit composition a_N + sqrt(a0 a_N)
+   (membership FLAGGED: the primary-source composition equation was
+   not retrievable by scout — check pending); any dark component
+   tracking baryons analytically in g_N.
+   A c1 != 1 requires F non-analytic in g_N (half-integer powers)
+   — i.e. a structure carrying sqrt(g_N): the temperature variable.
+   PRIOR ART (scout, resolves note-V's pending item): Lelli+17
+   (arXiv:1702.04355) excluded Verlinde's EG on SPARC at FIT level
+   (M/L amplitude tension + the radius-residual signature); the
+   COEFFICIENT-level exclusion (c1 = 1 vs measured) is apparently
+   new (scout-level).
+
+G8 NON-RAR STRUCTURES (excluded upstream of the ladder):
+   - constant-acceleration additions (Rindler/Grumiller, g_obs =
+     g_N + a_R): deep limit g_obs -> const, not sqrt(a0 g_N).
+   - screened chameleon f(R) (Naik+19, arXiv:1905.13330): no
+     universal RAR — screening-radius 'upturn' signature, location
+     environment-dependent; their own SPARC bound |f_R0| < 6e-8.
+     Structurally not a RAR rival; no fingerprint assigned.
+
+G9 THE HEES+16 CATALOG (exact ladders; forms scout-quoted):
+   nu-tilde_a = (1-e^-y)^(-1/2) + a e^-y:
+     c1 = a EXACTLY (the family parameter IS the zero-point
+     coefficient), c2 = 1/4 -> ladder-viable iff a in [0.21, 0.52]
+   nu-bar_a = (1-e^(-y^a))^(-1/(2a)) + (1-1/(2a)) e^(-y^a):
+     c1 = 1 - 1/(2a) EXACTLY (members gated: a=1 -> 1/2, a=2 -> 3/4)
+     -> ladder-viable iff a in [0.63, 1.04]; a >= 2 has c1 >= 3/4
+   nu-hat_a = (1-e^(-y^(a/2)))^(-1/a):
+     a = 1: nu-hat_1 == BE == the RAR-fit EXACTLY (gated identity —
+     McGaugh's function is the a=1 member of Hees's hat family);
+     a = 2: c1 = 0, c2 = 1/4 (the standard fingerprint); a = 3:
+     c1 = c2 = 0 -> only a = 1 carries a zero-point term.
+
+G10 THE PINCER (their Cassini verdicts x our ladder window):
+   Hees+16 published verdicts (scout-quoted; primary read queued
+   before any paper use): nu-tilde 'completely excluded' by Cassini
+   at ALL a; nu_alpha and nu-hat 'marginally acceptable' only at
+   a >= 7-8; nu-bar compatible for a >= 2.
+   The ladder window [0.21, 0.52] selects: nu-tilde a in
+   [0.21, 0.52] (their Cassini-dead); nu-bar a in [0.63, 1.04]
+   (their Cassini-dead, needs a >= 2); nu_alpha only n = 1 and
+   nu-hat only a = 1 (their Cassini-dead, need a >= 7-8, whose
+   members carry c1 = 0 = our dead rung).
+   => EMPTY INTERSECTION: no member of the published catalog
+   passes BOTH the measured coefficient window and their
+   AQUAL-EFE Cassini bound.  This is the amplitude-locked solar
+   tension (4K/5S/5I: Q2 ~ 4-6x Cassini for every RAR-compatible
+   function) rederived in coefficient language through the field's
+   own catalog — function choice cannot escape it; the doors are
+   structural (the 7G trajectory formulation passes by 451 orders;
+   EFE-screened composition is 6W-excluded on the binaries).
+   Caveats: their bounds are their analysis (MG/AQUAL-formulation-
+   conditional, fixed-a0), quoted not re-derived; scout-grade until
+   the primary table read.
+
+========================================================================
+THE FINGERPRINT TABLE (x = sqrt(g_N/a0); measured anchors: c1
+profile 0.385-0.519 flat [4S] / 0.208-0.309 hier [4Z], bootstrap
+~0.4 +/- 0.3, c1 = 0 excluded Delta(-2lnL) = 56.3 = 7.5 sigma
+profile / 95.5% bootstrap; binary c1 ERASED [7J-d], not quoted)
+========================================================================
+  function/theory        c1       c2     nu(1)   verdict
+  BE == RAR-fit == hat_1 1/2      1/12   1.582   reference; in-window
+  simple == class. bath  1/2      1/8    1.618   ladder-viable; hier-
+                                                 rejected -99 (5C)
+  standard-mu (n = 2)    0        1/4    1.272   EXCLUDED at the
+                                                 c1 = 0 grade (56.3);
+                                                 direct: 4B -56
+  n = 3                  0        0      --      excluded (same rung)
+  exp-mu == boot         1/4      7/96   1.349   dead on the primary
+                                                 treatment (5M);
+                                                 hier-flip 5C printed
+  Hees nu-tilde_a        a        1/4    --      viable only a in
+                                                 [0.21,0.52]; their
+                                                 Cassini kills ALL a
+  Hees nu-bar_a          1-1/(2a) --     --      viable a in
+                                                 [0.63,1.04]; their
+                                                 Cassini needs a>=2
+  Hees nu-hat_(a>=2)     0        --     --      excluded (c1 = 0)
+  Verlinde (note-V)      1        0      --      EXCLUDED (ladder);
+                                                 fit-level: Lelli+17
+  additive class (G7)    1        free   --      EXCLUDED (ladder;
+                                                 extrapolation grade)
+  Rindler const-accel    --       --     --      excluded (deep limit)
+  chameleon f(R)         --       --     --      structurally non-RAR
+                                                 (Naik+19)
+
+HONESTY BLOCK: the c1 intervals are FAMILY-PROFILE measurements
+(the BE-anchored continuous-lambda family, 4S/4Z); transfers to
+functions with foreign higher structure (standard's c2 = 1/4,
+additive's c2 = free) are curvature-extrapolation grade — quoted as
+such.  Where DIRECT contests exist they carry the sharp verdict and
+the ladder supplies the WHY: standard-mu (4B: 198-200/200 raw,
+Delta(-2lnL) = -56 honest, sign-robust strong lean <-> missing
+zero-point digit), boot cell (5C/5M arc <-> c1 = 1/4 with the
+self-consistent argument), Verlinde/additive (note-V <-> c1 = 1).
+The hier interval CONTAINS 1/4: the exp-mu/boot kill is the
+FUNCTION-level vertical-channel result (5M), not a c1-digit result
+— the distinction is load-bearing and stated.
+
+PRIOR-ART STATUS (scout round 2026-07-29): (i) coefficient-level
+expansion-and-constraint of the interpolating function: NOT FOUND
+(the ladder instrument apparently unpublished, scout-level);
+(ii) bare exp-mu: attribution NOT FOUND, apparently untested;
+(iii) Verlinde-vs-RAR prior art = Lelli+17 fit-level (named in G7);
+(iv) superfluid composition equation: primary source not retrieved
+— membership flagged; (v) analytic closed-form LCDM nu(y): NOT
+FOUND (Navarro+17 sim-based; Paranjape-Sheth 'analytic' but
+equations inaccessible to scout; Desmond semi-empirical, scatter
+overpredicted 3.5 sigma) — the LCDM leg needs the DATA-side sim
+ladder (8B), no algebra shortcut exists.

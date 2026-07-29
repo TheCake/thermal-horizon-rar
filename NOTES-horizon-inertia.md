@@ -6829,6 +6829,119 @@ limit, wider than the wobble-relevant window. Consistency, not
 circular confirmation — cite §2.4.1 in Paper 1's completeness
 discussion. (3J's 12.3% overluminous ≈ their 10.5% likewise.)
 
+## Stage 8A (2026-07-29): THE RIVALS' LADDER — the fingerprint table: two catalog kills, one identity, one class theorem, and the catalog-wide pincer
+
+THE RIVALS ARC opened (user directive: "shoot down more theories and
+strengthen or shoot down ours"). Standing arc rule per the same
+directive: **PAPER.md stays FROZEN at v3.9 for the arc's duration** —
+results book to NOTES/LEDGER as always, paper absorption happens once
+at arc close (no per-stage version churn). 8A is freeze-compliant by
+construction: consistency rows only, no new fit anywhere — the only
+new content is exact series algebra (sympy-gated, all first-run PASS)
+and three Haiku scout sweeps (sim-data / catalog+prior-art / analytic
+ΛCDM), primary-source flags carried per the 4C discipline.
+
+**Instrument ([calcs/stage8a_ladder.py](calcs/stage8a_ladder.py),
+gates G1–G9 exact):** the deep ladder ν = A/x + c₁ + c₂x + … as a
+CLASSIFIER, priced against the existing measurements (c₁ flat
+0.385–0.519 [4S] / hier 0.208–0.309 [4Z], bootstrap ~0.4±0.3, c₁=0
+excluded Δ(−2lnL)=56.3; binary c₁ ERASED [7J-d], not quoted).
+
+1. **THE MASTER INVERSION (G4, exact):** for any AQUAL μ(z) = z +
+   m₂z² + m₃z³, c₁ = −m₂/2 and c₂ = 5m₂²/8 − m₃/2 — **the measured
+   c₁ is a measurement of μ''(0)**; the data demand m₂ ∈
+   [−1.04, −0.42]. Four member cross-checks exact.
+2. **THE STANDARD FAMILY DIES BY ITS ZERO-POINT (G5):** the whole
+   n ≥ 2 family (incl. the field's historical "standard"
+   μ = z/√(1+z²)) has **c₁ = 0 EXACTLY** — excluded at the c₁=0
+   grade (56.3), with the direct contest already on file (4B:
+   198–200/200 raw, −56 honest) — the ladder supplies the WHY.
+3. **THE IDENTITY (G6, exact): exp-μ ≡ boot.** μ(z) = 1 − e^(−z) in
+   AQUAL is EXACTLY the 4F quantum-bootstrap bath ν = 1 + n_BE(νy)
+   (both solve e^u = ν/(ν−1)); fingerprint (¼, 7/96) = the 4F
+   printed cell; ν(1) = 1.3500. Scout: the bare exponential μ is
+   apparently NOWHERE named or tested (attribution NOT FOUND) ⇒
+   **the program's boot adjudication (4F raw-dead → 5C hier-flip
+   +75.6 → 5F binary veto → 5M vertical collapse) is apparently this
+   function's FIRST data contest (scout-level), and it is dead on
+   the primary treatment.** Companion identity re-gated (simple-μ ⇔
+   classical bath). Reading: the μ-side's two natural members ARE
+   the two self-consistent bath closures; the data kill both and
+   keep the source-driven occupation forms — the same exponential in
+   the temperature variable x (McGaugh RAR fit = BE, surviving) vs
+   the acceleration variable νy (dead): **the data distinguish the
+   exponential's ARGUMENT.**
+4. **THE ADDITIVE CLASS THEOREM (G7, symbolic-F exact):** any
+   apparent-DM model g_obs = g_N + √(a₀g_N)·F(g_N/a₀) with F
+   analytic, F(0)=1, has **c₁ = 1 EXACTLY** (F-independent, odd
+   rungs only). Members: Verlinde (exact — note-V), the
+   superfluid-DM MOND-limit composition (membership FLAGGED —
+   primary equation not retrieved by scout), any dark component
+   tracking baryons analytically. c₁ ≠ 1 requires half-integer
+   powers of g_N — the temperature variable. Note-V's pending scout
+   RESOLVED: prior art = Lelli+17 (arXiv:1702.04355) fit-level EG
+   exclusion (M/L amplitude + radius-residual); the
+   coefficient-level exclusion apparently new (scout-level).
+5. **THE HEES+16 CATALOG READ (G9, arXiv:1510.01369, forms
+   scout-quoted, ladders exact):** ν̃_a: **c₁ = a — the family
+   parameter IS the zero-point coefficient** (viable iff a ∈
+   [0.21, 0.52]); ν̄_a: c₁ = 1 − 1/(2a) (viable a ∈ [0.63, 1.04]);
+   ν̂₁ ≡ BE ≡ the RAR fit (gated identity — McGaugh's function is
+   the a=1 hat member); ν̂_{a≥2}: c₁ = 0 (the standard fingerprint).
+6. **THE PINCER (G10):** their Cassini verdicts (ν̃ dead at ALL a;
+   ν_α/ν̂ need a ≥ 7–8 = c₁ = 0 members; ν̄ needs a ≥ 2 = c₁ ≥ ¾)
+   × the measured window = **EMPTY INTERSECTION across the entire
+   published catalog** — the amplitude-locked solar tension
+   (4K/5S/5I) rederived in coefficient language through the field's
+   own function zoo; escape doors structural as before (7G
+   trajectory formulation, 451 orders; 6W scalar-EFE excluded).
+   Caveat: their bounds scout-quoted, MG/AQUAL-conditional,
+   fixed-a₀ — primary table read queued before any paper use.
+
+**Scout residue (all scout-level):** (i) coefficient-level
+expansion-and-constraint of the interpolating function NOT FOUND —
+the ladder instrument apparently unpublished; (ii) NO closed-form
+ΛCDM ν(y) exists (Navarro+17 sim-based; Paranjape–Sheth equations
+inaccessible; Desmond semi-empirical, scatter overpredicted 3.5σ) ⇒
+**8B must be data-side** — and the sim-data survey found nobody
+publishes (g_bar, g_obs) points: FIRE-2 snapshots open (flathub, no
+login; Mercado+23 = 20 galaxies with "hooks & bends"), TNG needs
+registration, EAGLE/MUGS2/MassiveBlack-II unclear — pre-computed
+-profile feasibility scout in flight, route decision after; (iii)
+**Magneticum (Mayer+22, arXiv:2206.04333): ΛCDM-simulated a₀ RISES
+≈×3 by z = 2.3 ≈ the H(z) trajectory (×2.97 at z=2)** — the a₀(z)
+leg ALONE is not ΛCDM-immune; P3's discriminating content is the
+LOCK (paired p_gal(z) drift), as registered — P3 annotated, no
+status change; observational a₀(z) fits also exist (a₁ ≈
+1.6e−10/z scout-reported) = an 8E lead, primary reads owed.
+
+Plain verdict: SUCCESS — one afternoon of exact algebra plus the
+measurements we already own prices the field's entire function
+catalog: the standard family and the additive apparent-DM class are
+excluded on the zero-point digit, an untested function is identified
+as our already-dead boot cell, and the Saturn tension is shown
+catalog-wide in coefficient language. The arc's shoot-down-OURS
+instrument (8B, the sim ladder) is scoped: no algebra shortcut
+exists, the data route is open at FIRE-2, decision pending the
+feasibility scout.
+
+ELI12: Every gravity formula carries a serial number — the first
+digits of how it switches on. We measured digit #1 ≈ ½ months ago.
+Today we machine-read the serial number of every formula in the
+field's catalog plus the big rival theories: the classic "standard"
+formula prints 0, and the whole invisible-matter-shadowing-the-stars
+family (Verlinde's, the superfluid one) prints exactly 1 — no
+tuning can change either, it's baked into their structure. Neither
+matches ½. Bonus one: a formula nobody ever bothered to test turns
+out to be secretly the SAME equation as the "self-heating bath" we
+invented ourselves and already killed with data — so it arrives
+pre-dead. Bonus two: crossing our digit with the field's own
+Saturn-probe test, NO catalog formula passes both — same message
+our Saturn work already carried: the fix must be structural, not a
+different formula. Next up: check whether plain cold-dark-matter
+simulations accidentally print a ½ — that's the test that could
+shoot OUR reading down, which is exactly why we're running it.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

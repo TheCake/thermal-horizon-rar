@@ -547,3 +547,36 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     floor/tail/fpm/sq/perspective excluded as shapes). Identifying it
     collapses the noise-ceiling curve to a point (round-11 form) and
     restores function-discrimination power lost at 7J-d.
+
+## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
+## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
+## for the arc's duration, absorption at arc close)
+19. ~~**8A the rivals' ladder**~~ — DONE ([calcs/stage8a_ladder.py](calcs/stage8a_ladder.py),
+    all gates first-run; NOTES 8A; ledger galfn-rivals-ladder /
+    mech-expmu-boot / galfn-hees-pincer): standard/n≥2 family c₁=0
+    excluded at the 56.3 grade; additive-analytic class theorem (c₁=1
+    exactly: Verlinde exact member, superfluid flagged); **exp-μ ≡ boot
+    identity** (¼, 7/96, ν(1)=1.350 — apparently the function's first
+    data contest, dead per 5M); Hees+16 catalog ladders (ν̃ c₁=a, ν̄
+    1−1/(2a), ν̂₁≡BE gated); **THE PINCER: empty intersection between
+    the measured window and their Cassini verdicts across the whole
+    catalog.** Residue: primary read of the Hees table before paper
+    use; superfluid composition equation primary check.
+20. **8B the simulation ladder — the shoot-down-OURS instrument**: run
+    the 4S c₁ ladder + 4T second-moment machinery on ΛCDM hydro-sim
+    RARs (does ΛCDM print c₁ ≈ ½ and the thermal scatter trend, or
+    not?). Scout verdicts: NO closed-form ΛCDM ν exists (no algebra
+    shortcut) and nobody publishes (g_bar, g_obs) points; FIRE-2
+    snapshots open (flathub, no login; Mercado+23 = 20 galaxies), TNG
+    registration, EAGLE database aperture-masses possible. Feasibility
+    scout (pre-computed profiles) PENDING → route decision: curve-level
+    route if one exists, else the snapshot pipeline is commissioned-only
+    (author call — days of work + tens of GB).
+21. **8C ours-sharpening**: (a) the P1 tail-ceiling test (p ≤ ¾,
+    parameter-free) on the deepest SPARC galaxies; (b) the c₄-rung
+    Fisher forecast (which survey reads the next digit).
+22. **8E lead (logged, primary reads owed)**: observational a₀(z) fits
+    exist (a₁ ≈ 1.6e−10/z, scout-reported MUSE-DARK era) AND Magneticum
+    ΛCDM produces a₀ rising ×3 by z=2.3 ≈ the H(z) direction — P3's
+    a₀ leg alone is NOT ΛCDM-immune; the LOCK (a₀ + p paired drift) is
+    the discriminator (P3 annotated 2026-07-29).
