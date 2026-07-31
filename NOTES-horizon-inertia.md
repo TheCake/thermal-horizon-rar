@@ -7685,6 +7685,97 @@ KT = 4 mixture." If B-MAN fires instead, that is the program
 finding its own anomaly's source — logged as the better outcome
 for truth, per the discipline.
 
+## Stage 8F EXECUTED (2026-07-31): THE FAT-TAIL ARMS — manufacture EXCLUDED 12/12; recovery SPLIT (F-B pass / F-C missed HIGH) ⇒ UNRESOLVED-CARRIED by the letter; credence HELD ~50% per the map
+
+Batch: 8 fullarmw ARMTAG runs (5 F0 configs seed 31 + t35 seed 101
++ fb/fc; ~3 h GPU); G8F-WT config certificates PASS 7/7 (every
+injection line float-matched to the registry + checksums). All
+numbers: data/stage8f_read.txt.
+
+THE MANUFACTURE LEG (the referee's W4 kill scenario) — DECISIVELY
+CLEAN:
+- **α_marg = 0.00, dN = +0.0 in 12/12 Newton-truth reads** (ftl
+  0.05/0.10/0.20/0.35 + the sq control; both laws, both anchors;
+  the t35 verdict member 4/4 across seeds 31/101). The operative α
+  instrument manufactures NOTHING from unmodeled error tails at
+  any severity up to one pair in three carrying 4× errors.
+- The strongest single line: **seed 101's t35 realization
+  REPRODUCES the sky's chase (P₃ = 0.51 vs sky 0.54/0.97) and
+  STILL reads α = 0.00** — a fake world wearing the sky's own
+  noise symptom produces no boost.
+- CHANNEL SEPARATION measured: pure-tail skies fit sq = 0 exactly
+  (P(sq) = [1,0,0,0]); the sq_true = 0.2 control recovers sq = 0.2
+  exactly; fcomp reads the injected 0.10 everywhere. Error tails
+  do NOT masquerade as the width channel or as companions — the
+  sky's demanded sq = 0.2 is not a disguised KT = 4 tail.
+
+THE SYMPTOM LEG — REALIZATION-DEPENDENT (the honest correction to
+my own F0 interim wording): the locked seed-31 rule printed
+CHASE-UNREPRODUCIBLE (max P₃ = 0.072 at t20; non-monotone — at
+ftl = 0.35 the fitter re-centers its global scale instead of
+chasing) and by the letter the NON-MATCHED label stands; but seed
+101's t35 chase (0.51) shows the narrowing claim must be SOFTENED:
+heavy tails CAN produce a sky-grade chase in some realizations.
+The claim that survives is the stronger one: chase or no chase, no
+manufacture.
+
+THE RECOVERY LEG — SPLIT, and the miss is a finding:
+- F-B (simple truth 0.74 + tail): recovered 0.67 — PASS (±0.25).
+- F-C (BE truth 0.70 + tail): own-law read **1.33 = MISSED HIGH by
+  +0.63** (the same sky's simple-law read: 0.73; P(fpm = 3.0) =
+  0.00 — the BE fit left the noise axis quiet and converted the
+  tail width into amplitude). NAMED: **TAIL→α ANTI-CONSERVATIVE
+  COUPLING (BE arm, heavy-tail regime)** — on boosted skies with a
+  heavy unmodeled tail the BE amplitude can inflate. An
+  amplitude-ACCURACY caveat, not an existence risk (Newton skies
+  stay at zero), consistent with BE's softer α-conditioning seen
+  before (8D complement BE 0.85/0.81 above the full band; 3P
+  flat-top α̂_BE profiles).
+
+VERDICT (locked bars): B-MAN not fired (no manufacture anywhere);
+B-CLEAN not fired (F-C outside 0.70 ± 0.25) ⇒ **UNRESOLVED-CARRIED;
+binary anomaly-real HELD ~50%** exactly per the pre-stated map.
+EXPECTATION MISSED and logged: I pre-stated B-CLEAN; the F-C bar
+caught a real coupling instead — the bar structure did its job.
+
+CONSEQUENCES:
+- The referee's W4 DETECTION arm (bad errors → fake discovery) is
+  **EXCLUDED at KT = 4 grade** — the strongest instrument-
+  validation statement the binary pipeline has (12/12 zeros, the
+  symptom-wearing realization included).
+- The W4 AMPLITUDE arm is now MEASURED and OPEN: worst-case +0.63
+  (BE, 35% @ 4×; simple −0.07). If the sky carried a heavy real
+  tail, α̂_BE would read high — noted alongside the opposing
+  sky-side evidence (7J-z6: the sky declines a tail axis at +0.0;
+  the PHYS envelope reads α HIGHER when noise is capped).
+- Successors queued (post-hoc-flagged, unopened): 8F-c = the bias
+  curve at realistic severities (fb/fc at ftl 0.05–0.20 — does
+  the BE coupling vanish where tails are plausible?); 8F-b = the
+  census-side tail null; T2/T3 = the external legs that would
+  close W4 outright.
+
+Plain verdict: NEEDS REFINEMENT by the locked grammar
+(UNRESOLVED-CARRIED — the F-C recovery bar missed), with the core
+question answered clean: fat error tails cannot fake the
+detection; what they CAN do (inflate a real BE amplitude when
+severe) is now a measured, named caveat with its follow-up queued.
+
+ELI12: We ran the sting to the end. Fake universes with lying
+measurements never produced a fake discovery — twelve out of
+twelve said "no extra gravity," including one fake universe that
+imitated the real sky's suspicious noise habit almost perfectly.
+The software also cleanly told lying measurements apart from
+genuinely jittery stars, which were the judge's two look-alike
+suspects. One surprise: when we planted REAL extra gravity into a
+heavily lying universe, one of the two gravity flavors over-read
+its strength (1.33 where we planted 0.70). So bad measurements
+cannot CREATE our discovery — but if they were severe, they could
+EXAGGERATE its size in that one flavor. We wrote that down as a
+new warning label, kept our confidence at exactly 50/50 because
+that is what our pre-written rules said to do, and queued the
+follow-up that checks whether the exaggeration disappears at
+realistic error levels.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -210,6 +210,14 @@ CHECKS = [
     ('bin-8d-settling', 'BOOST-CARRIED', 'data/stage8d_read.txt'),
     ('bin-8d-settling', 'boost-reads 4/4 (LANDED-CONV), 4/4 (FLAT)',
      'data/stage8d_read.txt'),
+    ('bin-8f-fattail', 'UNRESOLVED-CARRIED: hold ~50%',
+     'data/stage8f_read.txt'),
+    ('bin-8f-fattail', 'simple@31 a=0.00/dN=+0.0; simple@101 a=0.00/dN=+0.0; '
+     'BE@31 a=0.00/dN=+0.0; BE@101 a=0.00/dN=+0.0',
+     'data/stage8f_read.txt'),
+    ('bin-8f-fattail', 'F-B recovery (truth 0.74): a_marg = 0.67; '
+     'F-C recovery (truth 0.70): a_marg = 1.33',
+     'data/stage8f_read.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

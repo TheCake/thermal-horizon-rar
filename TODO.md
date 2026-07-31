@@ -621,10 +621,16 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     8D/7J-d/8E = arc-aim validated. ADOPTED: (1) THE CREDENCE SPLIT
     (binary anomaly-real ~50% HELD, decider class = W4 tests;
     galaxy BE-family-vs-additive ~65% initialized; NO cross-ledger
-    lifting); (2) **Stage 8F THE FAT-TAIL ARMS (referee T6, pre-reg
-    in NOTES, IN FLIGHT)**: ARMW ftl-truth injections read by the
-    operative fitter — the W4 manufacture test; bars B-MAN/B-CLEAN
-    + symptom-match rule locked; [calcs/stage8f_read.py](calcs/stage8f_read.py).
+    lifting); (2) ~~**Stage 8F THE FAT-TAIL ARMS**~~ — EXECUTED
+    (2026-07-31, pre-reg 1087f82; [calcs/stage8f_read.py](calcs/stage8f_read.py);
+    ledger bin-8f-fattail): **UNRESOLVED-CARRIED by the letter
+    (F-C recovery missed high), with the manufacture leg
+    DECISIVELY CLEAN — α = 0.00 in 12/12 Newton+tail reads incl.
+    the chase-wearing seed-101 realization; channel separation
+    exact (tails ≠ sq ≠ companions); F-B pass 0.67; F-C 1.33 =
+    the named TAIL→α anti-conservative coupling (BE, heavy-tail);
+    credence HELD ~50% per map.** Successors: 8F-c bias curve at
+    realistic severities; 8F-b census tail null (both queued).
 26. **Referee queue (adoption candidates, unopened)**: T2
     external-RV cross-check (APOGEE/GALAH/LAMOST — its top W4
     priority; heavier, external fetch); T3 empirical wide-pair

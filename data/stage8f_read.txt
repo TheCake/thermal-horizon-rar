@@ -1,0 +1,57 @@
+8F THE FAT-TAIL ARMS — reader (pre-reg in NOTES 2026-07-31; bars locked before any run)
+
+anchors: LANDED-CONV ln pi = [-4886.95, -0.96, -0.43, -0.29, -4.97, -153.72]; FLAT = zeros
+
+G8F-WT [t05]: 1 injection line(s) vs registered truth -> PASS; 1 checksum line(s) PASS
+[t05 simple 31] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.00; fcomp mode = 0.10; P(sq) = [1.0, 0.0, 0.0, 0.0]
+[t05 simple 31] FLAT: a_marg = 0.00, dN = +0.0
+[t05 BE 31] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.00; fcomp mode = 0.10; P(sq) = [1.0, 0.0, 0.0, 0.0]
+[t05 BE 31] FLAT: a_marg = 0.00, dN = +0.0
+G8F-WT [t10]: 1 injection line(s) vs registered truth -> PASS; 1 checksum line(s) PASS
+[t10 simple 31] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.02; fcomp mode = 0.10; P(sq) = [0.99, 0.01, 0.0, 0.0]
+[t10 simple 31] FLAT: a_marg = 0.00, dN = +0.0
+[t10 BE 31] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.02; fcomp mode = 0.10; P(sq) = [0.99, 0.01, 0.0, 0.0]
+[t10 BE 31] FLAT: a_marg = 0.00, dN = +0.0
+G8F-WT [t20]: 1 injection line(s) vs registered truth -> PASS; 1 checksum line(s) PASS
+[t20 simple 31] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.07; fcomp mode = 0.10; P(sq) = [1.0, 0.0, 0.0, 0.0]
+[t20 simple 31] FLAT: a_marg = 0.00, dN = +0.0
+[t20 BE 31] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.07; fcomp mode = 0.10; P(sq) = [1.0, 0.0, 0.0, 0.0]
+[t20 BE 31] FLAT: a_marg = 0.00, dN = +0.0
+G8F-WT [t35]: 2 injection line(s) vs registered truth -> PASS; 2 checksum line(s) PASS
+[t35 simple 31] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.03; fcomp mode = 0.10; P(sq) = [1.0, 0.0, 0.0, 0.0]
+[t35 simple 31] FLAT: a_marg = 0.00, dN = +0.0
+[t35 BE 31] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.03; fcomp mode = 0.10; P(sq) = [1.0, 0.0, 0.0, 0.0]
+[t35 BE 31] FLAT: a_marg = 0.00, dN = +0.0
+G8F-WT [tsq]: 1 injection line(s) vs registered truth -> PASS; 1 checksum line(s) PASS
+[tsq simple 31] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.00; fcomp mode = 0.10; P(sq) = [0.0, 0.0, 1.0, 0.0]
+[tsq simple 31] FLAT: a_marg = 0.00, dN = +0.0
+[tsq BE 31] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.00; fcomp mode = 0.10; P(sq) = [0.0, 0.0, 1.0, 0.0]
+[tsq BE 31] FLAT: a_marg = 0.00, dN = +0.0
+
+SYMPTOM TABLE (P3 = law-mean LANDED-CONV mass on fpm = 3.0; sky: 0.54/0.97):
+  t05 (ftl = 0.05): P3 = 0.000
+  t10 (ftl = 0.10): P3 = 0.021
+  t20 (ftl = 0.20): P3 = 0.072
+  t35 (ftl = 0.35): P3 = 0.033
+CALIBRATED MEMBER: t20 (ftl* = 0.20), P3 = 0.072 -> NON-MATCHED
+CHASE-UNREPRODUCIBLE-BY-TAILS (KT = 4 class) — verdict leg on max-ftl member t35, labeled NON-MATCHED
+control (tsq, ftl = 0.10 + sq_true = 0.2): P3 = 0.000
+
+[t35 simple 101] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.51; fcomp mode = 0.10; P(sq) = [1.0, 0.0, 0.0, 0.0]
+[t35 simple 101] FLAT: a_marg = 0.00, dN = +0.0
+[t35 BE 101] LANDED-CONV: a_marg = 0.00, dN = +0.0; P(fpm=3.0) = 0.51; fcomp mode = 0.10; P(sq) = [1.0, 0.0, 0.0, 0.0]
+[t35 BE 101] FLAT: a_marg = 0.00, dN = +0.0
+G8F-WT [fb]: 1 injection line(s) vs registered truth -> PASS; 1 checksum line(s) PASS
+[fb simple 31] LANDED-CONV: a_marg = 0.67, dN = +22.6; P(fpm=3.0) = 0.37; fcomp mode = 0.10; P(sq) = [0.0, 0.0, 1.0, 0.0]
+[fb simple 31] FLAT: a_marg = 0.67, dN = +22.8
+[fb BE 31] LANDED-CONV: a_marg = 0.83, dN = +25.5; P(fpm=3.0) = 0.11; fcomp mode = 0.10; P(sq) = [0.0, 0.0, 1.0, 0.0]
+[fb BE 31] FLAT: a_marg = 0.83, dN = +25.6
+G8F-WT [fc]: 1 injection line(s) vs registered truth -> PASS; 1 checksum line(s) PASS
+[fc simple 31] LANDED-CONV: a_marg = 0.73, dN = +41.0; P(fpm=3.0) = 0.23; fcomp mode = 0.10; P(sq) = [0.0, 0.0, 1.0, 0.0]
+[fc simple 31] FLAT: a_marg = 0.73, dN = +41.5
+[fc BE 31] LANDED-CONV: a_marg = 1.33, dN = +36.7; P(fpm=3.0) = 0.00; fcomp mode = 0.10; P(sq) = [0.0, 0.0, 1.0, 0.0]
+[fc BE 31] FLAT: a_marg = 1.33, dN = +37.2
+
+F-N (calibrated t35, both seeds): simple@31 a=0.00/dN=+0.0; simple@101 a=0.00/dN=+0.0; BE@31 a=0.00/dN=+0.0; BE@101 a=0.00/dN=+0.0
+F-B recovery (truth 0.74): a_marg = 0.67; F-C recovery (truth 0.70): a_marg = 1.33
+==> 8F VERDICT (locked bars): UNRESOLVED-CARRIED: hold ~50%; report per grammar
