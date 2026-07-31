@@ -7525,6 +7525,166 @@ asserted. One of our own test alarms turned out to be testing an
 impossible thing; we wrote down why before looking at any answer,
 and replaced it with the honest version.
 
+## Review round (2026-07-31): the fresh-Opus blind two-phase review — grades, blind-wishlist validation, TWO ADOPTIONS (the credence split; T6 → Stage 8F)
+
+The external Opus reviewer's context was lost. At the author's
+request a FRESH Opus-class agent referee was commissioned under a
+deliberately blind two-phase protocol: phase 1 = the v3.9-freeze
+state (pre-rivals-arc) graded blind — no tools, no repo access,
+briefing text only, all corrections/retractions/credences included,
+explicitly invited to attack the briefing itself; phase 2 = the
+rivals arc revealed, update requested. Full verbatim record:
+REVIEW-FRESH-OPUS.md (untracked, never committed; the old
+OPUS-NOTE.md draft is superseded — no recipient exists).
+
+Grades blind → post-reveal: binary anomaly 5/10 → 6/10 ("soft +1":
+8D a genuine win vs the strongest external challenge; W4 untouched
+and inherited); galaxy program 7/10 → 8/10 ("clear winner of the
+campaign" — it re-derived the 8A additive-class theorem BY HAND
+before crediting it, and called 8B "a positive control for the c₁
+instrument"); cross-system split + AMB 4/10 → 4/10 (hold: the
+fence-conditional demotion of the binary veto leg and the 8C
+ceiling survival offset); methodology 8/10 → 8.5/10 ("textbook").
+
+BLIND-WISHLIST VALIDATION (the protocol's payoff): with zero
+knowledge of the arc, its phase-1 test list contained T4 = "run
+the full machinery on the Cookson-removed complement" = Stage 8D
+verbatim; T1 = the landed-posterior function re-contest = 7J-d;
+and its W7 ("only a₀ ∝ H(z) makes the lock discriminating") = the
+8E axis. Independent confirmation the arc was aimed at the right
+targets. Genuinely new items from it: T2 external-RV cross-check
+(APOGEE/GALAH/LAMOST), T6 fat-tail injections ("cheapest decisive
+move"), T3 empirical PM-tail characterization, T5 gas-dominated
+c₁, T9 second sim family + mock rotation curves, T10 the joint
+a₀(z)–p(z) pair-lock instrument, corner-plot release.
+
+POST-CAMPAIGN ATTACK SURFACE (its ranking): W4 — the fpm = 3.0
+width chase read as a fat Gaia relative-PM error tail (~40%) —
+now "unambiguously #1: every other binary alternative was
+stress-tested this round; this one was conceded untouched, and 8D
+rides the same edge." W1 Cassini/MI (~50% MG-excluded) unchanged;
+new W9 (the 8E read is favorable-lean on systematics-dominated
+external data, ~40%) and W10 (the pincer is only as sharp as the
+c₁ window edges; c₁ = 0 and c₁ = 1 exclusions robust, the ¼-vs-½
+digit not, ~30%).
+
+**ADOPTION 1 (author delegated the pick "do whatever you think is
+best" — executed now): THE CREDENCE SPLIT.** Its §5 correction
+adopted verbatim. Two ledgers henceforth: (i) BINARY
+"anomaly-real" ~50% (HELD; 8D feeds here; the named decider class
+= W4-grade tests — 8F below is the first, T2/T3 the external
+legs); (ii) GALAXY-SIDE "the RAR function is BE-family/
+thermal-class rather than additive/DM-like" INITIALIZED ~65%
+(referee: 65–70; conservative end taken; 8A/8B/8C/8E feed here;
+deciders = T5, T9, T10). RULE: no cross-ledger lifting — a galaxy
+win never moves the binary number by association, nor vice versa.
+The 8D-entry routing "8A/8B/8D flag into the next named decider
+together" is SUPERSEDED by this split.
+
+**ADOPTION 2: T6 commissioned as Stage 8F** (pre-reg below).
+T2/T3/T5/T9/T10 + corner-plot queued in TODO; all other program
+state unchanged; PAPER stays frozen at v3.9.
+
+## Stage 8F PRE-REGISTRATION (2026-07-31, committed BEFORE any run): THE FAT-TAIL ARMS — the W4 manufacture test (referee T6)
+
+QUESTION: if the sky's TRUE relative-velocity errors carry a fat
+tail the operative fitter does not model (the photow3 model =
+Gaussian single-scale fpm + per-system sq only), does the fitter
+MANUFACTURE a phantom α on a Newton sky — and does that world
+reproduce the sky's own symptom (the P(fpm = 3.0) chase)? This is
+the referee's "cheapest decisive move" on W4 and is fully in-hand:
+the 7J-z6 ARMW machinery already carries the fat-tail TRUTH model
+(ftl = the fraction of pairs at KT_TAIL = 4× the core error,
+per-pair via the ut stream, forward_pp line-level) and the WTRUTH
+env interface; the operative fitter reads it with WSHAPE unset.
+ZERO model-code changes.
+
+CONTEXT HONESTY (pre-stated): 7J-z6 already offered the SKY a
+fitter-side tail axis and the sky priced it at +0.0 (axis unused,
+preferring flat fpm = 3.0) — the KT = 4 mixture is therefore
+already disfavored AS the sky's own width explanation. 8F measures
+the thing never measured: the manufacture RISK (instrument
+calibration under tail mis-specification). Both outcomes
+pre-stated: manufacture-fired = the α instrument is tail-breakable
+(W4 viable); manufacture-clean = tail-robust, W4's α-arm narrows
+to non-tail width shapes.
+
+DESIGN (all injections SAMPLE = fullarmw, FPME = 1, photow;
+companions MODEL-MATCHED flat-q at the pinned rate 0.10 — the tail
+is the ONLY truth-model mismatch by construction; the companion
+mismatch direction is already covered by the 7J-z5 A-arm):
+- F0 CALIBRATION SWEEP (seed 31; each run fits BOTH laws): Newton
+  truth, core fpm_true = 1.2 (the Lindegren-compliant "honest Gaia
+  core" hypothesis), sq_true = 0 (the tail must manufacture the
+  ENTIRE width demand), ftl ∈ {0.05, 0.10, 0.20, 0.35} → ARMTAGs
+  t05/t10/t20/t35; plus one control member ftl = 0.10 with
+  sq_true = 0.2 → ARMTAG tsq. WTRUTH =
+  'simple,0.00,0.10,1.2,{sq},0,{ftl}'.
+- SYMPTOM-MATCH RULE (locked): P₃ ≡ the LANDED-CONV posterior mass
+  on the fpm = 3.0 node, averaged over the two law reads, seed 31.
+  Calibrated member = the pure-tail member minimizing |P₃ − 0.75|
+  (sky: 0.54/0.97). Symptom-matched requires P₃ ≥ 0.30; if no
+  member reaches it → CHASE-UNREPRODUCIBLE-BY-TAILS (KT = 4 class)
+  is logged and the verdict leg runs on the max-ftl member,
+  labeled NON-MATCHED.
+- F-N VERDICT (the manufacture test): the calibrated member's own
+  seed-31 cubes ARE the Newton+tail verdict reads; plus a seed-101
+  confirmation run of that member.
+- F-B / F-C RECOVERY: boost truths at the calibrated ftl* —
+  'simple,0.74,0.10,1.2,0.2,0,ftl*' and 'BE,0.70,0.10,1.2,0.2,0,
+  ftl*' (seed 31; sq_true = 0.2 as in the 7J-z5 arms; ARMTAGs
+  fb/fc) — does the boost survive tail mis-spec?
+- All reads at LANDED-CONV (operative) + FLAT (cross-check), the
+  stage8d_read.py construction verbatim; reader =
+  calcs/stage8f_read.py.
+
+BARS (locked now):
+- B-MAN (MANUFACTURE-FIRED): calibrated F-N α_marg ≥ 0.5 AND
+  dN ≥ +10 at LANDED-CONV in ≥ 1 law, either seed → the operative
+  α instrument is tail-breakable at sky-symptom severity. CREDENCE
+  MAP (binary ledger): anomaly-real ~50% → ~40% (not lower: the
+  7J-z6 sky-side tail rejection, the census cliff, and the
+  PHYS-envelope direction all still argue the sky's width is not
+  this tail; α rows annotated tail-conditional).
+- B-CLEAN (MANUFACTURE-EXCLUDED): F-N α_marg ≤ 0.3 in both laws ×
+  both seeds AND F-B/F-C recover within ±0.25 of truth → the
+  KT = 4 tail class cannot manufacture the boost. CREDENCE MAP: if
+  symptom-matched → ~50% → ~55% (capped: KT = 4 is a
+  representative, not exhaustive; T2/T3 remain the external legs);
+  if NON-MATCHED → HOLD ~50% and log the W4 narrowing (the tail
+  class cannot even produce the chase) as a finding, not a
+  credence event.
+- Otherwise UNRESOLVED-CARRIED; hold; report per the locked
+  grammar.
+
+GATES:
+- G8F-WT (config certificate, reader-side): each config's OUT must
+  contain the WIDTH-SHAPE injection line matching the registered
+  WTRUTH exactly, plus the new injected-histogram checksum line.
+  PRE-FLIGHT: the ARMTAG namespace is empty on disk (verified:
+  zero matches) — the stale-cube resurrection hazard (the 7D
+  lesson: the exists-check would silently reuse another config's
+  cubes under the shared legacy name) is closed BY NAMING.
+- WIRING (committed with this pre-reg; the 25b248e precedent):
+  (1) ARMTAG env — a naming-only suffix on TAG/OUT/cube paths,
+  asserted to ARMW with WSHAPE/FUNCS/QLAW off; no model path reads
+  it; (2) an additive weighted-checksum print in the ARMW
+  injection block (makes injection identity checkable across
+  configs and reruns). Amendment protocol standard: any gate/bar
+  change is logged here BEFORE results are quoted.
+- QUEUED (not this stage): 8F-b = the census-side tail null (does
+  a tail-truth sky populate the band WITH the cliff?) on the 7K-b
+  forward machinery; the corner-plot release.
+
+EXPECTATION (stated, non-binding): B-CLEAN with the chase only
+partially reproduced (the 7J-z5 arms showed Gaussian truths do NOT
+chase; a 10–20% tail at 4× should raise P₃ but plausibly not to
+0.75) — i.e., the likely landing is "manufacture excluded, chase
+partially tail-attributable, W4 narrows to width shapes beyond the
+KT = 4 mixture." If B-MAN fires instead, that is the program
+finding its own anomaly's source — logged as the better outcome
+for truth, per the discipline.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

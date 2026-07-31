@@ -305,6 +305,17 @@ if QLAW:
     assert SAMPLE == 'full'
     TAG = '_qt5'
     OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
+# 8F (pre-reg in NOTES): ARMTAG suffixes OUT/cube naming so each
+# WTRUTH config in the fat-tail arm sweep gets its own files — the
+# cube exists-check would otherwise silently resurrect another
+# config's cubes under the shared legacy name (the 7D stale-table
+# lesson).  Naming-only: no model path reads it.
+ARMTAG = os.environ.get('ARMTAG', '')
+if ARMTAG:
+    assert SAMPLE in ARMW and not WSHAPE and not FUNCS and not QLAW
+    assert re.fullmatch(r'[a-z0-9]+', ARMTAG), ARMTAG
+    TAG = f'{TAG}_{ARMTAG}'
+    OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -779,6 +790,10 @@ if SAMPLE in ARMW:
       f"fcomp={FC_TR}, fpm={FPM_TR}, sq={SQ_TR}, flr={FLR_TR}, "
       f"ftl={FTL_TR} (truth pop 777, count draws 888, model-matched "
       f"companions)")
+    chk = float(sum((data_2d[bi]*np.outer(np.arange(1, NV+1),
+                                          np.arange(1, NG+1))).sum()
+                    for bi in range(len(SBINS))))
+    P(f"{SAMPLE}: injected-hist weighted checksum = {chk:.6f} (G8F-WT)")
 
 # --- GB0 references -------------------------------------------------------
 ROWRE = re.compile(r"seed (\d+) (simple|BE): a_hat=([0-9.]+) \(grid [0-9.]+, "

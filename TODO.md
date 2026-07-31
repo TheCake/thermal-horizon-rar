@@ -615,3 +615,23 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     catalogs + multipole mass expansions (~5–20 GB total) — check
     whether those carry enclosed-mass profiles before touching the
     50–200 GB snapshot route.
+25. **THE REVIEW ROUND (2026-07-31, fresh-Opus blind two-phase —
+    NOTES entry; record REVIEW-FRESH-OPUS.md, untracked)**: grades
+    5→6 / 7→8 / 4→4 / 8→8.5; blind wishlist independently named
+    8D/7J-d/8E = arc-aim validated. ADOPTED: (1) THE CREDENCE SPLIT
+    (binary anomaly-real ~50% HELD, decider class = W4 tests;
+    galaxy BE-family-vs-additive ~65% initialized; NO cross-ledger
+    lifting); (2) **Stage 8F THE FAT-TAIL ARMS (referee T6, pre-reg
+    in NOTES, IN FLIGHT)**: ARMW ftl-truth injections read by the
+    operative fitter — the W4 manufacture test; bars B-MAN/B-CLEAN
+    + symptom-match rule locked; [calcs/stage8f_read.py](calcs/stage8f_read.py).
+26. **Referee queue (adoption candidates, unopened)**: T2
+    external-RV cross-check (APOGEE/GALAH/LAMOST — its top W4
+    priority; heavier, external fetch); T3 empirical wide-pair
+    PM-tail characterization (= a TODO-18 leg); T5 gas-dominated
+    (HI-dominated) SPARC subsample c₁ (defends the pincer window
+    vs its W10); T9 second sim family (TNG/SIMBA) + mock rotation
+    curves for 8B; T10 the joint a₀(z)–p_gal(z) pair-lock
+    instrument design; the (α, fpm, sq, fcomp, w_rad) corner-plot
+    release (cheap, cubes exist); 8F-b census-side tail null on
+    the 7K-b forward machinery.
