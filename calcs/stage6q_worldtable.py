@@ -218,6 +218,11 @@ CHECKS = [
     ('bin-8f-fattail', 'F-B recovery (truth 0.74): a_marg = 0.67; '
      'F-C recovery (truth 0.70): a_marg = 1.33',
      'data/stage8f_read.txt'),
+    ('bin-8fc-biascurve', 'C-VANISH: the coupling is a heavy-tail-only '
+     'phenomenon', 'data/stage8fc_read.txt'),
+    ('bin-8fc-biascurve', 'BE: ftl=0.00: +0.14; ftl=0.05: -0.07; '
+     'ftl=0.10: -0.04; ftl=0.20: +0.25; ftl=0.35: +0.63',
+     'data/stage8fc_read.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

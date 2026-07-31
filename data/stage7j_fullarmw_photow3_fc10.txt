@@ -1,0 +1,10 @@
+STAGE 7J-B fullarmw seeds [31]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4, 3.0]; ln pi(fcomp) = [-1584.82, -768.17, -268.1, -7.78, -1.06, -42.57]
+fullarmw: WIDTH-SHAPE injection BE alpha=0.7 at fcomp=0.1, fpm=1.2, sq=0.2, flr=0.0, ftl=0.1 (truth pop 777, count draws 888, model-matched companions)
+fullarmw: injected-hist weighted checksum = 571271.000000 (G8F-WT)
+GB0w fullarmw seed 31 simple: photo cube absent - SKIPPED (disclosed)
+GB0e fullarmw seed 31 simple: operative photow cube absent - SKIPPED (disclosed)
+PROF fullarmw seed 31 simple: a_hat=0.65 (interior=True), dN=+33.6, wr=0.2, fcomp=0.1, fpm=2.1, sq=0.2
+GB0w fullarmw seed 31 BE: photo cube absent - SKIPPED (disclosed)
+GB0e fullarmw seed 31 BE: operative photow cube absent - SKIPPED (disclosed)
+PROF fullarmw seed 31 BE: a_hat=0.66 (interior=True), dN=+36.0, wr=0.2, fcomp=0.1, fpm=3.0, sq=0.2
+  seed 31 done (22.5 min)

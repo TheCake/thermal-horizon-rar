@@ -1,0 +1,30 @@
+8F-c THE BIAS CURVE — reader (pre-reg in NOTES 2026-07-31; bars locked before any run; no credence move in any branch)
+
+G8F-WT [fb00]: 1 injection line(s) -> PASS; checksums PASS
+[fb00 simple@31] LC: a_hat = 0.53 (FLAT 0.53), dN = +11.8; P(fpm=3.0) = 0.00; sq mode = 0.2; fcomp mode = 0.10; cross-law a_hat = 0.73
+G8F-WT [fb05]: 1 injection line(s) -> PASS; checksums PASS
+[fb05 simple@31] LC: a_hat = 0.56 (FLAT 0.56), dN = +19.4; P(fpm=3.0) = 0.00; sq mode = 0.2; fcomp mode = 0.10; cross-law a_hat = 0.66
+G8F-WT [fb10]: 1 injection line(s) -> PASS; checksums PASS
+[fb10 simple@31] LC: a_hat = 0.62 (FLAT 0.62), dN = +13.5; P(fpm=3.0) = 0.00; sq mode = 0.2; fcomp mode = 0.10; cross-law a_hat = 0.62
+G8F-WT [fb20]: 1 injection line(s) -> PASS; checksums PASS
+[fb20 simple@31] LC: a_hat = 0.60 (FLAT 0.60), dN = +19.4; P(fpm=3.0) = 0.00; sq mode = 0.2; fcomp mode = 0.10; cross-law a_hat = 0.88
+G8F-WT [fb]: 1 injection line(s) -> PASS; checksums PASS
+[fb simple@31] LC: a_hat = 0.67 (FLAT 0.67), dN = +22.6; P(fpm=3.0) = 0.37; sq mode = 0.2; fcomp mode = 0.10; cross-law a_hat = 0.83
+G8F-WT [fc00]: 1 injection line(s) -> PASS; checksums PASS
+[fc00 BE@31] LC: a_hat = 0.84 (FLAT 0.84), dN = +19.8; P(fpm=3.0) = 0.01; sq mode = 0.2; fcomp mode = 0.10; cross-law a_hat = 0.59
+G8F-WT [fc05]: 1 injection line(s) -> PASS; checksums PASS
+[fc05 BE@31] LC: a_hat = 0.63 (FLAT 0.63), dN = +31.3; P(fpm=3.0) = 0.37; sq mode = 0.2; fcomp mode = 0.10; cross-law a_hat = 0.66
+G8F-WT [fc10]: 1 injection line(s) -> PASS; checksums PASS
+[fc10 BE@31] LC: a_hat = 0.66 (FLAT 0.66), dN = +36.8; P(fpm=3.0) = 0.88; sq mode = 0.2; fcomp mode = 0.10; cross-law a_hat = 0.66
+G8F-WT [fc20]: 1 injection line(s) -> PASS; checksums PASS
+[fc20 BE@31] LC: a_hat = 0.95 (FLAT 0.95), dN = +32.1; P(fpm=3.0) = 0.01; sq mode = 0.2; fcomp mode = 0.10; cross-law a_hat = 0.68
+G8F-WT [fc]: 1 injection line(s) -> PASS; checksums PASS
+[fc BE@31] LC: a_hat = 1.33 (FLAT 1.33), dN = +36.7; P(fpm=3.0) = 0.00; sq mode = 0.2; fcomp mode = 0.10; cross-law a_hat = 0.73
+
+THE BIAS CURVE b(ftl) = own-law a_hat - truth (LANDED-CONV; mean over available seeds):
+  simple: ftl=0.00: -0.21; ftl=0.05: -0.18; ftl=0.10: -0.12; ftl=0.20: -0.14; ftl=0.35: -0.07   (* = two-seed mean)
+  BE: ftl=0.00: +0.14; ftl=0.05: -0.07; ftl=0.10: -0.04; ftl=0.20: +0.25; ftl=0.35: +0.63   (* = two-seed mean)
+
+baseline b(0) [simple] = -0.21 -> |b(0)| > 0.15: ATTRIBUTION MODE (bars on delta-b, disclosed)
+baseline b(0) [BE] = +0.14 (raw-b bars)
+==> 8F-c VERDICT (locked bars): C-VANISH: the coupling is a heavy-tail-only phenomenon — sky-relevant amplitude risk bounded at the systematic scale. NO credence move (pre-stated).

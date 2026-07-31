@@ -7835,6 +7835,78 @@ b_BE(0.10) ≈ +0.1–0.25); C-PRESENT would be the surprising
 outcome and would make the simple-law α the operative amplitude
 quote going forward (annotation-grade).
 
+## Stage 8F-c EXECUTED (2026-07-31): THE BIAS CURVE — C-VANISH; the coupling's turn-on LOCATED (between 10% and 20% severity); the most sky-like fake world yet built
+
+Batch: 8 configs seed 31 (~3 h, 22.7 min/config like clockwork);
+G8F-WT certificates 10/10 (the joined 8F fb/fc ends included).
+All numbers: data/stage8fc_read.txt.
+
+THE CURVE (own-law bias b = α̂ − truth, LANDED-CONV, at ftl =
+0 / 0.05 / 0.10 / 0.20 / 0.35):
+- simple: −0.21 / −0.18 / −0.12 / −0.14 / −0.07. BASELINE RULE
+  FIRED (|b(0)| = 0.21 > 0.15): bars ran on Δb = +0.03 / +0.09 in
+  the realistic zone — the tail ADDS essentially nothing; the
+  baseline under-recovery is the config's own conditioning at
+  single-injection grade, and its direction is CONSERVATIVE
+  (under-reads, never inflates). Disclosed per the rule.
+- BE: +0.14 / −0.07 / −0.04 / +0.25 / +0.63 (raw bars; b(0)
+  inside 0.15). REALISTIC ZONE CLEAN (−0.07 / −0.04): at
+  plausible severities the BE amplitude recovers truth. The
+  coupling TURNS ON between ftl = 0.10 and 0.20 (+0.25 at 0.20 —
+  single-seed, numerically AT the C-PRESENT threshold but outside
+  the pre-registered deciding zone; quoted as the located onset)
+  and cliffs at 0.35 (+0.63).
+
+VERDICT (locked bars; edge rule NOT fired — all deciding members
+≥ 0.05 from their thresholds): **C-VANISH — the tail→α coupling
+is a heavy-tail-only phenomenon; the sky-relevant amplitude risk
+is bounded at the systematic scale. NO credence move (pre-stated
+in every branch).** EXPECTATION MET (pre-run: simple vanishes,
+BE between VANISH and GRAY — landed VANISH).
+
+THE DIVIDEND — the chase window: P₃ on boosted skies is
+NON-MONOTONE in ftl: 0.37 (0.05) → 0.88 (0.10) → 0.01 (0.20) →
+0.00 (0.35) on the BE arm. **fc10 (BE truth 0.70 + a 10% tail) is
+the most sky-like fake world ever built: it chases the noise edge
+at 0.88 (the real sky's BE read: 0.97) while reading α̂ = 0.66 ≈
+truth, sq = 0.2, fcomp = 0.10** — a boost plus a MODEST tail
+reproduces the sky's entire Gaussian-fitter portrait with the
+amplitude uncorrupted. CAVEAT carried both ways: this is a
+FINGERPRINT for the width-object hunt (TODO-18) — "the sky's
+chase is what a ~10% tail looks like to this fitter" — NOT a
+resolution: 7J-z6 offered the sky the explicit tail axis (KT = 4,
+ws up to 0.15) and the sky priced it +0.0; that standing
+rejection argues against the literal-tail reading, and both
+statements are quoted together.
+
+CONSEQUENCES: the 8F amplitude caveat is BOUNDED — the BE
+annotation downgrades from "open exposure" to "bounded: onset
+requires ≥ ~15–20% severity at KT = 4"; the operative α band
+0.68–0.74 and the 8D complement reads carry no live tail-bias
+exposure at this class; W4's remaining live legs are the external
+ones (T2 external velocities / T3 PM-tail measurement), plus the
+8F-b census-side null, all queued.
+
+Plain verdict: SUCCESS — the curve measured, the verdict by the
+letter, the coupling's onset located, and the stage returned a
+bonus fingerprint for the next hunt.
+
+ELI12: The exaggeration is a cliff, not a slope. At believable
+levels of measurement-lying (one pair in ten or twenty), both
+gravity flavors read the planted signal correctly — the
+exaggeration we caught yesterday only wakes up when a fifth of
+all measurements lie by 4×, and only becomes huge at a third. So
+yesterday's warning label gets a bound: "applies only in
+cartoon-noise worlds." Bonus: the fake universe with a real
+signal plus 10% lying measurements behaves almost exactly like
+our real sky — same suspicious noise appetite, same healthy
+signal reading. So the sky's odd noise habit might literally be
+telling us "about one pair in ten has worse errors than
+advertised" — and even if that's true, the signal measurement
+doesn't care. One older test pushes back on that tidy story, so
+it goes in as a lead for the hunt, not a conclusion — both sides
+written down.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

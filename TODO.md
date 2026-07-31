@@ -629,8 +629,14 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     the chase-wearing seed-101 realization; channel separation
     exact (tails ≠ sq ≠ companions); F-B pass 0.67; F-C 1.33 =
     the named TAIL→α anti-conservative coupling (BE, heavy-tail);
-    credence HELD ~50% per map.** Successors: 8F-c bias curve at
-    realistic severities; 8F-b census tail null (both queued).
+    credence HELD ~50% per map.** Successor ~~8F-c bias curve~~ —
+    EXECUTED same day (pre-reg 604a759; ledger bin-8fc-biascurve):
+    **C-VANISH — realistic-zone bias clean both laws (BE −0.07/
+    −0.04 at 5/10%), the coupling turns on between 10% and 20%
+    and cliffs at 35%; the 8F caveat BOUNDED; dividend = fc10
+    (boost + 10% tail) reproduces the sky's full portrait with α
+    uncorrupted = the TODO-18 fingerprint (7J-z6 counter-evidence
+    quoted).** 8F-b census tail null still queued.
 26. **Referee queue (adoption candidates, unopened)**: T2
     external-RV cross-check (APOGEE/GALAH/LAMOST — its top W4
     priority; heavier, external fetch); T3 empirical wide-pair
