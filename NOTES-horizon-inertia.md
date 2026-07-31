@@ -7176,6 +7176,71 @@ own first equation stacks its new force on top of ordinary gravity
 — the digit-1 family, just as our theorem assumed. Two checkmarks
 earned, one footnote fixed, nothing against us.
 
+## Stage 8C pre-registration (2026-07-31, committed BEFORE execution): THE CEILING TEST — p ≤ ¾, parameter-free (P1's in-sample clause)
+
+The gate's sharpest in-sample falsifier (6Y → PREDICTIONS.md P1):
+the ambient-gated bath forces the screening-tail exponent p = ½ + g/4
+with the gate g = [n_amb/(1+n_amb)]² ∈ [0, 1) ⇒ **p < ¾ EXACT for
+every galaxy, parameter-free**; population median postdicted 0.689
+(measured 0.65–0.75); void asymptote ~0.72. One galaxy measurably
+beyond ¾ kills the gate. Correction #14 (6Z) withdrew the in-sample
+ORDERING claim — this stage tests ONLY the ceiling (exceedance); the
+e_N-split arm carries ceiling-only language by construction.
+
+**INSTRUMENT (calcs/stage8c_ceiling.py):** the 5M vertical-hardened
+hier machinery — the primary treatment: global (a₀, f_ML, s_int,
+δ_lens) + per-galaxy dml (0.1-dex prior) + per-galaxy dv (measured
+σ_v priors) + the Mistele lensing leg — with the tail dial
+ν_p(y) = (1−e^(−y^p))^(−1/(2p)), the established 5G convention
+(≡ BE at p = ½; the scale on which 0.65–0.75 was measured and 0.689
+postdicted; convention-tied, stated).
+- LAYER I (pooled + arms — the power-carrying layer): shared-p
+  profile over p ∈ 0.40…1.10 step 0.05 (parabolic refine), Δ=1
+  interval + 25-rep galaxy bootstrap (coarse-grid {0.5…0.9} +
+  ±0.05/0.025 refine per rep, fit-lite rounds; design fixed now);
+  ARMS: the Chae-matched subset split at MEDIAN log e_N(maxclust)
+  (≈ 47/47; unmatched galaxies = a third reported arm; arms exclude
+  the lensing leg — population-level, disclosed; the pooled fit
+  keeps it, carrying the pooled p̂).
+- LAYER II (per-galaxy census — the literal P1 clause): joint fit
+  with per-galaxy p_g (scalar-profiled per round, bounds
+  [0.30, 1.50]) alongside dml/dv; then per-galaxy p-scans (grid
+  0.30–1.50 step 0.05) with LOCAL re-profiling of (dml_g, dv_g) per
+  node → per-galaxy Δ(−2lnL) curves. QUOTABLE galaxy: Δ=1
+  half-width ≤ 0.30 AND both interval edges interior. EXCEEDANCE:
+  p̂_g > 0.75 with Δ(−2lnL at p = 0.75) ≥ 9 (≈3σ one-sided).
+
+**GATES:** G1 identity + regression — ν_p(½) ≡ BE (grid assert
+≤ 1e-10) and the all-p-pinned-½ converged fit reproduces 5M's dv-ON
+BE value −12152.49 within 1.5; G2 nesting — every freed fit ≤ its
+pinned comparator; G3 convergence traces; **G-INJ calibration on
+three synthetic skies at the fitted globals/nuisances (dml, dv
+drawn from their priors; noise from sig ⊕ s_int): two at p_true =
+0.72 uniform (near-ceiling null) → the criterion may fire in ≤ 1
+galaxy per sky, else the Δ bar is RAISED before the real census is
+read (retune logged, real census untouched until then); one at
+p_true = 0.90 uniform → POWER: the criterion must fire in ≥ 1/3 of
+quotable galaxies, else LAYER II is declared POWER-LIMITED and
+carries no bar** (the literal one-galaxy clause then waits for
+better data — stated, never silently passed).
+
+**BARS (locked now):**
+- CEILING-BROKEN: any LAYER-I arm with p̂ − 0.75 > 2σ_boot; OR
+  (LAYER II, only if powered) ≥ 2 calibrated exceedances, or one at
+  Δ ≥ 16. → P1 flips to STRUCK in PREDICTIONS.md (in-sample kill);
+  credence movement deferred to the next named decider, the strike
+  booked immediately.
+- CEILING-HOLDS: every arm ≤ 0.75 + 1σ_boot AND zero calibrated
+  exceedances (if powered) AND ≥ 30 quotable census galaxies. P1
+  stays LIVE-and-passing at SPARC grade (not "confirmed" — the void
+  asymptote stays out-of-sample).
+- Else AMBIG (quoted; the expected route if the census is
+  power-limited and the arms are consistent).
+No credence move regardless (cadence). Convention caveat carried:
+p̂ is the ν_p-family dial (fractional-rung window effects near
+p → ½, the 8A/ν̄ lesson); the AMB-structured free-gate variant is
+the named successor refinement if AMBIG.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
