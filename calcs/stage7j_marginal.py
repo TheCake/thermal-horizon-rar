@@ -228,7 +228,11 @@ ARMS = ('fullarma', 'fullarmb', 'fullarmc', 'fullarmd')
 # 7J-z6 B4/GW1 arm (pre-reg 66a8045): width-shape truth injection
 ARMW = ('fullarmw',)
 # 7L: the Cookson-selection proxy sample (mask from stage7l_cookmask.py)
-assert SAMPLE in ('full', 'strict', 'cook') + POWS + ARMS + ARMW, SAMPLE
+# 8D: 'anticook' = the COMPLEMENT of the cook mask (the removed 92% —
+# the settling instrument, pre-reg in NOTES 8D; G17-ID partition
+# identity lnL_full = lnL_cook + lnL_anti checked reader-side)
+assert SAMPLE in ('full', 'strict', 'cook', 'anticook') \
+    + POWS + ARMS + ARMW, SAMPLE
 _rest = sys.argv[2:]
 AMP = _rest[0] if (_rest and _rest[0] in ('photo', 'photow')) else 'raw'
 if AMP != 'raw':
@@ -337,6 +341,10 @@ if SAMPLE == 'cook':
     ok0 = int(ok.sum())
     ok = ok & np.load('data/stage7l_cookmask.npy')
     print(f"cook sample: {int(ok.sum())}/{ok0} pairs", flush=True)
+if SAMPLE == 'anticook':
+    ok0 = int(ok.sum())
+    ok = ok & ~np.load('data/stage7l_cookmask.npy')
+    print(f"anticook sample: {int(ok.sum())}/{ok0} pairs", flush=True)
 MG_T = np.array([2.6,3.4,4.2,4.8,5.4,6.0,6.83,7.57,8.16,8.82,9.29,10.05,
                  11.21,12.45,14.26])
 MS_T = np.array([1.60,1.33,1.12,1.00,0.90,0.82,0.70,0.64,0.57,0.50,0.44,
@@ -644,7 +652,8 @@ def P(s):
 
 # --- the completeness prior on FCOMP_GRID ---------------------------------
 pr = np.load('data/stage7j_prior.npz')
-if SAMPLE in ('full', 'fullpow', 'fullpowbe', 'cook') + ARMS + ARMW:
+if SAMPLE in ('full', 'fullpow', 'fullpowbe', 'cook',
+              'anticook') + ARMS + ARMW:
     xg, lp = pr['f_grid'], pr['lnpi_full']
 else:
     xg, lp = pr['r_grid'], pr['lnpi_strict']
@@ -776,7 +785,7 @@ ROWRE = re.compile(r"seed (\d+) (simple|BE): a_hat=([0-9.]+) \(grid [0-9.]+, "
                    r"interior=(\w+)\), dlnL\(Newton\)=([+-][0-9.]+), "
                    r"wr=([0-9.]+)")
 REF = {}
-if SAMPLE not in POWS + ARMS + ARMW:
+if SAMPLE not in POWS + ARMS + ARMW + ('anticook',):
     REFF = ('data/stage4r_summary.txt' if SAMPLE == 'full'
             else 'data/stage7i_s.txt')
     for m in ROWRE.finditer(open(REFF).read()):

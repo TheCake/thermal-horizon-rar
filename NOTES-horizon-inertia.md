@@ -7364,6 +7364,64 @@ that particular sorting axis is one we already proved unreadable
 with current data, so it gets noted, not spun. The cap survives;
 the sharp version of the test waits for better telescope data.
 
+## Stage 8D pre-registration (2026-07-31, committed BEFORE any cube): THE SETTLING INSTRUMENT — the completeness+width machinery ON the removed 92% (TODO-17; the round-11 named measurement)
+
+The 7L fork, made operational: their cleaning discards 92% of the
+joint sample (incl. the entire deep anchor); "is the removed 92%
+data or contamination?" is the field's well-posed question and the
+event Opus asked to be pinged on. 8D runs the landed machinery on
+the COMPLEMENT of the 7L proxy mask (expected N ≈ 14071 − 1194 =
+12,877 pairs) and asks whether its kinematics decompose into the
+measured companion + noise sectors at externally-anchored levels,
+or carry the boost.
+
+**INSTRUMENT:** SAMPLE = 'anticook' in stage7j_marginal.py (the
+complement mask; wiring committed WITH this pre-reg, before any
+cube), operative photow3 config (photow amplitude law + FPME fpm →
+3.0), seeds 31 + 101, both laws = 4 cubes. **MODE REGRESSION (the
+GB0w rule): G17-ID — the partition identity.** The binned 2D
+likelihood is pair-additive, so per cube cell lnL_full = lnL_cook
++ lnL_anti + (cell-independent const): gate = std over cells of
+(full − cook − anti) ≤ 0.01 with max-dev from the median offset
+≤ 0.05 (fp-summation tolerance; wiring errors are O(≫1)), per
+(seed, law), on the existing full/cook photow3 cubes. ABORT on
+fail.
+
+**READ (stage8d_read.py, written after the batch; bars locked
+HERE):** the anticook marginal at LANDED-CONV (the 7jz_read
+construction) AND at the flat-fcomp prior (the anchor curve's two
+ends, 7J-e3 discipline). Composition note pre-stated: the
+complement is companion-ENRICHED by construction (the cook HR
+filter removes overluminous pairs INTO it), so the landed anchor
+is conservative there; both reads quoted, bars on the conjunction.
+
+**BARS (locked now):**
+- BOOST-CARRIED: α_marg(anti) ≥ 0.5 in ≥ 3/4 law × seed reads
+  under BOTH anchors, with dN ≥ +10 in each → the removed 92%
+  carries the boost at the landed absorber budget: the fork
+  resolves toward DATA (their cleaning removed the signal's
+  carriers). §7.4 gains the settling sentence; Opus-ping-worthy
+  (after the user's go-ahead, per the standing rule).
+- CONTAMINATION-DECOMPOSED: α_marg(anti) ≤ 0.2 in ≥ 3/4 reads
+  under the LANDED anchor with the winning nuisance cell inside
+  the external anchors on the COMPANION axis (fcomp ≤ 0.35; fpm
+  EXCLUDED from the anchor clause — the width object is upstream
+  and function-blind per 7J-d/7J-z6, disclosed) → MATERIAL against
+  the α claim, routed to the next named decider.
+- GRAY otherwise (quoted with the decomposition table).
+**DIAGNOSTICS (no bars):** the price-of-contamination table (the
+anti α = 0 slice's best cell vs the external anchors; its dN =
+the cost-to-force); the census overlap statement (how many of the
+(band = 9, cliff = 2) pairs the cook cuts remove — s-based if the
+CSV lacks the distance/RV columns); the three-way partition
+co-read (full 0.68–0.74 / cook ~0-powerless / anti = this stage).
+**EXPECTATION (stated, not a bar):** BOOST-CARRIED — the cook
+subsample carried ~3 lnL of the full +14.5–23.8, and the
+complement holds the deep anchor and the census pairs.
+No credence move this stage regardless (cadence; a
+CONTAMINATION-DECOMPOSED outcome routes to a decider). PAPER stays
+frozen at v3.9.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
