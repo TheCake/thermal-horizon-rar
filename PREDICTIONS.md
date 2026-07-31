@@ -201,6 +201,17 @@ The gate exponent p = ½ + g/4 with g = s_amb² ≤ 1 caps every system's tail i
 ¾; void galaxies asymptote ≈ 0.72, never beyond. **Kill:** one clean void galaxy with
 tail index beyond ¾ at 3σ. (Stage 6Y; ledger P1.)
 
+*Annotation 2026-07-31 (Stage 8C, pre-reg a5b4816 — first in-sample ceiling
+contest; no status change): verdict AMBIG by the locked grammar with the BREAK
+side clean — pooled p = 0.617 ± 0.133 (bootstrap; profile 0.647, Δ1 0.628–0.667,
+p = 0.75 at +9.7), ZERO calibrated exceedances (40 quotable galaxies;
+false-positive calibration clean on two p_true = 0.72 null skies); the
+per-galaxy census is POWER-LIMITED at SPARC grade (0/34 exceedances fired even
+at injected p_true = 0.90 — the literal one-galaxy kill clause needs
+anchored/DR4-era data); the eN-HIGH arm sits nominally above (0.904,
+0.79–1.03 = 1.3σ arm-local, inside the locked bars; axis 6Z-unreadable, no
+ordering claim either direction). P1 stays LIVE; kill conditions unchanged.*
+
 ### P2 — the environmental ordering p(e_N)
 Weaker ambient → sharper tail (p rises toward 0.72–0.75 in voids; galaxy-population
 median 0.689). In-sample version WITHDRAWN (correction #14: gate heterogeneity, not
@@ -233,6 +244,19 @@ holds the normalization roughly constant" clause above is too strong at
 simulation grade. P3's discriminating content is the LOCK — the paired p_gal(z)
 drift in fixed ratio — exactly as registered; the kill conditions are unchanged.
 Primary read of Mayer+22 owed before any use.*
+
+*Annotation 2026-07-31 (8E primary reads; no status change): the a₀(z) data era
+has OPENED. MUSE-DARK III (arXiv:2604.22613, primary-read): a₀ RISES — binned
+1.99→2.71e−10 over 0.33 < z < 1.44; linear a₀(0) = 1.00±0.04e−10 (essentially ON
+cH₀/2π = 1.08), a₁ = 1.59e−10/z = ~2× the lock's 0→1 secant (+0.82e−10) at face
+value, with their own M/L systematic budget (+0.2–0.45 dex) spanning the
+difference and their linear form flagged phenomenological. Limbach+09's
+"cH(z)-coupling excluded" DEFLATES on primary read (formal-errors-only,
+self-disavowed at systematics level in their own conclusion). Shachar+23 BTFR
+stays flat to z≈2.5 — the field is internally contradictory. The registered KILL
+("a₀(z) flat at z ≳ 1 at 3σ") is NOT triggered; the LOCK (p_gal(z) paired drift)
+remains unmeasured by anyone and is still the unique discriminant. NOTES
+lit-note 2026-07-31 carries the full numbers.*
 
 ### P4 — the DR4 weak-ambient pair
 Weak-ambient wide binaries sharpen toward p ≈ 0.69, and the source-vs-dressed

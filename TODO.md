@@ -575,11 +575,40 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     attractor at aperture grade. Successor (commissioned-only): the
     FIRE-2 snapshot pipeline for beyond-aperture grade; the 4T
     scatter-shape leg on sims likewise waits for disk-plane profiles.
-21. **8C ours-sharpening**: (a) the P1 tail-ceiling test (p ≤ ¾,
-    parameter-free) on the deepest SPARC galaxies; (b) the c₄-rung
-    Fisher forecast (which survey reads the next digit).
-22. **8E lead (logged, primary reads owed)**: observational a₀(z) fits
-    exist (a₁ ≈ 1.6e−10/z, scout-reported MUSE-DARK era) AND Magneticum
-    ΛCDM produces a₀ rising ×3 by z=2.3 ≈ the H(z) direction — P3's
-    a₀ leg alone is NOT ΛCDM-immune; the LOCK (a₀ + p paired drift) is
-    the discriminator (P3 annotated 2026-07-29).
+21. **8C ours-sharpening**: (a) ~~the P1 tail-ceiling test~~ — DONE
+    (2026-07-31, pre-reg a5b4816, [calcs/stage8c_ceiling.py](calcs/stage8c_ceiling.py);
+    ledger gal-ceiling-p1): **AMBIG by the locked grammar, break side
+    clean** — pooled p = 0.617±0.133 (~3σ-profile below ¾), zero
+    calibrated exceedances, census POWER-LIMITED (the literal
+    one-galaxy clause untestable at SPARC grade — measured via the
+    p_true=0.90 injection), eN-HIGH arm nominal excursion inside bars
+    (axis 6Z-unreadable). P1 LIVE, annotated. Successor: the
+    AMB-structured free-gate variant + anchored/DR4 data.
+    (b) the c₄-rung Fisher forecast (which survey reads the next
+    digit) — unopened.
+22. **8E a₀(z)**: primary reads DONE (2026-07-31, NOTES lit-note):
+    MUSE-DARK III (arXiv:2604.22613) — a₀ RISES, intercept 1.00±0.04
+    ON the horizon value, slope 1.59e−10/z ≈ 2× the cH(z)/2π secant at
+    face value, M/L systematics span the difference; Limbach+09's
+    cH-exclusion DEFLATES on primary read (formal-errors-only,
+    self-disavowed); Shachar+23 BTFR flat = the field internally
+    contradictory; P3 kill NOT triggered, LOCK unmeasured by anyone.
+    Successor instrument (unopened): refit their binned a₀(z) against
+    cH(z)/2π with their M/L systematic marginalized (lock-vs-linear,
+    two params, their published bins suffice).
+23. **TODO-17 THE SETTLING INSTRUMENT (the next decider-grade block,
+    GPU)**: run the completeness+width machinery ON the 92% the
+    Cookson cuts remove (the complement of the 7L proxy mask) — does
+    the removed sample's kinematics decompose into the measured
+    companion+noise sectors at their externally-anchored levels, or
+    carry the boost? Settles "data or contamination" (the field's
+    fork; the event Opus asked to be pinged on). Design sketch: cook-
+    complement mask; landed photow3 grammar cubes on the complement;
+    bars on α_marg(complement) vs the operative band + nuisance
+    posteriors vs external anchors (host ~0.3, Lindegren noise
+    ceiling). Pre-reg before any cube.
+24. **FIRE-2 beyond-aperture leg (commissioned 2026-07-31 "bigger
+    stuff" directive, route refined)**: the release ships halo
+    catalogs + multipole mass expansions (~5–20 GB total) — check
+    whether those carry enclosed-mass profiles before touching the
+    50–200 GB snapshot route.

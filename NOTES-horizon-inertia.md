@@ -7241,6 +7241,129 @@ p̂ is the ν_p-family dial (fractional-rung window effects near
 p → ½, the 8A/ν̄ lesson); the AMB-structured free-gate variant is
 the named successor refinement if AMBIG.
 
+## Literature note (2026-07-31, 8E primary reads): THE a₀(z) LANDSCAPE — the P3 data era has opened, contradictory at systematics grade; the kill direction is NOT triggered
+
+Primary reads (PDFs cached, gitignored): MUSE-DARK III (Ciocan,
+Bouché, Fensch, Krajnović, Freundlich, Desmond, Famaey, Techi —
+A&A 709, L16, arXiv:2604.22613) and Limbach, Psaltis & Özel 2009
+(arXiv:0809.2790). Scout survey backing: MIGHTEE-HI (Vărășteanu+25,
+arXiv:2504.20857), Mancera-Piña 2017 (arXiv:1703.06110), Shachar+23
+BTFR (flat to z≈2.5), Li+18 (no galaxy-to-galaxy a₀ variation
+locally).
+
+**(1) MUSE-DARK III (verbatim numbers, 79 SFGs at 0.33 < z < 1.44,
+pressure-support-corrected 3D forward modelling, MNR fits):**
+a₀|z∼1 = 2.38 (+0.12/−0.10) e−10 (95% CI; ~19σ above canonical
+SPARC 1.2); binned rise 1.99 → 2.71e−10 across their four z-bins;
+linear fit **a₀(0) = 1.00 ± 0.04 e−10 (95%), a₁ = 1.59
+(+0.10/−0.10) e−10 per z**; their MOND-framework refit (their
+App. E) agrees within errors; scatter grows 0.13 → 0.19 dex with z.
+Their own caveats (verbatim-grade): the linear parametrisation is
+"a simple, phenomenological description... If the real z-dependence
+of a₀ is non-linear or more complex, the resulting evolutionary
+trend could be affected by systematic biases"; reconciling to the
+z = 0 canonical value would need stellar masses +0.2–0.45 dex.
+**READ AGAINST P3 (a₀(z) = cH(z)/2π):** the SIGN matches (a₀
+rises); the INTERCEPT sits essentially ON the horizon value
+(1.00 vs cH₀/2π = 1.08 — nearer the horizon than the canonical
+1.2); the SLOPE at face value is ~2× the lock's secant (H-ratio
+z 0→1 is ×1.76 ⇒ +0.82e−10 vs their +1.59e−10) — steeper than
+the lock, with their systematic budget spanning the difference.
+Notably Desmond AND Famaey (the DHF/Cassini authors) are on the
+byline.
+**(2) Limbach+09:** the scout-level "a₀ ∝ cH(z) excluded" claim
+DEFLATES on primary read — exclusion is "within the formal
+uncertainties" only, and their own conclusion self-disavows it:
+systematics (IMF, stellar populations) "affect the data
+significantly... Definitive conclusions can only be drawn after
+the systematic errors are more precisely quantified." Face-value
+TF-intercept direction is consistent with mild a₀ rise. NOT a
+standing exclusion.
+**(3) The landscape is internally CONTRADICTORY:** MUSE-DARK's
+steep rise vs Shachar+23's flat BTFR (z to 2.5) vs MIGHTEE-HI's
+a₁ = 4.47 ± 1.88 (2.4σ, consistent with MUSE-DARK within 1.5σ) —
+method- and systematics-separated; no measurement cleanly brackets
+the lock yet.
+
+**P3 STATUS (annotation, no flip):** the kill condition ("measured
+a₀(z) flat at z ≳ 1 at 3σ") is NOT triggered — the current
+detections run the OTHER way; the a₀-leg's face-value slope
+overshoots the lock ×2 at systematics grade; the pair's second
+observable (p_gal(z)) is unmeasured everywhere — the LOCK remains
+untested and is still the unique discriminant (Magneticum's ΛCDM
+a₀(z) ≈ ×3 by z = 2.3 also rises — the a₀ leg alone separates
+nothing). Successor instrument (8E, unopened): refit the
+MUSE-DARK binned a₀(z) against cH(z)/2π with their M/L systematic
+marginalized — a two-parameter contest (lock vs linear) their
+published bins + errors already support.
+
+Plain verdict: SUCCESS (reads done; P3's evidential environment
+mapped; one scout overclaim deflated at source). ELI12: The first
+telescope measurements of our "gravity's volume knob grows with
+the universe's temperature" prediction are arriving. One big new
+study says the knob DOES grow — even starting exactly at our
+predicted today-value — but at face value it grows about twice as
+fast as our formula says, while an older study says it doesn't
+grow at all, and both admit their star-weighing could be off by
+enough to flip their answers. So: nobody has killed the
+prediction, nobody has confirmed it, and the tie-breaker we
+registered (two dials moving together) hasn't been measured by
+anyone yet. We wrote down exactly which follow-up computation
+would settle our part of it.
+
+## Stage 8C EXECUTED (2026-07-31): THE CEILING TEST — AMBIG by the locked grammar; the break side is clean, the per-galaxy clause is power-limited at SPARC grade
+
+Runtime 2.5 min (the warm-started machinery; the exact G1b match
+certifies convergence). **Gates: G1a identity ≤ 1e-10 PASS; G1b
+pinned-½ reproduces 5M's dv-ON BE −12152.49 EXACTLY; G2 nesting OK;
+false-exceedance calibration CLEAN (0/48 and 0/42 fired on the two
+p_true = 0.72 null skies); POWER gate FAIL as a measured fact —
+0/34 exceedances fired even at injected p_true = 0.90 ⇒ the census
+carries no bar (pre-registered clause): the literal "one galaxy
+beyond ¾" kill is UNTESTABLE at SPARC grade** (per-galaxy Δ(0.75)
+≥ 9 needs constraining power individual SPARC galaxies do not
+have).
+
+**RESULTS:** LAYER I pooled p̂ = 0.647 (Δ1 0.628–0.667, INTERIOR;
+p = 0.75 at +9.7 ≈ 3σ-profile above the minimum); galaxy bootstrap
+16/50/84 = 0.534/0.617/0.799 (σ_boot = 0.133 — population variance
+dominates, the 4S profile-vs-bootstrap precedent; P(p > 0.75) =
+0.24). Arms (ceiling-only language BOTH directions per correction
+#14 — the e_N axis is 6Z-unreadable in-sample, gate heterogeneity
++ type/mass confounds): eN-LOW 0.551 (0.495–0.614), eN-HIGH 0.904
+(0.792–1.028), unmatched 0.628 (0.591–0.631). LAYER II census: 40
+quotable galaxies, ZERO exceedances.
+
+**VERDICT (locked bars): AMBIG** — CEILING-BROKEN fired nowhere
+(pooled 3σ below; eN-HIGH's nominal excursion is 1.3σ arm-local,
+inside the 2σ_boot bar; zero census exceedances); CEILING-HOLDS
+not granted (the eN-HIGH arm exceeds 0.75 + 1σ_boot; census
+power-limited). The pooled number doubles as a refined tail
+measurement under the primary vertical-hardened treatment —
+consistent with 5G's 0.65 and the 6E postdiction 0.689. P1 stays
+LIVE, kill conditions unchanged (annotation added). Successor
+(named, not opened): the AMB-structured free-gate variant (fit
+the gate parameter itself, unclamped) + anchored/DR4-era data for
+the per-galaxy clause. No credence move (cadence).
+
+Plain verdict: NEEDS REFINEMENT — the instrument is honest and
+calibrated, the ceiling took no hit, but SPARC cannot power the
+sharp per-galaxy version of the test; the strong sub-results
+(pooled 3σ below the ceiling with clean calibration) are banked.
+
+ELI12: Our theory says every galaxy's "switch-off sharpness" dial
+is capped at ¾ — find one clean galaxy past ¾ and the theory dies.
+We built the test, calibrated it on fake universes (it never
+cries wolf — and, honestly measured, it also can't hear a real
+wolf at today's data quality: even a fake universe set beyond the
+cap produced no detections, so single galaxies can't decide this
+yet). The population as a whole reads ~0.62–0.65, comfortably
+under the cap, right where the theory wants it. One subgroup
+leans high but within the error bars we locked in advance — and
+that particular sorting axis is one we already proved unreadable
+with current data, so it gets noted, not spun. The cap survives;
+the sharp version of the test waits for better telescope data.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

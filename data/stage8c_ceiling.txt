@@ -1,0 +1,29 @@
+G1a identity nu_p(1/2) == BE on y in [1e-6, 100] -> PASS
+data: 153 galaxies, 2700 points + 12 lensing; Chae matched 91/149 (arms 46/45/58 at median log eN = -2.300)
+G1b pinned p = 1/2 everywhere: -12152.49 (5M dv-ON BE -12152.49) -> PASS
+LAYER I pooled: p_hat = 0.647 (D1 0.6281534700067264..0.6671445171198778; INTERIOR); min -2lnL = -12168.63 [G2 nesting vs pinned-1/2 -12152.49: OK]
+  profile: 0.40:+115.4 0.45:+63.4 0.50:+30.8 0.55:+11.7 0.60:+2.3 0.65:+0.0 0.70:+2.9 0.75:+9.7 0.80:+19.2 0.85:+30.8 0.90:+43.6 0.95:+57.4 1.00:+71.6 1.05:+86.0 1.10:+100.4
+  bootstrap 5/25 done
+  bootstrap 10/25 done
+  bootstrap 15/25 done
+  bootstrap 20/25 done
+  bootstrap 25/25 done
+LAYER I bootstrap: p 16/50/84 = 0.534/0.617/0.799 (sigma_boot = 0.133); P(p > 0.75) = 0.240
+LAYER I arm eN-LOW (46 gal): p_hat = 0.551 (D1 0.49500180891554485..0.614038275084989) [ceiling-only read; no ordering claim]
+LAYER I arm eN-HIGH (45 gal): p_hat = 0.904 (D1 0.7916135884637745..1.027742996917902) [ceiling-only read; no ordering claim]
+LAYER I arm unmatched (58 gal): p_hat = 0.628 (D1 0.5914597524400347..0.6311340037363434) [ceiling-only read; no ordering claim]
+LAYER II: the per-galaxy census (real sky)
+  census[real]: quotable 40/149, exceedances 0
+G-INJ sky null-A (p_true = 0.72)
+  census[null-A]: quotable 48/149, exceedances 0
+  -> quotable 48, exceedances 0, median p_hat 0.581
+G-INJ sky null-B (p_true = 0.72)
+  census[null-B]: quotable 42/149, exceedances 0
+  -> quotable 42, exceedances 0, median p_hat 0.599
+G-INJ sky power (p_true = 0.9)
+  census[power]: quotable 34/149, exceedances 0
+  -> quotable 34, exceedances 0, median p_hat 0.638
+G-INJ: false-exceedance PASS (null skies 0/0); power FAIL -> census POWER-LIMITED, no bar (0/34 fired at p_true = 0.90)
+
+==> 8C VERDICT (pre-registered bars): AMBIG
+    pooled p = 0.617 +/- 0.133 (profile 0.647, D1 0.6281534700067264..0.6671445171198778); arms eN-LOW:0.551, eN-HIGH:0.904, unmatched:0.628; census quotable 40, exceedances 0, powered = False

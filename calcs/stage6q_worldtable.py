@@ -203,6 +203,10 @@ CHECKS = [
      'data/stage8b_simladder.txt'),
     ('galfn-eagle-ladder', 'lam_hat = 2.308 -> c1 = 1.154',
      'data/stage8b_simladder.txt'),
+    ('gal-ceiling-p1', '==> 8C VERDICT (pre-registered bars): AMBIG',
+     'data/stage8c_ceiling.txt'),
+    ('gal-ceiling-p1', 'p 16/50/84 = 0.534/0.617/0.799',
+     'data/stage8c_ceiling.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
