@@ -7776,6 +7776,65 @@ that is what our pre-written rules said to do, and queued the
 follow-up that checks whether the exaggeration disappears at
 realistic error levels.
 
+## Stage 8F-c PRE-REGISTRATION (2026-07-31, committed BEFORE any run): THE BIAS CURVE — does the TAIL→α coupling operate at realistic severities?
+
+QUESTION: 8F measured a tail→α anti-conservative coupling on the
+BE arm at heavy severity (truth 0.70 read 1.33 at ftl = 0.35,
+KT = 4) while simple recovered (−0.07). The coupling matters for
+the sky only if it operates at severities the sky could plausibly
+harbor. 8F-c maps the own-law bias b(ftl) = α̂ − α_truth on
+boosted-truth skies at ftl ∈ {0, 0.05, 0.10, 0.20} for both laws
+(the 0.35 end already measured = 8F's fb/fc, joined not rerun;
+the ftl = 0 members anchor the config's own baseline).
+
+DESIGN: 8 new fullarmw ARMTAG runs, seed 31 (arm-suite precedent;
+single-injection grade pre-stated), core fpm_true = 1.2,
+sq_true = 0.2, model-matched flat-q companions at 0.10 —
+identical to 8F's fb/fc except the ftl dial:
+- fb00/fb05/fb10/fb20 = 'simple,0.74,0.10,1.2,0.2,0,{ftl}'
+- fc00/fc05/fc10/fc20 = 'BE,0.70,0.10,1.2,0.2,0,{ftl}'
+Reads at LANDED-CONV (operative) + FLAT; the OWN-LAW α̂ carries
+the bars; cross-law reads, P₃, sq/fcomp portraits = diagnostics.
+Reader: calcs/stage8fc_read.py (the 8F construction; G8F-WT
+float-compare certificates; the 8F fb/fc rows joined as the 0.35
+end).
+
+BARS (locked now; verdict on the REALISTIC-zone members
+ftl = 0.05 and 0.10, own-law, LANDED-CONV):
+- C-VANISH: |b| ≤ 0.15 at both realistic members for both laws →
+  the coupling is a heavy-tail-only phenomenon; the sky-relevant
+  amplitude risk is bounded at the systematic scale.
+- C-PRESENT: b_BE ≥ +0.25 at either realistic member → the
+  coupling operates where tails are plausible. CONSEQUENCE =
+  ANNOTATION not credence: BE α rows carry a tail-exposure caveat
+  with the measured bound, and the simple-law amplitude is named
+  the better-conditioned number (consistent with its clean
+  recovery).
+- Otherwise GRAY-CARRIED: the curve itself is the product, quoted
+  with both flags.
+- EDGE RULE: any deciding member within 0.05 of its threshold →
+  a seed-101 confirmation of THAT member is REQUIRED before the
+  verdict is quoted (pre-registered conditional extension; on
+  confirm the member's b = the two-seed mean, bars re-applied; no
+  other extension permitted).
+- BASELINE RULE: if |b(0)| > 0.15 for a law (the config's own
+  baseline bias), that law's bars operate on Δb = b(ftl) − b(0)
+  (attribution mode), disclosed in the verdict line.
+CREDENCE MAP: NO credence move in ANY branch — this is an
+instrument-characterization stage; the existence question was
+8F's and held ~50%; C-PRESENT changes annotations only.
+
+GATES: G8F-WT reused (registry float-compare + checksum lines);
+pre-flight = the fb00/fb05/fb10/fb20/fc00/fc05/fc10/fc20
+namespace empty on disk; amendment protocol standard.
+
+EXPECTATION (stated, non-binding): simple vanishes everywhere
+(|b| ≤ 0.1); BE genuinely uncertain between C-VANISH and GRAY
+(the 0 → +0.63 interpolation shape is unknown; point guess
+b_BE(0.10) ≈ +0.1–0.25); C-PRESENT would be the surprising
+outcome and would make the simple-law α the operative amplitude
+quote going forward (annotation-grade).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
