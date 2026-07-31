@@ -7422,6 +7422,109 @@ No credence move this stage regardless (cadence; a
 CONTAMINATION-DECOMPOSED outcome routes to a decider). PAPER stays
 frozen at v3.9.
 
+## Stage 8D AMENDMENT 1 (2026-07-31, logged PRE-QUOTE — the reader aborted at the gate; no marginal/verdict number was generated or seen): G17-ID's premise was WRONG for this likelihood; replaced by G17-ID2
+
+The v1 gate (partition identity lnL_full = lnL_cook + lnL_anti +
+const) FIRED FAIL on all 4 cubes (std ≈ 10–12 lnL, max-dev ≈ 50) —
+and the diagnosis shows the PREMISE was mis-specified, not the
+wiring: the residual is AXIS-UNIFORM (fpm slices: std 10.8–11.5
+with no trend; sq slices 10.3–12.4; α slices 9.6–13.9) — the
+signature of PER-SAMPLE TEMPLATE CONDITIONING. The v7/7J forward
+model builds each s-bin's model distribution as a mixture over the
+SAMPLE'S OWN pairs (masses, separations, errors enter the template
+mix), so the full-sample model in a bin is the pair-weighted
+mixture of the subsample models — Σ n ln(p_mix) ≠ Σ n ln(p_sub) +
+Σ n ln(p_sub'): additivity is not a property of this likelihood BY
+DESIGN. A partition identity therefore cannot certify a sample
+mode here (it would fail for ANY correctly-wired complement).
+
+**G17-ID2 (the valid certificate for a SAMPLE mode, pre-stated
+before any read):** (a) the partition-COUNT identity — anticook
+N = 12,877 = 14,071 − 1,194 exact (batch-printed); (b) the mask
+certificate — data/stage7l_cookmask.npy dtype = bool (verified:
+bool, sum 1,194, length 1,817,594 raw rows), so `ok & ~mask` is
+the exact boolean complement (an int-typed mask would have failed
+silently — checked); (c) the v1 residual-structure record kept as
+the post-mortem (axis-uniform, seed-dependent const −3.5/−5.6 =
+realization-mixed templates), explicitly NOT quoted as a pass;
+(d) descriptive cross-read: the anticook PROF nuisance portrait
+equals the landed one (wr = 0.2, fcomp = 0.1, fpm = 3.0, sq = 0.2
+in 4/4) — no new-mode pathology. HONESTY: this certificate is
+weaker than a GB0w-class bit-identity (none exists for
+sample-conditioned models); the mode's entire new code is one
+boolean line whose only observable effect (the count) is exact —
+residual risk stated, not waved off. Verdict bars UNCHANGED.
+
+## Stage 8D EXECUTED (2026-07-31): THE SETTLING INSTRUMENT — BOOST-CARRIED 4/4 under both anchors; the fork resolves toward DATA
+
+Batch: 4 anticook photow3 cubes (12,877 pairs, both laws × seeds
+31/101, 44 min GPU). G17-ID2 certificate PASS at its achievable
+grade (amendment 1, logged pre-quote — see above; the v1
+partition-identity premise was invalid for a per-sample
+template-conditioned likelihood).
+
+**THE VERDICT (locked bars): BOOST-CARRIED — the removed 92%
+carries the boost at the landed absorber budget.**
+- α_marg(anti) = 0.62 / 0.62 (simple, seeds 31/101) and 0.85 /
+  0.81 (BE) at dN = +21.3…+25.9 — in EVERY law × seed read, and
+  **anchor-INDEPENDENT: the LANDED-CONV and FLAT reads agree to
+  0.2 lnL** (the likelihood alone drives it; the companion prior
+  does no work).
+- **The companion posterior is PINNED at fcomp = 0.10 in 8/8
+  reads** — the removed sample does not want extra companions;
+  contamination-reads 0/4. The pre-stated composition worry
+  (complement companion-ENRICHED by the HR filter) turned out
+  immaterial: even enriched, the kinematics refuse fractions
+  above the measured rate.
+- **Price-of-contamination: +21.5…+25.9 lnL** — and the α = 0
+  world's own best cell sits at the SAME landed nuisance portrait
+  (wr 0.2, fcomp 0.1, fpm 3.0, sq 0.2): the no-boost reading
+  cannot even buy companions profitably; it just pays.
+- Census overlap: ≥ 4/9 of the operative band pairs are removed
+  by their s/d cuts ALONE (the ΔRV cut removes more — lower
+  bound): **the (band = 9, cliff = 2) statistic lives in the
+  complement.**
+- The three-way partition closes the 7L arithmetic: full
+  0.68–0.74 @ +14.5–23.8 | cook ~0-powerless (~3 lnL) | anti
+  0.62–0.85 @ +21–26. "No signal in the clean 1,194" and "the
+  signal lives in the removed 12,877 at the measured companion
+  rate" are now BOTH measured inside one pipeline.
+
+CONSEQUENCE: the round-11 settling measurement is EXECUTED — the
+well-posed question "is the removed 92% data or contamination?"
+now has a measured answer: at the landed absorber budget, with
+companions at their externally-anchored rate, the removed sample
+carries the boost. Their cleaning removed the signal's carriers.
+This is the named Opus-ping event (his exit request); the note is
+NOT drafted — awaiting the user's go-ahead per the standing rule.
+No credence move (cadence — 8A/8B/8D all flag into the next named
+decider). PAPER stays frozen at v3.9; §7.4's settling sentence
+waits for the arc close.
+
+Plain verdict: SUCCESS — the decider ran, the bars fired in the
+pre-stated direction, and the one gate that failed was diagnosed,
+amended pre-quote, and replaced with the certificate the
+instrument can actually support.
+
+ELI12: The other team kept only the 1,400 "cleanest" star pairs
+and saw nothing — we already showed their clean subset is too
+small to see anything. Today we tested the other side: we took
+ONLY the 12,900 pairs they threw away and asked our full
+machinery — which knows about hidden companions, noise, and every
+smudge we've measured — does the extra speed live here, or is it
+all just dirt? Answer, four times out of four: the boost is
+there, big, and the machinery votes that the "dirt" level is
+exactly the modest amount we measured photometrically — it
+refuses to blame invisible companions even when allowed to.
+Forcing "it's all dirt" costs the fit a fortune every time. And
+the nine cliff-guarded pairs that anchor our cleanest evidence?
+At least four of them are in the discard pile by their distance
+rules alone. So the argument "their cleaning found nothing" now
+reads: their cleaning threw away the signal — measured, not
+asserted. One of our own test alarms turned out to be testing an
+impossible thing; we wrote down why before looking at any answer,
+and replaced it with the honest version.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

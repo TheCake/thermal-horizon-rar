@@ -207,6 +207,9 @@ CHECKS = [
      'data/stage8c_ceiling.txt'),
     ('gal-ceiling-p1', 'p 16/50/84 = 0.534/0.617/0.799',
      'data/stage8c_ceiling.txt'),
+    ('bin-8d-settling', 'BOOST-CARRIED', 'data/stage8d_read.txt'),
+    ('bin-8d-settling', 'boost-reads 4/4 (LANDED-CONV), 4/4 (FLAT)',
+     'data/stage8d_read.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

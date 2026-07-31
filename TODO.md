@@ -596,17 +596,20 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     Successor instrument (unopened): refit their binned a₀(z) against
     cH(z)/2π with their M/L systematic marginalized (lock-vs-linear,
     two params, their published bins suffice).
-23. **TODO-17 THE SETTLING INSTRUMENT (the next decider-grade block,
-    GPU)**: run the completeness+width machinery ON the 92% the
-    Cookson cuts remove (the complement of the 7L proxy mask) — does
-    the removed sample's kinematics decompose into the measured
-    companion+noise sectors at their externally-anchored levels, or
-    carry the boost? Settles "data or contamination" (the field's
-    fork; the event Opus asked to be pinged on). Design sketch: cook-
-    complement mask; landed photow3 grammar cubes on the complement;
-    bars on α_marg(complement) vs the operative band + nuisance
-    posteriors vs external anchors (host ~0.3, Lindegren noise
-    ceiling). Pre-reg before any cube.
+23. ~~**TODO-17 THE SETTLING INSTRUMENT**~~ — EXECUTED (2026-07-31,
+    Stage 8D, pre-reg 25b248e; [calcs/stage8d_read.py](calcs/stage8d_read.py);
+    ledger bin-8d-settling): **BOOST-CARRIED 4/4 under both anchors —
+    the removed 92% (12,877 pairs) reads α_marg = 0.62/0.62 (simple)
+    / 0.85/0.81 (BE) at dN +21…+26, anchor-independent; fcomp pinned
+    at the measured 0.10 in 8/8 (the removed set refuses extra
+    companions); price-of-contamination +22…+26 lnL; ≥ 4/9 census
+    band pairs removed by their s/d cuts alone. THE FORK RESOLVES
+    TOWARD DATA: their cleaning removed the signal's carriers.**
+    Amendment 1 logged pre-quote (the partition-identity gate premise
+    was invalid for the sample-conditioned likelihood → G17-ID2).
+    The round-11 settling measurement done = the named Opus-ping
+    event (draft awaits the author's go-ahead). §7.4's settling
+    sentence waits for the arc close (paper frozen at v3.9).
 24. **FIRE-2 beyond-aperture leg (commissioned 2026-07-31 "bigger
     stuff" directive, route refined)**: the release ships halo
     catalogs + multipole mass expansions (~5–20 GB total) — check
