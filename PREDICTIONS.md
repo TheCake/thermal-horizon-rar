@@ -280,6 +280,20 @@ strength (positive for s² > 192/720 ≈ 0.267, i.e. all but the deepest-ambient
 Beyond current population grade (6L: the deep arm of 153 galaxies cannot read c₃⁺
 rungs); listed for the DR4+/LSST era. (Stage 6H.)
 
+### P9 — the DR4 width-object discriminator (instrument-level; registered before DR4 exists)
+The v7/7J sky demands two width objects: the noise-scale chase (P(fpm = 3.0) =
+0.54/0.97 — 3× formal PM errors, past the ~1.4× validation ceiling) and the per-system
+scatter sq = 0.2. The 8F-c fc10 world (registered 604a759, executed f97e712) shows a
+~10% KT = 4 error-tail population reproduces the chase with α uncorrupted — while the
+7J-z6 sky-side rejection of an explicit tail axis (+0.0) argues against the literal-tail
+reading. THE DISCRIMINATOR: if the width object is an ERROR TAIL, DR4's improved
+astrometry quenches the fpm chase AND the sq demand TOGETHER (one mis-modeled noise
+object); if it is ASTROPHYSICAL (unmodeled orbital/population broadening), sq persists
+at ≈ 0.2 while the fpm posterior normalizes toward ≤ 1.4×. Registered NOW, before DR4.
+Uniqueness class: instrument-level (not a gravity claim — either outcome leaves the α
+measurement standing per 8F/8F-c: manufacture excluded for symmetric variance-inflation
+tails; the BE coupling bounded below ~15% severity). (Stages 8F/8F-c; this commit.)
+
 ---
 
 ## D. What we do NOT claim as unique

@@ -7835,6 +7835,98 @@ b_BE(0.10) ≈ +0.1–0.25); C-PRESENT would be the surprising
 outcome and would make the simple-law α the operative amplitude
 quote going forward (annotation-grade).
 
+## REVIEW ROUND 3 (2026-08-01 canonical; consult run 2026-07-31 night): W4 40% → 25%; the ranked queue; two derivables; three 8F-c patches demanded
+
+The fresh-Opus referee, shown 8F + 8F-c in full (record:
+REVIEW-FRESH-OPUS.md round 3): **W4 updated ~40% → ~25%** with a
+floor ~20% ("injection is model-internal — it can show the
+pathologies you wrote down don't fool the fitter, never that the
+true error distribution is among them"). DEAD for the tested
+class: manufacture-from-Newton; chase-as-manufacture-evidence
+(the fc10 benign reading); tail-masquerade into sq/companions.
+ALIVE: the BE amplitude coupling ("simple is the conservative
+anchor — weight the higher BE reads down"); CENSUS-side leakage
+(untested = 8F-b); un-tested error shapes (the floor); the
+width-object identity (7J-z6 leans astrophysical). Ranking: #1
+8F-b census tail null (pre-registered prediction: a tail world
+reproduces the band count but FAILS the cliff); #2 register the
+DR4 fc10 discriminator NOW (time-sensitive); #3 the graded
+flag-correlation width hunt; #4 T2 (scout: marginal — archival
+RV precision 0.2–2 km/s vs the 0.1–0.6 km/s signal; first leg =
+overlap census); #5 corner-plot. Derivables: D1 analytic
+band/cliff leakage under a KT-tail (generalizes 8F-b, removes
+realization scatter); D2 the ∂α/∂tail-width BE-vs-simple
+derivation (predict the onset analytically). Patches demanded
+before leaning on 8F-c: H1 multi-seed the −0.21 simple baseline
+("no α from this config quoted better than ±0.2 until
+diagnosed"); H2 multi-seed the realistic-zone curve; H3
+seed-average the onset (0.15/0.20). Scope phrasing adopted as
+standing rule: manufacture-exclusion claims read "for symmetric
+variance-inflation tails"; directional/scan-correlated shapes
+and tail×companion interaction remain untested (closable only by
+T2/T3-class external data). H1–H3 QUEUED (GPU ~3 h, next
+session); its W4 number is ITS ledger — ours held per the maps.
+
+## Stage 8F-b PRE-REGISTRATION (2026-08-01, committed BEFORE any run): THE CENSUS TAIL NULL (referee #1; the D1 derivation as the instrument) + P9 REGISTERED
+
+QUESTION: can a fat-error-tail Newton world produce the operative
+census pair (band = 9 in the Newton-forbidden [√2, 1.67), cliff =
+2 beyond)? This is W4's last in-pipeline angle against the
+program's model-light flagship ("the 9 pairs could be the 9
+fattest error tails"). The instrument is ANALYTIC (the reviewer's
+D1): the 4J T2b leakage null generalized to a per-pair mixture
+kernel — no realization draws, no GPU.
+
+DESIGN ([calcs/stage8fb_censustail.py](calcs/stage8fb_censustail.py)):
+- Data + masks verbatim from stage4j_gamma82.py (γ ≥ 75 top
+  column, WIDE s ≥ 6 kAU; primary convention S/N > 3 = the 3L/v7
+  census convention; no-cut variant reported).
+- PER-PAIR estimator (primary): every sub-edge pair i (0.2 ≤
+  vt_i < √2) contributes leakage probability P_i(window) =
+  (1−ftl)·Pwin(vt_i, σ_i) + ftl·Pwin(vt_i, KT·σ_i), σ_i = the 4J
+  per-pair sig_vt; μ_band = Σ P_i([1.414, 1.67)), μ_cliff =
+  Σ P_i([1.67, 2.2)); joint P(ftl) = P(N_b ≥ 9)·P(N_c ≤ 2) under
+  Poisson. Scan ftl ∈ {0, 0.02, 0.05, 0.10, 0.15, 0.20, 0.30,
+  0.40, 0.50} × KT ∈ {2, 4, 8} (KT = 4 carries the bars; 2/8 =
+  D1 generality diagnostics).
+- ESTIMATOR DIRECTION (pre-stated): observed-as-truth
+  double-counts noise → OVER-estimates leakage → conservative
+  toward EXPOSURE; using the corrected count 9 (not the raw 11)
+  is likewise exposure-conservative. Both bias AGAINST the
+  census defense.
+- The 4J-structure median-σ variant retained with the mixture for
+  continuity.
+
+GATES: G0 IDENTITY — the ftl = 0 median-σ path must reproduce the
+published 4J T2b numbers (parsed from data/stage4j_gamma82.txt if
+on disk; both edges × both S/N conventions; else recomputed and
+SKIPPED-disclosed). G1 MC — per-pair Bernoulli draws (2e5 reps at
+three severities) must bracket the Poisson P's within MC error.
+G2 — the per-pair ftl = 0 variant must agree with the median-σ
+variant at order level (the per-pair refinement is D1's upgrade,
+not a new physics choice).
+
+BARS (locked now; KT = 4, S/N > 3 primary):
+- B-EXPOSED: max over ftl of P_joint ≥ 1e-3 → the census is
+  tail-fakeable; the census annotation flips EXPOSED; the
+  reviewer is informed next round (his W4 climbs back).
+- B-IMMUNE: max over ftl of P_joint ≤ 1e-5 AND (at the smallest
+  ftl with μ_band ≥ 9, if any exists: μ_cliff ≥ 6 = 3× the
+  observed 2 — the monotone-kernel mechanism line) → the census
+  is tail-immune at the KT = 4 class; annotation CENSUS-IMMUNE
+  (class-scoped per the standing phrasing rule).
+- GRAY between. CREDENCE MAP: NO move in ANY branch (defense/
+  annotation stage; pre-stated).
+EXPECTATION (non-binding): B-IMMUNE via the cliff — the mixture
+kernel is monotone, so any ftl large enough to push μ_band
+toward 9 should overshoot μ_cliff far beyond 2 (the reviewer's
+own pre-stated prediction; also the 7K-b Newton-flood precedent).
+
+P9 REGISTERED in PREDICTIONS.md in this same commit (the DR4
+width-object discriminator from the fc10 fingerprint;
+time-sensitive — before DR4 exists; instrument-level, not a
+gravity claim).
+
 ## Stage 8F-c EXECUTED (2026-07-31): THE BIAS CURVE — C-VANISH; the coupling's turn-on LOCATED (between 10% and 20% severity); the most sky-like fake world yet built
 
 Batch: 8 configs seed 31 (~3 h, 22.7 min/config like clockwork);
