@@ -223,6 +223,12 @@ CHECKS = [
     ('bin-8fc-biascurve', 'BE: ftl=0.00: +0.14; ftl=0.05: -0.07; '
      'ftl=0.10: -0.04; ftl=0.20: +0.25; ftl=0.35: +0.63',
      'data/stage8fc_read.txt'),
+    ('bin-8fb-censustail', 'GRAY-CARRIED: between the locked bars',
+     'data/stage8fb_censustail.txt'),
+    ('bin-8fb-censustail', 'max EXACT P_joint over ftl (KT=4) = 3.385e-04 '
+     'at ftl = 0.50', 'data/stage8fb_censustail.txt'),
+    ('bin-8fb-censustail', 'no ftl reaches mu_band >= 9 in expectation '
+     '(max 2.7 vs 9', 'data/stage8fb_censustail.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

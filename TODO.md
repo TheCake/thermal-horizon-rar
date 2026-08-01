@@ -645,5 +645,12 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     vs its W10); T9 second sim family (TNG/SIMBA) + mock rotation
     curves for 8B; T10 the joint a₀(z)–p_gal(z) pair-lock
     instrument design; the (α, fpm, sq, fcomp, w_rad) corner-plot
-    release (cheap, cubes exist); 8F-b census-side tail null on
-    the 7K-b forward machinery.
+    release (cheap, cubes exist); ~~8F-b census tail null~~ —
+    EXECUTED (2026-08-01, pre-reg 4cade0b, analytic per-pair
+    route; ledger bin-8fb-censustail): **GRAY-CARRIED by the
+    letter, substance decisive — the band is UNPRODUCIBLE by the
+    tail class (μ_band ≤ 2.7 vs 9 at any severity; P ≤ 8.5e-8 at
+    the fingerprint severity); amendment 1 (exact Poisson-
+    binomial) logged pre-quote; P9 (DR4 discriminator) registered
+    same commit.** H1–H3 seed patches = the queued GPU block
+    (~3 h, next session).

@@ -7927,6 +7927,108 @@ width-object discriminator from the fc10 fingerprint;
 time-sensitive — before DR4 exists; instrument-level, not a
 gravity claim).
 
+AMENDMENT 1 (2026-08-01, logged BEFORE any verdict is quoted;
+the first run's Poisson-based verdict line is NOT quoted and is
+preserved in the output as the failed-gate record): **G1 FIRED —
+the Poisson approximation to the Poisson-binomial count is
+ANTI-CONSERVATIVE at the deciding cell** (KT = 4, ftl = 0.50:
+Poisson P(N_b ≥ 9) = 1.8e-3 vs MC 3.5e-4, a 5× overestimate far
+outside MC error; the Poisson-binomial variance is below its
+mean, so the Poisson tail is fat by construction) — and the MC
+itself is resolution-limited below ~5e-6 at 2e5 reps. Per the
+gate's own arbitration the verdict estimator is replaced by the
+EXACT Poisson-binomial (dynamic-programming convolution over the
+per-pair probabilities; no approximation), which G1's MC then
+brackets at the resolvable cells. BARS UNCHANGED (1e-3 / 1e-5 on
+P_joint). Two further pre-quote notes: (i) the B-IMMUNE mechanism
+clause resolves VACUOUSLY IN THE DEFENSE'S FAVOR by its own "if
+any exists" wording — no ftl in the class reaches μ_band ≥ 9
+(max 2.7 at KT = 4, 5.1 at the KT = 8 diagnostic, vs observed 9):
+the tails cannot fill the band in expectation at all, a stronger
+defense than the pre-registered cliff mechanism; (ii) a
+sensitivity DIAGNOSTIC row is added extending the source
+population below the registered vt ≥ 0.2 floor (the apo-island
+pairs CAN reach the band at KT ≥ 4 in rare fluctuations;
+including them INCREASES leakage = the exposure-conservative
+direction the pre-reg prefers) — reported alongside, the verdict
+stays on the registered estimator, any bar-crossing by the
+diagnostic is flagged per the ship-the-risk-axis rule.
+
+## Stage 8F-b EXECUTED (2026-08-01): GRAY-CARRIED by the letter — and the substance: THE BAND IS UNPRODUCIBLE BY THE TAIL CLASS ("the 9 fattest error tails" dead at realistic severity)
+
+Amendment 1 applied (above): the exact Poisson-binomial replaced
+the failed Poisson approximation; G1 now BRACKETS (exact
+3.397e-4 vs MC 3.340e-4 ± 1.8e-5 at the deciding cell; 1e6
+reps). G0: the 4J T2b code path recomputed with the published
+output's T2b lines printed verbatim alongside for the diff. All
+numbers: data/stage8fb_censustail.txt (KT = 4 primary, S/N > 3,
+210 sub-edge sources).
+
+- **μ_band NEVER exceeds 2.7 (vs observed 9) at any severity to
+  50%** — the band count is unreachable IN EXPECTATION by
+  symmetric variance-inflation tails. The pre-registered cliff
+  mechanism never engages (μ_cliff ≤ 0.33) because the band
+  fails FIRST — the defense is STRONGER than the predicted
+  mechanism (expectation missed in the informative direction,
+  logged: the reviewer and I both predicted band-fills-cliff-
+  overshoots; reality is band-never-fills).
+- EXACT P_joint: **8.5e-8 at the fc10-fingerprint severity
+  (ftl = 0.10)**; 2.9e-6 at 0.20; 3.4e-4 at the absurd class
+  edge (0.50 = half the sample at 4× formal). The 4J leakage
+  null (3.8e-9 at formal errors) degrades only to ~1e-7 at the
+  fingerprint severity — the census remains a ≥ 5σ-grade
+  statement even in the tail world that reproduces the sky's
+  noise portrait.
+- VERDICT by the letter: **GRAY-CARRIED** — the 1e-5 immunity
+  bar is missed only by the Poisson-luck residual at the class
+  edge (statistic edge-rising at ftl = 0.50; class-scoped,
+  disclosed). B-EXPOSED did NOT fire under the valid estimator
+  (the first run's Poisson-based B-EXPOSED line is the
+  failed-gate record, preserved, not quoted).
+- D1 generality: KT = 2 stays ≤ 1e-5-grade everywhere; KT = 8
+  (diagnostic) reaches 3.8e-2 at ftl = 0.50 — the defense
+  degrades only toward extreme-kurtosis + extreme-frequency
+  worlds (8× formal errors on HALF the catalog — visible in any
+  whole-catalog σ audit; stated qualitatively).
+- Sensitivity (no lower source floor, exposure-conservative):
+  identical to print precision — the registered floor does no
+  work.
+- Census annotation: NOT flipped. The census tail-defense
+  statement, class-scoped per the standing phrasing rule: "the
+  (band = 9, cliff = 2) pair is unproducible by symmetric
+  variance-inflation tails at KT ≤ 4 to 50% severity;
+  P ≤ 1e-7 at the fingerprint severity." NO credence move
+  (pre-stated in every branch).
+
+CONSEQUENCE: W4's last in-pipeline angle is closed at its
+achievable grade — the reviewer's "the 9 pairs could be the 9
+fattest error tails" now has a number: ≤ 8.5e-8 at the severity
+his own fingerprint world implies. Remaining W4 legs are all
+external (T2/T3) exactly as he said. H1–H3 (the 8F-c seed
+patches) remain the queued GPU block.
+
+Plain verdict: SUCCESS with the letter GRAY — the instrument
+answered the substantive question decisively (the census cannot
+be fat-tail leakage at any realistic severity) while the formal
+immunity bar proved tighter than the class edge allows; both
+stated, nothing reinterpreted.
+
+ELI12: Our judge's last remaining in-house worry was: maybe the
+nine "impossible-speed" star pairs are just the nine unluckiest
+measurement errors. We did the math exactly — every slower pair
+gets its own tiny probability of faking its way into the
+forbidden speed zone, lies included, and we add them all up.
+Verdict: even if one pair in ten had 4×-underestimated errors
+(the level our best fake-sky needed), the chance of faking nine
+is about one in ten MILLION. To fake it you'd need half of all
+measurements to be wrong by 4× — cartoon territory. One formal
+threshold we set in advance wasn't quite met at the cartoon end
+of the dial, so the official label is "gray, carried" — but the
+question the test was built to answer came back loud: those nine
+pairs are not measurement luck. Also, our own approximation
+failed its built-in alarm mid-run and was replaced by the exact
+calculation before we read any verdict — the alarm did its job.
+
 ## Stage 8F-c EXECUTED (2026-07-31): THE BIAS CURVE — C-VANISH; the coupling's turn-on LOCATED (between 10% and 20% severity); the most sky-like fake world yet built
 
 Batch: 8 configs seed 31 (~3 h, 22.7 min/config like clockwork);

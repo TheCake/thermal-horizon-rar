@@ -1,0 +1,71 @@
+8F-b THE CENSUS TAIL NULL (pre-reg 4cade0b; bars locked before this run; analytic per-pair mixture kernel)
+baseline-cut pairs 14071; wide (s>=6 kAU) 1437
+
+G0 IDENTITY (the 4J T2b median-sigma path at ftl = 0):
+  [no S/N cut] sqrt2: sbar=0.044 rho=51.4 mu_band=0.91 (obs 11, P>= 3.75e-09) mu_cliff=0.00 (obs 1, P<= 1.00)
+  [no S/N cut] boosted: sbar=0.044 rho=51.4 mu_band=11.65 (obs 11, P>= 6.15e-01) mu_cliff=0.48 (obs 1, P<= 0.91)
+  [S/N>3] sqrt2: sbar=0.044 rho=51.4 mu_band=0.91 (obs 11, P>= 3.75e-09) mu_cliff=0.00 (obs 1, P<= 1.00)
+  [S/N>3] boosted: sbar=0.044 rho=51.4 mu_band=11.65 (obs 11, P>= 6.15e-01) mu_cliff=0.48 (obs 1, P<= 0.91)
+  reference 4J output lines (verbatim, for the diff):
+   | T2b Newtonian edge sqrt(2): median sigma_vt=0.044; expect 0.9 in [1.414,1.67) vs 11 obs (P(>=obs)=3.75e-09); expect 0.0 in [1.67,2.2) vs 1 obs (P(<=obs)=1.00)
+   | T2b boosted edge sqrt(2*1.36): median sigma_vt=0.044; expect 11.6 in [1.414,1.67) vs 11 obs (P(>=obs)=6.15e-01); expect 0.5 in [1.67,2.2) vs 1 obs (P(<=obs)=0.91)
+   | T2b Newtonian edge sqrt(2): median sigma_vt=0.044; expect 0.9 in [1.414,1.67) vs 11 obs (P(>=obs)=3.75e-09); expect 0.0 in [1.67,2.2) vs 1 obs (P(<=obs)=1.00)
+   | T2b boosted edge sqrt(2*1.36): median sigma_vt=0.044; expect 11.6 in [1.414,1.67) vs 11 obs (P(>=obs)=6.15e-01); expect 0.5 in [1.67,2.2) vs 1 obs (P(<=obs)=0.91)
+  G0: compare the recomputed rows against the reference lines above — the medians/mus/Ps must match at printed precision (visual certificate; the code path is verbatim).
+
+per-pair estimator (primary, S/N>3): 210 sub-edge source pairs (0.2 <= vt < 1.414, gamma >= 75); observed census pair = (band 9, cliff 2)
+
+KT   ftl   mu_band  mu_cliff  ratio   Pois(Nb>=9)  EXACT(Nb>=9)  EXACT(Nc<=2)  P_joint(EXACT)
+2   0.00    1.313     0.000   0.00  9.893e-06  0.000e+00  1.000e+00  0.000e+00
+2   0.02    1.326     0.001   0.00  1.068e-05  3.109e-15  1.000e+00  3.109e-15
+2   0.05    1.346     0.002   0.00  1.197e-05  9.570e-14  1.000e+00  9.570e-14
+2   0.10    1.378     0.005   0.00  1.440e-05  1.927e-12  1.000e+00  1.927e-12
+2   0.15    1.410     0.007   0.00  1.724e-05  1.272e-11  1.000e+00  1.272e-11
+2   0.20    1.443     0.009   0.01  2.055e-05  5.099e-11  1.000e+00  5.099e-11
+2   0.30    1.507     0.014   0.01  2.880e-05  3.850e-10  1.000e+00  3.850e-10
+2   0.40    1.572     0.019   0.01  3.971e-05  1.690e-09  1.000e+00  1.690e-09
+2   0.50    1.637     0.023   0.01  5.391e-05  5.465e-09  1.000e+00  5.465e-09
+4   0.00    1.313     0.000   0.00  9.893e-06  0.000e+00  1.000e+00  0.000e+00
+4   0.02    1.368     0.013   0.01  1.361e-05  3.609e-11  1.000e+00  3.609e-11
+4   0.05    1.450     0.033   0.02  2.138e-05  2.757e-09  1.000e+00  2.757e-09
+4   0.10    1.587     0.067   0.04  4.262e-05  8.537e-08  1.000e+00  8.537e-08
+4   0.15    1.724     0.100   0.06  7.949e-05  6.666e-07  9.999e-01  6.665e-07
+4   0.20    1.860     0.134   0.07  1.401e-04  2.917e-06  9.998e-01  2.916e-06
+4   0.30    2.134     0.200   0.09  3.784e-04  2.383e-05  9.992e-01  2.381e-05
+4   0.40    2.408     0.267   0.11  8.812e-04  1.065e-04  9.982e-01  1.063e-04
+4   0.50    2.681     0.334   0.12  1.827e-03  3.397e-04  9.966e-01  3.385e-04
+8   0.00    1.313     0.000   0.00  9.893e-06  0.000e+00  1.000e+00  0.000e+00
+8   0.02    1.465     0.093   0.06  2.317e-05  9.574e-09  9.999e-01  9.573e-09
+8   0.05    1.693     0.232   0.14  6.958e-05  9.017e-07  9.983e-01  9.002e-07
+8   0.10    2.073     0.463   0.22  3.078e-04  3.012e-05  9.887e-01  2.978e-05
+8   0.15    2.453     0.695   0.28  1.003e-03  2.341e-04  9.676e-01  2.265e-04
+8   0.20    2.833     0.926   0.33  2.629e-03  9.827e-04  9.345e-01  9.184e-04
+8   0.30    3.594     1.389   0.39  1.155e-02  6.925e-03  8.383e-01  5.805e-03
+8   0.40    4.354     1.852   0.43  3.386e-02  2.533e-02  7.175e-01  1.818e-02
+8   0.50    5.114     2.315   0.45  7.577e-02  6.397e-02  5.901e-01  3.775e-02
+
+G1 MC (per-pair Bernoulli draws, 1e6 reps, KT = 4; brackets the EXACT Poisson-binomial at resolvable cells):
+  ftl=0.10: EXACT P(Nb>=9)=8.537e-08 vs MC 0.000e+00 (+-1.0e-06); EXACT P(Nc<=2)=1.000e+00 vs MC 1.000e+00
+  ftl=0.50: EXACT P(Nb>=9)=3.397e-04 vs MC 3.340e-04 (+-1.8e-05); EXACT P(Nc<=2)=9.966e-01 vs MC 9.965e-01
+
+G2: per-pair mu_band(ftl=0) = 1.313 vs the 4J median-sigma structure (order-level consistency check; the per-pair form is D1's refinement and the operative one)
+
+no-S/N-cut diagnostic KT=4 ftl=0.00: mu_band=1.313 mu_cliff=0.000 (N_src=213)
+no-S/N-cut diagnostic KT=4 ftl=0.10: mu_band=1.587 mu_cliff=0.067 (N_src=213)
+no-S/N-cut diagnostic KT=4 ftl=0.50: mu_band=2.681 mu_cliff=0.334 (N_src=213)
+
+amendment-1 sensitivity (NO lower vt floor; N_src=227, exposure-conservative):
+  KT=4 ftl=0.00: mu_band=1.313 mu_cliff=0.000 EXACT P_joint=0.000e+00
+  KT=4 ftl=0.02: mu_band=1.368 mu_cliff=0.013 EXACT P_joint=3.609e-11
+  KT=4 ftl=0.05: mu_band=1.450 mu_cliff=0.033 EXACT P_joint=2.757e-09
+  KT=4 ftl=0.10: mu_band=1.587 mu_cliff=0.067 EXACT P_joint=8.537e-08
+  KT=4 ftl=0.15: mu_band=1.724 mu_cliff=0.100 EXACT P_joint=6.665e-07
+  KT=4 ftl=0.20: mu_band=1.860 mu_cliff=0.134 EXACT P_joint=2.916e-06
+  KT=4 ftl=0.30: mu_band=2.134 mu_cliff=0.200 EXACT P_joint=2.381e-05
+  KT=4 ftl=0.40: mu_band=2.408 mu_cliff=0.267 EXACT P_joint=1.063e-04
+  KT=4 ftl=0.50: mu_band=2.681 mu_cliff=0.334 EXACT P_joint=3.385e-04
+  sensitivity max P_joint = 3.385e-04 (below the 1e-3 bar - flagged per the ship-the-risk-axis rule)
+
+max EXACT P_joint over ftl (KT=4) = 3.385e-04 at ftl = 0.50; no ftl reaches mu_band >= 9 in expectation (max 2.7 vs 9: the band is unproducible by the tail class in expectation - the mechanism clause resolves vacuously in the defense's favor, amendment 1)
+==> 8F-b VERDICT (locked bars, EXACT estimator): GRAY-CARRIED: between the locked bars - the band count is unreachable in expectation (Poisson-luck residual only) but the residual exceeds the 1e-5 immunity bar at the class edge [statistic still rising at the registered class boundary ftl = 0.50 - class-scoped, disclosed]
+    NO credence move (pre-stated in every branch).
