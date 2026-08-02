@@ -652,5 +652,11 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     tail class (μ_band ≤ 2.7 vs 9 at any severity; P ≤ 8.5e-8 at
     the fingerprint severity); amendment 1 (exact Poisson-
     binomial) logged pre-quote; P9 (DR4 discriminator) registered
-    same commit.** H1–H3 seed patches = the queued GPU block
-    (~3 h, next session).
+    same commit.** ~~H1–H3 seed patches~~ — EXECUTED as Stage 8F-d
+    (2026-08-02, pre-reg 98c7b98; ledger bin-8fd-patchblock):
+    **C-VANISH CONFIRMED-HARDENED two-seed; both config baselines
+    boundary-real ±0.16 → ±0.2 annotation adopted, scoped to the
+    8F-family arm configs; onset bracketed 0.15–0.20 (+0.23/+0.27)
+    with the attribution co-read disclosed. The in-pipeline W4
+    program (8F/8F-b/8F-c/8F-d) is COMPLETE — remaining W4 legs
+    are external (T2/T3).**

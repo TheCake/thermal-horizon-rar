@@ -229,6 +229,12 @@ CHECKS = [
      'at ftl = 0.50', 'data/stage8fb_censustail.txt'),
     ('bin-8fb-censustail', 'no ftl reaches mu_band >= 9 in expectation '
      '(max 2.7 vs 9', 'data/stage8fb_censustail.txt'),
+    ('bin-8fd-patchblock', 'C-VANISH CONFIRMED-HARDENED at two-seed grade',
+     'data/stage8fd_read.txt'),
+    ('bin-8fd-patchblock', 'H3 onset (two-seed): b_BE(0.15) = +0.23(0.03), '
+     'b_BE(0.20) = +0.27(0.01)', 'data/stage8fd_read.txt'),
+    ('bin-8fd-patchblock', 'GD0 (seed-31 slice vs shipped 8F-c, 10 '
+     'reference rows): PASS', 'data/stage8fd_read.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

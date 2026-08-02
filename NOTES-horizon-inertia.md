@@ -8072,6 +8072,83 @@ b(0)_simple regresses toward ~−0.1 but may persist (genuinely
 uncertain — this is H1's point); the onset lands between 0.12
 and 0.20 with fc15 near or above +0.15.
 
+## Stage 8F-d EXECUTED (2026-08-02): C-VANISH CONFIRMED-HARDENED at two-seed grade; both config baselines land AT the boundary (±0.16, opposite signs); the onset bracketed 0.15–0.20
+
+Batch 9 runs (~3.5 h GPU); G8F-WT 11/11; **GD0 regression PASS
+(all 10 shipped 8F-c seed-31 values reproduced)**. All numbers:
+data/stage8fd_read.txt.
+
+THE TWO-SEED CURVE (mean, half-spread):
+- simple: −0.16(0.05) / −0.14(0.04) / −0.10(0.02) at ftl
+  0/0.05/0.10 (0.20/0.35 single-seed −0.14/−0.07).
+- BE: +0.16(0.02) / +0.02(0.08) / +0.06(0.10) / +0.23(0.03) /
+  +0.27(0.01) at 0/0.05/0.10/0.15/0.20 (+0.63 at 0.35).
+
+H1 — THE BASELINE DIAGNOSIS: the simple offset SHRANK (−0.21 →
+−0.16 two-seed) but sits AT the 0.15 boundary → REAL by the
+letter, and BE's baseline crossed it too (+0.14 → +0.16): **both
+laws in attribution mode, the ±0.2 quote-precision annotation
+ADOPTED — scoped to the 8F-family arm configs** (fpm_true = 1.2,
+model-matched companions; the operative sky band 0.68–0.74 rests
+on the 7J-z5 own-config arms at −0.06…−0.09, NOT on this
+config). Notable structure, logged without interpretation: the
+two baselines are SYMMETRIC (±0.16, simple under / BE over) —
+a law-dependent own-truth conditioning at this cell, boundary-
+grade, neither sharp nor noise (the reviewer's H1 worry lands
+exactly on the fence).
+
+H2 — THE VERDICT FOUNDATION: seed-101 moved individual
+realistic-zone members by up to 0.20 (fc10: −0.04 → +0.06 mean,
+half-spread 0.10) — the two-seed grade genuinely mattered — and
+**C-VANISH HOLDS: |eff| ≤ 0.15 at both realistic members, both
+laws, in BOTH framings** (raw BE +0.02/+0.06; attributed
+−0.14/−0.10). One SEED-LIMITED flag (BE 0.05, attributed −0.14,
+within 0.05 of the threshold; no third seed per pre-reg).
+
+H3 — THE ONSET: **b_BE crosses +0.25 between the two-seed
+ftl = 0.15 (+0.23 ± 0.03) and 0.20 (+0.27 ± 0.01)** — the
+single-seed "at-threshold" language retired. ATTRIBUTION CO-READ
+(disclosed, ship-the-risk-axis): with the +0.16 baseline
+subtracted, the TAIL-ADDED bias at 0.15/0.20 is only +0.07/+0.11
+and reaches +0.47 at 0.35 — the raw onset bracket partly rides
+the config baseline; the heavy-tail blow-up is real in both
+framings.
+
+VERDICT (locked bars, two-seed): **C-VANISH CONFIRMED-HARDENED —
+the coupling is heavy-tail-only; the 8F-c verdict stands,
+upgraded from single-seed grade** (8F-c ledger row stays CURRENT;
+this row records the upgrade). NO credence move (pre-stated).
+EXPECTATION largely met (C-VANISH ✓, onset bracket ✓ incl. fc15
+at +0.23; the baseline neither regressed fully nor persisted
+hard — boundary, the honest H1 answer).
+
+REVIEWER SCORECARD (for the standing calibration question): H2
+vindicated (members moved at the half-spread scale; the verdict
+needed the second seed to be leanable); H3 vindicated (clean
+bracket); H1 landed ON the fence (the offset shrank but stays
+boundary-real — neither its "~0.2 bias nobody understands" nor
+my "realization fluke" reading; the measurement split the
+difference, and the annotation is now scoped correctly).
+
+Plain verdict: SUCCESS — all three patches measured, the 8F-c
+verdict hardened rather than flipped, the annotation scoped, and
+the onset now carries an error bar.
+
+ELI12: We re-flipped the three coins the judge worried about.
+(1) The weird baseline offset shrank but didn't vanish — it's a
+small real quirk of the fake-universe setup, the same size in
+both gravity flavors but opposite directions, and it does NOT
+touch our real-sky numbers, which were validated on a different,
+cleaner setup. We stamped those fake-universe results "good to
+±0.2" as the judge asked. (2) The verdict that matters —
+"realistic levels of lying measurements do not inflate the
+signal" — survived the second coin-flip in both flavors. (3) The
+switch-on point of the exaggeration is now pinned between 15%
+and 20% lying-fraction with real error bars, far above anything
+believable for Gaia. Net: the judge's demands made the numbers
+sturdier and changed no conclusions — which is what good
+refereeing is for.
+
 ELI12: Our judge's last remaining in-house worry was: maybe the
 nine "impossible-speed" star pairs are just the nine unluckiest
 measurement errors. We did the math exactly — every slower pair

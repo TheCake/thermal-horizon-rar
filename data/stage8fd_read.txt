@@ -1,0 +1,38 @@
+8F-d THE PATCH BLOCK — reader (pre-reg in NOTES 2026-08-02; bars locked before any run; two-seed grade; no credence move)
+
+G8F-WT [fb00]: 2 injection line(s) -> PASS; checksums PASS
+[fb00 simple] seeds [31, 101]: a_hat = 0.53, 0.64 -> b = -0.16 (half-spread 0.05)
+G8F-WT [fb05]: 2 injection line(s) -> PASS; checksums PASS
+[fb05 simple] seeds [31, 101]: a_hat = 0.56, 0.63 -> b = -0.14 (half-spread 0.04)
+G8F-WT [fb10]: 2 injection line(s) -> PASS; checksums PASS
+[fb10 simple] seeds [31, 101]: a_hat = 0.62, 0.66 -> b = -0.10 (half-spread 0.02)
+G8F-WT [fb20]: 1 injection line(s) -> PASS; checksums PASS
+[fb20 simple] seeds [31]: a_hat = 0.60 -> b = -0.14 (half-spread 0.00)
+G8F-WT [fb]: 1 injection line(s) -> PASS; checksums PASS
+[fb simple] seeds [31]: a_hat = 0.67 -> b = -0.07 (half-spread 0.00)
+G8F-WT [fc00]: 2 injection line(s) -> PASS; checksums PASS
+[fc00 BE] seeds [31, 101]: a_hat = 0.84, 0.88 -> b = +0.16 (half-spread 0.02)
+G8F-WT [fc05]: 2 injection line(s) -> PASS; checksums PASS
+[fc05 BE] seeds [31, 101]: a_hat = 0.63, 0.80 -> b = +0.02 (half-spread 0.08)
+G8F-WT [fc10]: 2 injection line(s) -> PASS; checksums PASS
+[fc10 BE] seeds [31, 101]: a_hat = 0.66, 0.86 -> b = +0.06 (half-spread 0.10)
+G8F-WT [fc15]: 2 injection line(s) -> PASS; checksums PASS
+[fc15 BE] seeds [31, 101]: a_hat = 0.95, 0.90 -> b = +0.23 (half-spread 0.03)
+G8F-WT [fc20]: 2 injection line(s) -> PASS; checksums PASS
+[fc20 BE] seeds [31, 101]: a_hat = 0.95, 0.98 -> b = +0.27 (half-spread 0.01)
+G8F-WT [fc]: 1 injection line(s) -> PASS; checksums PASS
+[fc BE] seeds [31]: a_hat = 1.33 -> b = +0.63 (half-spread 0.00)
+
+GD0 (seed-31 slice vs shipped 8F-c, 10 reference rows): PASS
+
+THE TWO-SEED BIAS CURVE b(ftl) (LANDED-CONV; mean over seeds, half-spread in parens):
+  simple: ftl=0.00: -0.16(0.05)*; ftl=0.05: -0.14(0.04)*; ftl=0.10: -0.10(0.02)*; ftl=0.20: -0.14(0.00); ftl=0.35: -0.07(0.00)   (* = two-seed)
+  BE: ftl=0.00: +0.16(0.02)*; ftl=0.05: +0.02(0.08)*; ftl=0.10: +0.06(0.10)*; ftl=0.15: +0.23(0.03)*; ftl=0.20: +0.27(0.01)*; ftl=0.35: +0.63(0.00)   (* = two-seed)
+
+H1 [simple]: two-seed b(0) = -0.16 (half-spread 0.05) -> |b(0)| > 0.15: the config baseline is REAL, ATTRIBUTION MODE; the +-0.2 quote-precision annotation ADOPTED for this config
+H1 [BE]: two-seed b(0) = +0.16 (half-spread 0.02) -> |b(0)| > 0.15: the config baseline is REAL, ATTRIBUTION MODE; the +-0.2 quote-precision annotation ADOPTED for this config
+
+H3 onset (two-seed): b_BE(0.15) = +0.23(0.03), b_BE(0.20) = +0.27(0.01); the +0.25 crossing sits between 0.15 and 0.20
+
+==> 8F-d VERDICT (locked bars, two-seed): C-VANISH CONFIRMED-HARDENED at two-seed grade: the coupling is heavy-tail-only; the 8F-c verdict stands upgraded from single-seed grade [SEED-LIMITED flag on [('BE', 0.05)] - within 0.05 of a threshold at two seeds; no third seed per pre-reg]
+    NO credence move (pre-stated in every branch).
