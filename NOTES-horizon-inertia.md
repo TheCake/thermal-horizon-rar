@@ -8013,6 +8013,65 @@ be fat-tail leakage at any realistic severity) while the formal
 immunity bar proved tighter than the class edge allows; both
 stated, nothing reinterpreted.
 
+## Stage 8F-d PRE-REGISTRATION (2026-08-02, committed BEFORE any run): THE PATCH BLOCK — the reviewer's H1–H3 hardening of 8F-c
+
+LINEAGE (no bar-moving): 8F-c's C-VANISH verdict stands AS QUOTED
+(single-seed grade, disclosed at quote time). The review round
+demanded three patches before that verdict is leaned on (H1 the
+−0.21 simple baseline, H2 the single-seed realistic-zone curve,
+H3 the at-threshold onset point). 8F-d executes them at two-seed
+grade; if the two-seed re-read lands differently, the 8F-c ledger
+row flips to SUPERSEDED with a pointer per standing grammar —
+never deleted.
+
+RUNS (9 × ~23 min GPU, bar-deciding members first):
+- H1 baselines: fb00 + fc00 at seed 101 (two-seed b(0) per law).
+- H2 realistic zone: fb05, fb10, fc05, fc10 at seed 101.
+- H3 onset: fc20 at seed 101 + a NEW member fc15 =
+  'BE,0.70,0.10,1.2,0.2,0,0.15' at seeds 31 AND 101 (the
+  reviewer's requested 0.15/0.20 seed-averaged onset bracket).
+fb20/fb/fc stay single-seed (curve context, not bar-deciding).
+
+READ (calcs/stage8fd_read.py — successor reader, the shipped
+stage8fc_read.py untouched): the 8F-c construction verbatim;
+member b = the MEAN over available seeds with the realization
+half-spread reported; bars = the 8F-c bars re-applied at
+two-seed grade (C-VANISH |b_eff| ≤ 0.15 at ftl 0.05 AND 0.10
+both laws / C-PRESENT b_BE ≥ +0.25 at either / GRAY between;
+BASELINE RULE unchanged: |b(0)| > 0.15 → that law's bars on
+Δb = b − b(0), with the two-seed b(0)). EDGE handling: a
+two-seed deciding member still within 0.05 of a threshold is
+quoted with a SEED-LIMITED flag; NO third seed (pre-stated — the
+reviewer's H2 asked for multi-seed = 2; no further extension).
+
+H1 DIAGNOSIS GRAMMAR: |mean b(0)_simple| > 0.15 at two seeds →
+the config baseline is REAL (not a realization fluke) — the
+attribution-mode reading stands and the reviewer's quote-
+precision rule (±0.2 for this config) is ADOPTED as a standing
+annotation until the mechanism is diagnosed; ≤ 0.15 → fluke
+component confirmed, raw-b bars apply, noted.
+
+H3 GRAMMAR: the onset statement becomes "b_BE crosses +0.25
+between the two-seed ftl = 0.15 and 0.20 means" (or wherever it
+lands), with half-spreads; single-seed language retired.
+
+GATES: G8F-WT per config (registry float-compare + checksums;
+fc15 pre-flight namespace EMPTY — verified before launch); GD0
+REGRESSION — the 8fd reader's seed-31 own-law â for every
+existing member must reproduce the shipped stage8fc_read.txt
+values to 0.01 (parse-compare; catches reader-transcription
+drift). Amendment protocol standard.
+
+CREDENCE MAP: NO move in ANY branch (hardening stage; even a
+C-VANISH → C-PRESENT flip is annotation-only per the original
+8F-c map: BE tail-exposure caveat + simple named the
+better-conditioned amplitude).
+
+EXPECTATION (non-binding): C-VANISH confirmed at two-seed grade;
+b(0)_simple regresses toward ~−0.1 but may persist (genuinely
+uncertain — this is H1's point); the onset lands between 0.12
+and 0.20 with fc15 near or above +0.15.
+
 ELI12: Our judge's last remaining in-house worry was: maybe the
 nine "impossible-speed" star pairs are just the nine unluckiest
 measurement errors. We did the math exactly — every slower pair
