@@ -547,6 +547,12 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     floor/tail/fpm/sq/perspective excluded as shapes). Identifying it
     collapses the noise-ceiling curve to a point (round-11 form) and
     restores function-discrimination power lost at 7J-d.
+    **PROGRAM OPENED 2026-08-03 (the sq-as-hidden-variable program,
+    author-adopted "Go for it"): leg 1 = Stage 8G e-sector control
+    (ESEC mode, EIN×ERF axes; pre-reg in NOTES; expected outcome
+    pre-stated E-ABSORB); leg 2 = 8H boundedness contest on the
+    (band=9, cliff=2) census pair (design AFTER 8G lands); leg 3 =
+    the second-moment cross-system derivation (alongside).**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

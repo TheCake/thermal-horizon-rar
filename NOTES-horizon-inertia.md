@@ -8237,6 +8237,103 @@ doesn't care. One older test pushes back on that tidy story, so
 it goes in as a lead for the hunt, not a conclusion — both sides
 written down.
 
+## Stage 8G PRE-REGISTRATION (2026-08-03, committed BEFORE any run): THE E-SECTOR CONTROL — the width-object program, leg 1 (mundane-first)
+
+CONTEXT (the program, author-adopted this session): treat the
+sq = 0.2 width object as a candidate hidden variable instead of
+dirt (the author's Einstein-flip framing). Three legs, strictly
+ordered: leg 1 = THIS (free the 7J-z6-booked e-sector — the
+mundane candidate goes FIRST); leg 2 = the boundedness contest on
+the (band=9, cliff=2) census pair (8H, designed only AFTER leg 1
+lands — its premise and bars depend on this verdict); leg 3 = the
+second-moment cross-system derivation (alongside, no pipeline).
+EXPECTED OUTCOME, pre-stated per the published recommendation:
+E-ABSORB (the mundane branch). An E-SURVIVE verdict fires AGAINST
+the stated expectation and must be flagged as such.
+
+WHAT IS FROZEN TODAY (the fingerprint's named sector,
+stage7j_marginal e_of): the power-law arm's inner anchors are
+HARD-CODED (al = 0.6 at 100 AU, 1.0 at 500 AU; only the >= 1 kAU
+exponent eta is on a grid, 2-noded [1.05, 1.3],
+Hwang-prior-anchored); the radial component's floor is HARD-CODED
+(e_rad = 0.90 + 0.095 u). 7J-z6's Part-A fingerprint
+(mid-shoulder ṽ 0.7–1.7 + radial γ=8° column + inner bins) points
+at exactly this sector; sq's existence is measured 4× (3E / 6P /
+the −60..−116 misfit / the fpm edge) but no traced channel makes
+20%.
+
+DESIGN (mode ESEC=1 on the operative landed grid, full photow
+FPME=1): two new axes inserted after wr —
+  EIN_GRID = [0.5, 1.0, 1.5, 2.0] — multiplier on the frozen
+    inner anchors: al = interp(log10 a_s at [100, 500, 1000,
+    50000] AU -> [0.6·ein, 1.0·ein, eta, eta]); ein = 1 = legacy,
+    INTERIOR.
+  ERF_GRID = [0.80, 0.90, 0.95] — the radial floor: e_rad = erf +
+    (0.995 − erf)·u; erf = 0.90 = legacy, INTERIOR.
+Wide-arm eta stays 2-noded Hwang-anchored — SCOPED freedom,
+disclosed: this control frees the fingerprint's named sector
+only. The identity cell (1.0, 0.90) is BRANCHED to the legacy
+e_of verbatim (the ws=0 precedent). Cubes:
+data/stage7j_cube_full_esec_{seed}_{law}.npy, 11-dim (A5 E2 WR5
+EIN4 ERF3 FCOMP6 FC0·1 FFLY2 FPM6 KW3 SQ4); fresh names (the
+ARMTAG/7D stale-cube rule). GB0w/GB0e SKIPPED-disclosed under
+ESEC (G8G-0 substitutes and is strictly stronger). Seeds 31 +
+101, bars on seed means (the amendment-5d standard); ~1080 GPU
+cells per seed, estimate ~4–5 h/seed (non-binding).
+
+GATES (abort-grade before any quote):
+  G8G-0 (in-run, per law×seed): the (ein=1.0, erf=0.90) slice of
+    the ESEC cube AND cubevt must equal the operative photow3
+    cube EXACTLY — max|Δ| <= 1e-9, target 0.0e+0 (the GB0w
+    new-mode standard; the identity cells are RECOMPUTED through
+    the new loop, so this is an end-to-end regression of the
+    restructured build).
+  G8G-1 (reader): the identity-slice LANDED-CONV read must
+    reproduce the shipped per-seed E-arm EXT rows (parsed from
+    data/stage7jz5_eread.txt at runtime: simple 0.63/+16.2 and
+    0.74/+12.7, BE 0.75/+12.8 and 0.59/+19.3) to |Δα| <= 0.01,
+    |ΔdN| <= 0.1.
+  G8G-2 (reader): finite-mass bookkeeping + EDGE report on the
+    new axes (correction-#4 standard: freed-posterior mode AT a
+    new-axis edge with >= 0.5 mass -> EDGE flag; extension is a
+    decision, not an auto-run).
+
+THE READ (calcs/stage8g_read.py; LANDED-CONV anchor + prior_eta,
+the read6 convention extended to 11-dim): per law×seed — the
+identity-slice read (α, dN, P(sq)) vs the freed read (α, dN,
+P(sq), P(ein), P(erf)), the profile gain G_e = max lnL(freed) −
+max lnL(identity), and the marginal ΔdN. P(sq) = the sq-axis
+posterior marginalizing everything else including α.
+
+BARS (locked; seed means, both laws; sq mode = argmax of the
+seed-mean posterior):
+  E-ABSORB:  P(sq > 0) <= 0.50 both laws -> the width demand is
+    absorbable by the named e-sector; sq = e-sector-inadequacy
+    CONFIRMED at control grade; the freed α/dN are reported as
+    conditional candidates (promotion = a review-round question,
+    NOT this stage's verdict).
+  E-SURVIVE: P(sq > 0) >= 0.90 AND sq mode >= 0.1, both laws ->
+    the width object survives the freed e-sector; leg 2 (8H
+    boundedness) becomes the decider. AGAINST-EXPECTATION flag
+    mandatory.
+  else E-PARTIAL: the decomposition is the product; report
+    per-law per-seed as-is, no interpretation beyond the printed
+    numbers.
+  SEED-SPLIT: seeds landing in different branches per law ->
+    report as-is, verdict = the seed-mean branch with the split
+    flagged; NO auto-extension (cost honesty, disclosed).
+  α exposure: Δα = freed − identity (seed mean, per law);
+    |Δα| > 0.11 (the standing systematic band) -> MATERIAL flag
+    with the pre-scripted sentence: "α is exposed to the e-sector
+    at the freed grid; the operative quote gains this as a
+    systematic annotation" (no re-quote in this stage).
+  NO credence move in ANY branch (pre-stated; the anomaly-real
+  deciders remain the W4-external class + the census program).
+
+Amendment rule: grid values and gate tolerances may be amended
+pre-quote with logged reasons (the standing rule); bars may NOT
+move.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
