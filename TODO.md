@@ -548,11 +548,21 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     collapses the noise-ceiling curve to a point (round-11 form) and
     restores function-discrimination power lost at 7J-d.
     **PROGRAM OPENED 2026-08-03 (the sq-as-hidden-variable program,
-    author-adopted "Go for it"): leg 1 = Stage 8G e-sector control
-    (ESEC mode, EIN×ERF axes; pre-reg in NOTES; expected outcome
-    pre-stated E-ABSORB); leg 2 = 8H boundedness contest on the
-    (band=9, cliff=2) census pair (design AFTER 8G lands); leg 3 =
-    the second-moment cross-system derivation (alongside).**
+    author-adopted "Go for it"): ~~leg 1 = Stage 8G e-sector control~~
+    — EXECUTED same day (pre-reg fd33fe0; gates 8/8 bit-exact + 4/4
+    + EDGE): **E-SURVIVE both laws, against the pre-stated
+    expectation — P(sq>0)=1.00 in all four freed reads; inner
+    anchors data-CONFIRMED at identity; radial floor runs to
+    erf=0.95 (EDGE, extension = 8H-round decision); α MATERIAL
+    annotation −0.131/−0.117 (freed α ≈ 0.53–0.57, Newton +3.2
+    min single read); sq now excluded as: mass errors (3J),
+    companions (7J), KT=4 tails (8F), e-sector (8G).** leg 2 = 8H
+    boundedness contest on the (band=9, cliff=2) census pair (NOW
+    THE DECIDER; premise set; erf-extension + freed-P(fpm) fold
+    in); leg 3 = the second-moment cross-system derivation
+    (skeleton drafted: MI-Jensen magnitude-dead ~0.015; incoherent
+    bath galaxy-floor-dead; coherent draw = cliff-smearing =
+    8H-measurable).**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

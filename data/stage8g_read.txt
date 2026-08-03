@@ -1,0 +1,26 @@
+8G THE E-SECTOR CONTROL — reader (pre-reg fd33fe0; bars locked before any run; expected outcome pre-stated E-ABSORB; no credence move any branch)
+
+operative anchor (LANDED-CONV): [-4886.95, -0.96, -0.43, -0.29, -4.97, -153.72]
+
+[simple 31] G8G-1: id-slice 0.63/+16.2 vs shipped 0.63/+16.2 -> PASS
+[simple 31] ID:    a=0.63 dN=+16.2 P(sq)=[0.0, 0.0, 1.0, 0.0]
+[simple 31] FREED: a=0.57 dN=+7.5 P(sq)=[0.0, 0.0, 1.0, 0.0] P(ein)=[0.0, 1.0, 0.0, 0.0] P(erf)=[0.0, 0.0, 1.0] G_e=+13.2
+[simple 101] G8G-1: id-slice 0.74/+12.7 vs shipped 0.74/+12.7 -> PASS
+[simple 101] ID:    a=0.74 dN=+12.7 P(sq)=[0.0, 0.0, 1.0, 0.0]
+[simple 101] FREED: a=0.53 dN=+18.4 P(sq)=[0.0, 0.0, 1.0, 0.0] P(ein)=[0.0, 1.0, 0.0, 0.0] P(erf)=[0.0, 0.0, 1.0] G_e=+23.8
+[BE 31] G8G-1: id-slice 0.75/+12.8 vs shipped 0.75/+12.8 -> PASS
+[BE 31] ID:    a=0.75 dN=+12.8 P(sq)=[0.0, 0.0, 1.0, 0.0]
+[BE 31] FREED: a=0.54 dN=+3.2 P(sq)=[0.0, 0.01, 0.99, 0.0] P(ein)=[0.0, 0.99, 0.01, 0.0] P(erf)=[0.0, 0.0, 1.0] G_e=+12.8
+[BE 101] G8G-1: id-slice 0.59/+19.3 vs shipped 0.59/+19.3 -> PASS
+[BE 101] ID:    a=0.59 dN=+19.3 P(sq)=[0.0, 0.0, 1.0, 0.0]
+[BE 101] FREED: a=0.57 dN=+20.8 P(sq)=[0.0, 0.0, 1.0, 0.0] P(ein)=[0.0, 1.0, 0.0, 0.0] P(erf)=[0.0, 0.0, 1.0] G_e=+19.3
+
+G8G-2 [simple]: seed-mean P(ein)=[0.0, 1.0, 0.0, 0.0], P(erf)=[0.0, 0.0, 1.0]
+G8G-2 [BE]: seed-mean P(ein)=[0.0, 1.0, 0.0, 0.0], P(erf)=[0.0, 0.0, 1.0]
+G8G-2 edge report: EDGE flag on ['simple:erf=0.95 (P=1.00)', 'BE:erf=0.95 (P=1.00)'] (correction-#4: extension is a decision, not an auto-run)
+
+BAR [simple]: P(sq>0)=1.00, sq-mode=0.2, d_alpha=-0.131 MATERIAL, G_e=+18.5 -> E-SURVIVE
+BAR [BE]: P(sq>0)=1.00, sq-mode=0.2, d_alpha=-0.117 MATERIAL, G_e=+16.1 -> E-SURVIVE
+
+==> 8G VERDICT (locked bars, two-seed): E-SURVIVE: the width object survives the freed e-sector — AGAINST THE PRE-STATED EXPECTATION; leg 2 (8H boundedness contest) becomes the decider [alpha MATERIAL flag: the operative quote gains the e-sector exposure as a systematic annotation]
+    NO credence move (pre-stated in every branch).

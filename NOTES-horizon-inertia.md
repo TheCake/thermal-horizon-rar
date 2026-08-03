@@ -8334,6 +8334,74 @@ Amendment rule: grid values and gate tolerances may be amended
 pre-quote with logged reasons (the standing rule); bars may NOT
 move.
 
+## Stage 8G EXECUTED (2026-08-03): E-SURVIVE — the width object survives the freed e-sector, AGAINST the pre-stated expectation; the inner anchors are data-confirmed; the radial floor tightens to the 0.95 edge; α gains a −0.12 e-sector annotation
+
+Gates first-run clean: G8G-0 bit-exact 8/8 (0.00e+00 including the
+vt cubes, both seeds both laws — the restructured loop IS the legacy
+code at the identity cell); G8G-1 4/4 (the identity-slice reads
+reproduce the shipped E-arm rows to the digit: 0.63/+16.2,
+0.74/+12.7, 0.75/+12.8, 0.59/+19.3); G8G-2 fires the EDGE flag
+(below). Runtime 274 + 269 min (the 4–5 h/seed estimate borne out).
+
+THE ANSWER: **P(sq > 0) = 1.00 in ALL FOUR law×seed freed reads,
+sq-mode = 0.2 everywhere** (the single off-diagonal cell is BE-31's
+P(0.1) = 0.01). The 7J-z6-named sector — freed on both its frozen
+axes — does NOT absorb the width object. E-SURVIVE fired in both
+laws with no seed split, AGAINST the pre-registered expectation
+(E-ABSORB was the published bet). The sq exclusion table now reads:
+not mass errors (3J, ×12 too small), not companions (7J posterior),
+not KT=4-class error tails (8F family), NOT the e-sector (8G). Leg
+2 — the 8H boundedness contest on the (band=9, cliff=2) census
+pair — is the decider by pre-registration.
+
+THE SECTOR ITSELF (secondary measurements): (a) **P(ein) = 1.00 at
+the IDENTITY node in every read** — the published inner-anchor
+profile [0.6, 1.0] is data-CONFIRMED, not merely assumed; the
+inner-bin arm of the 7J-z6 fingerprint does not want a different
+inner power law. (b) The radial floor runs to **erf = 0.95 at
+P = 1.00 — EDGE flag** (correction-#4: extension is a decision,
+not an auto-run; folded into the 8H design round, where the
+tightened near-parabolic column also changes the census-forward
+premise). The tighter column (e ∈ [0.95, 0.995]) buys G_e = +18.5
+(simple) / +16.1 (BE) lnL at the best cell — a real model
+improvement ORTHOGONAL to sq: it does not touch the width demand.
+(c) Profile-level only (not a marginal read): the freed PROF rows
+take fpm off the 3.0 edge in 3 of 4 rows (2.4/2.4/2.1; BE-101
+stays 3.0) — the tightened column may eat part of the noise chase;
+the freed P(fpm) marginal was not computed here (a 8H-round item).
+
+THE α ANNOTATION (MATERIAL, the pre-scripted sentence applies):
+Δα(freed − identity) = −0.131 (simple) / −0.117 (BE) — just past
+the ±0.11 band. Freed α_marg per seed: 0.57/0.53 (simple 31/101),
+0.54/0.57 (BE). "α is exposed to the e-sector at the freed grid;
+the operative quote gains this as a systematic annotation" (no
+re-quote in this stage). Newton under the freed sector: dN
++7.5/+18.4 (simple), +3.2/+20.8 (BE) — rejected in all four reads;
+the seed-mean margin softens ~4 lnL from the operative band; the
+BE-31 single read at +3.2 is the low-water mark, quoted openly.
+
+NO credence move (pre-stated in every branch; the census program
+and the external W4 legs remain the deciders).
+
+Plain verdict: SUCCESS — the control answered decisively, and the
+answer is E-SURVIVE against our stated bet: the width object is
+real structure that this model family cannot explain away with
+orbit shapes.
+
+ELI12: We bet the boring answer would win — that our too-rigid
+menu of orbit shapes was faking the 20% jitter. We unlocked the
+menu and let the data order anything. The data said: "your inner
+orbit shapes were RIGHT all along (they picked the exact published
+values back), the plunging-orbit family should be slightly MORE
+extreme (a real small improvement), and the 20% jitter? Still
+there, at full certainty, in every check." The mystery just
+survived its most likely boring explanation — losing our bet the
+way that makes the mystery more interesting. One warning label
+from the same run: with looser orbit menus the gravity-boost knob
+reads ~0.55 instead of ~0.7, so that goes on the quote. Next up:
+does the jitter respect the escape-speed ceiling? Physics obeys
+speed limits; noise doesn't.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

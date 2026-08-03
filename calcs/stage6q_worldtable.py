@@ -235,6 +235,14 @@ CHECKS = [
      'b_BE(0.20) = +0.27(0.01)', 'data/stage8fd_read.txt'),
     ('bin-8fd-patchblock', 'GD0 (seed-31 slice vs shipped 8F-c, 10 '
      'reference rows): PASS', 'data/stage8fd_read.txt'),
+    ('bin-8g-esector', 'BAR [simple]: P(sq>0)=1.00, sq-mode=0.2, '
+     'd_alpha=-0.131 MATERIAL, G_e=+18.5 -> E-SURVIVE',
+     'data/stage8g_read.txt'),
+    ('bin-8g-esector', 'BAR [BE]: P(sq>0)=1.00, sq-mode=0.2, '
+     'd_alpha=-0.117 MATERIAL, G_e=+16.1 -> E-SURVIVE',
+     'data/stage8g_read.txt'),
+    ('bin-8g-esector', "EDGE flag on ['simple:erf=0.95 (P=1.00)', "
+     "'BE:erf=0.95 (P=1.00)']", 'data/stage8g_read.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
