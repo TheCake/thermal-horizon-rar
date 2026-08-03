@@ -316,6 +316,25 @@ if ARMTAG:
     assert re.fullmatch(r'[a-z0-9]+', ARMTAG), ARMTAG
     TAG = f'{TAG}_{ARMTAG}'
     OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
+# 8G (pre-reg fd33fe0): ESEC=1 frees the 7J-z6-named frozen e-sector
+# on the landed photow3 grid — EIN scales the power-law arm's frozen
+# inner anchors (al = interp(..., [0.6*ein, 1.0*ein, eta, eta])), ERF
+# frees the radial-component floor (e_rad = erf + (0.995-erf)*u_e).
+# Two axes inserted after wr; cubes ..._esec_{seed}_{law}.npy, 11-dim.
+# The (ein=1.0, erf=0.90) cell is BRANCHED to the legacy e_of verbatim,
+# so that slice must equal the operative photow3 cube EXACTLY (G8G-0,
+# abort-grade; GB0w/GB0e are skipped-disclosed — G8G-0 substitutes).
+ESEC = os.environ.get('ESEC', '') == '1'
+EIN_GRID = np.array([1.0])
+ERF_GRID = np.array([0.90])
+if ESEC:
+    assert AMP == 'photow' and FPME and not WSHAPE and not FUNCS \
+        and not QLAW and not ARMTAG, 'ESEC = the landed photow3 grid'
+    assert SAMPLE == 'full', 'the e-sector control runs on the sky'
+    EIN_GRID = np.array([0.5, 1.0, 1.5, 2.0])
+    ERF_GRID = np.array([0.80, 0.90, 0.95])
+    TAG = '_esec'
+    OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -503,6 +522,15 @@ def e_of(p, eta, wr):
                    [0.6, 1.0, eta, eta])
     e_pow = 0.95*p['u_e']**(1/(1+al))
     e_rad = 0.9+0.095*p['u_e']
+    return np.where(p['u_mix'] < wr, e_rad, e_pow)
+
+def e_of_x(p, eta, wr, ein, erf):
+    # 8G generalized e-sector; the identity cell (1.0, 0.90) never
+    # routes here — it takes the legacy e_of verbatim (G8G-0)
+    al = np.interp(np.log10(p['a_s']), np.log10([100,500,1000,50000]),
+                   [0.6*ein, 1.0*ein, eta, eta])
+    e_pow = 0.95*p['u_e']**(1/(1+al))
+    e_rad = erf+(0.995-erf)*p['u_e']
     return np.where(p['u_mix'] < wr, e_rad, e_pow)
 
 def vp_c(p, e_s, tab_a):
@@ -859,9 +887,11 @@ def run_seed(seed):
             if PHW:
                 cubevt = np.load(vpath)
         else:
-            shp = (len(A_GRID), len(E_GRID), len(WR_GRID),
-                   len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
-                   len(FPM_GRID), len(KW_GRID))
+            shp = (len(A_GRID), len(E_GRID), len(WR_GRID))
+            if ESEC:
+                shp = shp + (len(EIN_GRID), len(ERF_GRID))
+            shp = shp + (len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
+                         len(FPM_GRID), len(KW_GRID))
             if PHW:
                 shp = shp + (len(SQ_GRID),)
             if WSHAPE:
@@ -869,16 +899,28 @@ def run_seed(seed):
             cube = np.full(shp, np.nan)
             cubevt = np.full(shp, np.nan) if PHW else None
             newt_cache = {}
+            # 8G: legacy mode carries the singleton (1.0, 0.90) cell,
+            # so this loop is the legacy loop cell-for-cell there
+            esec_cells = [(xi, ri, float(ein), float(erf))
+                          for xi, ein in enumerate(EIN_GRID)
+                          for ri, erf in enumerate(ERF_GRID)]
             for ai, al in enumerate(A_GRID):
                 tab_a = 1.0 + al*(TAB-1.0)
                 for ei, eta in enumerate(E_GRID):
                     for wi, wr in enumerate(WR_GRID):
-                        if al == 0.0 and li > 0 and (ei, wi) in newt_cache:
-                            cube[ai, ei, wi], _vv = newt_cache[(ei, wi)]
+                      for xi, ri, ein, erf in esec_cells:
+                        ix = ((ai, ei, wi, xi, ri) if ESEC
+                              else (ai, ei, wi))
+                        ck = (ei, wi, xi, ri)
+                        if al == 0.0 and li > 0 and ck in newt_cache:
+                            cube[ix], _vv = newt_cache[ck]
                             if PHW:
-                                cubevt[ai, ei, wi] = _vv
+                                cubevt[ix] = _vv
                             continue
-                        e_s = e_of(p, eta, wr)
+                        if ein == 1.0 and erf == 0.90:
+                            e_s = e_of(p, eta, wr)
+                        else:
+                            e_s = e_of_x(p, eta, wr, ein, erf)
                         vp = vp_c(p, e_s, tab_a) if al > 0 else None
                         mode = 5 if al > 0 else 1
                         kw = dict(a0=A0_CAN, tab=tab_a, lny0=LNY0, dlny=DLNY,
@@ -892,11 +934,11 @@ def run_seed(seed):
                         if not PHW:
                             l2 = l2[..., 0]
                             lv = lv[..., 0]
-                        cube[ai, ei, wi] = l2
+                        cube[ix] = l2
                         if PHW:
-                            cubevt[ai, ei, wi] = lv
+                            cubevt[ix] = lv
                         if al == 0.0:
-                            newt_cache[(ei, wi)] = (l2, lv)
+                            newt_cache[ck] = (l2, lv)
             np.save(cpath, cube)
             if PHW:
                 np.save(vpath, cubevt)
@@ -971,7 +1013,24 @@ def run_seed(seed):
         if PHW and QLAW:
             P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under QLAW "
               f"(q-draw differs at fcomp>0 by design; G0-q substitutes)")
-        if PHW and not QLAW:
+        if PHW and ESEC:
+            P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under ESEC "
+              f"(G8G-0 substitutes at the identity cell)")
+            # G8G-0 (8G pre-reg fd33fe0, abort-grade): the (ein=1.0,
+            # erf=0.90) slice — recomputed through the restructured
+            # loop — must equal the operative photow3 cube EXACTLY
+            p3p = f'data/stage7j_cube_{SAMPLE}_photow3_{seed}_{law}.npy'
+            v3p = f'data/stage7j_cubevt_{SAMPLE}_photow3_{seed}_{law}.npy'
+            d0 = float(np.nanmax(np.abs(
+                cube[:, :, :, 1, 1] - np.load(p3p))))
+            dv = (float(np.nanmax(np.abs(
+                cubevt[:, :, :, 1, 1] - np.load(v3p))))
+                if os.path.exists(v3p) else 0.0)
+            P(f"G8G-0 {SAMPLE} seed {seed} {law}: max|esec(id)-photow3|"
+              f" = {d0:.2e} / vt {dv:.2e} -> "
+              f"{'PASS' if max(d0, dv) <= 1e-9 else 'FAIL'}")
+            assert max(d0, dv) <= 1e-9, f'G8G-0 FAILED {law} seed {seed}'
+        if PHW and not QLAW and not ESEC:
             # GB0w: the sq=0 slice must reproduce the cached photo cube
             # (fpm axis sliced to the photo grid length under FPME)
             php = f'data/stage7j_cube_{SAMPLE}_photo_{seed}_{law}.npy'
@@ -1045,14 +1104,18 @@ def run_seed(seed):
         # PROF: full freedom, no prior
         prof, ahat, imax = profile_of(cb)
         best = np.unravel_index(np.nanargmax(cb), cb.shape)
-        sqtxt = f", sq={SQ_GRID[best[8]]}" if PHW else ""
+        off = 2 if ESEC else 0      # 8G: two axes inserted after wr
+        sqtxt = f", sq={SQ_GRID[best[8+off]]}" if PHW else ""
         if WSHAPE:
             sqtxt += f", ws={WS_GRID[best[9]]}"
+        if ESEC:
+            sqtxt += (f", ein={EIN_GRID[best[3]]}, "
+                      f"erf={ERF_GRID[best[4]]}")
         P(f"PROF {SAMPLE} seed {seed} {law}: a_hat={ahat:.2f} "
           f"(interior={0<imax<len(A_GRID)-1}), "
           f"dN={float(np.nanmax(prof)-prof[0]):+.1f}, "
-          f"wr={WR_GRID[best[2]]}, fcomp={FCOMP_GRID[best[3]]}, "
-          f"fpm={FPM_GRID[best[6]]}" + sqtxt)
+          f"wr={WR_GRID[best[2]]}, fcomp={FCOMP_GRID[best[3+off]]}, "
+          f"fpm={FPM_GRID[best[6+off]]}" + sqtxt)
         if PHW:
             # amendment 7(d): anchor reads live in the pre-registered
             # readers; no MARG/verdict from the batch in photow mode
