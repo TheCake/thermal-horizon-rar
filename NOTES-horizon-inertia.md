@@ -8402,6 +8402,34 @@ reads ~0.55 instead of ~0.7, so that goes on the quote. Next up:
 does the jitter respect the escape-speed ceiling? Physics obeys
 speed limits; noise doesn't.
 
+## Stage 8G-b (2026-08-03, read-only diagnostic, frame 983f9d9): the freed e-sector RELEASES the noise chase in 3 of 4 reads — MEASUREMENT ONLY
+
+G8Gb-0 4/4 (the identity-slice P(fpm) reproduces the shipped E-arm
+rows to <= 0.005). THE MEASUREMENT — marginal P(fpm = 3.0),
+identity -> freed: simple-31 1.00 -> 0.16 (mode 2.4, interior);
+simple-101 0.09 -> 0.02 (mode 2.1); BE-31 0.94 -> 0.14 (mode 2.4);
+BE-101 1.00 -> 1.00 (the hold-out). Released modes sit at 2.1–2.4
+= still above the ~1.4 Lindegren ceiling: the width-shape object
+DEFLATES in three reads, does not vanish. Companion measurement:
+P(wr) moves 0.20 -> 0.30 in ALL FOUR reads — more weight in the
+tighter erf = 0.95 column (the radial channel restructures as a
+unit). Numbers only tonight per the cadence rule and the committed
+frame; the candidate reading — that the sky's noise-edge chase
+(the arm suite's "chase-unexplained" token) was partly the
+too-loose radial floor, while the sq width object survives
+untouched — belongs to the 8H pre-reg, to be stated and TESTED
+there, not assumed here. No verdict, no credence move.
+
+ELI12: A quick bonus X-ray of today's big run. Our fit has always
+had a weird habit: it kept cranking the "assume the telescope is
+3x worse than advertised" knob to the max. With the orbit menu
+unlocked, that habit mostly stopped — in 3 of 4 checks the knob
+came down to normal-ish — but one check still cranks it, and
+even "normal-ish" is twice the advertised errors. So part of the
+weird habit was our orbit menu's fault, part still isn't
+explained. What we did NOT do tonight: decide what that means.
+That's tomorrow's carefully-worded test.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

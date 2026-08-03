@@ -243,6 +243,11 @@ CHECKS = [
      'data/stage8g_read.txt'),
     ('bin-8g-esector', "EDGE flag on ['simple:erf=0.95 (P=1.00)', "
      "'BE:erf=0.95 (P=1.00)']", 'data/stage8g_read.txt'),
+    ('bin-8gb-fpmread', '[simple 31] P(fpm) freed: [0.0, 0.0, 0.0, '
+     '0.29, 0.55, 0.16]  P(3.0)=0.16', 'data/stage8gb_fpmread.txt'),
+    ('bin-8gb-fpmread', '[BE 101] P(fpm) freed: [0.0, 0.0, 0.0, 0.0, '
+     '0.0, 1.0]  P(3.0)=1.00', 'data/stage8gb_fpmread.txt'),
+    ('bin-8gb-fpmread', 'G8Gb-0 ALL PASS', 'data/stage8gb_fpmread.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

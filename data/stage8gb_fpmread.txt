@@ -1,0 +1,21 @@
+8G-b THE FREED NOISE-POSTERIOR READ (read-only diagnostic; MEASUREMENT ONLY - no verdict, no credence move; feeds the 8H design premise)
+
+[simple 31] G8Gb-0: max|P(fpm)_id - shipped| = 0.005 -> PASS
+[simple 31] P(fpm) id:    [0.0, 0.0, 0.0, 0.0, 0.0, 1.0]  P(3.0)=1.00
+[simple 31] P(fpm) freed: [0.0, 0.0, 0.0, 0.29, 0.55, 0.16]  P(3.0)=0.16
+[simple 31] P(wr)  id: [0.0, 1.0, 0.0, 0.0, 0.0] | freed: [0.0, 0.0, 1.0, 0.0, 0.0]
+[simple 101] G8Gb-0: max|P(fpm)_id - shipped| = 0.004 -> PASS
+[simple 101] P(fpm) id:    [0.0, 0.0, 0.0, 0.37, 0.53, 0.09]  P(3.0)=0.09
+[simple 101] P(fpm) freed: [0.0, 0.0, 0.0, 0.89, 0.09, 0.02]  P(3.0)=0.02
+[simple 101] P(wr)  id: [0.0, 1.0, 0.0, 0.0, 0.0] | freed: [0.0, 0.0, 1.0, 0.0, 0.0]
+[BE 31] G8Gb-0: max|P(fpm)_id - shipped| = 0.004 -> PASS
+[BE 31] P(fpm) id:    [0.0, 0.0, 0.0, 0.0, 0.06, 0.94]  P(3.0)=0.94
+[BE 31] P(fpm) freed: [0.0, 0.0, 0.0, 0.01, 0.86, 0.14]  P(3.0)=0.14
+[BE 31] P(wr)  id: [0.0, 1.0, 0.0, 0.0, 0.0] | freed: [0.0, 0.0, 1.0, 0.0, 0.0]
+[BE 101] G8Gb-0: max|P(fpm)_id - shipped| = 0.001 -> PASS
+[BE 101] P(fpm) id:    [0.0, 0.0, 0.0, 0.0, 0.0, 1.0]  P(3.0)=1.00
+[BE 101] P(fpm) freed: [0.0, 0.0, 0.0, 0.0, 0.0, 1.0]  P(3.0)=1.00
+[BE 101] P(wr)  id: [0.0, 1.0, 0.0, 0.0, 0.0] | freed: [0.0, 0.0, 1.0, 0.0, 0.0]
+
+G8Gb-0 ALL PASS (grids: fpm [1.2, 1.5, 1.8, 2.1, 2.4, 3.0], wr [0.1, 0.2, 0.3, 0.4, 0.5])
+MEASUREMENT ONLY - no verdict line by design; interpretation belongs to the 8H pre-reg (the width-shape premise).
