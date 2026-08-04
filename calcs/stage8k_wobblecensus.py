@@ -109,8 +109,13 @@ P(f"S1 VALIDITY (pre-stated: P99 > 1.6, no hard ceiling): "
 P("")
 
 # ---------- HOT flags ----------
-hot1 = (ru1 > 1.25) | (as1 > 3)
-hot2 = (ru2 > 1.25) | (as2 > 3)
+# AMENDMENT 1 (pre-quote, logged in NOTES; run-1 preserved as
+# _run1.txt): the aen_sig>3 arm fired on 0.96-0.99 of G<12
+# components (a brightness flag, caught by G8K-2's own mag table).
+# HOT = ruwe > 1.25 ONLY (Belokurov-class standard; RUWE is
+# brightness-normalized).  aen_sig retained descriptively below.
+hot1 = (ru1 > 1.25)
+hot2 = (ru2 > 1.25)
 pair_hot = hot1 | hot2
 WIDE = ok & (s_kau >= 6)
 NARR = ok & (s_kau < 2)
@@ -166,24 +171,50 @@ for i in range(10000):
     sh = rng.permutation(phW)
     null[i] = vtW[sh > 0.5].mean() - vtW[sh < 0.5].mean()
 p_perm = float(np.mean(np.abs(null) >= abs(d_obs)))
-rho, p_sp = spearmanr(np.maximum(ru1[WIDE], ru2[WIDE]), vtW)
+# PRIMARY variant (G8K-2 trigger fired): per-component RUWE
+# percentile within its 1-mag bin; pair score = max of the two
+allg = np.concatenate([G1m[ok], G2m[ok]])
+allr = np.concatenate([ru1[ok], ru2[ok]])
+def magpct(gv, rv):
+    out = np.zeros(len(gv))
+    for glo in range(6, 19):
+        m = (allg >= glo) & (allg < glo+1) & np.isfinite(allr)
+        mm = (gv >= glo) & (gv < glo+1)
+        if m.sum() > 50 and mm.sum() > 0:
+            ref = np.sort(allr[m])
+            out[mm] = np.searchsorted(ref, rv[mm])/len(ref)
+    return out
+pc1 = magpct(G1m[WIDE], ru1[WIDE])
+pc2 = magpct(G2m[WIDE], ru2[WIDE])
+score = np.maximum(pc1, pc2)
+rho, p_sp = spearmanr(score, vtW)
 P(f"S2 [WIDE]: mean vt(hot) - mean vt(cold) = {d_obs:+.4f} "
-  f"(perm p = {p_perm:.4f}); spearman(max-RUWE, vt) rho = "
-  f"{rho:+.4f} (p = {p_sp:.2e})")
+  f"(perm p = {p_perm:.4f}); PRIMARY mag-binned: spearman("
+  f"max-RUWE-pctile, vt) rho = {rho:+.4f} (p = {p_sp:.2e})")
 P("   (asymmetric reading pre-stated: positive = necessary for "
   "collapse but error-degenerate; null = collapse-killing for the "
   "vt-excess-as-wobble reading)")
 P("")
 
 # ---------- S3: the nine ----------
+alla = np.concatenate([as1[ok], as2[ok]])
+def aenpct(g, a):
+    m = (allg >= g-0.5) & (allg < g+0.5) & np.isfinite(alla)
+    if m.sum() < 50:
+        return float('nan')
+    ref = np.sort(alla[m])
+    return float(np.searchsorted(ref, a)/len(ref))
 nhot = 0
-P("S3 the nine census pairs (individually):")
+P("S3 the nine census pairs (individually; aen_sig percentile = "
+  "vs mag-matched ok components, DESCRIPTIVE):")
 for j, r in zip(cidx, cens):
     h = bool(pair_hot[j])
     nhot += h
+    ap1 = aenpct(G1m[j], as1[j]); ap2 = aenpct(G2m[j], as2[j])
     P(f"  s = {s_kau[j]:6.2f} kAU, vt = {vt[j]:.3f}: ruwe = "
       f"({ru1[j]:.3f}, {ru2[j]:.3f}), aen_sig = ({as1[j]:.1f}, "
-      f"{as2[j]:.1f}), dr2_ruwe = ({dru1[j]:.3f}, {dru2[j]:.3f}) "
+      f"{as2[j]:.1f}) [mag-pctile ({ap1:.2f}, {ap2:.2f})], "
+      f"dr2_ruwe = ({dru1[j]:.3f}, {dru2[j]:.3f}) "
       f"-> {'HOT' if h else 'clean'}")
 s3cat = ('CENSUS-CLEAN' if nhot <= 3 else
          'CENSUS-WOBBLE-SUSPECT' if nhot >= 6 else 'MIXED')
@@ -191,11 +222,14 @@ P(f"S3 verdict: {nhot}/9 hot (bars <= 3 / >= 6) -> {s3cat}")
 P("")
 
 # ---------- S4/S5 descriptive ----------
-both_rv = WIDE & np.isfinite(rv1) & np.isfinite(rv2)
+rv_good = (np.isfinite(rv1) & np.isfinite(rv2)
+           & np.isfinite(re1) & np.isfinite(re2)
+           & (re1 > 0) & (re1 < 1e3) & (re2 > 0) & (re2 < 1e3))
+both_rv = WIDE & rv_good
 if both_rv.sum() > 10:
     drv = np.abs(rv1[both_rv]-rv2[both_rv])
-    P(f"S4 [desc] WIDE pairs with both DR2 RVs: n = "
-      f"{int(both_rv.sum())}; median |dRV| = "
+    P(f"S4 [desc] WIDE pairs with both DR2 RVs (sentinels filtered): "
+      f"n = {int(both_rv.sum())}; median |dRV| = "
       f"{float(np.median(drv)):.2f} km/s; median rv_err hot/cold = "
       f"{float(np.median(np.concatenate([re1[both_rv & pair_hot], re2[both_rv & pair_hot]]))):.2f}"
       f"/{float(np.median(np.concatenate([re1[both_rv & ~pair_hot], re2[both_rv & ~pair_hot]]))):.2f} km/s")

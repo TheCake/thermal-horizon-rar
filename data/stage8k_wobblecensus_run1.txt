@@ -1,0 +1,43 @@
+8K THE WOBBLE CENSUS (pre-reg 370eed4; bars + credence map locked before any run)
+
+G8K-0 loader identity: N = 14071 (ref 14071), per-bin [9950, 2684, 1223, 214] (ref [9950, 2684, 1223, 214]) -> PASS
+G8K-0b census match: 9/9 matched uniquely -> PASS
+G8K-1 flag completeness: NaN fraction = 0.0000 -> PASS
+RUWE distribution (all ok components): P50 = 1.059, P90 = 1.294, P99 = 2.398, max = 19.27
+S1 VALIDITY (pre-stated: P99 > 1.6, no hard ceiling): VALID
+
+G8K-2 f_hot vs G-mag (1-mag bins, all ok components):
+  G 8-9: f_hot = 0.988 (n = 1321)
+  G 9-10: f_hot = 0.961 (n = 2429)
+  G 10-11: f_hot = 0.960 (n = 3241)
+  G 11-12: f_hot = 0.982 (n = 3465)
+  G 12-13: f_hot = 0.854 (n = 4016)
+  G 13-14: f_hot = 0.256 (n = 4645)
+  G 14-15: f_hot = 0.221 (n = 4745)
+  G 15-16: f_hot = 0.199 (n = 2833)
+  G 16-17: f_hot = 0.186 (n = 721)
+  mag run (max/min) = 5.32 -> STRONG (mag-binned percentile variant primary for S2)
+
+S1 [WIDE (s>=6)]: f_hot per component = 0.568 [0.550, 0.586] (k = 1632, n = 2874); pair-hot = 0.795
+S1 [NARROW control (<2)]: f_hot per component = 0.627 [0.621, 0.634] (k = 12484, n = 19900); pair-hot = 0.792
+S1 verdict (bars < 0.20 / >= 0.30): RATE-MET
+
+S2 [WIDE]: mean vt(hot) - mean vt(cold) = +0.0568 (perm p = 0.0271); spearman(max-RUWE, vt) rho = +0.0983 (p = 1.90e-04)
+   (asymmetric reading pre-stated: positive = necessary for collapse but error-degenerate; null = collapse-killing for the vt-excess-as-wobble reading)
+
+S3 the nine census pairs (individually):
+  s =  34.22 kAU, vt = 1.608: ruwe = (0.911, 1.062), aen_sig = (2.5, 0.1), dr2_ruwe = (0.998, 0.958) -> clean
+  s =   6.56 kAU, vt = 1.608: ruwe = (1.483, 1.160), aen_sig = (8.0, 1.2), dr2_ruwe = (1.164, 1.123) -> HOT
+  s =   8.82 kAU, vt = 1.591: ruwe = (0.886, 1.010), aen_sig = (5.4, 0.0), dr2_ruwe = (1.003, 1.050) -> HOT
+  s =  39.55 kAU, vt = 1.581: ruwe = (1.533, 1.195), aen_sig = (19.1, 2.3), dr2_ruwe = (1.045, 1.080) -> HOT
+  s =   7.26 kAU, vt = 1.548: ruwe = (1.042, 1.055), aen_sig = (17.3, 0.0), dr2_ruwe = (1.054, 0.990) -> HOT
+  s =   9.83 kAU, vt = 1.535: ruwe = (1.070, 1.120), aen_sig = (11.9, 2.8), dr2_ruwe = (1.004, 1.135) -> HOT
+  s =   8.39 kAU, vt = 1.531: ruwe = (1.047, 1.238), aen_sig = (13.1, 15.5), dr2_ruwe = (0.928, 0.926) -> HOT
+  s =  19.66 kAU, vt = 1.518: ruwe = (0.965, 0.909), aen_sig = (13.3, 22.3), dr2_ruwe = (1.072, 0.992) -> HOT
+  s =  44.40 kAU, vt = 1.510: ruwe = (0.927, 1.203), aen_sig = (7.2, 9.3), dr2_ruwe = (1.045, 1.155) -> HOT
+S3 verdict: 8/9 hot (bars <= 3 / >= 6) -> CENSUS-WOBBLE-SUSPECT
+
+S4 [desc] WIDE pairs with both DR2 RVs: n = 1437; median |dRV| = 4.15 km/s; median rv_err hot/cold = 1.21/100000002004087734272.00 km/s
+S5 [desc] DR2->EDR3 RUWE delta (WIDE): median hot = -0.009, cold = -0.043
+
+==> 8K VERDICT (locked bars): WOBBLE-RICH: the required population exists where the collapse world needs it; per the map: anomaly-real ~50% -> ~40%; the census's gravity-evidence reading is SUSPENDED pending the NSS leg; the budget proceeds under the registered map

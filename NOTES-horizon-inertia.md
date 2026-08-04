@@ -9140,6 +9140,33 @@ misses): genuinely uncertain; mild lean OBJECT-LEVEL-ABSENT
 Amendment rule: gate tolerances amendable pre-quote; bars and
 the map may NOT move.
 
+AMENDMENT 1 (2026-08-04, logged PRE-QUOTE; the first-run verdict
+line is a FAILED-VALIDITY record, preserved as
+data/stage8k_wobblecensus_run1.txt, never quoted as a result):
+the instrument's own G8K-2 gate measured the HOT flag
+mis-calibrated — f_hot = 0.96–0.99 for ALL components brighter
+than G ~ 12 (mag run 5.32, STRONG). Diagnosis: the aen_sig > 3
+arm is a BRIGHTNESS flag, not a binarity flag — bright Gaia
+sources have tiny formal errors, so calibration-level excess
+noise is always "significant" (known DR3 property). The
+first-run baselines it produced (f_hot 0.57–0.63 per component;
+pair-hot 0.79) are physically impossible as companion rates,
+and the S1/S3 bar constants were written for a binarity-grade
+flag with a ~0.10–0.20 baseline. THE AMENDMENT (the 8H
+amendment-1 precedent — a gate fired on instrument internals;
+the component is replaced; bars and the map do NOT move):
+HOT = ruwe > 1.25 ONLY (the literature-standard Belokurov-class
+threshold; RUWE is brightness-normalized by construction —
+verified in the amended run's own mag table). The aen_sig
+channel is retained DESCRIPTIVELY (mag-matched percentile
+comparison for the census pairs — not silently dropped). The
+S2 mag-binned-percentile variant (already pre-declared primary
+under the fired trigger) is implemented. S4 sentinel-value bug
+fixed (RV errors filtered to finite < 1e3). Design-flaw
+ownership: the pre-reg promoted the mag-robust variant for S2
+only and left S1/S3 on the raw flag — that hole is ours, caught
+by our own gate; both runs preserved.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
