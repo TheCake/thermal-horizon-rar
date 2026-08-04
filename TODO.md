@@ -584,7 +584,19 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     (design deliberately deferred): the wobble TAIL-SHAPE
     instrument — reshape the S-factor/logP tail so mid-shoulder
     mass survives while the km/s spike corner dies; must be
-    distribution-level, not a scalar dial.**
+    distribution-level, not a scalar dial.** ~~8J saturation~~ —
+    EXECUTED 2026-08-04 (pre-reg 2cec321): **T-REFUSED BY THE
+    LETTER (BE at exactly 0.500) wrapping a VIOLENT SEED SPLIT —
+    seed 31 both laws: saturation embraced, fcomp→0.35/0.50,
+    fpm→3.0, α_marg=0.00 dN=+0.0 = THE FIFTH MOVE LIVE IN THE
+    MARGINAL; seed 101 both laws: total refusal (P(off)=1.00,
+    α 0.44/0.50). The 3A realization systematic now decides a
+    verdict-grade question. Census pushback: collapse cell still
+    ×3 band flood, 0/4 reopened. STOP RULE EXECUTED → THE
+    REVIEWER ROUND with the 8H/8I-a/8J scorecard + the
+    seed-budget design + the credence map pre-registration.
+    3rd consecutive against-expectation verdict. Credence
+    frozen.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

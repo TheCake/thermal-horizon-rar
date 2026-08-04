@@ -1,0 +1,40 @@
+8J THE WOBBLE SATURATION READ (pre-reg 2cec321; bars locked before any run; credence FROZEN every branch)
+
+[simple 31] G8J-1 max|off-esec| = 0.00e+00 -> PASS
+[simple 31] OFF:  a=0.57 dN=+7.8
+[simple 31] WSAT: a=0.00 dN=+0.0 P(w0)=[0.44, 0.53, 0.0, 0.0, 0.03] P(fcomp)=[0.0, 0.03, 0.0, 0.47, 0.5, 0.0]
+[simple 31]       P(sq)=[0.0, 0.0, 1.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.01, 0.02, 0.97] Dwob=+0.0
+[simple 31] MAP cell: alpha=0.0, eta=1.05, wr=0.3, fcomp=0.35, fpm=3.0, kw=1.0, w0=0.2, sq=0.2
+[simple 31] CENSUS repaired: mu=(29.27, 12.44) jointP=2.57e-09 | saturation-off: mu=(67.49, 68.54) jointP=1.58e-45
+
+[BE 31] G8J-1 max|off-esec| = 0.00e+00 -> PASS
+[BE 31] OFF:  a=0.55 dN=+3.4
+[BE 31] WSAT: a=0.00 dN=+0.0 P(w0)=[0.45, 0.55, 0.0, 0.0, 0.0] P(fcomp)=[0.0, 0.0, 0.0, 0.48, 0.51, 0.0]
+[BE 31]       P(sq)=[0.0, 0.0, 1.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.0, 0.01, 0.99] Dwob=+0.0
+[BE 31] MAP cell: alpha=0.0, eta=1.05, wr=0.3, fcomp=0.35, fpm=3.0, kw=1.0, w0=0.2, sq=0.2
+[BE 31] CENSUS repaired: mu=(29.27, 12.44) jointP=2.57e-09 | saturation-off: mu=(67.49, 68.54) jointP=1.58e-45
+
+[simple 101] G8J-1 max|off-esec| = 0.00e+00 -> PASS
+[simple 101] OFF:  a=0.54 dN=+19.5
+[simple 101] WSAT: a=0.44 dN=+8.9 P(w0)=[0.0, 0.0, 0.0, 0.0, 1.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[simple 101]       P(sq)=[0.0, 0.0, 1.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.88, 0.09, 0.02] Dwob=-12.0
+[simple 101] MAP cell: alpha=0.5, eta=1.05, wr=0.3, fcomp=0.1, fpm=2.1, kw=0.7, w0=1000000000.0, sq=0.2
+[simple 101] CENSUS repaired: mu=(29.60, 18.22) jointP=1.36e-11 | saturation-off: mu=(29.60, 18.22) jointP=1.36e-11
+
+[BE 101] G8J-1 max|off-esec| = 0.00e+00 -> PASS
+[BE 101] OFF:  a=0.58 dN=+21.9
+[BE 101] WSAT: a=0.50 dN=+11.3 P(w0)=[0.0, 0.0, 0.0, 0.0, 1.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[BE 101]       P(sq)=[0.0, 0.0, 1.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.0, 0.0, 1.0] Dwob=-14.6
+[BE 101] MAP cell: alpha=0.5, eta=1.05, wr=0.3, fcomp=0.1, fpm=3.0, kw=0.7, w0=1000000000.0, sq=0.2
+[BE 101] CENSUS repaired: mu=(28.93, 17.73) jointP=3.33e-11 | saturation-off: mu=(28.93, 17.73) jointP=3.33e-11
+
+G8J-1 4/4 PASS (saturation-off slice = esec (1.0,0.95) slice, arithmetic)
+
+BAR [simple]: P(w0<inf)=0.48, mode=1000000000.0, d_alpha=-0.334 MATERIAL -> T-REFUSED
+BAR [BE]: P(w0<inf)=0.50, mode=1000000000.0, d_alpha=-0.314 MATERIAL -> T-REFUSED
+CENSUS-REOPENED count (jointP >= 1e-3 at the repaired cell): 0/4 -> NOT reopened
+
+==> 8J VERDICT (locked bars): T-REFUSED: the third distribution-level refusal; the wobble sector goes to the REVIEWER ROUND with the 8H/8I-a/8J scorecard (pre-committed stop rule - no fourth dial)
+    CREDENCE FROZEN (pre-stated, every branch).
+
+done (0.5 min)

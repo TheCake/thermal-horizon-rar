@@ -8868,6 +8868,90 @@ are minutes (LLM time — calibration noted). Amendment rule: gate
 tolerances amendable pre-quote with logged reasons; bars may NOT
 move.
 
+## Stage 8J EXECUTED (2026-08-04, all gates PASS): T-REFUSED BY THE LETTER — wrapping a VIOLENT SEED SPLIT; seed 31 produces the fifth move LIVE in the marginal; the stop rule fires
+
+Gates: G8J-0 bit-exact 8/8 (0.00e+00 incl. vt), G8J-1 4/4 — the
+saturation machinery is certified; nothing below is wiring.
+Runtime 64.9 + 64.9 min. EXPECTATION MISSED — the THIRD
+consecutive stage against the pre-stated bet.
+
+THE LETTER: seed-mean P(w0 = off) = 0.52 (simple) / 0.500 (BE —
+EXACTLY at the bar, boundary-riding disclosed: one realization
+percent flips the letter, not the content) -> T-REFUSED both
+laws; d_alpha = -0.334/-0.314 MATERIAL; CENSUS-REOPENED 0/4.
+By the pre-committed STOP RULE the wobble sector goes to the
+REVIEWER ROUND with the 8H/8I-a/8J scorecard — no fourth dial.
+
+THE CONTENT (the split, per-seed, both laws concordant within
+each seed):
+  SEED 31 — THE SATURATED WORLD: P(w0) puts 0.97–1.00 on strong
+    saturation (0.1–0.2 km/s); fcomp mass moves 0.1 -> 0.35/0.50
+    (0.97 of posterior at the MEASURED host-rate territory);
+    fpm -> 3.0 (0.97/0.99 — the noise chase RETURNS); Dwob -> +0.0
+    (the wobble binding GONE, mechanism-consistent); sq holds 0.2;
+    **alpha_marg = 0.00, dN = +0.0 — NEWTON TIES, both laws: the
+    fifth-move configuration, voluntarily, in the marginal.** The
+    7J-z3 S3 collapse (forced fcomp >= 0.35 at cost 135–153) now
+    happens for free once the spikes saturate.
+  SEED 101 — THE REFUSING WORLD: P(w0 = off) = 1.00 flat; fcomp
+    stays 0.1; alpha_marg 0.44/0.50, dN +8.9/+11.3 — the 8I-a
+    refusal repeated exactly.
+The DATA are identical between these rows; only the model-side
+Monte Carlo realization differs. The 3A realization systematic
+(correction-#10 lineage) is now DECIDING a verdict-grade
+question: the likelihood gap between the collapse world and the
+boost world is smaller than the realization scatter at two
+seeds. Nothing about this can be resolved without a seed
+budget — which belongs to the review round per the stop rule,
+not to a unilateral extension tonight.
+
+THE CENSUS PUSHBACK (the one model-light leg standing against
+the collapse world): 0/4 reopened; the seed-31 collapse cell
+(fcomp = 0.35, w0 = 0.2, fpm = 3.0) still over-produces the band
+x3 (mu = 29.27 vs 9; jointP 2.6e-9), and its saturation-OFF
+comparator is catastrophic (67.49, 68.54) — the many-companion
+world, saturated or not, cannot reproduce the (9, 2) pair that
+the sky actually shows. The fifth-move world has an unanswered
+census bill.
+
+FIFTH-MOVE GRAMMAR: the pre-scripted trigger (both laws AND both
+seeds) did not fire; the observation is booked as
+fifth-move-shaped movement AT SEED 31 ONLY, deferred by
+construction to a powered + seed-budgeted round.
+
+CREDENCE FROZEN (pre-stated in every branch). The stop-rule
+review round is where the map gets pre-registered; the inputs it
+must weigh: (a) the seed-31 collapse world and its census bill,
+(b) the seed-101 refusal, (c) the realization systematic as the
+current decider-blocker, (d) the three-round distribution-shape
+scorecard (8H attribution, 8I-a refusal, 8J split).
+
+Plain verdict: SUCCESS as an instrument at the highest grade —
+it exposed the sector's true state: the binary anomaly's
+fifth-move alternative (saturation + measured multiplicity +
+max noise) is ONE REALIZATION away from a Newton tie, two
+realizations disagree violently, and the census still vetoes
+the alternative. The question 8J asked (is the tailor demanded?)
+returns UNRESOLVED-SPLIT; the pre-committed stop rule routes
+everything to external review with a seed budget.
+
+ELI12: We gave the fit the tailor. One copy of our simulated
+universe LOVED it — tailored the wigglers, hired lots of
+companions at exactly the rate the sky measures, cranked the
+noise dial, and said "I don't need extra gravity at all" — a
+perfect tie with plain Newton. The OTHER copy said "no tailor,
+no extra companions, keep the gravity boost." Same real sky,
+two different random casts of fake stars, opposite verdicts —
+which means our random-cast wobble is currently louder than the
+answer, and the honest fix is more casts, supervised by an
+outside reviewer, exactly as our stop rule pre-ordered. One
+referee still shouts from the corner: the nine-fastest-pairs
+census says the companion-heavy story predicts three times too
+many fast pairs — the boring explanation still owes the census
+an answer even in its best world. Nobody's number moved
+tonight; the process held. Third lost bet in a row — and this
+is precisely the kind of night the betting ledger was built for.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -265,6 +265,16 @@ CHECKS = [
     ('bin-8ia-wsurvival', 'CENSUS-REOPENED count (jointP >= 1e-3 at '
      'the repaired cell): 0/4 -> NOT reopened',
      'data/stage8i_read.txt'),
+    ('bin-8j-wsaturation', 'BAR [simple]: P(w0<inf)=0.48, '
+     'mode=1000000000.0, d_alpha=-0.334 MATERIAL -> T-REFUSED',
+     'data/stage8j_read.txt'),
+    ('bin-8j-wsaturation', 'BAR [BE]: P(w0<inf)=0.50, '
+     'mode=1000000000.0, d_alpha=-0.314 MATERIAL -> T-REFUSED',
+     'data/stage8j_read.txt'),
+    ('bin-8j-wsaturation', '[simple 31] WSAT: a=0.00 dN=+0.0 '
+     'P(w0)=[0.44, 0.53, 0.0, 0.0, 0.03] '
+     'P(fcomp)=[0.0, 0.03, 0.0, 0.47, 0.5, 0.0]',
+     'data/stage8j_read.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
