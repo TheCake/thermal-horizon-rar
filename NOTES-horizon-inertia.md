@@ -9248,6 +9248,74 @@ time since we froze it, the belief number moves — from 50 to
 55, exactly as the pre-signed rulebook said it must. Small
 step, honestly earned, three lost bets and then a won one.
 
+## REVIEWER ROUND 5 (targeted, 2026-08-04): the 8K amendment and S2 handling ENDORSED; one precise reservation — the collapse world's SELF-PREDICTED f_hot is the closing number; credence HOLDS at 55
+
+THE RESPONSE: (1) the amendment SOUND — aen_sig's bright-star
+pathology is documented (it is why RUWE became the standard),
+the catching gate was pre-committed, the invalidation is
+outcome-independent; two points in our favor we had not
+pressed: ruwe > 1.25 is the MORE companion-inclusive threshold
+(so 0.090 is conservative-high), and WIDE-cleaner-than-NARROW
+is the wrong sign for a companion-driven anomaly. Fair nit
+accepted: the bright-star failure was foreseeable — an ideal
+pre-reg would have mag-gated aen_sig a priori. (2) S2 handling
+DEFENSIBLE and stronger than we stated: the correlation is
+measured among the same systems S1 counted, so it cannot imply
+a larger RUWE-visible population; asked-to-show: the forward
+number that +0.17 is what fcomp ~ 0.1 predicts through the
+RUWE-hot selection. (3) THE RESERVATION (could rise to
+correction grade): "windows overlap by construction" is airtight
+only if the collapse world's velocity-faking wobble is nonzero
+exclusively where RUWE is sensitive. THE DECISIVE CHECK: push
+the seed-31 collapse world (fcomp 0.35–0.50, saturated) through
+a RUWE forward model — does it SELF-PREDICT f_hot >= ~0.30?
+Self-predicts >= 0.30 -> 0.090 falsifies it cleanly (reviewer
+would support 55–58). Self-predicts ~ 0.10 -> the census is
+blind exactly at the collapse's hiding place; the S1 leg gains
+the qualifier "absent IF RUWE-visible" at correction grade.
+S3 he grades IMMUNE and our strongest leg regardless (the nine
+pairs are individually pristine — those specific velocities are
+not inner-companion wobble, modulo the NSS sliver).
+
+ADOPTIONS + ONE CORRECTION OF HIS: the S1 verdict carries the
+conditional annotation AS OF NOW — "collapse companions absent
+IF RUWE-visible; the self-consistency number closes it" — and
+the check is ASSIGNED to the response-model round (D2+D4),
+which now has its deliverable list: (a) the period-resolved
+leakage/absorption curves R(P/T) (Penoyre–Belokurov-class;
+scout queued); (b) THE self-consistency number f_hot(collapse
+world) — the decisive check; (c) the S2 forward number at
+fcomp = 0.1; (d) the honest Newton band under physical
+saturation freedom (his D3); (e) the census-meter re-opening
+test. HIS long-P amplitude claim corrected on our side (6th
+premise slip, minor, logged): long-P wobble velocity is NOT
+small — v_orb falls only as P^(-1/3) (a 30-yr companion at
+~8.8 AU carries ~9 km/s orbital, wfac-scaled to ~0.5–2 km/s)
+— the long-P window is velocity-faking AND RUWE-quiet, gated
+in practice by the catalog velocity cut; exactly why the
+forward number, not hand arguments, closes this. The substance
+of his reservation is thereby STRENGTHENED, not weakened, by
+the correction.
+
+CREDENCE: HOLDS at ~55% (his recommendation and the cadence
+rule agree): the 57–58 upgrade or the correction-grade
+qualifier both wait on the self-consistency number. Budget
+stays de-prioritized; 8K-b NSS leg queued for the long-P/NSS
+sliver.
+
+ELI12: The referee checked our star-count and signed off on
+the fixed detector and the small belief bump — with one sharp
+homework problem: "prove the hiding companions your rival
+theory imagines would have shown up on the detector you used.
+If they'd be invisible to it, your count didn't test them."
+Fair. The physics needed to answer is the same curve we
+already planned to build next. He also called our nine fast
+pairs the strongest card in the deck — individually spotless,
+no matter how the homework turns out. And we caught him in one
+small slip (slow-orbit companions are NOT gentle — they carry
+real speed), which actually makes his homework MORE important,
+not less. Belief stays at 55 until the curve says otherwise.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
