@@ -335,6 +335,27 @@ if ESEC:
     ERF_GRID = np.array([0.80, 0.90, 0.95])
     TAG = '_esec'
     OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
+# 8I-a (pre-reg 59a55cf): WSRV=1 = the wobble-survival instrument.
+# Systems whose summed active-companion wobble amplitude
+# kw*(w1+w2)*4.74047 km/s exceeds wcut LEAVE the model population
+# (EDR3 RUWE-class selection physics: the catalog culls big
+# wobblers; the model must too).  One WCUT axis between kw and sq;
+# e-sector PINNED at the 8G mode (ein=1.0, erf=0.95) via singleton
+# EIN/ERF grids; the wcut=1e9 branch passes the untouched arrays,
+# so that slice must equal the esec cube's (1.0, 0.95) slice
+# EXACTLY (G8I-0; GB0w/GB0e skipped-disclosed).
+WSRV = os.environ.get('WSRV', '') == '1'
+WCUT_GRID = np.array([1e9])
+if WSRV:
+    assert AMP == 'photow' and FPME and not WSHAPE and not FUNCS \
+        and not QLAW and not ARMTAG and not ESEC, \
+        'WSRV = the landed photow3 grid, exclusive mode'
+    assert SAMPLE == 'full', 'the survival instrument runs on the sky'
+    WCUT_GRID = np.array([0.05, 0.10, 0.20, 0.40, 1e9])
+    EIN_GRID = np.array([1.0])
+    ERF_GRID = np.array([0.95])
+    TAG = '_wsrv'
+    OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -559,8 +580,8 @@ def lnL_point(p, o):
     vper = np.sum(vsky*b2,axis=1)
     s_kau = smag/1e3
     out = np.zeros((len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
-                    len(FPM_GRID), len(KW_GRID), len(SQ_GRID),
-                    len(WS_GRID)))
+                    len(FPM_GRID), len(KW_GRID), len(WCUT_GRID),
+                    len(SQ_GRID), len(WS_GRID)))
     out_vt = np.zeros_like(out)
     for bi, b in enumerate(SBINS):
         idx = np.where((s_kau>=b[0])&(s_kau<b[1]))[0]
@@ -568,64 +589,82 @@ def lnL_point(p, o):
         vc = 2*np.pi*np.sqrt(p['M_s'][idx]/smag[idx])
         sg0 = noise_pool[bi][p['pick'][bi][idx] % len(noise_pool[bi])]/4.74047
         gfac = p['gs'][idx]
+        g1_i, g2_i = p['gn1'][idx], p['gn2'][idx]
+        ut_i, sk_i = p['ut'][idx], s_kau[idx]
         dvt = data_2d[bi].sum(axis=1)      # gamma-collapsed data (7J-g)
         for fi, fcm in enumerate(FCOMP_GRID):
             cvp = np.zeros(len(idx)); cvq = np.zeros(len(idx))
-            mh_tot = np.zeros(len(idx))
+            mh_tot = np.zeros(len(idx)); wamp = np.zeros(len(idx))
             for k in (1, 2):
                 c = p['comp'][k]
                 act = c['uc'][idx] < fcm
                 mh_tot += act*c['mh'][idx]
                 cvp += act*c['w'][idx]*c['wd'][idx,0]
                 cvq += act*c['w'][idx]*c['wd'][idx,1]
+                wamp += act*c['w'][idx]
             boost = np.sqrt(1+mh_tot/p['M_s'][idx])
             for ki, kwv in enumerate(KW_GRID):
-                vp_b = vpar[idx] + kwv*cvp
-                vq_b = vper[idx] + kwv*cvq
-                for pi, fpm in enumerate(FPM_GRID):
-                  for wsi, ws in enumerate(WS_GRID):
-                    # 7J-z6: ws = 0 keeps the LEGACY expression verbatim
-                    # (same op order) so the slice is bit-exact (GW0)
-                    if ws == 0.0:
-                        vp_n = vp_b*boost + p['gn1'][idx]*sg0*fpm
-                        vq_n = vq_b*boost + p['gn2'][idx]*sg0*fpm
-                    elif WSHAPE == 'floor':
-                        sig_eff = np.sqrt((sg0*fpm)**2 + (ws/4.74047)**2)
-                        vp_n = vp_b*boost + p['gn1'][idx]*sig_eff
-                        vq_n = vq_b*boost + p['gn2'][idx]*sig_eff
-                    else:
-                        sig_eff = sg0*fpm*(1.0 + (KT_TAIL-1.0)
-                                           * (p['ut'][idx] < ws))
-                        vp_n = vp_b*boost + p['gn1'][idx]*sig_eff
-                        vq_n = vq_b*boost + p['gn2'][idx]*sig_eff
-                    vmag = np.hypot(vp_n, vq_n)
-                    keep = vmag*4.74047 <= (2.978/np.sqrt(s_kau[idx])
-                                            + 2.8284*sg0*4.74047)
-                    vtn = (vmag/vc)[keep]
-                    gmn = np.degrees(np.arccos(np.clip(
-                        np.abs(vp_n[keep])/np.maximum(vmag[keep],1e-12),
-                        0, 1)))
-                    gk = gfac[keep]
-                    for si, sqv in enumerate(SQ_GRID):
-                        # width channel: exp(0)=1.0 exactly, so sq=0
-                        # reproduces the photo path bit-for-bit (GB0w)
-                        vts = vtn*np.exp(sqv*gk)
-                        h,_,_ = np.histogram2d(np.clip(vts,0.021,5.9), gmn,
-                                               bins=[VE, GE])
-                        p0 = np.maximum(h/max(h.sum(),1), 1e-5)
-                        p0 /= p0.sum()
-                        for ci, fc in enumerate(FC0_GRID):
-                            for yi, ff in enumerate(FFLY_GRID):
-                                wch = min(fc*SC2[bi], 0.5)
-                                wfl = min(ff*SC2[bi], 0.5)
-                                wtot = min(wch+wfl, 0.6)
-                                mixc = (wch*UNI_B[bi]
-                                        + wfl*FLY_B[bi])/(wch+wfl)
-                                pp = (1-wtot)*p0 + wtot*mixc
-                                out[fi, ci, yi, pi, ki, si, wsi] += \
-                                    np.sum(data_2d[bi]*np.log(pp))
-                                out_vt[fi, ci, yi, pi, ki, si, wsi] += \
-                                    np.sum(dvt*np.log(pp.sum(axis=1)))
+                vp_a = vpar[idx] + kwv*cvp
+                vq_a = vper[idx] + kwv*cvq
+                amp_k = kwv*wamp*4.74047
+                for wci, wct in enumerate(WCUT_GRID):
+                  # 8I-a: wcut >= 1e8 passes the UNTOUCHED arrays (no
+                  # boolean indexing), so the survival-off slice is
+                  # bit-exact vs the esec (1.0, 0.95) slice (G8I-0)
+                  if wct >= 1e8:
+                      vp_b, vq_b, bo_ = vp_a, vq_a, boost
+                      sg_, gf_, g1_, g2_ = sg0, gfac, g1_i, g2_i
+                      ut_, sk_, vc_ = ut_i, sk_i, vc
+                  else:
+                      sv = amp_k <= wct
+                      vp_b, vq_b, bo_ = vp_a[sv], vq_a[sv], boost[sv]
+                      sg_, gf_ = sg0[sv], gfac[sv]
+                      g1_, g2_ = g1_i[sv], g2_i[sv]
+                      ut_, sk_, vc_ = ut_i[sv], sk_i[sv], vc[sv]
+                  for pi, fpm in enumerate(FPM_GRID):
+                    for wsi, ws in enumerate(WS_GRID):
+                      # 7J-z6: ws = 0 keeps the LEGACY expression verbatim
+                      # (same op order) so the slice is bit-exact (GW0)
+                      if ws == 0.0:
+                          vp_n = vp_b*bo_ + g1_*sg_*fpm
+                          vq_n = vq_b*bo_ + g2_*sg_*fpm
+                      elif WSHAPE == 'floor':
+                          sig_eff = np.sqrt((sg_*fpm)**2 + (ws/4.74047)**2)
+                          vp_n = vp_b*bo_ + g1_*sig_eff
+                          vq_n = vq_b*bo_ + g2_*sig_eff
+                      else:
+                          sig_eff = sg_*fpm*(1.0 + (KT_TAIL-1.0)
+                                             * (ut_ < ws))
+                          vp_n = vp_b*bo_ + g1_*sig_eff
+                          vq_n = vq_b*bo_ + g2_*sig_eff
+                      vmag = np.hypot(vp_n, vq_n)
+                      keep = vmag*4.74047 <= (2.978/np.sqrt(sk_)
+                                              + 2.8284*sg_*4.74047)
+                      vtn = (vmag/vc_)[keep]
+                      gmn = np.degrees(np.arccos(np.clip(
+                          np.abs(vp_n[keep])/np.maximum(vmag[keep],1e-12),
+                          0, 1)))
+                      gk = gf_[keep]
+                      for si, sqv in enumerate(SQ_GRID):
+                          # width channel: exp(0)=1.0 exactly, so sq=0
+                          # reproduces the photo path bit-for-bit (GB0w)
+                          vts = vtn*np.exp(sqv*gk)
+                          h,_,_ = np.histogram2d(np.clip(vts,0.021,5.9), gmn,
+                                                 bins=[VE, GE])
+                          p0 = np.maximum(h/max(h.sum(),1), 1e-5)
+                          p0 /= p0.sum()
+                          for ci, fc in enumerate(FC0_GRID):
+                              for yi, ff in enumerate(FFLY_GRID):
+                                  wch = min(fc*SC2[bi], 0.5)
+                                  wfl = min(ff*SC2[bi], 0.5)
+                                  wtot = min(wch+wfl, 0.6)
+                                  mixc = (wch*UNI_B[bi]
+                                          + wfl*FLY_B[bi])/(wch+wfl)
+                                  pp = (1-wtot)*p0 + wtot*mixc
+                                  out[fi, ci, yi, pi, ki, wci, si, wsi] += \
+                                      np.sum(data_2d[bi]*np.log(pp))
+                                  out_vt[fi, ci, yi, pi, ki, wci, si, wsi] += \
+                                      np.sum(dvt*np.log(pp.sum(axis=1)))
     return out, out_vt
 
 def forward_pp(p, o, fcm, fpm, fc, ff, sq=0.0, flr=0.0, ftl=0.0):
@@ -892,6 +931,8 @@ def run_seed(seed):
                 shp = shp + (len(EIN_GRID), len(ERF_GRID))
             shp = shp + (len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
                          len(FPM_GRID), len(KW_GRID))
+            if WSRV:
+                shp = shp + (len(WCUT_GRID),)
             if PHW:
                 shp = shp + (len(SQ_GRID),)
             if WSHAPE:
@@ -928,6 +969,9 @@ def run_seed(seed):
                         o = run(p['a_s'], e_s, p['psi0'], p['f_ip'], p['M_s'],
                                 p['uph'], 8, 2500, mode, **kw)
                         l2, lv = lnL_point(p, o)
+                        if not WSRV:        # strip the wcut axis (len 1)
+                            l2 = l2[:, :, :, :, :, 0]
+                            lv = lv[:, :, :, :, :, 0]
                         if not WSHAPE:      # strip the ws axis (len 1)
                             l2 = l2[..., 0]
                             lv = lv[..., 0]
@@ -1013,6 +1057,26 @@ def run_seed(seed):
         if PHW and QLAW:
             P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under QLAW "
               f"(q-draw differs at fcomp>0 by design; G0-q substitutes)")
+        if PHW and WSRV:
+            P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under WSRV "
+              f"(G8I-0 substitutes at the survival-off slice)")
+            # G8I-0 (8I-a pre-reg 59a55cf, abort-grade): the wcut=1e9
+            # slice must equal the esec cube's (ein=1.0, erf=0.95)
+            # slice EXACTLY (the pinned-sector survival-off model IS
+            # that slice)
+            esp = f'data/stage7j_cube_{SAMPLE}_esec_{seed}_{law}.npy'
+            esv = f'data/stage7j_cubevt_{SAMPLE}_esec_{seed}_{law}.npy'
+            es = np.load(esp)[:, :, :, 1, 2]
+            d0 = float(np.nanmax(np.abs(
+                cube[:, :, :, :, :, :, :, :, 4, :] - es)))
+            dv = (float(np.nanmax(np.abs(
+                cubevt[:, :, :, :, :, :, :, :, 4, :]
+                - np.load(esv)[:, :, :, 1, 2])))
+                if os.path.exists(esv) else 0.0)
+            P(f"G8I-0 {SAMPLE} seed {seed} {law}: max|wsrv(off)-esec"
+              f"(1.0,0.95)| = {d0:.2e} / vt {dv:.2e} -> "
+              f"{'PASS' if max(d0, dv) <= 1e-9 else 'FAIL'}")
+            assert max(d0, dv) <= 1e-9, f'G8I-0 FAILED {law} seed {seed}'
         if PHW and ESEC:
             P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under ESEC "
               f"(G8G-0 substitutes at the identity cell)")
@@ -1030,7 +1094,7 @@ def run_seed(seed):
               f" = {d0:.2e} / vt {dv:.2e} -> "
               f"{'PASS' if max(d0, dv) <= 1e-9 else 'FAIL'}")
             assert max(d0, dv) <= 1e-9, f'G8G-0 FAILED {law} seed {seed}'
-        if PHW and not QLAW and not ESEC:
+        if PHW and not QLAW and not ESEC and not WSRV:
             # GB0w: the sq=0 slice must reproduce the cached photo cube
             # (fpm axis sliced to the photo grid length under FPME)
             php = f'data/stage7j_cube_{SAMPLE}_photo_{seed}_{law}.npy'
@@ -1105,7 +1169,11 @@ def run_seed(seed):
         prof, ahat, imax = profile_of(cb)
         best = np.unravel_index(np.nanargmax(cb), cb.shape)
         off = 2 if ESEC else 0      # 8G: two axes inserted after wr
-        sqtxt = f", sq={SQ_GRID[best[8+off]]}" if PHW else ""
+        if WSRV:                    # 8I-a: wcut axis between kw and sq
+            sqtxt = (f", wcut={WCUT_GRID[best[8]]}, "
+                     f"sq={SQ_GRID[best[9]]}")
+        else:
+            sqtxt = f", sq={SQ_GRID[best[8+off]]}" if PHW else ""
         if WSHAPE:
             sqtxt += f", ws={WS_GRID[best[9]]}"
         if ESEC:
