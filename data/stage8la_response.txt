@@ -1,0 +1,37 @@
+8L-a THE RESPONSE MODEL (pre-reg 5b1ee6f; bars + map locked before any run)
+
+GL0 (numeric-vs-analytic, 5 u-nodes x 48 phases): max|d| = 1.58e-09; limits OK -> PASS
+constants: T = 2.83 yr; sigma_AL nodes [0.25, 0.25, 0.3, 0.45, 0.9, 2.3] mas at G [8.0, 9.0, 11.0, 13.0, 15.0, 17.0] (scout-sourced; GL2 judges the absolute scale)
+
+GL1 (reported; interpretation deferred to 8L-b): derived L(P/T) vs legacy S = min(1, P/17.8):
+  P =   1.0 yr: L = 0.035, S_legacy = 0.056, R = 0.695
+  P =   2.0 yr: L = 0.007, S_legacy = 0.112, R = 0.690
+  P =   3.0 yr: L = 0.357, S_legacy = 0.169, R = 0.559
+  P =   6.0 yr: L = 0.797, S_legacy = 0.337, R = 0.204
+  P =  10.0 yr: L = 0.923, S_legacy = 0.562, R = 0.080
+  P =  17.8 yr: L = 0.975, S_legacy = 1.000, R = 0.026
+  P =  30.0 yr: L = 0.991, S_legacy = 1.000, R = 0.009
+
+hosts: 14071 pairs, 1437 WIDE
+
+[REPORTED CONTEXT - the absolute forward, DISCLOSED-INVALID per amendment 1: singles-base-dominated observable] f_hot(fcomp = 0.10) = 0.019 vs measured 0.090 (run-1 GL2 abort record)
+  (base = P50 variant: 0.021; primary = unity base, conservative-low)
+
+THE SELF-CONSISTENCY NUMBER: f_hot(collapse) = 0.068 (fcomp 0.35) / 0.096 (0.50); mass-weighted = 0.082 vs measured 0.090
+  (base = P50 variant: 0.071/0.101)
+
+GL2' LICENSE (catalog-cut-repaired S2 forward, fcomp = 0.10, 40 reps): predicted dvt(hot-cold) = +0.357 vs measured +0.174; [0.5x, 2x] -> FAIL - full stop
+
+8L-a2 THE FAKER-CONDITIONAL (per census pair; the model's own companion law restricted to draws that could fake the pair):
+  s =  34.22 kAU, vt = 1.608, vobs = 0.320 km/s: n_faker = 35198, P(hot | faker) = 0.147
+  s =   6.56 kAU, vt = 1.608, vobs = 0.543 km/s: n_faker = 117961, P(hot | faker) = 0.111
+  s =   8.82 kAU, vt = 1.591, vobs = 0.635 km/s: n_faker = 67425, P(hot | faker) = 0.127
+  s =  39.55 kAU, vt = 1.581, vobs = 0.225 km/s: n_faker = 62970, P(hot | faker) = 0.125
+  s =   7.26 kAU, vt = 1.548, vobs = 0.692 km/s: n_faker = 74504, P(hot | faker) = 0.110
+  s =   9.83 kAU, vt = 1.535, vobs = 0.487 km/s: n_faker = 91937, P(hot | faker) = 0.124
+  s =   8.39 kAU, vt = 1.531, vobs = 0.690 km/s: n_faker = 60324, P(hot | faker) = 0.139
+  s =  19.66 kAU, vt = 1.518, vobs = 0.500 km/s: n_faker = 35545, P(hot | faker) = 0.166
+  s =  44.40 kAU, vt = 1.510, vobs = 0.291 km/s: n_faker = 26679, P(hot | faker) = 0.225
+mean P(hot | faker) over the nine = 0.142 (min n_faker = 26679); exact Poisson-binomial P(<= 2 of 9 hot | all fakers) = 8.78e-01
+
+==> 8L-a2 VERDICT: GL2' FAIL - full stop; hold ~55%; the NSS leg decides (pre-stated).

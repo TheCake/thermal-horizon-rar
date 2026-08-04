@@ -9456,6 +9456,80 @@ fakers ride L ~ 1 with R ~ 0 -> quiet; the (P, q) prior decides
 the mix). Amendment rule: gate tolerances pre-quote; bars and
 this map may NOT move.
 
+## Stage 8L-a2 EXECUTED (2026-08-04): GL2' FAIL BY THE LETTER (2.6% over the band edge) — full stop, hold ~55%; the UNLICENSED faker table leans FAKER-QUIET and the NSS leg becomes THE decider
+
+THE LETTER: the license gate required the catalog-cut-repaired
+S2 forward to land in [0.5x, 2x] of the measured +0.174; it
+predicted +0.357 = 2.05x — FAIL by 2.6% of the value (near-miss
+disclosed; the amendment's catalog cut did massive work,
++2.84 -> +0.357: the mapping is roughly right at factor ~2).
+Per the pre-stated branch: FULL STOP — no verdict from the
+faker table, NO credence movement, hold ~55%, the NSS leg
+decides.
+
+THE UNLICENSED TABLE (reported as a lean, never a verdict):
+P(hot | faker) = 0.11-0.23 across all nine census pairs (mean
+0.142, min n_faker = 26,679); exact Poisson-binomial P(<= 2 of
+9 hot | all nine are fakers) = 0.88 — the observed cleanliness
+is CONSISTENT with all-fakers. THE PHYSICS (instrument-grade
+understanding, quotable): the faking locus at these systems'
+km/s-scale wobble requirements selects LONG periods (P >~ 5-10
+yr), where the leakage curve L -> 1 (the wobble rides into the
+fitted PM as a clean linear drift) and the residual curve
+R -> 0 (nothing left for RUWE). The reviewer's round-5 blind
+spot is CONFIRMED AT LEAN GRADE: RUWE cannot adjudicate the
+census pairs' faker hypothesis; the channel that can is the
+NSS/acceleration one (curvature-sensitive exactly at P ~ 3-15
+yr) — 8K-b, exactly the pre-stated fallback.
+
+THE HONEST ANNOTATION (carried, unlicensed): 8K's S3 leg
+("census-clean = strongest, immune") is WEAKENED at lean grade
+— its immunity assumed wobble-capable companions are
+flag-visible; the faker table says the capable ones are quiet.
+The 8K OBJECT-LEVEL-ABSENT verdict's S1 leg was already
+conditionalized (round 5); S3 now shares a conditional of the
+same shape. FORMAL handling: the 8K-b pre-registration MUST
+price the branch where the quiet-faker reading is confirmed
+(the +55 partially unwinds) and the branch where NSS finds the
+census pairs orbit-clean at the faking periods (the collapse
+account dies at the object level for real). No number moves
+tonight.
+
+STANDING VALUE regardless of the stop: the GL1 table — the
+derived leakage L disagrees strongly with the legacy
+S = min(1, P/17.8 yr) at mid-P (L = 0.80 vs S = 0.34 at 6 yr;
+L = 0.98 at 17.8 yr where S first reaches 1) and the 17.8-yr
+constant is NOT FOUND in the literature (scout; provenance
+likely internal) — the 8L-b model-correction stakes are real
+and now carry a candidate sign: the operative model
+UNDER-weights mid-P wobble velocity.
+
+Plain verdict: NEEDS REFINEMENT by the letter (the license
+missed by 2.6% and the stop rule held) — with the round's real
+product being instrument-grade physics: we now know WHICH
+companions could fake the census (long-P), WHY the wobble flags
+cannot see them (leak-as-PM), and WHICH instrument can (NSS
+curvature). The chain 8K -> round 5 -> 8L-a -> 8L-a2 is the
+honesty machine narrowing a question to a single named
+measurement.
+
+ELI12: We built the physics curve the referee ordered and asked
+it: "could the companions that would fake our nine fast pairs
+have hidden from the wobble flags?" The curve's first answer
+failed its own driving test by a whisker (it predicted the
+correlation twice as strong as measured, and our rule says
+close only counts as a stop), so tonight's answer is formally
+"no answer, belief stays 55." But the sketch it drew before
+stopping is important and uncomfortable: the companions big and
+slow enough to fake our pairs would wobble so smoothly that
+Gaia reads it as ordinary drift — invisible to yesterday's
+flags. So yesterday's "cleanest stars in the catalog" win is
+weaker than it looked, and everything now rides on one last
+channel: Gaia's orbit-curvature catalog, which sees exactly the
+slow smooth wobbles the flags miss. That query is the next
+thing we run — with the price of both outcomes written down
+before we look.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

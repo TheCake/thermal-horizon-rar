@@ -283,6 +283,15 @@ CHECKS = [
      "world's required active-companion population is not in the "
      "catalog at the required rate",
      'data/stage8k_wobblecensus.txt'),
+    ('bin-8la-response', "GL2' LICENSE (catalog-cut-repaired S2 "
+     "forward, fcomp = 0.10, 40 reps): predicted dvt(hot-cold) = "
+     "+0.357 vs measured +0.174; [0.5x, 2x] -> FAIL - full stop",
+     'data/stage8la_response.txt'),
+    ('bin-8la-response', 'mean P(hot | faker) over the nine = 0.142 '
+     '(min n_faker = 26679); exact Poisson-binomial P(<= 2 of 9 hot '
+     '| all fakers) = 8.78e-01', 'data/stage8la_response.txt'),
+    ('bin-8la-response', 'P =   6.0 yr: L = 0.797, S_legacy = 0.337, '
+     'R = 0.204', 'data/stage8la_response.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
