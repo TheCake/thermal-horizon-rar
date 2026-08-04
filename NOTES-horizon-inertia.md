@@ -8792,6 +8792,82 @@ tailor. Designing the tailor is the next job — done carefully,
 not tonight. Two bets in a row have now landed against us,
 which is exactly why we write the bets down first.
 
+## Stage 8J PRE-REGISTRATION (2026-08-04, committed BEFORE any run): THE WOBBLE SATURATION INSTRUMENT — the distribution-level tail-shape repair
+
+PREMISE (set by 8H + 8I-a): the wobble channel's defect is
+DISTRIBUTION-SHAPE-level — the likelihood needs the spike
+population's mid-amplitude mass (survival cull refused 4/4 at
+zero posterior mass), the census rejects its extreme tail (×7
+cliff overshoot at sq = 0). The repair must keep the mid and
+trim the tail WITHOUT removing systems.
+
+THE LAW (one parameter, monotone, physical): per-companion
+photocenter-wobble SATURATION —
+  w_eff = (w0/4.74047) · tanh(w · 4.74047/w0),   w0 in km/s.
+Small wobbles pass to first order (the mid-shoulder survives);
+large wobbles plateau at w0 (the km/s spike corner compresses).
+Physics: a large photocenter orbit partially ABSORBS into the
+5-parameter astrometric solution and inflates the errors rather
+than leaking fully into PM — a saturation, not a disappearance
+(and not a cull: the pair stays in the catalog, consistent with
+the 8I-a refusal). The saturation acts on the wobble VELOCITY
+only; the hidden dynamical mass mh (and its boost) is untouched
+(the amendment-4 principle: mass is real regardless of light).
+Applied per companion slot, before the kw nuisance scale.
+
+DESIGN (mode WSAT=1; the landed photow3 grid; e-sector pinned at
+the 8G mode ein = 1.0, erf = 0.95; seeds 31 + 101, both laws):
+W0SAT_GRID = [0.1, 0.2, 0.4, 0.8, 1e9] km/s sharing the wx axis
+slot (WSRV and WSAT are exclusive modes); the 1e9 node is
+BRANCHED to the verbatim legacy accumulation arrays (no
+transform arithmetic), so the identity slice is bit-exact by
+construction. Cubes data/stage7j_cube_full_wsat_{seed}_{law}.npy,
+10-dim; fresh names; GB0w/GB0e SKIPPED-disclosed (G8J-0
+substitutes).
+
+GATES (abort-grade): G8J-0 (in-run): the w0 = 1e9 slice AND its
+vt cube must equal the esec (1.0, 0.95) slice EXACTLY (<= 1e-9,
+target 0.0e+0). G8J-1 (reader): the same identity at read level
+(arithmetic). G8J-2: EDGE report on w0 (mode at 0.1 with >= 0.5
+mass -> EDGE flag, correction-#4).
+
+THE READ (calcs/stage8j_read.py, the 8I-a reader chassis): P(w0)
+posterior; alpha_marg/dN; P(fcomp) (reconciliation watch), P(sq),
+P(fpm); the Dwob analogue; THE CENSUS FORWARD at the repaired MAP
+cell with the SATURATED wobble in band_mu (mh untouched),
+comparator at the identity node, scored at (band 9, cliff 2) by
+the 8H convention.
+
+BARS (locked; seed means, both laws):
+  T-DEMANDED: P(w0 < 1e9) >= 0.90 both laws -> the sky accepts
+    the saturation; the tail-shape repair is DATA-SUPPORTED; the
+    POWERED ROUND (own-truth injections through the WSAT fitter +
+    the pre-registered credence map) REVIVES as the next decider.
+  T-REFUSED:  P(w0 = 1e9) >= 0.50 both laws -> the third
+    distribution-level refusal; the wobble sector goes to the
+    REVIEWER ROUND with the 8H/8I-a/8J scorecard — NOT to a
+    fourth dial (pre-committed stop rule).
+  else T-PARTIAL: decomposition reported as-is.
+  CENSUS-REOPENED: repaired-MAP-cell jointP >= 1e-3 in >= 3 of 4
+    law x seed runs (the 8H bar) -> the census meter conditionally
+    repaired pending the powered round.
+  Movement grammar: alpha/fcomp/sq movements descriptive with the
+    MATERIAL flag at |d alpha| > 0.11; the fifth-move-shaped
+    sentence (alpha_marg <= 0.2 AND dN <= +5 both laws) is
+    pre-scripted DEFER-only.
+  CREDENCE FROZEN in every branch (pre-stated; only the revived
+    powered round may move it, under its own pre-registered map).
+  EXPECTED OUTCOME (pre-stated, with explicit LOW CONFIDENCE
+    after two consecutive missed bets): T-DEMANDED — the design
+    targets exactly the likelihood's measured preference (keep
+    mid, trim tail); the refusal branch is fully live and would
+    be the third distribution-level fact about this sector.
+
+Cost: ~55 min/seed GPU (the wx axis is CPU-side); setup and read
+are minutes (LLM time — calibration noted). Amendment rule: gate
+tolerances amendable pre-quote with logged reasons; bars may NOT
+move.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
