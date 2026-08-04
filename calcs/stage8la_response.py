@@ -39,19 +39,23 @@ def Lk(u):
     return out
 
 def R2(u):
+    # amendment 1(i): series branch widened to u < 0.05 + core
+    # clipped at 0 (cancellation NaNs at extreme P, run-1)
     u = np.asarray(u, dtype=float)
-    small = u < 1e-4
+    small = u < 0.05
     s = np.sinc(u/np.pi)          # sin(u)/u
     core = 0.5*(1.0 - s*s
                 - 3.0*(np.sin(u) - u*np.cos(u))**2
                 / np.maximum(u, 1e-300)**4)
-    return np.where(small, u**4/90.0, core)   # series: R^2 -> u^4/90
+    return np.where(small, u**4/90.0, np.maximum(core, 0.0))
 
 # GL0: numeric least-squares regression at sample u
 rng = np.random.default_rng(7)
 gl0_max = 0.0
 for u in (0.3, 1.0, 2.0, 5.0, 12.0):
-    t = np.linspace(-0.5, 0.5, 20001)      # T = 1 units; omega = 2u
+    # midpoint grid (endpoint-inclusive linspace has an O(2/N)
+    # second-moment offset vs continuous - caught by GL0 first run)
+    t = np.linspace(-0.5, 0.5, 20000, endpoint=False) + 0.5/20000
     om = 2.0*u
     Ls, Rs = [], []
     for ph in np.linspace(0, 2*np.pi, 48, endpoint=False):
@@ -178,12 +182,10 @@ def fwd_fhot(fcomp, nmc=40, seed=11, base='unity'):
     return hot/max(tot, 1)
 
 f_op = fwd_fhot(0.10)
-gl2 = 0.05 <= f_op <= 0.15
-gl2txt = ('PASS' if gl2
-          else 'FAIL - bars DISCLOSED-INVALID, instrument-repair')
-P(f"GL2 VALIDITY: forward at the OPERATIVE world (fcomp = 0.10) "
-  f"predicts f_hot = {f_op:.3f} vs measured 0.090; band "
-  f"[0.05, 0.15] -> {gl2txt}")
+P(f"[REPORTED CONTEXT - the absolute forward, DISCLOSED-INVALID "
+  f"per amendment 1: singles-base-dominated observable] "
+  f"f_hot(fcomp = 0.10) = {f_op:.3f} vs measured 0.090 "
+  f"(run-1 GL2 abort record)")
 f_op50 = fwd_fhot(0.10, base='p50')
 P(f"  (base = P50 variant: {f_op50:.3f}; primary = unity base, "
   f"conservative-low)")
@@ -199,13 +201,14 @@ f35p, f50p = fwd_fhot(0.35, base='p50'), fwd_fhot(0.50, base='p50')
 P(f"  (base = P50 variant: {f35p:.3f}/{f50p:.3f})")
 P("")
 
-# ---------- (c) the S2 forward at fcomp = 0.1 ----------
+# ---------- GL2' license: the catalog-cut-repaired S2 forward ----
+sigvW = sigv[WIDE]
+ceilW = 2.978/np.sqrt(s_kau[WIDE]) + 2.8284*sigvW   # km/s
 rng = np.random.default_rng(23)
 vt_cold_pool = vt[WIDE]
 nmc = 40
 dvts = []
 for _ in range(nmc):
-    hot_extra, cold_base = [], []
     act1 = rng.random(len(iW)) < 0.10
     act2 = rng.random(len(iW)) < 0.10
     leak = np.zeros(len(iW))
@@ -234,39 +237,100 @@ for _ in range(nmc):
         hi = np.zeros(len(iW), dtype=bool); hi[act] = hotc
         leak = np.hypot(leak, li)
         ishot |= hi
-    # sky-projection of a random 3D leak direction: sin(psi),
-    # cos(psi) uniform on [-1, 1]
     proj = np.sqrt(1.0 - rng.uniform(-1, 1, len(iW))**2)
-    vt_new = np.hypot(vt_cold_pool, proj*leak/vc[WIDE])
-    if ishot.sum() > 3 and (~ishot).sum() > 3:
-        dvts.append(float(vt_new[ishot].mean() - vt_new[~ishot].mean()))
+    v_new = np.hypot(vt_cold_pool*vc[WIDE], proj*leak)   # km/s
+    keep = v_new <= ceilW           # amendment 1(ii): catalog survival
+    vt_new = v_new/vc[WIDE]
+    hk, ck = ishot & keep, (~ishot) & keep
+    if hk.sum() > 3 and ck.sum() > 3:
+        dvts.append(float(vt_new[hk].mean() - vt_new[ck].mean()))
 d_pred = float(np.mean(dvts))
-cons = 0.5*0.17 <= d_pred <= 2.0*0.17
-P(f"S2 FORWARD (fcomp = 0.10, light Monte Carlo, {nmc} reps): "
-  f"predicted dvt(hot-cold) = {d_pred:+.3f} vs measured +0.174; "
-  f"[0.5x, 2x] band -> {'CONSISTENT' if cons else 'RESIDUAL-REPORTED'}")
+gl2p = 0.5*0.174 <= d_pred <= 2.0*0.174
+P(f"GL2' LICENSE (catalog-cut-repaired S2 forward, fcomp = 0.10, "
+  f"{nmc} reps): predicted dvt(hot-cold) = {d_pred:+.3f} vs "
+  f"measured +0.174; [0.5x, 2x] -> "
+  f"{'PASS - mapping sky-calibrated' if gl2p else 'FAIL - full stop'}")
 P("")
 
-# ---------- verdict + map ----------
-if not gl2:
-    P("==> 8L-a VERDICT: GL2 FAIL - instrument-repair; no verdict, "
-      "no credence movement (pre-stated).")
+# ---------- 8L-a2: THE FAKER-CONDITIONAL (pre-reg 3d98c7a) --------
+import csv
+cens = [r for r in csv.DictReader(open('data/ceiling_pairs.csv'))
+        if r['census_corr'] == 'True']
+okidx = np.where(ok)[0]
+cidx = []
+for r in cens:
+    m = (np.abs(s_kau[okidx]-float(r['s_kAU'])) < 0.01) \
+      & (np.abs(Mtot[okidx]-float(r['Mtot_Msun'])) < 0.01) \
+      & (np.abs(vc[okidx]-float(r['vc_kms'])) < 0.001)
+    j = okidx[m]
+    assert len(j) == 1
+    cidx.append(int(j[0]))
+OBS_HOT = 2                     # the 8K measurement (ruwe > 1.25)
+rng = np.random.default_rng(97)
+NF = 400_000
+pj, nfk = [], []
+P("8L-a2 THE FAKER-CONDITIONAL (per census pair; the model's own "
+  "companion law restricted to draws that could fake the pair):")
+for j in cidx:
+    M_h = Mtot[j]/2.0
+    q = 0.1+0.9*rng.random(NF)
+    logP = rng.normal(5.03, 2.28, NF)
+    P_yr = 10**logP/365.25
+    a_in = (M_h*(1+q)*P_yr**2)**(1/3)
+    valid = (a_in < 130.0) & (a_in < sep[j]/5.0)
+    MGp = np.interp(-np.clip(M_h, MS_T[-1], MS_T[0]), -MS_T, MG_T)
+    MGs = np.interp(-np.clip(q*M_h, MS_T[-1], MS_T[0]), -MS_T, MG_T)
+    l_ = 10**(-0.4*(MGs-MGp))
+    wfac = np.abs(q/(1+q) - l_/(1+l_))
+    v_orb = 29.78*np.sqrt(M_h*(1+q)/np.maximum(a_in, 1e-3))
+    u = np.pi*T_BASE/np.maximum(P_yr, 1e-6)
+    proj = np.sqrt(1.0 - rng.uniform(-1, 1, NF)**2)
+    leak = Lk(u)*wfac*v_orb*proj
+    vobs = vt[j]*vc[j]
+    ceilj = 2.978/np.sqrt(s_kau[j]) + 2.8284*sigv[j]
+    fak = valid & (leak >= 0.5*vobs) & (leak <= ceilj)
+    Gh = np.where(rng.random(NF) < 0.5, G1m[j], G2m[j])
+    a_phot = wfac*a_in*plx[j]
+    hot = (np.sqrt(R2(u))*a_phot)**2 > (1.25**2-1.0)*sig_al(Gh)**2
+    n = int(fak.sum())
+    p = float(np.mean(hot[fak])) if n > 0 else float('nan')
+    pj.append(p); nfk.append(n)
+    P(f"  s = {s_kau[j]:6.2f} kAU, vt = {vt[j]:.3f}, vobs = "
+      f"{vobs:.3f} km/s: n_faker = {n}, P(hot | faker) = {p:.3f}")
+pbar = float(np.nanmean(pj))
+lown = min(nfk)
+# exact Poisson-binomial P(<= OBS_HOT hot | all nine are fakers)
+dp = np.zeros(11); dp[0] = 1.0
+for p in pj:
+    dp[1:] = dp[1:]*(1-p) + dp[:-1]*p
+    dp[0] *= (1-p)
+p_le2 = float(dp[:OBS_HOT+1].sum())
+P(f"mean P(hot | faker) over the nine = {pbar:.3f} (min n_faker = "
+  f"{lown}); exact Poisson-binomial P(<= {OBS_HOT} of 9 hot | all "
+  f"fakers) = {p_le2:.2e}")
+P("")
+
+# ---------- verdict per the 8L-a2 map ----------
+if not gl2p:
+    P("==> 8L-a2 VERDICT: GL2' FAIL - full stop; hold ~55%; the "
+      "NSS leg decides (pre-stated).")
 else:
-    if fcol >= 0.30:
-        v = ("CLOSES-CLEAN: the collapse world's own companions "
-             "would have tripped the 8K census (predicted f_hot "
-             f"{fcol:.2f} vs measured 0.090) - the S1 conditional "
-             "annotation is DISCHARGED; per the map: anomaly-real "
-             "~55% -> ~57%")
-    elif fcol < 0.15:
-        v = ("BLIND-SPOT: the collapse companions are RUWE-quiet "
-             f"(predicted {fcol:.2f}) - the census was blind at the "
-             "hiding place; S1 rises to CORRECTION grade; per the "
-             "map: anomaly-real ~55% -> ~50%; the NSS leg decides")
+    if pbar >= 0.6 and p_le2 <= 0.05:
+        v = ("FAKER-LOUD: companions capable of faking the census "
+             "pairs would have lit the RUWE flags (mean P(hot|faker)"
+             f" = {pbar:.2f}; observing <= 2 of 9 hot has P = "
+             f"{p_le2:.1e}) - the collapse account of the nine is "
+             "object-level DEAD; the S1 conditional is DISCHARGED "
+             "at the census; per the map: anomaly-real ~55% -> ~57%")
+    elif pbar < 0.3:
+        v = (f"FAKER-QUIET (mean P = {pbar:.2f}): the fakers can "
+             "hide from RUWE; the census blind spot is REAL at "
+             "correction grade; per the map: anomaly-real ~55% -> "
+             "~50%; the NSS leg decides")
     else:
-        v = (f"GRAY (predicted {fcol:.2f} in [0.15, 0.30)): hold "
-             "~55%; the NSS leg decides")
-    P(f"==> 8L-a VERDICT (locked bars + map): {v}")
+        v = (f"GRAY (mean P = {pbar:.2f}, P(<=2) = {p_le2:.1e}): "
+             "hold ~55%; the NSS leg decides")
+    P(f"==> 8L-a2 VERDICT (locked bars + map): {v}")
 
 with open('data/stage8la_response.txt', 'w') as f:
     f.write("\n".join(L_) + "\n")
