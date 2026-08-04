@@ -573,7 +573,18 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     (three independent strains: 7J-z4 binding, round-10
     q-moments, 8H counts) — repairing it re-opens the census
     meter AND the fifth-move chain; external legs T2/T3/P9
-    unchanged.**
+    unchanged.** ~~8I-a wobble-SURVIVAL~~ — EXECUTED 2026-08-04
+    (pre-reg 59a55cf): **W-REFUSED 4/4, P(wcut<inf)=0.00 — the
+    2nd consecutive against-expectation verdict; the likelihood
+    NEEDS the spike population (mid-shoulder), the census rejects
+    only its extreme tail ⇒ the wobble defect is DISTRIBUTION-
+    SHAPE-level; survival reading DEAD; Dwob-with-escape −6..−24
+    (vs +314) = binding confirmed wobble-amplitude-carried;
+    census demotion stands; 8I-b powered round MOOT. SUCCESSOR
+    (design deliberately deferred): the wobble TAIL-SHAPE
+    instrument — reshape the S-factor/logP tail so mid-shoulder
+    mass survives while the km/s spike corner dies; must be
+    distribution-level, not a scalar dial.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

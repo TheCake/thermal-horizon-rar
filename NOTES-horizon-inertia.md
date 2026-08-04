@@ -8719,6 +8719,79 @@ CPU-side; GPU cells unchanged at 90/seed). Amendment rule: gate
 tolerances amendable pre-quote with logged reasons; bars may NOT
 move.
 
+## Stage 8I-a EXECUTED (2026-08-04, all gates PASS): W-REFUSED 4/4 — the sky puts ZERO mass on the survival cap; the wobble mismatch is SHAPE-level, not survival-level
+
+Gates: G8I-0 bit-exact 8/8 in-run (0.00e+00 incl. vt — the WSRV
+loop restructure certified against the esec slice); G8I-1 4/4
+(reader arithmetic identity). Runtime 55.6 + 56.2 min (estimate
+borne out). EXPECTATION MISSED — the SECOND consecutive stage to
+land against the pre-stated bet (8G expected absorb -> survived;
+8I-a expected W-DEMANDED -> refused). Logged prominently: the
+strain triangle made the cap look inevitable; the sky disagreed.
+
+THE ANSWER: **P(wcut < inf) = 0.00 in ALL FOUR law x seed reads**
+— not a mild preference: the posterior concentrates entirely at
+survival-off at every severity offered (0.05–0.40 km/s; even the
+0.40 node, which culls only the ~1–3% most extreme spike systems,
+is refused). alpha/dN unchanged to the third digit (the marginal
+never touches the new axis); fcomp holds at 0.1; sq holds at 0.2;
+CENSUS-REOPENED 0/4 (the repaired MAP cell IS the off cell — the
+8H demotion stands).
+
+THE DIAGNOSIS (the informative part): the kinematic likelihood
+WANTS the spike population — the retained wobblers carry real
+fitting work in the mid-shoulder (the 7J-z6 fingerprint region
+the smear also feeds), while the census counts reject the same
+population's EXTREME tail (x7 cliff overshoot at sq=0, 8H). A
+system-level cull removes both at once, so the likelihood vetoes
+it. Together 8H + 8I-a localize the wobble channel's defect to
+its DISTRIBUTION SHAPE: roughly-right mid-amplitude mass,
+too-heavy extreme tail — the (P, q) corners that survive the
+S-suppression with km/s photocenter velocities. MECHANISM NOTE
+(profile-level, quotable as diagnostic): the Dwob analogue
+computed WITH the escape axis available collapses from the
+7J-z4 comparator +314/+306 to -6..-24 — forcing measured
+multiplicity at kw=1.4 stops being catastrophic the moment the
+fit may cull wobblers, even though the marginal never elects to
+— the binding is confirmed wobble-amplitude-carried, and the
+tension between the likelihood's mid-shoulder appetite and the
+census's tail rejection is now the sharpest statement of the
+companion-sector defect.
+
+CONSEQUENCES: (1) the SURVIVAL reading of the strain triangle is
+DEAD (a bluntly-culled catalog is not what the data describe);
+(2) the named successor is the wobble TAIL-SHAPE instrument —
+reshape the spike distribution (the S period-smearing factor
+and/or the logP tail sector) so the mid-shoulder mass survives
+while the extreme tail dies; design deferred (NOT pre-committed
+tonight — the 8I-a lesson is that this sector needs a
+distribution-level instrument, not another scalar dial); (3)
+8I-b in its planned powered form is MOOT (zero movement =
+nothing to power-validate; the powered round waits for an
+instrument the sky accepts); (4) the census demotion (8H)
+stands; external legs (T2/T3, P9/DR4) unchanged.
+
+CREDENCE FROZEN (pre-stated in every branch of the pre-reg).
+
+Plain verdict: SUCCESS as an instrument (a decisive, gate-clean
+answer that killed our best repair hypothesis in two hours and
+localized the defect to distribution shape); the repair itself:
+NEEDS REFINEMENT (the tail-shape successor, design pending).
+
+ELI12: We built the bouncer: "throw out every star pair that
+wiggles harder than X" — and let the sky set X. The sky's
+answer: NO BOUNCER, at any strictness. Surprise — but it
+teaches us something sharp. The fit secretly NEEDS the wigglers:
+they help explain the crowded middle of the speed histogram.
+What the sky objects to is only their loudest few — the ones
+screaming past the speed limit where almost nobody real is
+found. So the companion model isn't too big — it's the wrong
+SHAPE: right amount of medium wiggling, too much extreme
+wiggling. You can't fix a shape with a bouncer; you need a
+tailor. Designing the tailor is the next job — done carefully,
+not tonight. Two bets in a row have now landed against us,
+which is exactly why we write the bets down first.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

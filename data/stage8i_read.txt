@@ -1,0 +1,40 @@
+8I-a THE WOBBLE-SURVIVAL READ (pre-reg 59a55cf; bars locked before any run; credence FROZEN every branch)
+
+[simple 31] G8I-1 max|off-esec| = 0.00e+00 -> PASS
+[simple 31] OFF:  a=0.57 dN=+7.8 P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[simple 31] WSRV: a=0.57 dN=+7.8 P(wcut)=[0.0, 0.0, 0.0, 0.0, 1.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[simple 31]       P(sq)=[0.0, 0.0, 1.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.29, 0.55, 0.16] Dwob=-13.5
+[simple 31] MAP cell: alpha=0.5, eta=1.05, wr=0.3, fcomp=0.1, fpm=2.4, kw=0.7, wcut=1000000000.0, sq=0.2
+[simple 31] CENSUS repaired: mu=(28.26, 16.71) jointP=1.31e-10 | survival-off: mu=(28.26, 16.71) jointP=1.31e-10
+
+[BE 31] G8I-1 max|off-esec| = 0.00e+00 -> PASS
+[BE 31] OFF:  a=0.55 dN=+3.4 P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[BE 31] WSRV: a=0.55 dN=+3.4 P(wcut)=[0.0, 0.0, 0.0, 0.0, 1.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[BE 31]       P(sq)=[0.0, 0.0, 1.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.01, 0.86, 0.13] Dwob=-6.0
+[BE 31] MAP cell: alpha=0.5, eta=1.05, wr=0.3, fcomp=0.1, fpm=2.4, kw=0.7, wcut=1000000000.0, sq=0.2
+[BE 31] CENSUS repaired: mu=(28.40, 17.19) jointP=7.78e-11 | survival-off: mu=(28.40, 17.19) jointP=7.78e-11
+
+[simple 101] G8I-1 max|off-esec| = 0.00e+00 -> PASS
+[simple 101] OFF:  a=0.54 dN=+19.5 P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[simple 101] WSRV: a=0.54 dN=+19.5 P(wcut)=[0.0, 0.0, 0.0, 0.0, 1.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[simple 101]       P(sq)=[0.0, 0.0, 1.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.89, 0.09, 0.02] Dwob=-23.6
+[simple 101] MAP cell: alpha=0.5, eta=1.05, wr=0.3, fcomp=0.1, fpm=2.1, kw=0.7, wcut=1000000000.0, sq=0.2
+[simple 101] CENSUS repaired: mu=(29.60, 18.22) jointP=1.36e-11 | survival-off: mu=(29.60, 18.22) jointP=1.36e-11
+
+[BE 101] G8I-1 max|off-esec| = 0.00e+00 -> PASS
+[BE 101] OFF:  a=0.58 dN=+21.9 P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[BE 101] WSRV: a=0.58 dN=+21.9 P(wcut)=[0.0, 0.0, 0.0, 0.0, 1.0] P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[BE 101]       P(sq)=[0.0, 0.0, 1.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.0, 0.0, 1.0] Dwob=-23.3
+[BE 101] MAP cell: alpha=0.5, eta=1.05, wr=0.3, fcomp=0.1, fpm=3.0, kw=0.7, wcut=1000000000.0, sq=0.2
+[BE 101] CENSUS repaired: mu=(28.93, 17.73) jointP=3.33e-11 | survival-off: mu=(28.93, 17.73) jointP=3.33e-11
+
+G8I-1 4/4 PASS (survival-off slice = esec (1.0,0.95) slice, arithmetic)
+
+BAR [simple]: P(wcut<inf)=0.00, mode=1000000000.0, d_alpha=-0.000 -> W-REFUSED
+BAR [BE]: P(wcut<inf)=0.00, mode=1000000000.0, d_alpha=-0.000 -> W-REFUSED
+CENSUS-REOPENED count (jointP >= 1e-3 at the repaired cell): 0/4 -> NOT reopened
+
+==> 8I-a VERDICT (locked bars): W-REFUSED: the sky refuses the repair; the strain stands unresolved; the census stays confounded
+    CREDENCE FROZEN (pre-stated, every branch); 8I-b = the powered decider.
+
+done (0.5 min)

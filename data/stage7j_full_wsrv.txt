@@ -1,0 +1,15 @@
+STAGE 7J-B full seeds [31, 101]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4, 3.0]; ln pi(fcomp) = [-1584.82, -768.17, -268.1, -7.78, -1.06, -42.57]
+GB0w/GB0e full seed 31 simple: SKIPPED under WSRV (G8I-0 substitutes at the survival-off slice)
+G8I-0 full seed 31 simple: max|wsrv(off)-esec(1.0,0.95)| = 0.00e+00 / vt 0.00e+00 -> PASS
+PROF full seed 31 simple: a_hat=0.57 (interior=True), dN=+7.2, wr=0.3, fcomp=0.1, fpm=2.4, wcut=1000000000.0, sq=0.2
+GB0w/GB0e full seed 31 BE: SKIPPED under WSRV (G8I-0 substitutes at the survival-off slice)
+G8I-0 full seed 31 BE: max|wsrv(off)-esec(1.0,0.95)| = 0.00e+00 / vt 0.00e+00 -> PASS
+PROF full seed 31 BE: a_hat=0.53 (interior=True), dN=+3.4, wr=0.3, fcomp=0.1, fpm=2.4, wcut=1000000000.0, sq=0.2
+  seed 31 done (55.6 min)
+GB0w/GB0e full seed 101 simple: SKIPPED under WSRV (G8I-0 substitutes at the survival-off slice)
+G8I-0 full seed 101 simple: max|wsrv(off)-esec(1.0,0.95)| = 0.00e+00 / vt 0.00e+00 -> PASS
+PROF full seed 101 simple: a_hat=0.50 (interior=True), dN=+14.8, wr=0.3, fcomp=0.1, fpm=2.1, wcut=1000000000.0, sq=0.2
+GB0w/GB0e full seed 101 BE: SKIPPED under WSRV (G8I-0 substitutes at the survival-off slice)
+G8I-0 full seed 101 BE: max|wsrv(off)-esec(1.0,0.95)| = 0.00e+00 / vt 0.00e+00 -> PASS
+PROF full seed 101 BE: a_hat=0.54 (interior=True), dN=+17.4, wr=0.3, fcomp=0.1, fpm=3.0, wcut=1000000000.0, sq=0.2
+  seed 101 done (56.2 min)

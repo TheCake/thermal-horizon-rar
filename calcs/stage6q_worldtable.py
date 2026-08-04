@@ -256,6 +256,15 @@ CHECKS = [
      'data/stage8h_censusshape.txt'),
     ('bin-8h-censusshape', 'GATES: G8H-0 4/4 PASS, G8H-1 4/4 PASS',
      'data/stage8h_censusshape.txt'),
+    ('bin-8ia-wsurvival', 'BAR [simple]: P(wcut<inf)=0.00, '
+     'mode=1000000000.0, d_alpha=-0.000 -> W-REFUSED',
+     'data/stage8i_read.txt'),
+    ('bin-8ia-wsurvival', 'BAR [BE]: P(wcut<inf)=0.00, '
+     'mode=1000000000.0, d_alpha=-0.000 -> W-REFUSED',
+     'data/stage8i_read.txt'),
+    ('bin-8ia-wsurvival', 'CENSUS-REOPENED count (jointP >= 1e-3 at '
+     'the repaired cell): 0/4 -> NOT reopened',
+     'data/stage8i_read.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
