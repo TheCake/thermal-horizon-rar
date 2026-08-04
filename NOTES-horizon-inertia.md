@@ -9382,6 +9382,80 @@ EXPECTED OUTCOME (pre-stated, low confidence): genuinely open;
 Amendment rule: gate tolerances amendable pre-quote with logged
 reasons; bars and the map may NOT move.
 
+## Stage 8L-a RUN 1: GL2 ABORT (the gate worked; no verdict, no movement) + AMENDMENT 1 + THE 8L-a2 PRE-REGISTRATION (2026-08-04, committed before the repaired run)
+
+RUN 1 (preserved as data/stage8la_response_run1.txt): GL0 PASSED
+after one gate-internal numeric-reference fix (the first GL0
+firing caught the endpoint-inclusive grid's O(2/N) second-moment
+offset; midpoint sampling -> 1.58e-09). THE CURVES ARE GOOD and
+scout-shape-confirmed (Belokurov+20: excess peaks at P ~ T,
+P^(2/3) below, strong suppression above). GL1 REPORTED (stands
+regardless): the derived leakage L vs the legacy S = min(1,
+P/17.8 yr) disagree strongly at mid-P (P = 6 yr: L = 0.80 vs
+S = 0.34; P = 3 yr: L = 0.36 vs 0.17; and L is already 0.98 at
+17.8 yr) — AND the scout finds the 17.8-yr constant NOT IN THE
+LITERATURE (provenance likely internal). Interpretation stays
+deferred to 8L-b, now with sharpened stakes. GL2 FAILED as
+designed: the operative-world forward predicts f_hot = 0.019 vs
+measured 0.090 — DIAGNOSIS: the absolute-rate observable was
+mis-conceived; the sky's 0.090 is dominated by the SINGLES'
+intrinsic RUWE spread (P90 = 1.294 puts ~10% of all components
+near threshold from calibration scatter), which the base=unity
+convention deliberately excludes. The S2 light forward
+(+2.84 vs +0.174) exposed a second omission: no catalog velocity
+cut (the sky removes the monster leaks the forward kept). Per
+the pre-reg: bars DISCLOSED-INVALID, instrument-repair, NO
+credence movement; the 8L-a map is VOID WITH ITS INSTRUMENT
+(nothing ever moved on it).
+
+AMENDMENT 1 (pre-quote): (i) numerical — R2 series branch
+widened (u < 0.05) + core clipped at 0 (catastrophic-
+cancellation NaNs at P > ~9000 yr, harmless but sloppy); (ii)
+the S2 forward gains the catalog velocity ceiling (per-pair
+2.978/sqrt(s) + 2.8284 sigma survival); (iii) the validity and
+verdict OBSERVABLES are re-scoped to the calibration-immune
+conditional form below.
+
+## Stage 8L-a2 PRE-REGISTRATION (same commit): THE FAKER-CONDITIONAL — the reviewer's question in calibration-immune form
+
+THE INSTRUMENT: for each of the 9 census pairs, over the model's
+OWN companion law (q flat, logP N(5.03, 2.28), valid mask,
+photocenter wfac), restricted to draws that could actually FAKE
+the pair — projected leaked speed L(u)·wfac·v_orb·proj >=
+0.5·vt_j·vc_j (the wobble supplies at least half the observed
+velocity) AND total faked velocity below the pair's own catalog
+ceiling — compute P(RUWE-hot | faker) via the response curves
+(excess R(u)·a_phot vs sigma_AL(G_j), base = unity). Report
+per-pair and the 9-pair mean; then the binomial read of the
+OBSERVED 2/9 hot against the faker prediction. This conditions
+on the collapse's own mechanism and cancels the absolute base:
+a faker needs km/s-scale photocenter motion at these systems,
+and the curves say whether such motion can hide from RUWE.
+VALIDITY GL2' (the license): the CATALOG-CUT-REPAIRED S2 forward
+at the operative world must land in [0.5x, 2x] of the measured
++0.174 — if the response model reproduces the sky's measured
+activity-velocity correlation at the relevant amplitudes, its
+(P, q) -> (leak, hot) mapping is sky-calibrated. GL2' FAIL ->
+full stop, hold ~55%, the NSS leg decides (pre-stated).
+
+BARS + MAP (locked; serves the round-5 branch the void 8L-a map
+served, in conditional form):
+  FAKER-LOUD: mean P(hot | faker) >= 0.6 AND binomial
+    P(<= 2 of 9 hot) <= 0.05 -> the collapse account of the
+    census pairs is object-level DEAD (they could not have
+    faked it quietly); the S1 conditional is DISCHARGED at the
+    census (S3-grade); anomaly-real ~55% -> ~57%.
+  FAKER-QUIET: mean P(hot | faker) < 0.3 -> the fakers CAN hide
+    from RUWE; the census blind spot is REAL at correction
+    grade; anomaly-real ~55% -> ~50%; the NSS leg decides.
+  GRAY: 0.3-0.6, or binomial P in (0.05, 0.5) under FAKER-LOUD
+    means -> hold ~55%; NSS decides.
+EXPECTED OUTCOME: none stated (the physics genuinely cuts both
+ways: fakers need large a_phot at mid-P -> loud; but long-P
+fakers ride L ~ 1 with R ~ 0 -> quiet; the (P, q) prior decides
+the mix). Amendment rule: gate tolerances pre-quote; bars and
+this map may NOT move.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
