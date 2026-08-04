@@ -1,10 +1,10 @@
-STAGE 6Q: ledger audit + world table  (141 ledger rows)
+STAGE 6Q: ledger audit + world table  (142 ledger rows)
 ==============================================================================
 G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
 G3 (supersession resolves): PASS
 G4 (current-quantity collisions): PASS
-G5 (value spot-checks, 123 tokens): PASS
+G5 (value spot-checks, 126 tokens): PASS
 
 G6 (world-table provenance): PASS
 

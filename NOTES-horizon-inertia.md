@@ -8547,6 +8547,100 @@ across ceilings; (iii) mu_hi(K2n) <= mu_hi(B) (all smear-carried
 cliff mass removed at cap 1.414). Admissibility bar, ladder,
 scoring, and verdict grammar UNCHANGED.
 
+## Stage 8H EXECUTED (2026-08-04, amended run, all gates PASS): ALL-FAIL with COMPANION ATTRIBUTION 0.81/0.78 — the census pair is a companion-sector diagnostic; the width-object reading of the census is DEMOTED
+
+Gates: G8H-0 4/4 (landed-cell regression reproduces every shipped
+7K-b row to the digit — machinery certified); G8H-1 4/4 on the
+amendment-1 truncation kernel (the first-run clamp form was caught
+by G8H-1's own bound-only-removes condition, logged pre-quote,
+preserved in _run1.txt — the gate wrote the amendment, we did not
+move a bar). Runtime 1.2 min.
+
+THE LADDER (freed-e MAP cells, both laws both seeds — the cells
+themselves: alpha=0.5, eta=1.05, wr=0.3, ein=1.0, erf=0.95,
+fcomp=0.1, kw=0.7 = the GRID FLOOR of the amplitude nuisance,
+fpm 2.1–3.0, sq=0.2; observed pair (band 9, cliff 2)):
+  A  orbit+noise only:  mu_band 0.77–1.81, mu_hi 0.03–0.21 —
+     ESSENTIALLY CLEAN (Newton-A cleaner still, 0.13–0.45 / 0.00,
+     consistent with the 8F-b analytic leakage scale);
+  B  +companions:       mu_band 13.4–15.4, mu_hi 13.4–14.4 —
+     THE COMPANION WOBBLE CHANNEL FLOODS BOTH WINDOWS (×1.6 the
+     observed band, ×7 the observed cliff) at the model's OWN
+     preferred settings (fcomp = 0.1, kw at the grid floor);
+  C  +smear (operative): mu_band 28.3–29.6, mu_hi 16.7–18.2;
+  K2a/K2b/K2n (bounded smear, non-degenerate after amendment 1):
+     cliff pinned at 8.6–9.2 in ALL variants = the companion-
+     carried floor; band runs 24.6–26.8 / 32.1–34.2 / 8.5–9.6.
+ADMISSIBILITY: 0/4 runs for EVERY config (best jointP 8.9e-4,
+K2n, below the 1e-3 bar). VERDICT BY THE LOCKED BARS: ALL-FAIL —
+the (9,2) reproduction problem STANDS at kernel grade; attribution
+(companion share of the cliff at C) = 0.81 (simple) / 0.78 (BE) >=
+0.5 both laws -> **the census pair is named a COMPANION-SECTOR
+diagnostic (feeds the 7J-z4 wobble-binding line); the width-object
+reading of the census is DEMOTED.** The pre-stated expected
+outcome, landed.
+
+WHAT THIS MEANS (scoped carefully): (1) THE FLOOD IS LOCALIZED —
+the model's wobble-spike tail (the photocenter amplitude law ×
+the S period-smearing × the log-normal period tail) puts ~13
+phantom pairs into the census windows that the sky does not show,
+even with the amplitude nuisance riding its grid FLOOR (kw = 0.7)
+— the count-level sharpening of 7J-z4's Dwob +314 wobble-binding.
+(2) THE CLIFF-METER IDEA (leg 3's "cliff bounds the coherent
+draw") DIES HONESTLY: the cliff was never smear-dominated — at
+sq = 0 it is already flooded ×7 by wobble spikes; the census
+cannot bound the smear's support until the wobble tail is
+repaired. (3) SCOPE OF THE DEMOTION: the DATA-SIDE census
+defenses are UNTOUCHED (4J leakage null 3.8e-9, 8F-b tail null
+8.5e-8 — error-model class, no companion physics in them); what
+is suspended is the FORWARD-model gravity-evidence reading of the
+band (the model's own account of the 9 pairs is companion-
+dominated AND overshooting — broken either way). The 7K-b
+"self-defending pair" sentence survives with its scope named:
+the pair defends against error tails; it currently READS the
+wobble model. (4) The pre-registered ceiling-position/alpha read
+returns NO READ (confounded by the companion channel; K2n's
+near-admissible (9, 9) at the Newton ceiling decomposes as
+down-shuffled companion flood, stated with that caveat, not
+selected — the bar held). (5) NEXT LEVER, named: the wobble-TAIL
+instrument — the period/amplitude tail of the companion model is
+now constrained by THREE independent strains (7J-z4 kinematic
+binding, round-10 q-moments, the 8H census counts); repairing it
+is the gate to re-opening the census as a width meter AND to the
+fifth-move exposure chain. External legs (T2/T3, P9/DR4)
+unchanged.
+
+NO credence move (pre-stated in every branch). The in-pipeline
+width-object program is now: leg 1 E-SURVIVE (8G), leg 2
+ALL-FAIL-with-attribution (8H) — sq's identity remains open
+in-pipeline; its census meter is confounded; the coherent-draw
+reading stays alive by the K3=K1 equivalence (uncontested, not
+supported).
+
+Plain verdict: SUCCESS on the attribution question (decisive,
+0.78–0.81, the flood localized to a named model component with a
+named repair); NEEDS DIFFERENT DATA on the boundedness question
+itself (the census cannot measure the width object's support at
+the current companion-model grade).
+
+ELI12: We asked our nine fastest star pairs to referee the jitter
+mystery: "real physics respects the escape speed limit, noise
+doesn't — which is the jitter?" The referee turned out to be
+shouting about something else entirely. Our model of hidden THIRD
+stars (little companions that make the light wobble) predicts
+about fourteen pairs beyond the speed limit — the sky shows two.
+That's not the jitter's fault: even with jitter switched off, the
+companion model floods the forbidden zone all by itself. So the
+verdict: the speed-limit test can't judge the jitter yet, because
+the companion model is drowning out the courtroom — and that
+model was ALREADY the prime suspect from two earlier
+measurements. The silver lining is real: we now know exactly
+which dial is broken (the companion model's loud tail), three
+independent measurements point at it, and fixing it un-blocks
+two other tests at once. The jitter keeps its secret a little
+longer — but the list of places the secret can hide keeps
+shrinking.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

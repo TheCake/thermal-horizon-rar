@@ -1,0 +1,55 @@
+STAGE 8H: data N per bin = [9950, 2684, 1223, 214]; observed pair = (band 9, cliff 2)
+
+== seed 31 ==
+G8H-0 simple seed 31: landed 29.57/17.56 vs shipped 29.57/17.56; sq0 13.21/14.02 vs 13.21/14.02 -> PASS
+FREED CELL simple seed 31: alpha=0.5, eta=1.05, wr=0.3, ein=1.0, erf=0.95, fcomp=0.1, fpm=2.4, kw=0.7, sq=0.2
+  A  fcm=0 sq=0              mu_band =   0.86, mu_hi =   0.03, jointP = 1.01e-10, LL =  -23.02
+  B  companions sq=0         mu_band =  13.38, mu_hi =  13.87, jointP = 5.32e-06, LL =  -12.14
+  C  +smear (K1)             mu_band =  28.26, mu_hi =  16.71, jointP = 1.31e-10, LL =  -22.76
+  K2a bound C(0.5)=1.536     mu_band =  25.65, mu_hi =   9.20, jointP = 4.11e-07, LL =  -14.71
+  K2b bound C(1)=1.649       mu_band =  32.94, mu_hi =   9.20, jointP = 2.67e-09, LL =  -19.74
+  K2n bound C(0)=1.414       mu_band =   8.87, mu_hi =   9.20, jointP = 5.64e-04, LL =   -7.48
+  [note] Newton A at freed e: mu_band = 0.39, mu_hi = 0.00 (8F-b analytic leakage scale ~<= 2.7)
+  G8H-1 (cliff-only-removes + K2n<=B cliff + non-degeneracy): PASS
+G8H-0 BE seed 31: landed 30.06/18.85 vs shipped 30.06/18.85; sq0 14.14/13.49 vs 14.14/13.49 -> PASS
+FREED CELL BE seed 31: alpha=0.5, eta=1.05, wr=0.3, ein=1.0, erf=0.95, fcomp=0.1, fpm=2.4, kw=0.7, sq=0.2
+  A  fcm=0 sq=0              mu_band =   0.90, mu_hi =   0.05, jointP = 5.93e-10, LL =  -21.25
+  B  companions sq=0         mu_band =  14.07, mu_hi =  13.40, jointP = 6.27e-06, LL =  -11.98
+  C  +smear (K1)             mu_band =  28.40, mu_hi =  17.19, jointP = 7.78e-11, LL =  -23.28
+  K2a bound C(0.5)=1.536     mu_band =  24.62, mu_hi =   8.61, jointP = 1.25e-06, LL =  -13.59
+  K2b bound C(1)=1.649       mu_band =  32.07, mu_hi =   8.61, jointP = 7.86e-09, LL =  -18.66
+  K2n bound C(0)=1.414       mu_band =   9.03, mu_hi =   8.61, jointP = 8.88e-04, LL =   -7.03
+  [note] Newton A at freed e: mu_band = 0.39, mu_hi = 0.00 (8F-b analytic leakage scale ~<= 2.7)
+  G8H-1 (cliff-only-removes + K2n<=B cliff + non-degeneracy): PASS
+
+== seed 101 ==
+G8H-0 simple seed 101: landed 29.74/18.42 vs shipped 29.74/18.42; sq0 14.54/13.53 vs 14.54/13.53 -> PASS
+FREED CELL simple seed 101: alpha=0.5, eta=1.05, wr=0.3, ein=1.0, erf=0.95, fcomp=0.1, fpm=2.1, kw=0.7, sq=0.2
+  A  fcm=0 sq=0              mu_band =   0.77, mu_hi =   0.03, jointP = 4.06e-11, LL =  -23.93
+  B  companions sq=0         mu_band =  14.91, mu_hi =  14.43, jointP = 1.89e-06, LL =  -13.18
+  C  +smear (K1)             mu_band =  29.60, mu_hi =  18.22, jointP = 1.36e-11, LL =  -25.02
+  K2a bound C(0.5)=1.536     mu_band =  25.31, mu_hi =   8.85, jointP = 6.68e-07, LL =  -14.22
+  K2b bound C(1)=1.649       mu_band =  34.10, mu_hi =   8.85, jointP = 1.49e-09, LL =  -20.33
+  K2n bound C(0)=1.414       mu_band =   8.52, mu_hi =   8.85, jointP = 7.27e-04, LL =   -7.23
+  [note] Newton A at freed e: mu_band = 0.13, mu_hi = 0.00 (8F-b analytic leakage scale ~<= 2.7)
+  G8H-1 (cliff-only-removes + K2n<=B cliff + non-degeneracy): PASS
+G8H-0 BE seed 101: landed 29.00/17.86 vs shipped 29.00/17.86; sq0 13.93/13.70 vs 13.93/13.70 -> PASS
+FREED CELL BE seed 101: alpha=0.5, eta=1.05, wr=0.3, ein=1.0, erf=0.95, fcomp=0.1, fpm=3.0, kw=0.7, sq=0.2
+  A  fcm=0 sq=0              mu_band =   1.81, mu_hi =   0.21, jointP = 1.71e-06, LL =  -13.28
+  B  companions sq=0         mu_band =  15.38, mu_hi =  14.02, jointP = 2.22e-06, LL =  -13.02
+  C  +smear (K1)             mu_band =  28.93, mu_hi =  17.73, jointP = 3.33e-11, LL =  -24.13
+  K2a bound C(0.5)=1.536     mu_band =  26.76, mu_hi =   9.18, jointP = 2.01e-07, LL =  -15.42
+  K2b bound C(1)=1.649       mu_band =  34.23, mu_hi =   9.18, jointP = 1.05e-09, LL =  -20.67
+  K2n bound C(0)=1.414       mu_band =   9.59, mu_hi =   9.18, jointP = 5.63e-04, LL =   -7.48
+  [note] Newton A at freed e: mu_band = 0.45, mu_hi = 0.00 (8F-b analytic leakage scale ~<= 2.7)
+  G8H-1 (cliff-only-removes + K2n<=B cliff + non-degeneracy): PASS
+
+GATES: G8H-0 4/4 PASS, G8H-1 4/4 PASS
+
+ADMISSIBILITY (jointP >= 1e-3, of 4 law-seed runs): A=0, B=0, C=0, K2a=0, K2b=0, K2n=0
+ATTRIBUTION (companion share of mu_hi at C, seed means): simple 0.81, BE 0.78
+
+==> 8H VERDICT (locked bars): ALL-FAIL: no ladder config reproduces (9,2) at the 1e-3 admissibility bar in >= 3/4 runs - the census reproduction problem STANDS at kernel grade; ATTRIBUTION >= 0.5 both laws -> the census pair is named a COMPANION-SECTOR diagnostic (feeds the 7J-z4 wobble-binding line); the width-object reading of the census is DEMOTED
+    NO credence move (pre-stated in every branch).
+
+done (1.2 min)

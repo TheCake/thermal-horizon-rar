@@ -248,6 +248,14 @@ CHECKS = [
     ('bin-8gb-fpmread', '[BE 101] P(fpm) freed: [0.0, 0.0, 0.0, 0.0, '
      '0.0, 1.0]  P(3.0)=1.00', 'data/stage8gb_fpmread.txt'),
     ('bin-8gb-fpmread', 'G8Gb-0 ALL PASS', 'data/stage8gb_fpmread.txt'),
+    ('bin-8h-censusshape', 'ATTRIBUTION (companion share of mu_hi at '
+     'C, seed means): simple 0.81, BE 0.78',
+     'data/stage8h_censusshape.txt'),
+    ('bin-8h-censusshape', 'ALL-FAIL: no ladder config reproduces '
+     '(9,2) at the 1e-3 admissibility bar in >= 3/4 runs',
+     'data/stage8h_censusshape.txt'),
+    ('bin-8h-censusshape', 'GATES: G8H-0 4/4 PASS, G8H-1 4/4 PASS',
+     'data/stage8h_censusshape.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

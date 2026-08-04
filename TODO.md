@@ -562,7 +562,18 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     in); leg 3 = the second-moment cross-system derivation
     (skeleton drafted: MI-Jensen magnitude-dead ~0.015; incoherent
     bath galaxy-floor-dead; coherent draw = cliff-smearing =
-    8H-measurable).**
+    8H-measurable).** ~~leg 2 = 8H~~ — EXECUTED 2026-08-04
+    (pre-reg 652cb4c, amendment 1 gate-caught pre-quote):
+    **ALL-FAIL w/ COMPANION ATTRIBUTION 0.81/0.78 — the census
+    pair is a companion-sector diagnostic; width-object census
+    reading DEMOTED (cliff never smear-dominated: wobble spikes
+    flood it ×7 at sq=0); data-side census defenses untouched;
+    ceiling/alpha read = NO READ (confounded). sq identity now
+    open in-pipeline; NEXT LEVER = the wobble-TAIL instrument
+    (three independent strains: 7J-z4 binding, round-10
+    q-moments, 8H counts) — repairing it re-opens the census
+    meter AND the fifth-move chain; external legs T2/T3/P9
+    unchanged.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
