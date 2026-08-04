@@ -356,6 +356,26 @@ if WSRV:
     ERF_GRID = np.array([0.95])
     TAG = '_wsrv'
     OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
+# 8J (pre-reg 2cec321): WSAT=1 = the wobble SATURATION instrument.
+# Per-companion photocenter saturation w_eff = (w0/4.74047) *
+# tanh(w*4.74047/w0) — the mid-shoulder mass survives, the km/s
+# spike corner plateaus; mh (dynamical mass) untouched.  Shares the
+# wx axis slot with WSRV (exclusive modes); the w0 = 1e9 node is
+# BRANCHED to the verbatim legacy accumulation arrays, so that
+# slice must equal the esec (1.0, 0.95) slice EXACTLY (G8J-0).
+WSAT = os.environ.get('WSAT', '') == '1'
+W0SAT_GRID = np.array([1e9])
+if WSAT:
+    assert AMP == 'photow' and FPME and not WSHAPE and not FUNCS \
+        and not QLAW and not ARMTAG and not ESEC and not WSRV, \
+        'WSAT = the landed photow3 grid, exclusive mode'
+    assert SAMPLE == 'full', 'the saturation instrument runs on the sky'
+    W0SAT_GRID = np.array([0.1, 0.2, 0.4, 0.8, 1e9])
+    WCUT_GRID = W0SAT_GRID      # the shared wx axis (naming only)
+    EIN_GRID = np.array([1.0])
+    ERF_GRID = np.array([0.95])
+    TAG = '_wsat'
+    OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -595,14 +615,33 @@ def lnL_point(p, o):
         for fi, fcm in enumerate(FCOMP_GRID):
             cvp = np.zeros(len(idx)); cvq = np.zeros(len(idx))
             mh_tot = np.zeros(len(idx)); wamp = np.zeros(len(idx))
+            acts = []
             for k in (1, 2):
                 c = p['comp'][k]
                 act = c['uc'][idx] < fcm
+                acts.append(act)
                 mh_tot += act*c['mh'][idx]
                 cvp += act*c['w'][idx]*c['wd'][idx,0]
                 cvq += act*c['w'][idx]*c['wd'][idx,1]
                 wamp += act*c['w'][idx]
             boost = np.sqrt(1+mh_tot/p['M_s'][idx])
+            if WSAT:
+                # 8J: per-node saturated wobble accumulations; the
+                # identity node carries the VERBATIM legacy arrays
+                cvv = []
+                for w0 in W0SAT_GRID:
+                    if w0 >= 1e8:
+                        cvv.append((cvp, cvq))
+                    else:
+                        cp_ = np.zeros(len(idx))
+                        cq_ = np.zeros(len(idx))
+                        for kk in (1, 2):
+                            cc = p['comp'][kk]
+                            we = (w0/4.74047)*np.tanh(
+                                cc['w'][idx]*4.74047/w0)
+                            cp_ += acts[kk-1]*we*cc['wd'][idx,0]
+                            cq_ += acts[kk-1]*we*cc['wd'][idx,1]
+                        cvv.append((cp_, cq_))
             for ki, kwv in enumerate(KW_GRID):
                 vp_a = vpar[idx] + kwv*cvp
                 vq_a = vper[idx] + kwv*cvq
@@ -611,7 +650,15 @@ def lnL_point(p, o):
                   # 8I-a: wcut >= 1e8 passes the UNTOUCHED arrays (no
                   # boolean indexing), so the survival-off slice is
                   # bit-exact vs the esec (1.0, 0.95) slice (G8I-0)
-                  if wct >= 1e8:
+                  if WSAT:
+                      # 8J: node-wise saturated accumulation; no
+                      # slicing; identity node = the legacy arrays
+                      vp_b = vpar[idx] + kwv*cvv[wci][0]
+                      vq_b = vper[idx] + kwv*cvv[wci][1]
+                      bo_, sg_, gf_ = boost, sg0, gfac
+                      g1_, g2_ = g1_i, g2_i
+                      ut_, sk_, vc_ = ut_i, sk_i, vc
+                  elif wct >= 1e8:
                       vp_b, vq_b, bo_ = vp_a, vq_a, boost
                       sg_, gf_, g1_, g2_ = sg0, gfac, g1_i, g2_i
                       ut_, sk_, vc_ = ut_i, sk_i, vc
@@ -931,7 +978,7 @@ def run_seed(seed):
                 shp = shp + (len(EIN_GRID), len(ERF_GRID))
             shp = shp + (len(FCOMP_GRID), len(FC0_GRID), len(FFLY_GRID),
                          len(FPM_GRID), len(KW_GRID))
-            if WSRV:
+            if WSRV or WSAT:
                 shp = shp + (len(WCUT_GRID),)
             if PHW:
                 shp = shp + (len(SQ_GRID),)
@@ -969,7 +1016,7 @@ def run_seed(seed):
                         o = run(p['a_s'], e_s, p['psi0'], p['f_ip'], p['M_s'],
                                 p['uph'], 8, 2500, mode, **kw)
                         l2, lv = lnL_point(p, o)
-                        if not WSRV:        # strip the wcut axis (len 1)
+                        if not (WSRV or WSAT):   # strip the wx axis (len 1)
                             l2 = l2[:, :, :, :, :, 0]
                             lv = lv[:, :, :, :, :, 0]
                         if not WSHAPE:      # strip the ws axis (len 1)
@@ -1057,6 +1104,25 @@ def run_seed(seed):
         if PHW and QLAW:
             P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under QLAW "
               f"(q-draw differs at fcomp>0 by design; G0-q substitutes)")
+        if PHW and WSAT:
+            P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under WSAT "
+              f"(G8J-0 substitutes at the saturation-off slice)")
+            # G8J-0 (8J pre-reg 2cec321, abort-grade): the w0=1e9 slice
+            # must equal the esec cube's (ein=1.0, erf=0.95) slice
+            # EXACTLY (identity node = the verbatim legacy arrays)
+            esp = f'data/stage7j_cube_{SAMPLE}_esec_{seed}_{law}.npy'
+            esv = f'data/stage7j_cubevt_{SAMPLE}_esec_{seed}_{law}.npy'
+            es = np.load(esp)[:, :, :, 1, 2]
+            d0 = float(np.nanmax(np.abs(
+                cube[:, :, :, :, :, :, :, :, 4, :] - es)))
+            dv = (float(np.nanmax(np.abs(
+                cubevt[:, :, :, :, :, :, :, :, 4, :]
+                - np.load(esv)[:, :, :, 1, 2])))
+                if os.path.exists(esv) else 0.0)
+            P(f"G8J-0 {SAMPLE} seed {seed} {law}: max|wsat(off)-esec"
+              f"(1.0,0.95)| = {d0:.2e} / vt {dv:.2e} -> "
+              f"{'PASS' if max(d0, dv) <= 1e-9 else 'FAIL'}")
+            assert max(d0, dv) <= 1e-9, f'G8J-0 FAILED {law} seed {seed}'
         if PHW and WSRV:
             P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under WSRV "
               f"(G8I-0 substitutes at the survival-off slice)")
@@ -1094,7 +1160,7 @@ def run_seed(seed):
               f" = {d0:.2e} / vt {dv:.2e} -> "
               f"{'PASS' if max(d0, dv) <= 1e-9 else 'FAIL'}")
             assert max(d0, dv) <= 1e-9, f'G8G-0 FAILED {law} seed {seed}'
-        if PHW and not QLAW and not ESEC and not WSRV:
+        if PHW and not QLAW and not ESEC and not WSRV and not WSAT:
             # GB0w: the sq=0 slice must reproduce the cached photo cube
             # (fpm axis sliced to the photo grid length under FPME)
             php = f'data/stage7j_cube_{SAMPLE}_photo_{seed}_{law}.npy'
@@ -1169,8 +1235,8 @@ def run_seed(seed):
         prof, ahat, imax = profile_of(cb)
         best = np.unravel_index(np.nanargmax(cb), cb.shape)
         off = 2 if ESEC else 0      # 8G: two axes inserted after wr
-        if WSRV:                    # 8I-a: wcut axis between kw and sq
-            sqtxt = (f", wcut={WCUT_GRID[best[8]]}, "
+        if WSRV or WSAT:            # 8I-a/8J: wx axis between kw and sq
+            sqtxt = (f", {'wcut' if WSRV else 'w0'}={WCUT_GRID[best[8]]}, "
                      f"sq={SQ_GRID[best[9]]}")
         else:
             sqtxt = f", sq={SQ_GRID[best[8+off]]}" if PHW else ""
