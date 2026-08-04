@@ -8952,6 +8952,117 @@ an answer even in its best world. Nobody's number moved
 tonight; the process held. Third lost bet in a row — and this
 is precisely the kind of night the betting ledger was built for.
 
+## REVIEWER ROUND 4 RECEIVED + ADOPTION DECISIONS (2026-08-04): process 9/10; the collapse world graded an absorber-stack at the unphysical corner; the seed-budget resequenced behind a PHYSICAL astrometric-response model; the credence map PRE-REGISTERED
+
+THE ROUND (fresh-Opus, context intact from rounds 1–3; full text
+in the session record): (A) process 9/10, end state "honest
+UNRESOLVED, correctly escalated"; the seed-31 collapse world =
+an alternative-absorber stack pinned at the unphysical corner
+(fpm 3.0 past the ~1.4 ceiling; fcomp 0.35–0.50 at 3–5× the
+kinematic pin, reconciled only by the new saturation DOF; the
+new-DOF-opens-an-expensive-corner shape flagged as
+textbook-overfit-like) — "physically disfavored, not
+likelihood-excluded, credibility gated on the saturation's
+physicality." THE TIE-BREAKER: not more seeds — a DIRECT
+inner-companion census of the boost-carrying and census pairs
+(Gaia DR3 non-single-star solutions, RUWE/excess-noise
+signatures, SB1 RV variability): the collapse world REQUIRES
+~35–50% active-but-quiet companions in those systems, at the
+object level. (B) seed budget: 12 interim / 24 cap, per-seed
+CLASSIFICATION HISTOGRAM primary (pooled marginal-of-marginals
+forbidden as headline — the bimodal-mean trap, our own round-10
+rule), seed-mean threshold letters RETIRED, both-truth DEGRADED
+injections (7J-w2 standard) through the same fitter, split = a
+defined outcome. (C) the credence map (below, adopted). (D)
+attacks: D1 the 8J letter mislabeled (UNRESOLVED-BIMODAL, not
+T-REFUSED); D2 replace the tanh with the physical photocenter
+law; D3 saturation freedom erodes the boost even where it
+survives (seed-101 dN +8.9/+11.3 vs the operative +14.5–23.8);
+D4 the 8I-a summed-amplitude cut ignores the period-vs-baseline
+physics of RUWE (short-P averages out); D5 the 8H truncation
+kernel is itself a choice — test a physical orbital pile-up.
+
+OUR AUDIT (adopt designs, correct premises — the standing rule):
+- D2 PREMISE SLIP, corrected: the model's wobble AMPLITUDE law
+  ALREADY IS the physical photocenter law |q/(1+q) − l/(1+l)|
+  (amendment 4, Part-A-validated, twin-quiet). What is
+  phenomenological is the tanh SATURATION stacked on top. The
+  reviewer's demand survives the correction in merged D2+D4
+  form: replace BOTH proxies (survival cut, tanh) with the
+  PERIOD-RESOLVED Gaia astrometric-response model — leakage vs
+  absorption as a function of period against the baseline
+  (short-P averages out, P~baseline partially absorbs,
+  long-P leaks) — built from the published response curves
+  (Penoyre–Belokurov class; scout queued). ADOPTED as the
+  gating item before any seed budget.
+- D1 ADOPTED AS A RELABEL: the locked 8J letter stands as
+  printed (bars are never retro-moved); the OPERATIVE
+  characterization becomes UNRESOLVED-BIMODAL; seed-mean-over-
+  bimodal threshold bars are retired from future instruments.
+  Ledger note appended.
+- D3 ADOPTED as a conditional annotation: IF the response model
+  proves a physical saturation channel, the honest Newton
+  rejection under that freedom is ~+9–11 (seed-101 grade), down
+  from the operative +14.5–23.8 — carried openly, gated on the
+  response-model round.
+- A/B ADOPTED with resequencing: (1) the DR3 companion census
+  (the tie-breaker; converges with queued T2; cheap, external,
+  object-level) + the response-curve scout; (2) the physical-
+  response fitter replacing tanh/survival; (3) the 24-seed
+  budget with both-truth degraded injections under the adopted
+  map. D5 folds into (2).
+- C ADOPTED WITH AMENDMENTS, and hereby PRE-REGISTERED as the
+  map for the budgeted round (conditioning re-scoped per the D2
+  correction: "with the period-resolved response model"):
+    floor ~25% (the model-light census — 9 forbidden-band pairs
+      no error model produces — survives every branch);
+    BOOST WINS -> ~60%;
+    COLLAPSE WINS -> ~30% (held above floor by the census bill
+      falling mechanism-intrinsically on the collapse world; IF
+      the enabling saturation is shown unphysical, this branch
+      pre-emptively becomes ~40%);
+    SPLIT PERSISTS -> ~48%, and thereafter credence is gated on
+      EXTERNAL data only (T2/DR3-census/DR4) — no in-pipeline
+      stage moves it.
+  The structural-asymmetry argument (collapse-flood mechanism-
+  intrinsic vs boost-flood parameterization-contingent) is
+  priced at reviewer's +2–3% on the split branch only — "a
+  hypothesis, not evidence" until the width object's correct
+  parameterization is exhibited. Accepted.
+- Calibration note: the round contains the program's 5th
+  reviewer premise slip (D2's "you used tanh instead of the law
+  you validated" — we use both, at different layers), alongside
+  genuinely decisive contributions (the tie-breaker, the
+  histogram-primary budget design, the map). The
+  adopt-designs-correct-premises pattern holds.
+
+CREDENCE: STILL FROZEN at ~50% (the map above governs the
+FUTURE budgeted round; nothing moved today).
+
+Plain verdict: the review round delivered — the sector's next
+three moves are now externally designed, the fifth-move world
+has a named object-level kill test, and the credence map is
+locked before the instrument that will use it exists. That is
+the discipline working exactly as built.
+
+ELI12: The referee looked at our coin-flip and said three
+things. One: your process is excellent — nine out of ten. Two:
+the "no gravity needed" world is leaning on four cranked-up
+dials at once, including a noise dial past its certified
+ceiling, so treat it with suspicion — but the way to kill it
+isn't more dice: go LOOK for the hidden companions it needs.
+If half our star pairs secretly host them, Gaia's own wobble
+flags and radial-velocity surveys will show them; if they
+don't, that world dies at the object level. Three: before any
+big dice campaign, replace our hand-drawn "how companions hide"
+curve with the real physics curve — because the whole question
+is whether real companions CAN hide. We also caught the referee
+mis-remembering one thing (we already use the real wobble-size
+law; it's the hiding-with-time piece that needs building) —
+trust but verify runs in both directions here. The belief
+number stayed frozen at 50-50; the rulebook for moving it is
+now written and signed before the game.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
