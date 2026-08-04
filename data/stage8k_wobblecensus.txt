@@ -1,0 +1,43 @@
+8K THE WOBBLE CENSUS (pre-reg 370eed4; bars + credence map locked before any run)
+
+G8K-0 loader identity: N = 14071 (ref 14071), per-bin [9950, 2684, 1223, 214] (ref [9950, 2684, 1223, 214]) -> PASS
+G8K-0b census match: 9/9 matched uniquely -> PASS
+G8K-1 flag completeness: NaN fraction = 0.0000 -> PASS
+RUWE distribution (all ok components): P50 = 1.059, P90 = 1.294, P99 = 2.398, max = 19.27
+S1 VALIDITY (pre-stated: P99 > 1.6, no hard ceiling): VALID
+
+G8K-2 f_hot vs G-mag (1-mag bins, all ok components):
+  G 8-9: f_hot = 0.061 (n = 1321)
+  G 9-10: f_hot = 0.056 (n = 2429)
+  G 10-11: f_hot = 0.082 (n = 3241)
+  G 11-12: f_hot = 0.222 (n = 3465)
+  G 12-13: f_hot = 0.212 (n = 4016)
+  G 13-14: f_hot = 0.160 (n = 4645)
+  G 14-15: f_hot = 0.114 (n = 4745)
+  G 15-16: f_hot = 0.057 (n = 2833)
+  G 16-17: f_hot = 0.019 (n = 721)
+  mag run (max/min) = 11.44 -> STRONG (mag-binned percentile variant primary for S2)
+
+S1 [WIDE (s>=6)]: f_hot per component = 0.090 [0.080, 0.101] (k = 259, n = 2874); pair-hot = 0.166
+S1 [NARROW control (<2)]: f_hot per component = 0.142 [0.137, 0.147] (k = 2829, n = 19900); pair-hot = 0.251
+S1 verdict (bars < 0.20 / >= 0.30): RATE-SHORTFALL
+
+S2 [WIDE]: mean vt(hot) - mean vt(cold) = +0.1739 (perm p = 0.0000); PRIMARY mag-binned: spearman(max-RUWE-pctile, vt) rho = +0.1165 (p = 9.52e-06)
+   (asymmetric reading pre-stated: positive = necessary for collapse but error-degenerate; null = collapse-killing for the vt-excess-as-wobble reading)
+
+S3 the nine census pairs (individually; aen_sig percentile = vs mag-matched ok components, DESCRIPTIVE):
+  s =  34.22 kAU, vt = 1.608: ruwe = (0.911, 1.062), aen_sig = (2.5, 0.1) [mag-pctile (0.11, 0.38)], dr2_ruwe = (0.998, 0.958) -> clean
+  s =   6.56 kAU, vt = 1.608: ruwe = (1.483, 1.160), aen_sig = (8.0, 1.2) [mag-pctile (0.90, 0.56)], dr2_ruwe = (1.164, 1.123) -> HOT
+  s =   8.82 kAU, vt = 1.591: ruwe = (0.886, 1.010), aen_sig = (5.4, 0.0) [mag-pctile (0.15, 0.34)], dr2_ruwe = (1.003, 1.050) -> clean
+  s =  39.55 kAU, vt = 1.581: ruwe = (1.533, 1.195), aen_sig = (19.1, 2.3) [mag-pctile (0.83, 0.73)], dr2_ruwe = (1.045, 1.080) -> HOT
+  s =   7.26 kAU, vt = 1.548: ruwe = (1.042, 1.055), aen_sig = (17.3, 0.0) [mag-pctile (0.79, 0.00)], dr2_ruwe = (1.054, 0.990) -> clean
+  s =   9.83 kAU, vt = 1.535: ruwe = (1.070, 1.120), aen_sig = (11.9, 2.8) [mag-pctile (0.58, 0.78)], dr2_ruwe = (1.004, 1.135) -> clean
+  s =   8.39 kAU, vt = 1.531: ruwe = (1.047, 1.238), aen_sig = (13.1, 15.5) [mag-pctile (0.77, 0.69)], dr2_ruwe = (0.928, 0.926) -> clean
+  s =  19.66 kAU, vt = 1.518: ruwe = (0.965, 0.909), aen_sig = (13.3, 22.3) [mag-pctile (0.63, 0.63)], dr2_ruwe = (1.072, 0.992) -> clean
+  s =  44.40 kAU, vt = 1.510: ruwe = (0.927, 1.203), aen_sig = (7.2, 9.3) [mag-pctile (0.26, 0.48)], dr2_ruwe = (1.045, 1.155) -> clean
+S3 verdict: 2/9 hot (bars <= 3 / >= 6) -> CENSUS-CLEAN
+
+S4 [desc] WIDE pairs with both DR2 RVs (sentinels filtered): n = 438; median |dRV| = 0.70 km/s; median rv_err hot/cold = 0.64/0.67 km/s
+S5 [desc] DR2->EDR3 RUWE delta (WIDE): median hot = +0.098, cold = -0.030
+
+==> 8K VERDICT (locked bars): OBJECT-LEVEL-ABSENT: the collapse world's required active-companion population is not in the catalog at the required rate, and the census pairs are astrometrically clean - the 4J/8F-b defense UPGRADES (the band pairs are neither error tails nor wobblers); per the pre-registered map: anomaly-real ~50% -> ~55%; the 24-seed budget is DE-PRIORITIZED; reviewer to be notified

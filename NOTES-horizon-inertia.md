@@ -9167,6 +9167,87 @@ ownership: the pre-reg promoted the mag-robust variant for S2
 only and left S1/S3 on the raw flag — that hole is ours, caught
 by our own gate; both runs preserved.
 
+## Stage 8K EXECUTED (2026-08-04, amended run, all gates PASS): OBJECT-LEVEL-ABSENT — the collapse world's companion population is not in the catalog; the census pairs are astrometrically clean; THE MAP EXECUTES: anomaly-real ~50% -> ~55%
+
+Gates: G8K-0 loader identity (14,071; bins exact; census pairs
+matched 9/9 uniquely), G8K-1 completeness 0.0000, S1 validity
+VALID (P99 RUWE = 2.40, no ceiling). Amendment 1 (logged
+pre-quote, above): run-1's aen_sig arm was a brightness flag
+(0.96–0.99 hot at G < 12, caught by G8K-2's own mag table);
+HOT = ruwe > 1.25 only; run-1 verdict line = the failed-validity
+record, preserved, never quoted. The amended mag table is
+binarity-sane (0.06–0.22, peaking in RUWE's known G 11–13
+sensitivity window). EXPECTATION MET (the mild ABSENT lean) —
+after three straight misses.
+
+THE NUMBERS:
+  S1 RATE-SHORTFALL: f_hot(WIDE, per component) = 0.090
+    [0.080, 0.101] vs the collapse requirement >= ~0.30 — a 3x
+    shortfall at tight CI. Even RUWE's most sensitive mag window
+    peaks at 0.22. Bonus fact: WIDE (0.090) is CLEANER than the
+    NARROW control (0.142) — the boost-carrying bins are the
+    astrometrically quietest part of the catalog, the opposite
+    of any wide-excess-as-astrometric-contamination story.
+  S3 CENSUS-CLEAN: 2/9 census pairs hot vs the 0.166 pair-hot
+    baseline (expected ~1.5) — exactly baseline; 16 of 18
+    components have pristine RUWE (0.89–1.24). THE UPGRADE: the
+    nine band pairs are now defended on THREE independent
+    channels — not error tails (4J 3.8e-9, 8F-b 8.5e-8), not
+    wobblers (8K), while the light channel (v2c) already sat
+    below the collapse rate.
+  S2 (asymmetric reading as pre-stated): a REAL positive
+    correlation exists (mean vt hot-cold = +0.17, perm p < 1e-4;
+    mag-binned rho = +0.12, p = 1e-5) — necessary-for-collapse
+    but error-degenerate, and with S1 failing 3x it reads as the
+    fcomp ~ 0.1 real companion sector doing its known
+    mid-shoulder work, not as a 0.35–0.50 population. Carried,
+    not interpreted further. S5 (desc): hot pairs show a
+    POSITIVE DR2->EDR3 RUWE delta (+0.098 vs -0.030 cold) —
+    epoch-evolving wobble, i.e., the flag is seeing real
+    astrophysics where it fires.
+  WINDOW-OVERLAP CAVEAT (carried): very-short-P companions hide
+    from RUWE (average out) — but they also carry no wobble in
+    the model (S = P/17.8), so they cannot power the collapse
+    mechanism either; the collapse-relevant and RUWE-sensitive
+    period windows overlap by construction. The 8K-b NSS TAP
+    leg (orbital/acceleration solutions) remains named for the
+    residual window.
+
+VERDICT (locked bars): OBJECT-LEVEL-ABSENT — S1 shortfall AND
+census-clean, S1 valid. THE PRE-REGISTERED MAP EXECUTES (the
+first credence movement since the freeze, both directions were
+priced): **binary anomaly-real ~50% -> ~55%**; the 24-seed
+budget is DE-PRIORITIZED (the collapse basin loses its required
+population at the object level — the fitter corner exists, its
+stars do not); the reviewer is being notified with the two-run
+story and the amendment open to attack. Galaxy-side credence
+untouched (~65% provisional). The census's gravity-evidence
+reading recovers only its DEFENSIVE role (three-channel-clean);
+the forward-model demotion (8H) stands until the response-model
+round.
+
+Plain verdict: SUCCESS — the object-level kill test the
+reviewer designed, run same-hour on columns we already owned,
+with one self-caught flag amendment; the collapse world now
+needs a companion population that three independent channels
+say is not there.
+
+ELI12: The referee said "stop arguing about dice — go count the
+hidden companions the no-gravity story needs." We opened Gaia's
+own quality flags and counted. First try, our companion
+detector was accidentally wired to flag BRIGHT stars (96% of
+them lit up — nonsense); our own sanity table caught it, we
+fixed the wiring to the standard detector, kept both printouts.
+The honest count: the no-gravity story needs almost a third of
+these stars wobbling; the real number is nine percent. And our
+nine fastest pairs — the crown jewels — are among the CLEANEST
+stars in the whole catalog: not noisy, not wobbling, just fast.
+So the "it's all hidden companions" world fails its own
+head-count, at the level of actual objects, and for the first
+time since we froze it, the belief number moves — from 50 to
+55, exactly as the pre-signed rulebook said it must. Small
+step, honestly earned, three lost bets and then a won one.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

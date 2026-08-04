@@ -275,6 +275,14 @@ CHECKS = [
      'P(w0)=[0.44, 0.53, 0.0, 0.0, 0.03] '
      'P(fcomp)=[0.0, 0.03, 0.0, 0.47, 0.5, 0.0]',
      'data/stage8j_read.txt'),
+    ('bin-8k-wobblecensus', 'S1 [WIDE (s>=6)]: f_hot per component '
+     '= 0.090 [0.080, 0.101]', 'data/stage8k_wobblecensus.txt'),
+    ('bin-8k-wobblecensus', 'S3 verdict: 2/9 hot (bars <= 3 / >= 6) '
+     '-> CENSUS-CLEAN', 'data/stage8k_wobblecensus.txt'),
+    ('bin-8k-wobblecensus', "OBJECT-LEVEL-ABSENT: the collapse "
+     "world's required active-companion population is not in the "
+     "catalog at the required rate",
+     'data/stage8k_wobblecensus.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
