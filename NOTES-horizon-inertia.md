@@ -9063,6 +9063,83 @@ trust but verify runs in both directions here. The belief
 number stayed frozen at 50-50; the rulebook for moving it is
 now written and signed before the game.
 
+## Stage 8K PRE-REGISTRATION (2026-08-04, committed BEFORE any run): THE WOBBLE CENSUS — the reviewer's object-level tie-breaker, run on columns already in the catalog
+
+PREMISE: the collapse world (8J seed 31, review-graded an
+absorber-stack) REQUIRES fcomp = 0.35–0.50 per component of
+astrometrically ACTIVE-but-saturated companions among the pairs
+that carry the boost. The light-channel census (7J-z2c: host
+0.23 twin-heavy / 0.29–0.32 flat-q per component) cannot address
+ACTIVITY (light counts all periods; the collapse needs the
+P ~ 0.3–10 yr wobble window). The saturation story's own
+signature: absorbed wobble = inflated residuals — elevated
+RUWE / astrometric_excess_noise below the survival ceiling. The
+catalog carries ruwe1/2, aen1/2 + significance, ipd flags, DR2
+RVs + errors, and DR2-epoch RUWE — the census is fully local.
+
+DESIGN (calcs/stage8k_wobblecensus.py, CPU-only; the 8F-b/4J
+loader verbatim; differential where possible):
+  Populations: WIDE = s >= 6 kAU (the boost-carrying bins);
+  NARROW control = 0.2–2 kAU (same selection, boost-negligible);
+  the 9 census pairs (ceiling_pairs.csv census_corr rows, matched
+  back to catalog rows on (s, Mtot, vc) to float tolerance).
+  HOT (per component, pre-registered constants): ruwe > 1.25 OR
+  (aen_sig > 3). Pair-hot = either component hot.
+  S1 the RATE: f_hot per component in WIDE, binomial CI.
+    VALIDITY CONDITION (pre-stated): S1's absolute bar is valid
+    only if the catalog shows NO hard RUWE ceiling — P99(ruwe) >
+    1.6. If a ceiling is detected, S1 -> DISCLOSED-INVALID and
+    the verdict rests on S3 + S2 (fallback pre-stated).
+  S2 the CORRELATION: rank correlation of pair activity vs vt in
+    WIDE (hot indicator and mag-binned RUWE percentile variants),
+    permutation null 1e4. ASYMMETRIC interpretation pre-stated:
+    positive = NECESSARY for collapse but degenerate with the
+    error channel (not proof); null = collapse-killing for the
+    vt-excess-as-wobble reading.
+  S3 the NINE: hot-pair count among the 9 census pairs (their
+    band membership IS wobble under the collapse+8H attribution).
+  S4/S5 descriptive, no bars: DR2 RV-error inflation hot-vs-cold;
+    DR2->EDR3 RUWE deltas (acceleration signature); census pairs
+    individually printed.
+GATES: G8K-0 loader identity (14,071 pairs; per-bin N = [9950,
+  2684, 1223, 214]; 9/9 census rows matched). G8K-1 flag
+  completeness (NaN fraction < 5% or disclosed). G8K-2
+  mag-dependence report (if f_hot runs strongly with G, the
+  mag-binned variant is primary — pre-stated).
+
+BARS (locked):
+  S1: f_hot(WIDE) < 0.20 -> RATE-SHORTFALL; >= 0.30 -> RATE-MET;
+    else GRAY. (The collapse requirement is >= ~0.30 after
+    activity-window inefficiency; the light census itself
+    predicts ~0.10–0.15 hot under the boost world.)
+  S3: <= 3/9 hot -> CENSUS-CLEAN (baseline-consistent; the
+    collapse account of the band dies at object level and the
+    4J/8F-b defense upgrades: the band pairs are neither error
+    tails NOR wobblers); >= 6/9 -> CENSUS-WOBBLE-SUSPECT (a real
+    hit AGAINST the census's gravity reading — priced below,
+    honesty both directions); else MIXED.
+  VERDICT: OBJECT-LEVEL-ABSENT if RATE-SHORTFALL AND
+    CENSUS-CLEAN (S1 valid) or CENSUS-CLEAN + S2-null (S1
+    invalid). WOBBLE-RICH if RATE-MET AND >= 6/9. Else
+    MIXED-REPORTED.
+CREDENCE MAP FOR THIS STAGE (pre-stated; the first authorized
+movement since the freeze, both directions priced):
+  OBJECT-LEVEL-ABSENT -> anomaly-real ~50% -> ~55%, AND the
+    24-seed budget is DE-PRIORITIZED (the collapse basin loses
+    its population at object level; reviewer to be notified);
+  WOBBLE-RICH -> ~50% -> ~40%, AND the census's gravity-evidence
+    reading is SUSPENDED pending the NSS leg; budget proceeds
+    under the registered map;
+  MIXED -> ~50% HELD; budget proceeds.
+FOLLOW-UP (named, not run tonight): 8K-b = the Gaia DR3
+non-single-star TAP crossmatch (orbital + acceleration
+solutions) — the network leg.
+EXPECTED OUTCOME (pre-stated, low confidence — three straight
+misses): genuinely uncertain; mild lean OBJECT-LEVEL-ABSENT
+(the light census already sits below the collapse requirement).
+Amendment rule: gate tolerances amendable pre-quote; bars and
+the map may NOT move.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
