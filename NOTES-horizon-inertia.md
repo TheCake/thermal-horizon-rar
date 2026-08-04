@@ -9316,6 +9316,72 @@ small slip (slow-orbit companions are NOT gentle — they carry
 real speed), which actually makes his homework MORE important,
 not less. Belief stays at 55 until the curve says otherwise.
 
+## Stage 8L-a PRE-REGISTRATION (2026-08-04, committed BEFORE any run): THE RESPONSE MODEL, decisive half — the leakage/residual curves + the reviewer's self-consistency number
+
+DELIVERABLES (a)–(c) of the response-model round (the fitter
+half (d)–(e) = 8L-b, separate pre-reg): (a) the period-resolved
+curves for a photocenter orbit against a 5-parameter fit over
+baseline T — the PM LEAKAGE L(P/T) (fraction of instantaneous
+photocenter velocity biasing the fitted PM) and the RESIDUAL
+R(P/T) (RMS unfitted deviation as a fraction of the angular
+amplitude, driving RUWE via the Penoyre–Belokurov-class
+inflation sqrt(1 + (R a_phot / sigma_AL)^2)); derived
+analytically (circular orbit, uniform sampling, phase/
+orientation-averaged; eccentricity refinement deferred) with
+exact limits as gates. (b) THE SELF-CONSISTENCY NUMBER: the
+seed-31 collapse world (fcomp 0.35/0.50, its companion draws,
+hosts sampled from the catalog's (plx, G) joint) pushed through
+the RUWE forward -> predicted f_hot vs the measured 0.090.
+(c) the S2 forward number: the boost world (fcomp = 0.1) ->
+predicted Delta-vt(hot - cold) vs the measured +0.17.
+Constants (sigma_AL(G), baseline T, N_obs, the RUWE u0 role)
+are SCOUT-SOURCED (Haiku, primary: Penoyre & Belokurov 2020,
+Lindegren+2021, the RUWE technical note) and inserted at
+implementation with citations; the scout also hunts the
+provenance of the legacy S = min(1, P/17.8 yr) factor.
+
+GATES:
+  GL0 (exact limits, sympy/quadrature): L -> 1 as P/T -> inf,
+    L -> 0 as P/T -> 0; R -> 0 as P/T -> inf (curvature-
+    suppressed), R -> orbit-RMS as P/T -> 0; numeric quadrature
+    vs analytic <= 1e-6; continuity.
+  GL1 (REPORTED deliverable, interpretation DEFERRED): the
+    derived L(P/T) vs the operative model's legacy S = min(1,
+    P/17.8 yr) — any material disagreement is a candidate
+    model-side correction that goes through its OWN
+    pre-registered stage (8L-b), not this one.
+  GL2 (VALIDITY, the 8K pattern): the forward at the OPERATIVE
+    world (fcomp = 0.1) must postdict the measured sky rate —
+    f_hot(WIDE) prediction in [0.05, 0.15] (measured 0.090).
+    FAIL -> the absolute scale is broken; the (b) bars are
+    DISCLOSED-INVALID and the round returns instrument-repair,
+    no verdict, no credence movement.
+
+BARS + THE MAP for (b) (locked; executes only if GL2 passes;
+this implements the reviewer's round-5 branch and the 8K
+conditional):
+  CLOSES-CLEAN: f_hot(collapse) >= 0.30 -> the collapse world's
+    own companions would have tripped the 8K census; 0.090
+    falsifies them cleanly; the S1 conditional annotation is
+    DISCHARGED; anomaly-real ~55% -> ~57%.
+  BLIND-SPOT: f_hot(collapse) < 0.15 -> the census was blind at
+    the collapse's hiding place; the S1 leg rises to CORRECTION
+    grade (the 8K map's ABSENT premise partially unwinds);
+    anomaly-real ~55% -> ~50% (the 8K move retreats; S3 and the
+    three-channel-clean census pairs stand on their own);
+    the NSS leg (8K-b) becomes the decider.
+  GRAY: 0.15-0.30 -> hold ~55%; the NSS leg decides.
+BAR for (c) (descriptive consistency, no credence coupling):
+  predicted Delta-vt within [0.5x, 2x] of +0.17 -> CONSISTENT
+  (the round-5 "shown not asserted" item closed); outside ->
+  reported as a forward-model residual, carried.
+EXPECTED OUTCOME (pre-stated, low confidence): genuinely open;
+  the physics cuts both ways (mid-P companions are RUWE-loud,
+  but the collapse world's saturation-selected corner may
+  concentrate mass at RUWE-quiet periods). No lean stated.
+Amendment rule: gate tolerances amendable pre-quote with logged
+reasons; bars and the map may NOT move.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
