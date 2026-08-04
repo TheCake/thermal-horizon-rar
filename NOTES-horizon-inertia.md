@@ -8430,6 +8430,98 @@ weird habit was our orbit menu's fault, part still isn't
 explained. What we did NOT do tonight: decide what that means.
 That's tomorrow's carefully-worded test.
 
+## Stage 8H PRE-REGISTRATION (2026-08-04, committed BEFORE any run): THE CENSUS SHAPE-AND-ATTRIBUTION CONTEST — the width-object program, leg 2 (the decider named by the 8G pre-reg)
+
+PREMISE (set by 8G/8G-b): the width object survived the freed
+e-sector (E-SURVIVE, P(sq>0)=1.00 all reads); the freed model
+revision is real (erf=0.95, wr 0.2->0.3, fpm chase released in 3/4
+reads). QUESTION: what SUPPORT SHAPE does the width object have in
+the census channel, and what actually floods the (band=9, cliff=2)
+pair? The shipped 7K-b rows show the overshoot flood is NOT purely
+the smear: mu_hi ~ 13 at sq=0 (companion wobble spikes implicated)
+vs 17 at sq=0.2, vs 2 observed. So this contest carries BOTH axes:
+KERNEL SHAPE and CHANNEL ATTRIBUTION, at the NEW freed-e premise.
+
+DERIVED NOTE (stated pre-run): the coherent per-system boost draw
+is INDISTINGUISHABLE from the Gaussian smear in the (band, cliff)
+statistic — both multiply vtilde by an unbounded lognormal factor;
+a drawn boost moves each system's own ceiling with it, so the
+fixed-window counts coincide. The census can therefore bound the
+smear channel's SUPPORT (bounded vs unbounded) but cannot separate
+draw-from-noise; K3 is retired into K1 by this equivalence.
+
+DESIGN ([calcs/stage8h_censusshape.py](calcs/stage8h_censusshape.py),
+the 7K-b machinery + the esec cubes; seeds 31 + 101, both laws):
+per seed x law, the FREED MAP cell (argmax of the prior-augmented
+11-dim esec cube; its alpha/eta/wr/ein/erf/fcomp/fpm/kw/sq printed)
+gets the forward ladder:
+  A  fcm=0,  sq=0      — pure orbit + noise base (attribution anchor)
+  B  fcm=cell, sq=0    — + companions (K0)
+  C  fcm=cell, sq=cell — + Gaussian smear (K1; = the operative)
+  K2a = C with the smear BOUNDED at C(alpha_cell) = sqrt(2*(1 +
+    alpha_cell*0.36)) (B-1 = 0.36 at the wide field, the 4J edge);
+  K2b = C bounded at C(1) = 1.649; K2n = C bounded at C(0) = 1.414
+    (the Newton-ceiling control).
+  The bound acts on the SMEAR ONLY: vts_b = min(vts, max(vtn, C))
+  — companion-carried and noise-carried values above C keep their
+  legacy values (a photocenter wobble is real velocity, not
+  escape-bounded; pre-registered as the physical choice).
+Scoring: mu_band [1.414, 1.67) and mu_hi [1.67, 2.2) at gamma>=75
+(the 7K-b windows verbatim, NDATA scaling verbatim); joint Poisson
+LL at the observed pair: LL = ln Pois(9; mu_band) + ln Pois(2;
+mu_hi). Population-Poisson convention stated (model-side forward
+expectations; the 8F-b exact-PB estimator is the DATA-side tool).
+
+GATES (abort-grade):
+  G8H-0 (regression): at the LANDED photow3 cells the machinery
+    must reproduce the shipped 7K-b rows — boost simple/BE mu_band
+    and mu_hi (29.57/17.56, 30.06/18.85, 29.74/18.42, 29.00/17.86)
+    and the POST-HOC boost sq=0 fpm=1.5 rows — to |d mu| <= 0.05.
+  G8H-1 (arithmetic sanity): the bound can only remove — mu(K2x)
+    <= mu(C) per window per config; K2n's band contribution from
+    the smear must be zero by construction.
+  Consistency note (not a gate): mu_hi at A under Newton vs the
+    8F-b analytic leakage scale (~<= 2.7) — different constructions,
+    printed for orientation.
+
+BARS (locked; a config is ADMISSIBLE if joint P = Pois(9; mu_b) *
+Pois(2; mu_c) >= 1e-3; evaluated per law x seed, 4 runs):
+  RESOLVED(config): some ladder config admissible in >= 3 of 4 runs
+    -> name it. If UNIQUELY a K2 member: SHAPE-SELECTED (the width
+    object has bounded support; the selecting ceiling named — the
+    ceiling position doubles as an alpha read, mechanical output).
+    If B or A at the freed premise: FREED-MODEL-RESOLVED (the 8G
+    revision itself repairs the census; the smear must then NOT
+    live in this channel). If multiple admissible: RESOLVED-
+    DEGENERATE (report the set, no selection sentence).
+  ALL-FAIL: no config admissible in >= 3 of 4 -> the (9,2)
+    reproduction problem STANDS at kernel grade; the ATTRIBUTION
+    is then the product: share of mu_hi carried by the companion
+    sector = (B-A)/C per window; if >= 50% in both laws, the
+    census pair is named a COMPANION-SECTOR diagnostic (feeds the
+    7J-z4 wobble-binding line), and the width-object reading of
+    the census is DEMOTED (the cliff meters the wobble law, not
+    the smear).
+  MECHANICAL OUTPUT regardless of branch: the observed band spans
+    vt 1.490-1.607 (six of nine above C(0.5) = 1.536) — where the
+    bounded family's admissibility lands vs alpha is printed as a
+    ceiling-position read, not interpreted here.
+EXPECTED OUTCOME (pre-stated, honest): ALL-FAIL with companion-
+  sector attribution (base rate: no config has ever reproduced the
+  pair; the sq=0 rows already sat at P ~ 9e-5). The live upside
+  branch — freed-premise admission (the 8G revision repairing the
+  census) — is named but NOT expected.
+NO credence move in ANY branch (pre-stated). 8H decides the
+  width-object SHAPE question, not anomaly-real.
+
+FOLD-INS (logged): the erf-grid extension is DEFERRED with reason
+(the contest runs at the measured 0.95 mode; a ~6 h cube run the
+band/cliff question does not need; revisit conditional on this
+verdict). The 8G-b candidate reading (chase = partly the loose
+floor) gets its census-side test embedded in the freed-premise
+runs. Amendment rule: gate tolerances amendable pre-quote with
+logged reasons; bars may NOT move.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
