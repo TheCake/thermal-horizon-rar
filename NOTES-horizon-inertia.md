@@ -8641,6 +8641,84 @@ two other tests at once. The jitter keeps its secret a little
 longer — but the list of places the secret can hide keeps
 shrinking.
 
+## Stage 8I-a PRE-REGISTRATION (2026-08-04, committed BEFORE any run): THE WOBBLE-SURVIVAL INSTRUMENT — the wobble-tail repair, measurement round
+
+PREMISE (the three strains, all shipped): 7J-z4 kinematic
+wobble-binding (Dwob +314/+306; forcing measured multiplicity
+costs 135–153); round-10 q-moments (detected companions carry
+0.13–0.17 of undetected wobble variance); 8H census counts (~13
+phantom window pairs from the wobble channel at kw = the grid
+floor). THE HYPOTHESIS (selection physics, not new dynamics):
+EDR3 catalog quality cuts (RUWE-class; Penoyre–Belokurov-type
+subsystem astrometric inflation) remove pairs with large
+photocenter wobbles; the v7 model RETAINS those systems and
+hands them clean PMs with km/s spikes. The repair: a survival
+cap — systems whose summed active-companion wobble amplitude
+kw·(w1+w2)·4.74047 km/s exceeds wcut LEAVE the model population
+(as they leave the catalog).
+
+DESIGN (mode WSRV=1 on the landed photow3 grid; e-sector PINNED
+at the 8G-measured mode ein = 1.0, erf = 0.95; seeds 31 + 101,
+both laws): WCUT_GRID = [0.05, 0.10, 0.20, 0.40, 1e9] km/s (the
+1e9 node = survival OFF = the identity cell), one new axis
+between kw and sq; cubes data/stage7j_cube_full_wsrv_{seed}_
+{law}.npy, 10-dim; fresh names. Survival is applied to the
+population BEFORE the catalog-cut/histogram chain (numerator and
+normalization both — the pair is simply absent). The wcut = 1e9
+branch passes the untouched arrays (no boolean indexing), so the
+identity slice is bit-exact by construction. GB0w/GB0e
+SKIPPED-disclosed under WSRV (G8I-0 substitutes).
+
+GATES (abort-grade):
+  G8I-0 (in-run, per law x seed): the wcut = 1e9 slice of the
+    WSRV cube AND cubevt must equal the esec cube's (ein = 1.0,
+    erf = 0.95) slice EXACTLY (max|d| <= 1e-9, target 0.0e+0) —
+    the pinned-sector + survival-off model IS that slice.
+  G8I-1 (reader): the identity-slice LANDED-CONV read computed
+    from the wsrv cube must equal the same read computed from
+    the esec slice directly (arithmetic identity, <= 1e-9).
+  G8I-2 (reader): finite-mass bookkeeping + EDGE report on WCUT
+    (mode at 0.05 with >= 0.5 mass -> EDGE flag, correction-#4).
+
+THE READ (calcs/stage8i_read.py; LANDED-CONV anchor + prior_eta):
+per law x seed — P(wcut) posterior; alpha_marg, dN (marginal over
+everything incl. wcut); P(fcomp) (does the posterior move toward
+the measured ~0.3 host rate once survival explains the kinematic
+tolerance?); P(sq) (does the width demand deflate under the
+repaired tail?); P(fpm); Dwob analogue at the extended grid; THE
+CENSUS FORWARD at the repaired MAP cell (8H band_mu + the surv
+cull at the cell's wcut/kw/fcomp; comparator = the same cell at
+wcut = 1e9), scored at (band 9, cliff 2) by the 8H convention.
+
+BARS (locked; seed means, both laws):
+  W-DEMANDED: P(wcut < 1e9) >= 0.90 both laws -> the sky wants
+    the survival cap; the wobble-tail repair is DATA-SUPPORTED.
+  W-REFUSED:  P(wcut = 1e9) >= 0.50 both laws -> the sky refuses
+    the repair; the strain stands unresolved; census stays
+    confounded.
+  else W-PARTIAL: decomposition reported as-is.
+  CENSUS-REOPENED: repaired-MAP-cell jointP >= 1e-3 (the 8H bar,
+    continuity) in >= 3 of 4 law x seed runs -> the census meter
+    is CONDITIONALLY repaired (pending 8I-b power).
+  Movement grammar (descriptive this round): alpha/fcomp/sq
+    movements reported with the MATERIAL flag at |d alpha| >
+    0.11; if alpha_marg <= 0.2 AND dN <= +5 both laws, print the
+    pre-scripted sentence: "fifth-move-shaped movement observed —
+    VERDICT DEFERRED to the powered 8I-b" and NOTHING stronger.
+  CREDENCE FROZEN in 8I-a (pre-stated, every branch — the
+    cadence rule): 8I-b (the powered round: own-truth injection
+    arms through the WSRV fitter + the credence map) is the
+    decider; its map is pre-registered there, not here.
+  EXPECTED OUTCOME (pre-stated): W-DEMANDED with wcut interior
+    (0.10–0.40) — the three strains all point at a finite cap;
+    the census-reopen is the live uncertain branch (the band may
+    stay smear-flooded at sq = 0.2 even with the tail culled).
+
+Cost estimate (non-binding): ~60 min/seed (the WCUT axis is
+CPU-side; GPU cells unchanged at 90/seed). Amendment rule: gate
+tolerances amendable pre-quote with logged reasons; bars may NOT
+move.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
