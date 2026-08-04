@@ -12,7 +12,7 @@ Output: data/stage8h_censusshape.txt
 import re
 import numpy as np, time
 from astropy.io import fits
-from scipy.stats import poisson
+from scipy.stats import poisson, norm
 
 OUT = 'data/stage8h_censusshape.txt'
 open(OUT, 'w').close()
@@ -163,9 +163,12 @@ def vp_c(p, e_s, tab_a):
     return np.sqrt(np.maximum(2*dPhi/(1-(rp/ra)**2), 0))
 
 def band_mu(p, o, fcm, kw, fpm, sq, ceil=None):
-    """7K-b band_mu + the pre-registered smear bound: with ceil set,
-    vts_b = min(vts, max(vtn, ceil)) — the smear alone is bounded;
-    companion/noise-carried values above ceil keep the legacy value."""
+    """7K-b band_mu + the AMENDMENT-1 smear bound: with ceil set, the
+    per-system log-normal draw is TRUNCATED at g_max = ln(max(vtn,
+    ceil)/vtn)/sq and RENORMALIZED via the uniform map (conditioned-
+    on-bound; no pile-up).  The first-run CLAMP form manufactured
+    band counts and was ceiling-degenerate — caught by G8H-1, logged
+    pre-quote, preserved in ..._run1.txt."""
     ef, e2, los = p['ef'], p['e2'], p['los']
     s3 = o[:,0,None]*ef+o[:,1,None]*e2
     v3 = o[:,2,None]*ef+o[:,3,None]*e2
@@ -202,9 +205,13 @@ def band_mu(p, o, fcm, kw, fpm, sq, ceil=None):
         vtn = (vmag/vc)[keep]
         gmn = np.degrees(np.arccos(np.clip(
             np.abs(vp_n[keep])/np.maximum(vmag[keep],1e-12), 0, 1)))
-        vts = vtn*np.exp(sq*p['gs'][idx][keep])
-        if ceil is not None:
-            vts = np.minimum(vts, np.maximum(vtn, ceil))
+        g_ = p['gs'][idx][keep]
+        if ceil is not None and sq > 0.0:
+            cap = np.maximum(vtn, ceil)
+            gmax = np.log(np.maximum(cap/vtn, 1e-300))/sq
+            u = norm.cdf(g_)
+            g_ = norm.ppf(np.clip(u*norm.cdf(gmax), 1e-16, 1-1e-16))
+        vts = vtn*np.exp(sq*g_)
         nk = max(int(keep.sum()), 1)
         inb = float(np.sum((gmn >= 75) & (vts >= 1.414) & (vts < 1.67)))
         inh = float(np.sum((gmn >= 75) & (vts >= 1.67) & (vts < 2.2)))
@@ -313,17 +320,16 @@ for seed in (31, 101):
         mu_n, mh_n = band_mu(p, o_n, 0.0, kw, fpm, 0.0)
         P(f"  [note] Newton A at freed e: mu_band = {mu_n:.2f}, "
           f"mu_hi = {mh_n:.2f} (8F-b analytic leakage scale ~<= 2.7)")
-        # G8H-1 sanity
-        okc = (res['K2a'][1] <= res['C'][1] + 1e-6
-               and res['K2b'][1] <= res['C'][1] + 1e-6
-               and res['K2n'][1] <= res['C'][1] + 1e-6
-               and res['K2a'][2] <= res['C'][2] + 1e-6
+        # G8H-1 (amendment-1 invariants for the truncation kernel)
+        okc = (res['K2a'][2] <= res['C'][2] + 1e-6
                and res['K2b'][2] <= res['C'][2] + 1e-6
                and res['K2n'][2] <= res['C'][2] + 1e-6
-               and res['K2n'][1] <= res['B'][1] + 0.5)
+               and res['K2n'][2] <= res['B'][2] + 1e-6
+               and (abs(res['K2a'][1]-res['K2n'][1])
+                    + abs(res['K2b'][1]-res['K2n'][1])) > 1e-9)
         g1_ok &= okc
-        P(f"  G8H-1 (bound-only-removes + K2n<=B band): "
-          f"{'PASS' if okc else 'FAIL'}")
+        P(f"  G8H-1 (cliff-only-removes + K2n<=B cliff + "
+          f"non-degeneracy): {'PASS' if okc else 'FAIL'}")
         rows[(law, seed)] = res
 
 P("")

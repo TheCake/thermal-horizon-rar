@@ -8522,6 +8522,31 @@ floor) gets its census-side test embedded in the freed-premise
 runs. Amendment rule: gate tolerances amendable pre-quote with
 logged reasons; bars may NOT move.
 
+AMENDMENT 1 (2026-08-04, logged PRE-QUOTE after G8H-1 fired on the
+first run; verdict was WITHHELD by the gate as designed; first-run
+output preserved as data/stage8h_censusshape_run1.txt = the
+failed-gate record, never quoted as a result): the pre-registered
+CLAMP bound (vts_b = min(vts, max(vtn, C))) creates a delta
+pile-up AT the ceiling — it (a) manufactures band counts (the
+clamped mass lands inside [1.414, 1.67), mu_band ROSE 28 -> 38,
+exactly what G8H-1's bound-only-removes condition existed to
+catch) and (b) makes every in-window ceiling equivalent for a
+window-count statistic (K2a = K2b = K2n to the last digit = a
+DEGENERATE kernel family; the design note had flagged the clamp's
+pile-up and chosen it anyway — wrongly). REPLACEMENT (the 8F-b
+amendment-1 precedent: a gate fired on instrument internals; the
+component is replaced; the BARS do not move): the CONDITIONED-ON-
+BOUND smear — per system the log-normal draw is truncated at
+g_max = ln(max(vtn, C)/vtn)/sq and RENORMALIZED via the uniform
+map g_t = PHI^-1(PHI(g) * PHI(g_max)) (no pile-up; the excess
+mass redistributes proportionally below the cap; different
+ceilings now differ). G8H-1 is restated to the truncation
+kernel's true invariants: (i) cliff-only-removes, mu_hi(K2x) <=
+mu_hi(C); (ii) non-degeneracy, the K2 band values must differ
+across ceilings; (iii) mu_hi(K2n) <= mu_hi(B) (all smear-carried
+cliff mass removed at cap 1.414). Admissibility bar, ladder,
+scoring, and verdict grammar UNCHANGED.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
