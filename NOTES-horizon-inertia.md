@@ -10697,6 +10697,33 @@ full-sample λ̂ (a REAL subsample tension — named for the galaxy
 program, not resolved here). POWER-CARRIED otherwise. NO credence
 movement (pre-stated).
 
+## Stage 8R-b PRE-REGISTRATION (2026-08-05, committed BEFORE any run; 8R executed — GLOBAL-DEMAND, its record ships below): THE COMPLEMENT CHANNELS — the γ-decomposition of the width demand
+
+8R's only-sector channels all died (−31…−42, 4/4 each; dose-response
+4/4; gates incl. cube identity 0.00e+00 all PASS) — the width demand
+is distributed across sectors. But 8R's design tested "smear ONLY the
+demand sector"; the 8P census side-condition asks for the COMPLEMENT:
+smear everything EXCEPT the flood sector. 8R's gam channel is one
+complement cut (sparing γ≥45 costs 36–42); the finer cuts are
+unmeasured — in particular whether the band's own γ≥75 slice carries
+kill-grade demand. 8R-b
+([calcs/stage8rb_complement.py](calcs/stage8rb_complement.py),
+committed with this entry) runs uni / x60 (spare γ≥60) / xperp
+(spare γ≥75 = THE side-condition channel; the band's feeders stay
+unsmeared so the no-companion band flood collapses by construction —
+the question is purely the kinematic price). Gates: the 8R set
+(cube identity 0.00e+00; census 0.10; fractions; mask-off wiring).
+Bars (locked, ≥3/4): V1 VIABLE(xperp) iff Δkin ≥ −2 AND pmf9 ≥ 1e-3
+(no ≤−5 row) → the reconciling channel EXISTS, successor =
+cube-grade α under xperp (final-stamp path reopens). V2 NEAR-VIABLE
+iff −5 < Δkin < −2 dominates with pmf9 ≥ 1e-3 (trade quantified,
+carried). V3 SECTOR-DEMAND iff Δkin ≤ −5 in ≥3/4 → with 8P and 8R
+this CLOSES the pincer on the multiplicative-smear class (no
+γ-shaped per-system ṽ-broadening reconciles both channels; the
+width object is NOT a multiplicative ṽ-smear — additive/noise-side
+or data-side classes take the floor). x60 = the curve point.
+NO credence movement (pre-stated).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
