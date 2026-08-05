@@ -10303,6 +10303,119 @@ detects, and belief ticks 57 → 58 exactly as the pre-signed
 rulebook says. The full answer still needs us to point a
 spectrograph at all nine pairs ourselves.
 
+## Stage 8P PRE-REGISTRATION (2026-08-05, committed BEFORE any run): THE SQ-TAIL SHAPE CONTEST — the band-flank repair candidate
+
+Premise (from 8N, measured): the census BAND flood is carried by the
+WIDTH channel's lognormal tail (the no-companion channel alone floods
+the band ~x20 at sq=0.2 vs the bare sq=0 forward), while the kinematic
+likelihood demands sq>0 four independent ways (3E / 6P / the -60..-116
+misfit / the fpm edge). The two-channel question this stage decides:
+does the KINEMATIC demand extend to the lognormal's FAR TAIL, or only
+to its bulk variance? If only the bulk, the band flank of the census
+inconsistency is a shape-CONVENTION artifact and is repairable at zero
+kinematic cost.
+
+Instrument ([calcs/stage8p_sqshape.py](calcs/stage8p_sqshape.py),
+committed with this entry): a single-config kinematic block evaluator —
+the lnL_point ws=0/wcut-off legacy path lifted VERBATIM from
+stage7j_marginal.py — plus the 8N census forward, both at the operative
+lker MAP (alpha/eta/wr FROZEN at the cube argmax; no alpha
+re-derivation this round, conditioning disclosed). Width draw
+m = exp(sq*T(g)) with T a unit-variance DETERMINISTIC transform of the
+same stream draw (stream-preserving; matched ln-m second moment):
+logn (identity) / clip2 (clipped +-2sigma, rescaled) / ulog (bounded
+uniform) / twopt (two-point) / lapl (HEAVIER tail = direction control).
+sq axis extended to 0.5 for ALL shapes symmetrically (bounded shapes
+may want more bulk variance; the extension is pre-registered here, not
+post-hoc; cube identity gate uses the first four nodes).
+
+Gates (any FAIL = STOP, no shape rows quoted, amendment pre-quote, run
+preserved): G8P-0 in-evaluator identity (logn path = the verbatim
+legacy arrays); G8P-1 cube identity (logn block sq<=0.3 vs the stored
+lker cube at MAP, max|d| <= 0.05 lnL = keep-boundary grade, exact max
+reported); G8P-2 census identity (vs stage8lb_read.txt mu, 0.05);
+G8P-3 moment calibration (|var-1| <= 0.02, |mean| <= 0.01 per shape).
+
+Bars (locked; law-seed majority >= 3/4):
+- B1 SHAPE-ARTIFACT-CONFIRMED iff some bounded shape has profiled
+  Dkin >= -2.0 vs logn AND Poisson pmf(9 | mu_band at its profiled
+  cell) >= 1e-3 in >= 3/4 law-seeds, no law-seed at Dkin <= -5;
+  winner = best mean Dkin among passing shapes (machine line
+  'WINNER: <shape>' for the 8Q combined leg).
+- B3 TAIL-DEMANDED iff EVERY bounded shape has Dkin <= -5.0 in >= 3/4
+  law-seeds (then the kinematics and the census want OPPOSITE tails of
+  the same object = a named model inconsistency, the sharpest possible
+  successor statement). Else MIXED-CARRIED.
+- B2 direction control: lapl floods >= logn at fixed nuisances in
+  >= 3/4 (else DIRECTION-FLAG). Cliff cross-check: bounded shapes move
+  mu_cliff <= 20% at fixed nuisances (8N attribution), breach = flag.
+NO credence movement (measurement round, pre-stated). Successor if B1:
+cube-grade re-run of the winner (own pre-reg) = operative-model
+candidate. Expectation stated for the record: B1 leans plausible
+(the profiled sq may climb to 0.4-0.5 for bounded shapes — flagged as
+the compensation signature to watch); B3 would be the more important
+result if it fires.
+
+## Stage 8Q PRE-REGISTRATION (2026-08-05, committed BEFORE any run, same commit as 8P): THE SUBSYSTEM P-PRIOR BRACKET — the cliff-flank repair
+
+Premise (from 8N, measured): the census CLIFF flood is long-period
+companion wobble spikes (share 0.77-0.81; RUWE-silent locus 0.70 at
+P >= 10 yr) drawn from the FIELD Raghavan lognormal logP[d] ~
+N(5.03, 2.28). Source work (this session's scout, PRIMARY-SOURCE
+grade at scout level; my own primary read owed before paper use):
+Tokovinin 2014 (AJ 147:87) Table 2 MEASURES the inner-subsystem law
+for components of wider pairs — L11: logP[d] ~ N(3.25+-0.12,
+1.80+-0.09), ML detection-corrected (~80% completeness), median P
+~4.9 yr vs the field's ~23 yr. His own caveat, carried verbatim: the
+shortness is explainable by dynamical truncation and the sample is
+NOT stratified by outer separation — for kAU outers (no stability
+constraint) the true law is unconstrained between the two. Hence a
+BRACKET, not a swap: raghavan (identity) / tokL11 (3.25, 1.80) /
+mid (4.14, 2.04, labeled representative). The earlier scout claim
+"params unpublished at needed grade" is hereby corrected (Table 2 has
+them); the MSC fetch is SKIPPED by decision — Tokovinin 2018 states
+the MSC "does not reflect the real statistics" (selection), so a
+biased in-house histogram would be weaker than the published
+ML-corrected law. MSC access route verified and logged for a future
+stratified measurement (VizieR J/ApJS/235/6, systems.dat, Parent
+field encodes hierarchy).
+
+Instrument ([calcs/stage8q_pprior.py](calcs/stage8q_pprior.py),
+committed with this entry): stream-preserving recast logP_new =
+x0 + sg*z (same z-score draw; raghavan branch passes the untouched
+legacy array bit-exactly); the same block evaluator + census forward
+with the 8N P-locus decomposition, at the frozen lker MAP. Physics
+pre-stated: the swap moves companion mass from the P >= 10 yr
+spike/leak locus into the 1-10 yr mid-shoulder (P(P >= 10 yr | valid)
+roughly halves) — the direction the kinematics may PREFER while the
+cliff un-floods; it also shifts the fcomp<->host-rate mapping meaning
+(LNPI kept at operative convention, pure-lnL co-printed, caveat
+carried).
+
+Gates (any FAIL = STOP + amendment pre-quote): G8Q-0 cube identity
+(raghavan block vs stored cube <= 0.05); G8Q-1 census identity
+(<= 0.05); G8Q-2 recast calibration (mean/std of logP within 0.02 of
+target per slot); G8Q-4 shared non-companion streams (bit-identical
+a_s/gs across priors); G8Q-5 locus completeness (1e-9).
+
+Bars (locked; >= 3/4): Q1 CLIFF-REPAIRED iff tokL11 profiled
+mu_cliff <= 0.5x raghavan's AND pmf(2|mu_cliff) >= 1e-3. Q2 tokL11
+kinematics ACCEPTED iff Dkin >= -2.0 (REJECTED iff <= -5.0; else
+CARRIED). Q3 secondary/informational (pre-stated fingerprint): the
+kw=0.7 floor-riding and fpm=3.0 ceiling-riding should RELAX if the
+companion-channel shape was their driver. Verdict = Q1 x Q2; mid rows
+= the caveat envelope. NO credence movement (pre-stated).
+
+COMBINED LEG (own invocation after the 8P record exists; rule
+pre-stated, no discretion): width shape = 8P's WINNER line (none ->
+logn), prior = tokL11; bar JOINT-COHERENT iff jointP >= 1e-3 AND
+Dkin >= -5.0 vs the operative baseline in >= 3/4 law-seeds — this
+re-asks 8M's admissibility question at the repaired model, POINT
+grade. If coherent: 8M's inconsistency closes at point grade and the
+cube-grade re-run (alpha under the repaired model) is the named
+final-stamp decider — a successor round, NOT this one; no credence
+move either way here.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
