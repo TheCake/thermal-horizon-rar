@@ -10662,6 +10662,41 @@ T5-POWER-LIMITED iff P(λ>0) < 0.95 with the interval covering both;
 T5-TENSION iff the GD interval excludes the full-sample λ̂. NO
 credence movement; the galaxy map untouched.
 
+## Stage 8S-b PRE-REGISTRATION (2026-08-05, committed BEFORE any run; 8S executed first — its record ships as-is below): THE EDGE RESOLUTION — grid extension + the gas-budget knob
+
+8S landed loud beneath its label: the gas-dominated subsample rides
+the family's lower GRID EDGE (λ̂ = −0.30 = the first node; the
+bootstrap slams its own −0.4 parameter bound; c₁=½ rejected +31
+within the subsample; the raw y<1 co-read agrees at +38.7), while
+the disk-dominated complement carries the entire positive dial
+(λ̂ = 1.13) and swings bound-to-bound under M/L forcing — the
+immunity contrast demonstrating exactly the alleged degeneracy. Two
+process facts logged with the record: (i) by the correction-#4
+standard an edge-riding optimum is UNQUOTABLE until the grid
+extends — the 8S "dial" numbers are edge-invalid; (ii) the 8S
+verdict grammar had a HOLE (a one-sided Δ1 interval cannot fire
+T5-TENSION; it printed POWER-LIMITED) — the letter stands, the
+label is annotated, the hole is closed in 8S-b's grammar.
+
+8S-b ([calcs/stage8sb_gasedge.py](calcs/stage8sb_gasedge.py),
+committed with this entry): (1) LGRID extended to −2.0 (below λ=0
+the family is a DEEP-COEFFICIENT PROBE, c₁ = λ/2 < 0, not a
+physical member set — labeled; ν-positivity guarded and reported);
+(2) THE GAS KNOB — gN = fg·g_gas + f·g_dsk + g_bul with fg free in
+[0.7, 1.4] (the helium/molecular budget envelope: the one coherent
+systematic that shifts gas-dominated galaxies specifically), run on
+FULL/GD/DD. Gates: G8Sb-0 shared-node regression vs the 8S profile;
+G8Sb-1 fg-slice identity (1e-9); G8Sb-2 ν-positivity node report.
+Bars (locked): E1 LOCALIZED iff the extended-grid GD minimum is
+interior with a two-sided Δ1 inside (−2.0, 1.5). E2 GAS-EXPLAINED
+iff with fg free the GD interval overlaps the FULL free-fg interval
+(the 8S edge attributed to the fixed gas normalization; T5's
+defense conditional on the gas systematic, both quoted). E3
+DIAL-TENSION iff with fg free the GD interval still excludes the
+full-sample λ̂ (a REAL subsample tension — named for the galaxy
+program, not resolved here). POWER-CARRIED otherwise. NO credence
+movement (pre-stated).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
