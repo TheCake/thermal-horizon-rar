@@ -1,0 +1,25 @@
+G8Kb-0: populations - census 9 pairs, WIDE 1437, narrow control 1437 (matched size, rng 41)
+G8Kb-0b: 5748 unique source_ids to query
+[fetch] gaiadr3.gaia_source: 5748 rows -> data/stage8kb_src.csv
+[fetch] gaiadr3.nss_two_body_orbit: 57 rows -> data/stage8kb_orb.csv
+[fetch] gaiadr3.nss_acceleration_astro: 8 rows -> data/stage8kb_acc.csv
+[fetch] gaiadr3.nss_non_linear_spectro: 2 rows -> data/stage8kb_trend.csv
+pulled: gaia_source 5748, nss_two_body_orbit 56, nss_acceleration_astro 8, nss_non_linear_spectro 2
+G8Kb-1 pull completeness: 5748/5748 = 1.0000 -> PASS
+
+THE NINE (per pair; COVERED = rv-covered OR astro-informative (ruwe > 1.4 entry gate); ACTIVE = astro-active OR rv-variable OR rv-trend):
+  s =  34.22 kAU: ruwe = (0.91, 1.06), nss = (0, 0), orb/acc/trend = (0,0,0), rv_cov = (True, False), rv_var = (True, False) -> COVERED, ACTIVE
+  s =   6.56 kAU: ruwe = (1.48, 1.16), nss = (0, 0), orb/acc/trend = (0,0,0), rv_cov = (False, False), rv_var = (False, False) -> COVERED
+  s =   8.82 kAU: ruwe = (0.89, 1.01), nss = (0, 0), orb/acc/trend = (0,0,0), rv_cov = (False, False), rv_var = (False, False) -> uncovered
+  s =  39.55 kAU: ruwe = (1.53, 1.20), nss = (0, 0), orb/acc/trend = (0,0,0), rv_cov = (False, False), rv_var = (False, False) -> COVERED
+  s =   7.26 kAU: ruwe = (1.04, 1.05), nss = (0, 0), orb/acc/trend = (0,0,0), rv_cov = (False, False), rv_var = (False, False) -> uncovered
+  s =   9.83 kAU: ruwe = (1.07, 1.12), nss = (0, 0), orb/acc/trend = (0,0,0), rv_cov = (True, False), rv_var = (False, False) -> COVERED
+  s =   8.39 kAU: ruwe = (1.05, 1.24), nss = (0, 0), orb/acc/trend = (0,0,0), rv_cov = (True, True), rv_var = (False, False) -> COVERED
+  s =  19.66 kAU: ruwe = (0.96, 0.91), nss = (0, 0), orb/acc/trend = (0,0,0), rv_cov = (True, True), rv_var = (False, False) -> COVERED
+  s =  44.40 kAU: ruwe = (0.93, 1.20), nss = (0, 0), orb/acc/trend = (0,0,0), rv_cov = (True, True), rv_var = (False, True) -> COVERED, ACTIVE
+census totals: COVERED 7/9, ACTIVE 2/9, active-among-covered 2/7
+
+[WIDE] pair rates: astro-active 35/1437 = 0.0244; RV-covered 1039/1437 = 0.723; RV-variable 106/1437 = 0.0738
+[NARROW-matched] pair rates: astro-active 28/1437 = 0.0195; RV-covered 874/1437 = 0.608; RV-variable 83/1437 = 0.0578
+
+==> 8K-b VERDICT (locked bars + map): NINE-CLEAN (2 active among 7 covered): the faker account loses its last in-catalog hiding place at the covered periods; the S3 immunity partially RESTORES; per the map: anomaly-real ~55% -> ~57% (the map's ceiling; the P >~ 15-20 yr window disclosure carried)

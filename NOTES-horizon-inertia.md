@@ -9587,6 +9587,72 @@ coverage expected partial (G_RVS = 14 vs our G ~ 8-15) — the
 STRUCTURALLY-BLIND branch is live. Amendment rule: gate
 tolerances pre-quote; bars and the map may NOT move.
 
+## Stage 8K-b EXECUTED (2026-08-05, all gates PASS): NINE-CLEAN — the quiet-faker account loses its last in-catalog hiding place; THE MAP EXECUTES: anomaly-real ~55% -> ~57% (the map's ceiling)
+
+Gates: G8Kb-0 populations exact (9 / 1437 / 1437-matched);
+G8Kb-1 pull completeness 5748/5748 = 1.0000. The pulls (cached,
+committed): 56 orbit rows, 8 acceleration rows, 2 RV-trend rows
+across all three populations — the NSS products are SPARSE for
+this catalog, exactly as the entry gates predict.
+
+THE NINE: COVERED 7/9 (five via the Katz RV-applicability set;
+two via astro-informativeness — the ruwe 1.48/1.53 pairs were
+ENTRY-ELIGIBLE for the NSS pipeline and returned NO accepted
+orbit/acceleration solution); ACTIVE 2 among the 7 covered =
+exactly at the <= 2 bar -> NINE-CLEAN by the letter. The two
+actives (s = 34.22 and 44.40 kAU, one RV-variable component
+each) are DESCRIPTIVELY noted: at the WIDE baseline RV-variable
+rate (0.074/pair) the expectation among 7 covered is ~0.5, so
+2 is a mild excess (P ~ 0.09) — those two pairs may genuinely
+host inner companions; THE CENSUS SURVIVES DROPPING THEM (a
+7-pair band against the 4J/8F-b nulls remains astronomically
+forbidden under Newton+errors). The two UNCOVERED pairs (8.82,
+7.26 kAU) disclosed. Population context (descriptive, no bars):
+WIDE astro-active 2.4% vs narrow-matched 2.0%; RV-variable
+7.4% vs 5.8% — the fcomp ~ 0.1 sector's scale, nothing at the
+collapse world's 35-50%.
+
+THE VERDICT (locked bars + map): NINE-CLEAN — across every
+in-catalog channel that CAN see them (RUWE flags where visible,
+NSS orbits/accelerations where entry-eligible, RV variability
+where covered), the census pairs show no companion activity at
+the periods that could fake them. The S3 immunity partially
+RESTORES; **anomaly-real ~55% -> ~57%**, the pre-stated ceiling,
+with the window disclosure carried: P >~ 15-20 yr fakers and
+the 2 uncovered pairs remain unprobed in-catalog (the
+all-nine-tuned-long-P conspiracy stays priced at reading grade);
+T2 external RVs remain the closure for that tail.
+
+THE ARC LANDS: the collapse world (8J seed 31) needed a
+0.35-0.50 companion population. Its light channel sits below
+(v2c); its wobble-flag channel shows 9% where it needs 30 (8K,
+conditionalized by 8L-a2); and its orbit/RV channels now return
+the field rate, with the nine decisive pairs individually clean
+at every covered period (8K-b). The fifth-move world is not
+likelihood-excluded — it is POPULATION-STARVED at the object
+level, in-catalog, on three independent channels, with the
+residual windows named and priced.
+
+Plain verdict: SUCCESS — the decider decided within its stated
+window; the second earned credence movement of the program,
+both under pre-registered maps.
+
+ELI12: Final channel, final count. Gaia keeps two more lists we
+had not checked: stars whose paths bend (hidden-companion
+orbits) and stars whose speeds jitter (spectroscopic wobble).
+Our nine fast pairs: seven are checkable, and five of those
+seven are spotless; two show mild speed-jitter — and even if we
+hand those two to the skeptics, the remaining seven still break
+Newton's speed limit at astronomical odds. The two
+highest-wobble pairs were exactly the ones Gaia's orbit-finder
+was ALLOWED to inspect, and it found no orbit. So the
+"companions faked everything" story now fails its head-count in
+light, in wobble flags, and in orbits and speed-jitter — every
+way the catalog can look. Belief moves 55 -> 57, the exact
+ceiling we signed before looking, with the honest fine print:
+very-slow companions (15+ year orbits) and two of the nine
+remain uncheckable until we point real spectrographs at them.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

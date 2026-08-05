@@ -31,3 +31,7 @@ data/musedark3.pdf
 data/musedark3_text.txt
 data/limbach2009.pdf
 data/limbach2009_text.txt
+!data/stage8kb_src.csv
+!data/stage8kb_orb.csv
+!data/stage8kb_acc.csv
+!data/stage8kb_trend.csv

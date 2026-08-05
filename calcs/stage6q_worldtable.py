@@ -292,6 +292,13 @@ CHECKS = [
      '| all fakers) = 8.78e-01', 'data/stage8la_response.txt'),
     ('bin-8la-response', 'P =   6.0 yr: L = 0.797, S_legacy = 0.337, '
      'R = 0.204', 'data/stage8la_response.txt'),
+    ('bin-8kb-nss', 'census totals: COVERED 7/9, ACTIVE 2/9, '
+     'active-among-covered 2/7', 'data/stage8kb_nss.txt'),
+    ('bin-8kb-nss', 'G8Kb-1 pull completeness: 5748/5748 = 1.0000 '
+     '-> PASS', 'data/stage8kb_nss.txt'),
+    ('bin-8kb-nss', 'NINE-CLEAN (2 active among 7 covered): the '
+     'faker account loses its last in-catalog hiding place',
+     'data/stage8kb_nss.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
