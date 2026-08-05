@@ -399,6 +399,15 @@ CHECKS = [
      'G8Z-4 2/2 - ALL PASS', 'data/stage8z_dose.txt'),
     ('bin-8z-dose', 'axis ruwe: Z1 monotone 2/4, Z-STEP 0/4, '
      'Z-CLEAN 4/4', 'data/stage8z_dose.txt'),
+    ('bin-9a-stratalpha', 'GATES: G9A-1 4/4, G9A-2 PASS, G9A-3 '
+     '16/16 - ALL PASS', 'data/stage9a_stratalpha.txt'),
+    ('bin-9a-stratalpha', '[simple 101] d_alpha = +0.201; '
+     'DlnL(free-tied)@a_hat = +92.6; Newton DlnL tied/free = '
+     '+0.6/+5.4', 'data/stage9a_stratalpha.txt'),
+    ('gal-9b-qflag', 'GATES: G9B-0/1 ALL PASS',
+     'data/stage9b_qflag.txt'),
+    ('gal-9b-qflag', '[D_Q = Q1-Q2] pct 5/50/95 = -2.541/+0.000/'
+     '+1.740; P(D_Q <= 0) = 0.5367', 'data/stage9b_qflag.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

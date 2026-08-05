@@ -11509,6 +11509,77 @@ carries materially less dial). B2 QUALITY-BLIND iff P(Δ_Q ≤ 0) ≥
 0.20 AND |median Δ_Q| ≤ 0.5 (the dial ignores the quality flag —
 the data-quality suspect weakens). B3 GRAY-CARRIED else.
 
+## Stage 9B EXECUTED (2026-08-05, first run, ALL GATES PASS): QUALITY-BLIND — the SPARC quality flag carries none of the GD dial; the V-ordering replicates inside both quality strata
+
+Gates: G9B-0 GD-all = 8X's −1.309 exact; G9B-1 accounting (Q1/Q2
+= 18/20, no power flag; V threshold 66.2 = 8Y exact). 3.8 min.
+
+Identity: GD-Q1 λ̂ = −1.281, GD-Q2 = −1.222 — indistinguishable.
+Bootstrap (300 paired): Δ_Q median = 0.000, P(Δ_Q ≤ 0) = 0.537 ⇒
+B2 QUALITY-BLIND fired cleanly. Co-read (the finding): the 8Y
+V-ordering REPLICATES within each flag stratum — Q1 slow/fast =
+−2.000 (LO-EDGE)/−0.887; Q2 = −2.000/−0.638 — so the V-structure
+is not a quality-flag artifact.
+
+Suspect ledger after 9B: gas budget (8S-b) → vertical (8S-c) →
+correlation (8V) → correction-lever (8Y) → quality flag (9B) all
+CLEARED — FIFTH control survived. Remaining: radius-dependent AD
+beyond the flat-σ bound (needs Σ_gas(R), external), or genuine
+physics in the slow gas-rich dwarfs. The V-ordering is THE
+structure to explain.
+
+Plain verdict: SUCCESS as a control; the tension is now
+five-controls hard, and the V-ordering is its measured shape.
+
+ELI12: Maybe the astronomers' own "medium quality" sticker marks
+the galaxies causing trouble? No — the high-quality and
+medium-quality gas dwarfs give the same weird answer, and in BOTH
+groups the slow spinners are the weird ones. Whatever this is, it
+cares about how fast a galaxy spins, not about the sticker.
+
+## Stage 9A EXECUTED (2026-08-05, first run, ALL GATES PASS): GRAY-CARRIED by the letter — and the direction is measured: the honest width model moves α UP or NOWHERE; the Newton contrast strengthens
+
+Gates: G9A-1 cube bit-identity 0.00e+00 4/4 (at MAP α, fresh
+orbit runs); G9A-2 counts; G9A-3 the 8Z sqbar regression 16/16 at
+5e-4. 20.0 min.
+
+Results (tied → free, per law-seed): α̂ 0.301→0.446 / 0.322→0.522
+/ 0.272→0.472 / 0.422→0.420; **Δα̂ = +0.144/+0.199/+0.201/−0.002
+— uniform-positive-or-zero**; letter GRAY (A1 0/4, A2 2/4 — three
+rows landed in the 0.15–0.25 GAP between my bars; bar-design note
+owned: the gap caught the actual values). **ΔlnL(free−tied) =
++88…+95 in 4/4** — the per-stratum error model is decisively
+preferred (the 8Z aggregation artifact confirmed at full-block
+grade). Per-stratum widths at α̂ replicate the anatomy EXACTLY:
+sq = 0.0/0.1/0.1/0.3 in 4/4. Newton contrast (block grade, NOT
+comparable to 7J marginal numbers): tied +0.6…+4.9 → free
++4.2…+9.1 — **the width repair does not erode the Newton
+rejection; it strengthens it modestly.** Correction-#4 flag: Q4
+(worst RUWE) rides BOTH noise axes at grid top (sq=0.3, fpm=3.0,
+4/4) — the pathological stratum is grid-censored; successors:
+extend Q4's axes in the cube-grade re-fit, and the Q4-DROPPED
+robustness fit (α on Q1–Q3 only; named, not run).
+
+The round's question answered at its pre-registered grade: **the
+α measurement survives the width-model repair** — the feared
+collapse direction did not occur; the honest model likes α
+slightly MORE. The full marginal re-run stays available but its
+trigger (A1) did not fire.
+
+Plain verdict: SUCCESS as a measurement (direction + the ~90 lnL
+heterogeneity confirmation) / the bar grammar NEEDS REFINEMENT
+(the A1–A2 gap).
+
+ELI12: Big worry: once we stop faking the blur (one noise dial
+for everybody) and give each quality grade its own honest dial,
+maybe the gravity signal was living in the fake blur and dies.
+Tested: the honest version likes the data hugely more (as
+expected), and the gravity knob moves a hair UP, not down — and
+"no gravity boost" gets slightly MORE disfavored, not less. The
+signal wasn't hiding in the blur. (One footnote: the very worst
+data group wants even more noise than our dials allow — its
+knobs are pinned at max; we flagged it for the big re-run.)
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -1,0 +1,25 @@
+9B THE QUALITY-FLAG CONTROL (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+G9B-1 accounting: GD Q1/Q2 = 18/20; V threshold = 66.2 (8Y: 66.2) -> PASS
+G9B-0 GD-all: lam_hat = -1.309 vs 8X -1.309 -> PASS
+GATES: G9B-0/1 ALL PASS
+
+[GD-Q1] lam_hat = -1.281 (n = 18)
+[GD-Q2] lam_hat = -1.222 (n = 20)
+[co-read Q1-slow] lam_hat = -2.000 (n = 7) LO-EDGE
+[co-read Q1-fast] lam_hat = -0.887 (n = 11)
+[co-read Q2-slow] lam_hat = -2.000 (n = 12) LO-EDGE
+[co-read Q2-fast] lam_hat = -0.638 (n = 8)
+
+  ... 100/300 replicates (1.3 min)
+  ... 200/300 replicates (2.5 min)
+  ... 300/300 replicates (3.8 min)
+
+replicates 300, skips 0
+[GD-Q1] pct 5/50/95 = -2.000/-1.211/+0.245
+[GD-Q2] pct 5/50/95 = -2.000/-0.986/+1.261
+[D_Q = Q1-Q2] pct 5/50/95 = -2.541/+0.000/+1.740; P(D_Q <= 0) = 0.5367
+
+==> 9B VERDICT (locked grammar): QUALITY-BLIND - the dial ignores the SPARC quality flag; the data-quality suspect weakens.
+    NO credence movement (pre-stated; measurement round).
+
+done (3.8 min)

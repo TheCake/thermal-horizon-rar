@@ -729,6 +729,20 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     fpm(RUWE) law) + stratified sq — expectation: global smear
     collapses toward ≤0.1; the α exposure = the number to
     measure. DR4 epoch astrometry = arbiter.**
+    **9A EXECUTED 2026-08-05 (pre-reg ea685ca): GRAY by the
+    letter (3 rows in the 0.15–0.25 bar gap — grammar note
+    owned), DIRECTION MEASURED — the α measurement SURVIVES the
+    width repair: Δα̂ = +0.14/+0.20/+0.20/−0.00 (up or nowhere,
+    never down); ΔlnL(free−tied) +88…+95 4/4 (aggregation
+    artifact confirmed at block grade); per-stratum sq =
+    0.0/0.1/0.1/0.3 in 4/4 (= the 8Z anatomy); Newton contrast
+    STRENGTHENS under the honest model (+0.6…+4.9 → +4.2…+9.1,
+    block grade, not 7J-comparable). Q4 grid-censored (sq=0.3 +
+    fpm=3.0 tops, 4/4, correction-#4). Successors: full marginal
+    re-run (A1 trigger did NOT fire — optional); Q4-axes
+    extension; the Q4-DROPPED robustness fit (α on Q1–Q3, named
+    not run). The width-model threat to the anomaly is DE-FANGED
+    at block grade.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
@@ -893,6 +907,15 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     Definitive successor = Σ(R)-weighted AD correction (external
     data); the tension stays the galaxy program's sharpest open
     object.**
+    **9B EXECUTED 2026-08-05 (pre-reg ea685ca): QUALITY-BLIND —
+    GD-Q1 λ̂ = −1.281 vs GD-Q2 −1.222 (Δ_Q median 0.000, P(Δ_Q≤0)
+    = 0.537); the SPARC quality flag carries none of the dial;
+    co-read: the 8Y V-ordering REPLICATES inside both flag strata
+    (slow −2.0 edge / fast −0.89 and −0.64) — not a flag artifact.
+    FIFTH control cleared (gas → vertical → correlation →
+    correction-lever → quality flag). Remaining: Σ_gas(R)-weighted
+    AD (external HI data) or genuine slow-dwarf physics; the
+    V-ordering = the structure to explain.**
 26. **Referee queue (adoption candidates)**: T2
     external-RV cross-check — **ARCHIVE PASS EXECUTED as Stage 8O
     (2026-08-05, pre-reg 1e7c89a + two pre-quote wiring amendments,
