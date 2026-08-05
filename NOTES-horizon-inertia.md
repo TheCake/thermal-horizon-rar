@@ -10031,6 +10031,74 @@ the speed band itself prefers have the gravity knob at 1 —
 exactly the galaxy value — they're just unreachable while
 companions exist.
 
+## Stage 8N PRE-REGISTRATION (2026-08-05, committed BEFORE any run): THE FLOOD ANATOMY — anatomy-first replaces dial-guessing; the residual-survival candidate killed at design time
+
+PART 0, THE DESIGN-TIME KILL (measured before this pre-reg, script
+shipped in the stage for reproduction). The natural next repair
+candidate after 8M was the RESIDUAL-SURVIVAL kernel: the catalog's
+own quality cuts remove systems whose companion wobble sits in the
+astrometric residual (R(u) from 8L-a), so the model should cull
+them too — and the cut variable r = wfac·v_orb·R(u) has the
+opposite P-shape to the leaked w = wfac·v_orb·L(u). The design-time
+scale calc (population grade, rng 31) measured the premise DEAD:
+**the band-flooding spike carriers (kw·w_leak > 0.3 km/s, 6.8% of
+systems) have residual-to-noise ratio q50 = 0.5, q90 = 74.8 — the
+flood is LONG-P (L→1, R→0), i.e. RUWE-SILENT by the same L/R
+tradeoff that made 8L-a2's capable fakers quiet.** A survival cut
+at any severity removes ≲10% of the flood carriers (the short-P
+residual-loud ones, who are not the flood). SRVR is NOT BUILT; no
+GPU is spent on a third refused dial. CONVERGENCE NAMED: the
+model's flood population and the sky's RUWE-hiding population are
+the same physics — so 8K's S3 cleanliness does NOT contradict the
+model flood (the RUWE channel cannot arbitrate it), and the RV
+channel (T2/8O — km/s offsets from exactly these long-P
+companions) is sharpened as the arbiter.
+
+THE ROUND. Before any further repair dial is proposed, MEASURE the
+flood's anatomy at the operative cells (the four shipped 8L-b MAP
+cells, corrected kernel):
+- (a) THE P-LOCUS: among band and cliff members carrying an active
+  companion, the dominant companion's period composition (bins
+  < 3 / 3–10 / 10–30 / 30–100 / ≥ 100 yr + no-companion class).
+  Pre-stated expectation (from the part-0 calc): ≥ 60% of band
+  companion-carriers at P ≥ 10 yr.
+- (b) THE CHANNELS: census pair recomputed with wobble-off (mass
+  boost only), mass-off (wobble only), both-off — the 8H
+  attribution refined to (band, cliff) × (wobble, mass, noise).
+- (c) THE q-LAW DIAL: the paired flat-q vs TWIN-HEAVY t5 census
+  (the v2c GV7-measured subsystem law; stream-preserving redraw,
+  the 7J-z7 convention) at fcomp = 0.1 (MAP) and the freed 0.2 /
+  0.35 — does the MEASURED wobble-quiet q-law reduce the flood, and
+  does its mass-boost channel (twins boost ×1.2) re-flood what the
+  wobble channel gives up (the 7J-z8 overshoot direction, there
+  observed only in the FORCED fcomp ≥ 0.35 world)?
+
+READING GRAMMAR (locked): R3 = REDUCES-MATERIALLY if at the MAP
+fcomp the t5 pairing drops μ_cliff by ≥ 30% AND μ_band moves toward
+9 without increasing — then the combined t5+lker operative mode is
+NAMED as the next GPU instrument (own pre-reg). NEUTRAL/WORSENS →
+the flood is population-structure in P (the successor = the
+population-prior round anchored on the subsystem-period literature
+scout now in flight, plus the external T2). Either way the
+successor is evidence-named, not dial-guessed. NO credence movement
+in any branch (measurement round; external-only per 8K-b/round 6).
+
+GATES: G8N-0 — the full-channel census at the shipped MAP cells
+reproduces the 8L-b rows (±0.05 both μ, 4/4; parse at runtime).
+G8N-1 — t5 stream preservation: at fcomp = 0 the t5 and flat
+censuses are EXACTLY equal (≤ 1e-9; companions inert, all other
+draws share the stream). G8N-2 — channel identity: the both-off
+channel equals the fcomp = 0 call exactly (≤ 1e-9). G8N-3 —
+locus completeness: the P-class expected counts sum to the
+full-channel band/cliff μ exactly (≤ 1e-9).
+
+Protocol: seeds 31/101, both laws; ~10 min compute. Script
+[calcs/stage8n_floodanatomy.py](calcs/stage8n_floodanatomy.py);
+output data/stage8n_floodanatomy.txt; ledger row
+bin-8n-floodanatomy in the result commit. Concurrent lane: 8O (the
+T2 external-RV reconnaissance) pre-registers separately on the
+scout-verified VizieR tables.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
