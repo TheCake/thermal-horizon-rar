@@ -10994,6 +10994,97 @@ a different KIND of thing: added noise, a second hidden population,
 or something in the data itself. Our little 9-and-2 star count has
 now refereed its sixth wrong idea — small statistic, big stick.
 
+## Stage 8U + 8V PRE-REGISTRATION (2026-08-05, committed BEFORE any run): THE MIXTURE INSTRUMENT (the width object's last-classes contest) + THE GALAXY-LEVEL BOOTSTRAP OF THE GD TENSION (the correlation control)
+
+Round 4 of the autonomy session; both stages are MEASUREMENT ROUNDS —
+NO credence movement, pre-stated. Ledger rows on completion:
+bin-8u-mixture, gal-8v-gdboot.
+
+**8U THE MIXTURE INSTRUMENT** ([calcs/stage8u_mixture.py](calcs/stage8u_mixture.py),
+output data/stage8u_mixture.txt). The pincer (8P/8R/8R-b) excluded
+every GLOBAL multiplicative smear (any shape at matched variance, any
+γ-localization); 8T excluded noise-side substitution. Named survivors:
+MIXTURE and DATA-SIDE. The mixture hypothesis is the one shape class
+8P never touched: a ZERO-INFLATED smear — a fraction f_mx of systems
+carries per-system lognormal broadening of scale sm, the rest are
+clean (the w_rad precedent: the last such contest found a real 20%
+sub-population). Implementation: p['u_sq'] = rng.random(N) appended
+AFTER p['gs'] in build_pop (stream-preserving prefix — every earlier
+draw bit-identical); smear line vts = vtn*exp(sm*(gk*msk)) with
+msk = (u_sq < f_mx) as float; at f_mx = 1.0, gk*1.0 = gk exactly, so
+the (f_mx=1, sm∈SQ_GRID) slice IS the legacy global smear bit-for-bit
+— the identity gate. Grids: F_MX = {0.05, 0.10, 0.20, 0.35, 0.65,
+1.00}; SM = {0.0, 0.10, 0.20, 0.30, 0.45, 0.65}; ws ∈ {0, 0.045}
+(the 8T-measured floor carried as a free binary axis — the mixture
+must beat the global smear GIVEN the floor, not by mimicking it);
+fcomp/ffly/fpm/kw grids and the LNPI host prior verbatim from 8T;
+frozen lker MAP cells (α=0.5, η=1.05, wr=0.3); seeds 31/101 × both
+laws. Var(ln m) of the mixture = f_mx·sm²; the grid covers the
+equal-variance locus of the global sq=0.2 (var 0.040): (1.0,0.2)
+0.040 / (0.35,0.3) 0.032 / (0.2,0.45) 0.041 / (0.1,0.65) 0.042 /
+(0.05,0.65) 0.021 — census co-read along this locus at operative
+nuisances, vars quoted.
+GAIN := max(block+prior) − max(f_mx=1 slice + prior) — the mixture's
+lnL preference over the global smear under identical freedom.
+Gates (any FAIL ⇒ STOP, preserve run, amend pre-quote): G8U-1 cube
+identity — (f_mx=1, ws=0, sm∈{0,.1,.2,.3}) slice vs the stored lker
+cube = 0.00e+00 bit-grade, 4/4; G8U-2 census identity at shipped
+nuisances |Δμ| ≤ 0.10 both components; G8U-3 8T regression at lnL
+grade — gain_repro from the (f_mx=1, ws∈{0,0.045}, sm≤0.3) slice vs
+the 8T printed gains (+6.39/+13.56/+5.96/+3.96), bar 0.011.
+Bars (locked; law-seed majority ≥ 3/4):
+- M1 MIXTURE-VIABLE iff profiled f_mx ≤ 0.35 AND GAIN ≥ +3 AND
+  pmf(9|μ_band@prof) ≥ 1e-3 ⇒ the width object identifies as a real
+  minority sub-population; successor = cube-grade re-run with the
+  mixture axes (final-stamp path reopens) + the physical-ID round.
+- M2 CENSUS-BLOCKED iff f_mx ≤ 0.35 AND GAIN ≥ +3 AND pmf9 < 1e-3 ⇒
+  kinematics prefer a mixture but the census excludes it as
+  reconciliation; DATA-SIDE is the last reconciliation class.
+- M3 SHAPE-INDIFFERENT iff GAIN < +3 ⇒ the likelihood cannot
+  separate a mixture from the global smear at this grade; sub-read
+  (pre-stated): M3a if an equal-variance-locus cell with f_mx < 1
+  sits within 2 lnL of the free max AND is census-admissible
+  (pmf9 ≥ 1e-3) — a census-open escape EXISTS; M3b if no such cell —
+  the census excludes the whole locus.
+- Else MIXED-CARRIED. Edge flags per correction-#4: sm=0.65 top,
+  f_mx=0.05 bottom, ws grid restricted by design (floor pinned at
+  its 8T-measured interior value; pre-stated, not an edge).
+
+**8V THE GALAXY-LEVEL BOOTSTRAP** ([calcs/stage8v_gdboot.py](calcs/stage8v_gdboot.py),
+output data/stage8v_gdboot.txt). The 8S-c suspect ledger ranks the
+within-curve correlation object (7B lag-1 ρ ≈ 0.87) first: point-level
+D1 intervals overcount. The honest resampling unit is the GALAXY.
+PAIRED design: NBOOT = 300 replicates, rng 71; each replicate draws
+149 galaxies with replacement from the kept 149 (GD 38 + DD 111,
+counts gated); per replicate fit λ̂ on the full draw AND on its
+GD-member instances AND on its DD-member instances (duplicated
+galaxies enter the marginal once per instance — independent-intercept
+bootstrap semantics; m2ll loops over the instance list). Statistic:
+Δ_rep = λ̂_GD_rep − λ̂_FULL_rep (paired). Estimator: coarse λ grid
+−2.0..1.5 step 0.25 (15 pts), warm-chained Nelder-Mead (warm + one
+cold start per λ), parabolic refine at interior minima; a FAST
+bincount-vectorized m2ll (per-galaxy sums via np.bincount) is the
+bootstrap engine, cross-gated against the VERBATIM 8S-c expression
+(the GB0w new-MODE precedent). Skip rule: subset < 10 instances ⇒
+NaN + count (expected never at Binomial(149, 38/149)).
+Gates: G8V-0 verbatim-lift regression — the OFF-branch probe value
+equals 8S-c's printed −647.874131278 at 1e-6, GD/DD counts 38/111
+exact; G8V-1 fast-vs-verbatim cross-gate at 20 random θ probes incl.
+a duplicated-instance list, max|d| ≤ 1e-6; G8V-2 identity-replicate
+estimator check — coarse λ̂ within 0.10 of 8S-c's fine values
+(FULL 0.960 / GD −1.315 / DD 1.331) for all three sets; G8V-3 rng
+bookkeeping (first-replicate multiset fingerprint printed).
+Bars (locked): B1 TENSION-ROBUST iff P(Δ_rep ≥ 0) ≤ 0.05 AND the
+95th percentile of λ̂_GD_rep < 0.960 (ONE-SIDED, explicitly — the
+8S-b grammar lesson). B2 CORRELATION-ABSORBED iff P(Δ ≥ 0) ≥ 0.20 ⇒
+the point-level D1 overcounted; the dial-tension downgrades to gray
+and TODO 26b re-ranks. B3 GRAY-CARRIED else. Edge rule (pre-stated
+asymmetry): GD low-edge (−2.0) censoring RAISES λ̂_GD toward the
+dial, i.e. biases AGAINST B1 — a B1 pass is conservative; report
+edge fractions per set; if GD edge fraction > 30%, append
+ESTIMATE-CENSORED to the verdict. Co-reads: percentiles (5/50/95)
+of λ̂_FULL/λ̂_GD/λ̂_DD/Δ; P(λ̂_GD ≥ λ̂_DD); FULL high-edge fraction.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
