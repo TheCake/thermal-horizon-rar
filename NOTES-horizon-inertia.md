@@ -9695,6 +9695,69 @@ headline = the alpha sign + the honest Newton band + the census
 meter re-test); T2 = the external tail-closure; the 8-series
 arc awaits paper absorption (PAPER still frozen at v3.9).
 
+## Stage 8L-b PRE-REGISTRATION (2026-08-05, committed BEFORE any run): THE KERNEL ROUND — the derived leakage curve replaces the legacy S; the sign is the headline
+
+PREMISE (round 6): the un-sourced S = min(1, P/17.8 yr)
+conditions every forward-model number; the derived, gate-checked
+leakage curve L(u) = 3(sin u − u cos u)/u^3, u = pi T/P,
+T = 2.83 yr (GL0 1.6e-9; shape scout-confirmed) replaces it.
+Parameter-free swap: w = wfac·v_orb·L/4.74047 in the companion
+sector; rng streams untouched (S is deterministic in P).
+Mode LKER=1 on the landed photow3 grid, e-sector pinned at the
+8G mode (ein = 1.0, erf = 0.95); standard 9-dim cubes, TAG
+'_lker', fresh names; seeds 31 + 101, both laws (~2 h GPU).
+
+GATES (abort-grade):
+  G8Lb-1 (identity sub-space): the fcomp = 0 column is
+    kernel-independent — it must equal the esec (1.0, 0.95)
+    slice's fcomp = 0 column EXACTLY (<= 1e-9; the G0-q
+    precedent). GB0w/GB0e SKIPPED-disclosed (G8Lb-1
+    substitutes).
+  G8Lb-2 (kernel-magnitude report): population quantiles of
+    L(P) vs S_legacy(P) over the actual drawn P distribution
+    (the x2.4-at-6-yr claim measured on the draws).
+  Reader G8Lb-3: the baseline read (the esec slice) must
+    reproduce the shipped 8I-a OFF rows (0.57/+7.8, 0.54/+19.5,
+    0.55/+3.4, 0.58/+21.9) to 0.01/0.1.
+
+THE READS (calcs/stage8lb_read.py; LANDED-CONV anchor): per
+law x seed — alpha_marg, dN, P(fcomp), P(kw), P(sq), P(fpm),
+the Dwob analogue, all CORRECTED vs the esec-slice BASELINE;
+the census forward at the corrected MAP cell (band_mu with the
+corrected kernel; 8H convention and bar).
+
+BARS (locked; seed means, both laws; NO credence movement in
+any branch — the debt is being PAID, not adjudicated; the
+in-pipeline credence path is closed per 8K-b/round 6):
+  SIGN (the headline): d_alpha = corrected − baseline.
+    |d_alpha| <= 0.11 -> WITHIN-SYSTEMATIC (the debt retires
+    quietly; alpha quotes gain "kernel-corrected" status);
+    d_alpha > +0.11 -> BOOSTIER-ALPHA (annotation, band shifts
+    up); d_alpha < −0.11 -> QUIETER-ALPHA (the companion
+    channel absorbs more; the honest band deflates —
+    annotation; if alpha_marg <= 0.2 AND dN <= +5 both laws,
+    the fifth-move sentence DEFERS to a powered round, as
+    always).
+  THE HONEST BAND: dN under the corrected kernel becomes the
+    co-quotable Newton margin (supersedes the tanh-based
+    "+9-11 under saturation freedom" conditional — that was
+    the phenomenological form of this physical correction).
+  CENSUS-RETEST: corrected-MAP-cell jointP >= 1e-3 in >= 3/4
+    (the 8H bar) -> the meter REOPENS (context: the legacy
+    C-row sat at ~1e-10).
+  Dwob' reported (context: 7J-z4 +314; boostier mid-P wobble
+    should strengthen per-companion binding — direction
+    reported, not interpreted).
+Context note (not a gate): the 8L-a light forward with this
+same L over-predicted the S2 correlation 2.05x — the full
+fitter carries the complete noise+selection model the light
+forward lacked; its own gates are the identity/regression ones
+above. EXPECTED OUTCOME (pre-stated, low confidence): no sign
+lean — the two arms (more absorption per companion vs stronger
+binding per companion) genuinely compete; that contest is the
+measurement. Amendment rule: gate tolerances pre-quote; bars
+may NOT move.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
