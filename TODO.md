@@ -654,6 +654,23 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     ([calcs/stage8pq_diag2.py](calcs/stage8pq_diag2.py)); new
     standing gate rule in CLAUDE.md (bit-verbatim expression
     copying; lnL-grade identity gates wherever a cube exists).**
+    **8R/8R-b EXECUTED 2026-08-05 (pre-reg 22bf878/ae56d5d, gates
+    bit-exact throughout): THE PINCER CLOSES ON THE MULTIPLICATIVE-
+    SMEAR CLASS. 8R ([calcs/stage8r_locwidth.py](calcs/stage8r_locwidth.py)):
+    GLOBAL-DEMAND — only-sector channels dead (rad −31…−39, gam
+    −36…−42; perp control −36…−40 AND floods worst = dose-response
+    4/4). 8R-b ([calcs/stage8rb_complement.py](calcs/stage8rb_complement.py)):
+    SECTOR-DEMAND — sparing even the band's own γ≥75 sector costs
+    −12.5…−18.6 (4/4) while its census clears (pmf9 1.4–2.6e-2);
+    demand curve ≈ 1 lnL per % of γ-mass spared = UNIFORM IN γ.
+    With 8P: no per-system multiplicative ṽ-broadening — any shape,
+    any γ-profile — satisfies kinematics AND the (9,2) census. The
+    sq=0.2 object is a mis-specified effective stand-in; surviving
+    classes = noise-side beyond the z6 grid (floor leg's one-law
+    edge = the crack), MIXTURE (second sub-population, the w_rad
+    precedent), data-side. The census pair's referee record: six
+    model classes vetoed. Width-object hunt continues in the named
+    classes; T2 spectrographs / DR4 unchanged as external arbiters.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
@@ -744,6 +761,24 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     (boost + 10% tail) reproduces the sky's full portrait with α
     uncorrupted = the TODO-18 fingerprint (7J-z6 counter-evidence
     quoted).** 8F-b census tail null still queued.
+26b. ~~**T5 gas-dominated c1**~~ — EXECUTED as 8S/8S-b (2026-08-05,
+    pre-reg 22bf878/95f752f, gates all PASS incl. 4S endpoints to the
+    digit): **T5 NOT OBTAINED — DIAL-TENSION. The GD subsample (38
+    galaxies) is perfectly M/L-immune (|d lam| = 0.000 under f forced
+    0.5→2.0; the DD control swings 1.8 = the alleged degeneracy
+    demonstrated) and lands INTERIOR at λ̂ = −1.54 (fg=1) / −1.73
+    (gas budget FREE, fĝ = 1.17 = the helium/molecular suspect
+    CLEARED) — c₁ ≈ −0.8, outside every physical member; the DD
+    complement carries the entire positive dial (λ̂ = 1.13). Two
+    process flags logged (correction-#4 edge on the 8S run; the
+    one-sided-interval grammar hole). Lead suspect = the
+    vertical/distance channel (the 4W terrain; history
+    direction-consistent: flat 0.90 → hier 0.52 → GD-flat negative;
+    5T's ultra-deep point-level ½-vote disagrees with the
+    galaxy-level split = the vertical signature). SUCCESSOR = 8S-c:
+    the λ profile through the 4Z/5M vertical-hardened hier machinery
+    on the GD subsample — NOW THE TOP GALAXY ITEM; the 4S/4Z dial
+    quotes stand (hier-treated) with this tension annotated.**
 26. **Referee queue (adoption candidates)**: T2
     external-RV cross-check — **ARCHIVE PASS EXECUTED as Stage 8O
     (2026-08-05, pre-reg 1e7c89a + two pre-quote wiring amendments,

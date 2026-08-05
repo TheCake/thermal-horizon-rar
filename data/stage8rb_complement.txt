@@ -1,0 +1,43 @@
+8R-b THE COMPLEMENT CHANNELS (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+channels = ['uni', 'x60', 'xperp'] (+ 8R's gam = spare gamma>=45, quoted); sq grid = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+
+[simple 31] G8Rb-1 cube identity: max|d| = 0.00e+00 -> PASS
+[simple 31] G8Rb-2 census identity: mu=(29.81, 18.42) -> PASS
+[simple 31] G8Rb-3 spared fractions per bin: x60 = 0.32/0.31/0.30/0.31, xperp = 0.16/0.15/0.15/0.15
+[simple 31] G8Rb-4 mask-off wiring: PASS
+[simple 31] uni  : Dkin=   +0.00; cell fcomp=0.10 fpm=2.4 kw=0.7 sq=0.2; census@prof mu=(29.81, 18.42) pmf9=5.8e-06 pmf2=1.7e-06; kw-floor
+[simple 31] x60  : Dkin=  -30.41; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; census@prof mu=(15.52, 15.68) pmf9=2.6e-02 pmf2=1.9e-05; fpm=3.0-EDGE,kw-floor
+[simple 31] xperp: Dkin=  -13.43; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; census@prof mu=(15.52, 15.68) pmf9=2.6e-02 pmf2=1.9e-05; fpm=3.0-EDGE,kw-floor
+
+[BE 31] G8Rb-1 cube identity: max|d| = 0.00e+00 -> PASS
+[BE 31] G8Rb-2 census identity: mu=(29.11, 20.07) -> PASS
+[BE 31] G8Rb-3 spared fractions per bin: x60 = 0.32/0.31/0.30/0.32, xperp = 0.16/0.15/0.15/0.16
+[BE 31] G8Rb-4 mask-off wiring: PASS
+[BE 31] uni  : Dkin=   +0.00; cell fcomp=0.10 fpm=2.4 kw=0.7 sq=0.2; census@prof mu=(29.11, 20.07) pmf9=9.4e-06 pmf2=3.9e-07; kw-floor
+[BE 31] x60  : Dkin=  -27.78; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; census@prof mu=(15.89, 16.76) pmf9=2.2e-02 pmf2=7.4e-06; fpm=3.0-EDGE,kw-floor
+[BE 31] xperp: Dkin=  -12.54; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; census@prof mu=(15.89, 16.76) pmf9=2.2e-02 pmf2=7.4e-06; fpm=3.0-EDGE,kw-floor
+
+[simple 101] G8Rb-1 cube identity: max|d| = 0.00e+00 -> PASS
+[simple 101] G8Rb-2 census identity: mu=(29.97, 20.29) -> PASS
+[simple 101] G8Rb-3 spared fractions per bin: x60 = 0.32/0.31/0.30/0.30, xperp = 0.16/0.15/0.15/0.14
+[simple 101] G8Rb-4 mask-off wiring: PASS
+[simple 101] uni  : Dkin=   +0.00; cell fcomp=0.10 fpm=2.1 kw=0.7 sq=0.2; census@prof mu=(29.97, 20.29) pmf9=5.2e-06 pmf2=3.2e-07; kw-floor
+[simple 101] x60  : Dkin=  -33.61; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; census@prof mu=(16.86, 15.69) pmf9=1.4e-02 pmf2=1.9e-05; fpm=3.0-EDGE,kw-floor
+[simple 101] xperp: Dkin=  -17.87; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; census@prof mu=(16.86, 15.69) pmf9=1.4e-02 pmf2=1.9e-05; fpm=3.0-EDGE,kw-floor
+
+[BE 101] G8Rb-1 cube identity: max|d| = 0.00e+00 -> PASS
+[BE 101] G8Rb-2 census identity: mu=(28.54, 20.18) -> PASS
+[BE 101] G8Rb-3 spared fractions per bin: x60 = 0.32/0.31/0.30/0.31, xperp = 0.16/0.15/0.15/0.15
+[BE 101] G8Rb-4 mask-off wiring: PASS
+[BE 101] uni  : Dkin=   +0.00; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; census@prof mu=(28.54, 20.18) pmf9=1.4e-05 pmf2=3.5e-07; fpm=3.0-EDGE,kw-floor
+[BE 101] x60  : Dkin=  -34.41; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; census@prof mu=(16.14, 15.19) pmf9=2.0e-02 pmf2=2.9e-05; fpm=3.0-EDGE,kw-floor
+[BE 101] xperp: Dkin=  -18.58; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; census@prof mu=(16.14, 15.19) pmf9=2.0e-02 pmf2=2.9e-05; fpm=3.0-EDGE,kw-floor
+
+GATES: G8Rb-1 4/4, G8Rb-2 4/4, G8Rb-3 reported, G8Rb-4 4/4 - ALL PASS
+
+V-bars xperp: viable-rows 0/4; near-rows 0/4 (-5<Dkin<-2); pmf9-rows 4/4; kill-rows 4/4
+==> 8R-b VERDICT (locked grammar): SECTOR-DEMAND — the gamma >= 75 sector itself demands width at kill grade: with 8P and 8R this CLOSES the pincer on the multiplicative smear class (no gamma-shaped per-system v-broadening reconciles kinematics and census); the width object is NOT a multiplicative v-smear — additive/noise-side or data-side classes take the floor.
+WINNERCH: none
+    NO credence movement (pre-stated; measurement round).
+
+done (2.2 min)

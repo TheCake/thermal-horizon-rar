@@ -1,0 +1,17 @@
+8S-b THE EDGE RESOLUTION (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+selector (8S verbatim): GD 38 galaxies, DD 111
+G8Sb-2 nu-positivity: excluded lam nodes = none
+G8Sb-1 fg-slice identity at probe: free(fg=1) -647.874131278 vs fixed -647.874131278 -> PASS
+G8Sb-0 shared-node regression: restricted-grid GD minimum at lam = -0.300 vs 8S -0.3 -> PASS
+GATES: G8Sb-0/1/2 ALL PASS
+
+[GD fg=1 ] extended grid: lam_hat = -1.542 (D1 -1.76..-1.312) -> c1_hat = -0.771; INTERIOR
+[FULL fgFREE] lam_hat = 0.742 (D1 0.625..0.862) -> c1_hat = 0.371; fg_hat = 0.700 (fg-EDGE)
+[GD   fgFREE] lam_hat = -1.732 (D1 -1.946..-1.503) -> c1_hat = -0.866; fg_hat = 1.171
+[DD   fgFREE] lam_hat = 0.923 (D1 0.798..1.051) -> c1_hat = 0.462; fg_hat = 0.700 (fg-EDGE)
+
+==> 8S-b VERDICT (locked grammar): DIAL-TENSION — the gas-dominated subsample excludes the full-sample dial even with the gas budget free: a REAL subsample tension for the galaxy program (vertical/distance channel + selection next; named, not resolved here).
+    8S grammar hole flagged: a one-sided D1 interval could not fire T5-TENSION (fell through to POWER-LIMITED); the 8S record stands with this annotation.
+    NO credence movement (pre-stated; measurement round).
+
+done (0.4 min)

@@ -343,6 +343,27 @@ CHECKS = [
      'max|d| = 0.000e+00', 'data/stage8pq_diag2.txt'),
     ('meth-lnl-identity-gate', '[reader-form   ] lnL block vs cube: '
      'max|d| = 1.006e+01', 'data/stage8pq_diag2.txt'),
+    ('bin-8r-locwidth', 'GATES: G8R-0 2/2, G8R-1 4/4, G8R-2 4/4, '
+     'G8R-3 4/4, G8R-4 4/4 - ALL PASS', 'data/stage8r_locwidth.txt'),
+    ('bin-8r-locwidth', 'L1 rad : pass-rows 0/4 (Dkin>=-2 AND '
+     'pmf9>=1e-3); kill-rows 4/4 (Dkin<=-5)',
+     'data/stage8r_locwidth.txt'),
+    ('bin-8rb-complement', 'GATES: G8Rb-1 4/4, G8Rb-2 4/4, G8Rb-3 '
+     'reported, G8Rb-4 4/4 - ALL PASS',
+     'data/stage8rb_complement.txt'),
+    ('bin-8rb-complement', 'V-bars xperp: viable-rows 0/4; near-rows '
+     '0/4 (-5<Dkin<-2); pmf9-rows 4/4; kill-rows 4/4',
+     'data/stage8rb_complement.txt'),
+    ('gal-8s-gasc1', 'GATES: G8S-0/1/2/3 ALL PASS',
+     'data/stage8s_gasc1.txt'),
+    ('gal-8s-gasc1', '[GD  ] IMMUNITY: lam_hat(f=0.5) = -0.300, '
+     'lam_hat(f=2.0) = -0.300, |d lam| = 0.000',
+     'data/stage8s_gasc1.txt'),
+    ('gal-8sb-gasedge', 'GATES: G8Sb-0/1/2 ALL PASS',
+     'data/stage8sb_gasedge.txt'),
+    ('gal-8sb-gasedge', '[GD   fgFREE] lam_hat = -1.732 (D1 '
+     '-1.946..-1.503) -> c1_hat = -0.866; fg_hat = 1.171',
+     'data/stage8sb_gasedge.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

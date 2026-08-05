@@ -10724,6 +10724,155 @@ width object is NOT a multiplicative ṽ-smear — additive/noise-side
 or data-side classes take the floor). x60 = the curve point.
 NO credence movement (pre-stated).
 
+## Stage 8R EXECUTED (2026-08-05, first run, ALL GATES PASS): GLOBAL-DEMAND — every only-sector width channel dies at kill grade; the kinematic width demand is distributed across γ
+
+Gates: G8R-0 2/2, G8R-1 cube identity 0.00e+00 4/4 (the amendment-1
+standard holds in fresh machinery on first firing), G8R-2 4/4,
+G8R-3 fractions 4/4 (rad population fraction = wr exactly; kept-sector
+fractions: rad ≈ 0.17, γ<45 ≈ 0.53, γ≥75 ≈ 0.15), G8R-4 mask-off
+wiring 4/4.
+
+Results: rad (the physically named near-parabolic carrier) loses
+−33.6/−31.1/−37.9/−39.4; gam (γ<45, the fingerprint column — which is
+simultaneously one COMPLEMENT cut: it spares γ≥45) loses
+−37.7/−35.6/−39.3/−42.3; the perp anti-control loses −37.3/−35.5/
+−40.3/−38.0 AND floods the band worst (L2 4/4 — the dose-response
+confirms the mechanism). L1 0/4 for both localized channels; verdict
+GLOBAL-DEMAND by the locked grammar. Notables: (i) simple-31's rad
+cell (fpm=3.0, sq=0.3) reaches μ_band = 15.9, pmf9 = 2.2e-2 =
+band-admissible — the localized channel CAN clear the band, at a
+kinematic price the likelihood refuses (the ~30-lnL gap between
+census-coherence and the kinematic optimum appears again, third
+independent direction); (ii) crippled-width cells drift to
+fcomp = 0.20 — the fit substitutes companions for width (the
+width-budget defense's third appearance: sq ↔ wobble ↔ fcomp are
+partially interchangeable absorbers). The 7J-z6 sector reading
+WEAKENS: the fingerprint localized the residual misfit, not the
+width channel's support.
+
+Plain verdict: SUCCESS as a measurement (the γ-distribution of the
+width demand is now half-mapped and the only-sector class is dead);
+the reconciling question moves to the complement (8R-b).
+
+ELI12: We tried letting the mystery blur touch ONLY the stars it
+seemed aimed at (the ones moving along the line to their partner).
+The fit hated it — it wants blur everywhere, not just there. We also
+tried blur ONLY on the sideways-movers (where our too-crowded speed
+band lives): hated too, and it crowds the band even worse — which at
+least proves the dial turns the way we thought. So the blur the data
+demand is everywhere-ish; the one cut we haven't priced is the exact
+reverse: blur everyone EXCEPT the sideways band zone. That's the
+next (and last) knob of this kind.
+
+## Stage 8S EXECUTED (2026-08-05, first run, ALL GATES PASS) + 8S-b EXECUTED (the edge resolution): T5 NOT OBTAINED — the gas-dominated subsample lands a REAL DIAL-TENSION; the gas-budget suspect is cleared; the hier-GD leg is the named decider
+
+8S gates: G8S-0 selector 38 GD galaxies / 422 points (PASS), G8S-1
+the 4S joint endpoints reproduced to the printed digit (−8397.72 /
+−8341.95), G8S-2 additivity 0.00e+00, G8S-3 series exact. Results:
+FULL SPARC-only marginalized λ̂ = 0.919 (c₁ = 0.460 — reproduces the
+4S joint dial internally); GD λ̂ = −0.300 = THE GRID EDGE (one-sided
+D1 ..−0.258; c₁=½ rejected +31.0 and c₁=0 rejected +7.2 WITHIN the
+subsample; raw y<1 co-read agrees, edge at +38.7); DD complement
+λ̂ = 1.129 (c₁ = 0.565) carrying the entire positive dial. THE
+IMMUNITY INSTRUMENT WORKED EXACTLY AS DESIGNED: GD |Δλ̂| = 0.000
+under f_ML forced 0.5→2.0 (perfectly M/L-immune), DD swings 1.800 =
+bound-to-bound (the alleged degeneracy demonstrated in the control).
+Letter verdict T5-POWER-LIMITED — WRONG IN SPIRIT, two process flags
+logged with the record: the edge-riding optimum is unquotable per
+correction-#4, and the grammar had a one-sided-interval hole (could
+not fire T5-TENSION); both annotated, the hole closed in 8S-b.
+
+8S-b (pre-reg 95f752f; gates G8Sb-0/1/2 ALL PASS incl. the fg-slice
+identity to 1e-9 and no ν-positivity exclusions): the extended grid
+LOCALIZES the GD optimum INTERIOR at λ̂ = −1.542 (D1 −1.76..−1.31,
+c₁ ≈ −0.77 — sharper than standard-μ, outside every physical family
+member); THE GAS KNOB DOES NOT RESCUE — with fg free ∈ [0.7, 1.4]
+the GD fit sits at fĝ = 1.171 interior and λ̂ = −1.732 (the
+helium/molecular-budget suspect CLEARED), while FULL and DD ride the
+fg = 0.7 edge (wanting less gas — noted). VERDICT: DIAL-TENSION by
+the locked grammar — the M/L-immune subsample excludes the
+full-sample dial under the FLAT treatment.
+
+Readings (labeled, ranked): (i) the VERTICAL/DISTANCE channel is the
+lead suspect — GD galaxies are precisely the worst-distance dwarfs,
+the 4W identifiability boundary's home terrain, and the program's own
+history is direction-consistent (flat 0.90 → hier 0.516 → GD-flat
+deep-negative: more careful treatments pull λ̂ down); the 5T
+ultra-deep POINT-level vote wanted c₁=½ under hier treatment —
+point-level and galaxy-level splits disagree, which is itself the
+vertical-channel signature. (ii) selection/inclination systematics of
+dwarfs. (iii) genuine law shape — not adjudicable at flat grade.
+NAMED DECIDER (queued, not run tonight — the hier machinery is the
+program's heaviest and gets a fresh session): 8S-c = the λ profile
+through the 4Z/5M vertical-hardened hierarchical machinery restricted
+to the GD subsample. Until then the 4S/4Z dial quotes stand (they
+carry the hier treatment), annotated with this tension.
+
+Plain verdict: NEEDS REFINEMENT (the instrument worked, the immunity
+demonstration is a keeper, but the T5 defense was NOT obtained and a
+real tension is now on the books with its decider named).
+
+ELI12: To prove our galaxy number isn't an artifact of guessing star
+weights, we re-measured it using only gas-rich galaxies, where the
+guess barely matters. The test itself worked beautifully — changing
+the star-weight guess by 4× moves their answer by exactly zero. But
+their answer came out very DIFFERENT from everyone else's — so
+different it fell off our dial and we had to extend it. We checked
+the obvious excuse (maybe we counted the gas itself slightly wrong):
+freeing that changes nothing. What's left: these are the smallest,
+farthest-blurriest galaxies, where distance errors — the thing our
+fancier fitting machinery handles and this quick fit doesn't — hit
+hardest. Next time: rerun them through the heavy machinery. Until
+then, the number wears a warning sticker, exactly as the honesty
+rules require.
+
+## Stage 8R-b EXECUTED (2026-08-05, first run, ALL GATES PASS): SECTOR-DEMAND — THE PINCER CLOSES ON THE MULTIPLICATIVE-SMEAR CLASS
+
+Gates: G8Rb-1 cube identity 0.00e+00 4/4, G8Rb-2 4/4, G8Rb-3
+reported (spared fractions x60 ≈ 0.31, xperp ≈ 0.15), G8Rb-4 4/4.
+
+Results: xperp (spare the band's γ≥75 sector) loses
+−13.43/−12.54/−17.87/−18.58 = kill grade 4/4 — the band's own sector
+demands width; its census CLEARS by construction (μ_band 15.5–16.9,
+pmf9 = 1.4–2.6e-2, 4/4 band-admissible) — the geometry works exactly
+as the side-condition said, and the kinematics refuse the price. x60
+loses −27.8…−34.4. THE CURVE: kinematic cost ≈ 1 lnL per % of γ-mass
+spared (15% → ~15, 31% → ~31, 47% [8R's gam] → ~38): the width
+demand is ≈ UNIFORM IN γ — a new quantitative model fact.
+
+THE THREE-STAGE PINCER (8P × 8R × 8R-b, every identity gate
+bit-exact): a per-system multiplicative ṽ-broadening CANNOT satisfy
+the kinematic likelihood and the (band=9, cliff=2) census
+simultaneously — (i) any SHAPE at the demanded variance floods the
+band (8P); (ii) any only-sector γ-localization is kinematically dead
+(8R); (iii) any flood-sector-sparing complement is kinematically
+dead too (8R-b). The sq = 0.2 object every fit demands (P = 1.00) is
+therefore a MIS-SPECIFIED EFFECTIVE STAND-IN: whatever the real
+broadening physics is, it is not multiplicative-with-a-γ-profile.
+Surviving classes, named: noise-side shapes beyond the 7J-z6 grid
+(its floor leg edge-rode one-law = the open crack), data-side ṽ
+systematics, and the MIXTURE class (a second sub-population — the
+w_rad precedent). The census pair's referee record now includes:
+fitted forward worlds (7K-b), twin-forced worlds (7J-z8), analytic
+tails (8F-b), shaped smears (8P), localized and complement smears
+(8R/8R-b), and the measured subsystem P-law (8Q).
+
+Plain verdict: SUCCESS — the width object's CLASS question is
+answered in the negative at three-stage grade; the identification
+hunt narrows to noise-side / mixture / data-side, with the census
+pair as the standing referee.
+
+ELI12: Last blur experiment: blur every star EXCEPT the ones in our
+special sideways band. The overcrowding disappears — geometry says
+it must — but the fit says no AGAIN: even the band-zone stars need
+their share of blur. Across the three experiments the trap has
+closed: NO version of "multiply each star's speed by a random
+factor" — any distribution, any zone map — can please both the fit
+and the star count at once. So the extra spread in real data must be
+a different KIND of thing: added noise, a second hidden population,
+or something in the data itself. Our little 9-and-2 star count has
+now refereed its sixth wrong idea — small statistic, big stick.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

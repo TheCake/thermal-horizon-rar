@@ -1,0 +1,24 @@
+8S THE GAS-DOMINATED c1 (T5; pre-reg committed BEFORE any run; measurement round; NO credence movement)
+G8S-0 selector: 153 galaxies, 2700 points; GDFRAC (share of points with g_gas > g_dsk+g_bul at f=1) percentiles 10/25/50/75/90 = 0.00/0.00/0.00/0.50/0.95; GAS-DOMINATED (>=0.5): 38 galaxies (422 points); complement: 111 galaxies -> PASS
+G8S-3 series lam=0.0: c1 = -0.0000 (pred +0.0000) -> OK
+G8S-3 series lam=0.5: c1 = +0.2500 (pred +0.2500) -> OK
+G8S-3 series lam=1.0: c1 = +0.5000 (pred +0.5000) -> OK
+G8S-1 joint endpoints (4S/4F refs): lam=1 -8397.72 (ref -8397.72), lam=0 -8341.95 (ref -8341.95) -> PASS
+G8S-2 additivity at probe theta: full -7168.313625 = GD -647.874131 + DD -6520.439494 (d = 0.00e+00) -> PASS
+GATES: G8S-0/1/2/3 ALL PASS
+
+[FULL] SPARC-only marginalized: lam_hat = 0.919 (D1 0.784..1.06) -> c1_hat = 0.460; D(-2lnL) at c1=0: +57.6, at c1=1/2: +0.3; INTERIOR
+[GD  ] SPARC-only marginalized: lam_hat = -0.300 (D1 None..-0.258) -> c1_hat = -0.150; D(-2lnL) at c1=0: +7.2, at c1=1/2: +31.0; EDGE
+[DD  ] SPARC-only marginalized: lam_hat = 1.129 (D1 0.986..1.279) -> c1_hat = 0.565; D(-2lnL) at c1=0: +81.1, at c1=1/2: +0.8; INTERIOR
+[GD  ] raw y<1 co-read (422 points): lam_hat = -0.300 -> c1_hat = -0.150; Dchi2 at c1=0 = +38.7
+
+[GD  ] IMMUNITY: lam_hat(f=0.5) = -0.300, lam_hat(f=2.0) = -0.300, |d lam| = 0.000  (band <= 0.2)
+[DD  ] IMMUNITY: lam_hat(f=0.5) = 1.500, lam_hat(f=2.0) = -0.300, |d lam| = 1.800  (contrast control)
+
+[GD  ] bootstrap (200 reps over 38 galaxies): lam 16/50/84 = -0.400/-0.400/-0.400; P(lam>0) = 0.015; P(lam>0.5) = 0.000
+[GD  ] c1 (bootstrap): -0.200 +0.000 -0.000
+
+==> 8S VERDICT (locked grammar): T5-POWER-LIMITED — P(lam>0) = 0.015 < 0.95; the gas-dominated subsample cannot alone exclude c1 = 0; interval quoted, dial unchanged.
+    NO credence movement (pre-stated; measurement round).
+
+done (0.4 min)
