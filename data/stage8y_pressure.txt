@@ -1,0 +1,34 @@
+8Y THE PRESSURE-SUPPORT DOSE TEST (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+G8Y-2 V metric: Vflat available 122, fallback max-Vobs 27; GD threshold (frozen) = 66.2 km/s; slow/fast = 19/19; GD V range 24-163
+G8Y-0 k=0 GD fit: lam_hat = -1.309 vs 8X -1.309 -> PASS
+G8Y-0b lg_of_k(0) vs LGOBS0: max|d| = 0.00e+00 -> PASS
+G8Y-1 fast-vs-slow (12 probes, k in 0/1/2): max|d| = 1.82e-12 -> PASS
+GATES: G8Y-0/0b/1/2 ALL PASS
+
+[GD-slow] lam_hat = -2.000 (V <= 66.2) LO-EDGE
+[GD-fast] lam_hat = -0.904 (V > 66.2)
+[GD k-curve] k=0.0 (sigma_eff=0.0 km/s): lam_hat = -1.309
+[GD k-curve] k=0.5 (sigma_eff=7.1 km/s): lam_hat = -1.236
+[GD k-curve] k=1.0 (sigma_eff=10.0 km/s): lam_hat = -1.169
+[GD k-curve] k=1.5 (sigma_eff=12.2 km/s): lam_hat = -1.106
+[GD k-curve] k=2.0 (sigma_eff=14.1 km/s): lam_hat = -1.040
+[GD k-curve] k=3.0 (sigma_eff=17.3 km/s): lam_hat = -0.925
+[DD control] k=0.0: lam_hat = +1.337
+[DD control] k=2.0: lam_hat = +1.177
+k*(lam=-0.5): NOT REACHED by k=3
+k*(lam=0): NOT REACHED by k=3
+k*(dial): NOT REACHED by k=3
+
+  ... 100/300 replicates (1.4 min)
+  ... 200/300 replicates (2.6 min)
+  ... 300/300 replicates (3.9 min)
+
+replicates 300, skips 0
+[GD-fast] pct 5/50/95 = -1.641/-0.758/+0.971
+[GD-slow] pct 5/50/95 = -2.000/-2.000/-1.835
+[D_fs = fast-slow] pct 5/50/95 = +0.214/+1.183/+2.955; P(D_fs <= 0) = 0.0333
+
+==> 8Y VERDICT (locked grammar): DIRECTION - the slow rotators carry the negative dial (pressure-support direction confirmed); Y1a REJOINS - the fast half reaches the dial.
+    NO credence movement (pre-stated; measurement round).
+
+done (3.9 min)

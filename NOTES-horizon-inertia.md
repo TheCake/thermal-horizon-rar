@@ -11372,6 +11372,100 @@ quartile carries no width — full attribution to the tracked
 axes). Z2 NON-MONOTONE else ⇒ MIXED-CARRIED. The measured shape
 parameterizes the cube-grade RUWE-stratified successor.
 
+## Stage 8Y EXECUTED (2026-08-05, first run, ALL GATES PASS): DIRECTION + boundary-grade REJOINS — the GD dial is strongly V-ordered, but the direct correction lever is OUT OF REACH by k = 3
+
+Gates: G8Y-0 k=0 GD fit = 8X's −1.309 exact; G8Y-0b lg_of_k(0)
+bit-identity; G8Y-1 engine probes 1.82e-12; G8Y-2 V accounting
+(Vflat 122 / fallback 27; GD threshold 66.2 km/s; 19/19). 3.9 min.
+
+Two instruments, two answers: (a) V-SPLIT — Y1 DIRECTION fired,
+P(Δ_fs ≤ 0) = 0.033 (conservative: GD-slow is edge-CENSORED at
+−2.000, p50 = p5 = −2.000, which can only shrink Δ); identity
+halves −2.000 (slow, LO-EDGE) vs −0.904 (fast). Y1a REJOINS fired
+BY THE LETTER at the boundary: p95(GD-fast) = +0.971 vs the 0.960
+bar — margin 0.011; the clause as designed encodes NON-EXCLUSION
+of the dial in the bootstrap tail, not central rejoining (GD-fast
+median −0.758; grammar-grading note, no retraction). (b) THE
+k-CURVE — the flat-σ AD correction moves λ̂_GD only −1.309 →
+−1.040 (k=2, σ_eff 14 km/s) → −0.925 (k=3, 17 km/s): **k* NOT
+REACHED by k=3 for even λ = −0.5** (slope ≈ +0.13/k ⇒ λ=0 needs
+k ≈ 10, σ_eff ≈ 32 km/s — the rotation speed itself; absurd); DD
+control moves only −0.16 at k=2 (lever valid, not blunt).
+
+Joint reading: whatever drives the GD dial RIDES THE V AXIS (the
+slow half is maximally negative), but the pressure-support
+correction at any physical σ CANNOT be the resolution — out of
+reach by ~an order of magnitude in k. The V-ordering's carrier is
+therefore not (only) the AD magnitude: candidates = the real
+radius-dependent AD in the slowest dwarfs exceeding the flat-σ
+bound locally (needs Σ_gas(R) — external data, bookable), a
+V-correlated data-quality/inclination systematic, or genuine
+shape concentrated in the slowest gas-rich dwarfs. The flat-σ
+crudeness was pre-stated; the proper Σ(R)-weighted AD correction
+is the definitive successor instrument.
+
+Plain verdict: SUCCESS as a measurement — direction real,
+resolution out of reach; the GD tension survives its FOURTH
+control at correction-lever grade, now with a measured V-order.
+
+ELI12: If gas pressure were faking the dwarfs' weird answer, the
+slowest spinners should be weirdest — and they are! But when we
+actually APPLY the pressure fix, even a generous dose moves the
+needle only a fifth of the way home; you'd need gas pressure as
+strong as the spinning itself, which is absurd. So: the weirdness
+really does live in the slow spinners, but the textbook pressure
+fix can't explain it. Either the fix is bigger than textbooks
+allow in exactly those galaxies (checkable with better gas maps),
+or slow gas-rich dwarfs genuinely behave differently.
+
+## Stage 8Z EXECUTED (2026-08-05, first run, ALL GATES PASS): MIXED-CARRIED by the letter — and the quartile curves DISSOLVE the monolithic smear: bottom-step + plateau + an AGGREGATION component
+
+Gates: G8Z-1 cube bit-identity 0.00e+00 4/4; G8Z-2 counts; G8Z-3
+8T gains at lnL grade 4/4; G8Z-4 lineage — the (simple, 31) ruwe
+median halves reproduce 8W's 0.002/0.199 EXACTLY. 8.5 min.
+
+Measured curves (sqbar Q1→Q4, 4 law-seeds consistent):
+ruwe 0.00 / 0.08 / 0.10–0.12 / 0.09–0.12 — a BOTTOM-STEP at
+RUWE ≈ 1.05 then a plateau ≈ 0.10; **Z-CLEAN 4/4 (the clean
+quartile carries NO width, ≤ 0.005)**. plxsn 0.12–0.16 / 0.20 /
+0.12–0.19 / 0.02–0.09 — non-monotone (peak Q2, clean at best-S/N
+Q4). Letter: ruwe Z1 2/4 (seed-31 rows miss Q4−Q1 ≥ 0.10 by
+0.006–0.014), Z-STEP 0/4, plxsn 0/4 ⇒ MIXED-CARRIED. Two grammar
+warts owned: Z-STEP was encoded at the TOP of the axis (the real
+step is at the bottom), and Z1's sign convention cannot fire for
+plxsn (quality rises with quartile there) — bars as designed,
+findings quoted as measurements (8U precedent).
+
+**THE AGGREGATION FINDING** (gate-anchored): the ruwe-hi HALF
+demands sqbar = 0.199 (G8Z-4 exact vs 8W) while its constituent
+quartiles want only 0.102 / 0.087 — the union demands ~2× the
+width of any part; likewise the full catalog (0.2) vs the
+quartile max (0.12). A single global error-scale (fpm) across
+quality-heterogeneous strata MANUFACTURES per-system width. The
+width object now decomposes: (a) zero in the clean quartile, (b)
+a ≈ 0.1 plateau in the upper three, (c) an aggregation/
+heterogeneity component from pooling, (d) the 8T floor (present
+in every quartile incl. clean Q1 — floor and smear separate).
+Successor sharpened: the cube-grade stratified re-fit should
+carry fpm PER STRATUM (or an fpm(RUWE) law) + stratified sq —
+expected from these curves: the global smear collapses toward
+≤ 0.1; the α exposure is the number to measure.
+
+Plain verdict: SUCCESS as a measurement (the object's anatomy:
+clean-quartile zero + plateau + aggregation artifact) / the
+formal dose grammar NEEDS REFINEMENT (both warts above).
+
+ELI12: We split the star pairs into four quality grades and asked
+each grade how much mystery blur it needs. Cleanest grade: NONE.
+The other three: a modest amount, roughly equal. But here's the
+trick finding: pour two grades into one bucket and fit them
+together, and the bucket asks for DOUBLE — because one
+noise-dial for a mixed crowd fits nobody, and the fit fakes the
+difference as extra blur. So a chunk of our famous "0.2 blur"
+was never real blur at all — it was mixing different-quality
+data in one pot. The rest lives in the flagged pairs, and the
+cleanest quarter of the sky needs none.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

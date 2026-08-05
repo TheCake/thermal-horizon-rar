@@ -713,6 +713,22 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     one stroke. Successors: RUWE dose-response; cube-grade
     RUWE-stratified-sq re-fit (α exposure); DR4 epoch astrometry
     = arbiter.**
+    **8Z EXECUTED 2026-08-05 (pre-reg 2ff4961): MIXED-CARRIED by
+    the letter, and the anatomy lands — ruwe dose = BOTTOM-STEP
+    (clean quartile ZERO width ≤0.005, Z-CLEAN 4/4; plateau ≈0.1
+    above RUWE≈1.05); plxsn non-monotone (peak Q2, clean at
+    best-S/N Q4); two grammar warts owned (Z-STEP encoded at the
+    wrong end; Z1 wrong-signed for plxsn). THE AGGREGATION
+    FINDING (gate-anchored): the ruwe-hi half demands sqbar 0.199
+    (= 8W exact) while its quartiles want ≤0.102 — pooling
+    quality-heterogeneous strata under ONE fpm manufactures ~2×
+    width; the global sq=0.2 is partly a heterogeneity artifact.
+    Width decomposition: clean-zero + ~0.1 plateau + aggregation
+    + the 8T floor (every quartile). SHARPENED SUCCESSOR: the
+    cube-grade stratified re-fit with per-stratum fpm (or an
+    fpm(RUWE) law) + stratified sq — expectation: global smear
+    collapses toward ≤0.1; the α exposure = the number to
+    measure. DR4 epoch astrometry = arbiter.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
@@ -861,6 +877,22 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     matches). 8Y candidate = the V_flat split inside GD
     ((σ/V)² dose-response: GD-fast rejoins the dial ⇒ pressure
     support; flat in V ⇒ genuine composition shape).**
+    **8Y EXECUTED 2026-08-05 (pre-reg 2ff4961): DIRECTION +
+    boundary-grade REJOINS — the GD dial is strongly V-ORDERED
+    (P(Δ_fs≤0)=0.033, conservative under the slow-half −2.0
+    edge-censoring; identity −2.000/−0.904; Y1a fired at margin
+    0.011 = non-exclusion in the tail, GD-fast median −0.76) BUT
+    the direct correction lever is OUT OF REACH: k-curve slope
+    ≈+0.13/k, λ=0 needs k≈10 (σ_eff≈32 km/s = the rotation speed
+    itself); DD control −0.16 at k=2 (lever valid). Pressure
+    support cannot RESOLVE the tension; the V-ordering's carrier
+    open: radius-dependent AD beyond the flat-σ bound (needs
+    Σ_gas(R) — external), V-correlated dwarf data quality, or
+    genuine shape in the slowest gas dwarfs. FOURTH control
+    survived (gas → vertical → correlation → correction-lever).
+    Definitive successor = Σ(R)-weighted AD correction (external
+    data); the tension stays the galaxy program's sharpest open
+    object.**
 26. **Referee queue (adoption candidates)**: T2
     external-RV cross-check — **ARCHIVE PASS EXECUTED as Stage 8O
     (2026-08-05, pre-reg 1e7c89a + two pre-quote wiring amendments,

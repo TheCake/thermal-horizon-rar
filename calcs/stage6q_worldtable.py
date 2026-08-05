@@ -391,6 +391,14 @@ CHECKS = [
      'data/stage8x_regime.txt'),
     ('gal-8x-regime', 'P(DD-deep >= DD-nondeep) = 0.9550; '
      'P(DD-deep <= GD-deep) = 0.0000', 'data/stage8x_regime.txt'),
+    ('gal-8y-pressure', 'GATES: G8Y-0/0b/1/2 ALL PASS',
+     'data/stage8y_pressure.txt'),
+    ('gal-8y-pressure', 'k*(lam=-0.5): NOT REACHED by k=3',
+     'data/stage8y_pressure.txt'),
+    ('bin-8z-dose', 'GATES: G8Z-1 4/4, G8Z-2 both axes, G8Z-3 4/4, '
+     'G8Z-4 2/2 - ALL PASS', 'data/stage8z_dose.txt'),
+    ('bin-8z-dose', 'axis ruwe: Z1 monotone 2/4, Z-STEP 0/4, '
+     'Z-CLEAN 4/4', 'data/stage8z_dose.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
