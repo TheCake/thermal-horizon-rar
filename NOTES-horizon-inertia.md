@@ -11580,6 +11580,44 @@ signal wasn't hiding in the blur. (One footnote: the very worst
 data group wants even more noise than our dials allow — its
 knobs are pinned at max; we flagged it for the big re-run.)
 
+## Stage 9C + 9D pre-registration (2026-08-05, committed before any run): the radius-dependent AD correction (GD) + the Q4 robustness pair (binary)
+
+Measurement rounds; no credence movement. Ledger rows on
+completion: gal-9c-adcorr, bin-9d-q4robust.
+
+**9C** ([calcs/stage9c_adcorr.py](calcs/stage9c_adcorr.py)): the
+8Y flat-σ lever lacked the radius dependence; the real asymmetric
+drift grows outward. Bounding model (crudeness pre-stated:
+outer-disk exponential; HI central holes ignored): Σ_HI(R) =
+Σ₀ e^(−R/R_g), R_g solved per galaxy from the catalog pair
+(MHI, RHI) via Σ(RHI) = 1 M☉/pc² (brentq, fallback counted);
+correction g_obs → (V² + σ²·R/R_g)/R (normalization-free slope;
+constant σ). λ̂_GD(σ) at σ ∈ {0, 8, 10, 12, 15} km/s; DD control
+at σ = 10; 100-rep GD bootstrap at σ = 10 (co-read interval).
+Gates: G9C-0 σ=0 bit-identity to LGOBS0 + GD fit = 8X's −1.309
+(0.002); G9C-1 engine probes ≤ 1e-6; G9C-2 R_g accounting (solved/
+fallback counts, R_g percentiles, correction-fraction percentiles
+at σ=10). Bars (at σ = 10, the physical value): C1 NEUTRALIZED
+iff λ̂_GD ≥ 0.0 (the dial is pressure-support at catalog grade;
+T5's defense collapses to conditional). C2 PARTIAL iff −1.0 <
+λ̂_GD < 0.0 (material, not neutralizing). C3 OUT-OF-REACH iff
+λ̂_GD ≤ −1.0 (the radius-dependent version also fails: the
+pressure story is dead at catalog grade; remaining = external
+Σ_gas(R) data or genuine physics). DD bluntness flag if
+|Δλ̂_DD(σ=10)| > 0.3. Co-read: σ* crossings.
+
+**9D** ([calcs/stage9d_q4robust.py](calcs/stage9d_q4robust.py)):
+9A's Q4 rides both noise axes at grid top (correction-#4). Two
+reads per law-seed on the free-model α profile: DROP (Q1–Q3 only)
+and EXT (Q4 on extended grids sq ≤ 0.5, fpm ≤ 4.2; Q1–Q3
+standard). Gates: G9D-0 cube identity at MAP; G9D-1 the
+recomputed free_std α̂ equals 9A's printed values (bar 0.002,
+4/4). Bars: D1 ROBUST iff |α̂_drop − α̂_std| ≤ 0.15 AND |α̂_ext −
+α̂_std| ≤ 0.15 in ≥3/4 (the α measurement does not depend on the
+pathological stratum). D2 Q4-CARRIED iff |α̂_drop − α̂_std| ≥
+0.25 in ≥3/4. D3 GRAY-CARRIED else. Co-read: Q4-extended
+(sq̂, fpm̂) interior-or-edge.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
