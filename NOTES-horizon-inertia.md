@@ -9819,6 +9819,113 @@ each one either executed or priced, belief at 57 with two
 earned moves, and the next battles belong to new telescopes
 and the galaxy side.
 
+## Stage 8M PRE-REGISTRATION (2026-08-05, committed BEFORE any run): THE JOINT-COHERENCE SCAN — the census-closure round (the reviewer's round-6 carried item)
+
+THE QUESTION. Round 6 named one forward-model-internal
+inconsistency blocking any "final" stamp on the α machinery: every
+fitted world over-produces the perpendicular-ceiling census. At the
+corrected-kernel MAP cells the forward pair is μ = (28.5–30.0,
+18.4–20.3) against the observed (band = 9, cliff = 2), jointP
+~1e-12. 8H probed six configs at the MAP cells (ALL-FAIL, companion
+attribution 0.81/0.78); the CLASS was never swept. Three unmeasured
+questions: (1) does ANY cell of the operative model class reproduce
+(9, 2) at the 8H admissibility bar? (2) at what kinematic price?
+(3) where does α sit when the kinematic likelihood and the census
+face each other in one function?
+
+THE INSTRUMENT. For every census-distinct cell of the operative
+lker cube (α × η × w_rad × fcomp × fpm × kw × sq = 5·2·5·6·6·3·4 =
+21,600 per law-seed; the fence axes fc0/ffly are data-side template
+mixtures, census-blind by the shipped convention that G8M-0
+anchors; wcut/ws slots singleton in photow3), forward the
+corrected-kernel census pair (μ_band, μ_cliff) with the 8L-b
+reader-verbatim band_mu machinery (orbit engine re-run per
+(α, η, w_rad); one population per seed, lker=True; α=0 blocks
+law-shared by construction and cached). Census term
+CLL = ln Pois(9|μ_band) + ln Pois(2|μ_cliff).
+
+ESTIMATOR CHOICE (locked): the PRIMARY floor for both admissibility
+and CLL is the cell's own MC half-count resolution, μ_eff = max(μ,
+0.5·Σ_bins NDATA/nk(cell)) — an MC zero is a resolution statement,
+not a physical zero (every cell carries fpm ≥ 1.2 Gaussian noise;
+its true tail rate is never exactly zero; the legacy 1e-12 floor
+would convert MC resolution into −56/−261-grade lnL artifacts
+exactly at the interesting boost-edge cells). The legacy 1e-12
+convention (7K-b/8H verbatim) is CO-READ on every headline
+quantity; divergence is itself reported. The 8H rows are floor-
+insensitive (all probed μ measured nonzero) — no retro-tension.
+
+PRODUCTS. (1) THE ADMISSIBLE SET: cells with jointP ≥ 1e-3 (the 8H
+bar, primary floor): count, α composition, cheapest-kinematic-price
+member (price = max cb − cb at the cell, fences profiled out).
+Admissibility is evaluated WITHIN the operative prior support (Δkin
+< 1e6 — LNPI-excluded fcomp cells are not the operative model); the
+prior-blind census-only count is co-printed.
+(2) THE TRADE FRONTIER: best CLL within kinematic ΔlnL ≤ {0, 2, 5,
+10, 15, 20, 30, 40, 60, 100}, each with its α — the risk axis
+shipped with the curve (the round-10 standing rule). (3) THE JOINT
+DIAGNOSTIC: cbJ = cb + CLL (broadcast over fences); read9 →
+α_joint, dN_joint, nuisance posteriors, joint-MAP cell + its
+census pair; grid-edge flags mechanical (the correction-#4
+standard; zero-floors of bounded axes are boundary-real per 8F-d).
+
+THE DOUBLE-COUNT DISCLOSURE (locked label). The 9+2 census pairs
+are members of the kinematic sample; their per-pair kinematic
+weight is convolution-diluted but nonzero. The joint is therefore
+an ACCOUNTING DIAGNOSTIC, not a new operative posterior: α_joint
+and dN_joint are CO-QUOTED-DIAGNOSTIC, the operative band and the
+8L-b corrected reads are untouched this round, and promotion of
+any joint number to operative status is an external-review
+decider-grade question (the PHYS-envelope precedent).
+
+BARS (locked):
+- B1 CLASS: N_adm ≥ 1 in ≥ 3/4 law-seeds → CLASS-CONTAINS; N_adm
+  = 0 in ≥ 3/4 → CLASS-EMPTY (the wobble tail-SHAPE successor —
+  the 8I-a successor, distribution-level — is then named MANDATORY
+  before the α machinery is called final; the census flag stays
+  permanent until repaired); 2/2 → CLASS-SPLIT, per-seed report,
+  no closure claim.
+- B2 PRICE (CONTAINS only; SPLIT reported ungraded): seed-mean
+  cheapest Δkin to admissibility per law — ≤ 10 CHEAP / 10–40
+  PRICED / > 40 SEVERE.
+- B3 JOINT DIAGNOSTIC (always): α_joint, dN_joint per law-seed +
+  seed means, CO-QUOTED-DIAGNOSTIC label only.
+- B4 NEWTON FLANK: pre-stated expectation dN_joint ≥ dN_kin (the
+  lker read) per law-seed; violated in ≥ 3/4 → AGAINST-EXPECTATION,
+  quoted with the rescuing corner named.
+- NO credence movement in ANY branch (pre-stated; the binary map
+  is external-only per 8K-b/round 6 — internal-coherence
+  accounting only).
+
+EXPECTATION (pre-stated, two-sided): admissible cells exist in the
+low-nuisance corner at PRICED grade; α_joint > α_kin (the census
+demands the band be filled by something that dies at the cliff —
+the boost's edge shape does that; the spike channel cannot: 8H's B
+config made band 13–15 only with cliff 13–14); dN_joint ≥ dN_kin.
+Openly uncertain: the α ≥ 1 bare cells were never forwarded — the
+α=0.5 A-config starved at μ_band 0.86, and if the higher-α bare
+cells under-fill too, the joint lands on companion-lite mid
+corners and the α pull is weaker. Either branch is a measurement.
+
+GATES: G8M-0 — recompute the 8L-b MAP cells from the cubes; the
+direct band_mu call must match the four shipped CENSUS rows (±0.05
+both μ; MAP params must match the shipped print). G8M-1 —
+bare-Newton row (α=0, η=1.3, w_rad=0.3, fcomp=0, fpm=1.5, kw=0.7,
+sq=0): μ_band < 3.0 (the 8F-b analytic scale; 8H notes 0.13–0.45),
+all four law-seeds. G8M-2 — shape/finiteness/identity: cbJ.shape =
+cb.shape; CLL finite; cbJ − cb at the joint MAP equals the
+broadcast CLL exactly. G8M-3 (the GB0w-class wiring gate) — the
+assembled scan block at the shipped MAP coordinates equals the
+G8M-0 direct call to ≤ 1e-9 (identical expression sequence;
+asymmetric axis sizes + the cell check detect transposition
+scrambles).
+
+Protocol: two seeds (31/101) per the standard; a 6-seed budget
+only as a future decision if a verdict-grade object emerges (not
+auto). Script [calcs/stage8m_jointcensus.py](calcs/stage8m_jointcensus.py);
+output data/stage8m_jointcensus.txt; ledger row bin-8m-jointcensus
+in the result commit; ~20–30 min compute.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
