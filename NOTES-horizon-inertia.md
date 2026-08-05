@@ -10862,6 +10862,48 @@ answered in the negative at three-stage grade; the identification
 hunt narrows to noise-side / mixture / data-side, with the census
 pair as the standing referee.
 
+### Stage 8T PRE-REGISTRATION (2026-08-05, committed BEFORE any run): THE ADDITIVE FLOOR UNDER THE CENSUS — the noise-side crack, census-tested
+
+The surviving class #1 gets its instrument: 7J-z6's floor axis
+(σ_eff = √((σ·fpm)² + (ws/4.74047)²), error-independent km/s jitter)
+gained +7.1/+10.6 one-law and EDGE-RODE its 0.045 km/s grid top; its
+census behavior was never evaluated. 8T
+([calcs/stage8t_floorcensus.py](calcs/stage8t_floorcensus.py)):
+ws grid extended ×9 to {0, 0.045, 0.09, 0.15, 0.25, 0.40} km/s;
+joint block (fcomp, ffly, fpm, kw, sq, ws) at the frozen lker MAP;
+census forwarded with the same floor. Gates: G8T-1 the ws=0 slice vs
+the cube = 0.00e+00 (verbatim-branch, GW0-style); G8T-2 census
+identity 0.10; G8T-3 shared-expression. Bars (≥3/4): F1
+NOISE-SIDE-VIABLE iff wŝ>0 AND sq̂ ≤ 0.1 (the floor SUBSTITUTES the
+smear) AND pmf9 ≥ 1e-3 → the width object identifies noise-side
+(cube-grade successor; final-stamp path reopens). F2
+ADDITIONAL-DEMAND iff gain ≥ +5 with sq̂ ≥ 0.2 and census still
+inadmissible (the z6 reading — floor on top of smear). F3
+CRACK-CLOSED iff P(ws>0) < 0.5. Edge flag at 0.40 (no further
+extension — ~9× the z6 edge, ≫ the Gaia formal floor). NO credence
+movement.
+
+### Stage 8S-c PRE-REGISTRATION (2026-08-05, committed BEFORE any run, same commit): THE DISTANCE-CHANNEL CONTROL — the GD tension under measured vertical priors
+
+The physics that makes this analytic: a distance error moves a SPARC
+point VERTICALLY (g_bar is distance-invariant at fixed flux; g_obs ∝
+1/D) and inclination errors likewise (V_bar components
+photometry-side); so the vertical channel at measured-prior grade is
+the conjugate random-intercept model — per-galaxy x_i ~ N(0, s_i²),
+s_i² = (e_D/D)²/ln²10 + (2e_inc/tan i)²/ln²10, marginalized in closed
+form; the s=0 branch is the verbatim flat expression (bit-identity).
+This is the DISTANCE-GRADE leg of the named 8S-c decider — the full
+hier M/L leg stays named if the tension survives.
+([calcs/stage8sc_gddist.py](calcs/stage8sc_gddist.py)). Gates:
+G8Sc-0 OFF-branch bit-identity + OFF GD profile reproduces 8S-b's
+−1.542 (one grid step); G8Sc-1 analytic-vs-numeric marginal at 3
+probes (1e-6); G8Sc-2 s_i distribution reported. Bars: C1
+TENSION-DISSOLVES iff GD(ON) Δ1 overlaps FULL(ON) (attribution =
+the measured vertical channel; T5 conditional); C2 TENSION-SURVIVES
+iff GD(ON) still excludes FULL(ON) λ̂ (hardens; full-hier = the
+remaining control); C3 POWER-CARRIED. Co-read: FULL's own λ̂ shift
+under the channel. NO credence movement.
+
 ELI12: Last blur experiment: blur every star EXCEPT the ones in our
 special sideways band. The overcrowding disappears — geometry says
 it must — but the fit says no AGAIN: even the band-zone stars need
