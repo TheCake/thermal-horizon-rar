@@ -11185,6 +11185,52 @@ did. Three suspects checked, three cleared — what's left is either
 "how these dwarf galaxies got picked" or "deep gravity really is
 different in gas-rich dwarfs."
 
+## Stage 8W + 8X pre-registration (2026-08-05, committed before any run): the quality-strata tracking test (the data-side instrument) + the regime-vs-composition decomposition (the GD tension)
+
+Both measurement rounds; no credence movement. Ledger rows on
+completion: bin-8w-strata, gal-8x-regime. (First round under the
+new lean-notes rule.)
+
+**8W** ([calcs/stage8w_strata.py](calcs/stage8w_strata.py)): if the
+width object is data-side, sq should track data-quality strata; if
+flat everywhere, the last class loses its tracked handle. Four
+median-split axes with pre-named physics shadows: A1 pair mean G
+(shadow: mass model), A2 min parallax S/N (shadow: distance), A3
+|ecliptic latitude| (scan-law proxy — physics-blind, the clean
+discriminant), A4 max RUWE (shadow: multiplicity; skipped with a
+note if the column is absent). Per stratum: rebuild data
+histograms, noise pools, acceptance templates; model population
+shared per law-seed at the frozen lker MAP; block (fcomp, ffly,
+fpm, kw, sq, ws in {0, 0.045}); statistic = posterior-mean sq per
+stratum; dsq = hi − lo per axis.
+Gates: G8W-1 unsplit ws=0 slice vs the lker cube bit-identity;
+G8W-2 stratum count conservation (exact); G8W-3 8T gain regression
+at lnL grade (bar 0.011). Bars: D1 TRACKING iff some axis has
+|dsq| ≥ 0.08 same-sign in ≥3/4 law-seeds (carrier named per the
+shadow table; A3 = the clean data-side carrier). D2 FLAT iff all
+axes |dsq| ≤ 0.05 in ≥3/4 (data-side loses its last tracked
+handle; the width object graduates to "unattributed effective
+absorber", DR4 the arbiter). D3 MIXED-CARRIED else. Co-read: the
+observed band pairs' strata memberships (the in-script selector
+must reproduce (9,2); else the co-read is skipped — pre-stated).
+
+**8X** ([calcs/stage8x_regime.py](calcs/stage8x_regime.py)): is the
+GD↔DD split composition (gas) or regime (deep)? Deep := gN(f=1) <
+1.2e-10, fixed pre-fit. Six identity fits (GD, DD) × (all, deep,
+nondeep), vertical-ON, the 8V fast engine with point masks; paired
+galaxy bootstrap 200 reps (rng 71) over the three deciding subsets
+(DD-deep, GD-deep, DD-nondeep — pre-stated cost cut). Decider =
+DD-deep. Gates: G8X-0 unmasked GD/FULL reproduce 8V's printed
+coarse values (bar 0.002); G8X-1 masked fast-vs-slow probes ≤
+1e-6; G8X-2 mask accounting exact (deep + nondeep = all, per set).
+Bars: X1 REGIME iff p95(DD-deep) < 0 AND P(DD-deep ≥ DD-nondeep)
+≤ 0.05 — the split follows the deep regime (connects to 5T's
+measured deep-arm vote; selection story weakens). X2 COMPOSITION
+iff p5(DD-deep) > 0 AND P(DD-deep ≤ GD-deep) ≤ 0.05 — DD's deep
+points vote with DD: the split is carried by galaxy type, not
+regime. X3 GRAY-CARRIED else. Co-reads: GD-nondeep point fit,
+counts, s_int per subset, edge fractions.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
