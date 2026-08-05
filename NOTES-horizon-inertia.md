@@ -9530,6 +9530,63 @@ slow smooth wobbles the flags miss. That query is the next
 thing we run — with the price of both outcomes written down
 before we look.
 
+## Stage 8K-b PRE-REGISTRATION (2026-08-05, committed BEFORE any query): THE NSS/ORBIT-CURVATURE CROSSMATCH — the decider named by 8L-a2, selection-aware
+
+SCOUTED SELECTION FACTS (primary sources, locked into the design):
+the DR3 astrometric-NSS pipeline processed ONLY sources with
+RUWE > 1.4 and G < 19 (Halbwachs+23 sect. 1.2 verbatim);
+acceleration solutions accepted at significance s > 20 (sect.
+4.3); so for a RUWE-quiet source, NSS-absence is STRUCTURAL, not
+evidence. The RV channel: radial velocities to G_RVS = 14 hard
+limit; the documented variability criterion (Katz+23 sect. 3.7):
+rv_nb_transits >= 10 AND rv_template_teff in [3900, 8000] K AND
+rv_chisq_pvalue <= 0.01 AND rv_renormalised_gof > 4; RV trends
+live in nss_non_linear_spectro (pulled as the 4th table).
+
+DEFINITIONS (per component; pair = either component):
+  astro-INFORMATIVE: ruwe > 1.4 (the pipeline's own entry gate —
+    only there can NSS-absence inform);
+  astro-ACTIVE: any nss_two_body_orbit or nss_acceleration_astro
+    row, or non_single_star bit 1;
+  rv-COVERED: the Katz applicability set (nb_transits >= 10, teff
+    in window, finite gof/pvalue);
+  rv-VARIABLE: covered AND pvalue <= 0.01 AND gof > 4;
+  rv-TREND: any nss_non_linear_spectro row.
+  Pair COVERED = rv-covered OR astro-informative on either
+  component; pair ACTIVE = astro-active OR rv-variable OR
+  rv-trend.
+
+POPULATIONS: the 9 census pairs (decisive leg); WIDE (1437) and
+a size-matched NARROW control (rng 41) as DESCRIPTIVE context
+only (no bars — the selection functions are too opaque for rate
+bars; stated).
+
+BARS + MAP (locked; the census-pair leg):
+  STRUCTURALLY-BLIND: covered < 6 of 9 -> the in-catalog
+    channels are EXHAUSTED for the faker question; hold ~55%;
+    T2 (external RVs of the nine) is named THE decider; the
+    landing itself is the round's product.
+  NINE-ACTIVE: covered >= 6 AND active >= 5 of 9 -> the
+    quiet-faker account gains object-level support; anomaly-real
+    ~55% -> ~50%; the seed budget re-prioritizes.
+  NINE-CLEAN: covered >= 6 AND active <= 2 among the covered ->
+    the faker account loses its last in-catalog hiding place at
+    the covered periods; the S3 immunity partially RESTORES;
+    anomaly-real ~55% -> ~57%. WINDOW DISCLOSURE carried: the
+    RV channel covers the short-to-mid faking window plus slow
+    trends at partial power; P >~ 15-20 yr fakers remain
+    unprobed in-catalog (the all-nine-tuned-long-P conspiracy is
+    priced at reading grade only), so 57 is this map's ceiling.
+  MIXED: otherwise -> hold ~55%; T2 decides.
+FETCH: TAP sync, chunked IN-lists, cached CSVs committed for
+reproducibility; gates G8Kb-0 (population identity: 9/1437/1437,
+unique ids), G8Kb-1 (pull completeness: gaia_source rows
+returned for >= 99% of queried ids; else disclosed).
+EXPECTED OUTCOME (pre-stated): no lean on active-vs-clean;
+coverage expected partial (G_RVS = 14 vs our G ~ 8-15) — the
+STRUCTURALLY-BLIND branch is live. Amendment rule: gate
+tolerances pre-quote; bars and the map may NOT move.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
