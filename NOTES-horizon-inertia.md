@@ -9653,6 +9653,48 @@ ceiling we signed before looking, with the honest fine print:
 very-slow companions (15+ year orbits) and two of the nine
 remain uncheckable until we point real spectrographs at them.
 
+## REVIEWER ROUND 6 (closing note, 2026-08-05): the closure ENDORSED — and the kernel debt named as the forward-model priority
+
+THE NOTE: (1) the round-5 reservation was CONFIRMED and the
+conditional bar worked as designed — holding at 55 then, and
+weakening S3's immunity rather than banking the object test,
+was the right call; the license-missed response model's lean is
+CONSERVATIVE (a model that over-predicts the correlation and
+still finds the fakers RUWE-quiet bounds true detectability
+from above). (2) The fallback architecture is what makes the
+closure robust: the verdict rests on channels that BYPASS the
+RUWE blind spot (light; NSS/RV), not on the channel shown
+blind. (3) SCOPE FORMALIZED (adopted into the record):
+"NINE-CLEAN" is bar-defined, not literal — 2 of 9 carry
+confirmed RV-variable companions, 2 are uncovered, and the
+anomaly is robust to WORST-CASE REMOVAL OF ALL FOUR (>= 5 band
+pairs against the 3.8e-9-class leakage null stays
+astronomical). (4) THE LIVE THREAD WITH REAL STAKES = THE
+KERNEL, not the census: the un-sourced 17.8-yr S-factor
+conditions the ENTIRE forward-model machinery — the alpha band,
+the collapse basin, the 8J saturation all ran on it — so the
+8L-b correction is THE priority for anything forward-model,
+and its headline deliverable is the SIGN: which direction the
+corrected (boostier mid-P wobble) kernel pushes alpha. Our
+note: the sign is not hand-derivable (two opposing arms — more
+velocity per companion absorbs more excess, but the kinematic
+binding per companion also strengthens, pinning fcomp lower);
+that contest IS the 8L-b measurement. The standing hierarchy
+reinforced: model-light/object-level results = the anchors;
+forward-model alpha = the conditional layer with a NAMED
+CALIBRATION DEBT (carried at every alpha quote until 8L-b).
+(5) Credence: +2 within the committed map, "not something I'll
+contest"; his view that a hold at 55 would have been equally
+defensible (2-at-the-bar, license miss, kernel debt) is
+CARRIED VERBATIM in the record — the 57 stands by the letter
+of the pre-committed map, with that minority reading logged.
+
+Consequence queue: 8L-b promoted to the top of the
+forward-model queue (the derived L-curve replaces the legacy S;
+headline = the alpha sign + the honest Newton band + the census
+meter re-test); T2 = the external tail-closure; the 8-series
+arc awaits paper absorption (PAPER still frozen at v3.9).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
