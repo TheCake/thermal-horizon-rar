@@ -319,6 +319,12 @@ CHECKS = [
      'at P >= 10 yr = 0.70 -> CONFIRMED', 'data/stage8n_floodanatomy.txt'),
     ('bin-8n-floodanatomy', 'mean d_cliff = -14%, mean d_band = -1.00 '
      '-> NEUTRAL-OR-WORSENS', 'data/stage8n_floodanatomy.txt'),
+    ('bin-8o-extrv', 'G8O-2 distances <= 3 arcsec AND parsed rows '
+     '9/9: PASS', 'data/stage8o_extrv.txt'),
+    ('bin-8o-extrv', 'COVERAGE: primary components with >= 1 external '
+     'row: C = 3/22', 'data/stage8o_extrv.txt'),
+    ('bin-8o-extrv', 'RV-CLEAN (C = 3 >= 3, 0 active primary pairs): '
+     'map +1 -> anomaly-real 57 -> 58', 'data/stage8o_extrv.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

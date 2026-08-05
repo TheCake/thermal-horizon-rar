@@ -83,7 +83,11 @@ P(f"G8O-0 Gaia position pull: {len(pos)}/46 -> "
 assert okp
 
 # --- CDS XMatch -----------------------------------------------------------
-XM_URL = 'http://cdsxmatch.u-strasbg.fr/xmatch/api/xmatch/sync'
+# AMENDMENT 1 (pre-quote, wiring): run-1 died 404 on a wrong endpoint
+# path before any survey response (preserved as _run1.txt); corrected
+# to the documented /api/v1/sync + per-candidate exception handling.
+# Bars/map/classification untouched.
+XM_URL = 'http://cdsxmatch.u-strasbg.fr/xmatch/api/v1/sync'
 CSV1 = 'sid,ra,dec\n' + '\n'.join(
     f"{s},{pos[s][0]:.8f},{pos[s][1]:.8f}" for s in sids) + '\n'
 
@@ -127,6 +131,7 @@ COLS = {   # G8O-3 pre-named classification columns per survey
 }
 hits = {}      # sid -> list of dicts(survey, ang, rv, erv, scat, nv)
 g1_ok, g2_ok = True, True
+nxrows, nparsed = 0, 0
 for name, cands in SURVEYS:
     cache = f'data/stage8o_xm_{name}.csv'
     txt, used = None, None
@@ -135,14 +140,16 @@ for name, cands in SURVEYS:
         used = '(cache)'
     else:
         for c2 in cands:
-            t_ = xmatch(c2)
-            if 'angDist' in t_.splitlines()[0] if t_.strip() else False:
+            try:
+                t_ = xmatch(c2)
+            except Exception as e:
+                P(f"  [{name}] candidate {c2}: request failed "
+                  f"({type(e).__name__}: {e})")
+                continue
+            if t_.strip() and 'angDist' in t_.splitlines()[0]:
                 txt, used = t_, c2
                 break
-            # keep trying candidates; log the miss
-            P(f"  [{name}] candidate {c2}: no angDist header - trying "
-              f"next" if c2 != cands[-1] else
-              f"  [{name}] candidate {c2}: no angDist header - FAILED")
+            P(f"  [{name}] candidate {c2}: no angDist header")
         if txt is not None:
             open(cache, 'w', encoding='utf-8', newline='').write(txt)
     if txt is None:
@@ -168,12 +175,19 @@ for name, cands in SURVEYS:
     P(f"G8O-1 {name} {used}: {len(rdr)} match rows; columns "
       + ", ".join(f"{cols[k]}->{cmap[k]}" for k in cols) )
     if missing:
+        # AMENDMENT 2(b): classification stays pre-named-columns-only,
+        # but the rows still COUNT AS COVERAGE (COVERED-SNAPSHOT at
+        # most) per the pre-reg's coverage definition
         P(f"G8O-3 {name}: pre-named column(s) {missing} ABSENT - "
-          f"survey SKIPPED-DISCLOSED")
-        continue
+          f"classification SKIPPED-DISCLOSED (rows count as coverage)")
+        cmap = {k: None for k in cmap}
+    nxrows += len(rdr)
     for r in rdr:
         try:
-            sid = int(float(r['sid']))
+            # AMENDMENT 2(a): int(float(.)) truncated 19-digit Gaia
+            # source_ids (float64 mantissa) - run-2's NULL-COVERAGE
+            # verdict was VOIDED on this; exact integer parse
+            sid = int(r['sid'])
             ang = float(r['angDist'])
         except (KeyError, ValueError):
             continue
@@ -187,12 +201,16 @@ for name, cands in SURVEYS:
                 return float(r[c])
             except (ValueError, TypeError):
                 return None
+        nparsed += 1
         rec = dict(survey=name, ang=ang, rv=fget('rv'),
                    erv=fget('erv'), scat=fget('scat'), nv=fget('nv'))
         cur = hits.setdefault(sid, {})
         if name not in cur or ang < cur[name]['ang']:
             cur[name] = rec
-P(f"G8O-2 all match distances <= 3 arcsec: "
+# AMENDMENT 2(c): the gate is hardened against vacuous passes - every
+# returned row must parse (run-2's silent-continue path is now caught)
+g2_ok = g2_ok and (nparsed == nxrows)
+P(f"G8O-2 distances <= 3 arcsec AND parsed rows {nparsed}/{nxrows}: "
   f"{'PASS' if g2_ok else 'FAIL'}")
 P("")
 

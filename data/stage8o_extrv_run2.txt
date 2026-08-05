@@ -1,0 +1,44 @@
+8O THE T2 EXTERNAL-RV RECONNAISSANCE (pre-reg committed BEFORE any query; bars + map locked)
+
+G8O-0 targets: 23 pairs (band 9, above 2) -> PASS
+G8O-0 Gaia position pull: 46/46 -> PASS; Gaia RV present for 45 components
+G8O-1 apogee vizier:III/286/catalog: 1 match rows; columns HRV->HRV, e_HRV->e_HRV, s_HRV->s_HRV, Nvis->Nvis
+G8O-1 galah vizier:J/MNRAS/506/150/stars: 1 match rows; columns RVgalah->RVgalah, e_RVgalah->None
+G8O-3 galah: pre-named column(s) ['e_RVgalah'] ABSENT - survey SKIPPED-DISCLOSED
+G8O-1 lamost vizier:V/156/dr7slrs: 1 match rows; columns RV->RV, e_RV->None
+G8O-3 lamost: pre-named column(s) ['e_RV'] ABSENT - survey SKIPPED-DISCLOSED
+G8O-1 lamostm vizier:V/156/dr7melrs: 1 match rows; columns RV->None, e_RV->None
+G8O-3 lamostm: pre-named column(s) ['RV', 'e_RV'] ABSENT - survey SKIPPED-DISCLOSED
+G8O-1 rave vizier:III/283/ravedr6: 5 match rows; columns HRV->HRV, e_HRV->e_HRV
+G8O-2 all match distances <= 3 arcsec: PASS
+
+PER-COMPONENT (primary census region first):
+  pair00[above] comp1 sid=385375870598159744 s=18.8kAU: UNCOVERED        surveys=[-]
+  pair00[above] comp2 sid=385355362131635200 s=18.8kAU: UNCOVERED        surveys=[-]
+  pair01[above] comp1 sid=3437767763039822336 s=23.1kAU: UNCOVERED        surveys=[-]
+  pair01[above] comp2 sid=3437768175356669568 s=23.1kAU: UNCOVERED        surveys=[-]
+  pair02[ band] comp1 sid=6433194293044757888 s=34.2kAU: UNCOVERED        surveys=[-]
+  pair02[ band] comp2 sid=6433194159906020096 s=34.2kAU: UNCOVERED        surveys=[-]
+  pair03[ band] comp1 sid=4216240481043847552 s=6.6kAU: UNCOVERED        surveys=[-]
+  pair03[ band] comp2 sid=4216240584123073664 s=6.6kAU: UNCOVERED        surveys=[-]
+  pair04[ band] comp1 sid=2766840648166985728 s=8.8kAU: UNCOVERED        surveys=[-]
+  pair04[ band] comp2 sid=2766864184587766400 s=8.8kAU: UNCOVERED        surveys=[-]
+  pair05[ band] comp1 sid=6221677259776777984 s=39.5kAU: UNCOVERED        surveys=[-]
+  pair05[ band] comp2 sid=6269715266391844992 s=39.5kAU: UNCOVERED        surveys=[-]
+  pair06[ band] comp1 sid=620743651832022656 s=7.3kAU: UNCOVERED        surveys=[-]
+  pair06[ band] comp2 sid=620743656127286528 s=7.3kAU: UNCOVERED        surveys=[-]
+  pair07[ band] comp1 sid=5161969258595542528 s=9.8kAU: UNCOVERED        surveys=[-]
+  pair07[ band] comp2 sid=5163469610930944768 s=9.8kAU: UNCOVERED        surveys=[-]
+  pair08[ band] comp1 sid=3213116023990320000 s=8.4kAU: UNCOVERED        surveys=[-]
+  pair08[ band] comp2 sid=3213110152770628224 s=8.4kAU: UNCOVERED        surveys=[-]
+  pair09[ band] comp1 sid=4885245477787379200 s=19.7kAU: UNCOVERED        surveys=[-]
+  pair09[ band] comp2 sid=4885245099830257920 s=19.7kAU: UNCOVERED        surveys=[-]
+  pair10[ band] comp1 sid=5006565006679943040 s=44.4kAU: UNCOVERED        surveys=[-]
+  pair10[ band] comp2 sid=5006560505554219648 s=44.4kAU: UNCOVERED        surveys=[-]
+
+COVERAGE: primary components with >= 1 external row: C = 0/22; control components covered: 0/24
+ACTIVE pairs: primary 0 []; control 0 []
+
+==> 8O VERDICT (locked bars + map): T2-ATTEMPTED, NULL-COVERAGE (C <= 2): the public archives do not cover the census pairs at classification grade; NO credence movement; T2 remains future-spectrograph work, now attempted-and-scoped
+
+done (0.6 min)

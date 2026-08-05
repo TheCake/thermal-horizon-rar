@@ -10235,6 +10235,74 @@ selected dwarfs (H-band), GALAH/RAVE southern, LAMOST northern —
 expected coverage of 22 nearby field FGK/M components is LOW;
 a null-coverage outcome is a booked scoping result, not a failure.
 
+## Stage 8O EXECUTED (2026-08-05, amended run, all gates PASS): RV-CLEAN at thin coverage — THE MAP EXECUTES BY THE LETTER: anomaly-real 57 → 58; the control pair validates the instrument; T2's spectrograph leg remains the closure
+
+TWO WIRING AMENDMENTS, both pre-quote, runs preserved: run 1 died
+404 on a wrong XMatch endpoint path before any survey response
+(_run1.txt; fixed to /api/v1/sync + per-candidate exception
+handling). Run 2 printed NULL-COVERAGE and was VOIDED by its own
+internal inconsistency (9 match rows returned, 0 registered): the
+sid parse int(float(·)) TRUNCATED 19-digit Gaia source_ids
+(float64 mantissa) so every hit landed under a corrupted id
+(_run2.txt; exact-integer parse; skipped-survey rows now count as
+coverage per the pre-reg's definition; G8O-2 hardened to parsed ==
+returned — the vacuous-pass hole closed, the GB0w lesson again).
+Bars/map/classification untouched throughout. Run 3: G8O-0 PASS
+(23 pairs, 9+2; Gaia 46/46, RV for 45), G8O-1 all five tables
+reached (APOGEE III/286 1 row, GALAH 1, LAMOST slrs 1, melrs 1,
+RAVE III/283/ravedr6 5), G8O-2 9/9 parsed, G8O-3 three surveys
+classification-skipped-disclosed on absent pre-named error columns
+(GALAH e_RVgalah, LAMOST e_RV, melrs RV/e_RV — VizieR ships them
+without; rows retained as coverage).
+
+RESULT. Coverage C = 3/22 primary components (the bar's letter:
+≥ 3), composition disclosed prominently: exactly ONE
+classification-grade read — pair09 comp2 (band, 19.7 kAU):
+**RAVE 2004 HRV = 54.6 ± 0.77 vs Gaia DR3 (2014–17) = QUIET under
+the locked offset test — a ~decade-baseline external-instrument
+stability of a census band component, the first non-Gaia datum in
+the program** — plus two COVERED-SNAPSHOT rows (pair01 comp1
+LAMOST; pair04 comp1 melrs with RV-pipeline sentinels — one of
+8K-b's two uncovered pairs is now covered-but-unread). Control
+context, right sign both ways: pair17 (BELOW-band) comp1 is
+RV-ACTIVE (APOGEE s_HRV = 5.73 km/s over 4 visits) — the
+machinery detects binarity when it is there, and found it outside
+the census region; pair22 (below) both components RAVE-QUIET.
+
+VERDICT (locked bars + map, executed by the letter): RV-CLEAN
+(C = 3 ≥ 3, 0 active primary pairs) → **anomaly-real 57 → 58**,
+the pre-priced small move (km/s thresholds; 1-of-3
+classification-grade composition; within-survey-static blindness
+— a constant offset inside one survey is invisible; 19/22 primary
+components uncovered). The 8K-b window disclosure STANDS: the
+P ≳ 15–20 yr locus and the two 8K-b pairs remain unread
+(pair04's melrs row failed its RV pipeline). T2's real closure =
+targeted spectrographs on the nine (two epochs, ~1 km/s, months
+apart) — now attempted-and-scoped with the archive pass on
+record.
+
+Ledger row bin-8o-extrv; worldtable tokens; runs 1–2 preserved;
+pulls cached and committed (targets + 5 xm CSVs).
+
+Plain verdict: SUCCESS at reconnaissance grade — the archives
+gave one real decade-baseline quiet read on a band pair, one
+instrument-validating control detection, and a precise scoping of
+what only new spectra can close; the map moved +1 by its letter.
+
+ELI12: We asked every big public telescope archive: "have you
+ever measured the speed-along-the-line-of-sight of our 22 special
+stars?" Answer: mostly no (they're ordinary nearby stars big
+surveys skip), but three had data. The best one: a speed
+measured in 2004 agrees with the 2014–17 satellite value — that
+star has NOT been yanked around by a hidden companion across a
+decade. Bonus proof the method works: in a comparison pair
+OUTSIDE our special band, the archive clearly caught a hidden
+companion (its speed jumps by 6 km/s between visits). So: the
+one deep look we got was clean, the detector demonstrably
+detects, and belief ticks 57 → 58 exactly as the pre-signed
+rulebook says. The full answer still needs us to point a
+spectrograph at all nine pairs ourselves.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

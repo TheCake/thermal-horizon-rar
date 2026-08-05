@@ -716,9 +716,16 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     (boost + 10% tail) reproduces the sky's full portrait with α
     uncorrupted = the TODO-18 fingerprint (7J-z6 counter-evidence
     quoted).** 8F-b census tail null still queued.
-26. **Referee queue (adoption candidates, unopened)**: T2
-    external-RV cross-check (APOGEE/GALAH/LAMOST — its top W4
-    priority; heavier, external fetch); T3 empirical wide-pair
+26. **Referee queue (adoption candidates)**: T2
+    external-RV cross-check — **ARCHIVE PASS EXECUTED as Stage 8O
+    (2026-08-05, pre-reg 1e7c89a + two pre-quote wiring amendments,
+    [calcs/stage8o_extrv.py](calcs/stage8o_extrv.py)): RV-CLEAN by
+    the letter at thin coverage (C = 3/22; the one classification-
+    grade read = pair09c2 RAVE-2004-vs-Gaia decade-baseline QUIET;
+    control pair17 (below-band) RV-ACTIVE s_HRV 5.73 = instrument
+    validated); MAP: anomaly-real 57 → 58; the spectrograph leg
+    (two epochs, ~1 km/s, months apart, all nine pairs) remains
+    the true closure**; T3 empirical wide-pair
     PM-tail characterization (= a TODO-18 leg); T5 gas-dominated
     (HI-dominated) SPARC subsample c₁ (defends the pincer window
     vs its W10); T9 second sim family (TNG/SIMBA) + mock rotation
