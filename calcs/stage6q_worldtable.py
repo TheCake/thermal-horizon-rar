@@ -364,6 +364,16 @@ CHECKS = [
     ('gal-8sb-gasedge', '[GD   fgFREE] lam_hat = -1.732 (D1 '
      '-1.946..-1.503) -> c1_hat = -0.866; fg_hat = 1.171',
      'data/stage8sb_gasedge.txt'),
+    ('bin-8t-floorcensus', 'GATES: G8T-1 4/4, G8T-2 4/4, G8T-3 '
+     'shared-expression - ALL PASS', 'data/stage8t_floorcensus.txt'),
+    ('bin-8t-floorcensus', 'F-bars: F1-rows 0/4 (ws>0 AND sq<=0.1 AND '
+     'pmf9>=1e-3); F2-rows 3/4 (gain>=5 AND sq>=0.2 AND pmf9<1e-3); '
+     'F3-rows 0/4 (P(ws>0)<0.5)', 'data/stage8t_floorcensus.txt'),
+    ('gal-8sc-gddist', 'GATES: G8Sc-0/1/2 ALL PASS',
+     'data/stage8sc_gddist.txt'),
+    ('gal-8sc-gddist', '[GD   vertON] lam_hat = -1.315 (D1 '
+     '-1.451..-1.178) -> c1_hat = -0.658; INTERIOR',
+     'data/stage8sc_gddist.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

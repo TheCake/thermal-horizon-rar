@@ -10904,6 +10904,85 @@ iff GD(ON) still excludes FULL(ON) λ̂ (hardens; full-hier = the
 remaining control); C3 POWER-CARRIED. Co-read: FULL's own λ̂ shift
 under the channel. NO credence movement.
 
+## Stage 8T EXECUTED (2026-08-05, first run, ALL GATES PASS): ADDITIONAL-DEMAND — the floor is REAL and INTERIOR at 0.045 km/s, does NOT substitute the smear, worsens the census — and IDENTIFIES THE fpm CHASE
+
+Gates: G8T-1 ws=0 slice vs cube 0.00e+00 4/4; G8T-2 census 4/4;
+G8T-3 shared-expression. Verdict F2 (3/4 rows; the fourth misses only
+the gain≥5 clause at +3.96): the floor is DEMANDED — P(ws>0) =
+0.99–1.00 in 4/4, gains +6.39/+13.56/+5.96/+3.96, and wŝ = 0.045
+km/s INTERIOR on the ×9-extended grid (the 7J-z6 "edge-riding" was
+its optimum; the old grid was too coarse to show the peak) — but
+sq̂ = 0.2 in 4/4 (NO substitution: the floor rides on top of the
+smear) and the census worsens monotonically in ws (band 30→110
+across the axis; +1–3 even at 0.045).
+
+THE DIVIDEND — THE fpm CHASE IDENTIFIED: P(fpm=3.0) collapses from
+0.23/0.24/0.07/1.00 (operative) to 0.01/0.04/0.01/0.06 once the
+floor axis exists. The sky's noise-shape hunger — the E-arm chase,
+function-blind at 7J-d, the "real width-SHAPE incompleteness" of the
+arm suite — is substantially a ~45 m/s error-INDEPENDENT additive
+velocity floor, not a multiplicative scaling of the formal errors.
+(The 7J-z6 PHYS envelope pre-dated this measurement and capped ws at
+0.015 — pointer noted for the next noise-ceiling read, not
+relitigated here.) Width-object standing after 8T: noise-side is
+measured as ADDITIONAL (+4–14 lnL, census-worsening); the
+sq-equivalent object remains unidentified; MIXTURE and DATA-SIDE are
+the last classes standing.
+
+Plain verdict: SUCCESS as a measurement (the floor pinned interior;
+the fpm chase largely explained) — the width identity itself stays
+open at two classes.
+
+ELI12: We gave the simulation permission to add a tiny fixed amount
+of extra measurement noise to every star — not proportional to the
+official error bars, just a flat 45 m/s of "stuff happens." The fit
+grabbed it immediately (it's been begging for something like this —
+that's why it kept cranking the error-scaling knob to its ceiling;
+that knob now relaxes). But it did NOT give back the mystery blur,
+and extra noise makes the fake-crowding worse, not better. So: one
+long-standing puzzle solved (the noise-knob chase), the main mystery
+narrowed to two suspects — a hidden second population, or something
+in the data itself.
+
+## Stage 8S-c EXECUTED (2026-08-05, first run, ALL GATES PASS): TENSION-SURVIVES — the measured vertical channel barely moves the gas-dominated optimum; the dial-tension hardens
+
+Gates: G8Sc-0 OFF-branch bit-identity (−1.14e-13) + OFF profile
+reproduces 8S-b's −1.542 exactly; G8Sc-1 analytic = numeric marginal
+to 8 decimals at 3 probes; G8Sc-2 s_vert distribution: GD median
+0.132 dex vs DD 0.084 (the dwarfs carry ~2× the vertical freedom, as
+expected — and it still doesn't matter). Results (vertical ON):
+FULL λ̂ = 0.960 (D1 0.848..1.074), GD λ̂ = −1.315 (D1 −1.451..−1.178,
+INTERIOR), DD λ̂ = 1.331 (now ABOVE BE). The GD interval still
+excludes the full-sample dial by ~2 units of λ — TENSION-SURVIVES.
+
+Suspect ledger: gas budget CLEARED (8S-b), distance/inclination at
+measured-prior grade CLEARED (8S-c). Remaining, ranked: (i) the
+WITHIN-CURVE CORRELATION object (7B: lag-1 ρ ≈ 0.87 — every
+point-level −2lnL nominally calibrated only; the 8S galaxy-level
+bootstrap partially covers this and agreed at P(λ>0) = 0.015, but it
+was bound-limited at the old grid — an extended-grid galaxy
+bootstrap is the cheap next control); (ii) the full-hier joint
+treatment (4Z/5M machinery on GD — though for gas-dominated
+galaxies the per-galaxy M/L channel is inert by construction, so
+its marginal value over 8S-c is limited); (iii) dwarf
+selection/inclination systematics; (iv) genuine law shape in the
+deep regime — the GD↔DD split (−1.3 vs +1.3) is now a named,
+hardened structure for the galaxy program.
+
+Plain verdict: NEEDS DIFFERENT PHYSICS or the correlation control —
+the tension is real at measured-vertical grade and is now the galaxy
+program's sharpest open object.
+
+ELI12: We gave every dwarf galaxy its honest wiggle room for "maybe
+we measured your distance or tilt wrong" — for these little
+galaxies that's a lot of room — and re-asked. Their answer moved a
+hair and still disagrees hard with everyone else's. So it's not the
+gas bookkeeping, not distances, not tilts. Either the points within
+each galaxy are so correlated that we're overcounting the evidence
+(checkable), or gas-rich dwarfs really do follow a different-shaped
+deep-gravity curve than star-rich spirals — which would be a big
+deal, and now has a name and a next test.
+
 ELI12: Last blur experiment: blur every star EXCEPT the ones in our
 special sideways band. The overcrowding disappears — geometry says
 it must — but the fit says no AGAIN: even the band-zone stars need

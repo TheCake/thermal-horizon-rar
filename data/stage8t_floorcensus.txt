@@ -1,0 +1,30 @@
+8T THE ADDITIVE FLOOR UNDER THE CENSUS (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+ws grid = [0.0, 0.045, 0.09, 0.15, 0.25, 0.4] km/s (z6 edge was 0.045); sq grid = [0.0, 0.1, 0.2, 0.3]; observed pair = (band 9, cliff 2)
+
+[simple 31] G8T-1 cube identity (ws=0 slice) at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 0.00e+00 -> PASS
+[simple 31] G8T-2 census identity: mu=(29.81, 18.42) vs shipped (29.81, 18.42) -> PASS
+[simple 31] FREE: gain=  +6.39; cell fcomp=0.10 fpm=2.1 kw=0.7 sq=0.2 ws=0.045; P(ws>0)=1.00 P(fpm=3.0)=0.01; census@prof mu=(31.17, 21.10) pmf9=2.2e-06 pmf2=1.5e-07; kw-floor
+[simple 31] census ws-curve at operative nuisances: ws=0.000:(29.8,18.4)  ws=0.045:(31.5,21.4)  ws=0.090:(35.6,26.9)  ws=0.150:(48.5,36.4)  ws=0.250:(74.4,64.1)  ws=0.400:(110.2,119.7)
+
+[BE 31] G8T-1 cube identity (ws=0 slice) at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 0.00e+00 -> PASS
+[BE 31] G8T-2 census identity: mu=(29.11, 20.07) vs shipped (29.07, 20.07) -> PASS
+[BE 31] FREE: gain= +13.56; cell fcomp=0.10 fpm=1.5 kw=0.7 sq=0.2 ws=0.045; P(ws>0)=1.00 P(fpm=3.0)=0.04; census@prof mu=(30.04, 21.10) pmf9=4.9e-06 pmf2=1.5e-07; kw-floor
+[BE 31] census ws-curve at operative nuisances: ws=0.000:(29.1,20.1)  ws=0.045:(30.7,22.2)  ws=0.090:(35.8,26.2)  ws=0.150:(46.8,35.6)  ws=0.250:(74.4,65.2)  ws=0.400:(115.0,113.5)
+
+[simple 101] G8T-1 cube identity (ws=0 slice) at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 0.00e+00 -> PASS
+[simple 101] G8T-2 census identity: mu=(29.97, 20.29) vs shipped (29.96, 20.29) -> PASS
+[simple 101] FREE: gain=  +5.96; cell fcomp=0.10 fpm=2.4 kw=0.7 sq=0.2 ws=0.045; P(ws>0)=1.00 P(fpm=3.0)=0.01; census@prof mu=(32.63, 21.44) pmf9=7.8e-07 pmf2=1.1e-07; kw-floor
+[simple 101] census ws-curve at operative nuisances: ws=0.000:(30.0,20.3)  ws=0.045:(32.6,21.3)  ws=0.090:(37.7,25.7)  ws=0.150:(50.6,36.9)  ws=0.250:(75.1,63.4)  ws=0.400:(113.0,111.7)
+
+[BE 101] G8T-1 cube identity (ws=0 slice) at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 0.00e+00 -> PASS
+[BE 101] G8T-2 census identity: mu=(28.54, 20.18) vs shipped (28.47, 20.22) -> PASS
+[BE 101] FREE: gain=  +3.96; cell fcomp=0.10 fpm=2.1 kw=0.7 sq=0.2 ws=0.045; P(ws>0)=0.99 P(fpm=3.0)=0.06; census@prof mu=(30.06, 20.55) pmf9=4.9e-06 pmf2=2.5e-07; kw-floor
+[BE 101] census ws-curve at operative nuisances: ws=0.000:(28.5,20.2)  ws=0.045:(32.1,21.0)  ws=0.090:(37.4,25.7)  ws=0.150:(48.1,36.6)  ws=0.250:(73.5,65.2)  ws=0.400:(114.2,113.9)
+
+GATES: G8T-1 4/4, G8T-2 4/4, G8T-3 shared-expression - ALL PASS
+
+F-bars: F1-rows 0/4 (ws>0 AND sq<=0.1 AND pmf9>=1e-3); F2-rows 3/4 (gain>=5 AND sq>=0.2 AND pmf9<1e-3); F3-rows 0/4 (P(ws>0)<0.5)
+==> 8T VERDICT (locked grammar): ADDITIONAL-DEMAND — the floor is real (the z6 crack confirmed at the extended grid) but rides ON TOP of the smear; the width identity stays open (mixture/data-side remain).
+    NO credence movement (pre-stated; measurement round).
+
+done (3.1 min)

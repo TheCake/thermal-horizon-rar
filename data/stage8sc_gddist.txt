@@ -1,0 +1,16 @@
+8S-c THE DISTANCE-CHANNEL CONTROL (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+selector (8S verbatim): GD 38, DD 111; G8Sc-2 s_vert percentiles 10/50/90 = 0.032/0.097/0.159 dex; GD median = 0.132, DD median = 0.084; galaxies with s<=1e-4 (no vertical freedom): 0
+G8Sc-1 probe gal 2 (s=0.056): analytic -8.70686027 vs numeric -8.70686022 -> PASS
+G8Sc-1 probe gal 3 (s=0.029): analytic -22.55950886 vs numeric -22.55950886 -> PASS
+G8Sc-1 probe gal 4 (s=0.137): analytic -11.02484282 vs numeric -11.02484282 -> PASS
+G8Sc-0 OFF-branch identity: -647.874131278 vs flat -647.874131278 (d=-1.14e-13) -> PASS; OFF GD profile lam_hat = -1.542 vs 8S-b -1.542 -> PASS
+GATES: G8Sc-0/1/2 ALL PASS
+
+[FULL vertON] lam_hat = 0.960 (D1 0.848..1.074) -> c1_hat = 0.480; INTERIOR
+[GD   vertON] lam_hat = -1.315 (D1 -1.451..-1.178) -> c1_hat = -0.658; INTERIOR
+[DD   vertON] lam_hat = 1.331 (D1 1.2..1.466) -> c1_hat = 0.666; INTERIOR
+
+==> 8S-c VERDICT (locked grammar): TENSION-SURVIVES — the gas-dominated subsample still excludes the full-sample dial with the measured vertical channel on; the tension HARDENS and the full-hier leg (4Z/5M machinery on GD) is the remaining in-pipeline control.
+    NO credence movement (pre-stated; measurement round).
+
+done (1.4 min)

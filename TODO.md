@@ -671,6 +671,19 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     precedent), data-side. The census pair's referee record: six
     model classes vetoed. Width-object hunt continues in the named
     classes; T2 spectrographs / DR4 unchanged as external arbiters.**
+    **8T EXECUTED 2026-08-05 (pre-reg 5d14091): ADDITIONAL-DEMAND —
+    the noise-side floor is REAL and INTERIOR at ws = 0.045 km/s
+    (P(ws>0) 0.99–1.00 4/4, gains +4–14; the z6 edge was the
+    optimum) but does NOT substitute the smear (sq̂ = 0.2 in 4/4)
+    and worsens the census (band 30→110 across the axis). DIVIDEND:
+    the fpm=3.0 chase IDENTIFIED — P(fpm=3.0) collapses to
+    0.01–0.06 with the floor present; the sky's noise hunger is a
+    ~45 m/s error-INDEPENDENT floor, not error scaling (z6
+    PHYS-envelope ws cap pre-dated this; pointer for the next
+    noise-ceiling read). Width object: MIXTURE and DATA-SIDE are
+    the last classes standing; the mixture instrument (a second
+    sub-population with its own ṽ scale, the w_rad precedent) =
+    the named next in-pipeline lever.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
@@ -779,6 +792,17 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     the λ profile through the 4Z/5M vertical-hardened hier machinery
     on the GD subsample — NOW THE TOP GALAXY ITEM; the 4S/4Z dial
     quotes stand (hier-treated) with this tension annotated.**
+    **8S-c EXECUTED same day (distance-grade leg, pre-reg 5d14091,
+    gates exact incl. analytic=numeric marginal): TENSION-SURVIVES —
+    the measured vertical channel (GD median 0.132 dex, 2× DD's)
+    moves the GD optimum only −1.542 → −1.315 (interior); FULL
+    0.960, DD 1.331 (above BE). CLEARED: gas budget + vertical at
+    measured grade. REMAINING (ranked): the within-curve correlation
+    object (7B ρ≈0.87; extended-grid GALAXY BOOTSTRAP = the cheap
+    next control), full-hier joint (limited marginal value for GD —
+    the M/L channel is inert there), dwarf selection, genuine
+    deep-regime shape. The GD↔DD split (−1.3 vs +1.3) = the galaxy
+    program's sharpest open object.**
 26. **Referee queue (adoption candidates)**: T2
     external-RV cross-check — **ARCHIVE PASS EXECUTED as Stage 8O
     (2026-08-05, pre-reg 1e7c89a + two pre-quote wiring amendments,
