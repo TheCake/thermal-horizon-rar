@@ -10601,6 +10601,67 @@ hard, on a different rhythm. The suspect is cleared on both counts,
 so the real problem stays where three earlier tests pointed: how
 STRONG the simulated wobbles are, not how long their orbits take.
 
+## Stage 8R PRE-REGISTRATION (2026-08-05, committed BEFORE any run): THE LOCALIZED-WIDTH CONTEST — the width-object instrument under the new census side-condition
+
+Premise (both halves measured): 8P showed a UNIVERSAL smear of the
+demanded variance necessarily floods the census band, whatever its
+shape; the 7J-z6 Part-A fingerprint localizes the width DEMAND in the
+mid-shoulder ṽ / radial (γ≈8°) column / inner bins — while the band
+lives at γ ≥ 75°. Demand-sector and flood-sector are nearly ORTHOGONAL
+in γ: a SECTOR-LOCALIZED width channel could satisfy both channels at
+once. This is TODO-18's top instrument given its 8P side-condition.
+
+Instrument ([calcs/stage8r_locwidth.py](calcs/stage8r_locwidth.py),
+committed with this entry; the 8P machinery with a channel switch):
+smear applied to (uni) all — the identity; (rad) the radial-orbit
+subpopulation u_mix < wr — the PHYSICALLY NAMED carrier
+(near-parabolic e>0.9 phase/eccentricity scatter); (gam) model γ<45° —
+the fingerprint column at effective-description grade; (perp) γ≥75° —
+the ANTI-control (maximal flood direction). sq grid extended to 0.9
+symmetrically (a channel on fraction f needs sq ≈ 0.2/√f for
+equivalent total width; pre-registered, not post-hoc).
+
+Gates: G8R-0 structural uni-identity; G8R-1 cube identity = 0.00e+00
+(the amendment-1 standard); G8R-2 census identity (0.10); G8R-3 rad
+fraction = wr ± 0.01; G8R-4 mask-off wiring (rad forced-all ≡ uni,
+bit). Bars (locked, ≥3/4): L1 LOCALIZED-VIABLE(rad/gam) iff Δkin ≥
+−2.0 vs uni AND pmf(9|μ_band@profiled) ≥ 1e-3, no row ≤ −5 → THE
+WIDTH OBJECT LOCALIZES (rad preferred as winner if both); successor =
+cube-grade α re-run under the localized channel (the final-stamp path
+REOPENS). L2 dose-response: perp floods ≥ uni (≥3/4). L3
+GLOBAL-DEMAND iff rad AND gam both lose ≥5 in ≥3/4 (the sector
+reading weakens; census inconsistency stays variance-level). Else
+MIXED-CARRIED. Cliff co-printed (companion-carried; big response =
+flag). NO credence movement. Expectation stated for the record: open;
+rad is the motivated candidate; the honest risk is L3 (the width
+demand may be bulk-global after all — that is what the instrument
+decides).
+
+## Stage 8S PRE-REGISTRATION (2026-08-05, committed BEFORE any run, same commit as 8R): THE GAS-DOMINATED c₁ — referee-queue T5, the pincer's M/L defense
+
+Premise: the galaxy dial c₁ = 0.26–0.52 (4S flat / 4Z hier) carries
+the standing W10-class objection that disk-M/L freedom manufactures
+the deep-window coefficient. Gas-dominated galaxies are the standard
+immunizer: where g_gas carries the budget, f_ML is inert and c₁ is
+pinned by physics, not mass-to-light choices.
+
+Instrument ([calcs/stage8s_gasc1.py](calcs/stage8s_gasc1.py); the 4S
+machinery verbatim — ν_λ family with c₁ = λ/2, SPARC block,
+marginalized objective): split at GDFRAC ≥ 0.5 (share of a galaxy's
+kept points with g_gas > g_dsk+g_bul at f=1); fits SPARC-ONLY
+marginalized (NO lensing — its 0.2-dex stellar-mass systematic would
+contaminate the immunity claim): FULL reference / GD subsample +
+200-rep galaxy bootstrap / DD complement contrast; the IMMUNITY
+DEMONSTRATION (λ̂ with f_ML forced to 0.5 and 2.0; GD band |Δλ̂| ≤
+0.2 pre-stated); raw y<1 GD co-read. Gates: G8S-0 selector sanity
+(≥15 GD galaxies else POWER-STOP); G8S-1 the 4S joint endpoints
+reproduced ±0.5 (−8397.72 / −8341.95); G8S-2 GD+DD additivity 1e-6;
+G8S-3 c₁(λ) = λ/2 series. Bars (locked): T5-DEFENDED iff GD bootstrap
+P(λ>0) ≥ 0.95 AND GD Δ1 interval overlaps the full-sample interval;
+T5-POWER-LIMITED iff P(λ>0) < 0.95 with the interval covering both;
+T5-TENSION iff the GD interval excludes the full-sample λ̂. NO
+credence movement; the galaxy map untouched.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
