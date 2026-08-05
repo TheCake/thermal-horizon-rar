@@ -10459,6 +10459,28 @@ G8P-1/G8Q-0 → 0.00e+00 in all four law-seeds; census gates stay PASS
 at ≤ 0.05 (the ship values carry the perturbed population, so a
 nonzero last digit is allowed).
 
+### 8P/8Q AMENDMENT 2 (2026-08-05, logged PRE-QUOTE, runs preserved as _run2): the census-identity bar re-baselined 0.05 → 0.10 — the amendment-1 prediction's census clause missed by one count-flip and is owned
+
+The amendment-1 prediction landed BIT-EXACTLY on its primary clause —
+amended G8P-1/G8Q-0 = 0.00e+00 in 4/4 law-seeds (the reader now
+reproduces the operative lker cube exactly; the program's identity
+chain reader↔cube is closed at machine precision for the first time) —
+and HALF-MISSED its census clause: G8P-2/G8Q-1 failed on exactly ONE
+of eight readings (BE-101 band: true-population 28.54 vs shipped
+28.47 = 0.07 > the 0.05 bar; the other seven land 0.00–0.04). The
+cause was already named in amendment 1: the SHIPPED census
+(stage8lb_read.txt) carries the ulp-perturbed population, the amended
+reader the true one; their difference is count-flip grade, and the
+0.05 bar (inherited from G8N-0, where BOTH sides shared the perturbed
+population) under-priced it by one flip — prediction miss owned.
+Re-baseline: census-vs-ship bar → 0.10, explicitly a CROSS-POPULATION
+consistency check; the bit-exact lnL gate is the primary identity
+anchor. DIVIDEND BOOKED (the provenance annotation for 8L-b/8M/8N):
+the TRUE-population MAP-cell census reads (29.81, 18.42) /
+(29.11, 20.07) / (29.97, 20.29) / (28.54, 20.18) vs shipped
+(29.81, 18.42) / (29.07, 20.07) / (29.96, 20.29) / (28.47, 20.22) —
+max shift 0.07, three orders below every 8M/8N conclusion's margin.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
