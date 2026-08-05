@@ -376,6 +376,24 @@ if WSAT:
     ERF_GRID = np.array([0.95])
     TAG = '_wsat'
     OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
+# 8L-b (pre-reg 2eeb161): LKER=1 replaces the legacy period-smearing
+# S = min(1, P/17.8 yr) with the DERIVED PM-leakage curve
+# L(u) = 3(sin u - u cos u)/u^3, u = pi*T/P, T = 2.83 yr (gated at
+# 1.6e-9 in 8L-a; shape scout-confirmed; the 17.8-yr constant is
+# NOT FOUND in the literature).  Parameter-free; rng streams
+# untouched (S is deterministic in P), so the fcomp = 0 column is
+# kernel-independent and must equal the esec (1.0, 0.95) slice
+# EXACTLY (G8Lb-1; GB0w/GB0e skipped-disclosed).
+LKER = os.environ.get('LKER', '') == '1'
+if LKER:
+    assert AMP == 'photow' and FPME and not WSHAPE and not FUNCS \
+        and not QLAW and not ARMTAG and not ESEC and not WSRV \
+        and not WSAT, 'LKER = the landed photow3 grid, exclusive'
+    assert SAMPLE == 'full', 'the kernel round runs on the sky'
+    EIN_GRID = np.array([1.0])
+    ERF_GRID = np.array([0.95])
+    TAG = '_lker'
+    OUT = f'data/stage7j_{SAMPLE}{TAG}.txt'
 
 src = open('calcs/stage2b_population.py').read()
 ns = {}
@@ -535,7 +553,14 @@ def build_pop(seed):
         a_in = (M_h*(1+q)*P_yr**2)**(1/3)
         valid = (a_in < 130.0) & (a_in < p['a_s']/5.0)
         v_orb = 29.78*np.sqrt(M_h*(1+q)/np.maximum(a_in,1e-3))
-        S = np.minimum(1.0, P_yr/17.8)
+        if LKER:
+            # 8L-b: the derived leakage kernel (series-guarded)
+            u_ = np.pi*2.83/np.maximum(P_yr, 1e-9)
+            S = np.where(u_ < 1e-2, 1.0 - u_*u_/10.0,
+                         3.0*(np.sin(u_) - u_*np.cos(u_))
+                         / np.maximum(u_, 1e-300)**3)
+        else:
+            S = np.minimum(1.0, P_yr/17.8)
         if AMP in ('photo', 'photow'):
             # photocenter wobble: astrometry follows the light, not the
             # mass — |q/(1+q) - l/(1+l)|, l = L2/L1 from the mass-mag
@@ -549,6 +574,14 @@ def build_pop(seed):
         else:
             wfac = q/(1+q)
         w = wfac*v_orb*S/4.74047*valid
+        if LKER and k == 1:
+            sl_ = np.minimum(1.0, P_yr/17.8)
+            mm = (P_yr > 3) & (P_yr < 18)
+            P(f"G8Lb-2 kernel magnitude (slot-1 draws): L q25/50/75/90"
+              f" = {np.round(np.percentile(S, [25, 50, 75, 90]), 3).tolist()}"
+              f" vs S_legacy {np.round(np.percentile(sl_, [25, 50, 75, 90]), 3).tolist()};"
+              f" mean L/S at P 3-18 yr = "
+              f"{float(np.mean(S[mm])/np.mean(sl_[mm])):.2f}")
         wd = rng.normal(size=(N,3)); wd /= np.linalg.norm(wd,axis=1,keepdims=True)
         p['comp'][k] = dict(w=w, wd=wd, uc=rng.random(N), mh=q*M_h*valid)
     # amendment 7: the per-system width-channel draw — appended LAST so
@@ -1104,6 +1137,24 @@ def run_seed(seed):
         if PHW and QLAW:
             P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under QLAW "
               f"(q-draw differs at fcomp>0 by design; G0-q substitutes)")
+        if PHW and LKER:
+            P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under LKER "
+              f"(G8Lb-1 substitutes at the fcomp=0 column)")
+            # G8Lb-1 (8L-b pre-reg 2eeb161, abort-grade): fcomp = 0 is
+            # kernel-independent - it must equal the esec (1.0, 0.95)
+            # slice's fcomp = 0 column EXACTLY
+            esp = f'data/stage7j_cube_{SAMPLE}_esec_{seed}_{law}.npy'
+            esv = f'data/stage7j_cubevt_{SAMPLE}_esec_{seed}_{law}.npy'
+            es0 = np.load(esp)[:, :, :, 1, 2][:, :, :, 0:1]
+            d0 = float(np.nanmax(np.abs(cube[:, :, :, 0:1] - es0)))
+            dv = (float(np.nanmax(np.abs(
+                cubevt[:, :, :, 0:1]
+                - np.load(esv)[:, :, :, 1, 2][:, :, :, 0:1])))
+                if os.path.exists(esv) else 0.0)
+            P(f"G8Lb-1 {SAMPLE} seed {seed} {law}: max|lker(fcomp=0)-"
+              f"esec| = {d0:.2e} / vt {dv:.2e} -> "
+              f"{'PASS' if max(d0, dv) <= 1e-9 else 'FAIL'}")
+            assert max(d0, dv) <= 1e-9, f'G8Lb-1 FAILED {law} seed {seed}'
         if PHW and WSAT:
             P(f"GB0w/GB0e {SAMPLE} seed {seed} {law}: SKIPPED under WSAT "
               f"(G8J-0 substitutes at the saturation-off slice)")
@@ -1160,7 +1211,8 @@ def run_seed(seed):
               f" = {d0:.2e} / vt {dv:.2e} -> "
               f"{'PASS' if max(d0, dv) <= 1e-9 else 'FAIL'}")
             assert max(d0, dv) <= 1e-9, f'G8G-0 FAILED {law} seed {seed}'
-        if PHW and not QLAW and not ESEC and not WSRV and not WSAT:
+        if PHW and not QLAW and not ESEC and not WSRV and not WSAT \
+                and not LKER:
             # GB0w: the sq=0 slice must reproduce the cached photo cube
             # (fpm axis sliced to the photo grid length under FPME)
             php = f'data/stage7j_cube_{SAMPLE}_photo_{seed}_{law}.npy'
