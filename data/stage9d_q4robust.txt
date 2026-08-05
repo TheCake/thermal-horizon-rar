@@ -1,0 +1,26 @@
+9D THE Q4 ROBUSTNESS PAIR (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+Q4 extended grids: fpm to 4.2, sq to 0.5
+
+[simple 31] G9D-0 cube identity: max|d| = 0.00e+00 -> PASS
+[simple 31] G9D-1 free_std regression: a_hat = 0.446 vs 9A 0.446 -> PASS
+[simple 31] a_hat std/drop/ext = 0.446/0.000/0.442; d(drop) = -0.446, d(ext) = -0.003; Q4ext at a_ext: fpm=4.2 sq=0.3 fpm-EDGE
+
+[BE 31] G9D-0 cube identity: max|d| = 0.00e+00 -> PASS
+[BE 31] G9D-1 free_std regression: a_hat = 0.522 vs 9A 0.522 -> PASS
+[BE 31] a_hat std/drop/ext = 0.522/0.000/0.467; d(drop) = -0.522, d(ext) = -0.054; Q4ext at a_ext: fpm=4.2 sq=0.3 fpm-EDGE
+
+[simple 101] G9D-0 cube identity: max|d| = 0.00e+00 -> PASS
+[simple 101] G9D-1 free_std regression: a_hat = 0.472 vs 9A 0.472 -> PASS
+[simple 101] a_hat std/drop/ext = 0.472/0.000/0.385; d(drop) = -0.472, d(ext) = -0.088; Q4ext at a_ext: fpm=4.2 sq=0.3 fpm-EDGE
+
+[BE 101] G9D-0 cube identity: max|d| = 0.00e+00 -> PASS
+[BE 101] G9D-1 free_std regression: a_hat = 0.420 vs 9A 0.420 -> PASS
+[BE 101] a_hat std/drop/ext = 0.420/0.000/0.000; d(drop) = -0.420, d(ext) = -0.420; Q4ext at a_ext: fpm=4.2 sq=0.3 fpm-EDGE
+
+GATES: G9D-0 4/4, G9D-1 4/4 - ALL PASS
+
+D-bars: D1-rows 0/4 (both |d| <= 0.15); D2-rows 4/4 (|d(drop)| >= 0.25)
+==> 9D VERDICT (locked grammar): Q4-CARRIED - the alpha signal depends on the worst-RUWE quartile; the 9A reading is DOWNGRADED and the stratified successor must resolve Q4 first.
+    NO credence movement (pre-stated; measurement round).
+
+done (28.3 min)

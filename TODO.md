@@ -743,6 +743,22 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     extension; the Q4-DROPPED robustness fit (α on Q1–Q3, named
     not run). The width-model threat to the anomaly is DE-FANGED
     at block grade.**
+    **9D EXECUTED 2026-08-05 (pre-reg 4c27986): Q4-CARRIED 4/4 —
+    dropping the worst-RUWE quartile ZEROES block-grade α̂ in
+    every law-seed (0.42–0.52 → 0.000); Q4-extended fpm rides the
+    new 4.2 edge 4/4. The 9A "de-fanged" reading is DOWNGRADED at
+    its own grade (ledger 9A → CO-QUOTED). THE QUALITY-
+    CONCENTRATION OBJECT named: 7I-S + 8W + 9D = one object.
+    Caveats: block grade; drop-profile sharpness unprinted
+    (successor must print profiles). **THE MARGINAL STRATIFIED
+    RE-RUN IS NOW REQUIRED (top binary queue item; cube-grade,
+    heavy).** 9E same-day model-light cross-check: the core is
+    ALIVE in the clean quartile (B(Q1) = 1.122, second-highest;
+    B(all) = 1.0779 = the anchor reproduced; Q4 elevation +0.077
+    not significant, P = 0.15; GRAY by the letter) — the 7I-S
+    pattern (fitted collapses, model-light survives) reproduced
+    at quartile resolution; the collapse reads fitted-channel on
+    current evidence, arbitration = the marginal re-run.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
@@ -916,6 +932,18 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     correction-lever → quality flag). Remaining: Σ_gas(R)-weighted
     AD (external HI data) or genuine slow-dwarf physics; the
     V-ordering = the structure to explain.**
+    **9C EXECUTED 2026-08-05 (pre-reg 4c27986): OUT-OF-REACH and
+    SIGN-INVERTED — the radius-weighted correction makes the dial
+    WORSE (λ̂ −1.309 → −1.371 monotone to σ=15; DD control −0.08);
+    the dial is NOT under-corrected pressure support (shape-level
+    kill on top of 8Y's amplitude kill); pressure hypothesis DEAD
+    in-catalog. Model-feasibility miss owned (Σ(RHI)=1 anchor
+    infeasible, solved 0/149; pre-registered fallback Rg=Rmax/2
+    carried the stage; verdict a-fortiori robust). SIXTH control.
+    The GD dial now reads: genuine physics in slow gas-rich
+    dwarfs, or a systematic outside every tested class; external
+    Σ_gas(R) data would need the measured sign to flip, which no
+    Σ shape provides. The V-ordering stands as the structure.**
 26. **Referee queue (adoption candidates)**: T2
     external-RV cross-check — **ARCHIVE PASS EXECUTED as Stage 8O
     (2026-08-05, pre-reg 1e7c89a + two pre-quote wiring amendments,

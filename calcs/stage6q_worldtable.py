@@ -408,6 +408,19 @@ CHECKS = [
      'data/stage9b_qflag.txt'),
     ('gal-9b-qflag', '[D_Q = Q1-Q2] pct 5/50/95 = -2.541/+0.000/'
      '+1.740; P(D_Q <= 0) = 0.5367', 'data/stage9b_qflag.txt'),
+    ('gal-9c-adcorr', 'GATES: G9C-0/1/2 ALL PASS',
+     'data/stage9c_adcorr.txt'),
+    ('gal-9c-adcorr', '[GD sigma-curve] sigma=15.0: lam_hat = '
+     '-1.371', 'data/stage9c_adcorr.txt'),
+    ('bin-9d-q4robust', 'GATES: G9D-0 4/4, G9D-1 4/4 - ALL PASS',
+     'data/stage9d_q4robust.txt'),
+    ('bin-9d-q4robust', 'D-bars: D1-rows 0/4 (both |d| <= 0.15); '
+     'D2-rows 4/4 (|d(drop)| >= 0.25)',
+     'data/stage9d_q4robust.txt'),
+    ('bin-9e-mlquality', 'GATES: G9E-0/1/2 ALL PASS',
+     'data/stage9e_mlquality.txt'),
+    ('bin-9e-mlquality', '[Q1] B = 1.1216 (wide med 0.6042 / '
+     'narrow med 0.5387)', 'data/stage9e_mlquality.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

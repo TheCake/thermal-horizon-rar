@@ -1,0 +1,22 @@
+9C THE RADIUS-DEPENDENT AD CORRECTION (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+G9C-2 Rg accounting: solved 0, fallback 149; Rg pct 10/50/90 = 2.1/6.2/23.0 kpc; GD correction fraction (sigma=10) pct 50/90/max = 0.03/0.07/0.34
+G9C-0 sigma=0: lg identity max|d| = 0.00e+00; GD lam_hat = -1.309 vs 8X -1.309 -> PASS
+G9C-1 fast-vs-slow (12 probes, sigma 0/10/15): max|d| = 1.32e-11 -> PASS
+GATES: G9C-0/1/2 ALL PASS
+
+[GD sigma-curve] sigma= 0.0: lam_hat = -1.309
+[GD sigma-curve] sigma= 8.0: lam_hat = -1.324
+[GD sigma-curve] sigma=10.0: lam_hat = -1.334
+[GD sigma-curve] sigma=12.0: lam_hat = -1.346
+[GD sigma-curve] sigma=15.0: lam_hat = -1.371
+[DD control] sigma=0: +1.337; sigma=10: +1.258 (d = -0.079)
+sigma*(lam=-1): NOT REACHED by sigma=15
+sigma*(lam=-0.5): NOT REACHED by sigma=15
+sigma*(lam=0): NOT REACHED by sigma=15
+
+[GD sigma=10 bootstrap x100] pct 5/50/95 = -2.000/-1.385/-0.327
+
+==> 9C VERDICT (locked grammar): OUT-OF-REACH - the radius-dependent version also fails at catalog grade; the pressure story is dead here; remaining = external Sigma_gas(R) data or genuine physics.
+    NO credence movement (pre-stated; measurement round).
+
+done (0.7 min)

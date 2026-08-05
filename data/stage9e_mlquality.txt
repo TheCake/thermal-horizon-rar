@@ -1,0 +1,22 @@
+9E THE MODEL-LIGHT QUALITY CROSS-CHECK (pre-reg committed BEFORE the run; measurement round; NO credence movement)
+G9E-2 quartile edges = 1.051/1.118/1.231 vs 8Z/9A 1.051/1.118/1.231 -> PASS
+  Q1: wide 480, narrow 2203
+  Q2: wide 409, narrow 2372
+  Q3: wide 281, narrow 2635
+  Q4: wide 267, narrow 2740
+G9E-0 count conservation -> PASS; rng = default_rng(71) (G9E-1)
+GATES: G9E-0/1/2 ALL PASS
+
+[all] B = 1.0779 (wide med 0.5983 / narrow med 0.5550)
+[Q1] B = 1.1216 (wide med 0.6042 / narrow med 0.5387)
+[Q2] B = 1.0355 (wide med 0.5540 / narrow med 0.5351)
+[Q3] B = 1.0700 (wide med 0.5702 / narrow med 0.5329)
+[Q4] B = 1.1498 (wide med 0.6977 / narrow med 0.6068)
+[Q123] B = 1.0728; [Q4] B = 1.1498; D = B(Q4)-B(Q123) = +0.0770
+
+bootstrap x2000: D pct 5/50/95 = -0.0428/+0.0669/+0.1869; P(D <= 0) = 0.1530; P(sign flip) = 0.1530
+
+==> 9E VERDICT (locked grammar): GRAY-CARRIED - quoted as the measurement.
+    NO credence movement (pre-stated; measurement round).
+
+done (0.0 min)

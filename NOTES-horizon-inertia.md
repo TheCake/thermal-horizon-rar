@@ -11733,6 +11733,47 @@ CORE-CARRIED iff Δ ≥ 0.10 AND P(Δ ≤ 0) ≤ 0.05 (the anomaly's core
 is quality-carried — mortal-danger flag; next review round's map
 decides). E3 GRAY-CARRIED else.
 
+## Stage 9E EXECUTED (2026-08-05, first run, ALL GATES PASS): GRAY-CARRIED by the letter — and the core is ALIVE IN THE CLEAN QUARTILE: B(Q1) = 1.122; the 9D threat is not corroborated model-light
+
+Gates: G9E-0/1/2 all PASS (quartile edges = 8Z/9A exact). 0.0 min
+(instant statistic). A consistency dividend: the in-script
+wide/narrow double-ratio lands B(all) = 1.0779 — the corrected
+anchor 1.078 reproduced by construction-independent arithmetic.
+
+Results: B(Q1..Q4) = 1.1216 / 1.0355 / 1.0700 / 1.1498; **the
+CLEANEST quartile carries the boost at full strength** (second-
+highest); Q4 elevation D = B(Q4) − B(Q123) = +0.077, NOT
+significant (P(D ≤ 0) = 0.153; 5/50/95 = −0.043/+0.067/+0.187);
+pattern non-monotone (Q2 lowest) — not a quality-dose shape. Q4's
+narrow-arm median is 13% elevated (its noise floor inflates both
+arms — the double-ratio design controls exactly this). Letter:
+E1 missed by margins (|D| 0.077 vs 0.05; P(flip) 0.153 vs 0.20),
+E2 not met ⇒ GRAY.
+
+Standing after the 9D/9E pair: the fitted-α block-grade collapse
+(9D) coexists with a model-light core alive in the clean quartile
+(9E) — the split REPRODUCES the 7I-S pattern (fitted collapses,
+model-light survives) now at quartile resolution. The
+quality-concentration object is therefore about the FITTED
+channel's absorber field, not (on current evidence) about the
+anomaly's core — but the letter is GRAY, not acquittal. THE
+REQUIRED ARBITER (fired by 9D's D2): the full marginal re-run
+with stratified noise, profiles printed. Queued as the top binary
+item; heavier than a block round (cube-grade).
+
+Plain verdict: SUCCESS as a measurement (the core's quartile map;
+the anchor reproduced); the fitted-channel question stays OPEN
+pending the marginal arbiter.
+
+ELI12: Emergency check after the scare: forget all fancy fitting
+— just the raw speed excess, quality grade by quality grade. The
+cleanest quarter of the sky shows the full effect (bigger than
+average, even). So the anomaly isn't made of bad measurements.
+The scare stage's zero was about how the fancy fitter distributes
+blame when you remove its noisiest students — the big careful
+re-run will settle that — but the thing itself is visible in the
+best data we have.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
