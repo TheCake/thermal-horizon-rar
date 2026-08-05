@@ -11618,6 +11618,121 @@ pathological stratum). D2 Q4-CARRIED iff |α̂_drop − α̂_std| ≥
 0.25 in ≥3/4. D3 GRAY-CARRIED else. Co-read: Q4-extended
 (sq̂, fpm̂) interior-or-edge.
 
+## Stage 9C EXECUTED (2026-08-05, first run, ALL GATES PASS): OUT-OF-REACH — and SIGN-INVERTED: the radius-weighted pressure correction makes the GD dial WORSE; the pressure story is dead in-catalog at both amplitude and shape
+
+Gates: G9C-0 σ=0 bit-identity + GD = 8X's −1.309 exact; G9C-1
+engine probes 1.32e-11; G9C-2 accounting — and the accounting IS a
+finding: **R_g solved 0 / fallback 149**. The primary model
+(exponential disk anchored at Σ_HI(RHI) = 1) is INFEASIBLE at
+SPARC values — the peak of Σ(RHI) over R_g sits below 1 M☉/pc²
+for typical (MHI, RHI); my design-time root-existence check was
+wrong (owned — I worked an example that had no root and misread
+it). The stage ran entirely on the pre-registered fallback R_g =
+R_max/2 (outer slope dlnΣ/dlnR = −2 at the edge — a reasonable
+outer-disk value); correction fractions at σ=10: GD median 3%,
+90th 7%, max 34% of V². 0.7 min.
+
+THE MEASUREMENT: λ̂_GD(σ) = −1.309 / −1.324 / −1.334 / −1.346 /
+−1.371 at σ = 0/8/10/12/15 — **monotone in the WRONG direction**;
+σ* NOT REACHED for any threshold; DD control −0.079 (no bluntness
+flag); 100-rep bootstrap at σ=10: −2.000/−1.385/−0.327. Verdict
+OUT-OF-REACH by the letter, a fortiori robust to the R_g
+feasibility miss: ANY positive radius-weighted correction moves
+λ̂ the measured wrong way. Physics: raising the deep outer points
+tilts the GD arm toward even LESS boost — the dial is NOT the
+signature of under-corrected pressure support. Combined with 8Y
+(amplitude) the pressure hypothesis is dead at catalog grade;
+remaining: genuine physics in slow gas-rich dwarfs, or a
+systematic outside the pressure class (external Σ_gas(R) data
+would now need the sign to flip, which no Σ shape provides).
+
+Plain verdict: SUCCESS as a kill — the last cheap mundane
+explanation of the GD dial is excluded in both its forms; the
+model-feasibility miss is owned (fallback carried the stage,
+pre-registered as such).
+
+ELI12: We gave the gas-pressure idea its best fair shot: the
+correction now grows toward each galaxy's edge, where it should
+matter most. Result: applying it makes the disagreement slightly
+WORSE, not better — the data bend the opposite way from what the
+pressure fix predicts. So pressure isn't secretly faking the
+dwarfs' answer; something about slow gas-rich dwarfs is genuinely
+different. (Also owned: our fancy formula for each galaxy's gas
+size had no solution — a design bug — so the simple backup rule
+ran the show; the wrong-way result doesn't depend on that
+detail.)
+
+## Stage 9D EXECUTED (2026-08-05, first run, ALL GATES PASS): Q4-CARRIED 4/4 — at block grade the α localization lives in the worst-RUWE quartile; 9A's "de-fanged" reading is DOWNGRADED at its own grade
+
+Gates: G9D-0 cube bit-identity 0.00e+00 4/4; G9D-1 free_std α̂
+reproduces 9A exactly (0.446/0.522/0.472/0.420). 28.3 min.
+
+Results: α̂ std/drop/ext = 0.446/0.000/0.442, 0.522/0.000/0.467,
+0.472/0.000/0.385, 0.420/0.000/0.000 — **d(drop) = −0.42…−0.52 in
+4/4 (D2 fired)**; the decensor read keeps α̂ in 3/4 but Q4's fpm
+rides the NEW 4.2 edge in 4/4 (the pathological stratum's noise
+demand chases any grid top; sq̂ settles at 0.3 interior once fpm
+is freer). The clean 75% of the catalog (Q1–Q3), under honest
+per-stratum noise, puts block-grade α̂ AT ZERO in every law-seed.
+Instrument-grade caveats carried: frozen η/wr, profile+LNPI, the
+drop-profile SHARPNESS not printed (lean-output miss — how many
+lnL α=0 wins by is unrecorded here; the successor must print
+profiles).
+
+Consequence chain (booked): (1) 9A's concluding reading ("the
+width-model threat is de-fanged at block grade") is SUPERSEDED by
+this stage's D2 — the 9A measurements stand, the reading does
+not; ledger bin-9a-stratalpha → CO-QUOTED with pointer. (2) The
+7I-S strict-cut collapse, the 8W width address, and this stage
+are ONE OBJECT — THE QUALITY-CONCENTRATION OBJECT: fitted-α
+collapses under quality restriction while (as of 7I) model-light
+statistics survived it. (3) The decisive next instrument is
+therefore the MODEL-LIGHT quality cross-check (9E, pre-registered
+below): does the fit-free median boost concentrate in Q4? If the
+core is quality-blind, the fitted-α concentration reads as an
+absorber-field/power effect at block grade and the full marginal
+stratified re-run (now REQUIRED per the fired clause) arbitrates;
+if the core is ALSO Q4-carried, the anomaly itself is in mortal
+danger and the next review round's credence map handles it.
+
+Plain verdict: NEEDS REFINEMENT (the reading, not the gates) —
+the sharpest internal threat in the program is now open and
+named; no credence movement this round (pre-stated), the movement
+belongs to the pre-signed successors.
+
+ELI12: Bad news round. Take away the quarter of star pairs with
+the wobbliest position-tracking, and — at this quick-look grade —
+the gravity-boost knob falls to zero on the clean three-quarters.
+So either the boost evidence really lives in the flagged pairs
+(very bad for the anomaly), or this quick instrument loses its
+power without them (the full careful machine must re-decide).
+Before panic: the anomaly's simplest number — the raw median
+speed excess, no model at all — survived exactly this kind of cut
+before. Checking THAT against the quality grades is the next,
+nearly-free test, and we pre-registered it before running.
+
+## Stage 9E pre-registration (2026-08-05, committed before the run): THE MODEL-LIGHT QUALITY CROSS-CHECK
+
+Measurement round; no credence movement (any move belongs to the
+next review round's pre-signed map). Ledger row: bin-9e-mlquality.
+([calcs/stage9e_mlquality.py](calcs/stage9e_mlquality.py)) The
+fit-free core statistic per RUWE quartile: B(q) = median(ṽ | wide,
+q) / median(ṽ | narrow, q) with wide = s ∈ [6, 50) kAU, narrow =
+s ∈ [0.2, 2) kAU (the narrow arm ≈ Newtonian internal control;
+quartile-level common modes cancel to first order in the ratio);
+corrected-kernel ṽ (the in-script vt_d). Report B(all), B(Q1..Q4),
+Δ = B(Q4) − B(Q123 pooled), 2000-rep pair-bootstrap CIs; also the
+raw wide-arm medians per quartile (no ratio) as the co-read.
+Gates: G9E-0 count conservation (quartile × arm cells sum);
+G9E-1 rng logged; G9E-2 the quartile edges match 8Z/9A (1.051/
+1.118/1.231). Bars: E1 CORE-BLIND iff |Δ| ≤ 0.05 OR P(sign flip)
+≥ 0.20 (the model-light core does not concentrate in Q4 — the 9D
+collapse reads as an absorber/power effect at block grade; the
+marginal stratified re-run arbitrates the fitted channel). E2
+CORE-CARRIED iff Δ ≥ 0.10 AND P(Δ ≤ 0) ≤ 0.05 (the anomaly's core
+is quality-carried — mortal-danger flag; next review round's map
+decides). E3 GRAY-CARRIED else.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
