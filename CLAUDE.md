@@ -1303,6 +1303,13 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
   WIDTH at σ* = 0.02, one measurement away; scalar conversions between
   differently-weighted moments of a distribution are the same trap — pass the
   distribution, per the q-moments audit).
+- Reader/lift scripts copy model expressions BIT-VERBATIM including the
+  arithmetic FORM of constants (0.995−erf ≠ literal 0.045 by 4e-17; the
+  near-parabolic integrator amplifies ulp-level input differences to ~10 lnL
+  at floor-amplified likelihood cells while census stays half-count-blind —
+  8P/8Q amendment 1, caught by the program's first lnL-grade identity gate).
+  Wherever a stored cube exists, gate reader identity at lnL grade, not
+  census grade.
 - Known trap fingerprints already caught here: axial-angle double-fold (R→2/π exactly);
   non-conservative EFE recipe (energy pumping, ṽ→7.4); IC/a₀-convention biases; phantom-
   source sign (repulsive halo, boost<1); grid-edge maxima (the retracted bullseye). Suspect

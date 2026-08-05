@@ -1,0 +1,32 @@
+[0.2 min] marginal head loaded (SAMPLE=full, AMP=photow, FPME=True, LKER=True, N=500000, FPM_GRID=[1.2, 1.5, 1.8, 2.1, 2.4, 3.0], SQ_GRID=[0.0, 0.1, 0.2, 0.3])
+[0.4 min] reader head loaded
+bin0: data_2d identical = True; noise_pool identical = True (len M=9950, R=9950); UNI_B identical = True; FLY_B identical = True
+bin1: data_2d identical = True; noise_pool identical = True (len M=2684, R=2684); UNI_B identical = True; FLY_B identical = True
+bin2: data_2d identical = True; noise_pool identical = True (len M=1223, R=1223); UNI_B identical = True; FLY_B identical = True
+bin3: data_2d identical = True; noise_pool identical = True (len M=214, R=214); UNI_B identical = True; FLY_B identical = True
+SC2 identical = True; VE identical = True; GE identical = True
+[0.4 min] populations built
+pop[a_s  ]: IDENTICAL
+pop[u_e  ]: IDENTICAL
+pop[psi0 ]: IDENTICAL
+pop[f_ip ]: IDENTICAL
+pop[M_s  ]: IDENTICAL
+pop[uph  ]: IDENTICAL
+pop[u_mix]: IDENTICAL
+pop[gn1  ]: IDENTICAL
+pop[gn2  ]: IDENTICAL
+pop[gs   ]: IDENTICAL
+comp1[w ]: IDENTICAL
+comp1[uc]: IDENTICAL
+comp1[mh]: IDENTICAL
+comp2[w ]: IDENTICAL
+comp2[uc]: IDENTICAL
+comp2[mh]: IDENTICAL
+pick: ['IDENTICAL', 'IDENTICAL', 'IDENTICAL', 'IDENTICAL']
+[0.5 min] orbits done; running lnL_point...
+[0.6 min] (a) marginal-driven l2 vs stored cube: max|d| = 0.000e+00  == CODE+DATA UNCHANGED (cube reproducible)
+(c) reader eval_block on marginal pop + same orbits vs cube slice: max|d| = 0.000e+00
+(c2) reader eval_block vs marginal l2 (same pop, same orbits): max|d| = 0.000e+00  == ASSEMBLY PARITY EXACT
+orbit determinism (two identical run() calls): max|d o| = 0.000e+00  == DETERMINISTIC
+
+done (0.9 min)

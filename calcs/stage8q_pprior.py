@@ -283,7 +283,13 @@ def e_of_x(p, eta, wr):
     al = np.interp(np.log10(p['a_s']), np.log10([100,500,1000,50000]),
                    [0.6, 1.0, eta, eta])
     e_pow = 0.95*p['u_e']**(1/(1+al))
-    e_rad = 0.95+0.045*p['u_e']
+    # amendment 1: BIT-VERBATIM marginal expression — the slope must be
+    # written 0.995-erf, not the literal 0.045 (they differ by 4.2e-17
+    # and the near-parabolic integrator amplifies it to keep-boundary
+    # flips worth up to ~10 lnL at floor-amplified cells; the 8L-b
+    # reader lineage carried the literal; see stage8pq_diag2)
+    erf = 0.95
+    e_rad = erf+(0.995-erf)*p['u_e']
     return np.where(p['u_mix'] < wr, e_rad, e_pow)
 
 def vp_c(p, e_s, tab_a):

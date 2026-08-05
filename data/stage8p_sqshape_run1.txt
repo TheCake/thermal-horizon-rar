@@ -1,0 +1,49 @@
+8P THE SQ-TAIL SHAPE CONTEST (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+data N per bin = [9950, 2684, 1223, 214]; observed pair = (band 9, cliff 2); shapes = ['logn', 'clip2', 'ulog', 'twopt', 'lapl']; sq grid = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5] (cube = first 4); clip2 rescale c2 = 1.042268
+
+[seed 31] G8P-3 logn : mean=-0.0019, var=0.9988 -> PASS
+[seed 31] G8P-3 clip2: mean=-0.0018, var=0.9983 -> PASS
+[seed 31] G8P-3 ulog : mean=-0.0018, var=0.9986 -> PASS
+[seed 31] G8P-3 twopt: mean=-0.0017, var=1.0000 -> PASS
+[seed 31] G8P-3 lapl : mean=-0.0018, var=0.9994 -> PASS
+[simple 31] G8P-1 cube identity at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 1.01e+01 -> FAIL
+[simple 31] G8P-2 census identity: mu=(29.81, 18.42) vs shipped (29.81, 18.42) -> PASS
+[simple 31] logn : Dkin=   +0.00 (pure    +0.00); cell fcomp=0.10 ffly=0.05 fpm=2.4 kw=0.7 sq=0.2; P(fpm=3.0)=0.25 P(sq>0.3)=0.00; census@prof mu=(29.81, 18.42) pmf9=5.8e-06 pmf2=1.7e-06; census@fixed mu=(29.81, 18.42); kw-floor
+[simple 31] clip2: Dkin=   -0.31 (pure    -0.31); cell fcomp=0.10 ffly=0.05 fpm=2.4 kw=0.7 sq=0.2; P(fpm=3.0)=0.02 P(sq>0.3)=0.00; census@prof mu=(30.25, 18.01) pmf9=4.3e-06 pmf2=2.4e-06; census@fixed mu=(30.25, 18.01); kw-floor
+[simple 31] ulog : Dkin=   -3.57 (pure    -3.57); cell fcomp=0.10 ffly=0.05 fpm=2.4 kw=0.7 sq=0.2; P(fpm=3.0)=0.01 P(sq>0.3)=0.00; census@prof mu=(27.62, 18.02) pmf9=2.6e-05 pmf2=2.4e-06; census@fixed mu=(27.62, 18.02); kw-floor
+[simple 31] twopt: Dkin=  -12.48 (pure   -12.48); cell fcomp=0.10 ffly=0.05 fpm=2.4 kw=0.7 sq=0.2; P(fpm=3.0)=0.37 P(sq>0.3)=0.00; census@prof mu=(27.25, 15.91) pmf9=3.3e-05 pmf2=1.6e-05; census@fixed mu=(27.25, 15.91); kw-floor
+[simple 31] lapl : Dkin=   +0.84 (pure    +0.84); cell fcomp=0.10 ffly=0.05 fpm=2.1 kw=0.7 sq=0.2; P(fpm=3.0)=0.24 P(sq>0.3)=0.00; census@prof mu=(28.25, 21.06) pmf9=1.7e-05 pmf2=1.6e-07; census@fixed mu=(28.68, 20.98); kw-floor
+
+[BE 31] G8P-1 cube identity at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 2.61e+00 -> FAIL
+[BE 31] G8P-2 census identity: mu=(29.07, 20.07) vs shipped (29.07, 20.07) -> PASS
+[BE 31] logn : Dkin=   +0.00 (pure    +0.00); cell fcomp=0.10 ffly=0.05 fpm=2.4 kw=0.7 sq=0.2; P(fpm=3.0)=0.22 P(sq>0.3)=0.00; census@prof mu=(29.07, 20.07) pmf9=9.7e-06 pmf2=3.9e-07; census@fixed mu=(29.07, 20.07); kw-floor
+[BE 31] clip2: Dkin=   -1.13 (pure    -1.13); cell fcomp=0.10 ffly=0.05 fpm=2.4 kw=0.7 sq=0.2; P(fpm=3.0)=0.12 P(sq>0.3)=0.00; census@prof mu=(29.64, 19.54) pmf9=6.5e-06 pmf2=6.2e-07; census@fixed mu=(29.64, 19.54); kw-floor
+[BE 31] ulog : Dkin=   -4.39 (pure    -4.39); cell fcomp=0.10 ffly=0.05 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=0.52 P(sq>0.3)=0.00; census@prof mu=(29.38, 19.26) pmf9=7.8e-06 pmf2=8.0e-07; census@fixed mu=(28.33, 18.73); fpm=3.0-EDGE,kw-floor
+[BE 31] twopt: Dkin=  -14.97 (pure   -14.97); cell fcomp=0.10 ffly=0.05 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=0.87 P(sq>0.3)=0.00; census@prof mu=(28.62, 16.37) pmf9=1.3e-05 pmf2=1.0e-05; census@fixed mu=(27.92, 15.72); fpm=3.0-EDGE,kw-floor
+[BE 31] lapl : Dkin=   -0.29 (pure    -0.29); cell fcomp=0.10 ffly=0.05 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=0.81 P(sq>0.3)=0.00; census@prof mu=(27.97, 22.27) pmf9=2.1e-05 pmf2=5.3e-08; census@fixed mu=(27.21, 21.80); fpm=3.0-EDGE,kw-floor
+
+[seed 101] G8P-3 logn : mean=+0.0019, var=0.9976 -> PASS
+[seed 101] G8P-3 clip2: mean=+0.0019, var=0.9974 -> PASS
+[seed 101] G8P-3 ulog : mean=+0.0016, var=0.9979 -> PASS
+[seed 101] G8P-3 twopt: mean=+0.0015, var=1.0000 -> PASS
+[seed 101] G8P-3 lapl : mean=+0.0021, var=0.9973 -> PASS
+[simple 101] G8P-1 cube identity at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 6.65e+00 -> FAIL
+[simple 101] G8P-2 census identity: mu=(29.96, 20.29) vs shipped (29.96, 20.29) -> PASS
+[simple 101] logn : Dkin=   +0.00 (pure    +0.00); cell fcomp=0.10 ffly=0.05 fpm=2.1 kw=0.7 sq=0.2; P(fpm=3.0)=0.08 P(sq>0.3)=0.00; census@prof mu=(29.96, 20.29) pmf9=5.2e-06 pmf2=3.2e-07; census@fixed mu=(29.96, 20.29); kw-floor
+[simple 101] clip2: Dkin=   -2.05 (pure    -2.05); cell fcomp=0.10 ffly=0.05 fpm=2.1 kw=0.7 sq=0.2; P(fpm=3.0)=0.17 P(sq>0.3)=0.00; census@prof mu=(30.68, 19.36) pmf9=3.2e-06 pmf2=7.4e-07; census@fixed mu=(30.68, 19.36); kw-floor
+[simple 101] ulog : Dkin=   -1.75 (pure    -1.75); cell fcomp=0.10 ffly=0.05 fpm=2.1 kw=0.7 sq=0.2; P(fpm=3.0)=0.05 P(sq>0.3)=0.00; census@prof mu=(29.80, 18.42) pmf9=5.8e-06 pmf2=1.7e-06; census@fixed mu=(29.80, 18.42); kw-floor
+[simple 101] twopt: Dkin=  -12.32 (pure   -12.32); cell fcomp=0.10 ffly=0.05 fpm=2.1 kw=0.7 sq=0.2; P(fpm=3.0)=0.05 P(sq>0.3)=0.00; census@prof mu=(28.75, 16.13) pmf9=1.2e-05 pmf2=1.3e-05; census@fixed mu=(28.75, 16.13); kw-floor
+[simple 101] lapl : Dkin=   -0.15 (pure    -0.15); cell fcomp=0.10 ffly=0.05 fpm=2.1 kw=0.7 sq=0.2; P(fpm=3.0)=0.02 P(sq>0.3)=0.00; census@prof mu=(29.60, 21.39) pmf9=6.7e-06 pmf2=1.2e-07; census@fixed mu=(29.60, 21.39); kw-floor
+
+[BE 101] G8P-1 cube identity at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 2.92e+00 -> FAIL
+[BE 101] G8P-2 census identity: mu=(28.47, 20.22) vs shipped (28.47, 20.22) -> PASS
+[BE 101] logn : Dkin=   +0.00 (pure    +0.00); cell fcomp=0.10 ffly=0.05 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=1.00 P(sq>0.3)=0.00; census@prof mu=(28.47, 20.22) pmf9=1.5e-05 pmf2=3.4e-07; census@fixed mu=(28.47, 20.22); fpm=3.0-EDGE,kw-floor
+[BE 101] clip2: Dkin=   +0.16 (pure    +0.16); cell fcomp=0.10 ffly=0.05 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=1.00 P(sq>0.3)=0.00; census@prof mu=(28.51, 19.63) pmf9=1.4e-05 pmf2=5.7e-07; census@fixed mu=(28.51, 19.63); fpm=3.0-EDGE,kw-floor
+[BE 101] ulog : Dkin=   -2.45 (pure    -2.45); cell fcomp=0.10 ffly=0.05 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=1.00 P(sq>0.3)=0.00; census@prof mu=(29.24, 17.97) pmf9=8.6e-06 pmf2=2.5e-06; census@fixed mu=(29.24, 17.97); fpm=3.0-EDGE,kw-floor
+[BE 101] twopt: Dkin=  -16.55 (pure   -16.55); cell fcomp=0.10 ffly=0.05 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=1.00 P(sq>0.3)=0.00; census@prof mu=(29.19, 16.02) pmf9=8.9e-06 pmf2=1.4e-05; census@fixed mu=(29.19, 16.02); fpm=3.0-EDGE,kw-floor
+[BE 101] lapl : Dkin=   -0.26 (pure    -0.26); cell fcomp=0.10 ffly=0.05 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=1.00 P(sq>0.3)=0.00; census@prof mu=(27.25, 22.30) pmf9=3.3e-05 pmf2=5.1e-08; census@fixed mu=(27.25, 22.30); fpm=3.0-EDGE,kw-floor
+
+GATES FAILED (G8P-0 PASS, G8P-1 FAIL, G8P-2 PASS, G8P-3 PASS) - STOP; DO NOT QUOTE; verdict WITHHELD
+WINNER: none
+
+done (3.4 min)

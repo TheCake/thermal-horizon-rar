@@ -10416,6 +10416,49 @@ cube-grade re-run (alpha under the repaired model) is the named
 final-stamp decider — a successor round, NOT this one; no credence
 move either way here.
 
+### 8P/8Q AMENDMENT 1 (2026-08-05, logged PRE-QUOTE, all runs preserved): a 4e-17 constant — the program's first lnL-grade identity gate catches an ulp-divergent expression the census-grade gates were structurally blind to
+
+Run-1 of both stages STOPPED by their own gates: G8P-1/G8Q-0 cube
+identity missed at 2.6–10.1 lnL (law-seed-dependent, DETERMINISTIC —
+bit-identical across the two concurrently-running scripts and across a
+solo re-run; the concurrency hypothesis tested and excluded), while
+census identity was simultaneously EXACT 4/4. Records preserved
+(data/stage8p_sqshape_run1.txt, data/stage8q_pprior_run1.txt).
+
+Diagnosis ([calcs/stage8pq_diag.py](calcs/stage8pq_diag.py) +
+[calcs/stage8pq_diag2.py](calcs/stage8pq_diag2.py), records
+committed): data-side objects, all population arrays, pick streams,
+assembly, and orbit determinism are BIT-IDENTICAL between the marginal
+and the reader; the marginal-driven lnL block reproduces the stored
+lker cube at 0.000e+00 exactly; the SOLE remaining difference is one
+expression — the reader lineage writes the radial-branch eccentricity
+slope as the literal 0.045
+([calcs/stage8lb_read.py:172](calcs/stage8lb_read.py#L172), inherited
+verbatim by 8N and then 8P/8Q), while the marginal computes
+erf+(0.995−erf) — and 0.995−0.95 differs from the literal 0.045 by
+4.16e-17. The near-parabolic (e ≈ 0.95–0.995) orbit integration
+amplifies that ulp-level eccentricity difference into macroscopic
+phase shifts for a subset of systems → keep/bin-boundary flips →
+whole-lnL-unit moves at probability-floor-amplified likelihood cells,
+while every census statistic stays inside half-count tolerance. That
+asymmetry is exactly WHY four consecutive census-grade gates (8L-b,
+8M, 8N ×2) passed over it and the first lnL-grade identity gate caught
+it on first firing — the GB0w corollary again: gates only catch what
+someone thought to write.
+
+FIX (this amendment): e_of_x in 8P/8Q rewritten to the bit-verbatim
+marginal expression. NOT re-run: the shipped 8L-b/8N records STAND at
+their stated tolerances — their conclusions (×3 flood factors,
+~5,000-lnL admission prices, 0.70 locus fractions) sit orders above
+boundary grade; this note is their provenance annotation, not a
+supersession. NEW STANDING RULE (added to CLAUDE.md): reader scripts
+copy model expressions bit-verbatim INCLUDING the arithmetic form of
+constants; wherever a stored cube exists, identity gates are lnL-grade,
+not census-grade. PREDICTION REGISTERED before the amended runs:
+G8P-1/G8Q-0 → 0.00e+00 in all four law-seeds; census gates stay PASS
+at ≤ 0.05 (the ship values carry the perturbed population, so a
+nonzero last digit is allowed).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

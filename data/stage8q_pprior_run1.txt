@@ -1,0 +1,62 @@
+8Q THE SUBSYSTEM P-PRIOR BRACKET (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+priors: raghavan (5.03, 2.28) identity | tokL11 (3.25, 1.80) Tokovinin-2014 Table-2 L11 (scout-primary) | mid (4.14, 2.04) representative bracket; data N per bin = [9950, 2684, 1223, 214]; observed pair = (band 9, cliff 2)
+
+[seed 31] G8Q-4 shared non-companion streams: PASS
+[seed 31] G8Q-2 raghavan: mean=5.027 (x0=5.03), std=2.275 (sg=2.28) -> PASS; P(valid)=0.563, P(valid & P>=10yr)=0.303
+[seed 31] G8Q-2 tokL11  : mean=3.247 (x0=3.25), std=1.796 (sg=1.8) -> PASS; P(valid)=0.879, P(valid & P>=10yr)=0.309
+[seed 31] G8Q-2 mid     : mean=4.137 (x0=4.14), std=2.035 (sg=2.04) -> PASS; P(valid)=0.728, P(valid & P>=10yr)=0.339
+[simple 31] G8Q-0 cube identity at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 1.01e+01 -> FAIL
+[simple 31] G8Q-1 census identity: mu=(29.81, 18.42) vs shipped (29.81, 18.42) -> PASS
+[simple 31] raghavan: Dkin=   +0.00 (pure    +0.00); cell fcomp=0.10 fpm=2.4 kw=0.7 sq=0.2; P(fpm=3.0)=0.25 P(kw=0.7)=1.00; census@prof mu=(29.81, 18.42) pmf9=5.8e-06 pmf2=1.7e-06 jP=9.8e-12; kw-floor
+[simple 31] raghavan locus band : P<3=1.52  3-10=3.23  10-30=2.45  30-100=3.04  P>=100=4.21  nocomp=15.36
+[simple 31] raghavan locus cliff: P<3=0.99  3-10=3.77  10-30=3.07  30-100=3.35  P>=100=4.34  nocomp=2.91
+[simple 31] tokL11  : Dkin=  -10.05 (pure   -10.05); cell fcomp=0.10 fpm=2.4 kw=0.7 sq=0.1; P(fpm=3.0)=0.01 P(kw=0.7)=1.00; census@prof mu=(19.97, 18.46) pmf9=3.0e-03 pmf2=1.6e-06 jP=4.9e-09; kw-floor
+[simple 31] tokL11   locus band : P<3=2.82  3-10=4.12  10-30=2.99  30-100=3.79  P>=100=2.89  nocomp=3.35
+[simple 31] tokL11   locus cliff: P<3=1.05  3-10=5.06  10-30=5.29  30-100=3.93  P>=100=2.90  nocomp=0.22
+[simple 31] mid     : Dkin=   -9.63 (pure    -9.63); cell fcomp=0.10 fpm=2.4 kw=0.7 sq=0.2; P(fpm=3.0)=0.45 P(kw=0.7)=1.00; census@prof mu=(33.59, 21.33) pmf9=3.9e-07 pmf2=1.2e-07 jP=4.8e-14; kw-floor
+[simple 31] mid      locus band : P<3=2.96  3-10=3.33  10-30=3.54  30-100=3.75  P>=100=5.14  nocomp=14.87
+[simple 31] mid      locus cliff: P<3=1.79  3-10=4.46  10-30=3.82  30-100=3.97  P>=100=4.52  nocomp=2.76
+
+[BE 31] G8Q-0 cube identity at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 2.61e+00 -> FAIL
+[BE 31] G8Q-1 census identity: mu=(29.07, 20.07) vs shipped (29.07, 20.07) -> PASS
+[BE 31] raghavan: Dkin=   +0.00 (pure    +0.00); cell fcomp=0.10 fpm=2.4 kw=0.7 sq=0.2; P(fpm=3.0)=0.22 P(kw=0.7)=1.00; census@prof mu=(29.07, 20.07) pmf9=9.7e-06 pmf2=3.9e-07 jP=3.8e-12; kw-floor
+[BE 31] raghavan locus band : P<3=1.37  3-10=2.65  10-30=2.63  30-100=3.38  P>=100=4.28  nocomp=14.75
+[BE 31] raghavan locus cliff: P<3=1.03  3-10=4.07  10-30=3.06  30-100=3.97  P>=100=5.06  nocomp=2.88
+[BE 31] tokL11  : Dkin=  -11.10 (pure   -11.10); cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.1; P(fpm=3.0)=0.82 P(kw=0.7)=1.00; census@prof mu=(20.68, 18.46) pmf9=2.0e-03 pmf2=1.6e-06 jP=3.2e-09; fpm=3.0-EDGE,kw-floor
+[BE 31] tokL11   locus band : P<3=2.82  3-10=4.02  10-30=3.49  30-100=3.50  P>=100=3.27  nocomp=3.57
+[BE 31] tokL11   locus cliff: P<3=1.06  3-10=5.31  10-30=4.96  30-100=3.59  P>=100=3.39  nocomp=0.15
+[BE 31] mid     : Dkin=  -10.88 (pure   -10.88); cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=0.60 P(kw=0.7)=1.00; census@prof mu=(32.18, 22.24) pmf9=1.1e-06 pmf2=5.4e-08 jP=5.8e-14; fpm=3.0-EDGE,kw-floor
+[BE 31] mid      locus band : P<3=2.62  3-10=3.63  10-30=3.35  30-100=3.14  P>=100=4.90  nocomp=14.54
+[BE 31] mid      locus cliff: P<3=1.53  3-10=4.26  10-30=4.07  30-100=4.07  P>=100=4.97  nocomp=3.35
+
+[seed 101] G8Q-4 shared non-companion streams: PASS
+[seed 101] G8Q-2 raghavan: mean=5.030 (x0=5.03), std=2.277 (sg=2.28) -> PASS; P(valid)=0.562, P(valid & P>=10yr)=0.302
+[seed 101] G8Q-2 tokL11  : mean=3.250 (x0=3.25), std=1.797 (sg=1.8) -> PASS; P(valid)=0.878, P(valid & P>=10yr)=0.309
+[seed 101] G8Q-2 mid     : mean=4.140 (x0=4.14), std=2.037 (sg=2.04) -> PASS; P(valid)=0.728, P(valid & P>=10yr)=0.339
+[simple 101] G8Q-0 cube identity at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 6.65e+00 -> FAIL
+[simple 101] G8Q-1 census identity: mu=(29.96, 20.29) vs shipped (29.96, 20.29) -> PASS
+[simple 101] raghavan: Dkin=   +0.00 (pure    +0.00); cell fcomp=0.10 fpm=2.1 kw=0.7 sq=0.2; P(fpm=3.0)=0.08 P(kw=0.7)=1.00; census@prof mu=(29.96, 20.29) pmf9=5.2e-06 pmf2=3.2e-07 jP=1.7e-12; kw-floor
+[simple 101] raghavan locus band : P<3=1.74  3-10=2.67  10-30=2.89  30-100=2.47  P>=100=4.90  nocomp=15.30
+[simple 101] raghavan locus cliff: P<3=0.82  3-10=3.36  10-30=3.53  30-100=3.64  P>=100=4.71  nocomp=4.22
+[simple 101] tokL11  : Dkin=  -15.34 (pure   -15.34); cell fcomp=0.10 fpm=2.1 kw=0.7 sq=0.1; P(fpm=3.0)=0.07 P(kw=0.7)=1.00; census@prof mu=(22.52, 20.87) pmf9=6.8e-04 pmf2=1.9e-07 jP=1.3e-10; kw-floor
+[simple 101] tokL11   locus band : P<3=3.30  3-10=4.36  10-30=3.97  30-100=3.27  P>=100=3.32  nocomp=4.31
+[simple 101] tokL11   locus cliff: P<3=0.91  3-10=5.92  10-30=6.64  30-100=4.11  P>=100=3.15  nocomp=0.14
+[simple 101] mid     : Dkin=  -11.84 (pure   -11.84); cell fcomp=0.10 fpm=2.1 kw=0.7 sq=0.2; P(fpm=3.0)=0.07 P(kw=0.7)=1.00; census@prof mu=(32.45, 23.30) pmf9=8.9e-07 pmf2=2.1e-08 jP=1.8e-14; kw-floor
+[simple 101] mid      locus band : P<3=2.47  3-10=3.18  10-30=3.95  30-100=3.49  P>=100=4.52  nocomp=14.84
+[simple 101] mid      locus cliff: P<3=1.55  3-10=4.66  10-30=4.54  30-100=4.12  P>=100=4.48  nocomp=3.95
+
+[BE 101] G8Q-0 cube identity at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 2.92e+00 -> FAIL
+[BE 101] G8Q-1 census identity: mu=(28.47, 20.22) vs shipped (28.47, 20.22) -> PASS
+[BE 101] raghavan: Dkin=   +0.00 (pure    +0.00); cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=1.00 P(kw=0.7)=1.00; census@prof mu=(28.47, 20.22) pmf9=1.5e-05 pmf2=3.4e-07 jP=5.0e-12; fpm=3.0-EDGE,kw-floor
+[BE 101] raghavan locus band : P<3=1.82  3-10=2.30  10-30=2.66  30-100=2.32  P>=100=4.59  nocomp=14.78
+[BE 101] raghavan locus cliff: P<3=0.77  3-10=3.49  10-30=3.80  30-100=2.87  P>=100=4.90  nocomp=4.39
+[BE 101] tokL11  : Dkin=  -15.94 (pure   -15.94); cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=0.97 P(kw=0.7)=1.00; census@prof mu=(33.03, 26.40) pmf9=5.8e-07 pmf2=1.2e-09 jP=7.0e-16; fpm=3.0-EDGE,kw-floor
+[BE 101] tokL11   locus band : P<3=4.67  3-10=4.52  10-30=3.94  30-100=3.03  P>=100=3.07  nocomp=13.82
+[BE 101] tokL11   locus cliff: P<3=2.32  3-10=5.70  10-30=5.75  30-100=4.67  P>=100=3.72  nocomp=4.24
+[BE 101] mid     : Dkin=  -12.51 (pure   -12.51); cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; P(fpm=3.0)=1.00 P(kw=0.7)=1.00; census@prof mu=(30.65, 23.66) pmf9=3.2e-06 pmf2=1.5e-08 jP=4.8e-14; fpm=3.0-EDGE,kw-floor
+[BE 101] mid      locus band : P<3=2.30  3-10=3.33  10-30=3.73  30-100=3.25  P>=100=3.64  nocomp=14.41
+[BE 101] mid      locus cliff: P<3=1.49  3-10=4.45  10-30=4.28  30-100=4.38  P>=100=4.82  nocomp=4.23
+
+GATES FAILED (G8Q-0 FAIL, G8Q-1 PASS, G8Q-2 PASS, G8Q-4 PASS, G8Q-5 PASS) - STOP; DO NOT QUOTE; verdict WITHHELD
+
+done (2.5 min)

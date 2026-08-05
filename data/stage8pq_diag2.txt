@@ -1,0 +1,8 @@
+e_s reader-form vs marginal-form: differing entries = 27952/500000 (0.056; wr = 0.3 predicts the radial branch), max|d e| = 1.11e-16
+[marginal-form ] lnL block vs cube: max|d| = 0.000e+00
+[reader-form   ] lnL block vs cube: max|d| = 1.006e+01
+orbit output divergence between the two e_s forms: max|d o| = 1.737e+11; systems with any |d o| > 1e-6: 15385 (the ulp difference is integrator-amplified to macroscopic phase shifts for a subset of near-parabolic systems)
+
+CONCLUSION: the entire G8P-1/G8Q-0 failure is the e_rad slope literal (0.045 vs 0.995-0.95, d = 4.2e-17) introduced in the 8L-b reader and inherited by 8N/8P/8Q.  Fix: bit-verbatim expression in the readers.  Census-grade gates (0.05) were blind to it in four consecutive stages; the first lnL-grade identity gate caught it on first firing.
+
+done (1.0 min)
