@@ -596,7 +596,19 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     REVIEWER ROUND with the 8H/8I-a/8J scorecard + the
     seed-budget design + the credence map pre-registration.
     3rd consecutive against-expectation verdict. Credence
-    frozen.**
+    frozen.** **8M JOINT-COHERENCE SCAN EXECUTED 2026-08-05
+    (pre-reg 18729de, gates 16/16,
+    [calcs/stage8m_jointcensus.py](calcs/stage8m_jointcensus.py)):
+    the census over-production measured at CLASS grade —
+    CLASS-CONTAINS only in the prior-forbidden fcomp=0 corner
+    (admission price ~5,000 lnL; the census's own preferred cell
+    is α≈1 no-companions = the 4J reading in forward form, and
+    even there μ_band ≈ 17 vs 9); operative α census-ROBUST
+    (joint fold moves α ≤ 0.06, Newton cedes ~2.5 lnL); B4
+    against-expectation 4/4 (reachable-mass census credit tilts
+    mildly pro-Newton via the boostier-spike effect); the wobble
+    tail-SHAPE instrument stays THE named repair; final-stamp on
+    the α machinery still blocked pending it or T2/DR4.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

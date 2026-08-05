@@ -9926,6 +9926,111 @@ auto). Script [calcs/stage8m_jointcensus.py](calcs/stage8m_jointcensus.py);
 output data/stage8m_jointcensus.txt; ledger row bin-8m-jointcensus
 in the result commit; ~20–30 min compute.
 
+## Stage 8M EXECUTED (2026-08-05, all gates PASS): CLASS-CONTAINS at SEVERE price — census-coherent worlds exist ONLY in the prior-forbidden no-companion corner; the operative α is census-ROBUST; B4 fires AGAINST-EXPECTATION with the mechanism named
+
+Gates 16/16 first run: G8M-0 4/4 (direct calls reproduce the
+shipped 8L-b census rows to the digit); G8M-1 4/4 (bare-Newton
+μ_band = 0.00); G8M-2 4/4 (joint-cube identity); G8M-3 4/4
+(scan-vs-direct bit-exact, e.g. 29.808979 ≡ 29.808979 — the
+GB0w-class wiring gate did its job silently). Floor disclosure:
+the pre-registered resolution-floor concern never bit — the
+primary (half-count, median 0.103) and legacy (1e-12) conventions
+return IDENTICAL results on every headline quantity (every
+reachable cell's μ is measurably nonzero). 25.6 min compute.
+
+B1 — CLASS-CONTAINS (4/4): N_adm = 1137–1209 of 21,600 (~5.3%)
+per law-seed, all five α values represented. The composition is
+the finding: the cheapest admissible cell sits at fcomp = 0 in
+4/4 (α = 1 in three, α = 0.5 in one; sq = 0.2 in all; kw
+irrelevant there), with μ ≈ (17.0, 4.4–5.0) and jointP
+1.1–1.7e-3 — the best supported worlds still run ×1.9 over on
+the band and clear the 8H bar only marginally (perfect-fit
+jointP = 3.6e-2). NOTHING in the class actually fits (9, 2); the
+admissible set is merely not-grossly-excluded.
+
+B2 — SEVERE: admission price 5002.6 (simple) / 5010.3 (BE) lnL
+seed means, dominated by the v2c host-rate prior + the kinematic
+width demand against fcomp = 0. The census's ~24 lnL of leverage
+cannot buy a ~5,000 lnL move: the joint MAP equals the kinematic
+MAP in 4/4 (dkin = 0.0) and the model pays the census penalty in
+full (CLL −25.3…−27.1 ≈ jointP ~1e-12).
+
+THE FRONTIER (the risk axis shipped with the curve): flat where
+it matters — within dkin ≤ 20 the census improves ≤ 3 lnL; the
+−15-grade improvements need dkin ≥ 30–40; even dkin ≤ 100 reaches
+only −13.5 (best possible −3.3). No cheap reconciliation exists
+anywhere in the class.
+
+B3 — JOINT-DIAGNOSTIC (CO-QUOTED-DIAGNOSTIC only, double-count
+disclosed): α_J = 0.52 / 0.58 seed means (kinematic 0.56 / 0.61);
+dN_J = +12.8 / +12.7 (kinematic +15.3 / +15.1). THE ROBUSTNESS
+STATEMENT: folding the census into the likelihood moves α by
+≤ 0.06 and costs Newton's rejection ~2.5 lnL seed-mean — the
+operative numbers are census-robust; the inconsistency does not
+destabilize the measurement. Nuisances unmoved (fcomp 0.1,
+sq 0.2, kw 0.7 floor; BE-101 still rides fpm = 3.0 at P = 1.00,
+edge flagged — the width-shape hunger is census-fold-invariant).
+
+B4 — AGAINST-EXPECTATION (4/4): dN_J < dN_kin everywhere (−1.0 /
+−2.1 / −3.9 / −2.7). Expectation-miss owned and resolved
+mechanically: the pre-stated two-sided vice (band starves bare
+Newton, cliff rejects spiked Newton) bites only in the
+UNREACHABLE bare corner; within reachable mass every world
+floods, and spiked-Newton floods marginally less than
+spiked-boost (the 8L-b boostier-spike effect) — the frontier's
+near-MAP best-census cells are α = 0 at several price points
+(BE-31 at dkin 10–20, simple-101 at 20, BE-101 at 30). The
+census credit at reachable distances goes to Newton; the
+census's true preference (α ≈ 1, fcomp = 0) is priced out.
+
+CLOSURE STATUS of the round-6 carried item: INSTRUMENTED AND
+MEASURED, not repaired. The class reproduces (9, 2) only where
+the measured host rate forbids it to stand; at its own optimum it
+still over-produces the band ×3 with a ×10 cliff flood. The α
+machinery GAINS the census-robustness annotation (≤ 0.06 / ~2.5
+lnL exposure); the final-stamp REMAINS blocked pending the wobble
+tail-SHAPE repair (the 8I-a successor, unchanged as the named
+next binary instrument) or the external legs (T2/DR4). No 6-seed
+budget triggered (4/4 uniform; price scatter 4986–5020; no
+verdict-grade instability). NO credence movement (pre-stated;
+external-only per 8K-b/round 6).
+
+Worth keeping (mechanism note): the census's own preferred world
+inside the class is the boosted no-companion one — α = 1 with
+the width channel, the 4J reading reappearing in the forward
+model — but at μ_band ≈ 17 it over-produces even there: the
+model's tail machinery over-produces the band whenever it can
+produce it at all. The (9, 2) pair stays a model-light data-side
+statistic (defenses 4J 3.8e-9 / 8F-b 8.5e-8 untouched); the
+forward model remains unable to make it, now at measured class
+grade.
+
+Plain verdict: SUCCESS as an instrument (the round-6
+inconsistency is now a measured object with a price tag, a
+mechanism, and an α exposure bound), NEEDS DIFFERENT PHYSICS as
+a reconciliation (nothing in the class fits kinematics and
+census together; the repair target is unchanged).
+
+ELI12: Our star-pair model has a known problem: at its best-fit
+settings it predicts ~30 pairs in the "faster than Newton
+allows" speed band where the sky shows 9, and ~19 in the even-
+faster zone where the sky shows 2. We had only ever checked a
+handful of settings, so this time we checked ALL 21,600. Answer:
+settings that get the sky's counts right DO exist — but only
+with zero hidden companion stars, and our own measurements say
+companions exist, so those settings carry a ~5,000-point
+penalty. Folding the speed-band counts directly into the fit
+therefore barely moves anything: the gravity knob shifts by less
+than 0.06 and Newton claws back ~2.5 points of its deficit. Two
+lessons: (1) our headline numbers don't secretly ride on this
+flaw, and (2) the flaw is real and deep — the model's wobble
+machinery overfills the fast band whenever it's allowed to fill
+it at all, so the fix is reshaping HOW companion wobble is
+distributed, not retuning knobs. And a nice touch: the settings
+the speed band itself prefers have the gravity knob at 1 —
+exactly the galaxy value — they're just unreachable while
+companions exist.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

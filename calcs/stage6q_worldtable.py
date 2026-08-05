@@ -306,6 +306,13 @@ CHECKS = [
      'WITHIN-SYSTEMATIC; honest Newton band dN = +15.1 (seed mean)',
      'data/stage8lb_read.txt'),
     ('bin-8lb-kernel', 'G8Lb-3 4/4 PASS', 'data/stage8lb_read.txt'),
+    ('bin-8m-jointcensus', 'GATES: G8M-0 4/4, G8M-1 4/4, G8M-2 4/4, '
+     'G8M-3 4/4 - ALL PASS', 'data/stage8m_jointcensus.txt'),
+    ('bin-8m-jointcensus', 'CLASS-CONTAINS (4/4 law-seeds admissible); '
+     'simple admission price 5002.6 lnL (2/2 seeds) -> SEVERE',
+     'data/stage8m_jointcensus.txt'),
+    ('bin-8m-jointcensus', 'B4 Newton flank: AGAINST-EXPECTATION (4/4 '
+     'law-seeds have dN_J < dN_kin', 'data/stage8m_jointcensus.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
