@@ -11328,6 +11328,50 @@ companion stars are shaking the position fits themselves (the
 flag is literally designed to catch that). Either way, we now
 know WHERE the blur lives — that's a big step toward evicting it.
 
+## Stage 8Y + 8Z pre-registration (2026-08-05, committed before any run): the pressure-support dose test (GD tension) + the RUWE dose-response (width object)
+
+Measurement rounds; no credence movement. Ledger rows on
+completion: gal-8y-pressure, bin-8z-dose.
+
+**8Y** ([calcs/stage8y_pressure.py](calcs/stage8y_pressure.py)):
+pressure-support bias scales as (σ/V)², so if it drives the GD
+dial, the slow rotators must carry it. (a) V-split: GD halved at
+the identity-sample median of V (Vflat from the SPARC table;
+fallback max V_obs where Vflat = 0; counts printed); paired
+bootstrap 300 reps over the 38 GD galaxies (threshold frozen;
+halves fit if ≥6 galaxies; Δ_fs = λ̂_fast − λ̂_slow). (b) The
+correction lever: refit λ̂_GD with g_obs → (V² + k·σ²)/R at σ = 10
+km/s, k ∈ {0, 0.5, 1, 1.5, 2, 3} (flat-σ bound, crudeness
+pre-stated: real AD corrections are radius-dependent; this brackets
+the magnitude); DD at k ∈ {0, 2} = the bluntness control (DD is
+fast — if DD moves much, the lever is too crude to read).
+Gates: G8Y-0 the k=0 GD fit reproduces 8X's −1.309 (bar 0.002);
+G8Y-1 fast-vs-slow engine probes ≤ 1e-6 (lg-argument variant);
+G8Y-2 V-metric accounting. Bars: Y1 DIRECTION iff P(Δ_fs ≤ 0) ≤
+0.05 (slow rotators carry the negative dial — pressure-support
+direction confirmed); sub-clause Y1a REJOINS iff p95(λ̂_fast) ≥
+0.960 (the fast half reaches the dial). Y2 FLAT iff P(Δ_fs ≤ 0) ≥
+0.20 AND |median Δ_fs| ≤ 0.5 (no V-dependence; pressure support
+disfavored; genuine composition shape strengthens). Y3
+GRAY-CARRIED else. k-curve = co-read with pre-stated reading:
+λ̂_GD crossing 0 by k ≤ 2 ⇒ plausible-magnitude corrections
+neutralize the dial; no crossing by k = 3 ⇒ out of reach.
+
+**8Z** ([calcs/stage8z_dose.py](calcs/stage8z_dose.py)): the 8W
+carriers at quartile resolution — sqbar(Q1..Q4) for ruwe and
+plxsn, blocks (fcomp, ffly, fpm, kw, sq, ws∈{0,0.045}) at the
+frozen lker MAP. Gates: G8Z-1 unsplit cube bit-identity; G8Z-2
+quartile count conservation; G8Z-3 8T gain regression (0.011);
+G8Z-4 8W lineage regression — the (simple, 31) ruwe median halves
+re-derived, sqbar vs 8W's printed 0.002/0.199 (bar 0.005). Bars
+(per axis, ≥3/4 law-seeds): Z1 MONOTONE-DOSE iff sqbar(Q4) −
+sqbar(Q1) ≥ 0.10 with no inversion > 0.02; sub-reads Z-STEP iff
+Q4−Q3 ≥ 0.10 AND Q3−Q1 ≤ 0.05 (threshold behavior = a distinct
+bad sub-population); Z-CLEAN iff sqbar(Q1) ≤ 0.05 (the clean
+quartile carries no width — full attribution to the tracked
+axes). Z2 NON-MONOTONE else ⇒ MIXED-CARRIED. The measured shape
+parameterizes the cube-grade RUWE-stratified successor.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
