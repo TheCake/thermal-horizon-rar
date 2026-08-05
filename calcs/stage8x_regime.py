@@ -272,6 +272,13 @@ idfit = {}
 for tag, gl in (('GD', GD_LIST), ('DD', DD_LIST)):
     for mk in ('all', 'deep', 'nondeep'):
         inst = make_instance(gl, MASKS[mk])
+        if inst is None:
+            # amendment 1 (wiring, pre-quote): empty subset guard —
+            # GD-nondeep has ZERO points (GD is 100% deep; the
+            # confounding is total, which is why DD-deep decides)
+            idfit[(tag, mk)] = np.nan
+            P(f"[{tag}-{mk:7}] EMPTY (0 points)")
+            continue
         lh, lo_e, hi_e, th = lam_hat_fast(inst)
         idfit[(tag, mk)] = lh
         ed = ' LO-EDGE' if lo_e else (' HI-EDGE' if hi_e else '')

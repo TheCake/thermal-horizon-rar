@@ -11231,6 +11231,13 @@ points vote with DD: the split is carried by galaxy type, not
 regime. X3 GRAY-CARRIED else. Co-reads: GD-nondeep point fit,
 counts, s_int per subset, edge fractions.
 
+8X amendment 1 (wiring, logged pre-quote): run 1 died at the
+GD-nondeep identity co-read fit — that subset has ZERO points (GD
+galaxies are 100% deep; the confounding is total, which is the
+measured fact that makes DD-deep the decider). Empty-subset guard
+added; gates had all PASSED and no verdict quantity was generated;
+bars untouched; run 1 preserved as the task log.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
