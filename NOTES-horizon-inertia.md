@@ -11466,6 +11466,49 @@ was never real blur at all — it was mixing different-quality
 data in one pot. The rest lives in the flagged pairs, and the
 cleanest quarter of the sky needs none.
 
+## Stage 9A + 9B pre-registration (2026-08-05, committed before any run): the stratified-noise α re-fit (the α-exposure decider) + the quality-flag control (GD)
+
+Measurement rounds; no credence movement. Ledger rows on
+completion: bin-9a-stratalpha, gal-9b-qflag.
+
+**9A** ([calcs/stage9a_stratalpha.py](calcs/stage9a_stratalpha.py)):
+the 8Z anatomy says the global sq = 0.2 is partly an aggregation
+artifact of one error-scale over heterogeneous strata. This stage
+measures what that repair does to α. RUWE quartiles (the measured
+axis); per α ∈ {0, 0.5, 1, 1.5, 2} (η, wr frozen at MAP — BLOCK
+grade, profile + LNPI; explicitly NOT comparable to the 7J
+marginal numbers; direction-measurement, full marginal re-run =
+successor if material): per-stratum blocks (fcomp, ffly, fpm, kw,
+sq, ws∈{0,0.045}); TIED model = Σ_q blocks maximized with shared
+(fpm, sq); FREE model = Σ_q max over per-stratum (fpm_q, sq_q) —
+nested, same stratified data, no pooling artifact; ws and the
+population axes shared (the floor is global per 8T/8Z). α̂ by
+parabolic refine; report α̂_tied, α̂_free, Δα̂, ΔlnL(free−tied) at
+α̂, per-stratum (fpm̂_q, sq̂_q), Newton contrast ΔlnL(α̂ vs 0)
+under both models, edge flags.
+Gates: G9A-1 unsplit block at MAP α, ws=0 vs the lker cube =
+0.00e+00 (bit); G9A-2 stratum count conservation; G9A-3 8Z
+regression — sqbar recomputed from the α=MAP stratum blocks vs
+8Z's printed values, 16 checks, bar 0.0005.
+Bars: A1 EXPOSURE-MATERIAL iff |Δα̂| ≥ 0.25 in ≥3/4 law-seeds
+(the honest width model materially moves α; successor = the full
+marginal re-run). A2 EXPOSURE-CONTAINED iff |Δα̂| ≤ 0.15 in ≥3/4
+(the α measurement is robust to the width-model repair). A3
+GRAY-CARRIED else.
+
+**9B** ([calcs/stage9b_qflag.py](calcs/stage9b_qflag.py)): is the
+GD dial carried by the SPARC quality flag? GD split Q=1 vs Q=2
+(sizes printed; <8 galaxies either side ⇒ POWER-FLAG, pre-stated);
+identity fits + paired bootstrap 300 reps (rng 71); Δ_Q = λ̂(Q1) −
+λ̂(Q2). Co-read: the 8Y V-split repeated within each Q stratum
+(identity fits only, power-limited). Gates: G9B-0 GD-all
+reproduces 8X's −1.309 (bar 0.002); G9B-1 accounting incl. the 8Y
+V-threshold regression (66.2). Bars: B1 QUALITY-CARRIED iff
+P(Δ_Q ≤ 0) ≤ 0.05 AND median Δ_Q ≥ 1.0 (the high-quality subset
+carries materially less dial). B2 QUALITY-BLIND iff P(Δ_Q ≤ 0) ≥
+0.20 AND |median Δ_Q| ≤ 0.5 (the dial ignores the quality flag —
+the data-quality suspect weakens). B3 GRAY-CARRIED else.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
