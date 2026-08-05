@@ -101,3 +101,5 @@ calls it, not per stage.
 - 8S-c: The measured distance/inclination channel barely moves GD -> tension survives.
 - 8U: The mixture instrument -> no zero-inflated smear reconciles kinematics and census either (locus demands monotone-opposed); minority-bars grammar miss owned; DATA-SIDE is the last reconciliation class.
 - 8V: Galaxy-level bootstrap of the GD tension -> 0/300 replicates reach the dial; correlation suspect cleared; the GD-DD split is hardened (suspects left: selection, real deep-regime shape).
+- 8W: Quality-strata tracking of the width object -> it has an ADDRESS: concentrates in high-RUWE / low-parallax-S/N pairs (clean half nearly zeroes it); physics-blind axis flat; readings = astrometric noise vs astrometry-channel multiplicity; DR4 arbiter.
+- 8X: Regime-vs-composition on the GD tension -> GD is 100% deep (total confounding), but DD's own deep points NEVER vote like GD's (0/200): the split is galaxy TYPE, not regime; new named suspect = pressure-support corrections in slow-spinning gas dwarfs (8Y candidate: V_flat split).

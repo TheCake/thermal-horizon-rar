@@ -11238,6 +11238,96 @@ measured fact that makes DD-deep the decider). Empty-subset guard
 added; gates had all PASSED and no verdict quantity was generated;
 bars untouched; run 1 preserved as the task log.
 
+## Stage 8X EXECUTED (2026-08-05, run 2 after the wiring amendment, ALL GATES PASS): GRAY-CARRIED by the letter, COMPOSITION-leaning in substance — DD's deep points never vote like GD's (0/200); the regime hypothesis is dead
+
+Gates: G8X-0 unmasked GD/FULL reproduce 8V exactly (−1.309/0.969);
+G8X-1 masked fast-vs-slow 4.55e-12; G8X-2 counts exact — and the
+accounting itself is a finding: **GD is 100% deep (422/422 points;
+gas-domination and deep-regime are fully confounded on SPARC)**,
+which is why DD-deep decides. DD: 1651 deep / 627 nondeep.
+
+Identity fits: DD-all +1.337, DD-deep +0.772, DD-nondeep −0.507
+(GD −1.309). Bootstrap (200 paired reps): DD-deep 5/50/95 =
+−0.276/+0.697/+1.500; **P(DD-deep ≤ GD-deep) = 0.0000** — at
+matched (deep) regime, galaxy type still separates completely;
+P(DD-deep ≥ DD-nondeep) = 0.955 — within DD the deep arm pulls
+POSITIVE, the opposite gradient from GD. X1 (regime) failed
+outright; X2 (composition) missed only its p5>0 clause (−0.276) ⇒
+GRAY-CARRIED by the letter, composition-leaning: the GD↔DD split
+is carried by GALAXY TYPE, not by the acceleration regime.
+
+Named next suspect (sharpened by this round): pressure-support /
+asymmetric-drift corrections — gas-rich dwarfs are exactly the
+class that needs them, SPARC rotmods don't include them, and the
+bias direction matches (under-corrected V lowers g_obs at the deep
+end ⇒ λ pulled negative). Cheap probe: split GD by V_flat — the
+bias scales as (σ_gas/V)², so if GD-fast rejoins the dial it's
+pressure support; if flat in V, genuine composition shape. That is
+the 8Y candidate.
+
+Plain verdict: NEEDS REFINEMENT by the letter (one clause short of
+COMPOSITION) / the regime escape is closed as a measurement.
+
+ELI12: We asked: maybe gas-rich dwarfs disagree just because we
+only see their DEEP-gravity points, and everyone's deep points
+would disagree? Test: the star-rich galaxies have deep points too
+— do those disagree the same way? No. Never — 0 in 200 shuffles.
+Same gravity depth, opposite votes: it really is about what KIND
+of galaxy it is. Top remaining mundane suspect: little gas-rich
+galaxies spin so slowly that gas pressure holds up part of their
+weight, and the standard tables don't correct for that — testable
+by checking whether the faster-spinning ones behave.
+
+## Stage 8W EXECUTED (2026-08-05, first run, ALL GATES PASS): TRACKING — the width object is QUALITY-STRATIFIED: it concentrates in high-RUWE / low-parallax-S/N pairs; the physics-blind axis is flat
+
+Gates: G8W-1 cube bit-identity 0.00e+00 4/4; G8W-2 count
+conservation all axes; G8W-3 8T gains reproduced at lnL grade 4/4.
+8.2 min. Census-pair co-read SKIPPED per pre-reg (crude selector
+gives (39, 23) vs the operative (9, 2) — the operative census
+carries cuts my mask lacks; honest skip).
+
+dsq (hi − lo), 4 law-seeds: **ruwe +0.196/+0.116/+0.171/+0.152
+(4/4)** — the clean-RUWE half (max RUWE ≤ 1.118) nearly ZEROES the
+width object (sqbar 0.002–0.079; BE-101 even drops the floor,
+P(ws>0) = 0.04); **plxsn −0.100 ×4 (4/4, one full grid step)** —
+the high-S/N half wants sq = 0.1, the low half 0.2; eclat (the
+scan-law, physics-blind axis) FLAT 4/4; gmag mostly flat (1/4
+crosses). Verdict D1 TRACKING, carriers ruwe + plxsn. fpm was free
+per stratum — the tracked width is not absorbable by error
+scaling.
+
+Reading (shadow table, stated carefully): the pure-geographic
+data-side carrier (eclat) is CLEAN, so "generic data-side" is NOT
+licensed; both tracking carriers have named shadows. What is
+measured: the width object localizes in pairs with poor
+astrometric solutions. Two surviving readings: (i) astrometric
+noise beyond the formal errors in the poor half; (ii) unresolved
+subsystems expressed through the ASTROMETRIC-SOLUTION channel
+(photocenter motion corrupting the PM fit — exactly what RUWE
+flags) rather than through the orbital-velocity wobble our
+companion model implements — which would explain at once why the
+velocity-space companion model cannot fit it (3K/7J: wrong
+channel), the 8H companion-sector census attribution, and the
+7I-S strict-cut behavior (RUWE < 1.2 ≈ this stage's median split:
+the cut removes the width carrier, and the absorber field
+reorganizes). Successors named: RUWE-continuous dose-response
+(sq vs RUWE quantiles), and the cube-grade RUWE-stratified-sq
+re-fit (α exposure under a localized width model); DR4 epoch
+astrometry = the arbiter.
+
+Plain verdict: SUCCESS — the width object has a measured ADDRESS
+(poor-astrometry pairs); identity narrowed to astrometric noise vs
+astrometric-channel multiplicity.
+
+ELI12: The mystery blur isn't spread evenly after all — it lives
+almost entirely in the star pairs whose position-tracking fits
+were flagged as wobbly (and the far/faint ones), and NOT along the
+satellite's scanning pattern. Two suspects left standing: those
+pairs' measurements are just noisier than advertised, or hidden
+companion stars are shaking the position fits themselves (the
+flag is literally designed to catch that). Either way, we now
+know WHERE the blur lives — that's a big step toward evicting it.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

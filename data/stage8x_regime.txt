@@ -1,0 +1,30 @@
+8X THE REGIME-vs-COMPOSITION DECOMPOSITION (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+G8X-2 [GD] points all/deep/nondeep = 422/422/0 (galaxies with >=1 pt: 38/0) -> PASS
+G8X-2 [DD] points all/deep/nondeep = 2278/1651/627 (galaxies with >=1 pt: 110/48) -> PASS
+G8X-0 unmasked [FULL]: lam_hat = 0.969 vs 8V 0.969 -> PASS
+G8X-0 unmasked [GD]: lam_hat = -1.309 vs 8V -1.309 -> PASS
+G8X-1 masked fast-vs-slow (15 probes incl. duplicated list): max|d| = 4.55e-12 -> PASS
+GATES: G8X-0/1/2 ALL PASS
+
+[GD-all    ] lam_hat = -1.309 -> c1 = -0.655; s_int = 0.068
+[GD-deep   ] lam_hat = -1.309 -> c1 = -0.655; s_int = 0.068
+[GD-nondeep] EMPTY (0 points)
+[DD-all    ] lam_hat = +1.337 -> c1 = +0.669; s_int = 0.055
+[DD-deep   ] lam_hat = +0.772 -> c1 = +0.386; s_int = 0.046
+[DD-nondeep] lam_hat = -0.507 -> c1 = -0.254; s_int = 0.039
+
+  ... 50/200 replicates (1.1 min)
+  ... 100/200 replicates (2.1 min)
+  ... 150/200 replicates (3.2 min)
+  ... 200/200 replicates (4.2 min)
+
+replicates: 200; skips 0
+[DD-deep   ] pct 5/50/95 = -0.276/+0.697/+1.500; edge lo/hi = 0/31
+[GD-deep   ] pct 5/50/95 = -2.000/-1.238/-0.332; edge lo/hi = 15/0
+[DD-nondeep] pct 5/50/95 = -0.896/-0.408/+0.130; edge lo/hi = 0/4
+P(DD-deep >= DD-nondeep) = 0.9550; P(DD-deep <= GD-deep) = 0.0000
+
+==> 8X VERDICT (locked grammar): GRAY-CARRIED - percentiles quoted as the measurement.
+    NO credence movement (pre-stated; measurement round).
+
+done (4.2 min)

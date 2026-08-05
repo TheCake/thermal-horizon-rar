@@ -1,0 +1,66 @@
+8W THE QUALITY-STRATA TRACKING TEST (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+axes: gmag (mass-model shadow); plxsn (distance shadow); eclat (scan-law proxy (physics-blind)); ruwe (multiplicity shadow)
+  gmag: median split at 12.577; N lo/hi = 7036/7035; G8W-2 count conservation -> PASS
+  plxsn: median split at 407.883; N lo/hi = 7036/7035; G8W-2 count conservation -> PASS
+  eclat: median split at 36.313; N lo/hi = 7036/7035; G8W-2 count conservation -> PASS
+  ruwe: median split at 1.118; N lo/hi = 7036/7035; G8W-2 count conservation -> PASS
+observed census selector: band 39, cliff 23 vs (9, 2) -> co-read SKIPPED (mismatch)
+
+[simple 31] G8W-1 cube identity (unsplit, ws=0): max|d| = 0.00e+00 -> PASS
+[simple 31] G8W-3 8T gain regression: +6.385 vs 8T +6.39 -> PASS
+[simple 31] gmag-lo: sqbar=0.193 sq_hat=0.2 fpm_hat=1.2 P(ws>0)=0.99
+[simple 31] gmag-hi: sqbar=0.200 sq_hat=0.2 fpm_hat=1.8 P(ws>0)=0.79
+[simple 31] plxsn-lo: sqbar=0.200 sq_hat=0.2 fpm_hat=2.4 P(ws>0)=0.31
+[simple 31] plxsn-hi: sqbar=0.100 sq_hat=0.1 fpm_hat=2.1 P(ws>0)=1.00
+[simple 31] eclat-lo: sqbar=0.200 sq_hat=0.2 fpm_hat=2.4 P(ws>0)=0.75
+[simple 31] eclat-hi: sqbar=0.169 sq_hat=0.2 fpm_hat=2.1 P(ws>0)=1.00
+[simple 31] ruwe-lo: sqbar=0.002 sq_hat=0.0 fpm_hat=1.8 P(ws>0)=0.98
+[simple 31] ruwe-hi: sqbar=0.199 sq_hat=0.2 fpm_hat=1.2 P(ws>0)=0.99
+[simple 31] dsq (hi-lo): gmag=+0.006  plxsn=-0.100  eclat=-0.031  ruwe=+0.196
+
+[BE 31] G8W-1 cube identity (unsplit, ws=0): max|d| = 0.00e+00 -> PASS
+[BE 31] G8W-3 8T gain regression: +13.556 vs 8T +13.56 -> PASS
+[BE 31] gmag-lo: sqbar=0.135 sq_hat=0.1 fpm_hat=3.0 P(ws>0)=1.00
+[BE 31] gmag-hi: sqbar=0.199 sq_hat=0.2 fpm_hat=3.0 P(ws>0)=0.53
+[BE 31] plxsn-lo: sqbar=0.200 sq_hat=0.2 fpm_hat=3.0 P(ws>0)=0.38
+[BE 31] plxsn-hi: sqbar=0.100 sq_hat=0.1 fpm_hat=3.0 P(ws>0)=1.00
+[BE 31] eclat-lo: sqbar=0.200 sq_hat=0.2 fpm_hat=1.5 P(ws>0)=0.70
+[BE 31] eclat-hi: sqbar=0.177 sq_hat=0.2 fpm_hat=3.0 P(ws>0)=0.99
+[BE 31] ruwe-lo: sqbar=0.079 sq_hat=0.1 fpm_hat=1.8 P(ws>0)=0.99
+[BE 31] ruwe-hi: sqbar=0.195 sq_hat=0.2 fpm_hat=2.1 P(ws>0)=0.97
+[BE 31] dsq (hi-lo): gmag=+0.063  plxsn=-0.100  eclat=-0.023  ruwe=+0.116
+
+[simple 101] G8W-1 cube identity (unsplit, ws=0): max|d| = 0.00e+00 -> PASS
+[simple 101] G8W-3 8T gain regression: +5.957 vs 8T +5.96 -> PASS
+[simple 101] gmag-lo: sqbar=0.112 sq_hat=0.1 fpm_hat=3.0 P(ws>0)=1.00
+[simple 101] gmag-hi: sqbar=0.200 sq_hat=0.2 fpm_hat=1.2 P(ws>0)=0.66
+[simple 101] plxsn-lo: sqbar=0.200 sq_hat=0.2 fpm_hat=1.5 P(ws>0)=0.83
+[simple 101] plxsn-hi: sqbar=0.100 sq_hat=0.1 fpm_hat=1.2 P(ws>0)=0.97
+[simple 101] eclat-lo: sqbar=0.200 sq_hat=0.2 fpm_hat=2.4 P(ws>0)=0.95
+[simple 101] eclat-hi: sqbar=0.182 sq_hat=0.2 fpm_hat=2.4 P(ws>0)=0.95
+[simple 101] ruwe-lo: sqbar=0.029 sq_hat=0.0 fpm_hat=3.0 P(ws>0)=0.07
+[simple 101] ruwe-hi: sqbar=0.200 sq_hat=0.2 fpm_hat=2.4 P(ws>0)=0.97
+[simple 101] dsq (hi-lo): gmag=+0.088  plxsn=-0.100  eclat=-0.018  ruwe=+0.171
+
+[BE 101] G8W-1 cube identity (unsplit, ws=0): max|d| = 0.00e+00 -> PASS
+[BE 101] G8W-3 8T gain regression: +3.961 vs 8T +3.96 -> PASS
+[BE 101] gmag-lo: sqbar=0.199 sq_hat=0.2 fpm_hat=3.0 P(ws>0)=1.00
+[BE 101] gmag-hi: sqbar=0.200 sq_hat=0.2 fpm_hat=1.2 P(ws>0)=0.94
+[BE 101] plxsn-lo: sqbar=0.200 sq_hat=0.2 fpm_hat=2.1 P(ws>0)=1.00
+[BE 101] plxsn-hi: sqbar=0.100 sq_hat=0.1 fpm_hat=2.4 P(ws>0)=1.00
+[BE 101] eclat-lo: sqbar=0.200 sq_hat=0.2 fpm_hat=2.1 P(ws>0)=1.00
+[BE 101] eclat-hi: sqbar=0.200 sq_hat=0.2 fpm_hat=3.0 P(ws>0)=1.00
+[BE 101] ruwe-lo: sqbar=0.048 sq_hat=0.0 fpm_hat=3.0 P(ws>0)=0.04
+[BE 101] ruwe-hi: sqbar=0.200 sq_hat=0.2 fpm_hat=2.4 P(ws>0)=1.00
+[BE 101] dsq (hi-lo): gmag=+0.001  plxsn=-0.100  eclat=-0.000  ruwe=+0.152
+
+GATES: G8W-1 4/4, G8W-2 all axes, G8W-3 4/4 - ALL PASS
+
+axis gmag: dsq = +0.006/+0.063/+0.088/+0.001 -> track 1pos/0neg, flat 2/4
+axis plxsn: dsq = -0.100/-0.100/-0.100/-0.100 -> track 0pos/4neg, flat 0/4
+axis eclat: dsq = -0.031/-0.023/-0.018/-0.000 -> track 0pos/0neg, flat 4/4
+axis ruwe: dsq = +0.196/+0.116/+0.171/+0.152 -> track 4pos/0neg, flat 0/4
+==> 8W VERDICT (locked grammar): TRACKING - sq tracks plxsn,ruwe (carrier per the shadow table; eclat = clean data-side, gmag = mass-model shadow, plxsn = distance shadow, ruwe = multiplicity shadow).
+    NO credence movement (pre-stated; measurement round).
+
+done (8.2 min)

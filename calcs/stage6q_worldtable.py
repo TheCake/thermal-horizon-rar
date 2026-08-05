@@ -383,6 +383,14 @@ CHECKS = [
      'data/stage8v_gdboot.txt'),
     ('gal-8v-gdboot', '[D = GD-FULL] pct 5/50/95 = -3.001/-2.184/'
      '-1.216; P(D >= 0) = 0.0000', 'data/stage8v_gdboot.txt'),
+    ('bin-8w-strata', 'GATES: G8W-1 4/4, G8W-2 all axes, G8W-3 4/4 '
+     '- ALL PASS', 'data/stage8w_strata.txt'),
+    ('bin-8w-strata', 'axis ruwe: dsq = +0.196/+0.116/+0.171/+0.152 '
+     '-> track 4pos/0neg, flat 0/4', 'data/stage8w_strata.txt'),
+    ('gal-8x-regime', 'GATES: G8X-0/1/2 ALL PASS',
+     'data/stage8x_regime.txt'),
+    ('gal-8x-regime', 'P(DD-deep >= DD-nondeep) = 0.9550; '
+     'P(DD-deep <= GD-deep) = 0.0000', 'data/stage8x_regime.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

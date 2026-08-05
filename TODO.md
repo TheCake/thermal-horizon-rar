@@ -700,6 +700,19 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     data-side instrument (empirical error-tail / selection
     forensics on the census pairs — the 7K design); T2/DR4
     unchanged as external arbiters.**
+    **8W EXECUTED 2026-08-05 (pre-reg cf5bfc7): TRACKING — the
+    width object is QUALITY-STRATIFIED: sq tracks RUWE 4/4
+    (+0.12..+0.20; the clean-RUWE half nearly zeroes it) and
+    parallax-S/N 4/4 (−0.10); the physics-blind eclat axis is
+    flat 4/4. The width object has an ADDRESS: poor-astrometry
+    pairs. Readings: astrometric noise beyond formal errors, or
+    unresolved subsystems in the ASTROMETRIC-SOLUTION channel
+    (RUWE's design target) — the latter would explain 3K/7J
+    (velocity-space companion model = wrong channel), 8H's
+    companion attribution, and the 7I-S strict-cut behavior in
+    one stroke. Successors: RUWE dose-response; cube-grade
+    RUWE-stratified-sq re-fit (α exposure); DR4 epoch astrometry
+    = arbiter.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
@@ -834,6 +847,20 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     in-pipeline candidates = selection forensics on the GD sample
     (surface-brightness/quality-flag strata) or the anchored-
     subsample cross (4Y machinery).**
+    **8X EXECUTED 2026-08-05 (pre-reg cf5bfc7 + wiring amendment
+    f8986c7): GRAY-CARRIED by the letter, COMPOSITION-leaning —
+    GD is 100% deep (422/422; total confounding, measured), so
+    DD-deep decides: DD's deep points NEVER vote like GD's
+    (P(DD-deep ≤ GD-deep) = 0.0000 over 200 paired reps; DD-deep
+    median +0.70 vs GD −1.24); within DD the deep arm pulls
+    POSITIVE (P = 0.955) — the regime escape is closed as a
+    measurement; X2 missed only its p5>0 clause (−0.276). The
+    split is galaxy TYPE. NEW ranked suspect: pressure-support /
+    asymmetric-drift corrections (gas-rich slow rotators are the
+    class needing them; SPARC rotmods lack them; bias direction
+    matches). 8Y candidate = the V_flat split inside GD
+    ((σ/V)² dose-response: GD-fast rejoins the dial ⇒ pressure
+    support; flat in V ⇒ genuine composition shape).**
 26. **Referee queue (adoption candidates)**: T2
     external-RV cross-check — **ARCHIVE PASS EXECUTED as Stage 8O
     (2026-08-05, pre-reg 1e7c89a + two pre-quote wiring amendments,
