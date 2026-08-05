@@ -1291,6 +1291,11 @@ with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-D
 
 ## Discipline (this project's identity — keep it)
 - Every result gets a validation gate before trust; every claimed number has a script.
+- Record-keeping (user directive 2026-08-05): [LOG.md](LOG.md) is the plain program
+  log — ONE short line per stage ("did -> found"), added in the same commit as the
+  stage's verdict. Keep NOTES entries lean; no verbosity. PAPER.md stays FROZEN
+  between author-called rewrites — stages are absorbed into the paper only when the
+  author calls a rewrite, never per stage.
 - Every new pipeline MODE gets a regression against the old mode at its identity
   point (the GB0w precedent — it caught a silent amplitude-law fallthrough on first
   firing; review-adopted corollary: gates only catch what someone thought to write).
