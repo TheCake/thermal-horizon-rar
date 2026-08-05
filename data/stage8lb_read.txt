@@ -1,0 +1,36 @@
+8L-b THE KERNEL ROUND READ (pre-reg 2eeb161; bars locked before any run; NO credence movement any branch)
+
+[simple 31] G8Lb-3 baseline 0.57/+7.8 vs shipped 0.57/+7.8 -> PASS
+[simple 31] CORRECTED: a=0.58 dN=+11.4 (baseline a=0.57 dN=+7.8; d_alpha=+0.009)
+[simple 31]   P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.13, 0.64, 0.23]
+[simple 31]   P(kw)=[1.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0] Dwob'=+259.3 (baseline +310.1)
+[simple 31] MAP cell: alpha=0.5, wr=0.3, fcomp=0.1, fpm=2.4, kw=0.7, sq=0.2; CENSUS corrected-kernel: mu=(29.81, 18.42) jointP=9.82e-12
+
+[BE 31] G8Lb-3 baseline 0.55/+3.4 vs shipped 0.55/+3.4 -> PASS
+[BE 31] CORRECTED: a=0.63 dN=+8.4 (baseline a=0.55 dN=+3.4; d_alpha=+0.079)
+[BE 31]   P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.01, 0.74, 0.26]
+[BE 31]   P(kw)=[1.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0] Dwob'=+259.3 (baseline +309.1)
+[BE 31] MAP cell: alpha=0.5, wr=0.3, fcomp=0.1, fpm=2.4, kw=0.7, sq=0.2; CENSUS corrected-kernel: mu=(29.07, 20.07) jointP=3.75e-12
+
+[simple 101] G8Lb-3 baseline 0.54/+19.5 vs shipped 0.54/+19.5 -> PASS
+[simple 101] CORRECTED: a=0.54 dN=+19.2 (baseline a=0.54 dN=+19.5; d_alpha=+0.003)
+[simple 101]   P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.67, 0.25, 0.07]
+[simple 101]   P(kw)=[1.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0] Dwob'=+249.3 (baseline +303.8)
+[simple 101] MAP cell: alpha=0.5, wr=0.3, fcomp=0.1, fpm=2.1, kw=0.7, sq=0.2; CENSUS corrected-kernel: mu=(29.96, 20.29) jointP=1.66e-12
+
+[BE 101] G8Lb-3 baseline 0.58/+21.9 vs shipped 0.58/+21.9 -> PASS
+[BE 101] CORRECTED: a=0.58 dN=+21.8 (baseline a=0.58 dN=+21.9; d_alpha=+0.009)
+[BE 101]   P(fcomp)=[0.0, 1.0, 0.0, 0.0, 0.0, 0.0] P(fpm)=[0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[BE 101]   P(kw)=[1.0, 0.0, 0.0] P(sq)=[0.0, 0.0, 1.0, 0.0] Dwob'=+250.8 (baseline +300.5)
+[BE 101] MAP cell: alpha=0.5, wr=0.3, fcomp=0.1, fpm=3.0, kw=0.7, sq=0.2; CENSUS corrected-kernel: mu=(28.47, 20.22) jointP=4.96e-12
+
+G8Lb-3 4/4 PASS
+
+SIGN [simple]: d_alpha = +0.006 -> WITHIN-SYSTEMATIC; honest Newton band dN = +15.3 (seed mean)
+SIGN [BE]: d_alpha = +0.044 -> WITHIN-SYSTEMATIC; honest Newton band dN = +15.1 (seed mean)
+CENSUS-RETEST: jointP >= 1e-3 in 0/4 -> NOT reopened
+
+==> 8L-b VERDICT (locked bars): KERNEL-PAID: simple WITHIN-SYSTEMATIC (d_alpha +0.006, dN +15.3); BE WITHIN-SYSTEMATIC (d_alpha +0.044, dN +15.1)
+    NO credence movement (pre-stated; external-only per 8K-b/round 6).
+
+done (0.5 min)

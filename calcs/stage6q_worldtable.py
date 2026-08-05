@@ -299,6 +299,13 @@ CHECKS = [
     ('bin-8kb-nss', 'NINE-CLEAN (2 active among 7 covered): the '
      'faker account loses its last in-catalog hiding place',
      'data/stage8kb_nss.txt'),
+    ('bin-8lb-kernel', 'SIGN [simple]: d_alpha = +0.006 -> '
+     'WITHIN-SYSTEMATIC; honest Newton band dN = +15.3 (seed mean)',
+     'data/stage8lb_read.txt'),
+    ('bin-8lb-kernel', 'SIGN [BE]: d_alpha = +0.044 -> '
+     'WITHIN-SYSTEMATIC; honest Newton band dN = +15.1 (seed mean)',
+     'data/stage8lb_read.txt'),
+    ('bin-8lb-kernel', 'G8Lb-3 4/4 PASS', 'data/stage8lb_read.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

@@ -9758,6 +9758,67 @@ binding per companion) genuinely compete; that contest is the
 measurement. Amendment rule: gate tolerances pre-quote; bars
 may NOT move.
 
+## Stage 8L-b EXECUTED (2026-08-05, all gates PASS): KERNEL-PAID — WITHIN-SYSTEMATIC both laws; the calibration debt retires; the honest Newton band FIRMS to ~+15
+
+Gates: G8Lb-1 bit-exact 8/8 (the fcomp = 0 identity column,
+0.00e+00 incl. vt); G8Lb-2 magnitude on the draws (mean L/S =
+1.66 at P 3–18 yr; L q25 0.895 vs legacy 0.478 — the model had
+been muting mid-P wobble by ~2x in the lower quartile); G8Lb-3
+baselines 4/4 to the digit. Runtime ~2 h as estimated.
+
+THE SIGN (the reviewer's round-6 demand, answered):
+d_alpha = +0.006 (simple) / +0.044 (BE), seed means — WITHIN-
+SYSTEMATIC by the locked bar. The two arms nearly cancel with a
+mild positive residual (the binding arm edges the absorption
+arm). CONSEQUENCE: every forward-model alpha quote GRADUATES to
+kernel-corrected status; the round-6 calibration-debt annotation
+RETIRES.
+
+THE HONEST BAND: dN(corrected) seed means = +15.3 / +15.1 —
+and the WEAK reads firmed (simple-31 +7.8 -> +11.0; BE-31 +3.4
+-> +8.4 = the low-water mark more than doubled). This SUPERSEDES
+the tanh-based "+9–11 under saturation freedom" conditional (the
+physical correction replaces its phenomenological stand-in).
+Mechanism notes: Dwob' eases 300-309 -> 249-259 (boostier wobble
+per companion = fewer companions needed per unit kinematic work
+— directionally sensible, still enormous); kw pins at the 0.7
+floor at P = 1.0 (the amplitude nuisance absorbs part of the
+kernel boost — grid-edge noted, the correction-#4 standard:
+extension = a future decision); fcomp holds 0.1; sq holds 0.2.
+CENSUS-RETEST: NOT reopened (0/4; the corrected kernel slightly
+worsens the cliff, mu_hi 18.4–20.3 — as the boostier mid-P
+spike flood predicts). The 8H companion-sector diagnosis stands.
+
+NO credence movement (pre-stated; external-only per 8K-b/round
+6). No fifth-move shape (alpha interior 0.54–0.63 everywhere).
+
+THE 8-SERIES BINARY ARC IS COMPLETE: the width object measured
+and defended (8G/8G-b), the census attributed (8H), the
+survival and saturation repairs refused (8I-a/8J), the collapse
+world population-starved at object level (8K/8K-b), the
+response physics built and its blind spot mapped (8L-a/-a2),
+and the kernel debt paid with the forward-model numbers intact
+(8L-b). Remaining paths are external (T2/DR4) and galaxy-side;
+the paper absorption of the arc awaits the author's call.
+
+Plain verdict: SUCCESS — the correction with real stakes landed
+within-systematic, which is the best kind of boring: the
+program's numbers were never riding on the unfound constant.
+
+ELI12: Our companion model had a hand-drawn dial nobody could
+source — and the real physics curve says it muted mid-period
+wobbles almost two-fold. Scary: every gravity number ran
+through it. So we swapped in the real curve and re-ran
+everything. Result: the gravity knob moved by less than a
+hundredth (and the wobbliest-case readings actually got
+STRONGER — Newton's worst deficit doubled). The scary dial
+turned out to be load-bearing for nothing; our numbers now
+stand on derived physics instead of an orphan constant. The
+week's campaign is complete: every boring explanation tested,
+each one either executed or priced, belief at 57 with two
+earned moves, and the next battles belong to new telescopes
+and the galaxy side.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

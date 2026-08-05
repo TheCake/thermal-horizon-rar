@@ -1,0 +1,17 @@
+STAGE 7J-B full seeds [31, 101]: wr=[0.1, 0.2, 0.3, 0.4, 0.5], fcomp=[0.0, 0.1, 0.2, 0.35, 0.5, 0.7], fpm=[1.2, 1.5, 1.8, 2.1, 2.4, 3.0]; ln pi(fcomp) = [-1584.82, -768.17, -268.1, -7.78, -1.06, -42.57]
+G8Lb-2 kernel magnitude (slot-1 draws): L q25/50/75/90 = [0.895, 1.0, 1.0, 1.0] vs S_legacy [0.478, 1.0, 1.0, 1.0]; mean L/S at P 3-18 yr = 1.66
+GB0w/GB0e full seed 31 simple: SKIPPED under LKER (G8Lb-1 substitutes at the fcomp=0 column)
+G8Lb-1 full seed 31 simple: max|lker(fcomp=0)-esec| = 0.00e+00 / vt 0.00e+00 -> PASS
+PROF full seed 31 simple: a_hat=0.57 (interior=True), dN=+11.0, wr=0.3, fcomp=0.1, fpm=2.4, sq=0.2
+GB0w/GB0e full seed 31 BE: SKIPPED under LKER (G8Lb-1 substitutes at the fcomp=0 column)
+G8Lb-1 full seed 31 BE: max|lker(fcomp=0)-esec| = 0.00e+00 / vt 0.00e+00 -> PASS
+PROF full seed 31 BE: a_hat=0.61 (interior=True), dN=+8.1, wr=0.3, fcomp=0.1, fpm=2.4, sq=0.2
+  seed 31 done (21.5 min)
+G8Lb-2 kernel magnitude (slot-1 draws): L q25/50/75/90 = [0.895, 1.0, 1.0, 1.0] vs S_legacy [0.478, 1.0, 1.0, 1.0]; mean L/S at P 3-18 yr = 1.66
+GB0w/GB0e full seed 101 simple: SKIPPED under LKER (G8Lb-1 substitutes at the fcomp=0 column)
+G8Lb-1 full seed 101 simple: max|lker(fcomp=0)-esec| = 0.00e+00 / vt 0.00e+00 -> PASS
+PROF full seed 101 simple: a_hat=0.54 (interior=True), dN=+18.8, wr=0.3, fcomp=0.1, fpm=2.1, sq=0.2
+GB0w/GB0e full seed 101 BE: SKIPPED under LKER (G8Lb-1 substitutes at the fcomp=0 column)
+G8Lb-1 full seed 101 BE: max|lker(fcomp=0)-esec| = 0.00e+00 / vt 0.00e+00 -> PASS
+PROF full seed 101 BE: a_hat=0.58 (interior=True), dN=+21.8, wr=0.3, fcomp=0.1, fpm=3.0, sq=0.2
+  seed 101 done (21.5 min)
