@@ -624,8 +624,36 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     lognormal we draw (primary read/MSC fetch first); (b) the
     width-channel SHAPE — the census band is now a direct
     constraint on the sq tail (the TODO-18 width object meets a
-    measured statistic); (c) 8O/T2 — the RV channel sees the
+    measured statistic; 8P corrects the mechanism word: BULK
+    variance, not tail); (c) 8O/T2 — the RV channel sees the
     long-P carriers.**
+    **8P/8Q EXECUTED 2026-08-05 (the flank-repair round, pre-reg
+    f339d19, amendments 1–2 pre-quote c83b26b/3908c43, runs 1–2
+    preserved): BOTH evidence-named repairs EXCLUDED. 8P
+    ([calcs/stage8p_sqshape.py](calcs/stage8p_sqshape.py)):
+    MIXED-CARRIED by the locked grammar, measurement sharp — the
+    band flood is BULK-VARIANCE-carried (bounded shapes at matched
+    Var(ln m) leave mu_band 27–31; clip2 kinematically ~free;
+    twopt continuum-rejected 4/4 = the likelihood resolves the
+    smear to ±1σ and is blind beyond ~2σ; lapl sign-split confirms
+    band←bulk, cliff←tail). 8Q
+    ([calcs/stage8q_pprior.py](calcs/stage8q_pprior.py)): the
+    measured Tokovinin L11 subsystem law is kinematically REFUSED
+    (−9.7…−16.0, 4/4) and cliff-ineffective (the flood RELOCATES
+    to 3–30 yr; mid bracket non-monotonic via the a_in validity
+    cut; sq drops to 0.1 in 3/4 = wobble substitutes width).
+    COMBINED: JOINT-NOT-REACHED 0/4 (best jointP 4.6e-9) — the 8M
+    price STANDS; the (9,2) pair is repair-resistant along both
+    conventional axes. The width-object identification gains a
+    census SIDE-CONDITION: the carrier must be LOCALIZED off the
+    band's feeder population (universal smear of the demanded size
+    necessarily floods the band) — convergent with the 7J-z6
+    fingerprint. DIVIDEND (amendment 1): the reader↔cube lnL
+    identity chain closed at 0.000e+00 4/4; the 4e-17-ulp → 10-lnL
+    integrator amplification measured
+    ([calcs/stage8pq_diag2.py](calcs/stage8pq_diag2.py)); new
+    standing gate rule in CLAUDE.md (bit-verbatim expression
+    copying; lnL-grade identity gates wherever a cube exists).**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

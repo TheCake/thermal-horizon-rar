@@ -325,6 +325,24 @@ CHECKS = [
      'row: C = 3/22', 'data/stage8o_extrv.txt'),
     ('bin-8o-extrv', 'RV-CLEAN (C = 3 >= 3, 0 active primary pairs): '
      'map +1 -> anomaly-real 57 -> 58', 'data/stage8o_extrv.txt'),
+    ('bin-8p-sqshape', 'GATES: G8P-0 2/2, G8P-1 4/4, G8P-2 4/4, '
+     'G8P-3 10/10 - ALL PASS', 'data/stage8p_sqshape.txt'),
+    ('bin-8p-sqshape', 'B1 twopt: pass-rows 0/4 (Dkin>=-2 AND '
+     'pmf9>=1e-3); kill-rows 4/4 (Dkin<=-5)',
+     'data/stage8p_sqshape.txt'),
+    ('bin-8p-sqshape', 'WINNER: none', 'data/stage8p_sqshape.txt'),
+    ('bin-8q-pprior', 'GATES: G8Q-0 4/4, G8Q-1 4/4, G8Q-2 12/12, '
+     'G8Q-4 2/2, G8Q-5 all - ALL PASS', 'data/stage8q_pprior.txt'),
+    ('bin-8q-pprior', 'Q1 (tokL11 cliff <= 0.5x raghavan AND pmf2 >= '
+     '1e-3): 0/4 -> NO-REPAIR', 'data/stage8q_pprior.txt'),
+    ('bin-8q-pprior', 'Q2 (tokL11 kinematics): accept-rows 0/4, '
+     'reject-rows 4/4 -> REJECTED', 'data/stage8q_pprior.txt'),
+    ('bin-8q-pprior', 'COMBINED bar (jointP >= 1e-3 AND Dkin >= -5): '
+     '0/4', 'data/stage8q_combined.txt'),
+    ('meth-lnl-identity-gate', '[marginal-form ] lnL block vs cube: '
+     'max|d| = 0.000e+00', 'data/stage8pq_diag2.txt'),
+    ('meth-lnl-identity-gate', '[reader-form   ] lnL block vs cube: '
+     'max|d| = 1.006e+01', 'data/stage8pq_diag2.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

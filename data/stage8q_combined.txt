@@ -1,0 +1,25 @@
+8Q COMBINED LEG (rule pre-stated: width shape = 8P WINNER, population prior = tokL11): shape = 'logn' (8P line: none)
+
+[simple 31] G8Qc-0 baseline cube identity: max|d| = 0.00e+00 -> PASS
+[simple 31] COMBINED (logn+tokL11): Dkin=   -9.65 vs operative; cell fcomp=0.10 fpm=2.4 kw=0.7 sq=0.1; census mu=(20.07, 18.45) jointP=4.6e-09
+[simple 31] COMBINED locus band : P<3=2.82  3-10=4.16  10-30=2.99  30-100=3.79  P>=100=2.95  nocomp=3.35
+[simple 31] COMBINED locus cliff: P<3=1.05  3-10=5.06  10-30=5.29  30-100=3.93  P>=100=2.90  nocomp=0.22
+[BE 31] G8Qc-0 baseline cube identity: max|d| = 0.00e+00 -> PASS
+[BE 31] COMBINED (logn+tokL11): Dkin=  -11.34 vs operative; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.1; census mu=(20.66, 18.41) jointP=3.5e-09
+[BE 31] COMBINED locus band : P<3=2.82  3-10=4.06  10-30=3.49  30-100=3.44  P>=100=3.27  nocomp=3.57
+[BE 31] COMBINED locus cliff: P<3=1.06  3-10=5.31  10-30=4.96  30-100=3.59  P>=100=3.34  nocomp=0.15
+
+[simple 101] G8Qc-0 baseline cube identity: max|d| = 0.00e+00 -> PASS
+[simple 101] COMBINED (logn+tokL11): Dkin=  -15.30 vs operative; cell fcomp=0.10 fpm=2.1 kw=0.7 sq=0.1; census mu=(22.48, 20.87) jointP=1.3e-10
+[simple 101] COMBINED locus band : P<3=3.30  3-10=4.32  10-30=3.97  30-100=3.27  P>=100=3.32  nocomp=4.31
+[simple 101] COMBINED locus cliff: P<3=0.91  3-10=5.92  10-30=6.64  30-100=4.11  P>=100=3.15  nocomp=0.14
+[BE 101] G8Qc-0 baseline cube identity: max|d| = 0.00e+00 -> PASS
+[BE 101] COMBINED (logn+tokL11): Dkin=  -15.99 vs operative; cell fcomp=0.10 fpm=3.0 kw=0.7 sq=0.2; census mu=(33.04, 26.29) jointP=7.6e-16
+[BE 101] COMBINED locus band : P<3=4.67  3-10=4.52  10-30=3.94  30-100=3.03  P>=100=3.07  nocomp=13.82
+[BE 101] COMBINED locus cliff: P<3=2.32  3-10=5.66  10-30=5.75  30-100=4.60  P>=100=3.72  nocomp=4.24
+
+COMBINED bar (jointP >= 1e-3 AND Dkin >= -5): 0/4
+==> 8Q COMBINED VERDICT: JOINT-NOT-REACHED — the repaired model does not reach census coherence inside the kinematic neighborhood; the 8M price stands and the residual flank(s) are read from the locus rows.
+    NO credence movement (pre-stated).
+
+done (1.7 min)

@@ -10481,6 +10481,126 @@ the TRUE-population MAP-cell census reads (29.81, 18.42) /
 (29.81, 18.42) / (29.07, 20.07) / (29.96, 20.29) / (28.47, 20.22) —
 max shift 0.07, three orders below every 8M/8N conclusion's margin.
 
+## Stage 8P EXECUTED (2026-08-05, run 3 after amendments 1–2, ALL GATES PASS): SHAPE-INSENSITIVE — the census band flood is BULK-VARIANCE-carried, not tail-carried; the width-shape repair axis is DEAD and the width channel's distribution is measured out to ~2σ
+
+Gates: G8P-0 2/2 (in-evaluator identity), G8P-1 cube identity =
+0.00e+00 in 4/4 (the amendment-1 closure — reader ≡ operative lker
+cube at machine precision), G8P-2 census 4/4 (0.10 cross-population
+bar), G8P-3 moments 10/10. Verdict by the locked grammar:
+MIXED-CARRIED, WINNER none — and the measurement inside the label is
+sharp:
+
+- THE BAND FLOOD IS THE SMEAR'S BULK, NOT ITS TAIL. Bounded shapes at
+  matched Var(ln m) — clipped-2σ, hard-bounded uniform, two-point —
+  leave μ_band at 27.3–30.7 vs lognormal's 28.5–30.0 (pmf9 never
+  better than 3e-5; the B1 census leg fails 0/4 for every bounded
+  shape) while clip2 is kinematically nearly FREE (Δkin −0.33 / −1.09
+  / −1.99 / +0.26). At sq=0.2 the ±1σ factors (×1.22) walk the large
+  sub-band population across ṽ=1.414 — no far tail needed. WORDING
+  CORRECTION to 8N (mechanism word only, the measurement stands):
+  8N's channel attribution (no-companion channel ≈57% of the band
+  flood, ×20 amplification) is untouched; my interpretive word
+  "sq-TAIL" is corrected to "sq BULK VARIANCE" — 8P was built to
+  distinguish exactly this and did.
+- THE LIKELIHOOD RESOLVES THE SMEAR'S SHAPE AT ±1σ AND IS BLIND
+  BEYOND ~2σ: the two-point smear (continuum removed) is rejected
+  −11.98/−15.03/−11.84/−16.57 in 4/4; clipping above 2σ costs ~0;
+  the pre-registered sq-axis extension went unused (P(sq>0.3) = 0.00
+  everywhere — no compensation hunger).
+- THE LAPL CONTROL CONFIRMS THE MECHANISM BY ITS SIGN SPLIT: at fixed
+  nuisances the heavier tail LOWERS the band (28.7 vs 29.8 — more
+  central mass, less at ±1σ) and RAISES the cliff (21.0–22.3 vs
+  18.4–20.3). B2's pre-registered direction (written under the
+  tail-carrier premise) flags 0/4 — the flag marks the premise's
+  failure, not the instrument's; the cliff cross-check breach (9/12,
+  twopt −13…−21%) is the same physics (the cliff has a tail-fed
+  margin the band lacks).
+- CONSEQUENCE: at the variance the kinematics demand, NO reshaping of
+  the width distribution reconciles the census band. The band-flank
+  inconsistency is VARIANCE-level — the kinematic and census channels
+  disagree about the same second moment. The TODO-18 width object
+  gains a census SIDE-CONDITION: the physical width carrier must be
+  LOCALIZED away from the band's feeder population (a universal
+  multiplicative smear of the demanded size necessarily floods the
+  band) — convergent with the 7J-z6 mid-shoulder/inner-bin
+  fingerprint.
+
+Plain verdict: SUCCESS as a measurement (bulk-carried, continuum
+required at ±1σ, tail-blind beyond 2σ, repair axis closed) — NEEDS
+DIFFERENT PHYSICS for the repair itself.
+
+ELI12: Our simulated stars each get a random "blur" so they match
+real measurement messiness. We suspected the blur's rare EXTREME
+values were faking too many stars in our special speed band, so we
+tried blurs with the extremes chopped off — same average blur, no
+extremes. Surprise: the fake crowd didn't shrink at all. It's the
+ORDINARY blur values doing it — tons of stars sit just under the
+band, and a routine 20% bump pushes them in. Chopping extremes
+changes nothing (and the fit barely notices); only shrinking the
+whole blur would work, and the fit refuses that because it needs the
+blur elsewhere. So the clash is real and deeper than a fat tail:
+whatever blurs real stars must NOT touch the stars near our band — a
+strong clue about where the blur physically lives.
+
+## Stage 8Q EXECUTED (2026-08-05, run 3 + combined leg, ALL GATES PASS): NO-REPAIR × REJECTED — the kinematics REFUSE the measured subsystem period law, the cliff flood survives it, and the combined leg leaves the 8M price standing
+
+Gates: G8Q-0 = 0.00e+00 4/4, G8Q-1 4/4 (0.10), G8Q-2 12/12 (recast
+exact to <0.005), G8Q-4 2/2, G8Q-5 all; combined G8Qc-0 0.00e+00 4/4.
+
+Results: Q1 = 0/4 → NO-REPAIR — the Tokovinin L11 law (3.25, 1.80)
+does NOT halve the cliff: μ_cliff 18.4/18.4/20.9/26.3 vs raghavan
+18.4/20.1/20.3/20.2; the P-locus shows the flood RELOCATING, not
+dying (P≥100 yr mass drops, the 3–30 yr bins swell to ~5–6.6 each —
+shorter-period companions spike the cliff just as hard through the
+leak kernel's mid-P response). Q2 = 4/4 reject → REJECTED — Δkin =
+−9.65/−11.34/−15.30/−15.99: the fitted model actively PREFERS the
+field-like Raghavan long-P wobble mass. Q3 mixed (2/4): simple's
+noise-edge hunger relaxes under tokL11 (P(fpm=3.0) 0.23→0.02,
+0.07→0.07) while BE's does not (0.80–0.97); kw floor-pinned 12/12.
+The mid bracket is rejected too (−9.29…−12.57) and floods MORE (band
+30.7–33.6): the bracket is non-monotonic because P(valid) rises
+toward shorter laws (0.563→0.728→0.879 — the a_in < 130 AU validity
+cut was silently absorbing the field law's ultra-long tail). Under
+tokL11 the profiled sq drops 0.2→0.1 in 3/4 — the added mid-P wobble
+SUBSTITUTES for part of the width channel (a variance-conservation
+echo of 8P's bulk finding: the likelihood defends a total width
+budget whatever carries it).
+
+Readings (labeled): (i) the rejection is P-SHAPE-carried, not
+active-rate-carried — the doubled valid fraction at fixed fcomp could
+cost only the known-flat fcomp-axis few-lnL, not −10…−16 (the
+pre-reg's LNPI/fcomp-semantics caveat is carried; a semantics-matched
+refit is the press-further instrument, unpromised). (ii) With 8N's
+locus and 8I-a/8J, the wobble defect is bracketed as
+AMPLITUDE-DISTRIBUTION-level within the long-P sector: survival cuts
+(8I-a), saturation (8J), and now the period prior (8Q) all fail to
+fix it.
+
+COMBINED LEG (rule pre-stated; 8P WINNER = none → lognormal +
+tokL11): JOINT-NOT-REACHED 0/4 — best jointP 4.6e-9 vs the 1e-3 bar
+at Δkin −9.7…−16.0. THE ROUND'S SUMMARY SENTENCE: both evidence-named
+census repairs are EXCLUDED at the operative posterior; the 8M
+admission price STANDS; the (band=9, cliff=2) pair is
+repair-resistant along both conventional axes and remains the
+self-defending census statistic (7K-b form) — now hardened by two
+more excluded alternatives.
+
+Plain verdict: SUCCESS as a measurement (the evidence-named repair
+candidate excluded on both its promised axes; the bracket's
+non-monotonicity and the width-substitution effect are new model
+facts) — the cliff flank stays OPEN.
+
+ELI12: The textbook says hidden companions orbiting one star of a
+wide pair tend to have SHORTER orbits than average field companions.
+Our sim used the average-field rule, and we suspected that was why it
+makes too many extreme fakes. So we plugged in the textbook's
+measured shorter-orbit rule. Double surprise: (1) the fit got WORSE
+by a lot — the data genuinely prefer the field-style wobble; (2) the
+fakes didn't go away — shorter-orbit companions shake stars just as
+hard, on a different rhythm. The suspect is cleared on both counts,
+so the real problem stays where three earlier tests pointed: how
+STRONG the simulated wobbles are, not how long their orbits take.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
