@@ -1,0 +1,27 @@
+8V THE GALAXY-LEVEL BOOTSTRAP OF THE GD DIAL-TENSION (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+G8V-0 verbatim-lift regression: GD 38 / DD 111 (want 38/111) -> PASS; OFF probe -647.874131278 vs 8S-c -647.874131278 (d=-3.05e-10) -> PASS
+G8V-1 fast-vs-verbatim cross-gate (20 probes incl. duplicated list): max|d| = 3.64e-12 -> PASS
+G8V-2 identity replicate [FULL]: coarse lam_hat = 0.969 vs 8S-c fine 0.960 -> PASS
+G8V-2 identity replicate [GD]: coarse lam_hat = -1.309 vs 8S-c fine -1.315 -> PASS
+G8V-2 identity replicate [DD]: coarse lam_hat = 1.337 vs 8S-c fine 1.331 -> PASS
+GATES: G8V-0/1/2 ALL PASS
+
+G8V-3 first-replicate fingerprint: sum(draw)=10928, unique=94, first12(sorted)=[0, 0, 1, 1, 2, 3, 4, 5, 6, 6, 6, 7]
+  ... 50/300 replicates (1.1 min)
+  ... 100/300 replicates (2.1 min)
+  ... 150/300 replicates (3.1 min)
+  ... 200/300 replicates (4.2 min)
+  ... 250/300 replicates (5.2 min)
+  ... 300/300 replicates (6.3 min)
+
+replicates: 300; skips 0; valid pairs 300
+[FULL] lam_hat pct 5/50/95 = +0.308/+0.964/+1.500; edge lo/hi = 0/54 (0%/18%)
+[GD  ] lam_hat pct 5/50/95 = -2.000/-1.254/-0.333; edge lo/hi = 24/0 (8%/0%)
+[DD  ] lam_hat pct 5/50/95 = +0.532/+1.359/+1.500; edge lo/hi = 0/142 (0%/47%)
+[D = GD-FULL] pct 5/50/95 = -3.001/-2.184/-1.216; P(D >= 0) = 0.0000
+P(lam_GD >= lam_DD) = 0.0000; 95th pct lam_GD = -0.333 vs FULL point +0.960
+
+==> 8V VERDICT (locked grammar): TENSION-ROBUST - the galaxy-level (correlation-honest) resampling keeps the gas-dominated optimum below the full-sample dial (one-sided, pre-stated; GD low-edge censoring biases AGAINST this bar, so the pass is conservative).
+    NO credence movement (pre-stated; measurement round).
+
+done (6.3 min)

@@ -374,6 +374,15 @@ CHECKS = [
     ('gal-8sc-gddist', '[GD   vertON] lam_hat = -1.315 (D1 '
      '-1.451..-1.178) -> c1_hat = -0.658; INTERIOR',
      'data/stage8sc_gddist.txt'),
+    ('bin-8u-mixture', 'GATES: G8U-1 4/4, G8U-2 4/4, G8U-3 4/4 - '
+     'ALL PASS', 'data/stage8u_mixture.txt'),
+    ('bin-8u-mixture', 'M-bars: M1-rows 0/4 (fmx<=0.35 AND gain>=+3 '
+     'AND pmf9>=1e-3); M2-rows 0/4 (same but pmf9<1e-3); M3-rows 2/4 '
+     '(gain<+3), of which M3a 0', 'data/stage8u_mixture.txt'),
+    ('gal-8v-gdboot', 'GATES: G8V-0/1/2 ALL PASS',
+     'data/stage8v_gdboot.txt'),
+    ('gal-8v-gdboot', '[D = GD-FULL] pct 5/50/95 = -3.001/-2.184/'
+     '-1.216; P(D >= 0) = 0.0000', 'data/stage8v_gdboot.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

@@ -1,0 +1,51 @@
+8U THE MIXTURE INSTRUMENT (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+f_mx grid = [0.05, 0.1, 0.2, 0.35, 0.65, 1.0]; sm grid = [0.0, 0.1, 0.2, 0.3, 0.45, 0.65]; ws in [0.0, 0.045] (8T floor carried); observed pair = (band 9, cliff 2)
+equal-variance locus (f_mx, sm | var=f*sm^2): (1.00,0.20)|0.040  (0.35,0.30)|0.032  (0.20,0.45)|0.041  (0.10,0.65)|0.042  (0.05,0.65)|0.021
+
+[simple 31] G8U-1 cube identity (fmx=1, ws=0, sm<=0.3) at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 0.00e+00 -> PASS
+[simple 31] G8U-2 census identity: mu=(29.81, 18.42) vs shipped (29.81, 18.42) -> PASS
+[simple 31] G8U-3 8T gain regression (lnL grade): +6.385 vs 8T +6.39 -> PASS
+[simple 31] FREE: gain=  +5.32 (vs global-smear slice); cell fcomp=0.10 fpm=2.1 kw=0.7 fmx=0.65 sm=0.20 ws=0.045; var=0.026; P(fmx<1)=1.00 P(ws>0)=1.00; census@prof mu=(25.97, 18.99) pmf9=7.8e-05 pmf2=1.0e-06; kw-floor
+    locus (fmx=1.00, sm=0.20, var=0.040): d(lnL)=-5.32; census mu=(31.2, 21.1) pmf9=2.2e-06
+    locus (fmx=0.35, sm=0.30, var=0.032): d(lnL)=-1.91 NEAR; census mu=(25.7, 21.8) pmf9=9.5e-05
+    locus (fmx=0.20, sm=0.45, var=0.041): d(lnL)=-20.44; census mu=(25.4, 23.8) pmf9=1.1e-04
+    locus (fmx=0.10, sm=0.65, var=0.042): d(lnL)=-42.75; census mu=(23.5, 23.4) pmf9=3.8e-04
+    locus (fmx=0.05, sm=0.65, var=0.021): d(lnL)=-39.95; census mu=(19.6, 19.8) pmf9=3.7e-03
+
+[BE 31] G8U-1 cube identity (fmx=1, ws=0, sm<=0.3) at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 0.00e+00 -> PASS
+[BE 31] G8U-2 census identity: mu=(29.11, 20.07) vs shipped (29.07, 20.07) -> PASS
+[BE 31] G8U-3 8T gain regression (lnL grade): +13.556 vs 8T +13.56 -> PASS
+[BE 31] FREE: gain=  +1.14 (vs global-smear slice); cell fcomp=0.10 fpm=1.5 kw=0.7 fmx=0.65 sm=0.20 ws=0.045; var=0.026; P(fmx<1)=0.82 P(ws>0)=1.00; census@prof mu=(25.22, 19.26) pmf9=1.3e-04 pmf2=8.0e-07; kw-floor
+    locus (fmx=1.00, sm=0.20, var=0.040): d(lnL)=-1.14 NEAR; census mu=(30.0, 21.1) pmf9=4.9e-06
+    locus (fmx=0.35, sm=0.30, var=0.032): d(lnL)=-1.79 NEAR; census mu=(27.1, 22.5) pmf9=3.7e-05
+    locus (fmx=0.20, sm=0.45, var=0.041): d(lnL)=-18.00; census mu=(25.5, 25.5) pmf9=1.1e-04
+    locus (fmx=0.10, sm=0.65, var=0.042): d(lnL)=-43.90; census mu=(24.5, 23.9) pmf9=2.0e-04
+    locus (fmx=0.05, sm=0.65, var=0.021): d(lnL)=-39.17; census mu=(21.2, 20.9) pmf9=1.5e-03
+
+[simple 101] G8U-1 cube identity (fmx=1, ws=0, sm<=0.3) at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 0.00e+00 -> PASS
+[simple 101] G8U-2 census identity: mu=(29.97, 20.29) vs shipped (29.96, 20.29) -> PASS
+[simple 101] G8U-3 8T gain regression (lnL grade): +5.957 vs 8T +5.96 -> PASS
+[simple 101] FREE: gain=  +5.28 (vs global-smear slice); cell fcomp=0.10 fpm=2.4 kw=0.7 fmx=0.65 sm=0.20 ws=0.045; var=0.026; P(fmx<1)=1.00 P(ws>0)=1.00; census@prof mu=(28.51, 18.96) pmf9=1.4e-05 pmf2=1.0e-06; kw-floor
+    locus (fmx=1.00, sm=0.20, var=0.040): d(lnL)=-5.28; census mu=(32.6, 21.4) pmf9=7.8e-07
+    locus (fmx=0.35, sm=0.30, var=0.032): d(lnL)=-2.31; census mu=(27.8, 22.4) pmf9=2.3e-05
+    locus (fmx=0.20, sm=0.45, var=0.041): d(lnL)=-25.12; census mu=(26.9, 24.9) pmf9=4.3e-05
+    locus (fmx=0.10, sm=0.65, var=0.042): d(lnL)=-49.10; census mu=(24.2, 21.9) pmf9=2.4e-04
+    locus (fmx=0.05, sm=0.65, var=0.021): d(lnL)=-44.83; census mu=(21.2, 18.5) pmf9=1.5e-03
+
+[BE 101] G8U-1 cube identity (fmx=1, ws=0, sm<=0.3) at MAP (alpha=0.5, eta=1.05, wr=0.3): max|d| = 0.00e+00 -> PASS
+[BE 101] G8U-2 census identity: mu=(28.54, 20.18) vs shipped (28.47, 20.22) -> PASS
+[BE 101] G8U-3 8T gain regression (lnL grade): +3.961 vs 8T +3.96 -> PASS
+[BE 101] FREE: gain=  +1.65 (vs global-smear slice); cell fcomp=0.10 fpm=2.1 kw=0.7 fmx=0.65 sm=0.20 ws=0.045; var=0.026; P(fmx<1)=0.86 P(ws>0)=0.99; census@prof mu=(26.36, 17.94) pmf9=6.0e-05 pmf2=2.6e-06; kw-floor
+    locus (fmx=1.00, sm=0.20, var=0.040): d(lnL)=-1.65 NEAR; census mu=(30.1, 20.6) pmf9=4.9e-06
+    locus (fmx=0.35, sm=0.30, var=0.032): d(lnL)=-5.85; census mu=(28.1, 21.3) pmf9=1.9e-05
+    locus (fmx=0.20, sm=0.45, var=0.041): d(lnL)=-18.65; census mu=(27.1, 24.5) pmf9=3.8e-05
+    locus (fmx=0.10, sm=0.65, var=0.042): d(lnL)=-48.23; census mu=(24.8, 22.3) pmf9=1.7e-04
+    locus (fmx=0.05, sm=0.65, var=0.021): d(lnL)=-44.28; census mu=(21.5, 19.0) pmf9=1.3e-03
+
+GATES: G8U-1 4/4, G8U-2 4/4, G8U-3 4/4 - ALL PASS
+
+M-bars: M1-rows 0/4 (fmx<=0.35 AND gain>=+3 AND pmf9>=1e-3); M2-rows 0/4 (same but pmf9<1e-3); M3-rows 2/4 (gain<+3), of which M3a 0
+==> 8U VERDICT (locked grammar): MIXED-CARRIED - rows stand as measurements.
+    NO credence movement (pre-stated; measurement round).
+
+done (7.1 min)

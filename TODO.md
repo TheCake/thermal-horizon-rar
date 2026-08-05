@@ -684,6 +684,22 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     the last classes standing; the mixture instrument (a second
     sub-population with its own ṽ scale, the w_rad precedent) =
     the named next in-pipeline lever.**
+    **8U EXECUTED 2026-08-05 (pre-reg 082f127): MIXED-CARRIED by
+    the letter — the free optimum is a MAJORITY-mixture (f_mx =
+    0.65, sm = 0.20, ws = 0.045 in 4/4, gains +1.1–5.3 over the
+    global smear, P(f_mx<1) 0.82–1.00) that the minority bars
+    (f_mx ≤ 0.35) didn't cover; grammar miss owned in NOTES. The
+    pre-registered locus co-read delivers the substance: the
+    kinematics↔census demands are monotone-OPPOSED across the
+    equal-variance locus (NEAR cells all flood pmf9 ≤ 9.5e-5;
+    admissible cells kinematically dead −39…−45; M3a flag 0/4) —
+    no zero-inflated smear reconciles either. Mixture class
+    measured-excluded as reconciliation (measurement, not
+    bar-verdict); DATA-SIDE last standing; the census pair's
+    referee count = SEVEN classes. Next in-pipeline: the
+    data-side instrument (empirical error-tail / selection
+    forensics on the census pairs — the 7K design); T2/DR4
+    unchanged as external arbiters.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
@@ -803,6 +819,21 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     the M/L channel is inert there), dwarf selection, genuine
     deep-regime shape. The GD↔DD split (−1.3 vs +1.3) = the galaxy
     program's sharpest open object.**
+    **8V EXECUTED 2026-08-05 (pre-reg 082f127, the correlation
+    control): TENSION-ROBUST — 300 paired galaxy-level replicates
+    (fast engine cross-gated 3.6e-12; estimator reproduces all
+    three 8S-c optima), P(Δ ≥ 0) = 0.0000, 95th pct λ̂_GD = −0.33
+    vs dial +0.96 (~1.3 λ clear; GD low-edge 8%, conservative
+    direction); P(λ̂_GD ≥ λ̂_DD) = 0.0000. The within-curve
+    correlation suspect (7B ρ≈0.87) is CLEARED — third control
+    survived (gas → vertical → correlation). Co-read: DD rides the
+    +1.5 grid top in 47% of replicates (split wider than quoted).
+    REMAINING suspects: dwarf selection systematics; genuine
+    deep-regime shape. The GD↔DD split is bootstrap-HARDENED and
+    stays the galaxy program's sharpest open object; next
+    in-pipeline candidates = selection forensics on the GD sample
+    (surface-brightness/quality-flag strata) or the anchored-
+    subsample cross (4Y machinery).**
 26. **Referee queue (adoption candidates)**: T2
     external-RV cross-check — **ARCHIVE PASS EXECUTED as Stage 8O
     (2026-08-05, pre-reg 1e7c89a + two pre-quote wiring amendments,

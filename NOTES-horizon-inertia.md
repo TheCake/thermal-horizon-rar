@@ -11085,6 +11085,106 @@ edge fractions per set; if GD edge fraction > 30%, append
 ESTIMATE-CENSORED to the verdict. Co-reads: percentiles (5/50/95)
 of λ̂_FULL/λ̂_GD/λ̂_DD/Δ; P(λ̂_GD ≥ λ̂_DD); FULL high-edge fraction.
 
+## Stage 8U EXECUTED (2026-08-05, first run, ALL GATES PASS): MIXED-CARRIED by the letter — the data pick a MAJORITY-mixture the minority-bars didn't cover (grammar miss owned); the pre-registered locus co-read measures the pincer running INSIDE the mixture family
+
+Gates: G8U-1 cube bit-identity 0.00e+00 in 4/4 (the f_mx=1 slice IS
+the legacy global smear); G8U-2 census identity ≤ 0.07; G8U-3 the
+8T gains reproduced at lnL grade (+6.385/+13.556/+5.957/+3.961 vs
++6.39/+13.56/+5.96/+3.96 — the amendment-1 standard holding on a
+fresh lift). 7.1 min.
+
+Measurements (verdict letter = MIXED-CARRIED, M1 0/4 M2 0/4 M3 2/4;
+rows stand): (1) the free optimum is the SAME cell in 4/4 —
+**f_mx = 0.65, sm = 0.20, ws = 0.045** (var 0.026): a
+majority-smeared / 35%-clean population over the 8T floor, gaining
++5.32/+5.28 (simple) and +1.14/+1.65 (BE) over the global smear;
+P(f_mx<1) = 0.82–1.00; P(ws>0) = 0.99–1.00 (the floor demand
+unconditional, 8T confirmed). My M1/M2 bars said MINORITY
+(f_mx ≤ 0.35); the data went majority — the letter falls through to
+MIXED-CARRIED and the miss is owned here (the 8S one-sided-interval
+precedent: bar grammar must anticipate the whole outcome space).
+(2) The profiled cell still FLOODS the census: band μ = 25.2–28.5
+vs observed 9, pmf9 ≤ 1.3e-4, 4/4. (3) THE LOCUS TABLE (pre-stated
+co-read): across the equal-variance locus the two demands are
+monotone-OPPOSED — every kinematically-NEAR cell (d ≥ −2) floods
+(pmf9 ≤ 9.5e-5); the only census-admissible cells (f_mx=0.05,
+sm=0.65: pmf9 1.3e-3–3.8e-3) are kinematically dead (−39.2…−44.8);
+**the pre-registered M3a flag (a NEAR + admissible + f_mx<1 cell
+exists) fired 0/4.** No grid cell satisfies both demands in any
+law-seed.
+
+Standing: the mixture class as RECONCILIATION is measured-excluded
+at every grid cell tried — stated as measurement, not bar-verdict
+(the letter miss above); DATA-SIDE is the last reconciliation class
+standing. The partial-mixture + floor cell (0.65, 0.20, 0.045)
+replaces global sq=0.2 as the best kinematic-side effective
+stand-in. The (9,2) census pair's referee count: SEVEN model
+classes now vetoed.
+
+Plain verdict: NEEDS REFINEMENT as a formal contest (the bars
+mis-anticipated the optimum's location) / SUCCESS as a measurement
+— the locus table answers the round's question: no zero-inflated
+smear reconciles kinematics and census either.
+
+ELI12: We tested the "hidden second family" idea: maybe only SOME
+star pairs get the mystery blur. The fit likes a version of that —
+blur about two-thirds, leave a third clean. But the trap door
+closes: to stop the fake overcrowding of our 9-star corner, the
+blurred family must be small and wildly blurred — and the fit HATES
+that version (worst one tried). Every version the fit likes
+overcrowds the corner; every version the corner allows, the fit
+rejects. So "hidden family" joins the pile. What's left: the blur
+isn't in the stars at all — it's something about the data itself.
+(Honesty note: we wrote the rulebook expecting a SMALL hidden
+family, the data picked a BIG one, so the referee sheet formally
+reads "no ruling" — the measurements still say what they say, and
+the rulebook bug is logged.)
+
+## Stage 8V EXECUTED (2026-08-05, first run, ALL GATES PASS): TENSION-ROBUST — 0/300 galaxy-level replicates reach the dial; the correlation suspect is CLEARED and the GD↔DD split is bootstrap-hardened
+
+Gates: G8V-0 OFF-probe −647.874131278 reproduced (d = −3.05e-10),
+counts 38/111 exact; G8V-1 the fast bincount engine vs the verbatim
+8S-c expression max|d| = 3.64e-12 over 20 probes incl.
+duplicated-instance lists (the GB0w new-MODE rule); G8V-2 the
+coarse estimator reproduces all three 8S-c fine optima
+(0.969/−1.309/1.337 vs 0.960/−1.315/1.331); G8V-3 fingerprint
+logged. 300 paired replicates, 0 skips, 6.3 min.
+
+Results: **P(Δ ≥ 0) = 0.0000 — not one replicate lifts the
+gas-dominated optimum to the full-sample dial**; Δ percentiles
+5/50/95 = −3.00/−2.18/−1.22; λ̂_GD = −2.000/−1.254/−0.333 (median ≈
+the 8S-c point −1.315; low-edge 8%, direction pre-stated
+conservative — censoring can only weaken the pass); λ̂_FULL =
++0.31/+0.96/+1.50; 95th pct λ̂_GD = −0.333 vs the dial +0.960 ⇒ B1
+passed with ~1.3 λ to spare. P(λ̂_GD ≥ λ̂_DD) = 0.0000 — the split
+itself is galaxy-level robust. Co-read flag: the DD complement
+rides its +1.5 grid top in 47% of replicates (λ̂_DD =
++0.53/+1.36/+1.50) — the star-rich side wants MORE than the grid
+gives; the split is if anything wider than quoted (cosmetic for the
+bars, which are GD-vs-FULL).
+
+Suspect ledger after 8V: gas budget CLEARED (8S-b) → vertical
+channel at measured grade CLEARED (8S-c) → within-curve correlation
+CLEARED at galaxy-resampling grade (8V). REMAINING: dwarf selection
+systematics; genuine deep-regime shape. (The full-hier joint leg
+stays named, limited marginal value for GD.) Three controls
+survived — the GD↔DD split is now a HARDENED structure.
+
+Plain verdict: SUCCESS as a control — the cheap suspect died in one
+afternoon; the tension itself now reads NEEDS DIFFERENT PHYSICS or
+a selection story, and it is the galaxy program's sharpest open
+object.
+
+ELI12: Skeptic's worry: "each galaxy's points move together, so
+maybe you counted one galaxy's opinion twenty times and the dwarf
+disagreement is fake." Honest fix: treat whole GALAXIES as the
+voting unit — reshuffle which galaxies are in the sample 300 times
+and redo the whole fit each time. If the disagreement were a
+vote-counting bug, some shuffles would erase it. Zero out of 300
+did. Three suspects checked, three cleared — what's left is either
+"how these dwarf galaxies got picked" or "deep gravity really is
+different in gas-rich dwarfs."
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
