@@ -313,6 +313,12 @@ CHECKS = [
      'data/stage8m_jointcensus.txt'),
     ('bin-8m-jointcensus', 'B4 Newton flank: AGAINST-EXPECTATION (4/4 '
      'law-seeds have dN_J < dN_kin', 'data/stage8m_jointcensus.txt'),
+    ('bin-8n-floodanatomy', 'GATES: G8N-0 4/4, G8N-1 4/4, G8N-2 4/4, '
+     'G8N-3 4/4 - ALL PASS', 'data/stage8n_floodanatomy.txt'),
+    ('bin-8n-floodanatomy', 'R1 P-locus: mean band-carrier fraction '
+     'at P >= 10 yr = 0.70 -> CONFIRMED', 'data/stage8n_floodanatomy.txt'),
+    ('bin-8n-floodanatomy', 'mean d_cliff = -14%, mean d_band = -1.00 '
+     '-> NEUTRAL-OR-WORSENS', 'data/stage8n_floodanatomy.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

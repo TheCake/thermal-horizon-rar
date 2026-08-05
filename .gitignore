@@ -35,3 +35,9 @@ data/limbach2009_text.txt
 !data/stage8kb_orb.csv
 !data/stage8kb_acc.csv
 !data/stage8kb_trend.csv
+!data/stage8o_targets.csv
+!data/stage8o_xm_apogee.csv
+!data/stage8o_xm_galah.csv
+!data/stage8o_xm_lamost.csv
+!data/stage8o_xm_lamostm.csv
+!data/stage8o_xm_rave.csv

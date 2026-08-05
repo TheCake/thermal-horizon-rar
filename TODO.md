@@ -609,6 +609,23 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     mildly pro-Newton via the boostier-spike effect); the wobble
     tail-SHAPE instrument stays THE named repair; final-stamp on
     the α machinery still blocked pending it or T2/DR4.**
+    **8N FLOOD ANATOMY EXECUTED 2026-08-05 (pre-reg 3c7d54a, gates
+    16/16, [calcs/stage8n_floodanatomy.py](calcs/stage8n_floodanatomy.py)):
+    TWO CULPRITS, flank-resolved — the BAND flank is the sq-TAIL
+    (the no-companion channel alone floods the band ×1.9; sq=0.2
+    amplifies the bare 0.86 → ~17 = ~57% of the band flood), the
+    CLIFF flank is long-P companion spikes (share 0.77–0.81;
+    RUWE-silent locus CONFIRMED at 0.70) — and the SRVR candidate
+    was killed at design time (the flood carriers have
+    residual/noise q50 0.46; a survival cut removes ≲8%). t5 q-law
+    dial NEUTRAL (−14% cliff vs ≥30% bar). SUCCESSOR
+    (evidence-named): (a) the subsystem P-prior round — Tokovinin
+    2014 measures inner subsystems SHORTER-P than the field
+    lognormal we draw (primary read/MSC fetch first); (b) the
+    width-channel SHAPE — the census band is now a direct
+    constraint on the sq tail (the TODO-18 width object meets a
+    measured statistic); (c) 8O/T2 — the RV channel sees the
+    long-P carriers.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

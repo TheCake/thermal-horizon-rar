@@ -10099,6 +10099,142 @@ bin-8n-floodanatomy in the result commit. Concurrent lane: 8O (the
 T2 external-RV reconnaissance) pre-registers separately on the
 scout-verified VizieR tables.
 
+## Stage 8N EXECUTED (2026-08-05, all gates PASS): THE FLOOD HAS TWO CULPRITS — the band flank is the sq-TAIL, the cliff flank is the long-P companion spike; R1 CONFIRMED, R3 NEUTRAL; the successor is population-prior + width-shape
+
+Gates 16/16 first run (G8N-0 shipped rows to the digit; G8N-1 t5
+stream preservation exact; G8N-2 channel identity exact; G8N-3
+locus completeness exact). 0.6 min compute.
+
+PART 0 (in-record): spike carriers = 6.8% of systems, residual-
+to-noise q50 = 0.46, q90 = 74.8; a wsr = 100 survival cut removes
+7.7% of the flood carriers — SRVR dead as designed-killed.
+
+R1 — CONFIRMED (mean 0.70 vs the ≥ 0.60 expectation): band
+companion-carriers sit at P ≥ 10 yr in 0.67–0.72 of cases (cliff
+similar) — the flood locus is the RUWE-silent long-P window in the
+full forward, not just the population calc. The RV channel is the
+arbiter (8O).
+
+THE CHANNEL DECOMPOSITION (the round's discovery): the two census
+flanks have DIFFERENT culprits.
+- BAND: the no-companion channel alone makes μ_band ≈ 16.5–17.3
+  (of the full ~29–30) at the MAP cell — vs 8H's A-config (sq = 0)
+  at 0.86. **The sq = 0.2 width channel amplifies the bare band
+  ×20 and carries ~57% of the band flood** — the lognormal smear's
+  tail pushes sub-band pairs across √2 . The band flank indicts
+  the WIDTH-CHANNEL SHAPE (the 3E→6P→sq→fpm-chase object's census
+  face), not companions.
+- CLIFF: companion share 0.77–0.81 (the 8H attribution reproduced,
+  now flank-resolved): the long-P spike tail multiplies the bare
+  cliff (~3.5–4.7) ×4–5 to 18.4–20.3.
+
+R3 — NEUTRAL-OR-WORSENS by the locked grammar: the MEASURED
+twin-heavy t5 law trims the cliff only −11…−17% (mean −14%, bar
+≥ 30%) and the band −1…−5%; jointP improves ~20× and remains
+~1e-10. The q-law is not the repair.
+
+SUCCESSOR (named by the grammar + the scout, two-flank form):
+(a) CLIFF flank — the population-prior round: the subsystem
+P-distribution. Scout (Haiku, primary-flagged): Tokovinin 2014
+(AJ 147, 87) measures inner subsystems in hierarchies SHORTER-P
+than the field lognormal (excess < 30 d, nonmonotonic, tidal ×2
+excess < 10 d); our model draws the RAGHAVAN FIELD lognormal for
+subsystems — plausibly over-populating the exact P ≥ 10 yr locus
+that carries the cliff flood; the inner-P distribution parameters
+are NOT published at the needed grade (the MSC/Spectroscopic-
+Orbits series holds the data) → the successor round starts with a
+primary read/catalog fetch, not a dial. (b) BAND flank — the
+width-channel SHAPE (bounded/truncated vs lognormal tail): the
+census band is now a direct constraint on the sq distribution's
+tail, connecting the width-object identification (TODO #18) to a
+measured statistic. (c) The external arbiter — 8O/T2 (the RV
+channel sees the long-P carriers both flanks share).
+
+NO credence movement (pre-stated; measurement round). Ledger row
+bin-8n-floodanatomy; worldtable tokens added.
+
+Plain verdict: SUCCESS — the flood stopped being one mystery and
+became two named, differently-shaped model defects with an
+evidence-anchored repair queue.
+
+ELI12: We dissected the model's overcrowded "too-fast" speed band.
+Turns out two different things overfill it: the band itself is
+mostly overfilled by our "measurement blur" knob (its bell curve
+has too fat a tail — it smears ordinary pairs over the line),
+while the even-faster cliff zone is overfilled by simulated hidden
+companions on decade-long orbits. Neither knob we already tried
+fixes this. But now we know exactly what to fix: use the REAL
+measured orbit-size distribution for hidden companions (astronomy
+books say they hug their stars closer than our recipe assumes),
+and give the blur knob a physically-shaped curve instead of a
+fat-tailed one. Also: those decade-orbit companions are invisible
+to the wobble detector but LOUD to spectrographs — which is
+exactly the instrument we point next.
+
+## Stage 8O PRE-REGISTRATION (2026-08-05, committed BEFORE any query): THE T2 EXTERNAL-RV RECONNAISSANCE — the named external decider attempted on the public archives
+
+THE QUESTION. 8K-b's map ended the in-catalog path at 57% with the
+P ≳ 15–20 yr faker window + 2 uncovered pairs disclosed and "T2 =
+the closure." The 8N part-0 kill SHARPENED the stakes: the model's
+census-flood companions are RUWE-SILENT long-P systems — but they
+are RV-LOUD (reflex amplitudes ~1–8 km/s at the faking locus). The
+public RV archives (APOGEE multi-visit, GALAH, LAMOST, RAVE +
+Gaia's own DR3 RV row) are the free first pass of T2.
+
+TARGETS. All 23 ceiling-census pairs (46 components,
+data/ceiling_pairs.csv); PRIMARY = the census region by the
+corrected convention (band_corr ∈ {band: 9, above: 2} = 11 pairs,
+22 components — includes 8K-b's 2 uncovered); the remaining pairs =
+descriptive CONTROL rows. Positions from a Gaia DR3 TAP pull on the
+46 source_ids; crossmatch via the CDS XMatch service (3″) against
+the scout-verified VizieR tables: APOGEE DR17 III/286/catalog
+(HRV, e_HRV, s_HRV scatter, Nvis, GaiaEDR3), GALAH DR3
+J/MNRAS/506/150/stars (RVgalah, e_RVgalah), LAMOST DR7 V/156
+(dr7slrs + dr7melrs; RV, e_RV, Nobs), RAVE DR6 III/283
+(ravedr6/master fallback; HRV, e_HRV). Pulls cached and committed
+(the 8K-b precedent; gitignore exceptions added).
+
+CLASSIFICATION (locked): per covered component —
+- RV-VARIABLE: within-survey multi-epoch scatter ≥ 1.0 km/s
+  (APOGEE s_HRV with Nvis ≥ 2; LAMOST melrs if its epochs parse).
+- OFFSET-FLAG: |RV_survey − RV_Gaia| > 3·√(e²+e²_G) + 1.0 km/s
+  (cross-survey baselines span ~2003–2020 vs Gaia 2014–2017 —
+  the only channel that can catch quasi-static long-P offsets).
+- QUIET: covered, neither flag. Single-epoch rows with no Gaia RV
+  = COVERED-SNAPSHOT (no read). Pair RV-ACTIVE if any component
+  VARIABLE or OFFSET-FLAG.
+
+BARS + MAP (locked; evaluated on the PRIMARY 11 only):
+- C = # primary components with ≥ 1 external row. C ≤ 2 →
+  T2-ATTEMPTED, NULL-COVERAGE: no move; T2 remains
+  future-spectrograph work, now attempted-and-scoped.
+- C ≥ 3: RV-CLEAN (0 active pairs) → +1 (57 → 58; small BY DESIGN:
+  km/s thresholds + partial coverage + the within-survey-static
+  blindness disclosed — a constant offset inside one survey is
+  invisible; only cross-survey offsets catch the long end).
+  RV-ACTIVE-MINOR (1 pair) → no move; the pair annotated.
+  RV-ACTIVE-MAJOR (≥ 2 pairs) → −3 (57 → 54): object-level support
+  for the faker channel inside the band; pairs conditionalized.
+  Asymmetry argued in advance: weak-clean vs strong-hit at these
+  thresholds and coverages. No other movement path.
+
+GATES: G8O-0 target integrity (23 pairs; 9 band + 2 above by
+band_corr; 46 distinct nonzero source_ids; Gaia position pull
+46/46). G8O-1 pull integrity (every XMatch response parses;
+per-survey row counts logged; caches committed). G8O-2 match
+sanity (angDist ≤ 3″; nearest-hit dedup). G8O-3 column discipline
+(classifications computed ONLY from the pre-named columns above;
+an absent column → that survey SKIPPED-DISCLOSED; any renaming =
+pre-quote amendment, never improvisation).
+
+Protocol: network-only, minutes; no GPU. Script
+[calcs/stage8o_extrv.py](calcs/stage8o_extrv.py); output
+data/stage8o_extrv.txt; ledger row bin-8o-extrv in the result
+commit. Known limits stated up front: APOGEE targets giants +
+selected dwarfs (H-band), GALAH/RAVE southern, LAMOST northern —
+expected coverage of 22 nearby field FGK/M components is LOW;
+a null-coverage outcome is a booked scoping result, not a failure.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
