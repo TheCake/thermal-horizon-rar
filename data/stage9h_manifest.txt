@@ -1,0 +1,24 @@
+9H THE DATA-PROVENANCE MANIFEST (pre-reg committed BEFORE the run; NO credence movement)
+
+hashed 15 entries (175 rotmod files aggregate); manifest -> data/MANIFEST.sha256
+
+invariants (live recompute vs stage-of-record):
+  [mask N (8Z)             ] live = 14071  record = 14071  -> PASS
+  [ruwe q25 (8Z/9A)        ] live = 1.051  record = 1.051  -> PASS
+  [ruwe q50 (8Z/9A)        ] live = 1.118  record = 1.118  -> PASS
+  [ruwe q75 (8Z/9A)        ] live = 1.231  record = 1.231  -> PASS
+  [plxsn q25 (8Z)          ] live = 317.311  record = 317.311  -> PASS
+  [plxsn q50 (8Z)          ] live = 407.883  record = 407.883  -> PASS
+  [plxsn q75 (8Z)          ] live = 570.585  record = 570.585  -> PASS
+  [B(all) (9E)             ] live = 1.0779  record = 1.0779  -> PASS
+  [B(Q1) (9E)              ] live = 1.1216  record = 1.1216  -> PASS
+  (info: rotmod files passing meta cuts = 153; galaxies with surviving data points = 149)
+  [fit galaxies (8V allg)  ] live = 149  record = 149  -> PASS
+  [GD count (8S-c)         ] live = 38  record = 38  -> PASS
+  [DD count (8S-c)         ] live = 111  record = 111  -> PASS
+  [Chae rows (9G)          ] live = 109  record = 109  -> PASS
+  [Chae GD matched (9G)    ] live = 21  record = 21  -> PASS
+  [Chae DD matched (9G)    ] live = 70  record = 70  -> PASS
+
+==> 9H VERDICT: DATA-VERIFIED - 15 invariants match their stage-of-record values; 15 manifest entries written.  Any future input drift is one re-run away from detection.
+    NO credence movement (pre-stated).

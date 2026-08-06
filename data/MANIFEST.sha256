@@ -1,0 +1,15 @@
+6d67d12bf15f6c579e4072aecbb995e8ce13f057ba1dc83115e7046d9c13bacf    1419826533  data/edr3_binaries.fits.gz
+5aa0501f6b0d881fa579030e315e7b5b6ef561a5bd3a07472f9929c7e5728243         28259  data/sparc/SPARC_Lelli2016c.mrt
+090a9f56b5b33da8b5cfa8c3d03d88e64a62345da51caabd799a1ee0fa7ce9a6          4138  data/chae2021_table3.csv
+d975a59c6df8794d23922c49109e4a701791e06a2394cc008c30f3ec133f874a          8320  data/efe_boost_simple_g1p2.npy
+412bffb442e8d3136612ecec4b6a7f9f19ac8bfc18e0835aedd91d762e4f35fe          8320  data/efe_boost_be_g1p2.npy
+f0557985c7ae637077ffc8243747c63abce6e99643066e32d5ff048e096861ff        345728  data/stage7j_cube_full_lker_31_simple.npy
+25104976bafac4ea0405d166a0341f9dfa178e33db86ad4200de31f9e4e15b22        345728  data/stage7j_cube_full_lker_31_BE.npy
+0730d8c80793a94f9d8702caa7913735c3542360119f34d87559bc29f4975ed6        345728  data/stage7j_cube_full_lker_101_simple.npy
+77f01788b773c0820832e89d7032d42e8a820c2189081e6210adc58cbe928ecc        345728  data/stage7j_cube_full_lker_101_BE.npy
+252614851d5d5a2c49cb40529c447e02a4bf480fb6065f60e0a29e24b1ef587d          6426  data/stage7jz_prior.npz
+f85f5ef25a04510569ad593061a0780cf5227d4cf721d76e8a7b3aa15ab74b9f        417464  data/stage9f_tables_31_simple.npz
+feb845011cb376efdca40e4f927009554375f7da9fee4e7f4ec7424fea993838        417464  data/stage9f_tables_31_BE.npz
+6dd7f214ef12ac59b2b549ac63eaa83eb4e0f0ce8f3a22abdfc6d06e7fb4e19c        417464  data/stage9f_tables_101_simple.npz
+79e96b8cba64defafa95d56a0f4241dcdf6ad51459b757fc542a13000678d91d        417464  data/stage9f_tables_101_BE.npz
+24f0773e64aedbc479b67341991c3bf28176180035dc16cdbbf594a6dcded63e        175149  data/sparc/rotmod/** (175 files)

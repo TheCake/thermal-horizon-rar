@@ -12038,6 +12038,95 @@ core still stands); POWER-FAIL / GRAY → HOLD 53.
 Output: data/stage9i_finealpha.txt; script
 calcs/stage9i_finealpha.py.
 
+## Stage 9H EXECUTED (2026-08-06, amended run): DATA-VERIFIED 15/15 — the author's data question answered as an instrument
+
+SHA256 manifest of 15 load-bearing entries (incl. the 175-file
+rotmod aggregate) written to data/MANIFEST.sha256 (committed); all
+15 live-recomputed invariants match their stage-of-record printed
+values: mask N = 14071; RUWE edges 1.051/1.118/1.231; plxsn edges
+317.311/407.883/570.585; fit galaxies 149 (GD/DD 38/111); B(all) =
+1.0779, B(Q1) = 1.1216; Chae 109/21/70. AMENDMENT owned (pre-quote,
+logged in-script): first firing compared the rotmod FILE count
+passing meta cuts (153) to the record 149 — but the program's 149
+is galaxies with surviving DATA POINTS (4 galaxies lose every point
+to per-line quality cuts and never enter a fit); the gate caught
+the manifest's own wiring, which is the gate philosophy working.
+Any future input drift is one re-run away from detection.
+
+Plain verdict: SUCCESS (the data chain is now hash-pinned AND
+invariant-pinned; the answer to "are you sure about the data" is
+an auditable yes).
+
+ELI12: We took a fingerprint of every data file we use and
+re-derived every headline count from scratch, comparing against
+what our old logs printed. All 15 match. If any file ever changes
+under us, one command will catch it.
+
+## Stage 9I EXECUTED (2026-08-06, all gates PASS incl. power 4/4): I-SMALL-ALPHA — THE MAP EXECUTES: anomaly-real 53 → 56
+
+Gates: G9I-0 lineage BIT-identity to the 9F npz at shared α (8/8
+zeros); G9I-1 analytic; G9I-2 synthetic census 4/4; G9I-3 cube
+identity 4/4. POWER 4/4: injected α = 0.3 recovered at 0.300/
+0.299/0.220/0.298 with P(α=0) ≤ 0.003 — the drop world's null
+direction had demonstrated sensitivity.
+
+M-DROP fine (Q1-Q3, the clean world), per law-seed:
+  simple 31 : peak α = 0.1 (w 0.958), α_marg 0.104, ΔlnZ(0.1−0) = +6.5
+  BE 31     : peak α = 0.3 (w 0.789), α_marg 0.274, +4.1 over Newton
+  simple 101: peak α = 0.2 (w 0.475), α_marg 0.186, +1.5 over Newton
+  BE 101    : Newton-flat (w(0) 0.404, spread to 0.4), α_marg 0.138
+The clean kinematics are not anti-boost — they are anti-BIG-boost:
+interior small-α optimum in 3/4 with mild preference (+1.5..+6.5
+over Newton), and the α ≥ 0.5 rejection (−13..−25 at the 0.5/0.6
+points) is exactly 9F's finding restated. 9F's scoped claim
+("reject α ≥ 0.5") stands; its Newton-preference phrasing is
+REFINED by the finer instrument.
+
+Co-reads: M-STD fine α_marg 0.33-0.48 at dN +10..+14 — but
+simple-31 puts 0.69 at the NEW grid top 0.6 (edge-riding,
+disclosed; the fine grid should have extended further — co-read
+limited, primary unaffected since M-DROP dies by −13 before 0.5).
+Q-alone posteriors (diagnostic): Q1 0.12-0.26, Q2 0.05-0.11
+(most Newton-ish — matches 9E's B(Q2) lowest), Q3 0.31-0.45, Q4
+0.49-0.59 riding the 0.6 top 3/4 (the chase again). Fitted
+quartile ordering Q2 < Q1 < Q3 < Q4 vs model-light Q2 < Q3 < Q1
+< Q4 — Q1 SWAPS (cleanest data: fitted small, model-light high)
+= the quality-concentration object's remaining core, named.
+
+Letter: SMALL-ALPHA rows 3/4 (BE-101 fails on P(0) = 0.404),
+NEWTON-FLAT rows 2/4 — the pre-registered ORDER decides
+(SMALL-ALPHA evaluated first). GRAMMAR WART owned: a row peaked
+at α = 0.1 satisfies P(α ≤ 0.1) ≥ 0.6 by construction (simple-31
+counted for both bars); the order made the verdict well-defined,
+but the NEWTON-FLAT letter should have excluded interior-peak
+rows — logged for successor design.
+
+THE MAP EXECUTES: anomaly-real 53 → 56. The arc 58 → 53 → 56
+nets: the fitted channel survived its arbiter DEFLATED (clean-
+world amplitude 0.1-0.3 at stratified block grade, vs 0.42-0.52
+with Q4 in) and quality-ordered; reconciliation-grade, NOT
+detection-grade (per-row leans +1.5..+6.5). Queue: fine-STD
+extension past 0.6 (the edge co-read); the two-channel Q1
+contrast instrument; DR4 = the external arbiter.
+
+Plain verdict: SUCCESS as a measurement (the arbiter's question
+answered: small boosts are allowed and mildly preferred in the
+clean world; the big-boost reading was the artifact). The
+fitted-vs-model-light tension narrows to one named residual: Q1's
+channels disagree.
+
+ELI12: Last round's scare said "remove the messy quarter and the
+fit wants zero gravity boost." But the fit could only choose
+between zero and half-strength — nothing in between. We gave it
+the in-between dial. Answer: the clean data actually LIKE a small
+boost (a tenth to a third of full strength), just not the big one
+the messy quarter was pushing. And when we secretly injected a
+small boost into fake data, the machine found it every time — so
+the answer isn't blindness. The two ways of looking (raw medians
+vs careful fit) now roughly agree: something small and real, plus
+a messy quarter that exaggerates. Honesty number back up a bit,
+exactly per the promise we signed before running.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

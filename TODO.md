@@ -775,6 +775,24 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     implies, or exclude it? That question is now the entire
     fitted-channel case. DR4 remains the external arbiter of the
     quality object.**
+    **9H+9I EXECUTED 2026-08-06 (pre-reg 6e08cc6). 9H: the
+    data-provenance manifest — DATA-VERIFIED 15/15 invariants +
+    SHA256 manifest committed (re-run after any refetch); the
+    author's data question is an instrument now. 9I (all gates
+    incl. POWER 4/4 — injected α = 0.3 recovered 0.22-0.30):
+    **I-SMALL-ALPHA, map executes 53 → 56** — the clean quartiles
+    ALLOW and mildly prefer α = 0.1-0.3 (+1.5..+6.5 over Newton,
+    3/4 law-seeds; BE-101 Newton-flat); they reject only α ≥ 0.5;
+    the channels RECONCILE at deflated amplitude
+    (reconciliation-grade, not detection-grade). Fitted quartile
+    ordering Q2<Q1<Q3<Q4 vs model-light Q2<Q3<Q1<Q4 — **Q1 swaps
+    = the named residual (the cleanest data's two channels
+    disagree)**. QUEUE (named, not run): (a) fine-STD extension
+    past the 0.6 top (co-read edge-rides); (b) the two-channel Q1
+    contrast instrument (why does Q1 fit small while its medians
+    run high — selection/censoring in the Q1 wide arm is the
+    first suspect); (c) DR4 epoch astrometry = the external
+    arbiter.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

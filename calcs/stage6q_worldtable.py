@@ -431,6 +431,15 @@ CHECKS = [
     ('gal-9g-ambient', '[A maxclust] med(GD) = -2.283, med(DD) = '
      '-2.303, dmed = +0.020 dex; perm P = 0.8130',
      'data/stage9g_gdambient.txt'),
+    ('prog-9h-manifest', 'DATA-VERIFIED - 15 invariants match '
+     'their stage-of-record values', 'data/stage9h_manifest.txt'),
+    ('prog-9h-manifest', 'live = 14071  record = 14071  -> PASS',
+     'data/stage9h_manifest.txt'),
+    ('bin-9i-finealpha', 'GATES: G9I-0 4/4, G9I-1, G9I-2 4/4, '
+     'G9I-3 4/4 - ALL PASS', 'data/stage9i_finealpha.txt'),
+    ('bin-9i-finealpha', 'I-bars: POWER-FAIL rows 0/4; '
+     'SMALL-ALPHA rows 3/4; NEWTON-FLAT rows 2/4',
+     'data/stage9i_finealpha.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

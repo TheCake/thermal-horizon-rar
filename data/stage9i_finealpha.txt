@@ -1,0 +1,63 @@
+9I THE FINE-ALPHA DROP SCAN (pre-reg committed BEFORE any run; decider-adjacent — movement by the pre-signed map ONLY)
+
+G9I-1 combiner analytic unit check: lse = 0.916290731874 vs ln(2.5) = 0.916290731874 -> PASS
+
+[simple 31] G9I-2 synthetic census (counts == ND, 3 strata) -> PASS
+[simple 31] G9I-3 cube identity: max|d| = 0.00e+00 -> PASS
+[simple 31] G9I-0 lineage bit-identity: d(a=0.0) = 0.00e+00, d(a=0.5) = 0.00e+00 -> PASS  (11.4 min)
+[simple 31] M-DROP lnZ(a)-lnZ(0) = +0.0/+6.5/+3.3/-1.2/-6.0/-13.2/-15.5
+[simple 31] M-DROP fine: w(a) = 0.001/0.958/0.040/0.000/0.000/0.000/0.000; a_marg = 0.104, P(a=0) = 0.001, P(a<=0.1) = 0.959, dN = +4.8
+[simple 31] M-STD  fine: w(a) = 0.000/0.147/0.006/0.119/0.030/0.005/0.693; a_marg = 0.482, P(a=0) = 0.000, dN = +12.9
+    Q1-alone: w(a) = 0.23/0.07/0.68/0.02/0.00/0.00/0.00; a_marg = 0.150
+    Q2-alone: w(a) = 0.01/0.91/0.06/0.02/0.00/0.00/0.00; a_marg = 0.109
+    Q3-alone: w(a) = 0.02/0.33/0.03/0.07/0.20/0.28/0.06; a_marg = 0.318
+    Q4-alone: w(a) = 0.00/0.00/0.00/0.03/0.00/0.01/0.96; a_marg = 0.590
+[simple 31] profile a_hat(drop, fine) = 0.111
+[simple 31] G9I-P power (truth a=0.3): w(a) = 0.000/0.000/0.000/0.999/0.000/0.000/0.000; recovered a_marg = 0.300, P(a=0) = 0.000 -> PASS
+
+[BE 31] G9I-2 synthetic census (counts == ND, 3 strata) -> PASS
+[BE 31] G9I-3 cube identity: max|d| = 0.00e+00 -> PASS
+[BE 31] G9I-0 lineage bit-identity: d(a=0.0) = 0.00e+00, d(a=0.5) = 0.00e+00 -> PASS  (23.1 min)
+[BE 31] M-DROP lnZ(a)-lnZ(0) = +0.0/+2.1/+1.3/+4.1/+1.2/-12.0/-15.1
+[BE 31] M-DROP fine: w(a) = 0.013/0.107/0.047/0.789/0.044/0.000/0.000; a_marg = 0.274, P(a=0) = 0.013, P(a<=0.1) = 0.120, dN = +2.5
+[BE 31] M-STD  fine: w(a) = 0.000/0.000/0.004/0.669/0.327/0.000/0.000; a_marg = 0.332, P(a=0) = 0.000, dN = +12.4
+    Q1-alone: w(a) = 0.29/0.01/0.22/0.37/0.07/0.03/0.00; a_marg = 0.202
+    Q2-alone: w(a) = 0.02/0.88/0.04/0.05/0.01/0.00/0.00; a_marg = 0.114
+    Q3-alone: w(a) = 0.01/0.03/0.02/0.18/0.35/0.00/0.41; a_marg = 0.449
+    Q4-alone: w(a) = 0.00/0.00/0.04/0.04/0.01/0.75/0.15; a_marg = 0.494
+[BE 31] profile a_hat(drop, fine) = 0.304
+[BE 31] G9I-P power (truth a=0.3): w(a) = 0.001/0.006/0.000/0.993/0.000/0.000/0.000; recovered a_marg = 0.299, P(a=0) = 0.001 -> PASS
+
+[simple 101] G9I-2 synthetic census (counts == ND, 3 strata) -> PASS
+[simple 101] G9I-3 cube identity: max|d| = 0.00e+00 -> PASS
+[simple 101] G9I-0 lineage bit-identity: d(a=0.0) = 0.00e+00, d(a=0.5) = 0.00e+00 -> PASS  (35.0 min)
+[simple 101] M-DROP lnZ(a)-lnZ(0) = +0.0/+0.6/+1.5/+0.9/-3.9/-18.3/-25.0
+[simple 101] M-DROP fine: w(a) = 0.101/0.181/0.475/0.241/0.002/0.000/0.000; a_marg = 0.186, P(a=0) = 0.101, P(a<=0.1) = 0.282, dN = +0.4
+[simple 101] M-STD  fine: w(a) = 0.000/0.000/0.021/0.119/0.859/0.000/0.000; a_marg = 0.384, P(a=0) = 0.000, dN = +13.8
+    Q1-alone: w(a) = 0.04/0.78/0.11/0.05/0.02/0.00/0.00; a_marg = 0.121
+    Q2-alone: w(a) = 0.65/0.10/0.08/0.16/0.01/0.00/0.00; a_marg = 0.077
+    Q3-alone: w(a) = 0.03/0.02/0.35/0.25/0.17/0.18/0.02; a_marg = 0.311
+    Q4-alone: w(a) = 0.00/0.00/0.00/0.01/0.04/0.22/0.73; a_marg = 0.568
+[simple 101] profile a_hat(drop, fine) = 0.250
+[simple 101] G9I-P power (truth a=0.3): w(a) = 0.000/0.000/0.802/0.198/0.000/0.000/0.000; recovered a_marg = 0.220, P(a=0) = 0.000 -> PASS
+
+[BE 101] G9I-2 synthetic census (counts == ND, 3 strata) -> PASS
+[BE 101] G9I-3 cube identity: max|d| = 0.00e+00 -> PASS
+[BE 101] G9I-0 lineage bit-identity: d(a=0.0) = 0.00e+00, d(a=0.5) = 0.00e+00 -> PASS  (46.9 min)
+[BE 101] M-DROP lnZ(a)-lnZ(0) = +0.0/-0.3/-2.1/-2.5/-0.6/-13.0/-21.8
+[BE 101] M-DROP fine: w(a) = 0.404/0.289/0.050/0.035/0.222/0.000/0.000; a_marg = 0.138, P(a=0) = 0.404, P(a<=0.1) = 0.693, dN = -1.4
+[BE 101] M-STD  fine: w(a) = 0.000/0.001/0.003/0.011/0.981/0.003/0.000; a_marg = 0.398, P(a=0) = 0.000, dN = +10.1
+    Q1-alone: w(a) = 0.17/0.08/0.16/0.16/0.44/0.00/0.00; a_marg = 0.262
+    Q2-alone: w(a) = 0.56/0.41/0.02/0.01/0.00/0.00/0.00; a_marg = 0.048
+    Q3-alone: w(a) = 0.02/0.03/0.05/0.14/0.63/0.12/0.01; a_marg = 0.373
+    Q4-alone: w(a) = 0.00/0.00/0.00/0.00/0.00/0.09/0.90; a_marg = 0.589
+[BE 101] profile a_hat(drop, fine) = 0.000 EDGE
+[BE 101] G9I-P power (truth a=0.3): w(a) = 0.003/0.002/0.021/0.960/0.014/0.000/0.000; recovered a_marg = 0.298, P(a=0) = 0.003 -> PASS
+
+GATES: G9I-0 4/4, G9I-1, G9I-2 4/4, G9I-3 4/4 - ALL PASS
+
+I-bars: POWER-FAIL rows 0/4; SMALL-ALPHA rows 3/4; NEWTON-FLAT rows 2/4
+==> 9I VERDICT (locked grammar): I-SMALL-ALPHA - the clean-quartile kinematics ALLOW a small interior boost; the fitted channel and the model-light core reconcile at deflated amplitude.
+    CREDENCE (pre-signed map): anomaly-real 53 -> 56.
+
+done (46.9 min)
