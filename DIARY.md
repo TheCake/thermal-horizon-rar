@@ -9,6 +9,26 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-06 (night, +1) — Paper 1 draft 0.1 written
+
+Filip approved the register sample ("tone is fine, do whatever is
+needed"). Wrote papers/paper1_wide_binaries.md in full: 6,786 words,
+register-audited (ONE em-dash in the whole file, zero body bold, zero
+codenames). Structure per STYLE.md scaffold; the upper-limit endpoint,
+the ≥2.1× calibrator, the coherence/completeness story, the phantom
+demonstration, the (9,2) census with both conventions, the
+reconciliation arithmetic, credence ~53 stated plainly in §10.3, the
+promotion condition in §6.3. Three refs flagged [verify]: El-Badry &
+Rix 2018 (MNRAS 480, 4884), Lindegren+21 (A&A 649, A2), Tokovinin
+2014 (AJ 147, 87) — check at pre-circulation, do NOT trust my memory
+cites. Figure callouts 1–5 placed; figures = the next stage
+(matplotlib, script-provenance discipline). THEN the reviewer
+referee-round on the draft (tell Filip first — announced in the
+report, so initiating next session is covered), then Paper 2 from the
+same scaffold. Don't let my house style creep back in Paper 2: the
+audit greps (em-dash count, bold count) are cheap — run them on every
+draft before committing.
+
 ## 2026-08-06 (night, latest) — the style directive; two tiers locked
 
 Filip relayed an older Opus's readability critique of the monograph and
