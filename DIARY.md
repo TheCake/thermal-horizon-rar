@@ -9,6 +9,58 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-06 (night, +4) — P2 figures + ROUND 15 + the reference pass; both papers now referee-hardened
+
+Figures: calcs/paper2_figures.py, seven gates PASS first run. The
+pattern that worked again: parse the committed stage outputs, re-derive
+their own printed headline numbers from their own tables as the gate,
+assert every paper-quoted value, THEN plot. Nothing freehand; the 4T
+osc+floor curve is the per-bin PRINTED values joined, not a re-fitted
+model. Loader counts resolved a would-be confusion: 153 galaxies pass
+cuts but only 149 contribute points (38 GD + 111 DD) — both numbers
+are right, they count different things; the draft's 149 stands.
+
+ROUND 15 (fresh Opus, same journal-referee brief): MAJOR-REVISION
+light, ~40 checks, 38 PASS, figures 5/5, register certified. His two
+real catches were both MY DIRECTION/GRADE SLIPS, the exact class the
+round-14 lesson warned about (check orderings against the stage's own
+verdict lines — I did it for orderings and still slipped on a drift
+DIRECTION and an exclusion GRADE):
+- "drifted high" in §5: the hier a0 drift is LOW (5D/5L: 0.79–0.99,
+  f_ML-traded). I conflated the binary-translation row (which sits
+  high) with the galaxy-hier rows. Trap fingerprint: when two ladder
+  rows strain in opposite directions, name the row per clause.
+- "quarter variant excluded once vertical is active": 5M has boot
+  still 8.55 AHEAD dv-ON; the channel collapses its lead 76→9. The
+  outright veto was the FENCED binary result, and 7J-d dissolved it.
+  Trap fingerprint: "X died" claims must carry WHICH instrument
+  killed X and whether that instrument survived the landed posterior.
+Also adopted: Methods §2.2 (his "not self-contained" item — correct;
+P1 had methods, P2 didn't), profile-vs-ledger distinction sentence,
+discovery→anomaly softening (his argument from our own NO-credence-
+movement stage banners — use that argument myself next time),
+alpha defined, Newton +7.9 qualified full-sample. Draft → 0.3,
+mean 21.6 words. Report archived REVIEW-ROUND15-OPUS.md (uncommitted).
+
+Reference pass: Haiku scout + primary checks. P1's three flags
+cleared. ONE catch: Desmond 2023 coordinates were Stiskalek &
+Desmond's (525, 6130); the 0.034-dex paper is Desmond solo MNRAS
+526, 3342 — abstract has sigma_int verbatim. Fixed in P2 + PAPER.md.
+Same-author-same-year-wrong-volume = a phantom-citation subclass the
+INSPIRE pass can miss; check the NUMBER against the CLAIM, not just
+the name. Chae 921, 104 confirmed against our own archived PDF —
+always prefer the on-disk primary over a scout's search.
+
+State: P1 draft 0.4 (round-14-hardened, refs verified), P2 draft 0.3
+(round-15-hardened, refs verified), both pushed. Next: (a) give the
+referee a quick re-look at P2 0.3 or proceed straight to the joint
+pre-circulation polish pass (both papers, one sweep: residual long
+sentences, cross-references, abstract word counts); (b) then the
+author decides circulation (CERN colleague first per the standing
+path). Paper 3 stays deferred. Don't reopen: the figure scripts
+(gated), the reference lists (verified 2026-08-06), the GD control
+table (all eight numbers now referee-checked on disk).
+
 ## 2026-08-06 (night, +3) — Paper 2 draft 0.1 written clean
 
 Written fresh from v4.0 with the round-14 lessons from sentence one:

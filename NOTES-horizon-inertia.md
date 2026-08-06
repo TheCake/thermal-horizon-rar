@@ -12730,6 +12730,82 @@ tables now and queued the rest.
 
 NO credence movement (paper round; anomaly-real 53).
 
+## PAPER 2 FIGURES + REVIEW ROUND 15 (2026-08-06, journal-referee pass on Paper 2 draft 0.2; fresh Opus agent, same referee brief): MAJOR-REVISION (LIGHT) — two real catches, both verified on-disk and adopted; draft → 0.3
+
+The figure stage first: calcs/paper2_figures.py, seven gates ALL PASS
+first run (verbatim SPARC loader counts 153/2700/149/38/111 + 12
+fiducial lensing rows asserted; the 4S/4Z profile tables re-derive
+their own printed Deltas, 56.30/56.3 and 28.91/28.9; every
+paper-quoted number regressed against its stage output before
+plotting). Five figures: RAR+family+lensing with a residual panel,
+c1 profiles, a0 ladder, scatter+inner-disk decomposition, GD dial
+split with the eight controls. Provenance dump data/paper2_figs.txt.
+
+The round: ~40 spot-checks, 38 PASS; figures all PASS; register
+certified the cleanest yet (2 structural em-dashes, no codenames,
+no mid-prose bold). TWO REAL CATCHES, both mine, both
+verified against outputs before adopting:
+- (A1) §5 said the pre-vertical hierarchical a0 "drifted HIGH" —
+  backwards. On disk (5D/5L): 0.79–0.99e-10, LOW, traded against
+  high f_ML 1.40–1.65; only the BINARY translation sat high. I had
+  conflated the two rows. Fixed to "drifted low, traded against
+  high fitted mass-to-light ratios."
+- (A2) §7 said the quarter-coefficient function is "excluded once
+  the vertical channel is active" — overstated AND self-
+  contradictory with §4 (whose hierarchical profile peaks near ¼).
+  On disk (5M): dv-ON boot still sits 8.55 AHEAD of BE; what the
+  vertical channel does is collapse its lead 76 → 9. The outright
+  rejection was the FENCED binary result (O7), which dissolved into
+  the ±8 degeneracy under the landed posterior (7J-d). Fixed to
+  collapse language + the fenced-history clause + an explicit
+  profile-vs-ledger distinction sentence.
+Also adopted: a Methods subsection (new §2.2: the nu_lambda family,
+likelihood, three M/L treatments, three interval conventions, the
+gate discipline — the referee's "not self-contained" item, correct);
+"every function in the ledger" → "all four functions tried" (§5);
+alpha defined at first use (§9); "discovery/discovery-grade" softened
+to "anomaly" everywhere (his argument: the stages themselves pre-
+stated NO-credence-movement — right); the Newton ≥ +7.9 row
+qualified as full-sample with the stratified upper limit named
+operative; five long sentences split; floor 0.034 → 0.035 (0.0354 on
+disk; 0.034 is Desmond's number, now phrased as consistency); §6.2
+"outer" → "mid-disk" (the gate computes inner/mid = 2.39); abstract
+"tenfold" dropped; data-availability line added. His three §9
+SUSPECTED items upgraded by direct reads this session (6W verdict
+0/6 + EXCLUDED; 7G 451 orders B2 PASS; 7H interior 6/6).
+Report archived verbatim in REVIEW-ROUND15-OPUS.md (uncommitted).
+
+REFERENCE PASS (same day, Haiku scout + primary checks): P1's three
+flagged refs verified (El-Badry & Rix MNRAS 480, 4884; Lindegren
+A&A 649, A2 = the astrometric-solution paper; Tokovinin AJ 147, 87
+= paper II, statistics) and flags cleared. ONE REAL CATCH: our
+"Desmond 2023, MNRAS 525, 6130" coordinates belong to Stiskalek &
+Desmond 2023; the 0.034-dex intrinsic-scatter paper is Desmond
+solo, MNRAS 526, 3342 (sigma_int in its abstract verbatim). Fixed
+in P2 + PAPER.md's list (bibliographic fix, not a numbered
+correction: right author, right year, right claim, wrong volume;
+this NOTES line at ~1831 recorded the wrong coordinates and is
+superseded by this entry). Chae et al. 2021 ApJ 921, 104 confirmed
+against our own archived PDF (data/chae2021.pdf, Table 3 = the
+109-row extraction).
+
+Plain verdict: figures SUCCESS; round SUCCESS (the instrument did
+its job — two direction/grade slips caught before circulation);
+reference pass SUCCESS.
+
+ELI12: We built the five pictures for the second paper, with the
+same rule as always — the computer refuses to draw anything it
+cannot re-check against the original result files. Then our strict
+editor read the whole paper again. He found two sentences where I
+said the opposite of what our own files say: I wrote that a number
+had drifted UP when it drifted DOWN, and I said a rival formula was
+"knocked out" when it actually just lost its big lead. Both fixed.
+He also made us add the "how we did it" section every real paper
+needs. And a helper double-checked our reading list: one book
+number pointed at the wrong paper by the same author — fixed too.
+
+NO credence movement (paper round; anomaly-real 53).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
