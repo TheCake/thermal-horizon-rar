@@ -12161,6 +12161,86 @@ OPUS-NOTE.md (uncommitted) on the full quality arc + the four
 asks; read-only; his review books as ROUND 13 with point-by-point
 adopt/rebut.
 
+## REVIEW ROUND 13 (2026-08-06, the Opus agent's return — full text in REVIEW-ROUND13-OPUS.md, uncommitted): the quality arc audited; math CLEAN; one framing CORRECTION; the fpm-ceiling risk axis demanded
+
+His verdict on process: bars/maps/warts match scripts exactly;
+"I could not make the combiner lie about what's in the tables";
+combiner math SOUND (no invalid step, no verdict-biasing leak;
+M-EXT volume handling = the 7J-z6 lesson applied). ADOPTED
+point-by-point:
+
+**E2 = CORRECTION (to be numbered at the next paper thaw): the 9E
+double-ratio does NOT control differential noise.** σ(ṽ) rises
+with s (same physical velocity error over a shrinking Newtonian
+scale), so under Newton+underestimated errors the wide arm's
+median inflates MORE than the narrow arm's — B rises above 1 with
+the boost's sign. Proof from 9E's own medians: narrow arm ×1.126
+Q1→Q4 (a pure non-boost pedestal on the Newtonian arm), wide arm
+×1.155. The ledger note "noise floor inflates both arms — the
+double-ratio controls it" is WRONG AS STATED (controls common-mode
+only); B(Q1) = 1.122 = the un-decomposed sum (boost + differential
+noise + pedestal), NOT independent corroboration of a boost. The
+9E VALUES stand; the "counterweight/survives" READING is
+withdrawn. Consequence: the two channels are not in tension — the
+forward fit measures boost after subtracting modeled differential
+noise; the gap between 1.122 and Q1-α̂ ≈ 0.15 is the noise term
+the fit removes and B keeps. Ledger bin-9e + bin-9i notes amended.
+
+**C ADOPTED — the operative headline is the two-sided upper-limit
+form:** on clean strata α ≥ 0.5 is excluded (−13..−25); α is
+bounded above at a deflated value (≈0.3-0.5 under the
+fpm-ceiling/fcomp-conversion treatments); small-real-boost vs
+Newton-plus-width UNRESOLVED. "Reconcile at 0.1-0.3" was
+over-claimed as a positive statement (his D-iii; also his A2:
+the single self-consistent injection showed −0.08 recovery bias
+in the ideal case → the point estimates are biased LOW; noted,
+not applied, single-injection grade).
+
+**A2 LNPI audit adopted:** effective fcomp weights [0, .214,
+.365, .418, .004, 0] — zero mass at fcomp = 0 (data-consistent:
+7J rejected fcomp=0 at −660..−811, but the ABSOLUTE α inherits
+the conversion; the profile-max over the band is the permissive
+direction). Conversion-band sensitivity row QUEUED.
+
+**Credence: FROZEN at 56 pending D1/D2(/D3)** (cadence rule; his
+D-ii "HOLD at least as defensible" on the record; the 9I +3
+stands by pre-signed process — no retroactive un-moves; the next
+pre-signed map carries any movement).
+
+**Instruments adopted into the queue:** D1 = the fpm-ceiling
+curve (9K, THIS ROUND — reader-only); D2 = the narrow-pair fpm
+meter (next binary item; the mechanism-level adjudicator of
+B-vs-fit); D3 = the degraded (misspecified) injection
+(conditional on D1/D2); A4 = the rotation-curve
+convergence/V_flat-definition split on the GD dial (next galaxy
+item — a candidate eighth control targeting the V-ordering
+itself; his premise matches 8Y's VMET fallback implementation).
+E1 confirmed as the disclosed 9I grammar wart (fix = P(α=0)
+letters in successors).
+
+## Stage 9K PRE-REGISTERED (2026-08-06, THE FPM-CEILING CURVE — round-13 D1; reader-only; measurement round, NO credence movement)
+
+From the archived data/stage9i_tables_*.npz (no GPU): re-marginalize
+M-DROP fine with the fpm axis truncated at caps = grid prefixes
+{1.2, 1.5, 1.8, 2.4, 3.0-full} (Lindegren ≈1.4 → nearest grid
+1.5); per law-seed report α_marg(cap), P(α=0)(cap), and the
+max-mode peak lnL(cap). Co-reads: M-STD capped likewise;
+per-stratum ΔlnZ(≤1.5 vs full) — who pays the cap. Gates: G9K-0
+lineage — at the full cap the combiner reproduces 9I's printed
+M-DROP/M-STD α_marg (8 values, 0.002); G9K-1 analytic (1e-12);
+G9K-2 monotonicity — max-mode peak lnL non-increasing as the cap
+tightens (a violation = reader bug).
+
+Bars (locked, ordered; rows = 4 law-seeds, M-DROP):
+  1. K-ROBUST iff >= 3/4 rows: |α_marg(≤1.5) − α_marg(full)| < 0.05.
+  2. else K-CAP-FRAGILE iff >= 3/4 rows: α_marg(≤1.5) −
+     α_marg(full) >= +0.15 (the deflation was noise-absorption;
+     direction-1 pressure — the boost was being eaten by fpm).
+  3. else K-GRAY-CARRIED.
+NO credence movement (pre-stated; the movement map belongs to the
+post-D1/D2 decider). Output: data/stage9k_fpmcap.txt; script
+calcs/stage9k_fpmcap.py.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
