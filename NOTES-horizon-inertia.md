@@ -12320,6 +12320,78 @@ now prefers a small boost to plain Newton. The tiebreaker test
 (measuring the true noise on close pairs where gravity can't
 matter) is queued next.
 
+## Stage 9L PRE-REGISTERED (2026-08-06, THE NARROW-PAIR FPM METER — round-13 D2, THE DECIDER the freeze waits on; pre-signed credence map)
+
+Question: is Q1's fpm ≈ 2 legitimate noise or eaten boost? The
+narrow s-bins (0.2-2, 2-6 kAU) are near-boost-free — whatever fpm
+they demand is honest noise; if they demand less than the joint
+fit uses, the wide bins are inflating fpm with relabeled boost.
+
+Machinery: 9F loader/machinery bit-verbatim; α FIXED at 0 (at α=0
+tab_a ≡ 1 for BOTH laws — the meter is law-blind; rows = 2 seeds);
+eval restricted to s-bins 0-1 (narrow-only tables per stratum,
+axes (fc, fy, fpm, kw, sq, ws)); per-stratum (fpm, sq) posterior
+with the usual uniform cell priors + LNPI on shared fc; the FULL
+fpm marginal vector shipped per stratum (risk-axis rule). Tables
+archived data/stage9l_tables_{seed}.npz.
+
+Gates: G9L-1 analytic combiner (1e-12); G9L-2 the boost-free
+premise MEASURED — model narrow-bin ṽ-median ratio (α=1 vs α=0)
+≤ 1.05 per s-bin (needs one α=1 orbit run per seed·law — 4 runs,
+co-computed); G9L-3 injected-fpm recovery — synthetic narrow sky
+at the Q1 truth cell (fpm = 2.1, sq = 0.0, fc = 0.20, kw = 1.0,
+ws = 0; multinomial at real narrow counts, rng 9): recovered
+E[fpm(Q1)] within ±0.25 of 2.1; G9L-4 counts census. (No lineage
+anchor exists for a first-of-kind eval — the injection gate
+carries that burden, disclosed.)
+
+Bars (locked, ordered; the precondition — 9F joint E[fpm(Q1)] ≥
+1.9 — holds at 1.97/1.99/2.22/2.25):
+  1. L-NOISE-REAL iff BOTH seeds: E[fpm_narrow(Q1)] ∈ [1.8, 2.3].
+  2. else L-BOOST-EATEN iff BOTH seeds: E[fpm_narrow(Q1)] ≤ 1.5.
+  3. else L-GRAY-CARRIED.
+PRE-SIGNED MAP (the frozen-56 decider): L-NOISE-REAL →
+anomaly-real 56 → 53 (the fit's noise subtraction is legitimate;
+the upper-limit reading stands with honest noise; the model-light
+pedestal is real). L-BOOST-EATEN → 56 → 60 (α under-reported;
+the D3 degraded injection becomes MANDATORY next). L-GRAY → HOLD
+56. Co-reads: Q2-Q4 narrow fpm posteriors; sq_narrow per stratum.
+Output: data/stage9l_fpmmeter.txt; script
+calcs/stage9l_fpmmeter.py.
+
+## Stage 9M PRE-REGISTERED (2026-08-06, THE CONVERGENCE SPLIT on the GD dial — round-13 A4, candidate EIGHTH control; measurement round, NO credence movement)
+
+Round-13's hypothesis: slow gas dwarfs disproportionately have
+still-rising outer rotation curves; a rising curve read at its
+last point under-states the asymptote → outer points sit low →
+the dial pulled negative — a type-correlated systematic that
+would masquerade as the 8Y V-ordering.
+
+Design: verbatim 8V engine lift; per GD galaxy the outer slope
+s_out = (V_N − V_{N−2})/V_N over the LAST 3 kept rotmod points
+(kept = the standard quality cuts); flags FROZEN before any fit:
+RISING iff s_out ≥ 0.05; CONVERGED iff s_out ≤ 0.02; AMBIG else
+(excluded from the split, counted). λ̂(GD-conv) vs λ̂(GD-rising)
+point fits + paired galaxy bootstrap NBOOT = 200 rng 71 (draw
+from GD-38, split by frozen flags; halves < 5 → skip+count).
+SMALL-N rule: point subset < 8 → DESCRIPTIVE-ONLY, bars cannot
+fire. Co-reads: DD control split (point fits only); the flag
+census; edge fractions.
+
+Bars (locked, ordered; D = λ̂(rising) − λ̂(conv)):
+  1. M-ARTIFACT iff non-descriptive AND D ≤ −0.5 with
+     P(D ≥ 0) ≤ 0.05 AND λ̂(conv) ≥ −0.6 (the negative dial
+     concentrates in rising curves; the converged half releases
+     toward the dial — the V-ordering is a V_flat-definition
+     artifact).
+  2. else M-HARDENED iff non-descriptive AND λ̂(conv) ≤ −0.8 AND
+     the conv bootstrap 95th pct ≤ −0.3 (the converged subset
+     alone carries the dial robustly — the EIGHTH control
+     passes; physics/selection reading hardens).
+  3. else M-GRAY-CARRIED (incl. all descriptive cases).
+NO credence movement (control round). Output:
+data/stage9m_convsplit.txt; script calcs/stage9m_convsplit.py.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

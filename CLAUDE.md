@@ -5,8 +5,11 @@ non-academic, wants first-principles reasoning + numbers, enjoys building) and C
 Read [NOTES-horizon-inertia.md](NOTES-horizon-inertia.md) (the lab notebook, chronological
 with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-DRAFT.md).
 
-## CURRENT STATE (2026-08-06 — read this first, then LOG.md)
-The fastest catch-up is [LOG.md](LOG.md) (one line per stage, current). The giant
+## CURRENT STATE (2026-08-06 — read this first, then LOG.md, then DIARY.md tail)
+The fastest catch-up is [LOG.md](LOG.md) (one line per stage, current);
+[DIARY.md](DIARY.md) (newest-first) is Claude's own working diary — the
+don't-redo lists, trap fingerprints, and the current fork in plain terms;
+update it at every round close (same commit as the verdict). The giant
 "Key results" narrative below is accurate through the 7-series/PAPER v3.9 but STOPS
 there; the 8/9-series (the rivals arc, the control arcs, the QUALITY arc) lives in
 LOG.md + NOTES + [LEDGER.csv](LEDGER.csv) (175 rows, six-gate audited, 204 tokens).
