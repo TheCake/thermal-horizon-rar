@@ -10,23 +10,31 @@ The fastest catch-up is [LOG.md](LOG.md) (one line per stage, current). The gian
 "Key results" narrative below is accurate through the 7-series/PAPER v3.9 but STOPS
 there; the 8/9-series (the rivals arc, the control arcs, the QUALITY arc) lives in
 LOG.md + NOTES + [LEDGER.csv](LEDGER.csv) (175 rows, six-gate audited, 204 tokens).
-Where things stand: **anomaly-real ~56** (trail 50→58→53→56, every move by
-pre-signed map). Binary side: the QUALITY-CONCENTRATION OBJECT (7I-S+8W+8Z+9D+9F =
-fitted-α collapses under quality cuts) was arbitrated at marginal grade (9F
-Q4-CARRIED) then REFINED by the fine-α scan (9I, power-gated): clean quartiles
-Q1-Q3 ALLOW and mildly prefer α = 0.1-0.3 (+1.5..+6.5 over Newton, 3/4 law-seeds)
-and reject only α ≥ 0.5 — channels reconcile at deflated amplitude; model-light
-core alive in the cleanest quartile (9E: B(Q1) = 1.122, B(all) = 1.0779 = anchor).
-Named residual: Q1's two channels disagree (fitted small, medians high). Galaxy
-side: the GD dial-tension (gas-dwarf λ̂ ≈ −1.3 vs dial +1.0) survived SEVEN
-controls (gas, vertical, correlation, lever, quality flag, AD-correction sign
-INVERTED, environment 9G) — reads genuine slow-dwarf physics or an untested-class
-systematic; strongly V-ordered. Data chain: 9H manifest = SHA256-pinned +
-15/15 invariants (data/MANIFEST.sha256; re-run stage9h after any refetch).
-The "Opus reviewer" = an Opus-model AGENT I spawn (user corrected 2026-08-06:
-they do NOT relay); brief him fresh each round (no memory), book reviews as
-numbered rounds. Queue: fine-STD extension past its 0.6 top (9J), the Q1
-two-channel contrast instrument, DR4 external, paper thaw at author's call.
+Where things stand: **anomaly-real 56, FROZEN pending D2** (trail 50→58→53→56,
+every move by pre-signed map; ROUND 13 = the Opus agent's audit: combiner math
+CLEAN, credence magnitude contested on record). Binary side: the
+QUALITY-CONCENTRATION OBJECT is now a measured RUWE DOSE CURVE (9J Q-alone
+ladder: Q2 0.05-0.11 < Q1 0.12-0.26 < Q3 0.40-0.79 < Q4 0.90-1.05; M-STD
+full-grid 0.39-0.79 interior, seed-split disclosed). OPERATIVE HEADLINE
+(round-13 form): on clean strata α ≥ 0.5 is EXCLUDED (−13..−25); α is bounded
+above at a deflated value (~0.3-0.5 under fpm-ceiling/fcomp-conversion
+treatments); small-real-boost vs Newton-plus-width UNRESOLVED. ROUND-13 E2
+CORRECTION: the 9E double-ratio does NOT control differential noise (σ(ṽ)
+rises with s; wide arm inflates ×1.155 vs narrow ×1.126 Q1→Q4) — B(Q1)=1.122
+= un-decomposed sum, NOT independent boost corroboration (values stand,
+counterweight reading withdrawn). 9K (D1): capping fpm at 1.5 raises drop-α
++0.045..+0.081 in 4/4 (real, half the fragile bar); under the cap ALL
+law-seeds prefer small α over Newton (BE-101 P(α=0) 0.404→0.026). Galaxy
+side: the GD dial-tension survived SEVEN controls — reads genuine slow-dwarf
+physics or an untested-class systematic; strongly V-ordered. Data chain: 9H
+manifest = SHA256-pinned + 15/15 invariants (re-run stage9h after any
+refetch). The "Opus reviewer" = an Opus-model AGENT I spawn (user corrected
+2026-08-06: they do NOT relay); brief him fresh each round (no memory), book
+reviews as numbered rounds; round-13 text in REVIEW-ROUND13-OPUS.md
+(uncommitted). QUEUE (round-13-ranked): D2 the narrow-pair fpm meter (top
+binary — the fpm-legitimacy decider), D3 degraded injection (conditional),
+LNPI conversion-band row, A4 the GD rotation-curve convergence split (top
+galaxy, candidate eighth control), DR4 external, paper thaw at author's call.
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

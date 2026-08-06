@@ -793,6 +793,28 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     run high — selection/censoring in the Q1 wide arm is the
     first suspect); (c) DR4 epoch astrometry = the external
     arbiter.**
+    **ROUND 13 + 9J + 9K (2026-08-06): the Opus agent's return
+    (run by us — no relay, per the author's correction). Review:
+    combiner math CLEAN; E2 CORRECTION (the 9E double-ratio does
+    NOT control differential noise — B = un-decomposed sum; the
+    counterweight reading withdrawn, values stand; ledger notes
+    amended); headline → the two-sided upper-limit form; credence
+    FROZEN 56. 9J (J-INTERIOR 4/4): M-STD full-grid quotable
+    (0.39-0.79, P(top)=0; seed-split disclosed); THE LADDER: Q2
+    0.05-0.11 < Q1 0.12-0.26 < Q3 0.40-0.79 < Q4 0.90-1.05 = the
+    quality-concentration object as a RUWE dose curve. 9K
+    (round-13 D1, same day, K-GRAY): capping fpm at 1.5 raises
+    drop-world α +0.045..+0.081 in 4/4 (direction real, half the
+    fragile bar); under the cap ALL law-seeds prefer small α
+    (BE-101 P(α=0) 0.404 → 0.026). QUEUE (re-ranked by round 13):
+    (1) **D2 THE NARROW-PAIR FPM METER (top binary item — the
+    legitimacy decider: fit (fpm, sq) per quartile on narrow bins
+    only at α≈0; NOISE-REAL iff fpm_narrow(Q1) ∈ [1.8, 2.3];
+    BOOST-EATEN iff ≤1.5 while joint ≥1.9)**; (2) D3 the degraded
+    injection (conditional on D2); (3) the LNPI conversion-band
+    sensitivity row (cheap reader); (4) DR4. Galaxy: **A4 the
+    rotation-curve convergence / V_flat-definition split on the
+    GD dial (candidate eighth control, free, in-catalog)**.
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

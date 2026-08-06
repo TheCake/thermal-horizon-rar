@@ -12241,6 +12241,85 @@ NO credence movement (pre-stated; the movement map belongs to the
 post-D1/D2 decider). Output: data/stage9k_fpmcap.txt; script
 calcs/stage9k_fpmcap.py.
 
+## Stage 9J EXECUTED (2026-08-06, all gates PASS): J-INTERIOR 4/4 — the extended axis localizes everything; the α ladder is a RUWE dose curve
+
+Gates: G9J-0 9I-reload + round-trip 4/4; G9J-1 analytic; G9J-2
+subset regression to 9I printed EXACT 8/8 (M-DROP unchanged to
+the digit — pure-extension lineage).
+
+M-STD full (13-pt grid 0..1.2): α_marg = 0.785/0.723/0.385/0.399
+(peaks 0.8/0.9/0.4/0.4), P(top) = 0.000 in 4/4, dN = +14.3/
++12.8/+13.2/+9.4 — the 9I co-read edge was a grid artifact; the
+full-strata numbers are quotable. SEED-SPLIT noted: seed 31 wants
+0.72-0.79, seed 101 wants 0.38-0.40 — realization scatter at the
+α grade (the 3A object), disclosed.
+
+THE LADDER (Q-alone, full grid): Q2 = 0.05-0.11 < Q1 = 0.12-0.26
+< Q3 = 0.40-0.79 < Q4 = 0.90-1.05 (Q4 peak 0.9-1.2; one seed
+still presses the top at P = 0.45). The quality-concentration
+object is now a monotone-in-RUWE DOSE CURVE (Q1/Q2 swap noted vs
+naive ordering): fitted α rises with astrometric dirtiness —
+under round-13's frame, exactly the α↔fpm shape-split expected
+if dirtier strata carry more α-shaped (s-growing) excess; under
+the boost frame, the clean strata bound the physics and the
+dirty strata exaggerate. Same numbers, both readings — D2/D3
+decide.
+
+Plain verdict: SUCCESS as a measurement (the axis repair landed;
+the co-read is un-flagged; the ladder is the object's cleanest
+portrait yet).
+
+ELI12: We gave the fit a longer dial and the "wants more than
+the dial goes" problem vanished — every group now picks a real
+setting. The picture: the cleaner the measurements, the smaller
+the gravity knob they choose, in a smooth staircase from ~0.1
+(cleanest) to ~1.0 (messiest). Either noise dresses up as
+gravity in messy data, or gravity is there and messy data
+overstate it. Next instrument decides.
+
+## Stage 9K EXECUTED (2026-08-06, round-13 D1, all gates PASS; one pre-verdict wiring amendment owned): K-GRAY by the letter — the cap direction is REAL at half the fragile bar
+
+Reader-only from the 9I npz. Amendment (pre-quote): a 5-dim
+LNPI reshape against the 6-dim sliced table crashed the
+per-stratum co-read on first firing (after gates, before any
+verdict); fixed, re-run clean.
+
+The curve (M-DROP α_marg at fpm caps 1.2/1.5/1.8/2.4/3.0):
+  simple 31 : 0.211/0.155/0.137/0.114/0.104   d(1.5) = +0.051
+  BE 31     : 0.340/0.355/0.307/0.296/0.274   d(1.5) = +0.081
+  simple 101: 0.274/0.231/0.217/0.202/0.186   d(1.5) = +0.045
+  BE 101    : 0.128/0.195/0.197/0.220/0.138   d(1.5) = +0.057
+ALL FOUR positive at the Lindegren-adjacent cap — the reviewer's
+direction-1 pressure (fpm eats boost) is measured and
+sign-consistent, at ~half his +0.15 fragile bar ⇒ K-GRAY (1
+ROBUST row, 0 FRAGILE rows). THE CO-FACT: under cap 1.5 every
+law-seed prefers small α over Newton — P(α=0) = 0.080/0.006/
+0.000/0.026 (BE-101's Newton-flatness, 0.404 at full freedom,
+COLLAPSES to 0.026: the drop world's Newton-compatibility lives
+in the fpm > 1.5 cells). Evidence cost of the cap: peak lnL
+1.3-10.2 (full freedom buys ≤10.2); per-stratum-alone ≤3.4
+(Q1 pays most, simple-31). G9K-2 cap-monotonicity PASS 4/4.
+
+Standing: the deflated drop-world α is mildly noise-absorption-
+suppressed (+0.05-0.08 recoverable at a physical ceiling) but
+does NOT jump to the 0.3+ that would have fired CAP-FRAGILE.
+The D2 narrow-pair fpm meter (which decides whether fpm ≈ 2 is
+legitimate) is now the single decisive instrument, exactly as
+round 13 ranked it. NO credence movement (pre-stated; FROZEN 56
+per the cadence rule).
+
+Plain verdict: SUCCESS as a measurement (the missing risk axis
+shipped same-day; both directions bounded).
+
+ELI12: The referee asked: "if you forbid the fit from calling
+more than 1.5× the official error bars 'noise', does the
+gravity knob jump up?" Answer: it rises a little in all four
+tests (so some gravity WAS being filed under noise), but not a
+lot — and with that noise leash on, even the one holdout test
+now prefers a small boost to plain Newton. The tiebreaker test
+(measuring the true noise on close pairs where gravity can't
+matter) is queued next.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

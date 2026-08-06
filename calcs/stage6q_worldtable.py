@@ -440,6 +440,15 @@ CHECKS = [
     ('bin-9i-finealpha', 'I-bars: POWER-FAIL rows 0/4; '
      'SMALL-ALPHA rows 3/4; NEWTON-FLAT rows 2/4',
      'data/stage9i_finealpha.txt'),
+    ('bin-9j-stdext', 'GATES: G9J-0 4/4, G9J-1, G9J-2 4/4 - ALL '
+     'PASS', 'data/stage9j_stdext.txt'),
+    ('bin-9j-stdext', 'J-bars: INTERIOR-rows 4/4; STILL-EDGE-rows '
+     '0/4', 'data/stage9j_stdext.txt'),
+    ('bin-9k-fpmcap', 'GATES: G9K-0 4/4, G9K-1, G9K-2 4/4 - ALL '
+     'PASS', 'data/stage9k_fpmcap.txt'),
+    ('bin-9k-fpmcap', 'K-bars: ROBUST-rows 1/4 (|d| < 0.05 at cap '
+     '1.5); CAP-FRAGILE-rows 0/4 (d >= +0.15)',
+     'data/stage9k_fpmcap.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
