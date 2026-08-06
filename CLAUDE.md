@@ -70,9 +70,14 @@ Verification pass came back
 ACCEPT (ten/ten; Round 15 closed in NOTES). **NEXT: the CIRCULATION PHASE —
 the full playbook is [papers/CIRCULATION.md](papers/CIRCULATION.md) (author:
 "write it down to not forget", 2026-08-06) + TODO items 27–30.** Order:
-RNAAS calibration note (the ≥2.1× standalone; prereq = pre-reg'd mass-model
-insensitivity control on the 9L meter; reviewer: highest-ROI move) →
-colleague package on the author's call (review + arXiv-endorsement asks) →
+~~RNAAS calibration note~~ DRAFTED 0.1 2026-08-06 (papers/note_pair_errors.md;
+prereq 9P EXECUTED same day: P-GRAY, envelope [1.77, 2.52], bound NOT
+mass-model-carried, first-firing wiring catch logged; DR4.md day-one plan
+frozen same day) →
+colleague package on the author's call (review + arXiv-endorsement asks;
+CHECK FIRST: does github.com/TheCake/thermal-horizon-rar resolve? the
+papers cite it but the remote still answers to Horizon-Coupled-Inertia —
+either the author clicks the rename or the three papers' URLs get fixed) →
 Zenodo DOI → arXiv both papers together pre-DR4 → OJAp for P1 → outreach
 emails (El-Badry/Penoyre, Banik, Chae, Cookson, Desmond). Parallel science
 queue: GD-anomaly replication on independent dwarfs (TODO 28 — executable
