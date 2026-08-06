@@ -66,10 +66,17 @@ upper limit operative; abstract 249w). Reference pass DONE: P1 three flags
 ADS-verified+cleared; **Desmond 2023 = MNRAS 526, 3342** (525, 6130 =
 Stiskalek & Desmond — fixed in P2+PAPER.md lists); Chae 921, 104 confirmed
 vs our archived PDF. Rounds archived REVIEW-ROUND14/15-OPUS.md (uncommitted).
-Referee re-look on final texts pending at session close (mini-verdict books
-into NOTES when it lands). NEXT: author decides circulation (CERN colleague
-→ Zenodo DOI → arXiv per standing path; drafts say "Not for circulation"
-until he calls it). **Paper 3 (mechanism note) DEFERRED by the author
+Verification pass came back
+ACCEPT (ten/ten; Round 15 closed in NOTES). **NEXT: the CIRCULATION PHASE —
+the full playbook is [papers/CIRCULATION.md](papers/CIRCULATION.md) (author:
+"write it down to not forget", 2026-08-06) + TODO items 27–30.** Order:
+RNAAS calibration note (the ≥2.1× standalone; prereq = pre-reg'd mass-model
+insensitivity control on the 9L meter; reviewer: highest-ROI move) →
+colleague package on the author's call (review + arXiv-endorsement asks) →
+Zenodo DOI → arXiv both papers together pre-DR4 → OJAp for P1 → outreach
+emails (El-Badry/Penoyre, Banik, Chae, Cookson, Desmond). Parallel science
+queue: GD-anomaly replication on independent dwarfs (TODO 28 — executable
+now, either outcome pays), DR4 readiness (TODO 29), P3 seam work (TODO 30). **Paper 3 (mechanism note) DEFERRED by the author
 2026-08-06: ship 1–2, then more mechanism work (O5 seam) before writing
 it.** Author delegated titles/author line/credence placement/spin-offs to
 Claude (2026-08-06); Claude's defaults executed: Hájek sole author + Claude
