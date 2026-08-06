@@ -2,7 +2,7 @@
 
 **Filip Hájek** (independent researcher) — hfilip11@gmail.com
 
-*Draft 0.4 (2026-08-06), written from the program record (PAPER.md v4.0); all Round 14 referee items applied (correctness set, Tables 1–4, sentence pass to mean 24.0 words with maximum 49, the phantom-veto figure). References inherit the 2026-07 INSPIRE-verified list; entries marked [verify] are new to this paper and await the pre-circulation pass. Figures 1–6 are produced by calcs/paper1_figures.py under provenance gates (data/paper1_figs.txt). Not for circulation.*
+*Draft 0.4 (2026-08-06), written from the program record (PAPER.md v4.0); all Round 14 referee items applied (correctness set, Tables 1–4, sentence pass to mean 24.0 words with maximum 49, the phantom-veto figure). References inherit the 2026-07 INSPIRE-verified list; the three entries new to this paper (El-Badry & Rix 2018; Lindegren et al. 2021; Tokovinin 2014) were ADS-verified 2026-08-06. Figures 1–6 are produced by calcs/paper1_figures.py under provenance gates (data/paper1_figs.txt). Not for circulation.*
 
 *Acknowledgments: the computational analysis, literature verification, and manuscript drafting were performed in collaboration with Claude (Anthropic). The full chronological program record, including all logged corrections, is public in the repository (Appendix B).*
 
@@ -108,7 +108,7 @@ The repaired analysis models the pair jointly, with a common-mode displacement w
 
 ### 5.2 The mass-ratio distribution, and what the rate means kinematically
 
-The same likelihood measures the shape of the inner-subsystem mass-ratio distribution, and the result resolves what would otherwise be a factor-of-three tension with published subsystem rates (Tokovinin 2014 [verify]; El-Badry & Rix 2018 [verify]). The photometry prefers a twin-concentrated law over a flat one by 162 log-likelihood units, and over a low-mass-ratio-weighted law by 267. Twin companions are photometrically loud but astrometrically quiet: the photocenter of a near-equal pair barely wobbles. Converting the measured host rate through the measured mass-ratio shape gives a kinematically effective companion fraction of roughly 0.10–0.15, consistent with what the velocity data independently prefer, and close to the field rates when compared in the same convention. The conversion factor between the photometric and kinematic conventions spans 0.10–0.39 across mass-ratio brackets, and this band, rather than any single number, is what enters the gravity fit as the companion prior.
+The same likelihood measures the shape of the inner-subsystem mass-ratio distribution, and the result resolves what would otherwise be a factor-of-three tension with published subsystem rates (Tokovinin 2014; El-Badry & Rix 2018). The photometry prefers a twin-concentrated law over a flat one by 162 log-likelihood units, and over a low-mass-ratio-weighted law by 267. Twin companions are photometrically loud but astrometrically quiet: the photocenter of a near-equal pair barely wobbles. Converting the measured host rate through the measured mass-ratio shape gives a kinematically effective companion fraction of roughly 0.10–0.15, consistent with what the velocity data independently prefer, and close to the field rates when compared in the same convention. The conversion factor between the photometric and kinematic conventions spans 0.10–0.39 across mass-ratio brackets, and this band, rather than any single number, is what enters the gravity fit as the companion prior.
 
 ### 5.3 The wobble amplitude law
 
@@ -270,7 +270,7 @@ Large datasets are re-fetched by documented URLs (El-Badry, Rix & Heintz 2021 ca
 
 ## References
 
-(Inherited from the program's 2026-07 INSPIRE-verified list; [verify] entries are new to this paper and will be checked at the pre-circulation pass.)
+(Inherited from the program's 2026-07 INSPIRE-verified list; the three entries new to this paper were verified against ADS on 2026-08-06.)
 
 - Banik, I. 2019, MNRAS 487, 5291
 - Banik, I., & Zhao, H. 2018, MNRAS 480, 2660
@@ -280,11 +280,11 @@ Large datasets are re-fetched by documented URLs (El-Badry, Rix & Heintz 2021 ca
 - Chae, K.-H. 2023, ApJ 952, 128; 2024, ApJ 972, 186
 - Chae, K.-H., & Milgrom, M. 2022, ApJ 928, 24
 - Cookson, S. A., Banik, I., El-Badry, K., Sutherland, W., Penoyre, Z., Pittordis, C., & Clarke, C. J. 2026, MNRAS (arXiv:2602.24035)
-- El-Badry, K., & Rix, H.-W. 2018, MNRAS 480, 4884 [verify]
+- El-Badry, K., & Rix, H.-W. 2018, MNRAS 480, 4884
 - El-Badry, K., Rix, H.-W., & Heintz, T. M. 2021, MNRAS 506, 2269
 - Hernandez, X., Chae, K.-H., & Aguayo-Ortiz, A. 2024, MNRAS 533, 729
 - Hwang, H.-C., Ting, Y.-S., & Zakamska, N. L. 2022, MNRAS 512, 3383
-- Lindegren, L., et al. 2021, A&A 649, A2 [verify]
+- Lindegren, L., et al. 2021, A&A 649, A2
 - McGaugh, S. S., Lelli, F., & Schombert, J. M. 2016, PRL 117, 201101
 - Milgrom, M. 1983, ApJ 270, 365
 - Milgrom, M. 2010, MNRAS 403, 886
@@ -293,4 +293,4 @@ Large datasets are re-fetched by documented URLs (El-Badry, Rix & Heintz 2021 ca
 - Pittordis, C., Sutherland, W., & Shepherd, P. 2025, OJAp (arXiv:2504.07569)
 - Raghavan, D., et al. 2010, ApJS 190, 1
 - Tokovinin, A. 1998, AstL 24, 178
-- Tokovinin, A. 2014, AJ 147, 87 [verify]
+- Tokovinin, A. 2014, AJ 147, 87
