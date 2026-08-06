@@ -50,12 +50,20 @@ reading; FLAT alone revives the boost world — Paper 1 quotes the labeled
 dial). **PAPER v4.0 ABSORBED 2026-08-06** (author called
 the thaw; new §4.7 GD tension, upper-limit §6.3 endpoint + D3 promotion gate,
 ≥2.1× standing measurement, App A nineteen, credence ~53; all edits via Edit
-tool, grep-audited). NEXT: THE SPLIT — Paper 1 binaries (spine: width channel
-+ phantom-veto + absorber accounting; completeness/kernel; ≥2.1× pair-error
-instrument; upper limit w/ 9O prior column; (band,cliff) flagship; D3 gate
-bounds language; NO §2.4 gestures per round-11 STRUCTURAL-INDEPENDENCE), then
-Paper 2 galaxies (function program + ĉ₁ + a₀ lock + scatter + Saturn + §4.7
-GD tension + 9N row; 16-law ±8 = field-level methods finding). **Paper 3
+tool, grep-audited). NEXT: THE SPLIT — **write Papers 1/2 FRESH in
+normal scientific register per [papers/STYLE.md](papers/STYLE.md) (BINDING:
+author directive 2026-08-06 — no AI-speak, em-dashes rare, no codenames, no
+bold drama, results-first; two tiers: PAPER.md = the record, never again
+edited for readability; the papers cite it). STYLE.md carries the contract,
+both section scaffolds, the figure lists (figures = a required matplotlib
+stage), and the author-calibration abstract seed.** Paper 1 binaries (spine:
+width channel + phantom-veto + absorber accounting; completeness/kernel;
+≥2.1× pair-error instrument; upper limit w/ 9O prior column; (band,cliff)
+flagship; D3 gate bounds language; NO §2.4 gestures per round-11
+STRUCTURAL-INDEPENDENCE), then Paper 2 galaxies (function program + ĉ₁ + a₀
+lock + scatter + Saturn + §4.7 GD tension + 9N row; 16-law ±8 = field-level
+methods finding). Reviewer pass per draft INCLUDES readability as a referee
+dimension (author request). **Paper 3
 (mechanism note) DEFERRED by the author 2026-08-06: ship 1–2, then more
 mechanism work (O5 seam) before writing it.** Author delegated titles/author
 line/credence placement/spin-offs to Claude (2026-08-06); Claude's defaults:

@@ -9,6 +9,24 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-06 (night, latest) — the style directive; two tiers locked
+
+Filip relayed an older Opus's readability critique of the monograph and
+directed: papers in normal scientific register, no AI-speak (he named
+em-dash overuse), and floated long-vs-readable versions. Decision (his
+"you're more knowledgeable, what do you think" delegated it): two tiers
+— PAPER.md v4.0 IS the long version and stays the record (never again
+edited for readability); Papers 1/2 get written FRESH, not trimmed out
+of it. The binding contract + section scaffolds + figure lists + an
+abstract seed in his-approvable register are in papers/STYLE.md —
+READ IT BEFORE WRITING A WORD of either paper. Reviewer rounds on
+drafts include readability as a referee dimension. Memory file
+feedback-paper-style.md written (this generalizes beyond the project).
+He's excited for Paper 3 ("cannot wait for the why part") — deferred,
+not dropped; that lands after 1–2 ship plus more O5 bench work. Watch
+my own prose in the drafts: the failure mode is MY house style leaking
+into the papers. The STYLE.md abstract seed is the calibration anchor.
+
 ## 2026-08-06 (night, later) — PAPER v4.0 absorbed; P3 deferred; split next
 
 **The absorb is DONE** (13 targeted Edit-tool edits, grep-audited, no
