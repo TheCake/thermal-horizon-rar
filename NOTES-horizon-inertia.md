@@ -12510,6 +12510,73 @@ when rising-curve galaxies are flagged? (Type-correlated
 deep-regime systematic — feeds the function program.)
 NO credence movement (certification of the already-executed map).
 
+## Stage 9N+9O PRE-REGISTRATION (2026-08-06, the paper-prep robustness pair; committed BEFORE any run; measurement rounds — NO credence movement, pre-stated)
+
+Context: the author has called the paper thaw. Two queued cheap rows
+must land first so the papers quote them: the round-13-addendum
+rising-flag short check (galaxy) and the round-13 LNPI
+conversion-band row (binary). Both are readers on frozen machinery.
+
+**9N — THE RISING-FLAG DIAL EXPOSURE (galaxy;
+calcs/stage9n_risingdial.py → data/stage9n_risingdial.txt).**
+Question: does the HEADLINE deep-regime dial (8S-c FULL vertON
+lam_hat = 0.960 ⇒ ĉ₁ = 0.480, D1 0.848–1.074) move when
+rising-curve galaxies (the 9M frozen flag, s_out ≥ 0.05 on the last
+3 kept points) are excluded? Machinery: the 9M verbatim-lift engine
+(m2ll_fast + lam_hat_fast, LGB −2.0..1.5 step 0.25). Frozen flag
+rule applied to ALL 149 fit galaxies. Instruments: point dials
+lam_hat(FULL), lam_hat(FULL−RISING), lam_hat(CONV-only);
+GD/DD rows (full vs −RISING) + the GD−DD gap co-read (no letter —
+the GD tension has its own arc); paired galaxy bootstrap
+NBOOT = 200 rng 83 on D = lam_hat(rep−RISING) − lam_hat(rep), skip
+rule: either side < 30 galaxies. Gates: G9N-0 verbatim-lift (GD/DD
+counts 38/111 + OFF probe vs 8S-c printed −647.874131278 at 1e-6);
+G9N-1 fast-vs-verbatim 3 probes ≤ 1e-6 (rng 7 sequence, 9M
+verbatim); G9N-2 lineage regressions — same-engine 9M printed
+values at ≤ 0.002 (GD CONV −1.395 / RISING −1.172, DD CONV +1.087
+/ RISING −0.478, censuses 17/11/10 and 69/16) and cross-instrument
+8S-c printed dials at ≤ 0.05 (FULL 0.960, GD −1.315, DD 1.331 —
+looser bar DISCLOSED: same objective + grid, independent optimizer
+path). Bars (locked, ORDERED, exhaustive): **N-MOVED** iff
+|D_point(FULL)| ≥ 0.25 (one grid step) AND the bootstrap 5–95% of
+D excludes 0; **N-ROBUST** iff |D_point(FULL)| ≤ 0.125 AND
+bootstrap P(|D| ≥ 0.25) ≤ 0.10; **N-GRAY-CARRIED** otherwise (rows
+stand as measurements). Consequence pre-stated: N-MOVED ⇒ the
+Paper-2 dial quote gains a rising-flag conditional column (no
+credence content); N-ROBUST ⇒ one sentence + this row's pointer.
+
+**9O — THE LNPI CONVERSION-BAND ROW (binary;
+calcs/stage9o_lnpiband.py → data/stage9o_lnpiband.txt).** Question:
+do the round-13 operative letters depend on the companion-fraction
+prior's conversion treatment? Pure reader over the archived
+stage9i/9j npz tables (13-pt fine grid, M-DROP = Q1–Q3 primary,
+M-STD co-read). Prior variants: OPER (the shipped conversion-band
+ENVELOPE, rebuilt and bit-compared to the stored npz LNPI), G-LOW
+/ G-MID / G-HIGH (conversion pinned at the band's low edge / mean
+/ high edge), FLAT (uniform over all 6 fcomp cells incl. 0.0 — the
+strongest stress: it revives the companion-free world the envelope
+never priced). Statistics per variant × law × seed: a_marg,
+P(a=0), P(a≤0.1), P(a≥0.5), EX05 = lnZ_drop(0.5) − max lnZ_drop,
+dN_fine (7-pt sub-grid, regression-anchored). Gates: G9O-0 rebuilt
+OPER LNPI bit-equal to stored npz (9I + 9J, 4/4); G9O-1 analytic
+lse unit check 1e-12; G9O-2 regression under OPER to 9J printed
+M-STD/M-DROP full a_marg + M-DROP P(a=0) (12 values, 0.002) and to
+the 9I printed M-DROP curve at a = 0.5 (4 values, 0.06 — 1-decimal
+print). Letters under test (round-13 operative): L1 "α ≥ 0.5
+excluded on clean strata" ⇔ EX05 ≤ −8; L2 "no Newton verdict
+either way" ⇔ −8 ≤ dN_fine ≤ +8. Bars (locked, ORDERED,
+exhaustive): **O-FRAGILE** iff any variant breaks L1 in ≥ 2 of 4
+law×seed rows OR breaks L2 in ≥ 2 rows; **O-ROBUST** iff L1 AND L2
+hold in all 4 rows under ALL variants; **O-GRAY-CARRIED**
+otherwise. Consequence pre-stated: O-ROBUST ⇒ the paper's
+upper-limit language carries a prior-robustness pointer; O-FRAGILE
+⇒ the α band gains an explicit prior-conditional column and the
+paper quotes the spread.
+
+Both stages: NO credence movement regardless of letter
+(measurement rounds; the operative anomaly-real 53 is untouched by
+pre-statement). Wall-clock: 9O seconds; 9N bootstrap ~0.5–2 h CPU.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
