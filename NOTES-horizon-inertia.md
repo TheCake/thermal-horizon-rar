@@ -12481,6 +12481,35 @@ whose curves have flattened — the excuse points the wrong way.
 Eighth excuse dead in practice (formally "gray" only because 17
 galaxies make noisy error bars).
 
+## ROUND 13 ADDENDUM (2026-08-06, the reviewer's reaction to his own instruments' results — same agent, context retained; verified against outputs on disk): L-NOISE-REAL CERTIFIED
+
+(1) The 9L amendment certified as the CONSERVATIVE move (stripping
+the boost-contaminated bin made the meter harder to pass; it still
+landed noise-real with clean premise and unbiased injection). His
+direction-1 worry ("a Lindegren cap would blow α up") formally
+RETIRED by 9K+9L. WORDING ADOPTED: Q1's fpm marginal carries 0.31
+mass at the 3.0 grid ceiling ⇒ E[fpm] = 2.21 is mildly
+ceiling-censored — quote the standing measurement as **"pair
+velocity errors ≳ 2.1× formal" (a LOWER BOUND)**, which only
+strengthens noise-real; extend the grid only if the central value
+is ever needed. Framing kept: 9L pins the WIDTH at ~2×; whether
+that width is error-underestimation or non-Gaussian shape is the
+DR4 chase; the direction conclusion (the wide excess is width,
+not hidden boost) holds either way.
+(2) D3 optional CONFIRMED — and BANKED AS THE PROMOTION GATE
+(standing rule): before any paper language stronger than "α ≲ 0.3
+upper limit, α ≥ 0.5 excluded, wide excess is width", the D3
+no-manufacture arm (truth-Newton sky under a wrong error-SHAPE at
+the measured 2× scale must NOT manufacture the small-α lean) must
+fire. Until then the operative claim stays at upper-limit /
+direction-settled grade.
+(3) The DD convergence lean: FOOTNOTE in the GD writeup (artifact
+point-dead there by sign) + a SHORT CHECK queued (not a full
+stage): does the headline deep-regime dial / c₁ zero-point move
+when rising-curve galaxies are flagged? (Type-correlated
+deep-regime systematic — feeds the function program.)
+NO credence movement (certification of the already-executed map).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

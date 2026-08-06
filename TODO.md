@@ -834,6 +834,15 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     alone reproduces the dial −1.395; DD control shows the
     mechanism lives elsewhere) — the GD tension is effectively
     EIGHT controls deep; external resolved kinematics = arbiter.**
+    **ROUND-13 ADDENDUM (reviewer's reaction, booked): L-NOISE-
+    REAL CERTIFIED; the standing measurement QUOTED as pair
+    errors ≥ 2.1× formal (lower bound, ceiling-censored); **D3 =
+    THE PROMOTION GATE** (standing rule: must fire before any
+    paper claim stronger than "α ≲ 0.3 upper limit, α ≥ 0.5
+    excluded, wide excess is width"); SHORT CHECK queued (galaxy):
+    does the headline deep-regime dial / c₁ zero-point move when
+    rising-curve galaxies are flagged (the DD convergence lean =
+    a validated type-correlated deep systematic)?**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
