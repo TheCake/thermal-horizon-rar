@@ -9,6 +9,29 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-06 (night, +2) — figures built; ROUND 14 landed; draft at 0.3
+
+Figures: calcs/paper1_figures.py, three provenance gates all PASS
+first run (anchor 1.0784 vs 1.0779; census 9/2 from loader AND CSV;
+9O regression). Fig 1 overlays = real GPU runs at the 7K-a printed
+cells. ROUND 14 (fresh Opus, journal-referee brief): MAJOR-REVISION
+light; 30/38 spot-checks PASS; endpoint discipline certified. HIS
+TWO REAL CATCHES, both my drafting errors, both verified before
+adopting: (1) I attached the eleven-pair 3.8e-9 to the nine-pair
+census — P(≥9|0.9) = 4.8e-7; (2) "monotone dose curve in RUWE" is
+false — Q1/Q2 inverted, and 8Z's own verdict line said
+NON-MONOTONE all along. Lesson for Paper 2: when I compress a
+ladder into prose, CHECK THE ORDERING against the stage verdict
+line, and never move a probability between counts. All his
+correctness/calibration items applied (0.3, commit 52784b4);
+PAPER.md's two ambiguous dose clauses clarified. QUEUED for 0.4:
+Table 1 cut ladder (needs a per-cut counting script), the
+sentence-length pass (mean 27.9 → ~20 — my semicolon chains are
+the em-dash workaround the contract also forbids; write SHORTER,
+not differently-punctuated), the phantom-veto figure, full script
+filenames in App B. Then Paper 2. The referee agent is still
+alive this session for follow-ups (SendMessage).
+
 ## 2026-08-06 (night, +1) — Paper 1 draft 0.1 written
 
 Filip approved the register sample ("tone is fine, do whatever is
