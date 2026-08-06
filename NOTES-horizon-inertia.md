@@ -12793,6 +12793,24 @@ Plain verdict: figures SUCCESS; round SUCCESS (the instrument did
 its job — two direction/grade slips caught before circulation);
 reference pass SUCCESS.
 
+ROUND 15 CLOSE (same day, the verification pass, same agent
+resumed): all ten required items RESOLVED on his re-read of the
+committed 0.4; §2.2 methods spot-checked accurate against the stage
+scripts; the rewritten §7 attribution checked against the ledger +
+7J-d; cross-paper coherence pass (P1 0.5 ↔ P2 0.4) found NO
+numerical or terminological mismatch (α convention, upper-limit
+language, degeneracy figures, a₀ translation row, credence ~53 in
+both). One residual, adopted: "verified symbolically" → "verified
+numerically" (the 4S G1 gate is a numerical series check).
+**FINAL VERDICT: ACCEPT.** Pre-circulation polish landed in the
+same arc: P2 abstract 259→249 words (inside the 250 cap), final
+sentence splits (mean 21.2), and P1 gained its reciprocal
+companion-paper cross-references (it previously never pointed at
+P2). Part 2 of the report appended to REVIEW-ROUND15-OPUS.md
+(uncommitted). Both papers now referee-ACCEPTED at draft grade:
+P1 0.5, P2 0.4. The next step is the author's: circulation
+(CERN colleague → Zenodo → arXiv per the standing path).
+
 ELI12: We built the five pictures for the second paper, with the
 same rule as always — the computer refuses to draw anything it
 cannot re-check against the original result files. Then our strict

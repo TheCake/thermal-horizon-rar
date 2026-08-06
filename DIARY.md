@@ -61,6 +61,18 @@ path). Paper 3 stays deferred. Don't reopen: the figure scripts
 (gated), the reference lists (verified 2026-08-06), the GD control
 table (all eight numbers now referee-checked on disk).
 
+CLOSE (+4, same night): the verification pass came back ACCEPT —
+ten/ten resolved, cross-paper coherence clean, one one-word residual
+adopted (symbolically→numerically; lesson: describe what the GATE
+did, not what the math is). Sweep done in the same arc: abstracts
+capped (P2 249w), final splits (mean 21.2), P1 given its reciprocal
+companion cross-refs (it never pointed at P2 before — check
+BIDIRECTIONAL cross-refs on any paper pair), worldtable six gates
+green, CLAUDE.md handoff current. Both papers referee-accepted at
+draft grade: P1 0.5, P2 0.4, all pushed. The paper block is CLOSED;
+nothing paper-side left to self-start. Waiting on Filip: the
+circulation call.
+
 ## 2026-08-06 (night, +3) — Paper 2 draft 0.1 written clean
 
 Written fresh from v4.0 with the round-14 lessons from sentence one:
