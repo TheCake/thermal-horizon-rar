@@ -1,0 +1,27 @@
+9N THE RISING-FLAG DIAL EXPOSURE (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+G9N-0 verbatim-lift: GD 38 / DD 111 -> PASS; OFF probe d = -3.05e-10 -> PASS
+G9N-1 fast-vs-verbatim (3 probes): max|d| = 3.64e-12 -> PASS
+G9N-2a census regression: GD (17, 11, 10) vs 9M (17, 11, 10); DD (69, 16) vs 9M (69, 16) -> PASS
+G9N-2b same-engine regressions (0.002): GD-CONV -1.395 vs -1.395; GD-RISE -1.172 vs -1.172; DD-CONV +1.087 vs +1.087; DD-RISE -0.478 vs -0.478 -> PASS
+G9N-2c cross-instrument regressions (0.05): FULL +0.969 vs +0.960; GD -1.309 vs -1.315; DD +1.337 vs +1.331 -> PASS
+GATES: G9N-0/1/2 PASS
+
+[point] lam_hat(FULL-149) = +0.969 (edges 0/0); lam_hat(FULL-RISING, n=122) = +1.030 (edges 0/0); D = +0.061
+[point] lam_hat(CONV-only, n=86) = +0.703 (edges 0/0); c1_hat: full +0.485 -> norise +0.515
+[co-read] GD full -1.309 -> -RISING -1.331; DD full +1.337 -> -RISING +1.500; GAP full -2.647 -> -RISING -2.831
+
+G9N-3 first-replicate fingerprint: sum(draw) = 11184, unique = 95
+  ... 25/200 (0.4 min)
+  ... 50/200 (0.8 min)
+  ... 75/200 (1.2 min)
+  ... 100/200 (1.5 min)
+  ... 125/200 (1.9 min)
+  ... 150/200 (2.3 min)
+  ... 175/200 (2.6 min)
+  ... 200/200 (3.0 min)
+[boot] reps 200 (skips 0); D pct 5/50/95 = -0.143/+0.014/+0.252; P(D >= 0) = 0.745; P(|D| >= 0.25) = 0.065
+
+==> 9N VERDICT (locked grammar): N-ROBUST - the headline dial does not depend on rising-curve galaxies; one-sentence robustness row for the paper.
+    NO credence movement (pre-stated; measurement round).
+
+done (3.0 min)

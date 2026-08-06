@@ -1,0 +1,53 @@
+9O THE LNPI CONVERSION-BAND ROW (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+
+conversion band g = [0.333, 1.300]; host support fh = [0.000, 0.560]
+LNPI[OPER  ] = -4886.95/-0.96/-0.43/-0.29/-4.97/-153.72
+LNPI[G-LOW ] = -4886.95/-0.96/-inf/-inf/-inf/-inf
+LNPI[G-MID ] = -4886.95/-536.55/-50.05/-8.32/-inf/-inf
+LNPI[G-HIGH] = -4886.95/-1731.30/-332.49/-22.82/-4.97/-153.72
+LNPI[FLAT  ] = +0.00/+0.00/+0.00/+0.00/+0.00/+0.00
+
+G9O-1 combiner analytic unit check: lse = 0.916290731874 vs ln(2.5) = 0.916290731874 -> PASS
+[simple 31] G9O-0 LNPI bit-identity (9I + 9J npz) -> PASS
+[simple 31] OPER  : a_marg(DROP) = 0.104, P(a=0) = 0.001, P(a<=0.1) = 0.959, P(a>=0.5) = 0.0000, EX05 = -19.7, dN_fine = +4.8; a_marg(STD) = 0.785
+[simple 31] G-LOW : a_marg(DROP) = 0.104, P(a=0) = 0.001, P(a<=0.1) = 0.959, P(a>=0.5) = 0.0000, EX05 = -19.7, dN_fine = +4.8; a_marg(STD) = 0.785
+[simple 31] G-MID : a_marg(DROP) = 0.148, P(a=0) = 0.062, P(a<=0.1) = 0.453, P(a>=0.5) = 0.0000, EX05 = -34.9, dN_fine = +0.9; a_marg(STD) = 0.169
+[simple 31] G-HIGH: a_marg(DROP) = 0.021, P(a=0) = 0.813, P(a<=0.1) = 0.977, P(a>=0.5) = 0.0000, EX05 = -52.8, dN_fine = -3.3; a_marg(STD) = 0.005
+[simple 31] FLAT  : a_marg(DROP) = 0.664, P(a=0) = 0.000, P(a<=0.1) = 0.000, P(a>=0.5) = 0.9992, EX05 = -9.7, dN_fine = +16.1; a_marg(STD) = 0.785
+[simple 31] G9O-2 regression: STD 0.785 vs 0.785; DROP 0.104 vs 0.104; P0 0.001 vs 0.001; curve(0.5) -13.2 vs -13.2; dN +4.8 vs +4.8 -> PASS
+
+[BE 31] G9O-0 LNPI bit-identity (9I + 9J npz) -> PASS
+[BE 31] OPER  : a_marg(DROP) = 0.274, P(a=0) = 0.013, P(a<=0.1) = 0.120, P(a>=0.5) = 0.0000, EX05 = -16.1, dN_fine = +2.5; a_marg(STD) = 0.723
+[BE 31] G-LOW : a_marg(DROP) = 0.274, P(a=0) = 0.013, P(a<=0.1) = 0.120, P(a>=0.5) = 0.0000, EX05 = -16.1, dN_fine = +2.5; a_marg(STD) = 0.723
+[BE 31] G-MID : a_marg(DROP) = 0.061, P(a=0) = 0.451, P(a<=0.1) = 0.939, P(a>=0.5) = 0.0000, EX05 = -17.9, dN_fine = -1.6; a_marg(STD) = 0.196
+[BE 31] G-HIGH: a_marg(DROP) = 0.028, P(a=0) = 0.735, P(a<=0.1) = 0.988, P(a>=0.5) = 0.0000, EX05 = -30.8, dN_fine = -2.8; a_marg(STD) = 0.016
+[BE 31] FLAT  : a_marg(DROP) = 0.382, P(a=0) = 0.000, P(a<=0.1) = 0.010, P(a>=0.5) = 0.0155, EX05 = -6.4, dN_fine = +12.6; a_marg(STD) = 0.723
+[BE 31] G9O-2 regression: STD 0.723 vs 0.723; DROP 0.274 vs 0.274; P0 0.013 vs 0.013; curve(0.5) -12.0 vs -12.0; dN +2.5 vs +2.5 -> PASS
+
+[simple 101] G9O-0 LNPI bit-identity (9I + 9J npz) -> PASS
+[simple 101] OPER  : a_marg(DROP) = 0.186, P(a=0) = 0.101, P(a<=0.1) = 0.282, P(a>=0.5) = 0.0000, EX05 = -19.9, dN_fine = +0.4; a_marg(STD) = 0.385
+[simple 101] G-LOW : a_marg(DROP) = 0.186, P(a=0) = 0.101, P(a<=0.1) = 0.282, P(a>=0.5) = 0.0000, EX05 = -19.9, dN_fine = +0.4; a_marg(STD) = 0.385
+[simple 101] G-MID : a_marg(DROP) = 0.020, P(a=0) = 0.890, P(a<=0.1) = 0.912, P(a>=0.5) = 0.0000, EX05 = -36.3, dN_fine = -3.9; a_marg(STD) = 0.230
+[simple 101] G-HIGH: a_marg(DROP) = 0.000, P(a=0) = 1.000, P(a<=0.1) = 1.000, P(a>=0.5) = 0.0000, EX05 = -60.6, dN_fine = -10.3; a_marg(STD) = 0.001
+[simple 101] FLAT  : a_marg(DROP) = 0.301, P(a=0) = 0.000, P(a<=0.1) = 0.000, P(a>=0.5) = 0.0019, EX05 = -9.7, dN_fine = +11.6; a_marg(STD) = 0.385
+[simple 101] G9O-2 regression: STD 0.385 vs 0.385; DROP 0.186 vs 0.186; P0 0.101 vs 0.101; curve(0.5) -18.3 vs -18.3; dN +0.4 vs +0.4 -> PASS
+
+[BE 101] G9O-0 LNPI bit-identity (9I + 9J npz) -> PASS
+[BE 101] OPER  : a_marg(DROP) = 0.138, P(a=0) = 0.404, P(a<=0.1) = 0.693, P(a>=0.5) = 0.0000, EX05 = -13.0, dN_fine = -1.4; a_marg(STD) = 0.399
+[BE 101] G-LOW : a_marg(DROP) = 0.138, P(a=0) = 0.404, P(a<=0.1) = 0.693, P(a>=0.5) = 0.0000, EX05 = -13.0, dN_fine = -1.4; a_marg(STD) = 0.399
+[BE 101] G-MID : a_marg(DROP) = 0.001, P(a=0) = 0.995, P(a<=0.1) = 1.000, P(a>=0.5) = 0.0000, EX05 = -24.6, dN_fine = -7.1; a_marg(STD) = 0.252
+[BE 101] G-HIGH: a_marg(DROP) = 0.000, P(a=0) = 1.000, P(a<=0.1) = 1.000, P(a>=0.5) = 0.0000, EX05 = -40.7, dN_fine = -10.5; a_marg(STD) = 0.001
+[BE 101] FLAT  : a_marg(DROP) = 0.400, P(a=0) = 0.000, P(a<=0.1) = 0.000, P(a>=0.5) = 0.0005, EX05 = -7.8, dN_fine = +11.2; a_marg(STD) = 0.399
+[BE 101] G9O-2 regression: STD 0.399 vs 0.399; DROP 0.138 vs 0.138; P0 0.404 vs 0.404; curve(0.5) -13.0 vs -13.0; dN -1.4 vs -1.4 -> PASS
+
+GATES: G9O-0 4/4, G9O-1, G9O-2 4/4 - ALL PASS
+
+O-bars [OPER  ]: L1-broken rows 0/4; L2-broken rows 0/4
+O-bars [G-LOW ]: L1-broken rows 0/4; L2-broken rows 0/4
+O-bars [G-MID ]: L1-broken rows 0/4; L2-broken rows 0/4
+O-bars [G-HIGH]: L1-broken rows 0/4; L2-broken rows 2/4
+O-bars [FLAT  ]: L1-broken rows 2/4; L2-broken rows 4/4
+quotable band: a_marg(DROP) across variants = [0.000, 0.664]
+
+==> 9O VERDICT (locked grammar): O-FRAGILE - a prior variant flips an operative letter; the alpha band gains an explicit prior-conditional column and the paper quotes the spread.
+    NO credence movement (pre-stated; measurement round).

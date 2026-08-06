@@ -460,6 +460,16 @@ CHECKS = [
     ('gal-9m-convsplit', '[point] lam_hat(CONVERGED) = -1.395 '
      '(edges 0/0), lam_hat(RISING) = -1.172 (edges 0/0); D = '
      '+0.223', 'data/stage9m_convsplit.txt'),
+    ('gal-9n-risingdial', '[point] lam_hat(FULL-149) = +0.969 '
+     '(edges 0/0); lam_hat(FULL-RISING, n=122) = +1.030 (edges '
+     '0/0); D = +0.061', 'data/stage9n_risingdial.txt'),
+    ('gal-9n-risingdial', '[boot] reps 200 (skips 0); D pct '
+     '5/50/95 = -0.143/+0.014/+0.252; P(D >= 0) = 0.745; '
+     'P(|D| >= 0.25) = 0.065', 'data/stage9n_risingdial.txt'),
+    ('bin-9o-lnpiband', 'O-bars [FLAT  ]: L1-broken rows 2/4; '
+     'L2-broken rows 4/4', 'data/stage9o_lnpiband.txt'),
+    ('bin-9o-lnpiband', 'quotable band: a_marg(DROP) across '
+     'variants = [0.000, 0.664]', 'data/stage9o_lnpiband.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

@@ -9,7 +9,45 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
-## 2026-08-06 (later) — the fork RESOLVED noise-real; the binary leg settles at an upper limit
+## 2026-08-06 (night) — the thaw is called; the last two robustness rows landed
+
+**What happened:** Filip called the papers ("aim to make the papers...
+maybe a third — derivation of the equation"). Before drafting, closed
+the two queued cheap rows in one pre-reg'd round (77d1d92). 9N
+(rising-flag dial check) = N-ROBUST: headline lam_hat 0.969 → 1.030
+without the 27 rising-curve galaxies, D = +0.061 (quarter grid step),
+boot P(|D| ≥ 0.25) = 0.065; the GD−DD gap even widens slightly
+(−2.647 → −2.831) so the GD tension is not rising-carried. 9O (LNPI
+band) = O-FRAGILE and the fragility IS the deliverable: α ≥ 0.5
+exclusion holds at every measured-prior anchoring (EX05 −13..−61,
+strengthens with conversion); the 0.1-0.3 interior lean lives ONLY at
+the low-conversion edge (OPER ≡ G-LOW to 3 digits — the clean-strata
+kinematics cap fcomp ≤ 0.1 by themselves); FLAT revives the old
+fenced boost world (α to 0.66, Newton re-rejected +11..+16). Paper 1
+quotes the labeled dial, not one number. No credence movement (both
+pre-stated); anomaly-real 53.
+
+**Don't-redo:** don't chase the FLAT-prior boost revival as physics —
+it's the no-companion world re-entering; the 7J arc already priced
+it; the dial is the statement. Don't re-run 9N variants (CONV-only
++0.703 is the AMBIG-dropping contrast — a different question,
+reported). The reader-grade npz stack now answers prior-axis
+questions in seconds — start there, never at the GPU.
+
+**The plan as proposed to Filip (his four decisions pending: titles,
+author line, credence placement, spin-off notes):** Paper 1 binaries
+= methods + reconciliation + the ≥2.1× pair-error instrumental
+measurement + the upper limit with its prior-conditional column (D3
+promotion gate bounds the language). Paper 2 galaxies = function
+program + ĉ₁ + a₀ horizon lock + scatter program + Saturn statement
++ GD tension + the 9N row. Paper 3 = the mechanism note (exact
+ladder, KMS gate, uniqueness theorems, cQED platform; ~8% mechanism
+credence stated openly; the open dS-side seam AS the hook) — §2.4's
+standalone home, which the round-11 STRUCTURAL-INDEPENDENCE rule
+anticipated. Absorb PAPER.md v3.9 → v4.0 FIRST (the 8/9-series
+changed the binary chapter's endpoint from AMBIGUOUS-CARRIED +14.5-
+23.8 to the upper-limit form — that rewrite is the big careful one).
+Tell Filip before any Opus-addressed draft round (protocol).
 
 **What happened:** 9L (the reviewer's D2, amended once when its own
 boost gate caught my window — 2-6 kAU carries 5-8% boost, meter is

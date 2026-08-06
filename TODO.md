@@ -843,6 +843,25 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     does the headline deep-regime dial / c₁ zero-point move when
     rising-curve galaxies are flagged (the DD convergence lean =
     a validated type-correlated deep systematic)?**
+    **9N+9O EXECUTED 2026-08-06 (pre-reg 77d1d92, the paper-prep
+    pair; the author CALLED THE THAW same day): 9N N-ROBUST — the
+    headline dial is rising-flag-immune (0.969 → 1.030, D =
+    +0.061 = quarter grid step; boot P(|D| ≥ 0.25) = 0.065; the
+    GD−DD gap WIDENS slightly without rising galaxies) — the
+    addendum short check CLOSED. 9O O-FRAGILE MAPPED — α ≥ 0.5
+    exclusion holds at EVERY measured-prior anchoring (EX05
+    −13..−61, strengthens with conversion); the 0.1-0.3 interior
+    lean = the low-conversion-edge reading (dissolves to α ≈ 0
+    at mid/high conversion; OPER ≡ G-LOW because clean-strata
+    kinematics cap fcomp ≤ 0.1 on their own); FLAT alone revives
+    the boost world (α_marg to 0.66, Newton re-rejected
+    +11..+16); Paper 1 quotes the labeled dial. NEXT = THE PAPER
+    ROUNDS: PAPER.md absorb v3.9 → v4.0 (the 8/9-series + rounds
+    9-13 + this pair), then THE SPLIT assembly — Paper 1
+    binaries / Paper 2 galaxies+coefficients / Paper 3 mechanism
+    note (the author's 2026-08-06 directive; author decisions
+    pending: titles, author line, credence placement, spin-off
+    notes).**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

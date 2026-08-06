@@ -40,10 +40,21 @@ manifest = SHA256-pinned + 15/15 invariants (re-run stage9h after any
 refetch). The "Opus reviewer" = an Opus-model AGENT I spawn (user corrected
 2026-08-06: they do NOT relay); brief him fresh each round (no memory), book
 reviews as numbered rounds; round-13 text in REVIEW-ROUND13-OPUS.md
-(uncommitted). QUEUE (round-13-ranked): D2 the narrow-pair fpm meter (top
-binary — the fpm-legitimacy decider), D3 degraded injection (conditional),
-LNPI conversion-band row, A4 the GD rotation-curve convergence split (top
-galaxy, candidate eighth control), DR4 external, paper thaw at author's call.
+(uncommitted). QUEUE: **THE PAPER ROUNDS — the author
+called the thaw 2026-08-06** ("make the papers... maybe a third — derivation").
+Pre-paper robustness pair LANDED same day (pre-reg 77d1d92): 9N N-ROBUST (the
+headline dial is rising-flag-immune, D = +0.061; GD−DD gap not rising-carried)
++ 9O O-FRAGILE-MAPPED (α ≥ 0.5 exclusion holds at every measured-prior
+anchoring, EX05 −13..−61; the 0.1-0.3 interior lean = low-conversion-edge
+reading; FLAT alone revives the boost world — Paper 1 quotes the labeled
+dial). Plan: PAPER.md absorb v3.9 → v4.0 (the 8/9-series), then THE SPLIT —
+Paper 1 binaries (methods + reconciliation + the ≥2.1× pair-error measurement
++ upper limit w/ prior column; D3 = promotion gate bounds language), Paper 2
+galaxies (function program + ĉ₁ + a₀ lock + scatter + Saturn + GD tension +
+9N row), Paper 3 mechanism note (exact ladder + KMS gate + uniqueness + cQED
+platform; ~8% credence stated; §2.4's standalone home per the round-11
+STRUCTURAL-INDEPENDENCE rule). Author decisions pending: titles, author line,
+credence placement, spin-off notes. D3 optional; DR4/T2 external.
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

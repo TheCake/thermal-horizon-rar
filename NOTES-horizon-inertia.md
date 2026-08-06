@@ -12577,6 +12577,73 @@ Both stages: NO credence movement regardless of letter
 (measurement rounds; the operative anomaly-real 53 is untouched by
 pre-statement). Wall-clock: 9O seconds; 9N bootstrap ~0.5–2 h CPU.
 
+## Stage 9N+9O EXECUTED (2026-08-06, same day): N-ROBUST + O-FRAGILE-MAPPED — the last pre-paper rows land
+
+**9N N-ROBUST (all gates first-run: G9N-0 counts + OFF probe
+3.05e-10; G9N-1 3.64e-12; G9N-2a censuses exact; G9N-2b
+same-engine 4/4 ≤ 0.001; G9N-2c cross-instrument FULL +0.969 vs
+8S-c 0.960 / GD −1.309 vs −1.315 / DD +1.337 vs 1.331 — the fast
+engine reproduces the headline dial).** The deep-regime dial does
+NOT depend on rising-curve galaxies: lam_hat(FULL-149) = +0.969 →
+without the 27 RISING (n = 122) +1.030, D = +0.061 = a quarter of
+one grid step (ĉ₁ 0.485 → 0.515); paired bootstrap (200 reps, 0
+skips) D pct 5/50/95 = −0.143/+0.014/+0.252, P(|D| ≥ 0.25) =
+0.065. Co-reads: CONV-only (n = 86) +0.703 — dropping AMBIG too
+is a DIFFERENT contrast (reported, not lettered); the GD−DD gap
+−2.647 → −2.831 without rising galaxies: the GD tension is not
+rising-carried (it strengthens slightly; consistent with 9M's
+point-dead artifact). Paper-2 consequence: one-sentence
+robustness row + this pointer. Wall-clock 3.0 min.
+
+**9O O-FRAGILE by the letter — and the MAP is the deliverable
+(all gates first-run: G9O-0 LNPI bit-identity 4/4 × 2 files;
+G9O-1 analytic; G9O-2 twenty regressions exact to print
+precision).** Three structural facts: (i) OPER ≡ G-LOW to 3
+digits in ALL rows — the clean-strata kinematics put ~zero mass
+at fcomp ≥ 0.2 on their own, so the shipped envelope was
+operatively its low-conversion edge all along (the 7J-z
+D2-inversion re-measured from the prior axis). (ii) WITHIN the
+measured band every movement is Newton-ward: the α ≥ 0.5
+exclusion only strengthens (EX05 −13..−20 at OPER → −25..−61 at
+G-MID/G-HIGH) and at G-HIGH the interior lean dissolves (α_marg →
+0.000–0.028, dN to −10.5; L2 broken 2/4 — at high conversion
+Newton outright wins the drop world). (iii) Only FLAT — no
+companion-rate information at all — revives the boost world:
+α_marg 0.30–0.66, P(α ≥ 0.5) up to 0.9992 (simple 31), Newton
+re-rejected +11..+16, EX05 −6.4..−9.7 (L1 broken 2/4, marginal).
+LETTERS: L1 (α ≥ 0.5 excluded) HOLDS at every measured-prior
+anchoring and weakens only priorless; L2 (no Newton verdict)
+breaks in BOTH directions at the family's ends. Quotable band:
+a_marg(DROP) = [0.000, 0.664] across the family. Paper-1
+consequence (pre-stated): the α band gains an explicit
+prior-conditional column — operative quote: "on clean strata
+α ≥ 0.5 is excluded at every anchoring of the measured
+companion-rate prior across its conversion band; the mild
+0.1–0.3 interior lean is the low-conversion reading and tightens
+toward α = 0 at mid/high conversion; only a flat prior (no
+companion-rate information) revives α ≈ 0.5–0.7, by letting the
+no-companion world back in." The upper-limit FORM survives
+everywhere; the interior-lean clause is now explicitly
+conversion-conditional.
+
+PLAIN VERDICT: 9N SUCCESS (the dial is rising-flag-robust — the
+row the addendum asked for). 9O SUCCESS as an instrument (the
+letter says FRAGILE and that is the finding: the fragility is
+mapped, the exclusion is not fragile, the lean is).
+
+ELI12: (9N) We asked "does our galaxy dial change if we throw
+out the galaxies whose rotation curves are still climbing at the
+last measured point?" No — the needle moves a quarter of a tick,
+inside the noise. (9O) We asked "does the binary answer change
+if we change how strictly we count hidden companion stars?" The
+big NO (no strong boost) stays no matter what; the small MAYBE
+(a tiny boost) lives only at one gentle end of the assumptions —
+and if we pretend to know nothing about companions, the old
+big-boost story comes back. So the paper shows a labeled dial,
+not one number.
+
+NO credence movement (pre-stated both stages; anomaly-real 53).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
