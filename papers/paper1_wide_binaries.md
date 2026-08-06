@@ -2,7 +2,7 @@
 
 **Filip Hájek** (independent researcher) — hfilip11@gmail.com
 
-*Draft 0.1 (2026-08-06), written from the program record (PAPER.md v4.0). References inherit the 2026-07 INSPIRE-verified list; entries marked [verify] are new to this paper and await the pre-circulation pass. Figures 1–5 are specified but not yet produced. Not for circulation.*
+*Draft 0.2 (2026-08-06), written from the program record (PAPER.md v4.0). References inherit the 2026-07 INSPIRE-verified list; entries marked [verify] are new to this paper and await the pre-circulation pass. Figures 1–5 are produced by calcs/paper1_figures.py under provenance gates (data/paper1_figs.txt). Not for circulation.*
 
 *Acknowledgments: the computational analysis, literature verification, and manuscript drafting were performed in collaboration with Claude (Anthropic). The full chronological program record, including all logged corrections, is public in the repository (Appendix B).*
 
@@ -52,7 +52,9 @@ Second, the eccentricity sector is externally validated. The fitted near-parabol
 
 Third, the excess width of the ṽ distributions has been given an identity piece by piece: mass errors (refuted above), a circular sub-population (vetoed by the joint fit; circular orbits narrow ṽ), companion broadening (rejected on shape), the near-parabolic population (real, and demanded independently by the direction channel), a per-system width channel demanded by the data at s_q = 0.2 (Section 6.1), and pair-level noise beyond the formal errors (measured in Section 4). The last two absorb what earlier phenomenological smears had absorbed, and their separation from the boost is exactly what Sections 6 and 7 are about.
 
-(Figure 1 here: the observed (ṽ, γ) distributions in the four separation bins, with the best Newtonian and boosted models overlaid.)
+![Figure 1](figs/fig1_vgamma.png)
+
+*Figure 1. The joint observables in the four separation bins. Top row: normalized relative velocity ṽ; bottom row: velocity-separation angle γ. The histogram is the data; the curves are the forward model at the fitted Newtonian configuration (blue) and at a boosted configuration with α = 0.5 (red), both evaluated at the landed nuisance cell (realization 31, simple family; provenance in data/paper1_figs.txt). The velocity marginals barely separate the two worlds; the direction marginals carry the residual structure discussed in Sections 7 and 8.*
 
 ## 4. The pair-level velocity error budget
 
@@ -68,7 +70,9 @@ We believe this number is useful to any analysis of the catalog, independent of 
 
 One aspect of the noise model remains genuinely open. When the inflation grid is extended to 3.0 times formal, the full-sample posterior migrates toward the new edge in both interpolating families, ceding about 8 log-likelihood units and up to 0.06 of the fitted amplitude. No injected population reproduces this behavior: mock skies carrying the measured companion population, the demanded width channel, and the measured inflation put less than 2% posterior mass at the extended edge, against 54–97% on the real sky. The sky therefore contains a residual velocity-width structure that scale inflation of Gaussian errors does not capture. Two pre-registered alternative shapes (an error-independent velocity floor and a heavy-tail fraction) failed their acceptance bars. Locating diagnostics place the residual in the mid range of the velocity distribution and the radially oriented column of the inner separation bins, not in any tail. Whether this is non-Gaussian error shape or unmodeled population structure is the principal attribution question that Gaia DR4 epoch astrometry can settle, and the fitted amplitudes below are quoted with the sensitivity band this ambiguity implies.
 
-(Figure 2 here: the RUWE dose curve of Section 6.3 with the boost-free calibrator band overlaid.)
+![Figure 2](figs/fig2_dosecurve.png)
+
+*Figure 2. (a) The marginalized boost amplitude per RUWE quartile, for both interpolating families and both population realizations (Section 6.3); the dotted line marks the α = 0.5 level excluded on the clean strata. (b) The noise inflation demanded by the boost-free 0.2–2 kAU bin, per quartile: flat at approximately 2.2 times the formal errors, independent of astrometric quality.*
 
 ## 5. The companion sector, measured
 
@@ -104,7 +108,9 @@ A fitted amplitude that rises with astrometric badness admits two readings: nois
 
 A fine amplitude scan (step 0.1, with a power gate demonstrating recovery of an injected α = 0.3 through the same machinery) completes the statement. The clean strata allow and mildly prefer amplitudes of 0.1–0.3, at +1.5 to +6.5 log-likelihood over Newton in three of the four family-realization combinations; α = 0 is not excluded. The dependence of this allowed sector on the companion prior was mapped explicitly by re-marginalizing under the prior pinned at each edge of the measured conversion band and under a flat prior. The exclusion of α ≥ 0.5 holds at every anchoring of the measured prior and strengthens as the conversion factor rises (the exclusion runs from 13 to 61 log-likelihood units across the band); the interior 0.1–0.3 preference is the reading at the low-conversion edge and tightens toward α = 0 at mid and high conversion; only a flat prior, which discards the companion-rate measurement entirely and readmits the companion-free world, revives amplitudes near the galactic calibration. The clean-strata kinematics themselves cap the effective companion fraction near 0.1 regardless of the prior's permissiveness.
 
-(Figure 3 here: the marginalized amplitude as a function of the companion-prior anchor, with the prior variants of the conversion band overlaid.)
+![Figure 3](figs/fig3_priorfamily.png)
+
+*Figure 3. (a) The clean-strata posterior over the boost amplitude under the measured companion prior, for both families and both realizations; the shaded region is excluded in every case. (b) The marginalized amplitude under the five companion-prior treatments of Section 6.3. The exclusion of α ≥ 0.5 holds at every anchoring of the measured prior; only the flat, measurement-free prior revives larger amplitudes.*
 
 The gravity result of this paper is therefore an upper limit with a floor that is not yet a detection: α ≥ 0.5 is excluded on the clean strata at every anchoring of the measured companion-rate prior; amplitudes up to 0.3–0.5 remain allowed, with a mild interior preference for 0.1–0.3 whose strength is prior-dependent in the stated direction; and α = 0 is not excluded. We commit to a promotion condition for any stronger claim: a demonstration that a truly Newtonian sky, processed under a mis-specified error shape at the measured twofold scale, does not manufacture the small-amplitude preference. That demonstration has not been run, and the language of this paper respects it.
 
@@ -128,7 +134,9 @@ The census survived a dedicated adversarial campaign. Heavy-tailed error manufac
 
 We release the census pair by pair (data/ceiling_pairs.csv): Gaia EDR3 source identifiers, both velocity conventions, per-pair noise, direction signal-to-noise, RUWE of both components, chance-alignment probability, and parallax consistency, sufficient to re-count the band under any edge, angle, or noise convention without our pipeline. Eleven pairs occupy the band under the uncorrected convention; boundary pairs relocate by one under reimplementation, and the leakage probability is never worse than 10⁻⁸. The census is small, and we do not rest the paper on it. It is, however, the one statistic in this dataset that no tested combination of noise, companions, and selection reproduces, and Gaia DR4 multiplies the column's occupancy roughly tenfold: the band fills and the cliff stays at 1.65, or the boosted reading of this census is wrong.
 
-(Figure 4 here: the perpendicular column's ṽ histogram against the forward-modeled Newtonian, boosted, and inflated-noise expectations, band and overshoot regions marked.)
+![Figure 4](figs/fig4_census.png)
+
+*Figure 4. The perpendicular column (s ≥ 6 kAU, γ ≥ 75°): the observed ṽ histogram with the Newtonian-forbidden band and the overshoot region shaded, and the boosted escape edge at 1.65 marked. The inset lists the expected (band, overshoot) occupancies for the three model worlds; none reproduces the observed pair (9, 2).*
 
 ## 9. Reconciling the published analyses
 
@@ -148,7 +156,9 @@ We rebuilt the Cookson et al. selection inside our catalog (N = 1194 against the
 
 Assembling the pieces: the Chae detections and the Banik et al. null differ mostly through the companion sector's treatment, where the free 69% is excluded but the fenced 0.1 was also untenable as a prior (the measured sector, converted through the measured mass-ratio law, lands near the kinematic preference); the Pittordis, Sutherland & Shepherd and Cookson et al. nulls are real but sit in cleaned samples whose boost sensitivity is below 1σ against the fitted model; the velocity-only degeneracy of Section 7 can move any of these analyses by half a calibration unit in either direction depending on which absorbers are free; and every analysis including ours inherits pair-level errors at least twice formal. Within this accounting there is no contradiction among the published numbers, only different placements of the same width budget. The measurements that would collapse the accounting into a verdict are listed in Section 10.
 
-(Figure 5 here: the median-ratio step statistic across the published selections, data against forward-modeled expectations.)
+![Figure 5](figs/fig5_medians.png)
+
+*Figure 5. Median-ratio statistics against forward-modeled expectations. Top group: this work's anchor ratio (with bootstrap interval) against the fitted Newtonian and boosted configurations, which bracket it. Bottom group: the same comparison on the Cookson et al. selection, where the observed step is flat and the model separation is below one sigma.*
 
 ## 10. Discussion
 

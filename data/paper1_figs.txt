@@ -1,0 +1,18 @@
+PAPER 1 FIGURES - provenance-gated build
+catalog: N = 14071 pairs (expect 14071)
+G-F1 anchor regression: B(all) = 1.0784 vs 9E printed 1.0779 -> PASS; 68% CI [1.051, 1.102]
+G-F2 census regression: loader band/over = 9/2; CSV = 9/2; record = 9/2 -> PASS
+parsed 7K-b: newton-best mu = (26.23, 16.94); boost-edge(sq0) mu = (13.21, 14.02)
+parsed 7K-a: forward newton R = [1.033, 1.043]; boost R = [1.127, 1.119]+[1.119]; cell eta=1.05 wr=0.2 fcomp=0.1 fpm=3.0 kw=0.7 sq=0.2
+parsed 7L: data step = (0.985, 0.909, 1.06); model steps nb/bs/bb = [1.029, 1.031]/[1.101, 1.099]/[1.092]
+parsed 9J dose rows x Q: [[0.153, 0.109, 0.673, 0.972], [0.204, 0.114, 0.647, 1.051], [0.122, 0.077, 0.792, 1.037], [0.263, 0.048, 0.404, 0.896]]
+parsed 9L meter: {31: {1: 2.21, 2: 2.17, 3: 2.26, 4: 2.12}, 101: {1: 2.13, 2: 2.27, 3: 2.25, 4: 2.3}}
+G-F3 9O regression (OPER + FLAT a_marg, 8 values, 0.002) -> PASS
+fig2 written
+fig3 written
+fig4 written (Newton-formal 0.9 annotation sourced from the Stage 4J leakage null, PAPER.md sec 7.2)
+fig5 written
+fig1: building model overlays (GPU)...
+  newton overlay done
+  boost overlay done
+fig1 written (overlays at the 7K-a printed cells, realization 31, simple family; ffly = 0.05 disclosed)
