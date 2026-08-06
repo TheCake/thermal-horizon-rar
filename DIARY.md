@@ -9,6 +9,24 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-06 (night, +3) — Paper 2 draft 0.1 written clean
+
+Written fresh from v4.0 with the round-14 lessons from sentence one:
+tables built in (data / c1 treatments / a0 ladder / GD controls),
+zero prose em-dashes, first-draft mean 22.6 words (P1 started 28.8 —
+the lesson took). 4,500 words. Structural independence HELD: no
+mechanism language anywhere; the C&T identity framed as "fixes the
+coefficients in advance"; the ledger summary names functions
+descriptively (occupation / simple / quarter-coefficient variant);
+the quadrupole section is pure phenomenology + the formulation fork.
+The binary no-discrimination result (7J-d) framed as the field-level
+methods finding per round 11. Next: P2 figures (5, gated — RAR+family
+needs the SPARC loader + nu curves; c1 profiles + a0 ladder parse
+from outputs; scatter figure needs care — parse 4T free-bin values,
+do NOT freehand a scatter estimator; GD split re-uses the 9N engine),
+then the referee round on P2 (tell Filip first), then the joint
+pre-circulation reference pass on both papers.
+
 ## 2026-08-06 (night, +2) — figures built; ROUND 14 landed; draft at 0.3
 
 Figures: calcs/paper1_figures.py, three provenance gates all PASS
