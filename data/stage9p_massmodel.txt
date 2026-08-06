@@ -1,0 +1,30 @@
+9P THE MASS-MODEL INSENSITIVITY CONTROL (pre-reg committed BEFORE any run; robustness round; NO credence movement; the RNAAS-note prerequisite)
+
+inherited gates (model-side, table-independent, NOT re-run): G9L-2 boost premise 8/8 PASS, G9L-3 injection 2/2 PASS (9L)
+[seed 31] G9P-0 identity Q1: max|dT| = 0.00e+00, E[fpm] 2.2058 vs arch 2.2058 -> PASS
+[seed 31] G9P-0 identity Q2: max|dT| = 0.00e+00, E[fpm] 2.1676 vs arch 2.1676 -> PASS
+[seed 31] G9P-0 identity Q3: max|dT| = 0.00e+00, E[fpm] 2.2634 vs arch 2.2634 -> PASS
+[seed 31] G9P-0 identity Q4: max|dT| = 0.00e+00, E[fpm] 2.1171 vs arch 2.1171 -> PASS
+[seed 31] V1-low: E[fpm] Q1-Q4 = 2.43/2.27/2.23/2.34  (1.5 min)
+[seed 31] V2-high: E[fpm] Q1-Q4 = 1.81/1.83/2.04/1.94  (2.2 min)
+[seed 31] V3-tiltp: E[fpm] Q1-Q4 = 2.18/2.21/2.26/2.20  (2.9 min)
+[seed 31] V4-tiltm: E[fpm] Q1-Q4 = 2.00/2.03/2.26/2.40  (3.6 min)
+[seed 31] V5-window: E[fpm] Q1-Q4 = 2.35/2.10/2.19/2.02  (4.3 min)
+
+[seed 101] G9P-0 identity Q1: max|dT| = 0.00e+00, E[fpm] 2.1292 vs arch 2.1292 -> PASS
+[seed 101] G9P-0 identity Q2: max|dT| = 0.00e+00, E[fpm] 2.2662 vs arch 2.2662 -> PASS
+[seed 101] G9P-0 identity Q3: max|dT| = 0.00e+00, E[fpm] 2.2490 vs arch 2.2490 -> PASS
+[seed 101] G9P-0 identity Q4: max|dT| = 0.00e+00, E[fpm] 2.3044 vs arch 2.3044 -> PASS
+[seed 101] V1-low: E[fpm] Q1-Q4 = 2.01/2.20/2.02/2.26  (5.8 min)
+[seed 101] V2-high: E[fpm] Q1-Q4 = 2.04/1.77/1.99/2.09  (6.5 min)
+[seed 101] V3-tiltp: E[fpm] Q1-Q4 = 2.17/2.26/1.95/2.23  (7.2 min)
+[seed 101] V4-tiltm: E[fpm] Q1-Q4 = 2.10/2.17/2.16/2.36  (7.9 min)
+[seed 101] V5-window: E[fpm] Q1-Q4 = 2.01/2.52/2.28/2.26  (8.6 min)
+
+GATES: G9P-0 8/8, G9P-1 - ALL PASS
+
+P-facts: envelope over V1-V5 x Q1-Q4 x seeds = [1.77, 2.52]; Q1-only min = 1.81; fiducial Q1 = 2.21, 2.13
+==> 9P VERDICT (locked grammar): P-GRAY - envelope quoted; the note ships the envelope minimum as its bound.
+    NO credence movement (pre-stated; robustness round).
+
+done (8.6 min)

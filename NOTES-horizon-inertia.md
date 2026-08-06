@@ -12811,6 +12811,52 @@ P2). Part 2 of the report appended to REVIEW-ROUND15-OPUS.md
 P1 0.5, P2 0.4. The next step is the author's: circulation
 (CERN colleague → Zenodo → arXiv per the standing path).
 
+## Stage 9P — THE MASS-MODEL INSENSITIVITY CONTROL (2026-08-06, pre-reg 9fef99d + amendment e72817c, the RNAAS-note prerequisite): P-GRAY, and the bound is NOT mass-model-carried
+
+The circulation phase opened (playbook papers/CIRCULATION.md; the
+author called the go). The reviewer's exposure (c-iv) — "show the
+≥2.1× inflation is insensitive to the M_G–mass relation or
+selection" — became stage 9P: the 9L narrow-pair fpm meter re-read
+under locked deformations of the only mass-model object in the
+chain. Variants: global mass ×0.80 / ×1.25 (generous vs the ~5–10%
+photometric M-L systematic), tilt ±0.15 at pivot 0.82 M☉ (±10–14%
+differential across the MS), and the MG window tightened to
+[3.0, 13.0]. One orbit run per seed reused (the population is
+mass-table-independent); pick stream at fiducial pool lengths so
+the rng is variant-identical; all expressions bit-verbatim 9L.
+
+AMENDMENT 1 (first-firing catch, pre-quote, logged): G9P-0 FAILED
+on the first run — the eval was wired to the full-sample noise
+pool where 9L indexes each stratum's own pool. The GB0w precedent
+repeats: the identity gate caught the wiring slip before anything
+was quoted. Fixed to verbatim; the re-run's G9P-0 is BIT-EXACT
+(max|dT| = 0.00e+00, 8/8; E[fpm] to 4 decimals).
+
+RESULT: envelope over V1–V5 × Q1–Q4 × both seeds = [1.77, 2.52];
+Q1-only min 1.81; fiducial Q1 = 2.21/2.13 (9L reproduced exactly).
+VERDICT BY THE LOCKED BAR: P-GRAY — missed P-ROBUST (≥1.8) by 0.03
+in exactly one cell (V2-high, seed 101, Q2 = 1.77); never remotely
+approaches P-FRAGILE (1.5). The softest direction is masses-high
+(+25%), as the physics predicts (higher v_c → lower ṽ → less noise
+demanded). Consequence per the pre-registered grammar: the note
+ships the envelope minimum as its bound — "at least 2.1× at the
+fiducial mass model; at least 1.8× under a generous mass-model
+deformation envelope." The reviewer's objection is closed: the
+pair-error inflation is real regardless of the mass model.
+
+Plain verdict: SUCCESS (the control did exactly its job, including
+catching its own wiring on the first firing).
+
+ELI12: A skeptic could say "maybe your star-speed errors only look
+too big because you guessed the star WEIGHTS wrong." So we redid
+the measurement pretending the weights were 20% lighter, 25%
+heavier, tilted light-to-heavy, and with the edges of the sample
+cut off. The answer barely moved: even in the worst case the
+catalog's error bars are still 1.8 times too small, and usually
+more than 2 times. The skeptic's escape hatch is closed.
+
+NO credence movement (pre-stated; robustness round).
+
 ELI12: We built the five pictures for the second paper, with the
 same rule as always — the computer refuses to draw anything it
 cannot re-check against the original result files. Then our strict

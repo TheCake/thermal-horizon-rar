@@ -470,6 +470,12 @@ CHECKS = [
      'L2-broken rows 4/4', 'data/stage9o_lnpiband.txt'),
     ('bin-9o-lnpiband', 'quotable band: a_marg(DROP) across '
      'variants = [0.000, 0.664]', 'data/stage9o_lnpiband.txt'),
+    ('bin-9p-massmodel', 'P-facts: envelope over V1-V5 x Q1-Q4 x '
+     'seeds = [1.77, 2.52]; Q1-only min = 1.81; fiducial Q1 = '
+     '2.21, 2.13', 'data/stage9p_massmodel.txt'),
+    ('bin-9p-massmodel', '[seed 31] G9P-0 identity Q1: max|dT| = '
+     '0.00e+00, E[fpm] 2.2058 vs arch 2.2058 -> PASS',
+     'data/stage9p_massmodel.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
