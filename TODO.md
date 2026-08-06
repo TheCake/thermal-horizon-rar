@@ -759,6 +759,22 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     pattern (fitted collapses, model-light survives) reproduced
     at quartile resolution; the collapse reads fitted-channel on
     current evidence, arbitration = the marginal re-run.**
+    **9F EXECUTED 2026-08-06 (pre-reg 6ba9ae4, THE ARBITER, all
+    gates PASS incl. profile regression exact 12/12): F-Q4-CARRIED
+    4/4 — M-STD holds α_marg ≈ 0.5 (dN +3.8..+8.0) but M-DROP
+    (Q1-Q3) is delta-at-Newton with dN = −13..−20 in every
+    law-seed; even the cleanest quartile wants E[fpm] ≈ 2×
+    formal; Q4 chases any grid top. THE PRE-SIGNED MAP EXECUTED:
+    anomaly-real 58 → 53. Tables archived
+    (data/stage9f_tables_*.npz — no GPU needed to re-read). GRID
+    CAVEAT: α < 0.5 unresolved in the drop world. NAMED
+    SUCCESSOR (new top binary item): **THE FINE-α DROP SCAN** —
+    α grid 0..0.6 step 0.1 on M-DROP (+M-STD co-read), same
+    machinery/npz pattern, ~30 min GPU: does Q1-Q3 kinematics
+    allow the small α the model-light core (9E B(Q1) = 1.122)
+    implies, or exclude it? That question is now the entire
+    fitted-channel case. DR4 remains the external arbiter of the
+    quality object.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9
@@ -944,6 +960,20 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     dwarfs, or a systematic outside every tested class; external
     Σ_gas(R) data would need the measured sign to flip, which no
     Σ shape provides. The V-ordering stands as the structure.**
+    **9G EXECUTED 2026-08-06 (pre-reg 6ba9ae4, the ambient
+    control): SEVENTH-CONTROL-PASSED — GD environments are
+    FIELD-TYPICAL (Δmed log e_N = +0.020 dex vs DD, perm P =
+    0.813 maxclust / 0.500 noclust; Chae+21 Table 3, 21 GD / 70
+    DD matched) and the dial does NOT order on ambient within GD
+    (split D = +0.176 vs bar 0.50; bootstrap P(D ≥ 0) = 0.57).
+    The environmental escape (and the cheapest AMB-adjacent
+    reading of the type-split) is closed in-catalog. Descriptive
+    lead logged: within-DD hi-vs-lo ambient D = −1.30 with the
+    lo-eN half on the +1.5 grid top (edge-flagged; a lead for
+    the ambient-gated function's galaxy leg, not bar-grade).
+    Remaining: genuine slow-gas-dwarf physics, or a systematic
+    outside every tested class (seven now tested); the
+    V-ordering stands as the structure to explain.**
 26. **Referee queue (adoption candidates)**: T2
     external-RV cross-check — **ARCHIVE PASS EXECUTED as Stage 8O
     (2026-08-05, pre-reg 1e7c89a + two pre-quote wiring amendments,

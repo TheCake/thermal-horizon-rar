@@ -11864,6 +11864,116 @@ may fire (print both; verdict names all fired). NO credence
 movement (pre-stated). Output: data/stage9g_gdambient.txt; script
 calcs/stage9g_gdambient.py.
 
+## Stage 9G EXECUTED (2026-08-06, all gates PASS): SEVENTH-CONTROL-PASSED — the GD dial is not carried by measured environment
+
+Gates: G9G-0 counts 38/111 + OFF probe d = −3.05e-10; G9G-1 fast
+cross-gate 3.64e-12; G9G-2 match 21 GD / 70 DD / 91 total.
+
+Read A (between-type): GD and DD occupy the SAME measured ambient
+field — Δmed(log e_N) = +0.020 dex (maxclust PRIMARY, perm
+P = 0.813) / +0.040 dex (noclust, P = 0.500). The slow-gas-dwarf
+population is environmentally field-typical: whatever makes GD
+special, it is not where they sit in the Chae ambient map.
+
+Read B (within-GD tracking): frozen-median split hi 10 / lo 11,
+λ̂(hi) = −0.568 vs λ̂(lo) = −0.744, D = +0.176 — under the 0.50
+bar; bootstrap 5/50/95 = −2.34/+0.27/+2.64, P(D ≥ 0) = 0.57 =
+no ordering (replicate halves are small; hi-set replicate edge
+activity 48 lo / 21 hi of 200 — disclosed, descriptive noise).
+
+Read C (DD control, descriptive): a weak within-DD lean — hi-eN
+λ̂ = +0.201 vs lo-eN λ̂ = +1.500 (the +1.5 GRID TOP; edge-riding
+flagged), D = −1.30, P(D ≥ 0) = 0.10. Not bar-grade, direction =
+higher-ambient DD sits less BE-ward; logged as a lead for the
+ambient-gated function's galaxy leg, not pursued here.
+
+Verdict by the letter: neither A1 nor B1 fires, read B
+non-descriptive ⇒ SEVENTH-CONTROL-PASSED. The GD dial-tension has
+now survived: gas budget (8S-b), vertical (8S-c), correlation
+(8V), correction-lever (8Y), quality flag (9B), radius-weighted
+correction sign (9C), and measured environment (9G). Remaining:
+genuine slow-gas-dwarf physics, or a systematic outside every
+tested class. NO credence movement (measurement round).
+
+Plain verdict: SUCCESS as a control (the environmental escape for
+the GD tension is closed in-catalog; the AMB-adjacent reading of
+the type-split loses its cheapest support).
+
+ELI12: Maybe the odd gas-rich galaxies live in odd neighborhoods,
+and the neighborhood (not the galaxy) causes the odd reading? We
+looked up each galaxy's measured neighborhood strength. The odd
+galaxies live in perfectly ordinary neighborhoods, and among them
+the odd reading doesn't care how strong the neighborhood is. So
+the neighborhood excuse is dead too — seven excuses tested, seven
+dead.
+
+## Stage 9F EXECUTED (2026-08-06, all gates PASS): F-Q4-CARRIED 4/4 — THE MAP EXECUTES: anomaly-real 58 → 53
+
+Gates: G9F-0 cube bit-identity 0.00e+00 4/4; G9F-1 profile-mode
+regression reproduces 9D's printed a_hat std/drop/ext EXACTLY
+12/12; G9F-2 analytic 1e-12; G9F-3 npz round-trip 4/4. Tables
+archived: data/stage9f_tables_{seed}_{law}.npz (future readers
+need no GPU).
+
+The arbiter's answer, per law-seed (M-STD → M-DROP):
+  simple 31 : 0.500 (dN +8.0) → 0.000 (P(α=0) = 1.000, dN −14.6)
+  BE 31     : 0.505 (dN +3.8) → 0.000 (1.000, −13.4)
+  simple 101: 0.500 (dN +5.0) → 0.000 (1.000, −19.7)
+  BE 101    : 0.499 (dN +4.7) → 0.000 (1.000, −14.4)
+With all four strata the marginal keeps α at the 0.5 grid point
+with small-but-positive Newton contrast; WITHOUT the worst-RUWE
+quartile the posterior is delta-at-Newton and the contrast turns
+NEGATIVE — Q1-Q3 kinematics prefer Newton over the α ≥ 0.5 grid
+by 13-20 lnL. M-EXT: three rows hold ≈ 0.5; BE-101 sags to 0.322
+(its block ext also collapsed); Q4-extended rides fpm = 4.2 at
+P = 0.90-0.97 with sq = 0.3 INTERIOR. M-TIED (aggregation world):
+dN ≈ 0 — the stratified model's Newton contrast lives in the
+strata structure.
+
+Noise posteriors (the 9D lean-output repair, M-STD): Q1 E[fpm] =
+1.97-2.25 (P(fpm=3.0) up to 0.37) — EVEN THE CLEANEST QUARTILE
+wants ~2× formal errors; Q2/Q3 fpm 1.5-2.0 with sq 0.06-0.11; Q4
+fpm → whatever top exists (3.0 std, 4.2 ext) with P(sq=0.3) = 1.00.
+The width object, stratified: a floor-level ~2× hunger everywhere
++ an unbounded Q4 chase.
+
+Letter: COLLAPSED 0/4 (M-STD holds α), SURVIVES 0/4 (every row
+fails the drop condition; 3/4 also miss dN ≥ +8), Q4-CARRIED 4/4
+⇒ F-Q4-CARRIED. THE PRE-SIGNED MAP EXECUTES: anomaly-real
+58 → 53.
+
+Scope/honesty: within-instrument statements only — the operative
++14.5-23.8 band is the full-cube instrument (eta/wr marginalized,
+unsplit); no direct subtraction. GRID CAVEAT (named): the 5-point
+α grid cannot resolve α < 0.5 — "Q1-Q3 prefer Newton" means
+"reject α ≥ 0.5"; a small α (the model-light core's 9E strength
+suggests roughly α ~ 0.2-0.4 territory) is UNTESTED in the drop
+world. SUCCESSOR NAMED: the fine-α drop scan (α grid 0..0.6 step
+0.1 on M-DROP, same machinery, ~30 min) — does clean-quartile
+kinematics allow the small α the model-light core implies, or
+exclude it? That question is now the entire fitted-channel case.
+
+Plain verdict: NEEDS REFINEMENT (the honest read of a decider
+that fired against us: the fitted channel is quality-carried at
+marginal grade; the map moved credence down 5; the fine-α scan
+and DR4 are the named next instruments — and the model-light
+core's 9E result stands untouched on the other side of the
+ledger).
+
+ELI12: The big careful re-run agreed with the scare, not the
+relief: when each quality group gets its own honest noise knobs,
+the gravity signal in the fit is carried ENTIRELY by the
+worst-measured quarter of the pairs — remove them and the fit
+actually votes for plain Newton, at least against the
+half-strength-or-more versions the grid can see. Meanwhile the
+raw speed excess is still right there in the cleanest data
+(last stage). Both can't be the full story: either the model is
+missing something about how clean pairs scatter (the fit can't
+see a smaller boost between its grid steps — next test), or the
+anomaly is partly an artifact of bad measurements. We moved our
+honesty number down five points, exactly as we promised we would
+before seeing the answer.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

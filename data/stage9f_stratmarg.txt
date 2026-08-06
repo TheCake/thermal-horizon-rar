@@ -1,0 +1,60 @@
+9F THE MARGINAL STRATIFIED RE-RUN (pre-reg committed BEFORE any run; DECIDER round — movement by the pre-signed map ONLY)
+
+G9F-2 combiner analytic unit check: lse = 0.916290731874 vs ln(2.5) = 0.916290731874 -> PASS
+
+[simple 31] G9F-0 cube identity: max|d| = 0.00e+00 -> PASS
+[simple 31] G9F-3 npz round-trip bit-identity -> PASS  (7.1 min)
+[BE 31] G9F-0 cube identity: max|d| = 0.00e+00 -> PASS
+[BE 31] G9F-3 npz round-trip bit-identity -> PASS  (14.1 min)
+[simple 101] G9F-0 cube identity: max|d| = 0.00e+00 -> PASS
+[simple 101] G9F-3 npz round-trip bit-identity -> PASS  (21.1 min)
+[BE 101] G9F-0 cube identity: max|d| = 0.00e+00 -> PASS
+[BE 101] G9F-3 npz round-trip bit-identity -> PASS  (28.1 min)
+
+[simple 31] G9F-1 profile regression: 0.446/0.000/0.442 vs 9D 0.446/0.000/0.442 -> PASS
+[simple 31] M-STD : w(a) = 0.000/1.000/0.000/0.000/0.000; a_marg = 0.500, P(a=0) = 0.000, dN = +8.0
+    Q1 noise post: E[fpm] = 1.97, P(fpm=3.0) = 0.01; E[sq] = 0.00, P(sq=0.3) = 0.00
+    Q2 noise post: E[fpm] = 1.52, P(fpm=3.0) = 0.00; E[sq] = 0.06, P(sq=0.3) = 0.00
+    Q3 noise post: E[fpm] = 1.50, P(fpm=3.0) = 0.04; E[sq] = 0.10, P(sq=0.3) = 0.00
+    Q4 noise post: E[fpm] = 2.81, P(fpm=3.0) = 0.79; E[sq] = 0.30, P(sq=0.3) = 1.00
+[simple 31] M-DROP: w(a) = 1.000/0.000/0.000/0.000/0.000; a_marg = 0.000, P(a=0) = 1.000, dN = -14.6; d(drop) = -0.500
+[simple 31] M-EXT : a_marg = 0.500, P(a=0) = 0.000, dN = +9.2; d(ext) = +0.000; Q4x post: E[fpm] = 4.18, P(fpm=4.2) = 0.97, E[sq] = 0.30, P(sq=0.5) = 0.00
+[simple 31] M-TIED: a_marg = 0.441, P(a=0) = 0.118, dN = +0.6
+
+[BE 31] G9F-1 profile regression: 0.522/0.000/0.467 vs 9D 0.522/0.000/0.467 -> PASS
+[BE 31] M-STD : w(a) = 0.005/0.980/0.015/0.000/0.000; a_marg = 0.505, P(a=0) = 0.005, dN = +3.8
+    Q1 noise post: E[fpm] = 1.99, P(fpm=3.0) = 0.06; E[sq] = 0.01, P(sq=0.3) = 0.00
+    Q2 noise post: E[fpm] = 2.11, P(fpm=3.0) = 0.18; E[sq] = 0.10, P(sq=0.3) = 0.00
+    Q3 noise post: E[fpm] = 1.98, P(fpm=3.0) = 0.18; E[sq] = 0.11, P(sq=0.3) = 0.00
+    Q4 noise post: E[fpm] = 2.91, P(fpm=3.0) = 0.88; E[sq] = 0.30, P(sq=0.3) = 1.00
+[BE 31] M-DROP: w(a) = 1.000/0.000/0.000/0.000/0.000; a_marg = 0.000, P(a=0) = 1.000, dN = -13.4; d(drop) = -0.505
+[BE 31] M-EXT : a_marg = 0.498, P(a=0) = 0.008, dN = +3.4; d(ext) = -0.007; Q4x post: E[fpm] = 4.14, P(fpm=4.2) = 0.90, E[sq] = 0.30, P(sq=0.5) = 0.00
+[BE 31] M-TIED: a_marg = 0.430, P(a=0) = 0.140, dN = +0.4
+
+[simple 101] G9F-1 profile regression: 0.472/0.000/0.385 vs 9D 0.472/0.000/0.385 -> PASS
+[simple 101] M-STD : w(a) = 0.002/0.998/0.001/0.000/0.000; a_marg = 0.500, P(a=0) = 0.002, dN = +5.0
+    Q1 noise post: E[fpm] = 2.22, P(fpm=3.0) = 0.37; E[sq] = 0.00, P(sq=0.3) = 0.00
+    Q2 noise post: E[fpm] = 1.78, P(fpm=3.0) = 0.01; E[sq] = 0.07, P(sq=0.3) = 0.00
+    Q3 noise post: E[fpm] = 1.62, P(fpm=3.0) = 0.03; E[sq] = 0.10, P(sq=0.3) = 0.00
+    Q4 noise post: E[fpm] = 2.64, P(fpm=3.0) = 0.55; E[sq] = 0.30, P(sq=0.3) = 1.00
+[simple 101] M-DROP: w(a) = 1.000/0.000/0.000/0.000/0.000; a_marg = 0.000, P(a=0) = 1.000, dN = -19.7; d(drop) = -0.500
+[simple 101] M-EXT : a_marg = 0.495, P(a=0) = 0.009, dN = +3.3; d(ext) = -0.004; Q4x post: E[fpm] = 4.17, P(fpm=4.2) = 0.95, E[sq] = 0.30, P(sq=0.5) = 0.00
+[simple 101] M-TIED: a_marg = 0.362, P(a=0) = 0.275, dN = -0.4
+
+[BE 101] G9F-1 profile regression: 0.420/0.000/0.000 vs 9D 0.420/0.000/0.000 -> PASS
+[BE 101] M-STD : w(a) = 0.002/0.998/0.000/0.000/0.000; a_marg = 0.499, P(a=0) = 0.002, dN = +4.7
+    Q1 noise post: E[fpm] = 2.25, P(fpm=3.0) = 0.05; E[sq] = 0.00, P(sq=0.3) = 0.00
+    Q2 noise post: E[fpm] = 1.77, P(fpm=3.0) = 0.01; E[sq] = 0.09, P(sq=0.3) = 0.00
+    Q3 noise post: E[fpm] = 1.63, P(fpm=3.0) = 0.02; E[sq] = 0.11, P(sq=0.3) = 0.00
+    Q4 noise post: E[fpm] = 2.91, P(fpm=3.0) = 0.87; E[sq] = 0.30, P(sq=0.3) = 1.00
+[BE 101] M-DROP: w(a) = 1.000/0.000/0.000/0.000/0.000; a_marg = 0.000, P(a=0) = 1.000, dN = -14.4; d(drop) = -0.499
+[BE 101] M-EXT : a_marg = 0.322, P(a=0) = 0.357, dN = -0.8; d(ext) = -0.177; Q4x post: E[fpm] = 4.16, P(fpm=4.2) = 0.94, E[sq] = 0.30, P(sq=0.5) = 0.00
+[BE 101] M-TIED: a_marg = 0.497, P(a=0) = 0.005, dN = +3.8
+
+GATES: G9F-0 4/4, G9F-1 4/4, G9F-2, G9F-3 4/4 - ALL PASS
+
+F-bars: COLLAPSED-rows 0/4; SURVIVES-rows 0/4; Q4-CARRIED-rows 4/4
+==> 9F VERDICT (locked grammar): F-Q4-CARRIED - the marginal alpha survives only through the worst-RUWE quartile; the fitted channel is quality-carried at marginal grade.
+    CREDENCE (pre-signed map): anomaly-real 58 -> 53.
+
+done (28.1 min)

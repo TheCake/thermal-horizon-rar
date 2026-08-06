@@ -421,6 +421,16 @@ CHECKS = [
      'data/stage9e_mlquality.txt'),
     ('bin-9e-mlquality', '[Q1] B = 1.1216 (wide med 0.6042 / '
      'narrow med 0.5387)', 'data/stage9e_mlquality.txt'),
+    ('bin-9f-stratmarg', 'GATES: G9F-0 4/4, G9F-1 4/4, G9F-2, '
+     'G9F-3 4/4 - ALL PASS', 'data/stage9f_stratmarg.txt'),
+    ('bin-9f-stratmarg', 'F-bars: COLLAPSED-rows 0/4; '
+     'SURVIVES-rows 0/4; Q4-CARRIED-rows 4/4',
+     'data/stage9f_stratmarg.txt'),
+    ('gal-9g-ambient', 'GATES: G9G-0/1/2 ALL PASS',
+     'data/stage9g_gdambient.txt'),
+    ('gal-9g-ambient', '[A maxclust] med(GD) = -2.283, med(DD) = '
+     '-2.303, dmed = +0.020 dex; perm P = 0.8130',
+     'data/stage9g_gdambient.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

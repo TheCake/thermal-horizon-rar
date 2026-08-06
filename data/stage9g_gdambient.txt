@@ -1,0 +1,29 @@
+9G THE AMBIENT CONTROL ON THE GD DIAL (pre-reg committed BEFORE any run; measurement round; NO credence movement)
+G9G-0 verbatim-lift regression: GD 38 / DD 111 (want 38/111) -> PASS; OFF probe -647.874131278 vs 8S-c -647.874131278 (d=-3.05e-10) -> PASS
+G9G-1 fast-vs-verbatim cross-gate (6 probes): max|d| = 3.64e-12 -> PASS
+G9G-2 match audit: GD matched 21, DD matched 70, total 91 -> PASS
+GATES: G9G-0/1/2 ALL PASS
+
+[A maxclust] med(GD) = -2.283, med(DD) = -2.303, dmed = +0.020 dex; perm P = 0.8130  <- PRIMARY
+[A noclust ] med(GD) = -3.178, med(DD) = -3.218, dmed = +0.040 dex; perm P = 0.4996
+
+[B] GD split at frozen median log eN(maxclust) = -2.283: hi 10 / lo 11
+[B] point fits: lam_hat(hi eN) = -0.568 (edge lo/hi 0/0), lam_hat(lo eN) = -0.744 (edge lo/hi 0/0); D = +0.176
+G9G-3 first-replicate fingerprint (B): sum(draw)=184, unique=13
+  ... B 50/200 (0.7 min)
+  ... B 100/200 (1.4 min)
+  ... B 150/200 (2.1 min)
+  ... B 200/200 (2.7 min)
+[B] bootstrap: reps 200 (skips 0); D pct 5/50/95 = -2.343/+0.274/+2.637; P(D >= 0) = 0.570, P(D <= 0) = 0.455; edges hi-set lo/hi = 48/21, lo-set lo/hi = 22/3
+
+[C] DD split at frozen median log eN(maxclust) = -2.303: hi 35 / lo 35
+[C] point fits: lam_hat(hi eN) = +0.201, lam_hat(lo eN) = +1.500; D = -1.299
+G9G-3 first-replicate fingerprint (C): sum(draw)=2307, unique=42
+  ... C 50/100 (3.3 min)
+  ... C 100/100 (3.9 min)
+[C] bootstrap: reps 100 (skips 0); D pct 5/50/95 = -2.337/-1.127/+0.009; P(D >= 0) = 0.100
+
+==> 9G VERDICT (locked grammar): SEVENTH-CONTROL-PASSED - measured environment neither distinguishes GD from DD nor orders the dial within GD; the tension is NOT carried by the Chae ambient axis.
+    NO credence movement (pre-stated; measurement round).
+
+done (3.9 min)
