@@ -47,14 +47,21 @@ headline dial is rising-flag-immune, D = +0.061; GD−DD gap not rising-carried)
 + 9O O-FRAGILE-MAPPED (α ≥ 0.5 exclusion holds at every measured-prior
 anchoring, EX05 −13..−61; the 0.1-0.3 interior lean = low-conversion-edge
 reading; FLAT alone revives the boost world — Paper 1 quotes the labeled
-dial). Plan: PAPER.md absorb v3.9 → v4.0 (the 8/9-series), then THE SPLIT —
-Paper 1 binaries (methods + reconciliation + the ≥2.1× pair-error measurement
-+ upper limit w/ prior column; D3 = promotion gate bounds language), Paper 2
-galaxies (function program + ĉ₁ + a₀ lock + scatter + Saturn + GD tension +
-9N row), Paper 3 mechanism note (exact ladder + KMS gate + uniqueness + cQED
-platform; ~8% credence stated; §2.4's standalone home per the round-11
-STRUCTURAL-INDEPENDENCE rule). Author decisions pending: titles, author line,
-credence placement, spin-off notes. D3 optional; DR4/T2 external.
+dial). **PAPER v4.0 ABSORBED 2026-08-06** (author called
+the thaw; new §4.7 GD tension, upper-limit §6.3 endpoint + D3 promotion gate,
+≥2.1× standing measurement, App A nineteen, credence ~53; all edits via Edit
+tool, grep-audited). NEXT: THE SPLIT — Paper 1 binaries (spine: width channel
++ phantom-veto + absorber accounting; completeness/kernel; ≥2.1× pair-error
+instrument; upper limit w/ 9O prior column; (band,cliff) flagship; D3 gate
+bounds language; NO §2.4 gestures per round-11 STRUCTURAL-INDEPENDENCE), then
+Paper 2 galaxies (function program + ĉ₁ + a₀ lock + scatter + Saturn + §4.7
+GD tension + 9N row; 16-law ±8 = field-level methods finding). **Paper 3
+(mechanism note) DEFERRED by the author 2026-08-06: ship 1–2, then more
+mechanism work (O5 seam) before writing it.** Author delegated titles/author
+line/credence placement/spin-offs to Claude (2026-08-06); Claude's defaults:
+Hájek sole author + Claude in acknowledgments, credences in-paper, coherence
+note = later spin-off, pair-error stays inside P1. Tell the user before any
+Opus-addressed draft round. D3 optional; DR4/T2 external.
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

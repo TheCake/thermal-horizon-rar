@@ -12644,6 +12644,41 @@ not one number.
 
 NO credence movement (pre-stated both stages; anomaly-real 53).
 
+## PAPER v4.0 (2026-08-06): THE 8/9-SERIES ABSORB — the author called the thaw
+
+The frozen v3.9 (Stages 1–7J-z8) absorbed the rivals-and-census
+arc, the GD dial-tension arc, the quality arc, rounds 9–13, and
+9N/9O. Structural changes: header v4.0 arc block; abstract (3)
+extended to the upper-limit endpoint + the ≥ 2.1× standing
+measurement; §1 trajectory rewrite; **NEW §4.7** (the GD dial
+tension, eight controls, stated as an open anomaly against every
+function in the ledger ours included); §6.3 + three blocks
+(rivals-and-census / quality-stratification / the noise meter,
+closing with the operative upper-limit endpoint, the 9O prior
+dial, and the D3 promotion gate as standing rule); §7.2
+census-defense addendum; §7.4(d) the 8D settling (BOOST-CARRIED)
++ the compatibility close; §8.1 status re-grade (the upper-limit
+sector maps to Q₂ ≲ 1–2× the Cassini comparator — the
+binary-calibrated tension no longer independently established);
+§9.1 three status notes (binary rows co-quoted with the upper
+limit; the GD anomaly row; the 8A/8B rivals ladder); §9.2 item 5
+rewritten to the stratified prescription + promotion gate; §10
+bullet-1 close + census bullet → the (band, cliff) pair form +
+credence paragraph → the full pre-signed trail ending at **~53**
+with the banked-regardless list; App A → **NINETEEN** (new #19 =
+the 9E double-ratio reading, round-13 E2); App B → LOG/manifest
+pointers + the full 8/9-series script map. All edits via the Edit
+tool (the PS 5.1 corruption hazard avoided); grep audit: no stale
+"eighteen"/"v3.9" outside the header's chronological narrative.
+Paper remains not-for-circulation before colleague review.
+
+THE SPLIT assembles from this base next (Paper 1 binaries, Paper
+2 galaxies+coefficients). **Paper 3 (mechanism) DEFERRED by the
+author (2026-08-06): ship 1–2 first, then "continue a bit with
+the third" — more mechanism work (the O5 seam) before it is
+written.** Author delegated titles/author-line/credence-placement/
+spin-offs to Claude (2026-08-06).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

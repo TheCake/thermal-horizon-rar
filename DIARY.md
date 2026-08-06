@@ -9,6 +9,28 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-06 (night, later) — PAPER v4.0 absorbed; P3 deferred; split next
+
+**The absorb is DONE** (13 targeted Edit-tool edits, grep-audited, no
+encoding damage): v3.9 → v4.0 with the new §4.7 (GD tension as an open
+anomaly against ALL functions including ours), the §6.3 close (rivals →
+quality → noise meter → upper limit + promotion gate + 9O dial), the
+census matured to the (band, cliff) pair everywhere, §8.1 re-graded
+(upper-limit α ⇒ binary-calibrated Q₂ ≲ 1–2× comparator), App A →
+nineteen (#19 = E2), App B full script map, credence ~53 with the
+whole pre-signed trail. **Filip deferred Paper 3** ("isn't that still
+a bit open? close the first two, then continue a bit with the third")
+— agreed: the ~8% mechanism credence and the O5 seam mean P3 needs
+more bench work first; its material stays in NOTES/§2.4. He delegated
+all four author decisions to me (titles, author line = Hájek + Claude
+in acknowledgments, credence placement = in-paper, spin-offs =
+coherence note later). **Next work block = Paper 1 assembly from the
+v4.0 base** (fresh context recommended — the absorb ate this window;
+the split decisions are all in TODO/CLAUDE.md: width-channel spine,
+phantom-veto centerpiece, (band,cliff) flagship, tension-as-result,
+no §2.4 gestures). Then Paper 2, then Opus draft reviews (tell Filip
+first). Don't re-absorb anything — v4.0 is the extraction base.
+
 ## 2026-08-06 (night) — the thaw is called; the last two robustness rows landed
 
 **What happened:** Filip called the papers ("aim to make the papers...
