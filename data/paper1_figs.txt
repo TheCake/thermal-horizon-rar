@@ -1,5 +1,14 @@
 PAPER 1 FIGURES - provenance-gated build
 catalog: N = 14071 pairs (expect 14071)
+cut ladder (sequential):
+  catalog rows: 1817594
+  chance-alignment R < 0.01: 1148051
+  both parallaxes > 5 mas: 111391
+  parallax S/N > 20 (both): 100432
+  parallax consistency < 3 sigma: 95019
+  separation 200 AU - 50 kAU: 78789
+  main sequence (both, 2.6 < M_G < 14.2): 74502
+  velocity precision < 0.03 km/s: 14071
 G-F1 anchor regression: B(all) = 1.0784 vs 9E printed 1.0779 -> PASS; 68% CI [1.051, 1.102]
 G-F2 census regression: loader band/over = 9/2; CSV = 9/2; record = 9/2 -> PASS
 parsed 7K-b: newton-best mu = (26.23, 16.94); boost-edge(sq0) mu = (13.21, 14.02)
@@ -16,3 +25,5 @@ fig1: building model overlays (GPU)...
   newton overlay done
   boost overlay done
 fig1 written (overlays at the 7K-a printed cells, realization 31, simple family; ffly = 0.05 disclosed)
+parsed 7J-g: 16 rows; vt-sq0 amplitudes = 0.47/0.53/0.51/0.52
+fig6 written

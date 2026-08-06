@@ -81,6 +81,28 @@ vc_ok = 0.9417*np.sqrt(Mtot_d/s_d)
 P(f"catalog: N = {int(ok.sum())} pairs (expect 14071)")
 assert int(ok.sum()) == 14071
 
+# ---------------- Table 1: the sequential cut ladder ----------------
+cuts = [
+    ("catalog rows", np.ones(len(sep), dtype=bool)),
+    ("chance-alignment R < 0.01", Rch < 0.01),
+    ("both parallaxes > 5 mas", (plx1 > 5) & (plx2 > 5)),
+    ("parallax S/N > 20 (both)",
+     (plx1/np.maximum(eplx1, 1e-6) > 20)
+     & (plx2/np.maximum(eplx2, 1e-6) > 20)),
+    ("parallax consistency < 3 sigma",
+     np.abs(plx1-plx2) < 3*np.hypot(eplx1, eplx2)),
+    ("separation 200 AU - 50 kAU", (sep > 200) & (sep < 50000)),
+    ("main sequence (both, 2.6 < M_G < 14.2)",
+     (MG1 > 2.6) & (MG1 < 14.2) & (MG2 > 2.6) & (MG2 < 14.2)),
+    ("velocity precision < 0.03 km/s", sigv < 0.03),
+]
+mrun = np.ones(len(sep), dtype=bool)
+P("cut ladder (sequential):")
+for nm, m in cuts:
+    mrun &= m
+    P(f"  {nm}: {int(mrun.sum())}")
+assert int(mrun.sum()) == 14071
+
 SBINS = [(0.2,2),(2,6),(6,20),(20,50)]
 VE = np.logspace(np.log10(0.02), np.log10(6.0), 21)
 GE = np.linspace(0, 90, 7)
@@ -572,6 +594,42 @@ for ext in ('png', 'pdf'):
 plt.close(fig)
 P("fig1 written (overlays at the 7K-a printed cells, realization 31, "
   "simple family; ffly = 0.05 disclosed)")
+
+# ---- Fig 6: the phantom veto ---------------------------------------
+t7jg = open('data/stage7jg_read.txt').read()
+jg = {}
+for lw_, sd, ch, cfg, am, dn in re.findall(
+        r"\[(simple|BE) (\d+) (2D|vt) (sqfree|sq0)\] "
+        r"a_marg=([\d.]+) dN=\+?([\d.]+)", t7jg):
+    jg[(lw_, int(sd), ch, cfg)] = (float(am), float(dn))
+assert len(jg) == 16, jg
+P(f"parsed 7J-g: 16 rows; vt-sq0 amplitudes = "
+  + "/".join(f"{jg[(l_, s_, 'vt', 'sq0')][0]:.2f}"
+             for l_ in ('simple', 'BE') for s_ in (31, 101)))
+fig, ax = plt.subplots(figsize=(5.6, 3.4))
+configs = [('vt', 'sq0', 'velocity-only,\nno width channel'),
+           ('2D', 'sq0', 'joint 2D,\nno width channel'),
+           ('vt', 'sqfree', 'velocity-only,\nwidth channel on'),
+           ('2D', 'sqfree', 'joint 2D,\nwidth channel on')]
+for i, (lw_, sd) in enumerate([('simple', 31), ('BE', 31),
+                               ('simple', 101), ('BE', 101)]):
+    ys = [jg[(lw_, sd, ch, cfg)][0] for ch, cfg, _ in configs]
+    ax.plot(np.arange(4) + (i-1.5)*0.07, ys, mk[i], ms=5,
+            label=labels[i])
+ax.annotate('', xy=(1.1, 0.24), xytext=(0.4, 0.48),
+            arrowprops=dict(arrowstyle='->', lw=1, color='0.3'))
+ax.text(0.42, 0.30, 'the direction\ndata veto', fontsize=7,
+        color='0.25')
+ax.set_xticks(np.arange(4))
+ax.set_xticklabels([c[2] for c in configs], fontsize=7)
+ax.set_ylabel(r'fitted amplitude $\alpha$')
+ax.axhline(0, color='0.7', lw=0.6)
+ax.legend(fontsize=6.5, loc='upper left')
+fig.tight_layout()
+for ext in ('png', 'pdf'):
+    fig.savefig(f'papers/figs/fig6_phantom.{ext}')
+plt.close(fig)
+P("fig6 written")
 
 with open('data/paper1_figs.txt', 'w') as f:
     f.write("\n".join(L_)+"\n")
