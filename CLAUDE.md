@@ -5,6 +5,29 @@ non-academic, wants first-principles reasoning + numbers, enjoys building) and C
 Read [NOTES-horizon-inertia.md](NOTES-horizon-inertia.md) (the lab notebook, chronological
 with retractions), [TODO.md](TODO.md) (priority queue), [PAPER-DRAFT.md](PAPER-DRAFT.md).
 
+## CURRENT STATE (2026-08-06 — read this first, then LOG.md)
+The fastest catch-up is [LOG.md](LOG.md) (one line per stage, current). The giant
+"Key results" narrative below is accurate through the 7-series/PAPER v3.9 but STOPS
+there; the 8/9-series (the rivals arc, the control arcs, the QUALITY arc) lives in
+LOG.md + NOTES + [LEDGER.csv](LEDGER.csv) (175 rows, six-gate audited, 204 tokens).
+Where things stand: **anomaly-real ~56** (trail 50→58→53→56, every move by
+pre-signed map). Binary side: the QUALITY-CONCENTRATION OBJECT (7I-S+8W+8Z+9D+9F =
+fitted-α collapses under quality cuts) was arbitrated at marginal grade (9F
+Q4-CARRIED) then REFINED by the fine-α scan (9I, power-gated): clean quartiles
+Q1-Q3 ALLOW and mildly prefer α = 0.1-0.3 (+1.5..+6.5 over Newton, 3/4 law-seeds)
+and reject only α ≥ 0.5 — channels reconcile at deflated amplitude; model-light
+core alive in the cleanest quartile (9E: B(Q1) = 1.122, B(all) = 1.0779 = anchor).
+Named residual: Q1's two channels disagree (fitted small, medians high). Galaxy
+side: the GD dial-tension (gas-dwarf λ̂ ≈ −1.3 vs dial +1.0) survived SEVEN
+controls (gas, vertical, correlation, lever, quality flag, AD-correction sign
+INVERTED, environment 9G) — reads genuine slow-dwarf physics or an untested-class
+systematic; strongly V-ordered. Data chain: 9H manifest = SHA256-pinned +
+15/15 invariants (data/MANIFEST.sha256; re-run stage9h after any refetch).
+The "Opus reviewer" = an Opus-model AGENT I spawn (user corrected 2026-08-06:
+they do NOT relay); brief him fresh each round (no memory), book reviews as
+numbered rounds. Queue: fine-STD extension past its 0.6 top (9J), the Q1
+two-channel contrast instrument, DR4 external, paper thaw at author's call.
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

@@ -12127,6 +12127,40 @@ vs careful fit) now roughly agree: something small and real, plus
 a messy quarter that exaggerates. Honesty number back up a bit,
 exactly per the promise we signed before running.
 
+## Stage 9J PRE-REGISTERED (2026-08-06, THE FINE-STD EXTENSION — the 9I co-read repair; measurement round, NO credence movement)
+
+9I's M-STD fine co-read edge-rode its 0.6 grid top (simple-31
+w(0.6) = 0.69; Q4-alone at top 3/4).  Extend: A_EXT = 0.7..1.2
+step 0.1 (6 new α values, identical machinery); REUSE the 9I
+tables for 0..0.6 (bit-lineage from data/stage9i_tables_*.npz);
+combined 13-point grid 0..1.2.  Reads: M-STD full-grid marginal
+(localize?), M-DROP full-grid (confirm unchanged), Q4-alone
+full-grid (where does the chase stop?).  New tables archived
+data/stage9j_tables_{seed}_{law}.npz.
+
+Gates: G9J-0 9I-npz reload + new-npz round-trip bit-identity;
+G9J-1 analytic combiner (1e-12); G9J-2 lineage regression — on
+the 0..0.6 SUBSET the combiner reproduces 9I's printed
+M-STD/M-DROP α_marg to 0.002 (8 values).
+
+Bars (locked, ordered; rows = 4 law-seeds, M-STD full-grid):
+  1. J-INTERIOR iff >= 3/4 rows: α_marg interior AND
+     P(α = 1.2 top) <= 0.10.
+  2. else J-STILL-EDGE iff >= 3/4 rows: P(top) >= 0.30 (the
+     chase has no ceiling on this axis — width masquerading as
+     boost).
+  3. else J-GRAY-CARRIED.
+NO credence movement (measurement round; the 9I primary already
+decided by map).  Output: data/stage9j_stdext.txt; script
+calcs/stage9j_stdext.py.
+
+CONCURRENT (same round, not a stage): REVIEW ROUND 13 — the Opus
+reviewer (an Opus-model agent, per the author's 2026-08-06
+correction: I spawn and run him myself; no relay) is briefed via
+OPUS-NOTE.md (uncommitted) on the full quality arc + the four
+asks; read-only; his review books as ROUND 13 with point-by-point
+adopt/rebut.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
