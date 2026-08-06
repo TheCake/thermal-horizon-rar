@@ -490,7 +490,7 @@ Every quantitative claim in this paper is produced by a named script in the publ
 - Chae, K.-H., Desmond, H., Lelli, F., McGaugh, S. S., & Schombert, J. M. 2021, ApJ 921, 104 (arXiv:2109.04745) [Table 3 = per-galaxy environmental fields used in §4.6]
 - Chae, K.-H., & Milgrom, M. 2022, ApJ 928, 24 (arXiv:2201.02109)
 - Deser, S., & Levin, J. 1997, CQG 14, L163 (gr-qc/9706018)
-- Desmond, H. 2023, MNRAS 525, 6130
+- Desmond, H. 2023, MNRAS 526, 3342
 - Desmond, H., Hees, A., & Famaey, B. 2024, MNRAS (arXiv:2401.04796)
 - Cookson, S. A., Banik, I., El-Badry, K., Sutherland, W., Penoyre, Z., Pittordis, C., & Clarke, C. J. 2026, MNRAS (arXiv:2602.24035)
 - El-Badry, K., Rix, H.-W., & Heintz, T. M. 2021, MNRAS 506, 2269 (arXiv:2101.05282)

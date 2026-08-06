@@ -207,7 +207,7 @@ Large datasets are re-fetched by documented URLs: SPARC via Zenodo, the KiDS red
 - Brouwer, M. M., et al. 2021, A&A 650, A113
 - Cadoni, M., & Tuveri, M. 2019, PRD 100, 024029
 - Chae, K.-H., Desmond, H., Lelli, F., McGaugh, S. S., & Schombert, J. M. 2021, ApJ 921, 104
-- Desmond, H. 2023, MNRAS 525, 6130
+- Desmond, H. 2023, MNRAS 526, 3342
 - Desmond, H., Hees, A., & Famaey, B. 2024, MNRAS (arXiv:2401.04796)
 - Famaey, B., & Binney, J. 2005, MNRAS 363, 603
 - Hees, A., Folkner, W. M., Jacobson, R. A., & Park, R. S. 2014, PRD 89, 102002
