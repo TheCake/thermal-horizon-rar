@@ -1,0 +1,17 @@
+PAPER 2 FIGURES - provenance-gated build
+loader: 153 galaxies pass cuts, 2700 points, 149 galaxies contribute; GD 38 / DD 111; lensing fiducial 12 of 15 rows
+G-P2a loader counts: PASS  (153/2700/149/38/111/12)
+G-P2b profile-table regression (4S/4Z headline Deltas): PASS  (4S 56.30/56.3 4Z 28.91/28.9)
+G-P2b2 paper-quote check (c1 bootstrap bands): PASS  (medians 0.427/0.377)
+G-P2c a0-ladder paper-quote check: PASS  (hier range 1.044-1.125)
+G-P2d scatter paper-quote check: PASS  (s_b deep/newt 0.1438/0.1073)
+G-P2d2 inner-disk decomposition (2.4x; 49%/16%): PASS  (ratios 2.39/2.39 shares 0.49/0.16)
+G-P2e GD-dial paper-quote check: PASS  (c1 GD -0.657 DD 0.665)
+ALL GATES PASS - writing figures
+p2_fig1 written
+p2_fig2 written
+p2_fig3 written
+p2_fig4 written
+p2_fig5 written
+
+provenance: fig1 loader counts above; fig2 = 4S/4Z profile tables + bootstrap lines; fig3 = 4V scorecard rows + 5L reference + 5M per-function a0; fig4 = 4T BE per-bin table + 7B deciles/geometry cells + 7C identification; fig5 = 8S-c dials + 8V percentiles + 8S/8X/9B/8Y/9G/9N control numbers

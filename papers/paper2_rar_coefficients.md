@@ -2,7 +2,7 @@
 
 **Filip Hájek** (independent researcher) — hfilip11@gmail.com
 
-*Draft 0.1 (2026-08-06), written from the program record (PAPER.md v4.0). References inherit the 2026-07 INSPIRE-verified list. Figures 1–5 are specified as callouts and will be produced under provenance gates in the next revision. Not for circulation.*
+*Draft 0.2 (2026-08-06), written from the program record (PAPER.md v4.0). References inherit the 2026-07 INSPIRE-verified list. Figures 1–5 are produced by a provenance-gated build (calcs/paper2_figures.py) that regresses every plotted number against the committed stage outputs before writing. Not for circulation.*
 
 *Acknowledgments: the computational analysis, literature verification, and manuscript drafting were performed in collaboration with Claude (Anthropic). The full chronological program record, including all logged corrections, is public in the repository (Appendix B). A companion paper analyzes the wide-binary regime of the same program.*
 
@@ -34,7 +34,9 @@ Three data sets carry the measurements (Table 1).
 
 Baryonic accelerations use fixed population disk and bulge mass-to-light ratios (0.5 and 0.7 at 3.6 μm) where marginalization is not stated, and the stated hierarchical treatments elsewhere. Distance and inclination uncertainties enter the hierarchical fits as measured per-galaxy priors from the SPARC tables. The gas-dominated versus disk-dominated split of Section 8 classifies a galaxy by whether gas dominates the baryonic acceleration at more than half its points (38 versus 111 galaxies).
 
-(Figure 1 here: the radial acceleration relation on the SPARC points with the candidate function family overlaid, and the lensing extension.)
+![Figure 1](figs/p2_fig1_rar.png)
+
+*Figure 1. The radial acceleration relation. (a) The 2,700 SPARC points (grey, fixed population mass-to-light ratios) with the stacked weak-lensing measurement of Mistele et al. (2024): filled circles inside the fiducial fit window, open circles the deep extension. Curves show the occupation, simple, and standard-μ functions at the fiducial a₀ = 1.2 × 10⁻¹⁰ m s⁻², with the line g_obs = g_bar dotted. (b) The same data as residuals about the occupation curve: SPARC binned medians (grey) and lensing points (blue), with the rival functions drawn as curves. A global 0.2 dex stellar-mass systematic applies to the lensing g_bar and is treated as a nuisance in the fits. The candidate functions separate by a few hundredths of a dex, which is why the coefficient tests of Section 3 run at the likelihood level.*
 
 ## 3. The zero-point coefficient
 
@@ -59,7 +61,9 @@ Three statements survive every treatment. The coefficient is positive: c₁ = 0 
 
 The binary row deserves its negative statement. An earlier fenced-model fit of the companion paper's wide-binary likelihood returned a two-realization indication of c₁ = 0.37–0.50. Under the final marginalized model the profile over the coefficient family is flat within realization scatter. The binaries currently carry no constraint on c₁, and the coefficient dial is measured in one system, the galaxies.
 
-(Figure 2 here: the c₁ profile curves under the two mass-to-light treatments, with the bootstrap band.)
+![Figure 2](figs/p2_fig2_c1profile.png)
+
+*Figure 2. Profile likelihoods for the leading coefficient c₁ under the global (solid) and hierarchical (dashed) mass-to-light treatments, each relative to its own minimum. Vertical lines mark c₁ = 0, ¼, and the predicted ½. The horizontal bars show the galaxy-bootstrap 16–84% intervals with medians. Zero is excluded in both treatments, and the prediction sits inside both bootstrap bands.*
 
 ## 4. The screening index
 
@@ -82,7 +86,9 @@ The scale a₀ is the reading's temperature: the derivation ties it to the horiz
 
 The third row is the strongest statement. Before the distance and inclination channel was added, individual hierarchical treatments drifted high; with the measured priors in place, every function in the ledger returns to the horizon value. The drift was a nuisance effect, and the temperature lock survives the most conservative treatment we can construct. The binary translation's high-side pull was carried openly as the sharpest internal tension while the fenced binary amplitude stood; with that amplitude now an upper limit (companion paper), the row is conditional history rather than a live pull.
 
-(Figure 3 here: the a₀ ladder.)
+![Figure 3](figs/p2_fig3_a0ladder.png)
+
+*Figure 3. The acceleration-scale ladder (Table 3). Shaded bands mark cH₀/2π for the Planck and SH0ES values of H₀. The hierarchical row shows the four function point estimates under measured distance and inclination priors; the bracket spans their range. The wide-binary translation row (grey, open) is conditional on the fenced model superseded by the companion paper's upper limit.*
 
 ## 6. The second moment
 
@@ -98,7 +104,9 @@ A scatter excess near the transition (x ≈ 1) survives every marginalization tr
 
 Distinct bath readings predict distinct scatter statistics (an Einstein-fluctuation contest between occupation-like and wave-like variance). The instrument was built and gated. Its result: a shot-noise-like bath is excluded (it collapses onto the floor at Δ(−2 lnL) = 25), but the discriminating exponent is not measurable on SPARC at any grade tried. The transition bump of Section 6.2 occupies exactly the acceleration window where the readings differ most, and the calibrated injection gate fails on the informed designs. The prediction moves fully out of sample with both kill directions pre-registered in the program's prediction ledger; anchored-distance subsamples, integral-field kinematics with non-circular modeling, or Gaia DR4 depth would open it.
 
-(Figure 4 here: intrinsic scatter versus acceleration, with the inner/outer decomposition of the transition excess.)
+![Figure 4](figs/p2_fig4_scatter.png)
+
+*Figure 4. The second moment. (a) Intrinsic scatter against acceleration: the free six-bin fit (filled black), the per-bin values of the one-parameter oscillator-plus-floor model (open red), the constant fit (dotted), and the decile profiles of the raw and within-galaxy (offset-subtracted) scatter. The shaded window marks the transition excess near x = 1. (b) The excess decomposed by disk radius at fixed acceleration: inner points carry about 2.4 times the variance of mid-disk points in both the transition window and the control slice, the window oversamples the inner disk (49% against 16%), and on outer points the fitted bump amplitude is zero.*
 
 ## 7. The function ledger
 
@@ -127,7 +135,9 @@ Eight controls have failed to dissolve the tension (Table 4).
 
 The tension reads as either genuine physics of slow gas-rich dwarfs or a systematic in a class none of these eight axes test. Resolved dwarf kinematics beyond SPARC are the clean arbiter. We enter it in the ledger as an open anomaly against every candidate law and make no attempt to absorb it.
 
-(Figure 5 here: the gas-dominated versus disk-dominated dial split, with the eight controls annotated.)
+![Figure 5](figs/p2_fig5_gddial.png)
+
+*Figure 5. The gas-dominated anomaly. (a) The coefficient dial by galaxy class under measured distance and inclination priors: the profile point with its Δ(−2 lnL) = 1 interval (thick) and the galaxy-bootstrap 5–95% range (thin; the bootstrap runs on the same instrument without the distance channel, whose point estimates agree with the plotted ones to 0.01 in the family parameter). (b) The eight controls of Table 4 with their key numbers.*
 
 ## 9. The solar-system constraint
 
@@ -185,6 +195,7 @@ Every quantitative claim maps to a named script and output in the public reposit
 - the gas-dominated anomaly and its eight controls: stage8s_gasc1.py, stage8sb_gasedge.py, stage8sc_gddist.py, stage8v_gdboot.py, stage8x_regime.py, stage8y_pressure.py, stage9b_qflag.py, stage9c_adcorr.py, stage9g_gdambient.py, stage9m_convsplit.py, stage9n_risingdial.py
 - the quadrupole and its locks: stage4k_quadrupole.py, stage5i_quadrupole2.py, stage5s_betaquad.py, stage6w_scalarefe.py; the trajectory formulation: stage7g_trajsaturn.py, stage7h_miavg.py; the inertia-versus-gravity brackets: stage4l_mi_runner.py
 - the binary function degeneracy (companion paper): stage7jd_read.py
+- the figures: paper2_figures.py (gated; regresses every plotted number against the committed stage outputs, provenance dump in data/paper2_figs.txt)
 
 Large datasets are re-fetched by documented URLs: SPARC via Zenodo, the KiDS reductions via the survey portal and arXiv source.
 
