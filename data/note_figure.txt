@@ -1,0 +1,4 @@
+NOTE FIGURE - provenance-gated build
+G-N1 9L printed rows vs 9P fiducial table (8 values, 0.005): PASS
+G-N2 envelope regression (1.77/2.52 vs 1.77/2.52): PASS
+note_fig1 written
