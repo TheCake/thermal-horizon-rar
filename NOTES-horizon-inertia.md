@@ -12350,6 +12350,13 @@ Bars (locked, ordered; the precondition — 9F joint E[fpm(Q1)] ≥
   1. L-NOISE-REAL iff BOTH seeds: E[fpm_narrow(Q1)] ∈ [1.8, 2.3].
   2. else L-BOOST-EATEN iff BOTH seeds: E[fpm_narrow(Q1)] ≤ 1.5.
   3. else L-GRAY-CARRIED.
+AMENDMENT 1 (2026-08-06, post-G9L-2-FAIL, pre-quote, verdict
+withheld by the stop rule on run 1): the registered 0.2-6 kAU
+window FAILS its own boost-premise gate at the 2-6 bin (measured
+α=1/α=0 ṽ-median ratios 1.052-1.080 > the 1.05 bar; the 0.2-2
+bin passes at 1.003-1.008) — boost contamination there would
+bias the meter TOWARD noise-real. The meter window narrows to
+the 0.2-2 kAU bin ALONE; bars, gates, map unchanged.
 PRE-SIGNED MAP (the frozen-56 decider): L-NOISE-REAL →
 anomaly-real 56 → 53 (the fit's noise subtraction is legitimate;
 the upper-limit reading stands with honest noise; the model-light
