@@ -11974,6 +11974,70 @@ anomaly is partly an artifact of bad measurements. We moved our
 honesty number down five points, exactly as we promised we would
 before seeing the answer.
 
+## Stage 9H PRE-REGISTERED (2026-08-06, THE DATA-PROVENANCE MANIFEST — the author's "are you sure about the data?" answered as an instrument, not a reassurance)
+
+SHA256 every load-bearing input + recompute the historical
+invariants LIVE with verbatim loader expressions, compared to
+stage-of-record printed values. Files hashed: edr3_binaries.fits.gz,
+SPARC mrt, rotmod census (count + aggregate hash), chae2021_table3
+.csv, efe_boost_{simple,be}_g1p2.npy, the 4 lker cubes,
+stage7jz_prior.npz, the 4 stage9f table npz. Invariants: mask N =
+14071 (8Z quartile sum); RUWE edges 1.051/1.118/1.231 (8Z/9A);
+plxsn edges 317.311/407.883/570.585 (8Z); kept galaxies 149 with
+GD/DD = 38/111 (8S-c); B(all)/B(Q1) = 1.0779/1.1216 (9E, verbatim
+statistic); Chae rows 109, matched 21/70 (9G). Output:
+data/stage9h_manifest.txt + data/MANIFEST.sha256 (committed — any
+future input drift is one re-run away from detection). Verdict
+grammar: DATA-VERIFIED iff every invariant matches its record;
+DRIFT-DETECTED else (loud, per-line). NO credence movement.
+
+## Stage 9I PRE-REGISTERED (2026-08-06, THE FINE-α DROP SCAN — the 9F successor; decider-adjacent, pre-signed map)
+
+Question: 9F's drop world rejects α ≥ 0.5 — but the 5-pt grid
+cannot see below 0.5, and the model-light core (9E) is alive in
+Q1. Does Q1-Q3 kinematics ALLOW a small boost, or exclude it?
+
+Machinery bit-verbatim 9F; A_FINE = 0.0..0.6 step 0.1 (7 pts);
+per α: 4 stratum STD tables (no extended grids this stage);
+(eta, wr) frozen at MAP; tables archived
+data/stage9i_tables_{seed}_{law}.npz. PRIMARY = M-DROP fine
+marginal (Q1-Q3, per-stratum noise, LNPI on shared fcomp);
+co-reads: M-STD fine, per-quartile single-stratum posteriors
+(diagnostic), profile-mode a_hat, and the full lnZ(α) − lnZ(0)
+curve per law-seed (ship the risk axis).
+
+POWER GATE (the 7J fullpow standard — a null letter without
+demonstrated sensitivity is not evidence): per law-seed, draw ONE
+synthetic Q1-Q3 sky at truth α = 0.3, fcomp = 0.20, ffly = 0.05,
+kw = 1.0, ws = 0, per-stratum (fpm, sq) = Q1 (2.1, 0.0), Q2
+(1.8, 0.1), Q3 (1.8, 0.1) [nearest-grid to the 9F posteriors];
+multinomial per (stratum, s-bin) at the real ND counts, rng
+default_rng(9); run the identical M-DROP marginal on it. G9I-P
+PASS iff recovered α_marg >= 0.15 AND P(α=0) <= 0.35.
+Single-injection grade, disclosed.
+
+Gates: G9I-0 lineage BIT-identity — STD tables at shared α ∈
+{0.0, 0.5} equal the 9F npz exactly; G9I-1 analytic combiner
+check (1e-12); G9I-2 synthetic census (counts == ND); G9I-3 cube
+identity at α = 0.5 (unsplit block vs stored cube, bit).
+
+Bars (locked, ORDERED; rows = 4 law-seeds, M-DROP fine: αm,
+p0 = P(α=0), P01 = P(α <= 0.1)):
+  1. I-POWER-FAIL iff G9I-P fails in >= 2/4 law-seeds — null
+     letters BLOCKED; verdict POWER-FAIL-CARRIED (measurements
+     quoted).
+  2. else I-SMALL-ALPHA iff >= 3/4 rows: αm ∈ [0.10, 0.45] AND
+     p0 <= 0.35.
+  3. else I-NEWTON-FLAT iff >= 3/4 rows: P01 >= 0.60 AND that
+     row's own G9I-P passed.
+  4. else I-GRAY-CARRIED.
+PRE-SIGNED MAP: I-SMALL-ALPHA → anomaly-real 53 → 56 (channels
+reconcile at deflated amplitude); I-NEWTON-FLAT → 53 → 50 (clean
+kinematics exclude even small boosts at fitted grade; model-light
+core still stands); POWER-FAIL / GRAY → HOLD 53.
+Output: data/stage9i_finealpha.txt; script
+calcs/stage9i_finealpha.py.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
