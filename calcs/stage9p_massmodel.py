@@ -391,15 +391,19 @@ for si_, seed in enumerate(SEEDS):
                      tab=tab0, lny0=LNY0, dlny=DLNY, vp=vp0)
             prj0 = project(pf, o0)
         vt_v, vc_v, win = data_side(tag)
-        pool_v = build_stratum(win, vt_v, vc_v)[1]
         for qi in range(4):
+            # AMENDMENT 1 (G9P-0 first-firing catch, pre-quote, logged):
+            # the eval was wired to the full-sample noise pool where 9L
+            # indexes each stratum's OWN pool (the pick modulo re-maps);
+            # fixed to verbatim — the identity gate exists for exactly
+            # this (GB0w precedent).
             D2, PLs, UB, FB, ND = build_stratum(QMASKS[qi] & win,
                                                 vt_v, vc_v)
             nn = sum(int(D2[bi].sum()) for bi in range(NB_BINS))
             if nn < 1000:
                 g1_ok = False
                 P(f"G9P-1 FAIL: {tag} Q{qi+1} narrow count {nn}")
-            T = eval_block_nb(pf, prj0, D2, pool_v, UB, FB)
+            T = eval_block_nb(pf, prj0, D2, PLs, UB, FB)
             if vi == 0:
                 dmax = float(np.max(np.abs(T - arch[qi])))
                 lw_a = logsumexp(arch[qi]
