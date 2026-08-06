@@ -11774,6 +11774,96 @@ blame when you remove its noisiest students — the big careful
 re-run will settle that — but the thing itself is visible in the
 best data we have.
 
+## Stage 9F PRE-REGISTERED (2026-08-06, THE MARGINAL STRATIFIED RE-RUN — the arbiter 9D fired; DECIDER round, pre-signed credence map)
+
+Question: does the fitted-α channel survive when the stratified-noise
+model is read at MARGINAL grade (posterior weights, not profile max)?
+9A/9D profiled; the max operator is exactly where a pathological
+stratum (Q4 grid-top riding) can carry a spurious optimum. The
+marginal integrates over the noise nuisances and pays for volume —
+the honest read.
+
+Machinery (bit-verbatim 9D): build_pop / e_of_x / vp_c / project /
+eval_block_g; RUWE-quartile STRATA; (eta, wr) frozen at each
+law-seed's cube MAP (block grade — disclosed; lineage-gated);
+A_GRID = 0..2 step 0.5; SEEDS (31, 101) x laws (simple, BE);
+N = 500k. Per α: per-stratum std tables (FPM_GRID, SQ_GRID) + Q4
+extended table (FPMX <= 4.2, SQX <= 0.5); ALL tables archived to
+data/stage9f_tables_{seed}_{law}.npz; the combiner is a PURE READER
+of the npz (round-trip gated).
+
+Combiner: uniform cell priors on noise axes (normalized -ln Ncells),
+LNPI on shared fcomp, uniform on ffly/kw/ws and on the 5-point α
+grid. Per-stratum (fpm, sq) marginalized INDEPENDENTLY (per-stratum
+noise); shared axes marginalized jointly. Configs: M-STD (4 strata,
+std grids), M-DROP (Q1-Q3 only), M-EXT (Q4 on extended grids),
+M-TIED (single shared (fpm, sq) — the aggregation world). Report
+per law-seed: full weight vector w(α), α_marg = grid mean, P(α=0),
+dN = [lse(lnZ(α>0)) - ln 4] - lnZ(0); per-stratum noise posteriors
+E[fpm_q], P(fpm_q = top), E[sq_q], P(sq_q = top) at M-STD (the 9D
+lean-output REPAIR); d(drop) = α_marg(M-DROP) - α_marg(M-STD),
+d(ext) likewise.
+
+Gates (any FAIL => STOP, amendment pre-quote): G9F-0 cube identity
+at α_MAP (bit, 4/4, verbatim G9D-0); G9F-1 profile-mode regression —
+the combiner in max mode reproduces 9D's printed a_hat std/drop/ext
+(12 values, bar 0.002); G9F-2 combiner analytic unit check
+(synthetic table, hand-computed logsumexp, 1e-12); G9F-3 npz
+round-trip bit-identity before any combiner read.
+
+Bars (locked, ORDERED, exhaustive; rows = 4 law-seeds at M-STD with
+αm, p0 = P(α=0), dN, αd = α_marg(M-DROP)):
+  1. F-COLLAPSED   iff >= 3/4 rows: (αm <= 0.15 OR p0 >= 0.50).
+  2. else F-SURVIVES iff >= 3/4 rows: (αm >= 0.40 AND dN >= +8
+     AND αd >= αm - 0.15).
+  3. else F-Q4-CARRIED iff >= 3/4 rows: (αd - αm <= -0.25).
+  4. else F-GRAY-CARRIED (rows stand as measurements).
+
+PRE-SIGNED CREDENCE MAP (decider round — movement by map ONLY):
+F-COLLAPSED: anomaly-real 58 -> 48 (floor: 9E model-light core +
+the (band=9, cliff=2) census + untouched galaxy legs). F-SURVIVES:
+58 -> 63 (cap: AMBIGUOUS-CARRIED sky band + open width-shape
+systematic). F-Q4-CARRIED: 58 -> 53. F-GRAY-CARRIED: HOLD 58.
+Disclosed limits: frozen (eta, wr); 5-point α grid (weights printed
+in full; the grid mean is the summary); M-EXT volume normalized by
+uniform cell priors (the 7J-z6 volume lesson); 2 realization seeds.
+Output: data/stage9f_stratmarg.txt; script
+calcs/stage9f_stratmarg.py.
+
+## Stage 9G PRE-REGISTERED (2026-08-06, the ambient control on the GD dial — measurement round, NO credence movement)
+
+Question: is the GD dial-tension carried by measured ENVIRONMENT?
+The 8X type-split + 8Y/9C pressure kill leave "genuine slow-dwarf
+physics or an untested-class systematic"; the program's own AMB
+function makes environment the loaded axis. Chae+21 Table 3
+per-galaxy ambients (data/chae2021_table3.csv, 109 rows; PRIMARY =
+maxclust, noclust co-read): name-match gives GD 21 / DD 70 matched
+(names-only feasibility count; ambient VALUES unseen at pre-reg).
+
+Engine: verbatim 8V lift (loader, m2ll_vert, m2ll_fast bincount
+engine, lam_hat_fast on LGB -2.0..1.5 step 0.25). Reads: A
+(between-type): Δmed = med(log eN | GD) - med(log eN | DD),
+permutation test 20000 draws rng 7. B (within-GD tracking):
+GD-matched split at its FROZEN point median log eN -> λ̂(hi) vs
+λ̂(lo) point fits + paired galaxy bootstrap NBOOT = 200 rng 71
+(replicates split at the frozen threshold; halves < 5 => skip+count;
+point halves < 8 => read B DESCRIPTIVE-ONLY, its bar cannot fire).
+C (DD control): same within DD-matched, NBOOT = 100.
+
+Gates: G9G-0 verbatim-lift (GD/DD counts 38/111 + OFF-probe equals
+8S-c printed at 1e-6); G9G-1 fast-vs-verbatim 6 probes <= 1e-6;
+G9G-2 match audit (>= 60 total AND >= 12 GD matched, else ABORT
+UNDERPOWERED); G9G-3 rng fingerprints.
+
+Bars (locked, ordered): A1 ENV-SPECIAL iff |Δmed| >= 0.30 dex AND
+perm P <= 0.05 (maxclust decides; noclust printed). B1 ENV-TRACKS
+iff read B non-descriptive AND |D_point| >= 0.50 AND
+min(P(D>=0), P(D<=0)) <= 0.05. SEVENTH-CONTROL-PASSED iff neither
+fires and read B non-descriptive. GRAY-CARRIED else. Both A1 and B1
+may fire (print both; verdict names all fired). NO credence
+movement (pre-stated). Output: data/stage9g_gdambient.txt; script
+calcs/stage9g_gdambient.py.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
