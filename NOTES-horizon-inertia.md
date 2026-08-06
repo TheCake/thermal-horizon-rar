@@ -12399,6 +12399,88 @@ Bars (locked, ordered; D = λ̂(rising) − λ̂(conv)):
 NO credence movement (control round). Output:
 data/stage9m_convsplit.txt; script calcs/stage9m_convsplit.py.
 
+## Stage 9L EXECUTED (2026-08-06, amended run, all gates PASS): L-NOISE-REAL — THE DECIDER FIRES: anomaly-real 56 → 53
+
+Run 1 story: G9L-2 caught the registered window (the 2-6 kAU bin
+carries a 5-8% model boost > the 1.05 bar — contamination in the
+dangerous, toward-noise-real direction); verdict WITHHELD by the
+stop rule; AMENDMENT 1 (pre-quote, committed e63a3f3) narrowed
+the meter to the 0.2-2 kAU bin alone (premise 1.003-1.008).
+
+Amended run: G9L-2 4/4 PASS; G9L-3 injection recovered 2.12/2.06
+vs truth 2.1; counts = the 9E narrow censuses exactly. THE
+MEASUREMENT: **E[fpm_narrow(Q1)] = 2.21 / 2.13 — both seeds
+inside the [1.8, 2.3] noise-real band** (joint-fit precondition
+1.97-2.25); η = 1.3 co-read 2.28/2.21 (insensitive — risk axis
+shipped); and the meter is ~FLAT across quality: Q1-Q4 narrow
+E[fpm] = 2.12-2.30 in both seeds (sq_narrow 0.03-0.13). The
+boost-free arm demands the same ~2× the joint fit uses ⇒ the
+fit's noise subtraction is LEGITIMATE; the round-13 fork
+resolves in the direction he called mechanically forced: B's
+pedestal is real differential noise, the drop-world small-α /
+upper-limit reading stands, and 9K's cap-1.5 world was the wrong
+world (the true multiplicative error is ≈2, above Lindegren's
+single-star ceiling — consistent with his point that RUWE
+certifies 5-parameter single-star fits, not 2-body velocity
+budgets). STANDING MEASUREMENT logged: EDR3 wide-pair velocity
+errors ≈ 2× formal at 0.2-2 kAU, quality-quartile-independent.
+
+THE MAP EXECUTES: anomaly-real 56 → 53 (the freeze releases;
+trail 50 → 58 → 53 → 56 → 53 — the reviewer's contested +3 at 9I
+is unwound by his own instrument, which is the process working).
+Consequences: D3 (degraded injection) DEMOTED to optional (the
+fpm amplitude is now measured-honest; the width-SHAPE question
+on the wide arm remains, DR4-facing); the two-channel Q1
+residual is RESOLVED (E2 + 9L: B keeps the noise term the fit
+removes — no contradiction remains).
+
+Plain verdict: SUCCESS — the decider decided. The binary
+forward-fit leg's operative statement: α ≥ 0.5 excluded on clean
+strata; α ≲ 0.3-0.5 upper limit with a mild interior preference
+(0.1-0.3) under measured-legitimate ≈2× noise; α = 0 not
+excluded (one seed-law Newton-flat). The anomaly case now rests
+more heavily on the galaxy legs + the census pair.
+
+ELI12: The tiebreaker: close star pairs, where extra gravity
+can't matter, need the SAME "double the error bars" as everything
+else. So the doubled error bars are real measurement noise, not
+hidden gravity — Gaia's official errors are just optimistic for
+pairs. That means our careful fit was right to subtract that
+noise, the raw-median excess really does carry a noise pedestal,
+and the honest star-pair verdict is "a small boost allowed, a
+big one ruled out." We moved the honesty number back down 3, by
+the rule we signed before running.
+
+## Stage 9M EXECUTED (2026-08-06, all gates PASS): M-GRAY by the letter — the V_flat-definition artifact is POINT-DEAD (wrong sign), the eighth control effectively holds
+
+Flags (frozen): GD-38 → CONVERGED 17 / RISING 11 / AMBIG 10.
+Point fits: λ̂(CONV) = −1.395 vs λ̂(RISING) = −1.172, D = +0.223
+— the ARTIFACT direction needed rising ≤ conv − 0.5; measured
+sign is BACKWARDS (converged is MORE negative), and the
+converged subset ALONE reproduces the full GD dial (−1.395 vs
+−1.31). Bootstrap: P(D ≥ 0) = 0.62 (no ordering); the M-HARDENED
+letter missed only on the small-sample bootstrap spread (conv
+95th pct +0.32 vs the −0.3 bar; 17 galaxies) ⇒ GRAY-CARRIED.
+DD control (descriptive): the convergence axis DOES pull
+negative in DD (conv +1.09 vs rising −0.48, D = −1.57, 16
+rising) — the round-13 mechanism exists in the disk-dominated
+sample but is NOT what carries the GD dial. Logged for the
+reviewer.
+
+Plain verdict: SUCCESS as a control at point grade (the
+artifact hypothesis killed by sign; formal hardening blocked
+only by subset size). The GD tension keeps its shape: genuine
+slow-gas-dwarf physics or a systematic outside eight tested
+classes; external resolved kinematics = the clean arbiter.
+
+ELI12: The referee's last galaxy excuse: maybe the odd reading
+comes from galaxies whose rotation curves are still climbing at
+the last measured point (so we underestimate their top speed).
+Checked: the odd reading is actually STRONGEST in the galaxies
+whose curves have flattened — the excuse points the wrong way.
+Eighth excuse dead in practice (formally "gray" only because 17
+galaxies make noisy error bars).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

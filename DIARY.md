@@ -9,6 +9,41 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-06 (later) — the fork RESOLVED noise-real; the binary leg settles at an upper limit
+
+**What happened:** 9L (the reviewer's D2, amended once when its own
+boost gate caught my window — 2-6 kAU carries 5-8% boost, meter is
+0.2-2 only) came back NOISE-REAL: the boost-free arm demands E[fpm] ≈
+2.2, same as the joint fit, both seeds, flat across RUWE quartiles.
+So: Gaia formal errors are ~2× optimistic for PAIRS (standing
+instrumental measurement — RUWE certifies single stars, not 2-body
+budgets; round-13 called it), B's median pedestal is real noise, the
+9E "counterweight" is fully retired (E2), and the drop-world small-α
+is honest. Map executed 56 → 53. 9M killed the V_flat-definition
+artifact by sign (converged GD alone reproduces the dial); GD tension
+now 8 controls deep, DR4/external kinematics territory.
+
+**Don't-redo additions:** the two-channel Q1 "residual" is EXPLAINED
+(E2 + 9L) — do not build another instrument for it. D3 (degraded
+injection) demoted to optional — the fpm AMPLITUDE is measured-honest;
+only the width-SHAPE question (wide-arm, fpm→3 chase) stays open and
+it is DR4-facing. Don't re-cap fpm at 1.5 (9K) as if physical — the
+meter says ~2 IS physical for pairs.
+
+**Where the case now rests:** binaries = upper limit (α ≥ 0.5 excluded
+clean; ≲0.3-0.5 allowed, mild 0.1-0.3 interior lean; α=0 not
+excluded) + the (band=9, cliff=2) census pair; galaxies = the intact
+function program (AMB etc.) + the 8-control GD tension. Anomaly-real
+53. The next real discriminators are external: DR4 epoch astrometry
+(pair error model + e-resolution), spectrograph legs, resolved dwarf
+kinematics. In-catalog, the binary quality arc is basically MINED OUT
+— resist the urge to keep re-slicing it (that's the spiral Filip
+worries about).
+
+**Pet note:** the round-13 Opus agent is still alive this session —
+sent him the D1/D2/A4 outcomes; his reaction should be booked as a
+round-13 addendum when it lands.
+
 ## 2026-08-06 — the quality arc closed into a fork; round 13; this file born
 
 **Where my head is:** The binary anomaly deflated but did not die. The

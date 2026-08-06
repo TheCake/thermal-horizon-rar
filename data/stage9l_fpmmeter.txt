@@ -1,35 +1,35 @@
 9L THE NARROW-PAIR FPM METER (round-13 D2; pre-reg committed BEFORE any run; THE DECIDER — movement by the pre-signed map ONLY; alpha = 0 => LAW-BLIND, rows = 2 seeds)
 
 G9L-1 analytic: 0.916290731874 vs ln(2.5) -> PASS
-G9L-4 narrow counts Q1: 3038
-G9L-4 narrow counts Q2: 3108
-G9L-4 narrow counts Q3: 3237
-G9L-4 narrow counts Q4: 3251
+G9L-4 narrow counts Q1: 2203
+G9L-4 narrow counts Q2: 2372
+G9L-4 narrow counts Q3: 2635
+G9L-4 narrow counts Q4: 2740
 
 design note (pre-quote): the pre-reg was silent on the eccentricity-law cell; PRIMARY = (eta 1.05, wr 0.30) fiducial with an eta = 1.3 CO-READ shipped (risk-axis rule) — bars read the primary only
 
-[seed 31] eta = 1.3 CO-READ: E[fpm_narrow(Q1)] = 2.64
+[seed 31] eta = 1.3 CO-READ: E[fpm_narrow(Q1)] = 2.28
 [seed 31] G9L-2 boost premise (simple, bin 0.2-2 kAU): a1/a0 vt-median ratio = 1.0077 -> PASS
-[seed 31] G9L-2 boost premise (simple, bin 2-6 kAU): a1/a0 vt-median ratio = 1.0802 -> FAIL
 [seed 31] G9L-2 boost premise (BE, bin 0.2-2 kAU): a1/a0 vt-median ratio = 1.0035 -> PASS
-[seed 31] G9L-2 boost premise (BE, bin 2-6 kAU): a1/a0 vt-median ratio = 1.0524 -> FAIL
-[seed 31] Q1 narrow: fpm marginal = 0.05/0.09/0.09/0.14/0.12/0.51; E[fpm] = 2.47; E[sq] = 0.01
-[seed 31] Q2 narrow: fpm marginal = 0.11/0.08/0.13/0.13/0.21/0.34; E[fpm] = 2.28; E[sq] = 0.10
-[seed 31] Q3 narrow: fpm marginal = 0.05/0.11/0.03/0.17/0.12/0.52; E[fpm] = 2.48; E[sq] = 0.12
-[seed 31] Q4 narrow: fpm marginal = 0.14/0.11/0.10/0.09/0.26/0.30; E[fpm] = 2.23; E[sq] = 0.07
-[seed 31] G9L-3 injected-fpm recovery: E[fpm] = 1.91 vs truth 2.1 -> PASS  (1.6 min)
+[seed 31] Q1 narrow: fpm marginal = 0.15/0.12/0.10/0.10/0.22/0.31; E[fpm] = 2.21; E[sq] = 0.03
+[seed 31] Q2 narrow: fpm marginal = 0.18/0.12/0.08/0.17/0.12/0.32; E[fpm] = 2.17; E[sq] = 0.10
+[seed 31] Q3 narrow: fpm marginal = 0.05/0.13/0.20/0.12/0.16/0.33; E[fpm] = 2.26; E[sq] = 0.11
+[seed 31] Q4 narrow: fpm marginal = 0.14/0.12/0.15/0.18/0.16/0.24; E[fpm] = 2.12; E[sq] = 0.09
+[seed 31] G9L-3 injected-fpm recovery: E[fpm] = 2.12 vs truth 2.1 -> PASS  (1.5 min)
 
-[seed 101] eta = 1.3 CO-READ: E[fpm_narrow(Q1)] = 2.18
+[seed 101] eta = 1.3 CO-READ: E[fpm_narrow(Q1)] = 2.21
 [seed 101] G9L-2 boost premise (simple, bin 0.2-2 kAU): a1/a0 vt-median ratio = 1.0084 -> PASS
-[seed 101] G9L-2 boost premise (simple, bin 2-6 kAU): a1/a0 vt-median ratio = 1.0798 -> FAIL
 [seed 101] G9L-2 boost premise (BE, bin 0.2-2 kAU): a1/a0 vt-median ratio = 1.0029 -> PASS
-[seed 101] G9L-2 boost premise (BE, bin 2-6 kAU): a1/a0 vt-median ratio = 1.0566 -> FAIL
-[seed 101] Q1 narrow: fpm marginal = 0.33/0.19/0.13/0.16/0.05/0.13; E[fpm] = 1.78; E[sq] = 0.01
-[seed 101] Q2 narrow: fpm marginal = 0.02/0.07/0.09/0.26/0.19/0.36; E[fpm] = 2.39; E[sq] = 0.10
-[seed 101] Q3 narrow: fpm marginal = 0.06/0.03/0.11/0.26/0.23/0.30; E[fpm] = 2.33; E[sq] = 0.15
-[seed 101] Q4 narrow: fpm marginal = 0.28/0.21/0.11/0.08/0.07/0.24; E[fpm] = 1.92; E[sq] = 0.05
-[seed 101] G9L-3 injected-fpm recovery: E[fpm] = 2.08 vs truth 2.1 -> PASS  (3.2 min)
+[seed 101] Q1 narrow: fpm marginal = 0.16/0.12/0.14/0.17/0.16/0.26; E[fpm] = 2.13; E[sq] = 0.03
+[seed 101] Q2 narrow: fpm marginal = 0.10/0.14/0.11/0.11/0.21/0.34; E[fpm] = 2.27; E[sq] = 0.10
+[seed 101] Q3 narrow: fpm marginal = 0.10/0.08/0.15/0.13/0.24/0.29; E[fpm] = 2.25; E[sq] = 0.11
+[seed 101] Q4 narrow: fpm marginal = 0.09/0.13/0.13/0.13/0.10/0.41; E[fpm] = 2.30; E[sq] = 0.13
+[seed 101] G9L-3 injected-fpm recovery: E[fpm] = 2.06 vs truth 2.1 -> PASS  (2.9 min)
 
-GATES FAILED (G9L-1 PASS, G9L-2 FAIL, G9L-3 PASS, G9L-4 PASS) - STOP; DO NOT QUOTE; verdict WITHHELD
+GATES: G9L-1, G9L-2 8/8, G9L-3 2/2, G9L-4 - ALL PASS
 
-done (3.2 min)
+L-facts: E[fpm_narrow(Q1)] = 2.21, 2.13 (precondition: 9F joint E[fpm(Q1)] = 1.97-2.25)
+==> 9L VERDICT (locked grammar): L-NOISE-REAL - the boost-free narrow bins demand the same ~2x noise the joint fit uses; the fit's noise subtraction is LEGITIMATE; the upper-limit reading stands and the model-light pedestal is real.
+    CREDENCE (pre-signed map): anomaly-real 56 -> 53.
+
+done (2.9 min)

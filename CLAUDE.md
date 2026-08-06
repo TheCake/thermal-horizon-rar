@@ -13,9 +13,15 @@ update it at every round close (same commit as the verdict). The giant
 "Key results" narrative below is accurate through the 7-series/PAPER v3.9 but STOPS
 there; the 8/9-series (the rivals arc, the control arcs, the QUALITY arc) lives in
 LOG.md + NOTES + [LEDGER.csv](LEDGER.csv) (175 rows, six-gate audited, 204 tokens).
-Where things stand: **anomaly-real 56, FROZEN pending D2** (trail 50→58→53→56,
-every move by pre-signed map; ROUND 13 = the Opus agent's audit: combiner math
-CLEAN, credence magnitude contested on record). Binary side: the
+Where things stand: **anomaly-real 53** (trail 50→58→53→56→53, every move by
+pre-signed map; ROUND 13 = the Opus agent's audit: combiner math CLEAN; his D2
+meter then EXECUTED as 9L and resolved the fork NOISE-REAL — EDR3 pair velocity
+errors are ≈2× formal at 0.2-2 kAU, quality-independent, a standing
+measurement; the binary forward-fit leg = an UPPER LIMIT: α ≥ 0.5 excluded on
+clean strata, ≲0.3-0.5 allowed with a mild 0.1-0.3 interior lean, α = 0 not
+excluded; B-median statistics carry a real noise pedestal (E2); the in-catalog
+binary quality arc is substantially mined out — next discriminators are
+external: DR4 epoch astrometry, T2 spectrograph legs). Binary side: the
 QUALITY-CONCENTRATION OBJECT is now a measured RUWE DOSE CURVE (9J Q-alone
 ladder: Q2 0.05-0.11 < Q1 0.12-0.26 < Q3 0.40-0.79 < Q4 0.90-1.05; M-STD
 full-grid 0.39-0.79 interior, seed-split disclosed). OPERATIVE HEADLINE

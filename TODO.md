@@ -815,6 +815,25 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     sensitivity row (cheap reader); (4) DR4. Galaxy: **A4 the
     rotation-curve convergence / V_flat-definition split on the
     GD dial (candidate eighth control, free, in-catalog)**.
+    **9L+9M EXECUTED 2026-08-06 (pre-reg e066b2c, amendment
+    e63a3f3). 9L = D2, THE DECIDER: L-NOISE-REAL — the boost-free
+    0.2-2 kAU arm demands E[fpm] = 2.21/2.13 (= the joint fit's
+    ~2×), flat across quality quartiles, η-insensitive; the noise
+    subtraction is LEGITIMATE, B's pedestal real, the upper-limit
+    α reading STANDS; **MAP EXECUTED: anomaly-real 56 → 53**
+    (freeze released). Run-1 window caught by its own boost gate
+    (2-6 kAU bin = 5-8% boost) — amendment pre-quote. STANDING
+    MEASUREMENT: EDR3 pair velocity errors ≈ 2× formal at 0.2-2
+    kAU (RUWE certifies single stars, not 2-body budgets). D3
+    DEMOTED to optional; the width-SHAPE object (wide-arm fpm→3
+    chase) stays open, DR4-facing; the two-channel Q1 residual
+    RESOLVED (E2 + 9L). The in-catalog binary quality arc is
+    substantially MINED OUT — next discriminators are external
+    (DR4 epoch astrometry, T2 spectrograph legs). 9M = A4:
+    GRAY by letter, artifact POINT-DEAD (sign backwards; conv
+    alone reproduces the dial −1.395; DD control shows the
+    mechanism lives elsewhere) — the GD tension is effectively
+    EIGHT controls deep; external resolved kinematics = arbiter.**
 
 ## The rivals arc (opened 2026-07-29 — user directive: "shoot down more
 ## theories and strengthen or shoot down ours"; PAPER.md FROZEN at v3.9

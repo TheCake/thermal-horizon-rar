@@ -449,6 +449,17 @@ CHECKS = [
     ('bin-9k-fpmcap', 'K-bars: ROBUST-rows 1/4 (|d| < 0.05 at cap '
      '1.5); CAP-FRAGILE-rows 0/4 (d >= +0.15)',
      'data/stage9k_fpmcap.txt'),
+    ('bin-9l-fpmmeter', 'GATES: G9L-1, G9L-2 8/8, G9L-3 2/2, '
+     'G9L-4 - ALL PASS', 'data/stage9l_fpmmeter.txt'),
+    ('bin-9l-fpmmeter', 'L-facts: E[fpm_narrow(Q1)] = 2.21, 2.13 '
+     '(precondition: 9F joint E[fpm(Q1)] = 1.97-2.25)',
+     'data/stage9l_fpmmeter.txt'),
+    ('gal-9m-convsplit', 'G9M-2 flag census (GD-38): CONVERGED 17, '
+     'RISING 11, AMBIG 10 (excluded)',
+     'data/stage9m_convsplit.txt'),
+    ('gal-9m-convsplit', '[point] lam_hat(CONVERGED) = -1.395 '
+     '(edges 0/0), lam_hat(RISING) = -1.172 (edges 0/0); D = '
+     '+0.223', 'data/stage9m_convsplit.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
