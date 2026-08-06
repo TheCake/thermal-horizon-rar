@@ -12679,6 +12679,57 @@ the third" — more mechanism work (the O5 seam) before it is
 written.** Author delegated titles/author-line/credence-placement/
 spin-offs to Claude (2026-08-06).
 
+## REVIEW ROUND 14 (2026-08-06, journal-referee pass on Paper 1 draft 0.1/0.2; fresh Opus agent, referee brief incl. readability per the author's request): MAJOR-REVISION (LIGHT) — two real catches, both adopted
+
+Verbatim archive REVIEW-ROUND14-OPUS.md (uncommitted). 38
+spot-checks: 30 PASS, 4 PARTIAL, 1 FAIL, 3 unverifiable-in-detail;
+endpoint discipline certified ("no endpoint overclaim found");
+reconciliation fairness to all five cited groups checked against the
+record and confirmed. THE TWO CATCHES (both verified on disk before
+adoption, both DRAFT errors — the record was right): (1) the draft
+attached the eleven-pair leakage probability (3.8e-9) to the
+nine-pair corrected census; P(≥9 | 0.9) = 4.8e-7 (Poisson,
+recomputed independently) — FIXED, both conventions now quoted with
+their own tails; (2) "monotone dose curve in RUWE" — Q1/Q2 are
+mutually inverted (8Z's own verdict: NON-MONOTONE/MIXED-CARRIED);
+FIXED in the draft (honest two-sentence form + Table 3) and
+CLARIFIED in the two ambiguous PAPER.md clauses (dose LADDER,
+labels + inversion note; record numbers unchanged). Also adopted:
+wobble-law cost re-quoted at defensible multiplicities (~100–500;
+the 486–1078 was the retracted-scale conditional); FLAT-prior
+revival quoted as 0.30–0.66 (not "near calibration"); PSS
+de-lumped from the Cookson <1σ measurement; ṽ-only/joint agreement
+0.08 → ≤0.12; arm-D recovery stated precisely (0.48 discriminator,
+one arm 0.27); ρ = 0.47 sliced (+0.24 all-pairs); model-Newton
+zero-point ~0.98 clause added to the median section; 8D
+removed-subsample numbers added (0.62–0.85 at +21–26 — his
+underclaim catch); App A → bulleted with correction #15 added;
+"not aware of a published quantification"; "validation arms" →
+injection–recovery tests; occupation/y glossed; Tables 2/3/4
+added. QUEUED for draft 0.4: Table 1 (sample-cut ladder with
+per-cut counts — needs a small counting script), the global
+sentence-length pass (mean 27.9 → ~20; the 80–108-word semicolon
+chains), the phantom-veto figure (§7 headline has no figure), full
+script filenames in App B, and the [verify] references at the
+pre-circulation pass. Draft 0.2 → 0.3 committed.
+
+PLAIN VERDICT: SUCCESS — the referee did the job the round was
+designed for (one arithmetic error, one mis-description, both
+mine, both caught before any reader saw them), and the paper's
+spine survived 38 adversarial spot-checks.
+
+ELI12: We asked our toughest critic to read the paper like a
+strict journal editor. He checked 38 of our numbers against the
+raw files: 30 perfect, a few needing footnotes, and two real
+mistakes — I had put the wrong "how unlikely is this" number next
+to the star census (the number belonged to the OLD count of 11,
+not the new count of 9), and I called a staircase "always going
+up" when its first two steps are actually swapped. Both fixed.
+He also said: fewer giant sentences, more tables. We added three
+tables now and queued the rest.
+
+NO credence movement (paper round; anomaly-real 53).
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
