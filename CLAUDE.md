@@ -125,6 +125,28 @@ never read; **TODO 28 CLOSED at the Oh+15 public-data grade per the
 pre-registered clause; reopen = Iorio+2017 curves as input (near-miss says
 it likely tips) or DR4-era dwarfs.** Ledger 188 rows / worldtable 228
 tokens after the 9R-b booking.**
+**9T + ROUND 17 (2026-08-07 close): THE RESONANCE THEOREM — the round-16 A9
+detuning flank CLOSED (pre-reg c6195fe; gates 5/5 first-run; scan floor r >=
+0.454; the red-team reproduced every number, ruling UNPATCHED HOLE: NO for
+the scoped claim): detuning in the soft sector is UNRESOLVABLE (phase budget
+~0.16 rad/Hubble-time; delta small vs EVERY rate — his separability check:
+coherent <= 1/pi^2, decoherent <= 0.025, finite-time <= ~0.01). The win
+credits ONLY the detuning closure; "resonance established" is NOT claimable
+— the 1/2 rests on the NEW named load-bearing question O5-AVERAGING (all
+couplings O(H) => gamma ~ 1; un-averaged transfer 0.23 -> p 0.587 vs
+measured 0.65; one gamma-measurement separates vindication from ~0.59
+falsification — the sharpest kill-lever the mechanism has carried). T3
+scoped: deep galaxies gamma 0.76-1+ carry the tail claim; binaries 0.29
+EXCLUDED. Honest tension booked: measured p = 0.65 implies r = 0.398 <
+floor 0.454 (grid 0.05/no-sigma; kill = sigma_p <= 0.02 demanding p <
+0.67). CREDENCE: bath-mechanism conditional 8 -> 12 (pre-signed map; first
+rise since 6K/6M/6N). anomaly-real 53 untouched all day. Round in
+REVIEW-ROUND17-OPUS.md (uncommitted). P3 SEAM STATE: L1 one-mode regime +
+L2 frozen theorem + 9T detuning closure + 9S data bound + the void
+kill-band = the Paper-3 section-2 skeleton EXISTS; the averaging flank
+(gamma) = the one remaining pillar; next P3 move = design the
+gamma-measurement (sigma_p <= 0.02 hier tail instrument or a finite-gamma
+p(gamma) dial). Ledger 189 rows / worldtable 230 tokens six gates PASS.**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

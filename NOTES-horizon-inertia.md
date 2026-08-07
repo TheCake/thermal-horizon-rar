@@ -13107,6 +13107,80 @@ stays unread, the question stays open, and we now know exactly how
 close the tool is: one rehearsal short. Better data from another team
 is the named next try.
 
+## Stage 9T + REVIEW ROUND 17 (2026-08-07) — the resonance theorem: the detuning flank closes; the averaging flank becomes THE question
+
+Pre-reg c6195fe (bars, scan corners, credence map locked; the full
+in-session sketch disclosed). The theorem: the anomaly sector spans
+H/2π (L1) and no bound system has more than ~1/H of coherent time
+(L2), so the accumulated detuning phase obeys φ = δ·t ≤ η·Δx/2π ≈
+0.16 rad — detuning inside the soft sector is UNRESOLVABLE. Exact
+legs sympy-clean; scan floor r ≥ 0.454 (sharp cell 0.4876); five
+gates PASS first run.
+
+ROUND 17 (fresh Opus red-team; verbatim in REVIEW-ROUND17-OPUS.md,
+uncommitted): every number reproduced independently; ruling
+**UNPATCHED HOLE: NO for the scoped claim** — with three conditions,
+ALL ADOPTED:
+(1) The credence move credits ONLY the detuning closure — NOT
+"resonance established". His separability check is the round's gem:
+δ is small relative to EVERY rate in the problem (coherent
+suppression ≤ 1/π²; decoherent ≤ 0.025; finite-time ≤ ~0.01), so
+detuning perturbs the operative weight by ≲10% (realistically
+≲0.3%) no matter how that weight is extracted.
+(2) Rewordings adopted: "parameter-free / must / cannot / every
+epoch" retired; the budget is PER-HUBBLE-TIME (cumulative phase
+grows as N_efolds: floor r = 0.454 at z_form ≤ 6.4, 0.436 at
+z_form = 10); the envelope metric defined (cumulative; his
+instantaneous peaks 0.0102 — both ~1%).
+(3) T3 DOWNGRADED-and-scoped: the boost witnesses γ ~ √(boost) —
+deep-MOND galaxies (the systems that actually carry the tail
+measurement) witness γ ≈ 0.76–1+ (r ≥ 0.479, in-band); wide
+binaries witness only γ ≈ 0.29 and are EXCLUDED from the tail
+claim.
+Also adopted: A2 (sweeps through resonance are deeply adiabatic,
+2πg²/(dδ/dt) ≈ 39.5, and an adiabatic crossing REINFORCES equal
+sharing); A3 (the Rabi picture is exactly as strong as 6Y's measured
+M=1 — dependency flagged); the honest A6 form: the measured p = 0.65
+IMPLIES r = 0.398, BELOW the 0.454 floor — "consistent at current
+resolution" stands only on the grid-step/no-σ facts (nearest grid
+point 0.70 is in-band); the pre-registered kill stays (σ_p ≤ 0.02
+demanding p < 0.67 kills the resonance reading).
+
+THE NEW LOAD-BEARING QUESTION — O5-AVERAGING (replaces
+O5-DETUNING): every coupling in the problem is O(H), so γ = g_c·t ~
+1 — the universe has completed only about one radian of the Rabi
+cycle, and the UN-AVERAGED transfer at γ = 1 is 0.23, which would
+read out as p ≈ 0.587 vs the measured 0.65. The ½ the mechanism
+needs is a time-average the universe may not have had time to take.
+His closing line, adopted into the program verbatim: "book the
+detuning win; do not let it be read as pinning the ½." One honest
+γ-measurement now separates vindication from a p ≈ 0.59
+falsification — the sharpest, most concrete kill-lever the mechanism
+has ever carried.
+
+CREDENCE (map executed): T-THEOREM + UNPATCHED-HOLE-NO ⇒
+**bath-mechanism conditional 8 → 12** — the first rise since the
+6K/6M/6N strike era — crediting only the detuning closure.
+anomaly-real 53 UNTOUCHED.
+
+Ledger mech-9t-resonance (189 rows); worldtable 230 tokens six gates
+PASS; PREDICTIONS P1 annotation extended (void saturation band,
+conditional on the averaging flank).
+
+PLAIN VERDICT: SUCCESS with the scope his review enforced — the
+round-16 hole is closed, and the mechanism's fate now hangs on one
+nameable, measurable number (γ, the cosmic swing count).
+
+ELI12: Last time our checker asked "who says the two humming modes
+are in tune?" This time we proved: the universe is too YOUNG for any
+mistuning inside this soft sector to matter — being out of tune
+needs time to show, more time than exists. He checked every number
+and agreed. Then he found the next real question: the "half" we keep
+measuring is an AVERAGE over many swings — and the universe may have
+completed only ONE swing. If it really is one swing, the sky should
+read 0.59 where it reads 0.65. Counting the swings is now the whole
+game — and either answer teaches us something enormous.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

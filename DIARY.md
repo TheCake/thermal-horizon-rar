@@ -54,6 +54,25 @@ What the next me should know:
   instruments on the same input hoping for different luck — the
   reopen triggers are Iorio+2017 curves (likely tips the contest) or
   DR4-era data. Ledger 188 rows / 228 tokens after this booking.
+- NIGHT ADDENDUM (9T + ROUND 17, the resonance theorem): the
+  round-16 A9 detuning flank is CLOSED and survived its own
+  red-team SCOPED (r >= 0.454; delta small vs EVERY rate — keep his
+  separability framing); mech conditional 8 -> 12 by the pre-signed
+  map. THREE things the next me must never do: (a) quote 9T as
+  "resonance established" — the 1/2 is a time-average the universe
+  may not have had time to take; (b) forget that the measured
+  p = 0.65 implies r = 0.398 < the 0.454 floor (tension-at-
+  resolution, honestly booked; the kill is sigma_p <= 0.02 with
+  p < 0.67); (c) apply the tail claim to binaries (their boost
+  witnesses only gamma ~ 0.29 — excluded by scope). O5-AVERAGING is
+  now THE question: gamma ~ 1 predicts p ~ 0.587, full averaging
+  predicts ~0.69, the sky says 0.65 (grid-limited) — designing the
+  gamma-measurement (a sigma_p <= 0.02 hier tail instrument, or the
+  finite-gamma p(gamma) curve as a new fit dial) is the single
+  highest-value P3 move. Keep his gems: Landau-Zener adiabaticity
+  39.5 REINFORCES equal sharing; the phase-budget framing is partly
+  decorative (real content: delta <= H/2pi AND g_c >~ H). Ledger
+  189 / 230 tokens after this booking.
 
 ## 2026-08-07 (+5) — 9Q the lemma round + ROUND 16: the red-team earned its keep
 

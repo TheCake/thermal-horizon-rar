@@ -1,0 +1,37 @@
+==============================================================================
+STAGE 9T -- THE RESONANCE THEOREM (unresolvable detuning)
+==============================================================================
+G9T-0 input regression: p(1/2, G_fid=0.7536) = 0.6884 vs 6E pred 0.6884 -> PASS
+
+G9T-1 sympy: secular-weight residual = 0; (phi,gamma)-form residual = 0; monotone (d/dphi < 0, d/dgamma > 0): True; phase-budget H(z)-cancellation residual = 0 -> PASS
+  T1: phi = delta*t <= eta*dx/(2*pi); dx <= 1 in the anomaly sector (Lemma 1); EPOCH-INVARIANT (H cancels).
+  T2: r = (1/2)/(1 + (phi/gamma)^2) with gamma = g_c*t.
+  T3 (witnessed premise, argument-grade): gamma >= ~1 because the anomaly EXISTS (boost O(thermal occupation) requires at least ~one completed exchange cycle; uses boost > 0 only).
+
+THE FLOOR SCAN  r_floor = (1/2)/(1 + eta^2/(4 pi^2 gamma_min^2))
+------------------------------------------------------------------------------
+  eta = 0.5  gamma_min = 1.000  ->  r_floor = 0.4969  p_void in [0.7484, 0.7500]  phi_max = 0.080 rad
+  eta = 0.5  gamma_min = 3.142  ->  r_floor = 0.4997  p_void in [0.7498, 0.7500]  phi_max = 0.080 rad
+  eta = 0.5  gamma_min = 6.283  ->  r_floor = 0.4999  p_void in [0.7500, 0.7500]  phi_max = 0.080 rad
+  eta = 1.0  gamma_min = 1.000  ->  r_floor = 0.4876  p_void in [0.7438, 0.7500]  phi_max = 0.159 rad
+  eta = 1.0  gamma_min = 3.142  ->  r_floor = 0.4987  p_void in [0.7494, 0.7500]  phi_max = 0.159 rad
+  eta = 1.0  gamma_min = 6.283  ->  r_floor = 0.4997  p_void in [0.7498, 0.7500]  phi_max = 0.159 rad
+  eta = 2.0  gamma_min = 1.000  ->  r_floor = 0.4540  p_void in [0.7270, 0.7500]  phi_max = 0.318 rad
+  eta = 2.0  gamma_min = 3.142  ->  r_floor = 0.4949  p_void in [0.7475, 0.7500]  phi_max = 0.318 rad
+  eta = 2.0  gamma_min = 6.283  ->  r_floor = 0.4987  p_void in [0.7494, 0.7500]  phi_max = 0.318 rad
+  scan floor min = 0.4540 (worst cell eta=2, gamma_min=1); sharp cell (1, 1) = 0.4876
+
+CONSISTENCY (not verdict-bearing):
+  vs 9S data bound: r >= 0.315 (measured) is IMPLIED-and-weaker (theorem floor 0.454)
+  fiducial-gate galaxy band: p in [0.6711, 0.6884]; 5G point p-hat = 0.65 (grid 0.05, no sigma) sits 0.021 below the band edge = CONSISTENT AT CURRENT RESOLUTION; named kill: a hier tail measurement with sigma_p <= 0.02 demanding p < 0.67 at the fiducial gate kills the theorem
+  void kill-band: p_void in [0.727, 0.750] across the scan (sharp cell [0.7438, 0.7500]) -- the P1 ceiling is predicted SATURATED in voids
+
+G9T-2 mpmath 50-digit recompute of all 9 scan cells: PASS
+G9T-3 finite-time envelope: max |<P> - <P>_res| over the (gamma, phi) grid = 0.0086 (bar 0.03) -> PASS
+G9T-4 ledger legs: mech-9q-onemode=CURRENT; mech-9q-frozen=CURRENT; mech-9q-ceiling=CURRENT; mech-9s-detuning=CURRENT -> PASS
+
+GATES: G9T-0:PASS  G9T-1:PASS  G9T-2:PASS  G9T-3:PASS  G9T-4:PASS  -> ALL PASS
+
+VERDICT (locked grammar): T-THEOREM (with witnessed premise): detuning inside the soft sector is UNRESOLVABLE -- phi <= eta/(2*pi) at every epoch -- so r in [0.454, 0.500] parameter-free; O5-DETUNING answered at toy grade pending ROUND-17
+
+CREDENCE MAP (pre-signed): anomaly-real 53 NO MOVE. bath-mechanism conditional: T-THEOREM + ROUND-17 no-unpatched-hole -> 8 -> 12; T-THEOREM with a hole -> HOLD 8 (hole named); T-BROKEN -> 6. Final number booked in NOTES after ROUND-17.

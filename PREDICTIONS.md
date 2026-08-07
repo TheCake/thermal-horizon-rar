@@ -220,6 +220,16 @@ bound r ≥ 0.315 (9S, hier-anchored) implies p_void ≥ 0.66 within the AMB
 form; a clean void measurement below that would strike the resonance
 reading before it ever touches the ¾ ceiling itself.*
 
+*Annotation 2026-08-07 later (Stage 9T + ROUND 17; no status change):
+conditional on the averaging flank (O5-AVERAGING), the resonance theorem
+predicts the void asymptote SATURATED: p_void ∈ [0.727, 0.750] (edge
+0.718 for z_form = 10). The fiducial-gate kill stands: a hier tail
+measurement with σ_p ≤ 0.02 demanding p < 0.67 kills the resonance
+reading. NEW falsification lever (ROUND-17): if the exchange has
+completed only ~one Rabi radian (γ ~ 1, the un-averaged regime), the
+tail should read p ≈ 0.587 — a γ-measurement decides between ~0.59 and
+the ~0.69 band; the measured 0.65 (grid-limited) sits between them.*
+
 ### P2 — the environmental ordering p(e_N)
 Weaker ambient → sharper tail (p rises toward 0.72–0.75 in voids; galaxy-population
 median 0.689). In-sample version WITHDRAWN (correction #14: gate heterogeneity, not

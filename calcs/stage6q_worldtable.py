@@ -498,6 +498,11 @@ CHECKS = [
      '5/40)', 'data/stage9rb_contest.txt'),
     ('gal-9rb-contest', 'B-POWER-LIMITED -- the contest is not '
      'powered on either arm', 'data/stage9rb_contest.txt'),
+    ('mech-9t-resonance', 'scan floor min = 0.4540 (worst cell '
+     'eta=2, gamma_min=1); sharp cell (1, 1) = 0.4876',
+     'data/stage9t_resonance.txt'),
+    ('mech-9t-resonance', 'fiducial-gate galaxy band: p in '
+     '[0.6711, 0.6884]', 'data/stage9t_resonance.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
