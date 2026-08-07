@@ -245,6 +245,19 @@ gate-free (the signal is not divided by g), with the kill-band at the
 ceiling — and carries the O5-AVERAGING question alone until anchored/
 DR4-era tails or a void-RAR sample exist.*
 
+*Annotation 2026-08-07 second close (Stage 9V; no status change): the
+direct in-catalog r fit (per-galaxy measured gates) confirms and closes
+the arc: r̂ = 0.3365 ± 0.1869 (clipped bootstrap; fid treatment 0.3895
+= the 9U conversion 0.3904 at d = 0.001 — cross-instrument coherence);
+r = 0 disfavored ~31 nominal −2lnL units in every gate treatment but
+only +1.8σ at honest grade; the r_true = ½ injection reads 0.407
+(biased low, disclosed — full averaging is NOT more disfavored than
+face value). VOID-SAMPLE FEASIBILITY: the only public void RC sample
+(Pustilnik+2020, 8 dwarfs, V_max 31.5–80.3 km/s) has no Newtonian arm
+— this prediction's test requires void galaxies WITH y ≳ 1 coverage
+(WALLABY DR2 + environment tags, or DR4-era). The prediction stands
+armed and untested.*
+
 ### P2 — the environmental ordering p(e_N)
 Weaker ambient → sharper tail (p rises toward 0.72–0.75 in voids; galaxy-population
 median 0.689). In-sample version WITHDRAWN (correction #14: gate heterogeneity, not

@@ -1,0 +1,83 @@
+STAGE 9V THE R-LADDER: 153 galaxies, 2700 points + 12 lensing
+gates: fid g = 0.7536; maxclust matched 91 (median g 0.8680); noclust matched 91 (median g 0.9517)
+r bands: 0 = BE | 0.2298 one-swing | 0.454 floor | 0.500 full
+
+FEAS (void-tail channel; Pustilnik+2020 Table 1 primary-read 2026-08-07):
+  Lynx-Cancer 8: V_max = [31.5, 42.0, 56.5, 62.3, 63.9, 72.4, 80.2, 80.3] km/s
+  SPARC analogs (V_max <= 85 km/s, N = 53): per-galaxy max y_bar percentiles 16/50/84 = [0.038, 0.069, 0.174] -> NO tail coverage (tail needs y >~ 1)
+  VERDICT (feasibility): the void-TAIL r-meter is DATA-BLOCKED at public grade; reopen = void-crossmatched y>~1 sample (WALLABY DR2 + env tags / DR4-era) or LV-database env columns
+
+G9V-4 arithmetic regressions: PASS  [111]
+
+PHASE 1  G9V-1 r=0 == BE:  -12152.49 (5M  -12152.49, d=-0.002) -> PASS [0.0 min]
+
+PHASE 2  pgmax profile (23 pts):
+  min: r-hat = 0.3365 (sigma_curv 0.0726); d(-2lnL) vs r=0: -30.81  [0.2 min]
+PHASE 2  fid profile (23 pts):
+  min: r-hat = 0.3895 (sigma_curv 0.0835); d(-2lnL) vs r=0: -31.75  [0.4 min]
+PHASE 2  noclust profile (23 pts):
+  min: r-hat = 0.3085 (sigma_curv 0.0644); d(-2lnL) vs r=0: -31.42  [0.6 min]
+
+G9V-3 interior minima (3 treatments): PASS
+G9V-0 code-path identity (fid, r=0.5): |d| = 0.00e+00 -> PASS
+
+PHASE 3  injections (r_true 0.25 / 0.50; rng 202; primary treatment):
+  r_true=0.25: rec 0.2751 (sigma_curv 0.0838, err +0.0251, bar 0.168) OK  [0.7 min]
+  r_true=0.50: rec 0.4067 (sigma_curv 0.0450, err -0.0933, bar 0.090) FAIL  [0.7 min]
+G9V-2: FAIL  -> letter locked to V-POWER
+
+PHASE 4  bootstrap (40 paired reps, rng 53, warm-lite, pgmax):
+  per-rep grid: [0.2, 0.275, 0.35, 0.425, 0.5]
+  rep 10/40: mean 0.2962 sd 0.1419 edges 9  [1.0 min]
+  rep 20/40: mean 0.3430 sd 0.1445 edges 17  [1.2 min]
+  rep 30/40: mean 0.3311 sd 0.1426 edges 26  [1.5 min]
+  rep 40/40: mean 0.3195 sd 0.1341 edges 32  [1.7 min]
+  AMENDMENT A-widen FIRED (32 > 8): +/- 0.225 step 0.075
+  widened rep 0: 0.1250 EDGE  [1.8 min]
+  widened rep 1: 0.2222  [1.8 min]
+  widened rep 2: 0.5750 EDGE  [1.8 min]
+  widened rep 4: 0.1250 EDGE  [1.9 min]
+  widened rep 5: 0.2211  [1.9 min]
+  widened rep 6: 0.1988  [1.9 min]
+  widened rep 7: 0.1250 EDGE  [2.0 min]
+  widened rep 8: 0.5750 EDGE  [2.0 min]
+  widened rep 9: 0.5750 EDGE  [2.1 min]
+  widened rep 10: 0.1250 EDGE  [2.1 min]
+  widened rep 11: 0.5750 EDGE  [2.1 min]
+  widened rep 12: 0.5750 EDGE  [2.2 min]
+  widened rep 14: 0.1250 EDGE  [2.2 min]
+  widened rep 15: 0.5750 EDGE  [2.2 min]
+  widened rep 16: 0.5750 EDGE  [2.3 min]
+  widened rep 17: 0.5750 EDGE  [2.3 min]
+  widened rep 18: 0.1250 EDGE  [2.3 min]
+  widened rep 20: 0.5077  [2.3 min]
+  widened rep 21: 0.5750 EDGE  [2.4 min]
+  widened rep 22: 0.1250 EDGE  [2.4 min]
+  widened rep 23: 0.1250 EDGE  [2.4 min]
+  widened rep 25: 0.1250 EDGE  [2.5 min]
+  widened rep 26: 0.1901  [2.5 min]
+  widened rep 27: 0.5750 EDGE  [2.6 min]
+  widened rep 28: 0.1250 EDGE  [2.6 min]
+  widened rep 29: 0.1250 EDGE  [2.6 min]
+  widened rep 32: 0.1250 EDGE  [2.7 min]
+  widened rep 33: 0.1250 EDGE  [2.7 min]
+  widened rep 34: 0.2149  [2.7 min]
+  widened rep 35: 0.1250 EDGE  [2.8 min]
+  widened rep 37: 0.4714  [2.8 min]
+  widened rep 38: 0.1250 EDGE  [2.8 min]
+  post-widen persistent edges: 25 -> sigma_r CLIPPED LOWER BOUND
+bootstrap: sigma_r = 0.1869 (clipped lower bound); percentiles 16/50/84 = [0.125, 0.2421, 0.575]; edge hits 32/40
+G9V-5: AMENDED (A-widen applied)
+
+====================================================================
+PRIMARY (vertical + pgmax + bootstrap): r-hat = 0.3365 +/- 0.1869 (clipped)
+  curvature sigma 0.0726; co-reads: fid r-hat = 0.3895, noclust r-hat = 0.3085
+  d(-2lnL) r=0 -> min: pgmax -30.81 | fid -31.75 | noclust -31.42
+  band distances (sigma_r): one-swing +0.57 | floor -0.63 | full -0.88 | r=0 +1.80
+
+VERDICT LETTER: V-POWER
+pre-signed credence cell: HOLD 12; r lean-grade; sigma_r booked as spec
+anomaly-real 53 UNTOUCHED (pre-signed, all cells)
+
+gates: G9V-0 PASS | G9V-1 PASS | G9V-2 FAIL | G9V-3 PASS | G9V-4 PASS | G9V-5 AMENDED
+total wall-clock 2.8 min

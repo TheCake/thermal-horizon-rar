@@ -1143,21 +1143,24 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     dividends: the 9T tension dissolved, the 9S bound demoted to
     point-conditional (~2σ lean, row CO-QUOTED); THE LIVE SUCCESSOR =
     the VOID-ASYMPTOTE r-meter (p_void = ½ + r/2, gate-free, kill-band
-    [0.727, 0.750] at the ceiling) — DATA SCOUT DONE 2026-08-07
-    (Haiku, scout-grade, primary reads REQUIRED before design — trap #6):
-    (i) Pustilnik+2020 MNRAS 491, 4993 (arXiv:1911.11877) = 8 Lynx-Cancer
-    VOID dwarfs with resolved RCs + mass models — the only verified
-    void-specific RC sample; data extraction feasibility unknown
-    (paper-only per scout); (ii) unified Local-Volume HI RC database
-    arXiv:2605.22163, Zenodo 10.5281/zenodo.20320362 (129 dwarfs, 26
-    multi-point RCs, public CSV/JSON, NO environment tags — needs void
-    cross-match); (iii) VGS Kreckel+2012 (41 HI detections, RC grade
-    unverified); (iv) cross-match path: LITTLE THINGS/LVHIS/VLA-ANGST +
-    a void catalog. Design constraint from 9U+9R: an all-deep dwarf
-    sample concentrates points in the discriminating tail (may beat
-    SPARC's realization wall) BUT dwarf error budgets failed the 9R
-    injection gates at public-data grade — 9V must be power-gated
-    BEFORE any sky read, same control flow); (c) the 7F
+    [0.727, 0.750] at the ceiling) — ARC CLOSED IN-CATALOG 2026-08-07:
+    9V THE R-LADDER (pre-reg 662410c) = V-POWER: r̂ = 0.3365 ± 0.1869
+    (clipped; fid 0.3895 ties the 9U conversion 0.3904 at d = 0.001 =
+    the cross-instrument coherence line; r = 0 disfavored ~31 nominal
+    −2lnL units all three gate treatments but only +1.8σ bootstrap;
+    injection at r_true = 0.5 reads 0.407 = biased low, disclosed);
+    9U + 9V = the SAME realization-scatter wall from both
+    parameterizations ⇒ NO third in-catalog estimator. VOID-TAIL
+    FEASIBILITY CLOSED at public grade (primary read: Pustilnik+2020
+    Table 1 V_max 31.5–80.3 km/s = all-deep, no Newtonian arm — the
+    tail lives at y ≳ 1; SPARC dwarf analogs max y_bar median 0.069;
+    STANDING DESIGN CHECK: verify a sample's y-coverage overlaps the
+    discriminating window before designing any tail/p/r instrument).
+    EXTERNAL SUCCESSORS ONLY: (i) void-crossmatched sample WITH y ≳ 1
+    coverage (WALLABY DR2 + environment tags); (ii) unified LV database
+    (Zenodo 10.5281/zenodo.20320362) if it gains environment columns;
+    (iii) DR4-era; (iv) anchored subsamples. The P1 void saturation
+    band is untouched and waiting); (c) the 7F
     negative-flank closure (the c₄ rung); (d) optional: cQED platform
     contact (7E translation exists — a lab test of the lending law is
     a collaboration seed, post-circulation).

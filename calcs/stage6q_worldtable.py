@@ -507,6 +507,10 @@ CHECKS = [
      'data/stage9u_gammameter.txt'),
     ('gal-9u-ptail', 'VERDICT LETTER: U-POWER',
      'data/stage9u_gammameter.txt'),
+    ('gal-9v-rladder', 'r-hat = 0.3365 +/- 0.1869',
+     'data/stage9v_rladder.txt'),
+    ('gal-9v-rladder', 'VERDICT LETTER: V-POWER',
+     'data/stage9v_rladder.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

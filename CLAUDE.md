@@ -169,6 +169,28 @@ THE LIVE O5-AVERAGING SUCCESSOR = the VOID-ASYMPTOTE r-meter (p_void =
 1/2 + r/2 gate-free; kill-band [0.727, 0.750] at the ceiling; P1
 annotated) — first move = a void-RAR/isolated-dwarf DATA SCOUT, not a
 fit. Ledger 190 rows / worldtable 232 tokens six gates PASS.**
+**9V (2026-08-07 second close, THE R-LADDER, pre-reg 662410c): the
+9S-queued direct r fit EXECUTED = V-POWER, and the IN-CATALOG
+O5-AVERAGING ARC IS CLOSED — p_i = 1/2 + r*g_i/2 with per-galaxy
+measured Chae gates inside the likelihood (nu_p family, no new form):
+r-hat = 0.3365 +/- 0.1869 (clipped; curvature 0.073; co-reads fid
+0.3895 / noclust 0.3085); THE CROSS-TIE: fid direct 0.3895 vs the 9U
+conversion 0.3904 (d = 0.001, pinned in advance by G9V-4) = two
+estimators one answer; r = 0 disfavored ~31 nominal -2lnL units in
+ALL THREE gate treatments but only +1.8 sigma bootstrap (the same
+realization wall as 9U — ALWAYS quote bootstrap grade); G9V-2
+letter-locker: the r_true = 0.50 injection recovered 0.407 = biased
+LOW at high r (disclosed — full-averaging NOT more disfavored than
+face value; bands one-swing +0.57 / floor -0.63 / full -0.88 sigma
+all UNRESOLVED). VOID-TAIL FEASIBILITY CLOSED at public grade
+(Pustilnik+2020 Table 1 primary-read: V_max 31.5-80.3 km/s = no
+Newtonian arm; STANDING DESIGN CHECK: verify y-coverage overlaps the
+discriminating window before designing any tail/p/r instrument;
+reopen = WALLABY-env / DR4-era / LV-database env columns). CREDENCE:
+pre-signed V-POWER = HOLD 12; anomaly-real 53 untouched; NO third
+in-catalog estimator (the wall is the data, not the statistic).
+r-hat supersedes the 9S numeric bound (lean-labeled). Ledger 191
+rows / worldtable 234 tokens six gates PASS.**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

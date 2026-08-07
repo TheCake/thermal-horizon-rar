@@ -61,6 +61,34 @@ but the averaging pillar now has a MEASURED data-grade wall on the
 SPARC side. The γ question is real, open, and correctly parked with
 its instrument spec — exactly the state Paper 3 can print honestly.
 
+ADDENDUM (same day, second close — 9V): Filip said "Go for next," so
+I ran the named next. Two things the next me must carry:
+- THE VOID LEAD DIED ON PRIMARY READ, correctly: Pustilnik+2020's 8
+  Lynx-Cancer dwarfs are V_max 31.5-80.3 km/s = all-deep, no
+  Newtonian arm. THE TAIL EXPONENT LIVES AT y ≳ 1 — I almost designed
+  a stage on a sample that structurally cannot carry it. New design
+  check, standing: before ANY tail/p/r instrument, verify the
+  sample's y-coverage overlaps the discriminating window. (The FEAS
+  block in stage9v prints the SPARC-analog numbers: dwarf max y_bar
+  median 0.069.)
+- 9V = the r-ladder, V-POWER: r̂ = 0.3365 ± 0.1869 clipped; fid
+  treatment 0.3895 vs 9U conversion 0.3904 (d = 0.001, the pinned
+  cross-tie — quote this as the instrument-coherence line); r = 0
+  disfavored ~31 nominal −2lnL units in all three gate treatments
+  but only +1.8σ bootstrap — ALWAYS quote the bootstrap grade, the
+  nominal units are realization-inflated (this is 3A/9U again).
+  Injection at r_true = 0.5 came back 0.407: the instrument reads
+  high-r skies LOW. Don't let a future round read r̂ = 0.34 < 0.5 as
+  evidence against full averaging — the bias direction covers it.
+- IN-CATALOG O5-AVERAGING IS CLOSED AT MEASURED POWER (9U + 9V, both
+  letters). Do NOT build a third in-catalog estimator; the wall is
+  the data's realization scatter, not the statistic. External
+  successors only: void-crossmatched y ≳ 1 sample, WALLABY DR2 +
+  environment tags, DR4-era, or anchored subsamples. TODO 30(b)
+  carries the full state.
+Board after the day's nine work units: ledger 191 rows, worldtable
+234 tokens six gates PASS, mech-conditional 12, anomaly-real 53.
+
 Filip's directive: "Do whatever you think should be next. Can be even
 concurrently if possible." I ran the detuning bound (9S, cheap reader)
 and the GD replication attempt (9R, the TODO-28 falsifier) in one

@@ -13270,6 +13270,78 @@ is biggest and the dial doesn't divide it down. And two of our older
 claims that leaned on the needle's exact position got honestly softened
 today, because now we know how much the needle wobbles.
 
+## Stage 9V (2026-08-07, second close) — THE R-LADDER + the void-channel feasibility: the in-catalog averaging arc closes at measured power
+
+**Two jobs, one stage (pre-reg 662410c).** (1) The 9S-queued consistency
+instrument: fit the exchange weight r DIRECTLY — p_i = ½ + r·g_i/2 with
+per-galaxy measured Chae gates inside the likelihood (ν_p family, no new
+form). (2) Book the void-tail feasibility verdict from today's primary
+read (trap #6 executed on the scout's lead).
+
+**Feasibility first (the primary read decided before any fit):**
+Pustilnik+2020 Table 1, read from the PDF: the 8 Lynx-Cancer void
+dwarfs have V_max = 31.5–80.3 km/s. SPARC analogs at that mass
+(V_max ≤ 85, N = 53) have per-galaxy max y_bar percentiles
+0.038/0.069/0.174 — the tail exponent lives at y ≳ 1, which these
+objects never reach. **The void-TAIL r-meter is DATA-BLOCKED at public
+grade** (VGS is the same mass class). Reopen: a void-crossmatched
+sample WITH Newtonian-arm coverage (WALLABY DR2 + environment tags,
+DR4-era), or the unified LV database gaining environment columns. The
+void channel's PREDICTION (P1 saturation band) is untouched — it waits
+for data, not for us.
+
+**The r-ladder (verdict V-POWER, pre-signed):**
+- PRIMARY (vertical + per-galaxy maxclust): r̂ = 0.3365 ± 0.1869
+  (bootstrap, CLIPPED — 25/40 reps still edge at ±0.225; curvature
+  0.0726). Co-reads: fid 0.3895, noclust 0.3085.
+- **The 9U cross-tie (pinned in advance by G9V-4): fid direct fit
+  0.3895 vs the 9U arithmetic conversion 0.3904 — d = 0.001.** Two
+  estimators, one answer: instrument coherence.
+- r = 0 disfavored by Δ(−2lnL) ≈ 31 in ALL THREE gate treatments —
+  but only +1.80σ in honest bootstrap units (converging with 9U's ~2σ
+  demotion of the 9S bound; the nominal-vs-bootstrap gap is the same
+  realization-scatter wall wearing likelihood units).
+- Band distances: one-swing +0.57σ, floor −0.63σ, full −0.88σ.
+  UNRESOLVED, same as 9U.
+- G9V-2 FAIL (the honest letter-locker): the r_true = 0.50 injection
+  recovered at 0.407 (err −0.093 > bar 0.090) — the instrument is
+  biased LOW at high r at single-injection grade. Direction disclosed:
+  the full-averaging band is NOT more disfavored than face value.
+- Gates: G9V-0 code-path identity 0.00e+00; G9V-1 r=0 ≡ BE d = −0.002;
+  G9V-3/4 PASS; G9V-5 AMENDED (pre-authorized widen; clipped).
+
+**Credence (pre-signed cell):** V-POWER → bath-mechanism conditional
+HELD 12; anomaly-real 53 untouched. r̂ ± σ_r (lean-labeled) supersedes
+the 9S numeric bound as the operative averaging-flank statement.
+
+**Arc close.** 9U (tail exponent) and 9V (direct r) hit the same wall
+from opposite parameterizations: SPARC-hier realization scatter. THE
+IN-CATALOG O5-AVERAGING PROGRAM IS CLOSED AT MEASURED POWER. What
+survives in-catalog: r > 0 at ~1.8–2σ lean, the ~31-unit nominal
+preference, and the cross-instrument tie. The question itself — one
+swing or many — is intact, parked with two instrument specs and named
+external successors.
+
+Ledger: +gal-9v-rladder (191 rows); worldtable 234 tokens six gates
+PASS.
+
+PLAIN VERDICT: NEEDS DIFFERENT DATA — same letter as 9U, now proven
+from both sides; the honest content is the convergence itself (0.3895
+vs 0.3904) and the closed feasibility question.
+
+ELI12: We tried a second way to read the swing-counter — instead of
+asking "where is the tail?" we asked the sky directly "how much
+exchange is happening?", letting every galaxy speak at its own
+loudness. The answer agreed with yesterday's to three decimal places —
+our two rulers measure the same thing, which is how you know a ruler
+works. But the wobble is just as big this way, and when we hid a fake
+sky with maximum exchange inside the machine, it read it ~20% low — so
+the machine itself says "don't trust me past this precision." And the
+eight void galaxies we found? We read their paper: they're all gentle
+slow spinners with no fast inner region — the wrong shape for this
+particular question. So the big question stays open, honestly parked,
+with a signed note saying exactly what kind of sky data will answer it.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
