@@ -1143,8 +1143,21 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     dividends: the 9T tension dissolved, the 9S bound demoted to
     point-conditional (~2σ lean, row CO-QUOTED); THE LIVE SUCCESSOR =
     the VOID-ASYMPTOTE r-meter (p_void = ½ + r/2, gate-free, kill-band
-    [0.727, 0.750] at the ceiling) — first move is a data scout
-    (void-RAR / isolated-dwarf samples), not a fit); (c) the 7F
+    [0.727, 0.750] at the ceiling) — DATA SCOUT DONE 2026-08-07
+    (Haiku, scout-grade, primary reads REQUIRED before design — trap #6):
+    (i) Pustilnik+2020 MNRAS 491, 4993 (arXiv:1911.11877) = 8 Lynx-Cancer
+    VOID dwarfs with resolved RCs + mass models — the only verified
+    void-specific RC sample; data extraction feasibility unknown
+    (paper-only per scout); (ii) unified Local-Volume HI RC database
+    arXiv:2605.22163, Zenodo 10.5281/zenodo.20320362 (129 dwarfs, 26
+    multi-point RCs, public CSV/JSON, NO environment tags — needs void
+    cross-match); (iii) VGS Kreckel+2012 (41 HI detections, RC grade
+    unverified); (iv) cross-match path: LITTLE THINGS/LVHIS/VLA-ANGST +
+    a void catalog. Design constraint from 9U+9R: an all-deep dwarf
+    sample concentrates points in the discriminating tail (may beat
+    SPARC's realization wall) BUT dwarf error budgets failed the 9R
+    injection gates at public-data grade — 9V must be power-gated
+    BEFORE any sky read, same control flow); (c) the 7F
     negative-flank closure (the c₄ rung); (d) optional: cQED platform
     contact (7E translation exists — a lab test of the lending law is
     a collaboration seed, post-circulation).
