@@ -494,6 +494,10 @@ CHECKS = [
      'PASS', 'data/stage9r_gdrepl.txt'),
     ('gal-9r-ltrepl', 'R-POWER-LIMITED -- no arm passed census + '
      'power', 'data/stage9r_gdrepl.txt'),
+    ('gal-9rb-contest', 't* = -0.40 -> UNPOWERED (misclassified '
+     '5/40)', 'data/stage9rb_contest.txt'),
+    ('gal-9rb-contest', 'B-POWER-LIMITED -- the contest is not '
+     'powered on either arm', 'data/stage9rb_contest.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

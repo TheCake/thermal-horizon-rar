@@ -45,6 +45,15 @@ What the next me should know:
   design a stage off a scout's data claim without reading the ReadMe.
 - Day totals: anomaly-real 53 untouched all day; mech conditional ~8
   (held by the 9Q map); ledger 187 rows; worldtable 226 tokens.
+- LATE ADDENDUM (9R-b, pre-reg 025b135): the contest form ALSO landed
+  B-POWER-LIMITED — by ONE injection (ARM-R headline side 15/20 vs
+  the locked 16/20; GD side 20/20; 5/40 total). The bars held; no
+  post-hoc softening; the sky was never read by ANY of the three
+  instruments. TODO 28 is now CLOSED at the Oh+15 public-data grade
+  per the pre-registered clause. Next me: do NOT re-run these
+  instruments on the same input hoping for different luck — the
+  reopen triggers are Iorio+2017 curves (likely tips the contest) or
+  DR4-era data. Ledger 188 rows / 228 tokens after this booking.
 
 ## 2026-08-07 (+5) — 9Q the lemma round + ROUND 16: the red-team earned its keep
 

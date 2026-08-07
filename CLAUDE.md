@@ -118,7 +118,13 @@ so the sky was NEVER fit; successors 9R-b two-world contest form /
 Iorio+2017 input / DR4-era dwarfs; TODO 28 updated. Ledger 187 rows;
 worldtable 226 tokens six gates PASS. NO credence moves (anomaly-real 53;
 mech ~8). Scout trap #6 logged: "full baryonic decomposition" oversold —
-always read the VizieR byte tables before designing a stage.**
+always read the VizieR byte tables before designing a stage. 9R-b same day
+(pre-reg 025b135): the contest form ALSO B-POWER-LIMITED — by ONE injection
+(ARM-R 15/20 + 20/20 vs locked 16/20; 5/40 misclassified); bars held, sky
+never read; **TODO 28 CLOSED at the Oh+15 public-data grade per the
+pre-registered clause; reopen = Iorio+2017 curves as input (near-miss says
+it likely tips) or DR4-era dwarfs.** Ledger 188 rows / worldtable 228
+tokens after the 9R-b booking.**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

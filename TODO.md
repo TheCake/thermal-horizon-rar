@@ -1113,8 +1113,14 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     match 0.95; port regression −1.542 exact; wiring licensed) but
     R-POWER-LIMITED — no arm passed injection power (GD world
     recovers −0.5 at truth −1.31); the sky was never read.
-    Successors: 9R-b two-world contest form (own injection
-    calibration); Iorio+2017 curves; anchored/DR4-era dwarfs.
+    9R-b same day (pre-reg 025b135): the two-world CONTEST form also
+    B-POWER-LIMITED — by ONE injection (ARM-R 15/20 + 20/20 vs the
+    locked 16/20; 5/40 misclassified); bars held. **CLOSED at the
+    Oh+15 public-data grade per the pre-registered clause** (three
+    instruments failed own-injection power on this input; the sky was
+    never read by any of them). REOPEN trigger: Iorio+2017 3D-Barolo
+    curves as input (the near-miss says a modestly better error
+    budget likely tips the contest) or anchored/DR4-era dwarf data.
 29. **DR4 readiness** (highest-upside): freeze the DR4 kill-condition
     subset from PREDICTIONS.md into one section; build DR4 loaders on
     EDR3-shaped mocks; day-one analysis plan written before the data

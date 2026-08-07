@@ -1,0 +1,23 @@
+==============================================================================
+STAGE 9R-b -- THE TWO-WORLD CONTEST (headline +0.97 vs GD -1.31)
+==============================================================================
+G9Rb-M manifest: PASS
+G9Rb-1 census regression: ARM-V (65, 7) vs (65, 7); ARM-R (172, 12) vs (172, 12); LT-only 14 vs 14 -> PASS
+G9Rb-0 engine regression: 9R power cell (truth -1.31, s31, ARM-V) -> lam_hat = -0.524 vs printed -0.524 -> PASS
+
+[ARM-V cut 0.10] calibration (20 per world):
+  headline-truth D: mean -1.25 SD 2.32 range [-7.65, +2.98] own-side 17/20
+  GD-truth       D: mean +2.04 SD 1.94 range [-1.40, +5.34] own-side 14/20
+  t* = +0.40 -> UNPOWERED (misclassified 9/40)
+[ARM-R cut 0.20] calibration (20 per world):
+  headline-truth D: mean -3.87 SD 4.31 range [-13.38, +2.32] own-side 15/20
+  GD-truth       D: mean +3.07 SD 1.90 range [-0.24, +6.71] own-side 20/20
+  t* = -0.40 -> UNPOWERED (misclassified 5/40)
+
+==> 9R-b VERDICT (locked grammar): B-POWER-LIMITED -- the contest is not powered on either arm at Oh+15 grade; TODO 28 closes at this input grade (successors: Iorio+2017 curves, anchored/DR4-era dwarfs). The sky was not read.
+    NO credence movement (pre-stated; measurement round).
+
+G9Rb-L ledger leg gal-9r-ltrepl CURRENT: PASS
+GATES: G9Rb-0:PASS  G9Rb-1:PASS  G9Rb-L:PASS  G9Rb-M:PASS
+
+done (0.2 min)

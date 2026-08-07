@@ -13075,6 +13075,38 @@ few and their speeds are hard to measure. So we did not let it read
 the real sky at all. The question "do independent dwarfs show the
 same weird dial?" stays open — with a sharper plan for next time.
 
+## Stage 9R-b (2026-08-07) — the contest form: near-powered, and the bars held
+
+Pre-reg 025b135. Estimation replaced by ranking (D = m2ll at the
+headline world minus m2ll at the GD world, verbatim nuisances),
+calibrated on 20 injections per world per arm; powered iff ≥ 16/20
+own-side on BOTH worlds. Engine tied to 9R exactly (the power-cell
+regression reproduced λ̂ = −0.524 to the digit). RESULT:
+**B-POWER-LIMITED — by ONE injection**: ARM-R classified the GD world
+20/20 and the headline world 15/20 against the locked 16/20 bar
+(5/40 total misclassified; ARM-V 9/40). The bars were locked before
+the run and they hold; no post-hoc softening; the sky was never read
+(the code path reads the sky only after power passes, same as 9R).
+Per the pre-registered clause TODO 28 CLOSES at the public-Oh+15
+input grade: three instruments (profile, relaxed profile, contest)
+each failed their own injection tests on this input. Live successors:
+Iorio+2017 3D-Barolo re-derivations as input (the one-injection miss
+says a modestly better error budget likely tips the contest into
+powered) and anchored/DR4-era dwarf data. Gates 4/4. NO credence
+movement (pre-stated).
+
+PLAIN VERDICT: NEEDS DIFFERENT DATA — with the instrument now
+measured to be one hair from sufficient.
+
+ELI12: We built a simpler question for the little galaxies — not
+"what is your dial?" but "which of two known worlds do you look more
+like?" We rehearsed on fakes again: this time the tool got 35 of 40
+rehearsals right — but our rule, written down in advance, demanded
+slightly better, and rules don't bend after the fact. So the real sky
+stays unread, the question stays open, and we now know exactly how
+close the tool is: one rehearsal short. Better data from another team
+is the named next try.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
