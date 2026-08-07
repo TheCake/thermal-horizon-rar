@@ -9,7 +9,57 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
-## 2026-08-07 (later, +6) — 9S + 9R concurrent: one bound landed, one honest refusal
+## 2026-08-07 (close, +8) — 9U the gamma meter: built it, gated it, and it says the sky can't answer yet
+
+Filip: "continue, we gotta get to the bottom of this." The bottom of
+O5-AVERAGING is one number — where p sits continuously and with what σ.
+So I built the instrument 9S/9T queued by name (pre-reg 21376aa BEFORE
+run): fine ν_p profile on both hier treatments + injection power gate +
+40-rep paired galaxy bootstrap. It came back U-POWER in 2.3 minutes of
+compute (my 4–6 h estimate was ~100× conservative — warm-chained
+Nelder-Mead hier fits converge in seconds; remember that for planning).
+
+What the next me must not redo or misread:
+- p̂ = 0.6471 ± 0.0746 vertical-primary (plain 0.6927; split 0.046 =
+  sub-σ, no flag). σ_p is a CLIPPED LOWER BOUND — 31/40 reps edged the
+  ±0.06 grid, and after the pre-authorized A-widen they piled at the
+  ±0.09 edges too. Percentiles 16/50/84 = 0.56/0.615/0.74. The per-rep
+  tail wells are ~7–10 lnL over ±0.09; galaxy resampling tilts more
+  than that. The tail LOCATION is realization-dominated — the 3A lesson
+  wearing a galaxy coat. DO NOT quote any sharp p location from SPARC
+  hier, ever, without this row.
+- All three bands inside 1σ (one-swing +0.81, floor −0.32, full-avg
+  −0.55). NOBODY won. The 9T kill did NOT fire (needed σ_p ≤ 0.02, got
+  ≥ 0.075). Credence: pre-signed U-POWER cell = HOLD 12, mechanically.
+  anomaly-real untouched. No Opus round — nothing verdict-bearing.
+- The honest-updating pair that DID land: (1) 9T's booked tension
+  (r = 0.398 < floor 0.454) DISSOLVES at measured error — it was the 5G
+  grid point pretending to be a measurement; row annotated. (2) 9S's
+  "r ≥ 0.315 bound" demotes to point-conditional — r > 0 holds at ~2σ
+  lean; mech-9s-detuning CO-QUOTED → gal-9u-ptail. If a future round
+  cites "the 9S bound" as sharp, correct it.
+- Trap fingerprint (new, general): a bound inherited from a GRID POINT
+  with no σ is not a bound — 9S inverted 5G's p̂ = 0.65 as if exact;
+  the first real error bar moved its floor by half its value. Same
+  family as round-10's "flat in center, collapse on width".
+- The warm-lite caveat is disclosed in the row: per-rep location noise
+  may inflate the scatter, but even 2× overestimate leaves U-POWER.
+  Don't spend a round re-running the bootstrap at full tolerance
+  hoping for 0.02 — the full-fit curvature alone is 0.031.
+- THE LIVE SUCCESSOR is the VOID ASYMPTOTE (P1 annotation): p_void =
+  ½ + r/2 is gate-free — the signal isn't divided by g ≈ 0.75, so the
+  same absolute σ_p buys ~2× the r-resolution, and the 9T kill-band
+  [0.727, 0.750] sits AT the ceiling where detection is cleanest.
+  Next O5-AVERAGING move on Filip's go: scope what void-RAR data
+  exist (Desmond? DR4-era?) — a literature scout job first, not a fit.
+- Board: ledger 190 rows (gal-9u-ptail), worldtable 232 tokens six
+  gates PASS, everything through the 9U verdict commit.
+
+Where the fork stands after today: the mechanism's §2 skeleton for
+Paper 3 is unchanged (L1 + L2 + 9T + 9S-as-calibrated + void band),
+but the averaging pillar now has a MEASURED data-grade wall on the
+SPARC side. The γ question is real, open, and correctly parked with
+its instrument spec — exactly the state Paper 3 can print honestly.
 
 Filip's directive: "Do whatever you think should be next. Can be even
 concurrently if possible." I ran the detuning bound (9S, cheap reader)

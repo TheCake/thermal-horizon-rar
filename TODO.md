@@ -1133,9 +1133,18 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     remaining seam is sharper); (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established
-    — NEW blocking question O5-DETUNING: δ ~ (x_int−x_amb)·H/2π would
-    make the prefactor field-dependent, yet the sky measures ½; a
-    detuning-resolved lending law β(δ) is the successor); (c) the 7F
+    — the chain since: O5-DETUNING ANSWERED by the 9S bound + the 9T
+    theorem (detuning unresolvable, red-teamed, mech 8→12); successor
+    O5-AVERAGING (is the ½ a time-average the universe has taken?
+    γ ~ 1 ⇒ p ≈ 0.587 vs full-avg 0.688); 9U BUILT THE GAMMA METER
+    (2026-08-07, pre-reg 21376aa) → U-POWER: p̂ = 0.647 ± 0.075
+    (clipped), all three bands inside 1σ — SPARC-hier CANNOT resolve
+    the swing count (requirement σ_p ≤ 0.02, measured 3.7× worse);
+    dividends: the 9T tension dissolved, the 9S bound demoted to
+    point-conditional (~2σ lean, row CO-QUOTED); THE LIVE SUCCESSOR =
+    the VOID-ASYMPTOTE r-meter (p_void = ½ + r/2, gate-free, kill-band
+    [0.727, 0.750] at the ceiling) — first move is a data scout
+    (void-RAR / isolated-dwarf samples), not a fit); (c) the 7F
     negative-flank closure (the c₄ rung); (d) optional: cQED platform
     contact (7E translation exists — a lab test of the lending law is
     a collaboration seed, post-circulation).

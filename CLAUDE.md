@@ -147,6 +147,28 @@ kill-band = the Paper-3 section-2 skeleton EXISTS; the averaging flank
 (gamma) = the one remaining pillar; next P3 move = design the
 gamma-measurement (sigma_p <= 0.02 hier tail instrument or a finite-gamma
 p(gamma) dial). Ledger 189 rows / worldtable 230 tokens six gates PASS.**
+**9U (2026-08-07 close, THE GAMMA METER, pre-reg 21376aa): the
+O5-AVERAGING instrument EXECUTED same day = U-POWER — continuous nu_p
+tail profile (23 pts both treatments; 5G/5M regressions d <= 0.004;
+injections recovered) + 40-rep paired galaxy bootstrap gives p-hat =
+0.6471 +/- 0.0746 (vertical primary; SD CLIPPED at the instrumented
+window, honest sigma_p >= 0.075; plain co-read 0.6927, split sub-sigma;
+per-rep tail wells ~7-10 lnL = location REALIZATION-DOMINATED, the 3A
+lesson on the galaxy side); ALL THREE bands inside 1 sigma (one-swing
++0.81 / floor -0.32 / full-avg -0.55) => the swing count is UNRESOLVABLE
+at SPARC-hier grade (kill requirement 0.02; did NOT fire). DIVIDENDS:
+the 9T honest tension DISSOLVES at measured error (grid-point artifact;
+row annotated); the 9S bound r >= 0.315 DEMOTES to point-conditional
+(r > 0 at ~2 sigma lean; mech-9s-detuning CO-QUOTED -> gal-9u-ptail) —
+trap fingerprint #7 logged: a bound inherited from a grid point with no
+sigma is not a bound. gamma-dial central inversions lean-grade (fid
+gamma_inst 1.35 / gamma_wind 2.55 rad; consistent with the 9T
+boost-witness 0.76-1+). CREDENCE: pre-signed U-POWER cell = HOLD 12;
+anomaly-real 53 untouched; NO review round (nothing verdict-bearing).
+THE LIVE O5-AVERAGING SUCCESSOR = the VOID-ASYMPTOTE r-meter (p_void =
+1/2 + r/2 gate-free; kill-band [0.727, 0.750] at the ceiling; P1
+annotated) — first move = a void-RAR/isolated-dwarf DATA SCOUT, not a
+fit. Ledger 190 rows / worldtable 232 tokens six gates PASS.**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

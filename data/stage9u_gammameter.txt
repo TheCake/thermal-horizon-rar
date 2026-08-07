@@ -1,0 +1,139 @@
+STAGE 9U THE GAMMA METER: 153 galaxies, 2700 points + 12 lensing
+pre-reg bands (fiducial g = 0.7536): one-swing 0.5866 | floor 0.6711 | full-avg 0.6884; 5G anchor p-hat = 0.65 (grid 0.05)
+
+G9U-4 arithmetic regressions (9S/9T rows): PASS  [11111111]
+
+PHASE 1: 5G chain regression (targets: {0.5: -10435.0, 0.578: -10476.26, 0.65: -10491.38, 0.75: -10490.47, 0.9: -10465.16})
+  p=0.500:  -10435.00  (5G  -10435.00, d=-0.002) OK  [0.0 min]
+  p=0.578:  -10476.26  (5G  -10476.26, d=+0.004) OK  [0.0 min]
+  p=0.650:  -10491.38  (5G  -10491.38, d=-0.001) OK  [0.0 min]
+  p=0.750:  -10490.47  (5G  -10490.47, d=-0.000) OK  [0.0 min]
+  p=0.900:  -10465.16  (5G  -10465.16, d=+0.001) OK  [0.0 min]
+G9U-0a: PASS
+
+PHASE 2: 5M dv-ON regressions (targets: {'BE': -12152.49, 'p065': -12184.17})
+  p=0.50:  -12152.49 (5M BE    -12152.49, d=-0.002)
+  p=0.65:  -12184.17 (5M p065  -12184.17, d=-0.001)
+G9U-0b: PASS  [0.1 min]
+
+PHASE 3: injection power gate (p_true 0.62 / 0.70; rng 202)
+  p_true=0.62: rec 0.6272 (sigma_curv 0.0351, err +0.0072, bar 0.070) OK  [0.1 min]
+  p_true=0.70: rec 0.6642 (sigma_curv 0.0193, err -0.0358, bar 0.039) OK  [0.2 min]
+G9U-2: PASS
+
+PHASE 4: plain-hier fine profile (23 pts)
+  p=0.52:  -10448.81  [0.2 min]
+  p=0.54:  -10460.20  [0.2 min]
+  p=0.56:  -10469.50  [0.2 min]
+  p=0.58:  -10476.96  [0.2 min]
+  p=0.60:  -10482.79  [0.2 min]
+  p=0.61:  -10485.15  [0.2 min]
+  p=0.62:  -10487.17  [0.2 min]
+  p=0.63:  -10488.88  [0.2 min]
+  p=0.64:  -10490.28  [0.2 min]
+  p=0.65:  -10491.40  [0.2 min]
+  p=0.66:  -10492.26  [0.2 min]
+  p=0.67:  -10492.87  [0.2 min]
+  p=0.68:  -10493.25  [0.2 min]
+  p=0.69:  -10493.41  [0.2 min]
+  p=0.70:  -10493.36  [0.2 min]
+  p=0.71:  -10493.12  [0.2 min]
+  p=0.72:  -10492.70  [0.2 min]
+  p=0.74:  -10491.38  [0.2 min]
+  p=0.76:  -10489.46  [0.2 min]
+  p=0.78:  -10487.04  [0.3 min]
+  p=0.80:  -10484.18  [0.3 min]
+  p=0.82:  -10480.94  [0.3 min]
+  p=0.84:  -10477.38  [0.3 min]
+plain minimum: p-hat = 0.6927 (sigma_curv 0.0313)
+
+PHASE 5: vertical-hardened fine profile (23 pts, PRIMARY)
+  p=0.52:  -12163.91  [0.3 min]
+  p=0.54:  -12171.33  [0.3 min]
+  p=0.56:  -12176.97  [0.3 min]
+  p=0.58:  -12181.17  [0.3 min]
+  p=0.60:  -12184.03  [0.3 min]
+  p=0.61:  -12185.04  [0.3 min]
+  p=0.62:  -12185.78  [0.3 min]
+  p=0.63:  -12186.28  [0.3 min]
+  p=0.64:  -12186.54  [0.3 min]
+  p=0.65:  -12186.58  [0.3 min]
+  p=0.66:  -12186.42  [0.3 min]
+  p=0.67:  -12186.07  [0.3 min]
+  p=0.68:  -12185.53  [0.3 min]
+  p=0.69:  -12184.83  [0.3 min]
+  p=0.70:  -12183.97  [0.3 min]
+  p=0.71:  -12182.96  [0.3 min]
+  p=0.72:  -12181.81  [0.4 min]
+  p=0.74:  -12179.14  [0.4 min]
+  p=0.76:  -12176.01  [0.4 min]
+  p=0.78:  -12172.48  [0.4 min]
+  p=0.80:  -12168.61  [0.4 min]
+  p=0.82:  -12164.45  [0.4 min]
+  p=0.84:  -12160.03  [0.4 min]
+vertical minimum: p-hat = 0.6471 (sigma_curv 0.0312)
+G9U-1 interior minima: PASS
+
+PHASE 6: bootstrap (40 paired reps, rng 53, warm-lite)
+  per-rep grid: [0.59, 0.62, 0.65, 0.68, 0.71]
+  rep 5/40: running mean 0.6204 sd 0.0520 edges 4  [0.5 min]
+  rep 10/40: running mean 0.6310 sd 0.0555 edges 8  [0.6 min]
+  rep 15/40: running mean 0.6398 sd 0.0571 edges 12  [0.8 min]
+  rep 20/40: running mean 0.6488 sd 0.0569 edges 16  [0.9 min]
+  rep 25/40: running mean 0.6498 sd 0.0564 edges 20  [1.0 min]
+  rep 30/40: running mean 0.6438 sd 0.0567 edges 25  [1.1 min]
+  rep 35/40: running mean 0.6388 sd 0.0545 edges 28  [1.2 min]
+  rep 40/40: running mean 0.6387 sd 0.0534 edges 31  [1.3 min]
+  AMENDMENT A-widen FIRED (31 edge hits > 8): widening to +/- 0.09 step 0.03 for edged reps
+  widened rep 0: 0.5600  [1.4 min]
+  widened rep 1: 0.5877  [1.4 min]
+  widened rep 2: 0.7400  [1.4 min]
+  widened rep 4: 0.5600  [1.5 min]
+  widened rep 6: 0.5897  [1.5 min]
+  widened rep 7: 0.5600  [1.5 min]
+  widened rep 8: 0.7400  [1.6 min]
+  widened rep 9: 0.7400  [1.6 min]
+  widened rep 10: 0.5600  [1.6 min]
+  widened rep 11: 0.7400  [1.7 min]
+  widened rep 12: 0.7400  [1.7 min]
+  widened rep 14: 0.5600  [1.7 min]
+  widened rep 15: 0.7127  [1.8 min]
+  widened rep 16: 0.7211  [1.8 min]
+  widened rep 17: 0.7400  [1.8 min]
+  widened rep 18: 0.5600  [1.8 min]
+  widened rep 20: 0.7400  [1.9 min]
+  widened rep 21: 0.7400  [1.9 min]
+  widened rep 22: 0.5600  [1.9 min]
+  widened rep 23: 0.5600  [2.0 min]
+  widened rep 25: 0.5600  [2.0 min]
+  widened rep 26: 0.5834  [2.0 min]
+  widened rep 27: 0.7400  [2.1 min]
+  widened rep 28: 0.5600  [2.1 min]
+  widened rep 29: 0.5600  [2.1 min]
+  widened rep 32: 0.5600  [2.2 min]
+  widened rep 33: 0.5600  [2.2 min]
+  widened rep 34: 0.5980  [2.2 min]
+  widened rep 35: 0.5600  [2.2 min]
+  widened rep 37: 0.7090  [2.3 min]
+  widened rep 38: 0.5600  [2.3 min]
+bootstrap: p-hat SD = 0.0746; percentiles 16/50/84 = [0.56, 0.6148, 0.74]; edge hits 31/40
+G9U-3: AMENDED (A-widen applied, logged)
+
+====================================================================
+PRIMARY (vertical-hardened + bootstrap): p-hat = 0.6471 +/- 0.0746
+  (curvature sigma 0.0312; plain-hier p-hat = 0.6927; split +0.0456)
+
+gate-resolved inversion table (r = 2(p-1/2)/g; gamma dial):
+  gate      g        r-hat    sigma_r  gam_inst   gam_wind  
+  fid       0.7536   0.3904   0.1979   1.3499     2.5489    
+  maxclust  0.8681   0.3389   0.1718   1.2428     2.3049    
+  noclust   0.9518   0.3091   0.1567   1.1791     2.1673    
+
+band distances (fiducial, in sigma_p): one-swing +0.81 | floor -0.32 | full-avg -0.55
+
+VERDICT LETTER: U-POWER
+pre-signed credence cell: HOLD 12; sigma_p booked as the instrument spec
+anomaly-real 53 UNTOUCHED (pre-signed, all cells)
+
+gates: G9U-0a PASS | G9U-0b PASS | G9U-1 PASS | G9U-2 PASS | G9U-3 AMENDED | G9U-4 PASS
+total wall-clock 2.3 min

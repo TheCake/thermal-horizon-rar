@@ -503,6 +503,10 @@ CHECKS = [
      'data/stage9t_resonance.txt'),
     ('mech-9t-resonance', 'fiducial-gate galaxy band: p in '
      '[0.6711, 0.6884]', 'data/stage9t_resonance.txt'),
+    ('gal-9u-ptail', 'p-hat = 0.6471 +/- 0.0746',
+     'data/stage9u_gammameter.txt'),
+    ('gal-9u-ptail', 'VERDICT LETTER: U-POWER',
+     'data/stage9u_gammameter.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

@@ -13181,6 +13181,95 @@ completed only ONE swing. If it really is one swing, the sky should
 read 0.59 where it reads 0.65. Counting the swings is now the whole
 game — and either answer teaches us something enormous.
 
+## Stage 9U (2026-08-07) — THE GAMMA METER: the swing-count question meets its error bar, and the error bar wins
+
+**Question.** Where is the galaxy tail exponent p CONTINUOUSLY, and with
+what σ? The three pre-registered landing bands (fiducial gate g = 0.7536):
+one-swing 0.5866, theorem floor 0.6711, full-averaging 0.6884 — 4σ apart
+if σ_p ≤ 0.02 (the 9T kill requirement). Pre-reg 21376aa (bands, gates,
+verdict letters, credence map all locked before any run).
+
+**Instrument.** ν_p fine profile (23 points, 0.01 steps through the band
+region), 5G plain-hier machinery verbatim + 5M/6J vertical-hardened
+machinery verbatim (primary per the 7I freeze); injection power gate
+(mock skies at p_true = 0.62/0.70 from the fitted model, rng 202);
+40-rep paired galaxy bootstrap (rng 53, 6J warm-lite spec), per-rep
+parabolic minimum. Gates: G9U-0a 5/5 chain regression on 5G (d ≤ 0.004),
+G9U-0b both 5M dv-ON regressions (d ≤ 0.002), G9U-1 interior minima,
+G9U-2 injections recovered (+0.007/−0.036, within bars), G9U-4
+arithmetic rows regress to 9S/9T exactly. G9U-3 AMENDED per the
+pre-authorized A-widen clause: 31/40 reps hit the ±0.06 per-rep grid
+edge; widened to ±0.09, the minima STILL pile at the widened edges.
+
+**Result (pre-signed letter U-POWER).**
+- PRIMARY: p̂ = 0.6471 ± 0.0746 (bootstrap SD, CLIPPED at the
+  instrumented window — honest quote σ_p ≥ 0.075; curvature σ 0.0312;
+  percentiles 16/50/84 = 0.56/0.615/0.74 = edge-piled).
+- Plain-hier co-read: p̂ = 0.6927 (split +0.046 < 2σ_p — no flag; noted:
+  plain sits ON the full-averaging prediction, vertical below the floor;
+  at current power this is noise).
+- Band distances: one-swing +0.81σ, floor −0.32σ, full-avg −0.55σ.
+  ALL three bands inside 1σ. The swing-count question is UNRESOLVABLE
+  at SPARC-hier grade: σ_p ≥ 0.075 vs the 0.02 requirement (3.7×).
+- Mechanism of the power loss (the finding): the per-rep tail wells are
+  ~7–10 lnL deep over ±0.09 — galaxy resampling tilts them by more —
+  the tail LOCATION is realization-dominated. The 3A lesson (realization
+  scatter > model gaps), recurring on the galaxy side.
+- γ-dial central inversions (lean-grade only): fid r̂ = 0.390 ± 0.198 →
+  γ_inst = 1.35 rad, γ_window = 2.55 rad. Consistency: the 9T boost-
+  witness band (γ ≈ 0.76–1+) overlaps the tail-γ̂ — two channels, one
+  swing count, consistent at lean grade.
+- Caveat disclosed: warm-lite location noise may contribute to the
+  scatter; even a 2× overestimate leaves σ_p ~2× the bar. U-POWER robust.
+
+**Error-calibration dividends (honest updating, both directions):**
+1. The 9T "honest tension" (r̂ = 0.398 < floor 0.454) DISSOLVES —
+   at measured error the floor is −0.32σ away. It was a point-artifact
+   of the 5G grid. The one armed kill against the resonance reading
+   evaporates at measured resolution (this is NOT vindication — one-swing
+   is equally alive at +0.81σ). mech-9t-resonance row annotated.
+2. The 9S bound "r ≥ 0.315 in every gate treatment" demotes to
+   point-conditional: error-calibrated r(noclust) = 0.309 ± 0.157.
+   r > 0 survives at ~2.0σ (p = ½ is 1.97σ below p̂) — the
+   far-off-resonance disfavor softens to lean-grade. mech-9s-detuning
+   → CO-QUOTED (pointer gal-9u-ptail).
+3. The 5G coarse point (0.65) was fine — now it has its error bar,
+   and the error bar is the result.
+
+**Credence (pre-signed cell):** U-POWER → bath-mechanism conditional
+HELD 12. anomaly-real 53 UNTOUCHED. No review round (no credence move,
+nothing verdict-bearing to red-team; pre-signed map executed
+mechanically).
+
+**What the instrument spec buys.** σ_p ≥ 0.075 is now the number every
+successor must beat by ~4×: (i) the P1 VOID ASYMPTOTE is promoted to
+the LIVE r-meter (p_void = ½ + r/2 is gate-free — no g-division of the
+signal — and the 9T kill-band [0.727, 0.750] sits at the ceiling);
+(ii) anchored-subsample or DR4-era tails; (iii) the finite-γ p(γ) dial
+is built and waiting in the stage (inversions are one line once σ_p
+drops). O5-AVERAGING stands OPEN with its instrument built and its
+data-grade measured.
+
+Ledger: +gal-9u-ptail (190 rows); worldtable 232 tokens six gates PASS.
+
+PLAIN VERDICT: NEEDS DIFFERENT DATA — the γ-meter is built, gated, and
+validated; SPARC-hier cannot power it. The honest products: the first
+tail error bar (σ_p ≥ 0.075), one tension dissolved (9T's), one bound
+demoted (9S's), and the void channel promoted to the sharpest live
+successor.
+
+ELI12: We built the swing-counter and pointed it at the sky. The dial
+works — we tested it by hiding fake skies inside it and it found them.
+But when we shook the galaxy list (leave some out, count others twice —
+the honest way to ask "how sure are you?"), the needle swung across the
+WHOLE dial. The sky's answer is 0.65 ± 0.07 — and the three candidate
+answers (0.59, 0.67, 0.69) all fit inside that wobble. Nobody gets to
+win yet. The good news: the wobble number itself tells us exactly what
+data CAN answer the question — emptier patches of sky, where the signal
+is biggest and the dial doesn't divide it down. And two of our older
+claims that leaned on the needle's exact position got honestly softened
+today, because now we know how much the needle wobbles.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

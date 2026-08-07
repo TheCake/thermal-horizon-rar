@@ -230,6 +230,21 @@ completed only ~one Rabi radian (γ ~ 1, the un-averaged regime), the
 tail should read p ≈ 0.587 — a γ-measurement decides between ~0.59 and
 the ~0.69 band; the measured 0.65 (grid-limited) sits between them.*
 
+*Annotation 2026-08-07 close (Stage 9U, the γ-meter; no status change):
+the in-catalog γ-measurement is POWER-LIMITED — p̂ = 0.6471 ± 0.0746
+(vertical-hardened primary, 40-rep galaxy bootstrap, SD clipped at the
+instrumented window: honest σ_p ≥ 0.075 vs the 0.02 requirement). All
+three bands sit inside 1σ (one-swing +0.81σ, floor −0.32σ, full-avg
+−0.55σ): the ROUND-17 kill did NOT fire, and neither reading is
+vindicated — SPARC-hier cannot resolve the swing count (per-rep tail
+wells ~7–10 lnL; location realization-dominated). Calibration
+propagated: the 9S in-catalog bound r ≥ 0.315 is point-conditional
+(error-calibrated r > 0 at ~2σ); p_void ≥ 0.66 above softens
+accordingly. CONSEQUENCE: this void channel is now the LIVE r-meter —
+gate-free (the signal is not divided by g), with the kill-band at the
+ceiling — and carries the O5-AVERAGING question alone until anchored/
+DR4-era tails or a void-RAR sample exist.*
+
 ### P2 — the environmental ordering p(e_N)
 Weaker ambient → sharper tail (p rises toward 0.72–0.75 in voids; galaxy-population
 median 0.689). In-sample version WITHDRAWN (correction #14: gate heterogeneity, not
