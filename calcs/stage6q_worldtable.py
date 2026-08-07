@@ -476,6 +476,15 @@ CHECKS = [
     ('bin-9p-massmodel', '[seed 31] G9P-0 identity Q1: max|dT| = '
      '0.00e+00, E[fpm] 2.2058 vs arch 2.2058 -> PASS',
      'data/stage9p_massmodel.txt'),
+    ('mech-9q-onemode', 'pol=2 sphere N = 4.113e-03  PASS  <- central',
+     'data/stage9q_lemmas.txt'),
+    ('mech-9q-frozen', 'min = 30.2 (UGC09133: R = 108.3 kpc, '
+     'V = 229.0 km/s), p5 = 73.0, median = 239.6',
+     'data/stage9q_lemmas.txt'),
+    ('mech-9q-frozen', 'Omega/H > sqrt(3*Om_L) = 1.4491',
+     'data/stage9q_lemmas.txt'),
+    ('mech-9q-ceiling', 'value at resonance - 1/2 = 0',
+     'data/stage9q_lemmas.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

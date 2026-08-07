@@ -12870,6 +12870,122 @@ number pointed at the wrong paper by the same author — fixed too.
 
 NO credence movement (paper round; anomaly-real 53).
 
+## Stage 9Q + REVIEW ROUND 16 (2026-08-07) — the three-lemma round: the mechanism seam gets its first derivation-grade tests
+
+Pre-reg 471bef4 (bars, gates, convention scans, credence map, and the
+disclosure block locked before execution; the author authorized the
+Opus red-team in the same message that called the round). No sky
+re-fits anywhere; SPARC entered only as a table of measured orbital
+frequencies (loader verbatim, census 153/2700/149 gated).
+
+Executed (all six gates PASS first run):
+- L1 ONE-MODE: the dS bath at its own temperature T_dS = 2.76e-30 K
+  holds 2.1e-3..7.9e-3 thermal quanta in the horizon volume (central
+  4.1e-3; a 300 K 1 m^3 lab cavity holds 5.5e14); the thermal
+  wavelength exceeds R_H in all three conventions (2*pi exact / 7.95 /
+  13.99); the dressing frequency x*H/2pi sits below every non-soft
+  scale for x <= 1 (worst ratio 0.159), and where a propagating mode
+  first exists (x* >= 2pi) the boost is already < 0.2%. Bars 5/5.
+- L2 FROZEN: sympy-exact SdS theorem — kappa^2 = Omega^2 - Lambda*c^2,
+  so STABLE circular orbits need Omega/H > sqrt(3*Om_L) = 1.449: no
+  bound system can reach the Markovian regime. Measured floors: SPARC
+  min Omega/H = 30.2 (UGC09133 outermost point, 108 kpc), p5 = 73,
+  median 240; slowest binary bracket 5.0e3. The largest bound
+  structures (clusters 5.7, Local Group 2.1) populate the theorem's
+  edge, as they must. Retrodiction: the rate-based analog classes
+  6K/6M/6N implemented the regime this forbids — their failures were
+  forced, not unlucky.
+- L3 CEILING: one-period average = g^2/(2(g^2+delta^2)) exact; = 1/2
+  at resonance; monotone down in detuning. Capped CONSISTENT-toy by
+  pre-registration, upgrade rule assigned to the red-team.
+
+ROUND 16 (Opus red-team; verbatim in REVIEW-ROUND16-OPUS.md,
+uncommitted by standing rule): he re-derived every number
+independently — "the arithmetic is clean throughout" — and attacked
+the inferences. Adopted in full:
+- A2/A3 (the sharp ones): counting BULK thermal quanta does not by
+  itself deliver "one BOUNDARY degree of freedom" — but his own patch
+  closes the availability question: horizon multipoles l >= 1 sit at
+  sqrt(l(l+1))*H, gapped far above omega_dress <= H/2pi, so exactly
+  ONE soft collective coordinate is available in the anomaly regime;
+  the ~1e122 horizon microstates are the RESERVOIR that sets that
+  coordinate's occupation, not 1e122 exchange partners (his image: a
+  drumhead has 1e23 atoms and one fundamental). With the patch the
+  honest label is: the single-quantum-mode REGIME is derivation-grade;
+  M = 1 itself is a geometric CONSISTENCY CONDITION — the measured
+  number stays anchored by 6Y's negative-binomial rejection. L1 letter
+  accordingly DOWNGRADED from the bars-mechanical DERIVED-toy to
+  CONSISTENT-toy (the pre-reg's down-only rule executing as designed).
+- A4/A5: L2 verified by his own hand (SdS/Kottler exact, not an
+  approximation; Einstein-Straus makes pure-Lambda the correct local
+  tide; H0-vs-H_Lambda ~15% bookkeeping noted). His correction
+  STRENGTHENS the lemma: the KMS correlation time of a thermal bath is
+  tau_B ~ hbar/k_B T = 2pi/H, so our 1/H was conservative — under the
+  correct value even the Local-Group edge freezes (tau_B*Omega ~ 13).
+  Adopted wording: the theorem supplies the universal O(1) floor; the
+  STRONG freezing (30-5000x) is data-carried. L2 DERIVED stands.
+- A6/A7: mean-vs-other-functionals selection is patchable (secular
+  orbit-averaging + the force entering linearly in n); the 6O/6P
+  reconciliation is certified logically sound (frozen = a statement
+  about DYNAMICS, not a classical random draw; a thermal state's
+  P(n >= L) is a deterministic property of the state), with the
+  mean-field-occupation caveat now stated. 7E's 0.480 flagged as a
+  driven-dissipative anchor: it confirms the VALUE, not the mechanism.
+- A9 (the round's finding, UNPATCHED): nothing establishes that the
+  operative soft-mode exchange is RESONANT. Off resonance the weight
+  is g^2/(2(g^2+delta^2)) < 1/2, with generic detuning
+  delta ~ (x_int - x_amb)*H/2pi — field-configuration-dependent. The
+  1/2 in the lending law is inherited from the 6X toy's resonant
+  construction (validated by fit, not derived). Per the pre-stated
+  rule the L3 upgrade does NOT fire.
+- NEW NAMED QUESTION (O5-detuning): the sky MEASURES the 1/2 prefactor
+  (c1 = 1/2 at ~7 sigma from zero; 7E 0.480). Either the physical
+  exchange is resonant (delta << g — needs a mechanism), or 1/2 is
+  over-determined some other way. A detuning-resolved lending law
+  beta(delta) is the falsifiable successor instrument — the sharpest
+  new mechanism question since 6Y.
+
+Scouts (scout-grade, no priority claims printed): the mode-counting ->
+one-mode statement and the frozen-bath-for-bound-orbits argument both
+NOT FOUND / NEAR-MISS; the SdS stability bound is known territory
+(Nandra, Lasenby & Hobson 2012, MNRAS 422, 2931 — on-topic; formula
+not verbatim-verified there; ours is sympy-exact); the T_dS <->
+horizon-wavelength folklore is standard with no single canonical
+source. Parallel scout: GD replication (TODO 28) is EXECUTABLE —
+Oh et al. 2015 (VizieR J/AJ/149/180; 26 dwarfs, ~8-10 slow, full
+baryonic decomposition) is the starting catalog; Iorio+2017
+supplements.
+
+CREDENCE (map executed mechanically): with L1 at CONSISTENT-toy and L2
+at DERIVED, the map's exactly-one-derived cell fires ->
+bath-mechanism conditional HOLDS at ~8%. No 12, no 15 — the review
+traded the credence bump for label honesty, the right trade.
+anomaly-real 53 UNTOUCHED (mechanism-side round, pre-stated).
+
+Ledger: +mech-9q-onemode, +mech-9q-frozen, +mech-9q-ceiling (185
+rows); worldtable +4 tokens, six gates PASS.
+
+PLAIN VERDICT: L2 SUCCESS (a real theorem, reviewer-verified, now with
+the correct bath time constant); L1 SUCCESS-WITH-RELABEL (the regime
+numbers stand; the M=1 label honestly demoted to consistency
+condition); L3 NEEDS REFINEMENT (the detuning question is the named
+target).
+
+ELI12: We tried to turn three of our working guesses into proofs.
+(1) The universe's heat-glow is so cold that its typical "particle of
+heat" is bigger than the visible universe — so a galaxy talking to it
+talks to ONE big slow thing, not a crowd. Proven at toy level — but
+our checker made us admit this shows one partner is AVAILABLE, not
+that our measured "one partner" number follows from it. (2) Nothing
+that orbits can circle slower than the universe's own beat — a real
+theorem, checker-approved, and his correction made it stronger. The
+bath can never look like fast noise to an orbit; it always looks
+frozen. That is why all our earlier noise-style lab models failed —
+they had to. (3) The "half" in our sharing rule is only guaranteed
+when the two humming modes are perfectly in tune, and nobody has shown
+they are. That gap is now our sharpest open question: the sky keeps
+measuring exactly one half — WHY?
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

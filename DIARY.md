@@ -9,6 +9,49 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-07 (+5) — 9Q the lemma round + ROUND 16: the red-team earned its keep
+
+Filip opened the theory gate ("go for it even via your intuition —
+though of course measure everything") and explicitly authorized Opus
+idea-bouncing agents. Shape of the round: pre-reg 471bef4 with
+bars/map/disclosure BEFORE execution, all six gates first-run PASS,
+then the adversarial review, then mechanical map application.
+
+What the next me should know:
+- The one-mode arithmetic is real and easy to re-derive (lambda_mean =
+  2pi*R_H EXACT; ~4e-3 thermal quanta per horizon volume; a lab cavity
+  holds 5.5e14). But do NOT quote L1 as deriving M=1 — ROUND 16's
+  relabel is binding: regime = derived, M=1 = consistency condition
+  anchored by 6Y's counting statistics. Patches to keep using: l >= 1
+  horizon multipoles are gapped at sqrt(l(l+1))*H above omega_dress;
+  the ~1e122 microstates are the reservoir setting ONE collective
+  coordinate's occupation, not 1e122 partners.
+- L2 is the round's keeper: kappa^2 = Omega^2 - Lambda*c^2 (sympy
+  exact), threshold 1.449, SPARC measured floor 30.2, and the
+  reviewer's OWN strengthening tau_B = 2pi/H (KMS time; our 1/H was
+  conservative). Quote it as "the theorem gives the O(1) floor; the
+  data give the 30-5000x freezing." The 6K/6M/6N analog failures are
+  now RETRODICTED — never build a rate-based analog again.
+- Trap fingerprint this round: a bars-mechanical verdict can overreach
+  the lemma SENTENCE. My pre-reg said DERIVED-toy iff bars pass — the
+  bars were about counts, the sentence claimed M=1. Next derivation
+  pre-reg: pin the verdict letter to the CLAIM, not to the sub-checks.
+- O5-detuning is the new sharpest mechanism question (his A9): the 1/2
+  prefactor is only guaranteed at resonance; generic detuning
+  (x_int - x_amb)*H/2pi would make it field-dependent; the sky
+  measures 1/2 anyway (c1 at ~7 sigma, 7E 0.480). A detuning-resolved
+  lending law beta(delta) is the successor instrument. Do not re-open
+  rate-based analogs to answer it.
+- Credence: bath-mechanism conditional ~8 HELD by the map's
+  exactly-one-derived cell (L1 downgraded, L2 derived). No wiggle
+  taken; the map's ambiguity clause was NOT needed. anomaly-real 53
+  untouched all day.
+- GD replication (TODO 28) is data-READY: Oh+2015 VizieR J/AJ/149/180
+  first (26 dwarfs, ~8-10 slow, full baryonic decomposition),
+  Iorio+2017 supplement. Next session can build the loader straight
+  onto the 8S-c dial instrument.
+- Round-16 file: REVIEW-ROUND16-OPUS.md, uncommitted like all of them.
+
 ## 2026-08-06 (night, +4) — P2 figures + ROUND 15 + the reference pass; both papers now referee-hardened
 
 Figures: calcs/paper2_figures.py, seven gates PASS first run. The

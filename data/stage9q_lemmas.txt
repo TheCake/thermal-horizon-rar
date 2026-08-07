@@ -1,0 +1,106 @@
+==============================================================================
+STAGE 9Q -- THE THREE-LEMMA ROUND (one-mode / frozen / ceiling)
+==============================================================================
+G9Q-0 a0 conventions: cH/2pi = 1.0831e-10 vs canonical 1.2e-10 (rel 0.097) -> PASS
+
+LEMMA 1 -- THE ONE-MODE THEOREM (toy grade)
+------------------------------------------------------------------------------
+T_dS = hbar*H/(2 pi kB) = 2.759e-30 K;  R_H = c/H = 1.321e+26 m
+  B-L1a mean hbar*c/kT     lambda = 8.298e+26 m  lambda/R_H =   6.28  PASS
+  B-L1a Wien lambda-peak   lambda = 1.050e+27 m  lambda/R_H =   7.95  PASS
+  B-L1a Wien nu-peak       lambda = 1.848e+27 m  lambda/R_H =  13.99  PASS
+  (identity: hbar*c/kT_dS = 2*pi*R_H exactly -- sympy below)
+  B-L1b continuum quanta count N = pol*(zeta3/pi^2)*(kT/hbar c)^3*V:
+    pol=1 sphere N = 2.057e-03  PASS
+    pol=1 cube   N = 3.928e-03  PASS
+    pol=2 sphere N = 4.113e-03  PASS  <- central
+    pol=2 cube   N = 7.856e-03  PASS
+    contrast: a 300 K, 1 m^3 lab cavity holds N ~ 5.5e+14 photons
+  B-L1c/d dressing mode vs lowest cavity mode (omega_dress(x) = x*H/2pi):
+    omega_1 = H      ratio(x=1) = 0.1592 PASS   crossover x* =   6.28, n_BE(x*) = 1.87e-03 PASS
+    omega_1 = pi*H   ratio(x=1) = 0.0507 PASS   crossover x* =  19.74, n_BE(x*) = 2.68e-09 PASS
+    omega_1 = 2pi*H  ratio(x=1) = 0.0253 PASS   crossover x* =  39.48, n_BE(x*) = 7.16e-18 PASS
+    reading: for every MOND-regime system the dressing frequency
+    sits BELOW the first propagating mode; where a propagating
+    mode first appears (x* >= 2pi) the boost is already < 0.2%.
+    (cross-ref: the 6R 'invisible n_BE(2pi) floor' = the same
+    e^-2pi suppression class as the quanta count above.)
+  B-L1e in-band standard-mode count dN = pol*V*om^2*dOm/(2 pi^2 c^3):
+    pol=2 sphere dOm=H/2pi  dN = 1.711e-03  PASS
+    pol=2 sphere dOm=H      dN = 1.075e-02  PASS  <- central
+    pol=2 sphere dOm=2pi*H  dN = 6.755e-02  PASS
+    (full 12-cell scan max printed in the gate line below)
+    scan max (pol=2, cube, dOm=2pi*H) = 1.290e-01
+  L1 bars: a:PASS  b:PASS  c:PASS  d:PASS  e:PASS
+  L1 VERDICT: DERIVED-toy
+  data legs (cited, not recomputed): 6Y M=1 counting theorem
+  [mech-reservoir]; 7D vacuum-share annihilation +556 [galfn-qcl].
+
+LEMMA 2 -- FROZEN-BATH UNIVERSALITY
+------------------------------------------------------------------------------
+  B-L2a sympy: kappa^2 - (Omega^2 - Lambda*c^2) = 0;
+        threshold sqrt(Lambda*c^2)|_{Lambda=3 Om_L H^2/c^2} - sqrt(3 Om_L)*H = 0  -> PASS
+  STABLE circular orbits in SdS require Omega/H > sqrt(3*Om_L) = 1.4491
+  (existence alone: Omega/H > sqrt(Om_L) = 0.8367; pure-dS future: sqrt(3) = 1.7321)
+  conservativeness: (i) interior mean matter density only deepens
+  binding; (ii) the measured low-g boost RAISES Omega at fixed r;
+  (iii) eccentric orbits must fit inside the same potential
+  barrier (extension note, not proven here).
+  G9Q-4 SPARC census: kept = 153, points = 2700, contributing = 149 -> PASS
+  B-L2b SPARC Omega/H over 2700 points: min = 30.2 (UGC09133: R = 108.3 kpc, V = 229.0 km/s), p5 = 73.0, median = 239.6 -> PASS
+  B-L2c binary brackets (Omega = sqrt(G M / s^3), Newtonian =
+        conservative):
+    slowest bracket 0.4 Msun @ 50 kAU    Omega/H = 4.962e+03  -> PASS
+    2.0 Msun @ 50 kAU                    Omega/H = 1.110e+04
+    catalog-typical 1.6 Msun @ 10 kAU    Omega/H = 1.110e+05
+  observations (no bar): largest bound structures sit AT the edge:
+    cluster outskirts 1e15 Msun @ 3 Mpc  Omega/H = 5.70 (threshold 1.45)
+    Local-Group scale 5e12 Msun @ 1 Mpc  Omega/H = 2.09 (threshold 1.45)
+  retrodiction (cited): the rate-based analog classes 6K/6M/6N
+  implemented the Markovian regime this lemma forbids for bound
+  systems; their failures were forced, not unlucky.
+  L2 bars: a:PASS  b:PASS  c:PASS
+  L2 VERDICT: DERIVED
+
+LEMMA 3 -- THE 1/2 CEILING (resonant two-mode exchange)
+------------------------------------------------------------------------------
+  B-L3a sympy: one-period average - g^2/(2(g^2+delta^2)) = 0;
+        value at resonance - 1/2 = 0; d(avg)/d(delta) = -g^2*delta/(g^2+delta^2)^2 (residual 0, subtracted term positive: True) -> PASS
+  reading: 1/2 is the resonant CEILING -- any detuning only
+  lowers the transferred share. Anchors (cited, not recomputed):
+  6X per-Fock equal-time-sharing 0.998-1.000 [mech-borrow];
+  7E L=2 prefactor 0.480 [mech-platform].
+  SELECTION argument (argument-grade, the red-team target): the
+  frozen condition (L2) removes relaxation from every bound
+  system's exchange window, so the dressing weight is the secular
+  (time-averaged) share of the coherent oscillation -- a rate
+  (golden-rule) weight would require the Markovian regime L2
+  excludes; a max-transfer weight would require phase-locked
+  preparation the quasi-static setting does not provide.
+  L3 VERDICT: CONSISTENT-toy (capped; ROUND-16 upgrade rule pending)
+
+GATES
+------------------------------------------------------------------------------
+G9Q-1 sympy exact set: lambda_mean - 2 pi R_H = 0; x-identity residual = 0; kappa^2 chain OK; L3 identities OK -> PASS
+G9Q-2 T_dS           float 2.758926e-30 vs mp 2.758926e-30 rel 2.2e-16
+G9Q-2 lam_wien/R_H   float 7.952769e+00 vs mp 7.952769e+00 rel 3.3e-16
+G9Q-2 N_central      float 4.113432e-03 vs mp 4.113432e-03 rel 4.4e-16
+G9Q-2 n_BE(2pi)      float 1.870937e-03 vs mp 1.870937e-03 rel 2.2e-16
+G9Q-2 sqrt(3*Om_L)   float 1.449138e+00 vs mp 1.449138e+00 rel 1.1e-16
+G9Q-2 1/(2pi)        float 1.591549e-01 vs mp 1.591549e-01 rel 0.0e+00
+G9Q-2 -> PASS
+G9Q-3 convention scans printed with per-cell verdicts -> PASS
+G9Q-5 ledger legs: mech-reservoir=CURRENT; galfn-qcl=CURRENT; mech-borrow=CURRENT; mech-platform=CURRENT -> PASS
+
+SUMMARY
+------------------------------------------------------------------------------
+L1 ONE-MODE:  DERIVED-toy
+L2 FROZEN:    DERIVED
+L3 CEILING:   CONSISTENT-toy (capped; ROUND-16 upgrade rule pending)
+GATES: G9Q-0:PASS  G9Q-1:PASS  G9Q-2:PASS  G9Q-3:PASS  G9Q-4:PASS  G9Q-5:PASS  -> ALL PASS
+
+CREDENCE MAP (pre-signed, applied at booking): anomaly-real 53
+NO MOVE. bath-mechanism conditional: L1 DERIVED-toy + L2 DERIVED
+-> 12; + L3 >= CONSISTENT-toy + ROUND-16 no-unpatched-hole -> 15
+(cap); one-of-two -> hold 8; B-L2a false -> 5; L1 FAILED -> 6.
+Final number booked in NOTES after ROUND-16.

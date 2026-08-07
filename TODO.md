@@ -1105,7 +1105,11 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     other public resolved-dwarf rotation curves through the 8S-c dial
     instrument. Either outcome pays (survives = discovery-track;
     dies = public retraction = credibility). Scout data availability
-    first (Haiku).
+    first (Haiku). SCOUTED 2026-08-07: READY — Oh et al. 2015 (VizieR
+    J/AJ/149/180; 26 dwarfs, ~8–10 slow, full baryonic decomposition)
+    = the starting catalog; Iorio+2017 (LITTLE THINGS 3D) supplement;
+    LVHIS / Flynn-2026 Zenodo = kinematics-only extras. Next concrete
+    step: the loader + the 8S-c dial on Oh+15.
 29. **DR4 readiness** (highest-upside): freeze the DR4 kill-condition
     subset from PREDICTIONS.md into one section; build DR4 loaders on
     EDR3-shaped mocks; day-one analysis plan written before the data
@@ -1113,8 +1117,14 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
 30. **Paper 3 prerequisites** (author-deferred until 1-2 ship + seam
     work): (a) the O5 seam — horizon-side derivation of the s² gate
     (6X did the per-leg factor at toy grade; missing = dS reservoir
-    identification + multimode); (b) the ceiling-½ reading (two data
-    points: 6X resonant sharing + 7E prefactor 0.480); (c) the 7F
+    identification + multimode; 9Q/R16 2026-08-07 progress: one-mode
+    REGIME derived at toy grade + the frozen theorem DERIVED — the
+    remaining seam is sharper); (b) the ceiling-½ reading (two data
+    points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
+    resonant CEILING proven exact, but resonance itself un-established
+    — NEW blocking question O5-DETUNING: δ ~ (x_int−x_amb)·H/2π would
+    make the prefactor field-dependent, yet the sky measures ½; a
+    detuning-resolved lending law β(δ) is the successor); (c) the 7F
     negative-flank closure (the c₄ rung); (d) optional: cQED platform
     contact (7E translation exists — a lab test of the lending law is
     a collaboration seed, post-circulation).

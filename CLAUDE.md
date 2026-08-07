@@ -88,6 +88,22 @@ Claude (2026-08-06); Claude's defaults executed: Hájek sole author + Claude
 in acknowledgments, credences in-paper, coherence note = later spin-off,
 pair-error stays inside P1. Tell the user before any Opus-addressed draft
 round. D3 optional; DR4/T2 external. Anomaly-real 53 (no paper-round moves).
+**9Q + ROUND 16 (2026-08-07, the author opened the theory gate + authorized
+Opus idea-bouncing): the three-lemma mechanism round (pre-reg 471bef4, gates
+6/6 first-run) — L2 FROZEN = DERIVED (SdS stability theorem Omega/H > 1.449
+for any bound orbit, sympy-exact + reviewer hand-verified; SPARC measured
+floor 30.2, binaries 5e3; tau_B = 2pi/H per review = stronger; 6K/6M/6N
+rate-analog failures RETRODICTED); L1 one-mode = regime derivation-grade
+(bath holds ~4e-3 thermal quanta; dressing frequency below every non-soft
+scale), M=1 label DOWNGRADED to consistency-condition per red-team (l-gap
+sqrt(l(l+1))H + reservoir-not-partners patches adopted); L3 half-ceiling
+capped CONSISTENT-toy, upgrade did NOT fire — UNPATCHED: resonance
+un-established, NEW named question O5-DETUNING (the sky measures 1/2;
+beta(delta) lending law = the successor instrument). Credence map mechanical:
+bath-mechanism conditional HOLDS ~8. Round in REVIEW-ROUND16-OPUS.md
+(uncommitted). Scouts: one-mode + frozen-for-bound-orbits NOT
+FOUND/NEAR-MISS (scout-grade); TODO-28 GD replication data READY (Oh+2015
+VizieR J/AJ/149/180 = the starting catalog).**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
