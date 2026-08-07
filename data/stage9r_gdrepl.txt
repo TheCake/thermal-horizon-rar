@@ -1,0 +1,30 @@
+==============================================================================
+STAGE 9R -- GD-DIAL REPLICATION ON LITTLE THINGS (Oh+2015)
+==============================================================================
+G9R-M manifest (4 files vs committed sha256): PASS
+LT parse: table1 26, table2 26 galaxies; flagged (no-3.6um, excluded): 5 [DDO_43, DDO_46, DDO_47, F564-V3, HARO_29]
+rings: 768 total, matched 0.95, V_bar^2<=0 dropped 0.055; per-galaxy <50% matched -> dropped: none
+G9R-1 census: PASS
+GD census (Mgas > Mstar): GD 16 / non-GD 5 [DDO_216, IC_10, DDO_101, NGC_1569, NGC_3738]
+overlap vs SPARC: 7 [WLM=UGCA444, DDO_50=UGC4305, DDO_126=UGC7559, DDO_168=DDO168, NGC_2366=NGC2366, DDO_154=DDO154, DDO_87=UGC5918]
+LT-ONLY (verdict set): 14 [CVnIdwA, DDO_210, DDO_216, DDO_53, DDO_70, IC_10, IC_1613, UGC_8508, DDO_101, DDO_133, NGC_1569, HARO_36, DDO_52, NGC_3738]
+
+SPARC leg: 149 galaxies, GD 38 (verbatim selector)
+G9R-0 port regression: OFF-branch bit identity d = -1.14e-13 -> PASS; SPARC-GD OFF lam_hat = -1.542 vs -1.542 -> PASS
+G9R-W wiring license: SPARC-GD vertON under f-on-TOTAL wiring lam_hat = -1.168 (archived disk-wiring -1.31) -> LICENSED
+
+[ARM-V cut 0.10] LT-only census: 65 points / 7 galaxies
+G9R-P power [ARM-V]: true +0.97 s31 -> +0.547; true +0.97 s101 -> +0.670; true -1.31 s31 -> -0.524; true -1.31 s101 -> -0.460 -> FAIL
+[ARM-V] NOT VIABLE (census or power)
+[ARM-R cut 0.20] LT-only census: 172 points / 12 galaxies
+G9R-P power [ARM-R]: true +0.97 s31 -> -0.341; true +0.97 s101 -> -2.000; true -1.31 s31 -> -1.419; true -1.31 s101 -> -2.000 -> FAIL
+[ARM-R] NOT VIABLE (census or power)
+
+
+G9R-L ledger legs (8S-b/8S-c/8V CURRENT rows): PASS
+GATES: G9R-0:PASS  G9R-1:PASS  G9R-L:PASS  G9R-M:PASS  G9R-W:PASS
+
+==> 9R VERDICT (locked grammar): R-POWER-LIMITED -- no arm passed census + power; no replication read at this data grade.
+    NO credence movement (pre-stated; measurement round).
+
+done (1.1 min)

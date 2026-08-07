@@ -485,6 +485,15 @@ CHECKS = [
      'data/stage9q_lemmas.txt'),
     ('mech-9q-ceiling', 'value at resonance - 1/2 = 0',
      'data/stage9q_lemmas.txt'),
+    ('mech-9s-detuning', 'r >= 0.315 in all gate cells at the hier '
+     'anchor; conservative bound |delta|/g_c <= 0.766 (cell noclust)',
+     'data/stage9s_detuning.txt'),
+    ('mech-9s-detuning', 'G(noclust ) = 0.9518  r = 0.315  '
+     '|delta|/g_c <= 0.766', 'data/stage9s_detuning.txt'),
+    ('gal-9r-ltrepl', 'SPARC-GD OFF lam_hat = -1.542 vs -1.542 -> '
+     'PASS', 'data/stage9r_gdrepl.txt'),
+    ('gal-9r-ltrepl', 'R-POWER-LIMITED -- no arm passed census + '
+     'power', 'data/stage9r_gdrepl.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

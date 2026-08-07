@@ -212,6 +212,14 @@ anchored/DR4-era data); the eN-HIGH arm sits nominally above (0.904,
 0.79–1.03 = 1.3σ arm-local, inside the locked bars; axis 6Z-unreadable, no
 ordering claim either direction). P1 stays LIVE; kill conditions unchanged.*
 
+*Annotation 2026-08-07 (Stage 9S, pre-reg 4b46cd5; no status change): the
+ceiling test doubles as a DIRECT meter of the exchange prefactor r (the
+ROUND-16 detuning object): in the void asymptote g → 1 the tail reads
+p_void = ½ + r/2 with no gate uncertainty — r = ½ ⇔ ¾. The in-catalog
+bound r ≥ 0.315 (9S, hier-anchored) implies p_void ≥ 0.66 within the AMB
+form; a clean void measurement below that would strike the resonance
+reading before it ever touches the ¾ ceiling itself.*
+
 ### P2 — the environmental ordering p(e_N)
 Weaker ambient → sharper tail (p rises toward 0.72–0.75 in voids; galaxy-population
 median 0.689). In-sample version WITHDRAWN (correction #14: gate heterogeneity, not

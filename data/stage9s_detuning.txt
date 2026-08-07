@@ -1,0 +1,37 @@
+==============================================================================
+STAGE 9S -- THE DETUNING BOUND (tail-postdiction inversion)
+==============================================================================
+parsed anchors: 5G hier p-hat = 0.65 (grid point, no sigma printed); 4H flat p = 0.578 +0.121/-0.115;
+  6E preds gal 0.6884 / bin 0.5293; 6I gates: fid g = 0.7536, maxclust s^2 = 0.8681, noclust s^2 = 0.9518
+
+G9S-1 sympy: q_loc tail limit = 1; p-algebra residual = 0; inversion residual = 0 -> PASS
+  (verified leg cited: the 5P family theorem p_tail = (1+beta)/2, 5P/5Q regressions; beta_tail = r*G by q_loc -> 1)
+G9S-0 regression: p(1/2, g_fid) = 0.6884 vs 6E gal pred 0.6884 (d = 0.0e+00); bin (n_amb = 0.52 -> G = 0.1170): 0.5293 vs pred 0.5293 (d = 4.1e-05) -> PASS
+
+INVERSION  r = 2(p - 1/2)/G ;  |delta|/g_c = sqrt(1/(2r) - 1)
+------------------------------------------------------------------------------
+  anchor HIER 5G (verdict-bearing)    p = 0.650
+    G(fiducial) = 0.7536  r = 0.398  |delta|/g_c <= 0.506
+    G(maxclust) = 0.8681  r = 0.346  |delta|/g_c <= 0.668
+    G(noclust ) = 0.9518  r = 0.315  |delta|/g_c <= 0.766
+  anchor FLAT 4H (co-read)            p = 0.578
+    G(fiducial) = 0.7536  r = 0.207  |delta|/g_c <= 1.190
+    G(maxclust) = 0.8681  r = 0.180  |delta|/g_c <= 1.335
+    G(noclust ) = 0.9518  r = 0.164  |delta|/g_c <= 1.432
+  anchor FLAT 4H -1sigma (co-read)    p = 0.463
+    G(fiducial) = 0.7536  r = -0.098  UNBOUNDED
+    G(maxclust) = 0.8681  r = -0.085  UNBOUNDED
+    G(noclust ) = 0.9518  r = -0.078  UNBOUNDED
+  binary consistency row: G_bin = 0.1170 -> p spans [0.500, 0.5293] over r in [0, 1/2]; measured = 1/2-consistent (5K 12/12) and accepts 0.529 (6G) -> binaries CANNOT bound r (gate too small); consistent with every r
+
+VERDICT (locked grammar): S-BOUNDED: r >= 0.315 in all gate cells at the hier anchor; conservative bound |delta|/g_c <= 0.766 (cell noclust)
+  reading: the measured galaxy tail exponent already FORBIDS far-off-resonance exchange -- the operative weight sits within one linewidth of the resonant ceiling (delta <~ 0.8 g_c), OR the coupling is strong (g_c >> delta). The ROUND-16 A9 scenario 'generic detuning pushes the weight far below 1/2' is data-disfavored at the hier anchor. CONDITIONALITY stated: the bound is hier-treatment-anchored (the 4H flat co-read is too soft to bound r at its lower error edge -- printed above).
+
+DIVIDEND (P1 sharpening, annotation not new registration): in the void asymptote G -> 1 the tail exponent reads the prefactor DIRECTLY: p_void = 1/2 + r/2 (r = 1/2 <=> 3/4). The p <= 3/4 ceiling test doubles as an r-meter with no gate uncertainty.
+
+G9S-2 mpmath 50-digit recompute of all cells: PASS
+G9S-3 ledger legs: gal-tail-p=CURRENT; gal-p-marg=CURRENT; gal-chae-ambients=CURRENT; mech-9q-ceiling=CURRENT -> PASS
+
+GATES: G9S-0:PASS  G9S-1:PASS  G9S-2:PASS  G9S-3:PASS  -> ALL PASS
+
+NO credence movement (pre-stated; consistency round). O5-DETUNING successors: the r-ladder consistency re-fit (freeze-labeled) and the void-asymptote r-meter (external/DR4).

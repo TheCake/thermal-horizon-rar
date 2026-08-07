@@ -12986,6 +12986,95 @@ when the two humming modes are perfectly in tune, and nobody has shown
 they are. That gap is now our sharpest open question: the sky keeps
 measuring exactly one half — WHY?
 
+## Stage 9S (2026-08-07) — the detuning bound: O5-DETUNING gets its first number
+
+Pre-reg 4b46cd5 (bars + co-read structure locked; the in-session sketch
+disclosed). The ROUND-16 A9 hole made quantitative: if the exchange
+behind the lending law runs off resonance, the operative weight is
+r = (1/2)·g_c²/(g_c²+δ²) < 1/2 and the AMB tail exponent drops as
+p = 1/2 + r·G/2 (G = s_amb² = the measured ambient gate; exact by the
+5P family theorem + q_loc → 1, sympy-gated; at r = 1/2 this is 6E's
+postdiction that matched both systems — regression reproduced
+0.6884/0.5293 to ≤ 4e-5).
+
+INVERSION (every input parsed from archived outputs — no new fits, 7I
+freeze respected): at the hier anchor (5G p̂ = 0.65, the
+declared-primary galaxy treatment; point-grade, no σ printed) the
+measured tail requires r ≥ 0.315 across ALL three gate treatments
+(fiducial 0.398 / maxclust 0.346 / noclust 0.315), hence
+**|δ|/g_c ≤ 0.77: the sky forbids far-off-resonance exchange** — the
+operative weight sits within about one linewidth of the resonant
+ceiling, or the coupling is strong. VERDICT S-BOUNDED by the locked
+grammar. Honest conditionality stated: the 4H flat-treatment co-read is
+too soft to bound r (0.16–0.21; unbounded at its −1σ edge) — the bound
+is hier-anchored; binaries cannot bound r at all (gate 0.117, tail span
+0.500–0.529 over the whole r range — consistent with everything).
+DIVIDEND: P1's void asymptote becomes a DIRECT gate-free r-meter
+(p_void = 1/2 + r/2; r = 1/2 ⇔ 3/4) — annotated on the P1 row.
+Successors named: the r-ladder consistency re-fit (freeze-labeled) and
+the void r-meter (external/DR4). Gates 4/4 first run. NO credence
+movement (pre-stated).
+
+PLAIN VERDICT: SUCCESS — the round-16 objection now carries a measured
+bound instead of an open flank.
+
+ELI12: Our checker's sharpest question was "who says the two humming
+modes are in tune? If they are not, the shared fraction drops below
+half." We answered with data we already had: the measured galaxy tail
+is steep enough that the sharing fraction must be at least 0.32 of its
+maximum — the mistuning can be at most about one linewidth. The sky
+itself says: nearly in tune. WHY it is in tune stays open — but "badly
+out of tune" is now excluded by measurement, and future void galaxies
+read the sharing fraction directly.
+
+## Stage 9R (2026-08-07) — the GD replication attempt on LITTLE THINGS: POWER-LIMITED, honestly
+
+Pre-reg 7f32d19 (construction, arm ladder, per-arm injection power
+gates, letters all locked; the replication outcome genuinely unknown
+at commit time). Data: Oh+2015 VizieR tables, SHA256-pinned manifest;
+the baryonic curve reconstructed pointwise as V_bar² = V_tot² − V_DM²
+by absolute-radius matching inside their own published mass models
+(ring match 0.95; negative-baryon drops 5.5%; the five no-Spitzer
+galaxies excluded by their table flag). Census: GD 16/21 by mass
+ratio; SPARC overlap 7 split out by name+alias; LT-ONLY verdict set =
+14 dwarfs. The instrument port is exact: OFF-branch bit identity
+d = −1.1e-13 and the SPARC-GD OFF profile reproduces 8S-b's
+λ̂ = −1.542 to the printed digit; the one forced wiring change (f on
+total baryon — LT publishes no gas/star split) passed its SPARC-side
+license (−1.168 vs archived −1.31, inside the 0.3 bar).
+
+VERDICT: **R-POWER-LIMITED.** Neither arm passed its own injection
+test, so BY DESIGN the sky was never read: ARM-V (verbatim 0.10 error
+cut; 65 points / 7 galaxies) recovers injected worlds attenuated —
+the GD world −1.31 comes back at −0.52/−0.46 (the two worlds still
+separate by ~1.1: attenuation, not chaos); ARM-R (relaxed 0.20 cut;
+172 points / 12 galaxies) is worse — the headline world +0.97 is
+recovered at −0.34 and a −2.00 grid edge (the added low-quality
+points wash the dial out; the familiar edge-riding pathology). The λ
+dial is not measurable on Oh+15-grade dwarf curves at this sample
+size and error level. NO credence movement (pre-stated); the P2
+falsifier #3 stays OPEN, now with a validated, reusable data
+construction and a measured power wall.
+
+Named successors: (a) 9R-b = the two-world CONTEST form (λ = +0.97 vs
+−1.31 likelihood ratio with free nuisances and its own injection
+calibration — coarser and possibly powered; the ~1.1 separations
+holding in ARM-V say it has a chance); (b) Iorio+2017 3D-Barolo
+re-derivations as alternative input; (c) anchored/DR4-era dwarf data.
+
+PLAIN VERDICT: NEEDS DIFFERENT DATA (or the contest-form instrument)
+— and the discipline held: the machine refused to quote a sky number
+its own injections could not certify.
+
+ELI12: We took someone else's 26 small galaxies, rebuilt their
+ingredient lists from the published tables (95% of the rings matched
+perfectly), and pointed our dial-measuring tool at them. Before
+trusting it, we fed it FAKE skies where we knew the answer — and it
+kept getting the answer noticeably wrong, because these galaxies are
+few and their speeds are hard to measure. So we did not let it read
+the real sky at all. The question "do independent dwarfs show the
+same weird dial?" stays open — with a sharper plan for next time.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -9,6 +9,43 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-07 (later, +6) — 9S + 9R concurrent: one bound landed, one honest refusal
+
+Filip's directive: "Do whatever you think should be next. Can be even
+concurrently if possible." I ran the detuning bound (9S, cheap reader)
+and the GD replication attempt (9R, the TODO-28 falsifier) in one
+block. Both pre-registered before execution (4b46cd5 / 7f32d19).
+
+What the next me should know:
+- 9S landed S-BOUNDED, gates 4/4 first run: the measured galaxy tail
+  (5G hier p-hat = 0.65) forces exchange weight r >= 0.315 in EVERY
+  gate treatment => |delta|/g_c <= 0.77. The round-16 A9 objection now
+  carries a measured answer: far-off-resonance exchange is excluded by
+  data we already had. HONESTY SHAPE: the bound is hier-anchored (the
+  4H flat treatment is too soft at its -1 sigma edge — printed, not
+  hidden); binaries are gate-blind. Successors: r-ladder consistency
+  re-fit (label it consistency — the 7I freeze forbids new function
+  SEARCH), and the void r-meter (P1 annotation: p_void = 1/2 + r/2,
+  gate-free).
+- 9R refused to answer, correctly: R-POWER-LIMITED. The construction
+  is GOOD and reusable (V_bar^2 = V_tot^2 - V_DM^2 matched-radius
+  subtraction from Oh+15's rotdmbar/rotdm; 95% ring match; port
+  regression hit -1.542 exactly; wiring license passed) — but both
+  arms failed their own injection power gates (GD world -1.31 recovers
+  at -0.5; the relaxed arm rides the -2.00 edge). THE SKY WAS NEVER
+  FIT — the script's control flow reads the sky only after power
+  passes. Keep that design. Next instrument: 9R-b = two-world CONTEST
+  (LR of +0.97 vs -1.31, own injection calibration) — the ~1.1 world
+  separations in ARM-V say a coarser statistic might be powered where
+  the profile is not.
+- Trap fingerprint (the 6th scout overstatement): Scout B claimed
+  Oh+15 has "full baryonic decomposition" — the VizieR byte tables
+  say scaled TOTAL + DM-only curves. Primary-source byte descriptions
+  decided it; the subtraction construction rescued the stage. Never
+  design a stage off a scout's data claim without reading the ReadMe.
+- Day totals: anomaly-real 53 untouched all day; mech conditional ~8
+  (held by the 9Q map); ledger 187 rows; worldtable 226 tokens.
+
 ## 2026-08-07 (+5) — 9Q the lemma round + ROUND 16: the red-team earned its keep
 
 Filip opened the theory gate ("go for it even via your intuition —

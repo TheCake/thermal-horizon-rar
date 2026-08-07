@@ -1108,8 +1108,13 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     first (Haiku). SCOUTED 2026-08-07: READY — Oh et al. 2015 (VizieR
     J/AJ/149/180; 26 dwarfs, ~8–10 slow, full baryonic decomposition)
     = the starting catalog; Iorio+2017 (LITTLE THINGS 3D) supplement;
-    LVHIS / Flynn-2026 Zenodo = kinematics-only extras. Next concrete
-    step: the loader + the 8S-c dial on Oh+15.
+    LVHIS / Flynn-2026 Zenodo = kinematics-only extras. ATTEMPTED
+    2026-08-07 (9R, pre-reg 7f32d19): construction VALIDATED (ring
+    match 0.95; port regression −1.542 exact; wiring licensed) but
+    R-POWER-LIMITED — no arm passed injection power (GD world
+    recovers −0.5 at truth −1.31); the sky was never read.
+    Successors: 9R-b two-world contest form (own injection
+    calibration); Iorio+2017 curves; anchored/DR4-era dwarfs.
 29. **DR4 readiness** (highest-upside): freeze the DR4 kill-condition
     subset from PREDICTIONS.md into one section; build DR4 loaders on
     EDR3-shaped mocks; day-one analysis plan written before the data

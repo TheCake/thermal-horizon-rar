@@ -104,6 +104,21 @@ bath-mechanism conditional HOLDS ~8. Round in REVIEW-ROUND16-OPUS.md
 (uncommitted). Scouts: one-mode + frozen-for-bound-orbits NOT
 FOUND/NEAR-MISS (scout-grade); TODO-28 GD replication data READY (Oh+2015
 VizieR J/AJ/149/180 = the starting catalog).**
+**9S + 9R (2026-08-07, same day, concurrent): 9S the detuning bound (pre-reg
+4b46cd5) = S-BOUNDED gates 4/4 — the measured galaxy tail (5G hier p-hat 0.65)
+forces exchange weight r >= 0.315 in every gate treatment => |delta|/g_c <=
+0.77; the A9 far-off-resonance scenario is data-disfavored (hier-anchored,
+4H co-read too soft, binaries gate-blind); P1 annotated: void asymptote =
+direct gate-free r-meter (p_void = 1/2 + r/2). 9R the LT replication attempt
+(pre-reg 7f32d19) = R-POWER-LIMITED — construction VALIDATED (V_bar^2 =
+V_tot^2 - V_DM^2 matched-radius subtraction from Oh+15, ring match 0.95,
+port regression -1.542 exact, wiring licensed) but both arms failed their
+injection power gates (GD world recovers -0.5; relaxed arm rides -2.00),
+so the sky was NEVER fit; successors 9R-b two-world contest form /
+Iorio+2017 input / DR4-era dwarfs; TODO 28 updated. Ledger 187 rows;
+worldtable 226 tokens six gates PASS. NO credence moves (anomaly-real 53;
+mech ~8). Scout trap #6 logged: "full baryonic decomposition" oversold —
+always read the VizieR byte tables before designing a stage.**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
