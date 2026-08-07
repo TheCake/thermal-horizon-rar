@@ -80,7 +80,7 @@ print("-> coupling to the EPOCH (H) vs to the COSMOLOGICAL CONSTANT (Verlinde)")
 print("   give identical local physics today but diverge in lookback time.")
 print("   High-z Tully-Fisher zero point separates them. Nothing else does.")
 
-hdr("6. VACUUM-ENGINEERING CROSS-CHECK (ties back to the antigravity thread)")
+hdr("6. VACUUM-ENGINEERING CROSS-CHECK (ties back to the gravity-modification bounds)")
 rho_cas = 4.33e4                      # |Casimir| J/m^3 at 10 nm gaps
 frac = rho_cas/ (1150*c**2)           # vs half-volume silicon plates, kg/m^3
 print(f"If inertia is a vacuum reaction, Casimir-structured matter (10 nm gaps)")
@@ -89,6 +89,6 @@ print(f"MICROSCOPE already confirms universal free fall at 2.7e-15, and binding-
 print(f"energy differences (1e-3 level) fall universally to 1e-13 -> naive")
 print(f"'vacuum-drag inertia' is ALREADY cornered to fine-tuning. Any real")
 print(f"mechanism must couple to the HORIZON (global), not the local mode")
-print(f"structure -- which is why lab Casimir antigravity never had a chance,")
+print(f"structure -- which is why lab-scale Casimir gravity modification never had a chance,")
 print(f"and why the galactic-scale condensate (superfluid DM) is the version")
 print(f"of the superconductor dream that is still scientifically alive.")

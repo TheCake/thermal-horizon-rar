@@ -1,5 +1,7 @@
 """
-First-principles order-of-magnitude calculations for the antigravity question.
+First-principles order-of-magnitude bounds on exotic gravity-modification
+claims (frame dragging, rotating superconductors, negative-energy
+engineering) against the GR baseline.
 
 Sections:
   1. What GR actually predicts for a lab-scale spinning disc (frame dragging / GEM)
