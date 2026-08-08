@@ -549,6 +549,11 @@ CHECKS = [
     ('mech-10b-carrier', '10B LETTER RELABELED (ROUND 23 adopted): '
      'V-DISPERSIVE-FORCED -> V-DISPERSIVE-PERMITTED',
      'data/stage10b_addendum.txt'),
+    ('mech-10c-pull', 'transition pull dom(n) = -(g^2/Om)(2n+1+2sig)',
+     'data/stage10c_pull.txt'),
+    ('mech-10c-pull', 'TOKENS: THM-SEP:PASS  LADDER:PASS  '
+     'KAPPA:CONTAINED-WITH-TENSION  REQ:CURVE-EXACT+HP-DROPPED  '
+     'GATE-FLAT+ANTI', 'data/stage10c_pull.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

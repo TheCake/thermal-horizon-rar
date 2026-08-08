@@ -1,0 +1,192 @@
+STAGE 10C: the dispersive closure (O5-PULL) -- R23 conditions 8+6+7
+==========================================================================
+
+T1 -- the separation theorem for H = om(N+sig) + Om b'b + g(N+sig)(b+b')
+--------------------------------------------------------------------------
+G1 polaron spectrum exact (lowest 60 levels): max|dE| sig=0: 5.33e-15, sig=1/2: 8.88e-15  -> PASS
+G2 bath-occupation cancellation: (m+1)/(-Om) + m/(+Om) leaves -g^2(n+sig)^2/Om, residual = 0  -> PASS
+   => the honest dispersive mean pull carries NO ambient occupation;
+      R23's pi(2n+1) rows were the JC/EXCHANGE template at the
+      dispersive vertex -- the wrong template (reproduced below as
+      the labeled objects they are).
+   transition pull dom(n) = -(g^2/Om)(2n+1+2sig): exact
+   EP charge (sig=1/2): dom = -(2g^2/Om)(n+1); thermal system mean
+   <dom> = -(2g^2/Om)(nbar(x)+1) = -(2g^2/Om) nu(x)  [linear in the
+   occupation, all orders in g -- polaron-exact]
+
+G3 -- the R23 rows, correctly labeled (regression vs ROUND-23 report):
+   anchor        n_BE     x=ln(1+1/n)   jitter sqrt(pi(2n+1))   exch-template pi(2n+1)
+   binary        0.502     1.0960         2.509 (his 2.509)           6.30 (his 6.3)
+   gal ambient   6.630     0.1405         6.693 (his 6.693)          44.80 (his 44.8)
+   gal deep     10.000     0.0953         8.122 (his 8.122)          65.97 (his 65.97)
+   both row families reproduced: PASS
+   jitter = first-order, MEAN-ZERO (variance object, bath-side);
+   pi(2n+1) = zero-detuning EXCHANGE-template pull -- neither is the
+   honest dispersive mean pull, which is bath-n-free (G2).
+
+T1d sig-blindness: pull(EP) - pull(number) = -g**2/Omega -- n-INDEPENDENT
+   => absorbed by the 9Z-b bare-frequency constant; the static ladder
+   CANNOT distinguish the EP charge from a number charge; c1 = 1/2 is
+   NOT a vertex-selection result (our own overclaim, struck here).
+   the 10B preview gap: x*nu - (x/2)coth(x/2) = x/2 (exact) = the
+   same absorbed constant in the x-multiplied presentation; c1 = 1/2
+   arises from Newton's 1 plus n_BE's own Bernoulli constant -1/2.
+T1 verdict: THM-SEP PASS
+
+T2 -- the transmission map and the kappa closure
+--------------------------------------------------------------------------
+   renormalize the n-independent pull (9Z-b scheme: one bare frequency
+   + one a0 rescale); anomalous softening d om/om = -(2g^2/(Om om)) n;
+   standing response dictionary (compliance-additive, disclosed):
+       nu(x) = 1 + kappa*n_BE(x),   kappa = 4 g^2/(Om om)
+G4 ladder at kappa=1: nu = 1/x + 1/2 + x/12 + 0*x^2 - x^3/720 + ...
+   coefficients [1, 1/2, 1/12, 0, -1/720] vs measured (1/2, 1/12, 0, -1/720): PASS -- ALL RUNGS AT ONCE
+   linearity: polaron pull strictly linear in n (all orders in g) =
+   the measured law's exact linearity; the multiplicative resummation
+   1/(1-n) diverges at x = ln 2 = 0.693 (mid-transition)
+   -- grossly non-RAR; the data select the additive/channel form.
+
+G5 -- the kappa meters (archived fits; NO new sky numbers):
+   a0-lock meter (4H/4V/5M: fitted a0/horizon = kappa^2; galaxy hier
+   a0 = (1.05 +/- 0.10)e-10 at +0.1 sigma of cH0/2pi):
+       kappa = 1.00 +/- 0.05   [bar 0.90-1.10: PASS]
+   c1 meter, flat-M/L (4S: c1 = 0.450, 0.385-0.519; kappa = 2(1-c1),
+   cross-family translation disclosed):
+       kappa = 1.100  (0.962-1.230)   [contains 1: PASS]
+   TENSION ROW (mandatory, prints in every cell): 4Z hier profile
+   c1 = 0.258 (0.208-0.309) => kappa = 1.484 (1.382-1.584) -- excludes 1;
+   program status: 1/4-vs-1/2 OPEN (4Z bootstrap ~0.4+/-0.3 agrees
+   with flat; 5T ultra-deep arm votes c1=1/2; 5K binaries p=1/2
+   12/12). Meters are projections of the same fits, not independent.
+G5: KAPPA = CONTAINED-WITH-TENSION (PASS)
+
+   closure: kappa = 1 <=> g = sqrt(Om*om)/2. At the anchors (Om =
+   x_amb*T, om = x_loc*T, T = H/2pi) -- OBSERVATION row, order-grade
+   (10A gamma band [0.072, 1.571] H; t-envelope spans 2pi):
+     binary  x_amb=1.0954 x_loc=0.5000: g_close = 0.0589 H  (below the 10A band)
+     binary  x_amb=1.0954 x_loc=1.0000: g_close = 0.0833 H  (inside the 10A band)
+     binary  x_amb=1.0954 x_loc=2.0000: g_close = 0.1178 H  (inside the 10A band)
+     galaxy  x_amb=0.1411 x_loc=0.0953: g_close = 0.0092 H  (below the 10A band)
+     galaxy  x_amb=0.1411 x_loc=0.3000: g_close = 0.0164 H  (below the 10A band)
+     galaxy  x_amb=0.1411 x_loc=1.0000: g_close = 0.0299 H  (below the 10A band)
+
+T3 -- the amplitude requirement curve and the H-P adjudication
+--------------------------------------------------------------------------
+G6a requirement: kappa=1, g=om*phi  =>  phi_req = sqrt(Omega)/(2*sqrt(omega)) = (1/2)sqrt(Om/om): PASS
+   exact restatement: phi_req = sqrt(hbar Om/(2 E_c)) with E_c = 2*omega*hbar = TWO QUANTA of
+   the dictionary mode it dresses (identity; a named REQUIREMENT --
+   the bright mode couples as if its effective inertia were the
+   system's own two-quantum scale -- NOT a derivation).
+
+   the curve at the anchors (phi_req = (1/2)sqrt(x_amb/x_loc)):
+     binary  x_loc=0.5000:  phi_req = 0.7401   (H-P sqrt(pi) = 1.7725 -> off x2.39)
+     binary  x_loc=1.0000:  phi_req = 0.5233   (H-P sqrt(pi) = 1.7725 -> off x3.39)
+     binary  x_loc=2.0000:  phi_req = 0.3700   (H-P sqrt(pi) = 1.7725 -> off x4.79)
+     galaxy  x_loc=0.0953:  phi_req = 0.6084   (H-P sqrt(pi) = 1.7725 -> off x2.91)
+     galaxy  x_loc=0.3000:  phi_req = 0.3429   (H-P sqrt(pi) = 1.7725 -> off x5.17)
+     galaxy  x_loc=1.0000:  phi_req = 0.1878   (H-P sqrt(pi) = 1.7725 -> off x9.44)
+   required RUNNING across the measured windows: x2.00 (binary) / x3.24 (galaxy); H-P is CONSTANT.
+G6b H-P criterion: level within x3 at ALL anchors: NO; required running < x2: NO  => DROP-AND-REPLACE
+   single-horizon semiclassical: phi_1 = H l_P/c = 1.223e-61 -> 60.2 orders under the smallest requirement (the honest
+   under-supply, now against the exact curve, not an O(1) window).
+   VERDICT: H-P DROPPED AS STATED (constant amplitude; wrong running;
+   level x2.4-9.4 high); REPLACED by the requirement curve phi_req =
+   (1/2)sqrt(Om/om) as the named open object. Reachability: branch
+   algebra-determined in the pre-reg (disclosure v).
+
+T4 -- the 6X control: exchange regression + purely dispersive arms
+--------------------------------------------------------------------------
+G0 truncation at nbar=8, NB=56: P(n>=NB) = 1.4e-03  PASS
+
+G7 exchange regression (resonant lending channel, verbatim 6X):
+   n_amb =  0.25: P2bar = 0.09979   [(1/2)n/(1+n) = 0.10000]
+   n_amb =  0.50: P2bar = 0.16621   [(1/2)n/(1+n) = 0.16667]
+   n_amb =  1.00: P2bar = 0.24900   [(1/2)n/(1+n) = 0.25000]
+   n_amb =  2.00: P2bar = 0.33114   [(1/2)n/(1+n) = 0.33333]
+   n_amb =  4.00: P2bar = 0.39524   [(1/2)n/(1+n) = 0.40000]
+   n_amb =  8.00: P2bar = 0.43449   [(1/2)n/(1+n) = 0.44444]
+   ratio n/(1+n)   : slope +0.989, rms 0.0046
+   share n/(2n+1)  : slope +1.420, rms 0.0283
+   raw n           : slope +0.422, rms 0.1332
+G7: ratio-form win at the 6X bars: PASS
+   detuned virtual row: lam-scaling 3.51 (expect ~4; the 6X taxonomy re-recorded)
+
+AMENDMENT A1 (pre-quote, bug-class; run-1 archived): run-1's Om_b =
+   0.8 = CHI was a parameter collision -- resonant sidebands |1,m> ~
+   |0,m-1>, |2,m> ~ |3,m-1> drained the pair manifold (fingerprint:
+   P2bar -> 1/4 four-level equipartition at nbar=8, eps-independent).
+   Fix: Om_b -> 0.53 (min sideband detuning 0.26 >> couplings), gd ->
+   0.15 (FC zero at m ~ 18, outside the bulk). Bars unchanged.
+
+G8 dispersive arms (eps = 0.01, Om_b = 0.53; rotating frame at the
+   1->2 line; both vertices commute with Na):
+
+ARM-A: linear vertex gd*Na(b+b'), gd = 0.15, polaron-compensated
+   (the 9Z-b renormalization mechanized); saturation tier:
+   n_amb =  0.25: P2bar = 0.49954
+   n_amb =  0.50: P2bar = 0.49950
+   n_amb =  1.00: P2bar = 0.49941
+   n_amb =  2.00: P2bar = 0.49924
+   n_amb =  4.00: P2bar = 0.49871
+   n_amb =  8.00: P2bar = 0.49627
+   spread = 0.0033, max|P2bar-1/2| = 0.0037; ratio-form slope -0.003 (must miss 1+/-0.15: yes)
+   eps->eps/2 at nbar=1: 0.49985 (existence-counting => eps-independent)
+ARM-A: FLAT CONFIRMED
+
+ARM-B: cross-Kerr vertex gk*Na*Nb, gk = 0.1 (its diagonal IS the
+   detuning under test; [H,Nb]=0 kills all sidebands). Exact law:
+   P2bar = sum_m p_m * 4eps^2/(8eps^2 + gk^2 m^2) ~ (1/2)/(1+nbar):
+   n_amb =  0.25: P2bar = 0.40600   [exact sum 0.40627, (1/2)/(1+n) = 0.40000]
+   n_amb =  0.50: P2bar = 0.34221   [exact sum 0.34242, (1/2)/(1+n) = 0.33333]
+   n_amb =  1.00: P2bar = 0.26071   [exact sum 0.26088, (1/2)/(1+n) = 0.25000]
+   n_amb =  2.00: P2bar = 0.17696   [exact sum 0.17708, (1/2)/(1+n) = 0.16667]
+   n_amb =  4.00: P2bar = 0.10801   [exact sum 0.10809, (1/2)/(1+n) = 0.10000]
+   n_amb =  8.00: P2bar = 0.06092   [exact sum 0.06098, (1/2)/(1+n) = 0.05556]
+   GB-exact |P2bar - exact| <= 0.02 at every nbar: PASS
+   anti 1/(1+n)  : slope +0.961, rms 0.0042
+   ratio n/(1+n) : slope -1.144, rms 0.2871
+   raw n         : slope -0.550, rms 0.1291
+ARM-B: anti-lending wins: yes; ratio/KMS wins: no
+
+T4 cell: GATE-FLAT+ANTI
+   => a purely dispersive ambient coupling does NOT reproduce the
+   gate e^{-x} in either tier: at saturation it is occupation-
+   BLIND (existence-counting is FC-blind, weight 1/2 flat); at
+   the perturbative tier it carries the COMPLEMENT law 1/(1+n)
+   (gates on the ambient being EMPTY) -- the OPPOSITE monotonicity
+   to the measured gate (sky: s_amb grows with ambient occupation).
+   R23's proposed completion of the 6X demotion FAILS; 6X's real-
+   exchange reading of the GATE channel STANDS. Pre-signed reading
+   (two-channel synthesis): dispersive amplitude (l=0 constraint,
+   this stage) + real-exchange gate, whose only ledger-surviving
+   partner is the LOCAL 6Y cloud via the near-field l=2 vertex
+   (the 10B horizon-partner exclusions -- gapped, empty, (L/r_c)^2
+   -- do not apply to the local cloud). The R22-cond-4 derivation
+   returns as the required next leg. Annotations (R23 cond 5):
+   6X KEEPS real-exchange, partner re-identified; 9T NOT mooted.
+
+==========================================================================
+TOKENS: THM-SEP:PASS  LADDER:PASS  KAPPA:CONTAINED-WITH-TENSION  REQ:CURVE-EXACT+HP-DROPPED  GATE-FLAT+ANTI
+LETTER: P-TRANSMITTED
+
+THE EARNED STATEMENT (every clause gated or PERMITTED-grade):
+  the dispersive vertex's honest pull is bath-occupation-free and
+  system-linear (separation theorem, exact); under the standing
+  response dictionary + declared renormalization it transmits
+  nu = 1 + kappa*n_BE(x) with the ENTIRE measured Bernoulli ladder
+  (1/2, 1/12, 0, -1/720) at kappa = 1; kappa is MEASURED ~1 by the
+  temperature lock (1.00 +/- 0.05) and the flat-M/L c1 band, with
+  the 4Z hier 1/4-lean tension disclosed; the closure constant is
+  UNDERIVED -- its vertex content is exactly phi_req =
+  (1/2)sqrt(Om/om) (H-P dropped: wrong running, x2.4-9.4 high);
+  the ambient gate is NOT dispersive-reproducible (per the T4
+  cell above).
+  NOT claimed: mechanism closed; kappa derived; the response
+  dictionary derived; priority on nu = 1+n (C&T 2019).
+
+CREDENCE (pre-signed map): P-TRANSMITTED -> candidate rise cell 15->18
+  ONLY IF ROUND 24 rules no unpatched hole; any hole -> HOLD 15;
+  physical THM-SEP failure -> 15->12 (did not fire);
+  gate cells carry NO credence move. anomaly-real 53 UNTOUCHED.
+
+done (0.0 min)

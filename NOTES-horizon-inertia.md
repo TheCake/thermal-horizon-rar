@@ -13941,6 +13941,107 @@ with the very same magic fractions (1/12, 1/720) our sky formula
 carries. That is either a beautiful coincidence or the beginning of
 the real derivation — next hunt decides.
 
+## Stage 10C (2026-08-09): O5-PULL — the dispersive closure (R23 conditions 8+6+7). P-TRANSMITTED, GATE-FLAT+ANTI
+
+Pre-reg 13c3662; amendment A1 (bug-class, pre-quote) 3d81fdd; script
+[calcs/stage10c_pull.py](calcs/stage10c_pull.py) →
+data/stage10c_pull.txt (run-1 as-fired archived _run1.txt).
+
+**T1 THE SEPARATION THEOREM (exact; the honest Delta-structure).** The
+10B vertex H = ω(N+σ) + Ω b†b + g(N+σ)(b+b†) is polaron-solvable:
+E(n,m) = ω(n+σ) + Ωm − (g²/Ω)(n+σ)² (G1 numeric 9e-15). The two
+time-orderings cancel the bath occupation EXACTLY ((m+1)/(−Ω) + m/(+Ω);
+G2 symbolic 0) ⇒ **the honest dispersive mean pull carries NO ambient
+occupation**; R23's over-production π(2n+1) = 6.3/44.8/66 was the
+JC/EXCHANGE template at the dispersive vertex — the wrong template (his
+rows reproduced to his digits as the labeled objects: jitter
+√(π(2n+1)), zero-detuning exchange-template; G3). The pull reads the
+SYSTEM's occupation, linearly, all orders in g: dω(n) =
+−(g²/Ω)(2n+1+2σ). T1d (own overclaim struck): σ (EP vs number charge)
+enters only as an n-independent constant → absorbed by the 9Z-b
+renormalization → **c₁ = ½ is NOT a vertex-selection result**; the 10B
+preview's coth-vs-ν gap = x/2 exact = the same absorbed constant.
+
+**T2 THE TRANSMISSION MAP + κ CLOSURE (condition 8 answered).** Thermal
+mean → anomalous softening ∝ n_BE(x) → under the standing response
+dictionary (compliance-additive, used-not-derived, disclosed):
+**ν = 1 + κ·n_BE(x), κ = 4g²/(Ωω)**. At κ = 1 the ENTIRE measured
+ladder is automatic (G4 exact: ½, 1/12, 0, −1/720 — all Bernoulli
+rungs at once); the polaron pull's strict linearity matches the
+measured law's exact linearity (the multiplicative alternative
+diverges at x = ln 2 mid-transition — grossly non-RAR). κ METERS
+(archived, no new sky fits; G5): a₀-lock κ = 1.00 ± 0.05 (4H/4V/5M:
+fitted a₀/horizon = κ²); flat-M/L c₁-meter κ = 1.100 (0.962–1.230);
+TENSION disclosed: 4Z hier profile ⇒ κ = 1.48 (1.38–1.58) excludes 1
+(the ¼-vs-½ OPEN contest; 5T deep arm + 5K binaries vote ½). Closure
+constant g = √(Ωω)/2: binary anchor lands INSIDE the 10A γ-band
+(0.083–0.118 H), galaxy legs sit below (0.009–0.030 H) — order-grade
+observation, no bar.
+
+**T3 THE REQUIREMENT CURVE; H-P DROPPED (condition 7).** κ = 1 forces
+EXACTLY φ_req = ½√(Ω/ω) = ½√(x_amb/x_loc) ∈ 0.19–0.74 at the anchors,
+RUNNING ×2–3.2 across the measured windows (zero-point-like 1/√ω at
+fixed environment; √Ω across environments). Exact restatement
+(identity): φ_req = √(ħΩ/2E_c) with **E_c = 2ħω — the bright mode must
+couple with the zero-point of an effective inertia equal to TWO QUANTA
+of the dictionary mode it dresses** (named requirement, not a
+derivation). H-P supplies the CONSTANT √π = 1.772: level ×2.4–9.4 high
+AND structurally wrong running ⇒ **DROP-AND-REPLACE** (G6b criterion;
+branch algebra-determined, disclosed). Single-horizon semiclassical
+φ₁ = Hℓ_P/c = 1.22e-61 → 60.2 orders under the smallest requirement.
+The 61-order H-P bridge is replaced by one exact curve.
+
+**T4 THE 6X DISPERSIVE CONTROL (condition 6): GATE-FLAT+ANTI.** G7
+regression: the 6X resonant lending channel reproduces verbatim (ratio
+slope +0.989, rms 0.0046, 6×/29× margins). Amendment A1: run-1's
+Ω_b = 0.8 = CHI was a parameter collision (resonant sidebands
+|1,m⟩~|0,m−1⟩, |2,m⟩~|3,m−1⟩ drained the pair manifold; fingerprint
+P̄₂ → ¼ = four-level equipartition; fixed Ω_b → 0.53, gd → 0.15, bars
+unchanged). The two dispersive arms then land the signed predictions
+exactly: **ARM-A (linear vertex, polaron-compensated = the 9Z-b
+renormalization mechanized): saturated weight ½ FLAT (spread 0.0033;
+ε-independent) — the dispersive channel is occupation-BLIND at
+saturation (existence-counting is Franck–Condon-blind). ARM-B
+(cross-Kerr): the exact per-sector law Σ pₘ·4ε²/(8ε²+g²m²) ≈
+½/(1+n̄) — THE ANTI-LENDING LAW (gates on the ambient being EMPTY),
+opposite monotonicity to the measured gate; GB-exact ≤ 3e-4; anti
+slope +0.961 rms 0.0042 vs ratio rms 0.287.** ⇒ a purely dispersive
+ambient coupling does NOT reproduce e^{−x} in either tier; R23's
+proposed completion of the 6X demotion FAILS; **6X's real-exchange
+reading of the GATE channel STANDS**. Pre-signed two-channel
+synthesis: dispersive amplitude (l=0 constraint) + real-exchange gate
+whose only ledger-surviving partner is the LOCAL 6Y cloud via the
+near-field l=2 vertex (the 10B horizon-partner exclusions do not apply
+to the local cloud) — the R22-condition-4 derivation returns as the
+required next leg. Annotations per R23 cond 5: 6X KEEPS real-exchange
+(partner re-identified); 9T NOT mooted.
+
+LETTER: **P-TRANSMITTED** (tokens THM-SEP:PASS, LADDER:PASS,
+KAPPA:CONTAINED-WITH-TENSION, REQ:CURVE-EXACT+HP-DROPPED,
+GATE-FLAT+ANTI). NOT claimed in any cell: mechanism closed; κ derived;
+the response dictionary derived; priority on ν = 1+n (C&T 2019).
+CREDENCE: rise cell 15→18 CONDITIONAL on ROUND 24 ruling no unpatched
+hole (pre-signed); anomaly-real 53 untouched (no sky fits).
+
+PLAIN VERDICT: SUCCESS at transmission grade — the honest pull is the
+right object (bath-free, system-linear, whole ladder at κ=1, κ
+measured ≈1), the H-P assumption is replaced by one exact requirement
+curve, and the gate channel is proven non-dispersive in the toy class;
+closure still awaits κ = 1's derivation (the requirement curve) and
+the l=2 cloud vertex.
+
+ELI12: We finally computed the push honestly. Three things came out.
+(1) The universe's hum can only LEAN on our melody — and the lean
+reads the melody's own warmth, not the room's noise; the scary big
+numbers from last round were a formula borrowed from the wrong kind
+of touching. (2) If the lean has exactly unit strength, our entire
+sky formula — every magic fraction, 1/2, 1/12, 1/720 — pops out at
+once; and the sky already measured the strength: it is 1 within 5%.
+(3) But leaning can never pass the secret handshake we measured (the
+e^{−x} gate) — leaning actually works best in an EMPTY room, backwards
+from the sky — so the handshake must be a real trade with the system's
+own local cloud, and deriving that trade is the last missing piece.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
