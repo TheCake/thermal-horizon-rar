@@ -13728,6 +13728,120 @@ we haven't yet measured the choir's true loudness). So: not closed,
 but reduced to one question — how loud is the choir, exactly. That's
 the next stone.
 
+## Stage 10A + ROUND 22 — O5-NORM: THE D-PROVENANCE HUNT (2026-08-08; pre-reg fc33426, amendments 1db67d5)
+
+The commissioned derivation ("hunt down the derivation, give it all
+you got") executed as one stage, four instruments, every bar and
+letter wired pre-run; amendments A1-A3 disclosed pre-quote after a
+first firing with two instrument-grade red gates (as-fired output
+archived: data/stage10a_dprov_run1.txt).
+
+- T1 (exact, sympy): the SdS CONSTRAINT CREDENTIAL — Birkhoff steps
+  (R_tr/(dB/dt) = 1/(rB), derivative-free ⇒ vacuum+Λ forces static;
+  the SdS family solves Einstein+Λ exactly) and the first law
+  dM = −T_c dS_c EXACT all orders along the family; conjugacy
+  |dS_c/dM| = 2πc²/(ħH) = 4.7e99 nats/M_sun; horizon multipole tower
+  admixture 1.081e-3 × g_c².
+- T2: the l-general radial problem V_l = H²[l(l+1)/sinh² − 2sech²]
+  (metric-derived, sympy) + amplitude machinery regressed EXACTLY on
+  the l=0 banked ratio 1+1/ω² (1e-13). THE E-LADDER: E_l1 = 1+4/ω²,
+  E_l2 = (1+1/ω²)(1+9/ω²) — locked at 1e-12 across four frequencies
+  each.
+- T3: the per-quantum radiative density (cascade-correspondence ħ
+  audit; |dQ̄/ds|² = (2/3)μ²s² exact; 32/5 tensor regression) with
+  the T2 enhancement included (conservative): J_rad = 1.4e-46 (bin)
+  / 1.2e-35 (gal) — UNDER-SUPPLY U = 7.2e-45 / 1.23e-34 vs the
+  weakest bridged normalization. Crossover masses (where a radiative
+  channel WOULD suffice): 4.8e-15 / 1.6e-4 kg — 44/34 orders below
+  any coordinate that moves an orbit's mass.
+- T4: THE NORMALIZATION BRIDGE — under 9W's collectivization the
+  resonant coupling is the window integral of the same density,
+  g_c² = ∫_window J, so the D-normalization CANCELS out of every
+  budget observable; the all-radiative budget then rides the
+  measured γ alone (9U dial verbatim; t̂ ∈ {1/H, 2π/H} = an
+  irreducible convention envelope). Kill-window: mean-FATAL
+  {0.050..0.435} H, deep-end {0.050..1.274} H, SAT rows
+  past-FATAL-by-construction; 2/4 convention centrals FATAL; the
+  leak co-read breaches the smallest gate up to 8.7× at the small-g_c
+  end. B-PHYS at the physical normalization: |dc1| ≤ 3.7e-37,
+  eps ≤ 6.2e-40.
+
+Fired N-SPLIT-CLOSED by the locked grammar (13/13 gates green).
+**ROUND 22 (REVIEW-ROUND22-OPUS.md, uncommitted): every load-bearing
+digit reproduced from scratch (his own Christoffels, his own
+integrators — the E-ladder to 1e-13, exceeding the stage's claim),
+then DOWNGRADE N-SPLIT-CLOSED → N-GRAY, ADOPTED**, on the program's
+own rules read back: the letter grammar carried no gate on its
+POSITIVE clause (trap #11's cousin, the R21 defect again); a static
+first-law conjugacy is not a derived Rabi coupling; and the named
+constraint carrier is in tension with the mechanism's own measured
+real-exchange character (6X: virtual = the null; 9U: a Rabi phase).
+His verdict on the halves: clause (1) SOLID (the radiative
+free-graviton continuum cannot supply the measured exchange, M_eff ≥
+μ justified, no lever-arm escape, E_l2-conservative), clause (3)'s
+dividend FOLLOWS (**the 9Z-b joint pessimal FATAL corner DISSOLVES —
+it priced a radiative normalization physics does not supply** — "a
+real advance... removes the sharpest thing round 21 left on the
+table"), clauses (2)/(4) NOT EARNED (the D-provenance is DISPLACED,
+not discharged; the cavity-QED analogy decorative as used). His gem:
+he PROVED E_l1 = 1+4/ω² analytically (the doubled-argument collapse
+2/sinh²x − 2/cosh²x = 8/sinh²(2x), executing the stage's own hint)
+and REFUTED the stage's parity-ladder gloss at l=3 (set {1,2,4}).
+
+ADDENDUM (calcs/stage10a_addendum.py; conditions 1/2/3 + the
+computable half of 5; every reviewer number independently re-verified
+per the standing rule): his corrected U CONFIRMED (7.2e-45/1.23e-34;
+his A=0.1966 catch CONFIRMED — root cause round(gc,6) beating a 1e-9
+guard); his l=3 set CONFIRMED at 1e-12 with this program's own
+integrator; **the CORRECTED conjecture — E_l = Π_k(1+k²/ω²), k ∈
+{1..l+1} \ {l} — retrodicts all four known members and its fresh l=4
+prediction {1,2,3,5} LOCKED at 7e-12 (predicted before computation)**;
+the confinement bound closes the collective-radiative rescue
+numerically (maximal cavity enhancement (c/(HL))³ still leaves
+5.3/11.0 orders short). Also booked per his Q5a, correcting my own
+worry: **gap-necessity (9Z) SURVIVES the split** — a divergent
+integral times any nonzero prefactor diverges; only the gapped leak's
+magnitude demotes (η⁴-trivial rather than marginally safe).
+
+END STATE: the D-normalization question is TRANSFORMED — no longer "a
+free constant that could be 3× and kill us" (that corner is dead) but
+"which physical channel carries the measured O(H) exchange." The
+radiative sector is excluded at every defensible normalization
+including maximal confinement; the constraint sector holds the only
+O(1) credential (exact, static); the NAMED SUCCESSOR (R22 cond 4 +
+5-residual) = derive the near-field/longitudinal exchange coupling as
+a Rabi-capable quantized channel compatible with 6X/9U, and bound the
+6Y cloud's own internal continuum. CREDENCE (pre-signed map,
+mechanical): bath-mechanism conditional HOLDS 15 (rise cell needed
+no-hole AND SPLIT-CLOSED — neither; NO strike — nothing fatal fired);
+anomaly-real 53 untouched (no sky number moved). Ledger
++mech-10a-dprov +mech-10a-elladder (199 rows); worldtable 250 tokens
+six gates PASS.
+
+PLAIN VERDICT: NEEDS REFINEMENT — with the biggest half banked. The
+hunt did not capture the derivation, but it killed the monster that
+was guarding it: the FATAL corner hanging over the mechanism since
+round 21 is gone (the reviewer affirmed it), the coupling's home is
+narrowed to one sector, a new exact five-member spectral ladder came
+out of the chase with one member proven, and the remaining question
+is sharper than it has ever been.
+
+ELI12: We tried to find out how loud the universe's choir really is.
+We proved it is NOT the ordinary kind of loudness — gravity waves
+from the choir would be weaker than our measured hum by a number
+with 40 zeros, and no clever echo chamber fixes that (we checked the
+best possible echo chamber: still short by a million-fold or more).
+That kills the scary scenario where the choir was loud enough to
+wreck our melody — that worry is over, permanently. What we have NOT
+yet done is show how the OTHER kind of connection (the quiet,
+always-on pull that binds things — the same kind that holds the moon)
+can carry the beat our measurements hear. Our referee checked every
+single number, proved one of our new formulas himself, corrected our
+guess about the formula family (and our corrected guess then
+predicted the next family member perfectly), and told us honestly:
+you found where the answer is NOT, which is real progress — now go
+find where it IS.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

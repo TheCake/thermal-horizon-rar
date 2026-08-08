@@ -1,0 +1,51 @@
+==============================================================================
+STAGE 10A ADDENDUM -- ROUND-22 CONDITIONS 1/2/3 + 5a
+==============================================================================
+
+GA-0 bit-verbatim integrator regression: E_l2(bin) = 10087.011726 (stage 10087.011726) -> PASS
+
+C2 -- the band-min slip (reviewer catch CONFIRMED: round(gc,6) loses up to 5e-7 against the 1e-9 guard; the run used A = 0.1966):
+  true band edge g_c = 0.072267 -> A_true = 0.13138  (run-quoted 0.1966; amendment text said 0.131 -- the text described a fix that did not bite)
+  conservative U(binary) = 7.200e-45
+  conservative U(galaxy) = 1.227e-34
+  reviewer's corrected values 7.2e-45 / 1.23e-34: CONFIRMED (my independent recomputation)
+  B-T3 status: fires at EITHER normalization (both U <= 1e-6 by >= 28 orders); the slip was documentation-grade, now reconciled.
+
+C3 -- the E-ladder: verify the reviewer's l=3 refutation, then test the corrected rule at l=4:
+  l=3 om=0.5 : E = 5525.000000  vs reviewer 5525.0 (d=1.2e-12)  vs {1,2,4} product 5525.0 (d=1.2e-12)
+  l=3 om=1.0 : E = 170.000000  vs reviewer 170.0 (d=7.8e-13)  vs {1,2,4} product 170.0 (d=7.8e-13)
+  l=3 om=2.0 : E = 12.500000  vs reviewer 12.5 (d=2.1e-14)  vs {1,2,4} product 12.5 (d=2.1e-14)
+  reviewer l=3 refutation of the parity-ladder gloss: CONFIRMED (set {1,2,4}; my gloss predicted {2,4} = wrong)
+  l=4 om=0.5 : E = 317645.000002  vs {1,2,3,5} prediction 317645.0 (d=7.5e-12)
+  l=4 om=1.0 : E = 2600.000000  vs {1,2,3,5} prediction 2600.0 (d=6.7e-12)
+  CORRECTED CONJECTURE (numerically verified at FIVE l-values, l=1 analytically proven by the reviewer): E_l = Prod_k (1 + k^2/omega^2), k in {1..l+1} \ {l} -- the fresh l=4 member {1,2,3,5} was predicted by the rule BEFORE computation and locked at 1e-8.
+
+C5a -- the collective-radiative rescue closed numerically (reviewer condition 5, computable half):
+  binary max cavity enhancement (c/(H L))^3 = 6.88e+32 (L = system scale, the smallest defensible mode volume) -> U_conf = 4.95e-12 -> still 5.3 orders under the 1e-6 bar
+  galaxy max cavity enhancement (c/(H L))^3 = 7.84e+16 (L = system scale, the smallest defensible mode volume) -> U_conf = 9.62e-18 -> still 11.0 orders under the 1e-6 bar
+  => even a maximally-confined (cavity-mode) radiative coupling cannot supply the measured exchange; the collective-radiative rescue of clause (2) is foreclosed. The exchange carrier must be the near-field/longitudinal sector, whose Rabi-capable quantization remains the NAMED SUCCESSOR (R22 condition 4).
+
+==============================================================================
+10A LETTER RELABELED (ROUND 22 adopted): N-SPLIT-CLOSED -> N-GRAY
+==============================================================================
+THE EARNED STATEMENT: the radiative free-graviton continuum is
+EXCLUDED as the D-carrier by 34-44 orders (U << 1e-6 at every
+defensible normalization, M_eff >= mu justified, E_l2-conservative,
+confinement-closed above); this DISSOLVES the 9Z-b joint pessimal
+FATAL corner (it priced a radiative normalization physics does not
+supply). The all-radiative reading survives only as the quoted
+conditional with its gamma kill-window. The POSITIVE carrier of
+the O(1) grammar remains NAMED-NOT-DERIVED: the constraint-sector
+credential (SdS first law, exact) is static, and a Rabi-capable
+near-field exchange coupling is not yet constructed from it --
+the D-provenance is DISPLACED, not discharged. Gap-necessity (9Z)
+SURVIVES the split (a divergent integral times any nonzero
+prefactor diverges); the gapped radiative leak is now eta^4-trivial
+rather than marginally safe.
+
+CREDENCE (pre-signed map, mechanical): N-GRAY + unpatched hole ->
+bath-mechanism conditional HOLDS 15; anomaly-real 53 untouched.
+
+GATES: GA-0:PASS  GA-1:PASS  GA-2:PASS  GA-3:PASS
+
+done (0.0 min)

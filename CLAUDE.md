@@ -382,6 +382,40 @@ honest 9Z/9Z-b state); GitHub: default branch must flip to main
 (Settings) before `git push origin --delete master` works — then
 TODO 31's remaining items.**
 
+**10A + ROUND 22 (2026-08-08 seventh close, THE D-PROVENANCE HUNT,
+pre-reg fc33426 + amendments 1db67d5 pre-quote): the commissioned
+derivation EXECUTED — fired N-SPLIT-CLOSED 13/13 gates, ROUND 22
+reproduced every digit and DOWNGRADED to N-GRAY (adopted; his three
+grounds = the program's own rules: no gate on the positive clause
+[new trap #12 — gate every POSITIVE letter clause], static conjugacy
+≠ derived Rabi coupling, named carrier in tension with 6X/9U
+real-exchange). BANKED EITHER WAY: (1) the radiative free-graviton
+continuum is EXCLUDED as the D-carrier by 34–44 orders (U = 7.2e-45
+bin / 1.23e-34 gal; M_eff ≥ μ no-lever-arm-escape; confinement-closed
+5.3/11.0 orders short in the addendum) ⇒ **THE 9Z-b JOINT PESSIMAL
+FATAL CORNER DISSOLVES** (reviewer-affirmed — the sharpest round-21
+threat is dead); (2) T1 exact: SdS first law dM = −T_c dS_c ALL
+ORDERS + Birkhoff steps + tower budget 1.081e-3·g_c²; (3) THE
+E-LADDER: E_l = Π(1+k²/ω²), k ∈ {1..l+1}\{l} — five members, l=1
+PROVEN by the reviewer, l=4 predicted-then-locked 7e-12
+(conjecture-grade, ledger mech-10a-elladder); (4) T4: under the 9W
+bridge D CANCELS — the all-radiative conditional rides measured γ
+alone with kill-window {0.050..0.435}H mean / 2/4 t-centrals FATAL;
+(5) gap-necessity SURVIVES the split (his Q5a, correcting my worry).
+NOT earned: D is DISPLACED not discharged — the positive carrier
+(constraint sector) is NAMED-NOT-DERIVED. **THE SHARPENED SUCCESSOR
+(R22 cond 4 + 5-residual) = derive the near-field/longitudinal
+system↔6Y-cloud coupling as a QUANTIZED RABI-CAPABLE exchange channel
+(the atom-cavity d·E vertex is the EM template) + bound the cloud's
+internal continuum — if it comes out O(H) the mechanism closes for
+real; if it cannot be Rabi-capable, 6X/9U's strike fires.** Credence:
+mech conditional HOLDS 15 (three O5-NORM rounds, zero strikes);
+anomaly-real 53 untouched all seven closes. Round in
+REVIEW-ROUND22-OPUS.md (uncommitted). Ledger 199 rows / worldtable
+250 tokens six gates PASS. Addendum re-verified every reviewer number
+(memory rule executed: his U, his l=3 set, his A=0.1966 catch — all
+CONFIRMED in calcs/stage10a_addendum.py).**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

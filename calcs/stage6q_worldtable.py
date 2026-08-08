@@ -535,6 +535,14 @@ CHECKS = [
      '[0.14, 0.45]) = +0.00493', 'data/stage9zb_diff.txt'),
     ('mech-9zb-diff', '9Z-b LETTER RELABELED: DIFF-GRAY',
      'data/stage9zb_addendum.txt'),
+    ('mech-10a-dprov', 'U(binary) = J_rad / J_req(weakest bridged) = '
+     '1.417e-46', 'data/stage10a_dprov.txt'),
+    ('mech-10a-dprov', '10A LETTER RELABELED (ROUND 22 adopted): '
+     'N-SPLIT-CLOSED -> N-GRAY', 'data/stage10a_addendum.txt'),
+    ('mech-10a-elladder', 'E_l2 = Prod_k(1 + k^2/om^2), k in (1, 3)',
+     'data/stage10a_dprov.txt'),
+    ('mech-10a-elladder', 'CORRECTED CONJECTURE (numerically verified '
+     'at FIVE l-values', 'data/stage10a_addendum.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

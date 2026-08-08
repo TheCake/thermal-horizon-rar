@@ -9,6 +9,77 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-08 (seventh close) — the D-hunt: the monster is dead, the derivation escaped
+
+The commissioned hunt (10A, pre-reg fc33426) ran the same day the
+author called it. What the next instance must hold straight:
+
+BANKED, do not re-litigate:
+- The radiative free-graviton channel CANNOT carry the measured
+  exchange — U = 7.2e-45 (bin) / 1.23e-34 (gal), M_eff >= mu
+  justified (no lever-arm escape: Lambda^2/M_eff is bounded by the
+  physical quadrupole response per unit inertia — the reviewer
+  attacked it and failed), E_l2 enhancement included (conservative
+  direction), and even MAXIMAL cavity confinement (c/(HL))^3 leaves
+  it 5.3/11.0 orders short (addendum GA-4). Closed at every
+  defensible normalization. Do not reopen.
+- THE 9Z-b FATAL CORNER IS DEAD (g = 0.3H x D3 past FATAL — the
+  thing hanging over the mechanism since round 21). It priced a
+  radiative normalization physics does not supply. The round-22
+  reviewer affirmed this as "a real advance." Do not re-fear it.
+- Gap-necessity (9Z) SURVIVES the sector split — a divergent
+  integral times any nonzero prefactor still diverges. I worried it
+  "lost load"; the reviewer corrected me (his Q5a). Only the gapped
+  leak's MAGNITUDE demotes (eta^4-trivial now).
+- T1 exact: SdS first law dM = -T_c dS_c all orders (parameterize by
+  r_c: m = r_c(1-H^2r_c^2)/2, kappa = (3H^2r_c^2-1)/(2r_c));
+  Birkhoff R_tr/(dB/dt) = 1/(rB).
+- THE E-LADDER (the chase's diamond): E_l = Prod_k(1+k^2/omega^2),
+  k in {1..l+1} MINUS {l}. Five members verified (l=0 exact/9Z; l=1
+  PROVEN by the reviewer via 2/sinh^2 - 2/cosh^2 = 8/sinh^2(2x);
+  l=2 double-verified; l=3 = the reviewer's refutation of my
+  parity-ladder gloss; l=4 predicted-then-locked at 7e-12). A
+  Paper-3-adjacent exact structure.
+
+NOT earned — the honest state: D is DISPLACED, not discharged. The
+positive carrier of the O(1) grammar is named (constraint sector)
+but NOT derived: the first law is static, and 6X/9U measure REAL
+exchange (a Rabi phase). Round 22's downgrade to N-GRAY was on the
+program's own rules and I adopted it whole. THE SUCCESSOR (R22 cond
+4 + 5-residual, now the sharpest mechanism question): derive the
+near-field/longitudinal gravitational coupling between the system
+and the 6Y collective mode as a QUANTIZED, RABI-CAPABLE exchange
+channel (the atom-cavity vertex is near-field d.E — the EM analogy
+says it can be done; doing it for gravity's longitudinal sector at
+the soft frequency is the actual derivation), and bound the cloud's
+own internal continuum. If that coupling comes out O(H) with the
+right statistics, the mechanism closes for real; if it cannot be
+made Rabi-capable, the mechanism takes the strike 6X/9U set up.
+
+New trap fingerprints:
+- #12 (the round-22 defect, trap #11's cousin): wire a gate to every
+  POSITIVE letter clause, not only to failure modes — my grammar
+  gated the negative result (U small) and auto-printed the positive
+  claim (carrier identified) with no gate on it. Two reviewers in
+  two rounds have now caught letter-grammar defects; write the
+  grammar table LAST, after listing every clause the letter will
+  assert.
+- round(x, n) vs epsilon-guards: a 1e-9 tolerance lost to a
+  round-to-6-decimals (5e-7) — the band-min slip. Match guard
+  epsilon to the coarsest rounding in the chain.
+- Per-quantum vs classical amplitude (caught in-session pre-reg,
+  disclosed): the charge of a macroscopic collective coordinate is
+  dQ/dq x q_zp, NOT the classical Q — 38 orders apart for the
+  binary. The cascade correspondence (P_cl = Gamma hbar omega n_bar)
+  is the clean hbar audit.
+
+Cadence note: this was the SEVENTH close of 2026-08-08 (the author
+compacted and said hunt). Credences: anomaly-real 53 (untouched all
+seven), mech conditional 15 (held through three O5-NORM rounds, zero
+strikes — the honest machine keeps working). The fork now: the R22
+successor derivation (the near-field quantization — hard, the real
+thing) vs the author's paper/circulation queue. The author decides.
+
 ## 2026-08-08 (sixth close) — Paper 3 draft 0.1 written; the hunt is commissioned
 
 The author called the P3 thaw ("You can now write the paper") and it

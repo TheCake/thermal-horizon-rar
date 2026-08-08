@@ -1184,7 +1184,26 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     (round-20 cond 8, tied to the l=2/η⁴ self-consistency: which
     channel carries both the O(1) grammar and the suppressed leak) —
     "pin down D and the closure becomes real." Rung-resolved budget
-    needs SPARC hier weighting; small-g stays PT-invalid-labeled.**);
+    needs SPARC hier weighting; small-g stays PT-invalid-labeled.**
+    **O5-NORM EXECUTED 2026-08-08 (10A, pre-reg fc33426 + amendments
+    1db67d5; ROUND 22 downgraded fired-SPLIT-CLOSED → N-GRAY,
+    adopted): the radiative free-graviton continuum is EXCLUDED as
+    the D-carrier by 34–44 orders (per-quantum U = 7.2e-45 bin /
+    1.23e-34 gal, M_eff ≥ μ justified, E_l2-conservative,
+    confinement-closed at 5.3/11.0 orders short) ⇒ THE 9Z-b JOINT
+    PESSIMAL FATAL CORNER DISSOLVES (reviewer-affirmed dividend);
+    T1 banked exact (SdS first law all orders, Birkhoff steps,
+    tower 1.081e-3·g_c²); THE E-LADDER banked conjecture-grade
+    (E_l = Π(1+k²/ω²), k ∈ {1..l+1}\{l}; five members, l=1 proven
+    by the reviewer, l=4 predicted-then-locked); the all-radiative
+    conditional carries a γ kill-window (2/4 t-centrals FATAL).
+    NOT earned: the positive carrier is NAMED-NOT-DERIVED — D is
+    DISPLACED, not discharged. THE SHARPENED SUCCESSOR (R22 cond
+    4 + 5-residual): derive the near-field/longitudinal exchange
+    coupling as a Rabi-capable quantized channel compatible with
+    6X real-exchange + 9U γ, and bound the 6Y cloud's own internal
+    continuum. Gap-necessity survives the split (divergence is
+    prefactor-independent).**);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established
