@@ -157,6 +157,38 @@ DISCLOSURE (in-session sketches, stated in full; none verdict-grade):
   coupling was sketched at g_c ~ 0.26-0.33 H. NOT computed
   pre-commit: any E_l2 value, any U value, any dc1_T4 curve point,
   the kill-window, eps values, the tower sum.
+
+AMENDMENTS (post-first-firing, pre-quote; as-fired run archived in
+data/stage10a_dprov_run1.txt -- letter as fired: N-GRAY with
+GN-2b/GT5 red, U_forced/B-PHYS/dial all green; no bar, letter cell,
+or credence-map change):
+  A1 (GN-2b instrument): the fixed uniform RK4 step is unconverged
+     for l >= 1 (the l(l+1)/x^2 barrier makes the near-origin region
+     stiff; first firing d = 8.7e-2 uniformly). Fix: exact Frobenius
+     series start at x0 = 0.05 (b_1..b_5 from the recurrence
+     b_k 2k(2l+2k+1) = Sum b_j w_{k-1-j}, potential series
+     coefficients from sympy) + two-phase integration (dense to
+     x = 1, then coarse to 25). The l=0 exact regression re-gates
+     the machinery end-to-end.
+  A2 (GT5 metric): first firing conflated fixed-point pathology with
+     the STATISTIC saturating its domain (at small g_c the residual
+     exceeds x in the deep arm, nu(x + r) leaves its domain =
+     past-FATAL-by-construction, printed inf). Redefined: GT5 gates
+     A(g_c) finiteness; saturated cells print SAT and count as
+     FATAL-grade in kill-window and centrals (they already did
+     numerically). Also: band-min selection gains a 1e-9 rounding
+     guard (first firing dropped the lowest band point, quoting U
+     against A = 0.196 instead of 0.131 -- anti-conservative by
+     1.5x, irrelevant at 41 orders, fixed); B-PHYS's dc1 is quoted
+     as the analytic bound max|nu'| x max|resid| (the direct
+     difference underflows double precision at A_rad ~ 1e-42).
+  A3 (bonus display, no gate): l=1 E-ratio rows + IR-exponent
+     probes, and a closed-form candidate scan E_l =? Prod_k (1 +
+     k^2/omega^2) over small integer sets (the run-1 numbers sat a
+     uniform ~1.5% from (1+1/om^2)(1+9/om^2) -- if a candidate
+     locks at 1e-8 across four frequencies it is printed as a
+     numerically-verified conjecture, else the measured values
+     stand alone).
 Output: data/stage10a_dprov.txt. Wall-clock: ~5-15 min (sympy Ricci
 is the slow part).
 """
@@ -332,30 +364,53 @@ if not gates['GN-1']:
     P("STOP: generalized pipeline fails its l=0 regression.")
     save(); raise SystemExit(0)
 
-def dS_amp_ratio(l, om, N=20000, x_max=25.0):
+_WREG_CACHE = {}
+def _wreg_coeffs(l, nmax=5):
+    """even-series coefficients [c0, c2, c4, ...] of the regular part
+    W(x) = l(l+1)(1/sinh^2 x - 1/x^2) - 2 sech^2 x (exact, sympy)."""
+    if l in _WREG_CACHE:
+        return _WREG_CACHE[l]
+    xs = sp.Symbol('x', positive=True)
+    expr = l*(l + 1)*(1/sp.sinh(xs)**2 - 1/xs**2) - 2/sp.cosh(xs)**2
+    ser = sp.series(expr, xs, 0, 2*nmax).removeO()
+    cs = [float(ser.coeff(xs, 2*m)) for m in range(nmax)]
+    _WREG_CACHE[l] = cs
+    return cs
+
+def dS_amp_ratio(l, om, N=40000, x_max=25.0):
     """1/amplitude^2 for the dS minimal-potential solution normalized
-    to near-origin coefficient 1 on x^{l+1}. float64 RK4; the
-    amplitude invariant u^2 + (u'/om)^2 is exact once V ~ 0
-    (V decays as e^{-2x}), so x_max = 25 suffices at any omega."""
-    x0 = 1e-3
-    c0 = -l*(l + 1)/3.0 - 2.0
-    a2 = (c0 - om*om)/(2.0*(2*l + 3))
-    u = x0**(l + 1)*(1 + a2*x0*x0)
-    up = (l + 1)*x0**l*(1 + a2*x0*x0) + x0**(l + 1)*2*a2*x0
-    h = (x_max - x0)/N
+    to near-origin coefficient 1 on x^{l+1}. Amendment A1: exact
+    Frobenius series start at x0 = 0.05 (recurrence b_k 2k(2l+2k+1) =
+    Sum_j b_j w_{k-1-j}) + two-phase float64 RK4 (dense to x = 1,
+    then coarse to x_max; the amplitude invariant u^2 + (u'/om)^2 is
+    exact once V ~ 0, and V decays as e^{-2x})."""
+    x0 = 0.05
+    cs = _wreg_coeffs(l)
+    wv = [cs[0] - om*om] + cs[1:]
+    b = [1.0]
+    for k in range(1, 6):
+        acc_ = 0.0
+        for j in range(k):
+            if k - 1 - j < len(wv):
+                acc_ += b[j]*wv[k - 1 - j]
+        b.append(acc_/(2.0*k*(2*l + 2*k + 1)))
+    u = sum(bk*x0**(l + 1 + 2*k) for k, bk in enumerate(b))
+    up = sum((l + 1 + 2*k)*bk*x0**(l + 2*k) for k, bk in enumerate(b))
     def acc(xx, uu):
         sh = math.sinh(xx); ch = math.cosh(xx)
         V = l*(l + 1)/(sh*sh) - 2.0/(ch*ch)
         return (V - om*om)*uu
-    xx = x0
-    for _ in range(N):
-        k1u = up;            k1v = acc(xx, u)
-        k2u = up + h/2*k1v;  k2v = acc(xx + h/2, u + h/2*k1u)
-        k3u = up + h/2*k2v;  k3v = acc(xx + h/2, u + h/2*k2u)
-        k4u = up + h*k3v;    k4v = acc(xx + h, u + h*k3u)
-        u, up = (u + h/6*(k1u + 2*k2u + 2*k3u + k4u),
-                 up + h/6*(k1v + 2*k2v + 2*k3v + k4v))
-        xx += h
+    for (xa, xb, Nph) in ((x0, 1.0, N//2), (1.0, x_max, N//2)):
+        h = (xb - xa)/Nph
+        xx = xa
+        for _ in range(Nph):
+            k1u = up;            k1v = acc(xx, u)
+            k2u = up + h/2*k1v;  k2v = acc(xx + h/2, u + h/2*k1u)
+            k3u = up + h/2*k2v;  k3v = acc(xx + h/2, u + h/2*k2u)
+            k4u = up + h*k3v;    k4v = acc(xx + h, u + h*k3u)
+            u, up = (u + h/6*(k1u + 2*k2u + 2*k3u + k4u),
+                     up + h/6*(k1v + 2*k2v + 2*k3v + k4v))
+            xx += h
     amp2 = u*u + (up/om)**2
     return 1.0/amp2
 
@@ -383,9 +438,9 @@ P("  GN-2a l=0 exact regression of the amplitude machinery: %s"
 E_l2 = {}
 ok_2x = True
 for name, omv in (('binary', OM_BIN), ('galaxy', OM_GAL),
-                  ('uv-check', 3.0)):
-    e1 = dS_amp_ratio(2, omv, N=20000)
-    e2 = dS_amp_ratio(2, omv, N=40000)
+                  ('mid', 0.5), ('uv-check', 3.0)):
+    e1 = dS_amp_ratio(2, omv, N=40000)
+    e2 = dS_amp_ratio(2, omv, N=80000)
     d2x = abs(e1/e2 - 1)
     ok_2x &= (d2x < 1e-6)
     E_l2[name] = e2/flat_amp_ratio(2, omv)
@@ -399,6 +454,42 @@ eB = dS_amp_ratio(2, 0.01)/flat_amp_ratio(2, 0.01)
 soft_slope = math.log(eA/eB)/math.log(2.0)
 P("  l=2 soft exponent: d ln E / d ln om between om = 0.01 and 0.02 "
   "= %+.3f  (compare l=0's -2)" % soft_slope)
+# A3 bonus: l=1 rows + exponent (display, no gate)
+E_l1 = {}
+for omv in (OM_BIN, OM_GAL, 0.5, 3.0):
+    E_l1[omv] = dS_amp_ratio(1, omv)/flat_amp_ratio(1, omv)
+    P("    l=1 om=%.4f : E_l1 = %.6f  (bonus row)" % (omv, E_l1[omv]))
+e1A = dS_amp_ratio(1, 0.02)/flat_amp_ratio(1, 0.02)
+e1B = dS_amp_ratio(1, 0.01)/flat_amp_ratio(1, 0.01)
+P("  l=1 soft exponent: %+.3f"
+  % (math.log(e1A/e1B)/math.log(2.0)))
+# A3 candidate scan: E_l =? Prod_k (1 + k^2/om^2)
+def cand(om, ks):
+    return float(np.prod([1 + k*k/(om*om) for k in ks]))
+probe2 = [(OM_BIN, E_l2['binary']), (OM_GAL, E_l2['galaxy']),
+          (0.5, E_l2['mid']), (3.0, E_l2['uv-check'])]
+best2 = None
+for ks in ((1, 3), (1, 2), (2, 3), (1, 1), (2, 2), (3, 3)):
+    dev = max(abs(cand(om, ks)/ev - 1) for om, ev in probe2)
+    if best2 is None or dev < best2[1]:
+        best2 = (ks, dev)
+if best2[1] < 1e-8:
+    P("  A3 CONJECTURE (numerically verified, 4 frequencies, "
+      "maxdev %.1e): E_l2 = Prod_k(1 + k^2/om^2), k in %s"
+      % (best2[1], str(best2[0])))
+else:
+    P("  A3 candidate scan: best l=2 candidate k in %s at maxdev "
+      "%.1e -- NOT a lock; measured values stand alone"
+      % (str(best2[0]), best2[1]))
+probe1 = [(om, ev) for om, ev in E_l1.items()]
+best1 = None
+for ks in ((1,), (2,), (3,), (1, 2)):
+    dev = max(abs(cand(om, ks)/ev - 1) for om, ev in probe1)
+    if best1 is None or dev < best1[1]:
+        best1 = (ks, dev)
+P("  A3 l=1 candidate: k in %s at maxdev %.1e%s"
+  % (str(best1[0]), best1[1],
+     " (LOCK)" if best1[1] < 1e-8 else " (no lock)"))
 t2_ok = gates['GN-2a'] and gates['GN-2b']
 if not t2_ok:
     E_l2 = {k: 1.0 for k in E_l2}
@@ -557,19 +648,26 @@ Amat = np.vstack([np.ones_like(xg), xg]).T
 mdeep = (xg >= DEEP_LO) & (xg <= DEEP_HI)
 
 def budget(A_, W_):
+    """returns (mean_deep, deep_end, split, coef, sat, max_resid).
+    sat = True when nu(x + resid) leaves its domain anywhere in the
+    deep window (residual exceeds x: past-FATAL-by-construction,
+    amendment A2)."""
     dxv = np.array([TWO_PI*Delta_gen(float(x_), A_, W_, GAP_GAL)
                     for x_ in xg])
     coef, *_ = np.linalg.lstsq(Amat, dxv, rcond=None)
     resid = dxv - Amat @ coef
+    sat = bool(np.any((xg + resid) <= 0))
     dnu = np.array([nu_f(float(x_) + float(r2)) - nu_f(float(x_))
                     for x_, r2 in zip(xg, resid)])
-    mean_deep = float(np.mean(dnu[mdeep]))
-    deep_end = float(dnu[0])
+    with np.errstate(invalid='ignore'):
+        mean_deep = float(np.mean(dnu[mdeep]))
+        deep_end = float(dnu[0])
     dxb = TWO_PI*Delta_gen(X_BIN, A_, W_, GAP_BIN)
     rb = dxb - (coef[0] + coef[1]*X_BIN)
-    return mean_deep, deep_end, 2*abs(rb), coef
+    return (mean_deep, deep_end, 2*abs(rb), coef, sat,
+            float(np.max(np.abs(resid))))
 
-m_r, de_r, split_r, _ = budget(1.0, 1.0)
+m_r, de_r, split_r, _, _, _ = budget(1.0, 1.0)
 ok4a = (abs(m_r - 0.004925) <= 2e-5 and abs(split_r - 0.0004) <= 2e-4)
 gates['GN-4a'] = ok4a
 P("GN-4a 9Z-b reader identity at (A=1, W=1): dc1_eff = %+.6f "
@@ -647,13 +745,24 @@ gc_grid = sorted(set([round(v, 6) for v in
 curve = {}
 for gc in gc_grid:
     Ag, Wg = A_of_gc(gc, OM_GAL, GAP_GAL)
-    m_, de_, sp_, _ = budget(Ag, Wg)
+    m_, de_, sp_, _, sat_, _ = budget(Ag, Wg)
     ep_g = leak_gen(OM_GAL, GAP_GAL, Wg, Ag)
-    curve[gc] = (Ag, m_, de_, sp_, ep_g)
-    P("  %8.3f %10.4f %+12.5f %+12.5f %10.5f %12.3e %12.3e"
-      % (gc, Ag, m_, de_, sp_, ep_g/G_GAL_GATE, ep_g/G_BIN_GATE))
-kill = [gc for gc in gc_grid if abs(curve[gc][1]) >= 0.15]
-kill_de = [gc for gc in gc_grid if abs(curve[gc][2]) >= 0.15]
+    curve[gc] = (Ag, m_, de_, sp_, ep_g, sat_)
+    if sat_:
+        P("  %8.3f %10.4f %12s %12s %10.5f %12.3e %12.3e"
+          % (gc, Ag, "SAT(>FATAL)", "SAT(>FATAL)", sp_,
+             ep_g/G_GAL_GATE, ep_g/G_BIN_GATE))
+    else:
+        P("  %8.3f %10.4f %+12.5f %+12.5f %10.5f %12.3e %12.3e"
+          % (gc, Ag, m_, de_, sp_, ep_g/G_GAL_GATE, ep_g/G_BIN_GATE))
+def _fatal_mean(gc):
+    return curve[gc][5] or (math.isfinite(curve[gc][1])
+                            and abs(curve[gc][1]) >= 0.15)
+def _fatal_de(gc):
+    return curve[gc][5] or (math.isfinite(curve[gc][2])
+                            and abs(curve[gc][2]) >= 0.15)
+kill = [gc for gc in gc_grid if _fatal_mean(gc)]
+kill_de = [gc for gc in gc_grid if _fatal_de(gc)]
 P("  kill-window (|mean| >= 0.15): %s"
   % ("{%.3f .. %.3f}" % (min(kill), max(kill)) if kill
      else "EMPTY on grid"))
@@ -664,23 +773,28 @@ P("  four convention-central readings:")
 cent_fatal = 0
 for k, gc in centrals.items():
     Ag, Wg = A_of_gc(gc, OM_GAL, GAP_GAL)
-    m_, de_, sp_, _ = budget(Ag, Wg)
-    fat = abs(m_) >= 0.15
+    m_, de_, sp_, _, sat_, _ = budget(Ag, Wg)
+    fat = sat_ or (math.isfinite(m_) and abs(m_) >= 0.15)
     cent_fatal += int(fat)
-    P("    %-14s g_c = %.3f : dc1_mean = %+.5f  deep-end = %+.5f  %s"
-      % (k, gc, m_, de_, "[FATAL-grade]" if fat else ""))
+    P("    %-14s g_c = %.3f : dc1_mean = %s  deep-end = %s  %s"
+      % (k, gc,
+         "SAT" if sat_ else "%+.5f" % m_,
+         "SAT" if sat_ else "%+.5f" % de_,
+         "[FATAL-grade]" if fat else ""))
 gc_gm = float(np.exp(np.mean(np.log(list(centrals.values())))))
 P("  W-convention rows at g_c = %.3f (gm of centrals):" % gc_gm)
 for wf in (0.5, 1.0, 2.0):
     Ag, Wg = A_of_gc(gc_gm, OM_GAL, GAP_GAL, Wfac=wf)
-    m_, de_, sp_, _ = budget(Ag, Wg)
-    P("    W = %.1f g_c : dc1_mean = %+.5f  deep-end = %+.5f"
-      % (wf, m_, de_))
-gates['GT5'] = bool(all(np.isfinite([curve[gc][1] for gc in gc_grid])))
+    m_, de_, sp_, _, sat_, _ = budget(Ag, Wg)
+    P("    W = %.1f g_c : dc1_mean = %s  deep-end = %s"
+      % (wf, "SAT" if sat_ else "%+.5f" % m_,
+         "SAT" if sat_ else "%+.5f" % de_))
+gates['GT5'] = bool(all(np.isfinite(curve[gc][0]) for gc in gc_grid))
 
 # ---- U: the under-supply factor ------------------------------------
 P("")
-A_band = [curve[gc][0] for gc in gc_grid if band_lo <= gc <= band_hi]
+A_band = [curve[gc][0] for gc in gc_grid
+          if band_lo - 1e-9 <= gc <= band_hi + 1e-9]
 A_min_band = min(A_band) if A_band else min(c[0] for c in
                                             curve.values())
 U = {}
@@ -702,15 +816,23 @@ P("  display row: U at M_eff/mu = 1e-10 would be %.2e (bin) / "
 
 # ---- B-PHYS: the physical-normalization budget ----------------------
 A_rad_gal = Jrad['galaxy']/Dhat(OM_GAL)
-m_p, de_p, sp_p, _ = budget(A_rad_gal, 1.0)
+m_p, de_p, sp_p, _, sat_p, maxres_p = budget(A_rad_gal, 1.0)
 ep_p_gal = leak_gen(OM_GAL, GAP_GAL, 1.0, A_rad_gal)
 A_rad_bin = Jrad['binary']/Dhat(OM_BIN)
 ep_p_bin = leak_gen(OM_BIN, GAP_BIN, 1.0, A_rad_bin)
+# amendment A2: the direct nu-difference underflows double precision
+# at A_rad ~ 1e-42..1e-35; quote the analytic bound |dc1| <=
+# max|nu'| x max|resid| instead (nu' ~ -1/x^2 dominates at x = 0.14)
+nup_max = max(abs(-math.exp(x_)/math.expm1(x_)**2) for x_ in
+              (0.14, 0.20, 0.45))
+dc1_bound = nup_max*maxres_p
 P("")
 P("  B-PHYS (proxy shape, physical normalization, W = 1 display "
-  "geometry): dc1_phys = %+.2e (PASS bar 0.05); eps_phys gal/bin = "
-  "%.2e / %.2e (PASS bar 0.3 x 0.1117)" % (m_p, ep_p_gal, ep_p_bin))
-gates['B-PHYS'] = bool(abs(m_p) <= 0.005
+  "geometry): |dc1_phys| <= %.2e (analytic bound max|nu'| x "
+  "max|resid|; direct difference underflows double precision; PASS "
+  "bar 0.05); eps_phys gal/bin = %.2e / %.2e (PASS bar 0.3 x 0.1117)"
+  % (dc1_bound, ep_p_gal, ep_p_bin))
+gates['B-PHYS'] = bool((not sat_p) and dc1_bound <= 0.005
                        and ep_p_gal <= 0.03*G_BIN_GATE
                        and ep_p_bin <= 0.03*G_BIN_GATE)
 P("  l=2-quintic shape leg: EXCLUDED from verdict by pre-registration "
@@ -725,7 +847,7 @@ P("  l=2-quintic shape leg: EXCLUDED from verdict by pre-registration "
 P("")
 u_forced = (U['binary'] <= 1e-6 and U['galaxy'] <= 1e-6)
 u_live = (U['binary'] > 0.1 or U['galaxy'] > 0.1)
-phys_fatal = (abs(m_p) >= 0.15 or ep_p_gal >= 3*G_BIN_GATE
+phys_fatal = (sat_p or dc1_bound >= 0.15 or ep_p_gal >= 3*G_BIN_GATE
               or ep_p_bin >= 3*G_BIN_GATE)
 if u_live and cent_fatal == 4:
     P("==> 10A VERDICT (locked grammar): N-FATAL -- the radiative "
@@ -751,10 +873,11 @@ elif u_forced and gates['B-PHYS'] and t2_ok:
       "dS_c (all orders), Birkhoff steps, and a gapped multipole "
       "tower costing only %.1e x g_c^2 in admixture." % tower)
     P("    (3) The PHYSICAL dispersive budget and leak are the "
-      "radiative-sector ones: dc1_phys = %+.1e, eps_phys <= %.1e -- "
-      "inside every band by tens of orders. The 9Z-b joint pessimal "
-      "corner evaporates: it priced a radiative normalization the "
-      "physics does not supply." % (m_p, max(ep_p_gal, ep_p_bin)))
+      "radiative-sector ones: |dc1_phys| <= %.1e (analytic bound), "
+      "eps_phys <= %.1e -- inside every band by tens of orders. The "
+      "9Z-b joint pessimal corner evaporates: it priced a radiative "
+      "normalization the physics does not supply."
+      % (dc1_bound, max(ep_p_gal, ep_p_bin)))
     P("    (4) The all-radiative CONDITIONAL is quoted above with "
       "its own gamma kill-window (D cancels under the bridge; that "
       "budget rides the measured gamma alone). The round-21 one-seam "

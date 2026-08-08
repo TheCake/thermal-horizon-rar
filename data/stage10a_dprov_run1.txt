@@ -1,0 +1,94 @@
+==============================================================================
+STAGE 10A -- O5-NORM: THE D-PROVENANCE DISCHARGE
+==============================================================================
+
+PART 0 -- T1 CONSTRAINT CREDENTIAL
+GN-0a Birkhoff-Lambda: R_tr/(dB/dt) = 1/(r*B(t, r)) (nonzero, derivative-free => vacuum+Lambda forces static B); SdS solves Einstein+Lambda exactly: True  => PASS
+GN-0b SdS first law dM = -T_c dS_c: kappa = (3*H**2*r_c**2 - 1)/(2*r_c); residual dM/dr_c + T_c dS_c/dr_c = 0  => PASS
+  conjugacy magnitude: |dS_c/dM| = 2 pi c^2/(hbar H) = 2.359e+69 /kg -> 4.692e+99 nats for 1 M_sun (O(1) thermodynamic conjugacy; NOT multipole-suppressed)
+  constraint-tower budget: Sum_(l>=1) (2l+1) 4 n(sqrt(l(l+1))) / (sqrt(l(l+1)) - Omega_bin)^2 = 1.081e-03 x g_c^2  (vs smallest gate 0.1117: negligible for any g_c <= 2H)
+
+PART 1 -- T2 THE l=2 RADIAL PROBLEM (H = 1 units)
+GN-1 potential + l=0 regression: V_l = H^2[l(l+1)/sinh^2 - 2 sech^2] True; l=0 well True; 9Z solution residual 0 => PASS
+
+  E_l(omega) = dS/flat near-origin density ratio (float64 RK4, 2x-resolution gated):
+    l=0 om=0.0553 : E = 328.00149440  vs exact 1+1/om^2 = 328.00149440  (d=1.4e-12)
+    l=0 om=0.0350 : E = 816.66978522  vs exact 1+1/om^2 = 816.66978521  (d=1.4e-12)
+    l=0 om=0.1743 : E = 33.92543325  vs exact 1+1/om^2 = 33.92543325  (d=1.4e-12)
+    l=0 om=0.5000 : E = 5.00000000  vs exact 1+1/om^2 = 5.00000000  (d=1.5e-12)
+    l=0 om=2.0000 : E = 1.25000000  vs exact 1+1/om^2 = 1.25000000  (d=4.1e-12)
+  GN-2a l=0 exact regression of the amplitude machinery: PASS
+    l=2 om=0.1743 : E_l2 = 10253.947339   (2x-resolution d = 8.7e-02)  [binary]
+    l=2 om=0.0350 : E_l2 = 6095243.860150   (2x-resolution d = 8.7e-02)  [galaxy]
+    l=2 om=3.0000 : E_l2 = 2.258999   (2x-resolution d = 8.7e-02)  [uv-check]
+  GN-2b l=2 2x-resolution convergence: FAIL
+  l=2 soft exponent: d ln E / d ln om between om = 0.01 and 0.02 = -4.000  (compare l=0's -2)
+  (T2 degraded: E_l2 := 1 carried into T3, letter cap N-GRAY)
+
+PART 2 -- T3 THE AB-INITIO RADIATIVE CHANNEL
+GN-3a circular-orbit tensor sum: <Qddd_ij Qddd_ij>/5 = 32*Omega**6*mu**2*s**4/5 == (32/5) mu^2 s^4 Omega^6 -> PASS
+GN-3b static-averaged charge: |dQbar/ds|^2 = 2*mu**2*s**2/3 == (2/3) mu^2 s^2 -> PASS
+
+  per-quantum radiative density at the window center (hbar cancels via the cascade correspondence; E_l2 included):
+    binary J_rad/H = 1.404e-50  at M_eff = mu  (E_l2 = 1.000)
+    galaxy J_rad/H = 1.947e-42  at M_eff = mu  (E_l2 = 1.000)
+
+PART 3 -- T4 THE NORMALIZATION BRIDGE
+GN-4a 9Z-b reader identity at (A=1, W=1): dc1_eff = +0.004925 (archive +0.004925), split = 0.00037 (archive 0.0004) -> PASS
+GN-4b 9Z leak reader identity: eps_bin = 1.627e-05 (archive 1.627e-5), eps_gal = 3.822e-05 (archive 3.822e-5) -> PASS
+
+GN-5 dial regression: r(0.65) = 0.3981 (9U 0.3980); r_hat(0.6471) = 0.3904 -> gamma_inst = 1.350 (9U 1.35), gamma_wind = 2.549 (9U 2.55) -> PASS
+  g_c = gamma/(2 t_hat) [measured (9U r_hat +/- 1 sigma)]: centrals inst t=1/H: 0.675  inst t=2pi/H: 0.107  wind t=1/H: 1.274  wind t=2pi/H: 0.203
+  honest g_c band (union over readings x t-conventions x r_hat +/- 1 sigma): [0.072, 1.571] H
+
+  dc1_T4(g_c) with A from the fixed point (W = g_c, galaxy geometry; the D-normalization cancels):
+     g_c/H     A(g_c)     dc1_mean  dc1_deepend      split    eps_g/own   eps_g/minG
+     0.050     0.0740         +inf         +inf    1.83248    1.291e+00    8.711e+00
+     0.072     0.1314         +inf         +inf    2.62768    8.471e-01    5.715e+00
+     0.093     0.1966     +3.56199     -2.78114    3.19747    5.997e-01    4.046e+00
+     0.107     0.2453     -0.94017     -5.20891    3.45095    4.875e-01    3.289e+00
+     0.121     0.2953     -1.96521     -5.82653    3.58747    4.056e-01    2.736e+00
+     0.156     0.4452     -2.70439     -6.26949    3.41285    2.607e-01    1.759e+00
+     0.202     0.6739     -2.69014     -6.16208    2.01537    1.580e-01    1.066e+00
+     0.203     0.6801     -2.67945     -6.14884    1.96645    1.562e-01    1.054e+00
+     0.261     1.0234     +0.34962     +1.90356    0.01825    8.916e-02    6.015e-01
+     0.333     1.5285     +0.23716     +1.23393    0.01371    4.753e-02    3.207e-01
+     0.337     1.5582     +0.23279     +1.20899    0.01352    4.601e-02    3.104e-01
+     0.435     2.3747     +0.15512     +0.77853    0.00979    2.118e-02    1.429e-01
+     0.563     3.6144     +0.10417     +0.51002    0.00702    8.385e-03    5.657e-02
+     0.675     4.8530     +0.07932     +0.38323    0.00554    3.872e-03    2.612e-02
+     0.727     5.4760     +0.07106     +0.34176    0.00503    2.718e-03    1.834e-02
+     0.940     8.2195     +0.04934     +0.23431    0.00362    6.736e-04    4.545e-03
+     1.215    12.1453     +0.03452     +0.16249    0.00260    1.162e-04    7.840e-04
+     1.274    13.0241     +0.03229     +0.15180    0.00244    7.994e-05    5.393e-04
+     1.571    17.5232     +0.02385     +0.11158    0.00183    1.232e-05    8.309e-05
+     2.000    24.0098     +0.01634     +0.07611    0.00127    8.245e-07    5.562e-06
+  kill-window (|mean| >= 0.15): {0.050 .. 0.435}
+  deep-end >= 0.15 window:     {0.050 .. 1.274}
+  four convention-central readings:
+    inst t=1/H     g_c = 0.675 : dc1_mean = +0.07932  deep-end = +0.38324  
+    inst t=2pi/H   g_c = 0.107 : dc1_mean = -0.94012  deep-end = -5.20888  [FATAL-grade]
+    wind t=1/H     g_c = 1.274 : dc1_mean = +0.03229  deep-end = +0.15180  
+    wind t=2pi/H   g_c = 0.203 : dc1_mean = -2.67945  deep-end = -6.14884  [FATAL-grade]
+  W-convention rows at g_c = 0.370 (gm of centrals):
+    W = 0.5 g_c : dc1_mean = -3.26908  deep-end = -6.64587
+    W = 1.0 g_c : dc1_mean = +0.20068  deep-end = +1.02796
+    W = 2.0 g_c : dc1_mean = +0.01696  deep-end = +0.08045
+
+  U(binary) = J_rad / J_req(weakest bridged) = 1.404e-50 / 2.945e-02 = 4.769e-49
+  U(galaxy) = J_rad / J_req(weakest bridged) = 1.947e-42 / 1.424e-01 = 1.367e-41
+  M_eff scaling: U ~ 1/M_eff; radiative supply would suffice only below M_eff* = 4.74e-19 kg (bin) / 2.72e-11 kg (gal) vs mu = 9.94e+29 / 1.99e+30 kg  -- the physical branch M_eff >= mu sits 48 / 41 orders past the crossover
+  display row: U at M_eff/mu = 1e-10 would be 4.77e-39 (bin) / 1.37e-31 (gal)
+
+  B-PHYS (proxy shape, physical normalization, W = 1 display geometry): dc1_phys = +0.00e+00 (PASS bar 0.05); eps_phys gal/bin = 1.03e-46 / 1.53e-54 (PASS bar 0.3 x 0.1117)
+  l=2-quintic shape leg: EXCLUDED from verdict by pre-registration (secular approximation fails at omega ~ Omega_orb ~ 1e5 H; an all-radiative bridged budget under that shape is UV-cutoff-dominated -- itself evidence the all-radiative reading is not well-posed).
+
+==> 10A VERDICT (locked grammar): N-GRAY -- quote everything; cells: U_forced=True U_live=False B-PHYS=True T2=False dial=True cent_fatal=2/4.
+    CREDENCE: per the pre-signed map (N-FATAL -> 15 to 8; otherwise HOLD 15 pending ROUND 22; rise cell 15 -> 18 requires R22 no-unpatched-hole AND N-SPLIT-CLOSED).
+
+GN-6 ledger legs: {'mech-9z-leak': True, 'mech-9zb-diff': True, 'mech-9w-multimode': True, 'mech-9t-resonance': True, 'gal-9u-ptail': True} -> PASS
+
+GATES: B-PHYS:PASS  GN-0a:PASS  GN-0b:PASS  GN-1:PASS  GN-2a:PASS  GN-2b:FAIL  GN-3a:PASS  GN-3b:PASS  GN-4a:PASS  GN-4b:PASS  GN-5:PASS  GN-6:PASS  GT5:FAIL
+LABELS: T1 BANKED (first law + Birkhoff steps exact) | T2 DEGRADED (E := 1)
+
+done (0.0 min)
