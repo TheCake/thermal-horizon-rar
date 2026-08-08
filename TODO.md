@@ -1203,3 +1203,25 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     (d) optional: cQED platform
     contact (7E translation exists — a lab test of the lending law is
     a collaboration seed, post-circulation).
+31. **PUBLICATION-READINESS AUDIT** (author decision 2026-08-08:
+    publish the repo AND the git history once we are sure we are
+    done). PRE-AUDIT RUN 2026-08-08 — CLEAN on the critical checks:
+    private/ NEVER tracked in any commit on any branch; the
+    REVIEW-*/OPUS-NOTE/COLLEAGUE-BRIEF/X-REPLY-DRAFT files never
+    tracked; the EAGLE credential string absent from all history and
+    the tracked tree; main = 294 commits rooted at the clean squash
+    fd56efc = the publishable pre-registration chain. **ONE BLOCKER:
+    origin/master (3 commits, no common ancestor with main) = the
+    un-sanitized week-one archive — the root commit message and
+    calcs/antigravity_calcs.py carry the banned word, and the
+    sanitize commit only lands at its tip. DELETE IT FROM THE REMOTE
+    before flipping visibility: `git push origin --delete master`
+    (Claude's attempt 2026-08-08 was permission-blocked — needs the
+    author's terminal; local master stays as the private archive,
+    re-pushable never/if ever wanted).** Remaining before the flip:
+    (a) that deletion; (b) papers shipped per CIRCULATION.md;
+    (c) a final grep sweep of README/PAPER/papers for origin
+    references; (d) the visibility flip itself — at which moment the
+    repo URLs cited in all three papers go live. Deleting a remote
+    BRANCH is not a history rewrite: main's pre-reg chain is
+    untouched.
