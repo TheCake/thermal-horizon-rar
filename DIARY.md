@@ -9,6 +9,43 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-08 (sixth close) — Paper 3 draft 0.1 written; the hunt is commissioned
+
+The author called the P3 thaw ("You can now write the paper") and it
+exists: papers/paper3_mechanism.md, draft 0.1, register-checked
+(abstract 246w, mean 23.2, max 50 minus header artifact, zero
+em-dashes/bold in body, no codenames — describe stages by function).
+Four gated figures (calcs/paper3_figures.py; GP3-1 caught my rounded
+x-anchors being inconsistent with the gate primaries at 5e-4 — the
+fix pattern: derive secondary anchors FROM the ledger primaries,
+never state both at independent roundings). Both round-21 downgrades
+are IN the text (the "two-sided" §5 and the credence history ¶ are
+the paper's honesty signature — do not soften them in revision).
+Reproducibility table script names verified on disk (three guessed
+names were wrong on first pass: 6e_ambgate, 6m_analog2,
+6n_pseudomode — always Glob before citing scripts).
+
+NOT yet done for P3: the referee round (readability dimension per
+STYLE.md; TELL THE AUTHOR before initiating; and per the new memory
+rule, re-compute every number the referee introduces). Also not
+booked: no ledger row for papers (house pattern: papers get LOG
+lines + CLAUDE.md blocks only).
+
+THE COMMISSIONED NEXT WORK: the D-normalization derivation hunt
+("give it all you got") — the absolute coupling-density
+normalization of the horizon soft sector, tied to the l=2/η⁴
+self-consistency (which channel carries both the O(1) grammar and
+the suppressed leak). Design thoughts for the next instance: the
+honest route is fixing the absolute D by the SAME physics that
+produces the measured c₁ = ½ pull (the JC decomposition anchors the
+grammar's amplitude; the 9Z D was convention-normalized — the
+derivation must tie the two normalizations together or find the
+spin-2 channel's own D). Expect this to be the hardest derivation
+the program has attempted; pre-reg the bars BEFORE computing
+anything; wire every gate into the letter grammar (trap #11); the
+FATAL corner is real (round-21 envelope). Fresh session recommended
+(user's compaction worry; six closes today).
+
 ## 2026-08-08 (fifth close) — 9Z-b + ROUND 21: not closed, but reduced to one constant
 
 O5-DIFF ran same-day (pre-reg af00120) and fired DIFF-CLOSED with my

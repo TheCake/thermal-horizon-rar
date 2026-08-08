@@ -287,8 +287,36 @@ a future P3 z-pair primary read); reply draft = X-REPLY-DRAFT.md
 (NEVER commit; posting = the author's click). REPO FINDING: the
 GitHub rename to thermal-horizon-rar is DONE but the repo is PRIVATE
 (anonymous 404) — papers' URLs resolve only after the author flips
-visibility; no repo links in outward drafts until then.**
-**9Z + ROUND 20 (2026-08-08 fourth close, O5-LEAK EXECUTED
+visibility; no repo links in outward drafts until then. UPDATE
+2026-08-08 later: the author flipped the default branch to main and
+deleted origin/master — the remote is now the clean pre-reg chain
+only; TODO 31's remaining items = papers shipped + final grep sweep
++ the visibility flip.**
+**PAPER 3 DRAFT 0.1 WRITTEN (2026-08-08 sixth close, author-called
+thaw "You can now write the paper"):
+[papers/paper3_mechanism.md](papers/paper3_mechanism.md) = "A
+horizon-thermal mechanism for the radial acceleration relation:
+exact results and open constants" — fresh per STYLE.md (abstract
+246w, sentence mean 23.2, no codenames in text), four gated figures
+(calcs/paper3_figures.py 4/4 PASS; GP3-1 caught rounded-anchor
+inconsistency first firing), both ROUND-21 downgrades adopted in the
+text, credences in-paper (53 / ~15 with strike-and-recovery
+history), references verified-only + three classics, reproducibility
+table script names Glob-verified. Committed c7c68ee. P3 referee
+round NOT yet run (tell the author first; per the new memory rule
+re-compute every reviewer number). NEW STANDING RULE (author
+2026-08-08): the Opus reviewer is weaker at math — independently
+re-compute every load-bearing number before adopting any round
+ruling (memory feedback-verify-reviewer-math). **NEXT COMMISSIONED
+WORK (author: "afterwards let's hunt down the derivation, give it
+all you got"): the D-NORMALIZATION DERIVATION — the absolute
+horizon-coupling density, tied to the l=2/η⁴ self-consistency (which
+channel carries both the O(1) grammar and the suppressed leak); the
+DIARY sixth-close entry carries the design seed (tie the 9Z D
+convention to the JC-decomposition amplitude that produces c₁ = ½,
+or find the spin-2 channel's own D); pre-reg bars before any
+computation; trap #11 (wire gates into letter grammar); the FATAL
+corner is real. Fresh session recommended (six closes today).**
 HORIZON-SIDE, pre-reg 9735d0e; author go: "maybe we'll even learn
 something new" — we did): the dS static-patch l=0 minimal
 (graviton-like) radial problem = the λ=1 PÖSCHL–TELLER WELL, exactly
