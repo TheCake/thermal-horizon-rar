@@ -14030,6 +14030,56 @@ curve, and the gate channel is proven non-dispersive in the toy class;
 closure still awaits κ = 1's derivation (the requirement curve) and
 the l=2 cloud vertex.
 
+### ROUND 24 (same day): P-TRANSMITTED AT CONSISTENCY GRADE — hole YES (mild), HOLD 15, two clauses retracted
+
+The round-24 referee reproduced EVERY load-bearing number (his own Fock
+matrices, own sympy, own Rabi law for ARM-B) and **independently
+validated amendment A1 with the single-fix combinations the stage never
+printed** (Ω_b-fix alone spread 0.0269 = PASSES the locked bars;
+gd-fix alone 0.1400 = FAILS ⇒ the collision was the culprit, the
+gd-halving is FC insurance — amendment certified bug-class). His three
+affirmations: T1's separation theorem is "solid and correct — R23's
+objection was genuinely mis-templated" (the π(2n+1) row was the
+cross-Kerr/JC shift reading the BATH occupation; the longitudinal
+polaron pull reads the SYSTEM occupation and is bath-free); T3's H-P
+drop = "honestly discharged, the round's best work"; T4's
+GATE-FLAT+ANTI negative = "robust" (holds via the anti-law, the flat
+arm, AND run-1's decline — none is the growing lending gate). His
+circularity probe ANSWERED-and-adopted: the renormalization split is
+affine-in-x ONLY under the closure φ ∝ 1/√ω (under constant φ the
+"constant" runs x² and is NOT absorbable) — licensed-not-circular but
+closure-conditional (condition 3, booked). RULING: unpatched hole YES,
+mild ("true-but-inflated," materially narrower than rounds 19–23):
+**(1) "κ MEASURED ~1" retracted → the two-pole form (deep-
+normalization-consistent 1.00±0.05; transition-shape-contested — 4Z
+hier 1.48 excludes 1 at point grade, bootstrap band 0.6–1.8 contains
+it; ¼-vs-½ OPEN); (2) "transmits the ENTIRE measured ladder" retracted
+→ the polaron transmits the LINEARITY in the local occupation (which
+uniquely selects the additive C&T law over the divergent multiplicative
+form); the coefficients are C&T's own Taylor series, and only c₁
+(weakly c₂) is measured.** Conditions 1–5 executed in
+[calcs/stage10c_addendum.py](calcs/stage10c_addendum.py) (every
+reviewer number re-verified per the standing rule: population table
+exact, both scans exact, κ=1.5 rungs 1/8 and −1/480 exact, bootstrap
+band exact); g_close row down-labeled (4/6 anchors below-band);
+T4 annotations labeled CONDITIONAL on the l=2 successor. SUCCESSORS
+(R24 conds 6/7/8/9): derive κ = 1 (target: is the bright mode's
+effective inertia FORCED to E_c = 2ħω?); the l=2 near-field
+system↔cloud exchange vertex (R22-cond-4, STRIKE-BEARING: if it cannot
+be Rabi-capable the pre-registered 6X/9U strike fires); **the joint
+single-κ deep+transition fit (in-catalog, no new data — resolves
+κ~1 vs κ~1.5 vs one-κ-form-rejected, the sharpest meter upgrade)**;
+lead with linearity. CREDENCE (mechanical): hole blocks the rise →
+mech conditional HOLDS 15; anomaly-real 53 untouched. Five O5 rounds,
+zero strikes, zero rises — his line: "the derivation is being cornered
+honestly, not carried."
+
+PLAIN VERDICT (round-adjusted): the transmission STRUCTURE is
+established (linearity → local-occupation argument, bath-free); the
+normalization is one contested, underived number with a named exact
+requirement; the gate needs a real-exchange partner whose derivation
+is now the strike-bearing next leg.
+
 ELI12: We finally computed the push honestly. Three things came out.
 (1) The universe's hum can only LEAN on our melody — and the lean
 reads the melody's own warmth, not the room's noise; the scary big

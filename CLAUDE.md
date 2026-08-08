@@ -453,6 +453,49 @@ REVIEW-ROUND23-OPUS.md (uncommitted). Ledger 200 rows / worldtable
 252 tokens six gates PASS. Eight closes today — FRESH SESSION
 STRONGLY RECOMMENDED before 10C.**
 
+**10C + ROUND 24 (2026-08-09, O5-PULL, pre-reg 13c3662 + amendment A1
+3d81fdd): THE 10C PACKAGE DISCHARGED in one stage — fired
+P-TRANSMITTED (GATE-FLAT+ANTI), ROUND 24 reproduced every digit,
+VALIDATED amendment A1 with the single-fix scans the stage never
+printed (Om_b-fix alone PASSES / gd-fix alone FAILS ⇒ the Om_b = CHI
+collision was the culprit; trap #13: check parameter commensurability
+in driven toys), and UPHELD the letter AT CONSISTENCY GRADE (hole
+YES-mild, "true-but-inflated"; two clauses retracted in the
+addendum). EARNED: (T1) THE SEPARATION THEOREM — the 10B vertex is
+polaron-exact; the bath occupation CANCELS between time-orderings;
+the pull reads the SYSTEM occupation linearly all orders
+(−(g²/Ω)(2n+1+2σ)); R23's π(2n+1) over-production was the
+cross-Kerr/JC template misapplied (reviewer: "genuinely
+mis-templated" — his own error, owned); (T2) THE HONEST HEADLINE
+(R24 cond 9): the only allowed vertex produces a pull STRICTLY
+LINEAR in the local occupation ⇒ uniquely selects the additive C&T
+law (multiplicative diverges at x = ln 2); the LINEARITY is ours,
+the coefficients are C&T's series; κ = 4g²/(Ωω) is TWO-POLE (a₀-lock
+1.00±0.05 consistent-with-1; 4Z hier 1.48 point-excludes, bootstrap
+0.6–1.8 contains; ¼-vs-½ OPEN — never print "κ measured ~1"); (T3)
+H-P DROPPED-AND-REPLACED: κ=1 forces φ_req = ½√(Ω/ω) EXACT = the
+zero-point of effective inertia E_c = 2ħω (TWO QUANTA of the mode it
+dresses); the 61-order bridge is now one exact curve (single-horizon
+60.2 orders short; renormalization licensed-not-circular but
+CLOSURE-CONDITIONAL — his probe, adopted); (T4) THE GATE IS
+NON-DISPERSIVE (robust): saturation ½-FLAT (existence-counting is
+FC-blind) + exact ANTI-lending law ½/(1+n̄) perturbatively (gates on
+ambient EMPTINESS — opposite monotonicity to the sky) ⇒ R23's 6X
+demotion FAILED its own test; 6X keeps real-exchange CONDITIONAL on
+the l=2 local-cloud partner (R24 cond 5 wording). CREDENCE: hole
+blocks the pre-signed rise → mech conditional HOLDS 15 (FIVE O5
+rounds, zero strikes, zero rises; his line: "the derivation is being
+cornered honestly, not carried"); anomaly-real 53 untouched. Round
+in REVIEW-ROUND24-OPUS.md (uncommitted); addendum re-verified every
+reviewer number (populations/scans/rungs/band — all exact). Ledger
+201 rows / worldtable 254 tokens six gates PASS. **THE NEXT FORK
+(R24 successors, sharpness order): (1) THE JOINT SINGLE-κ FIT (R24
+cond 8) — deep+transition, one κ, χ²; IN-CATALOG, EXECUTABLE NOW;
+resolves κ~1 / κ~1.5 / one-κ-form-rejected; (2) derive κ = 1 (cond
+6: is E_c = 2ħω forced?); (3) the l=2 near-field cloud vertex (R22
+cond 4, STRIKE-BEARING — not-Rabi-capable ⇒ the 6X/9U strike fires).
+Or the author's paper/circulation queue (TODO 27–31).**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

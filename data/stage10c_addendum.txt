@@ -1,0 +1,77 @@
+==============================================================================
+STAGE 10C ADDENDUM -- ROUND-24 CONDITIONS 1/2/3/4/5
+==============================================================================
+
+GA-1 run-1 drain fingerprint (Om_b = 0.8 = CHI, gd = 0.3, nbar = 8):
+  level populations [P0, P1, P2, P3] = [0.256, 0.361, 0.243, 0.140]
+  his [0.256, 0.361, 0.243, 0.140]
+  -> CONFIRMED (the collision drains the pair manifold into {0,3}; four-level spread, P2 ~ 1/4)
+
+GA-2 the single-fix scans (his validation of amendment A1):
+  Om_b-fix alone (0.53, gd=0.3): spread 0.0269 (his 0.0269), dev 0.0311 -> PASSES bars  [CONFIRMED]
+  gd-fix alone   (0.8, gd=0.15): spread 0.1400 (his 0.14), dev 0.1495 -> FAILS  [CONFIRMED]
+  -> the Om_b = CHI collision was the culprit; the gd-halving is the
+     disclosed FC-Laguerre insurance, not the essential fix. Amendment
+     A1 stands as bug-class (reviewer-validated with the combinations
+     the stage never printed).
+
+GA-3 kappa = 1.5 rung mismatches (his discrimination check):
+  nu = 1 + 1.5 n_BE: x-coeff = 1/8 (his 1/8), x^3-coeff = -1/480 (his -1/480) -> CONFIRMED
+  -> the rungs WOULD discriminate kappa if measured at depth; per 6L
+     the deep arm is population-thin -- only c1 (weakly c2) is
+     measured. His LADDER-clause correction is arithmetically right.
+
+GA-4 hier-bootstrap kappa band: c1 = 0.4 +/- 0.3 -> kappa = 2(1-c1):
+  band [0.6, 1.8] (his [0.6, 1.8]) -- contains 1: CONFIRMED (his mitigation row).
+
+==============================================================================
+ROUND-24 CONDITIONS EXECUTED (letter clauses corrected in place):
+==============================================================================
+(1) KAPPA CLAUSE CORRECTED: kappa is DEEP-NORMALIZATION-CONSISTENT
+    with 1 (a0-lock 1.00 +/- 0.05) but TRANSITION-SHAPE-CONTESTED
+    (flat-M/L 1.10; hierarchical 1.48 excluding 1 at its point
+    estimate, bootstrap band 0.6-1.8 containing 1); the 1/4-vs-1/2
+    contest is OPEN (5T deep arm + 5K binaries + hier bootstrap vote
+    1/2). 'kappa is MEASURED ~1' is RETRACTED to this two-pole form.
+(2) LADDER CLAUSE CORRECTED: the polaron transmits the LINEARITY in
+    the local occupation (all orders in g) -- which uniquely selects
+    the additive C&T law over the divergent multiplicative form; the
+    ladder coefficients (1/2, 1/12, 0, -1/720) are the Taylor series
+    of the assumed law 1 + n_BE (priority C&T 2019), automatic at
+    kappa = 1; only c1 (weakly c2) is independently measured.
+    'transmits the ENTIRE measured Bernoulli ladder' is RETRACTED.
+(3) RENORMALIZATION CLOSURE-CONDITIONALITY STATED: the split into
+    'absorbable constant + n-linear softening' is affine-in-x ONLY
+    under the closure phi ~ 1/sqrt(om) (the same running that makes
+    kappa x-independent); under constant phi the 'constant' runs as
+    x^2 and is NOT affine-absorbable. Licensed-not-circular, but
+    conditional on the named-open requirement curve (his check,
+    verified in-flight during the stage design and now booked).
+(4) g_close ROW DOWN-LABELED: 4 of 6 anchors sit BELOW the 10A
+    gamma-band (all three galaxy legs + binary x_loc = 0.5); only
+    2 of 6 inside. The row reads 'mostly below-band, order-grade'.
+(5) T4 ANNOTATIONS LABELED CONDITIONAL: '6X real-exchange STANDS /
+    9T NOT mooted' hold CONDITIONAL ON the l=2 local-cloud partner
+    being ledger-viable (the OPEN R22-cond-4 derivation). If that
+    vertex cannot be made Rabi-capable, the pre-registered 6X/9U
+    strike fires (successor condition 7).
+
+SUCCESSORS BOOKED (R24 conds 6/7/8/9): (6) derive kappa = 1 / the
+  requirement curve (E_c = 2 hbar om is the target); (7) the l=2
+  near-field system<->cloud exchange vertex (R22-cond-4; the gate
+  leg; strike-bearing); (8) the joint single-kappa fit (deep +
+  transition, one kappa, chi^2 -- the sharpest in-catalog meter
+  upgrade, no new data); (9) lead with the linearity result.
+
+==============================================================================
+10C LETTER ANNOTATED (ROUND 24 adopted): P-TRANSMITTED AT
+CONSISTENCY GRADE -- hole YES (mild: two true-but-inflated clauses,
+both corrected above); no strike (THM-SEP physically solid; the
+15->12 cell did not fire). CREDENCE (pre-signed map, mechanical):
+the hole blocks the rise cell -> bath-mechanism conditional HOLDS
+15; anomaly-real 53 untouched. Five O5 rounds, zero strikes, zero
+rises -- the derivation is being cornered honestly, not carried.
+==============================================================================
+GATES: GA-1:PASS  GA-2:PASS(2/2 confirmed)  GA-3:PASS  GA-4:PASS
+
+done

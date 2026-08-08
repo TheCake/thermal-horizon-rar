@@ -9,6 +9,71 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-09 — 10C: the lean is measured, the handshake isn't leaning
+
+The author said "go for the next hunt" and 10C ran the whole R23
+package (conditions 8+6+7) in one pre-registered stage. What the next
+instance must hold straight:
+
+BANKED, do not re-litigate:
+- THE SEPARATION THEOREM (exact, reviewer-affirmed "solid and
+  correct"): the 10B vertex H = ω(N+σ) + Ωb†b + g(N+σ)(b+b†) is
+  polaron-solvable; the two time-orderings cancel the BATH occupation
+  identically (−(m+1)+m = −1); the transition pull −(g²/Ω)(2n+1+2σ)
+  reads the SYSTEM's occupation, linearly, all orders in g. R23's
+  scary π(2n+1) = 6.3/44.8/66 was the cross-Kerr/JC template (reads
+  the bath) applied to the longitudinal vertex (reads the system) —
+  the reviewer owned it: "genuinely mis-templated." The over-
+  production worry is DEAD.
+- THE HONEST HEADLINE (R24 cond 9, use THIS form): the only
+  microphysically-allowed vertex produces a pull STRICTLY LINEAR in
+  the local occupation — which uniquely selects the additive C&T law
+  ν = 1 + κn (the multiplicative alternative diverges at x = ln 2,
+  mid-transition). The LINEARITY is ours; the COEFFICIENTS are C&T's
+  own series. Never write "the ladder pops out" again — that was
+  R24's hole 2.
+- κ IS TWO-POLE, NOT "MEASURED ~1" (R24's hole 1): deep-normalization
+  a₀-lock says 1.00 ± 0.05; the 4Z hier transition meter says 1.48
+  point-grade (bootstrap 0.6–1.8); ¼-vs-½ is OPEN. Always quote both
+  poles.
+- H-P IS DEAD, REPLACED: the closure κ = 1 forces φ_req = ½√(Ω/ω)
+  EXACTLY = the zero-point of an effective inertia E_c = 2ħω (two
+  quanta of the mode it dresses). H-P's constant √π is ×2.4–9.4 high
+  with the WRONG running. The 61-order bridge is now one exact curve.
+- THE GATE IS NOT DISPERSIVE (toy-class, robust per the round): a
+  dispersive ambient coupling is occupation-BLIND at saturation
+  (½-flat; existence-counting is FC-blind) and carries the exact
+  ANTI-lending law ½/(1+n̄) perturbatively (gates on the ambient
+  being EMPTY — backwards from the sky). The lending gate e^{−x}
+  needs REAL exchange. R23's proposed 6X demotion FAILED its own
+  test; 6X keeps its real-exchange reading CONDITIONAL on the l=2
+  local-cloud partner deriving (that conditionality is R24 cond 5 —
+  respect it).
+- Amendment A1 is CERTIFIED (the reviewer ran the single-fix scans I
+  never printed: Ω_b-fix alone passes, gd-fix alone fails). New trap
+  fingerprint #13: in driven multi-level toys, CHECK PARAMETER
+  COMMENSURABILITY first — Ω_b = CHI opened resonant sidebands that
+  drained the manifold (fingerprint: equipartition at large n̄,
+  ε-independent). The run-1 drain is itself a lesson: the ONLY way
+  the dispersive toy produced n-dependence was by accidentally
+  enabling real exchange.
+
+THE FORK NOW (R24 successors, sharpness order):
+1. THE JOINT SINGLE-κ FIT (R24 cond 8) — deep + transition, one κ,
+   χ²; in-catalog, no new data; resolves κ~1 / κ~1.5 / form-rejected.
+   The sharpest executable move on the board.
+2. Derive κ = 1 (R24 cond 6): is E_c = 2ħω FORCED? The last constant.
+3. The l=2 near-field cloud vertex (R22-cond-4 = R24 cond 7):
+   STRIKE-BEARING — if it cannot be Rabi-capable, the pre-registered
+   6X/9U strike fires. The gate leg.
+Or the author's paper/circulation queue (unchanged, TODO 27–31).
+
+Credences after the ninth close: anomaly-real 53 (untouched — no sky
+fits in 10C), mech conditional 15 (FIVE O5 rounds now, zero strikes,
+zero rises; the rise cell was pre-signed and the hole blocked it —
+correctly). The reviewer's closing line is the program's state:
+"the derivation is being cornered honestly, not carried."
+
 ## 2026-08-08 (eighth close) — the chase's second leg: every room is empty, and the wall has 1/12 written on it
 
 The author said "chase it, all you got" and 10B ran the complete

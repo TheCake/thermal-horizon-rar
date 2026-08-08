@@ -1222,7 +1222,31 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     mean dressing at O(1); (6) the 6X real-vs-virtual control re-run
     under a purely dispersive coupling; (7) justify or drop H-P (the
     √S independence bridge). r = ½ kill-test registered in
-    PREDICTIONS (dispersive ⇒ no γ-running, p_void = ¾ exactly).**);
+    PREDICTIONS (dispersive ⇒ no γ-running, p_void = ¾ exactly).**
+    **O5-PULL EXECUTED 2026-08-09 (10C, pre-reg 13c3662 + amendment
+    A1 3d81fdd; ROUND 24 upheld P-TRANSMITTED AT CONSISTENCY GRADE,
+    hole mild, HOLD 15): the 10C package DISCHARGED — T1 separation
+    theorem (the honest dispersive pull is BATH-FREE and SYSTEM-
+    LINEAR all orders; R23's over-production was the wrong template,
+    reviewer-affirmed "genuinely mis-templated"); T2 the polaron
+    transmits the LINEARITY in the local occupation (uniquely selects
+    the additive C&T law; coefficients are C&T's series; κ =
+    4g²/(Ωω) with the two-pole measurement: a₀-lock 1.00±0.05
+    consistent, 4Z hier 1.48 point-excludes, ¼-vs-½ OPEN); T3 H-P
+    DROPPED-AND-REPLACED by the exact requirement curve φ_req =
+    ½√(Ω/ω) (= zero-point of effective inertia E_c = 2ħω); T4 the
+    gate is NON-DISPERSIVE in the toy class (saturation ½-FLAT +
+    exact ANTI-lending law ½/(1+n̄), opposite monotonicity) ⇒ 6X's
+    real-exchange reading stands CONDITIONAL on the l=2 partner.
+    THE R24 SUCCESSORS (the next legs, in sharpness order):
+    (i) THE JOINT SINGLE-κ FIT (R24 cond 8): deep + transition, one
+    κ, χ² — resolves κ~1 vs κ~1.5 vs one-κ-form-rejected; IN-CATALOG,
+    no new data, the sharpest meter upgrade [EXECUTABLE NOW];
+    (ii) derive κ = 1 (R24 cond 6): is the bright mode's effective
+    inertia FORCED to E_c = 2ħω? — the closure's last constant;
+    (iii) the l=2 near-field system↔cloud exchange vertex (R22 cond
+    4 = R24 cond 7, STRIKE-BEARING: not-Rabi-capable ⇒ the 6X/9U
+    strike fires) — the gate leg.**);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established
