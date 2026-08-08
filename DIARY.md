@@ -9,6 +9,44 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-08 (third close) — 9R-c: diamond 3 assayed, not a diamond; and the Merchen article
+
+The last of the hammering round's three diamonds (the Iorio TODO-28
+reopen) is now RUN and SPENT: C-POWER-LIMITED, sky never read. Don't
+redo: the reopen clause is gone — no more public-curve attempts on
+TODO 28 (four instruments, all power-failed, zero sky reads; the only
+successor is DR4-era/anchored data; an Oh+Iorio HYBRID design would
+be a new pre-reg with its own multiplicity accounting, and I'd argue
+against it — the LT-only galaxy pool is the wall, and no reshuffle of
+the same pool manufactures more independent dwarfs).
+
+NEW STANDING LESSON (near-miss autopsy rule): when a power gate
+misses by one, find WHICH AXIS the miss lives on before predicting a
+data upgrade tips it. 9R-b missed by one injection and I filed it as
+"better errors likely tip" — but the binding axis was VERDICT-SET
+SIZE: Iorio's cleaner rings came with 17-of-26 coverage, coarser
+grids, and SPARC-overlap concentrated exactly in his best-measured
+galaxies, so the LT-only design shrank 4x and misclassification got
+WORSE (9/40 vs 5/40). "Sharper" is not "more." This is the
+sample-side sibling of trap #6 (read the byte tables first).
+
+Also this session: the Merchen X article (user pasted the full text).
+My read is in the session report; the reply draft is X-REPLY-DRAFT.md
+(repo root, NEVER commit, posting = Filip's click). Key facts for the
+next instance: his adopted nu IS our BE identity (1/(1-e^-sqrt(y)) =
+1+n_BE — he doesn't know); his §8.3 solar-system null is wrong on his
+EFE branch (the 4K/5S quadrupole, DHF24); his "Banik et al. 2026" =
+Cookson et al. (our 7L paper); citation scout verified all six
+load-bearing refs real (MUSE-DARK III = Ciocan+, arXiv:2604.22613,
+A&A 2026 — RELEVANT TO P3's z-pair, a future primary read; Merchen's
+"2.4σ" on Vărășteanu overstates that paper's own language). REPO
+STATE FINDING: the GitHub rename to thermal-horizon-rar is DONE
+(remote updated, pushes work) but the repo is PRIVATE — anonymous
+404. The papers' cited URLs resolve only after Filip flips
+visibility; CIRCULATION.md's check-first item is half-cleared (rename
+yes, public no). Don't put the repo URL in any outward draft until
+it's public.
+
 ## 2026-08-08 (later) — 9X + 9Y + ROUND 19: I hammered for diamonds and struck my own thumb, correctly
 
 Filip asked whether there were diamonds left before pivoting to prose;

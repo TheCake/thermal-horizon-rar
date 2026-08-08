@@ -264,6 +264,30 @@ its bar. CREDENCE: bath-mechanism conditional HELD 15; anomaly-real
 53 untouched (no sky number moved). Diamond 3 (the Iorio TODO-28
 reopen) still unrun. Ledger 194 rows / worldtable 240 tokens six
 gates PASS.**
+**9R-c (2026-08-08 third close, THE IORIO REOPEN, pre-reg 050717d):
+diamond 3 EXECUTED AND SPENT = C-POWER-LIMITED, sky never read (4th
+instrument, same discipline). Canonical Iorio+17 release fetched
+(finalrot.zip, second author's site; NO VizieR catalog — TAP zero
+rows; calcs/fetch_iorio17.py + manifest); single-axis port (Iorio Vc
+observed; everything else verbatim 9R-b) with the engine regression
+reproducing the 9R-b archive to the digit; census clean (15 gal,
+interp drops 6.6%). The wall: LT-only verdict design 47 pts / 6 gal
+vs Oh's 172/12 (Iorio released 17 of 26; his best-measured galaxies
+are SPARC-overlap = excluded by construction) → mis 9/40, WORSE than
+Oh's 5/40. NEW STANDING LESSON (DIARY): near-miss autopsy rule — find
+which AXIS a one-injection miss lives on before predicting a data
+upgrade tips it; "sharper" is not "more." TODO 28: only DR4-era/
+anchored successor remains. No credence movement. Ledger 195 rows /
+worldtable 242 tokens six gates PASS. SAME SESSION: the Merchen X
+article read against the ledger (user pasted text; his ν IS the BE
+identity, he doesn't know; his §8.3 null breaks on his EFE branch via
+the 4K/5S quadrupole; his "Banik 2026" = Cookson = our 7L paper; six
+refs scout-verified incl. MUSE-DARK III = Ciocan+ arXiv:2604.22613 =
+a future P3 z-pair primary read); reply draft = X-REPLY-DRAFT.md
+(NEVER commit; posting = the author's click). REPO FINDING: the
+GitHub rename to thermal-horizon-rar is DONE but the repo is PRIVATE
+(anonymous 404) — papers' URLs resolve only after the author flips
+visibility; no repo links in outward drafts until then.**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

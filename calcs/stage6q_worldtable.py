@@ -523,6 +523,10 @@ CHECKS = [
      'data/stage9y_squeezing.txt'),
     ('mech-9y-statemeter', '9Y RELABELED: Y-DIAL (conditional)',
      'data/stage9xy_addendum.txt'),
+    ('gal-9rc-contest', 't* = -0.30 -> UNPOWERED (misclassified '
+     '9/40)', 'data/stage9rc_contest.txt'),
+    ('gal-9rc-contest', 'C-POWER-LIMITED -- the contest is not '
+     'powered on either arm', 'data/stage9rc_contest.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

@@ -13535,6 +13535,64 @@ smaller title. Nothing about the sky changed today; the story's
 foundation (last week's theorem) stands; and we know exactly which
 stone to turn next.
 
+## Stage 9R-c — THE IORIO REOPEN, EXECUTED AND SPENT (2026-08-08; pre-reg 050717d)
+
+The TODO-28 reopen clause ("Iorio+2017 curves as input; the near-miss
+says it likely tips") executed as written. Data: NO VizieR catalog
+exists for Iorio+17 (TAP zero rows) — the canonical release is
+finalrot.zip on the second author's site (fetched + SHA256-pinned,
+calcs/fetch_iorio17.py; 17 galaxies + a DDO216 scenario2 variant,
+excluded W3). Design: SINGLE-AXIS change — the observed curve swaps to
+Iorio's 3D-Barolo drift-corrected Vc; Oh+15 V_bar reconstruction,
+vertical channel, contest form, seeds, and bars all verbatim 9R-b.
+New wiring gated: V_bar² interpolation (extrap/gap guards), distance
+harmonization (DDO87 rescaled ×0.961), mass-model availability
+(CVIdwA + DDO47 = no usable Oh model, consistent with 9R).
+
+VERDICT: **C-POWER-LIMITED** (locked grammar; the sky was NOT read —
+fourth instrument, same discipline). Analysis-integrity gates 4/4:
+the engine regression reproduced the 9R-b archive to the digit
+(LT-only 14, t* +0.40, means −1.25/+2.04, counts 17/14, power cell
+−0.524); census 15 galaxies, 211/249 rings, interp drops 6.6% (bar
+25%). But ARM-V = 26 pts / 3 gal (below the 40/5 floor) and ARM-R =
+47 pts / 6 gal calibrated 14/20 + 17/20 (bar 16/20 each; mis 9/40).
+
+THE AUTOPSY (the round's actual product): the 9R-b one-injection
+near-miss was read as an ERROR-SIZE problem; it was a SAMPLE-SIZE
+problem. Iorio's per-ring errors are genuinely cleaner, but he
+released 17 of Oh's 26 dwarfs, his best-measured galaxies (DDO154,
+WLM, NGC2366, DDO50...) are SPARC-overlap — excluded from the
+LT-only verdict set by construction — and his ring grids are coarser:
+the verdict design shrank 4× (47/6 vs 172/12) and the contest got
+WORSE (9/40 vs 5/40 misclassified). Standing lesson (DIARY): when a
+power gate misses by one, autopsy WHICH axis the miss lives on before
+predicting that a data upgrade tips it; "better data" that shrinks
+the design is worse data for a population contest.
+
+The Iorio clause of TODO 28 is SPENT; the reopen re-closes at
+public-curve grade; the only remaining successor is DR4-era/anchored
+dwarf data (a joint Oh+Iorio hybrid = a NEW pre-reg with its own
+multiplicity accounting, not this clause). CREDENCE: no movement
+(pre-stated measurement round); anomaly-real 53 untouched. Ledger
++gal-9rc-contest (195 rows); worldtable 242 tokens six gates PASS.
+
+PLAIN VERDICT: DIFFERENT PHYSICS is not implicated and nothing broke
+— the instrument worked, the data honestly cannot answer the
+question, and the last public-data door on TODO 28 is now cleanly
+closed. SUCCESS as a closure, NULL as a discovery.
+
+ELI12: We had a tie-breaker question about slow, fuzzy little
+galaxies, and last month's referee said "not enough clean
+measurements to call it." A better telescope-analysis of the same
+galaxies came out, so we re-ran the whole contest with those cleaner
+numbers — but the cleaner set covers fewer of the galaxies we
+actually needed (the well-measured ones are already in our main
+catalog, so they don't count as independent), and a sharper look at
+fewer players is still fewer players. The contest still can't be
+called. We wrote down the lesson — "sharper" isn't the same as
+"more" — locked the question until the next big data release, and
+moved on without peeking at the answer sheet.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

@@ -1,0 +1,51 @@
+==============================================================================
+STAGE 9R-c -- THE CONTEST ON IORIO+17 CURVES (headline +0.97 vs GD -1.31)
+==============================================================================
+G9Rc-M manifests (4 LT + 19 Iorio entries): PASS
+
+G9Rc-0 engine regression (OH-input, verbatim 9R-b path):
+[ARM-V/OH cut 0.10] calibration (20 per world):
+  headline-truth D: mean -1.25 SD 2.32 range [-7.65, +2.98] own-side 17/20
+  GD-truth       D: mean +2.04 SD 1.94 range [-1.40, +5.34] own-side 14/20
+  t* = +0.40 -> UNPOWERED (misclassified 9/40)
+  archive match: LT-only 14 vs 14, t* +0.40 vs +0.40, means -1.25/+2.04 vs -1.25/+2.04, counts 17/14 vs 17/14 -> PASS
+  9R power cell lam_hat = -0.524 vs -0.524 -> PASS
+
+IORIO+17 CONSTRUCTION (W1 interpolation / W2 distance / W3 primary / W4 mass-model / W5 metadata):
+  CVIdwA       9 ->   0  W4 no usable Oh mass model
+  DDO101      10 ->   8  KEPT (D ok; ext 2 gap 0)
+  DDO126      13 ->  13  KEPT (D ok; ext 0 gap 0)
+  DDO133      15 ->  15  KEPT (D ok; ext 0 gap 0)
+  DDO154      26 ->  26  KEPT (D ok; ext 0 gap 0)
+  DDO168      15 ->  12  KEPT (D ok; ext 3 gap 0)
+  DDO210       8 ->   5  KEPT (D ok; ext 3 gap 0)
+  DDO216      12 ->  11  KEPT (D ok; ext 1 gap 0)
+  DDO216b      0 ->   0  W3 scenario2 excluded
+  DDO47       14 ->   0  W4 no usable Oh mass model
+  DDO50       26 ->  23  KEPT (D ok; ext 3 gap 0)
+  DDO52       12 ->  12  KEPT (D ok; ext 0 gap 0)
+  DDO53        9 ->   8  KEPT (D ok; ext 1 gap 0)
+  DDO87       12 ->  12  KEPT (D rescaled x0.961; ext 0 gap 0)
+  NGC1569     10 ->  10  KEPT (D ok; ext 0 gap 0)
+  NGC2366     23 ->  23  KEPT (D ok; ext 0 gap 0)
+  UGC8508     11 ->  10  KEPT (D ok; ext 1 gap 0)
+  WLM         24 ->  23  KEPT (D ok; ext 1 gap 0)
+G9Rc-1 census: 15 galaxies kept, 211/249 rings; interp drops ext 15 + gap 0 = 6.6% of surviving-galaxy rings (bar 25%) -> PASS
+LT-only (verdict set): 8  ['DDO101', 'DDO133', 'DDO210', 'DDO216', 'DDO52', 'DDO53', 'NGC1569', 'UGC8508']
+overlap (co-read):     7  ['DDO126', 'DDO154', 'DDO168', 'DDO50', 'DDO87', 'NGC2366', 'WLM']
+
+[ARM-V] census: 26 pts / 3 gal
+[ARM-V] below viability floor (40 pts / 5 gal) -> not calibrated
+[ARM-R] census: 47 pts / 6 gal
+[ARM-R cut 0.20] calibration (20 per world):
+  headline-truth D: mean -1.62 SD 2.46 range [-7.33, +3.62] own-side 14/20
+  GD-truth       D: mean +1.02 SD 1.27 range [-1.03, +3.83] own-side 17/20
+  t* = -0.30 -> UNPOWERED (misclassified 9/40)
+
+==> 9R-c VERDICT (locked grammar): C-POWER-LIMITED -- the contest is not powered on either arm at Iorio+17 grade; the TODO-28 Iorio clause is SPENT; the reopen re-closes at public-curve grade (remaining successor: DR4-era dwarfs). The sky was not read.
+    NO credence movement (pre-stated; measurement round).
+
+G9Rc-L ledger legs CURRENT: {'gal-9r-ltrepl': True, 'gal-9rb-contest': True} -> PASS
+GATES: G9Rc-0:PASS  G9Rc-1:PASS  G9Rc-L:PASS  G9Rc-M:PASS  G9Rc-P:FAIL
+
+done (0.2 min)

@@ -1121,6 +1121,20 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     never read by any of them). REOPEN trigger: Iorio+2017 3D-Barolo
     curves as input (the near-miss says a modestly better error
     budget likely tips the contest) or anchored/DR4-era dwarf data.
+    **IORIO CLAUSE EXECUTED AND SPENT 2026-08-08 (9R-c, pre-reg
+    050717d): C-POWER-LIMITED — canonical finalrot.zip release fetched
+    (no VizieR catalog exists; calcs/fetch_iorio17.py), single-axis
+    port validated (engine regression reproduces the 9R-b archive to
+    the digit; census clean, interp drops 6.6%), but the LT-only
+    verdict set is 47 pts / 6 gal vs Oh's 172 / 12 — Iorio released
+    17 of Oh's 26 and his best-measured galaxies are SPARC-overlap,
+    excluded by construction; misclassified 9/40 (WORSE than Oh's
+    5/40). The near-miss was a sample-size problem, not an error-size
+    problem; cleaner rings on fewer galaxies lost ground. The sky was
+    never read (fourth instrument, same discipline). REMAINING
+    successor: DR4-era / anchored dwarf data ONLY (a joint Oh+Iorio
+    hybrid design would be a NEW pre-reg with its own multiplicity
+    accounting, not this clause).**
 29. **DR4 readiness** (highest-upside): freeze the DR4 kill-condition
     subset from PREDICTIONS.md into one section; build DR4 loaders on
     EDR3-shaped mocks; day-one analysis plan written before the data
