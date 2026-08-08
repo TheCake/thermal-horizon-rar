@@ -1157,12 +1157,23 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     with squeezing; off-thermal gate functional ambiguous); SURVIVES:
     9W theorem, kernel rows + width mechanism, covariance math, P1
     void band STATE-INDEPENDENT (verified — Paper-3 hardening line);
-    REMAINING constructive seam = **O5-LEAK (the unifier, the named
-    sharpest question): explicit soft-sector ρ(ω) + the single scale
-    g_c^sky/H + the continuum leak integral + the dispersive-shift
-    budget — closes BOTH the soft leak and the l-gap single-channel
-    corollary in one computation; needs horizon-side physics input,
-    NOT another toy-regime scan** + dS reservoir identification);
+    REMAINING constructive seam = **O5-LEAK — EXECUTED 2026-08-08
+    (9Z, pre-reg 9735d0e; ROUND 20 affirmed Z-AMBIG, mech HOLDS 15):
+    BANKED at derivation grade — the static-patch l=0 minimal problem
+    is the λ=1 Pöschl–Teller well (exact), D_min/D_conf = 1 + H²/ω²
+    exact, the ungapped graviton-like leak DIVERGES linearly ⇒ the 6Y
+    ambient gap is REQUIRED (necessity theorem-grade; sufficiency NOT
+    shown — window-carried), gapped leak at g = H is 4 orders below
+    the smallest gate, l-channel locality derived (spin-2-safe: the
+    physical graviton channel is l = 2, η⁴ — SAFER than the l = 0
+    proxy). NOT closed: the dispersive cell — UV-completed |Δ|/Ω =
+    0.134/0.712, ~100% dS-vacuum common-mode Lamb shift,
+    excluded-if-real ⇒ must renormalize; SUCCESSORS = **O5-DIFF (the
+    x-differential dispersive distortion propagated to the measured
+    c₁ band = THE closure test)**, the renormalization specification,
+    D-normalization provenance, full ambient marginalization
+    (REVIEW-ROUND20-OPUS.md conditions 2/3/8/5)** + dS reservoir
+    identification);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established

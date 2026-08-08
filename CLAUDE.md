@@ -288,6 +288,39 @@ a future P3 z-pair primary read); reply draft = X-REPLY-DRAFT.md
 GitHub rename to thermal-horizon-rar is DONE but the repo is PRIVATE
 (anonymous 404) — papers' URLs resolve only after the author flips
 visibility; no repo links in outward drafts until then.**
+**9Z + ROUND 20 (2026-08-08 fourth close, O5-LEAK EXECUTED
+HORIZON-SIDE, pre-reg 9735d0e; author go: "maybe we'll even learn
+something new" — we did): the dS static-patch l=0 minimal
+(graviton-like) radial problem = the λ=1 PÖSCHL–TELLER WELL, exactly
+solvable — D_min/D_conf = 1 + H²/ω² EXACT; the ungapped leak DIVERGES
+linearly (coefficient 1/(8π³Ω²) exact) while conformal converges ⇒
+**THE 6Y AMBIENT GAP IS REQUIRED (necessity banked at theorem grade;
+sufficiency NOT shown — fiducial safety is window-carried)**; gapped
+leak at the physical coupling g = H: 1.6e-5/3.8e-5 = 4 orders below
+the smallest gate, split-preserving 0.9999; l-channel locality
+DERIVED, spin-2-safe (reviewer's adversarial η² tidal swing came back
+η⁴ — the physical l=2 graviton channel is SAFER than the l=0 proxy).
+ROUND 20 (REVIEW-ROUND20-OPUS.md uncommitted): every number
+reproduced from scratch (his own R = 12H²); ruling UNPATCHED HOLE YES
+qualified non-fatal, **Z-AMBIG AFFIRMED**; the dispersive cell = a
+~100% dS-VACUUM common-mode Lamb shift (UV-completed |Δ|/Ω =
+0.134/0.712; the stage's UV=6 undercounted 20% — trap #10: one
+convergence gate per integral FAMILY), bar ruled MIS-POSED
+(common-mode excluded-if-real by the deep RAR ⇒ must renormalize);
+small-g scan region PT-INVALID (admixture 10–21) + ambient-fragile
+(1.94× at x_amb = 0.10) = neither bound nor breach. Conditions
+1/4/5/6/7 executed (calcs/stage9z_addendum.py); **NAMED SUCCESSOR =
+O5-DIFF: the x-differential dispersive distortion budget propagated
+to the measured c₁ band — THE mechanism closure test** (+
+renormalization spec, D-normalization, ambient marginalization).
+CREDENCE: bath-mechanism conditional HOLDS 15 (pre-signed,
+reviewer-affirmed); anomaly-real 53 untouched. Ledger 196 rows /
+worldtable 244 tokens six gates PASS. P3 §2 gains the PT kernel +
+the gap-necessity theorem as printable content. SAME TURN: the
+master-deletion explanation delivered (origin/master = unsanitized
+week-one archive; deletion command = the author's click; local master
+untouched); publication decision + TODO 31 booked earlier
+(41aaeff).**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

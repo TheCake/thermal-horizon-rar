@@ -1,0 +1,27 @@
+==============================================================================
+STAGE 9Z ADDENDUM -- ROUND-20 conditions 1/4/5/6/7
+==============================================================================
+
+CONDITION 1 -- UV-completed dispersive budget (fiducial g = H):
+  binary Delta_completed = -2.3359e-02 (thermal -9.2e-06, vacuum-excess -2.3350e-02)  |Delta|/Omega = 0.134   [stage quoted 0.110]
+  galaxy Delta_completed = -2.4919e-02 (thermal -2.2e-05, vacuum-excess -2.4897e-02)  |Delta|/Omega = 0.712   [stage quoted 0.591]
+  GZA-1 dispersive UV-convergence (UV 1000 vs 2000 + analytic tail, <= 0.5%): PASS
+  reading (reviewer Q2): the shift is ~100%% dS-excess VACUUM -- a common-mode de Sitter zero-point Lamb shift, not a thermal pull; common-mode excluded-if-real by the deep RAR (x-shift 0.13 would break the measured curve) => it must renormalize; ONLY the x-differential residual distorts observables (successor O5-DIFF).
+
+CONDITION 4 -- fine scan + perturbative validity at the peak:
+  fine-scan peak eps_min/g_bin = 0.957 at system=galaxy g/H = 0.0077 (coarse scan had 0.9485)
+  per-mode admixture at the peak: gap-edge 10.0, window-edge 21.4 (linear-response validity requires << 1) -> the small-g region is PERTURBATIVELY INVALID; read as NEITHER bound NOR breach.
+  fiducial g = H admixture (window-edge, the only exposed edge): 6.0e-03 (PT valid).
+
+CONDITION 5 -- ambient co-read (deep-galaxy x_amb = 0.10, n = 9.5):
+  small-g peak eps_min/g_bin = 1.94 at g/H = 0.0123 -> BREACHES the smallest gate in the SAME PT-invalid region (reviewer: 1.94)
+  fiducial g = H: eps_min = 3.82e-05 (eps/g_bin = 3.4e-04) -> the physical cell stays safe by ~4 orders at every scanned ambient.
+  => the single-anchor scan claim is NOT robust (condition-5 successor: full ambient marginalization); the FIDUCIAL claim is.
+
+CONDITION 6 -- spin-2 reframe (operative): gravity has no l = 0/1; the stage's l = 0 monopole channel is a CONSERVATIVE PROXY. The physical graviton channel is l = 2, eta^4-suppressed (tidal accounting CONFIRMS eta^4: weights 1.5e-47 binary / 4.5e-29 galaxy) -- the real leak is SAFER than the proxy computed.
+CONDITION 7 -- claim discipline (operative): gap-NECESSITY = ESTABLISHED (exact IR structure, reviewer-reproduced); gap-SUFFICIENCY = NOT ESTABLISHED (fiducial safety is window-carried at g = H). Do not print REQUIRED-AND-SUFFICIENT.
+
+9Z LETTER AFFIRMED: Z-AMBIG (ROUND-20 adjudication; UNPATCHED HOLE: YES qualified non-fatal). BANKED: the exact PT kernel (P1/P2/P3), gap-NECESSITY, the fiducial four-order leak safety, l-channel locality at derivation grade (spin-2-safe). SUCCESSORS: O5-DIFF (condition 2, the closure test), renormalization spec (condition 3), D-normalization provenance (condition 8).
+CREDENCE: bath-mechanism conditional HOLDS 15 (pre-signed map; reviewer-affirmed); anomaly-real 53 untouched.
+
+done (0.0 min)

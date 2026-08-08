@@ -527,6 +527,10 @@ CHECKS = [
      '9/40)', 'data/stage9rc_contest.txt'),
     ('gal-9rc-contest', 'C-POWER-LIMITED -- the contest is not '
      'powered on either arm', 'data/stage9rc_contest.txt'),
+    ('mech-9z-leak', 'binary eps_min = 1.627e-05',
+     'data/stage9z_leak.txt'),
+    ('mech-9z-leak', '9Z LETTER AFFIRMED: Z-AMBIG',
+     'data/stage9z_addendum.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

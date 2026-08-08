@@ -1,0 +1,47 @@
+==============================================================================
+STAGE 9Z -- O5-LEAK: THE CONTINUUM LEAK INTEGRAL
+==============================================================================
+GZ9-1 exact modes: conformal ODE residual = 0; minimal (PT lam=1) residual = 0;
+  Dirichlet v(0) = 0; |v'(0)|^2/A^2 / w^2 = H**2/w**2 + 1  (expected 1 + H^2/w^2) -> PASS
+GZ9-2 KMS detailed balance (n+1)/n = e^{2 pi w/H}: residual 0 -> PASS
+GZ9-3 IR structure: minimal integrand * w^2 -> 1/(8*pi**3*Omega**2) (c > 0: LINEAR ungapped divergence = B1 FIRES); conformal integrand -> finite constant 1/(8*pi**3*Omega**2) -> PASS
+GZ9-5 one-mode regression: delta-density insertion reproduces 4 lam^2 n / delta^2 identically -> PASS (algebraic identity; the continuum form is its integral by construction)
+
+anchors (H = 1): binary Omega = gap = 0.17427; galaxy Omega = 0.03501, gap = 0.02246  [x: 1.095 / 0.22 / 0.1411]
+n at anchors: n(x=1.095) = 0.503 (0.502 row), n(x=0.1411) = 6.60 (6.63 row) -> dictionary regression
+GZ9-D dictionary regression: PASS
+
+PART B -- the gapped leak, fiducial g = H = 1:
+  binary eps_min = 1.627e-05  eps_conf = 1.020e-05   (gate 0.1117; eps_min/gate = 1.457e-04; UV-tail check 1.2e-19)
+  galaxy eps_min = 3.822e-05  eps_conf = 2.185e-05   (gate 0.7536; eps_min/gate = 5.071e-05; UV-tail check 1.2e-19)
+
+PART B -- the g-scan (eps_min/g_bin_gate; window = coupling = g):
+  scan max eps_min/g_bin = 9.485e-01  at system=galaxy g/H=0.007
+    g/H = 0.003 : bin 7.65e-04  gal 6.21e-02
+    g/H = 0.010 : bin 1.99e-03  gal 9.39e-02
+    g/H = 0.030 : bin 3.57e-03  gal 4.09e-02
+    g/H = 0.100 : bin 3.53e-03  gal 1.87e-02
+    g/H = 0.300 : bin 1.09e-03  gal 3.31e-03
+    g/H = 1.000 : bin 1.63e-05  gal 3.82e-05
+    g/H = 3.000 : bin 1.16e-10  gal 2.67e-10
+
+PART C -- dispersive budget at fiducial g = H:
+  binary Delta = -1.908e-02  |Delta|/Omega = 1.095e-01
+  galaxy Delta = -2.068e-02  |Delta|/Omega = 5.907e-01
+
+PART D -- the l-channel corollary (exact scalings):
+  binary omega R/c = 1.97e-12 -> l=1 weight 3.9e-24, l=2 weight 1.5e-47 (monopole coupling)
+  galaxy omega R/c = 8.18e-08 -> l=1 weight 6.7e-15, l=2 weight 4.5e-29 (monopole coupling)
+  9T l-gap thermal sum Sum_(l>=1) (2l+1) e^{-2 pi sqrt(l(l+1))} = 4.161e-04 (vs l=0 weight 1)
+  NAMED RESIDUAL: l = 2 TIDAL (quadrupole) coupling is not closed by the monopole scaling; separate computation required.
+
+GZ9-4 UV-cutoff independence (doubling band <= 0.1% of total): PASS
+GZ9-6 ledger legs CURRENT: {'mech-9x-kernel': True, 'mech-9w-multimode': True} -> PASS
+
+split distortion [1+eps_gal/gate_gal]/[1+eps_bin/gate_bin] = 0.9999
+==> 9Z VERDICT (locked grammar): Z-AMBIG -- quote everything; no cell fired clean.
+    CREDENCE: per the pre-signed map (constructive letters HOLD 15 pending ROUND 20; Z-FATAL would strike 15 -> 8).
+
+GATES: GZ9-1:PASS  GZ9-2:PASS  GZ9-3:PASS  GZ9-4:PASS  GZ9-5:PASS  GZ9-6:PASS  GZ9-D:PASS
+
+done (0.0 min)

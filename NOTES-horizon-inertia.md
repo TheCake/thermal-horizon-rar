@@ -13593,6 +13593,77 @@ called. We wrote down the lesson — "sharper" isn't the same as
 "more" — locked the question until the next big data release, and
 moved on without peeking at the answer sheet.
 
+## Stage 9Z + ROUND 20 — O5-LEAK: THE CONTINUUM LEAK INTEGRAL (2026-08-08; pre-reg 9735d0e)
+
+The round-19 mandate executed as written: horizon-side physics input,
+not another toy scan. The de Sitter static patch, system at the
+origin; the l=0 radial problem for the minimally-coupled (=
+graviton-like, TT-proxy) massless scalar turns out to be the λ=1
+Pöschl–Teller well — EXACTLY SOLVABLE. Everything downstream is
+elementary and sympy-exact: the Dirichlet solution v = tanh(Hx)cos(ωx)
++ (ω/H)sin(ωx); the near-origin coupling-density ratio D_min/D_conf =
+1 + H²/ω² EXACT (the dS infrared enhancement, localized); the ungapped
+graviton-like leak integral DIVERGES linearly (integrand →
+[1/(8π³Ω²)]/ω², exact coefficient) while the conformal sector
+converges. Gates 7/7 first-run. Letter as fired: Z-AMBIG (the
+dispersive bar failed; leak legs clean).
+
+ROUND 20 (REVIEW-ROUND20-OPUS.md, uncommitted): the reviewer
+reproduced EVERY number from scratch — his own Ricci computation
+(R = 12H²), his own quadrature — and his one adversarial swing (an
+η² tidal enhancement at l=2) FAILED to land: careful multipole
+accounting confirms η⁴, so the physical graviton channel (spin-2
+starts at l=2) is SAFER than the l=0 proxy we computed. Ruling:
+UNPATCHED HOLE YES (qualified, non-fatal); Z-AMBIG AFFIRMED; the
+|Δ|/Ω dispersive bar ruled MIS-POSED (the shift is a ~100% dS-vacuum
+common-mode Lamb shift, −0.023/−0.025 H UV-completed, |Δ|/Ω =
+0.134/0.712 — excluded-if-real by the deep RAR itself, so it must
+renormalize; only the x-DIFFERENTIAL residual distorts observables,
+~few-% at the deep end, uncomputed vs the c₁ band). His other
+catches: the small-g scan near-miss is PERTURBATIVELY INVALID
+(per-mode admixture 10–21) and ambient-fragile (x_amb = 0.10 peaks at
+1.94× the smallest gate in the same invalid region — neither bound
+nor breach); the fiducial g = H safety is WINDOW-carried, so
+gap-SUFFICIENCY is not established.
+
+BANKED (reviewer-reproduced, derivation grade): the PT kernel; the
+exact IR enhancement; **gap-NECESSITY — the 6Y ambient gap is
+REQUIRED by the graviton-like sector's exact IR structure** (a
+reading promoted to a theorem-grade necessity); the fiducial
+four-order leak safety at the physical coupling (9T's g ~ H);
+l-channel locality at derivation grade, spin-2-safe. Eight conditions
+adopted; 1/4/5/6/7 executed same-day (calcs/stage9z_addendum.py);
+2/3/8 = the NAMED SUCCESSORS, led by **O5-DIFF: the x-differential
+dispersive distortion budget, UV-completed, propagated to the
+measured c₁ band — THE actual closure test the mechanism now waits
+on.** CREDENCE: pre-signed map → bath-mechanism conditional HOLDS 15
+(reviewer-affirmed); anomaly-real 53 untouched. Ledger
++mech-9z-leak (196 rows); worldtable 244 tokens six gates PASS.
+
+PLAIN VERDICT: NEEDS REFINEMENT — with the best half banked. The
+question "does the horizon actually have the mode budget the grammar
+borrows from" now has a real, exactly-solved spectral answer: the
+soft sector is there, its infrared is dangerous exactly as feared,
+the ambient gap the data had already voted for (6Y/6G) is now
+REQUIRED by the geometry, and at the physical coupling the leak is
+negligible. What remains is one honest unfinished ledger line (the
+differential Lamb-shift budget), not a hole in the sky.
+
+ELI12: We finally checked the concert hall itself. The universe's
+horizon really does have a choir of very deep notes, and our math
+says an un-protected instrument would be drowned by them — UNLESS
+each system's own surroundings hum a bass note that pushes the
+deepest choir voices out of reach. That protective hum is exactly
+the thing our earlier sky-data rounds said must be there; now the
+hall's blueprints say it MUST be there. With protection on, the
+choir barely touches the melody. One thing left: the choir also
+slightly re-tunes every instrument by the same tiny amount — we
+showed the re-tuning is the same for everyone (so it mostly cancels
+out), but we still owe the exact arithmetic for the small
+instrument-to-instrument differences. The referee re-derived every
+formula himself, tried hard to break the safest part, and instead
+proved it was even safer than we claimed.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

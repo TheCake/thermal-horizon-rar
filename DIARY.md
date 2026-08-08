@@ -9,6 +9,46 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-08 (fourth close) — 9Z + ROUND 20: the horizon has the choir, and the gap is now law
+
+O5-LEAK ran (pre-reg 9735d0e) and the derivation gods were kind: the
+static-patch l=0 minimal problem is the λ=1 PÖSCHL–TELLER WELL —
+exact solutions, no numerics in the load-bearing math. Don't re-derive:
+V = f·[l(l+1)/r² + ξR − 2H²], R = 12H², conformal l=0 → V = 0,
+minimal l=0 → −2H²sech²(Hx); Dirichlet v = tanh(Hx)cos(ωx) +
+(ω/H)sin(ωx); D_min/D_conf = 1 + H²/ω² exact; ungapped divergence
+coefficient 1/(8π³Ω²) exact. Round 20 reproduced all of it from
+scratch and AFFIRMED Z-AMBIG.
+
+What the next instance must hold straight:
+- BANKED: gap-NECESSITY (the 6Y ambient gap is REQUIRED by the
+  graviton-like IR structure — the reading became geometry); fiducial
+  g = H leak safety (4 orders); l-locality spin-2-safe (the reviewer
+  TRIED the η² tidal swing and got η⁴ — the physical l=2 graviton
+  channel is safer than our l=0 proxy).
+- NOT BANKED, don't overclaim: gap-SUFFICIENCY (fiducial safety is
+  window-carried); the small-g scan region (PT-invalid, admixture
+  10–21, ambient-fragile 1.94× at x_amb = 0.10 — quote as NEITHER
+  bound NOR breach); "REQUIRED-AND-SUFFICIENT" is banned phrasing.
+- THE LIVE SUCCESSOR = O5-DIFF: the dispersive shift is a ~100%
+  dS-VACUUM common-mode Lamb shift (−0.023/−0.025 H UV-completed;
+  |Δ|/Ω 0.134/0.712) — excluded-if-real by the deep RAR, so it must
+  renormalize; the honest budget is the x-DIFFERENTIAL distortion
+  (reviewer estimate ~few-% at the deep end) propagated to the
+  measured c₁ band. That computation = the mechanism's next
+  make-or-break. Also owed: the renormalization spec (condition 3),
+  D-normalization provenance (condition 8), ambient marginalization
+  (condition 5).
+- New trap fingerprint #10: a UV-convergence gate on ONE integral
+  family does not cover its SIBLING with a different tail (GZ9-4
+  gated the thermally-cutoff leak; the power-law-tailed dispersive
+  integral was 20% under-converged and no gate caught it — write a
+  convergence gate PER integral family).
+- Credence: mech conditional HOLDS 15 (pre-signed, reviewer-affirmed).
+  P3 §2 is now richer again: the PT kernel + gap-necessity theorem
+  join the 9W theorem and the 9T closure as printable derivation
+  content, with O5-DIFF as the honestly-named open pillar.
+
 ## 2026-08-08 (third close) — 9R-c: diamond 3 assayed, not a diamond; and the Merchen article
 
 The last of the hammering round's three diamonds (the Iorio TODO-28
