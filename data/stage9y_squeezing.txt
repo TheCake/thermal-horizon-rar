@@ -1,0 +1,49 @@
+STAGE 9Y: THE SQUEEZING BOUND -- the tail as a soft-sector state meter
+========================================================================
+G9Y-0: r = 0 regressions:
+  gal (nbar 6.583): max|P - geom| = 2.0e-11; gate = 0.7536 (6E/6Y 0.7536) OK
+  bin (nbar 0.502): max|P - geom| = 1.1e-16; gate = 0.1117 (6E/6Y 0.1118) OK
+G9Y-0: PASS
+
+G9Y-1: TMS(therm x therm) bright marginal == single-mode squeezed thermal (n = 0.5, r = 0.3):
+  max |dP(m)| over m < 20: 1.5e-09 -> PASS
+
+G9Y-2: squeezed-vacuum identities (r = 0.5):
+  TMS-vacuum per-mode marginal vs thermal(sinh^2 r): 5.6e-16; 1-mode SV P(odd) max: 0.0e+00; |P(0) - 1/cosh r|: 2.0e-15 -> PASS
+
+G9Y-3: covariance legs:
+  (i) classical equal-sign: bright isotropic, nbar_A = nbar + c: PASS
+  (ii) TMS anti-sign: bright anisotropic e^{+-2r}(nbar+1/2): PASS
+  (iii) |a,a> = |sqrt2 a>_A |0>_D (3 amplitudes): PASS
+G9Y-3: PASS  => classical correlations ABSORBABLE (thermal curve, recalibrated n); squeezing NOT (leaves the curve)
+
+THE DIAL: gate g(r) = P(n_A >= 2) and tail p = 1/2 + g/4:
+  r_sq   galaxy g -> p      binary g -> p     
+  0.00   0.7536 -> 0.6884   0.1117 -> 0.5279
+  0.10   0.7542 -> 0.6886   0.1176 -> 0.5294
+  0.20   0.7560 -> 0.6890   0.1349 -> 0.5337
+  0.30   0.7589 -> 0.6897   0.1625 -> 0.5406
+  0.50   0.7684 -> 0.6921   0.2415 -> 0.5604
+  0.80   0.7916 -> 0.6979   0.3891 -> 0.5973
+G9Y-4 truncation (gal nbar=6.58, r=0.8, last-10 occupancy 2.9e-04): PASS
+G9Y-5 dial monotone in r (both anchors): PASS
+
+THE HONEST BOUND (galaxy tail, 9U primary p-hat = 0.6471 +/- >= 0.075):
+  2-sigma ceiling on p_gal = 0.797; the dial's maximum is 3/4 = 0.750 -> NO squeezing bound at 2 sigma today (the dial saturates inside the noise) -- quoted plainly per the pre-commit
+
+THE DR4-ERA LEVER (registered): the binary column is the fractionally sharpest --
+  r_sq = 0.2: Delta p_bin = +0.0058 (gate 0.1349 vs thermal 0.1117)
+  r_sq = 0.3: Delta p_bin = +0.0127 (gate 0.1625 vs thermal 0.1117)
+  r_sq = 0.5: Delta p_bin = +0.0324 (gate 0.2415 vs thermal 0.1117)
+  a DR4-era weak-ambient tail at sigma_p ~ 0.01-0.02 reads r_sq ~ 0.2-0.3 directly; registered as the state-meter lever.
+
+P1 HARDENING LINE: squeezed and thermal CONVERGE at the void asymptote (g -> 1 as nbar -> inf regardless of r): the void kill-band [0.727, 0.750] is STATE-INDEPENDENT -- the P1 test does not care what state the soft sector is in.
+  (numeric spot: nbar = 60, r = 0.5: g = 0.9677 vs thermal 0.9675)
+
+========================================================================
+VERDICT LETTER: Y-THEOREM
+  the absorbable-vs-not theorem: classical correlations move the tail ALONG the thermal curve (n recalibration); quantum squeezing moves it OFF the curve; the measured pair's thermal-curve consistency is a quantum-state statement at whatever sigma_p the era provides.
+  credence: NO move from 9Y alone (pre-signed); package -> ROUND-19 with 9X.
+  anomaly-real 53 UNTOUCHED
+
+gates: G9Y-0 PASS | G9Y-1 PASS | G9Y-2 PASS | G9Y-3 PASS | G9Y-4 PASS | G9Y-5 PASS

@@ -515,6 +515,14 @@ CHECKS = [
      'data/stage9w_multimode.txt'),
     ('mech-9w-multimode', 'VERDICT LETTER: W-THEOREM-ONLY',
      'data/stage9w_multimode.txt'),
+    ('mech-9x-kernel', 'S(0) = 0.06231, S(10 lam) = 0.00438',
+     'data/stage9x_kernel.txt'),
+    ('mech-9x-kernel', '9X RELABELED: X-OPEN',
+     'data/stage9xy_addendum.txt'),
+    ('mech-9y-statemeter', '0.7536 -> 0.6884',
+     'data/stage9y_squeezing.txt'),
+    ('mech-9y-statemeter', '9Y RELABELED: Y-DIAL (conditional)',
+     'data/stage9xy_addendum.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

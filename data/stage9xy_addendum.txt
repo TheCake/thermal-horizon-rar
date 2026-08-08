@@ -1,0 +1,32 @@
+9X/9Y ROUND-19 ADOPTION ADDENDUM
+========================================================================
+CONDITION 3 -- the soft-regime linearity test (pre-registered interpretation: LINEAR => the leak lives):
+  delta = 2.5 (= 125 lam):
+    n2 =    2 (NB   24, trunc 6e-05): P2 = 0.000510 | P2/n2 = 2.55e-04 | 4 lam^2 n/delta^2 = 0.000512
+    n2 =    8 (NB   48, trunc 4e-03): P2 = 0.001989 | P2/n2 = 2.49e-04 | 4 lam^2 n/delta^2 = 0.002048
+    n2 =   20 (NB  120, trunc 3e-03): P2 = 0.004939 | P2/n2 = 2.47e-04 | 4 lam^2 n/delta^2 = 0.005120
+    n2 =   50 (NB  300, trunc 3e-03): P2 = 0.012054 | P2/n2 = 2.41e-04 | 4 lam^2 n/delta^2 = 0.012800
+    n2 =  100 (NB  600, trunc 3e-03): P2 = 0.023189 | P2/n2 = 2.32e-04 | 4 lam^2 n/delta^2 = 0.025600
+    log-log slope n2 = 2 -> 100: 0.976 (1.0 = linear)
+  delta = 5.0 (= 250 lam):
+    n2 =    2 (NB   24, trunc 6e-05): P2 = 0.000128 | P2/n2 = 6.39e-05 | 4 lam^2 n/delta^2 = 0.000128
+    n2 =    8 (NB   48, trunc 4e-03): P2 = 0.000500 | P2/n2 = 6.25e-05 | 4 lam^2 n/delta^2 = 0.000512
+    n2 =   20 (NB  120, trunc 3e-03): P2 = 0.001253 | P2/n2 = 6.26e-05 | 4 lam^2 n/delta^2 = 0.001280
+    n2 =   50 (NB  300, trunc 3e-03): P2 = 0.003118 | P2/n2 = 6.24e-05 | 4 lam^2 n/delta^2 = 0.003200
+    n2 =  100 (NB  600, trunc 3e-03): P2 = 0.006180 | P2/n2 = 6.18e-05 | 4 lam^2 n/delta^2 = 0.006400
+    log-log slope n2 = 2 -> 100: 0.991 (1.0 = linear)
+  VERDICT (condition 3): the response is LINEAR in occupation at soft detunings across n2 = 2-100 -- the reviewer's numbers reproduce; per the pre-registered interpretation THE LEAK LIVES as an open question: the 9X S-ratio was measured at the one detuning (10 lam) where saturation onsets early (k* = 12.5).
+
+CONDITION 2 -- the tail-VIRTUAL retraction (arithmetic):
+  n=0.5: pure-lending Lorentzian null at 16 lam (width halves with lambda): R = 3.88
+  n=2.0: pure-lending Lorentzian null at 16 lam (width halves with lambda): R = 3.81
+  measured R = 3.37 < null 3.8-3.9: the lambda-ratio diagnostic CANNOT separate lending from virtual in a Lorentzian tail; 'tail VIRTUAL' is RETRACTED.  (The 9X core fit, the S-ratio values, and the kernel rows themselves all stand -- the retraction is of one interpretive claim.)
+
+OPERATIVE LETTERS AFTER ROUND-19:
+  9X RELABELED: X-OPEN (was X-CLOSED as fired).  The soft-sector leak is NOT closed: the decisive object is the continuum integral int rho(omega) n(omega) (g_c/delta)^2 domega plus the single missing scale g_c^sky/H -- both outside a discrete NB<=56 toy.  Locality stays DATA-SUPPORTED (6Y), mechanism-consistent-in-tested-regime, NOT mechanism-derived.  The l-gap single-channel corollary is PENDING the same scale.  The cumulative dispersive shift (sum rho n lam^2/delta) needs its own budget -- 9T does not bound it.
+  9Y RELABELED: Y-DIAL (conditional) (was Y-THEOREM as fired). The instrument is a NON-THERMALITY METER: classical super-thermal mixtures (e.g. mixture-of-thermals, reviewer demo +0.014 at the binary anchor) move the gate the same direction as squeezing and are degenerate on the sky's scalar; parity would separate them but is lab-only.  The dial magnitude is conditional on the g = P(n>=2) reading ([P(n>=1)]^2 splits ~50% under squeezing; the <a^2> coherent-pair channel is unmodeled).  The DR4 lever inherits the conditional.  The frozen-window consistency condition (squeezing persistence vs averaging convergence vs 6N dephasing) is REQUIRED and unestablished.
+  SURVIVES REVIEW UNCONDITIONALLY: the 9Y Gaussian-classical absorbable-vs-squeezing-anisotropy covariance mathematics (exact); the P1 void state-independence line (reviewer reproduced 0.9678 vs 0.9675); the 9X kernel rows, core fits, and the thermal-mixture-of-Rabi-Lorentzians width mechanism (his model reproduces our rows to <1% in the core).
+
+THE NAMED SUCCESSOR (O5-LEAK): (i) an explicit horizon-side mode density rho(omega) for the soft sector; (ii) the scale g_c^sky/H; (iii) the continuum lending-leak integral and the dispersive-shift budget against P2_sys.  The l-gap corollary and the soft-leak closure BOTH collapse to (i)+(ii).
+
+CREDENCE (pre-signed package map, executed on the ruling): any-hole -> HOLD bath-mechanism conditional 15.  anomaly-real 53 UNTOUCHED.

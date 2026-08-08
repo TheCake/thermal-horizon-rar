@@ -13441,6 +13441,100 @@ dials had its ruler end mid-measurement (fixed, disclosed). Net: the
 foundation got stronger, the decorations got correctly labeled as
 decorations, and the next brick (c₄) has a clean target.
 
+## Stages 9X + 9Y + REVIEW ROUND 19 (2026-08-08) — the kernel and the state meter: both computations verified, both conclusions broken, and the break names the program's next real question
+
+**The hammering directive** ("make sure we don't walk past a diamond")
+sent two quantum stages at the remaining seams. Both were
+pre-registered (9X: 24245a4; 9Y: f81f212), both ran gates-green as
+fired (9X X-CLOSED 5/5; 9Y Y-THEOREM 6/6, one wiring fix logged), and
+both went to ROUND 19 as a package. **The reviewer reproduced every
+number and ruled UNPATCHED HOLE = YES on both conclusions.** The
+pre-signed any-hole cell executed: bath-mechanism conditional HELD 15.
+Nine conditions adopted verbatim; conditions 1/2/3/6/7/8/9 executed
+same-day ([calcs/stage9xy_addendum.py](calcs/stage9xy_addendum.py)).
+
+**9X (the participation kernel) — what stands and what broke.**
+Stands: the kernel rows and 9T-form core fits (his independent
+thermal-mixture-of-Rabi-Lorentzians model reproduces our rows to <1%
+in the core and *explains the width*: g_c = 2√2·λ√k Rabi factor ×
+mixture broadening — the "2–3.3× above λ√(2n)" was never anomalous);
+the composition measurements themselves. Broke: **(1) "tail VIRTUAL"
+RETRACTED** — my λ-ratio null was wrong: a *pure lending*
+saturated-Lorentzian core gives R = 3.81–3.88 at 16λ under the
+fixed-absolute-δ test (the width halves with λ), above my bar of 3;
+measured 3.37 sits BELOW the pure-lending null. **(2) The closure
+claim itself — the sharpest catch of the round: I measured the
+occupation-sensitivity at the one detuning where it saturates.** At
+δ = 10λ the response saturates by n₂ ≈ 12 (hence S-ratio 0.070); at
+the physically relevant soft detuning (δ ≈ the full transition
+frequency ≈ 290λ) the response is LINEAR in n₂ — confirmed in the
+addendum to his spec: slopes 0.976/0.991 across n₂ = 2–100 at
+δ = 125λ/250λ, matching P2 = 4λ²n₂/δ². A single soft mode at
+n₂ = 1000 contributes ~22% of the binary gate. **The soft-sector leak
+is NOT closed; 9X is relabeled X-OPEN.** Locality reverts to
+DATA-SUPPORTED (6Y), mechanism-consistent-in-tested-regime. The l-gap
+single-channel corollary is PENDING the same missing scale. The
+cumulative dispersive shift (Σρnλ²/δ) needs its own budget — 9T does
+not bound it (different object).
+
+**9Y (the squeezing bound → the non-thermality meter).** Stands
+unconditionally: the covariance mathematics (Gaussian-classical
+correlations keep the bright mode thermal — absorbable; TMS squeezing
+makes it anisotropic — not), the exact factorization identity, the
+dial arithmetic (his reproduction to 4 digits), and **the P1
+hardening line: the void kill-band [0.727, 0.750] is
+STATE-INDEPENDENT** (squeezed and thermal converge at the void; he
+reproduced 0.9678 vs 0.9675). Broke: the *discrimination* claim — a
+classical non-Gaussian mixture of thermals shifts the gate the same
+direction (+0.0138 at the binary anchor = the r_sq ≈ 0.2–0.3 signal)
+and is degenerate with squeezing on the sky's scalar; parity would
+separate them but is lab-only. **Renamed: NON-THERMALITY METER**, with
+squeezing as the quantum benchmark. And the off-thermal gate
+functional is ambiguous — P(n≥2) and [P(n≥1)]² coincide thermally
+(both s²) but split ~50% under squeezing, and the coherent-pair
+channel ⟨a²⟩ is unmodeled — so **Y-THEOREM relabels to Y-DIAL
+(conditional on the P(n≥2) reading)**; the registered DR4-era binary
+lever (Δp_bin = +0.013 at r_sq = 0.3) inherits the conditional; the
+frozen-window consistency condition (squeezing persistence vs
+averaging convergence vs 6N dephasing) is required and unestablished.
+
+**THE NAMED SUCCESSOR — O5-LEAK** (the round's real product; both
+open items collapse onto it): (i) an explicit horizon-side mode
+density ρ(ω) for the soft sector; (ii) the single missing scale
+g_c^sky/H; (iii) the continuum lending-leak integral
+∫ρ(ω)n(ω)(g_c/δ)²dω and the dispersive-shift budget, evaluated
+against P2_sys. The reviewer's unification: the soft-leak closure AND
+the l-gap single-channel corollary are the same computation. This is
+now the sharpest well-posed mechanism question the program has.
+
+Credence: bath-mechanism conditional HELD 15 (pre-signed any-hole
+cell); anomaly-real 53 UNTOUCHED. Ledger: +mech-9x-kernel (X-OPEN
+operative) +mech-9y-statemeter (Y-DIAL conditional) → 194 rows;
+worldtable 240 tokens six gates PASS.
+
+PLAIN VERDICT: NEEDS REFINEMENT, and honestly earned — both
+instruments computed correctly and both conclusions overclaimed; the
+review converted a false closure into the program's next well-posed
+question (O5-LEAK), kept the void-band state-independence hardening,
+and left a conditional DR4 dial. The 9W defensive theorem is
+untouched by any of this.
+
+ELI12: We built two new instruments and pointed them at the last soft
+spots in the story. Both instruments work — the checker rebuilt them
+from scratch and got our numbers. But both of OUR conclusions were
+too big. The first instrument said "faraway notes can't sneak into
+the doorway" — the checker showed we'd tested the sneakiness exactly
+where sneaking is hardest, and at the real distance the loudest faraway
+notes DO push on the doorway a little each, so whether they add up to
+trouble depends on one number we haven't computed yet (how many notes
+there are at each pitch — now the named next question). The second
+instrument we called a "quantumness meter" — the checker showed a
+plain classical crowd of mixed temperatures moves the needle the same
+way, so it's really a "not-one-temperature" meter, still useful,
+smaller title. Nothing about the sky changed today; the story's
+foundation (last week's theorem) stands; and we know exactly which
+stone to turn next.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

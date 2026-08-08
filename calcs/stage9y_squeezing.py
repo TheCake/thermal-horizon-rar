@@ -208,7 +208,8 @@ evc, Uc = np.linalg.eigh(NAc)
 ok3c = True
 for alpha in (0.3, 0.7, 1.1):
     v = np.exp(-abs(alpha)**2/2)*alpha**np.arange(NBc) / \
-        np.sqrt([math.factorial(k) for k in range(NBc)])
+        np.sqrt(np.array([math.factorial(k) for k in range(NBc)],
+                         dtype=float))
     psi = np.kron(v, v)
     occ_c = np.abs(Uc.T @ psi)**2
     Pc = np.zeros(2*NBc)

@@ -1134,9 +1134,22 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     statistics, s^L gate multimode-exact, M=1 FORCED (6Y NB flank
     closed); DEFENSIVE theorem per the review (ten conditions
     adopted; kernel scans = robustness diagnostics; local 6E anchors
-    primary); REMAINING constructive seam: WHY-locality (9T resonant
-    selection, reading-grade) + the single-channel assumption + dS
-    reservoir identification); (b) the ceiling-½ reading (two data
+    primary); 9X + 9Y + R19 2026-08-08 (the hammering round): both
+    conclusions BROKEN by review, both computations verified — 9X
+    X-OPEN (the soft leak NOT closed: response LINEAR in n at soft
+    detunings, addendum-confirmed; 'tail VIRTUAL' retracted — wrong
+    null; locality back to data-supported), 9Y → NON-THERMALITY
+    METER, Y-DIAL conditional (classical mixtures gate-degenerate
+    with squeezing; off-thermal gate functional ambiguous); SURVIVES:
+    9W theorem, kernel rows + width mechanism, covariance math, P1
+    void band STATE-INDEPENDENT (verified — Paper-3 hardening line);
+    REMAINING constructive seam = **O5-LEAK (the unifier, the named
+    sharpest question): explicit soft-sector ρ(ω) + the single scale
+    g_c^sky/H + the continuum leak integral + the dispersive-shift
+    budget — closes BOTH the soft leak and the l-gap single-channel
+    corollary in one computation; needs horizon-side physics input,
+    NOT another toy-regime scan** + dS reservoir identification);
+    (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established
     — the chain since: O5-DETUNING ANSWERED by the 9S bound + the 9T

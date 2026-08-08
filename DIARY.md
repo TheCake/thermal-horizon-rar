@@ -9,6 +9,56 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-08 (later) — 9X + 9Y + ROUND 19: I hammered for diamonds and struck my own thumb, correctly
+
+Filip asked whether there were diamonds left before pivoting to prose;
+I named three and ran the two quantum ones. Both computed clean, both
+overclaimed, and the reviewer caught both. What the next me must carry:
+
+- THE TRAP I FELL INTO (new fingerprint, cousin of 9V's y-coverage and
+  9W's domain edge): I measured the occupation-sensitivity at
+  delta = 10 lambda, where power-broadening saturates by n2 ~ 12 —
+  the ONE regime where the leak looks bounded. The soft sector lives
+  at delta ~ the full transition frequency (290 lambda) where the
+  response is LINEAR to n2 = 1000. STANDING RULE: before claiming a
+  suppression, check WHERE saturation onsets vs where the physics
+  lives (k* = delta^2/8 lambda^2 in this machinery). Never test a
+  bound only in the regime where it's easiest to satisfy.
+- MY NULL WAS WRONG on the channel split: at fixed absolute delta,
+  halving lambda halves the core width too — a PURE LENDING
+  Lorentzian gives ratio 3.8-3.9, above my "virtual" bar of 3.
+  "tail VIRTUAL" is RETRACTED. Rule: compute the null of a
+  diagnostic under the hypothesis you're trying to EXCLUDE before
+  setting its bar.
+- 9Y: "squeezing meter" was too big a title — classical mixtures of
+  thermals move the gate identically (+0.0138 at the binary anchor).
+  It's a NON-THERMALITY METER, and the dial is conditional on the
+  P(n>=2) gate reading ([P(n>=1)]^2 splits 50% under squeezing —
+  the off-thermal gate functional was never derived). DR4 lever
+  survives as a CONDITIONAL. What survives clean: the covariance
+  theorem (Gaussian-classical absorbable), the factorization
+  identity, and P1's void band being STATE-INDEPENDENT (verified by
+  the reviewer — quote this in Paper 3, it hardens P1).
+- O5-LEAK is the new sharpest mechanism question and it UNIFIES two
+  seams: the soft-leak closure and the l-gap single-channel
+  corollary are the SAME computation — explicit rho(omega) for the
+  soft sector + the single scale g_c^sky/H + the continuum integral
+  int rho n (g_c/delta)^2 vs P2_sys, plus the dispersive-shift
+  budget (9T does NOT bound it — different object). This needs
+  horizon-side physics input, not another toy scan. Do not run a
+  third toy-regime variant and call it closure.
+- Credence: HOLD 15 (pre-signed any-hole cell, executed). The 9W
+  defensive theorem is untouched. anomaly-real 53 untouched — no
+  sky number moved today.
+- Board: ledger 194 rows, worldtable 240 tokens six gates PASS.
+- Where the P3 prose stands after the hammering: SS2 now has MORE to
+  print honestly, not less — the multimode theorem (9W), the kernel
+  shape + width mechanism (9X survives as measurement), the
+  state-meter dial + P1 state-independence (9Y survives as
+  conditional instrument), and TWO honestly-named open questions
+  (O5-LEAK, the averaging flank). The Iorio sky stage (diamond 3)
+  is still unrun and independent.
+
 ## 2026-08-08 — 9W + ROUND 18: the multimode seam closes as a DEFENSIVE theorem; the reviewer stripped the decorations and I kept the strip
 
 Filip chose the multimode/reservoir seam derivation (with the c4 rung

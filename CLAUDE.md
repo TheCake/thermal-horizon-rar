@@ -228,6 +228,42 @@ O5-SEAM REMAINING: WHY-locality (9T selection, reading-grade) +
 single-channel assumption + dS reservoir identification. P3 SS2 is
 now WRITABLE (L1 + L2 + 9T + 9S-calibrated + 9U/9V walls + 9W).
 Ledger 192 rows / worldtable 236 tokens six gates PASS.**
+**9X + 9Y + ROUND 19 (2026-08-08 later, the hammering round; pre-regs
+24245a4/f81f212; author: "make sure we don't walk past a diamond"):
+both stages ran gates-green as fired (9X X-CLOSED: kernel 9T-form
+core rms 0.004-0.011, composition S-ratio 0.070; 9Y Y-THEOREM:
+covariance theorem exact, dial built, today-bound vacuous-as-pre-
+committed) and the ROUND-19 red-team REPRODUCED EVERY NUMBER AND
+BROKE BOTH CONCLUSIONS (UNPATCHED HOLE: YES x2; pre-signed any-hole
+cell = HOLD 15): 9X -> X-OPEN (I measured the occupation-sensitivity
+at the ONE detuning where it saturates, k* = 12.5 at 10 lam; at soft
+detunings ~125-250 lam the response is LINEAR in n2 to 100+ (addendum
+slopes 0.976/0.991 = 4 lam^2 n/delta^2; one n2 = 1000 soft mode ~ 22%
+of the binary gate) => THE SOFT LEAK IS NOT CLOSED; 'tail VIRTUAL'
+RETRACTED (pure-lending Lorentzian null 3.8-3.9 > my bar 3 > measured
+3.37 - wrong null); locality BACK TO data-supported (6Y); l-gap
+corollary PENDING); 9Y -> NON-THERMALITY METER, Y-DIAL conditional
+(classical thermal mixtures gate-degenerate with squeezing, +0.0138
+demo; off-thermal gate functional ambiguous: P(n>=2) vs [P(n>=1)]^2
+split ~50% under squeezing, <a^2> channel unmodeled; frozen-window
+condition unestablished; DR4 lever = CONDITIONAL dial). SURVIVES
+UNCONDITIONALLY: the 9W defensive theorem; 9X kernel rows + the
+reviewer-derived width mechanism (2 sqrt2 Rabi x mixture broadening);
+9Y covariance math + factorization; **P1 VOID BAND STATE-INDEPENDENT
+(verified 0.9678 vs 0.9675) = a Paper-3 hardening line**. Nine
+conditions adopted; 1/2/3/6/7/8/9 executed in stage9xy_addendum.py;
+4/5 = THE NAMED SUCCESSOR **O5-LEAK: explicit soft-sector rho(omega)
++ the single scale g_c^sky/H + the continuum leak integral + the
+dispersive-shift budget (9T does NOT bound it) - closes BOTH the
+soft leak and the l-gap single-channel corollary in ONE computation;
+needs horizon-side physics input, NOT another toy scan.** New trap
+fingerprints #8/#9: test suppressions where the physics lives, not
+where saturation onsets early (k* = delta^2/8 lam^2); compute a
+diagnostic's null under the hypothesis being EXCLUDED before setting
+its bar. CREDENCE: bath-mechanism conditional HELD 15; anomaly-real
+53 untouched (no sky number moved). Diamond 3 (the Iorio TODO-28
+reopen) still unrun. Ledger 194 rows / worldtable 240 tokens six
+gates PASS.**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

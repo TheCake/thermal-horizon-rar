@@ -245,6 +245,20 @@ gate-free (the signal is not divided by g), with the kill-band at the
 ceiling — and carries the O5-AVERAGING question alone until anchored/
 DR4-era tails or a void-RAR sample exist.*
 
+*Annotation 2026-08-08 (Stage 9Y + ROUND 19; HARDENING, no status
+change): the void kill-band [0.727, 0.750] is STATE-INDEPENDENT —
+squeezed-thermal and thermal ambient states converge at the void
+asymptote (both gates → 1; reviewer-reproduced 0.9678 vs 0.9675 at
+n̄ = 60, r = 0.5). The P1 test does not depend on the quantum state of
+the soft sector. Separately REGISTERED (conditional): the ambient
+NON-THERMALITY dial — super-thermal ambient statistics (quantum
+squeezing OR classical thermal mixtures; degenerate on this scalar)
+raise the binary-side tail by Δp_bin ≈ +0.006/+0.013/+0.032 at
+r_sq-equivalent 0.2/0.3/0.5 under the g = P(n≥2) gate reading (the
+reading is a named conditional; [P(n≥1)]² splits ~50% from it under
+squeezing). A DR4-era weak-ambient tail at σ_p ~ 0.01–0.02 reads this
+dial; today's bound is vacuous at 2σ (9U σ_p ≥ 0.075).*
+
 *Annotation 2026-08-07 second close (Stage 9V; no status change): the
 direct in-catalog r fit (per-galaxy measured gates) confirms and closes
 the arc: r̂ = 0.3365 ± 0.1869 (clipped bootstrap; fid treatment 0.3895
