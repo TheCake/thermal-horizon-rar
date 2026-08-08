@@ -543,6 +543,12 @@ CHECKS = [
      'data/stage10a_dprov.txt'),
     ('mech-10a-elladder', 'CORRECTED CONJECTURE (numerically verified '
      'at FIVE l-values', 'data/stage10a_addendum.txt'),
+    ('mech-10b-carrier', 'the dictionary mismatch: omega_sec/'
+     'omega_dict runs s^{5/2} -> sweeps 6.0 orders',
+     'data/stage10b_carrier.txt'),
+    ('mech-10b-carrier', '10B LETTER RELABELED (ROUND 23 adopted): '
+     'V-DISPERSIVE-FORCED -> V-DISPERSIVE-PERMITTED',
+     'data/stage10b_addendum.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

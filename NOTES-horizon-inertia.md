@@ -13842,6 +13842,105 @@ predicted the next family member perfectly), and told us honestly:
 you found where the answer is NOT, which is real progress — now go
 find where it IS.
 
+## Stage 10B + ROUND 23 — O5-CARRIER: THE CARRIER LEDGER (2026-08-08; pre-reg 8b46d1c)
+
+The chase's second leg ("Let's chase it. All you got"), and the hunt
+changed shape mid-stalk: constructing the near-field vertex R22
+demanded revealed it is DISPERSIVE-class, not exchange-class — so the
+stage built the COMPLETE carrier ledger instead and let the letters
+fork. Instruments: T1 the epicyclic dichotomy (κ² = Ω_K² + 4T exact;
+secular splitting −(3/2)T/Ω_K exact ⇒ matter modes are either elastic
+≥ the measured 30.2H/5e3H floors or SECULAR; the 6Y cloud's internal
+continuum is doubly dead — Wien e^−190 AND ≥29H detuned: admixture ≤
+10^−84.8·g², R22 condition 5-residual CLOSED). T2 the secular carrier
+(the ONE matter family in the soft band — the 10-kAU Galactic-tide
+apsidal rate is 2.49H — excluded AS carrier by the dictionary:
+ω_sec/ω_dict runs s^{5/2}, a 6-order sweep ⇒ 12 orders of implied a₀
+drift vs the measured ~10% constancy). T3 the constraint vertex: an
+exterior-sourced l=0 potential is interior-CONSTANT (Laplace) ⇒ it
+couples only to total energy, H_int = (Ĥ_sys/c²)δΦ, charge
+equivalence-principle-forced — and [H_int, N_s] = 0 EXACTLY: the
+vertex is dispersive, gravity's constraint sector has no l=0
+off-diagonal soft vertex; single-port ⇒ 9W applies exactly (the S
+microstates present ONE collective mode — the R16 patch mechanized);
+under hypothesis H-P (per-microstate Planck amplitude) the bright
+amplitude is √S·cHℓ_P = √π c².
+
+Fired V-DISPERSIVE-FORCED 8/8 gates. **ROUND 22... ROUND 23
+(REVIEW-ROUND23-OPUS.md, uncommitted): every digit reproduced (his
+own Fock matrices for the selection rule), then DOWNGRADE →
+V-DISPERSIVE-PERMITTED, ADOPTED**, on three catches that all stood
+re-verification (calcs/stage10b_addendum.py): (1) the
+MOMENTUM-CONSTRAINT vertex p̂_s(b+b†) IS off-diagonal — clause (2)'s
+"no off-diagonal vertex, ever" refuted in principle (his ceiling: the
+l=1 channel is still ≥15 orders dead as a carrier — wrong DOF
+[free-fall-removable dipole] + gapped/empty/geometry-suppressed
+partner — CONFIRMED: n(2π√2) = 1.38e-4, admixture 3.5e-4·g², geometric
+1.3e-22/5.5e-12); (2) THE HOLE: my amplitude rows √(π(2n+1)) =
+2.5–8.1 were the RMS JITTER (mean-zero), mislabeled as the JC
+(2n+1)-pull; his zero-detuning mean pull π(2n+1) = 6.3/44.8/66
+CONFIRMED; the √S bridge is H-P (an assumption), not 9W (which
+collectivizes the COUPLING, not the amplitude) — the entire 61-order
+bridge is the one hypothesis; (3) the 6X demotion was asserted — the
+program's one real-vs-virtual discriminator (which favored REAL) was
+never re-run under the dispersive hypothesis. Also adopted: the
+corotation correction (a real slow disk family; excluded by
+measure-zero + dictionary), the √π-identity demotion (a tautology —
+S's definition rearranged), and the disclosure that V-EMPTY was
+unreachable at physical occupations (the fork was cosmetic; trap-#12
+failed substantively a THIRD round running — the letter was wired to
+the half that could not miss).
+
+THE EARNED STATE: real-exchange carriers are EXCLUDED everywhere in
+the enumeration (C1–C7 + the momentum loophole) — "no real-exchange
+channel carries the grammar, anywhere" (his words) — and any
+microphysical carrier must be DISPERSIVE; whether the dispersive
+channel SUPPLIES the measured grammar is NAMED-NOT-DERIVED (H-P
+unproven; jitter-not-pull; 6X un-rerun). THE PREVIEW banked in the
+addendum (labeled, not a verdict): restoring the frequency-ratio
+structure his zero-detuning bound omits gives pull/ω_s ~
+x(2n_BE(x)+1)/2 = (x/2)coth(x/2) = 1.098/1.002 at the anchors, exact
+series **1 + x²/12 − x⁴/720 — the BE ladder's own Bernoulli rungs
+appearing in the mean dressing**. His condition 8 (the real amplitude
+bar: derive the honest mean pull to the measured c₁ = ½) is exactly
+where that points — THE 10C OPENING MOVE, with his conditions 6 (the
+6X dispersive control re-run) and 7 (justify or drop H-P) as the
+package. Condition 9 executed: the r = ½ kill-test REGISTERED in
+PREDICTIONS.md (dispersive reading ⇒ no γ-running, p_void = ¾
+EXACTLY; r < ½ at >2σ kills it while off-resonance exchange
+survives). CREDENCE (map, mechanical): bath-mechanism conditional
+HOLDS 15 (hole blocks the rise; nothing fatal — the pre-signed
+V-EMPTY strike cell did NOT fire and he declined to trigger it);
+anomaly-real 53 untouched. Ledger +mech-10b-carrier (200 rows);
+worldtable 252 tokens six gates PASS. NO row annotations executed
+(the interpretive-layer demotion list is DEFERRED pending the 6X
+re-run — his ruling that clause 5 was under-demonstrated).
+
+PLAIN VERDICT: NEEDS REFINEMENT — with the map redrawn. The chase did
+not catch the derivation, but it cornered it: every way gravity could
+carry the measured coupling by real exchange is now excluded at
+derivation grade, the one vertex that remains is dispersive by an
+exact selection rule, and the first honest look at its mean pull
+lands order-unity with the ladder's own Bernoulli coefficients in it.
+The question is no longer "which channel" — it is "does the
+dispersive channel's exact second-order structure reproduce the
+measured law," and that is a single computable object.
+
+ELI12: We finished searching every room in the house for the thing
+that could be trading energy with our melody — and every room is
+empty. Real trading is impossible: the notes are either too high, too
+out-of-tune, or the doorway itself (we proved this exactly) only lets
+the melody's LOUDNESS be felt, never a note passed through. So if the
+universe's hum shapes our melody, it must do it the quiet way — by
+leaning on it, not by trading with it. Our referee agreed the rooms
+are empty, then caught us calling the leaning "proven" when we had
+only shown it's allowed — and he found we had measured the WOBBLE of
+the leaning where we needed its steady PUSH. When we redid the push
+arithmetic honestly, the first numbers came out almost exactly 1,
+with the very same magic fractions (1/12, 1/720) our sky formula
+carries. That is either a beautiful coincidence or the beginning of
+the real derivation — next hunt decides.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

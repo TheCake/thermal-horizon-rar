@@ -245,6 +245,20 @@ gate-free (the signal is not divided by g), with the kill-band at the
 ceiling — and carries the O5-AVERAGING question alone until anchored/
 DR4-era tails or a void-RAR sample exist.*
 
+*Annotation 2026-08-08 (Stage 10B + ROUND 23; REGISTERED conditional
+kill-test, reviewer-promoted): under the DISPERSIVE reading of the
+grammar (10B: real-exchange carriers excluded C1–C7; the constraint
+vertex is dispersive-class by the exact selection rule; reading
+PERMITTED-not-forced), the exchange weight is structurally FIXED at
+r = ½ with no γ-running — the void asymptote is p_void = ¾ EXACTLY
+(not a band), and the tail carries no swing-count dependence. KILL
+(dispersive reading only): a void/DR4-era measurement of r < ½ at
+> 2σ falsifies the dispersive realization while off-resonance
+exchange would survive; conversely p_void = 0.750 ± small with no
+γ-running signature is the dispersive reading's signature. The
+resonance-reading band [0.727, 0.750] and the parameter-free p ≤ ¾
+ceiling are unchanged.*
+
 *Annotation 2026-08-08 (Stage 9Y + ROUND 19; HARDENING, no status
 change): the void kill-band [0.727, 0.750] is STATE-INDEPENDENT —
 squeezed-thermal and thermal ambient states converge at the void

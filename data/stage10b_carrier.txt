@@ -1,0 +1,52 @@
+==============================================================================
+STAGE 10B -- O5-CARRIER: THE CARRIER LEDGER AND THE CONSTRAINT VERTEX
+==============================================================================
+
+PART 1 -- T1 THE EPICYCLIC DICHOTOMY
+GB-1 epicyclic identity: kappa^2 = Omega_K^2 + 4T True; secular splitting Omega - kappa = -(3/2) T/Omega_K + O(T^2) True => PASS
+  THE DICHOTOMY: matter-side frequencies are combinations {m kappa + k Omega}; every combination is either ELASTIC (>= kappa ~ Omega_orb: measured floors Omega/H = 30.2 SPARC / ~5e3 binaries, ledger mech-9q-frozen) or SECULAR (the near-degenerate |Omega - kappa| family = candidate C4). The band (secular, elastic-floor) contains NO matter modes.
+  cloud-continuum closure: admixture <= 4 g^2 n(2 pi 30.2)/(29 H)^2; ln n = -189.8 => admixture <= 10^-84.8 x g^2 (bar 1e-30) -> PASS  [the cloud's internal modes are Wien-dead AND far-detuned; the leak cannot re-open inside the hosting sector]
+
+PART 2 -- T2 THE SECULAR CARRIER (C4)
+  anchor rates (M_tot = 1 M_sun):
+    s =   0.2 kAU : omega_sec = 1.60e-20 /s (7.03e-03 H)   omega_dict = 1.32e-17 /s (5.80e+00 H)   ratio 1.21e-03
+    s =   2.0 kAU : omega_sec = 5.05e-19 /s (2.22e-01 H)   omega_dict = 1.32e-18 /s (5.80e-01 H)   ratio 3.84e-01
+    s =  10.0 kAU : omega_sec = 5.64e-18 /s (2.49e+00 H)   omega_dict = 2.63e-19 /s (1.16e-01 H)   ratio 2.14e+01
+    s =  50.0 kAU : omega_sec = 6.31e-17 /s (2.78e+01 H)   omega_dict = 5.26e-20 /s (2.32e-02 H)   ratio 1.20e+03
+  the dictionary mismatch: omega_sec/omega_dict runs s^{5/2} -> sweeps 6.0 orders across the measured 0.2-50 kAU sample; the implied a0_eff (if x tracked the secular frequency) sweeps 12.0 orders vs the measured ~10% constancy (5M lock; v7/3U interior fits) -> PASS
+  honest near-miss stated: the 10-kAU Galactic-tide apsidal rate IS ~H-scale (2.5 H) -- the secular family is the ONE matter family in the soft band; it dies by dictionary, not by frequency. Galaxy-side co-read: an axisymmetric-disk star carries no comparable slow tide (the family barely exists there). Sub-leading secular ADMIXTURE is not excluded -- labeled; the carrier is.
+  C6 (local delta-H mode): constraint-slaved to local matter by the Friedmann constraint -> reduces to C4 -> excluded with it.
+  C7 (system-system monopole-monopole, R = 8 kpc): g_c ~ G hbar w1 w2/(c^4 R) = 4.8e-119 H -- dead.
+
+PART 3 -- T3 THE CONSTRAINT VERTEX
+GB-3a interior constancy: regular l=0 Laplace solution inside a source-free region = C1 (constant; the 1/r branch removed by regularity) -> PASS  => the horizon's soft l=0 coordinate couples to a bound system ONLY through its total energy: H_int = (H_sys/c^2) deltaPhi  [charge = energy: equivalence-principle-forced; the soft quantum's charge hbar omega_s/c^2 is model-independent]
+GB-3b the selection rule: [(a+a)(b+bd)-form energy-monopole vertex, N_s] = 0 -> PASS  => the vertex is DISPERSIVE-class (JC-longitudinal a†a(b+b†)); it CANNOT transfer system quanta -- gravity's constraint sector provides NO off-diagonal soft vertex
+  contrast (exchange vertex a†b + b†a): [H_ex, N_s] = -b*ad + bd*a != 0 -- the class distinction is exact
+  single-port: the system's energy couples to ONE operator (the collective sum of microstate displacements) => the 9W bright-mode theorem applies EXACTLY: the S microstates present ONE collective mode to any monopole-coupled system (the R16 'one soft coordinate; microstates = reservoir' patch, mechanized).
+GB-3c the amplitude identity: sqrt(S) x (c H l_P) with S = pi r_c^2/l_P^2 and r_c = c/H  =  sqrt(pi)*c**2  == sqrt(pi) c^2 -> PASS
+  HYPOTHESIS H-P (the one load-bearing assumption, named): each of the S = 2.10e+122 horizon microstates contributes an independent Planck-grade potential quantum deltaPhi_1 = c H l_P = 1.10e-44 m^2/s^2 (one Planck length of horizon displacement). Under 9W the bright mode then carries deltaPhi_B = sqrt(pi) c^2 EXACTLY -- the collective zero-point saturates the geometric-linearity edge (deltaPhi ~ c^2), an O(1) statement, not orders past it.
+
+  THE AMPLITUDE CONDITION (B-T3 iv): fractional dressing of the system's soft frequency, sqrt(pi (2 n + 1))-grade:
+    binary (n_amb = 0.502)       delta-omega/omega ~ 2.51
+    galaxy ambient (n_amb = 6.63) delta-omega/omega ~ 6.69
+    galaxy deep local (n ~ 10)   delta-omega/omega ~ 8.12
+  O(1) window [0.1, 10]: PASS  -- the constraint vertex at the collective amplitude delivers ORDER-UNITY, occupation-structured ((2n+1)) dressing = the amplitude the O5-NORM arc demanded, in the DISPERSIVE channel (exactly the 6H JC anchor's lam^2(2n+1)/Delta structure whose zero-point share 1/(2nu-1) the grammar measures)
+  semiclassical bracket (no collectivization): per-microstate amplitude alone under-supplies by sqrt(S) = 1.4e+61 -- the same 60-order gap 10A's C5 scratch found; the sqrt(S) bright-mode factor IS the bridge, and it is the program's own banked 9W theorem doing the bridging.
+  horizon l >= 1 co-read: gapped at sqrt(l(l+1)) H (R16) AND (L_sys/r_c)^l geometry-suppressed: galaxy (10 kpc/horizon) = 2.3e-06, binary 1.1e-11 -- dead both ways.
+
+  CONSISTENCY SWEEP -- the dispersive realization vs every measured grammar element:
+    gate s^L = e^-Lx: Boltzmann/KMS state-statistic (6U derived it AS detailed balance; no real borrowing required) ... CARRIES
+    local factor 1/(2nu-1): the dispersive zero-point share (6H JC anchor -- dispersive BY CONSTRUCTION) ................ CARRIES
+    p-family weight r: dispersive-fixed r = 1/2 (the zero-point share at resonance-language face value) sits 0.56 sigma from the measured r-hat = 0.390 +/- 0.198 (9U) ............... CARRIES
+    9T detuning unresolvability + 9W reduction: state-level theorems, realization-independent ....................... CARRY
+    6X toy: FORM-validator (its real exchange was the toy's realization; R19 already retracted 'tail VIRTUAL' the other direction) ............................................. RE-READS
+    M=1 (6Y measured): mechanized by (c) single-port ....... GAINS
+
+==> 10B VERDICT (locked grammar): V-DISPERSIVE-FORCED -- the carrier ledger is EMPTY for real exchange (C1/C2 dead by 10A; C3 frequency-forbidden; C4 dictionary-excluded; C6 reduces to C4; C7 dead by 80 orders; and the one vertex gravity's constraint sector provides is exchange-FORBIDDEN by the exact selection rule [H_int, N_s] = 0). The grammar's realization is therefore DISPERSIVE: the constraint vertex at the 9W-collective amplitude (sqrt(S) l_P = sqrt(pi) r_c, exact) delivers O(1), (2n+1)-structured dressing under the single named hypothesis H-P -- the amplitude condition the O5-NORM arc demanded, met WITHOUT real exchange. The round-22 condition-4 demand is answered with the opposite sign: a Rabi-capable constraint coupling does not exist, and the measured grammar never needed one -- every measured element (the KMS gate, the zero-point share, r = 1/2 at -0.55 sigma) is state-statistics or dispersive-class. The exchange INTERPRETIVE layer (9T resonance language, 9U swing-count, 9S detuning-bound readings, 6X's realization) demotes to effective/form-validator status -- rows annotated at booking, never deleted.
+    CREDENCE: per the pre-signed map (V-DISPERSIVE-FORCED -> HOLD 15 pending ROUND 23, rise cell 15 -> 18 on no-hole; V-EMPTY -> 15 -> 12 immediately; V-QUOTE -> HOLD 15). anomaly-real 53 untouched in every cell (no sky fits).
+
+GB-6 ledger legs: {'mech-10a-dprov': True, 'mech-9w-multimode': True, 'mech-9q-frozen': True, 'gal-9u-ptail': True} -> PASS
+
+GATES: B-T1:PASS  B-T2:PASS  B-T3iv:PASS  GB-1:PASS  GB-3a:PASS  GB-3b:PASS  GB-3c:PASS  GB-6:PASS
+
+done (0.0 min)

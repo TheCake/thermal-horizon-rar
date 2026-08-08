@@ -416,6 +416,43 @@ REVIEW-ROUND22-OPUS.md (uncommitted). Ledger 199 rows / worldtable
 (memory rule executed: his U, his l=3 set, his A=0.1966 catch — all
 CONFIRMED in calcs/stage10a_addendum.py).**
 
+**10B + ROUND 23 (2026-08-08 eighth close, O5-CARRIER, pre-reg
+8b46d1c): the chase's second leg — THE CARRIER LEDGER. Fired
+V-DISPERSIVE-FORCED 8/8, ROUND 23 reproduced every digit (his own
+Fock matrices) and DOWNGRADED to V-DISPERSIVE-PERMITTED (adopted).
+EARNED: real-exchange carriers EXCLUDED EVERYWHERE — C1–C7 + the
+momentum-constraint loophole (his Q1: p̂(b+b†) IS off-diagonal in
+principle, refuting my "ever"; his ceiling ≥15 orders dead as
+carrier, CONFIRMED); the cloud-continuum leak CLOSED (10^−84.8·g² =
+R22 cond-5-residual discharged); the secular family (10-kAU apsidal
+2.49H = the one matter family in the soft band) dictionary-killed
+(12 implied-a₀ orders); THE SELECTION RULE exact: exterior l=0
+potential interior-constant ⇒ H_int = (Ĥ/c²)δΦ ⇒ [H_int, N_s] = 0 ⇒
+any carrier must be DISPERSIVE. NOT earned: that the dispersive
+channel SUPPLIES the grammar — H-P (the √S amplitude bridge) is an
+ASSUMPTION (his sharpest point: 9W collectivizes the COUPLING not
+the amplitude); my O(1) rows were the RMS JITTER √(π(2n+1)) = 2.5–8.1
+mislabeled as the JC pull (his zero-detuning pull π(2n+1) = 6.3/44.8/
+66 CONFIRMED); the 6X control un-rerun. **THE ADDENDUM PREVIEW
+(labeled, not verdict): the frequency-ratio-corrected mean pull
+(x/2)coth(x/2) = 1.098/1.002 at the anchors, EXACT series 1 + x²/12
+− x⁴/720 = THE BE LADDER'S BERNOULLI RUNGS in the mean dressing.**
+**THE 10C PACKAGE (R23 conds 6/7/8) = the next derivation leg: (8)
+derive the honest second-order pull with its Δ-structure vs the
+measured c₁ = ½ [the coth preview = the opening move]; (6) the 6X
+real-vs-virtual control re-run under purely dispersive coupling;
+(7) justify or drop H-P.** r = ½ kill-test REGISTERED in
+PREDICTIONS.md (dispersive ⇒ no γ-running, p_void = ¾ EXACTLY; r < ½
+at >2σ kills the dispersive reading). Interpretive annotations
+(9T/9U/9S/6X) DEFERRED pending cond 6. Trap-#12 substantively failed
+a THIRD round running — new discipline in DIARY (gate every clause
+of the optimistic letter or write PERMITTED-grade language).
+Credence: mech HOLDS 15 (four O5 rounds 2026-08-08, zero strikes,
+zero rises); anomaly-real 53 untouched. Round in
+REVIEW-ROUND23-OPUS.md (uncommitted). Ledger 200 rows / worldtable
+252 tokens six gates PASS. Eight closes today — FRESH SESSION
+STRONGLY RECOMMENDED before 10C.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

@@ -1203,7 +1203,26 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     coupling as a Rabi-capable quantized channel compatible with
     6X real-exchange + 9U γ, and bound the 6Y cloud's own internal
     continuum. Gap-necessity survives the split (divergence is
-    prefactor-independent).**);
+    prefactor-independent).**
+    **O5-CARRIER EXECUTED 2026-08-08 (10B, pre-reg 8b46d1c; ROUND 23
+    downgraded fired-FORCED → V-DISPERSIVE-PERMITTED, adopted): the
+    R22 demand answered with the OPPOSITE sign — real-exchange
+    carriers are EXCLUDED EVERYWHERE (C1–C7 + the momentum-constraint
+    loophole ≥15 orders dead; the cloud-continuum leak closed at
+    10^−84.8·g² = the 5-residual discharged; the secular family
+    dictionary-killed at 12 implied-a₀ orders), and the constraint
+    sector's only soft vertex is DISPERSIVE-class by the exact
+    selection rule [H_int, N_s] = 0 ⇒ any carrier must be dispersive;
+    whether it SUPPLIES the grammar = named-not-derived (H-P
+    unproven; jitter-vs-pull corrected; 6X un-rerun). THE 10C
+    PACKAGE (R23 conditions 6/7/8) = the next derivation leg: (8)
+    the honest second-order mean pull with its Δ-structure vs the
+    measured c₁ = ½ — the addendum preview (x/2)coth(x/2) =
+    1 + x²/12 − x⁴/720 puts the BE ladder's Bernoulli rungs in the
+    mean dressing at O(1); (6) the 6X real-vs-virtual control re-run
+    under a purely dispersive coupling; (7) justify or drop H-P (the
+    √S independence bridge). r = ½ kill-test registered in
+    PREDICTIONS (dispersive ⇒ no γ-running, p_void = ¾ exactly).**);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established

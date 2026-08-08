@@ -9,6 +9,71 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-08 (eighth close) — the chase's second leg: every room is empty, and the wall has 1/12 written on it
+
+The author said "chase it, all you got" and 10B ran the complete
+carrier ledger. What the next instance must hold straight:
+
+BANKED, do not re-litigate:
+- REAL EXCHANGE HAS NO CARRIER. C1-C7 + the momentum-constraint
+  loophole (the reviewer's own attack, >= 15 orders dead) — every
+  physical channel that could Rabi-trade with the soft coordinate is
+  excluded at derivation grade. The R23 reviewer: "no real-exchange
+  channel carries the grammar, anywhere in the enumeration."
+- THE SELECTION RULE (exact, double-verified, his own Fock
+  matrices): an exterior-sourced l=0 potential is interior-constant
+  => it couples only to TOTAL ENERGY => [H_int, N_s] = 0. Gravity's
+  l=0 constraint vertex is dispersive-class. Any carrier must be
+  dispersive.
+- The cloud-continuum leak is closed (10^-84.8 g^2 — Wien + detuning
+  double-kill); the secular family (the ONE matter family in the
+  soft band — 10-kAU apsidal rate 2.49H!) is dictionary-killed (12
+  orders of implied a0 drift); corotation likewise (measure-zero +
+  dictionary — the R23 correction).
+- THE PREVIEW (the wall with the writing): the honest second-order
+  mean pull of the dispersive vertex ~ (x/2)coth(x/2) = EXACTLY
+  1 + x^2/12 - x^4/720 — the BE ladder's own Bernoulli rungs, landing
+  1.098/1.002 at the anchors. LABELED preview, not verdict. If the
+  full derivation (with the honest Delta-structure) reproduces the
+  measured c1 = 1/2 grammar, the mechanism closes; if it produces
+  the wrong coefficients, it dies by its own arithmetic. Either way
+  it is ONE computable object now.
+
+NOT earned, do not overclaim: the dispersive reading is PERMITTED,
+not forced-to-work. Three open items = THE 10C PACKAGE (R23 conds
+6/7/8): (8) the exact mean pull vs c1 = 1/2 [the coth preview is the
+opening move]; (6) re-run the 6X real-vs-virtual control under a
+purely dispersive coupling — 6X favored REAL and demoting it without
+the re-run is assertion; (7) H-P: the sqrt(S) amplitude bridge is an
+ASSUMPTION (9W collectivizes the coupling, NOT the amplitude — his
+sharpest technical point; the entire 61-order bridge is one
+independence hypothesis about the most correlated ensemble in
+physics). Interpretive-layer annotations (9T/9U/9S/6X) DEFERRED
+pending (6).
+
+THE RECURRING FAILURE MODE, now three-for-three (R21 GDB-3, R22
+positive-clause, R23 cosmetic-fork): I keep wiring letters to the
+half that cannot miss. Trap #12 needs TEETH: after drafting the
+letter grammar, list every clause the optimistic letter asserts and
+ask "which gate would catch this clause being false?" — if none
+exists, either build the gate or write PERMITTED-grade language into
+the optimistic cell from the start. The R23 reviewer's exact words:
+"the letter is wired to the half that was always going to fire."
+
+New standing fact worth its weight: the r = 1/2 kill-test is
+REGISTERED (PREDICTIONS.md) — the dispersive reading predicts NO
+gamma-running and p_void = 3/4 EXACTLY; r < 1/2 at > 2 sigma kills
+it. The two readings are now empirically separable at DR4/void
+grade.
+
+Credences after eight closes: anomaly-real 53 (untouched all day),
+mech conditional 15 (four O5 rounds today, zero strikes, zero
+rises — the map holding under fire is the program working). The
+fork: the 10C package (the pull derivation — the sharpest, most
+decisive object the mechanism has ever reduced to) vs the author's
+paper/circulation queue. Fresh session strongly recommended —
+eight closes, and 10C deserves a clear head.
+
 ## 2026-08-08 (seventh close) — the D-hunt: the monster is dead, the derivation escaped
 
 The commissioned hunt (10A, pre-reg fc33426) ran the same day the
