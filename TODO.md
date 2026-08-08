@@ -1127,10 +1127,16 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     exists.
 30. **Paper 3 prerequisites** (author-deferred until 1-2 ship + seam
     work): (a) the O5 seam — horizon-side derivation of the s² gate
-    (6X did the per-leg factor at toy grade; missing = dS reservoir
-    identification + multimode; 9Q/R16 2026-08-07 progress: one-mode
-    REGIME derived at toy grade + the frozen theorem DERIVED — the
-    remaining seam is sharper); (b) the ceiling-½ reading (two data
+    (6X did the per-leg factor at toy grade; 9Q/R16: one-mode REGIME
+    derived + frozen theorem DERIVED; **9W + R18 2026-08-08: the
+    MULTIMODE half CLOSED at theorem grade** — linear single-port
+    coupling forces reduction to one collective mode with geometric
+    statistics, s^L gate multimode-exact, M=1 FORCED (6Y NB flank
+    closed); DEFENSIVE theorem per the review (ten conditions
+    adopted; kernel scans = robustness diagnostics; local 6E anchors
+    primary); REMAINING constructive seam: WHY-locality (9T resonant
+    selection, reading-grade) + the single-channel assumption + dS
+    reservoir identification); (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established
     — the chain since: O5-DETUNING ANSWERED by the 9S bound + the 9T
@@ -1161,6 +1167,12 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     (Zenodo 10.5281/zenodo.20320362) if it gains environment columns;
     (iii) DR4-era; (iv) anchored subsamples. The P1 void saturation
     band is untouched and waiting); (c) the 7F
-    negative-flank closure (the c₄ rung); (d) optional: cQED platform
+    negative-flank closure (the c₄ rung) — **target CLEANED by 9W/R18:
+    c₄(L=2) = 0.002536 single-mode + width band ≤ 0.5% at Rabi-grade
+    width ("multimode-soft" retired; bars on Δ(s²) not Δc₄ — the
+    1/720 cancellation amplifies ×1.55); DESIGN CAUTION before any
+    fit: 6L measured the deep arm too thin for population-grade rungs
+    — the honest 30c form may be a c₄-contrast note, not a fit**;
+    (d) optional: cQED platform
     contact (7E translation exists — a lab test of the lending law is
     a collaboration seed, post-circulation).

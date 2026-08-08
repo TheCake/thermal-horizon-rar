@@ -9,7 +9,61 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
-## 2026-08-07 (close, +8) — 9U the gamma meter: built it, gated it, and it says the sky can't answer yet
+## 2026-08-08 — 9W + ROUND 18: the multimode seam closes as a DEFENSIVE theorem; the reviewer stripped the decorations and I kept the strip
+
+Filip chose the multimode/reservoir seam derivation (with the c4 rung
+conditional on it — the dependency ran the right way: the c4 target is
+downstream of the multimode answer, and now it's clean). What landed:
+
+- THE THEOREM: linear single-port coupling makes ANY K-mode ambient
+  sector look like ONE collective mode with exactly geometric
+  statistics — H_int = lam_bar(a^dag A + h.c.) is an operator
+  identity, dark modes decouple (Kerr included), bright marginal
+  exactly thermal at the coupling-weighted n̄_A. The s^L gate is
+  multimode-exact. M=1 upgrades from Round-16 consistency-condition
+  to FORCED. The 6Y NB worry is dead at theorem grade.
+- WHAT THE NEXT ME MUST NOT OVERCLAIM (Round-18 conditions, adopted
+  verbatim, the review file has all ten): the theorem is DEFENSIVE.
+  The weighted-mean n̄_A content is non-trivial only off-degeneracy —
+  exactly where the theorem's dynamical assumption fails AND lending
+  dies (reviewer's own sim: P2 collapses 0.262 -> 0.016 by 20
+  lambda of splitting; the lending window is Rabi-grade, matching 6X
+  G2b). So: NEVER quote the Gaussian/Lorentzian kernel scans as
+  predictions — they are robustness diagnostics; the LOCAL 6E
+  anchors are primary. And say "single-PORT single-CHANNEL", not
+  "linear" — a linear multi-channel absorber gives NB (his
+  counterexample).
+- TRAP CONFIRMED AGAIN (the 9V y-coverage cousin): my G9W-5 binary
+  bar failed by 0.0004 because x_bin = 1.095 sat OUTSIDE my (0,1]
+  integration domain — an over-literal import of the soft-sector
+  bound into a kernel integral. Reviewer confirmed artifact; addendum
+  on (0,2] passes both legs convexity-only. STANDING: when a formula
+  imports a sector boundary, check whether the evaluation POINT sits
+  near it. The binary ambient lives AT the sector edge — a named
+  asymmetry vs the galaxy (deep interior).
+- HIS FLAT-WEIGHT CATCH: flat coupling at cutoff 1e-3 gives p =
+  0.6874 ~= the galaxy anchor 0.6884. The flat exclusion rests
+  SOLELY on the two-system split (e_N-blindness). Never cite the
+  magnitude leg.
+- BUDGET RULES ON CANCELLATION-AMPLIFIED QUANTITIES ARE ILL-POSED:
+  c4 = s^2/192 - 1/720 amplifies Delta(s^2) by exactly x1.55; my
+  pre-committed 5% rule fired on the scan edge. Adopted: bars on
+  Delta(s^2), c4 quoted single-mode 0.002536 with a <= 0.5% width
+  band. The 30c c4 rung is NOT hindered — its target stands.
+- Credence: pre-signed cell fired, mech-conditional 12 -> 15,
+  credited ONLY to the defensive theorem (his summary licenses
+  exactly that firming). anomaly-real 53 untouched. Ledger 192 rows,
+  worldtable 236 tokens six gates PASS.
+- O5-SEAM STATE: multimode half CLOSED. Remaining constructive seam:
+  WHY-locality (the 9T resonant selection, reading-grade) + the
+  single-channel assumption. Next P3-seam options: the 30c c4 flank
+  (target now clean — but check 6L power reality before designing:
+  the deep arm was too thin for rungs at population grade; a c4
+  MEASUREMENT in-catalog is likely power-dead — maybe the honest 30c
+  form is a c4-contrast NOTE not a fit), or Paper-3 SS2 prose
+  assembly (the skeleton now has: L1 regime + L2 theorem + 9T
+  detuning closure + 9S-as-calibrated + 9U/9V power walls + 9W
+  multimode theorem — that is a WRITABLE section).
 
 Filip: "continue, we gotta get to the bottom of this." The bottom of
 O5-AVERAGING is one number — where p sits continuously and with what σ.

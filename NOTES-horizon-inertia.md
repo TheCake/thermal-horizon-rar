@@ -13342,6 +13342,105 @@ slow spinners with no fast inner region — the wrong shape for this
 particular question. So the big question stays open, honestly parked,
 with a signed note saying exactly what kind of sky data will answer it.
 
+## Stage 9W + REVIEW ROUND 18 (2026-08-08) — THE MULTIMODE REDUCTION: the M=1 seam closes at theorem grade, with the reviewer's scope discipline adopted whole
+
+**The seam** (TODO 30a): 6X derived the lending gate with ONE ambient
+mode; 6Y selected M=1 from counting statistics; ROUND 16 downgraded
+M=1 to a consistency condition. The real environment has many soft
+modes — either the s^L gate breaks at K ≥ 2, or the reduction is
+forced. Pre-reg 161de43 (lemmas, gates, bars, credence map with
+ROUND-18 conditionality — the 9T pattern).
+
+**Lemma A — the bright-mode reduction (CONFIRMED, every gate):** for
+linear exchange coupling, H_int = λ̄(a†A + A†a) EXACTLY with A the
+coupling-weighted collective mode — dark modes decouple by
+construction (including with the internal Kerr present); a product of
+independent thermal modes gives a bright marginal EXACTLY thermal at
+n̄_A = Σw_k n_k ⇒ P(n_A ≥ L) = s̄^L. Gates: 6X K=1 port regression
+exact to 1e-5 (all six values); sympy set exact; bright statistics to
+1.4e-4 (reviewer's independent Fock construction: 4.3e-8); dynamics in
+the original basis lands on the weighted-mean form at max 0.88% with
+the rival forms at 13.9× and 71.5× the residual; K-invariance 0.001.
+
+**ROUND 18 (Opus, fresh brief; report in REVIEW-ROUND18-OPUS.md,
+uncommitted): UNPATCHED HOLE — NO for the scoped theorem**, plus ten
+conditions adopted verbatim. The scope discipline he enforced:
+- Lemma A's operative role is DEFENSIVE: multimode linear baths do NOT
+  force NB tails — the 6Y counting flank closes at theorem grade; the
+  weighted-mean content is non-trivial only OFF-degeneracy, exactly
+  where the theorem's dynamical assumption fails and (his simulation:
+  P2 0.262 → 0.016 as splitting runs 0 → 20λ) lending dies. Kernel
+  scans = ROBUSTNESS DIAGNOSTICS; the local 6E anchors stay primary.
+- Wording: M=1 is "forced by linear SINGLE-PORT coupling into a single
+  final channel" (his counterexample: a linear-per-mode multi-CHANNEL
+  absorber with distinguishable final states gives which-path-
+  distinguishable = number-additive NB gating — the honest dividing
+  line, better than bare "linearity").
+- New named assumptions: single dress-ward channel; degeneracy
+  tolerance δ ≲ λ (order-of-limits stated); independence of ambient
+  modes (correlated/squeezed ambients break the thermal marginal).
+- G9W-3 rescoped: since H_int = λ̄(a†A + h.c.) is an identity, the
+  dynamics test is a consistency/code check discriminating the correct
+  formula from heuristics, not independent mechanism evidence.
+- L=1 dynamics only; the L=2 gate is statistics-grade (dynamical
+  inheritance argued via single-port, not simulated).
+
+**Lemma B — PARTIAL-SOUND (his grade):** the flat-weight exclusion
+rests SOLELY on e_N-blindness — his catch: at cutoff 1e-3 flat gives
+p = 0.6874 ≈ the galaxy anchor 0.6884 (magnitude-degenerate,
+disclosed; the split — flat misses the binary by 0.16 — is the whole
+exclusion). The pre-registered G9W-5 bar FAILED as fired on the binary
+leg by 0.0004; diagnosis CONFIRMED as a domain-truncation artifact
+(x_bin = 1.095 sat outside my (0,1] integration domain — the kernel
+sampled only the soft side of center). Addendum (conditions 5/7/8
+executed, [calcs/stage9w_addendum.py](calcs/stage9w_addendum.py),
+disclosed post-hoc, letter unchanged): on (0,2] BOTH legs are
+convexity-only (binary d = +0.0006 at Γ/x₀ = 0.1; reviewer +0.0007);
+integrator-convergence gate PASS. The binary anchor's edge-of-sector
+sensitivity (x_amb ≈ 1) is a real named asymmetry the galaxy lacks.
+The Lorentzian kernel-tail bound graded "sound but weak."
+
+**The budget — his ruling ILL-POSED, re-scoped:** c₄ = s²/192 − 1/720
+is a cancellation amplifying relative shifts ×1.55 (he predicted the
+exact factor; addendum confirms 1.55 at every width); the pre-committed
+rule fired "multimode-soft" at an unphysical scan edge. OPERATIVE
+QUOTE (adopted): c₄(L=2) = 0.002536 single-mode, width-conditional
+band ≤ 0.5% at the physical Rabi-grade width; future bars on Δ(s²);
+"multimode-soft" RETIRED. **The 30c ordering answer: the c₄ rung is
+NOT hindered — its single-mode target stands with a sub-percent band.**
+
+**Credence (the pre-signed cell fires):** W-THEOREM-ONLY +
+no-unpatched-hole → **bath-mechanism conditional 12 → 15**, credited
+ONLY to the defensive theorem (the 6Y/NB flank closed; M=1 forced
+within the named scope) — exactly the firming his summary licenses
+("no credence move... beyond firming, at theorem grade, that linear
+multimode ambients stay single-mode/geometric"). anomaly-real 53
+UNTOUCHED. O5-seam state after 9W: multimode half CLOSED (defensive
+theorem); surviving constructive seam = WHY-locality (the 9T resonant
+selection, reading-grade) + the single-channel assumption.
+
+Ledger: +mech-9w-multimode (192 rows); worldtable 236 tokens six
+gates PASS.
+
+PLAIN VERDICT: SUCCESS at the scope the review enforced — the
+multimode seam half is closed as a defensive theorem with every number
+reproduced independently; the constructive superstructure was
+correctly stripped to robustness-diagnostic grade; the c₄ target is
+clean for 30c.
+
+ELI12: We worried that our story only worked if the environment hums
+with exactly ONE note, when real environments are full orchestras. The
+theorem we proved — and our checker re-derived from scratch — says:
+when the coupling is a single doorway, an orchestra IS one note (the
+doorway only admits one combined wave). So the "one mode" we kept
+assuming was never an assumption — it's what doorways do. Our checker
+then made us be honest about two things: the theorem defends the story
+(nobody can kill it with "but real baths have many modes") without
+proving the fancier bits we'd stacked on top; and one of our test
+dials had its ruler end mid-measurement (fixed, disclosed). Net: the
+foundation got stronger, the decorations got correctly labeled as
+decorations, and the next brick (c₄) has a clean target.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

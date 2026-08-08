@@ -511,6 +511,10 @@ CHECKS = [
      'data/stage9v_rladder.txt'),
     ('gal-9v-rladder', 'VERDICT LETTER: V-POWER',
      'data/stage9v_rladder.txt'),
+    ('mech-9w-multimode', 'max |P2/wm - 1| = 0.0088 (bar 0.05)',
+     'data/stage9w_multimode.txt'),
+    ('mech-9w-multimode', 'VERDICT LETTER: W-THEOREM-ONLY',
+     'data/stage9w_multimode.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

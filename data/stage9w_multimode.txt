@@ -1,0 +1,73 @@
+STAGE 9W: THE MULTIMODE REDUCTION -- bright mode, locality, budget
+========================================================================
+G9W-0: K=1 port regression (6X config, pure-diag average):
+  n= 0.25:  0.09979 (6X  0.09979, d=-0.00000) OK
+  n= 0.50:  0.16621 (6X  0.16621, d=+0.00000) OK
+  n= 1.00:  0.24900 (6X  0.24900, d=+0.00000) OK
+  n= 2.00:  0.33114 (6X  0.33114, d=-0.00000) OK
+  n= 4.00:  0.39524 (6X  0.39524, d=-0.00000) OK
+  n= 8.00:  0.43449 (6X  0.43449, d=-0.00000) OK
+  block-vs-diag at n=1: d = +3.96e-06 (generic spectrum; disclosure)
+G9W-0: PASS
+
+G9W-1: symbolic legs:
+  [A, A^dag] = sum c_k^2 = 1 (K=2, K=3): PASS
+  H_int = lam_bar (a^dag A + h.c.) reconstruction (K=3): PASS
+  bright covariance isotropic with nbar_A = sum w_k n_k: PASS
+  GL geometric tail + KMS identity (6X verbatim): PASS
+  6Y NB formula regression (M = 1,2,3 both systems): PASS
+G9W-1: PASS
+
+G9W-2: bright-mode statistics (eigen-projection of N_A):
+  S1: nbar_A = 1.0000; max|P(m) - geom| = 9.5e-07; |P(n>=2) - s^2| = 1.4e-06 OK
+  S2: nbar_A = 1.1250; max|P(m) - geom| = 1.4e-04; |P(n>=2) - s^2| = 2.2e-04 OK
+G9W-2: PASS  => the gate form s_bar^L is multimode-exact (statistics)
+
+G9W-3: dress-ward dynamics in the ORIGINAL basis vs the three forms:
+  S1 n=[1.0, 1.0] lam=[0.02, 0.02] [trunc 1e-06]: P2 = 0.24801 | wm 0.25000 | mor 0.25000 | tot 0.37500
+  S2 n=[0.25, 2.0] lam=[0.02, 0.02] [trunc 3e-04]: P2 = 0.26237 | wm 0.26471 | mor 0.21667 | tot 0.36667
+  S3 n=[2.0, 0.25] lam=[0.02, 0.01] [trunc 3e-04]: P2 = 0.30907 | wm 0.31132 | mor 0.28667 | tot 0.36667
+  S4 n=[0.5, 2.0] lam=[0.01, 0.02] [trunc 3e-04]: P2 = 0.31249 | wm 0.31481 | mor 0.30000 | tot 0.38889
+  S5 n=[0.25, 1.0] lam=[0.02, 0.014] [trunc 1e-06]: P2 = 0.16525 | wm 0.16592 | mor 0.14933 | tot 0.30000
+  S6 n=[0.25, 0.5, 1.0] lam=[0.02, 0.014, 0.01] [trunc 1e-03]: P2 = 0.14905 | wm 0.14990 | mor 0.14033 | tot 0.36667
+  max |P2/wm - 1| = 0.0088 (bar 0.05); rms ln-resid: wm 0.0071 | mor 0.0983 (x13.9) | tot 0.5043 (x71.5)
+G9W-3: PASS
+G9W-4 K-invariance (S1 equal-n vs K=1 at nbar=1): |d| = 0.0010 -> PASS
+
+G9W-5: spectral locality (which weighted mean does the sky read?):
+  anchors: x_gal = 0.1414 (n = 6.583, p pred 0.6884); x_bin = 1.0954 (n = 0.502, p pred 0.5280)
+  6E postdiction regression: PASS
+  FLAT weight (cutoff 0.001): nbar = 6.5 -> gate = 0.7497 -> p = 0.6874 BOTH systems (e_N-BLIND)
+  FLAT weight (cutoff 0.01): nbar = 4.2 -> gate = 0.6520 -> p = 0.6630 BOTH systems (e_N-BLIND)
+  => flat EXCLUDED: magnitude (p -> 3/4) AND e_N-blindness vs the measured split 0.6884/0.5280
+  GAUSSIAN-local weight, nbar(x0, Gamma) and postdictions:
+    Gamma/x0 = 0.05: p_gal = 0.6885 (d +0.0001), p_bin = 0.5354 (d +0.0074); ds/s gal +0.000 bin +0.125
+    Gamma/x0 = 0.10: p_gal = 0.6890 (d +0.0006), p_bin = 0.5384 (d +0.0104); ds/s gal +0.001 bin +0.172
+    Gamma/x0 = 0.20: p_gal = 0.6908 (d +0.0024), p_bin = 0.5471 (d +0.0191); ds/s gal +0.006 bin +0.298
+    Gamma/x0 = 0.30: p_gal = 0.6968 (d +0.0084), p_bin = 0.5704 (d +0.0424); ds/s gal +0.022 bin +0.587
+    Gamma/x0 = 0.50: p_gal = 0.7221 (d +0.0337), p_bin = 0.6643 (d +0.1363); ds/s gal +0.086 bin +1.424
+  LORENTZIAN soft-leak scan (reported, no bar -- the kernel-tail bound):
+    xmin=0.0001 Gamma/x0=0.05: nbar_gal = 7.41 (local 6.58) -> p_gal = 0.6941 (d +0.0057 vs 6E)
+    xmin=0.0001 Gamma/x0=0.10: nbar_gal = 8.23 (local 6.58) -> p_gal = 0.6988 (d +0.0104 vs 6E)
+    xmin=1e-06 Gamma/x0=0.05: nbar_gal = 7.94 (local 6.58) -> p_gal = 0.6972 (d +0.0088 vs 6E)
+    xmin=1e-06 Gamma/x0=0.10: nbar_gal = 9.29 (local 6.58) -> p_gal = 0.7038 (d +0.0154 vs 6E)
+    => Lorentzian tails re-import the soft divergence (IR-log-sensitive): the sky's exact postdictions demand SUB-LORENTZIAN kernel tails -- the locality condition is a (width AND tail) bound
+G9W-5: FAIL  => the sky reads a LOCAL weighted mean; locality mechanism = 9T resonant selection (reading-grade)
+
+G9W-6: the c4-rung budget (c3 = -g/16; c4(L=2) = s^2/192 - 1/720):
+    Gamma/x0 = 0.05: ds/s(gal) +0.000 -> c4 target shift 0.1%
+    Gamma/x0 = 0.10: ds/s(gal) +0.001 -> c4 target shift 0.4%
+    Gamma/x0 = 0.20: ds/s(gal) +0.006 -> c4 target shift 2.0%
+    Gamma/x0 = 0.30: ds/s(gal) +0.022 -> c4 target shift 6.9%
+    Gamma/x0 = 0.50: ds/s(gal) +0.086 -> c4 target shift 27.7%
+  interpretation rule: c4 rung MULTIMODE-SOFT (30c re-scoped)
+
+========================================================================
+VERDICT LETTER: W-THEOREM-ONLY
+  Lemma A: bright reduction + geometric statistics + dynamics CONFIRMED; M=1 FORCED-BY-LINEARITY (upgrade from consistency-condition)
+  Lemma B: not established
+  named surviving assumptions: LINEAR ambient coupling; WHY-locality (9T selection, reading-grade)
+  credence: per the pre-signed map, FINAL BOOKING AFTER ROUND-18
+  anomaly-real 53 UNTOUCHED
+
+gates: G9W-0 PASS | G9W-1 PASS | G9W-2 PASS | G9W-3 PASS | G9W-4 PASS | G9W-5 FAIL | G9W-6 printed

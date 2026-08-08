@@ -191,6 +191,43 @@ pre-signed V-POWER = HOLD 12; anomaly-real 53 untouched; NO third
 in-catalog estimator (the wall is the data, not the statistic).
 r-hat supersedes the 9S numeric bound (lean-labeled). Ledger 191
 rows / worldtable 234 tokens six gates PASS.**
+**9W + ROUND 18 (2026-08-08, THE MULTIMODE REDUCTION, pre-reg 161de43;
+the author chose the 30a seam derivation): THE M=1 SEAM CLOSES AT
+THEOREM GRADE — for linear SINGLE-PORT coupling into a single final
+channel, a K-mode ambient sector reduces EXACTLY to one collective
+(bright) mode: H_int = lam_bar(a^dag A + h.c.) is an operator identity
+(dark modes decouple incl. Kerr), the bright marginal of independent
+thermal modes is EXACTLY thermal => the s^L gate is MULTIMODE-EXACT
+and M=1 is FORCED (upgrade from R16 consistency-condition; the 6Y NB
+flank closed — NB gating requires which-path-distinguishable
+multi-channel absorption, reviewer's sharper dividing line). Gates:
+6X K=1 port 1e-5 (6/6), sympy exact, statistics 1e-4 (reviewer
+independent Fock 4.3e-8), dynamics 0.88% w/ rivals 14x/72x,
+K-invariance 0.001. ROUND-18 ruling UNPATCHED HOLE: NO + TEN
+conditions adopted verbatim (REVIEW-ROUND18-OPUS.md uncommitted):
+theorem is DEFENSIVE — weighted-mean content lives off-degeneracy
+where lending dies (his sim: P2 0.262 -> 0.016 at 20-lambda
+splitting; lending window Rabi-grade = 6X G2b); kernel scans =
+ROBUSTNESS DIAGNOSTICS, local 6E anchors PRIMARY; G9W-3 =
+identity-forced consistency check; L=1 dynamics only. G9W-5 FAILED
+as fired (binary +0.0004 past bar) = CONFIRMED domain artifact
+(x_bin = 1.095 outside (0,1]; the binary ambient sits AT the
+soft-sector edge = named asymmetry); addendum stage9w_addendum.py
+(conditions 5/7/8, disclosed post-hoc, letter W-THEOREM-ONLY stands):
+domain (0,2] -> BOTH postdictions convexity-only (binary d = +0.0006),
+integrator gate PASS. Flat-weight exclusion rests SOLELY on
+e_N-blindness (flat p = 0.6874 ~= gal 0.6884, his catch). Budget rule
+ILL-POSED (c4 = s^2/192 - 1/720 cancellation amplifies x1.55, fired
+at scan edge): c4 = 0.002536 single-mode + band <= 0.5% at Rabi
+width, MULTIMODE-SOFT RETIRED — **the 30c c4 target is CLEAN/NOT
+hindered** (but 6L power caution: in-catalog c4 fit likely power-dead;
+honest 30c form may be a contrast note). CREDENCE: pre-signed cell
+FIRED -> bath-mechanism conditional 12 -> 15 (credited ONLY to the
+defensive theorem, per his summary); anomaly-real 53 untouched.
+O5-SEAM REMAINING: WHY-locality (9T selection, reading-grade) +
+single-channel assumption + dS reservoir identification. P3 SS2 is
+now WRITABLE (L1 + L2 + 9T + 9S-calibrated + 9U/9V walls + 9W).
+Ledger 192 rows / worldtable 236 tokens six gates PASS.**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
