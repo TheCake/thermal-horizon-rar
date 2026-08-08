@@ -228,6 +228,22 @@ DISCLOSURES: (i) the pull->boost map is the standing response
   gamma-band comparison is order-grade (t-convention envelope).
 AMENDMENTS: any post-commit change is logged in the output and NOTES
   with its reason, pre-quote (standing rule).
+AMENDMENT A1 (post-commit, PRE-QUOTE; bug-class; run-1 archived as
+  data/stage10c_pull_run1.txt): run-1 chose Om_b = 0.8 = CHI -- an
+  accidental parameter COLLISION that makes |1,m> degenerate with
+  |0,m-1> and |2,m> with |3,m-1>: real resonant SIDEBAND channels
+  (emit one bath quantum, change the system level) that drain the
+  {1,2} pair manifold. Fingerprint that exposed it: ARM-A P2bar ->
+  0.243 ~ 1/4 at nbar = 8 = four-level equipartition, while the
+  eps-independence row confirmed saturation grade. That is a wiring
+  resonance of the toy, not the dispersive question (the vertex is
+  dispersive; the DRIVE+collision opened the exchange path). Fix:
+  Om_b 0.8 -> 0.53 (min sideband detuning |k*Om_b - 0.8| = 0.26 for
+  k <= 4, >> all couplings) and gd 0.3 -> 0.15 (keeps the FC Laguerre
+  zero at m ~ 18, outside the thermal bulk; dead-weight dip <= 0.02
+  inside the locked spread bar). BARS UNCHANGED. T1-T3 and ARM-B are
+  untouched by the collision (ARM-B conserves Nb exactly; its run-1
+  result already PASSED all its gates and is expected to reproduce).
 
 Writes data/stage10c_pull.txt.
 """
@@ -514,10 +530,17 @@ wdet2 = sat_weight(H_exchange(delta=0.3*CHI, lam=LAM/2), 1.0)
 say(f"   detuned virtual row: lam-scaling {wdet1/wdet2:.2f} (expect ~4; "
     f"the 6X taxonomy re-recorded)")
 
-OMB, GD, GK, EPS = 0.8, 0.3, 0.1, 0.01
+OMB, GD, GK, EPS = 0.53, 0.15, 0.1, 0.01
 IdF = np.kron(o['Ia'], o['Ib'])
 LVL = -CHI*o['Na'] + 0.5*CHI*(o['Na'] @ (o['Na'] - IdF))
 
+say("")
+say("AMENDMENT A1 (pre-quote, bug-class; run-1 archived): run-1's Om_b =")
+say("   0.8 = CHI was a parameter collision -- resonant sidebands |1,m> ~")
+say("   |0,m-1>, |2,m> ~ |3,m-1> drained the pair manifold (fingerprint:")
+say("   P2bar -> 1/4 four-level equipartition at nbar=8, eps-independent).")
+say("   Fix: Om_b -> 0.53 (min sideband detuning 0.26 >> couplings), gd ->")
+say("   0.15 (FC zero at m ~ 18, outside the bulk). Bars unchanged.")
 say("")
 say(f"G8 dispersive arms (eps = {EPS}, Om_b = {OMB}; rotating frame at the")
 say(f"   1->2 line; both vertices commute with Na):")
