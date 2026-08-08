@@ -1173,7 +1173,18 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     c₁ band = THE closure test)**, the renormalization specification,
     D-normalization provenance, full ambient marginalization
     (REVIEW-ROUND20-OPUS.md conditions 2/3/8/5)** + dS reservoir
-    identification);
+    identification. **O5-DIFF EXECUTED same day (9Z-b, pre-reg
+    af00120; ROUND 21 downgraded fired-CLOSED → DIFF-GRAY, adopted):
+    scheme declared (bare constant + a₀ rescale; the rescale carries
+    96% and spends 0.22σ of the temperature lock — disclosed);
+    fiducial residuals inside every band (deep-end 0.023 = 2.2×
+    inside; split 0.0004); ambient-independence at fiducial PROVEN;
+    margin order-unity on two unpinned axes ⇒ THE REMAINING
+    LOAD-BEARING QUESTION = the D-NORMALIZATION PROVENANCE
+    (round-20 cond 8, tied to the l=2/η⁴ self-consistency: which
+    channel carries both the O(1) grammar and the suppressed leak) —
+    "pin down D and the closure becomes real." Rung-resolved budget
+    needs SPARC hier weighting; small-g stays PT-invalid-labeled.**);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established

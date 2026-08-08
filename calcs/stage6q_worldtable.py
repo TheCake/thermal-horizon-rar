@@ -531,6 +531,10 @@ CHECKS = [
      'data/stage9z_leak.txt'),
     ('mech-9z-leak', '9Z LETTER AFFIRMED: Z-AMBIG',
      'data/stage9z_addendum.txt'),
+    ('mech-9zb-diff', 'dc1_eff (deep-window mean of delta_nu, x in '
+     '[0.14, 0.45]) = +0.00493', 'data/stage9zb_diff.txt'),
+    ('mech-9zb-diff', '9Z-b LETTER RELABELED: DIFF-GRAY',
+     'data/stage9zb_addendum.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

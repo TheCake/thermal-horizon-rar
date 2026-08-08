@@ -321,6 +321,38 @@ master-deletion explanation delivered (origin/master = unsanitized
 week-one archive; deletion command = the author's click; local master
 untouched); publication decision + TODO 31 booked earlier
 (41aaeff).**
+**9Z-b + ROUND 21 (2026-08-08 fifth close, O5-DIFF, pre-reg af00120;
+author: "you have my go on O5 and whatever else needed"): round-20
+conditions 2+3 as one stage — renormalization scheme DECLARED (one
+bare-frequency constant + one a₀ rescale = affine in x, nothing
+more); EXACT closed form Δ_vac = −(g²/4π²)ln(1+Ω/g)/Ω (trap #10 dies
+analytically); fiducial residuals inside every band (dc₁ +0.0049 vs
+bar 0.05; split 0.0004 vs 0.25; 0.0013 dex). Fired DIFF-CLOSED with
+GDB-3 red → **ROUND 21 reproduced every digit and DOWNGRADED to
+DIFF-GRAY (ADOPTED)**: the statistic is a RANGE ([0.0001, 0.0049]
+in-scheme; deep-end 0.023 = 2.2× inside, the honest worst point);
+the closure is LOAD-BEARING on the a₀-rescale (S1-only 0.131
+near-FATAL; spends 0.22σ of the temperature lock — disclosed,
+passes); margin order-unity on TWO UNPINNED AXES (coupling —
+comfortable g ≳ 0.3H only; D-normalization — dc₁ ∝ D, joint corner
+g=0.3H×D3 = 0.053/0.267 past FATAL). His structural point: the η⁴
+buy-back is unavailable while the same O(1) coupling carries the
+grammar — l=2 and D-provenance are ONE seam. PROVEN by his check:
+ambient-independence at fiducial (identical fit ∀ x_amb; round-20
+cond 5 moot there). Conditions 1/2/3/4 executed
+(calcs/stage9zb_addendum.py; redesigned GDB-3 PASSES spread 0.0049 <
+0.010, tail-only leg retired). **THE LOAD-BEARING SUCCESSOR = the
+D-NORMALIZATION PROVENANCE (round-20 cond 8): "pin down D and the
+closure becomes real."** Trap #11 logged: wire every gate's failure
+mode into the letter grammar at pre-reg time. CREDENCE: mech HOLDS
+15 (rise cell needed CLOSED+no-hole; neither; zero strikes across
+both rounds); anomaly-real 53 untouched all day. Ledger 197 rows /
+worldtable 246 tokens six gates PASS. Review files ROUND20/21
+uncommitted. NEXT FORK: the D-provenance derivation (the one
+remaining constant) vs Paper 3 §2 prose (writable NOW with the
+honest 9Z/9Z-b state); GitHub: default branch must flip to main
+(Settings) before `git push origin --delete master` works — then
+TODO 31's remaining items.**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

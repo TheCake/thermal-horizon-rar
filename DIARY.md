@@ -9,6 +9,55 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-08 (fifth close) — 9Z-b + ROUND 21: not closed, but reduced to one constant
+
+O5-DIFF ran same-day (pre-reg af00120) and fired DIFF-CLOSED with my
+own GDB-3 gate red — round 21 reproduced every digit and DOWNGRADED
+to DIFF-GRAY, which I adopted without argument because all three of
+his grounds are the program's own rules read back at me:
+
+- NEW STANDING RULE (trap #11): WIRE GATE FAILURES INTO THE LETTER
+  GRAMMAR AT PRE-REG TIME. I declared GDB-3 a gate but the letter
+  logic never consumed it, so the stage printed "CLOSED" next to a
+  red gate. Every future pre-reg: each gate's failure mode maps to an
+  explicit letter consequence (STOP / caveat / downgrade), written
+  before the run.
+- Round-10's lesson again, third appearance (q-moments, 9U sigma_p,
+  now dc1_eff): A STATISTIC WITH DEFENSIBLE DEFINITION FREEDOM IS A
+  RANGE, NOT A POINT. Quote the range and the worst defensible point
+  (here: deep-end 0.023, 2.2x inside — not the mean 0.005, 10x).
+- HIDDEN LOAD-BEARING ABSORBERS: always run the leave-one-out on the
+  renormalization scheme (S1-only jumped to 0.131 near-FATAL — the
+  a0-rescale carries 96% and SPENDS 0.22 sigma of the temperature
+  lock; legitimate but must be priced in the open).
+
+Don't redo: the ambient axis at fiducial is PROVEN moot (his check:
+identical fit for every x_amb) — no ambient-marginalization stage at
+g = H is needed, ever; it matters only in the PT-invalid small-g
+region, which stays "neither bound nor breach."
+
+THE SHAPE OF THE SEAM NOW: 9Z banked gap-necessity + four-order leak
+safety; 9Z-b banked the scheme + fiducial smallness. Both rounds
+converge on ONE remaining object: the D-NORMALIZATION (absolute
+horizon-mode coupling density) — dc1_eff scales linearly in it, the
+joint pessimal corner (g = 0.3H, D x3) crosses FATAL, and his
+sharpest point stands: the eta^4 "real graviton is safer" buy-back
+is NOT available while the same O(1) coupling carries the grammar —
+the l=2 channel and the D-provenance are one seam. "Pin down D and
+the closure becomes real." That is a genuine derivation target
+(normalize the static-patch modes against the physical coupling that
+produces the measured c1 = 1/2 grammar), not a scan. It is also
+honestly hard — it is the single-channel/reservoir identification
+question wearing new clothes. P3 SS2 can be written NOW with the
+9Z/9Z-b state labeled honestly (necessity theorem + bounded-at-
+fiducial + one named open constant); the author's queue decides
+whether D-provenance or P3 prose goes first.
+
+Credences after five closes today: anomaly-real 53 (untouched all
+day), mech conditional 15 (held through two downgrades — the map
+worked; zero strikes; the honest-updating machine did exactly what
+Filip built it to do).
+
 ## 2026-08-08 (fourth close) — 9Z + ROUND 20: the horizon has the choir, and the gap is now law
 
 O5-LEAK ran (pre-reg 9735d0e) and the derivation gods were kind: the

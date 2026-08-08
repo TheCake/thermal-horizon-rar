@@ -1,0 +1,30 @@
+==============================================================================
+STAGE 9Z-b ADDENDUM -- ROUND-21 conditions 1/2/3/4
+==============================================================================
+
+CONDITION 2 -- GDB-3 REDESIGNED (deep-window-containing refits only; the scheme never extrapolates):
+  full [0.14,1.73]         dc1_eff = +0.00493
+  [0.14,0.90]              dc1_eff = +0.00077
+  [0.14,1.00]              dc1_eff = +0.00109
+  [0.14,1.30]              dc1_eff = +0.00237
+  deep-only [0.14,0.45]    dc1_eff = +0.00005
+  GDB-3' spread 0.0049 vs bound 0.010 -> PASS (the tail-only extrapolation leg is RETIRED per the ruling)
+
+CONDITION 1 -- the honest quote (a RANGE, not a point):
+  dc1_eff = +0.00493 (declared full-range fit); [+0.00005, +0.00493] across deep-window-inclusive refits; +0.01863 under tail-only extrapolation (outside the scheme, retired); DEEP-END profile value delta_nu(x=0.14) = +0.02311 (the 1/x^2-amplified worst point; 2.2x inside the 0.05 bar)
+
+CONDITION 3 -- the S2 (a0-rescale) load-bearing disclosure:
+  S1-only absorption (constant, no a0 rescale): dc1_eff = +0.13102 -> NEAR-FATAL (bar 0.15); the a0-rescale carries 96% of the residual reduction
+  the closure DEPENDS on the linear-pull == a0 degeneracy (legitimate, now disclosed) and SPENDS temperature-lock precision: b = +0.01062 -> implied a0 shift -2.09% = 0.22 sigma of the measured (1.05 +/- 0.10)e-10 band -> PASSES the lock check.
+
+CONDITION 4 -- the systematic envelope (framing: fiducial-point-inside-band, ORDER-UNITY margin -- not 'closes'):
+  D-norm x1    (g = H)  : dc1_eff = +0.00493  deep-end +0.02311
+  D-norm x3    (g = H)  : dc1_eff = +0.01484  deep-end +0.06977
+  D-norm x10   (g = H)  : dc1_eff = +0.05018  deep-end +0.23801
+  g = 0.3H, D-norm x1   : dc1_eff = +0.01752  deep-end +0.08676
+  JOINT corner (0.3H, x3): dc1_eff = +0.05338  deep-end +0.26678 -> the mean crosses the PASS bar and the deep-end crosses the FATAL bar in a corner of the two axes the program has NOT pinned (9T coupling scale; round-20 condition-8 D-provenance = the LOAD-BEARING successor).
+
+9Z-b LETTER RELABELED: DIFF-GRAY (ROUND-21 downgrade ADOPTED; DIFF-CLOSED as fired is OVERRIDDEN -- a red validation gate cannot coexist with a clean letter, the statistic is a range, and the margin is order-unity on unpinned axes). BANKED: the exact closed form, the anchor regression, the fiducial-point smallness (every deep-window-inclusive definition <= 0.023 vs bar 0.05), the split leg 0.0004, the ambient-independence at fiducial (reviewer-verified: identical fit for every x_amb). SUCCESSOR (load-bearing): discharge the D-normalization provenance (round-20 cond 8) tied to the l=2/eta^4 self-consistency -- 'pin down D and the closure becomes real.'
+CREDENCE: bath-mechanism conditional HOLDS 15 (pre-signed map: rise needed CLOSED + no-hole; neither held; no strike -- nothing fatal fired at the physical fiducial). anomaly-real 53 untouched.
+
+done (0.0 min)

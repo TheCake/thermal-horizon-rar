@@ -13664,6 +13664,70 @@ instrument-to-instrument differences. The referee re-derived every
 formula himself, tried hard to break the safest part, and instead
 proved it was even safer than we claimed.
 
+## Stage 9Z-b + ROUND 21 — O5-DIFF: THE DIFFERENTIAL BUDGET (2026-08-08; pre-reg af00120)
+
+Round-20 conditions 2+3 executed as one stage. The renormalization
+scheme DECLARED (condition 3 discharged): exactly two universal
+absorbers — one bare-frequency constant (the common-mode Lamb shift
+renormalizes into the unobservable bare scale) and one a₀ rescale
+(a linear-in-x pull is exactly degenerate with a₀) — affine in x,
+nothing more. The fiducial pull has an EXACT closed form, Δ_vac =
+−(g²/4π²)·ln(1+Ω/g)/Ω (UV-convergent — trap #10 dies analytically;
+five-digit anchor regression to the 9Z addendum). Residual after
+affine absorption propagated exactly through ν = 1+n_BE: fiducial
+dc₁_eff = +0.0049 (bar 0.05), binary split distortion 0.0004 (bar
+0.25), 0.0013 dex (vs 0.13 scatter). Fired DIFF-CLOSED — with my own
+stability gate GDB-3 RED (fit-range sensitivity).
+
+ROUND 21 (REVIEW-ROUND21-OPUS.md, uncommitted): every digit
+reproduced ("arithmetic integrity is total"), then the letter
+DOWNGRADED: **DIFF-GRAY adopted.** His grounds, all now booked: (i)
+a red validation gate cannot coexist with a clean letter (the gate
+was ALSO mis-posed — tail-only extrapolation the scheme never
+performs; redesigned deep-window-containing version PASSES, spread
+0.0049 < 0.010 — but the fix exposes the statistic as a RANGE:
+[0.0001, 0.0049] in-scheme, 0.023 at the 1/x²-amplified deep END =
+2.2× inside the bar, not 10×); (ii) the closure is LOAD-BEARING on
+the a₀-rescale — S1-only gives 0.131, near-FATAL; the absorber is
+legitimate but SPENDS temperature-lock precision (implied a₀ shift
+−2.09% = 0.22σ of the measured band — passes, now disclosed); (iii)
+the margin is order-unity on two axes the program has not pinned:
+coupling (comfortable g ≳ 0.3H, PT-marginal below) and the
+D-NORMALIZATION (dc₁_eff ∝ D; the joint pessimal corner g = 0.3H ×
+D×3 = 0.053 mean / 0.267 deep-end = past FATAL). His sharpest
+structural point: the η⁴ "real-graviton-safer" buy-back CANNOT be
+invoked for the leak while the grammar stays O(1) on the same
+coupling — the D-provenance and the l=2 story are one seam. Genuine
+win he verified: ambient-independence at fiducial is PROVEN
+(identical fit for every x_amb — round-20 condition 5 moot at
+fiducial). Conditions 1/2/3/4 executed same-day
+(calcs/stage9zb_addendum.py); **THE LOAD-BEARING SUCCESSOR:
+discharge the D-normalization provenance (round-20 condition 8) —
+"pin down D and the closure becomes real."** CREDENCE: HOLD 15
+(rise cell needed CLOSED + no-hole; neither; no strike — nothing
+fatal at the physical fiducial). anomaly-real 53 untouched. Ledger
++mech-9zb-diff (197 rows); worldtable 246 tokens six gates PASS.
+
+PLAIN VERDICT: NEEDS REFINEMENT — and the refinement is now a
+single named object. The dispersive flank did not close, but it
+shrank from "an uncomputed budget" to "one normalization constant
+away from closed": at the physical point every number is inside
+every band, and the whole remaining question is the absolute
+strength of the horizon-mode coupling (the D-provenance). Two
+rounds, two downgrades, zero strikes — the mechanism's soft-sector
+story is now honest to the digit.
+
+ELI12: The choir's common re-tuning turned out to be two effects we
+were always allowed to absorb — a shared reference pitch and a tiny
+overall tempo change. After absorbing exactly those two and nothing
+else, the leftover wobble is small everywhere we can measure. But
+the referee showed our "small" was a bit too proudly stated: it's
+small-with-an-asterisk (bigger at the very deepest notes, and it
+grows if the choir sings louder than our standard assumption — and
+we haven't yet measured the choir's true loudness). So: not closed,
+but reduced to one question — how loud is the choir, exactly. That's
+the next stone.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

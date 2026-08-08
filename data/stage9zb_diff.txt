@@ -1,0 +1,31 @@
+==============================================================================
+STAGE 9Z-b -- O5-DIFF: THE DIFFERENTIAL DISPERSIVE BUDGET
+==============================================================================
+GDB-0 exactness: partial-fraction antiderivative True; definite integral = ln(1+Omega/g)/Omega True; ladder series 1/x + 1/2 + x/12 - x^3/720 True -> PASS
+GDB-1 anchor regression: Delta_bin = -2.3359e-02 (addendum -2.336e-2), Delta_gal = -2.4919e-02 (addendum -2.492e-2) -> PASS
+GDB-2 thermal-family convergence (UV 30 vs 60): d = 3.3e-17 vs 0.5% of |Delta| -> PASS
+
+D2 -- the affine absorption (S1 + S2) on x in [0.14, 1.73]:
+  delta_x(x) = 2 pi Delta(x): range [-0.1576, -0.1406]; affine fit a = -0.15859, b = +0.01062
+  residual delta_x_r: max |.| = 4.52e-04 at x = 0.14; ends -4.52e-04 / -4.07e-04
+  dc1_eff (deep-window mean of delta_nu, x in [0.14, 0.45]) = +0.00493   [bars: PASS <= 0.05, FAIL >= 0.15]
+  co-read: max |Delta log10 g_obs| over the range = 0.00131 dex (vs 0.13-dex scatter)
+  GDB-3 fit stability: half-range dc1_eff = +0.00077 / +0.01863 (bound 0.010) -> FAIL
+
+D3 -- the split budget at the binary anchor x = 1.095:
+  delta_x(bin) = -0.14677; universal affine there -0.14696; residual +1.85e-04 -> |d gate/gate| = 0.0004   [bars: PASS <= 0.25, FAIL >= 0.75]
+
+D4 -- coupling co-read dc1_eff(g):
+  g/H = 0.1  : dc1_eff = -0.04981   (max |delta_x_r| 4.8e-02)
+  g/H = 0.3  : dc1_eff = +0.01752   (max |delta_x_r| 1.7e-03)
+  g/H = 1.0  : dc1_eff = +0.00493   (max |delta_x_r| 4.5e-04)
+  g/H = 3.0  : dc1_eff = +0.00189   (max |delta_x_r| 1.7e-04)
+
+GDB-4 ledger leg mech-9z-leak CURRENT: PASS
+
+==> 9Z-b VERDICT (locked grammar): DIFF-CLOSED -- under the declared two-parameter universal renormalization (bare constant + a0 rescale), the soft-continuum dispersive residual is inside every measured band: the deep-arm distortion dc1_eff = +0.00493 (bar 0.05), the binary gate distortion 0.0004 (bar 0.25). The dispersive flank of O5-LEAK closes at fiducial coupling; with 9Z's leak bound and gap-necessity this completes the soft-sector accounting at the stated scope (pending ROUND 21).
+    CREDENCE: per the pre-signed map (FATAL -> 15 to 8; otherwise HOLD 15 pending ROUND 21).
+
+GATES: GDB-0:PASS  GDB-1:PASS  GDB-2:PASS  GDB-3:FAIL  GDB-4:PASS
+
+done (0.0 min)
