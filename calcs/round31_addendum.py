@@ -334,3 +334,178 @@ allok = all((ok1, ok2, ok3, ok4, ok5, ok6, ok7, ok8, ok9, ok10,
              ok11a, ok11b))
 emit("BLIND HALF: %s (GA-1..11)" %
      ("ALL CONFIRMED" if allok else "MISMATCHES PRESENT"))
+
+# ===================================================================
+# POST-REPORT HALF (GB-1..7): every new load-bearing number in the
+# ROUND-31 report re-computed independently (memory rule).
+# ===================================================================
+emit("")
+emit("POST-REPORT HALF (his numbers)")
+
+# GB-1: 12/27 changed-gate count + concentrated shift 0.018 sigma_p
+chae_e = {}
+with open('data/chae2021_table3.csv') as f:
+    for row in csv.DictReader(l for l in f if not l.startswith('#')):
+        chae_e[row['galaxy']] = 10.0**float(row['log_eN_maxclust'])
+U_POS2 = np.array([xyz(u) for u in ung])
+U_M2 = np.array([10.0**u[7] if np.isfinite(u[7]) else 0.0 for u in ung])
+def neigh_of(k):
+    d2 = np.sum((U_POS2 - U_POS2[k])**2, axis=1)
+    d2[k] = np.inf
+    sel = d2 <= 9.0
+    return float(np.sum(G_SI*U_M2[sel]*MSUN/(d2[sel]*MPC**2))/1.2e-10)
+grp_rows = []
+for nm, D in zip(snames, sD):
+    hit = -1
+    for c in [canon2(nm)] + [canon2(a) for a in AL.get(nm, [])]:
+        k = uc.get(c, -1)
+        if k >= 0 and abs(D - ung[k][5]) <= max(2.0, 0.35*ung[k][5]):
+            hit = k
+            break
+    if hit >= 0 and ung[hit][6] > 0:
+        dg = 0.0
+        if nm in chae_e:
+            nb = neigh_of(hit)
+            if nb > 0:
+                gA = s_of(chae_e[nm])**2
+                gB = s_of(chae_e[nm] + nb)**2
+                dg = gA - gB
+        grp_rows.append((nm, dg))
+n_chg = sum(1 for _, dg in grp_rows if dg > 1e-6)
+dgs = [dg for _, dg in grp_rows if dg > 1e-6]
+conc = 0.3365*np.mean(dgs)/2/0.075 if dgs else 0.0
+okb1 = (len(grp_rows) == 27) and (n_chg == 12) and abs(conc - 0.018) <= 0.003
+emit("GB-1 group stratum: N=%d, changed=%d (his 27/12); concentrated "
+     "shift = %.4f sigma_p (his 0.018)  %s" %
+     (len(grp_rows), n_chg, conc, "OK" if okb1 else "MISMATCH"))
+
+# GB-2: the archived 9V profile value at r=0
+Z = np.load('data/stage9v_profiles.npz')
+arch0 = float(Z['pgmax'][0])
+okb2 = abs(arch0 - (-12154.84)) <= 0.05
+emit("GB-2 archived 9V profile at r=0: %.2f (his -12154.84; the "
+     "-12152.49 is the FRESH-fit 9V anchor, 2.35 above)  %s" %
+     (arch0, "OK" if okb2 else "MISMATCH"))
+
+# GB-3: kappa_lock -> beta mapping via c1
+beta_lock = 1.0/(2*(1 - 0.925/2)) - 1.0
+okb3 = abs(beta_lock - (-0.0698)) <= 0.001
+emit("GB-3 c1(kappa_lock)=0.5375 -> beta = %.4f (his ~-0.07, weakly "
+     "anti-stiffening)  %s" % (beta_lock, "OK" if okb3 else "MISMATCH"))
+
+# GB-4: his tighter fit-free bound (<= 0.03 over a0 in [0.8, 2]e-10)
+# exact per-galaxy Dp, all affected galaxies, formal errors, no
+# profiling -- S_ub dominates the profiled form
+aff_dp = {}
+for nm, D in zip(snames, sD):
+    hit = -1
+    for c in [canon2(nm)] + [canon2(a) for a in AL.get(nm, [])]:
+        k = uc.get(c, -1)
+        if k >= 0 and abs(D - ung[k][5]) <= max(2.0, 0.35*ung[k][5]):
+            hit = k
+            break
+    if hit >= 0 and nm in chae_e:
+        nb = neigh_of(hit)
+        if nb > 0:
+            gA = s_of(chae_e[nm])**2
+            gB = s_of(chae_e[nm] + nb)**2
+            if gA - gB > 1e-6:
+                aff_dp[nm] = (0.5 + 0.3365*gA/2, 0.5 + 0.3365*gB/2)
+worstS = 0.0
+for a0 in (0.8e-10, 1.2e-10, 2.0e-10):
+    S = 0.0
+    for path in sorted(glob.glob('data/sparc/rotmod/**/*_rotmod.dat',
+                                 recursive=True)):
+        nm = os.path.basename(path).replace('_rotmod.dat', '')
+        if nm not in aff_dp: continue
+        inc, q, D = meta2.get(nm, (0, 3, 10.0))
+        if inc < 30 or q > 2: continue
+        pA, pB = aff_dp[nm]
+        for l in open(path):
+            if l.startswith('#'): continue
+            t = l.split()
+            if len(t) < 6: continue
+            R, Vo, eV, Vg, Vd, Vb = map(float, t[:6])
+            if R <= 0 or Vo <= 0 or eV/Vo > 0.10: continue
+            gN = (Vg*abs(Vg) + 0.5*Vd*abs(Vd) + 0.7*Vb*Vb)/R*KPC
+            if gN <= 0: continue
+            y = gN/a0
+            dmu = math.log10(nu_p(y, pB)) - math.log10(nu_p(y, pA))
+            sg = 2*eV/Vo/math.log(10)
+            S += (dmu/sg)**2
+    worstS = max(worstS, S)
+okb4 = worstS <= 0.03
+emit("GB-4 fit-free exact-Dp bound over a0 in [0.8, 2.0]e-10: worst "
+     "S = %.4f (his <= 0.03; %d affected-in-Chae galaxies)  %s" %
+     (worstS, len(aff_dp), "OK" if okb4 else "MISMATCH"))
+
+# GB-5: S_raw order at his fitted params (dml = 0 approximation)
+la0h, fh, sih = -9.9449, 1.338, 0.0441
+S5 = 0.0
+for path in sorted(glob.glob('data/sparc/rotmod/**/*_rotmod.dat',
+                             recursive=True)):
+    nm = os.path.basename(path).replace('_rotmod.dat', '')
+    if nm not in aff_dp: continue
+    inc, q, D = meta2.get(nm, (0, 3, 10.0))
+    if inc < 30 or q > 2: continue
+    pA, pB = aff_dp[nm]
+    dmus, ws = [], []
+    for l in open(path):
+        if l.startswith('#'): continue
+        t = l.split()
+        if len(t) < 6: continue
+        R, Vo, eV, Vg, Vd, Vb = map(float, t[:6])
+        if R <= 0 or Vo <= 0 or eV/Vo > 0.10: continue
+        gN = (Vg*abs(Vg) + fh*0.5*Vd*abs(Vd) + 0.7*Vb*Vb)/R*KPC
+        if gN <= 0: continue
+        y = gN/10**la0h
+        dmus.append(math.log10(nu_p(y, pB)) - math.log10(nu_p(y, pA)))
+        sg2 = (2*eV/Vo/math.log(10))**2 + sih*sih
+        ws.append(1.0/sg2)
+    if not dmus: continue
+    dmus, ws = np.array(dmus), np.array(ws)
+    W = ws.sum()
+    m = (ws*dmus).sum()/W
+    S5 += float((ws*(dmus-m)**2).sum()) + m*m*W*0.5
+okb5 = S5 <= 0.005
+emit("GB-5 S_raw order at his fitted params (dml=0 approx, dv "
+     "profiled at half-absorption): %.5f ~ his 0.0002 grade "
+     "(both <<< bar 4)  %s" % (S5, "OK" if okb5 else "MISMATCH"))
+
+# GB-6: run1-vs-final diff = wiring/verdict lines only
+r1 = open('data/stage10l_occbound_run1.txt').read().splitlines()
+r2 = open('data/stage10l_occbound.txt').read().splitlines()
+import difflib
+changed = [l for l in difflib.unified_diff(r1, r2, lineterm='', n=0)
+           if (l.startswith('+') or l.startswith('-'))
+           and not l.startswith(('+++', '---'))]
+physwords = ('kappa_max', 'nu(x=0.05)', 'kappa_r', 'kappa_b',
+             'exclusion ratios', 'onset')
+# a physics ROW change requires a REMOVED physics line from run 1;
+# the verdict block legitimately GAINS lines quoting physics numbers
+leak = [l for l in changed if l.startswith('-')
+        and any(w in l for w in physwords)]
+okb6 = (len(changed) <= 10) and not leak
+emit("GB-6 run1-vs-final diff: %d changed lines (verified by eye: "
+     "G2 line + verdict block only), removed-physics-row leaks: %d  "
+     "%s" % (len(changed), len(leak), "OK" if okb6 else "MISMATCH"))
+
+# GB-7: the run-1 mis-set bar magnitude
+e, nb1 = None, None
+def it_once(kv, xv, c=1.0):
+    nb = 0.0
+    for _ in range(200000):
+        nb2 = nbe(xv*(1.0 - kv*(nb + c)/2.0))
+        if abs(nb2 - nb) < 1e-13: return nb2
+        nb = nb2
+    return nb
+resp = abs(it_once(1e-9, 0.05) - nbe(0.05))
+okb7 = abs(resp - 2.05e-7) <= 0.1e-7
+emit("GB-7 run-1 kappa->0 response at (1e-9, x=0.05): %.3e (his "
+     "2.05e-7) vs the old 2e-11 bar  %s" %
+     (resp, "OK" if okb7 else "MISMATCH"))
+
+allb = all((okb1, okb2, okb3, okb4, okb5, okb6, okb7))
+emit("")
+emit("POST-REPORT HALF: %s (GB-1..7)" %
+     ("ALL CONFIRMED" if allb else "MISMATCHES PRESENT"))

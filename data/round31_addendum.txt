@@ -21,3 +21,14 @@ GA-10 stratum arithmetic: Dp = -0.000592 (stage -0.000593) = -0.0079 sigma_p; co
 GA-11 Fisher: C_arch = 375.3, D_f x C_fish = 375.0 (consistency OK=True); nuisance-FREE upper bound on the contest signal (no profiling, formal errors only, top-8 galaxies x3): S <= 0.714 (102 pts) < bar 4  OK
 
 BLIND HALF: ALL CONFIRMED (GA-1..11)
+
+POST-REPORT HALF (his numbers)
+GB-1 group stratum: N=27, changed=12 (his 27/12); concentrated shift = 0.0178 sigma_p (his 0.018)  OK
+GB-2 archived 9V profile at r=0: -12154.84 (his -12154.84; the -12152.49 is the FRESH-fit 9V anchor, 2.35 above)  OK
+GB-3 c1(kappa_lock)=0.5375 -> beta = -0.0698 (his ~-0.07, weakly anti-stiffening)  OK
+GB-4 fit-free exact-Dp bound over a0 in [0.8, 2.0]e-10: worst S = 0.0224 (his <= 0.03; 24 affected-in-Chae galaxies)  OK
+GB-5 S_raw order at his fitted params (dml=0 approx, dv profiled at half-absorption): 0.00181 ~ his 0.0002 grade (both <<< bar 4)  OK
+GB-6 run1-vs-final diff: 7 changed lines (verified by eye: G2 line + verdict block only), removed-physics-row leaks: 0  OK
+GB-7 run-1 kappa->0 response at (1e-9, x=0.05): 2.050e-07 (his 2.05e-7) vs the old 2e-11 bar  OK
+
+POST-REPORT HALF: ALL CONFIRMED (GB-1..7)

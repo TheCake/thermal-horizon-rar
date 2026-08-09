@@ -771,6 +771,57 @@ P3 round 2 · DR4 readiness. Ledger 208 rows / six gates PASS.
 Reviews ROUND30 uncommitted. Eighth close of 2026-08-09 — FRESH
 SESSION before the next arc.**
 
+**10K + 10L + ROUND 31 (2026-08-09→10, ninth close, the free-hand arc:
+"You got free hand, go for it" → "You are go"): BOTH R30 SUCCESSORS
+EXECUTED, REFEREED, ADOPTED — zero credence moves (53 / 8, every cell
+pre-signed HOLD, referee-confirmed).** 10K THE GROUP-END POWER SPEC
+(pre-reg 008109e) = K-POWER-DEAD all gates green first run: R30
+condition 7 executed (SIMBAD alias table, fetch
+calcs/fetch_sparc_aliases.py, 25/28 resolved, committed w/ gitignore
+exception) → census 48/20/3/27 (matched/iso/iso-TR/group; was
+31/13/3; the science-limiting iso-crosser count UNCHANGED at 3); the
+one neighbor-powered galaxy (NGC2976, 110% of floor) has NO Chae row
+= the group-end carrier is data-orphaned; power spec (reader identity
+0.024 at r = 0.35; D_f = 0.371 measured, reusable): S_def ~ 0.000 vs
+bars 4/9, stratum 0.008 σ_p (12/27 change gate, concentrated 0.018 —
+R31 disclosure); R31 hardening: the verdict needs NO D_f transfer
+(fit-free bound ≤ 0.03 ∀a₀). THE PHYSICAL READING (R31, adopted):
+group galaxies live at Newtonian g where ν ≈ 1 — a PHYSICS power
+limit, not sampling; revival = low-g_bar kinematics in high-e_N
+environments (dense-group dwarfs; WALLABY-env / DR4-era). 10L THE
+SELF-CONSISTENT OCCUPATION BOUND (pre-reg 008109e + A1 b9cfe04
+pre-quote, run 1 preserved) = L-PINNED gates 5/5: **the R30 K-BOUNDED
+path CLOSES NEGATIVE** — the fed-back occupation (4 offsets +
+truncated-Gibbs, 2 detectors, trap-#20 discipline) has NO fixed point
+at sky occupations (κ_max = 0.015–0.14 deep = 6.6–62× below κ_lock
+0.925; onset only at x ≈ 3.6 = the Newtonian arm; production caps at
+ν ≤ 1.93 vs demand 19) ⇒ κ = 1 is NOT the failure edge; NO
+occupation-consistency bound exists WITHIN the mean-occupation-
+feedback family (Hartree/coherent-state = the named open door); the
+occupation is BARE-PINNED twice over (structural here + measured
+β → 0; R31: the sky's own κ ≈ 0.9 is what refutes the criterion;
+κ_lock ↔ β ≈ −0.07 weakly anti-stiffening; the softening/stiffening/
+zero trichotomy is EXHAUSTIVE). CONVENTION PIN (R30 successor 3):
+archived meters all bare-ω = the vertex convention; the renormalized
+convention is κ-BLIND (κ_r = κ_b(1−κ_b/2), max EXACTLY ½ at κ_b = 1;
+R31 sharpening: the lock-vs-c₁ spread can ONLY exist bare ⇒ the
+two-pole tension is intrinsically PHYSICAL); never print "κ measured
+~1". ROUND 31 (REVIEW-ROUND31-OPUS.md uncommitted): every number
+reproduced (10L ≤ 4e-5; 10K bit-for-bit incl. his own end-to-end 9V
+fit re-port C_fish 1010.7; 12 alias spot-checks correct); hole NO ×2;
+both letters AFFIRMED; 4 conditions all cosmetic, executed.
+Verification calcs/round31_addendum.py BOTH directions (blind half
+pre-committed 884fbc1 = the 87a4676 protocol's 2nd execution;
+post-report GB-1..7 ALL CONFIRMED). Trap #21 (gate a limit by
+extrapolation, never a tiny-parameter evaluation vs an absolute bar).
+Ledger 210 rows / six gates PASS. **P3 draft 0.3 predates 10J/10L —
+the next author-called thaw absorbs the κ=1 vertex results + the
+occupation closure + the convention pin. NEXT FORK (author's):
+circulation TODO 27–31 (outreach parked) · P3 round 2 · the two O5
+doors (the Hartree treatment; the level-crossing DR4 instrument —
+derive its kill condition first) · DR4 readiness. Ninth close in two
+days — FRESH SESSION before the next arc.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

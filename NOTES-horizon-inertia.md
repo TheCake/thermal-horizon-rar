@@ -15293,14 +15293,23 @@ held).**
   gate world cannot reach.
 - **The power spec** (Fisher with exact per-galaxy dv-profiling,
   calibrated on the archived 9V r-axis; reader identity |d| = 0.024
-  at the archived grid point, r=0 anchor −12152.49 reproduced;
+  at the archived grid point r = 0.35; the −12152.49 printed at r=0
+  is the FRESH-FIT 9V anchor — the archived warm-chained profile's
+  r=0 point is −12154.84, 2.35 lower (R31 scoping, disclosed);
   calibration C_fish/C_arch = 2.69 → measured deflation D_f = 0.371,
   a reusable number): contest signal **S_def ≈ 0.000 at both r =
   0.3365 and r = 0.5** (bars 4/9 — dead by ≳3 orders); stratum
-  contrast **Δp(Ti1>0) = −0.00059 = 0.008 σ_p** (bars 1/2). Both
-  legs dead, and B was constructed as an UPPER BOUND (the neighbor
-  sum stacked on Chae's 2M++ value, double-count direction
-  disclosed) — a dead upper bound is decisive.
+  contrast **Δp(Ti1>0) = −0.00059 = 0.008 σ_p** (bars 1/2; R31
+  disclosure: 12 of the 27 stratum members actually change gate —
+  concentrated on the changed twelve the shift is 0.018 σ_p, still
+  dead). Both legs dead, and B was constructed as an UPPER BOUND
+  (the neighbor sum stacked on Chae's 2M++ value, double-count
+  direction disclosed) — a dead upper bound is decisive. **R31
+  hardening (adopted): the S-leg does not depend on the D_f
+  transfer at all** — the un-deflated S_raw is already ~0.0002, and
+  a fit-independent nuisance-free upper bound is ≤ 0.03 for every
+  a₀ in [0.8, 2.0]×10⁻¹⁰ (blind-half cruder route 0.714) — two
+  orders under the bar with no calibration step whatsoever.
 - Credence: pre-signed HOLD mech 8 / HOLD anomaly-real 53 (all
   cells). PREDICTIONS P2 annotated (the in-catalog group-end axis is
   priced; the ordering prediction stays fully out-of-sample).
@@ -15364,10 +15373,15 @@ inherit a construction choice).
   bound β < 0.03; boot = the β = 1 member, sky-dead 5M; the β = 1
   member regresses to the 4F form ν = 1 + n_BE(νy) at 5×10⁻¹⁵).
   P-lit has no self-consistent completion in the scanned family ⇒
-  **no occupation-consistency bound on κ exists. The K-BOUNDED path
-  is CLOSED, negative.** (Scope, named: mean-occupation feedback
-  constructions; joint coherent-state/Hartree treatments out of
-  scope.) This is also the fold-row resolution: the "self-consistent
+  **no occupation-consistency bound on κ exists within the
+  mean-occupation-feedback family (softening + truncated-Gibbs; the
+  named out-of-scope door = joint coherent-state/Hartree treatments
+  — R31 condition 1, scope attached inline). The K-BOUNDED path is
+  CLOSED, negative, at this family's grade.** R31 foregrounding
+  (his M2, in our favor): the failure is a falsification of the
+  self-consistency criterion itself — were it physical it would
+  bound κ ≲ 0.1 deep, which the sky's own measured κ ≈ 0.9 refutes;
+  the measured κ is what forces the bare-pinned branch. This is also the fold-row resolution: the "self-consistent
   structure" the fold demanded is NOT a re-thermalized occupation —
   consistent with the 10C separation theorem (the bath occupation
   cancels between time-orderings; the drive is external). The
@@ -15417,6 +15431,82 @@ rulers genuinely disagree about the knob (it's physics, not
 mislabeled units), and found a cute fact — measured with the
 "squeezed" ruler, the knob at its special setting would read
 exactly ½.*
+
+---
+
+### ROUND 31 (2026-08-10): the 10K + 10L referee round — every number reproduced, both letters AFFIRMED, four cosmetic conditions, zero credence moves
+
+Fresh adversarial Opus session vs both stages (report
+REVIEW-ROUND31-OPUS.md, never commit). Verification protocol executed
+both directions (calcs/round31_addendum.py): the BLIND half committed
+BEFORE the report existed (884fbc1 — the 87a4676 protocol's second
+execution; GA-1..11 all confirmed through independent routes incl. a
+third existence detector, a log-sum-exp Gibbs, a sympy tangency
+derivation, an independent census parser, and a nuisance-free power
+bound); the POST-REPORT half re-computed every new referee number
+(GB-1..7 ALL CONFIRMED: his 12/27 stratum count and 0.018 σ_p
+concentrated shift; his archived-profile r=0 point −12154.84; his
+β(κ_lock) = −0.07 mapping; his fit-free S ≤ 0.03 bound — our exact-Δp
+version 0.022; his A1 diff-integrity claim — 7 changed lines, all
+wiring-gate + verdict block, zero removed physics rows; the run-1
+mis-set-bar magnitude 2.05×10⁻⁷).
+
+**Rulings: UNPATCHED HOLE — NO, both stages. 10L L-PINNED AFFIRMED
+(κ_max map to ≤4×10⁻⁵ over the full 5×4 offset grid; production caps
+exact; convention algebra exact; A1 clean and non-outcome-tuned). 10K
+K-POWER-DEAD AFFIRMED (census bit-for-bit incl. the 17-galaxy
+new-match list; his own end-to-end re-port of the 9V fit chain
+reproduced C_fish = 1010.7 to the digit; all 12 spot-checked SIMBAD
+cross-IDs correct). Credence cells confirmed untouchable — the sole
+movable cell (L-BOUND) did not fire. anomaly-real 53 / mech 8.**
+
+His sharpenings, adopted into the record:
+- **The trichotomy is exhaustive:** softening feedback (dG/dn̄ > 0,
+  runaway), stiffening (dν/dν < 0, stable), zero — for monotone
+  mean-field feedback there is no fourth sign; the sky sits at zero,
+  and κ_lock = 0.925 maps via c₁ = 1−κ/2 to β ≈ −0.07 — weakly
+  anti-stiffening, fully consistent with the measured β → 0.
+- **The two-pole tension is intrinsically bare-convention:** the
+  measured spread (0.925 vs 1.10–1.48) VANISHES under the
+  renormalized convention (κ_r = 0.494–0.500 over that whole band) —
+  a spread that exists in only one convention is physical, not
+  bookkeeping ("convention-robust" was loose wording for exactly
+  this; adopted).
+- **The 10K power limit is physics, not sampling:** group galaxies
+  live at high g_bar (Newtonian, ν ≈ 1) where the RAR is insensitive
+  to the screening index — no SPARC stratum redesign can help; the
+  only revival is low-g_bar kinematics in high-e_N environments
+  (dense-group dwarfs; WALLABY-env / DR4-era).
+- **The truncated-Gibbs kept-set is robust in the only physical
+  direction:** including post-fold states drives n̄ to the truncation
+  (a pathology), never to ν = 19.
+
+Conditions 1–4 (all cosmetic/transparency, none touching a number,
+gate, letter, or credence cell) executed in this same commit: the 10L
+"no bound" clause scoped inline to the family; the 10K stratum 12/27
+disclosure + concentrated 0.018 σ_p; the r=0 anchor scoping
+(fresh-fit −12152.49 vs archived warm-chained −12154.84); the
+D_f-free hardening sentence. Trap #21 logged in DIARY: gate a LIMIT
+by extrapolation, never by a single tiny-parameter evaluation
+against an absolute bar.
+
+**Plain verdict: SUCCESS** — the round's fourth-in-a-row
+zero-arithmetic-error result, and this time zero substantive holes
+too: the two honest walls (a power-dead axis, a closed bound path)
+survived adversarial rebuild intact, and every one of the referee's
+additions made the record sharper in our favor.
+
+*ELI12: The robot referee redid everything again — every number
+matched. He found no real mistakes this time, just four places to
+say things more carefully (like "only 12 of the 27 crowded galaxies
+actually shift, and even counting only those it's still 60× too
+small to see"). Best of all, he showed our two dead ends are dead
+for good reasons: the crowded-galaxy test fails because crowded
+galaxies happen to live where gravity is too strong for the effect
+to show at all, and the "maybe the knob is bounded by 1" road fails
+so badly that the data itself proves the levels can't be re-filling
+on their own spacing. Dead ends that teach you why are the second
+best kind of result.*
 
 ## Honest credences (2026-07-21, end of Stage 2)
 

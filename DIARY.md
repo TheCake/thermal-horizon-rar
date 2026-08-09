@@ -9,6 +9,82 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-10 (ninth close) — 10K + 10L + ROUND 31: both R30 successors executed to honest ends, zero credence moves
+
+The author's "You got free hand, go for it" + "You are go" bought the
+two lanes the eighth close queued: 10K (the group-end power spec +
+the alias census, pre-reg 008109e) and 10L (the self-consistent
+occupation bound + the meter convention pin, same pre-reg + A1
+b9cfe04). Both closed same-day-ish; ROUND 31 adopted in full (report
+REVIEW-ROUND31-OPUS.md, NEVER commit) — hole NO ×2, both letters
+AFFIRMED, zero mismatches anywhere, four cosmetic conditions.
+anomaly-real 53 / mech 8 untouched — every cell pre-signed HOLD,
+referee-confirmed.
+
+WHAT THE NEXT INSTANCE MUST NOT REDO:
+- The GROUP-END axis is PRICED DEAD at SPARC × LV grade — do NOT
+  build the gate-closing contest. The reason is PHYSICS (R31): group
+  galaxies sit at high g_bar (Newtonian, ν ≈ 1) where the RAR is
+  screening-insensitive — no SPARC stratum redesign helps; AND the
+  lone meter-powered galaxy (NGC2976, neighbor term 110% of floor)
+  has no Chae e_N row. Numbers: stratum shift 0.008 σ_p (0.018
+  concentrated on the 12/27 that change), contest signal ≤ 0.03
+  fit-free for every a₀. Revival = low-g_bar kinematics in HIGH-e_N
+  environments (dense-group dwarfs; WALLABY-env / DR4-era).
+- The alias table is STANDING INFRASTRUCTURE: data/
+  sparc_simbad_aliases.csv (committed, gitignore exception; fetch
+  calcs/fetch_sparc_aliases.py; 25/28 resolved, D564-8/D631-7/
+  KK98-251 honest misses). Census under it: 48 matched / 20 iso /
+  STILL 3 iso transition-crossers / 27 group. Every future LV
+  cross-match uses this table — never name-only again.
+- The OCCUPATION-FEEDBACK family is CLOSED — do not re-derive
+  softening fixed points or truncated-Gibbs caps. κ_max ~ O(x) deep
+  (6.6–62× under the lock; onset at x ≈ 3.6 = the Newtonian arm);
+  production caps at ν ≤ 1.93 vs the demanded 19. The K-BOUNDED
+  path via occupation consistency DOES NOT EXIST — and the sky's
+  own measured κ ≈ 0.9 is what refutes the criterion (R31-M2). The
+  TWO open doors on the κ = 1 seam: (1) the joint coherent-state/
+  Hartree treatment of system+cloud (the only computation that
+  could regulate the softening runaway); (2) the κ = 1
+  level-crossing low-frequency-response DR4 signature — still
+  un-instrumented, and deriving its numeric kill condition is the
+  PREREQUISITE for any PREDICTIONS row.
+- CONVENTION FACTS (standing; never re-litigate): every archived κ
+  meter is bare-ω = the vertex convention; the renormalized
+  (first-transition) convention is κ-blind (κ_r = κ_b(1−κ_b/2), max
+  EXACTLY ½ at κ_b = 1; 0.494–0.500 over the whole measured band) —
+  so the lock-vs-c₁ two-pole spread can only exist bare ⇒ the
+  tension is PHYSICAL (κ runs; one-κ form 10D-rejected). κ_lock =
+  0.925 ↔ β ≈ −0.07 (weakly anti-stiffening — consistent with
+  measured β → 0). Never print "κ measured ~1"; never resurrect
+  "same world"; the softening/stiffening/zero trichotomy is
+  exhaustive for monotone mean-field feedback (R31).
+- TRAP #21 (new, standing): when gating a LIMIT (κ→0, x→0, N→∞),
+  gate the EXTRAPOLATED limit (two points, Richardson), never a
+  single tiny-parameter evaluation against an absolute bar — the
+  first-order response at your "tiny" parameter is usually orders
+  above float noise. Cost: 10L run 1 printed L-OPEN on a mis-set
+  bar (response 2×10⁻⁷ vs bar 10⁻¹²); A1 fixed it pre-quote; the
+  referee verified the diff touched only the wiring gate + verdict
+  block.
+- Protocol notes that WORKED (repeat both): (i) blind addendum half
+  committed pre-report (884fbc1; second execution of the 87a4676
+  protocol), post-report half re-verified every referee number
+  (GB-1..7). (ii) When a diff-checker flags a "physics leak," check
+  whether it is a REMOVED row or the verdict block legitimately
+  QUOTING numbers — only removed rows are real leaks.
+- P3 NOTE: draft 0.3 predates 10J/10L — the next author-called thaw
+  absorbs the κ = 1 vertex results, the occupation closure, and the
+  convention pin into §6.
+
+THE FORK (author's, unchanged in kind): circulation TODO 27–31
+(outreach parked — "no email sending for now") · P3 round 2 · the
+two O5 doors above (Hartree; the level-crossing kill condition) ·
+DR4 readiness. Ninth close in two days — FRESH SESSION before
+anything heavy.
+
+---
+
 ## 2026-08-09 (eighth close) — 10I + 10J + ROUND 30: two honest walls, one retracted sentence, zero credence moves
 
 The author's "Go for it. Hunt away" bought the two lanes I'd
