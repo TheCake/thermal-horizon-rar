@@ -14468,6 +14468,112 @@ push together (the one thing nobody has computed yet). That
 many-hands calculation is now the whole question, and both of its
 possible answers have signed consequences.
 
+### Stage 10G — O5-COLLECTIVE: the participation ceiling (2026-08-09; pre-reg 6f76672; the ROUND-26 strike-bearing successor)
+
+The R26 kill, verbatim: the mechanism closes iff EITHER (a) collective
+amplification is derived and lifts λ to saturation (λ ≳ H; the 9W
+λ̄ = √(Σλ_k²) √K-question), OR (b) a non-saturated real-exchange
+process is shown to imprint e^{−Lx} on the system's DRESSING. Both
+fail → 15→8, upon ROUND-27 affirmation.
+
+**FIRED: C-STRIKE-CANDIDATE — all gates green, both kill clauses
+evaluated FAILS
+([calcs/stage10g_collective.py](calcs/stage10g_collective.py),
+data/stage10g_collective.txt).**
+
+**Clause (a) — THE √K QUESTION IS CLOSED BY A SUM-RULE CEILING.** The
+chain, each step gated: (1) any partner set couples through the ONE
+l=2 port (GF-2 rank-1, banked) → bright-mode λ̄² = Σλ_k² (G1b: the
+one-excitation eigenvalue theorem, 1e-16); (2) per-mode 10E lemma
+λ_k = (η₂/4)e_s c_k√(ωΩ_k) with c_k the mode's zero-point amplitude
+of the ONE fractional-quadrupole field (G3 regression reproduces the
+archived 10F table to ≤ 5e-4); (3) the modes superpose in one
+observable ⇒ THE BUDGET ⟨δq²⟩ = Σc_k²(2n_k+1) ≤ q_phys² (G1a exact;
+q_phys ~ 1 = the harmonic-chart premise, disclosed load-bearing);
+(4) THE KMS PIN: n_k = n_BE(Ω_k/T_dS) is measurement-anchored (6U
+detailed balance IS the measured gate; the a₀ temperature lock) —
+not a modeling choice; (5) ⇒ the budget-to-rate trade has an EXACT
+optimum: weight per unit budget = Ωn/(2n+1) = **Ω/(e^{Ω/T}+1) — the
+FERMI function** — maximized at x* − 1 = e^{−x*} (x* = 1.27846),
+f* = x* − 1 EXACTLY (G2; 20-spectrum LP check, no excess at 1e-9).
+**THE CEILING: rate_max = (η₂/4)e_s√(ω(n_s+1)f*T_dS)·q_phys·√N_p —
+K NEVER APPEARS.** Participation redistributes the fixed budget;
+√K growth would need ⟨δq²⟩ ~ K(2n+1), which the budget forbids. The
+thermal occupation CANCELS: every quantum of Rabi enhancement is
+bought by budget suppression ("the bath cannot fund both the loan
+and the collateral").
+
+Numbers (q_phys = 1, requirement 0.5 H): honest (η₂ central, N_p = 1
+= GF-2's own rank-1): binary x=0.5 shortfall 27.6×, deep galaxy
+101×; MAX-GRANT (η₂ = 1, all five sector components granted as
+ports despite GF-2): tightest anchor 9.4× short, every anchor ≥ 5×.
+Robustness: loosest budget (normal-ordered + ZP-cap — licenses
+unbounded zero-point amplitude at empty modes, chart-dead a
+fortiori) still 4.99×/18.3× (strike-leg bar ≥ 3×); non-KMS partner
+rows 2.8–4.0×/10–15× printed REPORT-grade, excluded from the strike
+by SCOPING (a non-KMS partner imprints a non-KMS gate and breaks
+the temperature lock — even saturated it delivers a gate the sky
+did not measure; scoping offered to the round). THE CLOSURE SURFACE:
+q_phys ≥ 9.4 (binary) / 34.7 (galaxy) at maximal granting = RMS
+≥ 945%/3467% fractional distortion — **THE DILEMMA: there the 10E
+linear-order lemma un-derives the vertex itself; clause (a) demands
+"derived AND lifts"; beyond the chart nothing is derived. Either
+way (a) fails.** Report-grade dividend: the 10F e_a = 1 corner
+already implied ⟨δq²⟩ = 2n_amb+1 = 2.0/14.3 (RMS 142%/378%) — the
+R25 "closes centrally" corner sat past the chart premise
+(O5-INTERPLAY consistency family).
+
+**Clause (b) — the dynamical leg on the 6X engine itself** (verbatim
+Hamiltonian; closed |1⟩⊗thermal evolution = non-equilibrium at
+physical λ, trap-#17 compliant): the γ=0 machinery reproduces all
+six archived 10C G7 lending values (SB-4a) and the TIME-AVERAGED
+evolved P2 at strong coupling matches the saturated ensemble to
+0.000 rel (SB-4b — the dynamical route does saturate; the
+instrument has power both directions, π-row prints P2/sat 1.08–1.33).
+At the ceiling's own Rabi angles (θ_c = 2π·rate·t_univ = 0.030–0.32
+rad): **P2 reached = 0.07–1.5% of saturated** (bars 1%/5% honest/
+max-grant), and the structure probe confirms RAW-N (w(m)/w(1) =
+1.000/1.996/2.988/3.977 vs 1/2/3/4 — the D4 weighting 10C G7
+rejected), NOT the gate P(n≥1). A non-saturated approach cannot
+imprint e^{−Lx}. Sector sweep (G7): (ii) free radiation 34–44
+orders dead (10A archived U's); (iii) matter kinematics thermally
+EMPTY at 10³–10⁶ decimal orders (galactic orbits sit at 361 H,
+x = 2275; the one soft-band matter family was 10B
+dictionary-killed); (iv) coherent partners ride the MEASURED static
+0.086 (mean-vs-variance split) = the original 2.4–3.4-order
+shortfall, Poisson-gate postdiction lean +1.37σ vs thermal +0.56σ
+(9U), pure drives carry no occupation statistics (the measured
+two-anchor tail split unproducible); (v) no partner = the SB-6 leg.
+The partition (bound-cloud/free-field/matter × state character) is
+offered to the round for attack.
+
+Pre-signed: C-STRIKE-CANDIDATE + ROUND-27 affirms → mech 15→8
+(REQUIRED, the R26 signature); + unpatched hole → HOLD 15, the hole
+= successor; C-SURFACE-GRAY → HOLD 15 (successor O5-ANHARM).
+anomaly-real 53 UNTOUCHED every branch (no sky fits). ROUND 27 =
+the adjudication; the credence does NOT move at stage level.
+
+PLAIN VERDICT (stage-level, pre-round): SUCCESS as an instrument —
+the commissioned question ("does collectivity rescue λ?") is
+answered with an exact, K-free ceiling and a powered dynamical
+test; the answer is NO by 9.4× at maximal granting, and the
+non-saturated route is closed at 0.07–1.5% with the wrong
+occupation structure. Whether this beheads the mechanism is now
+ROUND 27's call — the strike is his to affirm or break.
+
+ELI12: We asked whether many hands pushing together could supply
+the strong push one hand lacks. The accounting says no: all the
+hands share ONE body — the cloud can only wobble so much in total,
+and every bit of "many hands" strength has to be paid out of that
+same fixed wobble budget. Written out exactly, the best possible
+deal the cloud can strike is a push still ten times too weak — and
+pretending the cloud could wobble ten times more than 100% would
+break the very math that gave us the push in the first place. We
+also ran the actual handshake movie at the best allowed push: after
+a whole age of the universe the hands have barely twitched (under
+2% of a real handshake), and the twitch has the wrong fingerprint.
+Now the referee gets to try to break the accounting.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

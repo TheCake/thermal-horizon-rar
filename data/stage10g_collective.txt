@@ -1,0 +1,184 @@
+==============================================================================
+STAGE 10G -- O5-COLLECTIVE: the participation ceiling (the strike-bearing round)
+==============================================================================
+
+G1a THE BUDGET IDENTITY <dq^2> = sum c_k^2 (2 n_k + 1):
+  n = 0.502: <(b+b')^2> = 2.004000000 vs 2n+1 = 2.004000000  |d| = 4.4e-16
+  n = 6.630: <(b+b')^2> = 14.260000000 vs 2n+1 = 14.260000000  |d| = 8.9e-15
+  two-mode: c = (0.37, 0.81), n = (0.502, 2.0): sum = 3.554847600 vs formula 3.554847600  |d| = 8.9e-16
+  G1a -> PASS  [fails if the variance or additivity is wrong]
+
+G1b THE BRIGHT-MODE REDUCTION lambda-bar = sqrt(sum lam_k^2) (K = 8):
+  one-excitation block eigenvalues: min = -1.778040, max = +1.778040, |mid|max = 0.0e+00
+  lambda-bar = 1.778040; |d| = (4.4e-16, 4.4e-16)
+  G1b -> PASS  [fails if lambda-bar != sqrt(sum lam_k^2)]
+  => sqrt(K) NEVER stands alone: K modes at full amplitude would
+     need <dq^2> ~ K(2n+1) -- the budget forbids it; participation
+     REDISTRIBUTES the fixed sum, never amplifies it.
+
+G2 THE OCCUPATION-BUDGET TRADE (exact optimum):
+  weight per unit budget: Omega n/(2n+1) = Omega/(e^(Omega/T)+1)  [the FERMI function]
+  x* = 1.2784645428  (x* - 1 = e^-x*: |d| = 1.7e-16)
+  f* = x*/(e^x*+1) = 0.2784645428 = x* - 1 EXACTLY (|d| = 1.1e-16)
+  20 random 40-mode spectra: max excess over f*T = 0.00e+00 (bar 1e-9); near-Omega* spectrum reaches 1.0000 of f*T (bar >= 0.995)
+  G2 -> PASS  [fails if any spectrum beats the claimed sup]
+  => THE CEILING: rate_max = (eta2/4) e_s sqrt(omega (n_s+1) f* T_dS) q_phys sqrt(N_p)
+     (K-free; thermal occupation cancels: every quantum of rate
+      enhancement is bought by budget suppression -- the bath
+      cannot fund both the loan and the collateral.)
+
+G3 10F REGRESSION (archived GF-3 table) + the implied-budget row:
+  binary  x_loc=0.5      bare 0.207/0.383 enh 0.234/0.432  (archived 0.207/0.383 0.234/0.432)  dmax = 0.0005
+  binary  x_loc=1.0      bare 0.052/0.096 enh 0.046/0.085  (archived 0.052/0.096 0.046/0.085)  dmax = 0.0004
+  binary  x_loc=2.0      bare 0.013/0.024 enh 0.010/0.018  (archived 0.013/0.024 0.010/0.018)  dmax = 0.0002
+  galaxy  x_loc=0.0953   bare 0.062/0.115 enh 0.531/0.980  (archived 0.062/0.115 0.531/0.980)  dmax = 0.0003
+  galaxy  x_loc=0.3      bare 0.062/0.115 enh 0.314/0.580  (archived 0.062/0.115 0.314/0.580)  dmax = 0.0004
+  galaxy  x_loc=1.0      bare 0.062/0.115 enh 0.201/0.372  (archived 0.062/0.115 0.201/0.372)  dmax = 0.0004
+  single-mode allocation identity (c1 = 1 at Omega_amb == the 10F
+  e_a = 1 'enh' corner):
+    binary  x_loc=0.5: rate/g_close = 0.432044  |d vs formula| = 5.6e-17
+  implied budget of the 10F e_a = 1 corner: <dq^2> = 2 n_amb + 1 =
+    binary 2.004 (RMS 142% fractional distortion) / galaxy 14.26 (RMS 378%)
+    -> the R25 'e_a ~ 1 closes centrally' corner already sat 1.4x /
+       3.8x past the harmonic-chart premise (report-grade; feeds
+       the dilemma; O5-INTERPLAY consistency family).
+  G3 -> PASS  [fails if my formulas do not reproduce the archived table]
+
+==============================================================================
+G4 THE CEILING TABLE (q_phys = 1; requirement 0.5 H; shortfall = 0.5/rate):
+  anchor                  honest rate   short  max-grant rate   short
+  binary  x_loc=0.5        1.81e-02 H   27.6x      5.29e-02 H    9.4x
+  binary  x_loc=1.0        5.05e-03 H   99.0x      1.48e-02 H   33.9x
+  binary  x_loc=2.0        1.53e-03 H  327.5x      4.46e-03 H  112.0x
+  galaxy  x_loc=0.0953     4.93e-03 H  101.3x      1.44e-02 H   34.7x
+  galaxy  x_loc=0.3        5.18e-03 H   96.4x      1.52e-02 H   33.0x
+  galaxy  x_loc=1.0        6.06e-03 H   82.5x      1.77e-02 H   28.2x
+  tightest anchor at MAX-GRANT: shortfall 9.45x (strike bar >= 5x at EVERY anchor)
+
+  robustness rows (MAX-GRANT, flank anchors):
+    binary  x_loc=0.5      (r1) loosest-budget x1.895 ->  4.99x (STRIKE-LEG, bar >= 3x)
+                           (r2) non-KMS Lambda=0.5/1.0 H x2.38/x3.36 -> 3.98x/2.81x (REPORT-grade)
+    galaxy  x_loc=0.0953   (r1) loosest-budget x1.895 -> 18.30x (STRIKE-LEG, bar >= 3x)
+                           (r2) non-KMS Lambda=0.5/1.0 H x2.38/x3.36 -> 14.60x/10.32x (REPORT-grade)
+    [(r1) licenses unbounded zero-point amplitude at empty modes =
+     chart-dead a fortiori -- kept as a strike leg anyway. (r2) is
+     EXCLUDED from the strike condition BY SCOPING: a non-KMS
+     partner imprints non-KMS gate ratios and breaks the a0
+     temperature lock -- even saturated it delivers a gate the sky
+     did not measure (6U detailed balance IS the measurement), so
+     it cannot close THE mechanism under adjudication. Scoping
+     offered to the round for attack.]
+
+  THE CLOSURE SURFACE q_phys* (what clause (a) would need):
+    binary  x_loc=0.5      honest q* =   27.6  max-grant q* =   9.4  (RMS 945%+ fractional distortion)
+    galaxy  x_loc=0.0953   honest q* =  101.3  max-grant q* =  34.7  (RMS 3467%+ fractional distortion)
+    THE DILEMMA: q_phys at these values un-derives the vertex
+    itself (the 10E lemma is linear-order; eta2 overlaps presume
+    near-sphericity) -- clause (a) demands 'derived AND lifts';
+    beyond the chart NOTHING is derived. Either way (a) fails.
+
+  POWER (counterfactual): q_phys = 120 -> galaxy honest rate = 0.592 H >= 0.5 H => the letter logic emits C-CLOSES-CANDIDATE
+  G4 -> STRIKE-LEG-1 MET [fails toward CLOSES if any anchor reaches 0.5 H at q <= 1]
+
+==============================================================================
+G6 THE DYNAMICAL LEG (6X engine verbatim; closed evolution --
+non-equilibrium at the physical lambda, trap-#17 compliant):
+
+SB-4a sat_weight regression vs archived 10C G7 (STOP-class):
+  n_amb =  0.25: P2bar = 0.09979 (archived 0.09979) OK
+  n_amb =  0.50: P2bar = 0.16621 (archived 0.16621) OK
+  n_amb =  1.00: P2bar = 0.24900 (archived 0.24900) OK
+  n_amb =  2.00: P2bar = 0.33114 (archived 0.33114) OK
+  n_amb =  4.00: P2bar = 0.39524 (archived 0.39524) OK
+  n_amb =  8.00: P2bar = 0.43449 (archived 0.43449) OK
+  SB-4a -> PASS
+
+SB-4b dynamical-saturation POWER (time-average vs sat_weight):
+  n_amb = 0.50: <P2>_t = 0.16664 vs sat 0.16665 (rel d = 0.000, bar 0.05)
+  n_amb = 2.00: <P2>_t = 0.33107 vs sat 0.33114 (rel d = 0.000, bar 0.05)
+  SB-4b -> PASS  [the dynamical route DOES saturate at strong coupling]
+
+SB-6 THE CEILING ROWS (P2 reached at theta_c = 2 pi rate t_univ):
+  binary  x_loc=0.5 (n_amb = 0.502, sat = 0.16665):
+    honest theta_c = 0.1092 rad -> P2/sat = 0.00182 (bar <= 0.01)
+    max-grant theta_c = 0.3192 rad -> P2/sat = 0.01543 (bar <= 0.05)
+    pi-row (what closure delivers): P2/sat = 1.080 [the instrument distinguishes]
+  galaxy  x_loc=0.0953 (n_amb = 6.63, sat = 0.42627):
+    honest theta_c = 0.0298 rad -> P2/sat = 0.00070 (bar <= 0.01)
+    max-grant theta_c = 0.0870 rad -> P2/sat = 0.00593 (bar <= 0.05)
+    pi-row (what closure delivers): P2/sat = 1.325 [the instrument distinguishes]
+
+  structure probe (theta = 0.2, pure |1,m> inputs): w(m)/w(1) vs m
+    ratios = [1.000, 1.996, 2.988, 3.977] vs [1, 2, 3, 4] -> RAW-N CONFIRMED
+    (the reached weight carries the D4 raw-n structure, not the
+     gate P(n>=1): a non-saturated approach CANNOT imprint e^-Lx)
+  SB-6 -> PASS (clause (b) leg closed at the ceiling)
+
+G8 truncation: sat(6.63) NB 70->90 d = 6.7e-07 (bar 2e-4); evolved row NB 70->86 rel d = 4.9e-04 (bar 0.01) -> PASS
+
+==============================================================================
+G7 THE SECTOR SWEEP (every other partner ontology):
+
+  (ii) FREE RADIATION (the horizon's radiative continuum):
+      10A archived carrier weights U = 7.2e-45 (binary) / 1.23e-34 (galaxy)
+      = 44 / 34 decimal orders under O(1) carrier weight -> DEAD as lending partner
+      (10A cond-5 residual: the cloud-continuum leak closed at
+       10^-84.8 g^2 -- both directions orders-dead.)
+
+  (iii) MATTER KINEMATICS (the environment's classical motion):
+      galactic orbits      Omega =       361 H -> x = Omega/T_dS =  2.27e+03 -> n = e^-2.27e+03 (~985 decimal orders EMPTY)
+      wide-binary orbits   Omega =   1.1e+05 H -> x = Omega/T_dS =  6.91e+05 -> n = e^-6.91e+05 (~300251 decimal orders EMPTY)
+      stellar encounters   Omega =  9.02e+05 H -> x = Omega/T_dS =  5.67e+06 -> n = e^-5.67e+06 (~2462059 decimal orders EMPTY)
+      -> no soft-band spectral weight; thermally EMPTY at the
+         relevant frequencies (no lending statistics to supply);
+         c-number/adiabatic character at soft frequencies (drives,
+         not exchange partners); the one candidate matter family
+         in the soft band (10-kAU apsidal, 2.49 H) was dictionary-
+         killed at 12 implied-a0 orders (10B, archived).
+
+  (iv) COHERENT / CLASSICAL PARTNERS:
+      mean-vs-variance split: a coherent amplitude displaces the
+      MEAN quadrupole; the mean is the MEASURED static 0.086 =>
+      rate rides e_a = 0.086 = the 10E central shortfall
+      [1.8e-4, 2.2e-3] H vs 0.5 H = 2.4-3.4 orders. DEAD.
+      Poisson-gate postdiction row (state-statistics substituted):
+        thermal   p_gal = 0.6888, p_bin = 0.5279 (6E-banked postdictions)
+        coherent  p_gal = 0.7493, p_bin = 0.5389
+        9U measured p = 0.6471 +/- 0.0746: thermal z = +0.56, coherent z = +1.37 (lean-grade garnish)
+      pure c-number drives: NO occupation statistics at all =>
+      no e_N-running of the gate => the measured two-anchor tail
+      split (0.688/0.528 postdicted, 6E) is unproducible. DEAD.
+
+  (v) NO PARTNER (perturbative at the derived lambda) = SB-6:
+      weight <= 5% of saturated with raw-n structure. DEAD.
+
+  partition: (i) bound-cloud modes [the ceiling, G4] / (ii) free
+  fields / (iii) matter dof exhaust the ontology; (iv)/(v) cover
+  state + coupling character. The partition is offered to the
+  round for attack.
+
+==============================================================================
+TOKENS: G1a:P G1b:P G2:P G3:P G4:strike-leg SB4a:P SB4b:P SB6:P G7:P G8:P
+LETTER: C-STRIKE-CANDIDATE (both kill clauses met; ROUND-27 affirmation REQUIRED before the credence executes)
+
+KILL-CLAUSE EVALUATION (printed with inputs):
+  clause (a) collective amplification to saturation: the ceiling
+    is K-FREE (G1b + G2 + budget); tightest MAX-GRANT shortfall 9.4x
+    (>= 5x at every anchor: YES); loosest-budget row >= 3x: YES;
+    the closure surface needs q_phys >= 9.4 (RMS >= 945% fractional
+    distortion) at maximal granting -> the dilemma un-derives the
+    vertex there. CLAUSE (a): FAILS
+  clause (b) non-saturated imprinting of e^-Lx: reached weight
+    <= 5% of saturated at the ceiling angles with RAW-N structure
+    (D4-matched, 10C-G7-rejected weighting) + sector rows (ii)-(iv)
+    orders-dead. CLAUSE (b): FAILS
+
+CREDENCE (pre-signed, mechanical): C-STRIKE-CANDIDATE + ROUND-27
+affirms (no unpatched hole in the kill case) -> mech 15 -> 8
+(REQUIRED -- the R26 signature; no discretion). + ROUND-27 finds an
+unpatched hole -> HOLD 15, the hole = the named successor.
+C-CLOSES-CANDIDATE + clean round -> 15 -> 19. C-SURFACE-GRAY ->
+HOLD 15 (successor O5-ANHARM). anomaly-real 53 UNTOUCHED in every
+branch (no sky fits).
+==============================================================================
+done (0.1 min)

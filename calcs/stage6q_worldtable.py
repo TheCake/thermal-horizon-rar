@@ -573,6 +573,11 @@ CHECKS = [
      'GF8:REPORT  REQ-cells:32 viol:0', 'data/stage10f_geometry.txt'),
     ('mech-10f-geometry', 'LETTER RETRACTED: 10F G-CLOSED -> G-OPEN',
      'data/stage10f_addendum.txt'),
+    ('mech-10g-collective', 'f* = x*/(e^x*+1) = 0.2784645428 = x* - 1 '
+     'EXACTLY', 'data/stage10g_collective.txt'),
+    ('mech-10g-collective', 'TOKENS: G1a:P G1b:P G2:P G3:P '
+     'G4:strike-leg SB4a:P SB4b:P SB6:P G7:P G8:P',
+     'data/stage10g_collective.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
