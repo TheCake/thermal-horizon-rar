@@ -9,6 +9,38 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-09 (sixth close) — ROUND 28: P3's first referee round, adopted in full (draft 0.3)
+
+The author's "Do whatever needed" was spent on the two picks I'd named:
+the MUSE-DARK III primary read (which the books demoted to a RE-read —
+see the fifth-close correction below and trap #18) and P3's first
+referee round. ROUND 28 verdict MAJOR REVISION; all sixteen findings
+applied same-day; report in REVIEW-ROUND28-OPUS.md (NEVER commit);
+every referee number re-verified in calcs/round28_addendum.py before
+adoption (the memory rule, executed).
+
+WHAT THE NEXT INSTANCE MUST HOLD STRAIGHT:
+- THE 1.449 STORY (don't re-litigate): 9Q's Ω_orb > √(3Ω_Λ)H₀ = 1.449 H₀
+  and the referee's OSCO √3 are ONE theorem in two unit conventions
+  (√3·√0.7 = 1.449 exact; his M/r³ = 4H² is the κ_r² = 0 surface at
+  Λ = 3H_Λ²). Both correct. The paper now states orbit class +
+  convention. If a future round "catches" either number again, point
+  at GA-1 in data/round28_addendum.txt.
+- THE WEIGHT SPINE IS NOW WRITTEN: p = ½ + r·s²/2 (one relation; s² =
+  per-system gate, r = global amplitude, ceiling ½; postdictions =
+  the r = ½ slice; 9V r̂ = 0.34 ± 0.19 beside them; tail ceiling ¾ =
+  the r = ½, s² → 1 corner). Fig 1 plots s², Fig 4 plots (½)s — say
+  which when editing captions.
+- M4 STANDS PERMANENTLY: the paper says in plain words the adversarial
+  reviews are AI sessions, not human peer review. Never soften that
+  back.
+- No credence moves on paper rounds (53 / 8 untouched).
+- P3 = draft 0.3. Next P3 gate = the author's (2nd round or
+  circulation). The 250-word abstract now sits at 248 — edits must
+  re-run the register audit (the one-liner in LOG's 0.2 entry).
+
+---
+
 ## 2026-08-09 (fifth close) — P3 draft 0.2: the post-strike honesty revision + two data scouts
 
 The author's "Ok, you have my go, do whatever you think should be done
@@ -50,7 +82,7 @@ SCOUTS (Haiku, both landed, scout-grade — primary-read before ANY use):
 - Z-PAIR: the scout surfaced MUSE-DARK III (Ciocan+ 2026,
   arXiv:2604.22613) as "new" — IT WASN'T: the 8E round primary-read
   it on 2026-07-31 (NOTES lit-note + P3 annotations; PDF cached as
-  data/musedark3.pdf). TRAP FINGERPRINT (new standing rule): before
+  data/musedark3.pdf). TRAP FINGERPRINT #18 (new standing rule): before
   acting on ANY scout "discovery", grep NOTES + PREDICTIONS for an
   existing read — I fetched a duplicate PDF before the books caught
   me (duplicate deleted). The re-read still PAID: one correction to

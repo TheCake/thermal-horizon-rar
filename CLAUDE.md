@@ -651,6 +651,29 @@ addendum + P3 third annotation.
 NEXT FORK (author's): circulation queue TODO 27–31 · P3 referee round
 · κ=1-deep · the two scouted instruments · DR4 readiness.**
 
+**ROUND 28 (2026-08-09 sixth close, the author's second blanket go):
+P3's FIRST REFEREE ROUND — fresh journal-referee session vs draft 0.2;
+verdict MAJOR REVISION; ALL SIXTEEN findings adopted same-day → P3
+DRAFT 0.3 (report REVIEW-ROUND28-OPUS.md uncommitted; every referee
+number re-verified calcs/round28_addendum.py GA-1..8 ALL CONFIRMED).
+Zero computed errors. His M1 ("cannot reproduce Ω/H > 1.449; circular
+OSCO gives √3") RESOLVED as one theorem/two conventions: 9Q quotes
+√(3Ω_Λ)H₀ at physical Λ; his √3 H_Λ is pure-dS units; √3·√0.7 = 1.449
+exact — paper §3.2 now derivation-visible (Ω_orb, both forms; the real
+defect was "every bound orbit" for the proven stable-CIRCULAR class).
+Adopted structure: §2 now writes THE WEIGHT SPINE once — p = ½ + r·s²/2
+(postdictions = the r = ½ slice; 9V r̂ = 0.34±0.19 co-quoted, p_gal
+0.688→0.628 both in band; three ½/¾ constants mapped); overclaim
+hedged (in-reading antecedent + κ-freedom clause); acknowledgments
+state the reviews are AI sessions NOT human peer review (never soften
+back); Ω_orb/Ω-gap/x_amb disambiguated; 4 orphan refs cited; abstract
+248w; +1 repro row. NO credence moves (53 / 8). P3 next gate =
+author's (2nd round or circulation). Trap #18 logged (grep NOTES +
+PREDICTIONS before acting on any scout "discovery" — the MUSE-DARK
+re-read; its dividends live in the 2026-08-09 NOTES addendum + P3
+third annotation: slope framework-conditional 1.59-vs-1.20, lock at
+1.6–3.1σ from their MOND row, lens-bias successor sharpened).**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

@@ -1,0 +1,48 @@
+ROUND-28 ADDENDUM -- referee-number verification
+============================================================
+
+GA-1  the stability bound: 9Q chain vs his OSCO sqrt(3)
+  kappa^2 = G*M/r**3 - 4*Lambda*c**2/3  (expect GM/r^3 - 4/3 Lambda c^2)
+  identity residual: 0
+  Omega^2 at marginal stability: Lambda*c**2  (expect Lambda c^2)
+  9Q convention (H = H0, physical Lambda): Omega/H0 > sqrt(3)*sqrt(Omega_Lambda)
+    at Omega_Lambda = 0.7: 1.449138  (banked 1.449)
+  his convention (H = H_dS, Lambda = 3H^2): Omega/H_dS > sqrt(3) = 1.732051
+  reconciliation: sqrt(3)*sqrt(OmL) = 1.449138 = 1.449  EXACT
+  his OSCO: kappa^2=0 -> GM/r^3 = (4/3)Lam c^2 = 4 H_dS^2  -> his 'M/r^3 -> 4H^2'  CONFIRMED
+  VERDICT: both numbers correct; ONE theorem, two unit conventions.
+  Paper defect REAL as flagged: 'every bound orbit' overstates the
+  proven class (stable CIRCULAR orbits via epicyclic stability), and
+  no convention was stated. Fix adopted in the text.
+
+GA-2  Fermi optimum
+  x* = 1.2784645  (his 1.278465; banked 1.2784645)
+
+GA-3  tail postdictions
+  galaxy: s^2 = 0.7551 (banked 0.754), p = 0.6888 (banked 0.688)
+  binary: s^2 = 0.1117 (banked 0.112), p = 0.5279 (banked 0.528)
+
+GA-4  multiplicative divergence
+  n_BE(ln 2) = 1.000000000000  (exactly 1 -> 1/(1-n_BE) diverges); y = (ln2)^2 = 0.480
+
+GA-5  his r-slice arithmetic (M2)
+  p(r=0.5) = 0.6888  (pure dispersive)
+  p(r=0.34) = 0.6284  (9V fit)
+  his 0.688/0.628 both inside 0.65 +/- 0.075: z = 0.52 / 0.29 sigma  CONFIRMED
+
+GA-6  squares identity (amplitude vs variance shortfalls)
+  6.67^2 = 44.5, 9.18^2 = 84.3  vs banked variance factors:
+  binary 89/(2*0.502+1) = 44.4;  galaxy 1202/(2*6.63+1) = 84.3
+  CONFIRMED -- his consistency check holds because variance = amplitude^2.
+
+GA-7  the 9V cross-tie phrasing (m5)
+  |0.3895-0.3904| = 0.0009 absolute; relative = 1/433
+  his point CONFIRMED: 'one part in 10^3' reads relative; the honest phrase is 'within 0.001'.
+
+GA-8  orphan references (m1)
+  Chae et al. 2021: body citations = 0  (ORPHAN CONFIRMED)
+  Desmond et al. 2024: body citations = 0  (ORPHAN CONFIRMED)
+  McGaugh et al. 2016: body citations = 0  (ORPHAN CONFIRMED)
+  Milgrom 1983: body citations = 0  (ORPHAN CONFIRMED)
+
+ALL REFEREE NUMBERS VERIFIED. Adoption licensed.

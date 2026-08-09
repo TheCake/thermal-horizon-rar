@@ -14755,6 +14755,71 @@ the OTHER half of the machine (the part that bends the rulebook
 rather than trading pushes) survives intact. Honest score: the
 mechanism's chance drops from 15 to 8 out of 100.
 
+## ROUND 28 (2026-08-09): the first Paper-3 referee round — MAJOR REVISION, adopted in full the same day (draft 0.2 → 0.3); zero computed errors; the 1.449-vs-√3 "discrepancy" resolved as one theorem in two unit conventions
+
+The round was run as a fresh journal-referee session (OJAp frame, no
+program memory, readability an explicit dimension per the author's
+standing request), against draft 0.2 + STYLE.md + the companions.
+Report archived REVIEW-ROUND28-OPUS.md (uncommitted); every referee
+number independently re-verified in calcs/round28_addendum.py
+(GA-1..GA-8 ALL CONFIRMED, data/round28_addendum.txt) per the
+standing verify-reviewer-math rule.
+
+THE HEADLINE FINDING (his M1): he could not reproduce the abstract's
+"every bound orbit satisfies Ω/H > 1.449" — his own SdS computation
+put the outermost stable circular orbit at M/r³ = 4H² ⇒ Ω/H = √3 =
+1.732. VERIFICATION RESOLVED IT AS A CONVENTION SPLIT, both numbers
+correct: the 9Q chain (κ_r² = GM/r³ − (4/3)Λc² ⇒ Ω² > Λc² exact)
+quotes the bound at the PHYSICAL Λ = 3Ω_Λ H₀²/c², giving √(3Ω_Λ)H₀ =
+1.449 H₀; his H is the pure de Sitter rate (Λ = 3H²), giving √3 H_Λ;
+√3·√0.7 = 1.449 exactly, and his OSCO surface is the κ_r² = 0 surface.
+The paper's defect was real anyway: "every bound orbit" overstated the
+proven class (stable CIRCULAR orbits) and no convention was stated —
+§3.2 is now derivation-visible with Ω_orb and both unit forms.
+
+ADOPTED IN FULL (sixteen findings): M2 the weight-spine unification —
+the new §2 definitions paragraph writes p = ½ + r·s²/2 once, labels
+the tail postdictions as the r = ½ (pure-dispersive, no-averaging)
+slice, quotes the 9V fit r̂ = 0.34 ± 0.19 beside it (p_gal 0.688 →
+0.628, both inside the band; his arithmetic confirmed), and maps the
+three distinct ½/¾ constants (lending prefactor / amplitude ceiling /
+tail ceiling ¾ = the r = ½, s² → 1 corner); Figures 1/4 captions now
+say the sky points are input occupations on the model curve, NOT
+independent weight measurements (m3). M3 the overclaim — "uniquely
+selects"/"no longer a choice" now carries the in-reading antecedent,
+the characterized two-member family, and the κ-freedom clause;
+exhaustiveness language softened. M4 — the acknowledgments now state
+plainly that the adversarial reviews are AI referee sessions, not
+human peer review. M5 — Ω_orb/Ω(ambient gap)/x_amb disambiguated.
+Minors: four orphan references cited in place (McGaugh+16, Milgrom
+1983, Chae+21, Desmond+24); §1 band phrasing aligned to 0.26–0.45;
+κ = 1 ⟺ E_c = 2ħω labeled a program result; "within 0.001"; abstract
+248 words; multipole l-signposting; six jargon glosses; reviewer
+attribution dropped; "equal prominence" tempered; the 0.15 exclusion
+grade anchored. His numerical-check table matches the banked values
+digit for digit (Fermi 1.278465; 0.6885/0.5279; ln 2; 0.0049/0.0525;
+6.7²/9.2² = 44.9/84.6 ≈ the banked 45/84 variance factors — his
+consistency identity, now GA-6).
+
+CREDENCE: none moved (paper round; anomaly-real 53, mech conditional
+8 untouched). P3 status: draft 0.3, first referee round applied; the
+next P3 gate is the author's (second round, or the circulation queue).
+
+PLAIN VERDICT: SUCCESS — the round found zero wrong numbers, one
+genuinely unclear headline number (now derivation-visible), and the
+paper's biggest legibility defect (four weights, one relation, never
+written); all sixteen findings adopted same-day with independent
+verification of every referee claim.
+
+ELI12: We sent our physics paper to a fresh referee who tried to break
+every number in it. He couldn't break any — but he caught us using two
+different names for the same speed limit without saying which clock we
+used (both were right; we now show the clock), caught us juggling four
+look-alike "probability weights" without writing the one formula that
+connects them (now written), and made us say in plain letters that our
+tough referees so far have been AIs, not humans. The paper got harder
+to misread and nothing in it got weaker.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
