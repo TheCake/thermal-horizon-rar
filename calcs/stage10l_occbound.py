@@ -121,6 +121,23 @@ Bankable regardless: the existence map, the production table, the
 convention pin, the taxonomy.
 
 COMPUTE < 3 min.  Writes data/stage10l_occbound.txt.
+
+AMENDMENT A1 (2026-08-09, post-run-1 self-catch, logged BEFORE any
+quote; run-1 output preserved as data/stage10l_occbound_run1.txt):
+run 1 printed L-OPEN solely because the G10L-2 kappa->0 regression bar
+was mis-set arithmetic, not physics: at kappa = 1e-9 the FIRST-ORDER
+response of the fixed point is ~ kappa (x/2)(n+1) n(n+1) ~ 2e-7 at
+x = 0.05 -- five orders above the 1e-12 bar, which therefore tested
+the finite-kappa response, not the limit.  (Every physics gate fired
+as designed: G10L-3 FIRES family-stable, G10L-4 FIRES, G10L-1/5 exact;
+the existence map, production table, and convention pin are unchanged
+between runs.)  FIX: the regression is now a proper limit test --
+n-bar(kappa) evaluated at kappa in {5e-7, 1e-6}, linearly extrapolated
+to kappa = 0; bars: |intercept - n_BE(x)|/n_BE(x) <= 1e-8 AND slope >
+0 (the softening direction).  A wiring bug in G_soft or the iteration
+would break the linearity, the intercept, or the sign, so the gate
+remains falsifiable.  No other gate, bar, letter, or credence cell is
+touched.
 """
 import math, time
 import numpy as np
@@ -231,11 +248,15 @@ def kmax_of(xv, c, detector, lo=1e-4, hi=4.0):
 det_it = lambda kv, xv, c: exists_iter(kv, xv, c)[0]
 det_sc = lambda kv, xv, c: exists_scan(kv, xv, c)
 
-# G10L-2 solver gates
+# G10L-2 solver gates (A1: linear-extrapolation limit test)
 ok0 = True
 for xv in (0.05, 0.5, 2.0):
-    e, nb = exists_iter(1e-9, xv, 1.0)
-    ok0 &= e and abs(nb - nbe(xv)) <= 1e-12*max(1, nbe(xv))
+    e1, nb1 = exists_iter(5e-7, xv, 1.0)
+    e2, nb2 = exists_iter(1e-6, xv, 1.0)
+    icpt = 2*nb1 - nb2
+    slope = (nb2 - nb1)/5e-7
+    ok0 &= (e1 and e2 and slope > 0
+            and abs(icpt - nbe(xv))/nbe(xv) <= 1e-8)
 res_ok = True
 agree = 0; total = 0
 rng_k = np.linspace(0.05, 2.0, 30)

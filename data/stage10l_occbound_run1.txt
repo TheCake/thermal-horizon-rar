@@ -1,0 +1,74 @@
+STAGE 10L THE SELF-CONSISTENT OCCUPATION BOUND (pre-reg: this commit)
+
+G10L-1a 10J regressions: spacing residue 0; sigma=1/2 form residue 0; kappa=1 rungs residue 0
+G10L-1b stiffening family c1(beta) = 1/(2(1+beta)): [('0', '1/2', True), ('1/2', '1/3', True), ('1', '1/4', True)]
+G10L-1c kappa_r map = kappa(1-kappa/2): d/dkappa at 1 = 0 (exact zero); kappa_r(1) = 1/2 + 0
+G10L-1: PASS
+
+G10L-2 solver: kappa->0 regression False; residuals True; detector agreement 750/750 (bar 98%); kmax cross-check True -> FAIL
+
+R-A THE EXISTENCE MAP  kappa_max(x) per softening member
+  (kappa_lock = 0.925; deep window x = 0.03-0.3)
+  x      c=0.0      c=0.5      c=1.0      c=1.5      
+  0.030  0.0151     0.0150     0.0149     0.0148     
+  0.050  0.0253     0.0250     0.0247     0.0244     
+  0.100  0.0513     0.0500     0.0488     0.0476     
+  0.200  0.1052     0.0999     0.0952     0.0910     
+  0.300  0.1621     0.1497     0.1395     0.1308     
+  wider map (x up to the Newtonian arm), c = 1:
+    x = 0.55  kappa_max = 0.2415
+    x = 1.00  kappa_max = 0.3987
+    x = 2.00  kappa_max = 0.6609
+    x = 3.00  kappa_max = 0.8453
+    x = 4.00  kappa_max = 0.9821  <- the locked kappa first EXISTS out here
+    x = 6.00  kappa_max = 1.1716
+  at kappa_lock = 0.925 (c=1) the fixed point first exists at x ~ 3.56 -- the NEWTONIAN arm, where nu ~ 1 and nothing needs explaining
+  exclusion ratios kappa_lock/kappa_max over the deep window (c=1): [62.1, 37.5, 19.0, 9.7, 6.6]
+  classical closed form (diagnostic, recorded): x_c ~ kappa/(2(1/2 - kappa/8)^2) -> 3.56 at kappa=1 vs numeric 4.16
+  THE R30 QUESTION ('is kappa -> 1 where self-consistency first fails?'): NO -- failure sits at kappa ~ O(x) in the deep window (kappa_max 0.015-0.139), far below 1; kappa = 1 is not the failure edge
+G10L-3 family stability of the exclusion (all members, both detectors, every deep x: kappa_max <= 0.4625): FIRES
+
+R-B THE PRODUCTION TEST at (kappa_lock, x = 0.05)
+  measured deep demand nu = 1 + kappa_lock n_BE(0.05) = 19.04
+  SCHA c=0.0: NO fixed point (construction fails entirely)
+  SCHA c=0.5: NO fixed point (construction fails entirely)
+  SCHA c=1.0: NO fixed point (construction fails entirely)
+  SCHA c=1.5: NO fixed point (construction fails entirely)
+  truncated-Gibbs KEEP-A (through peak): 3 levels kept; nu(x=0.05) = 1.916, sup over x = 1.925 (under-produce >= 9.9x)
+  truncated-Gibbs KEEP-B (below peak): 2 levels kept; nu(x=0.05) = 1.456, sup over x = 1.462 (under-produce >= 13.0x)
+G10L-4 production clause (every member fails by >= 5x or has no fixed point): FIRES
+
+STIFFENING CONTRAST (the measured family; negative feedback)
+  beta=1 member == 4F boot nu = 1+n_BE(nu*y): worst |d| = 5.3e-15 (bar 1e-12) -> PASS
+  every member exists at every (x, beta) scanned (negative feedback); deep limits all nu -> 1/x; c1 runs 1/2 -> 1/4.
+  MEASURED STATUS (ledger, no new fits): deep/binary beta -> 0 (5R beta < 0.03; 5T regime rows); boot (beta = 1) sky-dead (5M).  The sky sits at the NO-FEEDBACK point of the stiffening family and OUTSIDE the softening family entirely.
+
+R-C THE CONVENTION PIN (sympy exact; archived meters only)
+  bare form: nu = kappa_b/x + (1 - kappa_b/2) + kappa_b x/12; residue 0
+  => deep-amplitude meter a0_fit/a0_h = kappa_b^2 (g_obs = kappa_b sqrt(g_N a0_h)); c1 meter kappa_b = 2(1 - c1).
+  first-transition (renormalized) convention: om_r = D(0) = om(1 - kappa_b/2); matched deep amplitude => kappa_r = kappa_b(1 - kappa_b/2), maximum EXACTLY 1/2 at kappa_b = 1.
+  map over the measured band:
+    kappa_b = 0.888 -> kappa_r = 0.494
+    kappa_b = 0.925 -> kappa_r = 0.497
+    kappa_b = 1.000 -> kappa_r = 0.500
+    kappa_b = 1.100 -> kappa_r = 0.495
+    kappa_b = 1.480 -> kappa_r = 0.385
+    kappa_b = 1.503 -> kappa_r = 0.373
+  => the renormalized convention is nearly kappa-BLIND over the whole measured band (range 0.494-0.500 for kappa_b in [0.888, 1.10]): the BARE convention is the informative one, and it is the vertex convention (kappa = 4g^2/(Om om_bare)).
+  ARCHIVED METERS: 4S/4Z/10D all parameterize x = sqrt(g_N/a0) -- bare by construction (verified in their scripts).  The two-pole tension (lock-meter kappa_b = 0.925-1.00 vs c1-meter 1.10-1.48) is therefore CONVENTION-ROBUST -- a physical tension (kappa runs; the one-kappa form is 10D-rejected), not a bookkeeping artifact.  [Never print 'kappa measured ~1' -- R24 discipline.]
+  curiosity row (recorded): at closure (kappa_b = 1) a first-transition meter would read kappa_r = 1/2 -- the same number as c1; both are faces of (1 - kappa/2).
+G10L-5: PASS
+
+R-D TAXONOMY (report-grade)
+  family      feedback   deep limit    sky status
+  softening   positive   NO fixed pt   excluded HERE (this stage): cannot exist at sky occupations
+  stiffening  negative   nu -> 1/x     measured: beta -> 0 deep/binaries; beta = 1 (boot) sky-dead 5M
+  bare-pinned none       nu -> kappa/x the measured dictionary (kappa ~ 1 band)
+  READING (fold-row resolution): the self-consistent structure the 10J fold row demanded is NOT a re-thermalized occupation -- both feedback signs are now excluded or measured-zero; consistent with the 10C separation theorem (the bath occupation cancels between time-orderings; the drive is external).  The occupation is bare-pinned twice over: measured (beta -> 0) and structural (this stage).
+  READING (R30 successor 2, booked, no PREDICTIONS row): near kappa = 1 the E(2) = E(1) degeneracy makes the two dressed states hybridize under any static perturbation -- an anomalously large low-frequency response is a DR4-era signature candidate; no numeric kill condition derived here.
+
+====================================================================
+VERDICT LETTER: L-OPEN
+pre-signed credence: L-PINNED -> HOLD mech 8; anomaly-real 53 untouched (no sky fits)
+gates: G1 PASS | G2 FAIL | G3 FIRES | G4 FIRES | G5 PASS | G6 mechanical
+total wall-clock 2.2 min
