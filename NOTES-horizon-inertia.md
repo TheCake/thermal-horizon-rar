@@ -14840,35 +14840,48 @@ through all five runs.** What the attempt measured:
   quantitative cuts (z, M*, DC14 membership, evidence) give N = 85 under
   every released convention; the 6-galaxy gap is Paper I's *visual*
   "regular" flag, which no released column encodes (A1).
-- **Level (report-grade):** the elevated z∼1 RAR offset DOES reproduce
-  under Mestel-like gas recipes — pooled a₀ = 2.62 (σ_int 0.220,
-  inside the gate band) and 2.15 (0.190, 0.01 below) vs their
-  2.38 +0.12/−0.10; reconstructed offsets +0.58…+0.67 dex match their own
-  released f_DM(Re) ≈ 0.76. The headline OFFSET is in the released data.
-- **Slope: not reconstructible.** Across 22 estimator-valid recipes
-  spanning the text-permitted convention space (16 guessed + 6
-  Paper-I-pinned — v_AD² = 0.92σ²r/r_d, Sérsic ionized-gas-shaped disk,
-  truncated constant-Σ gas, Planck-2015), no recipe passed the z-fit
-  gate; the level-passing recipe fits a₁ = −1.71 (wrong sign). The raw
-  bin offsets DO rise (+0.095 dex bin1→bin4, size-consistent with their
-  1.99→2.71, which needs ~+0.067) — the ingredient exists; the
-  pipeline-grade slope does not materialize from released information.
-- **The blockers are all z-leveraged and all unreleased:** per-point MCMC
-  error profiles (MNR weighting is slope-relevant); M_HI / gas extent —
-  while the paper's own gas text is internally ambiguous by ×2 AND
-  curvature (the exact Casertano solve of a constant-Σ disk nearly
-  cancels interior — the pinned recipes drive a₀ to 8–10 and cannot
-  reproduce their own level — vs the stated v ∝ √(Σr) Mestel scaling,
-  which can); a release version seam (folder Vvir 160.6 vs catalog 126.3
-  at ID3); the 4-galaxy bulge list.
-- **Lock-side dividend (no reconstruction needed):** at their own
-  Planck-2015 cosmology the lock intercept cH₀/2π = 1.047e-10 sits INSIDE
-  all three of their fitted a₀(0) rows — 1.00±0.04 (DM, 2.3σ), 1.03±0.05
-  (MOND framework, 0.7σ), 1.05±0.05 (per-galaxy best-evidence, 0.1σ; all
-  95% CI). The lock slope linearized over their window (1.02) sits ~3.5σ
-  below their MOND-row a₁ = 1.20±0.10 (95%) at face value — and the
-  form-coupling bias that would arbitrate that comparison (leg B) is
-  exactly what the release cannot support.
+- **Level (ballpark-grade — relabeled by ROUND 29):** the elevated z∼1
+  scale reproduces — after the amendment-4 integrator fix the
+  Paper-I-pinned recipes PIN20-E1/E2 sit IN the gate band (a₀ =
+  2.34/2.51, σ_int 0.218/0.230; run 6), alongside the guessed-recipe
+  rows (2.62/0.220 in-band; 2.15/0.190 at 0.01 below — superseded
+  recipes, provenance flagged) vs their 2.38 +0.12/−0.10. The
+  offset-vs-f_DM match is DC14 self-consistency, not independent
+  corroboration (ROUND-29 Finding 5). The headline OFFSET is in the
+  released data.
+- **Slope: does not survive to pipeline grade (ROUND-29 softened
+  form).** Across the recipe space (16 guessed + 6 Paper-I-pinned,
+  re-run corrected in run 6), no recipe passed the z-fit gate; the
+  level-passing recipes fit a₁ ≤ 0 or a sign that FLIPS with the
+  error model (corrected pinned: E1 −0.90/−1.00/−0.60 vs E2
+  +1.03/+0.31/+1.84) — the per-point-errors blocker demonstrated
+  in-ladder. The offset material is weak and recipe-dependent
+  (bin4−bin1 = +0.01…+0.14 dex across recipes/statistics vs the
+  ~+0.067 their trend needs), and the ROUND-29 per-galaxy route (the
+  paper's own App-E cross-check) shows a positive NON-significant
+  lean (referee +0.65, 90% CI [−0.75, +2.68]; our implementation
+  +0.22 [−0.93, +1.34]; both CIs contain 0 and their 1.42).
+- **The blockers are all z-leveraged and all unreleased:** per-point
+  MCMC error profiles (weighting is slope-relevant — the in-ladder
+  sign flip above is the demonstration); M_HI / gas-disk extent /
+  profile (the exact Casertano solve of a constant-Σ disk nearly
+  cancels interior — force 0.6–25% of Mestel, verified — vs the
+  v ∝ √(Σr) scaling; ROUND-29 reframe: this ×2/curvature space is
+  the STAGE'S own convention variants, not a contradiction in the
+  paper, whose methods name the solve); a release version seam
+  (folder Vvir 160.6 vs catalog 126.3 at ID3); the 4-galaxy bulge
+  list. [Correction: run-5's "pinned recipes drive a₀ to 8–10" was
+  OUR ring-integrator π-bug (amendment 4, ROUND-29 Finding 1), not
+  the release's gas physics.]
+- **Lock-side dividend (no reconstruction needed; ROUND-29 phrasing):**
+  at their own Planck-2015 cosmology the lock intercept cH₀/2π =
+  1.047e-10 lands ON their MOND-framework row (1.03±0.05, 0.7σ) and
+  their per-galaxy best-evidence row (1.05±0.05, 0.1σ), and 2.3σ —
+  just outside the 95% CI — from their DM headline row (1.00±0.04;
+  all 95% CIs). The lock slope linearized over their window (1.024)
+  sits 3.4σ below their MOND-row a₁ = 1.20±0.10 (95%) at face value —
+  and the form-coupling bias that would arbitrate that comparison
+  (leg B) is exactly what the release cannot support.
 - **Trap #19 (standing):** run 3's frozen optimizer "reproduced" their
   Eq. 4 exactly because the fit starts WERE the published target values.
   Wiring-gate fits must never seed at the wiring target.
@@ -14895,6 +14908,69 @@ invisible gas spreads, which galaxies they hand-picked as "clean") were
 never published. So the referee gates said "stop, don't guess." One free
 gift: at their own choice of cosmic clock, the knob's starting value in
 their MOND fit lands almost exactly where our formula says it must.*
+
+## ROUND 29 (2026-08-09, the 10H referee round — adopted in full)
+
+Fresh adversarial session against the 10H letter and all five claims;
+he rebuilt the tracks from the release himself and re-ran the
+estimator, the wiring fit, the gas physics, and the lock arithmetic.
+Ruling: **UNPATCHED HOLE NO — H-FEASIBILITY-LIMITED AFFIRMED**, with
+one major catch of ours and two claim softenings, all verified in
+calcs/stage10h_addendum.py (GA-1/3/4/5/6) + run 6 (= GA-2) before
+adoption:
+
+- **His Finding 1 (the catch): a factor-of-π normalization bug in the
+  stage's ring-force integrator** — the shipped prefactor
+  double-divided by π; old/exact v² = 1/π against the exact Freeman
+  disk (we verified: 0.316 at every clean radius). It crippled the six
+  Paper-I-pinned recipes; run-5's "a₀ → 8–10" was OUR numerics, not
+  the release's gas physics. Amendment 4 (38c7907): prefactor fixed,
+  NEW gate G10H-9 (integrator vs exact Freeman ≤ 5%; passes at 0.008)
+  — the gate nobody had thought to write — and the trap-#19 seed
+  removed from the code.
+- **His Finding 2 (exculpatory, we reproduce): the letter is robust to
+  the fix.** Run 6, corrected ladder, unchanged gates: PIN20-E1/E2 now
+  pass the LEVEL gate (a₀ = 2.34/2.51) and every recipe still fails
+  the SLOPE gate, with the fitted sign flipping between error models
+  (E1 −0.90/−1.00/−0.60; E2 +1.03/+0.31/+1.84) — the unreleased
+  per-point errors are slope-deciding, demonstrated in-ladder.
+- **His Finding 3 (the route we never tried): the per-galaxy
+  regression** (their own App-E cross-check) gives a positive
+  NON-significant lean (his Theil-Sen +0.65, 90% CI [−0.75, +2.68];
+  our implementation +0.22 [−0.93, +1.34]) — consistent with their
+  own weak per-galaxy slope 1.42 +0.94/−0.89 and with zero. No
+  usable-grade recovery; "never materializes" softened to "does not
+  survive to pipeline grade."
+- Claim corrections adopted: C2 relabeled (level = ballpark-grade;
+  the fDM-offset match is DC14 self-consistency); C3's "+0.095"
+  replaced by the honest range (+0.01…+0.14, recipe-dependent); C4's
+  "inside all three rows" corrected (ON the MOND and per-galaxy rows;
+  2.3σ — outside 95% — from the DM row); the gas ×2/curvature clause
+  reframed as our convention-variant space, not a paper-internal
+  contradiction; the dump-artifact count corrected 27 → 11 (we
+  conflated window-outliers with dumps).
+- Amendment-integrity audit (his A1): git chain monotonic, amendments
+  not outcome-tuned, the A2 window cut removes zero points beyond the
+  v-floor in clean recipes; trap #19 verified real (the frozen run-3
+  fits returned their seed = the published target) and now enforced
+  in code.
+
+No credence at stake in any branch (feasibility cell HOLD 53 / mech 8
+already executed). Report archived REVIEW-ROUND29-OPUS.md (never
+commit). Ledger row ext-10h-musedark-recon patched in place with the
+adoption note; six gates re-audited PASS.
+
+**Plain verdict: SUCCESS** — the round did exactly what rounds are
+for: the stage's letter survived an independent rebuild, and the one
+real defect it found was ours, found fixable, and now gated forever.
+
+*ELI12: We asked a fresh robot referee to try to break our "we
+couldn't rebuild their growth measurement" conclusion. He rebuilt
+everything his own way and agreed — but he also caught a real bug in
+our gravity calculator (we divided by π twice), which had made one
+family of our attempts look worse than they were. We fixed it, added
+a permanent test so it can never happen again, re-ran everything, and
+the conclusion came out the same — now for the right reasons.*
 
 ## Honest credences (2026-07-21, end of Stage 2)
 

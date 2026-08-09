@@ -46,9 +46,29 @@ WHAT THE NEXT INSTANCE MUST NOT REDO:
   denormal rows (dump artifacts — v-floor 1 km/s); folder runs disagree
   with catalogs at parameter level (ID3 Vvir 160.6 vs 126.3); the dup
   catalog row (id 26) resolved nearer-folder.
-- ROUND 29 (the 10H referee round) = the next move in this arc; brief
-  him on the amendment chain + both claims (level report-grade,
-  slope-wall) + trap #19. Re-compute every number he produces.
+- ROUND 29 RAN AND CLOSED same day — ADOPTED IN FULL, and it was a
+  model round. HOLD STRAIGHT:
+  * THE π-BUG WAS REAL AND MINE: ring_v2 shipped with (G·m/π)·mean_φ —
+    the φ-mean over [0,π] already IS the ring average; correct
+    prefactor G·m. Old/exact v² = 1/π against Freeman (verified
+    GA-1). If any future integrator work touches ring forces, gate
+    G10H-9 (integrator vs exact Freeman) is the pattern — copy it.
+  * The letter SURVIVED his independent rebuild AND our corrected
+    run 6: level now in-band on the PINNED recipes (PIN20 2.34/2.51),
+    slope still fails everywhere, sign error-model-carried
+    (E1 negative, E2 positive) — that sign flip IS the
+    "per-point errors unreleased" blocker made visible; quote it as
+    the one-line proof of underdetermination.
+  * The per-galaxy route is now MEASURED (his +0.65 / ours +0.22,
+    CIs contain 0 and their 1.42): do NOT claim "slope absent" —
+    claim "does not survive to pipeline grade." A future
+    author-supplied error table could promote it either way.
+  * "Inside all three rows" was WRONG for the DM row (2.3σ = outside
+    95%). The honest lock sentence: ON the MOND row (0.7σ) and the
+    per-galaxy row (0.1σ), outside the DM row.
+  * Do not re-litigate amendment integrity: his A1 audit found the
+    chain clean (monotonic, not outcome-tuned, window cut removes 0
+    points beyond the v-floor in clean recipes).
 
 ---
 

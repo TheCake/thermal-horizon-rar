@@ -352,8 +352,9 @@ H-FEASIBILITY-LIMITED — the public release underdetermines their slope
 their gas text is internally ×2-and-curvature ambiguous), so neither leg was
 read; the firewall held. What did land: the z∼1 LEVEL reproduces from the
 release (report-grade, a₀ ≈ 2.2–2.6), and at their own Planck-2015 cosmology
-the lock intercept cH₀/2π = 1.047e-10 sits inside all three of their fitted
-a₀(0) rows (0.1–2.3σ; MOND row 0.7σ). The flip criteria are untouched —
+the lock intercept cH₀/2π = 1.047e-10 lands on their MOND-framework and
+per-galaxy rows (0.7σ / 0.1σ) and 2.3σ — just outside 95% — from their DM
+headline row (ROUND-29 phrasing). The flip criteria are untouched —
 model-conditioned tracks are not clean-grade external data. Reopeners: the
 author-contact route (Desmond is a co-author; outreach list), galpak source
 read, MIGHTEE z<0.08, DR4-era. Ledger ext-10h-musedark-recon.*

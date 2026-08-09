@@ -699,14 +699,32 @@ intercept cH₀/2π = 1.047e-10 sits INSIDE all three of their a₀(0) rows
 their MOND-row 1.20±0.10 ≈ 3.5σ face-value with the arbitrating
 form-coupling bias (leg B) exactly what the release cannot support.
 TRAP #19: never seed a wiring fit at the wiring target (run-3's frozen
-optimizer "reproduced" Eq. 4 = its own start values). Credence HOLD
-53 / mech 8 (pre-signed cell); PREDICTIONS P3 annotated NO flip.
-SUCCESSOR = the AUTHOR-CONTACT route (Desmond is a MUSE-DARK III
-co-author already on the outreach list — one email carries the papers
-+ the four data asks) · galpak_dark source read · MIGHTEE z<0.08 ·
-DR4. Ledger ext-10h-musedark-recon (206 rows, six gates PASS, 266
-tokens). ROUND 29 = the 10H referee round (announced; run within this
-arc).**
+optimizer "reproduced" Eq. 4 = its own start values; now enforced in
+code). Credence HOLD 53 / mech 8 (pre-signed cell); PREDICTIONS P3
+annotated NO flip. SUCCESSOR = the AUTHOR-CONTACT route (Desmond is a
+MUSE-DARK III co-author already on the outreach list — one email
+carries the papers + the four data asks; TODO 27b) · galpak_dark
+source read · MIGHTEE z<0.08 · DR4. Ledger ext-10h-musedark-recon
+(206 rows, six gates PASS). **ROUND 29 RUN + ADOPTED IN FULL same
+close (REVIEW-ROUND29-OPUS.md uncommitted; verification
+calcs/stage10h_addendum.py + run 6): hole NO — the letter AFFIRMED by
+his own independent rebuild; HIS CATCH = a factor-of-π bug in OUR
+ring-force integrator (old/exact v² = 1/π vs Freeman, verified) →
+amendment 4 (38c7907): fix + NEW gate G10H-9 (integrator vs exact
+Freeman, passes 0.008) + trap-#19 seed removed; run 6 corrected
+ladder: PIN20-E1/E2 now IN the level band (a₀ 2.34/2.51) and the
+slope STILL fails everywhere with its sign flipping between error
+models (E1 −0.9 vs E2 +1.0) = the unreleased-per-point-errors blocker
+demonstrated in-ladder; his per-galaxy route (never tried by the
+stage) = positive NON-significant lean (+0.65 his / +0.22 ours, CIs
+contain 0 and their 1.42) → "never materializes" softened to "does
+not survive to pipeline grade"; C2 relabeled ballpark-grade
+(fDM-match = DC14 self-consistency); C4 corrected (lock ON the MOND
+0.7σ + per-galaxy 0.1σ rows, 2.3σ outside-95% from the DM row); gas
+×2/curvature reframed as OUR convention space, not a paper
+contradiction; dump count 27 → 11. All six conditions executed.
+Amendment-integrity audit clean (chain monotonic, not
+outcome-tuned).**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

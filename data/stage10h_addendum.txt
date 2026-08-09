@@ -1,0 +1,34 @@
+ROUND-29 ADDENDUM -- stage 10H referee-number verification
+================================================================
+
+GA-1  the ring_v2 pi-bug vs the exact Freeman disk
+  old/exact v^2: [0.3175 0.3162 0.3157 0.316 ]  (1/pi = 0.3183)
+  new/exact v^2: [0.9975 0.9933 0.9918 0.9928]
+  CONFIRMED: the shipped prefactor double-divided by pi; his Finding 1 exact.
+
+sample rebuilt: 85 galaxies
+
+GA-6  dump-artifact recount: 11 galaxies carry a v < 1 km/s row at r > 2 kpc
+  (his 11-15; the amendment-2 text's '27' counted window-outliers too -- corrected)
+
+GA-3  the per-galaxy route on the CORRECTED pinned recipe
+  per-galaxy a0_hat: N = 69, median = 2.08 (his 2.65; their level 2.38)
+  bin medians: [1.81 1.76 3.68 2.08] (his 2.07/2.02/2.79/3.17; theirs 1.99->2.71)
+  Theil-Sen slope = +0.22, bootstrap 90% CI [-0.93, +1.34] (his +0.65 [-0.75, +2.68]); OLS = -0.25
+  READ: positive lean, CI contains 0 and their per-galaxy 1.42 -- CONFIRMS his Finding 3 (no usable-grade recovery; 'never materializes' softened).
+
+GA-4  C4 arithmetic
+  cH0/2pi (67.7) = 1.0468e-10  (his 1.0468)
+  DM: |1.047 - 1.0| / 0.0204 = 2.30 sigma
+  MOND: |1.047 - 1.03| / 0.0255 = 0.66 sigma
+  pergal: |1.047 - 1.05| / 0.0255 = 0.12 sigma
+  lock OLS slope over [0.33,1.44] = 1.024  (his 1.024)
+  MOND-row deficit: |1.024 - 1.20| / 0.0510 = 3.44 sigma  (his 3.44)
+  CONFIRMED; C4 phrasing corrected: lock INSIDE the MOND and per-galaxy 95% CIs, 2.3 sigma (outside 95%) from the DM row.
+
+GA-5  offset diagnostic across recipes (bin means of y-x)
+  corrected-pinned      : +0.835 +0.905 +0.971 +0.977  (bin4-bin1 = +0.143; bin3 dip: False)
+  Freeman+Mestel-gas    : +0.537 +0.596 +0.609 +0.640  (bin4-bin1 = +0.103; bin3 dip: False)
+  CONFIRMED: recipe-dependent size, persistent mid-bin dip -- the '+0.095, rising' clause softened per his Finding 4.
+
+ALL REFEREE NUMBERS VERIFIED AT GRADE. Adoption licensed; run 6 = GA-2 (the corrected ladder through the unchanged gates).

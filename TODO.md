@@ -1108,9 +1108,10 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     per-galaxy M_HI / gas-disk extent, (iii) the 79-galaxy 'regular'
     flag list, (iv) the App-E MOND-track products. Ledger
     ext-10h-musedark-recon carries the full finding; the level
-    replication (report-grade) + the intercept convergence (lock
-    1.047 inside all three of their a₀(0) rows) make the email a
-    scientific exchange, not a data beg.
+    replication (ballpark-grade, corrected-pinned recipes in-band per
+    ROUND 29) + the intercept convergence (lock 1.047 on their MOND
+    and per-galaxy rows at 0.7σ/0.1σ) make the email a scientific
+    exchange, not a data beg.
 28. **GD-anomaly replication on independent dwarf data** (the named
     P2 falsifier #3, executable by US now): LITTLE THINGS / SHIELD /
     other public resolved-dwarf rotation curves through the 8S-c dial
