@@ -567,6 +567,10 @@ CHECKS = [
      'data/stage10de_addendum.txt'),
     ('mech-10e-vertex', 'the vertex is x2 weaker than advertised',
      'data/stage10de_addendum.txt'),
+    ('mech-10f-geometry', 'lambda/g_close = sqrt(Omega2)*e_s*eta2/'
+     '(2*sqrt(Omega))', 'data/stage10f_geometry.txt'),
+    ('mech-10f-geometry', 'TOKENS: GF1:P GF2:P GF3:P GF4:P GF5:P GF6:P '
+     'GF8:REPORT  REQ-cells:32 viol:0', 'data/stage10f_geometry.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

@@ -14295,6 +14295,94 @@ One more calculation — how big the wobble really is, and what the
 handshake actually requires — decides it, and the kill condition
 is signed in advance.
 
+### Stage 10F — O5-GEOMETRY: the fluctuating amplitude and the exchange requirement (2026-08-09; pre-reg f78ff64; the ROUND-25 strike-bearing successor)
+
+**Question.** The R25 kill, pre-stated: fluctuating e_a stays ~0.086
+AND the exchange leg requires band-like saturation ⇒ strike 15→8.
+Plus the hardened symmetric form (no reading works ⇒ strike).
+
+**Verdict: G-CLOSED, gates 6/6 first-run**
+([calcs/stage10f_geometry.py](calcs/stage10f_geometry.py)) — **both
+kill clauses FAIL; the strike does not fire at stage level.**
+
+AXIS 1 (the amplitude): THE SECTOR-COORDINATE THEOREM (GF-1, exact) —
+the axisymmetric external drive pins ONLY the m=0 component of the
+cloud's five l=2 coordinates; the measured static q = 0.086 is that
+one DC amplitude; the four m≠0 components have zero static value and
+are free dynamical coordinates (same license as the occupied l=0
+mode). THE BRIGHT-MODE PROJECTION (GF-2, exact ≤ 5e-16): the
+system's quadrupole tensor selects ONE combination (9W); four dark;
+M=1 preserved in the exchange channel. ⇒ the exchange partner is the
+l=2 bright mode, amplitude ratio 1 BY CONSTRUCTION — the static |q|
+is a different object (the R25 Axis-1 question answered
+structurally). Magnitude closed form (GF-3, sympy exact):
+λ/g_close = (η₂/2)·e_s·√(Ω₂/Ω) — anchor-frequency-independent; Ω₂
+banded [√q, 1]·Ω (disclosed): deep-galaxy anchor reaches 0.53–0.98
+of g_close (enhanced band), binaries 0.2–0.4.
+
+AXIS 2 (the requirement): THE MAP (6X Hamiltonian verbatim — GF-4
+regression reproduced all six archived 10C G7 values to 1e-5 — +
+local thermal dissipators, 60 sparse-Liouvillian steady states over
+λ/γ ∈ [0.03, 30] × δ ∈ [0, 10λ] at n̄ = 0.502/2.0 + 6.63 extension):
+**the ambient KMS gate ratios and the lending-line detailed balance
+hold to ≤ 0.8% at EVERY cell — 32/32 R-EQ-region cells clean (GF-5
+PASS)** — the borrowed-configuration weight is a STATE property (6U
+detailed balance), not a transfer outcome. Requirement table:
+R-DYN (saturation) needs λ ≥ 0.5 H, derived λ = [6e-4, 2.6e-2] H —
+short 1.3–2.9 orders, NOT satisfiable; R-ADIA fails a fortiori;
+**R-EQ (bath-maintained statistics) = λ ≠ 0 + the standing
+thermalization license + soft-band δ — SATISFIED at every anchor.**
+THE RECONCILIATION: the 10E "shortfall" scored the exchange leg
+against the DISPERSIVE channel's requirement (g_close); each channel
+owes its own — dispersive amplitude at g_close (10C, κ=1-conditional),
+exchange gate at λ = derived/nonzero/soft-band.
+
+**O3 SELF-CORRECTION (caught pre-book, pre-round; the O3 row was
+report-grade, no letter clause rests on it):** the printed exchange
+coherence |⟨a†b⟩| ~ 1e-17 is NUMERICAL ZERO — an equal-temperature
+steady state carries no standing first-order exchange coherence
+(detailed balance; no flux between equal-T reservoirs); the "linear
+scaling ratio 2.00" was λ-proportional roundoff, not a witness. The
+corrected equilibrium statement: first-order coherence vanishes; the
+vertex's role lives in the LOOP AMPLITUDE — which is exactly the
+O5-INTERPLAY successor object, not this stage's claim. Flagged to
+ROUND 26 explicitly, with the companion honesty question: is the map
+PROTECTED-BY-CONSTRUCTION at equal temperatures (GF-5 shows R-EQ
+sufficiency, not discrimination)?
+
+GF-8 THE INTERPLAY ROW (report-grade): the exchange back-shift on
+the dictionary line λ²/(ωδ) reaches 2–22% at the binary x_loc=0.5
+band edge (galaxy ≤ 1%) — potentially measurable back-reaction, NOT
+budgeted here ⇒ **THE NAMED SUCCESSOR O5-INTERPLAY: one arithmetic
+carrying the 6H dispersive shares + the exchange loop's gate factor
++ this back-shift against the measured c₁/κ bands.**
+
+KILL EVALUATION (GF-7): clause (a) FAILS (bright mode, ratio 1);
+clause (b) FAILS (R-EQ carries the structure at λ ≪ γ); hardened
+clause NOT MET. CREDENCE (pre-signed): G-CLOSED + ROUND-26 no-hole
+→ mech 15→18; G-KILLED reviewer-affirmed → 15→8; anomaly-real 53
+untouched (no sky fits).
+
+PLAIN VERDICT: SUCCESS at the adjudication the round demanded — both
+strike clauses fail by computation (the static-q was the wrong
+object; the requirement is not saturation) — with the honest seams
+named: the interplay arithmetic is the one remaining pillar, and the
+map demonstrates sufficiency, not discrimination.
+
+ELI12: Two questions decided whether the door dies. First: is the
+room's bulge stuck (only its frozen shape matters) or can it wobble?
+We proved the stuck part is just ONE of five directions — the drive
+can only pin one — so four wobble freely, and the door's handle
+grabs exactly one combination of them at full strength. Second: does
+the handshake need to be PUMPED hard (it can't be — the push is 100×
+too slow), or is it a property the room's warmth maintains for free?
+We built the room in a computer with real thermal walls: the
+handshake's bookkeeping holds at every pump strength, including
+nearly zero — it's warmth-maintained. So the door lives. What's left
+is one piece of arithmetic: adding the door's small back-push on the
+melody to the full song and checking the total against what the sky
+plays.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

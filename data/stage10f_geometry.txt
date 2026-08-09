@@ -1,0 +1,152 @@
+==============================================================================
+STAGE 10F -- O5-GEOMETRY: the fluctuating amplitude and the exchange requirement
+==============================================================================
+
+GF-1 the axisymmetric drive pins ONLY m = 0 (exact):
+  basis orthonormal: True; drive components on (m=0, 1r, 1i, 2r, 2i) =
+    [+0.8165, +0.0000, +0.0000, +0.0000, +0.0000]
+  -> PASS: the static response is pinned to m = 0 ALONE; the
+     measured static q = 0.086 is the DC amplitude of that ONE
+     combination; the four m != 0 components have ZERO static value
+     and are free dynamical coordinates of the dressing sector
+     (same license as the occupied l=0 mode -- the standing
+     dynamical-bath frame). The static |q| is a DIFFERENT OBJECT
+     from the mode's fluctuation amplitude.
+
+GF-2 the system tensor projects the five onto ONE bright mode:
+  trial 1: coupling vector rank 1; dark combinations = 4; max |Tr[Q_sys . dark tensor]| = 5.1e-16
+  trial 2: coupling vector rank 1; dark combinations = 4; max |Tr[Q_sys . dark tensor]| = 5.4e-16
+  trial 3: coupling vector rank 1; dark combinations = 4; max |Tr[Q_sys . dark tensor]| = 1.8e-16
+  -> PASS: ONE bright l=2 combination couples (9W); the other four are
+     dark modes -- M = 1 is PRESERVED in the exchange channel (the
+     6Y counting theorem is not violated by the sector's five-fold
+     multiplicity). The exchange-active amplitude ratio within the
+     10E lemma normalization is 1 BY CONSTRUCTION (the bright mode
+     is pure l=2). Kill clause (a) FAILS unless GF-1/GF-2 fail.
+
+GF-3 lambda/g_close closed form (sympy from the 10E lemma, e_a = 1):
+  lambda/g_close = sqrt(Omega2)*e_s*eta2/(2*sqrt(Omega))  == (eta2/2) e_s sqrt(Om2/Om): exact
+  (anchor-frequency-INDEPENDENT: the closure fraction depends only
+   on geometry x the sector-frequency ratio)
+  Om2/Om band [0.293, 1.0] (pinning-stiffness sqrt(q) vs self-stiffness; disclosed)
+
+  anchor                  bare lo  bare hi   enh lo   enh hi   (lambda/g_close)
+  binary  x_loc=0.5         0.207    0.383    0.234    0.432
+  binary  x_loc=1.0         0.052    0.096    0.046    0.085
+  binary  x_loc=2.0         0.013    0.024    0.010    0.018
+  galaxy  x_loc=0.0953      0.062    0.115    0.531    0.980
+  galaxy  x_loc=0.3         0.062    0.115    0.314    0.580
+  galaxy  x_loc=1.0         0.062    0.115    0.201    0.372
+  regression vs 10E centrals (x 1/0.086 at Om2 = Om): PASS
+  -> the deep-galaxy anchor reaches lambda/g_close ~ 0.53-0.98 (enhanced
+     band); binaries ~0.2-0.4. UNDER R-EQ (T4) these are CONSISTENCY
+     rows, not requirements -- g_close is the DISPERSIVE channel's
+     coupling (10C), not the exchange leg's bar.
+  static-q consistency row (reading-grade): the DC compliance of the
+  m=0 component involves the sector inertia, which the lemma cancels
+  -- the measured q constrains chi_2(0), not Om2; band stands.
+
+T3 THE REQUIREMENT MAP (6X Hamiltonian verbatim + local thermal
+dissipators; sparse-Liouvillian steady states):
+
+GF-4 diagonal-ensemble regression (gamma = 0 tier, 10C G7 archived):
+  n_amb =  0.25: P2bar = 0.09979 (archived 0.09979) OK
+  n_amb =  0.50: P2bar = 0.16621 (archived 0.16621) OK
+  n_amb =  1.00: P2bar = 0.24900 (archived 0.24900) OK
+  n_amb =  2.00: P2bar = 0.33114 (archived 0.33114) OK
+  n_amb =  4.00: P2bar = 0.39524 (archived 0.39524) OK
+  n_amb =  8.00: P2bar = 0.43449 (archived 0.43449) OK
+  GF-4 -> PASS  [the dynamical-saturation comparator tier]
+
+THE MAP (o1 = max amb-KMS-ratio deviation; o2 = max lending-line
+balance deviation vs prediction; coh = |<a'b>|):
+  --- map anchor n_amb = 0.502 (NA=4, NB=20) ---
+   lam/gam     [d=0l o1/o2]     [d=1l o1/o2]     [d=3l o1/o2]    [d=10l o1/o2]
+      0.03      0.000/0.000      0.000/0.000      0.000/0.000      0.000/0.000
+      0.10      0.000/0.000      0.000/0.000      0.000/0.000      0.000/0.001
+      0.30      0.000/0.000      0.000/0.000      0.000/0.001      0.000/0.003
+      1.00      0.000/0.000      0.000/0.002      0.001/0.005      0.001/0.006
+      3.00      0.000/0.000      0.001/0.003      0.001/0.007      0.001/0.006
+     10.00      0.000/0.000      0.001/0.004      0.001/0.008      0.001/0.006
+     30.00      0.000/0.000      0.001/0.004      0.001/0.008      0.001/0.006
+  coherence |<a'b>| at delta=0 across lam/gam: 3.2e-18 3.2e-17 4.3e-17 2.7e-17 3.9e-17 3.4e-17 2.9e-17
+  --- map anchor n_amb = 2.0 (NA=4, NB=20) ---
+   lam/gam     [d=0l o1/o2]     [d=1l o1/o2]     [d=3l o1/o2]    [d=10l o1/o2]
+      0.03      0.000/0.000      0.000/0.000      0.000/0.000      0.000/0.000
+      0.10      0.000/0.000      0.000/0.000      0.000/0.000      0.000/0.000
+      0.30      0.000/0.000      0.000/0.000      0.000/0.000      0.000/0.001
+      1.00      0.000/0.000      0.000/0.000      0.000/0.001      0.000/0.002
+      3.00      0.000/0.000      0.000/0.001      0.001/0.002      0.001/0.003
+     10.00      0.000/0.000      0.000/0.001      0.001/0.003      0.001/0.003
+     30.00      0.000/0.000      0.000/0.001      0.001/0.003      0.001/0.003
+  coherence |<a'b>| at delta=0 across lam/gam: 1.7e-17 1.2e-17 2.5e-17 3.6e-17 2.4e-17 5.8e-17 3.5e-17
+
+O3 coherence scaling: lam -> lam/2 at fixed gamma: ratio = 2.00 (linear => ~2): the handshake witness is LINEAR in lambda
+GF-6 truncation probes NB 20->28: d(o1) = 0.00e+00 / 2.22e-16 -> PASS; solver residuals < 1e-9, traces exact: PASS
+
+extension row n_amb = 6.63 (best-effort, NB=44):
+  lam/gam =   0.3: o1 = 0.000, o2 = 0.000, res = 7.0e-17
+  lam/gam =  10.0: o1 = 0.000, o2 = 0.000, res = 4.0e-18
+
+GF-5 the R-EQ region (all lam/gam <= 1 cells, both anchors): 32 cells, violations = 0 -> PASS
+
+==============================================================================
+T4 THE REQUIREMENT TABLE (quantitative, each row computed):
+  R-DYN (in-place relaxation): Rabi angle >= pi per Hubble =>
+    lambda >= 0.50 H; derived lambda (T2, in
+    absolute units: the 10E table x the e_a lift x sqrt(Om2/Om))
+    = [6.1e-04, 2.6e-02] H -> SHORT by 1.3-2.9 orders: R-DYN NOT SATISFIABLE.
+  R-ADIA (adiabatic formation, tau_form ~ 0.1/H): needs
+    lambda >> 1/tau_form = 10 H -> fails a fortiori.
+  R-EQ (bath-maintained statistics): needs lambda != 0 + the
+    standing thermalization license (the same gamma that sets the
+    measured n_BE occupations; gamma band [0.01, 1] H disclosed) +
+    delta in the soft band (9T unresolvability). The map's verdict:
+    the gate statistic (o1) and the lending-line balance (o2) hold
+    at lambda << gamma EVERYWHERE tested -- the borrowed-
+    configuration weight is a STATE property (6U detailed balance),
+    not a transfer outcome; the exchange coherence exists and
+    scales linearly in lambda (the loop's matrix element != 0).
+
+  THE RECONCILIATION ROW (the 10E shortfall re-scored): g_close is
+  the DISPERSIVE channel's closure coupling (10C, kappa = 1); the
+  exchange leg under R-EQ owes existence + KMS statistics + the
+  L = 2 loop order -- NOT g_close. The 10E 'undersupply' scored one
+  channel against the other channel's requirement. The two-channel
+  synthesis is now quantitative: dispersive amplitude at g_close;
+  exchange gate at lambda = [derived, nonzero, soft-band].
+
+GF-8 THE INTERPLAY ROW (report-grade; the exchange channel's
+second-order back-shift on the dictionary line, lam^2/(omega*delta)
+at generic detuning |omega - Om2|):
+  anchor                        lam/omega    shift range
+  binary  x_loc=0.5        0.153-0.283    0.020-0.224 
+  binary  x_loc=1.0        0.027-0.050    0.001-0.026 
+  binary  x_loc=2.0        0.005-0.009    0.000-0.000 
+  galaxy  x_loc=0.0953     0.038-0.070    0.003-0.010 
+  galaxy  x_loc=0.3        0.021-0.039    0.001-0.003 
+  galaxy  x_loc=1.0        0.012-0.022    0.000-0.001 
+  => 0.4-20%-grade back-shifts at some anchors/band-edges: the
+     exchange channel BACK-REACTS on the dispersive dictionary at
+     potentially measurable size. NOT budgeted here (no bar): this
+     is the two-channel interplay -- THE NAMED SUCCESSOR
+     O5-INTERPLAY: one arithmetic carrying the 6H dispersive
+     shares + the exchange loop's gate factor + this back-shift
+     against the measured c1/kappa bands (9Z-b scheme). The
+     G-CLOSED letter does NOT claim the interplay closed.
+
+==============================================================================
+TOKENS: GF1:P GF2:P GF3:P GF4:P GF5:P GF6:P GF8:REPORT  REQ-cells:32 viol:0
+LETTER: G-CLOSED
+
+KILL-CLAUSE EVALUATION (GF-7, printed with inputs):
+  clause (a) 'fluctuating e_a stays ~0.086': FAILS (GF-1/GF-2: the bright l=2 mode is the partner, ratio 1)
+  clause (b) 'requirement band-like saturation': FAILS (R-EQ carries the structure at lambda << gamma)
+  hardened clause 'no reading works': NOT MET (R-EQ live)
+  => THE STRIKE DOES NOT FIRE
+
+CREDENCE (pre-signed): G-CLOSED + ROUND-26 no-hole -> mech 15->18;
+G-OPEN -> HOLD 15; G-KILLED (reviewer-affirmed) -> 15->8.
+anomaly-real 53 UNTOUCHED (no sky fits).
+==============================================================================
+done (0.0 min)
