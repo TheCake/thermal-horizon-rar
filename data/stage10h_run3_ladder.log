@@ -1,0 +1,44 @@
+STAGE 10H -- THE Z-LADDER CONTEST (MUSE-DARK III)
+================================================================
+
+G10H-8 family identity: max|nu_p(y,1/2) - Eq.1| = 0.00e+00  PASS
+
+G10H-0 census: base cut (z, Mstar, DC14 member) = 88; folder-missing among base: []
+  convention log_Z_DC14 < 15000: N = 85 (with folders 85)
+  convention log_Z_DC14 <= 15000: N = 85 (with folders 85)
+  convention BIC_DC14 < 15000: N = 85 (with folders 85)
+  convention BIC_DC14 <= 15000: N = 85 (with folders 85)
+  CENSUS-NEAR: using log_Z_DC14 < 15000, N = 85 (|N-79| = 6) FAIL under the original bar
+  AMENDMENT 1 APPLIED: N = 85 accepted -- the 6-galaxy gap is
+  the unreleased Paper-I 'regular' visual flag (no released
+  column encodes it); the wiring gates carry the burden.
+  duplicate DC14 row muse_id 26: kept second (nearer folder Vvir)
+per-galaxy build: 85/85 galaxies usable
+
+G10H-3 estimator self-test (3 synthetic MNR skies)
+  rep 0: a00 = 1.095, a1 = 1.589, sig_int = 0.171
+  rep 1: a00 = 0.631, a1 = 1.966, sig_int = 0.166
+  rep 2: a00 = 1.169, a1 = 1.411, sig_int = 0.167
+  means: da00 = -0.035 (bar 0.06), da1 = +0.065 (bar 0.18), dsig = -0.002 (bar 0.03)  PASS
+
+RECIPE LADDER (wiring gates G1/G2/G4; fixed order; first pass = primary)
+  MAPG-ON-E1     a0 =  1.60 si = 1.000 [f]  a00 =  3.70 a1 = -2.05 [f]  bins ----
+  MAPG-ON-E2     a0 =  1.59 si = 1.000 [f]  a00 =  3.53 a1 = -1.90 [f]  bins ----
+  MAPG-OFF-E1    a0 =  1.20 si = 7.922 [f]  a00 =  1.00 a1 =  1.60 [P]  bins ----
+  MAPG-OFF-E2    a0 =  1.20 si = 7.922 [f]  a00 =  1.00 a1 =  1.60 [P]  bins ----
+  MAPA-ON-E1     a0 = 10.00 si = 1.000 [f]  a00 = 10.00 a1 = -0.00 [f]  bins ----
+  MAPA-ON-E2     a0 = 10.00 si = 1.000 [f]  a00 = 10.00 a1 =  4.88 [f]  bins ----
+  MAPA-OFF-E1    a0 =  1.20 si = 7.953 [f]  a00 =  1.00 a1 =  1.60 [P]  bins ----
+  MAPA-OFF-E2    a0 =  1.20 si = 7.953 [f]  a00 =  1.00 a1 =  1.60 [P]  bins ----
+  PAR2-ON-E1     a0 =  0.81 si = 1.000 [f]  a00 =  1.88 a1 = -1.04 [f]  bins ----
+  PAR2-ON-E2     a0 =  0.92 si = 1.000 [f]  a00 =  1.65 a1 = -0.73 [f]  bins ----
+  PAR2-OFF-E1    a0 =  1.20 si = 7.908 [f]  a00 =  1.00 a1 =  1.60 [P]  bins ----
+  PAR2-OFF-E2    a0 =  1.20 si = 7.908 [f]  a00 =  1.00 a1 =  1.60 [P]  bins ----
+  PARP-ON-E1     a0 =  1.38 si = 1.000 [f]  a00 =  1.43 a1 = -0.14 [f]  bins ----
+  PARP-ON-E2     a0 =  1.58 si = 1.000 [f]  a00 =  1.58 a1 = -0.00 [f]  bins ----
+  PARP-OFF-E1    a0 =  1.20 si = 7.903 [f]  a00 =  1.00 a1 =  1.60 [P]  bins ----
+  PARP-OFF-E2    a0 =  1.20 si = 7.903 [f]  a00 =  1.00 a1 =  1.60 [P]  bins ----
+
+NO recipe passed wiring -> H-FEASIBILITY-LIMITED.
+(Measurements above stand as the reconstruction diagnostic; no
+ contest fit and no injection was computed -- firewall held.)

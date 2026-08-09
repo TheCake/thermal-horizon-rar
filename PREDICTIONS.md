@@ -345,6 +345,19 @@ two-leg contest (lock-vs-linear on released per-galaxy products + a lens-bias
 leg on locked-pair truth); their RCs are downloadable (their footnote 3). NOTES
 addendum 2026-08-09 carries the digits.*
 
+*Annotation 2026-08-09 (stage 10H executed; no status change): the two-leg
+contest was BUILT and pre-registered (546641f + three amendments) and closed
+H-FEASIBILITY-LIMITED — the public release underdetermines their slope
+(per-point errors, M_HI/gas extent, and the 'regular' flags are unreleased;
+their gas text is internally ×2-and-curvature ambiguous), so neither leg was
+read; the firewall held. What did land: the z∼1 LEVEL reproduces from the
+release (report-grade, a₀ ≈ 2.2–2.6), and at their own Planck-2015 cosmology
+the lock intercept cH₀/2π = 1.047e-10 sits inside all three of their fitted
+a₀(0) rows (0.1–2.3σ; MOND row 0.7σ). The flip criteria are untouched —
+model-conditioned tracks are not clean-grade external data. Reopeners: the
+author-contact route (Desmond is a co-author; outreach list), galpak source
+read, MIGHTEE z<0.08, DR4-era. Ledger ext-10h-musedark-recon.*
+
 ### P4 — the DR4 weak-ambient pair
 Weak-ambient wide binaries sharpen toward p ≈ 0.69, and the source-vs-dressed
 convention split becomes resolvable (Δp ≈ 0.025 at e_N = 0.4). (Stage 6U.)

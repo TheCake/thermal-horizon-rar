@@ -674,6 +674,40 @@ re-read; its dividends live in the 2026-08-09 NOTES addendum + P3
 third annotation: slope framework-conditional 1.59-vs-1.20, lock at
 1.6–3.1σ from their MOND row, lens-bias successor sharpened).**
 
+**10H (2026-08-09 seventh close, THE Z-LADDER CONTEST — the author:
+"Hunt is on"; pre-reg 546641f + amendments 9f9b4ee/b6452dd/82ad2e1,
+each pre-quote with its run preserved): the booked MUSE-DARK successor
+EXECUTED = H-FEASIBILITY-LIMITED by the pre-registered letter; firewall
+held through five runs (no contest fit, no injection ever computed).
+The release (dark-matter.osu-lyon.fr, fetched: 9 catalogs + 85
+per-galaxy galpak sets, calcs/fetch_musedark3_release.py)
+UNDERDETERMINES their headline slope: N = 79 unreproducible (quant cuts
+give 85; gap = unreleased 'regular' visual flags), per-point MCMC
+errors + M_HI/gas extent + bulge list unreleased, their gas text
+internally ×2-AND-curvature ambiguous (exact Casertano solve of their
+stated constant-Σ model nearly cancels interior — pinned recipes drive
+a₀ to 8–10, can't reproduce even their level — vs their stated
+v ∝ √(Σr) scaling which can). MEASURED ON THE WAY: the z∼1 LEVEL
+reproduces report-grade (pooled a₀ 2.62/σ 0.220 in-band + 2.15/0.190
+at 0.01 below vs their 2.38; offsets +0.58..+0.67 dex match their
+released fDM(Re) ≈ 0.76); the SLOPE never materializes (22
+estimator-valid recipes; level-passing recipe fits a₁ = −1.71; raw bin
+offsets DO rise +0.095 dex ≈ the needed size). LOCK DIVIDEND (no
+reconstruction needed): at their own Planck-2015 cosmology the lock
+intercept cH₀/2π = 1.047e-10 sits INSIDE all three of their a₀(0) rows
+(DM 2.3σ / MOND 0.7σ / per-galaxy 0.1σ, 95% CIs); lock slope 1.02 vs
+their MOND-row 1.20±0.10 ≈ 3.5σ face-value with the arbitrating
+form-coupling bias (leg B) exactly what the release cannot support.
+TRAP #19: never seed a wiring fit at the wiring target (run-3's frozen
+optimizer "reproduced" Eq. 4 = its own start values). Credence HOLD
+53 / mech 8 (pre-signed cell); PREDICTIONS P3 annotated NO flip.
+SUCCESSOR = the AUTHOR-CONTACT route (Desmond is a MUSE-DARK III
+co-author already on the outreach list — one email carries the papers
++ the four data asks) · galpak_dark source read · MIGHTEE z<0.08 ·
+DR4. Ledger ext-10h-musedark-recon (206 rows, six gates PASS, 266
+tokens). ROUND 29 = the 10H referee round (announced; run within this
+arc).**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

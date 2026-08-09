@@ -9,6 +9,49 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-09 (seventh close) — 10H: the z-ladder contest refused to fire, and that refusal is the result
+
+The author's "Hunt is on" bought the booked MUSE-DARK successor as a full
+pre-registered stage (10H, pre-reg 546641f, amendments 9f9b4ee/b6452dd/
+82ad2e1 — each logged pre-quote with its run preserved). Five runs, five
+honest stops; the firewall (no contest quantity before wiring passes)
+held every time. Final letter: H-FEASIBILITY-LIMITED. HOLD 53 / mech 8.
+
+WHAT THE NEXT INSTANCE MUST NOT REDO:
+- Do NOT re-attempt the MUSE-DARK reconstruction from the public release.
+  The wall is DATA, not code: per-point MCMC errors, M_HI/gas extent, the
+  6 'regular' visual flags, and the 4-galaxy bulge list are NOT in the
+  release; the paper's own gas text is internally ambiguous by ×2 AND
+  curvature (exact Casertano solve of constant-Σ nearly cancels interior
+  — drives a₀ to 8–10, can't reproduce even their level — while their
+  stated v ∝ √(Σr) scaling reproduces the level fine). 22 estimator-valid
+  recipes spanned the convention space; every level-passing recipe fails
+  the slope gate. The REOPENER is the AUTHOR-CONTACT route: Desmond is a
+  MUSE-DARK III co-author AND already on the circulation outreach list —
+  one email can carry both the papers and the four data asks.
+- The LEVEL result is real and quotable (report-grade): their elevated
+  z∼1 a₀ reproduces from the release (2.62/0.220 in-band; offsets match
+  their released f_DM(Re)). The SLOPE is what the release can't support.
+- The free gift needing no reconstruction: at Planck-2015 (their own
+  cosmology, Paper I) the lock intercept cH₀/2π = 1.047e-10 sits inside
+  ALL THREE of their a₀(0) rows (DM 2.3σ / MOND 0.7σ / per-galaxy 0.1σ,
+  95% CIs). Quote alongside the ~3.5σ face-value slope tension vs their
+  MOND row — the arbitrating form-coupling bias (leg B) is unmeasurable
+  from the release.
+- TRAP #19 (new, standing): NEVER seed a wiring fit at the wiring
+  target. Run-3's frozen optimizer (σ_intr start out of bounds → flat
+  1e12 landscape) "reproduced" their Eq. 4 exactly because my starts
+  WERE (1.0, 1.6). A dead fit confirms whatever you feed it.
+- Release forensics banked: their true_Vrot tables carry v = 0/1e-273
+  denormal rows (dump artifacts — v-floor 1 km/s); folder runs disagree
+  with catalogs at parameter level (ID3 Vvir 160.6 vs 126.3); the dup
+  catalog row (id 26) resolved nearer-folder.
+- ROUND 29 (the 10H referee round) = the next move in this arc; brief
+  him on the amendment chain + both claims (level report-grade,
+  slope-wall) + trap #19. Re-compute every number he produces.
+
+---
+
 ## 2026-08-09 (sixth close) — ROUND 28: P3's first referee round, adopted in full (draft 0.3)
 
 The author's "Do whatever needed" was spent on the two picks I'd named:

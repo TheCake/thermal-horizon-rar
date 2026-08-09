@@ -1100,6 +1100,17 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     parallax convention; extends the 9L meter machinery). Then ~1000
     words in the contracted register + 1 figure. Author gives the go
     (outward-facing object).
+27b. **The MUSE-DARK author-contact asks (10H successor, 2026-08-09;
+    fold into the outreach email to Desmond — he is a MUSE-DARK III
+    co-author):** four data items close every 10H blocker and would
+    re-open BOTH contest legs at pre-registered grade: (i) per-point
+    (a_bar, a_tot, σ) track tables (or per-point MCMC errors), (ii)
+    per-galaxy M_HI / gas-disk extent, (iii) the 79-galaxy 'regular'
+    flag list, (iv) the App-E MOND-track products. Ledger
+    ext-10h-musedark-recon carries the full finding; the level
+    replication (report-grade) + the intercept convergence (lock
+    1.047 inside all three of their a₀(0) rows) make the email a
+    scientific exchange, not a data beg.
 28. **GD-anomaly replication on independent dwarf data** (the named
     P2 falsifier #3, executable by US now): LITTLE THINGS / SHIELD /
     other public resolved-dwarf rotation curves through the 8S-c dial

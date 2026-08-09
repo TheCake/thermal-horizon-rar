@@ -1,0 +1,13 @@
+STAGE 10H -- THE Z-LADDER CONTEST (MUSE-DARK III)
+================================================================
+
+G10H-8 family identity: max|nu_p(y,1/2) - Eq.1| = 0.00e+00  PASS
+
+G10H-0 census: base cut (z, Mstar, DC14 member) = 88; folder-missing among base: []
+  convention log_Z_DC14 < 15000: N = 85 (with folders 85)
+  convention log_Z_DC14 <= 15000: N = 85 (with folders 85)
+  convention BIC_DC14 < 15000: N = 85 (with folders 85)
+  convention BIC_DC14 <= 15000: N = 85 (with folders 85)
+  CENSUS-NEAR: using log_Z_DC14 < 15000, N = 85 (|N-79| = 6) FAIL
+  duplicate DC14 row muse_id 26: kept second (nearer folder Vvir)
+STOP -> H-FEASIBILITY-LIMITED (census).

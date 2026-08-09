@@ -14820,6 +14820,82 @@ connects them (now written), and made us say in plain letters that our
 tough referees so far have been AIs, not humans. The paper got harder
 to misread and nothing in it got weaker.
 
+## 10H — THE Z-LADDER CONTEST (2026-08-09, pre-reg 546641f + A1 9f9b4ee + A2 b6452dd + A3 82ad2e1)
+
+The booked MUSE-DARK successor executed: independent reconstruction of the
+Ciocan+ 2026 RAR-evolution measurement from its own public release
+(dark-matter.osu-lyon.fr; 9 catalogs + per-galaxy galpak DC14 products
+fetched, calcs/fetch_musedark3_release.py), aiming leg A (lock-vs-linear on
+their tracks) and leg B (lens-bias injections: does their fixed-form
+pipeline inflate locked-pair truth 1.02 → their measured 1.20–1.59?). Both
+legs sat behind wiring gates set at their published numbers, with the
+recipe-ladder firewall (ladder keys only on wiring targets; no contest
+quantity computed before a primary recipe locks).
+
+**Verdict: H-FEASIBILITY-LIMITED (the pre-registered letter). No recipe
+passed wiring; no contest fit and no injection ever ran; the firewall held
+through all five runs.** What the attempt measured:
+
+- **Census:** their N = 79 is unreproducible from the release — the
+  quantitative cuts (z, M*, DC14 membership, evidence) give N = 85 under
+  every released convention; the 6-galaxy gap is Paper I's *visual*
+  "regular" flag, which no released column encodes (A1).
+- **Level (report-grade):** the elevated z∼1 RAR offset DOES reproduce
+  under Mestel-like gas recipes — pooled a₀ = 2.62 (σ_int 0.220,
+  inside the gate band) and 2.15 (0.190, 0.01 below) vs their
+  2.38 +0.12/−0.10; reconstructed offsets +0.58…+0.67 dex match their own
+  released f_DM(Re) ≈ 0.76. The headline OFFSET is in the released data.
+- **Slope: not reconstructible.** Across 22 estimator-valid recipes
+  spanning the text-permitted convention space (16 guessed + 6
+  Paper-I-pinned — v_AD² = 0.92σ²r/r_d, Sérsic ionized-gas-shaped disk,
+  truncated constant-Σ gas, Planck-2015), no recipe passed the z-fit
+  gate; the level-passing recipe fits a₁ = −1.71 (wrong sign). The raw
+  bin offsets DO rise (+0.095 dex bin1→bin4, size-consistent with their
+  1.99→2.71, which needs ~+0.067) — the ingredient exists; the
+  pipeline-grade slope does not materialize from released information.
+- **The blockers are all z-leveraged and all unreleased:** per-point MCMC
+  error profiles (MNR weighting is slope-relevant); M_HI / gas extent —
+  while the paper's own gas text is internally ambiguous by ×2 AND
+  curvature (the exact Casertano solve of a constant-Σ disk nearly
+  cancels interior — the pinned recipes drive a₀ to 8–10 and cannot
+  reproduce their own level — vs the stated v ∝ √(Σr) Mestel scaling,
+  which can); a release version seam (folder Vvir 160.6 vs catalog 126.3
+  at ID3); the 4-galaxy bulge list.
+- **Lock-side dividend (no reconstruction needed):** at their own
+  Planck-2015 cosmology the lock intercept cH₀/2π = 1.047e-10 sits INSIDE
+  all three of their fitted a₀(0) rows — 1.00±0.04 (DM, 2.3σ), 1.03±0.05
+  (MOND framework, 0.7σ), 1.05±0.05 (per-galaxy best-evidence, 0.1σ; all
+  95% CI). The lock slope linearized over their window (1.02) sits ~3.5σ
+  below their MOND-row a₁ = 1.20±0.10 (95%) at face value — and the
+  form-coupling bias that would arbitrate that comparison (leg B) is
+  exactly what the release cannot support.
+- **Trap #19 (standing):** run 3's frozen optimizer "reproduced" their
+  Eq. 4 exactly because the fit starts WERE the published target values.
+  Wiring-gate fits must never seed at the wiring target.
+
+Credence: map cell FEASIBILITY → anomaly-real HOLD 53; mech 8 untouched.
+Successors: the author-contact route (per-point errors + M_HI + flags +
+MOND-track products close every blocker; Desmond is a co-author and
+already on the outreach list — circulation-adjacent), galpak_dark source
+read, Vărăşteanu+25 MIGHTEE (z<0.08, a₁ = 4.47±1.88), DR4-era. Ledger
+ext-10h-musedark-recon (206 rows, six gates PASS, 266 tokens).
+
+**Plain verdict: NEEDS DIFFERENT DATA.** The instrument was built, gated,
+and honestly refused to fire: the public release reproduces their
+headline *offset* but underdetermines their headline *slope* — the
+deciding columns exist only on the authors' disks. The lock-relevant
+finding that needed no reconstruction at all: their own MOND-framework
+intercept lands on cH₀/2π to 0.7σ.
+
+*ELI12: We tried to rebuild their "the gravity knob grows with cosmic
+time" measurement using only the parts they published. We could rebuild
+the knob's SIZE (it matches), but not its GROWTH — three small
+ingredients that control the growth (error bars per point, how far the
+invisible gas spreads, which galaxies they hand-picked as "clean") were
+never published. So the referee gates said "stop, don't guess." One free
+gift: at their own choice of cosmic clock, the knob's starting value in
+their MOND fit lands almost exactly where our formula says it must.*
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
