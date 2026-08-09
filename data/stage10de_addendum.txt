@@ -1,0 +1,101 @@
+==============================================================================
+STAGE 10D/10E ADDENDUM -- ROUND-25 VERIFICATION + CONDITIONS C1-C6
+==============================================================================
+
+GA-1 the ceiling correction (his §3(ii)):
+  lemma at eta2 = e_s = e_a = 1: sqrt(Omega)*sqrt(omega)/4
+  g_close = sqrt(Omega)*sqrt(omega)/2;  ratio = 1/2
+  -> CONFIRMED: the perfect-geometry vertex is (1/4)sqrt(om*Om) = HALF of g_close; the stage's GE-4b
+     'ceiling identity' compared 0.5*sq against 0.5*sq -- a
+     DEFINITIONAL identity, not a lemma property (his catch;
+     cuts AGAINST the mechanism: the vertex is x2 weaker than
+     the T2b clause advertised).
+
+GA-2 lam/g_close ratios + e_a-needed (his §4 table):
+  binary  x_loc=0.5      lam_max/g_close = 0.304 (his 0.304) OK;  e_a needed = 2.315 (his 2.313) OK
+  binary  x_loc=1.0      lam_max/g_close = 0.140 (his 0.140) OK
+  binary  x_loc=2.0      lam_max/g_close = 0.029 (his 0.029) OK
+  galaxy  x_loc=0.0953   lam_max/g_close = 0.874 (his 0.876) OK;  e_a needed = 1.020 (his 1.020) OK
+  galaxy  x_loc=0.3      lam_max/g_close = 0.506 (his 0.505) OK;  e_a needed = 1.723 (his 1.722) OK
+  galaxy  x_loc=1.0      lam_max/g_close = 0.324 (his 0.324) OK;  e_a needed = 2.691 (his 2.689) OK
+  GA-2 -> CONFIRMED (with e_a ~ 1 the deep-galaxy anchor reaches g_close CENTRALLY; max-favorable 88%)
+
+GA-3 the band mis-specification (his §3(iv)):
+  galaxy g_close = 0.0092/0.0164/0.0299 H, ALL below the 10A band floor 0.072 -> CONFIRMED
+  (the 10C G5 table's own rows say 'below the 10A band'; a
+   requirement the galaxies clear dispersively at sub-band g_close
+   cannot be the bar the galaxy exchange vertex must clear --
+   his structural point, adopted as C4b.)
+
+GA-4 split-null extension (6 fresh kappa=1 draws, seed 61; claim
+under test: the null D never approaches the 11.8 bar):
+    draw 1: D = +3.33   (0.0 min)
+    draw 2: D = +0.17   (0.1 min)
+    draw 3: D = +5.03   (0.1 min)
+    draw 4: D = +0.59   (0.2 min)
+    draw 5: D = +0.66   (0.2 min)
+    draw 6: D = +5.06   (0.3 min)
+  6-draw null: mean 2.47, max +5.06, >= 11.8: 0/6 -> CONFIRMED (his 10-draw mean 2.00 / max 4.08 / 0/10; stage's 3 draws max +8.53; observed data +21.74)
+
+GA-5 A2 seed-42 replication (his row: 0.970 0.999 1.001 0.970 0.815 1.026, mean 0.964):
+  re-run: 0.970 0.999 1.001 0.970 0.815 1.026  mean 0.964
+  max per-draw |diff| = 0.000 (bar 0.05); mean diff = 0.000 (bar 0.02) -> CONFIRMED
+
+GA-6 off-regime bias spot (truth a0 = 3.9e-11, 3 draws, seed 77;
+his 6-draw mean 1.067; spot band [0.90, 1.25]):
+  recoveries: 1.028 1.102 1.025  mean 1.052 -> CONSISTENT with his +0.07-grade bias
+
+GA-7 no-lens refits (his: F1 1.496 / a0 3.903e-11; F4 1.306/1.024/0.020, D +22.32):
+  F1 kappa = 1.496, a0 = 3.908e-11; F4 = 1.306/1.024/0.020, D = +22.30
+  -> CONFIRMED (the deep arm is SPARC-driven; lensing does not carry kappa_d)
+
+==============================================================================
+ROUND-25 CONDITIONS EXECUTED (letters corrected in place):
+==============================================================================
+(C1) 10D DECOMPOSITION RETIRED: the treatment-stable content of
+     K-SPLIT is 'one kappa is rejected' (plain D = +21.7, vertical
+     D = +14.4). The RUNNING DIRECTION is UNRESOLVED: plain kappa_d
+     = 1.317 > kappa_t = 1.036 REVERSES under the vertical channel
+     (F4v 1.479 < 1.614). 'kappa_d/kappa_t' is NOT quotable as a
+     decomposition; 'kappa_mid >> kappa_tail' is near-vacuous (the
+     tail is the guard-pinned proxy) and is DROPPED.
+(C2) RIDGE CAVEAT (print wherever K-SPLIT is cited): the split is
+     measured on the low-a0/high-f_ML ridge (a0 = 3.87e-11 = 0.37x
+     horizon, f_ML = 1.52). It is NOT evidence against the kappa=1
+     closure: the temperature-locked F2 world sits at kappa = 0.925
+     (Planck) / 0.888 (SH0ES) at +73 lnL. K-SPLIT re-scopes the
+     kappa = 1 target to the deep limit; it does not exclude it.
+(C3) A2 BIAS ANNOTATION: the kappa=1 estimator carries a mild
+     +0.05..+0.07 upward bias at the operative low-a0 regime
+     (his 6-seed table, means 0.964-1.067); observed kappa = 1.503
+     reads deconvolved ~1.43. No letter change.
+(C4) 10E CLAUSES CORRECTED: (a) the perfect-geometry vertex is
+     (1/4)sqrt(om*Om) = HALF of g_close (GA-1 exact); GE-4b was the
+     definitional identity g_close = (1/2)sqrt(om*Om), NOT a vertex
+     property -- the T2b 'supplies exactly the closure coupling'
+     clause is RETRACTED (the vertex is x2 weaker than advertised).
+     (b) Galaxy anchors are scored against g_close, not the 10A
+     band (GA-3): lam_max/g_close reaches 0.88 at the deep-galaxy
+     anchor; e_a ~ 1 closes it centrally (GA-2).
+(C5) O5-GEOMETRY SCOPED (the successor, strike-bearing at the
+     NEXT round): Axis 1 = derive the ambient cloud's FLUCTUATING
+     l=2/l=0 amplitude ratio (the exchange-active object; the
+     static EFE |q| = 0.086 is a different object), score against
+     g_close. Axis 2 = derive the exchange leg's requirement (6X
+     dynamical saturation ~H vs 6U KMS state-statistic, which
+     needs only coupling-existence + equilibration). PRE-STATED
+     KILL (reviewer's words): fluctuating e_a ~ 0.086 AND the
+     requirement band-like => the R22-cond-4 strike fires (15->8).
+(C6) COMPOSED READING (the honest form): 10E V-GRAY = 'input-
+     limited on an un-derived amplitude and a mis-specified
+     requirement', NOT 'structurally short'. No upgrade without
+     the O5-GEOMETRY computation.
+
+CREDENCE (mechanical, pre-signed): 10D K-SPLIT -> HOLD 15; 10E
+V-GRAY + ruling (B) ESCAPE-AXIS LIVE -> HOLD 15, NO strike.
+bath-mechanism conditional = 15 (six O5 rounds, zero strikes,
+zero rises). anomaly-real = 53 UNTOUCHED.
+==============================================================================
+GATES: GA-1:P GA-2:P GA-3:P GA-4:P GA-5:P GA-6:P GA-7:P  -> ALL REVIEWER NUMBERS CONFIRMED
+
+done (0.5 min)

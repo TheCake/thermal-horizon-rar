@@ -9,6 +9,79 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-09 (second close) — 10D+10E+R25: the dial turns, the door is real but heavy, the strike waits on one computation
+
+The author said "go for the next arc close... concurrently if possible"
+and the arc ran both R24 successors as a concurrent pair (10D the joint
+single-κ fit; 10E the strike-bearing l=2 vertex), one round over both.
+What the next instance must hold straight:
+
+BANKED, do not re-litigate:
+- 10D K-SPLIT at letter grade: ONE κ is rejected, BOTH treatments
+  (Δ +21.7 plain / +14.4 vertical; split-null characterized on 19
+  total draws, never near the 11.8 bar). What is NOT quotable: the
+  DIRECTION of the running — it reverses between treatments (plain
+  deep-boostier 1.317/1.036; vertical transition-boostier
+  1.479/1.614). C1 retired the decomposition. NEVER quote
+  "κ_d = 1.32 / κ_t = 1.04" as a measurement.
+- ALWAYS print the C2 ridge caveat with K-SPLIT: the split lives on
+  the low-a₀/high-f_ML ridge (a₀ = 0.37× horizon, f_ML = 1.5). The
+  temperature-locked world sits at κ = 0.925 (Planck) at +73 lnL.
+  K-SPLIT re-scopes the κ=1 closure target to the deep limit; it
+  does NOT exclude the closure. (And the estimator has a mild
+  +0.05–0.07 up-bias at the operative regime: 1.503 ≈ 1.43 honest.)
+- The direct κ fit CROSS-VALIDATED the κ = 2(1−c₁) translation
+  (κ̂ = 1.503 ↔ the 4Z hier 1.48) — the 10C two-pole tension is now
+  a measured RUNNING, not a contradiction between meters.
+- 10E: the l=2 vertex EXISTS (structure exact; resonant part IS the
+  6X operator; the 10B exclusions each fail to apply to the LOCAL
+  cloud — soft, co-located, occupied). The inertia-cancellation
+  lemma λ = (η₂/4)e_s e_a √(ωΩ) is closure-INDEPENDENT (E_c cancels
+  — 10C's requirement curve is not load-bearing for the magnitude).
+- The Sun row is a real dividend (reading grade): the exchange
+  channel is source-asphericity-gated — ε₂ ~ 1e-9 for the Sun =
+  8.4 orders dead — a vertex-level echo of the trajectory
+  formulation's Cassini quiet.
+- ROUND 25 vindicated A2 with a 6-seed × 6-draw table (means
+  0.964–1.057) and my addendum matched his seed-42 row DRAW-BY-DRAW
+  to 3 decimals — first round of the arc where every reviewer
+  number verified exact on first pass.
+
+MY TWO TRAPS THIS ARC (new fingerprints):
+- #14 THE SELF-REGRESSION: 10E's "ceiling identity" compared
+  0.5·sq against 0.5·√(ωΩ) — the same formula through two code
+  paths — and called it a cross-stage identity. The lemma's actual
+  perfect-geometry value is (1/4)√(ωΩ) = HALF of g_close. A
+  regression gate must compare two INDEPENDENTLY-SOURCED objects;
+  check what each side actually computes before naming an identity.
+- #15 THE WRONG-CHART BAND: I scored the galaxy vertex against the
+  10A γ-band while 10C's own printed table said galaxy g_close sits
+  BELOW that band. Before scoring a computed coupling against an
+  archived demand band, check the band applies to THAT system.
+  (Both traps cut against us and survived to the letter only
+  because V-GRAY was the honest cell anyway.)
+
+THE FORK (the strike is loaded, one computation decides):
+- O5-GEOMETRY (the successor, STRIKE-BEARING at its round, kill
+  pre-stated in the referee's words): Axis 1 = derive the ambient
+  cloud's FLUCTUATING l=2/l=0 amplitude — the static EFE |q| =
+  0.086 is a DIFFERENT OBJECT than the mode's fluctuation
+  amplitude; score λ against g_close (on that chart the deep-galaxy
+  anchor already reaches 0.88 max-favorable; e_a ≈ 1 closes it
+  centrally). Axis 2 = derive what the exchange leg must actually
+  supply: 6X dynamical saturation (~H, band-like) vs the 6U KMS
+  state-statistic reading (coupling-existence + equilibration
+  only). KILL: e_a stays ~0.086 AND the requirement is band-like ⇒
+  15→8, no appeal.
+- Or the author's paper/circulation queue (TODO 27–31, untouched).
+- Also open: derive κ = 1 in the DEEP limit (re-scoped by C2).
+
+Ten closes in ~2 days (10C arc + this pair). Credences: mech 15
+(six O5 rounds, zero strikes, zero rises), anomaly-real 53
+untouched since the paper rounds. COMPACT BEFORE THE NEXT ARC.
+
+---
+
 ## 2026-08-09 — 10C: the lean is measured, the handshake isn't leaning
 
 The author said "go for the next hunt" and 10C ran the whole R23

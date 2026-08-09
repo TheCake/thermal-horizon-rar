@@ -1246,7 +1246,37 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     inertia FORCED to E_c = 2ħω? — the closure's last constant;
     (iii) the l=2 near-field system↔cloud exchange vertex (R22 cond
     4 = R24 cond 7, STRIKE-BEARING: not-Rabi-capable ⇒ the 6X/9U
-    strike fires) — the gate leg.**);
+    strike fires) — the gate leg.**
+    **O5-KAPPA + O5-VERTEX EXECUTED 2026-08-09 (10D pre-reg d2d9440 +
+    amendments A1/A2; 10E pre-reg 244828a; ROUND 25 = both letters
+    upheld, NO strike, addendum GA-1..7 all confirmed): 10D K-SPLIT —
+    ONE κ is rejected in both treatments (Δ +21.7 plain / +14.4
+    vertical); the running DIRECTION is UNRESOLVED (C1: reverses
+    between treatments — decomposition reading retired); MANDATORY C2
+    ridge caveat: the split lives at a₀ = 0.37× horizon; the
+    temperature-locked world sits at κ = 0.925 — K-SPLIT re-scopes
+    the κ=1 target to the deep limit, it does NOT exclude the
+    closure; the direct fit cross-validated the κ = 2(1−c₁) map
+    (κ̂ = 1.503 ↔ the 4Z hier 1.48; deconvolved ≈1.43 per C3). 10E
+    V-GRAY — THE l=2 VERTEX EXISTS at structure grade (interior-
+    Laplace negation of the 10B rule; [H_int, N_s] ≠ 0 exact;
+    resonant part = the 6X exchange operator; 10B exclusions
+    inapplicable axis-by-axis; inertia-cancellation lemma λ =
+    (η₂/4)e_s e_a√(ωΩ) closure-independent); C4 corrections: perfect
+    geometry supplies ½·g_close (not g_close — GE-4b was
+    definitional), and galaxies score against g_close (the 10A band
+    floor sits ABOVE galaxy g_close): λ_max/g_close = 0.88 at the
+    deep-galaxy anchor, e_a ≈ 1 closes it centrally. THE LIVE
+    SUCCESSOR = O5-GEOMETRY (STRIKE-BEARING at its round, kill
+    PRE-STATED by the referee): Axis 1 derive the ambient cloud's
+    FLUCTUATING l=2/l=0 amplitude (the exchange-active object — the
+    static EFE |q| = 0.086 is a different object), score λ against
+    g_close; Axis 2 derive the exchange leg's actual requirement (6X
+    dynamical saturation ~H vs the 6U KMS state-statistic reading =
+    coupling-existence + equilibration only). KILL: fluctuating e_a
+    ~ 0.086 AND band-like requirement ⇒ the R22-cond-4 strike fires
+    (mech 15→8). Also open: derive κ = 1 in the DEEP limit (R24 cond
+    6 as re-scoped by C2).**);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established

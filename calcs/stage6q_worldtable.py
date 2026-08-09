@@ -563,6 +563,10 @@ CHECKS = [
     ('gal-10d-kappasplit', 'TOKENS: G0:P G1:P G2:P G3:P G6:P  '
      'kappa1=1.503 boot[1.32,1.67] Dsplit=+21.7 bootD[10.1,41.3]',
      'data/stage10d_kappa.txt'),
+    ('gal-10d-kappasplit', '10D DECOMPOSITION RETIRED',
+     'data/stage10de_addendum.txt'),
+    ('mech-10e-vertex', 'the vertex is x2 weaker than advertised',
+     'data/stage10de_addendum.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

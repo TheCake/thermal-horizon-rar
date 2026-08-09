@@ -496,6 +496,50 @@ resolves κ~1 / κ~1.5 / one-κ-form-rejected; (2) derive κ = 1 (cond
 cond 4, STRIKE-BEARING — not-Rabi-capable ⇒ the 6X/9U strike fires).
 Or the author's paper/circulation queue (TODO 27–31).**
 
+**10D + 10E + ROUND 25 (2026-08-09 second close, THE CONCURRENT PAIR —
+the author: "Go for the next arc close. Do it concurrently if
+possible"): both R24 successors as one arc, one round. 10D O5-KAPPA
+(pre-reg d2d9440 + A1 tol-convergence/ridge/guard + A2 seed-budget
+injection gate, both pre-quote, runs 1–2 archived) = K-SPLIT all
+gates at run-3: the FIRST DIRECT κ-family fit — single κ̂ = 1.503
+(boot 1.32–1.67; c₁ = 0.248 = the 4Z translation CROSS-VALIDATED)
+but ONE κ IS REJECTED both treatments (Δ +21.7 plain / +14.4
+vertical; split-null 19 draws never near the bar); C1 the
+DECOMPOSITION IS RETIRED (running direction REVERSES between
+treatments — never quote κ_d/κ_t as a measurement); C2 MANDATORY
+ridge caveat (the split lives at a₀ = 0.37× horizon; locked world
+κ = 0.925; K-SPLIT re-scopes the κ=1 target to the DEEP limit, does
+NOT exclude the closure); C3 estimator +0.05–0.07 up-bias (1.503 ≈
+1.43 honest). 10E O5-VERTEX (pre-reg 244828a, the R22-cond-4
+strike-bearing leg) = V-GRAY gates 5/5: THE l=2 VERTEX EXISTS at
+structure grade (interior-Laplace negation of the 10B l=0 rule;
+[H_int,N_s] ≠ 0 exact; resonant part = the 6X exchange operator; 10B
+exclusions inapplicable axis-by-axis: soft/co-located/occupied;
+inertia-cancellation lemma λ = (η₂/4)e_s e_a√(ωΩ) —
+closure-INDEPENDENT); Sun row = asphericity gating (ε₂ ~ 1e-9, 8.4
+orders — a Cassini-quiet vertex echo, reading); C4 corrections
+(BOTH against us): perfect geometry supplies ½·g_close NOT g_close
+(my GE-4b was a self-regression — trap #14), and galaxies score
+against g_close not the 10A band (galaxy g_close 0.009–0.030 H <
+the 0.072 floor by 10C's own table — trap #15): λ_max/g_close =
+0.88 at the deep-galaxy anchor, e_a ≈ 1 closes centrally. ROUND 25
+(REVIEW-ROUND25-OPUS.md uncommitted; addendum
+calcs/stage10de_addendum.py GA-1..7 ALL CONFIRMED — his seed-42
+row matched draw-by-draw): 10D hole NO, 10E hole YES-moderate
+(the two label traps), pre-signed adjudication = (B) ESCAPE-AXIS
+LIVE — NO STRIKE. **THE LIVE SUCCESSOR = O5-GEOMETRY
+(STRIKE-BEARING at its round, kill PRE-STATED in the referee's
+words): Axis 1 derive the cloud's FLUCTUATING l=2 amplitude (the
+static EFE |q| = 0.086 is a DIFFERENT OBJECT) scored against
+g_close; Axis 2 derive the exchange leg's requirement (6X
+saturation ~H vs 6U KMS state-statistic = existence+equilibration
+only). KILL: e_a stays ~0.086 AND band-like requirement ⇒ the
+R22-cond-4 strike fires 15→8.** Also open: derive κ=1 in the DEEP
+limit (C2 re-scope). CREDENCE: mech HOLDS 15 (six O5 rounds, zero
+strikes, zero rises); anomaly-real 53 untouched. Ledger 203 rows /
+worldtable 260 tokens six gates PASS. Ten closes in two days —
+FRESH SESSION before the next arc.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

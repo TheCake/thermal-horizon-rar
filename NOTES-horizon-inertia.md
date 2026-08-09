@@ -14217,7 +14217,83 @@ strength changes with the room is not a single lean — either the
 formula's strength genuinely runs (the gate physics already predicts
 the bright-end fall!), or two different knobs are being read as one.
 
-### ROUND 25 pending — the arc adjudication (10D K-SPLIT + 10E V-GRAY; the strike clause is live per the 10E pre-reg)
+### ROUND 25 (2026-08-09, the arc adjudication; report archived REVIEW-ROUND25-OPUS.md, uncommitted)
+
+The referee reproduced EVERY load-bearing number from an independent
+driver (F1/F4/Δ and the bootstrap to the digit; the 10E lemma,
+anchors, η₂, Sun row exact), then ruled:
+
+**10D K-SPLIT UPHELD, UNPATCHED HOLE: NO** — with his own 10-draw
+split-null (mean Δ = 2.00, max 4.08, never near the 11.8 bar; our
++21.74 = a genuine ~5–10× excess) and a 6-seed × 6-draw injection
+replication that VINDICATED amendment A2 (all means in [0.964,
+1.057]; run-2's 1.262 was ordinary single-draw noise). His no-lens
+refit: the deep arm is SPARC-driven (κ_d 1.306 without lensing).
+Conditions adopted: **C1 the decomposition is RETIRED** — the
+running DIRECTION reverses between treatments (plain deep-boostier
+κ_d 1.317 > κ_t 1.036; vertical transition-boostier 1.479 < 1.614);
+only "one κ rejected" is treatment-stable; the "κ_mid ≫ κ_tail"
+sentence dropped as near-vacuous (guard-pinned proxy). **C2 the
+ridge caveat, mandatory wherever K-SPLIT is cited**: the split lives
+on the low-a₀/high-f_ML ridge (a₀ = 0.37× horizon); it re-scopes
+the κ=1 target to the deep limit and is NOT evidence against the
+closure — the temperature-locked world sits at κ = 0.925 (+73 lnL).
+**C3**: the estimator's mild +0.05–0.07 up-bias at the operative
+regime annotated (1.503 reads deconvolved ≈ 1.43; no letter change).
+
+**10E V-GRAY UPHELD, UNPATCHED HOLE: YES (moderate)** — two
+trap-#12 clauses, BOTH cutting against the mechanism: (a) the
+"ceiling identity" was a definitional tautology — the lemma's true
+perfect-geometry vertex is (1/4)√(ωΩ) = HALF of g_close (the T2b
+"supplies exactly the closure coupling" clause is RETRACTED; the
+vertex is ×2 weaker than advertised); (b) the verdict band was
+mis-specified — galaxy g_close (0.009–0.030 H) sits BELOW the 10A
+band floor by 10C's own printed table, so a requirement the
+galaxies clear dispersively cannot be the galaxy exchange bar.
+Scored against g_close: λ_max reaches 0.88 of closure at the
+deep-galaxy anchor; e_a ≈ 1 closes it centrally (needed: 1.02).
+
+**THE PRE-SIGNED ADJUDICATION: (B) ESCAPE-AXIS LIVE — NO STRIKE.**
+The successor **O5-GEOMETRY** (strike-bearing at the next round),
+two axes: (1) derive the ambient cloud's FLUCTUATING l=2 amplitude
+— the exchange-active object; the static EFE |q| = 0.086 is a
+different object — and score λ against g_close; (2) derive the
+exchange leg's actual requirement (6X dynamical saturation ~H vs
+the 6U KMS state-statistic reading, which needs only
+coupling-existence + equilibration). **PRE-STATED KILL (his
+words): if the fluctuating e_a stays ~0.086 AND the requirement is
+band-like saturation, the R22-cond-4 strike fires (15→8) at that
+round.**
+
+Verification addendum
+([calcs/stage10de_addendum.py](calcs/stage10de_addendum.py), GA-1..
+GA-7 ALL CONFIRMED): his ceiling algebra exact; his λ/g_close and
+e_a-needed tables to ±0.002; his seed-42 injection row matched
+DRAW-BY-DRAW to three decimals (max |diff| = 0.000); his null
+characterization reproduced on 6 independent draws (mean 2.47, max
+5.06); his no-lens numbers to 0.02. First round of the arc where
+every reviewer number came back exact on first verification.
+CREDENCE (mechanical, pre-signed): bath-mechanism conditional
+HOLDS 15 (SIX O5 rounds, zero strikes, zero rises); anomaly-real
+53 untouched all arc.
+
+PLAIN VERDICT: the round did its job in both directions — 10D
+hardened (letter clean, decomposition honestly demoted), 10E
+reframed from "structurally short" to "input-limited on an
+un-derived amplitude and a mis-specified requirement," and the
+strike now hangs on ONE named computation with a pre-stated kill.
+
+ELI12: The referee checked every number and agreed with both
+results — then caught two of our own labels. The "door opens
+exactly as hard as needed" claim was us comparing a formula to
+itself (the door at best pushes HALF as hard as needed), and we had
+graded the galaxy door against the wrong difficulty chart (the
+galaxies' own chart is easier — and on THAT chart the door gets to
+88% with honest numbers, 100% if the wobbling part of the room's
+bulge is as big as bulges usually are). So: no execution today.
+One more calculation — how big the wobble really is, and what the
+handshake actually requires — decides it, and the kill condition
+is signed in advance.
 
 ## Honest credences (2026-07-21, end of Stage 2)
 
