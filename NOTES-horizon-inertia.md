@@ -14092,6 +14092,133 @@ e^{−x} gate) — leaning actually works best in an EMPTY room, backwards
 from the sky — so the handshake must be a real trade with the system's
 own local cloud, and deriving that trade is the last missing piece.
 
+### Stage 10E — O5-VERTEX: the l=2 near-field exchange channel (2026-08-09; pre-reg 244828a; the strike-bearing R22-cond-4 leg)
+
+**Question.** 10B: the constraint sector's soft vertex is dispersive at
+l=0 (interior-constancy ⇒ [H_int, N_s] = 0). 10C: a purely dispersive
+ambient coupling cannot reproduce the measured gate e^{−x}. The gate's
+only surviving partner is the LOCAL 6Y cloud through the near-field
+l=2 sector — derive that channel as a quantized Rabi-capable exchange
+vertex, or the pre-registered 6X/9U strike fires.
+
+**Verdict: V-GRAY, gates 5/5 first-run**
+([calcs/stage10e_vertex.py](calcs/stage10e_vertex.py)).
+
+STRUCTURE EARNED (exact): the l=0 selection rule NEGATES at l=2 (the
+interior-regular Laplace solution is r²Y₂ — non-constant — so an
+exterior l=2 fluctuation couples to the internal quadrupole, not the
+total energy; the 10B dispersive-forcing rule is l=0-specific by its
+own scoping). Both partners are dressing modes (matter modes stay
+10B-dead); an aspherical source imprints l=2 on its cloud linearly in
+the mode coordinate ⇒ H_int ∝ (a+a†)(c+c†), [H_int, N_s] ≠ 0
+(Fock-exact; the l=0 contrast commutes exactly); the resonant part
+a†c + ac† IS the 6X exchange operator. The 10B horizon exclusions are
+inapplicable axis-by-axis: not gapped (Ω = x_amb·T, soft), not
+lever-arm-suppressed (co-located at r_M), not empty (n_amb measured
+0.502/6.63). THE INERTIA-CANCELLATION LEMMA (sympy exact): λ =
+(η₂/4)·e_s·e_a·√(ωΩ) — the mode inertias cancel, so the magnitude is
+closure-INDEPENDENT (10C's E_c = 2ħω is not load-bearing here). THE
+CEILING IDENTITY (6/6 digit regression vs the archived 10C G5 table):
+λ_ceil = ½√(ωΩ) IS g_close — at perfect geometry the vertex supplies
+exactly the κ=1 closure coupling; the measured geometry IS the gap.
+
+MAGNITUDE SHORT: central λ = 1.8e-4..2.2e-3 H (e_a = archived 4K/5S
+EFE quadrupole 0.086; e_s binary = 1/(4x_loc²) point-pair multipole,
+galaxy 0.1–0.5 banded; η₂ = 0.53–1.00 computed overlaps); even
+max-favorable edges reach only 1.8e-2 H vs the demanded [0.072,
+1.571] H; Rabi angle ≪ π per Hubble (no saturation); at the galaxy
+anchors even PERFECT geometry undershoots the band (ceiling
+0.009–0.030 H). Sun contrast row: planet-driven ε₂ ≈ 1.05e-9 ⇒ the
+channel is SOURCE-ASPHERICITY-GATED, 8.4 orders dead for the Sun
+(the trajectory formulation's Cassini quiet gains a vertex-level
+echo; reading grade).
+
+V-WEAK did NOT fire (max-favorable > the 1e-3 H bar); V-DIAGONAL did
+NOT fire. PRE-SIGNED ROUND-25 ADJUDICATION: rule the shortfall
+STRUCTURAL → the strike fires in adoption (mech 15→8); identify a
+live escape axis ({e_a re-identification: static-q vs
+fluctuating-sector amplitude; coherent/collective amplification;
+coherence-time re-scoping}) → HOLD 15, successor O5-GEOMETRY.
+anomaly-real 53 untouched.
+
+PLAIN VERDICT: NEEDS REFINEMENT at the adjudication grade — the
+carrier EXISTS as a class (structure exact, first constructive vertex
+since 6X) but undersupplies the demanded coupling by 1.5–2.5 orders
+at measured geometry; whether that shortfall is fatal or escapable is
+now the round's question, pre-signed both ways.
+
+ELI12: We went looking for the doorway the secret handshake could
+walk through. We found it — a real door, exactly where the earlier
+proofs said no door could be (those proofs only covered round rooms;
+this door needs corners, and binaries and galaxy disks have corners
+while the Sun doesn't — which is WHY the Sun stays quiet). But the
+door is heavy: pushed as hard as the measured numbers allow, it opens
+about a hundred times too slowly to carry the handshake. Either
+someone is allowed to push harder than we assumed, or the handshake
+doesn't go through this door.
+
+### Stage 10D — O5-KAPPA: the joint single-κ fit (2026-08-09; pre-reg d2d9440 + amendments A1 14a64b0 / A2 pre-quote; R24 cond 8)
+
+**Question.** 10C's map ν = 1 + κ·n_BE has ONE free constant, read
+two-pole by the archived meters (a₀-lock 1.00±0.05; 4Z hier
+translation 1.48). First DIRECT κ-family fit: deep amplitude κ²a₀
+and transition constant c₁ = 1−κ/2 in one likelihood (4Z hier
+apparatus + lensing; 5M vertical co-read; F1 free / F2
+horizon-locked / F3 κ=1 / F4 split over data-defined bins).
+
+**Verdict: K-SPLIT, all gates PASS at run-3**
+([calcs/stage10d_kappa.py](calcs/stage10d_kappa.py); amendments A1 =
+tol-looped convergence + ridge starts + guard widening after run-1
+under-convergence, A2 = seed-budget injection gate after two
+converged single-draw misses exposed a bar narrower than the
+estimator's own realization scatter — the CORRECTION-#10 class,
+caught in-stage; both logged pre-quote, runs 1–2 archived).
+
+THE MEASUREMENT: single κ̂ = 1.503 (boot 16–84: 1.32–1.67; implied
+c₁ = 0.248 — the direct fit REPRODUCES the 4Z hier translation) —
+but the one-κ form is REJECTED: Δ(F1−F4) = +21.7 (boot median 20.0;
+36/40 ≥ 6.2, 33/40 ≥ 11.8; split-null max +8.5). THE DECOMPOSITION:
+κ_deep = 1.317, κ_trans = 1.036, κ_tail → 0 (proxy at the guard;
+the tail wants faster-than-BE die-off = the 5G sharp-tail vote in
+κ-language). READING: the archived "hier κ = 1.48" was the
+COMPROMISE of a running κ(x), not a transition property — the
+transition's own constant sits at c₁ = 1 − κ_t/2 = 0.48 ≈ ½, i.e.
+AT the closure value; the running lives in the deep amplitude and
+the tail exponent. Injection budget: truth κ=1 → mean 1.019 (draws
+0.87–1.33); truth 1.5 → mean 1.500; the estimator is unbiased with
+±0.25 single-draw scatter (bootstrap primary, as pre-registered).
+
+MANDATORY CO-READS: lock row (a₀ = horizon prior) κ = 0.925 Planck /
+0.888 SH0ES at +73 lnL vs free — under the temperature lock the
+compromise sits BELOW 1; vertical treatment (F3v regression exact
+−12152.49): F1v κ = 1.394, split still preferred (+14.4) but the
+deep/transition assignment FLIPS (κ_d 1.48 / κ_t 1.61) — the
+deep-vs-transition split is treatment-dependent (the 4W
+identifiability boundary), while κ_mid ≫ κ_tail → 0 is
+treatment-STABLE. Boundary variants: pattern monotone, Δ grows
+(+36.5/+48.6). Per the pre-signed map: K-SPLIT → mech HOLDS 15 (the
+constant-κ closure is killed at face value; the κ=1 target
+re-scopes); anomaly-real 53 untouched.
+
+PLAIN VERDICT: SUCCESS as a measurement (the sharpest in-catalog κ
+statement the program owns: κ RUNS — mid-transition at the closure
+value, tail to zero, deep contested between treatments); DIFFERENT
+PHYSICS for the constant-κ closure reading (one number cannot carry
+the family; the running IS the 5G/5T structure seen through the κ
+window).
+
+ELI12: We asked the sky to read the lean-strength dial once, with
+everything else honest. The sky refused ONE number: in the middle of
+the transition it reads almost exactly 1 (the derivation's favorite
+value!), but the faint outskirts want the dial near 1.3 and the
+bright end wants it near 0 — the dial TURNS as you walk across the
+sky. The old "1.48" was the average of a turning dial. A lean whose
+strength changes with the room is not a single lean — either the
+formula's strength genuinely runs (the gate physics already predicts
+the bright-end fall!), or two different knobs are being read as one.
+
+### ROUND 25 pending — the arc adjudication (10D K-SPLIT + 10E V-GRAY; the strike clause is live per the 10E pre-reg)
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

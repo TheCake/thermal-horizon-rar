@@ -1,0 +1,96 @@
+==============================================================================
+STAGE 10E -- O5-VERTEX: the l=2 near-field exchange channel
+==============================================================================
+
+GE-1 interior Laplace (the l=0 rule and its l=2 negation):
+  l=0 general solution: C1 + C2/r  -> regular branch CONSTANT
+  l=2 general solution: C1/r**3 + C2*r**2  -> regular branch ~ r^2 (NON-constant)
+  const solves l=0: residual 0; r^2 solves l=2: residual 0  -> PASS
+  => an exterior l=2 fluctuation has INTERIOR STRUCTURE: it couples
+     to the internal quadrupole, not the total energy -- the 10B
+     dispersive-forcing rule is l=0-SPECIFIC (its own scoping).
+
+GE-2 Fock algebra (6x6 x 6x6, numeric-exact):
+  ||[H_int, N_s]||_max = 5.000 (> 0: OFF-DIAGONAL)
+  l=0 contrast ||[H_l0, N_s]|| = 0.0e+00 (exactly 0)
+  H_int = (a'c + ac') + (a'c' + ac) split residual = 0.0e+00
+  -> PASS: the resonant part a'c + ac' is
+     EXACTLY the 6X exchange operator (the toy's lending law was
+     validated under this form; 10C G7 re-ran it verbatim).
+
+GE-3 the inertia-cancellation lemma (sympy):
+  lam = E_12 * (zp/cl)_s * (zp/cl)_a / hbar = sqrt(Omega)*e_a*e_s*eta2*sqrt(omega)/4
+  residual vs (eta2/4) e_s e_a sqrt(om*Om): 0 -> PASS
+  => E_c cancels: the vertex is INERTIA-BLIND -- independent of the
+     10C closure assumption (not load-bearing here); no kappa
+     rescaling under any 10D outcome.
+
+eta2 radial overlap (l=2 Coulomb inner product, Gaussian shells
+peaked at r_M = 1, widths w; self-test + cross-width matrix):
+  self-test eta2(1,1) = 1.000000 (exact 1)
+  eta2(0.5,1.0) = 0.8762  (N->2N drift 5.76e-06)
+  eta2(0.5,2.0) = 0.5309  (N->2N drift 2.00e-05)
+  eta2(1.0,2.0) = 0.7987  (N->2N drift 7.85e-06)
+  band: [0.531, 1.000] (Cauchy-Schwarz cap exact); central 0.765
+  GE-7 convergence -> PASS; self-test -> PASS
+
+GE-4 THE ANCHOR TABLE (lam/H = (eta2/4) e_s e_a sqrt(x_loc*x_amb)/2pi
+x occupation enhancement sqrt((n_s+1) n_a)):
+  anchor                    e_s   ceil/H   lam_c/H lam_max/H Rabi rad/Hub
+  binary  x_loc=0.5       1.000   0.0589  2.19e-03  1.79e-02     1.38e-02
+  binary  x_loc=1.0       0.250   0.0833  6.11e-04  1.17e-02     3.84e-03
+  binary  x_loc=2.0       0.062   0.1178  1.85e-04  3.37e-03     1.16e-03
+  galaxy  x_loc=0.0953    0.300   0.0092  7.78e-04  8.06e-03     4.89e-03
+  galaxy  x_loc=0.3       0.300   0.0164  8.18e-04  8.28e-03     5.14e-03
+  galaxy  x_loc=1.0       0.300   0.0299  9.56e-04  9.68e-03     6.01e-03
+  (Rabi rad/Hubble = lam/T = 2pi lam/H; saturation of the 6X
+   lending needs O(pi) -- printed for the honest coherence row)
+
+GE-4b CEILING IDENTITY regression (vs the archived 10C G5 g_close):
+  binary  x_loc=0.5      lam_ceil/H = 0.0589  vs g_close = 0.0589  OK
+  binary  x_loc=1.0      lam_ceil/H = 0.0833  vs g_close = 0.0833  OK
+  binary  x_loc=2.0      lam_ceil/H = 0.1178  vs g_close = 0.1178  OK
+  galaxy  x_loc=0.0953   lam_ceil/H = 0.0092  vs g_close = 0.0092  OK
+  galaxy  x_loc=0.3      lam_ceil/H = 0.0164  vs g_close = 0.0164  OK
+  galaxy  x_loc=1.0      lam_ceil/H = 0.0299  vs g_close = 0.0299  OK
+  -> PASS: lam_ceil = (1/2)sqrt(om*Om) IS
+     g_close -- the vertex at PERFECT geometry supplies exactly the
+     kappa=1 closure coupling; the measured geometry IS the gap.
+
+GE-6 the Sun contrast row (asphericity gating, reading grade):
+  r_M(sun) = 7030 AU (7G: 7030); planet-driven eps2 = 1.05e-09
+  suppression vs the 10-kAU binary (eps2 = 0.25): 2.4e+08 = 8.4 orders
+  => the exchange channel is SOURCE-ASPHERICITY-GATED: strong for
+     q ~ 1 binaries and disks, dead ~8 orders for the point-like
+     Sun -- the trajectory formulation's Cassini quiet acquires a
+     vertex-level echo (reading row, NOT load-bearing).
+
+==============================================================================
+TOKENS: GE1:P GE2:P GE3:P GE4b:P GE7:P  inband:0/6  lam_c[1.8e-04,2.2e-03]H  lam_max<= 1.8e-02H
+LETTER: V-GRAY
+
+V-GRAY earned/short accounting (every clause gated above):
+  EARNED: the off-diagonal l=2 vertex EXISTS (GE-1/GE-2 exact);
+  its resonant part is the 6X exchange operator; the 10B
+  exclusions are inapplicable axis-by-axis (gap/geometry/
+  emptiness); the magnitude is inertia-blind (GE-3, closure-
+  independent); the ceiling identity lam_ceil = g_close (GE-4b).
+  SHORT: central lam ~ 1e-4..1e-3 H vs the demanded band
+  [0.072, 1.571] H; even max-favorable edges reach only 1.8e-02 H;
+  the Rabi angle per Hubble time is << pi (no saturation);
+  at the galaxy anchors even PERFECT geometry undershoots the
+  band (ceiling 0.009-0.030 H) -- the frequency product itself
+  caps the channel there.
+  ROUND-25 ADJUDICATION (pre-signed): rule the shortfall
+  STRUCTURAL (strike fires in adoption, 15->8) or identify a
+  live escape axis among {e_a re-identification (static-q vs
+  fluctuating-sector amplitude), coherent/collective
+  amplification, coherence-time re-scoping} (HOLD 15;
+  successor O5-GEOMETRY).
+
+CREDENCE (pre-signed arc map): V-RABI + clean round -> 15->18
+  (with 10D K-ONE -> 20); V-GRAY -> HOLD 15 at stage level, round
+  adjudication governs adoption; V-WEAK/V-DIAGONAL reviewer-
+  affirmed -> 15->8. anomaly-real 53 UNTOUCHED.
+==============================================================================
+done

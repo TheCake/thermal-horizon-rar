@@ -554,6 +554,15 @@ CHECKS = [
     ('mech-10c-pull', 'TOKENS: THM-SEP:PASS  LADDER:PASS  '
      'KAPPA:CONTAINED-WITH-TENSION  REQ:CURVE-EXACT+HP-DROPPED  '
      'GATE-FLAT+ANTI', 'data/stage10c_pull.txt'),
+    ('mech-10e-vertex', 'residual vs (eta2/4) e_s e_a sqrt(om*Om): 0 '
+     '-> PASS', 'data/stage10e_vertex.txt'),
+    ('mech-10e-vertex', 'TOKENS: GE1:P GE2:P GE3:P GE4b:P GE7:P  '
+     'inband:0/6', 'data/stage10e_vertex.txt'),
+    ('gal-10d-kappasplit', 'kappa_d = 1.317, kappa_t = 1.036',
+     'data/stage10d_kappa.txt'),
+    ('gal-10d-kappasplit', 'TOKENS: G0:P G1:P G2:P G3:P G6:P  '
+     'kappa1=1.503 boot[1.32,1.67] Dsplit=+21.7 bootD[10.1,41.3]',
+     'data/stage10d_kappa.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:
