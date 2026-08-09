@@ -16,7 +16,8 @@ The list of names below is NOT hand-typed: it is the verbatim
 (run 1, committed bf7a3dd).
 """
 import csv, os, re, time
-import requests
+import urllib.parse
+import urllib.request
 
 OUT = 'data/sparc_simbad_aliases.csv'
 TAP = 'https://simbad.cds.unistra.fr/simbad/sim-tap/sync'
@@ -62,11 +63,12 @@ def tap_ids(qname):
          "ON id1.oidref = id2.oidref WHERE id1.id = '%s'"
          % qname.replace("'", "''"))
     try:
-        r = requests.post(TAP, data=dict(REQUEST='doQuery', LANG='ADQL',
-                                         FORMAT='csv', QUERY=q),
-                          timeout=30)
-        r.raise_for_status()
-        lines = r.text.strip().splitlines()
+        body = urllib.parse.urlencode(dict(REQUEST='doQuery', LANG='ADQL',
+                                           FORMAT='csv', QUERY=q)).encode()
+        with urllib.request.urlopen(
+                urllib.request.Request(TAP, data=body), timeout=30) as r:
+            text = r.read().decode('utf-8', errors='replace')
+        lines = text.strip().splitlines()
         return [l.strip().strip('"') for l in lines[1:] if l.strip()]
     except Exception as e:
         print('  TAP error for %r: %s' % (qname, e))

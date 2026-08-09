@@ -10,6 +10,7 @@ data/sparc/
 !data/hier_cube_*.npy
 !data/chae2021_table3.csv
 !data/ceiling_pairs.csv
+!data/sparc_simbad_aliases.csv
 
 # third-party full texts (re-fetch documented in calcs/stage5b_envtest.py / NOTES):
 data/chae2021.pdf

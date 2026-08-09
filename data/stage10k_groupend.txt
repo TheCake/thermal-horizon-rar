@@ -1,0 +1,57 @@
+STAGE 10K THE GROUP-END POWER SPEC: 153 galaxies, 2700 pts + 12 lensing
+pre-reg: this commit.  9V archive: data/stage9v_profiles.npz
+
+G10K-2 matcher regression (empty alias table): 31/13/3 vs 31/13/3, iso list identical -> PASS
+G10K-1 alias integrity: 25 SPARC names with aliases, exemplar UGC05721->NGC3274 present -> PASS
+
+CENSUS (m1, alias-fixed; R30 condition 7 -- counts only):
+  matched 48 (was 31); iso 20 (was 13); iso transition-crossers 3 (was 3)
+  group Ti1>0: 27 (transition-crossers 4); Ti1>=1: 13 (TR 2)
+  new matches (SPARC -> UNGC, Ti1): [('UGC04278', 'IC2233', 2.6), ('UGC04325', 'NGC2552', 0.3), ('UGC05721', 'NGC3274', -1.2), ('UGC05764', 'DDO083', -1.4), ('UGC05829', 'DDO084', -1.5), ('UGC05918', 'DDO087', -1.0), ('UGC05986', 'NGC3432', 3.1), ('UGC07151', 'NGC4144', 0.6), ('UGC07232', 'NGC4190', 0.8), ('UGC07323', 'NGC4242', 1.8), ('UGC07399', 'NGC4288', 1.7), ('UGC07524', 'NGC4395', 0.1), ('UGC08286', 'NGC5023', -0.6), ('UGC08490', 'NGC5204', -0.9), ('UGC08550', 'NGC5229', 1.1), ('UGC08837', 'HolmIV', 1.8), ('UGC12632', 'DDO217', -2.0)]
+  newly matched isolated: [('UGC05721', -1.2), ('UGC05764', -1.4), ('UGC05829', -1.5), ('UGC05918', -1.0), ('UGC08286', -0.6), ('UGC08490', -0.9), ('UGC12632', -2.0)]
+  UNGC-vs-Chae Spearman under m1: N=24 rho=0.283 (recorded; the 10I letter is closed)
+  neighbor-powered rows (term >= 50% of the 0.01 floor), (name, Ti1, % of floor): [('NGC2976', 2.9, np.float64(109.9))]
+  neighbor-term percentiles 16/50/84 over matched: [np.float64(0.24), np.float64(1.34), np.float64(7.75)] (% of floor)
+
+PHASE 1  gate worlds: 24 galaxies with any gate change; largest:
+    UGC05986   Ti1 +3.1  e_Chae 0.0069 + neigh 0.0022  g: 0.8472 -> 0.8270  (Dp at r=0.3365: -0.00341)
+    UGC07323   Ti1 +1.8  e_Chae 0.0069 + neigh 0.0019  g: 0.8474 -> 0.8298  (Dp at r=0.3365: -0.00296)
+    UGC07399   Ti1 +1.7  e_Chae 0.0058 + neigh 0.0017  g: 0.8586 -> 0.8410  (Dp at r=0.3365: -0.00296)
+    UGC08837   Ti1 +1.8  e_Chae 0.0078 + neigh 0.0016  g: 0.8381 -> 0.8236  (Dp at r=0.3365: -0.00245)
+    UGC08550   Ti1 +1.1  e_Chae 0.0075 + neigh 0.0011  g: 0.8410 -> 0.8306  (Dp at r=0.3365: -0.00174)
+    UGC07151   Ti1 +0.6  e_Chae 0.0083 + neigh 0.0004  g: 0.8334 -> 0.8300  (Dp at r=0.3365: -0.00058)
+    NGC2903    Ti1 +1.7  e_Chae 0.0050 + neigh 0.0002  g: 0.8680 -> 0.8657  (Dp at r=0.3365: -0.00039)
+    DDO168     Ti1 +0.3  e_Chae 0.0064 + neigh 0.0002  g: 0.8522 -> 0.8500  (Dp at r=0.3365: -0.00036)
+  DOUBLE-COUNT CAVEAT: e_B adds the neighbor sum to Chae's 2M++ value; overlap makes B an UPPER BOUND on the signal.
+  stratum group Ti1>0 (N=27): mean Dgate -0.00352 -> Dp(r=0.3365) = -0.000593 = 0.008 sigma_p
+  stratum group Ti1>=1 (N=13): mean Dgate -0.00647 -> Dp(r=0.3365) = -0.001088 = 0.015 sigma_p
+  co-read r=0.50: Dp(group Ti1>0) = -0.000881 = 0.012 sigma_p
+
+G10K-5 arithmetic: PASS
+
+PHASE 2  licensed reproduction fit (gate world A, archived grid)
+  target grid point: r = 0.3500 (archived -2lnL -12185.6494)
+    r=0.00: -12152.4918  [0.0 min]
+    r=0.15: -12177.6327  [0.1 min]
+    r=0.30: -12185.4001  [0.1 min]
+    r=0.35: -12185.6252  [0.1 min]
+G10K-3 reader identity at r=0.3500: -12185.6252 vs archived -12185.6494 (|d| = 0.0243, bar 0.5) -> PASS
+
+PHASE 3  Fisher calibration on the 9V r-axis:
+  C_fish = 1010.7 vs C_arch = 375.3 (ratio 2.69; band [0.8, 6.0]) -> PASS
+  deflation factor D_f = min(1, C_arch/C_fish) = 0.371
+
+PHASE 4  the group-end contest signal (B vs A, never read on sky)
+  r = 0.3365: S_raw = 0.000 -> S_def = 0.000  (2sig bar 4, 3sig bar 9)
+    per-galaxy S_def: [('DDO064', np.float64(0.0)), ('DDO154', np.float64(0.0)), ('DDO168', np.float64(0.0)), ('NGC2683', np.float64(0.0)), ('NGC2903', np.float64(0.0)), ('NGC3741', np.float64(0.0))]
+  r = 0.5000: S_raw = 0.000 -> S_def = 0.000  (2sig bar 4, 3sig bar 9)
+    per-galaxy S_def: [('DDO064', np.float64(0.0)), ('DDO154', np.float64(0.0)), ('DDO168', np.float64(0.0)), ('NGC2683', np.float64(0.0)), ('NGC2903', np.float64(0.0)), ('NGC3741', np.float64(0.0))]
+
+====================================================================
+VERDICT LETTER: K-POWER-DEAD
+  contest signal S_def(r=0.3365) = 0.000 (bars 4/9); stratum Dp = -0.000593 = 0.008 sigma_p (bars 1/2)
+  the group-end axis at SPARC x LV grade: unpowered; parked with numbers (the R30 dividend priced)
+BANKED: the alias-fixed census (R30 cond 7), the power spec, D_f = 0.371, the powered-row list.
+pre-signed credence: HOLD mech 8; HOLD anomaly-real 53 (all cells; the sky's A-vs-B preference was never read)
+gates: G1 PASS | G2 PASS | G3 PASS | G4 PASS | G5 PASS | G6 K-POWER-DEAD
+total wall-clock [0.1 min]

@@ -312,6 +312,17 @@ median 0.689). In-sample version WITHDRAWN (correction #14: gate heterogeneity, 
 ordering — 6Z). **Out-of-sample failure on environment-resolved DR4-era samples is a
 REAL strike — pre-stated.** (Stages 6I/6Z.)
 
+*Annotation 2026-08-09 (10K; post-registration bookkeeping, no status change): the
+in-catalog GROUP-END arm of this prediction (gate closing toward dense environments,
+the R30 inverted dividend) is PRICED and unpowered at SPARC × LV grade — the one
+neighbor-powered galaxy (NGC2976, term 110% of floor) has no Chae e_N row, the
+alias-fixed group stratum's predicted contrast is 0.008 σ_p, and the upper-bound
+contest signal is ~0.000 against bars 4/9 (calcs/stage10k_groupend.py, sky never
+read). Both directions of P2 — the void/open arm (10I: needs density-field-selected
+samples) and the dense/closed arm (10K: needs genuinely dense environments) — now
+carry explicit data requirements; the prediction remains fully out-of-sample and
+the DR4-era strike clause stands unchanged.*
+
 ### P3 — the z-locked pair: a₀(z) AND p(z) run together
 The temperature identity forces a₀(z) = cH(z)/2π (parameter-free leg); the gate then
 forces the galaxy tail index to run with it (environment-conditional leg, fiducial

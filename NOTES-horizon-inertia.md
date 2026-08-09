@@ -15256,6 +15256,168 @@ rule that would make it honest (check the whole ladder, self-
 adjusting), and kept everything that survived: the exact math, the
 census, and two sharper next experiments.*
 
+---
+
+### Stage 10K (2026-08-09): THE GROUP-END POWER SPEC — the R30 dividend priced dead; the alias census banked
+
+Pre-reg 008109e (bars locked blind: contest signal S_def 4/9, stratum
+contrast 1/2 σ_p). Question: ROUND 30's inverted dividend said the
+neighbor meter is powered at the GROUP end — is a gate-closing test
+(p → ½ toward dense environments) powered for the LIKELIHOOD at
+SPARC × LV grade? Executed R30 condition 7 on the way (the SIMBAD
+alias table, counts only). **Letter K-POWER-DEAD, all gates green,
+first run. The sky's A-vs-B preference was never read (firewall
+held).**
+
+- **The alias census** (counts only; the 10I letter stays closed):
+  SIMBAD TAP resolved 25/28 of the unmatched-at-D≤12 names (465
+  alias rows; D564-8, D631-7, KK98-251 honestly unresolved, logged in
+  the CSV header; fetch calcs/fetch_sparc_aliases.py). Census under
+  the fixed matcher: **matched 48 (was 31); iso 20 (was 13); iso
+  transition-crossers STILL 3**; group Ti1>0 = 27 (4 crossers),
+  Ti1≥1 = 13 (2). The alias fix finds seven more isolated dwarfs
+  (UGC05721=NGC3274, UGC05764=DDO083, UGC05829=DDO084,
+  UGC05918=DDO087, UGC08286=NGC5023, UGC08490=NGC5204,
+  UGC12632=DDO217) — none of them transition-crossers, so the
+  R30-flagged undercount resolves UPWARD in matches but the
+  science-limiting count (iso crossers) stands at 3. The
+  UNGC-vs-Chae Spearman under m1: ρ = 0.283 at N = 24 (recorded;
+  still nothing like a calibration; the 10I letter is closed and
+  does not reopen).
+- **The group end is one galaxy, and it is data-orphaned:** the only
+  neighbor-powered row (term ≥ 50% of the 0.01 floor) is NGC2976
+  (109.9%) — and NGC2976 has NO Chae e_N row, so the lone carrier of
+  the group-end signal cannot even enter the contest. The matched-set
+  median neighbor term is 1.3% of the floor. "Powered at the group
+  end" was, at SPARC × LV grade, a statement about one galaxy the
+  gate world cannot reach.
+- **The power spec** (Fisher with exact per-galaxy dv-profiling,
+  calibrated on the archived 9V r-axis; reader identity |d| = 0.024
+  at the archived grid point, r=0 anchor −12152.49 reproduced;
+  calibration C_fish/C_arch = 2.69 → measured deflation D_f = 0.371,
+  a reusable number): contest signal **S_def ≈ 0.000 at both r =
+  0.3365 and r = 0.5** (bars 4/9 — dead by ≳3 orders); stratum
+  contrast **Δp(Ti1>0) = −0.00059 = 0.008 σ_p** (bars 1/2). Both
+  legs dead, and B was constructed as an UPPER BOUND (the neighbor
+  sum stacked on Chae's 2M++ value, double-count direction
+  disclosed) — a dead upper bound is decisive.
+- Credence: pre-signed HOLD mech 8 / HOLD anomaly-real 53 (all
+  cells). PREDICTIONS P2 annotated (the in-catalog group-end axis is
+  priced; the ordering prediction stays fully out-of-sample).
+  Successor: the gate-closing test needs genuinely dense
+  environments — cluster-infall or group-catalog samples with
+  decomposed kinematics, or DR4-era — not the Local Volume.
+
+**Plain verdict: SUCCESS** (as a pricing instrument — the R30
+dividend is now a number and the number is dead; the census upgrade
+is banked and every future LV cross-match inherits the alias table).
+
+*ELI12: We asked: can we hear the universe's hum get muffled where
+galaxies crowd together? First we fixed the address book — 17
+galaxies were listed under two names, and matching them properly
+found 7 more loners (but no new usable ones). Then we priced the
+muffling test: our map of crowded places has exactly ONE crowded
+galaxy in it, that galaxy is missing the other measurement we'd
+need, and even pretending everything lined up perfectly the
+predicted signal is hundreds of times smaller than our noise. So we
+wrote the price tag down and moved on — this test needs a crowd,
+and our neighborhood doesn't have one.*
+
+---
+
+### Stage 10L (2026-08-09): THE SELF-CONSISTENT OCCUPATION BOUND — the K-BOUNDED path closes NEGATIVE; the occupation is bare-pinned; the meter convention pinned
+
+Pre-reg 008109e + amendment A1 b9cfe04 (post-run-1 self-catch logged
+pre-quote, run 1 preserved as data/stage10l_occbound_run1.txt: the
+G10L-2 κ→0 regression bar was mis-set ARITHMETIC — at κ = 10⁻⁹ the
+first-order response of the fixed point is ~2×10⁻⁷, five orders
+above the 10⁻¹² bar, so the gate tested the finite-κ response, not
+the limit; replaced by a linear-extrapolation limit test with a sign
+check; no physics row changed between runs). **Letter L-PINNED,
+gates 5/5, both verdict clauses firing family-stable** (trap-#20
+discipline: four spacing offsets + two truncated-Gibbs conventions +
+two independent existence detectors — the verdict is not allowed to
+inherit a construction choice).
+
+- **THE R30 QUESTION ANSWERED.** The round-30 repair of the two-rung
+  bound, verbatim: solve the self-consistent occupation (n̄ set by
+  the dressed spacing at the physical T_dS) to fixed point and ask
+  "whether κ → 1 is where self-consistency first fails." Answer:
+  **NO.** The fed-back occupation n̄ = n_BE(x·s(n̄)), s = 1 −
+  κ(n̄+c)/2, has no fixed point at sky occupations: κ_max(x) =
+  0.015–0.14 over the deep window x ∈ [0.03, 0.3] — **6.6–62×
+  below the locked κ = 0.925** — and at κ_lock the first fixed
+  point appears only at x ≈ 3.6, the Newtonian arm, where ν ≈ 1 and
+  nothing needs explaining. Failure sits at κ ~ O(x), far below 1;
+  κ = 1 is not the failure edge, so no bound lives there.
+- **PRODUCTION:** no member of the family carries the deep RAR. The
+  SCHA members have no fixed point at all at (κ_lock, x = 0.05);
+  the truncated-Gibbs members (Gibbs on the rising branch of the
+  literal ladder, both kept-set conventions) saturate at ν ≤ 1.93
+  against the measured demand 19.0 — under-production ≥ 9.9×/13×.
+- **THE CONSEQUENCE (the honest end-state of the R-C axis):** the
+  dictionary's occupation is **BARE-PINNED** — structurally (this
+  stage: the softening feedback, the vertex's own polaron direction,
+  cannot exist at sky occupations) and by measurement (the 5P
+  stiffening family solves fine at every β — negative feedback —
+  and the sky sits at its no-feedback point: deep/binary β → 0, 5R
+  bound β < 0.03; boot = the β = 1 member, sky-dead 5M; the β = 1
+  member regresses to the 4F form ν = 1 + n_BE(νy) at 5×10⁻¹⁵).
+  P-lit has no self-consistent completion in the scanned family ⇒
+  **no occupation-consistency bound on κ exists. The K-BOUNDED path
+  is CLOSED, negative.** (Scope, named: mean-occupation feedback
+  constructions; joint coherent-state/Hartree treatments out of
+  scope.) This is also the fold-row resolution: the "self-consistent
+  structure" the fold demanded is NOT a re-thermalized occupation —
+  consistent with the 10C separation theorem (the bath occupation
+  cancels between time-orderings; the drive is external). The
+  occupation is bare-pinned twice over: measured and structural.
+- **THE CONVENTION PIN (R30 successor 3, exact):** bare form ν =
+  κ_b/x + (1−κ_b/2) + κ_b x/12 ⇒ the deep-amplitude meter reads
+  a₀_fit/a₀_h = κ_b² and the c₁ meter reads κ_b = 2(1−c₁); the
+  first-transition (renormalized-ω) convention maps κ_r =
+  κ_b(1−κ_b/2) with maximum EXACTLY ½ at κ_b = 1 — nearly κ-BLIND
+  over the whole measured band (0.494–0.500 for κ_b ∈ [0.888,
+  1.10]). All archived meters (4S/4Z/10D) parameterize x =
+  √(g_N/a₀) — bare by construction, which IS the vertex convention
+  κ = 4g²/(Ωω_bare). ⇒ **the two-pole tension (lock-meter κ_b =
+  0.925–1.00 vs c₁-meter 1.10–1.48) is CONVENTION-ROBUST** — a
+  physical tension (κ runs; the one-κ form is 10D-rejected), not
+  bookkeeping. Never print "κ measured ~1" (R24 discipline).
+  Curiosity recorded: at closure a first-transition meter would
+  read κ_r = ½ — the same number as c₁; both are faces of (1−κ/2).
+- The κ = 1 level-crossing low-frequency response (R30 successor 2)
+  booked as a READING only — no numeric kill condition derived, so
+  no PREDICTIONS row (discipline held).
+- Credence: pre-signed L-PINNED = **HOLD mech-conditional 8**;
+  anomaly-real 53 untouched (no sky fits; every quoted sky number is
+  an archived meter).
+
+**Plain verdict: SUCCESS** — the round-30 successor executed to its
+honest end. The bound question is now CLOSED (negative) rather than
+open; the derivation program knows one more thing it is NOT allowed
+to assume (re-thermalization on the dressed ladder), one more thing
+it must explain some other way (why the occupation is bare-pinned —
+the 10C separation theorem is the standing microscopic account), and
+the meter bookkeeping the ridge-vs-lock discussion needed is pinned.
+
+*ELI12: Our formula says gravity's "warmth" fills energy levels like
+a thermometer. The referee asked: if filling the levels also
+squeezes them together (our math says it does, slightly), maybe
+demanding perfect self-consistency forces the magic knob to be
+exactly 1? We checked every version of that idea — and
+self-consistency doesn't fail AT 1, it fails almost immediately, for
+any knob setting big enough to matter. That means the levels cannot
+be re-filling themselves on their own squeezed spacing at all: the
+filling follows the ORIGINAL spacing — which is exactly what the
+data had separately told us, and what our bath-cancellation theorem
+said microscopically. No bound from this road, and now we know the
+road is closed rather than unexplored. Bonus: we proved two of our
+rulers genuinely disagree about the knob (it's physics, not
+mislabeled units), and found a cute fact — measured with the
+"squeezed" ruler, the knob at its special setting would read
+exactly ½.*
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
