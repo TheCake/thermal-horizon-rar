@@ -1,0 +1,27 @@
+ROUND-30 ADDENDUM (blind part written before reading the report)
+
+GA-1  chi(1) by full per-block EIGENVECTORS (independent of the
+      analytic displaced-vacuum/Poisson route):
+   kappa=0.500: chi(1) =     10.365  (stage     10.365, rel d 1.2e-05)
+   kappa=0.900: chi(1) =     30.226  (stage     30.226, rel d 1.1e-05)
+   kappa=0.990: chi(1) =    293.478  (stage    293.478, rel d 1.9e-07)
+   kappa=0.999: chi(1) =   2927.284  (stage   2927.284, rel d 9.1e-09)
+   limit 4 e^{-d^2}/om at kappa=0.999: 2.927377 (stage 2.927377)
+
+GA-2  thresholds by direct spectral scan (block eigh, no formula):
+   D(0)=0 at kappa = 2.000000 (exact 2.0)
+   D(1)=0 at kappa = 1.000000 (exact 1.0)
+
+GA-3  thermal-FC persistence (mpmath, independent truncation):
+   sum = 0.3538985706 (stage 0.35389857)
+
+GA-4  10I neighbor-sum scale (from-scratch arithmetic):
+   L_K=1e+10 Lsun at 0.5 Mpc: e_N = 4.65e-05 a0 (0.5% of the 0.01 floor)
+   L_K=1e+11 Lsun at 0.3 Mpc: e_N = 1.29e-03 a0 (12.9% of the 0.01 floor)
+   L_K=1e+09 Lsun at 0.2 Mpc: e_N = 2.90e-05 a0 (0.3% of the 0.01 floor)
+   L_K=1e+10 Lsun at 1.0 Mpc: e_N = 1.16e-05 a0 (0.1% of the 0.01 floor)
+
+GA-5  Theta1 re-derivation slope (independent match + linregress):
+   matches 31 (stage 31); regression N=31 slope 0.956 intercept -10.45 r=0.991 (stage slope 0.956 offset -10.45)
+
+BLIND PART DONE (extend below after reading the report)
