@@ -286,6 +286,19 @@ face value). VOID-SAMPLE FEASIBILITY: the only public void RC sample
 (WALLABY DR2 + environment tags, or DR4-era). The prediction stands
 armed and untested.*
 
+*Annotation 2026-08-09 (Stage 10I, pre-reg 630516e; no status change):
+the LV-ISOLATION route to this test is CLOSED at public grade with the
+blocker quantified — the stage's own pre-registered null-axis gate
+fired first-run: tidal isolation (UNGC Θ₁ < 0) does NOT open the
+ambient gate, because e_N at the operative 0.005–0.02 a₀ level is
+dominated by the large-scale density field (point-source neighbor
+terms ≤ ~2% of any LSS floor; Chae's measured e_N on the LV overlap is
+already 0.005–0.007 a₀ = near-open). Census: only 3 isolated
+transition-crossers exist in SPARC × UNGC. The test's operative data
+requirement sharpens to: DENSITY-FIELD-selected (true void) galaxies
+with y ≳ 1 coverage — neighbor-isolation catalogs cannot substitute.
+No sky read was performed; r̂ = 0.3365 ± 0.1869 (9V) stands operative.*
+
 ### P2 — the environmental ordering p(e_N)
 Weaker ambient → sharper tail (p rises toward 0.72–0.75 in voids; galaxy-population
 median 0.689). In-sample version WITHDRAWN (correction #14: gate heterogeneity, not

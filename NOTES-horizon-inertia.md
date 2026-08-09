@@ -14972,6 +14972,73 @@ family of our attempts look worse than they were. We fixed it, added
 a permanent test so it can never happen again, re-ran everything, and
 the conclusion came out the same — now for the right reasons.*
 
+## Stage 10I (2026-08-09): THE ISOLATION LADDER — the 9V void-channel reopen at LV grade. I-FEASIBILITY-LIMITED (run 1 = the letter)
+
+Pre-reg 630516e (bars, letters, credence map, census bars set BLIND,
+sky-blind injection firewall); script
+[calcs/stage10i_isoladder.py](calcs/stage10i_isoladder.py) →
+data/stage10i_isoladder.txt. Data: SPARC × UNGC (Karachentsev+13,
+VizieR J/AJ/145/101, fetched by
+[calcs/fetch_flynn_corpus.py](calcs/fetch_flynn_corpus.py) alongside
+the Flynn 2026 HI corpus, whose primary read confirmed it adds no
+decomposed kinematics beyond SPARC — LITTLE THINGS rows are V_obs-only,
+WALLABY has no decomposition/errors; trap-#6 pattern, routed around).
+
+The stage STOPPED at the pre-registered G10I-2b gate, first run — the
+gate wired to fail on a null axis (trap-#16 compliance) fired:
+
+- CENSUS (G10I-0 PASS at the blind bars 20/6/3): 31/149 SPARC matched
+  (name + distance; 28 unmatched at D ≤ 12 Mpc listed = alias
+  undercount, bounded); iso (Ti1 < 0) 13; **iso transition-crossers
+  (≥3 pts y ≥ 0.8) = 3** (NGC0024/NGC0891-class); deep-iso
+  (Ti1 < −1) 4. The void-channel sample at public LV grade is THIN
+  regardless of any gate question.
+- G10I-2a PASS: our Θ₁ re-derivation from UNGC positions+K-masses
+  regresses on the published Ti1 at slope 0.956 (offset −10.45,
+  N = 31) — parse and 3D geometry validated.
+- **THE NULL-AXIS FINDING (G10I-2b STOP): the UNGC point-source
+  neighbor sum contributes ≤ ~2% of any large-scale-structure floor
+  for the isolated stratum** (e_N percentiles 16/50/84 =
+  0.0100/0.0101/0.0102 at floor 0.01 — the floor IS the number). The
+  iso gate range collapses to [0.8177, 0.8186]; the r = ½ predicted
+  stratum contrast Δp = 0.0003. The "open-gate extension" this
+  instrument was built to measure would have been 100%
+  floor-assumption — the pre-registered STOP is the honest letter.
+- THE DESIGN-LEVEL RESULT (the round's product): **tidal isolation
+  (Θ₁ < 0) does not open the ambient gate.** e_N at the operative
+  0.005–0.02 a₀ level is LSS-dominated: on the 11-galaxy Chae
+  overlap, Chae's measured e_N runs 0.005–0.007 a₀ — LV field
+  galaxies ALREADY sit at near-open gates, and removing point-source
+  neighbors changes nothing measurable. The void channel's
+  discriminating variable is the large-scale density field, not
+  neighbor isolation. A real void instrument needs density-field
+  selected samples WITH transition-crossing kinematics (CAVITY-class
+  when kinematic products release; WALLABY × void catalogs; DR4-era).
+  The Chae-vs-UNGC meter cross-validation did NOT complete (no
+  variance on the UNGC side) — do not cite it as a two-meter
+  calibration.
+
+Firewall record: no iso-gate likelihood, no injection, no sky read was
+ever computed. Credence: pre-signed cell — HOLD mech-conditional 8,
+HOLD anomaly-real 53. PREDICTIONS P1/P2 annotated (no status flip).
+
+**Plain verdict: NEEDS DIFFERENT DATA** — the channel, not the
+machinery: the 9V reopen clause is now executed and closed at public
+grade with the blocking physics quantified (the gate variable lives in
+the density field, which no public kinematic sample tags), and the
+census (3 isolated transition-crossers) prices the sample any
+successor must beat.
+
+*ELI12: Our theory says lonely galaxies should feel less of the
+universe's background hum. We tried to build a lonely-galaxy detector
+using a catalog of which galaxies have close neighbors. The check we
+wrote in advance caught the problem: the hum doesn't come from close
+neighbors — it comes from the huge far-away stuff (superclusters),
+which affects loner and non-loner alike. So "no neighbors" doesn't
+mean "quiet." To hear the difference we need galaxies inside giant
+empty regions of the universe — and nobody has published the right
+measurements of those yet. We wrote down exactly what's missing.*
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
