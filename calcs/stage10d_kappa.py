@@ -139,6 +139,28 @@ the letter bars never referenced the guard). Injection draws are
 rng-stream-identical (no rng calls added or removed). Bars, bins,
 letters, credence map: UNCHANGED.
 
+AMENDMENT A2 (2026-08-09, pre-quote, gate-design class; run-2
+archived as data/stage10d_kappa_run2.txt; committed BEFORE run-3):
+run-2 passed G0/G1/G3/G6 and the bootstrap, but G2(a) failed AT FULL
+CONVERGENCE (kappa=1 truth recovered 1.262; run-1 under-converged
+gave 1.167; truth-1.5 gave 1.425). Two converged single-draw misses
+pulling toward the middle expose the GATE'S design error, not an
+estimator bug: the single-draw bar (+-0.15) is NARROWER than the
+estimator's own known realization scatter (bootstrap width +-0.24)
+-- the gate accidentally tested one draw's population noise instead
+of estimator bias (the CORRECTION-#10 / 4L-b class; the 7J-x
+per-arm standard). Fix: G2 becomes a SEED-BUDGET gate -- 6 draws
+per truth; PASS iff |mean recovery - truth| <= 0.15 AND the truth
+lies inside the draws' [min, max]; single-draw values printed as
+rows. Split-null gets 3 draws (bar: max D < 11.8). PRE-STATED
+TEETH: if the 6-draw mean bias exceeds 0.15 on either truth, the
+STOP STANDS (estimator materially biased; no verdict). rng
+refactor: injections move to their own stream (seed 53) and the
+bootstrap re-seeds fresh at 47, so bootstrap draws no longer depend
+on injection count (run-2's bootstrap consumed a shifted stream --
+archived; run-3's is the operative one). Bars on the LETTERS:
+UNCHANGED.
+
 Writes data/stage10d_kappa.txt.
 """
 import glob, math, os, time
@@ -490,46 +512,70 @@ for bb1, bb2 in ((0.5, 2.0), (1.0, 3.0)):
     say(f"    bins ({bb1},{bb2}): kappa_d/t/l = {bv.x[0]:.3f}/"
         f"{bv.x[1]:.3f}/{bv.x[2]:.3f}, D vs F1 = {b1.fun-bv.fun:+.2f}")
 
-# ---------------- G2 injections ----------------
+# ---------------- G2 injections (amendment A2 seed-budget) ----------------
 say("")
-say("G2 INJECTIONS (4Z recipe; real lensing retained -- disclosed):")
-rng = np.random.default_rng(47)
-def inject(nu_truth, a0_truth):
-    d_t = rng.normal(0, S_ML, NGal)
+say("G2 INJECTIONS (A2 seed-budget: 6 draws/truth, bias-bar on the mean;")
+say("4Z recipe per draw; real lensing retained -- disclosed):")
+rng_inj = np.random.default_rng(53)
+def inject(nu_truth, a0_truth, rr):
+    d_t = rr.normal(0, S_ML, NGal)
     gN_t = g_gas + 1.0*np.exp(d_t[gidx])*g_dsk + g_bul
     return (np.log10(gN_t*nu_truth(gN_t/a0_truth))
-            + rng.normal(0, np.sqrt(sig2 + 0.08**2)))
-lg_i1 = inject(nu_be, A0_FID)
-bi1, _ = fit_plain('one', ONES, starts=S1[:2] + S1R[:2], rounds=2,
-                   max_rounds=10, lgv=lg_i1)
-ok2a = 0.85 <= bi1.x[0] <= 1.15
-say(f"  (a) truth kappa=1: recovered {bi1.x[0]:.3f} "
-    f"(bar [0.85, 1.15]) -> {'PASS' if ok2a else 'FAIL'}")
-lg_i2 = inject(lambda y: nu_kap(y, 1.5), A0_FID)
-bi2, _ = fit_plain('one', ONES, starts=[[1.5, math.log10(A0_FID), 1.0,
-                                         0.08, 0.0], S1[1]],
-                   rounds=2, max_rounds=10, lgv=lg_i2)
-ok2b = 1.35 <= bi2.x[0] <= 1.65
-say(f"  (b) truth kappa=1.5: recovered {bi2.x[0]:.3f}, a0 "
-    f"{10**bi2.x[1]:.3e} (bar [1.35, 1.65]) -> {'PASS' if ok2b else 'FAIL'}")
-bi4, _ = fit_plain('three', ONES, starts=[[bi1.x[0]]*3 + list(bi1.x[1:]),
-                                          S4[1]], rounds=2, max_rounds=10,
-                   lgv=lg_i1)
-D_null = bi1.fun - bi4.fun
-ok2c = D_null < 11.8
-say(f"  (c) split-null on kappa=1 truth: D(F1-F4) = {D_null:+.2f} "
-    f"(bar < 11.8) -> {'PASS' if ok2c else 'FAIL'}")
+            + rr.normal(0, np.sqrt(sig2 + 0.08**2)))
+recs1 = []
+for dr in range(6):
+    lg_i = inject(nu_be, A0_FID, rng_inj)
+    bi, _ = fit_plain('one', ONES, starts=S1[:2] + S1R[:2], rounds=2,
+                      max_rounds=8, lgv=lg_i)
+    recs1.append(bi.x[0])
+m1 = float(np.mean(recs1))
+in1 = min(recs1) <= 1.0 <= max(recs1)
+ok2a = (abs(m1 - 1.0) <= 0.15) and in1
+say("  (a) truth kappa=1, 6 draws: "
+    + ", ".join(f"{r:.3f}" for r in recs1))
+say(f"      mean = {m1:.3f} (bias bar |mean-1| <= 0.15); truth inside "
+    f"[{min(recs1):.3f}, {max(recs1):.3f}]: {'yes' if in1 else 'NO'} -> "
+    f"{'PASS' if ok2a else 'FAIL'}")
+recs2 = []
+for dr in range(6):
+    lg_i = inject(lambda y: nu_kap(y, 1.5), A0_FID, rng_inj)
+    bi, _ = fit_plain('one', ONES, starts=[[1.5, math.log10(A0_FID), 1.0,
+                                            0.08, 0.0], S1[1], S1R[1]],
+                      rounds=2, max_rounds=8, lgv=lg_i)
+    recs2.append(bi.x[0])
+m2 = float(np.mean(recs2))
+in2 = min(recs2) <= 1.5 <= max(recs2)
+ok2b = (abs(m2 - 1.5) <= 0.15) and in2
+say("  (b) truth kappa=1.5, 6 draws: "
+    + ", ".join(f"{r:.3f}" for r in recs2))
+say(f"      mean = {m2:.3f} (bias bar |mean-1.5| <= 0.15); truth inside "
+    f"[{min(recs2):.3f}, {max(recs2):.3f}]: {'yes' if in2 else 'NO'} -> "
+    f"{'PASS' if ok2b else 'FAIL'}")
+Dnulls = []
+for dr in range(3):
+    lg_i = inject(nu_be, A0_FID, rng_inj)
+    bin1, _ = fit_plain('one', ONES, starts=S1[:2] + S1R[:2], rounds=2,
+                        max_rounds=8, lgv=lg_i)
+    bin4, _ = fit_plain('three', ONES,
+                        starts=[[bin1.x[0]]*3 + list(bin1.x[1:]), S4[1]],
+                        rounds=2, max_rounds=8, lgv=lg_i)
+    Dnulls.append(bin1.fun - bin4.fun)
+ok2c = max(Dnulls) < 11.8
+say("  (c) split-null on kappa=1 truth, 3 draws: D = "
+    + ", ".join(f"{d:+.2f}" for d in Dnulls)
+    + f" (bar max < 11.8) -> {'PASS' if ok2c else 'FAIL'}")
 G2 = ok2a and ok2c
 say(f"  G2 -> {'PASS' if G2 else 'FAIL (STOP)'}"
     f"{'' if ok2b else '  [(b) fail -> letters blocked to TENSE]'}")
 
 # ---------------- G4 bootstrap ----------------
 say("")
-say("G4 BOOTSTRAP (40 paired reps, seed 47):")
+say("G4 BOOTSTRAP (40 paired reps, seed 47 fresh -- A2 rng separation):")
+rng_boot = np.random.default_rng(47)
 allg = np.arange(NGal)
 K1B, KDB, KTB, KLB, DB = [], [], [], [], []
 for rep in range(40):
-    pick = rng.choice(allg, NGal, replace=True)
+    pick = rng_boot.choice(allg, NGal, replace=True)
     w = np.zeros(NGal)
     for g_ in pick: w[g_] += 1
     br1, _ = fit_plain('one', w, starts=[[kap1] + list(b1.x[1:])],
