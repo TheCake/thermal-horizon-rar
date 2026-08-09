@@ -245,6 +245,28 @@ every ingredient now has a Paper-I source, none is tuned on outcome:
   order, wiring-arbitrated exactly as before. Run-4's sixteen guessed
   recipes stand as the reconstruction diagnostic. No bar, letter, or
   credence-map cell is touched.
+
+AMENDMENT 4 (2026-08-09, ROUND-29 conditions 1 + 5; the referee found
+and the addendum verified a factor-of-pi normalization bug in ring_v2 --
+the shipped (G*m/pi)*mean_phi(...) double-divides by pi (the phi-mean
+over [0,pi] IS the ring average); correct prefactor G*m. Verified
+against the exact Freeman disk: old/exact v^2 = 1/pi at every clean
+radius; corrected/exact = 0.99-1.04 at r >= 4 kpc (ring-resolution
+grade). The bug under-massed BOTH pinned components, so run-5's
+"a0 -> 8-10" was MY numerics, not the release's gas physics -- the
+run-5 diagnostic story is RE-ATTRIBUTED accordingly):
+  (a) ring_v2 prefactor corrected (G*m, no /pi).
+  (b) NEW GATE G10H-9 (the gate nobody thought to write, per the
+      reviewer): the ring integrator must reproduce the exact Freeman
+      razor-thin exponential disk to <= 5% in v^2 at r in [4, 12] kpc
+      before any track is built. Fail -> STOP (wiring defect).
+  (c) TRAP #19 ENFORCED IN CODE (condition 5): the LIN fit starts no
+      longer include the published target (1.0, 1.6); replacement
+      starts are off-target.
+  Run 6 = the corrected pinned ladder through the UNCHANGED wiring
+  gates; if a recipe passes, the pre-registered contest executes
+  exactly as originally signed. No bar, letter, or credence-map cell
+  is touched.
 """
 import os
 import sys
@@ -445,7 +467,8 @@ def ring_v2(redges_kpc, mring_msun, r_eval_kpc):
             am = a * KPC_M
             d2 = r**2 + am**2 - 2.0 * r * am * np.cos(phi[None, :])
             d2 = np.maximum(d2, (0.05 * KPC_M)**2)
-            g_r += (G_SI * m / np.pi) * np.mean(
+            # amendment 4a: ring average IS the phi-mean -- prefactor G*m
+            g_r += (G_SI * m) * np.mean(
                 (r - am * np.cos(phi[None, :])) / d2**1.5, axis=1)
     return np.clip(g_r, 0.0, None) * (r_eval_kpc * KPC_M)
 
@@ -465,6 +488,25 @@ def gas_rings(Sigma_msun_pc2, Rout_kpc, nring=120):
     redges = np.linspace(0.0, Rout_kpc, nring + 1)
     area_pc2 = np.pi * (redges[1:]**2 - redges[:-1]**2) * 1e6   # kpc^2->pc^2
     return redges, Sigma_msun_pc2 * area_pc2
+
+
+# ------------------------------------------------------------ G10H-9
+# amendment 4b: validate the ring integrator against the exact Freeman
+# razor-thin exponential disk before any track is built.
+_Md, _Rd = 1e10, 5.0 / 1.678
+_re9, _m9 = sersic_rings(_Md, 5.0, 1.0, 60.0, nring=300)
+_r9 = np.array([4.0, 6.0, 8.0, 12.0])
+_y9 = np.clip(_r9 / (2.0 * _Rd), 1e-6, 50.0)
+_b9 = (special.i0e(_y9) * special.k0e(_y9) - special.i1e(_y9) * special.k1e(_y9))
+_s09 = _Md * MSUN / (2.0 * np.pi * (_Rd * KPC_M)**2)
+_vfree = 4.0 * np.pi * G_SI * _s09 * (_Rd * KPC_M) * _y9**2 * _b9
+_vring = ring_v2(_re9, _m9, _r9)
+_dev9 = float(np.max(np.abs(_vring / _vfree - 1.0)))
+G9 = _dev9 <= 0.05
+emit(f"G10H-9 ring-integrator vs exact Freeman: max|dv2| = {_dev9:.3f} "
+     f"(bar 0.05)  {'PASS' if G9 else 'FAIL'}")
+if not G9:
+    emit("STOP: wiring defect (integrator)."); open("data/stage10h_out.txt", "w", encoding="utf-8").write(OUT.getvalue()); sys.exit(1)
 
 
 GAL = {}
@@ -619,7 +661,8 @@ def fit(model, tr, starts=None, polish=True):
         if model == "CONST":
             starts = [[a] for a in (1.2, 1.8, 2.4, 3.0)]
         elif model == "LIN":
-            starts = [[1.0, 1.6], [1.0, 1.0], [2.0, 0.0], [0.8, 2.2]]
+            # amendment 4c (trap #19): no start at the published target
+            starts = [[0.8, 2.2], [2.0, 0.0], [1.4, 0.8], [0.6, 1.2]]
         elif model == "HSHAPE":
             starts = [[a] for a in (0.8, 1.1, 1.5, 2.0)]
         else:
