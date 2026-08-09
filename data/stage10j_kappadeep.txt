@@ -1,0 +1,101 @@
+STAGE 10J O5-KAPPA-DEEP (pre-reg: this commit)
+
+G10J-1a spacing: D(n) = om - (g^2/Om)(2n+1+2sig); residue = 0
+G10J-1b sigma=1/2 form: D(n) = om[1 - kappa(n+1)/2]; residue = 0
+G10J-1c thresholds: D(0)=0 at kappa=2; D(1)=0 at kappa=1; E(2)-E(0)=0 at kappa=4/3; D(n)=0 at kappa=2/(n+1)
+   kappa = 1 IS the two-rung degeneracy E(2) = E(1): EXACT
+G10J-1c' (A1) general-sigma threshold: D(n)=0 at kappa = 4/(2n+1+2sig); residue = 0
+   sigma = 1/2 -> {2, 1, 2/3, ...}; sigma = 0 -> {4, 4/3, 4/5,
+   ...}: the two-rung threshold is 1 ONLY at sigma = 1/2.
+   P-HALF [DERIVED, 10B]: the vertex charge is the system
+   HAMILTONIAN (H_int = (H/c^2) dPhi) => the coupling charge is
+   om(N + 1/2)/om = N + 1/2 -- the zero-point gravitates; sigma
+   = 1/2 is forced by the same selection rule that forces the
+   dispersive vertex.  The kappa = 1 two-rung meaning is
+   EP-anchored, not convention.
+G10J-1d identity web (6 equivalences of kappa=1): ALL EXACT
+G10J-1e kappa=1 ladder rungs (10C G4 regression): nu = 1/x + 1/2 + x/12 + 0 x^2 - x^3/720; residue = 0
+G10J-1: PASS
+
+G10J-2 numerics (Fock truncation 160)
+G10J-2a block spectra vs polaron formula: worst |d| = 3.55e-15 (bar 1e-8) -> PASS
+G10J-2b compliance divergence: (1-kappa) chi(1) = 2.927284 vs exact limit 4 e^{-d^2}/om = 2.927377 at kappa=0.999 (bar 2%) -> PASS
+   chi(1) at kappa=0.500:     10.365
+   chi(1) at kappa=0.900:     30.226
+   chi(1) at kappa=0.990:    293.478
+   chi(1) at kappa=0.999:   2927.284
+G10J-2c thermal-FC persistence at n_amb=2: sum p_k e^{-d2} L_k(d2)^2 = 0.35389857 (numeric 0.35389857, d<=1e-8) POSITIVE -> PASS
+   => the chi(1) divergence at kappa -> 1 persists under a thermal ambient (the diagonal-FC channel weight never vanishes);
+      D(1) itself is bath-occupation-free (10C T1).
+G10J-2: PASS
+
+G10J-3 the 9W funnel: kappa_coll = 4 lam_bar^2/(Om om), lam_bar^2 = sum lam_k^2; symbolic residue 0, numeric worst 8.3e-17 (K=1,2,3) -> PASS
+
+G10J-4 meters (archived, no sky fits): kappa = 2(1-c1): c1=0.450
+   -> kappa=1.100 (flat-M/L 4S); hier 4Z c1=0.258 -> 1.484;
+   a0-lock a0_fit/a0_horizon = kappa^2: galaxy hier => kappa =
+   1.00 +/- 0.05; 10D lock row kappa = 0.925 (Planck) / 0.888
+   (SH0ES); 10D free single-kappa 1.503 (ridge caveat C2
+   mandatory); plain deep pole 1.317 / vertical FLIPS (R25-C1).
+G10J-4: PASS
+
+G10J-5 THE FUNNEL + D STATEMENT (derivation chain):
+   kappa = 4 lam_bar^2/(Om om) [G10J-3]; lam_bar^2 = sum lam_k^2
+   carries the absolute coupling density = exactly the
+   10A-DISPLACED D-normalization (named-not-derived there).
+   => kappa = 1 is derivable WITHOUT D-provenance IFF a
+   structural principle ties lam_bar^2 to Om om/4 directly.
+   The three candidates, premise-labeled:
+   P-crit  saturation of the two-rung bound  [ASSUMED]
+   P-lit   thermalization on the literal dressed ladder
+           (bound only, see R-C)               [ASSUMED]
+   P-scale pure-dS one-scale computation (9Z machinery + D)
+           [OPEN -- a computation, not a principle]
+
+R-C THE BOUND (premise-labeled; A1 scope: a TWO-RUNG ORDERING
+   statement -- the global Gibbs construction on the literal
+   ladder is ill-defined for ANY kappa > 0, the fold row's own
+   content):
+   P-vertex [DERIVED, 10B selection rule] + P-half [DERIVED,
+   10B: the charge is H/c^2, zero-point included] + P-polaron
+   [exact] + P-BEform [MEASURED, the RAR identity] + P-lit
+   [ASSUMED: the occupation ordering of the first rungs follows
+   the literal dressed spacings]:
+   kappa > 1 => E(2) < E(1) => the relative weight of n=2 over
+   n=1 exceeds the Boltzmann ordering at EVERY temperature =>
+   the mode's own occupation cannot be the measured BE form
+   through the first two rungs.  Hence kappa <= 1, saturation
+   at the compliance divergence (P-crit).
+   check kappa=1.2: E(1)-E(0)=0.400, E(2)-E(1)=-0.200 -> inverted: True (Gibbs: P(2)/P(1) = e^{-(E2-E1)/T} > 1 at every T)
+
+CONSISTENCY ROWS (report-grade):
+   Under P-lit the bound EXCLUDES the 10D low-a0/high-kappa
+   ridge (1.503 single / 1.317 plain deep) and CONTAINS the
+   temperature-locked world (0.925) near saturation: the
+   spectral bound and the temperature lock pick the SAME world
+   (treatment caveat R25-C1 + ridge caveat C2 mandatory).
+   FOLD OBSERVATION: at any fixed kappa > 0 the literal ladder
+   is non-monotone for n >= 2/kappa while the deep sky occupies
+   n ~ 1/x >> 1 => the fixed-coefficient dictionary is the
+   leading form of a self-consistent structure (no direction
+   claim; 10D running direction is treatment-unstable).
+
+G10J-6 PREMISE AUDIT:
+   P-vertex  DERIVED
+   P-half    DERIVED
+   P-polaron EXACT
+   P-BEform  MEASURED
+   P-lit     ASSUMED
+   P-crit    ASSUMED
+
+====================================================================
+VERDICT LETTER: K-CONDITIONAL
+   the bound kappa <= 1 rides ONE named assumption (P-lit); the
+   saturation kappa = 1 rides a second (P-crit); everything
+   else in the chain is exact, derived, or measured.  The
+   identity web, the compliance-divergence theorem, the 9W
+   funnel, and the D statement are UNCONDITIONAL.
+pre-signed credence: K-CONDITIONAL -> HOLD mech 8; anomaly-real
+53 untouched (no sky fits)
+gates: G1 PASS | G2 PASS | G3 PASS | G4 PASS | G5 stated | G6 audited
+total wall-clock 0.0 min

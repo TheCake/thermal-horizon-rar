@@ -15039,6 +15039,96 @@ mean "quiet." To hear the difference we need galaxies inside giant
 empty regions of the universe — and nobody has published the right
 measurements of those yet. We wrote down exactly what's missing.*
 
+## Stage 10J (2026-08-09): O5-KAPPA-DEEP — the dictionary coefficient at the deep limit. K-CONDITIONAL, gates 4/4 + A1
+
+Pre-reg 865c01e + amendment A1 1176e7c (post-run-1 self-catch, logged
+pre-quote, run 1 preserved as data/stage10j_kappadeep_run1.txt);
+script [calcs/stage10j_kappadeep.py](calcs/stage10j_kappadeep.py) →
+data/stage10j_kappadeep.txt. The R24-cond-6 / 10D-C2 target: derive
+(or bound) κ = 4g²/(Ωω) at the deep limit, where the temperature-
+locked world reads κ = 0.925. Dispersive side only (10G strike scope
+respected — no lending-law input anywhere).
+
+**EARNED UNCONDITIONALLY (sympy-exact + numerics):**
+- **THE THRESHOLD CATALOGUE** (general σ, A1): the dressed ladder's
+  spacing zero sits at κ_fold(n) = 4/(2n+1+2σ). At σ = ½ — and σ = ½
+  is DERIVED, not chosen: the 10B vertex couples the system
+  HAMILTONIAN (H_int = (Ĥ/c²)δΦ), so the zero-point gravitates
+  (premise P-half) — the thresholds are {2, 1, 2/3, …} and **κ = 1
+  is EXACTLY the two-rung degeneracy E(2) = E(1)**: at the closure
+  value the dressed mode's second quantum becomes free. The κ = 1
+  target now has an exact spectral meaning, EP-anchored.
+- **THE COMPLIANCE-DIVERGENCE THEOREM**: the static susceptibility of
+  the system coordinate in the one-quantum dressed state diverges as
+  κ → 1⁻ with finite Franck–Condon prefactor — lim (1−κ)·χ(1) =
+  4e^(−d²)/ω exactly (numerics: χ(1) = 10.4/30.2/293/2927 at κ =
+  0.5/0.9/0.99/0.999; limit verified to 0.003%). The divergence
+  persists under a thermal ambient (diagonal-FC channel weight
+  Σp_k e^(−d²)L_k(d²)² = 0.354 > 0 at n̄ = 2, exact-vs-numeric
+  1e-8), and the spacing itself is bath-occupation-free (10C T1).
+  **The dictionary's own compliance saturates at κ = 1.**
+- **THE IDENTITY WEB** (six exact equivalences): κ = 1 ⟺ g = ½√(Ωω)
+  ⟺ **g² = E_zp,s·E_zp,b (the coupling energy is the geometric mean
+  of the two zero-point energies)** ⟺ displacement energy per unit
+  charge² = ω/4 ⟺ φ_req = ½√(Ω/ω) ⟺ E_c = 2ħω ⟺ Δ(1) = 0. The 10C
+  "TWO QUANTA" identity resurfaces as the capacity-2 ladder.
+- **THE 9W FUNNEL + THE D STATEMENT**: κ_coll = 4λ̄²/(Ωω) with λ̄² =
+  Σλ_k² — K-invariant exactly; every multimode route reduces to one
+  collective number, and λ̄² is exactly where the 10A-displaced
+  D-normalization lives. κ = 1 is derivable WITHOUT D-provenance iff
+  a structural principle ties λ̄² to Ωω/4 directly.
+
+**CONDITIONAL (the premise-audit letter, trap-#12 grammar working as
+designed — the letter could not print stronger):**
+- **THE BOUND κ ≤ 1** rides ONE named assumption, P-lit ("the
+  occupation ordering of the first rungs follows the literal dressed
+  spacings"; A1 scope: a two-rung ordering statement — the global
+  Gibbs construction is ill-defined at any κ, the fold row's own
+  content). Everything else in the chain is derived (P-vertex,
+  P-half), exact (P-polaron), or measured (P-BEform = the RAR
+  identity). Under P-lit: κ > 1 inverts E(2) < E(1) and the mode's
+  own occupation cannot be the measured BE form through two rungs.
+- CONSISTENCY ROW (the round's sharpest sentence, conditional): under
+  P-lit the bound **EXCLUDES the 10D low-a₀/high-κ ridge (1.503
+  single-κ / 1.317 plain deep pole) and CONTAINS the temperature-
+  locked world (0.925) near saturation — the spectral bound and the
+  temperature lock pick the SAME world** (R25-C1 treatment caveat +
+  C2 ridge caveat mandatory).
+- Saturation κ = 1 exactly rides a second assumption, P-crit (the
+  physical coupling saturates the two-rung/compliance bound).
+- FOLD OBSERVATION (report-grade): at any fixed κ > 0 the literal
+  ladder is non-monotone at n ≥ 2/κ while the deep sky occupies
+  n ~ 1/x ≫ 1 — the fixed-coefficient dictionary must be the leading
+  form of a self-consistent structure (no direction claim; the 10D
+  running direction is treatment-unstable per R25-C1).
+
+LETTER: **K-CONDITIONAL** (mechanical: the bound chain carries P-lit
+ASSUMED; K-BOUNDED requires zero). Credence: pre-signed HOLD
+mech-conditional 8; anomaly-real 53 untouched (no sky fits; every κ
+quoted is an archived meter). SUCCESSORS: discharge P-lit (does a
+self-consistent ladder treatment preserve the two-rung bound?) or the
+P-scale computation (9Z machinery — blocked on the known D wall).
+
+**Plain verdict: SUCCESS at the conditional grade it was designed
+for** — the κ = 1 target now has an exact spectral meaning
+(EP-anchored two-rung degeneracy), a candidate physical principle
+(saturation of its own compliance), a one-assumption bound that
+independently picks the temperature-locked world, and a precise
+statement of what remains (P-lit, or D).
+
+*ELI12: Our sky formula has one knob, κ, and the sky reads it as
+almost exactly 1. We asked WHY 1. We proved: at exactly 1, the mode
+being tuned reaches the point where adding a second quantum of wobble
+costs nothing — its springiness to a probe becomes infinite. It is as
+soft as it can be while its energy steps stay in order. And the
+reason the counting starts at ½ (which is what makes 1 the special
+value) is Einstein's rule that even vacuum energy gravitates. IF
+nature tunes the knob to the softest consistent point, κ must be ≤ 1
+— and the sky's 0.93, measured completely independently through the
+temperature lock, sits right at that edge. What we could NOT prove:
+that nature must tune to the edge. One assumption, written down by
+name.*
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our
