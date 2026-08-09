@@ -625,6 +625,25 @@ natural move) · κ=1-in-the-deep-limit (dispersive-side, survives) ·
 DR4 readiness. Fourteen closes in four days — FRESH SESSION before
 the next arc.**
 
+**P3 DRAFT 0.2 + TWO SCOUTS (2026-08-09 fifth close, the author's
+blanket go = the flagged thaw): papers/paper3_mechanism.md revised to
+the POST-STRIKE state — new §6 (carrier exclusions, dispersive
+selection rule, linear-pull theorem + additive-law uniqueness, κ
+two-pole + one-κ rejection, E_c = 2ħω deep-limit target), §7 rebuilt
+(lending law model-grade → three-step exclusion, FD-primary 6.7×/9.2×,
+R27 scope verbatim), credences → 8 w/ trail, r = ½ kill test in §9,
+five-item transparency, +8 repro rows; abstract exactly 250w, mean
+23.5, one em-dash; TODO P3-IMPACT flag RESOLVED; referee round NOT
+run (author gate + memory rule). NO ledger/credence/sky moves. Scout
+results (scout-grade, primary-read before use, in DIARY fifth-close):
+void reopen = "Unified HI RC Corpus 2026" (arXiv 2604.13489, 438 gal)
+× Karachentsev Θ-indices → ~15–25 isolated transition-crossers (CAVITY
+has no kinematics yet); z-pair = MUSE-DARK III (Ciocan+ 2026) now
+PUBLISHES a₀(z≈1) = 2.38±0.10e−10 + slope — the ×2 rise a₀ ∝ H(z)
+predicts, no cH/2π-form test in print; feasibility marginal 1.5–2σ.
+NEXT FORK (author's): circulation queue TODO 27–31 · P3 referee round
+· κ=1-deep · the two scouted instruments · DR4 readiness.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

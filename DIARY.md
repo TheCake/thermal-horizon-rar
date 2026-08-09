@@ -9,6 +9,61 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-09 (fifth close) — P3 draft 0.2: the post-strike honesty revision + two data scouts
+
+The author's "Ok, you have my go, do whatever you think should be done
+next" (post-compact) was spent on the flagged item, not a new arc: the
+P3-IMPACT revision. No stage, no pre-reg, no credence moves, no ledger
+rows — paper absorption only.
+
+WHAT CHANGED IN papers/paper3_mechanism.md (draft 0.1 → 0.2):
+- NEW §6 (the carrier): first-law anchor, radiative exclusion 34–44
+  orders + the §5 fatal-corner dissolution, carrier ledger, the
+  dispersive selection rule, the linear-pull separation theorem +
+  additive-law uniqueness, κ two-pole + one-κ rejection + E_c = 2ħω
+  as the deep-limit target. §7 rebuilt: lending law at model grade,
+  then the three-step exclusion (vertex exists → equilibration cannot
+  substitute → participation ceiling, FD-primary 6.7×/9.2×), scope
+  statement verbatim from R27. Credence trail → 8 with history.
+  r = ½ dispersive kill test added to §9 (r̂ = 0.34 ± 0.19 quoted at
+  0.9σ, does not decide). Five-item transparency list (the strike +
+  the owned reviewer error). +8 repro rows (Glob-verified names).
+  E-ladder one-liner in §4 at conjecture grade. Register audit ran:
+  abstract EXACTLY 250 words, sentence mean 23.5, ONE em-dash
+  file-wide. Sections renumbered 6→11; cross-refs audited by grep.
+- P3 referee round STILL NOT RUN. Tell the author first, and
+  re-compute every reviewer number (the memory rule).
+
+SCOUTS (Haiku, both landed, scout-grade — primary-read before ANY use):
+- VOID REOPEN: the practical path is a 2026 "Unified HI Rotation Curve
+  Corpus" (claimed: Zenodo 10.5281/zenodo.19563417, arXiv 2604.13489;
+  438 galaxies = SPARC+LITTLE THINGS+THINGS+WALLABY DR2) cross-matched
+  with Karachentsev LV tidal indices (Θ1/Θ5 exist, ~197 isolated) →
+  est. 15–25 isolated transition-crossing galaxies. CAVITY DR1 (100
+  void galaxies, IFS cubes public) has NO kinematic products yet;
+  Kreckel VGS has no fitted curves; WALLABY pilot models have no
+  isolation metric. The 9V standing design check applies: verify
+  y-coverage BEFORE designing any instrument.
+- Z-PAIR: MUSE-DARK III (Ciocan+ 2026, arXiv:2604.22613, A&A accepted,
+  data released at dark.univ-lyon1.fr) claims a₀(z≈1) = 2.38±0.10e−10
+  and slope a₁ = 1.59±0.10e−10 — the ×2 rise our a₀ ∝ H(z) predicts
+  (cH(1)/2π ≈ 2.1e−10 at Planck Ωm). Scout says NO published test of
+  the cH(z)/2π form exists; MIGHTEE-HI 2025 (z<0.08) reports a
+  tentative high a₀ = 1.69±0.13e−10. Their quoted errors look too
+  good vs their 0.17 dex scatter — feasibility read: marginal 1.5–2σ.
+  If a z-pair stage is ever designed: PRIMARY READ Ciocan first
+  (scout numbers unverified), power gates before any fit (the 9R
+  lesson), and remember the prediction is the LOCKED PAIR (a₀ AND
+  p together), not a₀ alone.
+
+Don't-redo: the P3 revision is DONE — do not re-absorb 10A–10G into
+P3 again; any further P3 change should come from a referee round or
+an author call. The fork the author faces is unchanged (circulation
+queue TODO 27–31 / κ=1-deep derivation / DR4 readiness) plus the two
+scouted instruments above as new executable-now candidates.
+
+---
+
 ## 2026-08-09 (fourth close) — 10G+R27: THE STRIKE FIRED (mech 15→8); the O5 derivation arc is CLOSED
 
 The author said "You are go for hunt" post-compact, and 10G ran

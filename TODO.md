@@ -1326,10 +1326,15 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     the temperature lock) — NOT RECOMMENDED before DR4-era data.
     O5-INTERPLAY demoted with the struck leg (its object was the
     exchange channel's back-shift; keep as a consistency note
-    only). ⚠ PAPER-3 IMPACT: P3 draft 0.1 prints the mechanism
-    conditional ~15 and a §2 built on the pre-strike state — the
-    strike materially changes P3's §2/credence line; REVISE AT THE
-    NEXT AUTHOR-CALLED THAW, BEFORE any P3 referee round.**);
+    only). ✔ PAPER-3 IMPACT RESOLVED 2026-08-09: the author's
+    blanket go was taken as the thaw; P3 draft 0.2 absorbs the
+    full 10A→10G arc (new §6 carrier/selection-rule/linear-pull/κ,
+    §7 exchange-leg exclusion with the FD-primary shortfalls,
+    credence trail to 8, five-item transparency list, r=½ kill
+    test in §9, +8 repro rows; abstract 250w, mean 23.5, one
+    em-dash); P3 referee round STILL NOT RUN (tell the author
+    first; re-compute every reviewer number per the memory
+    rule).**);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established
