@@ -1,0 +1,65 @@
+==============================================================================
+STAGE 10D -- O5-KAPPA: joint single-kappa fit; 153 galaxies, 2700 points + 12 lensing
+bins at x_fid = sqrt(g_N,fid/1.2e-10): deep <0.7 (N=1761+12L), trans 0.7-2.5 (N=815+0L), tail >=2.5 (N=124+0L)
+==============================================================================
+
+G0 IDENTITY (STOP-class):
+  (a) family identity at kappa=1: max rel diff = 2.25e-15 (bar 5e-12) -> PASS
+  (b) objective identity (lnL grade): |-7384.0143 - -7384.0143| = 9.09e-13 (bar 0.01) -> PASS
+  (c) F3 (kappa=1) hier refit: -10432.80 (4Z lam=1 node -10435.06) -> FAIL
+      pd->1e-4 endpoint: -8397.72 (4S lam=1 -8397.72) -> PASS
+  G0 -> FAIL (STOP)
+
+G1 SERIES (sympy):
+  deep coeff = kappa: exact; renormalized c1 - (1-kappa/2) = 0; c2 - kappa^2/12 = 0
+  G1 -> PASS  [the kappa = 2(1-c1) meter map is series-exact]
+
+POINT FITS (plain hier):
+  F1 (kappa, a0 free): kappa = 1.500, a0 = 3.940e-11, f_ML = 1.46, s_int = 0.069, obj = -10475.88
+     multi-start best-two spread = 0.00 (bar 1.0: OK)
+     implied c1 = 1 - kappa/2 = 0.250  [4Z hier c1 = 0.258 (0.208-0.309); 4S flat c1 = 0.450]
+     implied deep norm kappa^2*a0 = 8.862e-11
+  F2 (horizon-locked, Planck): kappa = 0.937, a0 = 9.360e-11, obj = -10399.00 (D vs F1 +76.88)
+      (SH0ES-centered alternate: kappa = 0.900, a0 = 1.009e-10)
+  F3 (kappa=1): a0 = 7.921e-11, obj = -10432.80 (D vs F1 +43.08)
+  F4 (split): kappa_d = 1.311, kappa_t = 1.035, kappa_l = 0.200 (proxy), a0 = 4.853e-11, obj = -10497.54
+  D(F1 - F4) = +21.66   [K-SPLIT point bar 11.8; K-TENSE bar 6.2]
+  G3: F4-equal==F1 identity PASS; nesting PASS; F1 opt OK
+
+G5 DECOMP (per-bin SPARC -2lnL contribution, F1 minus F4):
+     deep: F1  -6998.58  F4  -7017.58  D  +19.01
+    trans: F1  -3344.90  F4  -3342.42  D   -2.48
+     tail: F1   -498.77  F4   -499.12  D   +0.35
+  boundary variants (F4 point refits):
+    bins (0.5,2.0): kappa_d/t/l = 1.184/1.015/0.200, D vs F1 = +27.55
+    bins (1.0,3.0): kappa_d/t/l = 1.291/0.556/0.200, D vs F1 = +43.49
+
+G2 INJECTIONS (4Z recipe; real lensing retained -- disclosed):
+  (a) truth kappa=1: recovered 1.167 (bar [0.85, 1.15]) -> FAIL
+  (b) truth kappa=1.5: recovered 1.397, a0 1.346e-10 (bar [1.35, 1.65]) -> PASS
+  (c) split-null on kappa=1 truth: D(F1-F4) = +1.62 (bar < 11.8) -> PASS
+  G2 -> FAIL (STOP)
+
+G4 BOOTSTRAP (40 paired reps, seed 47):
+    rep 10/40 done (0.3 min)
+    rep 20/40 done (0.5 min)
+    rep 30/40 done (0.6 min)
+    rep 40/40 done (0.8 min)
+  F1 kappa-hat 16/50/84 = 1.124/1.335/1.599
+  (kappa_t - kappa_d) 16/50/84 = -0.330/-0.205/-0.095   width = 0.235
+  D(F1-F4) 16/50/84 = 7.49/19.34/43.19; reps >= 6.2: 35/40; >= 11.8: 27/40
+
+G6 VERTICAL CO-READ (5M apparatus, kappa family; point grade):
+  F3v (kappa=1) regression: -12152.49 (5M dv-ON BE -12152.49) -> PASS
+  F1v: kappa = 1.394, a0 = 5.608e-11, obj = -12175.65 (D vs F3v -23.15)
+  F4v: kappa_d/t/l = 1.480/1.617/0.200, D(F1v-F4v) = +14.06  [lean-grade co-read]
+
+==============================================================================
+TOKENS: G0:F G1:P G2:F G3:P G6:P  kappa1=1.500 boot[1.12,1.60] Dsplit=+21.7 bootD[7.5,43.2]
+LETTER: STOP
+
+MANDATORY CO-READS (print in every cell): F2 lock row kappa = 0.937 (Planck) / 0.900 (SH0ES); vertical F1v kappa = 1.394, D(F1v-F4v) = +14.06
+
+CREDENCE (pre-signed arc map): K-ONE + clean round -> mech 15->17; K-ONE-OFF/K-SPLIT -> HOLD 15; strike cells live in 10E only; anomaly-real 53 UNTOUCHED.
+==============================================================================
+done (0.9 min)

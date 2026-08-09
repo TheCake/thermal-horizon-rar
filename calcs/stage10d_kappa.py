@@ -121,6 +121,24 @@ retains real lensing (4Z-verbatim recipe). (vi) vertical co-read
 point-grade. (vii) bootstrap primary everywhere (4S/9U population-
 variance lessons).
 
+AMENDMENT A1 (2026-08-09, pre-quote, bug-class; run-1 archived as
+data/stage10d_kappa_run1.txt; committed BEFORE the re-run): run-1
+fired STOP on G0(c) (F3 cold refit -10432.80 vs archived -10435.06,
+2.26 past the 1.0 bar) and G2(a) (kappa=1 truth recovered 1.167 vs
+[0.85, 1.15]). Diagnosis: fixed-round coordinate descent
+under-converges on the known a0-f_ML ridge (the archived node was
+warm-started along the 4Z sweep; the 5M cold BE fit needed its
+tol-looped 12+-round descent to land -10434.99). Fixes (machinery
+only, NO bar moved): (1) fit_plain gains the 5M-style tol-looped
+convergence (tol 0.05; max_rounds 15 point / 10 injection / 4
+bootstrap) + a final NM polish; (2) theta multi-starts gain the
+second ridge corner (a0 ~ 0.8e-10, f ~ 1.4) alongside the fiducial;
+(3) the kappa guard widens 0.2 -> 0.02 because run-1's tail proxy
+kappa_l = 0.200 SAT ON the guard (grid-edge riding, 7I discipline;
+the letter bars never referenced the guard). Injection draws are
+rng-stream-identical (no rng calls added or removed). Bars, bins,
+letters, credence map: UNCHANGED.
+
 Writes data/stage10d_kappa.txt.
 """
 import glob, math, os, time
@@ -261,18 +279,19 @@ NK = {'one': 1, 'fix1': 0, 'three': 3}
 def m2k(t, mode, dml, w_g, lgv, bsp, ble, prior_hor=None):
     nk = NK[mode]
     tk, th = t[:nk], t[nk:]
-    if mode != 'fix1' and not all(0.2 < k < 3.0 for k in tk): return 1e12
+    if mode != 'fix1' and not all(0.02 < k < 3.0 for k in tk): return 1e12
     ksp, kle = kaps_from(mode, tk, bsp, ble)
     return m2core(ksp, kle, th, dml, w_g, lgv, prior_hor)
 
 def fit_plain(mode, w_g, pd=S_ML, starts=None, rounds=3, lgv=None,
-              bsp=None, ble=None, prior_hor=None):
+              bsp=None, ble=None, prior_hor=None, tol=0.05,
+              max_rounds=15):
     if lgv is None: lgv = LGOBS
     if bsp is None: bsp, ble = BSP, BLE
     nk = NK[mode]
     dml = np.zeros(NGal)
-    best = None
-    for rd in range(rounds):
+    best, prev = None, None
+    for rd in range(max_rounds):
         ss = ([list(best.x)] if best is not None else []) + (starts or [])
         bb = None
         for t0 in ss:
@@ -284,7 +303,9 @@ def fit_plain(mode, w_g, pd=S_ML, starts=None, rounds=3, lgv=None,
             if bb is None or b.fun < bb.fun: bb = b
         best = bb
         tk, (la0, f, s_int, dlt) = best.x[:nk], best.x[nk:]
-        if pd < 1e-3: continue
+        if pd < 1e-3:
+            if rd >= rounds - 1: break
+            continue
         ksp, _ = kaps_from(mode, tk, bsp, ble)
         se2c = s_int*s_int
         for gi2 in range(NGal):
@@ -300,6 +321,17 @@ def fit_plain(mode, w_g, pd=S_ML, starts=None, rounds=3, lgv=None,
                         + w_g[gi2]*dl*dl/(pd*pd))
             dml[gi2] = minimize_scalar(od, bounds=(-0.7, 0.7),
                                        method='bounded').x
+        cur = m2k(best.x, mode, dml, w_g, lgv, bsp, ble, prior_hor)
+        if rd >= rounds - 1 and prev is not None and abs(prev - cur) < tol:
+            prev = cur
+            break
+        prev = cur
+    b = minimize(lambda t: m2k(t, mode, dml, w_g, lgv, bsp, ble,
+                               prior_hor), list(best.x),
+                 method='Nelder-Mead',
+                 options=dict(maxiter=4000+1500*nk, xatol=1e-6,
+                              fatol=1e-7))
+    if b.fun < best.fun: best = b
     return best, dml
 
 ONES = np.ones(NGal)
@@ -346,10 +378,12 @@ ok0b = abs(v_kap - v_be) <= 0.01
 say(f"  (b) objective identity (lnL grade): |{v_kap:.4f} - {v_be:.4f}| = "
     f"{abs(v_kap-v_be):.2e} (bar 0.01) -> {'PASS' if ok0b else 'FAIL'}")
 b3, dml3 = fit_plain('fix1', ONES, rounds=6,
-                     starts=[[math.log10(A0_FID), 1.0, 0.08, 0.0]])
+                     starts=[[math.log10(A0_FID), 1.0, 0.08, 0.0],
+                             [math.log10(8e-11), 1.4, 0.07, 0.0]])
 ok0c1 = abs(b3.fun - (-10435.06)) < 1.0
 say(f"  (c) F3 (kappa=1) hier refit: {b3.fun:.2f} (4Z lam=1 node "
-    f"-10435.06) -> {'PASS' if ok0c1 else 'FAIL'}")
+    f"-10435.06) -> {'PASS' if ok0c1 else 'FAIL'}  [a0 = "
+    f"{10**b3.x[0]:.3e}, f_ML = {b3.x[1]:.2f}, s_int = {b3.x[2]:.3f}]")
 b3e, _ = fit_plain('fix1', ONES, pd=1e-4, rounds=1,
                    starts=[[math.log10(A0_FID), 1.0, 0.08, 0.0]])
 ok0c2 = abs(b3e.fun - (-8397.72)) < 1.0
@@ -378,9 +412,10 @@ say(f"  G1 -> {'PASS' if ok1 else 'FAIL'}  [the kappa = 2(1-c1) meter "
 say("")
 say("POINT FITS (plain hier):")
 S1 = [[k, math.log10(A0_FID), 1.0, 0.08, 0.0] for k in (0.7, 1.0, 1.5)]
+S1R = [[k, math.log10(8e-11), 1.4, 0.07, 0.0] for k in (0.7, 1.0, 1.5)]
 f1_runs = []
-for s0 in S1:
-    b, dm = fit_plain('one', ONES, starts=[s0], rounds=4)
+for s0, s0r in zip(S1, S1R):
+    b, dm = fit_plain('one', ONES, starts=[s0, s0r], rounds=4)
     f1_runs.append((b, dm))
 f1_runs.sort(key=lambda r: r[0].fun)
 b1, dml1 = f1_runs[0]
@@ -411,7 +446,8 @@ say(f"  F3 (kappa=1): a0 = {10**b3.x[0]:.3e}, obj = {b3.fun:.2f} "
 
 S4 = [[kap1, kap1, kap1] + list(b1.x[1:]),
       [1.0, 1.5, 1.0, math.log10(A0_FID), 1.0, 0.08, 0.0],
-      [1.5, 1.5, 1.5, math.log10(A0_FID), 1.0, 0.08, 0.0]]
+      [1.5, 1.5, 1.5, math.log10(A0_FID), 1.0, 0.08, 0.0],
+      [1.3, 1.0, 0.5, math.log10(8e-11), 1.4, 0.07, 0.0]]
 b4, dml4 = fit_plain('three', ONES, starts=S4, rounds=4)
 kd, kt, kl = b4.x[:3]
 say(f"  F4 (split): kappa_d = {kd:.3f}, kappa_t = {kt:.3f}, "
@@ -450,7 +486,7 @@ say("  boundary variants (F4 point refits):")
 for bb1, bb2 in ((0.5, 2.0), (1.0, 3.0)):
     bspv, blev = make_bins(bb1, bb2)
     bv, _ = fit_plain('three', ONES, starts=[list(b4.x), S4[1]],
-                      bsp=bspv, ble=blev)
+                      bsp=bspv, ble=blev, max_rounds=8)
     say(f"    bins ({bb1},{bb2}): kappa_d/t/l = {bv.x[0]:.3f}/"
         f"{bv.x[1]:.3f}/{bv.x[2]:.3f}, D vs F1 = {b1.fun-bv.fun:+.2f}")
 
@@ -464,19 +500,21 @@ def inject(nu_truth, a0_truth):
     return (np.log10(gN_t*nu_truth(gN_t/a0_truth))
             + rng.normal(0, np.sqrt(sig2 + 0.08**2)))
 lg_i1 = inject(nu_be, A0_FID)
-bi1, _ = fit_plain('one', ONES, starts=S1[:2], rounds=2, lgv=lg_i1)
+bi1, _ = fit_plain('one', ONES, starts=S1[:2] + S1R[:2], rounds=2,
+                   max_rounds=10, lgv=lg_i1)
 ok2a = 0.85 <= bi1.x[0] <= 1.15
 say(f"  (a) truth kappa=1: recovered {bi1.x[0]:.3f} "
     f"(bar [0.85, 1.15]) -> {'PASS' if ok2a else 'FAIL'}")
 lg_i2 = inject(lambda y: nu_kap(y, 1.5), A0_FID)
 bi2, _ = fit_plain('one', ONES, starts=[[1.5, math.log10(A0_FID), 1.0,
                                          0.08, 0.0], S1[1]],
-                   rounds=2, lgv=lg_i2)
+                   rounds=2, max_rounds=10, lgv=lg_i2)
 ok2b = 1.35 <= bi2.x[0] <= 1.65
 say(f"  (b) truth kappa=1.5: recovered {bi2.x[0]:.3f}, a0 "
     f"{10**bi2.x[1]:.3e} (bar [1.35, 1.65]) -> {'PASS' if ok2b else 'FAIL'}")
 bi4, _ = fit_plain('three', ONES, starts=[[bi1.x[0]]*3 + list(bi1.x[1:]),
-                                          S4[1]], rounds=2, lgv=lg_i1)
+                                          S4[1]], rounds=2, max_rounds=10,
+                   lgv=lg_i1)
 D_null = bi1.fun - bi4.fun
 ok2c = D_null < 11.8
 say(f"  (c) split-null on kappa=1 truth: D(F1-F4) = {D_null:+.2f} "
@@ -495,10 +533,10 @@ for rep in range(40):
     w = np.zeros(NGal)
     for g_ in pick: w[g_] += 1
     br1, _ = fit_plain('one', w, starts=[[kap1] + list(b1.x[1:])],
-                       rounds=2)
+                       rounds=2, max_rounds=4)
     br4, _ = fit_plain('three', w,
                        starts=[[br1.x[0]]*3 + list(br1.x[1:]),
-                               list(b4.x)], rounds=2)
+                               list(b4.x)], rounds=2, max_rounds=4)
     K1B.append(br1.x[0]); KDB.append(br4.x[0]); KTB.append(br4.x[1])
     KLB.append(br4.x[2]); DB.append(br1.fun - br4.fun)
     if (rep+1) % 10 == 0:
@@ -521,7 +559,7 @@ say("G6 VERTICAL CO-READ (5M apparatus, kappa family; point grade):")
 def m2kv(t, mode, dml, dv, sv, w_g, bsp, ble):
     nk = NK[mode]
     tk, th = t[:nk], t[nk:]
-    if mode != 'fix1' and not all(0.2 < k < 3.0 for k in tk): return 1e12
+    if mode != 'fix1' and not all(0.02 < k < 3.0 for k in tk): return 1e12
     la0, f, s_int, dlt = th
     if not (-10.6 < la0 < -9.4) or not (0.3 < f < 2.5): return 1e12
     if not (1e-3 <= s_int < 0.4) or abs(dlt) > 0.8: return 1e12
