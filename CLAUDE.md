@@ -582,6 +582,49 @@ PASS. Reviews ROUND25/26 uncommitted. Twelve closes in three days —
 FRESH SESSION before O5-COLLECTIVE (the heaviest derivation the
 program has attempted).**
 
+**10G + ROUND 27 (2026-08-09 fourth close, O5-COLLECTIVE — the author:
+"Compacted. You are go for hunt"): THE STRIKE FIRED — bath-mechanism
+conditional 15 → 8; THE O5 DERIVATION ARC (10A→10G, eight stages,
+eight rounds) IS CLOSED.** 10G (pre-reg 6f76672) answered the R26 √K
+question with a SUM-RULE CEILING: participation shares ONE
+fluctuation budget ⟨δq²⟩ = Σc_k²(2n_k+1) ≤ q²; the KMS
+budget-to-rate trade has an exact Fermi optimum (Ωn/(2n+1) =
+Ω/(e^{Ω/T}+1), f* = x*−1 = e^{−x*}, x* = 1.27846) ⇒ rate_max =
+(η₂/4)e_s√(ω(n_s+1)f*T_dS)·q·√N_p — K-FREE (rate flat over
+K = 1/8/10000; "the bath cannot fund both the loan and the
+collateral"). Fired C-STRIKE-CANDIDATE gates-green (tightest
+MAX-GRANT shortfall 9.4×; every anchor ≥ 5×; clause (b): the
+verbatim 6X engine at the ceiling angles reaches 0.07–1.5% of
+saturation with exact raw-n structure; sector sweep orders-dead).
+ROUND 27 reproduced EVERY number (zero mismatches), attacked six
+surfaces, REPORTED THE KILL STRENGTHENED, ruled hole NO, AFFIRMED —
+the pre-signed cell executed. **THE PRIMARY FORM IS HIS (C1, quote
+first): at the mechanism's OWN FD budget q = √(2n_amb+1) stacked on
+max-grant, shortfall 6.67×/9.18×; closure needs e_a = 6.7/9.2 > 1 —
+the strike rests on FD-at-measured-T_dS + the ratio bound, NOT the
+q ≲ 1 chart premise (demoted).** His sharpest clause-(b) escape
+(dephasing-assisted equilibration) self-built and self-closed: gate
+only near θ ≈ π at every dephasing rate, Zeno slows it (full
+Lindblad table re-verified ≤ 0.005 in stage10g_addendum.py; GA-1..7
+ALL CONFIRMED; GA-7 bar mis-set disclosed/corrected). **STRIKE
+SCOPE (C5): the REAL-EXCHANGE leg is struck (the 6X gate / derived
+s^L screening / two-system tail split = measured-but-NOT-
+microphysically-derived); the DISPERSIVE leg (10C polaron, additive
+C&T-law selection, κ/c₁ work) SURVIVES; the RAR fit and every sky
+measurement untouched; anomaly-real 53 untouched all arc.** THE
+ONLY REOPENER = O5-ANHARM (horizon-side ⟨δq²⟩), ADVERSE prior
+(needs 45–84× FD = RMS ≳ 950%, overturning 10A leak + 9Z η⁴ + the
+temperature lock) — NOT recommended pre-DR4. O5-INTERPLAY demoted
+with the struck leg (consistency note only). Round archived
+REVIEW-ROUND27-OPUS.md (uncommitted). Ledger 205 rows / worldtable
+266 tokens six gates PASS. **⚠ P3 draft 0.1 prints mech ~15 + a
+pre-strike §2 — REVISE AT THE NEXT AUTHOR-CALLED THAW before any P3
+referee round; P1/P2 mechanism-independent, unaffected. NEXT FORK
+(the author's): the paper/circulation queue (TODO 27–31, the
+natural move) · κ=1-in-the-deep-limit (dispersive-side, survives) ·
+DR4 readiness. Fourteen closes in four days — FRESH SESSION before
+the next arc.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

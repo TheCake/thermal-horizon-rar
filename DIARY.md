@@ -9,6 +9,86 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-09 (fourth close) — 10G+R27: THE STRIKE FIRED (mech 15→8); the O5 derivation arc is CLOSED
+
+The author said "You are go for hunt" post-compact, and 10G ran
+O5-COLLECTIVE — the strike-bearing derivation R26 signed. It fired
+C-STRIKE-CANDIDATE (all gates green), ROUND 27 reproduced every
+number, attacked the kill on six surfaces, reported it STRENGTHENED,
+and AFFIRMED. The pre-signed cell executed: **bath-mechanism
+conditional 15 → 8. anomaly-real 53 untouched all arc.** What the
+next instance must hold straight:
+
+BANKED, do not re-litigate:
+- THE CEILING (now the program's sharpest theory result): the 9W √K
+  question is answered by a sum-rule ceiling — all participation
+  shares ONE fluctuation budget ⟨δq²⟩ = Σc_k²(2n_k+1); the KMS
+  budget-to-rate trade has the exact Fermi optimum Ωn/(2n+1) =
+  Ω/(e^{Ω/T}+1), f* = x*−1 = e^{−x*} (x* = 1.27846); rate_max =
+  (η₂/4)e_s√(ω(n_s+1)f*T_dS)·q·√N_p — K NEVER APPEARS (his demo:
+  rate flat over K = 1/8/10000). "The bath cannot fund both the
+  loan and the collateral."
+- THE PRIMARY FORM IS HIS, NOT MINE (R27-C1, always quote this one
+  first): at the mechanism's OWN FD budget q = √(2n_amb+1) stacked
+  on max-grant, the shortfall is 6.67× (binary) / 9.18× (galaxy);
+  closure needs e_a = 6.7/9.2 > 1 (ratio bound) or ⟨δq²⟩ = 45×/84×
+  FD. The strike rests on FD-at-measured-T_dS + the ratio bound —
+  NOT on my q_phys ≲ 1 chart premise (demoted to secondary).
+- Clause (b) is closed INCLUDING the dephasing-assisted route (his
+  own construction): the gate ½P(n≥1) is reached only near θ ≈ π
+  at every dephasing rate; Zeno makes stronger dephasing SLOWER;
+  ceiling angles deliver 0.002–0.015 of the gate with raw-n
+  structure. Non-saturated real exchange imprints raw-n or Gibbs,
+  never e^{−Lx}. Full Lindblad table re-verified to ≤ 0.005.
+- STRIKE SCOPE (C5, quote exactly): the REAL-EXCHANGE leg is struck
+  — the 6X lending gate, the derived s^L screening, the two-system
+  tail split are now MEASURED-BUT-NOT-MICROPHYSICALLY-DERIVED. The
+  DISPERSIVE leg (10C polaron theorem, the additive C&T-law
+  selection, the κ/c₁ phenomenology) SURVIVES. Every sky
+  measurement, the RAR fit, the function record: untouched.
+- THE ONLY REOPENER = O5-ANHARM (horizon-side ⟨δq²⟩), with an
+  ADVERSE PRIOR he priced: reopening needs RMS ≳ 950% fractional
+  quadrupole fluctuation, which would overturn the 10A leak closure
+  (10^−84.8 g²) AND 9Z's gapped-η⁴ result AND the temperature lock.
+  Do NOT run it as a hunt; it's a wish against three banked
+  results. If anything, it waits for DR4-era external data.
+- O5-INTERPLAY: demoted with the struck leg (its object was the
+  exchange channel's back-shift). A consistency note, not a stage.
+
+MY TRAP THIS CLOSE (small, logged): the addendum's GA-7 first-run
+bar (0.006 abs) was tighter than the BANKED 6X grade (0.2–2.2%) and
+false-failed a correct reviewer claim — verification bars must quote
+the banked grade of the thing being checked, not a fresh guess.
+Disclosed in the output, corrected, no reviewer number involved.
+
+WHAT I'D TELL THE NEXT ME ABOUT THE STRIKE ITSELF: it is the
+program's honesty machine working exactly as built — pre-signed by
+one referee, computed by me, affirmed by the next referee with
+every number reproduced, executed mechanically. Zero drama in the
+books. The measured phenomenology (anomaly-real 53, the function
+record, the κ dial, the gate data) did not move. What died is one
+candidate microphysics for the gate. Eight O5 rounds, one strike,
+zero unearned rises — that ratio IS the program's credibility.
+
+THE FORK NOW (the author decides):
+- THE PAPER/CIRCULATION QUEUE (TODO 27–31) — untouched all arc and
+  now the natural next move: RNAAS note drafted, colleague package
+  waiting on the repo-visibility flip, Zenodo/arXiv/OJAp sequence
+  planned. ⚠ P3 (draft 0.1) prints mech ~15 and a pre-strike §2 —
+  it needs a strike-state revision at the next author-called thaw,
+  BEFORE any P3 referee round. P1/P2 are mechanism-independent
+  (structural-independence rule) — unaffected.
+- Or the parked side-items: derive κ=1 in the deep limit (C2
+  re-scope; dispersive-side, SURVIVES the strike); DR4 readiness
+  (TODO 29); GD replication reopeners (TODO 28, DR4-era).
+- NOT recommended: O5-ANHARM (adverse prior, above).
+
+Fourteen closes in four days. The O5 chase (10A→10G, eight stages,
+eight rounds) is DONE — the seam is closed both ways: dispersive
+leg standing, exchange leg struck. COMPACT BEFORE THE NEXT ARC.
+
+---
+
 ## 2026-08-09 (third close) — 10F+R26: my map couldn't fail, his four computations broke it, the mechanism lives on one uncomputed number
 
 The author said "go for the next thing" and 10F ran O5-GEOMETRY — the

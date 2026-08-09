@@ -578,6 +578,8 @@ CHECKS = [
     ('mech-10g-collective', 'TOKENS: G1a:P G1b:P G2:P G3:P '
      'G4:strike-leg SB4a:P SB4b:P SB6:P G7:P G8:P',
      'data/stage10g_collective.txt'),
+    ('mech-10g-collective', 'STRIKE AFFIRMED',
+     'data/stage10g_addendum.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

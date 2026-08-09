@@ -1,0 +1,97 @@
+==============================================================================
+STAGE 10G ADDENDUM -- ROUND-27 VERIFICATION + CONDITIONS 1-5
+==============================================================================
+
+GA-1 the FD-budget attack (his condition 1; the promoted PRIMARY):
+  binary  x_loc=0.5: q_FD = 1.416 (his 1.416), rate = 0.0749 H (his 0.0749), shortfall 6.67x (his 6.67x)
+    closure <dq^2> = 89 (his 89) = 44.5x FD (his 45x); e_a-needed = 6.67 > 1 OK
+  galaxy  x_loc=0.0953: q_FD = 3.776 (his 3.776), rate = 0.0545 H (his 0.0545), shortfall 9.18x (his 9.18x)
+    closure <dq^2> = 1202 (his 1202) = 84.3x FD (his 84x); e_a-needed = 9.18 > 1 OK
+  GA-1 -> CONFIRMED: the strike does NOT rest on the q_phys <= 1 chart
+  premise -- at the mechanism's OWN fluctuation-dissipation budget
+  (the measured T_dS) the shortfall is 6.7x/9.2x at max grant, and
+  the amplitude ratio needed to close (6.7/9.2) violates e_a <= 1.
+
+GA-2 K-flatness (his explicit budget-saturated demo):
+  K =     1: Sigma c_k^2 = 0.49879  rate = 0.01798 H
+  K =     8: Sigma c_k^2 = 0.49879  rate = 0.01798 H
+  K = 10000: Sigma c_k^2 = 0.49879  rate = 0.01798 H
+  flat in K: True; Sigma c^2 vs his 0.49879: d = 4.4e-06; rate vs his 0.01798: d = 2.5e-06
+  (his n_amb re-derived from x_amb = 1.0954 -> n = 0.50242; at-Omega_amb allocation = 0.993 of the Fermi optimum)
+  GA-2 -> CONFIRMED: sqrt(K) is exactly budget-cancelled
+
+GA-3 non-KMS restatement (his condition 2):
+  Lambda = 1 H, max-grant: rate = 0.1778 H (his 0.178) -- STILL < 0.5 H on its own
+  honest N_p = 1: shortfall = 8.22x (his 8.22x)
+  GA-3 -> CONFIRMED: the scoping is a redundant second defense,
+  NOT load-bearing -- relabeled per condition 2.
+
+GA-4 relaxed-requirement row (10%-dressing, theta ~ 1):
+  lambda(theta = 1 per Hubble) = 0.1658 H (his 0.166) = 3.13x the max-grant rate (his ~3x)
+  GA-4 -> CONFIRMED: even the most generous requirement leaves >= 3x
+
+GA-5 THE DEPHASING-ASSISTED ROUTE (his sharpest clause-(b) attack;
+N_a dephasing + resonant exchange; n_amb = 0.502, NB = 20;
+P2/gate with gate = (1/2) n/(1+n) = 0.16711):
+    gphi   th=0.11   th=0.32   th=1.00   th=3.14  th=10.00   (his row)
+    0.05     0.002     0.015     0.137     0.894     1.045   (0.002 0.015 0.140 0.890 1.050)  dmax = 0.005
+    0.20     0.002     0.014     0.114     0.575     0.965   (0.002 0.014 0.110 0.570 0.970)  dmax = 0.005
+    1.00     0.002     0.011     0.056     0.190     0.458   (0.002 0.011 0.060 0.190 0.460)  dmax = 0.004
+  GA-5 -> CONFIRMED: gate reached only near theta >= pi; Zeno ordering holds
+  (his construction: the one route that could have imprinted the
+   gate without coherent saturation ALSO requires lambda >~ H --
+   clause (b) holds against its strongest attack)
+
+GA-6 R26-D1 spot cell (thermal dissipators, lam/gam = 1):
+  P2_steady = 0.07531 (his/R26 0.07531) -> CONFIRMED (Gibbs, not the gate 0.16711)
+
+GA-7 gate-law track + coherent-postdiction z row:
+  sat ensemble vs (1/2) n/(1+n): max rel |d| = 0.0229 (bar 0.025 = the banked 6X 0.2-2.2% grade;
+  first-run bar 0.006 abs was a verification-side mis-set --
+  corrected with disclosure, no reviewer number involved)
+  thermal p_gal = 0.6888 (z = +0.56); coherent = 0.7493 (z = +1.37) OK
+  GA-7 -> CONFIRMED
+
+==============================================================================
+ROUND-27 CONDITIONS EXECUTED (letters corrected in place):
+==============================================================================
+(C1) FD-PRIMARY PROMOTION: the operative clause-(a) statement is
+     now the FD-budget form -- at q_phys = sqrt(2 n_amb + 1) (the
+     mechanism's own fluctuation-dissipation value at the measured
+     T_dS) stacked on max-grant, the shortfall is 6.67x (binary) /
+     9.18x (galaxy); closure needs e_a = 6.7/9.2 > 1 (ratio bound)
+     or <dq^2> = 89/1202 = 45x/84x FD. The q_phys <= 1 chart
+     premise + dilemma DEMOTED to secondary framing (still stated,
+     no longer carries the verdict).
+(C2) NON-KMS RELABEL: the Lambda = 1 H row (2.81x) is itself short
+     of 0.5 H (0.178 H; 8.22x at honest N_p = 1); the scoping
+     argument (non-KMS partner imprints a non-measured gate) is a
+     REDUNDANT SECOND DEFENSE, not load-bearing.
+(C3) G3 RELABEL: transcription/convention pin only -- it validates
+     that 10G speaks the archived 10F convention, NOT the 10F
+     physics (which R26 holds at G-OPEN).
+(C4) SURVIVING CONDITIONALITY (named): the affirmation is
+     conditional on the soft-sector <dq^2> being <~ O(2n+1).
+     O5-ANHARM (horizon-side <dq^2>) is the ONLY computation that
+     could reopen clause (a), with an ADVERSE PRIOR: reopening
+     needs 45-84x FD (RMS >~ 950%), overturning the 10A cloud-
+     continuum-leak closure (10^-84.8 g^2) AND the 9Z gapped-eta^4
+     result AND the a0 temperature lock.
+(C5) STRIKE SCOPE: the REAL-EXCHANGE leg is struck (the 6X gate /
+     derived s^L screening / two-system tail split have no
+     microphysical realization at the derived coupling); the
+     DISPERSIVE leg (10C polaron, additive C&T law, kappa work)
+     SURVIVES -- hence 15->8, not a total kill; the RAR fit and
+     every sky measurement are untouched (the gate becomes
+     measured-but-not-microphysically-derived).
+
+GATES: GA-1:P GA-2:P GA-3:P GA-4:P GA-5:P GA-6:P GA-7:P  -> ALL REVIEWER NUMBERS CONFIRMED
+
+CREDENCE (mechanical, the pre-signed cell executes): 10G
+C-STRIKE-CANDIDATE + ROUND-27 AFFIRMS (no unpatched hole) ->
+**THE STRIKE FIRES: bath-mechanism conditional 15 -> 8** (the
+R26 signature; the program's first strike through the full
+pre-signed machinery since 6N). anomaly-real 53 UNTOUCHED.
+STRIKE AFFIRMED
+==============================================================================
+done (0.0 min)

@@ -14574,6 +14574,120 @@ a whole age of the universe the hands have barely twitched (under
 2% of a real handshake), and the twitch has the wrong fingerprint.
 Now the referee gets to try to break the accounting.
 
+### ROUND 27 (2026-08-09, THE STRIKE ADJUDICATION; report archived REVIEW-ROUND27-OPUS.md, uncommitted) — **C-STRIKE-CANDIDATE UPHELD; NO HOLE; THE STRIKE FIRES: bath-mechanism conditional 15 → 8**
+
+The referee (fresh, five files + his own code, nothing touched in
+the repo) reproduced EVERY stage number from scratch — the Fermi
+optimum to 1e-16, the full ceiling table to the digit, the 6X
+dynamical rows and the raw-n structure probe, the implied-budget
+dividend — **zero mismatches** — then attacked the kill on every
+named surface and reported it STRENGTHENED:
+
+**His attack (i) = the round's best work, ADOPTED AS THE PRIMARY
+clause-(a) statement (C1):** grant the mechanism its OWN
+fluctuation–dissipation budget — q_phys = √(2n_amb+1), the FD value
+at the measured T_dS, i.e. the entire fluctuation the e_a = 1
+reading ever assumed — stacked on max-grant: **the shortfall is
+still 6.67× (binary) / 9.18× (galaxy); closure needs e_a = 6.7/9.2,
+impossible for a ratio bounded ≤ 1, or ⟨δq²⟩ = 89/1202 = 45×/84×
+the FD value.** The strike therefore does NOT rest on the disputed
+q_phys ≲ 1 chart premise — it rests on fluctuation–dissipation at
+the measured temperature plus the ratio bound, both solid. The
+three closure knobs are each independently pinned: K by the
+shared-field budget (his explicit demo: budget-saturated rate
+EXACTLY flat over K = 1/8/10000), e_a by the ratio bound, the
+single-mode occupation by the a₀ temperature lock (which IS the
+measured gate).
+
+**His attack (v) = the sharpest clause-(b) escape, self-built and
+self-closed:** dephasing-assisted equilibration (pure N_a dephasing
++ resonant exchange — the one route that could have imprinted the
+gate ½P(n≥1) without coherent saturation). His Lindblad table: the
+gate is reached only near θ ≈ π (saturation) at EVERY dephasing
+rate; stronger dephasing is SLOWER (Zeno); at the ceiling angles
+P2/gate = 0.002–0.015. The dephasing route needs the same λ ≳ H.
+
+Also ruled: the non-KMS scoping is a REDUNDANT SECOND DEFENSE, not
+load-bearing (C2 — the Λ = 1 H row is itself short of 0.5 H at
+0.178 H, and 8.22× short at honest N_p = 1; and for resonant
+lending the partner's occupation sets both the rate and the gate —
+the same number — so a super-thermal rate boost destroys the
+measured e^{−Lx}); the requirement is not load-bearing either (even
+a 10%-dressing needs λ = 0.166 H = 3.1× the max-grant rate);
+N_p ≤ 5 is the true max; the (n+1) channel is the leak, correctly
+excluded; formation-history accumulation = continuous driving =
+Gibbs (his D1 re-run); the sector partition holds (constraint-
+sector and horizon-microstructure candidates are 10B-excluded as
+real-exchange carriers; multi-system Dicke enhances the collective
+observable, not the per-system dressing, and is budget-bounded).
+Trap audit CLEAN: no null-power gate (the q = 120 counterfactual
+and the π-row both flip), no damaging self-regression (G3 relabeled
+transcription/convention pin per C3), and the one ungated premise
+(q_phys) does not carry the verdict under the FD-primary form.
+
+**RULING: C-STRIKE-CANDIDATE UPHELD. UNPATCHED HOLE IN THE KILL
+CASE: NO. ADJUDICATION: AFFIRM — the R26 signature executes.**
+His scope clause (C5, adopted): the strike kills the REAL-EXCHANGE
+leg — the 6X lending gate, the derived s^L screening, the
+two-system tail split have NO microphysical realization at the
+derived coupling — while the DISPERSIVE leg (the 10C polaron
+theorem, the additive C&T-law selection, the κ work) SURVIVES;
+hence 15→8, not a total kill; the RAR fit and every sky measurement
+are untouched — the gate becomes MEASURED-BUT-NOT-MICROPHYSICALLY-
+DERIVED. The sole surviving conditionality (C4, named): the
+affirmation is conditional on the soft-sector ⟨δq²⟩ ≲ O(2n+1);
+**O5-ANHARM (derive ⟨δq²⟩ horizon-side) is the only computation
+that could ever reopen clause (a), with an ADVERSE PRIOR** —
+reopening needs 45–84× FD (RMS ≳ 950%), which would overturn the
+10A cloud-continuum-leak closure AND the 9Z gapped-η⁴ result AND
+break the temperature lock. "A wish against three existing
+results, not a live hole."
+
+Verification addendum
+([calcs/stage10g_addendum.py](calcs/stage10g_addendum.py)): GA-1..
+GA-7 ALL CONFIRMED — the FD shortfalls/closure budgets digit-exact,
+K-flatness exact (his Σc² = 0.49879 traced to n re-derived from
+x_amb = 1.0954; his allocation = 0.993 of the Fermi optimum), the
+non-KMS restatement, the relaxed-requirement arithmetic, **the full
+dephasing Lindblad table reproduced to dmax ≤ 0.005 with the Zeno
+ordering**, the R26-D1 Gibbs spot (0.07531 exact), the gate-law
+track + coherent z row. One verification-side correction disclosed:
+the GA-7 first-run bar (0.006 abs) was tighter than the banked 6X
+grade (0.2–2.2%); corrected to rel ≤ 0.025 — no reviewer number
+involved.
+
+**CREDENCE (mechanical, the pre-signed cell): bath-mechanism
+conditional 15 → 8.** The program's first strike executed through
+the full pre-signed machinery since 6N (history: ~20-25 → 15 at 6K,
+15 → 8 at 6N, recovery 8 → 12 → 15 at 9T/9W, now 15 → 8 — eight O5
+rounds, ONE strike, zero unearned rises). anomaly-real 53 UNTOUCHED
+all arc (no sky fits anywhere in 10G or the round).
+
+PLAIN VERDICT: DIFFERENT PHYSICS — the honest kind. The
+commissioned hunt ("give it all you got") ran eight derivation
+stages and eight adversarial rounds, and the answer is that the
+real-exchange leg of the bath mechanism cannot be realized at the
+derived coupling: collective participation is exactly
+budget-cancelled, and every non-saturated route imprints the wrong
+statistics. The dispersive leg — the part that selects the additive
+C&T law and carries the κ/c₁ phenomenology — stands. The measured
+gate stays measured; what died is one candidate explanation of it.
+
+ELI12: We asked if many hands could push the swing hard enough.
+The referee tried every trick on our behalf — he even let the cloud
+wobble as much as warm physics ever allows (three-and-a-bit times
+MORE than 100%), gave it all five handles and perfect grip — and
+the push still came up seven-to-nine times too weak. He also tried
+the cleverest cheat: constantly bumping the swing so it forgets its
+rhythm, hoping it would drift into the right pattern by itself — it
+drifts there only as slowly as the honest push, and bumping harder
+makes it slower. So he signed the verdict he himself had drafted
+last round: this particular engine cannot be what pushes the swing.
+The swing still swings — our measurements of it are untouched — and
+the OTHER half of the machine (the part that bends the rulebook
+rather than trading pushes) survives intact. Honest score: the
+mechanism's chance drops from 15 to 8 out of 100.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

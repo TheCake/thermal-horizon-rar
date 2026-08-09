@@ -1302,7 +1302,34 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     NON-EQUILIBRIUM at the physical λ (equal-T dissipators make
     Gibbs the fixed point). Also standing: O5-INTERPLAY (the 22%
     binary band-edge back-shift = unbudgeted consistency tension;
-    galaxy-led bands + 10D untouched).**);
+    galaxy-led bands + 10D untouched).**
+    **O5-COLLECTIVE EXECUTED 2026-08-09 (10G pre-reg 6f76672;
+    ROUND 27 UPHELD the fired C-STRIKE-CANDIDATE, hole NO, STRIKE
+    AFFIRMED; addendum GA-1..7 all confirmed incl. his full
+    dephasing Lindblad table): **THE STRIKE FIRED — bath-mechanism
+    conditional 15 → 8. THE O5 DERIVATION ARC IS CLOSED.** The √K
+    question = a sum-rule ceiling (participation shares ONE
+    fluctuation budget; Fermi optimum f* = x*−1 exact; rate flat
+    in K); PRIMARY form (R27-C1): at the mechanism's OWN FD budget
+    q = √(2n+1) stacked on max-grant the shortfall is 6.67×/9.18×
+    — closure needs e_a = 6.7/9.2 > 1 — rests on FD + the ratio
+    bound, not the chart premise. Clause (b): gate reached only at
+    saturation (θ ≥ π) on the 6X engine even dephasing-assisted
+    (Zeno slows it); non-saturated = raw-n. SCOPE (C5): the
+    REAL-EXCHANGE leg is struck (the 6X gate / derived s^L
+    screening / two-system tail split = measured-but-not-
+    microphysically-derived); the DISPERSIVE leg (10C polaron,
+    additive C&T-law selection, κ work) SURVIVES; RAR fit + all
+    sky measurements untouched; anomaly-real 53 untouched. THE
+    ONLY REOPENER = O5-ANHARM (horizon-side ⟨δq²⟩), ADVERSE prior
+    (needs 45–84× FD = RMS ≳ 950%, overturning 10A leak + 9Z η⁴ +
+    the temperature lock) — NOT RECOMMENDED before DR4-era data.
+    O5-INTERPLAY demoted with the struck leg (its object was the
+    exchange channel's back-shift; keep as a consistency note
+    only). ⚠ PAPER-3 IMPACT: P3 draft 0.1 prints the mechanism
+    conditional ~15 and a §2 built on the pre-strike state — the
+    strike materially changes P3's §2/credence line; REVISE AT THE
+    NEXT AUTHOR-CALLED THAW, BEFORE any P3 referee round.**);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established
