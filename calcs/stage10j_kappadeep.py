@@ -111,6 +111,27 @@ CREDENCE MAP (pre-signed; the ONLY movable cells; requires ROUND 30):
   kappa number is an archived meter).
 
 COMPUTE < 2 min.  Writes data/stage10j_kappadeep.txt.
+
+AMENDMENT A1 (2026-08-09, post-run-1 self-catch, logged BEFORE the
+review round quotes anything; run-1 output preserved as
+data/stage10j_kappadeep_run1.txt): the threshold catalogue's central
+sentence ("kappa = 1 is the two-rung degeneracy") is SIGMA-DEPENDENT
+-- at general sigma the spacing zero sits at kappa = 4/(2n+1+2sig), so
+the two-rung threshold is 1 only at sigma = 1/2 (a bare number charge
+sigma = 0 would put it at 4/3).  Run 1 restricted to sigma = 1/2
+visibly (G10J-1b) but did not flag the restriction as load-bearing.
+THE FIX STRENGTHENS THE RESULT: the 10B vertex couples the system
+HAMILTONIAN (H_int = (H/c^2) dPhi -- energy gravitates, zero-point
+included), so sigma = 1/2 is DERIVED, not chosen: NEW premise P-half
+[DERIVED, 10B] added to the audit and to the bound chain.  Also
+scoped: the R-C bound is a TWO-RUNG ORDERING statement (the global
+Gibbs construction on the literal ladder is ill-defined for ANY kappa
+> 0 -- the quadratic pull unbounds E(n) below; this is the fold row's
+own content), so P-lit is restated as "the occupation ordering of the
+first rungs follows the literal dressed spacings."  New printed rows:
+the general-sigma threshold table + the P-half derivation line.
+Letter grammar unchanged; the letter cannot improve from this
+amendment (K-CONDITIONAL either way -- P-lit still ASSUMED).
 """
 import math, time
 import numpy as np
@@ -156,6 +177,21 @@ emit("G10J-1c thresholds: D(0)=0 at kappa=%s; D(1)=0 at kappa=%s; "
 g1c = (thr0 == 2) and (thr1 == 1) and (thr2q == sp.Rational(4, 3))
 emit("   kappa = 1 IS the two-rung degeneracy E(2) = E(1): %s" %
      ("EXACT" if thr1 == 1 else "FAIL"))
+# A1: the general-sigma table + the P-half derivation
+D_gen = sp.simplify(D.subs(g**2, kap*Om*om/4))
+thr_gen = sp.solve(D_gen, kap)[0]
+r_gen = sp.simplify(thr_gen - 4/(2*n + 1 + 2*sig))
+emit("G10J-1c' (A1) general-sigma threshold: D(n)=0 at kappa = "
+     "4/(2n+1+2sig); residue = %s" % r_gen)
+emit("   sigma = 1/2 -> {2, 1, 2/3, ...}; sigma = 0 -> {4, 4/3, 4/5,")
+emit("   ...}: the two-rung threshold is 1 ONLY at sigma = 1/2.")
+emit("   P-HALF [DERIVED, 10B]: the vertex charge is the system")
+emit("   HAMILTONIAN (H_int = (H/c^2) dPhi) => the coupling charge is")
+emit("   om(N + 1/2)/om = N + 1/2 -- the zero-point gravitates; sigma")
+emit("   = 1/2 is forced by the same selection rule that forces the")
+emit("   dispersive vertex.  The kappa = 1 two-rung meaning is")
+emit("   EP-anchored, not convention.")
+g1cp = (r_gen == 0)
 
 # identity web
 web = []
@@ -180,7 +216,7 @@ ser_expect = 1/x + sp.Rational(1, 2) + x/12 - x**3/720
 r3 = sp.simplify(sp.expand(ser - ser_expect))
 emit("G10J-1e kappa=1 ladder rungs (10C G4 regression): "
      "nu = 1/x + 1/2 + x/12 + 0 x^2 - x^3/720; residue = %s" % r3)
-g1 = (r1 == 0) and (r2 == 0) and g1c and all(web) and (r3 == 0)
+g1 = (r1 == 0) and (r2 == 0) and g1c and g1cp and all(web) and (r3 == 0)
 emit("G10J-1: %s" % ("PASS" if g1 else "FAIL"))
 emit("")
 
@@ -302,14 +338,20 @@ emit("           [OPEN -- a computation, not a principle]")
 emit("")
 
 # ==================== R-C: the premise-labeled bound ====================
-emit("R-C THE BOUND (premise-labeled):")
-emit("   P-vertex [DERIVED, 10B selection rule] + P-polaron [exact] +")
-emit("   P-BEform [MEASURED, the RAR identity] + P-lit [ASSUMED]:")
-emit("   kappa > 1 => E(2) < E(1) => Gibbs weight at n=2 exceeds the")
-emit("   n=1 Boltzmann ordering at EVERY temperature => the mode's")
-emit("   own occupation cannot be the measured BE form through the")
-emit("   first two rungs.  Hence kappa <= 1, saturation at the")
-emit("   compliance divergence (P-crit).")
+emit("R-C THE BOUND (premise-labeled; A1 scope: a TWO-RUNG ORDERING")
+emit("   statement -- the global Gibbs construction on the literal")
+emit("   ladder is ill-defined for ANY kappa > 0, the fold row's own")
+emit("   content):")
+emit("   P-vertex [DERIVED, 10B selection rule] + P-half [DERIVED,")
+emit("   10B: the charge is H/c^2, zero-point included] + P-polaron")
+emit("   [exact] + P-BEform [MEASURED, the RAR identity] + P-lit")
+emit("   [ASSUMED: the occupation ordering of the first rungs follows")
+emit("   the literal dressed spacings]:")
+emit("   kappa > 1 => E(2) < E(1) => the relative weight of n=2 over")
+emit("   n=1 exceeds the Boltzmann ordering at EVERY temperature =>")
+emit("   the mode's own occupation cannot be the measured BE form")
+emit("   through the first two rungs.  Hence kappa <= 1, saturation")
+emit("   at the compliance divergence (P-crit).")
 # exact mini-check: Gibbs inversion at kappa > 1
 kv = 1.2
 E0, E1, E2 = 0.0, omv*(1-kv/2), omv*(1-kv/2) + omv*(1-kv)
@@ -332,7 +374,8 @@ emit("   claim; 10D running direction is treatment-unstable).")
 emit("")
 
 # ==================== G10J-6: premise audit -> letter ====================
-premises_bound = {"P-vertex": "DERIVED", "P-polaron": "EXACT",
+premises_bound = {"P-vertex": "DERIVED", "P-half": "DERIVED",
+                  "P-polaron": "EXACT",
                   "P-BEform": "MEASURED", "P-lit": "ASSUMED"}
 premises_sat = {"P-crit": "ASSUMED"}
 emit("G10J-6 PREMISE AUDIT:")
