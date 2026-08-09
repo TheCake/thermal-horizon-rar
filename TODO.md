@@ -1332,9 +1332,10 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     §7 exchange-leg exclusion with the FD-primary shortfalls,
     credence trail to 8, five-item transparency list, r=½ kill
     test in §9, +8 repro rows; abstract 250w, mean 23.5, one
-    em-dash); P3 referee round STILL NOT RUN (tell the author
-    first; re-compute every reviewer number per the memory
-    rule).**);
+    em-dash); P3 referee round #1 = ROUND 28 RUN + ADOPTED IN FULL
+    2026-08-09 (MAJOR REVISION, sixteen findings, zero computed
+    errors, draft 0.3; every referee number re-verified in
+    calcs/round28_addendum.py; next P3 gate = the author's).**);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established
