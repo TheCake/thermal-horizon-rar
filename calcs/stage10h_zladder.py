@@ -208,6 +208,43 @@ defects, all upstream of any physics claim:
       side's own ordered radii, then folded.
 No bar, letter, or credence-map cell is touched; the wiring targets
 remain their published numbers.
+
+AMENDMENT 3 (2026-08-09, logged after run 4 = the amended ladder's full
+pass, which ended NO-RECIPE-PASSED with the firewall again intact -- run-4
+table preserved in data/stage10h_run4_live.log; per-z-bin diagnostic run
+separately: offsets rise only +0.10 dex bin1->bin4 while my gas term had
+grown to 0.56-0.81 of a_bar and my AD term to 0.36-1.22 of v^2 -- both
+conventions were GUESSED in the original recipe ladder). Paper I
+(arXiv:2506.19721, fetched 2026-08-09) PINS all of them; the amended
+ladder replaces the guessed recipes with the PINNED reconstruction --
+every ingredient now has a Paper-I source, none is tuned on outcome:
+  (a) PRESSURE SUPPORT (their Sect. 2.2): v_AD^2 = 0.92 * sigma(r)^2 *
+      (r/r_d) -- the Dalcanton-Stilp closed form for exponential
+      turbulent disks; sigma(r) = the released sig_kms profile;
+      r_d = rad_kpc/1.678. Replaces the numerical gradient. AD always
+      ON (their pipeline has no AD-off branch; run 4 showed AD-off
+      collapses a0 -- consistent).
+  (b) GAS (their Sect. 2.2 + App. B): constant Sigma_HI disk of extent
+      20-90 kpc, gravitational contribution via disk Poisson solves.
+      Implemented as exact ring forces of a constant-Sigma disk
+      truncated at R_out, with the PINNED fiducial R_out = 30 kpc and
+      the fixed-order variants [30, 20, 60] kpc spanning their stated
+      range. Replaces the untruncated 2piG*Sigma*r scaling.
+  (c) STELLAR DISK (their Sect. 2.2): the v_disk shape follows the
+      IONIZED-GAS surface-brightness profile (Sersic n from
+      galaxy_parameters), normalized by the disk mass -- implemented as
+      exact ring forces of a Sersic(n, Re = rad_kpc) surface density
+      normalized to 10^log_Mdisk (thin-disk; their thick-disk residual
+      disclosed). Replaces both the stellar-mass-map route and the
+      Freeman n = 1 approximation.
+  (d) COSMOLOGY (their Introduction): Planck 2015, H0 = 67.7,
+      Om = 0.307 -- now the fiducial for the lock and E(z)
+      (a0_lock(0) = cH0/2pi = 1.047e-10); H0 in {70, 73} stay as
+      labeled variant rows.
+  Amended ladder: [PIN30, PIN20, PIN60] x [E1, E2] = 6 recipes, fixed
+  order, wiring-arbitrated exactly as before. Run-4's sixteen guessed
+  recipes stand as the reconstruction diagnostic. No bar, letter, or
+  credence-map cell is touched.
 """
 import os
 import sys
@@ -231,8 +268,8 @@ KPC_M = MPC_M / 1000.0
 PC_M = KPC_M / 1000.0
 G_SI = 6.674e-11
 MSUN = 1.98892e30
-H0_FID = 70.0
-OM = 0.30
+H0_FID = 67.7          # amendment 3d: Paper I cosmology (Planck 2015)
+OM = 0.307
 H0_SI = H0_FID * 1000.0 / MPC_M
 A0_LOCK0 = C_SI * H0_SI / (2.0 * np.pi)          # = 1.083e-10 at H0=70
 U = 1e-10                                        # a0 unit
@@ -390,61 +427,44 @@ def load_galaxy(i):
     return arr, gp, dp
 
 
-def ring_vdisk2(map_path, incl_deg, pa_deg, r_eval_kpc, kpc_per_arcsec):
-    """v_disk^2(r) [ (m/s)^2 ] from the released mass map: deproject to
-    face-on rings, thin-disk in-plane ring forces (phi-quadrature)."""
-    with fits.open(map_path) as h:
-        hdu = h[0] if h[0].data is not None else h[1]
-        img = np.array(hdu.data, dtype=float)
-        cd = abs(hdu.header.get("CDELT1", hdu.header.get("CD1_1", 8.3318730000584e-06)))
-    pix_as = cd * 3600.0
-    img = np.where(np.isfinite(img), img, 0.0)
-    img = np.clip(img, 0.0, None)
-    sm = img.copy()
-    sm[1:-1, 1:-1] = (img[:-2, :-2] + img[:-2, 1:-1] + img[:-2, 2:] +
-                      img[1:-1, :-2] + img[1:-1, 1:-1] + img[1:-1, 2:] +
-                      img[2:, :-2] + img[2:, 1:-1] + img[2:, 2:]) / 9.0
-    cy, cx = np.unravel_index(np.argmax(sm), sm.shape)
-    yy, xx = np.mgrid[0:img.shape[0], 0:img.shape[1]]
-    dx = (xx - cx) * pix_as
-    dy = (yy - cy) * pix_as
-    th = np.deg2rad(pa_deg)
-    xr = dx * np.cos(th) + dy * np.sin(th)
-    yr = -dx * np.sin(th) + dy * np.cos(th)
-    ci = max(np.cos(np.deg2rad(incl_deg)), 0.2)
-    rp_as = np.sqrt(xr**2 + (yr / ci)**2)            # in-plane radius, arcsec
-    rp_kpc = rp_as * kpc_per_arcsec
-    pixmass = img * pix_as**2 * ci                   # Msun (deproj. area factor)
-    rmax = max(float(np.max(r_eval_kpc)) * 1.8, 1.0)
-    nring = 40
-    redges = np.linspace(0.0, rmax, nring + 1)
-    rmid = 0.5 * (redges[:-1] + redges[1:])
-    mring = np.array([pixmass[(rp_kpc >= redges[k]) & (rp_kpc < redges[k + 1])].sum()
-                      for k in range(nring)])
+def ring_v2(redges_kpc, mring_msun, r_eval_kpc):
+    """Exact coplanar thin-disk ring forces -> v^2(r) [ (m/s)^2 ].
+    Rings BEYOND r pull outward; the sum is the exact axisymmetric
+    thin-disk solve at ring resolution (amendment 3: used for both the
+    Sersic stellar disk and the truncated constant-Sigma gas disk)."""
     nphi, nsub = 72, 5
     phi = (np.arange(nphi) + 0.5) * np.pi / nphi     # half-circle symmetry
     g_r = np.zeros_like(r_eval_kpc, dtype=float)
-    for k in range(nring):
-        if mring[k] <= 0:
+    r = r_eval_kpc[:, None] * KPC_M
+    for k in range(len(mring_msun)):
+        if mring_msun[k] <= 0:
             continue
-        subs = np.linspace(redges[k], redges[k + 1], nsub + 2)[1:-1]
+        subs = np.linspace(redges_kpc[k], redges_kpc[k + 1], nsub + 2)[1:-1]
         for a in subs:
-            m = mring[k] / nsub * MSUN
-            r = r_eval_kpc[:, None] * KPC_M
+            m = mring_msun[k] / nsub * MSUN
             am = a * KPC_M
             d2 = r**2 + am**2 - 2.0 * r * am * np.cos(phi[None, :])
             d2 = np.maximum(d2, (0.05 * KPC_M)**2)
-            gr = (G_SI * m / np.pi) * np.mean(
+            g_r += (G_SI * m / np.pi) * np.mean(
                 (r - am * np.cos(phi[None, :])) / d2**1.5, axis=1)
-            g_r += gr
-    return np.clip(g_r, 0.0, None) * (r_eval_kpc * KPC_M)   # v^2 = g*r
+    return np.clip(g_r, 0.0, None) * (r_eval_kpc * KPC_M)
 
 
-def freeman_vdisk2(Md_msun, Rd_kpc, r_kpc):
-    y = np.clip(r_kpc / (2.0 * Rd_kpc), 1e-6, 50.0)
-    b = special.i0e(y) * special.k0e(y) - special.i1e(y) * special.k1e(y)
-    sig0 = Md_msun * MSUN / (2.0 * np.pi * (Rd_kpc * KPC_M)**2)
-    return 4.0 * np.pi * G_SI * sig0 * (Rd_kpc * KPC_M) * y**2 * b
+def sersic_rings(Md_msun, Re_kpc, n, rmax_kpc, nring=100):
+    n = float(np.clip(n, 0.3, 6.0))
+    bn = 2.0 * n - 1.0 / 3.0 + 4.0 / (405.0 * n)
+    redges = np.linspace(0.0, rmax_kpc, nring + 1)
+    rmid = 0.5 * (redges[:-1] + redges[1:])
+    sig = np.exp(-bn * ((rmid / Re_kpc)**(1.0 / n) - 1.0))
+    area = np.pi * (redges[1:]**2 - redges[:-1]**2)
+    m = sig * area
+    return redges, m * (Md_msun / m.sum())
+
+
+def gas_rings(Sigma_msun_pc2, Rout_kpc, nring=120):
+    redges = np.linspace(0.0, Rout_kpc, nring + 1)
+    area_pc2 = np.pi * (redges[1:]**2 - redges[:-1]**2) * 1e6   # kpc^2->pc^2
+    return redges, Sigma_msun_pc2 * area_pc2
 
 
 GAL = {}
@@ -461,71 +481,48 @@ for i in sel:
     if not np.isfinite(rad_kpc) or not np.isfinite(logMd):
         skip_notes.append(f"ID{i}: missing derived rad_kpc/log_Mdisk")
         continue
-    Re_as = np.abs(arr[:, 0] / np.where(arr[:, 1] != 0, arr[:, 1], np.nan))
-    kpc_per_as = rad_kpc / np.nanmedian(Re_as)
-    # amendment 2c: per-side pressure-support gradient, then fold
-    side = np.sign(arr[:, 0])
     r_all = np.abs(arr[:, 1]) * rad_kpc
     v_all = np.abs(arr[:, 3]); s_all = np.abs(arr[:, 4])
-    f_all = np.clip(arr[:, 2], 1e-12, None)
-    vad2_all = np.zeros_like(r_all)
-    for sgn in (-1.0, 1.0):
-        mk = (side == sgn) if sgn < 0 else (side >= 0)
-        if mk.sum() < 3:
-            continue
-        o = np.argsort(r_all[mk])
-        rr = np.clip(r_all[mk][o], 1e-3, None)
-        keep_step = np.concatenate([[True], np.diff(np.log(rr)) > 1e-4])
-        lnS = np.log(f_all[mk][o] * s_all[mk][o]**2)
-        dln = np.zeros_like(rr)
-        dln[keep_step] = np.gradient(lnS[keep_step], np.log(rr[keep_step]))
-        tmp = np.zeros(int(mk.sum())); tmp[o] = dln
-        vad2_all[mk] = np.clip(-s_all[mk]**2 * tmp, 0.0, None) * 1e6
     order = np.argsort(r_all)
-    r_kpc, v, sig, vad2 = (r_all[order], v_all[order], s_all[order],
-                           vad2_all[order])
+    r_kpc, v, sig = r_all[order], v_all[order], s_all[order]
     good = (r_kpc > 1e-3) & (v >= 1.0)     # amendment 2b: v-floor 1 km/s
-    r_kpc, v, sig, vad2 = r_kpc[good], v[good], sig[good], vad2[good]
+    r_kpc, v, sig = r_kpc[good], v[good], sig[good]
     v2 = (v * 1000.0)**2
-    incl = photo[i]["incl"]; pa = photo[i]["PA"]
-    gasS = gp.get("gas_density", (0.0, 0.0))[0]           # Msun/pc^2
-    gasS_SI = max(gasS, 0.0) * MSUN / PC_M**2
-    vhi2 = 2.0 * np.pi * G_SI * gasS_SI * (r_kpc * KPC_M)
     Rd = rad_kpc / 1.678
-    vdisk2_par = freeman_vdisk2(10**logMd, Rd, r_kpc)
-    mpath = os.path.join(REL, f"ID{i:04d}", f"mass_{i}.fits")
-    vdisk2_map = None
-    if os.path.exists(mpath):
-        try:
-            vdisk2_map = ring_vdisk2(mpath, incl, pa, r_kpc, kpc_per_as)
-        except Exception as e:
-            skip_notes.append(f"ID{i}: map route fail {e}")
+    # amendment 3a: the Paper-I closed-form pressure support
+    vad2 = 0.92 * sig**2 * (r_kpc / Rd) * 1e6             # (m/s)^2
+    gasS = max(gp.get("gas_density", (0.0, 0.0))[0], 0.0)  # Msun/pc^2
+    n_ser = gp.get("sersic_n", (1.0, 0.0))[0]
+    # amendment 3c: Sersic stellar disk via exact ring forces
+    re_s, m_s = sersic_rings(10**logMd, rad_kpc, n_ser,
+                             max(8.0 * rad_kpc, float(r_kpc.max()) * 1.3))
+    vdisk2_pin = ring_v2(re_s, m_s, r_kpc)
+    # amendment 3b: truncated constant-Sigma gas via exact ring forces
+    vhi2_pin = {}
+    for Rout in (20.0, 30.0, 60.0):
+        re_g, m_g = gas_rings(gasS, Rout)
+        vhi2_pin[int(Rout)] = ring_v2(re_g, m_g, r_kpc) if gasS > 0 else np.zeros_like(r_kpc)
     ecat = dc14[i]
     fvel = abs(ecat.get("virial_velocity_err", 10.0)) / max(abs(ecat.get("virial_velocity", 100.0)), 1.0)
     sy1 = float(np.clip(2.0 * fvel / np.log(10.0), 0.02, 0.5))
     sx1 = float(np.clip(np.sqrt(ecat.get("log_X_err", 0.1)**2 +
                                 ecat.get("log_Mdvir_err", 0.1)**2), 0.02, 0.5))
-    GAL[i] = dict(z=z, r_kpc=r_kpc, v2=v2, vad2=vad2, vhi2=vhi2,
-                  vdisk2_par=vdisk2_par, vdisk2_map=vdisk2_map,
+    GAL[i] = dict(z=z, r_kpc=r_kpc, v2=v2, vad2=vad2,
+                  vdisk2_pin=vdisk2_pin, vhi2_pin=vhi2_pin,
                   sx1=sx1, sy1=sy1)
 for n in skip_notes:
     emit("  note: " + n)
 emit(f"per-galaxy build: {len(GAL)}/{NG} galaxies usable")
 
 
-def build_tracks(bar, ad, err):
+def build_tracks(bar, err):
+    """bar = 'PIN20' | 'PIN30' | 'PIN60' (gas truncation radius, kpc)."""
+    Rout = int(bar[3:])
     xs, ys, sxs, sys_, zs, gid = [], [], [], [], [], []
     for k, i in enumerate(sorted(GAL)):
         g = GAL[i]
-        if bar in ("MAPG", "MAPA"):
-            if g["vdisk2_map"] is None:
-                return None
-            vd2 = g["vdisk2_map"]
-        else:
-            vd2 = g["vdisk2_par"]
-        vb2 = vd2 + (g["vhi2"] if bar in ("MAPG", "PAR2") else
-                     0.5 * g["vhi2"] if bar == "PARP" else 0.0)
-        vc2 = g["v2"] + (g["vad2"] if ad == "ON" else 0.0)
+        vb2 = g["vdisk2_pin"] + g["vhi2_pin"][Rout]
+        vc2 = g["v2"] + g["vad2"]
         r_m = g["r_kpc"] * KPC_M
         keep = (g["r_kpc"] >= 2.0) & (vb2 > 0) & (vc2 > 0)
         if keep.sum() >= 1:                 # amendment 2b: physical window
@@ -675,15 +672,16 @@ if not G3:
 
 # ---------------------------------------------------------------- ladder
 emit("\nRECIPE LADDER (wiring gates G1/G2/G4; fixed order; first pass = primary)")
-LADDER = [(bar, ad, err) for bar in ("MAPG", "MAPA", "PAR2", "PARP")
-          for ad in ("ON", "OFF") for err in ("E1", "E2")]
+emit("(amendment 3: the Paper-I-pinned reconstruction; ladder = gas extent x errors)")
+LADDER = [(bar, err) for bar in ("PIN30", "PIN20", "PIN60")
+          for err in ("E1", "E2")]
 primary = None
 wiring_rows = []
-for bar, ad, err in LADDER:
+for bar, err in LADDER:
     bins_a0 = None
-    tr = build_tracks(bar, ad, err)
+    tr = build_tracks(bar, err)
     if tr is None:
-        wiring_rows.append((bar, ad, err, None)); continue
+        wiring_rows.append((bar, err, None)); continue
     thc, m2c = fit("CONST", tr)
     a0c, sic = thc[0], thc[1]
     g1 = (2.16 <= a0c <= 2.62) and (0.10 <= sic <= 0.24)
@@ -707,16 +705,16 @@ for bar, ad, err in LADDER:
             bins_a0.append(thb[0])
         g4 = (bins_a0[0] < bins_a0[3] and 1.74 <= bins_a0[0] <= 2.24
               and 2.36 <= bins_a0[3] <= 3.06)
-    wiring_rows.append((bar, ad, err, dict(a0c=a0c, sic=sic, a00=a00, a1=a1,
-                                           sil=sil, g1=g1, g2=g2, g4=g4,
-                                           bins=bins_a0 if g1 and g2 else None)))
-    tag = f"{bar}-{ad}-{err}"
+    wiring_rows.append((bar, err, dict(a0c=a0c, sic=sic, a00=a00, a1=a1,
+                                       sil=sil, g1=g1, g2=g2, g4=g4,
+                                       bins=bins_a0 if g1 and g2 else None)))
+    tag = f"{bar}-{err}"
     emit(f"  {tag:14s} a0 = {a0c:5.2f} si = {sic:.3f} [{'P' if g1 else 'f'}]  "
          f"a00 = {a00:5.2f} a1 = {a1:5.2f} [{'P' if g2 else 'f'}]  "
          + (f"bins {bins_a0[0]:.2f}->{bins_a0[3]:.2f} [{'P' if g4 else 'f'}]"
             if g4 is not None else "bins ----"))
     if primary is None and g1 and g2 and g4:
-        primary = (bar, ad, err)
+        primary = (bar, err)
         emit(f"  PRIMARY RECIPE LOCKED: {tag}")
         break
 
@@ -727,9 +725,9 @@ if primary is None:
     open("data/stage10h_out.txt", "w", encoding="utf-8").write(OUT.getvalue())
     sys.exit(0)
 
-BAR_P, AD_P, ERR_P = primary
-TR = build_tracks(BAR_P, AD_P, ERR_P)
-row_p = [r[3] for r in wiring_rows if r[:3] == primary][0]
+BAR_P, ERR_P = primary
+TR = build_tracks(BAR_P, ERR_P)
+row_p = [r[2] for r in wiring_rows if r[:2] == primary][0]
 TH_WIRE_LIN, _ = fit("LIN", TR)
 SI_W, MU_W, WG_W = TH_WIRE_LIN[2], TH_WIRE_LIN[3], TH_WIRE_LIN[4]
 emit(f"\nprimary tracks: {TR['ngal']} galaxies, {len(TR['x'])} points; "
@@ -874,7 +872,7 @@ if POWER:
 # H0 variants for M-LOCK (a0-side only, labeled)
 if POWER:
     emit("  H0 variants (a0-side only): ")
-    for h0v in (67.4, 73.0):
+    for h0v in (70.0, 73.0):
         fac = h0v / H0_FID
         a0v = A0_LOCK0 * fac
 
@@ -919,7 +917,7 @@ else:
         emit("credence map cell: HOLD 53, named tension/consistency per letters.")
 emit("mech-conditional 8 untouched (sky-side stage). PREDICTIONS P3:")
 emit("annotation only, no flip (model-conditioned tracks -- pre-stated).")
-emit(f"\nprimary recipe: {BAR_P}-{AD_P}-{ERR_P}; conditioning disclosed:")
+emit(f"\nprimary recipe: {BAR_P}-{ERR_P}; conditioning disclosed:")
 emit("tracks are DC14-processed; their own framework spread (1.59 DM-row vs")
 emit("1.20 MOND-row) measures that conditioning at ~25% on a1.")
 emit(f"wall-clock: {(time.time() - t_start)/60.0:.1f} min")
