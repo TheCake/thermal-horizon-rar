@@ -180,6 +180,34 @@ census gate cannot carry moves to the UNCHANGED wiring gates G1/G2/G4
 (their published pooled numbers) -- if the 6 extra galaxies materially
 distort the tracks, wiring fails and the stage ends exactly as before.
 No other bar, letter, or map cell is touched.
+
+AMENDMENT 2 (2026-08-09, logged after run 3 = the first full ladder pass,
+which ended NO-RECIPE-PASSED with the firewall intact -- no contest fit
+and no injection was ever computed; ladder preserved in
+data/stage10h_run3_ladder.log). Run-3 diagnostics found three wiring-layer
+defects, all upstream of any physics claim:
+  (a) ESTIMATOR START: the sigma_int start value std(y-x)/2 could exceed
+      its own bound (1.0), freezing Nelder-Mead on a flat 1e12 landscape
+      (every AD-OFF row returned its start values with sigma_int ~ 7.9,
+      OUTSIDE the bound -- the fit never moved). Start now clipped into
+      [0.10, 0.5].
+  (b) MODEL-DUMP ARTIFACTS: the released true_Vrot tables contain rows
+      with v_kms = 0 / 1e-273 / 1e-87 at r > 2 kpc -- numerically zero
+      rotation in a v_max/sigma > 1 rotating-disk sample = dump
+      artifacts, not measurements (27 galaxies carry at least one).
+      They put -inf..-200 into log a_tot and produced the 16-dex
+      pseudo-scatter that froze (a). Repair: drop points with
+      v < 1 km/s, and require both log-accelerations inside the
+      physical RAR window [-13.5, -8.0] (generous vs their figure
+      range; the genuine deep tail at x ~ -13.5 is kept).
+  (c) PRESSURE-SUPPORT GRADIENT: dln(Sigma*sigma^2)/dlnr was taken on
+      the FOLDED |r| array, interleaving the two slit sides into
+      near-duplicate radii and amplifying the numerical gradient
+      (AD-ON rows pegged sigma_int at the 1.0 bound). Repair: the
+      gradient is now computed per slit side (sign of dx) on each
+      side's own ordered radii, then folded.
+No bar, letter, or credence-map cell is touched; the wiring targets
+remain their published numbers.
 """
 import os
 import sys
@@ -435,16 +463,29 @@ for i in sel:
         continue
     Re_as = np.abs(arr[:, 0] / np.where(arr[:, 1] != 0, arr[:, 1], np.nan))
     kpc_per_as = rad_kpc / np.nanmedian(Re_as)
-    r_kpc = np.abs(arr[:, 1]) * rad_kpc
-    v = np.abs(arr[:, 3]); sig = np.abs(arr[:, 4]); flx = np.clip(arr[:, 2], 1e-12, None)
-    order = np.argsort(r_kpc)
-    r_kpc, v, sig, flx = r_kpc[order], v[order], sig[order], flx[order]
-    good = r_kpc > 1e-3
-    r_kpc, v, sig, flx = r_kpc[good], v[good], sig[good], flx[good]
-    lnr = np.log(np.clip(r_kpc, 1e-3, None))
-    lnSs2 = np.log(flx * sig**2)
-    dln = np.gradient(lnSs2, lnr)
-    vad2 = np.clip(-sig**2 * dln, 0.0, None) * 1e6        # (m/s)^2
+    # amendment 2c: per-side pressure-support gradient, then fold
+    side = np.sign(arr[:, 0])
+    r_all = np.abs(arr[:, 1]) * rad_kpc
+    v_all = np.abs(arr[:, 3]); s_all = np.abs(arr[:, 4])
+    f_all = np.clip(arr[:, 2], 1e-12, None)
+    vad2_all = np.zeros_like(r_all)
+    for sgn in (-1.0, 1.0):
+        mk = (side == sgn) if sgn < 0 else (side >= 0)
+        if mk.sum() < 3:
+            continue
+        o = np.argsort(r_all[mk])
+        rr = np.clip(r_all[mk][o], 1e-3, None)
+        keep_step = np.concatenate([[True], np.diff(np.log(rr)) > 1e-4])
+        lnS = np.log(f_all[mk][o] * s_all[mk][o]**2)
+        dln = np.zeros_like(rr)
+        dln[keep_step] = np.gradient(lnS[keep_step], np.log(rr[keep_step]))
+        tmp = np.zeros(int(mk.sum())); tmp[o] = dln
+        vad2_all[mk] = np.clip(-s_all[mk]**2 * tmp, 0.0, None) * 1e6
+    order = np.argsort(r_all)
+    r_kpc, v, sig, vad2 = (r_all[order], v_all[order], s_all[order],
+                           vad2_all[order])
+    good = (r_kpc > 1e-3) & (v >= 1.0)     # amendment 2b: v-floor 1 km/s
+    r_kpc, v, sig, vad2 = r_kpc[good], v[good], sig[good], vad2[good]
     v2 = (v * 1000.0)**2
     incl = photo[i]["incl"]; pa = photo[i]["PA"]
     gasS = gp.get("gas_density", (0.0, 0.0))[0]           # Msun/pc^2
@@ -487,6 +528,12 @@ def build_tracks(bar, ad, err):
         vc2 = g["v2"] + (g["vad2"] if ad == "ON" else 0.0)
         r_m = g["r_kpc"] * KPC_M
         keep = (g["r_kpc"] >= 2.0) & (vb2 > 0) & (vc2 > 0)
+        if keep.sum() >= 1:                 # amendment 2b: physical window
+            with np.errstate(divide="ignore"):
+                xa = np.log10(np.where(keep, vb2, 1.0) / r_m)
+                ya = np.log10(np.where(keep, vc2, 1.0) / r_m)
+            keep &= ((xa >= -13.5) & (xa <= -8.0)
+                     & (ya >= -13.5) & (ya <= -8.0))
         if keep.sum() < 3:
             continue
         xs.append(np.log10(vb2[keep] / r_m[keep]))
@@ -569,7 +616,7 @@ def m2ln(model, th, tr):
 
 def fit(model, tr, starts=None, polish=True):
     ns = NSHAPE[model]
-    hyp0 = [max(np.std(tr["y"] - tr["x"]) * 0.5, 0.10),
+    hyp0 = [float(np.clip(np.std(tr["y"] - tr["x"]) * 0.5, 0.10, 0.50)),
             float(np.mean(tr["x"])), max(float(np.std(tr["x"])), 0.2)]
     if starts is None:
         if model == "CONST":
