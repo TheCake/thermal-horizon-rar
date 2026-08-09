@@ -4,7 +4,7 @@ G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
 G3 (supersession resolves): PASS
 G4 (current-quantity collisions): PASS
-G5 (value spot-checks, 262 tokens): PASS
+G5 (value spot-checks, 263 tokens): PASS
 
 G6 (world-table provenance): PASS
 

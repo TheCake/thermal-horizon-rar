@@ -571,6 +571,8 @@ CHECKS = [
      '(2*sqrt(Omega))', 'data/stage10f_geometry.txt'),
     ('mech-10f-geometry', 'TOKENS: GF1:P GF2:P GF3:P GF4:P GF5:P GF6:P '
      'GF8:REPORT  REQ-cells:32 viol:0', 'data/stage10f_geometry.txt'),
+    ('mech-10f-geometry', 'LETTER RETRACTED: 10F G-CLOSED -> G-OPEN',
+     'data/stage10f_addendum.txt'),
 ]
 g5bad = []
 for rid, tok, f in CHECKS:

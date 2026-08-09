@@ -9,6 +9,76 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-09 (third close) — 10F+R26: my map couldn't fail, his four computations broke it, the mechanism lives on one uncomputed number
+
+The author said "go for the next thing" and 10F ran O5-GEOMETRY — the
+strike-bearing successor. It fired G-CLOSED gates 6/6 and ROUND 26
+RETRACTED it to G-OPEN with the four computations I omitted. What the
+next instance must hold straight:
+
+BANKED, do not re-litigate:
+- SURVIVES from 10F: the sector-coordinate theorem (the axisymmetric
+  drive pins ONLY m=0 of the cloud's five l=2 coordinates — the
+  static q = 0.086 is one DC amplitude, a DIFFERENT OBJECT from the
+  fluctuation amplitude; R25's kill clause (a) is not cleanly met);
+  the bright-mode projection (the system tensor selects ONE
+  combination; M=1 preserved); λ/g_close = (η₂/2)e_s√(Ω₂/Ω) exact;
+  R-DYN closed as UNSATISFIABLE at single-mode λ (39 Hubble periods
+  per Rabi cycle at the max-favorable corner — verified three ways).
+- RETRACTED (adopt his language, never mine): the R-EQ escape. The
+  requirement map's steady state has P(sys=2) = GIBBS at every λ/γ
+  from 0.03 to 300 — never the lending law (factor ~2 low). The
+  lending law (½)n/(1+n) is intrinsically NON-EQUILIBRIUM (it lives
+  in the 6X |1⟩-preparation + dephasing, nowhere else). Perturbative
+  exchange gives RAW-N dressing (|me_up|² = 2m, |me_dn|² = m+1 —
+  exact), which 10C G7 already rejected. THE CRUX (his words):
+  thermalizing the MARGINALS does not confer the JOINT
+  borrowed-configuration weight.
+- e_a = 1 is PERMITTED-grade, NOT derived: GF-1/2 prove pinning and
+  projection, not the mode's spectral weight/participation; the
+  constraint-slaving question (is the l=2 wobble sector dynamical or
+  slaved like 10B-C6?) is UNTOUCHED and is THE SAME OBJECT as the
+  collective-amplification escape.
+
+MY TWO TRAPS THIS CLOSE (new fingerprints):
+- #16 THE NULL-POWER GATE: GF-5's observables (KMS ratios,
+  degeneracy-conditioned balance) pass AT ZERO COUPLING — a positive
+  letter clause gated by a test that cannot fail. Before locking any
+  letter grammar, ask of each gate: WHAT OUTCOME WOULD MAKE THIS
+  FAIL? If nothing reachable fails it, it cannot license a positive
+  clause. (My own O3 self-catch was the tell and I still let the
+  letter fire — the grammar itself was the violation, wired at
+  pre-reg time.)
+- #17 THE EQUAL-TEMPERATURE FIXED POINT: putting equal-T thermal
+  dissipators on both modes makes the joint Gibbs state the
+  Liouvillian fixed point — the ONE substitution that guarantees a
+  non-equilibrium law (the 6X lending law) can never appear. Any
+  future requirement map MUST be non-equilibrium at the physical λ
+  (frozen-bath / |1⟩-initial / unequal effective temperatures).
+
+THE FORK (the mechanism is on one number now):
+- O5-COLLECTIVE (STRIKE-BEARING, kill signed in advance — R26 cond
+  6 verbatim): the mechanism closes iff EITHER (a) collective
+  amplification is derived and lifts λ to saturation (λ ≳ H; the 9W
+  λ̄ = √(Σλ_k²) √K-question — how many microstates/sub-modes
+  participate in the l=2 bright mode and at what per-mode coupling),
+  OR (b) a non-saturated real-exchange process is shown to imprint
+  e^{−Lx} on the system's DRESSING. IF BOTH FAIL, THE STRIKE FIRES
+  (15→8), no appeal. This is a derivation stage with horizon-side
+  physics input (the 10A/10B/9Z machinery is the toolkit).
+- Or the author's paper/circulation queue (TODO 27–31, untouched).
+- Standing: O5-INTERPLAY (22% binary band-edge back-shift =
+  unbudgeted consistency tension); derive κ=1 in the deep limit.
+
+Credences: mech 15 (SEVEN O5 rounds, zero strikes, zero rises — the
+reviewer's arc line stands: "cornered honestly, not carried");
+anomaly-real 53 untouched since the paper rounds. Three closes today
+(10D+10E+R25, then 10F+R26); ~12 across three days. COMPACT BEFORE
+THE NEXT ARC — and the next arc is the heaviest derivation the
+program has attempted.
+
+---
+
 ## 2026-08-09 (second close) — 10D+10E+R25: the dial turns, the door is real but heavy, the strike waits on one computation
 
 The author said "go for the next arc close... concurrently if possible"

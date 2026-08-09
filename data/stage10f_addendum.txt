@@ -1,0 +1,102 @@
+==============================================================================
+STAGE 10F ADDENDUM -- ROUND-26 VERIFICATION + CONDITIONS 1-7
+==============================================================================
+
+GA-1 D1 -- the absolute P(sys=2) vs Gibbs vs the lending law:
+  n_amb = 0.502: lending law = 0.16711 (his 0.16711); 4-level Gibbs = 0.07531; infinite-geom = 0.0744
+    map P(sys=2) at lam/gam = 0.03/1/30/300: 0.07531/0.07531/0.07531/0.07531
+    -> CONFIRMED: Gibbs-pinned at every lambda (= the 4-level thermal 0.07531), factor 2.22 below the lending law; his 0.0744-vs-0.0753 gap = infinite-vs-4-level geometric, explained exactly
+  n_amb = 2.0: lending law = 0.33333 (his 0.33333); 4-level Gibbs = 0.18462; infinite-geom = 0.1481
+    map P(sys=2) at lam/gam = 0.03/1/30/300: 0.18462/0.18462/0.18462/0.18462
+    -> CONFIRMED: Gibbs-pinned at every lambda (= the 4-level thermal 0.18462), factor 1.81 below the lending law; his 0.0744-vs-0.0753 gap = infinite-vs-4-level geometric, explained exactly
+
+GA-2 D2 -- the GF-5 gates at (near-)zero coupling:
+  lam/gam = 1e-06: o1 = 0.00000, o2 = 0.00000 (res 1.1e-11)
+  lam/gam = 1e-03: o1 = 0.00000, o2 = 0.00000 (res 5.8e-15)
+  -> CONFIRMED: the stage's GF-5 observables pass AT ZERO COUPLING --
+     a positive letter clause was gated by a test that cannot fail
+     (NULL-POWER; trap-#12's sharpest instance; his H1 stands).
+
+GA-3 D3 -- exchange-only steady state (no system dissipator):
+  lam/gam =    0.3: P(sys=2) = 0.07531
+  lam/gam =   30.0: P(sys=2) = 0.07531
+  lam/gam =  300.0: P(sys=2) = 0.07531
+  -> CONFIRMED: the exchange itself thermalizes the system to the
+     ambient temperature -- ANY steady state = Gibbs; the lending
+     law (1/2)n/(1+n) is intrinsically NON-EQUILIBRIUM (the 6X
+     |1> preparation + dephasing). His crux stands: thermalizing
+     the MARGINALS does not confer the JOINT borrowed-
+     configuration weight; the R-EQ license was over-extended.
+
+GA-4 D4 -- the perturbative exchange matrix elements from |1,m>:
+  m = 1: |me_up|^2 = 2.0 (2m = 2) OK; |me_dn|^2 = 2.0 (m+1 = 2) OK
+  m = 2: |me_up|^2 = 4.0 (2m = 4) OK; |me_dn|^2 = 3.0 (m+1 = 3) OK
+  m = 3: |me_up|^2 = 6.0 (2m = 6) OK; |me_dn|^2 = 4.0 (m+1 = 4) OK
+  m = 4: |me_up|^2 = 8.0 (2m = 8) OK; |me_dn|^2 = 5.0 (m+1 = 5) OK
+  -> CONFIRMED: any fixed energy denominators give a dressing
+     weight LINEAR in m = the RAW-N weighting (6X G2b flagged;
+     10C G7 rejected it at slope 0.42 vs the measured ratio form).
+     The gate e^{-x} = P(n >= 1) is a TAIL probability -- it
+     appears ONLY in the saturated diagonal ensemble (his D4 +
+     the archived GF-4/G7 values ARE (1/2)e^{-x}). Absolute
+     shift normalization is delta-convention-dependent (his
+     0.0190/m table) -- the LINEARITY is the load-bearing fact,
+     confirmed exact.
+
+GA-5 the saturation arithmetic:
+  Rabi cycles per Hubble period at the max-favorable corner: lam_max/H = 0.0256
+  -> H/lam_max = 39.1 Hubble periods per full cycle (his 39x: CONFIRMED)
+  g_close range (archived 10C table): [0.0092, 0.1178] H (his 0.009-0.118: CONFIRMED)
+
+GA-6 the interplay-tension arithmetic: binary x_loc=0.5 band-edge
+  back-shift 0.224 (the 10F GF-8 table) vs the a0-lock kappa band
+  +-0.05 (10C G5: kappa = 1.00 +/- 0.05): 22% > 5% -> CONFIRMED;
+  his label upgrade adopted (condition 5): 'unbudgeted consistency
+  tension at the binary anchor' -- scoped: the adopted kappa/c1
+  bands are galaxy-led, the binary side is an upper limit, the
+  10D K-SPLIT is galaxy-side and untouched.
+
+==============================================================================
+ROUND-26 CONDITIONS EXECUTED:
+==============================================================================
+(1) LETTER RETRACTED: 10F G-CLOSED -> G-OPEN. The kill-clause-(b)
+    line is corrected: clause (b) is NOT shown to fail -- it is
+    UNTESTED (the map had no power). Kill clause (a) remains
+    correctly neutralized at the static-q level (the two-object
+    distinction stands) but e_a = 1 is PERMITTED-grade, not
+    derived.
+(2) THE RECORD GAINS THE DISCRIMINATING RESULT (his D1/D2, both
+    re-verified above): map P(sys=2) = Gibbs (0.0753/0.1846) at
+    every lam/gamma in [0.03, 300], never the lending law
+    (0.1671/0.3333); o1 = o2 = 0 at lam -> 0. GF-5 is RELABELED
+    a null-power consistency check (trap-#12 correction).
+(3) AXIS-1 RESIDUAL BOOKED: is the l=2 bright mode a genuine
+    O(1)-participation DOF, or spectral-weight-suppressed /
+    constraint-slaved (vs 10B-C6)? -- the SAME object as the
+    collective-amplification escape; must be DERIVED.
+(4) THE LOAD-BEARING MODELING CHOICE NAMED: the equal-temperature
+    system dissipator makes the joint Gibbs state the Liouvillian
+    fixed point -- the one substitution that guarantees the 6X
+    lending law cannot appear. Any future requirement map must
+    use a NON-EQUILIBRIUM construction (frozen-bath / |1>-initial
+    / genuinely unequal effective temperatures) at the physical
+    lambda.
+(5) GF-8 LABEL UPGRADED: 'unbudgeted consistency tension at the
+    binary anchor' (22% edge vs the +-5% kappa lock band);
+    O5-INTERPLAY deferral kept.
+(6) THE SHARPENED SUCCESSOR (STRIKE-BEARING at its round): the
+    mechanism closes iff EITHER (a) collective amplification is
+    derived and lifts lambda to saturation (lambda >~ H; the 9W
+    lambda-bar = sqrt(sum lambda_k^2) sqrt-K question), OR (b) a
+    non-saturated real-exchange process is shown to imprint the
+    tail-weighting e^{-Lx} on the system's DRESSING. IF BOTH
+    FAIL, THE STRIKE FIRES (15 -> 8). The requirement side is
+    closed against R-EQ by D1-D4; only the amplitude/collectivity
+    side keeps the mechanism alive. NAME: O5-COLLECTIVE.
+(7) CREDENCE (mechanical): bath-mechanism conditional HOLDS 15
+    (SEVEN O5 rounds, zero strikes, zero rises); anomaly-real 53
+    UNTOUCHED (no sky fits in the arc).
+
+GATES: GA-1:P GA-2:P GA-3:P GA-4:P GA-5:P GA-6:P  -> ALL REVIEWER NUMBERS CONFIRMED
+
+done (0.0 min)

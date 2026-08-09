@@ -1276,7 +1276,33 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     coupling-existence + equilibration only). KILL: fluctuating e_a
     ~ 0.086 AND band-like requirement ⇒ the R22-cond-4 strike fires
     (mech 15→8). Also open: derive κ = 1 in the DEEP limit (R24 cond
-    6 as re-scoped by C2).**);
+    6 as re-scoped by C2).**
+    **O5-GEOMETRY EXECUTED 2026-08-09 (10F pre-reg f78ff64; ROUND 26
+    RETRACTED the fired G-CLOSED → G-OPEN, adopted; addendum GA-1..6
+    all confirmed): SURVIVES — the sector-coordinate theorem (the
+    drive pins only m=0; static q ≠ fluctuation amplitude; kill
+    clause (a) not cleanly met), the bright-mode projection (M=1
+    preserved), R-DYN closed as unsatisfiable at single-mode λ (39
+    Hubble periods per Rabi cycle at the max-favorable corner).
+    RETRACTED — the R-EQ escape: the requirement map was NULL-POWER
+    (gates pass at λ=0); the map's absolute P(sys=2) = GIBBS at every
+    λ/γ ∈ [0.03, 300], never the lending law (his D1); exchange-only
+    still Gibbs (the lending law is intrinsically NON-EQUILIBRIUM);
+    perturbative exchange = raw-n (10C-G7-rejected); thermalizing
+    marginals ≠ joint borrowed-configuration weight. e_a = 1 is
+    PERMITTED-grade (spectral weight/constraint-slaving vs 10B-C6
+    underived). THE LIVE SUCCESSOR = O5-COLLECTIVE (STRIKE-BEARING,
+    kill signed in advance, R26 cond 6 verbatim): the mechanism
+    closes iff EITHER (a) collective amplification is derived and
+    lifts λ to saturation (λ ≳ H; the 9W λ̄ = √(Σλ_k²) √K-question =
+    the same object as the Axis-1 participation residual), OR (b) a
+    non-saturated real-exchange process is shown to imprint e^{−Lx}
+    on the system's DRESSING. IF BOTH FAIL, THE STRIKE FIRES
+    (15→8). Constraint on any future requirement map: must be
+    NON-EQUILIBRIUM at the physical λ (equal-T dissipators make
+    Gibbs the fixed point). Also standing: O5-INTERPLAY (the 22%
+    binary band-edge back-shift = unbudgeted consistency tension;
+    galaxy-led bands + 10D untouched).**);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established

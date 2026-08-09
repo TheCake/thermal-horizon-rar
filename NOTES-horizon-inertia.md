@@ -14383,6 +14383,91 @@ is one piece of arithmetic: adding the door's small back-push on the
 melody to the full song and checking the total against what the sky
 plays.
 
+### ROUND 26 (2026-08-09, the decisive adjudication; report archived REVIEW-ROUND26-OPUS.md, uncommitted) — **10F G-CLOSED RETRACTED → G-OPEN (adopted)**
+
+The referee reproduced every algebraic number (GF-1/2/3/4/8 + R-DYN
+exact, his own tensor basis and Lindblad solver), then ran the four
+discriminating computations the stage OMITTED and **inverted Axis 2**:
+
+**D1 (the decisive one):** the map steady state's ABSOLUTE P(sys=2)
+sits at the GIBBS value (0.0753 at n̄ = 0.502; 0.1846 at 2.0) — a
+factor ~2 below the lending law (0.1671/0.3333) — **at every λ/γ from
+0.03 to 300, never moving**. My o2 "lending-line balance" was the
+trivial degeneracy ratio; the actual weight is Gibbs. **D2:** o1 = o2
+= 0 at λ → 1e-6 — the GF-5 gates pass AT ZERO COUPLING: a positive
+letter clause was gated by a test that cannot fail (null-power;
+trap-#12's sharpest instance; "its own O3 self-correction was the
+tell"). **D3:** removing the system dissipator changes nothing — the
+exchange itself thermalizes the system: ANY steady state = Gibbs; the
+lending law is intrinsically NON-EQUILIBRIUM (the 6X |1⟩ preparation
++ dephasing). **D4:** the perturbative exchange dressing weight is
+LINEAR in m (|me_up|² = 2m, |me_dn|² = m+1 — raw-n, the weighting 10C
+G7 already rejected); the gate e^{−x} = P(n≥1) is a TAIL probability
+appearing ONLY in the saturated diagonal ensemble. **His crux:
+thermalizing the MARGINALS does not confer the JOINT
+borrowed-configuration weight — the R-EQ license was over-extended.**
+The equal-temperature system dissipator was the load-bearing modeling
+choice: it makes the joint Gibbs state the Liouvillian fixed point —
+the one substitution that guarantees the 6X result cannot reappear.
+
+Axis 1 ruling: the static-q ≠ fluctuation-amplitude distinction is
+VALID (kill clause (a) not cleanly met) but **e_a = 1 is asserted,
+not derived** (PERMITTED-grade): GF-1/2 prove the m=0 pinning and
+the bright-mode projection, not the mode's spectral
+weight/participation; the constraint-slaving question (vs 10B-C6) is
+untouched. The Axis-1 residual = the SAME object as the collective-
+amplification escape.
+
+**ADJUDICATION (B): HOLD 15 — no rise (hole YES, serious, two), and
+NO STRIKE** ("a powerless instrument supports neither the closure nor
+the kill"; the collectivity axis is uncomputed — the 9W λ̄ = √(Σλ_k²)
+√K-question could lift λ toward saturation; a 7-point strike requires
+closing it). His summary of the state: the R-EQ escape as computed is
+REFUTED; the requirement side is closed against equilibrium by D1–D4;
+**the mechanism holds only on the uncomputed amplitude/collectivity
+axis — "input-limited on the l=2 coupling normalization, not shown
+structurally dead," on a narrower ledge than the stage claimed.**
+
+**THE SHARPENED SUCCESSOR (O5-COLLECTIVE; strike-bearing at its
+round, his condition 6 verbatim):** the mechanism closes iff EITHER
+(a) collective amplification is derived and lifts λ to saturation
+(λ ≳ H), OR (b) a non-saturated real-exchange process is shown to
+imprint e^{−Lx} on the system's DRESSING. **IF BOTH FAIL, THE STRIKE
+FIRES (15→8).** Also adopted: GF-8's label upgraded to "unbudgeted
+consistency tension at the binary anchor" (the 22% band-edge
+back-shift exceeds the ±5% a₀-lock κ band; galaxy-led adopted bands
+and the 10D K-SPLIT untouched); any future requirement map must be
+NON-EQUILIBRIUM at the physical λ.
+
+Verification addendum
+([calcs/stage10f_addendum.py](calcs/stage10f_addendum.py)): GA-1..
+GA-6 ALL CONFIRMED — his Gibbs values re-derived exactly (the
+0.0744-vs-0.0753 gap = infinite-vs-4-level geometric, explained
+digit-exact), the null-power demonstration reproduced (o1 = o2 = 0
+at λ/γ = 1e-6), the raw-n matrix elements exact, the 39-Hubble-
+period Rabi cycle and the 22%-vs-5% arithmetic confirmed. CREDENCE
+(mechanical): bath-mechanism conditional HOLDS 15 (SEVEN O5 rounds,
+zero strikes, zero rises); anomaly-real 53 untouched all arc.
+
+PLAIN VERDICT: NEEDS REFINEMENT, honestly earned — the stage's
+structural half survives (the static-q two-object distinction; the
+bright-mode projection; R-DYN closed as unsatisfiable at single-mode
+λ), its closure half is retracted (the map had no power; equilibrium
+cannot carry the lending law), and the mechanism question is now
+compressed to ONE derivable object — the collectivity of the l=2
+bright mode — with the kill signed in advance on both of its exits.
+
+ELI12: The referee agreed the room's bulge can wobble — but caught
+that our "thermal walls" test could never have failed: warm walls
+keep everything at room temperature BY DEFINITION, so of course the
+bookkeeping looked fine; when he measured the actual amount of
+lending in that warm room, it was exactly the plain room-temperature
+amount — none. A handshake needs someone to actually reach out, and
+reaching out takes the strong push we don't have — UNLESS many hands
+push together (the one thing nobody has computed yet). That
+many-hands calculation is now the whole question, and both of its
+possible answers have signed consequences.
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

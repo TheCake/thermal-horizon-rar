@@ -540,6 +540,48 @@ strikes, zero rises); anomaly-real 53 untouched. Ledger 203 rows /
 worldtable 260 tokens six gates PASS. Ten closes in two days —
 FRESH SESSION before the next arc.**
 
+**10F + ROUND 26 (2026-08-09 third close, O5-GEOMETRY — the author:
+"you are go for the next thing"): the strike-bearing successor fired
+G-CLOSED gates 6/6 and ROUND 26 RETRACTED IT TO G-OPEN (adopted;
+addendum stage10f_addendum.py GA-1..6 re-verified every reviewer
+number digit-exact). SURVIVES: the sector-coordinate theorem (the
+axisymmetric drive pins ONLY m=0 of the cloud's five l=2 coordinates
+— the static q = 0.086 is one DC amplitude, a DIFFERENT OBJECT from
+the fluctuation amplitude ⇒ R25's kill clause (a) not cleanly met);
+the bright-mode projection (M=1 preserved); λ/g_close =
+(η₂/2)e_s√(Ω₂/Ω) exact; R-DYN closed UNSATISFIABLE at single-mode λ
+(39 Hubble periods per Rabi cycle at the max-favorable corner).
+RETRACTED: the R-EQ escape — his D1-D4 (all re-verified): the
+requirement map was NULL-POWER (gates pass at λ=0 — trap #16: ask of
+every gate what outcome would make it fail); the map's absolute
+P(sys=2) = GIBBS (0.0753/0.1846) at every λ/γ ∈ [0.03, 300], never
+the lending law (0.1671/0.3333); exchange-only steady state still
+Gibbs — the lending law is intrinsically NON-EQUILIBRIUM (the 6X |1⟩
+preparation + dephasing); perturbative exchange = raw-n dressing
+(|me|² = 2m / m+1 exact; 10C-G7-rejected); THE CRUX: thermalizing
+marginals does not confer the joint borrowed-configuration weight —
+the R-EQ license was over-extended; the equal-T system dissipator
+made Gibbs the Liouvillian fixed point (trap #17: future requirement
+maps must be NON-EQUILIBRIUM at the physical λ). e_a = 1 is
+PERMITTED-grade (spectral weight / constraint-slaving vs 10B-C6
+underived — the SAME object as the collective escape). ADJUDICATION
+(B): HOLD 15, no rise, NO strike ("a powerless instrument supports
+neither the closure nor the kill"). **THE LIVE SUCCESSOR =
+O5-COLLECTIVE (STRIKE-BEARING, kill signed in advance, R26 cond 6
+verbatim): the mechanism closes iff EITHER (a) collective
+amplification is derived and lifts λ to saturation (λ ≳ H; the 9W
+λ̄ = √(Σλ_k²) √K-question = the Axis-1 participation residual), OR
+(b) a non-saturated real-exchange process is shown to imprint
+e^{−Lx} on the system's DRESSING. IF BOTH FAIL, THE STRIKE FIRES
+(15→8).** Standing: O5-INTERPLAY (22% binary band-edge back-shift =
+unbudgeted consistency tension at the binary anchor; galaxy-led
+bands + 10D untouched); derive κ=1 in the deep limit. CREDENCE: mech
+HOLDS 15 (SEVEN O5 rounds, zero strikes, zero rises); anomaly-real
+53 untouched. Ledger 204 rows / worldtable 263 tokens six gates
+PASS. Reviews ROUND25/26 uncommitted. Twelve closes in three days —
+FRESH SESSION before O5-COLLECTIVE (the heaviest derivation the
+program has attempted).**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6
