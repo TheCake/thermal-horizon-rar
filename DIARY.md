@@ -36,25 +36,36 @@ WHAT CHANGED IN papers/paper3_mechanism.md (draft 0.1 → 0.2):
 
 SCOUTS (Haiku, both landed, scout-grade — primary-read before ANY use):
 - VOID REOPEN: the practical path is a 2026 "Unified HI Rotation Curve
-  Corpus" (claimed: Zenodo 10.5281/zenodo.19563417, arXiv 2604.13489;
-  438 galaxies = SPARC+LITTLE THINGS+THINGS+WALLABY DR2) cross-matched
-  with Karachentsev LV tidal indices (Θ1/Θ5 exist, ~197 isolated) →
-  est. 15–25 isolated transition-crossing galaxies. CAVITY DR1 (100
-  void galaxies, IFS cubes public) has NO kinematic products yet;
-  Kreckel VGS has no fitted curves; WALLABY pilot models have no
-  isolation metric. The 9V standing design check applies: verify
-  y-coverage BEFORE designing any instrument.
-- Z-PAIR: MUSE-DARK III (Ciocan+ 2026, arXiv:2604.22613, A&A accepted,
-  data released at dark.univ-lyon1.fr) claims a₀(z≈1) = 2.38±0.10e−10
-  and slope a₁ = 1.59±0.10e−10 — the ×2 rise our a₀ ∝ H(z) predicts
-  (cH(1)/2π ≈ 2.1e−10 at Planck Ωm). Scout says NO published test of
-  the cH(z)/2π form exists; MIGHTEE-HI 2025 (z<0.08) reports a
-  tentative high a₀ = 1.69±0.13e−10. Their quoted errors look too
-  good vs their 0.17 dex scatter — feasibility read: marginal 1.5–2σ.
-  If a z-pair stage is ever designed: PRIMARY READ Ciocan first
-  (scout numbers unverified), power gates before any fit (the 9R
-  lesson), and remember the prediction is the LOCKED PAIR (a₀ AND
-  p together), not a₀ alone.
+  Corpus" (arXiv:2604.13489 — EXISTENCE VERIFIED at abstract grade
+  2026-08-09: Zenodo 10.5281/zenodo.19563417, CC BY 4.0, 8,963 points
+  / 423 unique galaxies = SPARC 175 + THINGS 34 + LITTLE THINGS 26 +
+  WALLABY DR2 203; single author D. C. Flynn — full primary read
+  still owed before use) cross-matched with Karachentsev LV tidal
+  indices (Θ1/Θ5 exist, ~197 isolated) → est. 15–25 isolated
+  transition-crossing galaxies. CAVITY DR1 (100 void galaxies, IFS
+  cubes public) has NO kinematic products yet; Kreckel VGS has no
+  fitted curves; WALLABY pilot models have no isolation metric. The
+  9V standing design check applies: verify y-coverage BEFORE
+  designing any instrument.
+- Z-PAIR: the scout surfaced MUSE-DARK III (Ciocan+ 2026,
+  arXiv:2604.22613) as "new" — IT WASN'T: the 8E round primary-read
+  it on 2026-07-31 (NOTES lit-note + P3 annotations; PDF cached as
+  data/musedark3.pdf). TRAP FINGERPRINT (new standing rule): before
+  acting on ANY scout "discovery", grep NOTES + PREDICTIONS for an
+  existing read — I fetched a duplicate PDF before the books caught
+  me (duplicate deleted). The re-read still PAID: one correction to
+  our own lit-note ("MOND refit agrees within errors" is wrong —
+  their App E MOND-framework slope is 1.20 ± 0.10 vs the DM headline
+  1.59 ± 0.10, both 95% CI ⇒ the recovered slope is
+  FITTING-FRAMEWORK-CONDITIONAL at ±25%), plus the lock arithmetic
+  done right (lock linearized over their window = 1.04–1.09e−10/z ⇒
+  ~10σ off their DM row but only 1.6–3.1σ off their OWN MOND-form
+  row, CI convention flagged), plus their per-galaxy data release
+  (footnote 3). The successor is sharpened and booked in NOTES +
+  PREDICTIONS (two legs: lock-vs-linear on released products; the
+  p-drift lens-bias leg — does fitting locked-pair truth with their
+  fixed form inflate a₁ 1.04 → ~1.59?). Pre-reg + power gates before
+  any run.
 
 Don't-redo: the P3 revision is DONE — do not re-absorb 10A–10G into
 P3 again; any further P3 change should come from a referee round or

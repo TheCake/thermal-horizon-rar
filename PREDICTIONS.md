@@ -332,6 +332,19 @@ stays flat to z≈2.5 — the field is internally contradictory. The registered 
 remains unmeasured by anyone and is still the unique discriminant. NOTES
 lit-note 2026-07-31 carries the full numbers.*
 
+*Annotation 2026-08-09 (re-read with digit verification; no status change): the
+lit-note's "their MOND-framework refit agrees within errors" clause CORRECTED —
+the slope is fitting-framework-conditional: DM decomposition a₁ = 1.59 ± 0.10
+(95% CI, verbatim) vs their own MOND-framework fit a₁ = 1.20 ± 0.10 (their Eq.
+E.5) vs ΛCDM-halo variants 1.63. Lock linearized over their window = 1.04–1.09;
+vs the MOND-framework row that is 1.6σ (if 1σ) / 3.1σ (if 95%) — the
+apples-to-apples comparison is NOT far from the lock, and the framework split
+itself evidences form-coupling of the recovered slope (the lens the LOCK
+predicts: p_gal drifts too, their form is held fixed). Successor sharpened to a
+two-leg contest (lock-vs-linear on released per-galaxy products + a lens-bias
+leg on locked-pair truth); their RCs are downloadable (their footnote 3). NOTES
+addendum 2026-08-09 carries the digits.*
+
 ### P4 — the DR4 weak-ambient pair
 Weak-ambient wide binaries sharpen toward p ≈ 0.69, and the source-vs-dressed
 convention split becomes resolvable (Δp ≈ 0.025 at e_N = 0.4). (Stage 6U.)

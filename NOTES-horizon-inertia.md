@@ -7311,6 +7311,73 @@ registered (two dials moving together) hasn't been measured by
 anyone yet. We wrote down exactly which follow-up computation
 would settle our part of it.
 
+### Addendum (2026-08-09, re-read with digit verification): one correction, four additions; the successor sharpens
+
+A fresh scout surfaced Ciocan+ as "new"; the pre-action don't-redo
+grep caught the existing 8E read only AFTER a duplicate fetch (the
+duplicate PDF was deleted; process lesson logged in DIARY). The
+re-read against the cached PDF produced one correction and four
+additions to the note above; no status change, no credence move.
+
+**CORRECTION (digit grade):** the clause "their MOND-framework
+refit (their App. E) agrees within errors" is WRONG as written.
+Their Eq. (4) DM-decomposition fit is a₀(0) = 1.0 ± 0.04, a₁ =
+1.59 (+0.10/−0.10), "with the errors denoting the 95% CI"
+(verbatim; so 1σ ≈ 0.05 on a₁). Their App. E MOND-framework
+z-dependent fit (their Eq. E.5) is a₀(0) = 1.03 ± 0.05, a₁ = 1.20
+(+0.10/−0.10) — 0.39 apart, NOT within errors; their App. D
+ΛCDM-halo-profile variants give a₁ = 1.63 (+0.13/−0.12); their
+individual-galaxy MOND regression gives a₁ = 1.42 (+0.94/−0.89)
+(wide). THE MEASURED SLOPE IS FITTING-FRAMEWORK-CONDITIONAL at the
+±25% level — direct evidence that the recovered a₁ is sensitive to
+the assumed RAR form, which is exactly the axis the lock lives on.
+
+**ADDITIONS:** (1) The lock compared correctly: linearizing
+a₀(z) = cH(z)/2π over THEIR window (0.33 < z < 1.44) gives slope
+1.04–1.09e−10 per z (H₀ 67.4–73). Against their DM-decomposition
+a₁ = 1.59 (1σ ≈ 0.05): ~10σ face value. Against their OWN
+MOND-framework a₁ = 1.20 (+0.10/−0.10): 1.6σ if the interval is
+1σ, 3.1σ if 95% (convention for E.5 not stated in text; flagged).
+The apples-to-apples row for this program is the MOND-framework
+one, and it is NOT far from the lock. (2) Their Sect. 4 verbatim:
+"our measured a₀(z) is faster than that of H(z) (Milgrom 1983a)" —
+keyed to the 1.59 row; same paragraph notes Magneticum's ×3 rise
+to z = 2 vs their inferred ×4. (3) Their Eq.-4 fit predicts a bTFR
+zero-point shift ΔZP ≈ −0.2 dex by z ∼ 1; the bTFR literature they
+cite is split (Übler+17 −0.44; Jeanneau+26 no evolution) — an
+external consistency lever for the contest. (4) The data release
+is per-galaxy: "All catalogues and data products from our
+disk–halo decomposition, including the RCs" at
+dark.univ-lyon1.fr/data-releases (their footnote 3) ⇒ the 8E
+successor upgrades from published-bins grade to released-products
+grade.
+
+**THE SUCCESSOR, SHARPENED (still unopened):** the lock-vs-linear
+contest should now be run IN-FORM with a lens leg — the locked
+pair also drifts the tail exponent (p_gal 0.689 → 0.702 by z = 1),
+their pipeline holds the RAR form FIXED at all z, and their own
+1.59-vs-1.20 framework split shows form-coupling at the required
+size. Leg A: contest lock vs linear on their released a₀(z) with
+M/L marginalized (the 8E design). Leg B: generate locked-pair
+truth, fit with their fixed-form + linear-a₀ pipeline, and measure
+the recovered-a₁ bias — if the lens inflates 1.04 toward their
+1.59, the tension dissolves and the lock EXPLAINS their excess
+slope; if not, the tension is honest and stands. Pre-reg before
+any run, power gates first (the 9R lesson).
+
+Plain verdict: SUCCESS (one correction to our own lit-note, the
+friendliest number in the paper recovered, the successor upgraded
+to released-data grade). ELI12: We accidentally read the same
+telescope paper twice — but the second read caught something the
+first missed: the paper's "gravity knob grows twice as fast as
+your formula" headline SHRINKS to "grows only a bit faster,
+maybe compatible" when the growth is measured inside the same
+kind of gravity formula we actually use. And how fast the knob
+seems to grow depends on which formula they fit — which is
+precisely the loophole our two-dials-locked prediction would
+exploit. The follow-up computation is now fully specified and
+their galaxy-by-galaxy data are downloadable.
+
 ## Stage 8C EXECUTED (2026-07-31): THE CEILING TEST — AMBIG by the locked grammar; the break side is clean, the per-galaxy clause is power-limited at SPARC grade
 
 Runtime 2.5 min (the warm-started machinery; the exact G1b match

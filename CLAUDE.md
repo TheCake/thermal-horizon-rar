@@ -636,11 +636,18 @@ five-item transparency, +8 repro rows; abstract exactly 250w, mean
 23.5, one em-dash; TODO P3-IMPACT flag RESOLVED; referee round NOT
 run (author gate + memory rule). NO ledger/credence/sky moves. Scout
 results (scout-grade, primary-read before use, in DIARY fifth-close):
-void reopen = "Unified HI RC Corpus 2026" (arXiv 2604.13489, 438 gal)
-× Karachentsev Θ-indices → ~15–25 isolated transition-crossers (CAVITY
-has no kinematics yet); z-pair = MUSE-DARK III (Ciocan+ 2026) now
-PUBLISHES a₀(z≈1) = 2.38±0.10e−10 + slope — the ×2 rise a₀ ∝ H(z)
-predicts, no cH/2π-form test in print; feasibility marginal 1.5–2σ.
+void reopen = "Unified HI RC Corpus 2026" (arXiv 2604.13489,
+existence-verified, Zenodo 19563417, 423 gal) × Karachentsev
+Θ-indices → ~15–25 isolated transition-crossers (CAVITY has no
+kinematics yet); z-pair: the scout's "new" MUSE-DARK III was ALREADY
+8E-read 2026-07-31 (duplicate-read trap logged in DIARY) — the
+2026-08-09 RE-READ corrected our lit-note ("MOND refit agrees" is
+WRONG: slope is framework-conditional, DM 1.59±0.10 vs their own
+MOND-form 1.20±0.10, 95% CI verbatim; lock over their window =
+1.04–1.09 ⇒ ~10σ vs DM row, 1.6–3.1σ vs MOND row) and sharpened the
+successor to a two-leg contest (lock-vs-linear on their RELEASED
+per-galaxy products + the p-drift lens-bias leg); booked in NOTES
+addendum + P3 third annotation.
 NEXT FORK (author's): circulation queue TODO 27–31 · P3 referee round
 · κ=1-deep · the two scouted instruments · DR4 readiness.**
 
