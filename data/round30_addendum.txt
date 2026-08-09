@@ -25,3 +25,40 @@ GA-5  Theta1 re-derivation slope (independent match + linregress):
    matches 31 (stage 31); regression N=31 slope 0.956 intercept -10.45 r=0.991 (stage slope 0.956 offset -10.45)
 
 BLIND PART DONE (extend below after reading the report)
+
+============================================================
+POST-REPORT PART: verifying the ROUND-30 referee's NEW numbers
+
+GA-6  J-1 rung arithmetic (kappa thresholds 2/(n+1); D(n) at
+      the locked world and at kappa=1):
+   kappa=0.925: D(0..3)/om = [0.5375, 0.075, -0.3875, -0.85]
+   kappa=1.000: D(0..3)/om = [0.5, 0.0, -0.5, -1.0]
+   three-rung condition D(2)>=0 <=> kappa <= 2/3 = 0.6667 -> EXCLUDES 0.925 (referee's J-1 CONFIRMED)
+   deep occupation n_BE(x): x=0.10 -> 9.508, x=0.05 -> 19.504 (occupied rungs sit far beyond the fold at every kappa)
+
+GA-7  J-2c the kappa=0.4 downward-term resonance:
+   kappa=0.4: -D(0) + 1*Om = +0.0000 (zero at kappa=0.4 exactly: |1,0> <-> |0,1> resonance)
+   kappa=0.5: -D(0) + 1*Om = +0.0500 (zero at kappa=0.4 exactly: |1,0> <-> |0,1> resonance)
+   => the chi(1) value at kappa=0.5 is inflated by THIS pole,
+   not the kappa=1 pole; the kappa->1 limit itself is clean
+   (nearest competing resonance far); referee CONFIRMED.
+
+GA-8  I-2 group-end neighbor terms (full matched set):
+   iso neighbor term max = 1.73e-04 a0 (1.7% of 0.01 floor)
+   non-iso max = 1.10e-02 a0 (109.9% of floor); median 1.87e-04 (1.9%)
+   NGC2976: 1.099e-02 a0 = 109.9% of floor (referee: 1.099e-2 = 109.9%)
+
+GA-9  I-3 the alias exemplar:
+   UNGC row: Name=NGC3274 Simbad=NGC3274 NED=NGC3274 Dist=7.98 Ti1=-1.2
+   SPARC UGC05721 D=6.18; gate |6.18-7.98|=1.80 <= max(2, 0.35*7.98=2.79): PASS
+
+GA-10 I-1 iso-overlap Chae e_N -> gates:
+   NGC3741    Chae e_N=0.00493 a0  gate s^2=0.869
+   NGC4068    Chae e_N=0.00535 a0  gate s^2=0.864
+   NGC5585    Chae e_N=0.00545 a0  gate s^2=0.863
+   NGC5055    Chae e_N=0.00700 a0  gate s^2=0.846
+   UGC07690   Chae e_N=0.00719 a0  gate s^2=0.844
+   NGC4559    Chae e_N=0.00920 a0  gate s^2=0.825
+   (referee: 0.00493-0.00920 -> s^2 0.83-0.87)
+
+ALL REFEREE NUMBERS CHECKED

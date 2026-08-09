@@ -9,6 +9,75 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-09 (eighth close) — 10I + 10J + ROUND 30: two honest walls, one retracted sentence, zero credence moves
+
+The author's "Go for it. Hunt away" bought the two lanes I'd
+recommended: 10I (the void r-meter reopen at LV grade, pre-reg
+630516e) and 10J (the κ=1-deep derivation, pre-reg 865c01e + A1
+1176e7c). Both closed same-day; ROUND 30 adopted in full (report
+REVIEW-ROUND30-OPUS.md, NEVER commit). anomaly-real 53 / mech 8
+untouched — every cell pre-signed HOLD, referee-confirmed.
+
+WHAT THE NEXT INSTANCE MUST NOT REDO:
+- Do NOT build another neighbor-catalog isolation instrument for the
+  void channel. 10I's pre-registered null-axis gate fired first-run:
+  point-source neighbor sums are floor-dominated at the isolated end
+  (iso terms ≤ 1.7% of any LSS floor; signal exists ONLY at the
+  group end — NGC2976 doubles its e_N). LV tidal isolation does not
+  reach the void regime: Chae's own LV values 0.005–0.009 a₀ put
+  isolated AND non-isolated at gates s² = 0.83–0.87. The channel
+  needs DENSITY-FIELD-selected samples (2M++/Cosmicflows e_N, never
+  a neighbor sum) with y ≳ 1 kinematics; CAVITY still has no
+  kinematic products. Census = UNDERCOUNT (fix the matcher with a
+  real alias table first — 22/28 misses are UGC-designated; exemplar
+  UGC05721 = NGC3274, deep-isolated, in Chae): ≥3 isolated
+  transition-crossers. The channel is UNTESTED, not dead — never
+  print "isolation does not open the gate" (R30-corrected wording in
+  NOTES).
+- THE INVERTED DIVIDEND is real and unbuilt: the meter is POWERED at
+  the GROUP end — a gate-CLOSING test (p → ½ toward dense
+  environments, the low-g side of p = ½ + r·g/2) is the axis this
+  data actually supports. The next executable in-catalog instrument,
+  if wanted.
+- 10J: what STANDS — the two-rung degeneracy at the vertex (κ = 1 ⟺
+  E(2) = E(1), σ = ½ EP-forced via the 10B Ĥ/c² charge), the
+  susceptibility-pole restatement (χ(1) diverges, residue
+  4e^(−d²)/ω; beware the unrelated κ = 0.4 resonance inflating the
+  low-κ values), the identity web (g² = E_zp,s·E_zp,b), the 9W
+  funnel, the D statement. What is RETRACTED — "the spectral bound
+  and the temperature lock pick the SAME world": R30 J-1 showed the
+  two-rung "bound" is rung-count-arbitrary (three rungs → κ ≤ 2/3,
+  excluding 0.925; at 0.925 D(2) = −0.3875 — the fold row's own
+  content). Do not resurrect that sentence. The ONLY path to
+  K-BOUNDED is written down: THE SELF-CONSISTENT OCCUPATION BOUND
+  (fixed point of ν = 1 + κn_BE feeding back into the pull; ask
+  where self-consistency first fails). Also queued: pin the 10D
+  meters' κ convention (bare vs renormalized ω) before any
+  ridge-vs-lock talk; the κ = 1 level crossing as a DR4-era
+  low-frequency-response reading.
+- TRAP #20 (new, standing): when a "bound" comes from truncating a
+  FAMILY of conditions, scan the family; if the bound moves with the
+  truncation and lands exactly on your target, the choice was
+  outcome-determining. (Derivation-side sibling of round-10's
+  pass-the-distribution rule.)
+- The Flynn 2026 unified HI corpus (fetched, data/flynn_corpus/)
+  adds NO decomposed kinematics beyond SPARC — LITTLE THINGS rows
+  are V_obs-only, WALLABY has no decomposition and no per-ring
+  errors. Don't re-read it expecting more (trap-#6 pattern).
+- Protocol note that WORKED, repeat it: the verification addendum's
+  BLIND half was committed BEFORE the referee's report existed
+  (87a4676) — provably independent cross-check, both directions
+  matched digit-exact. Do this for every future round.
+
+THE FORK (author's, unchanged in kind): circulation TODO 27–31
+(author parked outreach this session — "no email sending for now") ·
+the group-end gate-closing instrument (executable now) · the
+self-consistent occupation bound (theory) · P3 second referee round ·
+DR4 readiness. Eighth close of 2026-08-09 — FRESH SESSION before
+anything heavy.
+
+---
+
 ## 2026-08-09 (seventh close) — 10H: the z-ladder contest refused to fire, and that refusal is the result
 
 The author's "Hunt is on" bought the booked MUSE-DARK successor as a full

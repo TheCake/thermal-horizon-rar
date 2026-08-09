@@ -14987,32 +14987,46 @@ WALLABY has no decomposition/errors; trap-#6 pattern, routed around).
 The stage STOPPED at the pre-registered G10I-2b gate, first run — the
 gate wired to fail on a null axis (trap-#16 compliance) fired:
 
-- CENSUS (G10I-0 PASS at the blind bars 20/6/3): 31/149 SPARC matched
-  (name + distance; 28 unmatched at D ≤ 12 Mpc listed = alias
-  undercount, bounded); iso (Ti1 < 0) 13; **iso transition-crossers
-  (≥3 pts y ≥ 0.8) = 3** (NGC0024/NGC0891-class); deep-iso
-  (Ti1 < −1) 4. The void-channel sample at public LV grade is THIN
-  regardless of any gate question.
+- CENSUS (G10I-0 PASS at the blind bars 20/6/3; ROUND-30: quote as
+  UNDERCOUNTS, not counts): 31/149 SPARC matched (name + distance);
+  iso (Ti1 < 0) 13; **iso transition-crossers (≥3 pts y ≥ 0.8) = 3**;
+  deep-iso (Ti1 < −1) 4. The matcher misses NGC-catalogued galaxies
+  carried under UGC designations in SPARC — exemplar **UGC05721 =
+  NGC3274 (Ti1 = −1.2, deep-isolated, in Chae, distance gate
+  passes)**; 22/28 unmatched at D ≤ 12 Mpc are UGC-designated. The
+  referee force-fixed the alias and the calibration gate fails HARDER
+  (ρ 0.000 → −0.126, addendum-verified) — the letter is
+  alias-robust. The void-channel sample at public LV grade is THIN
+  regardless of any gate question; a real alias table (SIMBAD/NED
+  cross-IDs) is the free fix for every future LV cross-match.
 - G10I-2a PASS: our Θ₁ re-derivation from UNGC positions+K-masses
   regresses on the published Ti1 at slope 0.956 (offset −10.45,
   N = 31) — parse and 3D geometry validated.
-- **THE NULL-AXIS FINDING (G10I-2b STOP): the UNGC point-source
-  neighbor sum contributes ≤ ~2% of any large-scale-structure floor
-  for the isolated stratum** (e_N percentiles 16/50/84 =
-  0.0100/0.0101/0.0102 at floor 0.01 — the floor IS the number). The
-  iso gate range collapses to [0.8177, 0.8186]; the r = ½ predicted
-  stratum contrast Δp = 0.0003. The "open-gate extension" this
-  instrument was built to measure would have been 100%
-  floor-assumption — the pre-registered STOP is the honest letter.
-- THE DESIGN-LEVEL RESULT (the round's product): **tidal isolation
-  (Θ₁ < 0) does not open the ambient gate.** e_N at the operative
-  0.005–0.02 a₀ level is LSS-dominated: on the 11-galaxy Chae
-  overlap, Chae's measured e_N runs 0.005–0.007 a₀ — LV field
-  galaxies ALREADY sit at near-open gates, and removing point-source
-  neighbors changes nothing measurable. The void channel's
-  discriminating variable is the large-scale density field, not
-  neighbor isolation. A real void instrument needs density-field
-  selected samples WITH transition-crossing kinematics (CAVITY-class
+- **THE NULL-AXIS FINDING (G10I-2b STOP; ROUND-30 rescope adopted):
+  the point-source neighbor sum is floor-dominated exactly at the
+  isolated end** — iso-stratum neighbor terms ≤ 1.7% of the 0.01
+  floor (e_N percentiles 16/50/84 = 0.0100/0.0101/0.0102 — the floor
+  IS the number); **the meter is ASYMMETRIC: at the group end it has
+  real signal (NGC2976, Ti1 = +2.9, neighbor term 109.9% of the
+  floor)** — null precisely where the science needs it, powered where
+  it doesn't. The iso gate range collapses to [0.8177, 0.8186]; the
+  r = ½ predicted stratum contrast Δp = 0.0003. The "open-gate
+  extension" this instrument was built to measure would have been
+  100% floor-assumption — the pre-registered STOP is the honest
+  letter.
+- THE DESIGN-LEVEL RESULT (ROUND-30 corrected wording — two facts,
+  stated separately, neither being "isolation does not open the
+  gate," which the stage did NOT establish): (i) the LV
+  tidal-isolation axis, read through a point-source neighbor sum, has
+  NO dynamic range at the operative e_N level (floor/LSS-dominated);
+  (ii) LV galaxies — isolated and not — sit near-open at Chae's
+  measured e_N ≈ 0.005–0.009 a₀ (iso-overlap gates s² = 0.825–0.869,
+  the same band as non-iso), so LV tidal isolation does not reach the
+  void regime (g → 1 needs e_N ≪ 0.005). The void CHANNEL is
+  untested, not shown infeasible: a density-field-selected sample
+  could still show low e_N. A real void instrument needs
+  density-field selection (2M++/Cosmicflows-grade e_N, not a
+  neighbor sum) WITH transition-crossing kinematics (CAVITY-class
   when kinematic products release; WALLABY × void catalogs; DR4-era).
   The Chae-vs-UNGC meter cross-validation did NOT complete (no
   variance on the UNGC side) — do not cite it as a two-meter
@@ -15022,22 +15036,30 @@ Firewall record: no iso-gate likelihood, no injection, no sky read was
 ever computed. Credence: pre-signed cell — HOLD mech-conditional 8,
 HOLD anomaly-real 53. PREDICTIONS P1/P2 annotated (no status flip).
 
-**Plain verdict: NEEDS DIFFERENT DATA** — the channel, not the
-machinery: the 9V reopen clause is now executed and closed at public
-grade with the blocking physics quantified (the gate variable lives in
-the density field, which no public kinematic sample tags), and the
-census (3 isolated transition-crossers) prices the sample any
-successor must beat.
+**Plain verdict: NEEDS DIFFERENT DATA** — with the ROUND-30 meaning
+relabel: the letter documents INSTRUMENT infeasibility (this
+point-source meter, at this catalog grade), not channel death — the
+void channel is untested. The 9V reopen clause is executed and closed
+for THIS route with the blocking physics quantified (the gate
+variable lives in the density field, which no public kinematic sample
+tags), and the census (≥3 isolated transition-crossers, an
+undercount-floor) prices the sample any successor must beat. R30's
+inverted dividend: the meter's powered end is the GROUP end — a
+"does the gate CLOSE (p → ½) toward dense environments" test is the
+axis this data actually supports (named successor).
 
 *ELI12: Our theory says lonely galaxies should feel less of the
 universe's background hum. We tried to build a lonely-galaxy detector
 using a catalog of which galaxies have close neighbors. The check we
-wrote in advance caught the problem: the hum doesn't come from close
-neighbors — it comes from the huge far-away stuff (superclusters),
-which affects loner and non-loner alike. So "no neighbors" doesn't
-mean "quiet." To hear the difference we need galaxies inside giant
-empty regions of the universe — and nobody has published the right
-measurements of those yet. We wrote down exactly what's missing.*
+wrote in advance caught the problem: our ruler couldn't see any
+difference among the loners, because for them the hum comes from huge
+far-away stuff (superclusters), not close neighbors. Our referee
+confirmed the ruler DOES work near big crowds (one galaxy next to M81
+reads double!) — just not where we needed it. So "no neighbors"
+catalogs can't find the quiet galaxies; we need maps of the
+universe's giant empty regions with the right rotation measurements —
+and nobody has published those yet. We wrote down exactly what's
+missing.*
 
 ## Stage 10J (2026-08-09): O5-KAPPA-DEEP — the dictionary coefficient at the deep limit. K-CONDITIONAL, gates 4/4 + A1
 
@@ -15056,17 +15078,23 @@ respected — no lending-law input anywhere).
   HAMILTONIAN (H_int = (Ĥ/c²)δΦ), so the zero-point gravitates
   (premise P-half) — the thresholds are {2, 1, 2/3, …} and **κ = 1
   is EXACTLY the two-rung degeneracy E(2) = E(1)**: at the closure
-  value the dressed mode's second quantum becomes free. The κ = 1
-  target now has an exact spectral meaning, EP-anchored.
-- **THE COMPLIANCE-DIVERGENCE THEOREM**: the static susceptibility of
-  the system coordinate in the one-quantum dressed state diverges as
-  κ → 1⁻ with finite Franck–Condon prefactor — lim (1−κ)·χ(1) =
-  4e^(−d²)/ω exactly (numerics: χ(1) = 10.4/30.2/293/2927 at κ =
-  0.5/0.9/0.99/0.999; limit verified to 0.003%). The divergence
-  persists under a thermal ambient (diagonal-FC channel weight
-  Σp_k e^(−d²)L_k(d²)² = 0.354 > 0 at n̄ = 2, exact-vs-numeric
-  1e-8), and the spacing itself is bath-occupation-free (10C T1).
-  **The dictionary's own compliance saturates at κ = 1.**
+  value the dressed mode's second quantum becomes free. ROUND-30 J-3
+  scope adopted: this is exact and not a σ-convention AT THE VERTEX;
+  the identification of the threshold-κ with the RAR-MEASURED κ
+  remains seam-conditional (the declared dictionary).
+- **THE SUSCEPTIBILITY RESTATEMENT** (ROUND-30 J-2 relabel adopted —
+  the same two-rung degeneracy seen as a pole, NOT an independent
+  result): the static susceptibility of the system coordinate in the
+  one-quantum dressed state diverges as κ → 1⁻ with finite
+  Franck–Condon prefactor — lim (1−κ)·χ(1) = 4e^(−d²)/ω exactly
+  (χ(1) = 10.4/30.2/293/2927 at κ = 0.5/0.9/0.99/0.999; limit
+  verified 0.003%; R30 caveat: the κ = 0.5 value is inflated by an
+  unrelated |1,0⟩↔|0,1⟩ resonance at exactly κ = 0.4 where
+  −D(0)+Ω = 0 — the κ → 1 limit itself is clean). Divergence
+  persists under a thermal ambient (diagonal-FC weight 0.354 > 0 at
+  n̄ = 2) and the spacing is bath-occupation-free (10C T1). Its
+  identification with the additive dictionary's compliance is a
+  READING, not derived.
 - **THE IDENTITY WEB** (six exact equivalences): κ = 1 ⟺ g = ½√(Ωω)
   ⟺ **g² = E_zp,s·E_zp,b (the coupling energy is the geometric mean
   of the two zero-point energies)** ⟺ displacement energy per unit
@@ -15080,54 +15108,153 @@ respected — no lending-law input anywhere).
 
 **CONDITIONAL (the premise-audit letter, trap-#12 grammar working as
 designed — the letter could not print stronger):**
-- **THE BOUND κ ≤ 1** rides ONE named assumption, P-lit ("the
-  occupation ordering of the first rungs follows the literal dressed
-  spacings"; A1 scope: a two-rung ordering statement — the global
-  Gibbs construction is ill-defined at any κ, the fold row's own
-  content). Everything else in the chain is derived (P-vertex,
-  P-half), exact (P-polaron), or measured (P-BEform = the RAR
-  identity). Under P-lit: κ > 1 inverts E(2) < E(1) and the mode's
-  own occupation cannot be the measured BE form through two rungs.
-- CONSISTENCY ROW (the round's sharpest sentence, conditional): under
-  P-lit the bound **EXCLUDES the 10D low-a₀/high-κ ridge (1.503
-  single-κ / 1.317 plain deep pole) and CONTAINS the temperature-
-  locked world (0.925) near saturation — the spectral bound and the
-  temperature lock pick the SAME world** (R25-C1 treatment caveat +
-  C2 ridge caveat mandatory).
+- **THE TWO-RUNG CONDITION (ROUND-30 J-1 CORRECTION ADOPTED — this is
+  NOT a bound):** at the two-rung ordering condition D(1) ≥ 0, κ ≤ 1
+  — **a rung-count-dependent LOCAL statement**: the same logic at
+  three rungs (D(2) ≥ 0) gives κ ≤ 2/3, which would EXCLUDE the
+  locked world (at κ = 0.925, D(2) = −0.3875 — the ladder is already
+  inverted at n = 2→3, the stage's own fold row's content), and the
+  literal-ladder premise fails for the deep sky (⟨n⟩ ~ 1/x ≫ 1) at
+  every κ. **The original consistency-row sentence "the spectral
+  bound and the temperature lock pick the SAME world" is RETRACTED:
+  the coincidence κ_lock = 0.925 < 1 is consistency at the chosen
+  truncation, not a spectral bound picking the locked world.**
+  P-lit relabeled in the audit: ASSUMED (two-rung only; refuted
+  beyond two rungs / in the deep limit by the fold row). The choice
+  of exactly two rungs was outcome-determining — it lands on the
+  identity-web value by construction of stopping there.
 - Saturation κ = 1 exactly rides a second assumption, P-crit (the
-  physical coupling saturates the two-rung/compliance bound).
+  physical coupling saturates the two-rung/compliance condition).
 - FOLD OBSERVATION (report-grade): at any fixed κ > 0 the literal
   ladder is non-monotone at n ≥ 2/κ while the deep sky occupies
   n ~ 1/x ≫ 1 — the fixed-coefficient dictionary must be the leading
   form of a self-consistent structure (no direction claim; the 10D
   running direction is treatment-unstable per R25-C1).
 
-LETTER: **K-CONDITIONAL** (mechanical: the bound chain carries P-lit
-ASSUMED; K-BOUNDED requires zero). Credence: pre-signed HOLD
-mech-conditional 8; anomaly-real 53 untouched (no sky fits; every κ
-quoted is an archived meter). SUCCESSORS: discharge P-lit (does a
-self-consistent ladder treatment preserve the two-rung bound?) or the
-P-scale computation (9Z machinery — blocked on the known D wall).
+LETTER: **K-CONDITIONAL** (mechanical: the chain carries P-lit
+ASSUMED; K-BOUNDED requires zero — and R30 J-1 makes P-lit WEAKER,
+so no upgrade path exists from this construction). Credence:
+pre-signed HOLD mech-conditional 8; anomaly-real 53 untouched (no
+sky fits; every κ quoted is an archived meter). SUCCESSORS (R30
+section 5 adopted): (1) **THE SELF-CONSISTENT OCCUPATION BOUND** —
+replace the rung-count heuristic with the real object: solve the
+self-consistent fixed point (ν = 1 + κn_BE feeding back into the
+pull; n̄ set by the dressed spacing at the physical T_dS) and ask
+whether κ → 1 is where self-consistency first fails — the successor
+that could move K-CONDITIONAL toward K-BOUNDED; (2) the level
+crossing E(2) = E(1) at κ = 1 predicts anomalously large
+low-frequency response near the deep limit under static tidal
+perturbation (hybridization) — a potential DR4-era signature,
+reading-grade; (3) pin the 10D meters' κ CONVENTION (bare-ω vs
+renormalized-ω) before any ridge-vs-lock adjudication is called
+well-posed; (4) the P-scale computation (9Z machinery — the known D
+wall).
 
 **Plain verdict: SUCCESS at the conditional grade it was designed
-for** — the κ = 1 target now has an exact spectral meaning
-(EP-anchored two-rung degeneracy), a candidate physical principle
-(saturation of its own compliance), a one-assumption bound that
-independently picks the temperature-locked world, and a precise
-statement of what remains (P-lit, or D).
+for, with the round's correction absorbed** — the κ = 1 target now
+has an exact spectral meaning at the vertex (the EP-anchored
+two-rung degeneracy), a candidate physical principle (saturation of
+its own softness), an honest statement that the "bound" was
+rung-scope-conditional (the same-world sentence retracted), and a
+sharpened successor (the self-consistent fixed point) that would
+make it a real bound.
 
 *ELI12: Our sky formula has one knob, κ, and the sky reads it as
 almost exactly 1. We asked WHY 1. We proved: at exactly 1, the mode
 being tuned reaches the point where adding a second quantum of wobble
-costs nothing — its springiness to a probe becomes infinite. It is as
-soft as it can be while its energy steps stay in order. And the
+costs nothing — its springiness to a probe becomes infinite. And the
 reason the counting starts at ½ (which is what makes 1 the special
-value) is Einstein's rule that even vacuum energy gravitates. IF
-nature tunes the knob to the softest consistent point, κ must be ≤ 1
-— and the sky's 0.93, measured completely independently through the
-temperature lock, sits right at that edge. What we could NOT prove:
-that nature must tune to the edge. One assumption, written down by
-name.*
+value) is Einstein's rule that even vacuum energy gravitates. But our
+referee caught the soft spot in the next step: "κ must stay below 1"
+depends on how many rungs of the energy ladder you demand stay in
+order — two rungs gives 1, three rungs gives ⅔ — so the pretty
+agreement with the sky's 0.93 is not yet a real bound, and we
+retracted that sentence. The real next move is written down: solve
+the full self-adjusting version of the ladder and see where IT
+breaks. If that lands at 1, the derivation is real.*
+
+### ROUND 30 (2026-08-09, the 10I+10J referee round; report REVIEW-ROUND30-OPUS.md, uncommitted): both letters AFFIRMED; 10J hole YES scoped to the consistency row; ALL EIGHT conditions adopted
+
+Fresh adversarial session vs both stages. **Every load-bearing number
+in both stages reproduced exactly** (his own scripts; zero arithmetic
+errors anywhere) — and the verification ran BOTH directions: the
+blind half of [calcs/round30_addendum.py](calcs/round30_addendum.py)
+was committed BEFORE his report existed (87a4676; χ(1) by full
+eigenvectors to 1e-5, thresholds by blind spectral bisection,
+Laguerre sum, Θ-slope by independent regression r = 0.991,
+neighbor-scale arithmetic), and the post-report half re-verified
+every NEW number he produced, digit-exact: D(2) at κ = 0.925 =
+−0.3875; the three-rung condition κ ≤ 2/3; the κ = 0.4 downward-term
+resonance (−D(0)+Ω = 0.0000 exactly); NGC2976 neighbor term 1.099e−2
+= 109.9% of floor; the UGC05721 = NGC3274 alias row (Ti1 = −1.2,
+distance gate 1.80 ≤ 2.79 PASS); the forced-alias Spearman −0.126;
+the iso-overlap Chae gates 0.825–0.869; deep occupation n_BE(0.1) =
+9.508.
+
+RULINGS (adopted in full, wording changes executed in the two stage
+entries above + PREDICTIONS + LEDGER, same commit):
+- **10J: UNPATCHED HOLE YES — scoped to the R-C consistency row**,
+  not the letter, not any exact result, not credence. His J-1 (the
+  round's best work): the "bound κ ≤ 1" is the D(1) ≥ 0 condition —
+  a rung-count-arbitrary truncation whose three-rung sibling
+  (κ ≤ 2/3) would EXCLUDE the locked world the row claimed to
+  contain, and whose required deep extension is refuted by the
+  stage's own fold row. **The "same world" sentence is RETRACTED.**
+  J-2: the "compliance-divergence theorem" relabeled a SUSCEPTIBILITY
+  RESTATEMENT of the two-rung degeneracy (not independent; plus his
+  catch of the unrelated κ = 0.4 resonance inflating the low-κ
+  ladder). J-3: "EP-anchored" scoped to the vertex; the measured-κ
+  identification stays seam-conditional. Letter AFFIRM
+  K-CONDITIONAL (P-lit now WEAKER — no upgrade path from this
+  construction); credence HOLD 8 confirmed untouchable.
+- **10I: UNPATCHED HOLE NO.** Letter AFFIRM I-FEASIBILITY-LIMITED
+  with the meaning relabel (instrument-null, channel untested). His
+  I-2: the "≤ ~2% of floor" claim was iso-only — the meter is
+  ASYMMETRIC (group end reaches 110%; powered exactly where the
+  science doesn't need it). His I-3: the census is a systematic
+  UNDERCOUNT (UGC-designation aliases; 22/28 unmatched are UGC) —
+  and he force-fixed the exemplar alias and showed the letter is
+  ROBUST (the calibration gate fails harder, ρ → −0.126). His I-4:
+  the Θ₁ offset −10.45 vs Karachentsev's −10.96 = benign
+  mass-convention shift, non-propagating.
+- SUCCESSORS ADOPTED AS NAMED: 10J — the SELF-CONSISTENT OCCUPATION
+  BOUND (the P-lit replacement; the K-BOUNDED path); the κ = 1 level
+  crossing as a DR4-era low-frequency-response reading; the meter
+  κ-CONVENTION pin (bare vs renormalized ω) before any ridge-vs-lock
+  adjudication. 10I — density-field e_N (2M++/Cosmicflows) × y ≳ 1
+  kinematics as the only real void instrument; the free ALIAS-TABLE
+  fix for every future LV cross-match; **the GROUP-END gate-closing
+  test (p → ½ toward dense environments) — the axis this data
+  actually supports.**
+
+NEW TRAP FINGERPRINT #20 (DIARY): when a derived "bound" comes from
+truncating a FAMILY of conditions, scan the family before quoting —
+if the bound moves with the truncation and the truncation lands
+exactly on the target value, the choice was outcome-determining, not
+physical (the derivation-side sibling of the round-10
+"pass-the-distribution" rule).
+
+CREDENCE: no moves in any cell (anomaly-real 53 / mech-conditional 8;
+both rounds' cells pre-signed HOLD; the referee confirmed neither
+stage's movable cells could fire). Report archived
+REVIEW-ROUND30-OPUS.md (never commit).
+
+**Plain verdict: SUCCESS** — the round did exactly what rounds are
+for: every number survived independent rebuild in both directions,
+the one live overclaim (the "same world" sentence, the arc's most
+quotable line) was caught before it entered any paper, and both
+stages' successors came out sharper than the stages left them.
+
+*ELI12: We asked a fresh robot referee to break both of today's
+results. He redid every single number and got exactly ours — no
+mistakes. But he caught our prettiest SENTENCE overreaching: we said
+"the ladder math and the sky's thermometer point at the same
+answer," and he showed our ladder rule changes its answer depending
+on how many rungs you check — so the agreement was partly our choice
+of where to stop counting. We deleted the sentence, wrote down the
+rule that would make it honest (check the whole ladder, self-
+adjusting), and kept everything that survived: the exact math, the
+census, and two sharper next experiments.*
 
 ## Honest credences (2026-07-21, end of Stage 2)
 

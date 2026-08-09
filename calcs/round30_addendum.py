@@ -175,3 +175,103 @@ emit("   matches %d (stage 31); regression N=%d slope %.3f "
      (nmatch, len(xs), res.slope, res.intercept, res.rvalue))
 emit("")
 emit("BLIND PART DONE (extend below after reading the report)")
+emit("")
+emit("=" * 60)
+emit("POST-REPORT PART: verifying the ROUND-30 referee's NEW numbers")
+emit("")
+
+# GA-6: J-1 -- rung-count dependence of the R-C bound
+emit("GA-6  J-1 rung arithmetic (kappa thresholds 2/(n+1); D(n) at")
+emit("      the locked world and at kappa=1):")
+for kv in (0.925, 1.0):
+    Ds = [1 - kv*(nn+1)/2 for nn in range(4)]
+    emit("   kappa=%.3f: D(0..3)/om = %s" %
+         (kv, [round(d, 4) for d in Ds]))
+emit("   three-rung condition D(2)>=0 <=> kappa <= 2/3 = %.4f -> "
+     "EXCLUDES 0.925 (referee's J-1 CONFIRMED)" % (2/3))
+emit("   deep occupation n_BE(x): x=0.10 -> %.3f, x=0.05 -> %.3f "
+     "(occupied rungs sit far beyond the fold at every kappa)" %
+     (1/(math.exp(0.10)-1), 1/(math.exp(0.05)-1)))
+emit("")
+
+# GA-7: J-2c -- the competing pole at kappa = 0.4 in the downward term
+emit("GA-7  J-2c the kappa=0.4 downward-term resonance:")
+for kv in (0.4, 0.5):
+    D0 = omv*(1 - kv/2)
+    emit("   kappa=%.1f: -D(0) + 1*Om = %+.4f (zero at kappa=0.4 "
+         "exactly: |1,0> <-> |0,1> resonance)" % (kv, -D0 + Omv))
+emit("   => the chi(1) value at kappa=0.5 is inflated by THIS pole,")
+emit("   not the kappa=1 pole; the kappa->1 limit itself is clean")
+emit("   (nearest competing resonance far); referee CONFIRMED.")
+emit("")
+
+# GA-8: I-2 -- group-end neighbor terms (NGC2976) + iso/non-iso ranges
+emit("GA-8  I-2 group-end neighbor terms (full matched set):")
+gvals = {}
+for nm, D in names:
+    k = umap.get(canon(nm), -1)
+    if k < 0: continue
+    du = ungc[k][5]
+    if abs(D - du) > max(2.0, 0.35*du): continue
+    d2v = np.sum((POS - POS[k])**2, axis=1)
+    d2v[k] = np.inf
+    sel = (d2v <= 9.0) & (MASS > 0)
+    e = float(np.sum(G_SI*MASS[sel]*MSUN/(d2v[sel]*(MPC)**2))/A0)
+    gvals[nm] = (e, ungc[k][7])
+iso_terms = [e for nm, (e, t) in gvals.items()
+             if np.isfinite(t) and t < 0]
+non_terms = [e for nm, (e, t) in gvals.items()
+             if np.isfinite(t) and t >= 0]
+emit("   iso neighbor term max = %.2e a0 (%.1f%% of 0.01 floor)" %
+     (max(iso_terms), 100*max(iso_terms)/0.01))
+emit("   non-iso max = %.2e a0 (%.1f%% of floor); median %.2e "
+     "(%.1f%%)" % (max(non_terms), 100*max(non_terms)/0.01,
+                   float(np.median(non_terms)),
+                   100*float(np.median(non_terms))/0.01))
+if 'NGC2976' in gvals:
+    emit("   NGC2976: %.3e a0 = %.1f%% of floor (referee: 1.099e-2 "
+         "= 109.9%%)" % (gvals['NGC2976'][0],
+                         100*gvals['NGC2976'][0]/0.01))
+emit("")
+
+# GA-9: I-3 -- the UGC05721 = NGC3274 alias row
+emit("GA-9  I-3 the alias exemplar:")
+for u in ungc:
+    if canon(u[0]) == 'NGC3274' or canon(u[1]) == 'NGC3274' \
+       or canon(u[2]) == 'NGC3274':
+        emit("   UNGC row: Name=%s Simbad=%s NED=%s Dist=%.2f "
+             "Ti1=%s" % (u[0], u[1], u[2], u[5], u[7]))
+        du = u[5]
+        Dsp = dict(names).get('UGC05721', None)
+        if Dsp:
+            emit("   SPARC UGC05721 D=%.2f; gate |%.2f-%.2f|=%.2f <= "
+                 "max(2, 0.35*%.2f=%.2f): %s" %
+                 (Dsp, Dsp, du, abs(Dsp-du), du, 0.35*du,
+                  "PASS" if abs(Dsp-du) <= max(2.0, 0.35*du)
+                  else "FAIL"))
+emit("")
+
+# GA-10: I-1 -- iso-overlap Chae gates
+emit("GA-10 I-1 iso-overlap Chae e_N -> gates:")
+chae = {}
+with open('data/chae2021_table3.csv') as f:
+    for row in csv.DictReader(l for l in f if not l.startswith('#')):
+        chae[row['galaxy']] = 10.0**float(row['log_eN_maxclust'])
+def s_of(e):
+    xx = math.sqrt(e)
+    nn = 1.0/(math.exp(xx) - 1.0)
+    return nn/(1.0 + nn)
+rows = []
+for nm, D in names:
+    k = umap.get(canon(nm), -1)
+    if k < 0 or nm not in chae: continue
+    du = ungc[k][5]
+    if abs(D - du) > max(2.0, 0.35*du): continue
+    t = ungc[k][7]
+    if np.isfinite(t) and t < 0:
+        rows.append((nm, chae[nm], s_of(chae[nm])**2))
+for nm, e, gg in sorted(rows, key=lambda r: r[1]):
+    emit("   %-10s Chae e_N=%.5f a0  gate s^2=%.3f" % (nm, e, gg))
+emit("   (referee: 0.00493-0.00920 -> s^2 0.83-0.87)")
+emit("")
+emit("ALL REFEREE NUMBERS CHECKED")

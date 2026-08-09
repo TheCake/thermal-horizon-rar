@@ -726,6 +726,51 @@ contradiction; dump count 27 → 11. All six conditions executed.
 Amendment-integrity audit clean (chain monotonic, not
 outcome-tuned).**
 
+**10I + 10J + ROUND 30 (2026-08-09 eighth close, the author's "Go for
+it. Hunt away" — the two recommended lanes, both walls honest, zero
+credence moves): 10I THE ISOLATION LADDER (pre-reg 630516e, census
+bars set blind, sky-blind injection firewall) = I-FEASIBILITY-LIMITED
+at the pre-registered null-axis STOP, run 1 = the letter — the
+point-source neighbor-sum meter is floor-dominated at the isolated
+end (iso terms ≤ 1.7% of any LSS floor) and powered only at the group
+end (NGC2976 110%); LV galaxies iso-and-not sit near-open (Chae e_N
+0.005–0.009 a₀, gates s² 0.83–0.87) ⇒ LV tidal isolation does not
+reach the void regime; THE CHANNEL IS UNTESTED, NOT DEAD (R30 relabel:
+instrument-null; never print "isolation does not open the gate");
+census = UNDERCOUNT (alias systematic, exemplar UGC05721 = NGC3274;
+letter alias-robust ρ→−0.126): ≥3 isolated transition-crossers; void
+instrument requires density-field e_N (2M++/Cosmicflows) × y ≳ 1
+kinematics; R30 INVERTED DIVIDEND = the GROUP-END gate-closing test
+(p → ½ toward dense environments) is the executable in-catalog axis.
+Flynn 2026 HI corpus primary-read: adds NO decomposed kinematics
+beyond SPARC (fetch calcs/fetch_flynn_corpus.py). 10J O5-KAPPA-DEEP
+(pre-reg 865c01e + A1 1176e7c pre-quote) = K-CONDITIONAL gates 4/4 —
+EARNED: κ = 1 IS the two-rung degeneracy E(2) = E(1) at the vertex
+(σ = ½ EP-FORCED by the 10B Ĥ/c² charge — P-half DERIVED, the A1
+self-catch that became a strengthening); the susceptibility
+restatement (χ(1) diverges, residue 4e^(−d²)/ω exact,
+thermal-persistent; R30 caveat: κ = 0.4 unrelated resonance inflates
+low-κ values); the identity web (6 forms incl. g² = E_zp,s·E_zp,b);
+the 9W funnel (K-invariant) + D statement (κ=1 underivable without
+D unless a principle ties λ̄² to Ωω/4). **R30 J-1 RETRACTION (never
+quote): "the spectral bound and the temperature lock pick the same
+world" — the two-rung κ ≤ 1 is rung-count-arbitrary (three rungs →
+2/3, excludes 0.925; fold row refutes the literal ladder deep);
+P-lit now ASSUMED-two-rung-only-refuted-beyond.** ROUND 30: every
+number both stages reproduced exactly; both letters AFFIRMED; 10J
+hole YES scoped to that row; all 8 conditions executed; verification
+calcs/round30_addendum.py ran BOTH directions (blind half committed
+PRE-report at 87a4676 — repeat this protocol); trap #20 logged (scan
+the truncation family before quoting a truncation-derived bound).
+NEXT FORK (author's): circulation TODO 27–31 (outreach parked by the
+author: "no email sending for now") · the group-end gate-closing
+instrument (executable now) · THE SELF-CONSISTENT OCCUPATION BOUND
+(the only K-BOUNDED path: fixed point of ν = 1+κn_BE fed back into
+the pull; + pin the 10D meters' κ convention bare-vs-renormalized) ·
+P3 round 2 · DR4 readiness. Ledger 208 rows / six gates PASS.
+Reviews ROUND30 uncommitted. Eighth close of 2026-08-09 — FRESH
+SESSION before the next arc.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6
