@@ -9,6 +9,71 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-10 (the doors round, no stage) — Paper-4 prior-art scout pair (SCOUT-GRADE: primary-read before ANY use; trap #18 applies to every ID below)
+
+The author asked for the "what opens if we're confirmed" essay (Paper 4
+seed, written BEFORE confirmation) and authorized Opus scouts. Two run,
+research-only, nobody contacted, nothing of ours carried. Deliverable =
+the doors essay in-chat (this close). NO ledger rows, NO credence moves,
+NO PREDICTIONS.md edits — the four candidate rows below are PROPOSED and
+await the author's explicit go (the signed ledger keeps its discipline).
+
+- **Four new-instrument candidates, prior-art checked:** (1) FROZEN-GATE
+  MEMORY — backsplash/post-interaction dwarfs keep their old environment's
+  dressing for ~1/H → look Newton-ish though isolated now; ADJACENT-
+  leaning-VIRGIN (non-adiabatic EFE for dwarfs = Haghi/Kroupa/Wu
+  1906.03268 is the lone precedent; no systematic backsplash-off-RAR
+  proposal exists; Stiskalek & Desmond 2305.19978 = the environment-null
+  baseline to beat). Caveat logged: gas-rich AGC 114905 disfavors its own
+  backsplash story (stripping); the test is population-level, gas-poor
+  strata. Doubles as the frozen-vs-adiabatic discriminator INSIDE our
+  framework (τ_B = 2π/H is reading-grade, not theorem). (2) STREAM
+  COHERENCE — MI trajectory-averaged boost is constant along a stream
+  (shared progenitor orbit), MG varies with local g; VIRGIN — Milgrom's
+  own MI papers (2208.07073 = orbit-functional WITH hysteresis named;
+  2310.14334) never applied to streams; all stream-MOND work is MG
+  (Thomas+18 1709.01934). (3) CLUSTER M>1 SHAPE — 6Y negative-binomial
+  occupation as the cluster-scale function; VIRGIN (sole precedent =
+  EMOND, Hodson & Zhao 1701.03369, potential-dependent a₀ — must cite +
+  differentiate). SIGN CAUTION unresolved: naive multimode = MORE gate =
+  sharper screening = LESS boost, while clusters need MORE (residual
+  2.7–7.3×, rising outward — 2602.06082; g† 17× galaxies — Tian
+  2001.08340/2402.12016); the stage is two-sided by design (closes the
+  wall or measures the true extra component). (4) OORT-SPIKE RETRODICTION
+  — Vokrouhlický–Nesvorný–Tremaine 2403.09555: AQUAL-MOND FAILS the
+  comet 1/a spike, Newton passes, "screened variants not ruled out" =
+  possibly OUR class's null (Boltzmann-screened + EFE-quenched at
+  galactic e_N ≈ 1.2–1.5 a₀ + trajectory formulation); MI-comet
+  treatment = VIRGIN sub-niche; Rubin ~10,000 comets/10 yr (2412.12978).
+- **Two writable spin-off seams, both VIRGIN (theory scout):** (a) a
+  CC-subtraction mechanism making a GALAXY-SCALE forward prediction —
+  nobody has one (unimodular/causal-set/sequestering/Carroll–Remmen all
+  silent on galaxies; only reverse-direction a₀ ≈ c√Λ, Milgrom
+  2001.09729); our 9Z common-mode + measured ½ sits exactly on that seam.
+  (b) "What MOND-being-true means for XENON/LZ/PandaX limits + the
+  neutrino-fog timeline" — quantitative paper does NOT exist (ρ_χ
+  provenance: de Salas & Widmark 2012.11477; vertical-kinematics
+  0.4–0.6 vs rotation-curve 0.3–0.5 GeV/cm³; phantom-density adjacent =
+  Oehm & Kroupa 2109.10160; Gaia-DR3 MOND-vs-DM vertical test
+  2412.09665).
+- **Landscape updates:** νHDM (11 eV sterile hybrid) RULED OUT >5σ by
+  bulk flows — Russell/Banik/Cray/Zhao 2602.21975 (2026); AeST fits CMB
+  only via a CDM-mimicking field + carries the low-k instability
+  (2109.13287) + cluster residuals ⇒ NO clean galaxies+CMB+clusters+LSS
+  framework exists as of 2026. MI evades GW170817 BY DESIGN (tensor
+  sector standard; Sanders 1805.06804; no MI-dedicated GW study =
+  adjacent gap). Horizon-stat-mech galaxy dynamics 2025-26 = thin
+  trickle (Sheykhi 2510.14345; Rostami+ 2511.05632 NGC 3198-tested);
+  C&T self-carried (31 cites, 20 non-self, INSPIRE) — orphan status
+  CONFIRMED at citation grade. Rising-a₀(z)-as-early-structure-lever =
+  ADJACENT-leaning-VIRGIN (McGaugh 2406.17930 uses constant-a₀; SIV
+  2409.11425 has both pieces unlinked; JWST tension itself may deflate —
+  2511.13708). MUSE-DARK III a₁ = 1.59±0.10 re-confirmed by scout.
+- Next-instance note: the essay's P-row drafts (P11 memory / P12 streams
+  / P13 clusters / P14 comets) live in the chat close of this date; if
+  the author says go, register them in PREDICTIONS.md verbatim-with-kills
+  and add the two spin-off notes to TODO as paper-lane items.
+
 ## 2026-08-10 (conversation scout round, no stage) — external landscape + people map (SCOUT-GRADE: primary-read before ANY use; trap #18 — grep NOTES/PREDICTIONS before acting on any "discovery" here)
 
 Two Opus web scouts run on the author's ask ("who else should know this"),
