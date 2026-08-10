@@ -1,0 +1,12 @@
+ROUND 32 addendum — blind half (pre-report)
+[GA-1] PASS — kappa_fold = 2/(n + 1); thresholds(n=0,1,2) = [2, 1, 2/3]; E(2)-E(1) at kappa=1 = 0 (paper: 2/(n+1); 2, 1, 2/3; exact degeneracy)
+[GA-2] PASS — kmax(x): 0.03:0.0149, 0.05:0.0247, 0.1:0.0488, 0.2:0.0952, 0.3:0.1395; lock/kmax = 6.6 .. 62.1 (paper: ceiling 0.015-0.14; factor 6.6-62)
+[GA-2b] PASS — onset at kappa=0.925: x = 3.549 (y = x^2 = 12.6 — Newtonian regime; paper: qualitative)
+[GA-3] PASS — archived sup tokens ['1.916', '1.925', '1.456', '1.462']; rising-branch top level at kappa=0.925 = 2 (any Gibbs mixture: nu < 3, independent ceiling); demand nu(x=0.05) = 19.04 (paper: cap 1.93 vs demand 19)
+[GA-4] PASS — argmax = 1, max = 1/2; f(0.888) = 0.4937, f(1.0) = 0.5000, f(1.10) = 0.4950 (paper: bare 0.89-1.10 maps into 0.494-0.500, max exactly 1/2)
+[GA-5] PASS — beta(kappa_lock=0.925) = -0.0698 via c1 = 1 - kappa/2 = 1/(2(1+beta)) (paper: -0.07); 5R bound-below-0.03 token present in NOTES: True
+[GA-6] PASS — cH0/2pi(H0=67.74) = 1.0475e-10 (paper: 1.05e-10); sigmas: MOND-row 0.67, per-galaxy 0.12, DM-row 2.30, slope 3.45 (paper: 0.7 / 0.1 / 2.3 / 3.4)
+[GA-7] PASS — archived (1-kappa)chi(1) = 2.927284 vs exact limit 2.927377 -> rel = 0.0032% (paper: verified at the 0.003% level)
+[GA-8] PASS — all 16 new reproducibility-row files exist (missing: none)
+[GA-9] PASS — abstract 249 words (bar 250); banned hits none; codename hits none; em-dashes 1 total; sentence mean 24.3 words
+GA ALL PASS (10/10) — draft 0.4 numbers verified; blind half closed.
