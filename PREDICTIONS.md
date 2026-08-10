@@ -468,3 +468,134 @@ row's fate turns on ONE horizon-side number, the ambient fluctuation amplitude e
   bunches classically); the quantum claim rides ONLY on the particle term (P6).
 - Laboratory signatures — our own cancellation theorem (6N) says buildable flat-bath
   configurations measure zero; we do not predict a tabletop detection.
+
+---
+
+## E. The Paper-4 seed rows (registered 2026-08-11, this commit; pre-test)
+
+*Provenance differs from P1–P10 and is stated openly: these six rows are
+INTUITION-DERIVED — deduced/induced from the measured structure in
+[PAPER4-SEED.md](PAPER4-SEED.md) (Parts A/B), prior-art-checked by the
+2026-08-10/11 scout rounds (DIARY entries; all external arXiv IDs
+scout-grade, primary-read before any gate use), and registered on the
+author's blanket go of 2026-08-11 BEFORE any of them has touched data.
+No stage has run on any row; no credence rides on this registration.
+The in-sample function freeze (§0) is untouched — no row introduces a
+new mean-law form.*
+
+### P11 — the memory test (frozen-gate hysteresis)
+If the gate/dressing relaxes on ~1/H (the frozen reading; τ_B = 2π/H is
+reading-grade), systems that changed environment within ≲ Gyr carry
+their PAST environment's gate: backsplash / post-interaction GAS-POOR
+dwarfs sit off the RAR toward their past e_N — suppressed boost despite
+present isolation (the "galaxies lacking dark matter" class is the
+candidate retrodiction). Population-level instrument: matched
+backsplash-vs-never-infall samples at matched present e_N and g_N.
+TWO-SIDED: no offset at population grade ⇒ the gate is ADIABATIC ⇒ P2's
+ordering must hold on CURRENT e_N and the frozen reading is struck.
+Either outcome is the first measurement of the gate's relaxation time.
+**Kill (of the frozen reading):** backsplash strata show no
+past-environment offset at the stage's pre-registered grade WHILE the
+current-e_N ordering holds. Caveat pre-stated: gas-rich isolated UDGs
+(e.g. AGC 114905) disfavor their own backsplash story — the test is
+population-level, gas-poor strata, environment-HISTORY indicators.
+(Data era: SDSS/MaNGA/LV dwarfs + backsplash classification;
+executable pre-DR4.)
+
+### P12 — stream coherence (the galaxy-scale MI/MG discriminator)
+In the trajectory formulation the boost is a functional of the shared
+progenitor orbit: tidal-stream stars carry ONE coherent boost (with a
+leading/trailing asymmetry pattern distinct from the modified-gravity
+EFE prediction); modified gravity boosts each star by its local field
+(boost varies along the stream). Complements P7 on a different
+observable class. **Kill (of the MI door's galaxy-scale leg):** streams
+reproduce the MG-EFE local-field shape with no coherent component at
+the stage's pre-registered grade. (Data: Gaia streams — Pal 5, GD-1,
+Orphan; MG contrast class = Thomas+18, arXiv:1709.01934, scout-grade.)
+
+### P13 — the cluster crowd shape (M > 1)
+Clusters are where the M = 1 single-collective-mode condition (6Y/9W)
+should break, and the framework prescribes the breakage form: multimode
+(negative-binomial) occupation statistics — a DIFFERENT functional
+SHAPE at cluster scale, at the SAME temperature a₀ = cH₀/2π, not
+merely extra mass under the galaxy function. SIGN CAUTION PRE-STATED:
+the naive multimode direction (more-open gate → sharper screening →
+less boost) points away from closing the cluster missing-mass gap
+(~2.7–7.3×, rising outward; scout-grade 2602.06082); the stage is
+two-sided BY DESIGN. **Outcomes:** (i) the M>1 family fits cluster-RAR
+shape+amplitude at the galaxy temperature ⇒ the cluster wall becomes a
+window; (ii) it fits WORSE than "galaxy function + scaled extra mass"
+at the pre-registered grade ⇒ the genuinely-extra cluster component is
+measured within the framework — the row then stands as a bounded
+negative, not a kill of the mean law. (Data: CLASH cluster RAR
+Tian+2020 arXiv:2001.08340 + 2402.12016, X-COP — public; executable
+pre-DR4. Differentiation obligation on any print use: EMOND,
+arXiv:1701.03369.)
+
+### P14 — the Oort-spike retrodiction
+The measured function class — Boltzmann-screened, ambient-gated,
+trajectory formulation, EFE-quenched at the solar galactic field
+(e_N ≈ 1.2–1.5 a₀) — predicts a near-Newtonian long-period-comet 1/a
+spike: the Vokrouhlický–Nesvorný–Tremaine 2024 null (AQUAL-MOND breaks
+the observed spike; "screened variants not ruled out"; scout-grade
+2403.09555) is this class's retrodiction target, not its problem.
+**Kill:** the measured function, propagated through a V-N-T-class Oort
+pipeline with honestly stated Oort-model systematics, ALSO destroys
+the spike. (Data: their published machinery; Rubin LPC census this
+decade for the sharpened version. MI-comet treatment scouted VIRGIN.)
+
+### P15 — the eccentricity ledger (the frozen no-pump prediction + the erosion bound)
+Registered in the CORRECTED two-leg form (the naive "pump" draft of the
+chat essay is superseded by the sign analysis in PAPER4-SEED.md/DIARY
+2026-08-11 before touching any data):
+**(i) PREDICTION (frozen reading):** the framework supplies NO
+post-formation superthermal eccentricity pump — the frozen ambient
+cloud's tide is a static random quadrupole, and the anti-pump theorem
+class (static tides phase-mix α → (1+α)/2, eroding toward thermal;
+scout-grade: Hamilton 2202.01307, Modak & Hamilton 2303.15531 —
+PRIMARY-READ REQUIRED before gate use) covers it. Therefore the
+measured wide-binary superthermality (Hwang–Ting–Zakamska 2111.01789,
+primary-read at 4G; our own w_rad = 0.20 is the same object) is
+PRIMORDIAL, and its depth-dependence α(s) is FROZEN-at-formation — it
+does NOT track present occupation. DR4 eccentricity resolution (P7
+machinery) distinguishes frozen-at-formation from actively-pumped.
+**(ii) INSTRUMENT (the erosion bound):** the cloud's frozen l=2
+fluctuation (amplitude e_a — the 10F/P10 open object) adds a random
+static tide with steep separation scaling (δg/g_bin ∝ s²) that ERODES
+superthermality; the SURVIVAL of the measured α(s) at the widest
+separations therefore places an upper bound on e_a × coupling — an
+in-catalog constraint on the O5-AMPLITUDE constant from public data,
+feeding P10. **Kills/outcomes:** (a) wide-binary e-distributions shown
+actively pumped toward superthermal in a depth-tracking way ⇒ the
+frozen no-pump prediction is WRONG (strike on the frozen reading,
+co-signed with P11's adiabatic branch); (b) the erosion bound bites
+below the FD amplitude 1.43 ⇒ constraint on P10's detectable regime
+(bound, not kill); (c) primordial+frozen confirmed ⇒ the
+formation-origin literature is corroborated and the bound stands.
+(Cheapest stage in the set: the erosion integral is in-house
+arithmetic once the two Hamilton papers are primary-read.)
+
+### P16 — the Bernoulli lock (the one-loop ladder)
+Under the one-loop/heat-kernel reading (PAPER4-SEED.md B.4), the
+deep-expansion ladder is theorem-fixed at EVERY order — the
+Bernoulli/Todd pattern with the gate's L = 2 modification (c₁ = ½;
+c₂ = 1/12 gate-independent; c₃ = −s²/16; c₄ = s²/192 − 1/720; and all
+higher rungs) — with NO free coefficients, ever. Generalizes P8 from
+one rung to the whole series. **Kill:** any population-grade measured
+rung off the fixed pattern. First reachable instrument: c₂ at
+BIG-SPARC grade (~4,000 galaxies; scout-grade 2411.13329); binary
+rungs per P8's DR4+/LSST note. (Scouted 2026-08-11: the
+Bernoulli/heat-kernel identification of interpolating-function
+structure is published by no one; nearest neighbor to differentiate =
+Pazy & Argaman 1106.4108/1302.4411, screen-DOF Fermi–Dirac.)
+
+*Queued, NOT registered (missing constant — stated for the timestamp
+only): the EMRI far door. If the occupation market runs at any horizon
+(the SdS two-horizon first law is exact, 10A T1), LISA-band EMRIs
+around ~10⁶ M_sun primaries orbit AT/BELOW their host's Hawking
+temperature scale (T_H ≈ 6×10⁻¹⁴ K vs orbital quanta
+(0.5–5)×10⁻¹⁴ K) and chirp ACROSS the occupation transition —
+scout-verified unremarked in the EMRI-environment literature.
+Registration requires the D-normalization (O5-NORM); until D exists no
+kill number can be signed, so this is an annotation, not a prediction
+row. Threshold context: ~0.1–1 rad accumulated dephasing; LISA ~2035.*

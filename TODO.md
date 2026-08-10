@@ -1437,4 +1437,52 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     references; (d) the visibility flip itself — at which moment the
     repo URLs cited in all three papers go live. Deleting a remote
     BRANCH is not a history rewrite: main's pre-reg chain is
-    untouched.
+    untouched. (2026-08-08 later: author deleted origin/master and
+    flipped default to main — blocker cleared; remaining = papers
+    shipped + final grep sweep + the visibility flip.)
+
+## The Paper-4 seed lanes (opened 2026-08-11 on the author's blanket go;
+## source PAPER4-SEED.md; rows REGISTERED = PREDICTIONS.md §E, this date)
+
+32. **The seed-row stage queue** (each stage: pre-reg bars BEFORE
+    execution; scout-grade IDs primary-read before gate use; fresh
+    session recommended for the first one):
+    (a) **P15-stage (cheapest, the crown): the eccentricity erosion
+    bound.** Prereq: primary-read Hamilton arXiv:2202.01307 +
+    Modak & Hamilton 2303.15531 (the anti-pump theorem's exact
+    statement and scope — does it cover frozen random quadrupoles;
+    mixing timescale vs tide strength). Then: frozen-cloud random
+    l=2 tide (amplitude e_a, δg/g_bin ∝ s²) erosion integral over
+    ~5 Gyr vs the measured surviving α(s) ⇒ upper bound on
+    e_a × coupling (feeds P10/O5-AMPLITUDE); plus the DR4
+    frozen-vs-pumped leg via P7 machinery. In-house arithmetic +
+    public Hwang law; no new data fetch.
+    (b) **P13-stage: the cluster crowd shape.** Fetch CLASH cluster
+    RAR (Tian+2020 2001.08340 tables; X-COP; 2402.12016); build the
+    6Y negative-binomial occupation family at fixed a₀ = cH₀/2π;
+    contest vs "galaxy function + scaled extra mass". Two-sided per
+    the registered row; EMOND (1701.03369) differentiation on any
+    print use.
+    (c) **P11-stage: the memory cross-match.** Backsplash-classified
+    gas-poor dwarfs vs matched never-infall field; RAR offset toward
+    past e_N. Data scout needed first (backsplash catalogs: SDSS/LV;
+    classification grade sets the bars).
+    (d) **P14-stage: the Oort spike under the measured function.**
+    Trajectory-formulation comet 1/a distribution; V-N-T
+    (2403.09555) machinery as the contrast; binary orbit integrator
+    carries over.
+    (e) **P12-stage (heaviest): stream coherence.** MI trajectory-
+    averaged boost along Pal 5/GD-1 vs MG-EFE local shape; needs
+    stream modeling the program does not yet own — design last.
+    (f) **Two spin-off notes (paper lane, scouted VIRGIN):** the
+    vacuum-seam theory note (CC-subtraction ↔ measured ½; first
+    galaxy-scale forward prediction of any subtraction mechanism)
+    and the direct-detection stakes note (ρ_χ reinterpretation →
+    XENON/LZ limits + neutrino-fog timeline; ρ_χ provenance
+    2012.11477, phantom-adjacent 2109.10160, Gaia vertical test
+    2412.09665). Both post-P1/P2.
+    (g) **The EMRI far door** rides O5-NORM (the D-normalization is
+    its prerequisite — see the PREDICTIONS §E annotation); no action
+    until D exists.
+    Priority unchanged: P1/P2 arXiv BEFORE 2026-12-02 (TODO 27–31)
+    outranks every seed stage.
