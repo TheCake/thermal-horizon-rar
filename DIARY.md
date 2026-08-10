@@ -84,6 +84,25 @@ go, alongside P11–P14.
   cheapest first stage is P15's rate integral (pre-reg bars first),
   or P13's cluster-shape fit. PAPER.md/papers untouched; priority
   unchanged (P1/P2 arXiv before 2026-12-02).
+- **SAME-DAY UPDATE (the go came): "You are go for whatever you deem
+  best" → P11–P16 REGISTERED pre-test (PREDICTIONS.md §E, commit
+  61767d4; P15 in the CORRECTED two-leg erosion-bound form, NOT the
+  chat draft's naive pump) + TODO 32 stage queue + LOG line. Then the
+  P15 prerequisite DISCHARGED same close (commit 0190836): Hamilton
+  2202.01307 + M&H 2303.15531 primary-read via ar5iv (NOTES lit-note
+  2026-08-11) — attribution corrected (map = M&H eq. 33, theorem =
+  H22), and an UPGRADE found: M&H §2 is Liouville-proven for ANY
+  smooth weak possibly-time-dependent tidal field ⇒ the frozen-cloud
+  quadrupole is theorem-covered at primary grade (the no-pump leg no
+  longer rests on our extension argument). Stage-design seed booked
+  in the NOTES lit-note (double-halving bound: survival of α ≈ 1.3
+  at ~20 kAU after the Galactic halving ⇒ t_sec,cloud ≳ age ⇒ bound
+  on cloud tidal curvature ⇒ e_a × coupling). NEXT = the P15-STAGE
+  in a FRESH SESSION (pre-reg bars blind; gates: reproduce M&H
+  eq. 26 as G0, Hwang α(s) table primary re-read, statistics bar
+  set before the integral runs). Session note: three essay rounds +
+  four scout returns + registration in this window — do not start
+  the stage here.**
 
 ## 2026-08-10 (the doors round, no stage) — Paper-4 prior-art scout pair (SCOUT-GRADE: primary-read before ANY use; trap #18 applies to every ID below)
 
