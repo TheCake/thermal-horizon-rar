@@ -9,6 +9,82 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-11 (the guess round, no stage) — the substrate guess + its scout pair (SCOUT-GRADE: primary-read before ANY use; trap #18 applies to every ID)
+
+The author asked "what is behind it all — induce it, guess, do the
+intuition → registered prediction → independent proof → prior loop"
+and authorized Opus helpers. Two run (dynamics/EMRI + inertia-theory
+differentiation), research-only, nobody contacted. Deliverables: **the
+guess essay (chat close of this date) + PAPER4-SEED.md Part B (the
+frozen record, committed this close)** + a memory pointer
+(paper4-seed-doors-and-guess). NO ledger rows, NO credence moves, NO
+PREDICTIONS.md edits; P15/P16 are PROPOSED rows awaiting the author's
+go, alongside P11–P14.
+
+- **THE GUESS (one line, intuition-grade):** inertia = re-dressing
+  cost with Einstein-coefficient structure; dS thermal occupation
+  makes re-dressing STIMULATED — cheaper by (1+n) — so ν = 1 + n_BE
+  is the subsidy, zero freedom; one level down, dressing =
+  entanglement, inertia = entanglement rigidity, thermally slack in
+  dS; ladder = Bernoulli/Todd one-loop determinant. The 10G strike
+  FITS the guess (market trades in re-pricing/dispersive, not goods/
+  real-exchange) — the mechanism arc disambiguated the ontology.
+- **Scout verdicts (all four load-bearing axes VIRGIN):** the
+  stimulated-emission/(1+n)-cheaper-dressing reading of the MOND
+  enhancement = NOT FOUND anywhere; Bernoulli/Todd/heat-kernel
+  structure in interpolating functions = VIRGIN ("cleanest open
+  lane"; pure-math bridge Cvijović 1004.0588 never carried to
+  gravity); "inertia = thermally reduced entanglement-rearrangement
+  cost in dS" = unpublished; n_BE(ω_orbital) of a bound system's OWN
+  modes = unpublished by anyone (even C&T 1904.11835 use
+  super-horizon collective modes — differentiation axis confirmed
+  from their abstract).
+- **Differentiation obligations for any print use:** McCulloch QI =
+  pure geometric mode-counting, NO occupation statistics, no RAR
+  shape derived (astro-ph/0612599, 1709.04918; critique 1908.01589;
+  a_min = 2c²/Θ ≈ 2cH not cH/2π; DARPA episode; fringe) — same
+  slogan territory, disjoint mechanism, differentiate LOUDLY.
+  Pazy & Argaman 1106.4108/1302.4411 = the occupation neighbor
+  (screen DOF, Fermi–Dirac specific heat, a₀ ↔ Fermi energy) —
+  differentiate on whose modes / which statistics / what a₀ is.
+  Milgrom 1999 astro-ph/9805346 = the closest ancestor (dS-Unruh
+  √(a²+a₀²), no occupation). Smolin 1704.00780 named the regime.
+  Verlinde 1611.02269 = elastic entropy-displacement dark FORCE, not
+  reduced inertia; empirically strained. **Luo 2026 (2602.14515,
+  dS spectral broadening → MOND) = closest live competitor — watch.**
+- **P15 candidate (the crown): the eccentricity ledger.** The field
+  proved the negative half FOR us: tides/encounters can only
+  THERMALIZE wide-binary eccentricities (Hamilton 2202.01307; Modak
+  & Hamilton 2303.15531 + MNRAS 532, 2425) — yet the law is measured
+  superthermal with open α(s) (Hwang–Ting–Zakamska 2111.01789);
+  formation channels claim it (Xu+ 2303.16224; 3BBF 2503.14605);
+  NOBODY has proposed a secular pump (VIRGIN both as astrophysics
+  and as a gravity test; B&Z 2018 one passing remark). Our candidate
+  pump = the l=2 port's sub-saturation exchange at the 10G ceiling
+  rate; TWO-SIDED stage: reproduce α(s) shape (retrodiction dividend;
+  w_rad = 0.20 = same object) OR bound the pump orders-under ⇒
+  framework predicts primordial+depth-FROZEN, DR4 e-resolution (P7
+  machinery) tests that. Cheap: the 10G rate integral over 5 Gyr is
+  in-house arithmetic.
+- **P16 candidate: the Bernoulli lock** — no free ladder coefficients
+  at any order (generalizes P8); BIG-SPARC (2411.13329) reads c₂ at
+  population grade.
+- **FAR DOOR (not registrable, missing D): every horizon is a
+  thermostat.** LISA EMRIs orbit AT/BELOW their host BH's Hawking
+  temperature scale (M ~ 1e6: T_H ≈ 6e-14 K vs mHz-band quanta
+  (0.5–5)e-14 K — the inspiral chirps ACROSS the occupation
+  transition); scout-verified UNREMARKED in the whole EMRI-
+  environment literature (menu 1404.7149/2505.09513; different-
+  physics neighbors: Hawking mass-loss 2003.09778, area quantization
+  2105.11140). Dephasing threshold ~0.1–1 rad; LISA ~2035. **The
+  O5-NORM D-provenance work is this door's prerequisite** — the
+  derivation queue now has an external payoff attached.
+- Next-instance note: if the author says go — register P11–P16
+  verbatim-with-kills (drafts: PAPER4-SEED.md A.4 + B.6); the
+  cheapest first stage is P15's rate integral (pre-reg bars first),
+  or P13's cluster-shape fit. PAPER.md/papers untouched; priority
+  unchanged (P1/P2 arXiv before 2026-12-02).
+
 ## 2026-08-10 (the doors round, no stage) — Paper-4 prior-art scout pair (SCOUT-GRADE: primary-read before ANY use; trap #18 applies to every ID below)
 
 The author asked for the "what opens if we're confirmed" essay (Paper 4
