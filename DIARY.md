@@ -9,6 +9,73 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-10 (eleventh close) — 10M + 10N + ROUND 33: both O5 doors executed to honest ends, the P10 row registered downgraded, zero credence moves
+
+The author's "next, the doors" bought the concurrent pair (pre-reg
+d146eec): 10M O5-HARTREE (the R31 coupled-amplitude escape) and 10N
+O5-CROSSING (the level-crossing kill condition). Both gates-green
+first-run; ROUND 33 (REVIEW-ROUND33-OPUS.md, NEVER commit) = holes NO
+×2, both letters AFFIRMED, ZERO mismatches (three independent
+implementations agree ≤ 1e-4 on every number), ruling (b) on 10N
+registration, 10 conditions all adopted. anomaly-real 53 / mech 8
+untouched — every cell pre-signed HOLD, referee-confirmed. Protocol:
+blind GA half pre-committed c5b20fb (4th execution), GB half 15/15.
+
+WHAT THE NEXT INSTANCE MUST NOT REDO OR MUST REMEMBER:
+- THE κ = 1 SEAM IS NOW FULLY SWEPT on the self-consistency side. Do
+  NOT build another regulator/bound instrument: 10L closed the
+  mean-occupation family, 10M closed the coherent-amplitude/Hartree
+  family AT EXACT GRADE (amplitude sector exact — β* = polaron
+  displacement; E_MF ≡ E_exact; MIDPOINT THEOREM ω_MF(n̄) = spacing
+  at n̄−½; |α|² conserved by the MF flow; the fold is FROZEN by
+  [H, N_s] = 0). SCOPE (R33 C1, keep it): this closes the
+  amplitude/occupation channel ONLY; the driven/dissipative channel
+  rides on the 10G strike (10M ⇄ 10G coupled — if the strike is ever
+  revisited, this door reopens); the κ = 1 physics lives in the l=2
+  MIXING channel. Risk axis (C2): the below-lock edge clause holds
+  for x ≤ 0.3 only; edges cross 0.888 at x = 0.367/0.452/0.954.
+- THE CROSSING METER'S TRUE SHAPE (R33's central result, GB-confirmed
+  — never quote the stage's draft row): at detectable amplitude
+  (e_a ≈ 1) S is a κ-PLATEAU (S(1)/S(0.6) = 1.09; LARGER at κ ≤ 0.5
+  because W ∝ κ) — the detectable and diagnostic regimes are
+  MUTUALLY EXCLUSIVE. P10 (PREDICTIONS.md, registered 2026-08-10) is
+  an ambient-l2-AMPLITUDE test, NOT a crossing test — cite it only
+  with its three caveats (1/√2 convention flips below floor;
+  background 40–68% of S same-sign ∝ e_a²; dispersive-conditional).
+  The TRUE crossing-test threshold is σ_S ≈ 0.005 (perturbative
+  regime, κ-localized, separable) — a post-DR4-grade number.
+- THE NAMED SUCCESSOR = O5-AMPLITUDE: derive e_a. 10F caps it ≤ ~1
+  (un-derived); 10G's own FD budget says q_FD = √(2n_amb+1) = 1.43
+  for the binary cloud — SAME KIND of object, unreconciled. One
+  horizon-side number decides P10's fate (e_a* = 0.655 under FD;
+  dead at static 0.086). More toy 2×2 scans add NOTHING — the
+  amplitude is the object.
+- The crossing meter is BINARY-NATIVE by structure: window
+  (p₁−p₂)(x) = e^(−x)(1−e^(−x))², max at x = ln 3; deep galaxies
+  die by occupation contrast (×20), transition galaxies by comb
+  smearing (Ω_gal ≈ γ). Don't design a galaxy-side crossing
+  instrument.
+- Trap notes: G10M-5 was guaranteed-by-G10M-2 (propagator check, not
+  independent evidence — R33 C3, trap-#16 flavor); G10N-6's earned
+  clause was grid-resolution-only (near-tautological — C10). When a
+  letter grammar keys on "exists a corner ≥ bar", the positive-clause
+  gate must test ROBUSTNESS (convention/axis spread), not just
+  re-evaluate the corner.
+- Worldtable G5 token curation FROZE at 10G (266 tokens) — the
+  10H–10N rows carry no spot-check tokens by precedent; G1/G2 still
+  validate them. Ledger 212 rows six gates PASS.
+
+THE FORK (author's): circulation TODO 27–31 (outreach parked; repo
+visibility flip pending) · O5-AMPLITUDE (derive e_a — the one
+remaining number on the P10/crossing seam) · P3 round 3 or
+circulation (P3 is current through 10L; the eleventh close adds
+10M/10N — small absorb at the next author-called thaw) · DR4
+readiness. Eleventh close; three closes today would be a lot —
+FRESH SESSION before O5-AMPLITUDE (it needs horizon-side physics
+input, the 9Z/10A machinery).
+
+---
+
 ## 2026-08-10 (tenth close) — P3 draft 0.4 → ROUND 32 → draft 0.5: the paper lane executed, zero credence moves
 
 The author's "free hand, go for what is needed here" bought the flagged

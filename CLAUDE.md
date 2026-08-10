@@ -855,6 +855,52 @@ the two O5 doors (Hartree/coherent-state; the κ = 1 level-crossing kill
 condition = PREREQUISITE for its PREDICTIONS row) · DR4 readiness. Tenth
 close in three days — FRESH SESSION before the next arc.**
 
+**10M + 10N + ROUND 33 (2026-08-10, eleventh close — the author: "next,
+the doors"): BOTH κ=1 DOORS EXECUTED, REFEREED, ADOPTED; zero credence
+moves (53 / 8, every cell pre-signed HOLD, referee-confirmed; SEVEN
+consecutive O5-family rounds at zero strikes/zero rises).** 10M
+O5-HARTREE (pre-reg d146eec) = M-FROZEN gates 7/7: the R31
+coupled-amplitude door CLOSES NEGATIVE at exact grade — Hartree
+amplitude sector EXACT (β* = polaron displacement, width-independent),
+E_MF ≡ E_exact, MIDPOINT THEOREM (ω_MF(n̄) = exact spacing at n̄−½;
+naive double-count = κωn/2, ratio → 2), |α|² conserved by the MF flow,
+THE FOLD FROZEN ([H,N_s] = 0 exact, drift 6e-15 at κ up to 1.2 — the
+runaway is dynamically unreachable, no regulator exists or is needed),
+edges κ_c(x) = 2/(n_BE+σ) = the 10L O(x) sub-lock class (ratios
+4.03–4.27, R31-M2-refuted identically). R33 SCOPE (adopted): closes the
+amplitude/occupation channel ONLY; driven/dissipative rides on the 10G
+strike (10M ⇄ 10G COUPLED — strike revisited ⇒ door reopens); κ=1
+physics lives in the l=2 mixing channel; edge comparison
+supporting-illustrative; risk axis: edges cross 0.888 at x =
+0.367/0.452/0.954. 10N O5-CROSSING (same pre-reg) = N-ROW-EARNED all
+gates, R33 ruling (b) → **P10 REGISTERED DOWNGRADED (PREDICTIONS.md
+2026-08-10, his verbatim): an ambient-l2-fluctuation-AMPLITUDE test of
+the 10F open object, NOT a κ=1 crossing test** — R33's central result
+(GB-confirmed): at detectable amplitude (e_a ≈ 1) S is a κ-PLATEAU
+(S(1)/S(0.6) = 1.09; LARGER at κ ≤ 0.5 since W ∝ κ) ⇒ THE DETECTABLE
+AND DIAGNOSTIC REGIMES ARE MUTUALLY EXCLUSIVE; the stage's draft
+"crossing fingerprint" clause DELETED everywhere; honest headline: the
+10J χ ~ 1/(1−κ) divergence is width-killed to a non-anomalous ~2%.
+Standing numbers: best corner S(e_a=1) = 0.02145, e_a*(2%) = 0.936
+(convention family 0.0148/0.0215/0.0307 straddles the bar; 1/√2 flips
+below floor); background 40–68% of S same-sign ∝ e_a²; crossing meter
+BINARY-NATIVE (window (p₁−p₂) max at x = ln 3; deep galaxies
+contrast-killed ×20, galaxy-transition comb-smeared); TRUE
+crossing-test threshold σ_S ≈ 0.005 (perturbative regime, κ-localized).
+**THE NAMED SUCCESSOR = O5-AMPLITUDE: derive e_a — 10F's ≤ ~1 cap vs
+10G's own q_FD = √(2n_amb+1) = 1.43 unreconciled; this ONE horizon-side
+number decides P10 (e_a* = 0.655 under FD; dead at 0.086); needs
+9Z/10A-grade horizon-side input, NOT another toy scan.** Protocol:
+blind GA half pre-committed c5b20fb (18/18, 4th execution), GB half
+15/15 — three independent implementations agree ≤ 1e-4 on every number;
+zero computed errors anywhere. Round archived REVIEW-ROUND33-OPUS.md
+(uncommitted). Ledger 212 rows / six gates PASS (G5 token curation
+frozen at 266 by 10H-precedent). P3 note: current through 10L; the
+eleventh close adds a small 10M/10N absorb at the next author-called
+thaw. NEXT FORK (author's): circulation TODO 27–31 (outreach parked;
+visibility flip pending) · O5-AMPLITUDE · P3 round 3 / circulation ·
+DR4 readiness. FRESH SESSION before O5-AMPLITUDE.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

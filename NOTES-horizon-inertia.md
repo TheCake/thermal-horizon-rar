@@ -15700,6 +15700,109 @@ official predictions list.*
 
 ---
 
+## 2026-08-10 — ROUND 33 (fresh referee session vs 10M + 10N): holes NO ×2, both letters AFFIRMED, zero mismatches; the 10N row DOWNGRADED-AND-REGISTERED per ruling (b); adopted in full
+
+Report REVIEW-ROUND33-OPUS.md (uncommitted, as always). He reproduced
+EVERY load-bearing number in both stages and the blind GA half from
+scratch — three independent implementations now agree to ≤ 1e-4 on every
+number; ZERO computed errors anywhere. Verification both directions:
+blind GA half (18 rows) pre-committed at c5b20fb BEFORE the report
+existed (4th execution of the 87a4676 protocol); post-report GB half
+(calcs/round33_addendum.py GB-1..7, 15 rows) re-computed every number HIS
+report introduced — ALL CONFIRMED (his S(κ) table to 5e-6; localization
+ratios 1.088/2.06; repulsion threshold e_a = 0.2116 exact; background
+B(0.888) = 0.0137 / B(0.925) = 0.0089 = 68%/43% of S, swing ×15 across
+the lock band; q_FD = 1.4284; S(conv=q_FD) = 0.03100; e_a* = 0.655 under
+the FD amplitude; x-peak 0.61 with S = 0.0226 interpolation-grade;
+lock-crossings x = 0.367/0.452/0.954; S(0.086) = 2.23e-4). Full addendum
+33/33 PASS.
+
+**THE ROUND'S CENTRAL PHYSICS RESULT (his, GB-confirmed, adopted): the
+detectable and diagnostic regimes of the crossing response are MUTUALLY
+EXCLUSIVE.** At the amplitude required to reach the 0.02 floor (e_a ≈ 1)
+the statistic S is a width-saturated PLATEAU in κ — S(κ=1)/S(κ=0.6) =
+1.09, and S is LARGER at κ ≲ 0.5 (0.0389 at κ = 0.2, because the
+dictionary normalization W ∝ κ shrinks) — so the stage's drafted row
+clause "absent for kappa away from the crossing" was FALSE at the
+operative amplitude and is DELETED everywhere (condition 4). Only the
+perturbative regime (e_a ≲ 0.3, localization ratio 2.1) fingerprints
+κ = 1, and there the signal sits 4–5× below the DR4 floor. Corollary
+(his escape-route 3, adopted as a standing note): σ_S ≈ 0.005 — not
+0.02 — is the TRUE crossing-test threshold; a survey at that grade would
+sit in the κ-localized regime. The honest headline (condition 5): the 10J
+compliance divergence χ ~ 1/(1−κ) is width-regularized to a NON-anomalous
+~2% boost modification — "anomalously large low-frequency response" does
+not survive the R17 width.
+
+**REGISTRATION RULING (b) EXECUTED: P10 enters PREDICTIONS.md in HIS
+verbatim downgraded form** — an ambient-l2-fluctuation-AMPLITUDE test (a
+test of the 10F open object e_a and the dispersive reading), NOT a κ = 1
+crossing test; width-saturated, κ-non-localized, conditional; caveats
+carried at every citation: the 1/√2 convention member flips it below
+floor; the same-sign background (40–68% of S at the operative corner,
+also ∝ e_a²) means an ambient-split does not cleanly isolate the pair
+channel; dispersive-side and mechanism-conditional. His ruling notes (c)
+no-row would also have been defensible but would overrule the
+pre-registered letter grammar (best S = 0.02145 > 0.02); (b) is the
+pre-reg-consistent call. THE AMPLITUDE LEVER (condition 7, the biggest
+open object): 10F's e_a ≤ ~1 cap is un-derived while 10G's own FD budget
+gives the binary cloud q_FD = √(2 n_amb + 1) = 1.428 — the SAME KIND of
+object; under e_a ≈ 1.43 the row earns robustly (e_a* = 0.655) and the
+thermal factor ≈ the √2 convention member. 10F-vs-10G is an unreconciled
+cross-stage amplitude tension; **deriving e_a is the named successor
+(O5-AMPLITUDE) — "this single horizon-side number decides the row's
+fate: at ~1.4 it earns robustly as an amplitude test; at the static
+0.086 it is dead."**
+
+**10M conditions (1–3, adopted):** (1) the closure language is SCOPED —
+10M closes the COHERENT-AMPLITUDE / MEAN-OCCUPATION channel at exact
+grade (confirming 10L from the exact angle); the driven/dissipative
+channel is out of scope and the frozen-fold closure RELIES ON THE 10G
+STRIKE (no real Δn driving — were the strike ever revisited, this door
+reopens: 10M and 10G are coupled, named); the κ = 1 physics lives in the
+l=2 MIXING channel (10N's object), so "no κ = 1 feature" is
+dispersive-family-scoped. (2) The edge→10L comparison is
+SUPPORTING-ILLUSTRATIVE, not load-bearing (the frozen fold is; the ~4×
+ratio is coincidental-not-derived; the [1,8] ratio gate is
+near-null-power) — and the risk axis ships with the curve: the below-lock
+clause holds only for x ≤ 0.3; the three edge members cross 0.888 at
+x = 0.367/0.452/0.954 (GB-6 exact), on the transition arm. (3) G10M-5 is
+a propagator-faithfulness check guaranteed by G10M-2, not independent
+evidence (trap-#16 flavor, footnoted); the spectral unboundedness is a
+large-N artifact never approached at sky occupations (frozen AND
+never-approached). (10N condition 10 likewise adopted: the perturbative
+peak κ* = 0.8918 and the exact-table best corner κ ≈ 1.0 are DIFFERENT
+objects and do not coincide; G10N-6's earned clause is grid-resolution
+only, near-tautological — flagged.)
+
+Credence: NO moves — every cell pre-signed HOLD, referee-confirmed
+(anomaly-real 53 / mech-conditional 8; SEVEN consecutive O5-family
+rounds now at zero strikes, zero rises since the 10G strike). Ledger
+rows mech-10m-hartree + mech-10n-crossing added this close (212 rows).
+
+**Plain verdict: SUCCESS (both stages + round).** The last
+self-consistency door is closed at exact grade with its scope stated
+honestly; the level-crossing reading is transformed into what it
+actually is — a numbered, conditional AMPLITUDE instrument with its
+kill table, its true crossing-test threshold (σ_S ≈ 0.005), and one
+sharply-named open constant (e_a) that decides it.
+
+*ELI12: The referee checked all our numbers — three separate
+calculations now agree on every single one, zero mistakes. But he caught
+something better than a mistake: our new "poke test" for the magic knob,
+at the strength where Gaia could actually see it, responds almost the
+SAME whether the knob is at 1 or far from it — so it's not a knob test
+at all. It's really a test of how hard the environment's cloud is
+shaking (a number we've never pinned down: one of our own results hints
+it's ~1.4, another caps it at ~1). So the prediction goes in the book,
+but wearing its honest name — "does the ambient cloud shake at full
+strength?" — and the note that a survey 4× sharper than DR4's edge could
+someday test the knob itself. Meanwhile the other door — "maybe the
+ladder regulates itself" — is now closed with a conservation-law lock,
+though we wrote down exactly which assumption the lock leans on.*
+
+---
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

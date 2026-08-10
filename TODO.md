@@ -1289,6 +1289,24 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     ~ 0.086 AND band-like requirement ⇒ the R22-cond-4 strike fires
     (mech 15→8). Also open: derive κ = 1 in the DEEP limit (R24 cond
     6 as re-scoped by C2).**
+    **THE TWO κ=1 DOORS EXECUTED 2026-08-10 (10M O5-HARTREE + 10N
+    O5-CROSSING, pre-reg d146eec; ROUND 33 = holes NO ×2, both
+    letters AFFIRMED, zero mismatches, GB half 15/15): 10M M-FROZEN —
+    the R31 coupled-amplitude family closes NEGATIVE at exact grade
+    (Hartree amplitude sector exact; midpoint theorem; the fold
+    FROZEN by [H, N_s] = 0; edges O(x) = the 10L class; scope: relies
+    on the 10G strike — coupled, named; risk axis x = 0.367/0.452/
+    0.954). 10N N-ROW-EARNED downgraded per ruling (b) → P10
+    REGISTERED (PREDICTIONS.md 2026-08-10): an ambient-l2-AMPLITUDE
+    test, NOT a crossing test — at detectable amplitude S is a
+    κ-plateau (detectable/diagnostic regimes mutually exclusive);
+    true crossing threshold σ_S ≈ 0.005; crossing meter BINARY-NATIVE
+    (window max x = ln 3). THE NAMED SUCCESSOR = O5-AMPLITUDE: derive
+    the ambient fluctuation amplitude e_a — 10F's ≤ ~1 cap vs 10G's
+    own q_FD = √(2n_amb+1) = 1.43 is an unreconciled cross-stage
+    tension, and this ONE horizon-side number decides P10 (e_a* =
+    0.655 under FD; dead at static 0.086). Needs 9Z/10A-grade
+    horizon-side input, not another toy scan.**
     **O5-GEOMETRY EXECUTED 2026-08-09 (10F pre-reg f78ff64; ROUND 26
     RETRACTED the fired G-CLOSED → G-OPEN, adopted; addendum GA-1..6
     all confirmed): SURVIVES — the sector-coordinate theorem (the

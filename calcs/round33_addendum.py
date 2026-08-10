@@ -242,7 +242,172 @@ gate("GA-8 outputs exist, letters present, no banned strings, no "
 emit("")
 emit("GA half: %s" % ("ALL PASS" if ok_all else "FAILURES PRESENT"))
 emit("")
-emit("(GB half appended post-report: every ROUND-33 number re-computed)")
+
+# ====================================================================
+# GB half (post-report): every load-bearing number the ROUND-33 report
+# introduced, re-computed independently before adoption.
+# ====================================================================
+emit("GB half (post-report verification of REVIEW-ROUND33-OPUS.md)")
+emit("")
+ok_gb = True
+def gateb(name, cond, detail=""):
+    global ok_gb
+    ok_gb = ok_gb and bool(cond)
+    emit("%s: %s%s" % (name, "PASS" if cond else "FAIL",
+                       ("  " + detail) if detail else ""))
+
+# GB-1: his S(kappa) non-localization table at the earned corner
+# (x=0.5, gamma=0.010), e_a = 1.0 and 0.3 columns.
+HIS = {(0.20, 1.0): 0.03891, (0.50, 1.0): 0.02098, (0.70, 1.0): 0.01929,
+       (0.888, 1.0): 0.02012, (0.925, 1.0): 0.02050, (1.000, 1.0): 0.02145,
+       (1.10, 1.0): 0.01632, (1.50, 1.0): 0.00634,
+       (0.20, 0.3): 0.00388, (0.50, 0.3): 0.00228, (0.70, 0.3): 0.00238,
+       (0.888, 0.3): 0.00308, (0.925, 0.3): 0.00337, (1.000, 0.3): 0.00467,
+       (1.10, 0.3): 0.00253, (1.50, 0.3): 0.00068}
+worstb = 0.0
+for (kp, ea), tok in HIS.items():
+    v = S_indep(0.5, kp, 0.010, ea)
+    worstb = max(worstb, abs(v - tok))
+gateb("GB-1a his S(kappa) table (16 cells, both e_a columns)",
+      worstb <= 6e-5, "worst |d| %.1e" % worstb)
+r_op = S_indep(0.5, 1.000, 0.010, 1.0)/S_indep(0.5, 0.60, 0.010, 1.0)
+r_pt = S_indep(0.5, 1.000, 0.010, 0.3)/S_indep(0.5, 0.60, 0.010, 0.3)
+gateb("GB-1b localization ratios S(1)/S(0.6): operative 1.09 / "
+      "perturbative ~2.1",
+      abs(r_op - 1.09) <= 0.02 and abs(r_pt - 2.1) <= 0.15,
+      "%.3f / %.2f" % (r_op, r_pt))
+gateb("GB-1c S larger at kappa <= 0.5 than at the crossing (e_a=1)",
+      S_indep(0.5, 0.20, 0.010, 1.0) > S_indep(0.5, 1.000, 0.010, 1.0),
+      "0.0389 > 0.0215: the operative statistic is NOT kappa-localized")
+
+# GB-2: his repulsion threshold e_a = 0.2116 at the earned corner
+om05 = 0.5/TWO_PI
+gcl05 = 0.5*math.sqrt(om05*(x_amb_bin/TWO_PI))
+lam05b = 0.304*gcl05
+P0 = math.exp(-(1.0/4)*(om05/(x_amb_bin/TWO_PI)))
+ea_thr = (0.010/2)/math.sqrt(2*P0)/lam05b
+gateb("GB-2 repulsion threshold e_a (kappa=1, gamma=0.010)",
+      abs(ea_thr - 0.2116) <= 0.001, "%.4f vs his 0.2116" % ea_thr)
+
+# GB-3: background at the earned corner x=0.5 (his 0.0089-0.0137 =
+# 40-68% of S at kappa 0.888/0.925; swing across the lock band).
+def background_x(x_loc, kap, gam, e_a):
+    om = x_loc/TWO_PI
+    Om = x_amb_bin/TWO_PI
+    gcl = 0.5*math.sqrt(om*Om)
+    lam = {0.5: 0.304, 1.0: 0.140}[x_loc]*gcl
+    U2 = (e_a*lam)**2
+    d2 = (kap/4)*(om/Om)
+    P = [math.exp(-d2)*d2**m/math.factorial(m) for m in range(41)]
+    tot = 0.0
+    for n in range(6):
+        pn = math.exp(-n*x_loc)*(1 - math.exp(-x_loc))
+        for m in range(41):
+            Dup = om*(1 - (kap/2)*(n + 1)) + m*Om
+            if not (n == 1 and m == 0):
+                tot += -pn*(n + 1)*U2*P[m]*Dup/(Dup**2 + gam**2)
+            if n >= 1:
+                Ddn = om*(1 - (kap/2)*n) - m*Om
+                if not (n == 2 and m == 0):
+                    tot += pn*n*U2*P[m]*Ddn/(Ddn**2 + gam**2)
+    nbar = 1.0/(math.exp(x_loc) - 1)
+    W = (kap*om/4)*(2*nbar + 2)
+    return abs(tot)/W
+b888 = background_x(0.5, 0.888, 0.010, 1.0)
+b925 = background_x(0.5, 0.925, 0.010, 1.0)
+s888 = S_indep(0.5, 0.888, 0.010, 1.0)
+s925 = S_indep(0.5, 0.925, 0.010, 1.0)
+fr1, fr2 = b888/s888, b925/s925
+bk = [background_x(0.5, k, 0.010, 1.0)
+      for k in np.linspace(0.888, 1.0, 15)]
+gateb("GB-3a background at x=0.5: values in his band [0.0089, 0.0137]",
+      0.0080 <= min(b888, b925) and max(b888, b925) <= 0.0145,
+      "B(0.888)=%.4f B(0.925)=%.4f" % (b888, b925))
+gateb("GB-3b background fraction of S in [0.40, 0.68]",
+      0.38 <= min(fr1, fr2) and max(fr1, fr2) <= 0.70,
+      "%.2f / %.2f" % (fr1, fr2))
+gateb("GB-3c background swing across the lock band (not smooth)",
+      max(bk) >= 3*min(bk),
+      "range [%.4f, %.4f]" % (min(bk), max(bk)))
+
+# GB-4: q_FD token + the thermal-factor lever
+q_fd = math.sqrt(2*0.5202 + 1)
+gateb("GB-4a q_FD = sqrt(2 n_amb + 1) = 1.4284 (10G token 1.416 at "
+      "its own rounding)", abs(q_fd - 1.4284) <= 0.001,
+      "%.4f" % q_fd)
+s_th = S_indep(0.5, 1.000, 0.010, 1.0, conv=q_fd)
+gateb("GB-4b S with the thermal factor as conv: his 0.03100",
+      abs(s_th - 0.03100) <= 3e-4, "%.5f" % s_th)
+lo, hi = 0.01, 1.42
+for _ in range(60):
+    mid = 0.5*(lo + hi)
+    if S_indep(0.5, 1.000, 0.010, mid, conv=q_fd) >= 0.02:
+        hi = mid
+    else:
+        lo = mid
+gateb("GB-4c e_a*(2%) under the FD amplitude ~0.65",
+      abs(hi - 0.65) <= 0.02, "%.3f" % hi)
+
+# GB-5: the x-corner claim (log-linear l=2 ratio; S peak x ~ 0.6-0.7)
+xs = np.array([0.5, 1.0, 2.0])
+lr = np.log(np.array([0.304, 0.140, 0.029]))
+coef = np.polyfit(xs, lr, 1)
+resid = float(np.max(np.abs(np.polyval(coef, xs) - lr)))
+def S_xinterp(x_loc, kap, gam, e_a):
+    om = x_loc/TWO_PI
+    Om = x_amb_bin/TWO_PI
+    gcl = 0.5*math.sqrt(om*Om)
+    lam = math.exp(float(np.polyval(coef, x_loc)))*gcl
+    U = e_a*lam
+    d2 = (kap/4)*(om/Om)
+    P0x = math.exp(-d2)
+    D1 = abs(om*(1 - kap))
+    Dc = complex(D1, -gam)
+    delta = float(np.real((np.sqrt(Dc*Dc + 8*U*U*P0x) - Dc)/2))
+    e = math.exp(-x_loc)
+    pcon = e*(1 - e)**2
+    nbar = 1.0/(math.exp(x_loc) - 1)
+    W = (kap*om/4)*(2*nbar + 2)
+    return pcon*delta/W
+xg = np.linspace(0.45, 1.0, 111)
+sx = [S_xinterp(float(x), 1.000, 0.010, 1.0) for x in xg]
+xpk = float(xg[int(np.argmax(sx))])
+spk = max(sx)
+gateb("GB-5 x-corner (interpolation-grade): log-linear resid, peak "
+      "x in [0.55, 0.75], S_peak ~ 0.022",
+      resid <= 0.06 and 0.55 <= xpk <= 0.75
+      and abs(spk - 0.0221) <= 0.0015,
+      "resid %.3f, x_pk %.2f, S_pk %.4f" % (resid, xpk, spk))
+
+# GB-6: 10M condition-2 risk axis: edges cross 0.888 at his x values
+from scipy.optimize import brentq
+f_kc0 = lambda x: 2.0*(math.exp(x) - 1) - 0.888
+f_kc = lambda x: 2.0/(1.0/(math.exp(x) - 1) + 0.5) - 0.888
+f_kcn = lambda x: 1.0/(1.0/(math.exp(x) - 1) + 0.5) - 0.888
+x0 = brentq(f_kc0, 0.05, 1.0)
+x1 = brentq(f_kc, 0.05, 1.5)
+x2 = brentq(f_kcn, 0.05, 3.0)
+gateb("GB-6 lock-crossing x of the three edge members "
+      "(his 0.367/0.452/0.954)",
+      abs(x0 - 0.367) <= 0.003 and abs(x1 - 0.452) <= 0.003
+      and abs(x2 - 0.954) <= 0.004,
+      "%.3f / %.3f / %.3f" % (x0, x1, x2))
+
+# GB-7: his residual numbers: S(e_a=0.086) at kappa=0.888 corner;
+# exact zero at kappa=1 below the repulsion threshold
+s_086 = S_indep(0.5, 0.888, 0.010, 0.086)
+s_086_k1 = S_indep(0.5, 1.000, 0.010, 0.086)
+gateb("GB-7 S(0.086): 2.23e-4 at kappa=0.888; exactly 0 at kappa=1 "
+      "(below repulsion threshold)",
+      abs(s_086 - 2.23e-4) <= 5e-6 and s_086_k1 == 0.0,
+      "%.2e / %.1e" % (s_086, s_086_k1))
+
+emit("")
+emit("GB half: %s" % ("ALL PASS -- every ROUND-33 number confirmed"
+                      if ok_gb else "FAILURES PRESENT"))
+emit("")
+emit("FULL ADDENDUM: %s" % ("ALL PASS"
+                            if (ok_all and ok_gb) else "FAILURES"))
 
 with open(OUT, "w") as f:
     f.write("\n".join(L) + "\n")

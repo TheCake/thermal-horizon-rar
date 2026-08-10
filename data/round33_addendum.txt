@@ -21,4 +21,22 @@ GA-8 outputs exist, letters present, no banned strings, no FAIL rows: PASS
 
 GA half: ALL PASS
 
-(GB half appended post-report: every ROUND-33 number re-computed)
+GB half (post-report verification of REVIEW-ROUND33-OPUS.md)
+
+GB-1a his S(kappa) table (16 cells, both e_a columns): PASS  worst |d| 4.6e-06
+GB-1b localization ratios S(1)/S(0.6): operative 1.09 / perturbative ~2.1: PASS  1.088 / 2.06
+GB-1c S larger at kappa <= 0.5 than at the crossing (e_a=1): PASS  0.0389 > 0.0215: the operative statistic is NOT kappa-localized
+GB-2 repulsion threshold e_a (kappa=1, gamma=0.010): PASS  0.2116 vs his 0.2116
+GB-3a background at x=0.5: values in his band [0.0089, 0.0137]: PASS  B(0.888)=0.0137 B(0.925)=0.0089
+GB-3b background fraction of S in [0.40, 0.68]: PASS  0.68 / 0.43
+GB-3c background swing across the lock band (not smooth): PASS  range [0.0009, 0.0137]
+GB-4a q_FD = sqrt(2 n_amb + 1) = 1.4284 (10G token 1.416 at its own rounding): PASS  1.4284
+GB-4b S with the thermal factor as conv: his 0.03100: PASS  0.03100
+GB-4c e_a*(2%) under the FD amplitude ~0.65: PASS  0.655
+GB-5 x-corner (interpolation-grade): log-linear resid, peak x in [0.55, 0.75], S_peak ~ 0.022: PASS  resid 0.005, x_pk 0.61, S_pk 0.0226
+GB-6 lock-crossing x of the three edge members (his 0.367/0.452/0.954): PASS  0.367 / 0.452 / 0.954
+GB-7 S(0.086): 2.23e-4 at kappa=0.888; exactly 0 at kappa=1 (below repulsion threshold): PASS  2.23e-04 / 0.0e+00
+
+GB half: ALL PASS -- every ROUND-33 number confirmed
+
+FULL ADDENDUM: ALL PASS

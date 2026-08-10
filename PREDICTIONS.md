@@ -426,6 +426,37 @@ Uniqueness class: instrument-level (not a gravity claim — either outcome leave
 measurement standing per 8F/8F-c: manufacture excluded for symmetric variance-inflation
 tails; the BE coupling bounded below ~15% severity). (Stages 8F/8F-c; this commit.)
 
+### P10 — the transition-window ambient-amplitude modification (dispersive-side; design-spec / conditional; registered 2026-08-10, this commit)
+*Derived in Stage 10N (pre-reg d146eec); registered in the ROUND-33-downgraded form
+(ruling (b), REVIEW-ROUND33 verbatim; the stage's draft "crossing fingerprint" clause
+was refuted by the round's own scan — the operative statistic is NOT κ-localized —
+and is deleted). Mech-conditional credence 8.*
+
+Under the dispersive reading, the licensed sub-saturation l=2 ambient vertex adds a
+level-repulsion modification to the wide-binary transition-window boost
+(x ∈ [0.5, 1.2]) of fractional size S. At the mechanism's fluctuation-dissipation
+ambient amplitude (e_a ~ q_FD ~ 1.4; Stage 10G) and the narrow edge of the R17 width
+band (γ ~ 0.010 H), S ~ 0.02–0.03 near the a₀-lock κ band. **The signature is
+width-saturated and NOT κ-localized:** across κ ∈ [0.5, 1.0], S varies < 10% (it does
+not resolve κ = 1 from κ = 0.9, and is already present at κ = 0.5); it therefore tests
+the PRESENCE of an e_a ~ 1 fluctuating ambient l=2 amplitude (the 10F open object) and
+the dispersive reading, NOT the E(2) = E(1) crossing per se. S ∝ e_a², falls below the
+DR4 floor (S < 0.005) for e_a ≲ 0.3, and dies at the static amplitude e_a = |q| = 0.086
+(S ~ 2e-4). **KILL:** a DR4-era transition-window boost measurement at σ_S ≤ 0.02
+finding no ambient-tide-correlated (R_gal / Z-height) excess in x ∈ [0.5, 1.2] bounds
+e_a < e_a* (~0.9 at the 10F cap, ~0.65 at the 10G FD amplitude) × the dispersive
+reading. **Caveats carried at every citation:** (i) the 0.02 threshold flips to
+below-floor under the 1/√2 matrix-element convention; (ii) the same-sign background
+(all non-pair dispersive channels, also ∝ e_a²) is 40–68% of S at the operative corner
+and is not κ-smooth, so an ambient-split statistic does not cleanly isolate the pair
+channel; (iii) the row is dispersive-side and mechanism-conditional.
+
+*Standing notes (same registration): the TRUE crossing-test threshold is σ_S ≈ 0.005 —
+at that grade the measurement sits in the perturbative regime (e_a ≲ 0.3) where the
+pair channel is a κ = 1-peaked Lorentzian separable from the smooth background; and the
+row's fate turns on ONE horizon-side number, the ambient fluctuation amplitude e_a
+(10F ≤ ~1 vs 10G q_FD = 1.43, unreconciled — the named successor O5-AMPLITUDE).*
+
 ---
 
 ## D. What we do NOT claim as unique
