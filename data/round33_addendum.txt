@@ -1,0 +1,24 @@
+ROUND 33 ADDENDUM -- GA half (blind, pre-report)
+
+GA-1a completing-the-square matrix identity: PASS  worst 5.7e-14
+GA-1b midpoint theorem (5 random draws): PASS  worst 6.7e-16
+GA-1c naive offset == kap om n/2: PASS  d 1.1e-15
+GA-2a edge ratios in [4.0, 4.3]: PASS  band [4.03, 4.27]
+GA-2b endpoint slopes ~ (1.00, 0.97): PASS  0.997 / 0.971
+GA-2c below-lock max == 0.700: PASS  0.700
+GA-3 <N_s> drift under scipy expm propagator (kappa=1.2): PASS  drift 6.7e-16
+GA-4a kill-table spot checks (6 cells, independent code path): PASS  worst |d| 4.4e-06
+GA-4b FC factor numeric vs e^{-d^2}: PASS  d 1.1e-16
+GA-4c e_a*(2%) at the earned corner by bisection: PASS  0.9356 vs 0.936
+GA-5a g_close(deep-gal) = 0.00924 H: PASS  0.00924
+GA-5b lambda_max table (0.01771, 0.01154) H: PASS  0.01771 / 0.01154
+GA-5c 6E gate tokens (0.7536 / 0.1171): PASS  0.7536 / 0.1171
+GA-6 window argmax == ln 3, value 4/27: PASS  x* = [log(3)]
+GA-7a deep-gal contrast suppression x20: PASS  0.0507 of window max
+GA-7b gal-transition comb: gamma/Om spans 1: PASS  gamma/Om = 0.44-1.11
+GA-7c peak kappa* = 0.8918 (golden-section, independent): PASS  0.8917
+GA-8 outputs exist, letters present, no banned strings, no FAIL rows: PASS
+
+GA half: ALL PASS
+
+(GB half appended post-report: every ROUND-33 number re-computed)

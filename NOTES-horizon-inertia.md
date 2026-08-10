@@ -15592,6 +15592,114 @@ no, we have not derived the knob — it is still fitted.*
 
 ---
 
+## 2026-08-10 — Stages 10M + 10N: the two O5 doors (O5-HARTREE + O5-CROSSING), pre-reg d146eec
+
+The author's "next, the doors" bought the concurrent pair the tenth close
+flagged: 10M = the R31 named escape (the joint coherent-state/Hartree
+treatment of system+cloud), 10N = the R30-successor-2 level-crossing
+instrument (deriving its numeric kill condition = the standing
+PREREQUISITE for any PREDICTIONS row). Both DISPERSIVE-SIDE ONLY (10G
+strike scope), both sky-blind (archived meters only). Bars, gates, letter
+grammars, and credence maps locked at d146eec before any run; both stages
+ran gates-green first-run; blind GA addendum half
+(calcs/round33_addendum.py, 18/18, independent code paths throughout)
+committed pre-report — the 87a4676 protocol's 4th execution.
+
+**10M O5-HARTREE = M-FROZEN (gates 7/7): the Hartree door CLOSES NEGATIVE
+at exact grade.** (1) The joint model is exactly solvable and the
+factorization hides nothing: the Hartree amplitude sector is EXACT
+(β* = −g(n+σ)/Ω = the polaron displacement, state-width-independent by
+the linear-force lemma; numeric 6.4e-15) and the MF energy at integer
+occupation IS the exact ladder (residue 0). (2) The MIDPOINT THEOREM
+(new, exact): ω_MF(n̄) = the exact spacing at n̄ − ½ — mean-field is
+exact-through-first-derivative at midpoints; the NAIVE (cloud-cost-
+forgotten) frequency double-counts by exactly κωn/2 (ratio → 2, the
+classic Hartree double-count, derived and gated). (3) The family's
+instability edges are O(x), the 10L class: κ_c(x) = 2/(n_BE(x)+σ) rides
+4.03–4.27× above the 10L κ_max tokens with matching log-slope (0.997 vs
+0.972), and EVERY family member (σ ∈ {0,½}, naive/net) stays below the
+lock floor 0.888 over the deep window — the self-consistency criterion is
+refuted by the measured κ exactly as R31-M2 said, identically here.
+(4) THE FOLD IS FROZEN: [H, N_s] = 0 exactly ⇒ every moment of N_s is
+conserved (numeric drift 6.2e-15 over t = 200/ω at κ up to 1.2, i.e.
+ABOVE the crossing); every sector is stable at every κ; the spectral
+runaway is dynamically unreachable — no regulator exists and NONE IS
+NEEDED. The MF flow conserves |α|² exactly too (no coherent-amplitude
+instability). (5) NO feature of the family sits at κ = 1 (observables
+analytic through the crossing at 5.3e-15 grade). Consequence: the
+kappa = 1 seam's remaining objects are the 10J spectral identities and
+the 10N response instrument; bare-pinning stands unchanged on 10C
+separation + measured β → 0.
+
+**10N O5-CROSSING = N-ROW-EARNED (all gates) — WITH THE HONEST MARGINALITY
+FLAGGED FOR THE ROUND.** The kill condition is now DERIVED (the
+prerequisite is discharged either way): the crossing pair gap is
+D₁ = ω(1−κ) exact; the mixing agent is the 10E l=2 vertex at
+SUB-SATURATION amplitude (licensed: the 10G strike killed only λ ≳ H
+saturation; ceilings used as upper bounds; the lending law appears
+nowhere); the response is the width-regularized exact 2×2 repulsion
+δ_γ with FC diagonal e^(−d²), thermal-weighted on the BARE ladder
+(10L bare-pinning), normalized by the dictionary pull. STRUCTURAL
+FINDINGS (letter-independent): (a) THE CROSSING METER IS BINARY-NATIVE —
+the window function (p₁−p₂)(x) = e^(−x)(1−e^(−x))² peaks at x = ln 3 =
+1.0986 (max 4/27), deep galaxies die by occupation contrast (×20,
+classical limit), transition galaxies by comb smearing (Ω_gal = 0.0225 H
+≈ γ; sideband 0.0001 H inside the width — the 10J κ=0.4-artifact class
+mapped and quarantined); binary + deep-gal anchors sideband-clean
+(min gap ≥ 0.32 ω). (b) THE RESPONSE IS WIDTH-SATURATED: at the lock the
+pair gap sits at/below the R17 width band, the κ→1 divergence is cut at
+~ω/γ, and the perturbative peak sits at 1−κ* = γ/ω (κ* ≈ 0.89–0.91 at
+the binary anchor — the lock band sits essentially ON the response
+maximum); distinguishing κ = 0.925 from 1.0 by size alone is
+width-limited. THE KILL TABLE (S = fractional transition-window pull
+modification): best anchored corner (x = 0.5, γ = 0.010 H, κ = 1.000)
+gives S(e_a=1) = 0.02145 and e_a*(σ_S = 0.02) = 0.936; at σ_S = 0.01 the
+window is broad (e_a* 0.50–0.99 over most x = 0.5 corners); at the
+measured static amplitude e_a = 0.086 the signature is dead (S ≤ 2e-4).
+THE MARGINALITY (flagged, for ROUND 33 to adjudicate): the EARNED letter
+fired mechanically per the locked grammar but rides the ceiling of every
+axis at once — e_a → 1 (the 10F PERMITTED-grade fluctuation amplitude,
+un-derived), the favorable end of the anchored γ band, and the middle of
+the disclosed convention family (S(e_a=1) = 0.0148/0.0215/0.0307 at
+conv = 1/√2, 1, √2 — the family STRADDLES the 0.02 bar). The PREDICTIONS
+row registers ONLY after the round, in whatever conditional form the
+round leaves standing.
+
+Credence: pre-signed cells executed — M-FROZEN → HOLD mech-conditional 8;
+10N all-cells HOLD 8; anomaly-real 53 untouched (no sky fits anywhere in
+either stage). Ledger rows (books commit): mech-10m-hartree +
+mech-10n-crossing.
+
+**Plain verdict: 10M SUCCESS** (the second and last self-consistency door
+closes negative at exact grade — with a new exact theorem for the
+program's pocket: mean-field is midpoint-exact for this vertex, and the
+fold is conservation-frozen). **10N SUCCESS-WITH-A-FLAG** (the
+prerequisite is discharged with real numbers and a sharp structural
+finding — the crossing meter is a wide-binary meter — but the earned
+clause is ceiling-grade and goes to the referee, not to PREDICTIONS,
+first).
+
+*ELI12: Two doors were left open on the "magic knob = 1" question. Door
+one: maybe the energy ladder, which squeezes itself as it fills, secretly
+regulates itself if you let the cloud around it wobble along — we solved
+that system exactly, and the answer is no: the wobble part of the story
+was already exact, nothing new happens at knob = 1, and the scary
+"ladder runs away" cliff turns out to be behind a locked gate (the
+interaction literally cannot move the system down it — a conservation
+law). So that door is now closed for good, cleanly. Door two: right at
+knob = 1, two rungs of the ladder become the same height, and twin rungs
+are hypersensitive — poke them and they respond hugely. We asked: could
+Gaia's next data release SEE that hypersensitivity in wide star pairs?
+Answer: we derived exactly how big the poke-response would be. It lives
+precisely in the wide-binary zone (a lovely coincidence — that's where
+our anomaly lives), but it's at most a ~2% effect even with every dial
+turned to maximum, right at the edge of what DR4 could measure. So: a
+real, numbered test now exists — but it's a fingertip-grade one, and our
+robot referee gets to rule on whether it's strong enough to put on the
+official predictions list.*
+
+---
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

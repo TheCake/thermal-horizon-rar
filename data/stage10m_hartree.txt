@@ -1,0 +1,74 @@
+STAGE 10M O5-HARTREE (pre-reg: this commit)
+
+G10M-1 sector spectra vs polaron: worst |d| = 8.88e-15 (bar 1e-8) -> PASS
+
+G10M-2 selection rule: max|[H, N_s]| = 0.0e+00 -> PASS (EXACT: every term of H is diagonal in the system Fock index)
+
+G10M-3 amplitude sector: numeric <B> vs -g(n+sig)/Om, worst |d| = 6.44e-15 (bar 1e-8; every sector, four lowest cloud states) -> PASS
+   linear-force lemma: d<B>/dt = -i[Om <B> + g(n+sig)] has the
+   unique fixed point <B> = g*(-n - sigma)/Omega for EVERY cloud state (width-
+   independent); the MF stationary beta* is the SAME expression:
+   the amplitude sector of the Hartree treatment is EXACT.
+
+G10M-4 sympy identities (zero residue):
+   E_MF(n) == E_exact(n):                        residue = 0
+   MIDPOINT THEOREM om_MF(n+1/2) == D(n):        residue = 0
+   naive offset D(n) - om_naive(n) - kap om n/2: residue = 0
+   naive/exact softening ratio (n -> oo):        2
+   turnover nbar* == 2/kappa - sig:              residue = 0
+   concavity d2E/dnbar2 == -kappa om/2 (< 0 for ALL kappa > 0:
+     no member of the family bounds the runaway) residue = 0
+   MF flow: i alpha' = [om + g(beta+beta*)] alpha, coefficient
+   REAL => d|alpha|^2/dt = 0 EXACTLY -- the coherent amplitude
+   family has no occupation instability either.
+G10M-4: PASS
+
+G10M-5 reachability: max drift of <N_s>, <N_s^2> over kappa in
+   {0.925, 1.0, 1.2}, two initial states, t <= 200/om: 6.22e-15 (bar 1e-9) -> PASS
+   THE FOLD IS FROZEN: the spectral runaway (E(n) unbounded
+   below) is dynamically unreachable -- every moment of N_s is
+   conserved by the vertex, above AND below kappa = 1.
+
+G10M-6 THE EDGE MAP (Hartree family vs the 10L family):
+   x      n_BE      kc=2/(n+1/2)  kc(sig=0)  kc_naive  10L kappa_max  ratio
+   0.03   32.836    0.0600        0.0609     0.0300    0.0149      4.03
+   0.05   19.504    0.1000        0.1025     0.0500    0.0247      4.05
+   0.10   9.508     0.1998        0.2103     0.0999    0.0488      4.09
+   0.20   4.517     0.3987        0.4428     0.1993    0.0952      4.19
+   0.30   2.858     0.5955        0.6997     0.2978    0.1395      4.27
+   log-log slopes: Hartree edge 0.997 vs 10L edge 0.972 (|d| <= 0.15) -> PASS
+   ratio band [4.03, 4.27] (bar [1, 8]) -> PASS
+   BELOW-LOCK CLAUSE: max edge over ALL family members and the
+   deep window = 0.700 < 0.888 (the lock band floor) -> PASS
+   => the coherent-amplitude family lands in the SAME O(x)
+      sub-lock edge class as 10L: the criterion is refuted by
+      the measured kappa (R31-M2), identically here.
+   kappa = 1 smoothness: max relative 2nd difference of sector
+   observables (gs energy, <B>^2, d^2 -- all exactly linear in
+   kappa) over [0.90, 1.10] = 5.3e-15
+   (bar 1e-6; all analytic through kappa = 1) -> PASS
+   NO kappa = 1 feature exists in the family: the only kappa = 1
+   object remains the 10J spectral degeneracy E(2) = E(1).
+G10M-6: PASS
+
+G10M-7 limit regression: [D_num(2) - om_naive(2)]/kappa, Richardson kappa -> 0: 1.00000000 vs exact om n/2 = 1.0 (bar 1e-6) -> PASS
+
+====================================================================
+VERDICT LETTER: M-FROZEN
+   The R31 Hartree/coherent-state door CLOSES NEGATIVE at
+   exact grade: (i) the joint model is exactly solvable and
+   the Hartree amplitude+energy sectors are EXACT (no new
+   physics hides in the factorization); (ii) the family's
+   instability edges are O(x), the 10L edge class, far below
+   the lock -- the self-consistency criterion is refuted by
+   the measured kappa exactly as in R31-M2; (iii) the
+   softening runaway is DYNAMICALLY FROZEN ([H, N_s] = 0,
+   every sector stable at every kappa): no regulator exists
+   and none is needed; (iv) NO feature of the family sits at
+   kappa = 1.  Bare-pinning stands on 10C separation + the
+   measured beta -> 0 (unchanged).  The kappa = 1 seam's
+   remaining objects are the 10J spectral identities and the
+   10N response instrument.
+pre-signed credence: M-FROZEN -> HOLD mech-conditional 8;
+anomaly-real 53 untouched (no sky fits anywhere in this stage).
+gates: G1 PASS | G2 PASS | G3 PASS | G4 PASS | G5 PASS | G6 PASS | G7 PASS

@@ -1,0 +1,110 @@
+STAGE 10N O5-CROSSING (pre-reg: this commit)
+
+G10N-1 sympy: D1 = om(1-kappa) residue 0; 2x2 trace residue 0;
+   perturbative delta = V^2/D residue 0; Lorentzian peak at
+   u = gamma (residue 0), max 1/(2 gamma) (residue 0) -> PASS
+
+G10N-2 reader identity vs the 10J chi(1) table: worst rel d = 1.2e-05 (bar 5e-4) -> PASS
+
+G10N-3 sideband census (min over m >= 1, kappa in [0.5, 1.05]):
+   binary x=0.5       Om/om = 2.1448  min sideband gap = 1.395 om (bar 0.1) -> PASS
+   binary x=1.0       Om/om = 1.0724  min sideband gap = 0.322 om (bar 0.1) -> PASS
+   gal-deep x=0.0953  Om/om = 1.4839  min sideband gap = 0.734 om (bar 0.1) -> PASS
+   gal-transition x=1.0: Om/om = 0.1414, min sideband gap = 0.0007 om = 0.0001 H
+     vs width band [0.010, 0.025] H: sideband INSIDE the width; 
+     comb spacing Om = 0.0225 H vs gamma: gamma/Om = 0.44-1.11 -> comb UNRESOLVED
+     => galaxy-transition channel DISQUALIFIED (as expected)
+   gal-deep contrast: (p1-p2)(0.0953) = 0.00751 = 0.051 of the window max 4/27
+     => deep-galaxy channel suppressed x20 by occupation contrast (classical limit:
+        adjacent levels near-equally populated); the crossing meter is BINARY-NATIVE,
+        window (p1-p2)(x) = e^-x (1-e^-x)^2 max at x = ln 3 = 1.0986 (4/27 = 0.1481)
+G10N-3: PASS
+
+G10N-4 scale wiring: 6E gate tokens reproduce (d = 4.3e-05/4.8e-06, bar 1e-3);
+   g_close(deep-gal) = 0.00924 H vs archived 0.0092 (rel 0.004, bar 0.02) -> PASS
+   the lambda_max table (e_a = 1, H units):
+     binary x=0.5: g_close = 0.05827 H, lambda_max = 0.01771 H
+     binary x=1.0: g_close = 0.08241 H, lambda_max = 0.01154 H
+     (deep-gal x=0.0953: lambda_max = 0.00807 H -- channel contrast-killed above)
+
+G10N-5 surface: e_a log-slope = 2.00000 (bar 2 +- 1e-3) -> PASS;
+   perturbative peak kappa* = 0.8918, |(1-k*) om - gamma| = 0.0022 (bar 0.006) -> PASS
+
+THE KILL TABLE: S = fractional transition-window pull modification (pair channel),
+S(e_a) at the anchored grid; e_a* = smallest e_a with S >= sigma_S (None if S(1) < sigma_S).
+
+  x=0.5 gam=0.010 kap=0.888: S(0.086)=0.00022 S(0.3)=0.00308 S(1)=0.02012 | e_a*(5%)=None e_a*(2%)=0.996 e_a*(1%)=0.594
+  x=0.5 gam=0.010 kap=0.925: S(0.086)=0.00020 S(0.3)=0.00337 S(1)=0.02050 | e_a*(5%)=None e_a*(2%)=0.980 e_a*(1%)=0.569
+  x=0.5 gam=0.010 kap=1.000: S(0.086)=0.00000 S(0.3)=0.00467 S(1)=0.02145 | e_a*(5%)=None e_a*(2%)=0.936 e_a*(1%)=0.503
+  x=0.5 gam=0.015 kap=0.888: S(0.086)=0.00013 S(0.3)=0.00207 S(1)=0.01945 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=0.634
+  x=0.5 gam=0.015 kap=0.925: S(0.086)=0.00010 S(0.3)=0.00194 S(1)=0.01983 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=0.614
+  x=0.5 gam=0.015 kap=1.000: S(0.086)=0.00000 S(0.3)=0.00000 S(1)=0.02081 | e_a*(5%)=None e_a*(2%)=0.966 e_a*(1%)=0.556
+  x=0.5 gam=0.025 kap=0.888: S(0.086)=0.00006 S(0.3)=0.00082 S(1)=0.01719 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=0.749
+  x=0.5 gam=0.025 kap=0.925: S(0.086)=0.00004 S(0.3)=0.00059 S(1)=0.01756 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=0.738
+  x=0.5 gam=0.025 kap=1.000: S(0.086)=0.00000 S(0.3)=0.00000 S(1)=0.01862 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=0.699
+  x=1.0 gam=0.010 kap=0.888: S(0.086)=0.00009 S(0.3)=0.00109 S(1)=0.01020 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=0.988
+  x=1.0 gam=0.010 kap=0.925: S(0.086)=0.00010 S(0.3)=0.00124 S(1)=0.01157 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=0.911
+  x=1.0 gam=0.010 kap=1.000: S(0.086)=0.00000 S(0.3)=0.00000 S(1)=0.01592 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=0.683
+  x=1.0 gam=0.015 kap=0.888: S(0.086)=0.00007 S(0.3)=0.00086 S(1)=0.00936 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=None
+  x=1.0 gam=0.015 kap=0.925: S(0.086)=0.00007 S(0.3)=0.00085 S(1)=0.01049 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=0.974
+  x=1.0 gam=0.015 kap=1.000: S(0.086)=0.00000 S(0.3)=0.00000 S(1)=0.01452 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=0.784
+  x=1.0 gam=0.025 kap=0.888: S(0.086)=0.00004 S(0.3)=0.00050 S(1)=0.00694 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=None
+  x=1.0 gam=0.025 kap=0.925: S(0.086)=0.00003 S(0.3)=0.00040 S(1)=0.00714 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=None
+  x=1.0 gam=0.025 kap=1.000: S(0.086)=0.00000 S(0.3)=0.00000 S(1)=0.00863 | e_a*(5%)=None e_a*(2%)=None e_a*(1%)=None
+
+  convention family at the best corner (x=0.5 gam=0.010 kap=1.000):
+    conv=1/sqrt2     S(e_a=1) = 0.01481
+    conv=1 (quoted)  S(e_a=1) = 0.02145
+    conv=sqrt2       S(e_a=1) = 0.03069
+
+  background (all non-pair channels, x=1.0 gam=0.015 kap=0.925, e_a=1): |B| = 0.00387
+  (smooth in kappa; the kill statistic is the pair channel = the kappa-localized excess)
+
+G10N-6 positive-clause gate (N-ROW-EARNED): PASS
+
+G10N-7 scope audit: dispersive-side only -- the mixing agent is
+   the 10E l=2 vertex at SUB-SATURATION amplitude (the 10G
+   strike killed only lambda >~ H saturation; ceilings used as
+   UPPER bounds); the lending law appears NOWHERE; no sky fits
+   (archived meters only); convention family spread disclosed
+   above.
+
+====================================================================
+VERDICT LETTER: N-ROW-EARNED
+   The kill condition is DERIVED and a DR4-grade window
+   exists inside the permitted amplitude band: at the
+   anchored corner x=0.5, gamma=0.010 H, kappa=1.000 the
+   crossing signature reaches sigma_S = 0.02 at e_a* = 0.936 <= 1.
+   THE REGISTERED FORM (books commit -> PREDICTIONS P10):
+   IF the deep-limit kappa sits in the lock band [0.888,
+   1.0] AND the ambient l=2 fluctuation amplitude e_a >=
+   e_a* AND the dispersive reading holds, THEN wide-binary
+   pairs in the transition window x in [0.5, 1.2] carry an
+   ambient-quadrupole-correlated boost modification of
+   size S (table above, up to ~0.021 at e_a = 1), absent
+   for kappa away from the crossing.  KILL: a DR4-era
+   transition-window split at sigma_S <= 0.02 showing no
+   excess kills the (kappa near 1) x (e_a >= e_a*) cell;
+   a detected x-localized, tide-correlated excess of the
+   predicted shape is the crossing's fingerprint.
+   TWO DR4-EXECUTABLE STATISTICS: (i) the x-window boost
+   residual split by ambient-quadrupole proxy (R_gal /
+   Z-height bins); (ii) the eccentricity-resolved P7
+   channel restricted to the window (distinct prediction:
+   the excess rides e_a, not e).
+
+STRUCTURAL FINDINGS (letter-independent, gated above):
+   (1) the crossing meter is BINARY-NATIVE: deep galaxies die
+       by occupation contrast (x20), transition galaxies by
+       comb smearing (gamma >= Om); the window function is
+       (p1-p2)(x) = e^-x(1-e^-x)^2, max at x = ln 3 -- the
+       wide-binary regime.
+   (2) the response is WIDTH-SATURATED: at the lock kappa the
+       pair gap D1 = om(1-kappa) sits at or below the R17
+       width band, so the kappa -> 1 divergence is cut at
+       ~om/gamma; distinguishing kappa = 0.925 from 1.0 by
+       response size alone is width-limited (the peak sits at
+       1 - kappa* = gamma/om).
+pre-signed credence: ALL cells HOLD mech-conditional 8;
+anomaly-real 53 untouched (no sky fits).
+gates: G1 PASS | G2 PASS | G3 PASS | G4 PASS | G5 PASS | G6 PASS | G7 stated
