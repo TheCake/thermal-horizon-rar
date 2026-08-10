@@ -9,6 +9,56 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-10 (tenth close) — P3 draft 0.4 → ROUND 32 → draft 0.5: the paper lane executed, zero credence moves
+
+The author's "free hand, go for what is needed here" bought the flagged
+paper currency arc: P3 was five closes stale, so draft 0.4 absorbed
+10J/10L/10H/10I/10K (pre-committed 95dc64f with the blind GA half), then
+ROUND 32 = the paper's second referee round (report REVIEW-ROUND32-OPUS.md,
+NEVER commit) came back MINOR REVISION with ZERO computed errors across 49
+re-derived quantities; all findings adopted → draft 0.5. anomaly-real 53 /
+mech 8 untouched (paper rounds move nothing); no ledger rows (R28
+precedent).
+
+WHAT THE NEXT INSTANCE MUST NOT REDO OR MUST REMEMBER:
+- P3 is CURRENT through 10L/R31 at draft 0.5. Do not re-absorb anything up
+  to the tenth close; the next paper state change is the author's gate
+  (circulation, or round 3 after a future science absorb).
+- THE M1 LESSON (new standing check): when prose compresses a
+  rejected-vs-preferred model pair, GREP THE ARCHIVE for which model
+  carries the quoted number before writing. The "split fit at κ = 1.50"
+  mislabel (1.503 = the FORCED SINGLE-κ fit, F1; the split fit F4 has two
+  values) survived drafts 0.2/0.3 AND ROUND 28 because everyone
+  pattern-matched "1.50 ≈ the κ answer." Bind numbers to model labels at
+  write time.
+- REFEREE-SUGGESTION FILTER WORKED and must keep working: his optional
+  "add the split values" would have violated R25-C1 (the 10D
+  decomposition is RETIRED — running direction reverses between
+  treatments). Adopting a round ≠ adopting every suggestion; check each
+  against the standing discipline rows. The paper now carries the reason
+  in-text ("running direction does not survive a change of likelihood
+  treatment").
+- His m3 epicyclic term was VERIFIED from scratch (GB-2 sympy: exact O(M)
+  series = GM/r³ − (4/3)Λc² + 5ΛGM/r; relative v²/c² ≤ 1e-6) BEFORE
+  adoption — the verify-reviewer-math rule executed; his math was right.
+  §3.2 is now scoped stable-circular with Ω exact / κ_r leading-order.
+- Protocol (3rd execution) held: blind GA half committed pre-report
+  (95dc64f), GB half re-computed every referee number post-report, 15/15.
+  The abstract lives at 249/250 words — any future edit there must
+  re-run the addendum's GA-9 counter before committing.
+- The sharpest-question sentence is now IN §8 ("κ is a fitted constant...
+  privileged by the spectral identities, not by measurement") — if a
+  deep-limit derivation ever lands, THAT is the sentence to update first.
+
+THE FORK (author's, unchanged): circulation TODO 27–31 (outreach parked —
+"no email sending for now"; repo visibility flip pending) · the two O5
+doors (the Hartree/coherent-state treatment; the κ = 1 level-crossing kill
+condition — still the PREREQUISITE for any PREDICTIONS row) · DR4
+readiness · dense-environment/void data watch. Tenth close in three days —
+FRESH SESSION before anything heavy.
+
+---
+
 ## 2026-08-10 (ninth close) — 10K + 10L + ROUND 31: both R30 successors executed to honest ends, zero credence moves
 
 The author's "You got free hand, go for it" + "You are go" bought the

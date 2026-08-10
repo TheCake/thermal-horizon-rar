@@ -1347,7 +1347,17 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     em-dash); P3 referee round #1 = ROUND 28 RUN + ADOPTED IN FULL
     2026-08-09 (MAJOR REVISION, sixteen findings, zero computed
     errors, draft 0.3; every referee number re-verified in
-    calcs/round28_addendum.py; next P3 gate = the author's).**);
+    calcs/round28_addendum.py); P3 CURRENCY + round #2 DONE
+    2026-08-10: draft 0.4 absorbed 10J/10L/10H/10I-10K (threshold
+    family + degeneracy, occupation closure, convention pin, z≈1
+    lock comparison; the stale banned "measured near one" sentence
+    killed), ROUND 32 = MINOR REVISION with zero computed errors
+    among 49 re-checked quantities; M1 single-vs-split mislabel
+    fixed (split values stay unprinted per the R25-C1 retired
+    decomposition), m1–m6 + the fitted-constant sentence adopted →
+    draft 0.5 (calcs/round32_addendum.py GA blind half
+    pre-committed 95dc64f + GB, 15/15); next P3 gate = the
+    author's (circulation, or round 3 after any future absorb).**);
     (b) the ceiling-½ reading (two data
     points: 6X resonant sharing + 7E prefactor 0.480; 9Q/R16: ½ =
     resonant CEILING proven exact, but resonance itself un-established

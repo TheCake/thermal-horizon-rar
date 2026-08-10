@@ -216,10 +216,96 @@ def main():
                        % (aw, hits if hits else "none", code_hits if code_hits else "none",
                           emdash, mean_len)))
 
+    # ================= GB (post-report half): re-compute every new ROUND 32 referee claim
+    # Written AFTER REVIEW-ROUND32-OPUS.md landed; verifies his findings before adoption
+    # (the standing memory rule). GA above is unchanged and re-runs for regression.
+
+    # ---------------- GB-1: M1 attribution — which fit in the 10D archive carries 1.503?
+    with open(os.path.join(ROOT, "data", "stage10d_kappa.txt"), encoding="utf-8", errors="replace") as f:
+        t10d = f.read()
+    single_tok = re.search(r"F1 \(kappa, a0 free\): kappa = 1\.503", t10d)
+    f4_tok = re.search(r"F4 \(split\): kappa_d = 1\.317, kappa_t = 1\.036", t10d)
+    has_150 = single_tok is not None
+    has_boot = ("1.321" in t10d) and ("1.670" in t10d)
+    split_vals = [v for v in ("1.317", "1.036") if v in t10d]
+    rej = [v for v in ("21.74", "14.37") if v in t10d]
+    okb1 = has_150 and (f4_tok is not None) and has_boot and len(rej) == 2 and len(split_vals) == 2
+    results.append(rep("GB-1", okb1,
+                       "archive: 1.503 present %s; boot [1.32,1.67] %s; rejections %s; split pair %s; "
+                       "single-kappa line: %r -> M1 CONFIRMED (1.50 = the forced single-kappa fit; "
+                       "paper adopts the label fix ONLY — split values stay unprinted per the retired-"
+                       "decomposition discipline)" % (has_150, has_boot, rej, split_vals,
+                                                      (single_tok.group(0)[:90] if single_tok else None))))
+
+    # ---------------- GB-2: m3 — SdS circular-orbit epicyclic frequency, from scratch (sympy)
+    r_, M_, L_, E_, lam = sp.symbols("r M Lz E Lambda", positive=True)
+    fmet = 1 - 2 * M_ / r_ - lam * r_ ** 2 / 3
+    Om2_exact = sp.simplify(sp.diff(fmet, r_) / (2 * r_))          # coordinate angular velocity^2
+    okb2a = sp.simplify(Om2_exact - (M_ / r_ ** 3 - lam / 3)) == 0
+    # radial effective potential V(r) = f(1 + L^2/r^2); circular orbit: V'=0 -> L^2(r)
+    V = fmet * (1 + L_ ** 2 / r_ ** 2)
+    L2 = sp.solve(sp.Eq(sp.diff(V, r_), 0), L_ ** 2)[0]
+    E2 = sp.simplify(V.subs(L_ ** 2, L2))
+    # coordinate-time radial epicyclic: kappa^2 = (V''/2) * (f/E)^2 evaluated on the circle
+    Vpp = sp.simplify(sp.diff(V, r_, 2).subs(L_ ** 2, L2))
+    kap2 = sp.simplify(Vpp / 2 * fmet ** 2 / E2)
+    kap2_series = sp.series(kap2, M_, 0, 2).removeO()              # exact in Lambda, first order in M
+    target = M_ / r_ ** 3 - sp.Rational(4, 3) * lam + 5 * lam * M_ / r_
+    okb2b = sp.simplify(sp.expand(kap2_series - target)) == 0
+    # magnitudes of the neglected relative correction ~ v^2/c^2
+    v2c2_gal = (300e3 / 2.99792458e8) ** 2
+    v2c2_bin = (1.0e3 / 2.99792458e8) ** 2
+    results.append(rep("GB-2", okb2a and okb2b and v2c2_gal < 1.1e-6,
+                       "Omega^2 = M/r^3 - Lambda/3 EXACT: %s; kappa_r^2 to O(M) = M/r^3 - (4/3)Lambda "
+                       "+ 5 Lambda M/r: %s (referee's term CONFIRMED); neglected relative order "
+                       "v^2/c^2 = %.1e (300 km/s) / %.1e (1 km/s) -> paper's 'below 1e-6' holds"
+                       % (okb2a, okb2b, v2c2_gal, v2c2_bin)))
+
+    # ---------------- GB-3: m5 — superseded vs corrected radiative-carrier U values
+    with open(os.path.join(ROOT, "data", "stage10a_dprov.txt"), encoding="utf-8", errors="replace") as f:
+        t10a = f.read()
+    with open(os.path.join(ROOT, "data", "stage10a_addendum.txt"), encoding="utf-8", errors="replace") as f:
+        t10aa = f.read()
+    old_in_dprov = any(v in t10a for v in ("4.810e-45", "4.81e-45", "8.197e-35"))
+    new_in_add = any(v in t10aa for v in ("7.200e-45", "7.2e-45")) and any(v in t10aa for v in ("1.227e-34",))
+    orders_new = (-math.log10(7.2e-45), -math.log10(1.227e-34))
+    orders_old = (-math.log10(4.81e-45), -math.log10(8.197e-35))
+    robust = all(33.5 < o < 44.6 for o in orders_new + orders_old)
+    results.append(rep("GB-3", old_in_dprov and new_in_add and robust,
+                       "dprov carries superseded tokens: %s; addendum carries corrected 7.2e-45/1.227e-34: %s; "
+                       "orders new (%.1f, %.1f) / old (%.1f, %.1f) -> '34 to 44 orders' robust to both "
+                       "(m5 CONFIRMED; App B row annotated)" % (old_in_dprov, new_in_add,
+                                                                orders_new[0], orders_new[1],
+                                                                orders_old[0], orders_old[1])))
+
+    # ---------------- GB-4: his fresh arithmetic — Fermi optimum, r-hat containment, shortfall squares
+    from scipy.optimize import brentq
+    xstar = brentq(lambda x: (x - 1) - math.exp(-x), 0.5, 3.0)
+    z_half = (0.50 - 0.3365) / 0.1869
+    sq = (6.67 ** 2, 9.18 ** 2)
+    okb4 = abs(xstar - 1.2784645) < 1e-6 and 0.85 < z_half < 0.90 and 44.0 < sq[0] < 45.0 and 84.0 < sq[1] < 84.6
+    results.append(rep("GB-4", okb4,
+                       "Fermi x* (x-1 = e^-x) = %.7f (his 1.2784645); r-hat contains 1/2 at %.2f sigma "
+                       "(his 0.87, paper '0.9'); FD-shortfall squares %.1f / %.1f (paper '45 to 84')"
+                       % (xstar, z_half, sq[0], sq[1])))
+
+    # ---------------- GB-5: m4 — long-sentence and punctuation census (pre/post-fix state of the file)
+    with open(PAPER, encoding="utf-8") as f:
+        paper2 = f.read()
+    body2 = re.sub(r"\|[^\n]*", "", paper2)
+    body2 = "\n".join(l for l in body2.splitlines() if not l.strip().startswith("!["))
+    sents2 = re.split(r"(?<=[.!?])\s+", body2)
+    long_sents = [len(s.split()) for s in sents2 if len(s.split()) >= 70]
+    colons = body2.count(": ")
+    semis = body2.count("; ")
+    results.append(rep("GB-5", len(long_sents) == 0,
+                       "sentences >= 70 words after the m4 splits: %d %s; mid-sentence colons %d, "
+                       "semicolons %d (referee counted 71/51 pre-fix)" % (len(long_sents), long_sents, colons, semis)))
+
     # ---------------- summary
     n_pass = sum(1 for r in results if r)
-    verdict = "GA ALL PASS (%d/%d) — draft 0.4 numbers verified; blind half closed." % (n_pass, len(results)) \
-        if n_pass == len(results) else "GA INCOMPLETE: %d/%d — fix before the round." % (n_pass, len(results))
+    verdict = "ALL PASS (%d/%d) — GA (blind, pre-report) + GB (post-report) both halves closed." % (n_pass, len(results)) \
+        if n_pass == len(results) else "INCOMPLETE: %d/%d — fix before adopting." % (n_pass, len(results))
     print(verdict)
     LINES.append(verdict)
 

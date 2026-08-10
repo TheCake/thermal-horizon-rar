@@ -822,6 +822,39 @@ doors (the Hartree treatment; the level-crossing DR4 instrument —
 derive its kill condition first) · DR4 readiness. Ninth close in two
 days — FRESH SESSION before the next arc.**
 
+**P3 DRAFT 0.4→0.5 + ROUND 32 (2026-08-10, tenth close — the flagged paper
+lane on the author's "free hand, go for what is needed"): THE MECHANISM
+PAPER IS CURRENT THROUGH 10L/R31.** Draft 0.4 absorbed into §6: the
+threshold family κ = 2/(n+1) + the E(2) = E(1) degeneracy at κ = 1 (σ = ½
+Hamiltonian-forced), the susceptibility pole (exact residue 4e^(−d²)/ω,
+0.003%), the identity web + K-invariance, the occupation-closure negatives
+(ceiling 0.015–0.14 = 6.6–62× under the lock; cap 1.93 vs demand 19;
+occupation BARE-PINNED; explicit no-bound guard), the convention pin
+(κ_r = κ_b(1−κ_b/2), max exactly ½ ⇒ two-meter tension PHYSICAL); into §9:
+the void/dense instrument grade + the z≈1 lock comparison (Ciocan+26 ref
+added: 0.7σ/0.1σ MOND/per-gal, 2.3σ DM, slope 3.4σ face-value); and KILLED
+the stale banned §11 sentence ("measured near one" — had survived
+0.2/0.3/R28). ROUND 32 (fresh referee; REVIEW-ROUND32-OPUS.md uncommitted)
+= **MINOR REVISION, ZERO computed errors across 49 re-derived quantities.
+M1 = his real catch: "the split fit at κ = 1.50" mislabeled the FORCED
+SINGLE-κ fit's numbers (archive: F1 single 1.503/boot 1.32–1.67; F4 split
+= two values) — fixed as "forced single-κ fit"; his add-the-split-pair
+suggestion DECLINED per R25-C1 (retired decomposition), reason now stated
+in-text.** m3 epicyclic correction CONFIRMED by our own sympy before
+adoption (exact O(M): +5ΛGM/r, rel v²/c² ≤ 1e-6; §3.2 retitled
+stable-circular, Ω exact / κ_r leading-order); m5 row annotated (dprov
+archive = superseded shortfalls, addendum = corrected); m1/m2/m4/m6
+register fixes (abstract 249w verbal-form, "three related constants", zero
+≥70-word sentences, unclipped clarifier); his sharpest question answered
+IN §8 ("κ is a fitted constant... privileged by the spectral identities,
+not by measurement"). calcs/round32_addendum.py GA (blind, pre-committed
+95dc64f) + GB = 15/15 ALL PASS. NO credence moves (anomaly-real 53 / mech
+8); NO ledger rows (paper round). **NEXT FORK (author's, unchanged):
+circulation TODO 27–31 (outreach parked; repo visibility flip pending) ·
+the two O5 doors (Hartree/coherent-state; the κ = 1 level-crossing kill
+condition = PREREQUISITE for its PREDICTIONS row) · DR4 readiness. Tenth
+close in three days — FRESH SESSION before the next arc.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

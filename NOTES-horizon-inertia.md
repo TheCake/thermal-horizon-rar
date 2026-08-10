@@ -15508,6 +15508,90 @@ so badly that the data itself proves the levels can't be re-filling
 on their own spacing. Dead ends that teach you why are the second
 best kind of result.*
 
+### P3 DRAFT 0.4 → ROUND 32 → DRAFT 0.5 (2026-08-10): the mechanism paper brought current + its second referee round — MINOR REVISION, zero computed errors, all findings adopted
+
+The author's blanket go ("free hand, go for what is needed") bought the
+flagged paper lane: papers/paper3_mechanism.md was five closes stale (draft
+0.3 predates 10H/10I/10J/10K/10L). DRAFT 0.4 (pre-committed 95dc64f with the
+blind verification half) absorbed: §6 the threshold family κ = 2/(n+1) with
+E(2) = E(1) at κ = 1 (σ = ½ Hamiltonian-forced), the susceptibility pole
+with exact residue 4e^(−d²)/ω (0.003%), the identity web + the collective
+K-invariance statement, the occupation-self-consistency NEGATIVE closure
+(existence ceiling 0.015–0.14 = 6.6–62× under the lock; cap 1.93 vs demand
+19; occupation bare-pinned; explicit no-bound guard with the
+truncation-dependence stated), and the convention pin (κ_r = κ_b(1−κ_b/2),
+max exactly ½ ⇒ the two-meter tension is physical, not notational); §9 the
+void/dense-environment instrument grade + the z ≈ 1 lock comparison (Ciocan
+et al. 2026 added to references: intercept ON their MOND/per-galaxy rows at
+0.7σ/0.1σ, 2.3σ from the DM row; slope 3.4σ face-value, form-coupling bias
+unarbitratable from the release); and the CONCLUSIONS' stale "measured near
+one" — a banned-form sentence that had survived drafts 0.2/0.3 AND ROUND 28
+— replaced with the two-meter form. Blind half of calcs/round32_addendum.py
+(GA-1..9: sympy thresholds/degeneracy, an independent κ_max iteration route,
+an independent Gibbs ceiling ν < 3, the κ_r algebra, the β mappings, all
+z ≈ 1 σ-arithmetic, hygiene gates incl. banned-string and codename scans)
+run ALL PASS and committed PRE-report = the 87a4676/884fbc1 protocol's third
+execution.
+
+ROUND 32 (fresh journal-referee session; report REVIEW-ROUND32-OPUS.md,
+never commit): **MINOR REVISION; zero computed errors across 49 re-derived
+quantities** (his own scripts: the SdS bound, the PT ratio, the thresholds,
+the convention map, the postdictions, the Fermi optimum re-derived from
+scratch; the occupation fold and every σ-figure reproduced; all 40 repro
+rows + 4 figures verified on disk). All findings verified in the GB half
+BEFORE adoption (GB-1..5 ALL CONFIRMED):
+- **M1 (real, and OLDER than this draft): "the split fit at κ = 1.50"
+  mislabeled the FORCED SINGLE-κ fit's numbers as the split fit's** — the
+  archive is line-exact (F1 single κ = 1.503, boot 1.32–1.67; F4 split =
+  two values). Fixed to "the forced single-κ fit at 1.50"; his optional
+  suggestion to print the split pair was DECLINED per the R25-C1
+  retired-decomposition discipline (running direction treatment-unstable),
+  and the paper now states in-text exactly why no split values are quoted.
+- m3 (his math, CONFIRMED by our own from-scratch sympy in GB-2): the SdS
+  radial epicyclic κ_r² = GM/r³ − (4/3)Λc² is the leading form — the exact
+  O(M) series carries +5ΛGM/r (relative v²/c² ≤ 10⁻⁶ for every measured
+  system). §3.2 retitled "Stable circular orbits...", the Ω_orb form
+  labeled exact, the bound labeled same-order.
+- m5 CONFIRMED (the first-listed radiative-carrier archive carries the
+  superseded shortfalls; the App B row now notes the addendum carries the
+  corrected values; "34–44 orders" robust to both sets). m1/m2/m4/m6
+  register fixes executed (abstract rebuilt verbal at 249w; "three related
+  constants"; the five ≥70-word sentences split to ZERO; the
+  unclipped-estimators clarifier).
+- His sharpest question (in what sense is κ = 1 privileged?) answered IN
+  the paper: §8 now states plainly that absent the derivation κ is a
+  fitted constant of the framework, privileged by the spectral identities,
+  not by measurement.
+DRAFT 0.5 = all adoptions; the full addendum (GA regression + GB) 15/15
+PASS (abstract 249w, sentence mean 23.8, zero ≥70w sentences, zero banned
+strings/codenames).
+
+Credence: NO moves (paper round; anomaly-real 53 / mech-conditional 8). No
+ledger rows (no new measurements; the ROUND 28 precedent). P3 stays "Not
+for circulation" pending the author's queue.
+
+**Plain verdict: SUCCESS** — the paper is current through the tenth close
+and has now survived two independent referee rounds with zero arithmetic
+errors; the one genuinely misleading sentence it carried (a mislabel older
+than both rounds) is fixed; and the most important single move was
+DECLINING half of the referee's own suggestion to stay inside the
+program's retired-decomposition rule.
+
+*ELI12: Our third paper (the "how would it work" paper) was missing the
+last two weeks of results, so we wrote them in: the special value of the
+knob is exactly where the energy ladder's second step becomes free, the
+self-adjusting-ladder idea died honestly, and two rulers really do
+disagree about the knob — that's physics, not units. Then a fresh robot
+referee redid every number, 49 of them, and found zero math errors. But he
+caught one sentence wearing the wrong name tag: we had called the "one
+knob for everything" answer (which the data reject) by the name of the
+"two knobs" answer (which the data prefer). We fixed the tag, said no to
+the one part of his advice our own rules forbid, split some marathon
+sentences, and answered his hardest question honestly right in the paper:
+no, we have not derived the knob — it is still fitted.*
+
+---
+
 ## Honest credences (2026-07-21, end of Stage 2)
 
 Wide-binary velocity excess is real physics (not systematics): ~65% (up from agnostic; our

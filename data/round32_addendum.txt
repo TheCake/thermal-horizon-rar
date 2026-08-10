@@ -8,5 +8,10 @@ ROUND 32 addendum — blind half (pre-report)
 [GA-6] PASS — cH0/2pi(H0=67.74) = 1.0475e-10 (paper: 1.05e-10); sigmas: MOND-row 0.67, per-galaxy 0.12, DM-row 2.30, slope 3.45 (paper: 0.7 / 0.1 / 2.3 / 3.4)
 [GA-7] PASS — archived (1-kappa)chi(1) = 2.927284 vs exact limit 2.927377 -> rel = 0.0032% (paper: verified at the 0.003% level)
 [GA-8] PASS — all 16 new reproducibility-row files exist (missing: none)
-[GA-9] PASS — abstract 249 words (bar 250); banned hits none; codename hits none; em-dashes 1 total; sentence mean 24.3 words
-GA ALL PASS (10/10) — draft 0.4 numbers verified; blind half closed.
+[GA-9] PASS — abstract 249 words (bar 250); banned hits none; codename hits none; em-dashes 1 total; sentence mean 23.8 words
+[GB-1] PASS — archive: 1.503 present True; boot [1.32,1.67] True; rejections ['21.74', '14.37']; split pair ['1.317', '1.036']; single-kappa line: 'F1 (kappa, a0 free): kappa = 1.503' -> M1 CONFIRMED (1.50 = the forced single-kappa fit; paper adopts the label fix ONLY — split values stay unprinted per the retired-decomposition discipline)
+[GB-2] PASS — Omega^2 = M/r^3 - Lambda/3 EXACT: True; kappa_r^2 to O(M) = M/r^3 - (4/3)Lambda + 5 Lambda M/r: True (referee's term CONFIRMED); neglected relative order v^2/c^2 = 1.0e-06 (300 km/s) / 1.1e-11 (1 km/s) -> paper's 'below 1e-6' holds
+[GB-3] PASS — dprov carries superseded tokens: True; addendum carries corrected 7.2e-45/1.227e-34: True; orders new (44.1, 33.9) / old (44.3, 34.1) -> '34 to 44 orders' robust to both (m5 CONFIRMED; App B row annotated)
+[GB-4] PASS — Fermi x* (x-1 = e^-x) = 1.2784645 (his 1.2784645); r-hat contains 1/2 at 0.87 sigma (his 0.87, paper '0.9'); FD-shortfall squares 44.5 / 84.3 (paper '45 to 84')
+[GB-5] PASS — sentences >= 70 words after the m4 splits: 0 []; mid-sentence colons 81, semicolons 60 (referee counted 71/51 pre-fix)
+ALL PASS (15/15) — GA (blind, pre-report) + GB (post-report) both halves closed.
