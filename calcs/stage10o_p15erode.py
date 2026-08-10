@@ -708,6 +708,14 @@ RESULTS['consistency_map132'] = map_interp(1.0 / 3.0, 1.32)
 # Letter
 # ----------------------------------------------------------------------
 print("=" * 72)
+# AMENDMENT A1 (2026-08-11, logged pre-quote, before any run output was
+# read): the original letter block routed a 0b/0c/0d/0f core-gate failure
+# to O-DEGENERATE, whose grammar means "gates PASS, wedge empty" -- a
+# trap-#11 wiring gap. A1: ANY post-protocol core-gate failure other than
+# the 0a/1 feasibility pair and the 3 convergence gate -> the instrument
+# fails at O-FEASIBILITY-LIMITED grade with the failing gate named. The
+# stage is seeded/deterministic; when all core gates pass, A1 and the
+# original wiring produce the identical letter.
 core = ['G10O-0a', 'G10O-0b', 'G10O-0c', 'G10O-0d', 'G10O-0f',
         'G10O-1', 'G10O-2', 'G10O-3']
 core_ok = all(GATES[g][0] for g in core)
@@ -716,7 +724,10 @@ if not GATES['G10O-0a'][0] or not GATES['G10O-1'][0]:
     LETTER = 'O-FEASIBILITY-LIMITED'
 elif not GATES['G10O-3'][0]:
     LETTER = 'O-UNCONVERGED'
-elif core_ok and wedge_nonempty:
+elif not core_ok:
+    failed = [g for g in core if not GATES[g][0]]
+    LETTER = f'O-FEASIBILITY-LIMITED (gate {",".join(failed)})'
+elif wedge_nonempty:
     LETTER = 'O-WEDGE' + ('' if GATES['G10O-4'][0] else ' (CANDIDATE-only)')
 else:
     LETTER = 'O-DEGENERATE'
