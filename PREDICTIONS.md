@@ -575,6 +575,22 @@ formation-origin literature is corroborated and the bound stands.
 (Cheapest stage in the set: the erosion integral is in-house
 arithmetic once the two Hamilton papers are primary-read.)
 
+*Annotation 2026-08-11 (same day, post-registration bookkeeping, no
+status change): the primary-read prerequisite is DONE (NOTES lit-note
+2026-08-11). Attribution corrected: the preserve-not-create theorem is
+Hamilton 2022 ("Galactic tides can preserve, but not create, a
+superthermal eccentricity distribution"); the α → (1+α)/2 map is Modak
+& Hamilton 2023 eq. 33 (near-unity regime; exact form their eq. 26).
+UPGRADE to leg (i): M&H §2 applies to "any ensemble of Keplerian
+orbits evolving in an arbitrary (smooth, weak, possibly
+time-dependent) tidal field," proven via Liouville + coarse-graining —
+the frozen-cloud quadrupole is therefore theorem-covered at primary
+grade, and the no-pump prediction no longer rests on this program's
+own extension argument. Timescale verified: phase-mixing ≈ 4 Gyr ×
+(a/10⁴ AU)^(−3/2) ⇒ the erosion window coincides with the measured
+superthermal regime (≳10 kAU); neither paper addresses the observed
+α(s) run — open, as registered.*
+
 ### P16 — the Bernoulli lock (the one-loop ladder)
 Under the one-loop/heat-kernel reading (PAPER4-SEED.md B.4), the
 deep-expansion ladder is theorem-fixed at EVERY order — the

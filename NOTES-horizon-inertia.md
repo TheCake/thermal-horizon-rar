@@ -15815,3 +15815,44 @@ microphysics specifically: ~15%. Superfluid-DM hybrid: ~20%. The program remains
 Anomaly pattern is real physics needing explanation: ~90%. Specifically horizon-inertia:
 ~10–15%. Condensate/hybrid DM with emergent a₀: ~25%. Program underpriced relative to its
 falsifiability density: ~certain.
+
+## 2026-08-11 lit-note: the anti-pump theorem primary-read (P15 prerequisite, no stage)
+
+Hamilton 2022 (arXiv:2202.01307, ApJL 929 L29) + Modak & Hamilton 2023
+(arXiv:2303.15531, MNRAS) read via ar5iv against the P15 registration
+(PREDICTIONS.md section E, commit 61767d4). Four load-bearing facts
+verified at primary grade:
+
+1. THE THEOREM (verbatim, Hamilton 22): "Galactic tides can preserve,
+   but not create, a superthermal eccentricity distribution"; "the only
+   way to produce a superthermal DF under phase mixing is for the
+   initial DF itself be superthermal." M&H 23 sec 2.6 proves the
+   constraint set via Liouville + coarse-graining, "at all times,
+   regardless of phase-mixing assumptions."
+2. THE MAP: alpha_f ~ (1+alpha_i)/2 is Modak & Hamilton 2023 eq. 33
+   (valid near unity; exact phase-mixed form = their eq. 26 contour
+   average). Superthermal erodes toward thermal, never past it. The
+   scout attribution to Hamilton 22 was imprecise -- H22 carries the
+   preserve-not-create statement, M&H 23 carries the map.
+3. GENERALITY (the P15 upgrade): M&H 23 sec 2 applies "to any ensemble
+   of Keplerian orbits evolving in an arbitrary (smooth, weak, possibly
+   time-dependent) tidal field" => the frozen ambient-cloud quadrupole
+   of P15 is THEOREM-COVERED at primary grade -- the no-pump prediction
+   leg no longer rests on our own extension argument.
+4. TIMESCALE: phase-mixing ~ 4 Gyr x (a/10^4 AU)^(-3/2) (H22 eq. 5
+   ~1 Gyr secular x ~5 periods, M&H quote ~4 Gyr at 10 kAU); a >~ 10^4
+   AU mixed within the Galaxy age, a ~ 10^3 AU not even one period =>
+   the erosion window coincides with the measured superthermal regime
+   (Hwang 1-31.6 kAU, steepening outward). Neither paper addresses the
+   observed alpha(s) run (open, as registered).
+
+Stage-design consequence (booked for the P15-stage pre-reg): the
+erosion bound compares the cloud tide's secular rate to the Galactic
+tide's via t_sec proportional to 1/(tide strength): the survival of
+alpha ~ 1.3 at ~20 kAU after the Galactic (1+alpha)/2 halving bounds
+any ADDITIONAL independent eroder to t_sec,cloud >~ age at that s =>
+upper bound on the cloud's effective tidal curvature => e_a x coupling.
+Needs at stage time: Hwang alpha(s) with errors (primary re-read of
+their tables), the M&H eq. 26 machinery reproduced as a gate, and the
+double-halving statistics bar set blind. No data touched today; no
+credence moves (53/8).
