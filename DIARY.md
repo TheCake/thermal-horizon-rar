@@ -9,6 +9,63 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-10 (conversation scout round, no stage) — external landscape + people map (SCOUT-GRADE: primary-read before ANY use; trap #18 — grep NOTES/PREDICTIONS before acting on any "discovery" here)
+
+Two Opus web scouts run on the author's ask ("who else should know this"),
+research-only, nobody contacted, nothing of ours carried. Booked so the
+next instance doesn't lose the dates. NO ledger rows, NO credence moves.
+
+- **DR4 IS DATED: 2026-12-02, official ESA announcement, single release.**
+  66-month baseline; epoch (per-transit) astrometry for the full primary
+  catalogue (~129.6e9 measurements); non-single-star orbital solutions.
+  The referee arrives in under four months. Field consensus (per scout):
+  everyone agrees DR4 decides the wide-binary fight.
+- NEW LIT, none primary-read yet: **Saad & Ting 2026 (arXiv:2603.11015)**
+  — Chae's own 36 pairs swing gamma 1.12↔1.56 purely on the
+  projected-separation→semi-major-axis modeling = independent convergence
+  with our 3A realization + width-channel finding (check whether Ting =
+  Hwang–Ting–Zakamska's Ting before citing). **Chae & Yoon 2026
+  (2607.14450)** — claims gamma ≈ 1.3–1.6 robust to quality control and
+  multiplicity modeling; that amplitude sits at/above our clean-strata
+  α ≥ 0.5 exclusion — a genuine disagreement DR4 arbitrates. **JWST
+  MSA-3D (2606.27853)** — 30 NIRSpec rotation curves z 0.5–1.7 = fresh
+  z-lock input beyond MUSE-DARK. Banik C3PO differential-RV test
+  (2512.19652). McGaugh "Pulsar RAR" (2605.06659). **Milgrom is ACTIVE
+  on modified inertia** (2503.07106; 2510.16520; bimetric PRD 03/2026) —
+  the 4L/7G/7H arc speaks his current language. Lelli **BIG-SPARC ~4,000
+  galaxies** (2411.13329) = the future lock/tail instrument at 25× SPARC.
+- PEOPLE: **Banik is now a Portsmouth postdoc WITH Desmond** — one
+  address holds the skeptic bar + the two-lane bridge (Desmond is also a
+  MUSE-DARK III co-author; TODO 27b unchanged). El-Badry: MacArthur 2025,
+  Caltech, triples catalog. Penoyre: Cambridge IoA, 11/2025 RUWE
+  detectability preprint. **The C&T thread is ORPHANED**: Tuveri →
+  physics-education research; Cadoni → cosmologically-coupled BHs; no
+  thermal-horizon-RAR follow-up since ~2020 — we are the active heirs;
+  "bring the theory audience to it." Verlinde (BH information) and
+  Jacobson (Hořava) pivoted away. Khoury's superfluid DM = the active
+  rival quantum-flavored mechanism (Physics Reports review 2026).
+- BENCH (the 7E note has real addressees): **Kirchmair/Innsbruck** "Hot
+  Schrödinger Cat States" (Sci Adv 2025, 2406.03389) = transmon
+  dispersively controlling a resonator in CALIBRATED THERMAL STATES —
+  closest single-experiment match to 7E; **Pekola/Aalto** (calibrated
+  thermal microwave photons, qubit thermometry); **Gasparinetti/Chalmers**
+  (thermal reservoirs, quantum thermodynamics). Devoret → UCSB/Google,
+  Nobel 2025; Schoelkopf still Yale; Murch → Berkeley 2026.
+- SURVEYS for the void/env lanes: WALLABY pilot DR2 public (kin models
+  released; ~800 internal, ~10,000 at completion; environment = core
+  science; full-survey tranche date TBD). CAVITY DR1 = 100 void-galaxy
+  cubes public (07/2024), full ~300 + high-level (kinematic) products
+  stated "2025/2026". ELT: first light 03/2029, science 12/2030 (HARMONI
+  2030–31, MOSAIC mid-2030s). UOP = 2040s ⇒ Cassini stays the solar
+  bound for a decade+.
+- STRATEGIC READ (recorded, not a verdict): the field's three-way fork
+  (Chae boost / Cookson-Banik null / Saad-Ting modeling-dominated) is
+  exactly the absorber structure P1 quantifies — P1's reconciliation is
+  the missing document in that fight, and its value peaks if
+  arXiv-stamped BEFORE 2026-12-02. Outreach stays PARKED (author's
+  standing "no email sending for now"); when TODO 27's list is next
+  touched, add Saad & Ting.
+
 ## 2026-08-10 (eleventh close) — 10M + 10N + ROUND 33: both O5 doors executed to honest ends, the P10 row registered downgraded, zero credence moves
 
 The author's "next, the doors" bought the concurrent pair (pre-reg
