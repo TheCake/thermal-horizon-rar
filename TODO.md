@@ -1447,16 +1447,18 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
 32. **The seed-row stage queue** (each stage: pre-reg bars BEFORE
     execution; scout-grade IDs primary-read before gate use; fresh
     session recommended for the first one):
-    (a) **P15-stage (cheapest, the crown): the eccentricity erosion
-    bound.** Prereq: primary-read Hamilton arXiv:2202.01307 +
-    Modak & Hamilton 2303.15531 (the anti-pump theorem's exact
-    statement and scope — does it cover frozen random quadrupoles;
-    mixing timescale vs tide strength). Then: frozen-cloud random
-    l=2 tide (amplitude e_a, δg/g_bin ∝ s²) erosion integral over
-    ~5 Gyr vs the measured surviving α(s) ⇒ upper bound on
-    e_a × coupling (feeds P10/O5-AMPLITUDE); plus the DR4
-    frozen-vs-pumped leg via P7 machinery. In-house arithmetic +
-    public Hwang law; no new data fetch.
+    (a) ~~**P15-stage (cheapest, the crown): the eccentricity erosion
+    bound.**~~ **EXECUTED 2026-08-11 = stage 10O P15-ERODE** (pre-reg
+    6db1b29 + A1–A6 pre-quote; O-WEDGE gates 10/11): refreshing cloud
+    tides dead at e_a·κ_c ≥ 1e-3..1e-2 for τ_c ≤ 1..0.1 Gyr; frozen
+    corner α₀-degenerate at any amplitude ⇒ P10-amplitude clouds need
+    τ_c ≳ 2 Gyr (the e-channel votes frozen); α_floor −0.89/−0.90;
+    Galactic-halving consistency +0.10σ; step statistic POWER-LIMITED
+    at Hwang-table grade. Ledger bin-10o-erosionwedge; P15/P10
+    annotated. The DR4 frozen-vs-pumped leg (P7 machinery) remains
+    DR4-era. (Prereq reads were done 2026-08-11 pre-registration;
+    the registered δg/g_bin ∝ s² parenthetical corrected to s³
+    in-stage, disclosed pre-run.)
     (b) **P13-stage: the cluster crowd shape.** Fetch CLASH cluster
     RAR (Tian+2020 2001.08340 tables; X-COP; 2402.12016); build the
     6Y negative-binomial occupation family at fixed a₀ = cH₀/2π;

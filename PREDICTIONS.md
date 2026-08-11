@@ -457,6 +457,17 @@ pair channel is a κ = 1-peaked Lorentzian separable from the smooth background;
 row's fate turns on ONE horizon-side number, the ambient fluctuation amplitude e_a
 (10F ≤ ~1 vs 10G q_FD = 1.43, unreconciled — the named successor O5-AMPLITUDE).*
 
+*Annotation (2026-08-11, stage 10O, no status change): the
+eccentricity-erosion wedge (P15 leg ii) adds a TIMESCALE constraint to
+this row's amplitude axis: e_a·κ_c ≥ 1e-3 with cloud refresh time
+τ_c ≤ 1 Gyr is excluded by wide-binary superthermality survival, so the
+P10-relevant amplitudes (0.086–1.43 at κ_c = 1) survive only as
+FROZEN-grade slow fluctuations (τ_c ≳ 2 Gyr). If the DR4 instrument
+finds the ambient-tide-correlated excess at e_a ~ 1, the eccentricity
+data simultaneously require that amplitude to be frozen — a
+fast-fluctuating e_a ~ 1 world is already dead. (κ_c = the unpinned
+O5-NORM conversion; the wedge bounds the product.)*
+
 ---
 
 ## D. What we do NOT claim as unique
@@ -590,6 +601,29 @@ own extension argument. Timescale verified: phase-mixing ≈ 4 Gyr ×
 (a/10⁴ AU)^(−3/2) ⇒ the erosion window coincides with the measured
 superthermal regime (≳10 kAU); neither paper addresses the observed
 α(s) run — open, as registered.*
+
+*Annotation 2 (2026-08-11, stage 10O = the leg-(ii) instrument
+EXECUTED; no status change): pre-reg 6db1b29 + amendments A1–A6 (each
+pre-quote, runs preserved), verdict O-WEDGE, gates 10/11 (the step
+power gate's pre-registered POWER-LIMITED sub-verdict is itself the
+honest data-grade outcome). The survival bound exists exactly where
+the registration's sign analysis pointed — against REFRESHING clouds:
+e_a·κ_c ≥ 1.0e-2 / 3.2e-3 / 1.0e-3 excluded for τ_c ≤ 0.10 / 0.29 /
+1.10 Gyr (2σ, Hwang bins 2–8, every robustness row identical), while
+the strictly FROZEN corner (τ_c ~ age) is α₀-degenerate at ANY
+amplitude (the once-only lemma: phase mixing in a fixed field is
+idempotent). Consequence: a cloud at P10-relevant amplitude must be
+frozen at τ_c ≳ 2 Gyr — an independent eccentricity-channel vote for
+the frozen reading. Dividends: measured α_floor ≈ −0.89/−0.90 (one
+mixing from circular stays deeply subthermal — preserve-not-create
+retrodicted at the extreme end); the Galactic-halving consistency
+read map(1.32) = 1.155 vs the widest Hwang bin 1.17 ± 0.15 (+0.10σ).
+The in-window step statistic is POWER-LIMITED at Hwang-table grade
+(35/200 recovery of a −0.15 step) — the band exclusion is not
+quotable from public tables. Leg (i) untouched (non-test confirmed
+mechanically: max α + 2σ = 1.50 < the 2.5 ceiling; kill (a) stays
+DR4-era). Ledger bin-10o-erosionwedge; κ_c = the unpinned O5-NORM
+conversion (all bounds on the product).*
 
 ### P16 — the Bernoulli lock (the one-loop ladder)
 Under the one-loop/heat-kernel reading (PAPER4-SEED.md B.4), the

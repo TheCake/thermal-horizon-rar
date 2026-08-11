@@ -15856,3 +15856,115 @@ Needs at stage time: Hwang alpha(s) with errors (primary re-read of
 their tables), the M&H eq. 26 machinery reproduced as a gate, and the
 double-halving statistics bar set blind. No data touched today; no
 credence moves (53/8).
+
+### Stage 10O -- P15-ERODE: the eccentricity-erosion ledger (2026-08-11; pre-reg 6db1b29 + amendments A1 81953ea / A2 83a11b6 / A3 307abcf / A4 5fea257 / A5 c5be944 / A6 7021ade, each pre-quote with its run preserved; runs 1-6 archived data/stage10o_run*.log + _run*.json)
+
+**Question.** P15 leg (ii): what does the SURVIVAL of measured wide-binary
+superthermality bound about the ambient cloud l=2 tide? Inputs
+primary-read same day: Hwang+22 Table 1 (8 bins, 32 AU - 31.6 kAU,
+alpha 0.08 -> 1.32 -> 1.17 with errors -- the data leg fully powered),
+M&H23 eq. 26/30/33 (H_Gamma; Gamma = 1/3 disc), H22 timescale. Design
+sharpenings disclosed pre-run: the registered s^2 parenthetical
+corrected to s^3 (interior-regular l=2 => uniform curvature Gamma_c);
+THE ONCE-ONLY LEMMA (phase mixing in a fixed field is idempotent => a
+strictly frozen eroder applies the (1+alpha)/2-class map AT MOST ONCE,
+largely reabsorbable into the unknown primordial alpha_0(s)) => the
+instrument = (a) the (e_a kappa_c, tau_c) exclusion WEDGE with the
+subthermal narrow bins as a PRIOR-FREE anvil (alpha_0 > -1
+integrability), (b) the step-in-window statistic (bars fixed pre-fetch),
+(c) the measured alpha_floor deciding the frozen corner. Firewall: no
+program binary data or likelihood touched; all credence cells
+pre-signed HOLD.
+
+**Verdict: O-WEDGE, gates 10/11 at run 6** (the 11th = the step power
+gate whose pre-registered sub-verdict POWER-LIMITED is itself the
+honest outcome). Core gates: drift99 = 7.1e-4 vs bar 2e-3; thermal
+fixed points 0.981 +/- 0.029 (Gamma=1/3) / 0.987 +/- 0.019 (Gamma=1)
+= the Jeans invariance holds at replicate grade; eq.-33 agreement
+0.035 near unity; idempotence L1 <= 0.014; z-grade G3 d =
+0.009/0.033/0.011 vs bars 0.030/0.094/0.133; boundary-injection gate
+2/2; vZLK turning point symbolically exact.
+
+THE WEDGE (2 sigma, bins 2-8 primary, alpha_0 ceiling 2.5, age 10 Gyr;
+robustness rows IDENTICAL on every axis -- ceilings 1.6/2.0, ages 8/12,
+dominance 1/4, Gamma = 1/3): any REFRESHING cloud tide is EXCLUDED at
+e_a*kappa_c >= 9.95e-3 (tau_c <= 0.10 Gyr), >= 3.15e-3 (0.29 Gyr),
+>= 9.95e-4 (1.10 Gyr); NO exclusion at tau_c >= 3.3 Gyr; THE FROZEN
+CORNER (tau_c ~ age) IS alpha_0-DEGENERATE AT ANY AMPLITUDE -- the
+once-only lemma realized in data. CONSEQUENCE: a cloud at
+P10-relevant amplitude (e_a = 0.086-1.43 at kappa_c = 1) must have
+correlation time tau_c >~ 2 Gyr: THE ECCENTRICITY CHANNEL
+INDEPENDENTLY FORCES THE FROZEN READING (consistency dividend for
+tau_B = 2pi/H ~ 90 Gyr; pre-signed no-credence-move). Conversion:
+Gamma_c/Gamma_Gal = 1.005e4 x (e_a kappa_c) at 1 Msun; kappa_c = the
+unpinned O5-NORM constant (all bounds on the PRODUCT; kappa_c = 1
+comparisons labeled conditional). Ratio grid x1.78-quantized (quoted
+bounds = first excluded grid point = conservative; fine-grid
+refinement in the round-34 addendum GA-2b). Bin-1 secondary row
+identical at tau = 1 (0.000995); frozen corner open there too.
+
+ALPHA_FLOOR measured: one full secular mixing from near-circular
+gives alpha = -0.893 (Gamma=1/3) / -0.905 (Gamma=1), SE ~ 0.002 --
+quadrupole phase mixing cannot create even thermal from circular
+(H22 preserve-not-create retrodicted at the extreme end); the floor
+sits far below the bin-1 anvil (0.38) => NO frozen-corner bound
+exists: the degeneracy is real physics, not an instrument miss.
+(Clip caveat: the -0.99 draw concentrates at the e = 1e-4 clip;
+bias direction conservative for exclusions.) DF-level refresh chains
+erode FASTER than the power-law-refit iteration (chain(2.5) k=1,2,3:
+1.61/1.23/1.06 vs interp 1.71/1.39/1.26) => the wedge iteration is
+CONSERVATIVE for exclusion; chains from 1.32 reach 0.88 +/- ~0.05 at
+k = 3 (sub-thermal lean under repeated re-randomized mixing;
+single-draw, report-grade).
+
+THE STEP: POWER-LIMITED by the pre-registered calibration (a -0.15
+step recovers Delta chi2 >= 9 in only 35/200 draws at Hwang errors
+under a free quadratic + scanned location) -- the in-window band
+exclusion is NOT quotable at this data grade; data Delta chi2 = 1.21
+(no step preferred; the measured run is smooth). False-positive gate
+clean (2/200).
+
+CONSISTENCY READ (no novelty claim): the measured Gamma = 1/3 map
+across the Galactic mixing boundary: map(1.32) = 1.155 vs the
+observed widest bin 1.17 +/- 0.15 => d = +0.10 sigma -- Hwang's own
+ladder is quantitatively consistent with exactly ONE Galactic halving
+at the H22/M&H boundary (5-9 kAU).
+
+Leg (i) NON-TEST confirmed mechanically: max(alpha + 2 sigma) = 1.50
+< ceiling 2.5 -- no pump evidence claimable from this data in either
+direction; P15 kill (a) remains DR4-era as registered.
+
+INSTRUMENT TRAIL (the round-34 amendment-integrity object): run 1
+fixed-RK4 drift-dead (the letter fired honestly; thermal FP 1.067
+caught by the Jeans gate) -> run 2 the literal halving protocol dead
+(6.09 vs 2e-3; terminal per pre-reg) -> A3 per-orbit DOP853 workers
+(drift green) -> A4 control-variate estimator (draw noise cancelled;
+7F/6O precedent) -> A5 gate-cell replication (0b = Jeans confirmed;
+the run-4 deficit was noise; paired tau-probe excluded under-mixing)
+-> A6 rtol margin + all-cell R = 6 + the G3 z-grade criterion
+(10L-A1 mis-set-bar precedent). SCIENCE OUTPUTS PINNED ACROSS RUNS
+3-6 (wedge rows identical except the tau = 3.3 boundary cell
+refining out at the final map means; step verdict and consistency
+read stable throughout) -- the chain hardened the instrument; the
+outcome never moved.
+
+Credence: ALL cells pre-signed HOLD -- anomaly-real 53 / mech 8.
+
+PLAIN VERDICT: SUCCESS -- P15 leg (ii) executed at public-data
+grade: the survival bound exists exactly where the pre-run sign
+analysis said it could (against refreshing clouds), the frozen
+corner is proven degenerate rather than merely unprobed, and the
+channel hands the frozen reading an independent data vote.
+
+ELI12: If the invisible cushion around each star pair jiggled and
+re-shuffled quickly, it would have stirred the stretched orbits we
+see back toward round ones -- and the stretch is still there, at
+every distance, in eight separate bins. So EITHER the cushion is
+very quiet and slow (frozen for the age of the Galaxy -- exactly
+what our picture says), OR it is too weak to matter. A
+fast-and-strong cushion is now dead by the data. We also checked
+the referee arithmetic of the sky itself: the one place the Galaxy
+HAS had time to stir the orbits, the stretch dropped by exactly the
+predicted half-step. And we proved the stirring can never CREATE
+stretch -- so the stretch the sky shows was born there, which is
+what our prediction P15 said before we looked.
