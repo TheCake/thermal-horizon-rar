@@ -1449,10 +1449,13 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     session recommended for the first one):
     (a) ~~**P15-stage (cheapest, the crown): the eccentricity erosion
     bound.**~~ **EXECUTED 2026-08-11 = stage 10O P15-ERODE** (pre-reg
-    6db1b29 + A1–A6 pre-quote; O-WEDGE gates 10/11): refreshing cloud
+    6db1b29 + A1–A6 pre-quote; O-WEDGE gates 10/11 + ROUND 34 AFFIRMED
+    hole NO): refreshing cloud
     tides dead at e_a·κ_c ≥ 1e-3..1e-2 for τ_c ≤ 1..0.1 Gyr; frozen
-    corner α₀-degenerate at any amplitude ⇒ P10-amplitude clouds need
-    τ_c ≳ 2 Gyr (the e-channel votes frozen); α_floor −0.89/−0.90;
+    corner α₀-degenerate at any amplitude ⇒ P10-amplitude clouds, IF
+    present at O(1) coupling, need τ_c ≳ 2.5 Gyr (measured boundary
+    2.48; the e-channel's conditional vote for frozen — frozen-strong
+    vs weak/absent indistinguishable); α_floor −0.89/−0.90;
     Galactic-halving consistency +0.10σ; step statistic POWER-LIMITED
     at Hwang-table grade. Ledger bin-10o-erosionwedge; P15/P10
     annotated. The DR4 frozen-vs-pumped leg (P7 machinery) remains

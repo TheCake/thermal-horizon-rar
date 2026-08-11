@@ -9,6 +9,69 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-11 later (the 10O close — the P15-stage arc executed end-to-end on the compaction blanket go)
+
+The author compacted me and said "do whatever needed, cannot supervise
+for a few hours." I judged the queued P15-stage the right move (fresh
+context = the DIARY's fresh-session requirement satisfied) and ran the
+full arc solo: primary re-reads → pre-reg 6db1b29 → runs 1–6 with
+amendments A1–A6 (every one pre-quote, every run preserved) → verdict
+O-WEDGE booked → blind GA pre-committed 96f55df → ROUND 34 (fresh Opus
+referee) → hole NO, AFFIRMED, six conditions adopted → GB 5/6 exact.
+Commits 6db1b29..(this close), all pushed. Credence HOLD 53/8
+throughout (pre-signed).
+
+- **THE RESULT (R34 wording):** IF an ambient l=2 cloud exists at
+  P10 amplitude with O(1) coupling, wide-binary superthermality
+  survival forces it SLOW/FROZEN (τ_c ≳ 2.5 Gyr; boundary 2.48,
+  amplitude-saturated); fast-refreshing strong clouds are dead
+  (e_a·κ_c ≥ 1e-3..1e-2 at τ_c ≤ 1..0.1 Gyr); the frozen corner is
+  α₀-degenerate at ANY amplitude (once-only lemma) — frozen-strong
+  vs weak/absent indistinguishable = a consistency VOTE for frozen,
+  not a demonstration. Dividends: α_floor ≈ −0.90 (mixing cannot
+  create even thermal from circular); the Galactic-halving
+  consistency read (+0.10σ at the widest Hwang bin, α₀ = 1.32
+  bin-7-proxy labeled); step channel POWER-LIMITED at Hwang-table
+  grade (don't rebuild it on the same table).
+- **NEW TRAP #22 (cost me three runs):** never sign a gate bar
+  without measuring the estimator's BETWEEN-DRAW scatter —
+  within-ensemble agreement (half-windows, resolution rows) is NOT
+  it. The raw-MLE σ was (1+α)/√N ≈ 0.08; my 0b/G3 bars sat at
+  0.02/0.03 = coin-flip gates until A5 replication + the A6 z-grade
+  criterion made them ~3σ. Corollary: the control-variate estimator
+  (map = α_i + α̂_out − α̂_in on the SAME draw) kills the common
+  draw-noise and is the right default for map-type measurements.
+- **NEW TRAP #23 (the verifier is an instrument too):** my blind
+  GA-1 contour quadrature needed two fixes of its own — v1's double
+  1/|∇H| (the δ-band census already carries one factor; caught by
+  the blind protocol itself) and v2's residual corner bias at the
+  1/j² singularity (its wing values 2.022/−0.774 looked like a
+  stage discrepancy; R34's two independent methods + my aliasing
+  probe put the STAGE values right: 1.71/−0.905, four confirmations).
+  Never treat a home-built verification method's disagreement as a
+  stage error before auditing the verifier; the referee's
+  independent implementation is the arbiter of last resort.
+- Don't-redo: the wing cells are SETTLED (1.709/−0.905); the τ ≤ 1
+  Gyr exclusions are wing/Γ/ceiling/age/dominance-robust (pinned by
+  the map's fixed point 0.973); the τ = 3.3 row correctly refined
+  OUT at run 6 (against-interest flip, R34-audited clean); the
+  in-window step statistic is power-dead on Hwang Table 1.
+- **P13 scout (booked here, scout-grade → primary-read at stage
+  time):** Tian+20 (2001.08340) AND Tian+24 (2402.12016) release NO
+  machine-readable per-cluster profiles (both confirm g‡ ≈ 2.0e-9 ≈
+  17× galaxy a₀, slope ~0.51) — the P13-stage must route via the
+  underlying public products: X-COP lists 12 clusters with
+  per-cluster DATA pages (format unverified — trap #6 applies) +
+  Umetsu+16 CLASH lensing profiles as the other leg.
+- Next-instance note: TODO 32(a) is CLOSED. The author's standing
+  forks: P13-stage (data-route above) · circulation TODO 27–31
+  (P1/P2 arXiv before 2026-12-02 OUTRANKS; outreach parked; repo
+  visibility flip pending) · O5-AMPLITUDE (now doubly motivated: it
+  sets whether P10's e_a sits at 0.086 or 1.43, and the 10O wedge
+  already constrains its refresh time) · P3 round 3 · DR4
+  readiness. Session was heavy (6 stage runs + 2 probes + a review
+  round); compact before the next arc.
+
 ## 2026-08-11 (the guess round, no stage) — the substrate guess + its scout pair (SCOUT-GRADE: primary-read before ANY use; trap #18 applies to every ID)
 
 The author asked "what is behind it all — induce it, guess, do the

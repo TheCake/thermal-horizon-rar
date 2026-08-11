@@ -167,6 +167,16 @@ if HALF == 'GA':
             # double-counted it and over-weighted slow (librating-center)
             # segments -- biasing every cell HIGH, worst at high e
             # (contour 2.05 vs stage 1.71 at alpha_i = 2.5).
+            # ROUND-34 ANNOTATION (adoption condition 3): v2's REMAINING
+            # wing-cell disagreement (2.022 at alpha_i = 2.5; -0.774 at
+            # -0.99) is ALSO this method's artifact -- a residual global-
+            # eps band-census bias at the 1/j^2 corner. The round's two
+            # independent re-derivations (1-D Gauss-Chebyshev residence
+            # quadrature 1.725 and independent ODE 1.741 / -0.903) plus
+            # the session's aliasing probe (1.731) all confirm the STAGE
+            # values (1.709 / -0.905). Do NOT treat GA-1 v2 wing values
+            # as a competing measurement; near-unity cells (where this
+            # method is clean) remain the valid cross-validation.
             wgt = np.where(comp, 1.0, 0.0)
             tot = np.sum(wgt)
             if tot <= 0:
@@ -308,5 +318,118 @@ if HALF == 'GA':
     print(f"GA SUMMARY: {n_ok}/{len(checks)} PASS")
 
 elif HALF == 'GB':
-    print("GB half: filled after REVIEW-ROUND34-OPUS.md exists.")
-    print("(re-compute every load-bearing reviewer number here)")
+    print("=" * 70)
+    print("GB (post-report): re-computing ROUND 34 load-bearing numbers")
+    print("=" * 70)
+
+    def load_map(path):
+        rr = json.load(open(path))
+        mm = {}
+        for k, v in rr['map_table'].items():
+            g, a = k.split(',')
+            mm[(round(float(g), 3), float(a))] = v
+        return mm
+
+    def mi(mm, gam, a):
+        key = round(gam, 3)
+        gr = sorted({aa for (g2, aa) in mm if g2 == key})
+        vals = np.array([mm[(key, x)] for x in gr])
+        return float(np.interp(a, gr, vals))
+
+    M6 = MAP
+
+    # GB-1: B10 pinning from starts 1.71/2.02/2.5/3.0 (his 0.978/0.979/
+    # 0.983/0.983; interp clamps above the 2.5 table edge as his did)
+    his_b10 = {1.71: 0.978, 2.02: 0.979, 2.5: 0.983, 3.0: 0.983}
+    ok1 = True
+    for start, hv in his_b10.items():
+        b = start
+        for _ in range(10):
+            b = mi(M6, 1.0, min(b, 2.5))
+        ok1 = ok1 and abs(b - hv) <= 0.02
+        print(f"  GB-1 B10 from {start}: {b:.4f} vs his {hv}")
+    check('GB-1', ok1, "B10 pinning")
+
+    # GB-2: the run-6 map fixed point (his ~0.973)
+    fp = 1.5
+    for _ in range(60):
+        fp = mi(M6, 1.0, fp)
+    check('GB-2', abs(fp - 0.973) <= 0.01, f"fixed point {fp:.4f} vs his 0.973")
+
+    # GB-3: the tau=3.3 flip arithmetic (his: run-5 B4 = 1.076 < 1.14;
+    # run-6 B4 = 1.147 > 1.14; and B4 from 1.71/2.02 = 1.094/1.112)
+    M5 = load_map('data/stage10o_results_run5.json')
+    b45 = 2.5
+    for _ in range(4):
+        b45 = mi(M5, 1.0, min(b45, 2.5))
+    b46 = 2.5
+    for _ in range(4):
+        b46 = mi(M6, 1.0, min(b46, 2.5))
+    ok3 = abs(b45 - 1.076) <= 0.01 and abs(b46 - 1.147) <= 0.01
+    for start, hv in ((1.71, 1.094), (2.02, 1.112)):
+        b = start
+        for _ in range(4):
+            b = mi(M6, 1.0, min(b, 2.5))
+        ok3 = ok3 and abs(b - hv) <= 0.01
+        print(f"  GB-3 B4 from {start}: {b:.4f} vs his {hv}")
+    check('GB-3', ok3, f"run5 B4 {b45:.4f} (<1.14), run6 B4 {b46:.4f} (>1.14)")
+
+    # GB-4: the P10 exclusion boundary in tau (his 2.48 Gyr, amplitude-
+    # saturated over 0.086/0.5/1.43)
+    ALPHA_FLOOR = {round(float(k), 3): v for k, v in RES['alpha_floor'].items()}
+
+    def reachable6(k, ceil=2.5):
+        if k == 0:
+            return -1.0, ceil
+        lo = ALPHA_FLOOR[1.0]
+        hi = mi(M6, 1.0, ceil)
+        for _ in range(k - 1):
+            lo = mi(M6, 1.0, min(lo, 2.5))
+            hi = mi(M6, 1.0, min(hi, 2.5))
+        return lo, hi
+
+    kgal = np.array([1 if t0_gyr(a) <= AGE else 0 for a in A_J])
+    CONV = A0 / np.sqrt(G_SI * MSUN / A0) / GAMMA_GAL
+    ok4 = True
+    for prod in (0.086, 0.5, 1.43):
+        ratio = prod * CONV
+        tau_excl = None
+        for tau in np.geomspace(1.0, 5.0, 400):
+            kc_base = int(np.floor(AGE / tau))
+            bad = False
+            for b in range(1, 8):
+                tmix = t0_gyr(A_J[b]) / ratio
+                kc = kc_base if (tmix <= tau and ratio >= 2.0) else 0
+                lo, hi = reachable6(kc + kgal[b])
+                if (ALPHA_OBS[b] + 2 * SIG_OBS[b] < lo
+                        or ALPHA_OBS[b] - 2 * SIG_OBS[b] > hi):
+                    bad = True
+                    break
+            if bad:
+                tau_excl = tau
+        ok4 = ok4 and tau_excl is not None and abs(tau_excl - 2.48) <= 0.05
+        print(f"  GB-4 product {prod}: excluded up to tau = "
+              f"{tau_excl if tau_excl is None else round(tau_excl, 3)} Gyr vs his 2.48")
+    check('GB-4', ok4, "P10 boundary 2.48 Gyr amplitude-saturated")
+
+    # GB-5: frozen-corner reachable interval contains every bin at 2 sigma
+    lo1, hi1 = reachable6(1)
+    inside = all(ALPHA_OBS[b] + 2 * SIG_OBS[b] >= lo1
+                 and ALPHA_OBS[b] - 2 * SIG_OBS[b] <= hi1 for b in range(8))
+    check('GB-5', inside, f"one-mixing interval [{lo1:.3f}, {hi1:.3f}] contains all bins")
+
+    # GB-6: rho0 = 0.1 timescales (his 16.5 / 3.1 Gyr for bins 7/8)
+    gam01 = 4 * np.pi * G_SI * (0.1 * MSUN / PC**3)
+    t7 = t0_gyr(A_J[6], gamma=gam01)
+    t8 = t0_gyr(A_J[7], gamma=gam01)
+    check('GB-6', abs(t7 - 16.5) <= 0.2 and abs(t8 - 3.1) <= 0.1,
+          f"bin7 {t7:.2f} / bin8 {t8:.2f} Gyr")
+
+    # GB-7 (informational): the main session's aliasing probe on
+    # (Gamma=1, 2.5) gave CV 1.7317/1.7312 (neval 350/1400, fresh seed 9)
+    # -- inside his 1.71-1.74 cluster; a fourth independent confirmation
+    # of the stage wing value.
+    print("  GB-7 (info): alias-probe CV 1.7312-1.7317 in the 1.71-1.74 cluster")
+
+    n_ok = sum(checks)
+    print(f"GB SUMMARY: {n_ok}/{len(checks)} PASS")

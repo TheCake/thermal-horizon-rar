@@ -15891,11 +15891,16 @@ dominance 1/4, Gamma = 1/3): any REFRESHING cloud tide is EXCLUDED at
 e_a*kappa_c >= 9.95e-3 (tau_c <= 0.10 Gyr), >= 3.15e-3 (0.29 Gyr),
 >= 9.95e-4 (1.10 Gyr); NO exclusion at tau_c >= 3.3 Gyr; THE FROZEN
 CORNER (tau_c ~ age) IS alpha_0-DEGENERATE AT ANY AMPLITUDE -- the
-once-only lemma realized in data. CONSEQUENCE: a cloud at
-P10-relevant amplitude (e_a = 0.086-1.43 at kappa_c = 1) must have
-correlation time tau_c >~ 2 Gyr: THE ECCENTRICITY CHANNEL
-INDEPENDENTLY FORCES THE FROZEN READING (consistency dividend for
-tau_B = 2pi/H ~ 90 Gyr; pre-signed no-credence-move). Conversion:
+once-only lemma realized in data. CONSEQUENCE (ROUND-34 wording,
+adopted): IF an ambient l=2 cloud is present at P10-relevant
+amplitude with O(1) coupling (e_a*kappa_c >~ 1e-3), the surviving
+superthermality requires it to be slow/frozen (tau_c >~ 2.5 Gyr; the
+measured boundary is 2.48 Gyr, amplitude-saturated over the whole
+0.086-1.43 range) and a fast-refreshing strong cloud is excluded;
+the data do NOT distinguish a frozen strong cloud from a weak or
+absent one -- a consistency VOTE for the frozen reading (tau_B =
+2pi/H ~ 90 Gyr sits deep in the allowed corner), not a demonstration
+of it. Pre-signed no-credence-move. Conversion:
 Gamma_c/Gamma_Gal = 1.005e4 x (e_a kappa_c) at 1 Msun; kappa_c = the
 unpinned O5-NORM constant (all bounds on the PRODUCT; kappa_c = 1
 comparisons labeled conditional). Ratio grid x1.78-quantized (quoted
@@ -15968,3 +15973,45 @@ HAS had time to stir the orbits, the stretch dropped by exactly the
 predicted half-step. And we proved the stirring can never CREATE
 stretch -- so the stretch the sky shows was born there, which is
 what our prediction P15 said before we looked.
+
+**ROUND 34 (same close): hole NO -- O-WEDGE AFFIRMED; six conditions
+adopted.** The referee re-derived EVERY load-bearing number with his own
+code (two independent map methods: a 1-D Gauss-Chebyshev residence
+quadrature + his own ODE/transcription/seed; all wedge/timescale/step/
+consistency arithmetic from scratch; Hwang Table 1 verified against
+ar5iv exact on all 8 bins). THE WING ARBITRATION RESOLVED FOR THE STAGE:
+map(Gamma=1, 2.5) = 1.725/1.741 (his two methods) vs stage 1.709, floor
+-0.903 vs -0.905 -- the GA-1 v2 wing values (2.022/-0.774) were the
+VERIFICATION instrument's own corner artifact (annotated in the
+addendum; the session's aliasing probe 1.731 = a fourth confirmation);
+his k-iteration check: the tau <= 1 Gyr exclusions are wing-value-
+INDEPENDENT (B10 = 0.978-0.983 from any start 1.71-3.0, pinned to the
+map's fixed point 0.973 << 1.14) and the tau = 3.3 run5->run6 flip is
+the clean R=6 refinement crossing the bin-7 threshold (1.076 vs 1.147
+around 1.14), in the against-interest direction. Amendment chain A1-A6
+ruled LEGITIMATE HARDENING (load-bearing outcome pinned from run 3; G3
+bar replacement = the correct fix for a below-noise-floor bar).
+Conditions executed: (1) the FORCES sentence replaced by the
+conditional-VOTE disjunction (above, + LEDGER); (2) tau_c >~ 2 Gyr ->
+2.5 Gyr everywhere (his fine scan: boundary 2.48 Gyr, amplitude-
+saturated -- GB re-verified 2.498); (3) the GA-1 wing annotation;
+(4) disclosed: the k_c + k_gal separate-halving for bins 7-8 is mildly
+anti-conservative but immaterial (B9 = 0.992 vs B10 = 0.983, both far
+under 1.14), and the cloud triaxiality Gamma_c is UNPINNED -- the
+tau <= 1 exclusions rest on the theorem-guaranteed contraction to the
+thermal fixed point, not on the two tested Gamma values; (5) the
+consistency-read input alpha_0 = 1.32 is a bin-7 PROXY for the
+unmeasured primordial bin-8 alpha (illustrative, not a fit; M&H23
+credited as likely first with the comparison; his own ODE gives
+map(1.32) = 1.198 vs our 1.155 -- the true value ~1.16-1.18 straddles
+the observed 1.17 either way, conclusion method-robust); (6) the M&H
+generality stated precisely: the THEOREM covers the no-pump leg
+generally; the erosion map applies because a frozen cloud tide is a
+fixed quadrupole (H_Gamma class), tested at Gamma in {1/3, 1} and
+Gamma-robust via the contraction. Verification protocol: blind GA half
+pre-committed 96f55df BEFORE the report (6th execution); post-report
+GB 5/6 exact (B10 pinning, fixed point 0.9728, flip arithmetic, P10
+boundary, one-mixing interval) with GB-6 catching his one imprecision
+(bin-8 rho0 = 0.1 t0 = 2.95 Gyr, not 3.1; claim unaffected). Report
+REVIEW-ROUND34-OPUS.md (uncommitted). Credence unchanged per the
+pre-signed map: anomaly-real 53 / mech 8.

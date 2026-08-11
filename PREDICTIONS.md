@@ -462,7 +462,8 @@ eccentricity-erosion wedge (P15 leg ii) adds a TIMESCALE constraint to
 this row's amplitude axis: e_a·κ_c ≥ 1e-3 with cloud refresh time
 τ_c ≤ 1 Gyr is excluded by wide-binary superthermality survival, so the
 P10-relevant amplitudes (0.086–1.43 at κ_c = 1) survive only as
-FROZEN-grade slow fluctuations (τ_c ≳ 2 Gyr). If the DR4 instrument
+FROZEN-grade slow fluctuations (τ_c ≳ 2.5 Gyr; measured boundary 2.48
+Gyr, amplitude-saturated — R34). If the DR4 instrument
 finds the ambient-tide-correlated excess at e_a ~ 1, the eccentricity
 data simultaneously require that amplitude to be frozen — a
 fast-fluctuating e_a ~ 1 world is already dead. (κ_c = the unpinned
@@ -612,9 +613,12 @@ e_a·κ_c ≥ 1.0e-2 / 3.2e-3 / 1.0e-3 excluded for τ_c ≤ 0.10 / 0.29 /
 1.10 Gyr (2σ, Hwang bins 2–8, every robustness row identical), while
 the strictly FROZEN corner (τ_c ~ age) is α₀-degenerate at ANY
 amplitude (the once-only lemma: phase mixing in a fixed field is
-idempotent). Consequence: a cloud at P10-relevant amplitude must be
-frozen at τ_c ≳ 2 Gyr — an independent eccentricity-channel vote for
-the frozen reading. Dividends: measured α_floor ≈ −0.89/−0.90 (one
+idempotent). Consequence (R34 wording): IF a cloud is present at
+P10-relevant amplitude with O(1) coupling, it must be frozen at
+τ_c ≳ 2.5 Gyr (measured boundary 2.48 Gyr, amplitude-saturated) — an
+eccentricity-channel consistency vote for the frozen reading; the data
+do not distinguish a frozen strong cloud from a weak/absent one.
+Dividends: measured α_floor ≈ −0.89/−0.90 (one
 mixing from circular stays deeply subthermal — preserve-not-create
 retrodicted at the extreme end); the Galactic-halving consistency
 read map(1.32) = 1.155 vs the widest Hwang bin 1.17 ± 0.15 (+0.10σ).
