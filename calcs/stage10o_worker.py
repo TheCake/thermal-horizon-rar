@@ -31,7 +31,7 @@ def mix_orbit(task):
 
     t_ev = np.linspace(t_frac * tau_max, tau_max, n_eval)
     sol = solve_ivp(f, (0.0, tau_max), [j0, w0], method='DOP853',
-                    rtol=1e-8, atol=1e-10, t_eval=t_ev)
+                    rtol=3e-9, atol=3e-11, t_eval=t_ev)
     jj = np.clip(sol.y[0], jlo, 1 - 1e-12)
     e_s = np.sqrt(np.clip(1 - jj**2, 0, 1))
     half = n_eval // 2
