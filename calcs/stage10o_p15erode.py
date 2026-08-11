@@ -208,6 +208,22 @@ Run 3 (--adaptive) is the operative run; gate G10O-0d remains the sole
 arbiter of integrator adequacy. Invocations:
   run 2: py calcs/stage10o_p15erode.py --dtau 5e-4
   run 3: py calcs/stage10o_p15erode.py --adaptive
+
+AMENDMENT A3 (2026-08-11, logged pre-quote before any adaptive run
+completed): the A2 tiered-substep implementation is computationally
+infeasible (its own smoke test ground to a halt: the per-tier substep
+loops are Python-sequential, up to 4096 inner iterations per macro-step
+for the high-e tail). A3 replaces the adaptive branch's INTERNALS with
+per-orbit DOP853 (scipy solve_ivp, rtol 1e-8 / atol 1e-10) in a worker
+module (calcs/stage10o_worker.py) under a process pool. Probe (20
+worst-case alpha = 2.5 / Gamma = 1 orbits, tau = 50): 1.4 s/orbit,
+164k RHS evals/orbit, MAX drift 3.2e-4 -- inside the 2e-3 bar with
+margin. Ensemble N = 600/cell in adaptive mode (run-1 half-window
+agreement ~0.005 at N = 1500 => ~0.008 at 600, well under the 0.05
+bars); tau_max = 50 with the pre-registered idempotence gate 0c as the
+mixedness arbiter (G3 doubles both). NOTHING about bars, gates,
+letters, wedge rules, step bars, or seeds changes. Run 2 (the literal
+protocol run, plain RK4) is unaffected and continues.
 """
 
 import json
@@ -226,9 +242,10 @@ if '--dtau' in sys.argv:
     DTAU_CLI = float(sys.argv[sys.argv.index('--dtau') + 1])
 JSON_PATH = ('data/stage10o_results.json' if ADAPTIVE
              else f'data/stage10o_results_rk4_{DTAU_CLI:g}.json')
-TOL_SUB = 1e-3
-CAP_SUB = 4096
-print(f"[mode: {'ADAPTIVE tiered-substep' if ADAPTIVE else f'plain RK4 dtau={DTAU_CLI:g}'} -> {JSON_PATH}]")
+print(f"[mode: {'ADAPTIVE per-orbit DOP853 (A3)' if ADAPTIVE else f'plain RK4 dtau={DTAU_CLI:g}'} -> {JSON_PATH}]")
+
+N_EVAL = 350
+TMPDIR = 'data/tmp10o'
 
 # ----------------------------------------------------------------------
 # Constants (SI)
@@ -309,19 +326,55 @@ def sample_initial(alpha_i, n, rng):
     return j, w, jz
 
 
-def mix_ensemble(j0, w0, jz, Gam, tau_max=80.0, dtau=None, t_frac=0.30,
+def mix_ensemble(j0, w0, jz, Gam, tau_max=None, dtau=None, t_frac=0.30,
                  sample_every=100):
-    """Batch integration of dj/dtau = -dH/dw, dw/dtau = +dH/dj.
+    """Ensemble secular mixing.
 
-    Plain mode: fixed-step RK4 at dtau (run 1/2). Adaptive mode (A2):
-    per macro-step of size DTAU_MACRO each orbit takes 2^m substeps with
-    m chosen so its local displacement stays below TOL_SUB (tiered,
-    vectorized, deterministic; cap CAP_SUB).
+    Plain mode (runs 1/2): batch fixed-step RK4 at dtau. Adaptive mode
+    (A3, operative): per-orbit DOP853 in calcs/stage10o_worker.py, fanned
+    out over CPU workers via subprocess (Windows-safe; no multiprocessing
+    main-module re-import hazard).
     Returns pooled e-samples over [t_frac*tau_max, tau_max] in two half
     windows (idempotence gate), the final state, and the 99th-pct H drift.
     """
+    if tau_max is None:
+        tau_max = 50.0 if ADAPTIVE else 80.0
     if dtau is None:
         dtau = DTAU_CLI
+
+    if ADAPTIVE:
+        import os
+        import subprocess
+        os.makedirs(TMPDIR, exist_ok=True)
+        nw = max(1, (os.cpu_count() or 4) - 2)
+        n = len(j0)
+        chunks = [ii for ii in np.array_split(np.arange(n), nw) if len(ii)]
+        procs, outs = [], []
+        for ci, ii in enumerate(chunks):
+            fin = f'{TMPDIR}/in_{os.getpid()}_{ci}.npz'
+            fout = f'{TMPDIR}/out_{os.getpid()}_{ci}.npz'
+            np.savez(fin, j0=j0[ii], w0=w0[ii], jz=jz[ii], gam=Gam,
+                     tau=tau_max, frac=t_frac, neval=N_EVAL)
+            procs.append(subprocess.Popen(
+                ['py', 'calcs/stage10o_worker.py', fin, fout]))
+            outs.append((fout, ii))
+        for p in procs:
+            if p.wait() != 0:
+                raise RuntimeError('stage10o worker failed')
+        p1l, p2l = [], []
+        jend = np.empty(n)
+        wend = np.empty(n)
+        drifts = np.empty(n)
+        for fout, ii in outs:
+            z = np.load(fout)
+            p1l.append(z['e1'].ravel())
+            p2l.append(z['e2'].ravel())
+            jend[ii] = z['jend']
+            wend[ii] = z['wend']
+            drifts[ii] = z['drift']
+        return (np.concatenate(p1l), np.concatenate(p2l),
+                (jend, wend, jz), float(np.percentile(drifts, 99)))
+
     j = j0.copy()
     w = w0.copy()
     H_init = H_fn(j, w, jz, Gam)
@@ -331,38 +384,18 @@ def mix_ensemble(j0, w0, jz, Gam, tau_max=80.0, dtau=None, t_frac=0.30,
     jlo = np.abs(jz) + 1e-9
     pool1, pool2 = [], []
 
-    def rhs(jj, ww, jzz):
-        jj = np.clip(jj, np.abs(jzz) + 1e-9, 1.0 - 1e-12)
-        return -dHdw_fn(jj, ww, jzz, Gam), dHdj_fn(jj, ww, jzz, Gam)
-
-    def rk4_sub(jj, ww, jzz, h, nsub):
-        for _ in range(nsub):
-            k1j, k1w = rhs(jj, ww, jzz)
-            k2j, k2w = rhs(jj + 0.5 * h * k1j, ww + 0.5 * h * k1w, jzz)
-            k3j, k3w = rhs(jj + 0.5 * h * k2j, ww + 0.5 * h * k2w, jzz)
-            k4j, k4w = rhs(jj + h * k3j, ww + h * k3w, jzz)
-            jj = jj + (h / 6) * (k1j + 2 * k2j + 2 * k3j + k4j)
-            ww = ww + (h / 6) * (k1w + 2 * k2w + 2 * k3w + k4w)
-            jj = np.clip(jj, np.abs(jzz) + 1e-9, 1.0 - 1e-12)
-        return jj, ww
+    def rhs(jj, ww):
+        jj = np.clip(jj, jlo, 1.0 - 1e-12)
+        return -dHdw_fn(jj, ww, jz, Gam), dHdj_fn(jj, ww, jz, Gam)
 
     for istep in range(nstep):
-        if not ADAPTIVE:
-            j, w = rk4_sub(j, w, jz, dtau, 1)
-        else:
-            vj, vw = rhs(j, w, jz)
-            speed = np.abs(vj) + np.abs(vw)
-            m = np.ceil(speed * dtau / TOL_SUB)
-            m = np.clip(m, 1, CAP_SUB)
-            tiers = 2**np.ceil(np.log2(m)).astype(int)
-            for t_ in np.unique(tiers):
-                sel = tiers == t_
-                if not sel.any():
-                    continue
-                j_s2, w_s2 = rk4_sub(j[sel], w[sel], jz[sel],
-                                     dtau / t_, int(t_))
-                j[sel] = j_s2
-                w[sel] = w_s2
+        k1j, k1w = rhs(j, w)
+        k2j, k2w = rhs(j + 0.5 * dtau * k1j, w + 0.5 * dtau * k1w)
+        k3j, k3w = rhs(j + 0.5 * dtau * k2j, w + 0.5 * dtau * k2w)
+        k4j, k4w = rhs(j + dtau * k3j, w + dtau * k3w)
+        j = j + (dtau / 6) * (k1j + 2 * k2j + 2 * k3j + k4j)
+        w = w + (dtau / 6) * (k1w + 2 * k2w + 2 * k3w + k4w)
+        j = np.clip(j, jlo, 1.0 - 1e-12)
         if istep >= istart and (istep - istart) % sample_every == 0:
             e_now = np.sqrt(np.clip(1 - j**2, 0, 1))
             (pool1 if istep < imid else pool2).append(e_now.copy())
@@ -379,7 +412,7 @@ def fit_alpha(e_samples):
 
 
 ALPHA_GRID = [-0.99, 0.1, 0.5, 0.8, 1.0, 1.2, 1.6, 2.0, 2.5]
-N_ENS = 1500
+N_ENS = 600 if ADAPTIVE else 1500
 MAP_TABLE = {}
 drift_worst = 0.0
 idem_worst = 0.0
@@ -650,7 +683,8 @@ rng2 = np.random.default_rng(101)
 res_err = 0.0
 for a_i in (-0.99, 1.0, 2.5):
     j0, w0, jz = sample_initial(a_i, 2 * N_ENS, rng2)
-    p1, p2, _, _ = mix_ensemble(j0, w0, jz, 1.0, tau_max=160.0)
+    p1, p2, _, _ = mix_ensemble(j0, w0, jz, 1.0,
+                                tau_max=(100.0 if ADAPTIVE else 160.0))
     a_hi = fit_alpha(np.concatenate([p1, p2]))
     res_err = max(res_err, abs(a_hi - MAP_TABLE[(1.0, a_i)]))
     print(f"  alpha_i={a_i:+.2f}: hi-res map {a_hi:+.4f} vs {MAP_TABLE[(1.0, a_i)]:+.4f}")
