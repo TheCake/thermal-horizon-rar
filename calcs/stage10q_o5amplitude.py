@@ -1,4 +1,4 @@
-"""
+﻿"""
 STAGE 10Q -- O5-AMPLITUDE: THE AMBIENT l=2 FLUCTUATION AMPLITUDE FROM
 FLUCTUATION-DISSIPATION AT THE MEASURED STATIC RESPONSE (the R33 named
 successor: "derive e_a -- 10F's <= ~1 cap vs 10G's own q_FD =
@@ -205,6 +205,13 @@ unilaterally: it fires Q-CHART-BREACH + a round flag.
 
 AMENDMENTS: none at pre-reg. Any post-commit amendment is logged
 here pre-quote with its run preserved (house rule).
+  A1 (post run 1, IMPLEMENTATION ONLY, no bars/letters touched; run-1
+     console preserved in the pre-reg commit's session record): (i)
+     GQ-1b's sympy residue needed .rewrite(exp) before simplify --
+     the identity 2 n_BE + 1 = coth(x/2) is exact, the simplifier
+     stalled on the mixed coth/exp form; (ii) np.trapz ->
+     np.trapezoid (removed in numpy 2.x). Both are repairs that make
+     the gates compute what this header already says they compute.
 
 COMPUTE < 3 min (8 solver calls + sympy + quadratures).
 Writes data/stage10q_o5amplitude.txt.
@@ -255,7 +262,8 @@ muS, OmS, nS, bS = sp.symbols('mu Omega n beta', positive=True)
 # <q^2> = (1/(2 mu Om)) (2 nbar + 1), nbar = 1/(e^{b Om} - 1)
 nbar = 1/(sp.exp(bS*OmS) - 1)
 qq = (1/(2*muS*OmS))*(2*nbar + 1)
-r1b = sp.simplify(qq - (1/(2*muS*OmS))*sp.coth(bS*OmS/2))
+r1b = sp.simplify((qq - (1/(2*muS*OmS))*sp.coth(bS*OmS/2))
+                  .rewrite(sp.exp))
 emit(f"GQ-1b Fock <q^2> = (1/2 mu Om) coth(b Om/2): residue {r1b}")
 
 # GQ-1c the chi(0) identity
@@ -408,19 +416,19 @@ def q_plateau(r, phi2):
 
 def E_pair(r, Sl, phi_l, l):
     integ = Sl[l]*phi_l[l]*r**2
-    return float(-0.5/(2*l+1)*np.trapz(integ, r))
+    return float(-0.5/(2*l+1)*np.trapezoid(integ, r))
 
 def E_grad(r, phi_l, l):
     dphi = np.gradient(phi_l[l], r)
     integ = (dphi**2 + l*(l+1)*(phi_l[l]/r)**2)*r**2
-    return float(0.5/(2*l+1)*np.trapz(integ, r))
+    return float(0.5/(2*l+1)*np.trapezoid(integ, r))
 
 # GQ-4b thin-shell analytic gate (integral family 2)
 emit("GQ-4b energy-integral analytic gate (thin shell at a = 1):")
 NRt, LMAXt = 512, 16
 rt = np.logspace(-2, 3, NRt)
 h = np.exp(-0.5*((rt-1.0)/0.05)**2)
-h /= np.trapz(h*rt**2, rt)          # unit int S r^2 dr
+h /= np.trapezoid(h*rt**2, rt)          # unit int S r^2 dr
 Slt = np.zeros((LMAXt+1, NRt))
 ok4b = True
 for l, Eexact in ((0, 0.5), (2, 1.0/25.0)):
