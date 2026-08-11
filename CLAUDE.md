@@ -989,6 +989,56 @@ circulation TODO 27–31 (P1/P2 arXiv before 2026-12-02 OUTRANKS;
 outreach parked; visibility flip pending) · P3 round 3 · DR4. TWO
 full arcs this session (10O + 10P) — FRESH SESSION before the next.**
 
+**10Q + ROUND 36 (2026-08-11 third close, O5-AMPLITUDE — the author:
+"Go for next. Probably the O5? Up to you"): THE AMPLITUDE IS DERIVED —
+the R33 named successor executed as a fluctuation–dissipation
+derivation at the measured static response (pre-reg 897fe15 +
+A1/A2/A3 f83cc2a/2760044/0d6ab9d each pre-quote, runs preserved, ALL
+gate-instrument-side; fired Q-VALUE gates 9/9 run 4; physics frozen
+to the digit across runs 2–4).** THE RESULT: the sector Hessian is
+k_self·I₅ EXACT (isotropic self-energy + linear P₂ drive — the 10F
+"measured q constrains χ₂(0)" hook executed) ⇒ the measured static
+|q| = 0.086 pins the ONE stiffness and equipartition at T_dS gives
+**e_a(binary) = 0.234 central / matched-solve co-quote 0.268 (R36
+cond 1) / envelope [0.159, 0.388]** (ε₂ = E₂/E₀ = 0.0649 from the 4K
+solver arrays — the D-normalization CANCELS in the ratio; the 10F Ω₂
+band reduced to a gated 8.9% coth correction). RECONCILIATION: the
+10F ≤~1 cap vs 10G q_FD = 1.43 unreconciled pair RESOLVES — both
+were CEILINGS; the physical value sits ×6.6 in-chart / ×6.1 under
+the FD ceiling; the 10G strike corner is ×29 short (strike
+untouched); refresh 83–282 Gyr = ×33 over the 10O boundary
+(automatically frozen). **P10 sub-letter REANCHOR-FLOOR
+(R36-affirmed): the registered DR4 σ_S = 0.02 discovery channel is
+DEAD at the mechanism's own derived amplitude (S_max hi-envelope
+0.0111; REVIVAL NEEDS e_a ≥ 0.662 = ×1.7 the hi-envelope — the risk
+axis shipped); the 0.005 perturbative κ-localized channel is EDGE
+(central 0.0056 / frozen-draw avg 0.0039 straddle the floor —
+frozen-draw arguably operative, R36 cond 6).** ROUND 36
+(REVIEW-ROUND36-OPUS.md uncommitted): reproduction with a THIRD
+independent solver ≤ 1.5e-3 + exact P10 machinery + byte-identical
+stage rerun; hole NO; letter + sub-letter AFFIRMED; amendment audit
+CLEAN; six conditions ALL wording/disclosure, ALL adopted
+(matched-pairing co-quote; L1 virial O(1) disclosure — conclusions
+survive virial-2 either way, low corner → ~0.11; isotropy relabeled
+MODEL theorem, anharmonic ~8–15% DOWNWARD = safe, no √5, rank-1
+verified; GQ-4b → diagnostic-grade = **TRAP #24: license letters on
+the redundant validator SET, never on a single hand-built
+cross-check**; revival margin; frozen-draw statistic). Verification:
+blind GA 506a0d7 pre-report ALL OK (9th protocol execution); GB ALL
+REVIEWER NUMBERS CONFIRMED (my one GB /2 slip fixed in-file,
+disclosed — trap #23 fired twice this arc, both in MY verifiers).
+L1 (field↔oscillator energy, virial O(1)) = the named residual seam
+(collapsing it = a horizon-side absolute-energy derivation, heavy,
+NOT commissioned). The in-catalog amplitude arc is CLOSED; the live
+external test = DR4-era σ_S ≈ 0.005. CREDENCE: every cell pre-signed
+HOLD 53/8, referee-affirmed. Ledger 215 rows (mech-10q-eamplitude) /
+six gates PASS. P3 absorb queue (next author-called thaw): 10M/10N +
+the P10 re-anchor. **THREE closes 2026-08-11 (10O + 10P + 10Q) —
+FRESH SESSION before the next arc. NEXT FORK (author's): circulation
+TODO 27–31 (P1/P2 arXiv before 2026-12-02 OUTRANKS; outreach parked;
+visibility flip pending) · P3 round 3 / thaw · P11 (backsplash scout
+first) / P14 (Oort) seed stages · DR4 readiness.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

@@ -16268,3 +16268,69 @@ Answer: the jiggle is about 23% -- bigger than the squash (2.7x), but
 well under "the whole cloud." That is too small for the coarse
 telescope test we had registered, so we moved that test's goalposts
 honestly: it now needs the sharper precision mode.
+
+### ROUND 36 ADOPTED (2026-08-11, same close): hole NO -- Q-VALUE + P10-REANCHOR-FLOOR AFFIRMED; six conditions (all wording/disclosure) EXECUTED
+
+Fresh Opus referee (REVIEW-ROUND36-OPUS.md, uncommitted): reproduced
+EVERY load-bearing number with a THIRD independent solver (tridiagonal
+FD-matrix; eps2 = 0.06500 vs 0.06490, <= 1.5e-3 everywhere) + exact
+P10 machinery (S_max rows to the digit) + byte-identical stage rerun;
+amendment-integrity audit CLEAN (eps2/e_a frozen across runs 2-4; the
+Q-BAND -> Q-VALUE upgrade driven entirely by legitimate,
+physically-diagnosed GQ-4b gate fixes, each re-derived by him).
+
+CONDITIONS EXECUTED:
+1. PAIRING CO-QUOTE: e_a = 0.234 is the LOWEST self-consistent
+   q_DC/eps2 pairing (canonical |q| = 0.086 with the eN=1.2 eps2);
+   the matched-solve (eN=1.2) central is **0.268 (+15%)** -- co-quoted
+   everywhere; the mixed choice FAVORS the P10-dead reading
+   (disclosed, conservative direction).
+2. L1 VIRIAL DISCLOSURE: the field-energy <-> oscillator-energy
+   identification carries an O(1) virial ambiguity BEYOND the
+   {n, n+1/2, n+1} band; conclusions survive a virial factor of 2 in
+   EITHER direction (chart x13.3/x3.3; P10 dead at 0.0072/0.0164);
+   only an implausible E_amb/4 revives the 0.02 channel; a virial-2
+   pushes the low-envelope corner to ~0.11 (deepening the
+   static-ratio flag).
+3. ISOTROPY = MODEL THEOREM: physical dark-sector stiffnesses split
+   by tens of percent at a natural cubic (59.6% at g3 = 0.5k,
+   GB-confirmed analytically); the central is protected by m=0
+   self-consistency + the rank-1 read-out (NO sqrt5 inflation), not
+   by physical isotropy; anharmonic grade on e_a ~8-15%
+   (secant-vs-curvature), DOWNWARD = the safe direction.
+4. GQ-4b -> DIAGNOSTIC-grade: the Q-VALUE letter rests on the
+   REDUNDANT eps2 validators (q-regression 4e-4, grad-vs-pair 1e-4,
+   hi-res 8e-4, now three independent solvers), not the
+   twice-redesigned thin-shell gate. NEW TRAP #24 (DIARY): license
+   letters on the redundant validator SET, never on a single
+   hand-built cross-check.
+5. THE RISK AXIS SHIPPED: the 0.02 channel revives only at e_a >=
+   0.662 = x1.7 the hi-envelope 0.388 (x2.8 the central) --
+   GB-reproduced exactly.
+6. FROZEN-DRAW STATISTIC: under L5 the population-average S = 0.0039
+   (< 0.005) is arguably the more physical statistic than the
+   fixed-RMS central 0.0056; both reported; the FLOOR/DEAD split is
+   robust either way.
+
+VERIFICATION (the 87a4676 protocol, 9th execution): blind GA
+committed PRE-report (506a0d7) -- ALL OK first firing; GB post-report
+= ALL REVIEWER NUMBERS CONFIRMED (pairing table, virial table,
+revival threshold 0.662, anharmonic split/gap via an independent
+ANALYTIC route, frozen extras). GB first run had MY /2 slip on the
+cubic Hessian norm (trap #23's second firing this arc -- audit the
+verifier first); fixed in-file, disclosed.
+
+CREDENCE: the pre-signed all-HOLD cell EXECUTES, referee-affirmed --
+bath-mechanism conditional 8 / anomaly-real 53, unchanged.
+
+PLAIN VERDICT: SUCCESS -- the derivation stands under a three-solver
+adversarial reproduction; the honest caveats are now part of the
+quote; P10's re-anchoring is referee-affirmed.
+
+ELI12: A second scientist rebuilt our whole calculation from scratch
+three different ways and got our numbers every time. He agreed the
+cloud's jiggle is about 23-27%, agreed our telescope test at coarse
+precision can no longer see it (it would need the jiggle to be 66%),
+and made us write six honesty footnotes -- the biggest being "say
+clearly which two numbers you multiplied together, and that the
+other fair choice gives 27% instead of 23%." Nothing moved.

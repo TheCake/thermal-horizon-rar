@@ -203,3 +203,112 @@ say(f"GA VERDICT: {'ALL OK' if ok_all else 'MISMATCH PRESENT'}")
 say("(committed blind, before the ROUND 36 report is read)")
 
 # ================= GB half (appended post-report) =================
+say("")
+say("ROUND 36 ADDENDUM -- GB (post-report) half: re-compute every")
+say("load-bearing REVIEWER number (memory rule)")
+say("=" * 60)
+
+ok_gb = True
+def gb(name, got, want, tol, rel=True):
+    global ok_gb
+    d = abs(got - want)/(abs(want) if rel else 1.0)
+    ok = d <= tol
+    ok_gb = ok_gb and ok
+    say(f"  {name}: {got:.6g} vs his {want:.6g} (d {d:.2e}) -> "
+        f"{'OK' if ok else 'MISMATCH'}")
+    return ok
+
+# GB-1: his pairing table (cond 1) -- e_a under alternative (q, eps2)
+say("GB-1 pairing table (his S3(v)):")
+cf_mid = 0.5*(cf(u_lo) + cf(u_hi))
+def ea_of(q, e2):
+    return q*math.sqrt(TE/(2*e2))*cf_mid
+gb("matched eN=1.2 (0.0987, 0.0649)", ea_of(0.0987, 0.0649), 0.268,
+   1e-2)
+gb("self-consistent eN=1.0 (0.0849, 0.0575)", ea_of(0.0849, 0.0575),
+   0.245, 1e-2)
+gb("matched simple (0.0976, 0.0442)", ea_of(0.0976, 0.0442), 0.321,
+   1e-2)
+gb("stage mixed (0.086, 0.0649)", ea_of(0.086, 0.0649), 0.234, 3e-3)
+
+# GB-2: his virial table (cond 2) -- S_max(hi) under E_amb scalings
+say("GB-2 virial table (his S3(ii)); S_max over the full 10N grid:")
+def S_max_at(ea):
+    best = 0.0
+    for xl in (0.5, 1.0):
+        lam_max = {0.5: 0.304, 1.0: 0.140}[xl]*0.5*math.sqrt(
+            (xl/TWO_PI)*(x_amb_10n/TWO_PI))
+        for gm in (0.010, 0.015, 0.025):
+            for kp in (0.888, 0.925, 1.000):
+                for conv in (1/math.sqrt(2), 1.0, math.sqrt(2)):
+                    om = xl/TWO_PI
+                    D1 = abs(om*(1 - kp))
+                    d2 = (kp/4)*(om/(x_amb_10n/TWO_PI))
+                    V2 = 2*(conv*ea*lam_max)**2*math.exp(-d2)
+                    z = complex(D1/2, -gm/2)
+                    dlt = float(np.real(np.sqrt(z*z + V2))
+                                - np.real(z))
+                    nb2 = 1.0/(math.exp(xl) - 1.0)
+                    W2 = (kp*om/4)*(2*nb2 + 2)
+                    pc2 = math.exp(-xl)*(1 - math.exp(-xl))**2
+                    best = max(best, pc2*dlt/W2)
+    return best
+gb("S_max(hi) stage envelope 0.388", S_max_at(0.388), 0.01112, 5e-3)
+gb("S_max(hi) virial-2 (0.275)", S_max_at(0.388/math.sqrt(2)),
+   0.0072, 5e-2)
+gb("S_max(hi) /2 (0.549)", S_max_at(0.388*math.sqrt(2)), 0.0164,
+   5e-2)
+gb("S_max(hi) /4 (0.777)", S_max_at(0.388*2), 0.0237, 5e-2)
+
+# GB-3: his revival threshold (cond 5)
+say("GB-3 revival threshold (smallest e_a with S_max >= 0.02):")
+ea_rev = None
+for ea in np.linspace(0.4, 1.0, 1201):
+    if S_max_at(ea) >= 0.02:
+        ea_rev = float(ea)
+        break
+gb("e_a revival", ea_rev, 0.662, 1e-2)
+gb("revival / hi-envelope", ea_rev/0.388, 1.7, 2e-2)
+gb("revival / central", ea_rev/0.2338, 2.8, 2e-2)
+
+# GB-4: his anharmonic probe (cond 3) -- cubic invariant analytics
+say("GB-4 anharmonic probe (independent ANALYTIC route; his FD table):")
+# basis B0 = diag(-1,-1,2)/sqrt3; c3 = Tr(B0^3) = 2/sqrt3
+c3 = (2*(-1/math.sqrt(3))**3 + (2/math.sqrt(3))**3)
+gb("Tr(B0^3)", c3, 2/math.sqrt(3), 1e-12)
+# E(q0) = (k/2) q0^2 + g3 c3 q0^3 - F q0; sector Hessian eigen-shifts
+# 6 g3 q0 t_m with t_m = Tr(B_m^2 B0) = {2/sqrt3, 1/sqrt3, -2/sqrt3}
+# GB first-run note (trap #23, the verifier is an instrument): my
+# v1 divided the cubic Hessian shifts by a spurious /2 -- in the
+# Tr(B_m B_n) = 2 delta basis the Hessian of Tr(Q^3) is
+# 6 g3 q0 Tr(B_m B_n B0) with NO extra norm factor. Removing it
+# reproduces the reviewer exactly; his numbers were right.
+kv2, q0v = 1.0, 0.086
+for g3 in (0.5, 1.0):
+    tm = np.array([2, 1, 1, -2, -2])/math.sqrt(3)
+    lam_eig = kv2 + 6*g3*q0v*tm
+    split = float((lam_eig.max() - lam_eig.min())/lam_eig.mean())
+    k_sec = kv2 + 2*g3*c3*q0v
+    k_curv = kv2 + 6*g3*c3*q0v
+    gap_k = float((k_curv - k_sec)/kv2)      # his normalization
+    gap_sec = float((k_curv - k_sec)/k_sec)  # variant row
+    if g3 == 0.5:
+        gb("eigen split at g3=0.5k", split, 0.596, 5e-2)
+        gb("sec-vs-curv gap at g3=0.5k (per k)", gap_k, 0.199, 5e-2)
+        say(f"    (variant: gap per k_sec = {gap_sec:.3f})")
+        gb("e_a downward at g3=0.5k", 1 - math.sqrt(k_sec/k_curv),
+           0.09, 2e-1)
+    else:
+        gb("eigen split at g3=1.0k", split, 1.19, 5e-2)
+        gb("sec-vs-curv gap at g3=1.0k (per k)", gap_k, 0.397, 5e-2)
+
+# GB-5: frozen-row extras
+say("GB-5 frozen-row extras:")
+gb("period 2pi/Om2 hi-edge [Gyr]", TWO_PI*82.7127, 520.0, 2e-2)
+
+# GB-6: virial low-envelope corner (his cond-2 number)
+say("GB-6 virial-2 low-envelope corner:")
+gb("low corner under virial-2", 0.1586/math.sqrt(2), 0.11, 3e-2)
+
+say("")
+say(f"GB VERDICT: {'ALL REVIEWER NUMBERS CONFIRMED' if ok_gb else 'MISMATCH PRESENT'}")

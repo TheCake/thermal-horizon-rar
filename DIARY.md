@@ -9,6 +9,64 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-11 third close (the 10Q close -- O5-AMPLITUDE derived, on "Go for next. Probably the O5? Up to you")
+
+The author leaned O5 and delegated; I ran the R33 named successor as
+stage 10Q end-to-end: pre-reg 897fe15 -> A1/A2/A3 (each pre-quote,
+runs preserved; ALL gate-instrument-side, physics frozen to the digit
+across runs 2-4) -> Q-VALUE gates 9/9 run 4 -> books + blind GA
+506a0d7 (ALL OK first firing) -> ROUND 36 (fresh referee: THIRD
+independent solver, every number <= 1.5e-3, byte-identical rerun;
+hole NO; letter + sub-letter AFFIRMED; amendment audit clean) -> GB
+ALL CONFIRMED -> six wording conditions adopted. Credences HOLD 53/8
+every pre-signed cell, referee-affirmed.
+
+- **THE RESULT: e_a is DERIVED.** Sector Hessian = k_self*I_5 exact
+  (isotropic self-energy + linear P2 drive) => the measured static
+  |q| = 0.086 pins the ONE stiffness; equipartition at T_dS =>
+  e_a(binary) = 0.234 central / matched-solve co-quote 0.268 /
+  envelope [0.159, 0.388]; eps2 = E2/E0 = 0.0649 (D-normalization
+  cancels); Om2 band reduced to an 8.9% coth correction. The 10F cap
+  vs 10G FD 1.43 pair RECONCILES (both ceilings; physical value
+  x6.6/x6.1 under). Frozen automatically (83-282 Gyr = x33 over the
+  10O boundary). 10G strike corner x29 short -- untouched. P10:
+  REANCHOR-FLOOR -- the DR4 sigma_S = 0.02 discovery channel is DEAD
+  at the mechanism's own amplitude (revival needs e_a >= 0.662 =
+  x1.7 the hi-envelope); the 0.005 perturbative channel is EDGE
+  (central 0.0056 / frozen-draw avg 0.0039).
+- **TRAP #24 (new standing rule, R36 cond 4):** license letters on
+  the REDUNDANT VALIDATOR SET (regression + internal equality +
+  resolution doubling + independent solvers), never on a single
+  hand-built cross-check gate. GQ-4b was twice-redesigned while the
+  physics never moved -- the letter was hostage to a redundant
+  diagnostic. Wire such gates as DIAGNOSTIC from the start.
+- **Trap #23 fired TWICE this arc, both in MY verifiers:** (1) the
+  pre-reg thin-shell analytic constant was wrong by a shell
+  double-count (true E_l = 1/(2(2l+1)^2 a): the two-sided kernels
+  are CONTINUOUS at the shell); (2) my GB divided the cubic Hessian
+  by a spurious /2 -- the referee's anharmonic table was right.
+  Audit the verifier before doubting the stage OR the referee.
+- **Kernel-kink lesson (A3):** thin-shell tests of multipole
+  pairing integrals converge LINEARLY in shell width (the Green
+  kernel has a derivative kink at r = s; deficit ~ (2l+1) w/sqrt(pi)
+  per unit radius) -- extrapolate in w, never compare at fixed
+  width.
+- **Don't-redo:** the in-catalog amplitude arc is CLOSED -- do not
+  re-derive e_a or rebuild the FD chain; the mixed-vs-matched
+  pairing (0.234 vs 0.268) is DISCLOSED-adopted, not a bug; the L1
+  virial O(1) is the named residual seam (collapsing it needs a
+  horizon-side derivation of the cloud's absolute energy content --
+  heavy, NOT commissioned, adverse-prior against deciding anything
+  new); the galaxy-anchor row (e_a ~ 0.012) is report-grade L6 only.
+- P10 now lives at the DR4-era sigma_S ~ 0.005 perturbative grade;
+  a 0.02-null no longer bounds the mechanism cloud. P3 absorb queue
+  (next author-called thaw): 10M/10N + this re-anchor.
+- Next-instance forks (author's): circulation TODO 27-31 (P1/P2
+  arXiv before 2026-12-02 OUTRANKS; outreach parked; visibility
+  flip pending) - P3 round 3 / thaw - P11 (backsplash scout first)
+  / P14 (Oort) seed stages - DR4 readiness. THREE closes today
+  (10O + 10P + 10Q) -- compact before the next arc.
+
 ## 2026-08-11 second close (the 10P close — P13's first data contest, on the "go for whatever's best" blanket)
 
 The author compacted me again and delegated the fork ("Go for whatever's
