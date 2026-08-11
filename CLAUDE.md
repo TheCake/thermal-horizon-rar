@@ -901,6 +901,57 @@ thaw. NEXT FORK (author's): circulation TODO 27–31 (outreach parked;
 visibility flip pending) · O5-AMPLITUDE · P3 round 3 / circulation ·
 DR4 readiness. FRESH SESSION before O5-AMPLITUDE.**
 
+**THE GUESS ROUND + P11–P16 REGISTERED (2026-08-11, no stage): the author
+asked "what is behind it all" and then gave the go — the substrate guess
+(inertia = re-dressing cost, dS occupation makes it stimulated/(1+n)-
+cheaper; ladder = Bernoulli/Todd) is FROZEN in PAPER4-SEED.md Part B
+(committed; all four load-bearing axes scout-VIRGIN; differentiation
+obligations logged: McCulloch QI, Pazy–Argaman, Milgrom-99, Verlinde,
+Luo 2026 = closest live competitor). P11–P16 REGISTERED pre-test in
+PREDICTIONS.md §E (61767d4; P15 in the corrected two-leg erosion-bound
+form) + TODO 32 stage queue. P15 prereq reads discharged same close
+(0190836): Hamilton 22 + Modak–Hamilton 23 primary-read; M&H §2
+Liouville theorem covers ANY smooth weak time-dependent tide ⇒ the
+frozen-cloud quadrupole is theorem-covered. NO credence moves.**
+
+**10O + ROUND 34 (2026-08-11, THE P15-STAGE, pre-reg 6db1b29 + A1–A6
+each pre-quote with runs preserved; executed end-to-end on the author's
+compaction blanket go): P15 leg (ii) = the eccentricity EROSION WEDGE,
+fired O-WEDGE (gates 10/11 run 6), ROUND 34 = hole NO, AFFIRMED, six
+conditions adopted. THE RESULT (R34 wording): IF an ambient l=2 cloud
+exists at P10 amplitude with O(1) coupling (e_a·κ_c ≳ 1e-3),
+wide-binary superthermality survival forces it SLOW/FROZEN — τ_c ≳ 2.5
+Gyr (measured boundary 2.48, amplitude-saturated); fast-refreshing
+strong clouds DEAD (e_a·κ_c ≥ 1e-3..1e-2 at τ_c ≤ 1..0.1 Gyr,
+robustness identical on every axis); the frozen corner is
+α₀-DEGENERATE at any amplitude (once-only lemma) ⇒ a consistency VOTE
+for the frozen reading, NOT a demonstration (frozen-strong vs
+weak/absent indistinguishable). Dividends: α_floor ≈ −0.90 (mixing
+cannot create even thermal from circular; H22 retrodicted); the
+Galactic-halving consistency read (+0.10σ at Hwang's widest bin); the
+in-window step statistic POWER-LIMITED at Hwang-table grade. The
+instrument fight: 6 runs, A1–A6 (integrator stiffness → DOP853
+workers; raw-MLE draw noise → control-variate estimator + replication
++ z-grade bars) — science outputs PINNED runs 3–6, the one boundary
+flip against-interest (R34 integrity audit clean). Verification = the
+87a4676 protocol 6th execution: blind GA pre-committed 96f55df BEFORE
+the report (GA-1 contour quadrature needed two fixes of its own —
+trap #23: the verifier is an instrument too; R34's independent methods
+arbitrated its wing dispute FOR the stage, 1.709/−0.905); post-report
+GB 5/6 exact (GB-6 caught the reviewer's one imprecision). NEW TRAPS:
+#22 (never sign a gate bar without measuring BETWEEN-DRAW estimator
+scatter; control-variate = the default for map-type measurements) +
+#23. P13 DATA-ROUTE SCOUT banked: Tian+20/24 release NO per-cluster
+tables — route = X-COP per-cluster public products + Umetsu+16 CLASH
+lensing. Ledger 213 rows (bin-10o-erosionwedge) / six gates PASS;
+worldtable refreshed cf3167c. CREDENCE: anomaly-real 53 / mech 8 —
+every cell pre-signed HOLD, referee-confirmed. TODO 32(a) CLOSED.
+Round in REVIEW-ROUND34-OPUS.md (uncommitted). NEXT FORK (author's):
+P13-stage (route above) · circulation TODO 27–31 (P1/P2 arXiv before
+2026-12-02 OUTRANKS; outreach parked; visibility flip pending) ·
+O5-AMPLITUDE (doubly motivated: decides P10's e_a; the 10O wedge
+constrains its refresh axis) · P3 round 3 · DR4 readiness.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6
