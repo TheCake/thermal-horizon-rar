@@ -1,0 +1,80 @@
+========================================================================
+ROUND 37 ADDENDUM -- GA half (blind, pre-report)
+========================================================================
+GA 1 abstract word count <= 250                               PASS  n=249
+GA 2 0.234 central e_a                                        PASS  
+GA 2 0.159 envelope lo                                        PASS  
+GA 2 0.388 envelope hi                                        PASS  
+GA 2 coth spread 0.089 (quoted 9 percent)                     PASS  
+GA 2 0.268 matched co-quote (program record)                  PASS  
+GA 2 0.0111 hi-envelope S_max                                 PASS  
+GA 2 0.0056 central S_max                                     PASS  
+GA 2 0.00389 frozen-draw avg (quoted 0.0039)                  PASS  
+GA 2 0.662 revival amplitude (program record)                 PASS  
+GA 2 1.43 FD ceiling                                          PASS  
+GA 2 refresh 83 Gyr                                           PASS  
+GA 2 refresh 282 Gyr                                          PASS  
+GA 2 x33 over wedge                                           PASS  
+GA 2 x29 short of closure                                     PASS  
+GA 2 2.48 Gyr wedge boundary (ledger)                         PASS  
+GA 2 10M max edge 0.700                                       PASS  
+GA 2 10M lock floor 0.888                                     PASS  
+GA 2 10M edge ratio 4.03                                      PASS  
+GA 2 10M edge ratio 4.27                                      PASS  
+GA 2 10M naive ratio -> 2                                     PASS  
+GA 2 10M midpoint theorem exact                               PASS  
+GA 2 10M every-moment conservation                            PASS  
+GA 2 10N deep-gal x20 suppression                             PASS  
+GA 2 10N peak kappa* = 0.8918                                 PASS  
+GA 2 R33 plateau 1.088 (quoted 1.09)                          PASS  
+GA 2 anharmonic 8-15% (program record)                        PASS  
+GA 2 virial factor 2 disclosure (program record)              PASS  
+GA 2p in-draft: '0.23 '                                       PASS  
+GA 2p in-draft: '0.16 to 0.39'                                PASS  
+GA 2p in-draft: 'factor of 29'                                PASS  
+GA 2p in-draft: '83 to 282 Gyr'                               PASS  
+GA 2p in-draft: 'factor of 33'                                PASS  
+GA 2p in-draft: 'about 2.5 Gyr'                               PASS  
+GA 2p in-draft: '0.70 against a lock-band floor of 0.89'      PASS  
+GA 2p in-draft: '4.0 to 4.3'                                  PASS  
+GA 2p in-draft: 'ratio of 1.09'                               PASS  
+GA 2p in-draft: '0.011 where a survey precision of 0.02'      PASS  
+GA 2p in-draft: '0.0056 at the central amplitude'             PASS  
+GA 2p in-draft: '0.0039 averaged over frozen draws'           PASS  
+GA 2p in-draft: '1.7 times the high envelope'                 PASS  
+GA 2p in-draft: '16 to 39 percent'                            PASS  
+GA 2p in-draft: '11 to 27 percent'                            PASS  
+GA 2p in-draft: '8 to 15 percent'                             PASS  
+GA 2p in-draft: '9 percent correction'                        PASS  
+GA 2p in-draft: '0.27 under a matched-treatment'              PASS  
+GA 3 factor-29 = 6.7/0.234                                    PASS  got 28.63 want 28.6
+GA 3 factor-33 lo = 83/2.48                                   PASS  got 33.47 want 33.5
+GA 3 revival x1.7 = 0.662/0.388                               PASS  got 1.706 want 1.706
+GA 3 FD-frac lo = 0.159/1.43                                  PASS  got 0.1112 want 0.111
+GA 3 FD-frac hi = 0.388/1.43                                  PASS  got 0.2713 want 0.271
+GA 3 x20 = (4/27)/0.00751/ (1/0.051)                          PASS  got 19.73 want 19.7
+GA 3 plateau 1.09 quoted vs archived 1.088                    PASS  got 1.088 want 1.09
+GA 4 exists: calcs/stage10m_hartree.py                        PASS  
+GA 4 exists: calcs/stage10n_crossing.py                       PASS  
+GA 4 exists: calcs/stage10q_o5amplitude.py                    PASS  
+GA 4 exists: calcs/stage10o_p15erode.py                       PASS  
+GA 4 exists: calcs/round33_addendum.py                        PASS  
+GA 4 exists: calcs/round34_addendum.py                        PASS  
+GA 4 exists: calcs/round36_addendum.py                        PASS  
+GA 4 exists: data/stage10m_hartree.txt                        PASS  
+GA 4 exists: data/stage10n_crossing.txt                       PASS  
+GA 4 exists: data/stage10q_o5amplitude.txt                    PASS  
+GA 4 exists: data/round33_addendum.txt                        PASS  
+GA 4 exists: data/stage10o_run6.log                           PASS  
+GA 5 no stage codenames in body                               PASS  
+GA 5 banned word absent                                       PASS  
+GA 5 em-dash count small                                      PASS  n=1
+GA 5 draft line bumped                                        PASS  
+GA 6 anchor present: Since the exclusion, the one envir...    PASS  
+GA 6 anchor present: The named remaining route, a joint...    PASS  
+GA 6 anchor present: The ambient-amplitude test, stated...    PASS  
+GA 6 anchor present: The degeneracy's response signatur...    PASS  
+GA 6 max sentence < 70 words                                  PASS  max=62 mean=32.5 n=24
+------------------------------------------------------------------------
+GA SUMMARY: 74 PASS / 0 FAIL
+========================================================================
