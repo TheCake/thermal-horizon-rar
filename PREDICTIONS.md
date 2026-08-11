@@ -547,21 +547,33 @@ arXiv:1701.03369.)
 UNCHANGED, first data contest booked):** X-COP 7-cluster primary
 (full baryonic decomposition), injection-POWERED both directions
 (G7 8/8 each). Measured: the crowd parameter localizes at M̂ = 3.43 ±
-0.07 (boot; legs 3.34–4.13 interior), GoF PASS at σ_int = 0.16 dex,
+0.07 (boot; SYSTEMATIC band 3.3–4.1 across legs, R35 cond 6),
+GoF-acceptable at σ_int = 0.16 dex (scatter-enabled — all four laws
+need 0.13–0.16 dex; none is a good absolute description),
 g‡_eff = M̂²a₀ = 1.23e-9 ≈ the published cluster scale (Tian's 2.0e-9,
 different sample/method) — the outcome-(i) core in its weak (GoF)
-sense. The strong (i)-vs-(ii) contest landed W-WINDOW-QUALIFIED
-(G8-UNSTABLE): letter clauses passed (ΔBIC_CB +4.4; P_boot(B) 0.845)
-but the thinning gate failed (sign flips with radial sampling; the
-pre-reg missed wiring G8 into the letter = trap #11) and AIC co-reads
-adverse (+16.5 toward extra-mass). Either-way dividend: the
-extra-mass factor is nearly UNIFORM, Υ̂ = 4.2–5.2 (~4.6× baryons).
-Shape secondary: the shifted-scale BE (Ŝ = 9.0) beats the
-same-temperature crowd by ΔBIC 7.9 ± 1.3 (boot-consistent) — the
-crowd form is acceptable, not preferred; the data carry TWO
-transitions (Eckert's eq.-20 form crushes every one-scale family) =
-the named successor question. ROUND 35 adjudication pending at
-annotation time; no credence moves (pre-signed all-HOLD).
+sense only. **The strong (i)-vs-(ii) contest landed W-GRAY (ROUND 35
+ADOPTED, downgrade from the fired W-WINDOW-QUALIFIED): the operative
+statistic is N_R-degenerate (ΔBIC_CB −1.65/+4.38/+10.63 AND bootstrap
+P(B better) 0.37/0.88/1.00 at N_R = 6/8/10; the G8 fail was un-wired
+into the letter = trap #11) and penalty-driven (AIC +16.5 and raw
+−2lnL +28.5 favor extra-mass); within-cluster points are strongly
+correlated (n_eff ≈ 7–17 of 56) — NEITHER the window NOR the
+extra-mass direction is established; successor contests need GLS or
+per-cluster summaries.** Either-way dividend: the extra-mass factor
+is nearly UNIFORM, Υ̂ = 4.2–5.2 (~4.6× baryons; contest-independent).
+The FOREGROUNDED shape result (R35 cond 4 — the physically central
+axis, not a footnote): the P13-specific same-temperature signature
+lives at x ≈ 1 and the X-COP window never reaches it (curves differ
+≤ 9.7% in-window); within the accessible deep window the
+shifted-scale BE (Ŝ = 9.0) beats the same-temperature crowd by ΔBIC
+7.9 ± 1.3 (100% of resamples) — the testable part leans to the
+NON-crowd rival; and the data carry TWO transitions (Eckert's eq.-20
+form crushes every one-scale family) = the named successor question
+(inner-cluster/higher-x data or lensing legs). ROUND 35: reproduction
+flawless (bit-exact table, zero computed errors), hole YES-mild
+letter-scoped, eight conditions adopted; no credence moves
+(pre-signed all-HOLD, referee-affirmed).
 
 ### P14 — the Oort-spike retrodiction
 The measured function class — Boltzmann-screened, ambient-gated,

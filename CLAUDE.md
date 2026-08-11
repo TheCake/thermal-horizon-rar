@@ -952,6 +952,43 @@ P13-stage (route above) · circulation TODO 27–31 (P1/P2 arXiv before
 O5-AMPLITUDE (doubly motivated: decides P10's e_a; the 10O wedge
 constrains its refresh axis) · P3 round 3 · DR4 readiness.**
 
+**10P + ROUND 35 (2026-08-11 second close, THE P13-STAGE — executed on
+the author's "go for whatever's best" blanket): P13's first data
+contest on the X-COP public release (fetch_xcop.py; SWITCHdrive
+tarball, ISDC mirror DEAD; release mass columns = ETTORI-convention
+H0 = 70, the A1a discovery; h-seam ≤ 0.02 dex disclosed). Pre-reg
+5c150da + A1 c52c0f1 (pre-quote, run 1 preserved); gates green; the
+program's FIRST POWERED cluster instrument (G7 both contest directions
+8/8 — not a 9R wall). SKY: the crowd parameter LOCALIZES — M̂ = 3.43
+(boot ±0.07; systematic 3.3–4.1; g‡_eff = M̂²a₀ = 1.23e-9 ≈ the
+published cluster scale) and ν = 1 + M·n_BE at the galaxy temperature
+is GoF-acceptable at σ_int = 0.16 dex; fired W-WINDOW-QUALIFIED
+(G8-UNSTABLE). ROUND 35 (fresh Opus; REVIEW-ROUND35-OPUS.md
+uncommitted): reproduction FLAWLESS (bit-exact table, zero computed
+errors, A1 contest-neutral), hole YES-mild letter-scoped, **ADOPTED:
+letter → W-GRAY** — the crowd-vs-extra-mass contest is N_R-DEGENERATE
+(bootstrap P(B better) 0.37/0.88/1.00 across thinning; AIC +16.5 and
+raw −2lnL +28.5 favor extra-mass; within-cluster correlation n_eff ≈
+7–17 of 56) = NEITHER direction established, and the P13-specific
+same-temperature discriminant is UNPROBED (window tops at x = 0.74;
+curves differ ≤ 9.7% in-window). SURVIVES: Υ̂ ≈ 4.6× extra mass
+NEARLY UNIFORM across all 7 clusters (contest-independent);
+shifted-scale beats crowd 7.9 BIC (100% resamples); TWO-transition
+structure beyond every one-scale family = the successor question
+(GLS/per-cluster statistics + inner-cluster/higher-x or CLASH/Umetsu
+lensing legs). TRAP #11 fourth occurrence → NEW STANDING RULE: every
+pre-registered gate names, at pre-reg time, which letter clause its
+failure vetoes — else label it a diagnostic. Verification: blind GA
+896bc06 pre-report exact first firing (8th protocol execution); GB
+5/6 exact, GB-1 partial-severe (Pearson shift-invariance no-op
+lesson). Ledger clu-10p-crowdshape (214 rows six gates PASS; the
+audit caught my own CSV comma once). CREDENCE: 53 / 8 all cells
+pre-signed HOLD, referee-affirmed. TODO 32(b) CLOSED at public-data
+grade. NEXT FORK (author's): O5-AMPLITUDE · P11/P14 seed stages ·
+circulation TODO 27–31 (P1/P2 arXiv before 2026-12-02 OUTRANKS;
+outreach parked; visibility flip pending) · P3 round 3 · DR4. TWO
+full arcs this session (10O + 10P) — FRESH SESSION before the next.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

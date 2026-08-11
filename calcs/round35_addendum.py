@@ -178,8 +178,132 @@ def ga():
 
 
 def gb():
+    """Re-compute every load-bearing number the ROUND 35 reviewer produced
+    (REVIEW-ROUND35-OPUS.md; memory rule feedback-verify-reviewer-math).
+    His claims checked here:
+      GB-1 within-cluster lag-1 autocorrelation of F-CROWD residuals
+           rho ~ 0.538 (range 0.42-0.61) => n_eff ~ 17 under AR(1).
+      GB-2 in-window curve separation nu_CROWD(M_hat) vs nu_SCALE(S_hat)
+           <= 9.6 pct over the observed g_bar range; ~25 pct at x = 2.
+      GB-3 per-x decomposition of the SCALE-over-CROWD -2lnL gap:
+           +4.69 from x < 0.5, +3.19 from x >= 0.5 (sum 7.88).
+      GB-4 raw -2lnL gaps and 6*ln(n) at N_R = 6/8/10:
+           +20.77/+28.53/+36.13 vs 22.43/24.15/25.49.
+      GB-5 per-N_R cluster bootstrap (his 300 reps, independent seed):
+           P(B better) = 0.367/0.880/1.000; means -1.22/+4.84/+11.12;
+           P(dBIC > +10) = 0.003/0.110/0.550. Ours: 150 reps, fresh
+           seed, B at 2 starts (distribution-grade check, +-0.04 on P).
+      GB-6 run-1 G3 offsets: mean 0.0274, range 0.0264-0.0285 vs
+           2*log10(70/67.8) = 0.02774; h-seam -0.0139 dex; B U-spread
+           0.047 dex half-range.
+    """
     print("=== ROUND 35 GB (post-report) ===")
-    print("(filled after the ROUND 35 report lands)")
+    import sys
+    sys.path.insert(0, os.path.dirname(__file__))
+    import importlib
+    st = importlib.import_module("stage10p_p13crowd")
+    res = json.load(open(os.path.join(OUTD, "stage10p_results.json")))
+    z = np.load(os.path.join(OUTD, "stage10p_sky.npz"), allow_pickle=True)
+    rng = np.random.default_rng(777001)
+
+    # GB-1 residual autocorrelation
+    tab = load_tab(z, "p")
+    Mhat = res["primary"]["CROWD"]["M"]
+    resid = np.log10(tab["gobs"]) - np.log10(st.gobs_crowd(tab["gbar"], Mhat))
+    rhos_raw, rhos_dm = [], []
+    for nm in sorted(set(tab["name"].tolist())):
+        e = resid[tab["name"] == nm]
+        rhos_raw.append(float(np.corrcoef(e[:-1], e[1:])[0, 1]))
+        ed = e - e.mean()
+        rhos_dm.append(float(np.corrcoef(ed[:-1], ed[1:])[0, 1]))
+    rho_r, rho_d = float(np.mean(rhos_raw)), float(np.mean(rhos_dm))
+    neff_d = 56 * (1 - rho_d) / (1 + rho_d)
+    print(f"GB-1 raw rho {rho_r:.3f} [{min(rhos_raw):.2f}, {max(rhos_raw):.2f}]"
+          f" (offset-dominated; ~1 eff pt/cluster => n_eff ~ 7);")
+    print(f"GB-1 de-meaned rho {rho_d:.3f} [{min(rhos_dm):.2f}, {max(rhos_dm):.2f}]"
+          f" (his 0.538 [0.42, 0.61]); AR1 n_eff {neff_d:.1f} (his ~17)")
+
+    # GB-2 curve separation
+    gg = np.logspace(np.log10(tab["gbar"].min()), np.log10(tab["gbar"].max()), 400)
+    Shat = res["primary"]["SCALE"]["S"]
+    r_in = np.abs(st.gobs_crowd(gg, Mhat) / st.gobs_scale(gg, Shat) - 1.0)
+    g2 = st.A0 * 4.0   # x = 2
+    r_x2 = float(np.abs(st.gobs_crowd(np.array([g2]), Mhat)
+                        / st.gobs_scale(np.array([g2]), Shat) - 1.0)[0])
+    print(f"GB-2 in-window max sep {100*r_in.max():.2f} pct (his 9.6); "
+          f"at x=2: {100*r_x2:.1f} pct (his ~25)")
+
+    # GB-3 per-x decomposition
+    def perpoint(fun, pars, sig):
+        gm = fun(tab["gbar"], *pars)
+        sl = st.model_slope(fun, tab["gbar"], *pars)
+        var = tab["s_logo"] ** 2 + (sl * tab["s_logb"]) ** 2 + sig ** 2
+        r = np.log10(tab["gobs"]) - np.log10(gm)
+        return r * r / var + np.log(2 * np.pi * var)
+    pc = perpoint(st.gobs_crowd, [Mhat], res["primary"]["CROWD"]["sig"])
+    ps = perpoint(st.gobs_scale, [Shat], res["primary"]["SCALE"]["sig"])
+    x = np.sqrt(tab["gbar"] / st.A0)
+    lo = float(np.sum((pc - ps)[x < 0.5]))
+    hi = float(np.sum((pc - ps)[x >= 0.5]))
+    print(f"GB-3 dm2 split: x<0.5 {lo:+.2f} (his +4.69), x>=0.5 {hi:+.2f} "
+          f"(his +3.19), sum {lo+hi:+.2f} (his 7.88)")
+
+    # GB-4 raw gaps at N_R legs (refit)
+    for pref, nr, his_raw in (("n6", 42, 20.77), ("p", 56, 28.53), ("n10", 70, 36.13)):
+        tt = load_tab(z, pref)
+        fs = st.fit_suite(tt, np.random.default_rng(5150 + nr))
+        raw = fs["CROWD"]["m2"] - fs["B"]["m2"]
+        print(f"GB-4 N={nr}: raw {raw:+.2f} (his {his_raw:+.2f}); "
+              f"6ln(n) = {6*np.log(fs['n']):.2f}")
+
+    # GB-5 per-N_R bootstrap (150 reps, B at 2 starts)
+    for pref, his_p, his_mean in (("n6", 0.367, -1.22), ("p", 0.880, 4.84),
+                                  ("n10", 1.000, 11.12)):
+        tt = load_tab(z, pref)
+        names = sorted(set(tt["name"].tolist()))
+        ds = []
+        for i in range(150):
+            pick = rng.choice(names, size=len(names), replace=True)
+            idx = np.concatenate([np.where(tt["name"] == nm)[0] for nm in pick])
+            tb = {k: v[idx] for k, v in tt.items()}
+            tb["name"] = np.concatenate(
+                [[f"{nm}#{j}"] * int((tt["name"] == nm).sum())
+                 for j, nm in enumerate(pick)])
+            fb = st.fit_suite(tb, rng)
+            ds.append(fb["CROWD"]["bic"] - fb["B"]["bic"])
+        a = np.array(ds)
+        print(f"GB-5 {pref}: P(B better) {np.mean(a > 0):.3f} (his {his_p}); "
+              f"mean {a.mean():+.2f} (his {his_mean:+.2f}); "
+              f"P(>+10) {np.mean(a > 10):.3f}")
+
+    # GB-6 run-1 G3 offsets + arithmetic
+    g1 = json.load(open(os.path.join(OUTD, "stage10p_gates.json")))
+    # run-1 values are in the preserved log; re-derive fresh at 67.8:
+    offs = []
+    H067 = 67.8e3 / MPC
+    for name in T2:
+        zc, _ = T2[name]
+        with fits.open(os.path.join(BASE, name, f"{name}_hydro_mass.fits")) as h:
+            t = h["HYDRO_MASS"].data
+            rr = np.array(t["RADIUS"], float)
+            mn = np.array(t["M_NFW"], float)
+            for row in h["PARAMS"].data:
+                if str(row["MODEL"]).strip() == "NFW":
+                    rs, c200 = float(row["RS"]), float(row["C200"])
+        hz2 = H067 ** 2 * (0.308 * (1 + zc) ** 3 + 0.692)
+        rhoc = 3 * hz2 / (8 * np.pi * G)
+        rho_s = (200 / 3) * rhoc * c200 ** 3 / (np.log(1 + c200) - c200 / (1 + c200))
+        xx = rr / rs
+        m_us = 4 * np.pi * rho_s * (rs * KPC) ** 3 * (np.log(1 + xx) - xx / (1 + xx)) / MSUN
+        offs.append(float(np.median(np.abs(np.log10(m_us) - np.log10(mn)))))
+    print(f"GB-6 G3-at-67.8 offsets: mean {np.mean(offs):.4f} range "
+          f"[{min(offs):.4f}, {max(offs):.4f}] (his 0.0274 [0.0264, 0.0285]); "
+          f"2log10(70/67.8) = {2*np.log10(70/67.8):.5f}")
+    U = res["primary"]["B_U"]
+    spread = 0.5 * (np.log10(max(U.values())) - np.log10(min(U.values())))
+    print(f"GB-6 h-seam {np.log10(67.8/70):.4f} dex; U half-spread "
+          f"{spread:.3f} dex (his 0.047)")
+    print("=== GB done ===")
 
 
 if __name__ == "__main__":

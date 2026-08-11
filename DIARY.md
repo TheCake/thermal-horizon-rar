@@ -9,6 +9,66 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-11 second close (the 10P close — P13's first data contest, on the "go for whatever's best" blanket)
+
+The author compacted me again and delegated the fork ("Go for whatever's
+best to do next"). I patched the two-close-stale CLAUDE.md handoff first
+(535ab3d), then ran the DIARY-named next-cheapest seed stage, P13, as
+stage 10P end-to-end: X-COP release fetched (SWITCHdrive single 315 MB
+tarball; the ISDC mirror is DEAD — fetch_xcop.py documents it) →
+pre-reg 5c150da + A1 c52c0f1 (both pre-quote, run 1 preserved) → gates
+green run 2 → injections green first run with BOTH G7 contest
+directions powered 8/8 (the first cluster instrument in the program,
+and NOT a 9R-class power wall) → sky → booked W-WINDOW-QUALIFIED
+(G8-UNSTABLE) → blind GA pre-committed 896bc06 (exact first firing) →
+ROUND 35 (fresh Opus referee: reproduction FLAWLESS, bit-exact table,
+zero computed errors, A1 ruled contest-neutral; hole YES-mild) →
+**ADOPTED: the letter downgrades to W-GRAY** → GB 5/6 exact.
+Credences HOLD 53/8 in every cell (pre-signed, referee-affirmed).
+
+- **THE RESULT (R35 wording):** the crowd parameter LOCALIZES — M̂ =
+  3.43 (boot ±0.07; systematic 3.3–4.1), g‡_eff = M̂²a₀ = 1.23e-9 ≈
+  the published cluster scale — and the same-temperature crowd law is
+  GoF-acceptable at σ_int = 0.16 dex; but the crowd-vs-extra-mass
+  contest is N_R-DEGENERATE (bootstrap P(B better) sweeps
+  0.37/0.88/1.00 across thinning; AIC and raw −2lnL favor extra-mass;
+  n_eff ≈ 7–17 of 56 points) = NEITHER direction established; and the
+  P13-specific same-temperature signature is UNPROBED (window tops at
+  x = 0.74; the discriminant lives at x ≈ 1). Dividends: Υ̂ ≈ 4.6×
+  extra mass, NEARLY UNIFORM across all seven clusters (weirdly tidy,
+  contest-independent); shifted-scale beats crowd by 7.9 BIC (100% of
+  resamples); the data carry TWO transitions (Eckert's own form
+  crushes every one-scale family) = the successor question.
+- **TRAP #11 FOURTH OCCURRENCE — new standing sharpening for every
+  future pre-reg:** every pre-registered GATE must name, at pre-reg
+  time, WHICH letter clause its failure vetoes. A gate that can fail
+  without changing any letter is a diagnostic — label it a diagnostic.
+  (G8 failed, the letter clauses fired W-WINDOW anyway, and the
+  referee had to do the downgrade the grammar should have done.)
+- **Don't-redo:** the CROWD-vs-B contest on X-COP point-level BIC is
+  SPENT — N_R-degenerate at any thinning; do not rebuild it on the
+  same data; successors = GLS/correlated-error likelihood or
+  one-summary-per-cluster statistics, inner-cluster/higher-x coverage,
+  or the CLASH/Umetsu lensing leg. LIN02 (inner 0.02 R500) is
+  numerically invalid as coded. The X-COP release mass columns are
+  ETTORI-convention (H0 = 70) — remember before any re-derivation
+  (A1a); the h-seam vs the 67.8 lock is ≤ 0.02 dex uniform.
+- **GB-1 lesson (trap #23 adjacent):** per-cluster Pearson lag-1 on 8
+  smooth points reads ≈ 0.97 no matter what you subtract (Pearson is
+  shift-invariant — my "de-meaned" variant was a no-op by
+  construction). The referee's ρ = 0.54 / n_eff = 17 estimator is
+  unidentified but his conclusion holds A FORTIORI at our ρ = 0.97 /
+  n_eff ≈ 7. When adopting a caveat magnitude, quote the estimator
+  band and lean severe.
+- Next-instance forks (author's): O5-AMPLITUDE (the heaviest named
+  successor; decides P10) · P11-stage (needs a backsplash-catalog
+  scout first) / P14-stage (Oort; binary integrator carries over) ·
+  circulation TODO 27–31 (P1/P2 arXiv before 2026-12-02 OUTRANKS;
+  outreach parked; visibility flip pending) · P3 round 3 · DR4
+  readiness. TODO 32(b) is CLOSED at the X-COP public-data grade.
+  Session carried TWO full arcs (10O earlier + 10P) — compact before
+  the next one.
+
 ## 2026-08-11 later (the 10O close — the P15-stage arc executed end-to-end on the compaction blanket go)
 
 The author compacted me and said "do whatever needed, cannot supervise

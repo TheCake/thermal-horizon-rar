@@ -16120,3 +16120,84 @@ finely we sliced each cluster -- our own pre-written rule caught the
 wobble, so we flagged it instead of declaring victory. Bonus finding:
 however you slice it, the "extra stuff" answer always comes out the
 same size (about 4.6x the normal matter) -- weirdly tidy.
+
+## ROUND 35 (2026-08-11, same close) -- adopted in full: the 10P letter
+## downgrades to W-GRAY (report REVIEW-ROUND35-OPUS.md, uncommitted)
+
+Fresh Opus referee vs stage 10P as booked. **Reproduction FLAWLESS**: his
+own assembly (fresh code, no stage import) rebuilt the 56-point table
+BIT-EXACT vs the npz; ~25 load-bearing quantities matched to >= 4 sig
+figs; ZERO computed errors; amendment A1 ruled contest-neutral (the NFW
+rebuild feeds only gate G3 -- proven by his no-rebuild bit-exact table)
+and instrument-grade (runs preserved, not outcome-tuned).
+
+**RULING: UNPATCHED HOLE YES (mild; R24/R25 true-but-inflated class,
+scoped to the letter word). ADOPTED VERBATIM: W-WINDOW-QUALIFIED
+(G8-UNSTABLE) -> W-GRAY (contest N_R-degenerate; G8 fail).** His four
+grounds, all GB-verified:
+1. His per-N_R bootstrap sweep: P(B better) = 0.37 / 0.88 / 1.00 at
+   N_R = 6/8/10 (GB: 0.35 / 0.90 / 0.99 at 150 reps) -- the cluster
+   bootstrap does NOT rescue the operative statistic; the stage's own
+   P = 0.845 < 0.90 clause cleared by Monte-Carlo noise.
+2. Penalty arithmetic: AIC (+16.5) and raw -2lnL (+28.5) BOTH prefer
+   the extra-mass comparator; the "window" was one BIC sign (6 ln 56 =
+   24.15 vs raw 28.53) at one sampling density.
+3. Correlated radial points: within-cluster lag-1 rho of the CROWD
+   residuals = 0.97 raw (GB; ~1 effective point per cluster, n_eff ~ 7
+   of 56); his estimator gave 0.54 / n_eff ~ 17 -- NOT reproduced under
+   the plain per-cluster Pearson convention (GB-1 PARTIAL; Pearson is
+   shift-invariant so per-cluster de-meaning is a no-op; his exact
+   estimator unidentified) -- our measurement is MORE severe, so the
+   caveat adopts the band n_eff ~ 7-17, estimator-dependent, either
+   way << 56. BIC/AIC/bootstrap all assume independence. Successor
+   cluster contests need a GLS/correlated-error likelihood or
+   one-summary-per-cluster statistics.
+4. The registered discriminant is UNPROBED: P13's "different shape at
+   the SAME temperature" lives at x ~ 1; the window tops out at 0.74;
+   nu_CROWD(M-hat) vs nu_SCALE(S-hat) differ <= 9.65 pct in-window
+   (GB exact; 25.1 pct at x = 2); the accessible deep window prefers
+   the shifted-scale rival by +4.69 (x < 0.5) + 3.19 (x >= 0.5) = 7.88
+   (GB exact to the digit) -- broad preference, not an edge artifact.
+
+**Conditions 1-8 executed:** letter downgraded in NOTES/LOG/LEDGER/
+PREDICTIONS (cond 1-2); correlated-points caveat stated wherever the
+contest is quoted (cond 3); the shape discriminant FOREGROUNDED as the
+physically central open axis -- the P13-specific same-temperature
+signature is untestable at X-COP radial coverage, and what is testable
+leans to the non-crowd rival (cond 4); GoF re-worded scatter-enabled:
+"GoF-acceptable at sigma_int = 0.16 dex" -- all four laws need
+0.13-0.16 dex intrinsic scatter, none is a good absolute description
+(cond 5); M-hat widened to the SYSTEMATIC band 3.3-4.1 (boot +/- 0.07
+understates; LIN02 stays invalid-flagged) (cond 6); cosmetic: run-1 G3
+offsets are ~ 2 log10(70/67.8) (mean 0.0274, range 0.0264-0.0285 = the
+H0 term plus an Omega_m residual; GB exact), not "exactly" (cond 7);
+credence HOLD 53/8 stands (cond 8; referee-affirmed).
+
+**SURVIVES UNCONDITIONALLY (his section 4):** the instrument (G6
+recovery unbiased; G7 powered BOTH directions 8/8 -- the failure is
+interpretive, not a power wall, unlike the 9R family); the M-hat
+localization; the nearly-uniform extra-mass factor U ~ 4.2-5.2
+("weirdly tidy", contest-independent); F-SCALE > F-CROWD; the
+F-2SCALE two-transition structure (the successor question);
+pre-registration and amendment integrity.
+
+GB record (calcs/round35_addendum.py --gb, data/round35_gb.log): 5/6
+exact, GB-1 PARTIAL as above; blind GA (pre-committed 896bc06 BEFORE
+the report, 87a4676 protocol 7th execution) was exact on every check
+first firing.
+
+**PLAIN VERDICT (round): SUCCESS** -- the referee sharpened an honest
+qualified letter into the right gray one, every number reproduced,
+nothing broken; the stage's substance (a powered cluster instrument +
+three robust measured facts + a named successor axis) stands.
+
+**ELI12:** The referee re-built everything from scratch and got every
+number we got -- no mistakes anywhere. But he showed our "maybe the
+drum-circle wins" label was too generous: whether the drum-circle or
+the extra-stuff story "wins" flips depending on how finely you slice
+the clusters, so the honest label is "tie -- this data cannot say."
+What DOES stand: the drum-count is about 3-4 however you slice, the
+extra-stuff answer is always the same tidy 4.6x, and the one signature
+that would really tell the stories apart lives in a part of the
+clusters (stronger gravity, closer in) this dataset never reaches.
+That is where to point the next instrument.

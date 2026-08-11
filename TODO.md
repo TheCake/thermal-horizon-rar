@@ -1465,14 +1465,18 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     (b) ~~**P13-stage: the cluster crowd shape.**~~ **EXECUTED
     2026-08-11 = stage 10P P13-CROWD** (pre-reg 5c150da + A1 c52c0f1;
     X-COP 7-cluster primary, injection-powered both directions):
-    M̂ = 3.43 ± 0.07 at the galaxy temperature, GoF 0.16 dex,
-    g‡_eff = 1.23e-9 ≈ the published cluster scale; contest letter
-    W-WINDOW-QUALIFIED (G8 thinning-unstable = trap #11 third
-    strike; AIC adverse); extra-mass factor uniform Υ̂ ≈ 4.6×;
-    shifted-scale form beats crowd by ~8 BIC; two-transition
-    structure = the successor question. Ledger clu-10p-crowdshape;
-    P13 annotated. CLASH/Umetsu lensing leg = the deferred
-    cross-check successor. ROUND 35 adjudication booked in NOTES.
+    M̂ = 3.43 ± 0.07 at the galaxy temperature (systematic band
+    3.3–4.1), GoF-acceptable at σ_int = 0.16 dex, g‡_eff = 1.23e-9 ≈
+    the published cluster scale; contest letter **W-GRAY (ROUND 35
+    ADOPTED: N_R-degenerate + penalty-driven; n_eff ≈ 7–17 of 56;
+    neither direction established)**; extra-mass factor uniform
+    Υ̂ ≈ 4.6× (contest-independent); shifted-scale form beats crowd
+    by ~8 BIC AND the same-temperature discriminant is unprobed
+    below x ≈ 1 = the foregrounded successor axis; two-transition
+    structure beyond every one-scale family. Ledger
+    clu-10p-crowdshape; P13 annotated. Successors: inner-cluster/
+    higher-x or CLASH/Umetsu lensing legs, with GLS or per-cluster
+    summary statistics.
     (c) **P11-stage: the memory cross-match.** Backsplash-classified
     gas-poor dwarfs vs matched never-infall field; RAR offset toward
     past e_N. Data scout needed first (backsplash catalogs: SDSS/LV;
