@@ -187,9 +187,31 @@ annotations (no status flips from this stage).
 
 Environment: py (Windows), numpy + sympy + scipy. Seed 31 primary, 101
 resolution row. Wall-clock estimate ~5-15 min CPU.
+
+AMENDMENT A2 (2026-08-11, logged post-run-1-failure, PRE-QUOTE; run 1
+preserved: data/stage10o_results_run1.json + data/stage10o_run.log).
+Run 1 fired O-FEASIBILITY-LIMITED exactly as wired: G10O-0d FAILED at
+drift99 up to 6.78 vs bar 2e-3 (the 1/j^3 stiffness of high-e Kozai
+excursions is unresolved by fixed-step RK4 at dtau = 1e-3), corrupting
+the map (thermal fixed point read 1.067 at Gamma = 1 where the Jeans
+theorem demands exact invariance -- the 0b gate's purpose); 0a/0b/3
+failed downstream of the same defect. The pre-registered convergence
+protocol (one dtau halving) is executed literally as RUN 2 and archived
+(a 16x local-error reduction cannot bridge the >= 3.5 orders needed --
+arithmetic disclosed here in advance; its failure is the protocol's
+second violation = terminal for the original integrator). A2 replaces
+the integrator with TIERED PER-ORBIT SUBSTEPPING (per macro-step, each
+orbit takes 2^m substeps sized to hold its local displacement below
+TOL_SUB; deterministic, vectorized); NOTHING else changes -- bars,
+gates, letters, wedge rules, step bars, seeds all as pre-registered.
+Run 3 (--adaptive) is the operative run; gate G10O-0d remains the sole
+arbiter of integrator adequacy. Invocations:
+  run 2: py calcs/stage10o_p15erode.py --dtau 5e-4
+  run 3: py calcs/stage10o_p15erode.py --adaptive
 """
 
 import json
+import sys
 import time
 
 import numpy as np
@@ -197,6 +219,16 @@ import sympy as sp
 
 T_START = time.time()
 RNG = np.random.default_rng(31)
+
+ADAPTIVE = '--adaptive' in sys.argv
+DTAU_CLI = 1e-3
+if '--dtau' in sys.argv:
+    DTAU_CLI = float(sys.argv[sys.argv.index('--dtau') + 1])
+JSON_PATH = ('data/stage10o_results.json' if ADAPTIVE
+             else f'data/stage10o_results_rk4_{DTAU_CLI:g}.json')
+TOL_SUB = 1e-3
+CAP_SUB = 4096
+print(f"[mode: {'ADAPTIVE tiered-substep' if ADAPTIVE else f'plain RK4 dtau={DTAU_CLI:g}'} -> {JSON_PATH}]")
 
 # ----------------------------------------------------------------------
 # Constants (SI)
@@ -277,13 +309,19 @@ def sample_initial(alpha_i, n, rng):
     return j, w, jz
 
 
-def mix_ensemble(j0, w0, jz, Gam, tau_max=80.0, dtau=1e-3, t_frac=0.30,
+def mix_ensemble(j0, w0, jz, Gam, tau_max=80.0, dtau=None, t_frac=0.30,
                  sample_every=100):
-    """Batch RK4 of dj/dtau = -dH/dw, dw/dtau = +dH/dj.
+    """Batch integration of dj/dtau = -dH/dw, dw/dtau = +dH/dj.
 
+    Plain mode: fixed-step RK4 at dtau (run 1/2). Adaptive mode (A2):
+    per macro-step of size DTAU_MACRO each orbit takes 2^m substeps with
+    m chosen so its local displacement stays below TOL_SUB (tiered,
+    vectorized, deterministic; cap CAP_SUB).
     Returns pooled e-samples over [t_frac*tau_max, tau_max] in two half
-    windows (for the idempotence gate), the final state, and the H drift.
+    windows (idempotence gate), the final state, and the 99th-pct H drift.
     """
+    if dtau is None:
+        dtau = DTAU_CLI
     j = j0.copy()
     w = w0.copy()
     H_init = H_fn(j, w, jz, Gam)
@@ -293,18 +331,38 @@ def mix_ensemble(j0, w0, jz, Gam, tau_max=80.0, dtau=1e-3, t_frac=0.30,
     jlo = np.abs(jz) + 1e-9
     pool1, pool2 = [], []
 
-    def rhs(jj, ww):
-        jj = np.clip(jj, jlo, 1.0 - 1e-12)
-        return -dHdw_fn(jj, ww, jz, Gam), dHdj_fn(jj, ww, jz, Gam)
+    def rhs(jj, ww, jzz):
+        jj = np.clip(jj, np.abs(jzz) + 1e-9, 1.0 - 1e-12)
+        return -dHdw_fn(jj, ww, jzz, Gam), dHdj_fn(jj, ww, jzz, Gam)
+
+    def rk4_sub(jj, ww, jzz, h, nsub):
+        for _ in range(nsub):
+            k1j, k1w = rhs(jj, ww, jzz)
+            k2j, k2w = rhs(jj + 0.5 * h * k1j, ww + 0.5 * h * k1w, jzz)
+            k3j, k3w = rhs(jj + 0.5 * h * k2j, ww + 0.5 * h * k2w, jzz)
+            k4j, k4w = rhs(jj + h * k3j, ww + h * k3w, jzz)
+            jj = jj + (h / 6) * (k1j + 2 * k2j + 2 * k3j + k4j)
+            ww = ww + (h / 6) * (k1w + 2 * k2w + 2 * k3w + k4w)
+            jj = np.clip(jj, np.abs(jzz) + 1e-9, 1.0 - 1e-12)
+        return jj, ww
 
     for istep in range(nstep):
-        k1j, k1w = rhs(j, w)
-        k2j, k2w = rhs(j + 0.5 * dtau * k1j, w + 0.5 * dtau * k1w)
-        k3j, k3w = rhs(j + 0.5 * dtau * k2j, w + 0.5 * dtau * k2w)
-        k4j, k4w = rhs(j + dtau * k3j, w + dtau * k3w)
-        j = j + (dtau / 6) * (k1j + 2 * k2j + 2 * k3j + k4j)
-        w = w + (dtau / 6) * (k1w + 2 * k2w + 2 * k3w + k4w)
-        j = np.clip(j, jlo, 1.0 - 1e-12)
+        if not ADAPTIVE:
+            j, w = rk4_sub(j, w, jz, dtau, 1)
+        else:
+            vj, vw = rhs(j, w, jz)
+            speed = np.abs(vj) + np.abs(vw)
+            m = np.ceil(speed * dtau / TOL_SUB)
+            m = np.clip(m, 1, CAP_SUB)
+            tiers = 2**np.ceil(np.log2(m)).astype(int)
+            for t_ in np.unique(tiers):
+                sel = tiers == t_
+                if not sel.any():
+                    continue
+                j_s2, w_s2 = rk4_sub(j[sel], w[sel], jz[sel],
+                                     dtau / t_, int(t_))
+                j[sel] = j_s2
+                w[sel] = w_s2
         if istep >= istart and (istep - istart) % sample_every == 0:
             e_now = np.sqrt(np.clip(1 - j**2, 0, 1))
             (pool1 if istep < imid else pool2).append(e_now.copy())
@@ -737,6 +795,6 @@ print(f"LETTER: {LETTER}   gates {n_pass}/{len(GATES)}"
 RESULTS['letter'] = LETTER
 RESULTS['gates'] = {k: [v[0], v[1]] for k, v in GATES.items()}
 
-with open('data/stage10o_results.json', 'w') as f:
+with open(JSON_PATH, 'w') as f:
     json.dump(RESULTS, f, indent=1)
-print("results -> data/stage10o_results.json")
+print(f"results -> {JSON_PATH}")
