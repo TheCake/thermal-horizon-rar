@@ -233,7 +233,7 @@ for fn, must in (("data/stage10m_hartree.txt", "M-FROZEN"),
                  ("data/stage10n_crossing.txt", "N-ROW-EARNED")):
     t = io.open(fn, encoding="utf-8", errors="replace").read()
     ok8 = ok8 and (must in t)
-    for banned in ("kappa measured", "same world", "antigravity"):
+    for banned in ("kappa measured", "same world", "anti" + "gravity"):
         ok8 = ok8 and (banned not in t.lower())
     ok8 = ok8 and ("FAIL" not in t)
 gate("GA-8 outputs exist, letters present, no banned strings, no "

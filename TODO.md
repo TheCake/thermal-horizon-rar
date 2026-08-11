@@ -1426,7 +1426,7 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     fd56efc = the publishable pre-registration chain. **ONE BLOCKER:
     origin/master (3 commits, no common ancestor with main) = the
     un-sanitized week-one archive — the root commit message and
-    calcs/antigravity_calcs.py carry the banned word, and the
+    the old a-word calcs filename carry the banned word, and the
     sanitize commit only lands at its tip. DELETE IT FROM THE REMOTE
     before flipping visibility: `git push origin --delete master`
     (Claude's attempt 2026-08-08 was permission-blocked — needs the
@@ -1440,6 +1440,14 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     untouched. (2026-08-08 later: author deleted origin/master and
     flipped default to main — blocker cleared; remaining = papers
     shipped + final grep sweep + the visibility flip.)
+    (2026-08-11: FINAL GREP SWEEP RUN at the P3-0.6 tree — banned
+    word now at ZERO tracked occurrences (five residues fixed: two
+    log mentions de-named, three verifier checker-strings made
+    self-clean); private/ references in outward files: zero; repo
+    URL consistent in all 7 outward files; anonymous visibility
+    re-checked = still 404/private. Remaining before circulation:
+    papers shipped per CIRCULATION.md + the author's visibility
+    flip.)
 
 ## The Paper-4 seed lanes (opened 2026-08-11 on the author's blanket go;
 ## source PAPER4-SEED.md; rows REGISTERED = PREDICTIONS.md §E, this date)
@@ -1480,7 +1488,32 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     (c) **P11-stage: the memory cross-match.** Backsplash-classified
     gas-poor dwarfs vs matched never-infall field; RAR offset toward
     past e_N. Data scout needed first (backsplash catalogs: SDSS/LV;
-    classification grade sets the bars).
+    classification grade sets the bars). **SCOUTED 2026-08-11 (three
+    agents; all IDs scout-grade, primary-read before any gate use):
+    the population-grade instrument is DATA-BLOCKED at public grade —
+    no released backsplash classification catalog exists (Haggar+26
+    ML classifier arXiv:2607.26136, backsplash purity 59–75%,
+    tool/web-app UNRELEASED; Haggar+20 2001.11518 = simulation
+    definition only; nothing at VizieR grade). Executable near-term
+    forms, both BELOW the registered kill grade: (a) the Local Group
+    pilot — Bennett+25 arXiv:2509.11299 (ApJ 993, 228): SIX isolated
+    LG dwarfs with HST proper motions + backsplash likelihoods +
+    infall times, tables public; cross with literature σ_*; (b) the
+    M101 trio — Shapiro 2512.14808: 2–3 quenched likely-backsplash
+    dwarfs, no kinematics yet. PRIOR ART: NEAR-MISS at scout grade —
+    no published backsplash-vs-field RAR/dynamics comparison found
+    (closest: 2407.03413 MOND cluster-UDG sims = EFE-memory-adjacent,
+    ~90% isolated dispersion retained during infall, primary-read
+    obligation; Lovell+17 1707.03898 tidal-history RAR scatter in
+    LCDM; McGaugh 1610.06189 Crater II EFE) — the P11 design appears
+    novel. The kinematics-side scout was verification-weak (flagged;
+    leads only: McConnachie & Venn 2020 2012.03904 PMs; Karachentsev
+    LV database VizieR form unresolved, the 10I flag again).
+    RECOMMENDATION: hold the stage for a classification catalog
+    (Haggar tool release / author-contact ride-along on the parked
+    outreach / DR4-era), or author-call the N=6 LG pilot as a
+    labeled consistency-grade stage — it cannot fire the registered
+    kill either way.**
     (d) **P14-stage: the Oort spike under the measured function.**
     Trajectory-formulation comet 1/a distribution; V-N-T
     (2403.09555) machinery as the contrast; binary orbit integrator

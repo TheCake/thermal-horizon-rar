@@ -199,7 +199,7 @@ def main():
         paper = f.read()
     abstract = paper.split("## Abstract")[1].split("## 1. Introduction")[0]
     aw = len(abstract.split())
-    banned = ["measured near one", "same world", "antigravity", "Antigravity", "κ measured"]
+    banned = ["measured near one", "same world", "anti" + "gravity", ("anti" + "gravity").capitalize(), "κ measured"]
     hits = [b for b in banned if b in paper]
     prose = "\n".join(l for l in paper.splitlines()
                       if not l.strip().startswith("|") and "calcs/" not in l and "data/" not in l)

@@ -16334,3 +16334,93 @@ precision can no longer see it (it would need the jiggle to be 66%),
 and made us write six honesty footnotes -- the biggest being "say
 clearly which two numbers you multiplied together, and that the
 other fair choice gives 27% instead of 23%." Nothing moved.
+
+## The P3 round-3 close (2026-08-11 fourth close): draft 0.6 -> 0.7 + ROUND 37 + the P11 scout + the TODO-31 sweep
+
+Author-delegated fork ("you pick what's next... concurrently... spawn opus
+agents"). Three lanes, one close.
+
+**THE THAW: P3 draft 0.6** (commit 3300f88, blind GA 74/74 pre-committed =
+the 87a4676 protocol's 10th execution) absorbed the post-0.5 record:
+the coherent-state/mean-field route closed negative at exact grade (Sec 6;
+max edge 0.700 vs lock floor 0.888, ratios 4.03-4.27, fold dynamically
+frozen, midpoint identity, no kappa=1 feature); the response signature
+quantified away as a coefficient diagnostic (plateau 1.088, width-cut) and
+re-scoped in Sec 9 as the ambient-amplitude test; e_a derived into Sec 7
+(0.23 / 0.27 matched co-quote / 0.16-0.39; ceilings reconciled 16-39% of
+chart, 11-27% of FD; cloud auto-frozen x33 over the ~2.5 Gyr erosion
+bound, consistency-vote scope stated); DR4 instrument re-anchor (coarse
+0.02 channel dead at 0.011, revival x1.7; fine 0.005 grade straddle).
+Abstract 249w at 0.6.
+
+**ROUND 37 (fresh referee vs 0.6; REVIEW-ROUND37-OPUS.md uncommitted):
+MINOR REVISION; ~35 load-bearing quantities re-derived (own solver for
+eps2/e_a/S-machinery), ONE computed error.**
+
+- **CORRECTION (the x29 -> ~40): the 10Q GQ-9 reconciliation line "strike
+  corner x29 short of 6.7" MIXED CONVENTIONS.** The 10G closure demand 6.7
+  is FD-RELATIVE (the absolute surface is q_phys >= 9.4 at max-grant; 10G
+  G4 table ran at q_phys = 1; 9.45/1.416 = 6.67); the derived e_a = 0.234
+  is ABSOLUTE. Same-units factor = 9.45/0.2338 = 40.4 (~40; honest surface
+  27.6/0.234 = 118). CONSERVATIVE direction -- the exclusion is STRONGER;
+  no 10Q letter clause carried the number; the 10G strike is untouched.
+  Three instruments (the stage print, ROUND 36, my GA-3) verified
+  6.7/0.234 as faithful arithmetic and none asked what units 6.7 carried
+  = trap #25 (DIARY). Fixed in paper Sec 7 + abstract; ledger
+  mech-10q-eamplitude note annotated; GB re-derived the whole chain from
+  the 10G archive independently before adoption (25/25 OK,
+  data/round37_addendum.txt).
+- Minors adopted: m1 fine-grade straddle = convention-family maximum
+  (nominal-convention central ~0.002 now disclosed in Sec 9); m2 the
+  static-ratio corner clause (central 2.7, extreme corner 1.84 marginal);
+  m3 "feasible 0.005" softened to "of order 0.005, at the edge of what
+  DR4-era samples may reach"; m4 abstract "neither self-consistency route
+  bounds the coefficient" (avoids mechanism-closed misread); m5 "in the
+  frozen-bath treatment" qualifier on the no-regulator clause. His iv.3:
+  round-36 addendum output now archived (data/round36_addendum.txt; App B
+  row completed; ALL REVIEWER NUMBERS CONFIRMED on the re-run). Draft 0.7;
+  abstract exactly 250w; App B +5 rows this close.
+
+**P11 SCOUT (three agents; everything scout-grade, primary-read before any
+gate use; booked in TODO 32c):** the registered population-grade
+instrument is DATA-BLOCKED at public grade -- no released backsplash
+classification catalog exists (Haggar+26 arXiv:2607.26136 ML classifier,
+purity 59-75%, tool UNRELEASED; Haggar+20 2001.11518 sim definition only).
+Executable near-term forms, both below the registered kill grade: the
+Bennett+25 (2509.11299, ApJ 993, 228) N=6 Local Group pilot (HST PMs +
+backsplash likelihoods, tables public) and the Shapiro 2512.14808 M101
+quenched trio (no kinematics yet). PRIOR ART: NEAR-MISS -- no published
+backsplash-vs-field RAR/dynamics comparison found; closest = 2407.03413
+(MOND cluster-UDG infall sims, ~90% isolated dispersion retained =
+EFE-memory-adjacent; primary-read obligation), Lovell+17 1707.03898,
+McGaugh 1610.06189. The P11 DESIGN appears novel. The kinematics-side
+scout was verification-weak (flagged; its list = leads only).
+RECOMMENDATION: hold the stage for a classification catalog or
+author-call the N=6 pilot as labeled consistency-grade.
+
+**TODO-31 SWEEP:** banned word now at ZERO tracked occurrences (five
+residues fixed -- two log mentions de-named, three verifier
+checker-strings made self-clean; tree greps clean; both edited checkers
+re-run OK); private/ references in outward files zero; repo URL
+consistent in all 7 outward files; anonymous visibility re-checked =
+still 404/private (the flip stays the author's click).
+
+NO credence moves (anomaly-real 53 / bath-mechanism conditional 8; paper
+round + scout + sweep -- nothing verdict-bearing on the sky).
+
+PLAIN VERDICT: SUCCESS -- the mechanism paper is current through the
+whole derivation record at referee-adopted grade, the round caught a real
+cross-convention number slip that three prior instruments had verified
+faithfully (fixed conservative-direction), the P11 seed row has an honest
+data-feasibility verdict instead of an open guess, and the circulation
+tree is grep-clean.
+
+ELI12: We updated the third paper with everything learned since its last
+checkup, then handed it to a fresh referee. He re-computed every number
+and found one real mistake: we had said "the cloud's jiggle is 29 times
+too small to power the engine," but the 29 compared two numbers measured
+in different rulers -- in the same ruler it is 40 times too small. Wrong
+number, right conclusion, and now stronger. We also scouted whether the
+"galaxies with a past" test can run yet (not yet: nobody has published
+the needed who-fell-in-before list; two small pilots exist), and swept
+the repository so the one banned word appears nowhere.

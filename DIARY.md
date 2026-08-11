@@ -9,6 +9,55 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-11 fourth close (the P3-round-3 close -- the concurrent "you pick" close: thaw + ROUND 37 + P11 scout + sweep)
+
+The author delegated the fork ("you pick what's next... concurrently...
+spawn opus agents"). I ran three lanes: the P3 thaw (0.5 -> 0.6, the full
+10M/10N/10O/10Q absorb, blind GA 74/74 pre-committed 3300f88 = protocol
+execution #10) -> ROUND 37 fresh referee -> GB 25/25 -> draft 0.7; the
+P11 backsplash data scout (3 Haiku agents); the TODO-31 circulation sweep.
+No credence moves (53/8, paper round). Reviews ROUND37 uncommitted.
+
+- **ROUND 37 = MINOR REVISION with ONE real computed error, and it was
+  OURS: the x29.** The 10Q reconciliation line "strike corner x29 short
+  of 6.7" divided the 10G closure demand (6.7, which is FD-RELATIVE:
+  absolute surface q_phys = 9.4) by the ABSOLUTE derived e_a = 0.234.
+  Same-units factor = ~40. Conservative direction; no letter clause
+  carried it; strike untouched. **TRAP #25 (new standing rule): when two
+  meters share a symbol but not a convention, gate the RATIO'S UNITS at
+  pre-reg time. A faithful-arithmetic verifier REPRODUCES a units slip --
+  the stage print, ROUND 36, and my own GA-3 all verified 6.7/0.234 as
+  arithmetic; the referee asked what units the 6.7 carried and got 40.**
+  (Trap #15's cousin: score against the right OBJECT; here, quote in the
+  right UNITS.)
+- Adopted minors worth remembering: the Sec-9 fine-grade straddle 0.0056
+  is the CONVENTION-FAMILY MAXIMUM (nominal-convention central ~0.002 --
+  now disclosed; never quote the straddle without the family); the
+  low-envelope static-ratio corner 1.84 < 2 rides in the paper now; the
+  0.005 grade is a registered TARGET, not demonstrated feasibility.
+- **Don't-redo:** the P3 absorb through 10Q/R37 is COMPLETE -- the paper
+  is current with the whole derivation record; next P3 gate is the
+  author's (round 4 / circulation). The round-36 addendum output is now
+  ARCHIVED (data/round36_addendum.txt) -- App B's amplitude row is
+  complete; don't re-derive 0.268/0.662 from scratch.
+- **P11 scout verdict (booked TODO 32c, scout-grade):** population
+  instrument DATA-BLOCKED at public grade (no released backsplash
+  classification catalog; Haggar+26 2607.26136 tool unreleased);
+  executable = Bennett+25 2509.11299 N=6 LG pilot / Shapiro 2512.14808
+  M101 trio, both sub-kill-grade; PRIOR ART NEAR-MISS = the design is
+  apparently novel (closest: 2407.03413 MOND UDG EFE-memory sims --
+  primary-read before any use). The kinematics-side scout was
+  verification-weak (2-6 fetches for 7 claims; one attribution
+  self-corrected between passes) -- treat its list as leads, the old
+  scout-misread lesson again. P14 (Oort) is now the unblocked seed lane.
+- TODO-31 sweep: tree greps CLEAN on the banned word (5 residues fixed,
+  incl. MY OWN checker strings -- a checker that spells the banned word
+  is itself an occurrence); repo still anonymous-404/private.
+- FOUR closes today (10O + 10P + 10Q + this). Compact before the next
+  arc. Forks (author's): circulation TODO 27-31 (P1/P2 arXiv before
+  2026-12-02 OUTRANKS; flip pending) - P3 round 4 / circulation - P14
+  seed (P11 blocked) - DR4 readiness - the kappa=1-deep structural route.
+
 ## 2026-08-11 third close (the 10Q close -- O5-AMPLITUDE derived, on "Go for next. Probably the O5? Up to you")
 
 The author leaned O5 and delegated; I ran the R33 named successor as

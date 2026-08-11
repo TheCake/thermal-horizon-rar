@@ -1005,7 +1005,7 @@ solver arrays — the D-normalization CANCELS in the ratio; the 10F Ω₂
 band reduced to a gated 8.9% coth correction). RECONCILIATION: the
 10F ≤~1 cap vs 10G q_FD = 1.43 unreconciled pair RESOLVES — both
 were CEILINGS; the physical value sits ×6.6 in-chart / ×6.1 under
-the FD ceiling; the 10G strike corner is ×29 short (strike
+the FD ceiling; the 10G strike corner is ×29 short [R37: ~×40 same-units — the 6.7 was FD-relative; see the fourth-close block] (strike
 untouched); refresh 83–282 Gyr = ×33 over the 10O boundary
 (automatically frozen). **P10 sub-letter REANCHOR-FLOOR
 (R36-affirmed): the registered DR4 σ_S = 0.02 discovery channel is
@@ -1038,6 +1038,60 @@ FRESH SESSION before the next arc. NEXT FORK (author's): circulation
 TODO 27–31 (P1/P2 arXiv before 2026-12-02 OUTRANKS; outreach parked;
 visibility flip pending) · P3 round 3 / thaw · P11 (backsplash scout
 first) / P14 (Oort) seed stages · DR4 readiness.**
+
+**P3 DRAFT 0.7 + ROUND 37 + THE P11 SCOUT + THE TODO-31 SWEEP (2026-08-11
+fourth close — the author's "you pick what's next... concurrently... spawn
+opus agents"): the concurrent close. LANE 1, the thaw: P3 0.5 → 0.6
+absorbed the whole post-0.5 record (10M mean-field closure into §6 —
+edge 0.700 vs lock floor 0.888, ratios 4.03–4.27, fold frozen, midpoint
+identity, §8 route list now "structural principle only"; 10N response
+signature quantified away — plateau 1.088, width-cut, §9 re-scope to the
+AMBIENT-AMPLITUDE test; 10Q e_a derivation into §7 with ceilings
+reconciled + auto-frozen ×33 over the 10O ~2.5 Gyr erosion bound; DR4
+re-anchor: coarse 0.02 dead at 0.011, revival ×1.7, fine 0.005
+edge-conditional), blind GA 74/74 pre-committed 3300f88 (protocol
+execution #10). ROUND 37 (fresh referee vs 0.6; REVIEW-ROUND37-OPUS.md
+uncommitted) = MINOR REVISION, ~35 quantities re-derived in his own
+solver, **ONE computed error = OURS: the ×29 closure factor MIXED
+CONVENTIONS (the 10G demand 6.7 is FD-RELATIVE, absolute surface q_phys
+= 9.4; same-units factor ~40 = 9.45/0.2338; honest surface ~118;
+CONSERVATIVE — exclusion stronger, no letter clause carried it, strike
+untouched). TRAP #25: gate a cross-meter RATIO'S UNITS at pre-reg time —
+the stage print, R36, and my GA-3 all verified 6.7/0.234 faithfully;
+nobody asked the units.** Ledger mech-10q-eamplitude note annotated;
+paper §7 + abstract corrected. Minors adopted: straddle 0.0056 =
+convention-family MAX (nominal ~0.002 disclosed), static-ratio corner
+1.84 clause, 0.005 = "of order/edge of DR4-era", abstract "neither
+self-consistency route bounds the coefficient", frozen-bath qualifier;
+round-36 addendum output ARCHIVED (data/round36_addendum.txt, App B row
+complete). Draft 0.7: abstract exactly 250w, App B +5 rows, GB 25/25
+(calcs/round37_addendum.py; GA post-adoption 81/81). **P3 IS CURRENT
+through 10Q/R37 — the P3-IMPACT flag from the 10G strike is FULLY
+RESOLVED; next P3 gate = the author's (round 4 or circulation).** LANE
+2, the P11 scout (3 Haiku agents, all scout-grade, booked TODO 32c): the
+registered population instrument is DATA-BLOCKED at public grade — NO
+released backsplash classification catalog (Haggar+26 2607.26136 ML
+tool, purity 59–75%, UNRELEASED; Haggar+20 = sim definition);
+executable near-term = Bennett+25 2509.11299 N=6 LG pilot (HST PMs +
+backsplash likelihoods, tables public) / Shapiro 2512.14808 M101
+quenched trio (no kinematics) — BOTH below the registered kill grade;
+PRIOR ART NEAR-MISS: no backsplash-vs-field RAR/dynamics comparison
+published anywhere (closest 2407.03413 MOND UDG EFE-memory sims,
+primary-read obligation) ⇒ **the P11 design is apparently novel; hold
+the stage for a classification catalog or author-call the N=6 pilot as
+labeled consistency-grade. P14 (Oort) = the unblocked seed lane.**
+LANE 3, TODO-31: final grep sweep RUN — banned word at ZERO tracked
+occurrences (5 residues fixed incl. verifier checker-strings);
+private/ refs zero in outward files; repo URL consistent 7/7;
+anonymous visibility re-checked = STILL 404/PRIVATE (the flip stays
+the author's click). CREDENCES: NO moves (anomaly-real 53 / mech 8 —
+paper round + scout + sweep). Ledger 215 rows (one note annotation, no
+new rows) / six gates PASS. FOUR closes 2026-08-11 (10O + 10P + 10Q +
+this) — FRESH SESSION before the next arc. NEXT FORK (author's):
+circulation TODO 27–31 (P1/P2 arXiv before 2026-12-02 OUTRANKS;
+outreach parked; visibility flip pending) · P3 round 4 / circulation ·
+P14 Oort seed (P11 data-blocked) · DR4 readiness · the κ=1-deep
+structural route.**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
