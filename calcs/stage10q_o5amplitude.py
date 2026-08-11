@@ -240,6 +240,35 @@ here pre-quote with its run preserved (house rule).
      6E-vs-10E token split already disclosed in ARCHIVED ANCHORS).
      The T3 assembly keeps its 10E/10F convention with the 6E
      variant row (spread already printed, sub-1%). Bars UNCHANGED.
+  A3 (post run 3, GATE-INSTRUMENT redesign of GQ-4b ONLY, pre-quote;
+     run 3 preserved at data/stage10q_run3.txt; physics numbers
+     IDENTICAL across runs 2/3 -- eps2 = 0.06490, e_a unchanged):
+     run 3 diagnosed BOTH remaining GQ-4b defects as mine:
+     (i) the dedicated truncated grid [0.5, 2] cuts the GRADIENT
+     functional's field energy outside the window (l=0 loses
+     int_2^inf (1/r^2)^2 r^2 dr = 1/4 = exactly the observed 50%
+     internal mismatch) -- the pairing-vs-gradient INTERNAL leg
+     returns to the FULL standard grid (both functionals see the
+     whole field; run-2 grade ~1e-3), bar unchanged 1%;
+     (ii) the residual pairing deficit vs analytic is LINEAR in the
+     shell width w, NOT O(w^2): the multipole kernel G_l(r,s) has a
+     derivative KINK at r = s, so a w-smeared shell under-reads by
+     ~ (1/2)(2l+1) E|u-v|/a with E|u-v| = 2w/sqrt(pi) -- predicted
+     deficits 2.8% (l=0) and 14% (l=2) at w = 0.05 vs observed
+     3.05% / 12.9%. The analytic constant is the w -> 0 LIMIT, so
+     the gate now measures it as such: pairing at w in {0.05, 0.03,
+     0.015} on the resolved grid, least-squares linear-in-w
+     extrapolation to w = 0, |E_extrap - analytic| <= 1% for l = 0
+     AND l = 2; the fitted slope ratio (l=2)/(l=0) is printed
+     against the kink prediction (2l+1)-ratio = 5 (diagnostic row).
+     Plus the resolution-independence row: standard-grid vs
+     resolved-grid pairing at w = 0.05 agree <= 1% (run 2 vs run 3:
+     0.14% -- the original 'under-resolved' concern is RETIRED; the
+     physical arrays were never in doubt: hi-res eps2 doubling
+     8e-4). Letter wiring UNCHANGED (GQ-4b -> Q-BAND on fail).
+     Also: the letter block now PRINTS the GQ-10 static-ratio flag
+     line when the low-envelope corner dips under 2 (the flag was
+     wired at pre-reg; this is display only).
 
 COMPUTE < 3 min (8 solver calls + sympy + quadratures).
 Writes data/stage10q_o5amplitude.txt.
@@ -451,43 +480,66 @@ def E_grad(r, phi_l, l):
     integ = (dphi**2 + l*(l+1)*(phi_l[l]/r)**2)*r**2
     return float(0.5/(2*l+1)*np.trapezoid(integ, r))
 
-# GQ-4b thin-shell analytic gate (integral family 2; A2: dedicated
-# resolved grid + corrected analytic E_l = 1/(2 (2l+1)^2 a) -- the
-# two-sided kernels are CONTINUOUS at the shell, phi_l(a) =
-# -1/((2l+1) a); S = 0 outside [0.8, 1.2] makes the truncated
-# kernels exact on [0.5, 2])
+# GQ-4b thin-shell analytic gate (integral family 2; A3 form: the
+# analytic E_l = 1/(2 (2l+1)^2 a) is the w -> 0 LIMIT -- the kernel
+# kink at r = s makes the finite-w deficit LINEAR in w -- so the
+# gate extrapolates; internal equality on the FULL grid)
 emit("GQ-4b energy-integral analytic gate (thin shell at a = 1; "
-     "resolved grid):")
-NRt, LMAXt = 4096, 4
-rt = np.geomspace(0.5, 2.0, NRt)
-h = np.exp(-0.5*((rt-1.0)/0.05)**2)
-h /= np.trapezoid(h*rt**2, rt)          # unit int S r^2 dr
-Slt = np.zeros((LMAXt+1, NRt))
+     "A3 form):")
+
+def phi_one_l(rg, Srow, l):
+    n = len(rg)
+    A = np.zeros(n); B = np.zeros(n)
+    dr = np.diff(rg)
+    g_in = Srow*rg
+    for i in range(n-1):
+        qf = (rg[i]/rg[i+1])**(l+1)
+        A[i+1] = A[i]*qf + 0.5*dr[i]*(g_in[i]*qf + g_in[i+1])
+    for i in range(n-2, -1, -1):
+        qf = (rg[i]/rg[i+1])**l
+        B[i] = B[i+1]*qf + 0.5*dr[i]*(g_in[i] + g_in[i+1]*qf)
+    return -(A+B)/(2*l+1)
+
+def shell(rg, w):
+    hh = np.exp(-0.5*((rg-1.0)/w)**2)
+    return hh/np.trapezoid(hh*rg**2, rg)
+
+rt = np.geomspace(0.5, 2.0, 4096)
+rfull = np.logspace(-2, 3, 512)
 ok4b = True
+W_SET = (0.05, 0.03, 0.015)
+slopes = {}
 for l, Eexact in ((0, 0.5), (2, 1.0/50.0)):
-    Slt[:] = 0.0
-    Slt[l] = h
-    A = np.zeros((LMAXt+1, NRt)); B = np.zeros((LMAXt+1, NRt))
-    dr = np.diff(rt)
-    for ll in range(LMAXt+1):
-        g_in = Slt[ll]*rt
-        for i in range(NRt-1):
-            qf = (rt[i]/rt[i+1])**(ll+1)
-            A[ll, i+1] = A[ll, i]*qf + 0.5*dr[i]*(g_in[i]*qf + g_in[i+1])
-        g_out = Slt[ll]*rt
-        for i in range(NRt-2, -1, -1):
-            qf = (rt[i]/rt[i+1])**ll
-            B[ll, i] = B[ll, i+1]*qf + 0.5*dr[i]*(g_out[i] + g_out[i+1]*qf)
-    lv = np.arange(LMAXt+1)[:, None]
-    phit = -(A+B)/(2*lv+1)
-    Ep = E_pair(rt, Slt, phit, l)
-    Eg = E_grad(rt, phit, l)
-    dp = abs(Ep - Eexact)/Eexact
-    dg = abs(Eg - Ep)/Eexact
-    ok4b = ok4b and (dp <= 0.03) and (dg <= 0.01)
-    emit(f"  l={l}: pairing {Ep:.6f} vs analytic {Eexact:.6f} "
-         f"(rel {dp:.2e}, bar 3e-2); gradient-vs-pairing {dg:.2e} "
-         f"(bar 1e-2)")
+    Evals = []
+    for wv in W_SET:
+        Sr = shell(rt, wv)
+        ph = phi_one_l(rt, Sr, l)
+        Evals.append(float(-0.5/(2*l+1)
+                           * np.trapezoid(Sr*ph*rt**2, rt)))
+    # least-squares linear-in-w extrapolation E(w) = E0 + c w
+    Wm = np.vstack([np.ones(3), np.array(W_SET)]).T
+    coef, *_ = np.linalg.lstsq(Wm, np.array(Evals), rcond=None)
+    E0fit, cfit = float(coef[0]), float(coef[1])
+    slopes[l] = cfit
+    dext = abs(E0fit - Eexact)/Eexact
+    # internal equality + resolution row on the FULL grid at w = 0.05
+    Sf = shell(rfull, 0.05)
+    pf = phi_one_l(rfull, Sf, l)
+    Ep_full = float(-0.5/(2*l+1)*np.trapezoid(Sf*pf*rfull**2, rfull))
+    dpf = np.gradient(pf, rfull)
+    Eg_full = float(0.5/(2*l+1)*np.trapezoid(
+        (dpf**2 + l*(l+1)*(pf/rfull)**2)*rfull**2, rfull))
+    dint = abs(Eg_full - Ep_full)/Eexact
+    dres = abs(Ep_full - Evals[0])/Eexact
+    ok4b = ok4b and (dext <= 0.01) and (dint <= 0.01) and (dres <= 0.01)
+    emit(f"  l={l}: E(w) = {['%.6f' % e for e in Evals]} -> "
+         f"extrap {E0fit:.6f} vs analytic {Eexact:.6f} "
+         f"(rel {dext:.2e}, bar 1e-2)")
+    emit(f"        internal grad-vs-pair (full grid) {dint:.2e} "
+         f"(bar 1e-2); resolution row {dres:.2e} (bar 1e-2)")
+emit(f"  kink-slope diagnostic: c(l=2)/c(l=0) x (E0/E2 norm) = "
+     f"{(slopes[2]/(1/50.0))/(slopes[0]/0.5):.2f} vs the (2l+1) "
+     f"ratio 5 (report row)")
 
 # GQ-4 archived regression + the physical solves
 emit("")
@@ -802,6 +854,10 @@ emit(f"  e_a(binary) = {ea_central_bin:.3f} central, envelope "
      f"[{env_bin[0]:.3f}, {env_bin[1]:.3f}]")
 emit(f"  (q_DC band x L1 variants x coth band; eps2 = {eps2_bin:.5f} "
      f"BE / {eps2_simple:.5f} simple)")
+if ratio_static < 2:
+    emit(f"  FLAG (GQ-10 wiring): the extreme low-envelope corner "
+         f"static-ratio {ratio_static:.2f} < 2 (approaches "
+         f"static-grade); central ratio {ea_central_bin/Q_DC_C:.1f}")
 emit(f"  gates: GQ-1 {g1} GQ-2 {g2} GQ-3 {g3} GQ-4 {ok4} GQ-4b {ok4b} "
      f"GQ-5 {g5v} GQ-6 {g6} GQ-8 {g8} chart {g9_chart}")
 emit(f"CREDENCE (pre-signed): HOLD mech 8 / anomaly-real 53 (all cells)")
