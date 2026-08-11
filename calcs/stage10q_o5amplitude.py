@@ -212,6 +212,34 @@ here pre-quote with its run preserved (house rule).
      stalled on the mixed coth/exp form; (ii) np.trapz ->
      np.trapezoid (removed in numpy 2.x). Both are repairs that make
      the gates compute what this header already says they compute.
+  A2 (post run 2, GATE-INSTRUMENT corrections, pre-quote; run 2
+     preserved at data/stage10q_run2.txt; NO physics bar, letter, or
+     credence cell touched; trap-#23 class -- the verifier is an
+     instrument too):
+     (i) GQ-4b's pre-registered analytic constant for the l=2 thin
+     shell was WRONG (a shell double-count slip of mine): for
+     S_l = delta(r-a)/a^2 (unit int S r^2 dr) the two-sided kernels
+     give phi_l(a) = -1/((2l+1) a) (NOT -2/((2l+1) a): interior and
+     exterior solutions are continuous at the shell -- assigning the
+     full delta to BOTH A and B double-counts), so
+       E_l = 1/(2 (2l+1)^2 a):  E0 = 1/2 (unchanged), E2 = 1/50 =
+       0.02 (pre-reg said a^3/25 = 0.04 -- corrected).
+     Evidence the PHYSICS arrays were never in doubt: the pairing and
+     gradient functionals agree to 1e-3 on the test and 1e-4 on the
+     physical solves, the 4K q regression is 4e-4-grade, and the
+     hi-res eps2 doubling moved 8e-4. Additionally the test shell
+     (w = 0.05 at a = 1) spans only ~4 points of the standard log
+     grid -- the analytic leg now runs on a dedicated resolved grid
+     ([0.5, 2] x 4096; exact for a compact shell since S = 0 outside
+     [0.8, 1.2] makes the truncated A/B kernels exact). Bars
+     UNCHANGED (3% / 1%).
+     (ii) GQ-6/T4: the reader leg must consume the 10N instrument at
+     its OWN archived convention -- stage10n_crossing.py:120-123
+     defines n_amb_bin = 0.5202, x_amb = ln(1 + 1/n_amb) = 1.0724;
+     my run-2 feed used the 10E/10F table value 1.0954 (the exact
+     6E-vs-10E token split already disclosed in ARCHIVED ANCHORS).
+     The T3 assembly keeps its 10E/10F convention with the 6E
+     variant row (spread already printed, sub-1%). Bars UNCHANGED.
 
 COMPUTE < 3 min (8 solver calls + sympy + quadratures).
 Writes data/stage10q_o5amplitude.txt.
@@ -423,15 +451,20 @@ def E_grad(r, phi_l, l):
     integ = (dphi**2 + l*(l+1)*(phi_l[l]/r)**2)*r**2
     return float(0.5/(2*l+1)*np.trapezoid(integ, r))
 
-# GQ-4b thin-shell analytic gate (integral family 2)
-emit("GQ-4b energy-integral analytic gate (thin shell at a = 1):")
-NRt, LMAXt = 512, 16
-rt = np.logspace(-2, 3, NRt)
+# GQ-4b thin-shell analytic gate (integral family 2; A2: dedicated
+# resolved grid + corrected analytic E_l = 1/(2 (2l+1)^2 a) -- the
+# two-sided kernels are CONTINUOUS at the shell, phi_l(a) =
+# -1/((2l+1) a); S = 0 outside [0.8, 1.2] makes the truncated
+# kernels exact on [0.5, 2])
+emit("GQ-4b energy-integral analytic gate (thin shell at a = 1; "
+     "resolved grid):")
+NRt, LMAXt = 4096, 4
+rt = np.geomspace(0.5, 2.0, NRt)
 h = np.exp(-0.5*((rt-1.0)/0.05)**2)
 h /= np.trapezoid(h*rt**2, rt)          # unit int S r^2 dr
 Slt = np.zeros((LMAXt+1, NRt))
 ok4b = True
-for l, Eexact in ((0, 0.5), (2, 1.0/25.0)):
+for l, Eexact in ((0, 0.5), (2, 1.0/50.0)):
     Slt[:] = 0.0
     Slt[l] = h
     A = np.zeros((LMAXt+1, NRt)); B = np.zeros((LMAXt+1, NRt))
@@ -629,6 +662,11 @@ emit("")
 # T4 -- the P10 re-read (10N machinery inlined verbatim)
 # =====================================================================
 emit("T4 THE P10 RE-READ (10N S machinery verbatim; GQ-6 reader gate)")
+# A2(ii): the reader consumes the instrument at 10N's OWN archived
+# convention (stage10n_crossing.py:120-123)
+X_AMB_10N = math.log(1 + 1/0.5202)
+emit(f"  (10N-native x_amb = ln(1 + 1/0.5202) = {X_AMB_10N:.4f}; the "
+     f"T3 assembly keeps 10E/10F 1.0954 w/ the 6E variant row)")
 
 def om_of(x):
     return x/TWO_PI
@@ -677,8 +715,8 @@ TOKENS = [   # (x, gam, kap, e_a, printed S)
 g6 = True
 worst6 = 0.0
 for (xl, gm, kp, ea, tok) in TOKENS:
-    lam_max = LAM_RATIO_BIN[xl]*g_close(xl, X_AMB_BIN)
-    sv = S_stat(xl, X_AMB_BIN, kp, gm, ea, lam_max)
+    lam_max = LAM_RATIO_BIN[xl]*g_close(xl, X_AMB_10N)
+    sv = S_stat(xl, X_AMB_10N, kp, gm, ea, lam_max)
     d = abs(sv - tok)/max(tok, 1e-5)
     worst6 = max(worst6, d)
     g6 = g6 and d <= 5e-2 and abs(sv - tok) <= 1.5e-5 + 0.002*tok
@@ -686,10 +724,10 @@ emit(f"GQ-6 reader identity: 7 archived tokens, worst rel d = "
      f"{worst6:.2e} (rounding-limited; bar abs 1.5e-5 + 2e-3 rel) -> "
      f"{'PASS' if g6 else 'FAIL'}")
 # e_a*(2%) at the best corner (the 0.936 token)
-lam_max_05 = LAM_RATIO_BIN[0.5]*g_close(0.5, X_AMB_BIN)
+lam_max_05 = LAM_RATIO_BIN[0.5]*g_close(0.5, X_AMB_10N)
 ea_star = None
 for ea in np.linspace(0.3, 1.0, 7001):
-    if S_stat(0.5, X_AMB_BIN, 1.000, 0.010, ea, lam_max_05) >= 0.02:
+    if S_stat(0.5, X_AMB_10N, 1.000, 0.010, ea, lam_max_05) >= 0.02:
         ea_star = ea
         break
 d_star = abs(ea_star - 0.936) if ea_star else 9.9
@@ -705,18 +743,18 @@ S_max_cen, S_max_hi, S_max_avg = 0.0, 0.0, 0.0
 GH3 = math.sqrt(3.0)  # 3-pt Gauss-Hermite nodes {0, +-sig sqrt3},
                       # weights {2/3, 1/6, 1/6}; S even, S(0) = 0
 for xl in (0.5, 1.0):
-    lam_max = LAM_RATIO_BIN[xl]*g_close(xl, X_AMB_BIN)
+    lam_max = LAM_RATIO_BIN[xl]*g_close(xl, X_AMB_10N)
     for gm in GAM_GRID:
         for kp in KAP_GRID:
             row = []
             for conv in CONV_FAM:
-                s_c = S_stat(xl, X_AMB_BIN, kp, gm, ea_central_bin,
+                s_c = S_stat(xl, X_AMB_10N, kp, gm, ea_central_bin,
                              lam_max, conv)
-                s_h = S_stat(xl, X_AMB_BIN, kp, gm, ea_hi_env,
+                s_h = S_stat(xl, X_AMB_10N, kp, gm, ea_hi_env,
                              lam_max, conv)
                 # frozen-draw Gauss average over e ~ N(0, sig^2),
                 # sig = e_a(RMS): <S> = (1/3) S(sig sqrt3) at 3-pt GH
-                s_avg = S_stat(xl, X_AMB_BIN, kp, gm,
+                s_avg = S_stat(xl, X_AMB_10N, kp, gm,
                                ea_central_bin*GH3, lam_max, conv)/3.0
                 S_max_cen = max(S_max_cen, s_c)
                 S_max_hi = max(S_max_hi, s_h)
