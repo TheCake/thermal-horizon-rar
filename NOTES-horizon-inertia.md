@@ -16015,3 +16015,108 @@ boundary, one-mixing interval) with GB-6 catching his one imprecision
 (bin-8 rho0 = 0.1 t0 = 2.95 Gyr, not 3.1; claim unaffected). Report
 REVIEW-ROUND34-OPUS.md (uncommitted). Credence unchanged per the
 pre-signed map: anomaly-real 53 / mech 8.
+
+## Stage 10P "P13-CROWD" -- the cluster crowd shape: first data contest
+## (2026-08-11; pre-reg 5c150da + amendment A1 pre-quote c52c0f1; X-COP)
+
+**Question (PREDICTIONS P13, registered 61767d4):** clusters break the
+M = 1 single-collective-mode condition (6Y/9W); the framework prescribes
+negative-binomial multimode occupation -- a DIFFERENT functional shape at
+cluster scale at the SAME temperature a0 = cH0/2pi. Two-sided by design.
+
+**Data:** X-COP public release (fetch_xcop.py; SWITCHdrive, ISDC mirror
+dead; SHA256 in stage10p_gates.json). PRIMARY = the 7 mstar clusters
+(A85, A644, A1795, A2029, A2142, A2319, ZW1215): g_obs = G*M_FORW/r^2
+(model-agnostic HSE), g_bar = G*(MGAS+MSTAR)/r^2, 8 log-spaced radii in
+[0.05, 1.2]*R500 inside measured ranges; 56 points; x = sqrt(gbar/a0)
+in [0.23, 0.74]. R500_rel solved per cluster from release-internal
+redundancy (FGAS vs HYDRO M_NFW match), then checked vs Eckert+22
+Table 2 (G1 PASS 12/12 within 5 pct). WIRING DISCOVERY (A1a): the
+release mass products are in the ETTORI+19 convention H0 = 70 -- our
+NFW rebuild missed by a uniform 0.0277 dex = exactly 2*log10(70/67.8);
+G3 re-evaluated at the release convention, PASS. h-SEAM disclosed: the
+(r, M) observables are h = 0.70-derived while a0 sits at the 67.8 lock;
+component-wise the seam is <= ~0.02 dex uniform (g_HSE ~ 1/D_A -3.1 pct,
+g_gas ~ D_A^{1/2} +1.6 pct) -- subdominant to every bar here.
+
+**Gates:** run 2 = G0-G5 ALL PASS (G2 release reader identity <= 6e-4
+dex p90; G4 FGAS column identity <= 1.9e-3 after the A1b bar fix;
+G5 sympy exact + numeric d <= 1e-12). Injections ALL PASS first run:
+G6 recovery M = 3.985 +/- 0.045 (SE) at truth 4; S at truth 17 in bar.
+**G7 CONTEST POWER: BOTH directions licensed 8/8** (B-truth: dBIC +21..
++59 all above +10; CROWD-truth: -21..-44 all below -2) -- unlike the
+9R walls, this contest is powered on this data. G9 multi-start gaps
+<= 5e-12; G10 stored-table identity 0.0 exact.
+
+**SKY (run 1, the pre-registered read):**
+- F-GAL (galaxy law as-is): -2lnL +69.3, sig_int = 0.45 dex -- the
+  cluster wall reproduced (dBIC vs CROWD = +106).
+- **F-CROWD: M_hat = 3.428 (boot 3.43 +/- 0.07; legs 3.34-4.13
+  interior everywhere), -2lnL -40.7, sig_int = 0.164 dex, chi2_red =
+  1.04 = GoF PASS. g_dagger_eff = M_hat^2 * a0 = 1.232e-9 m s^-2 --
+  same order as the published CLASH cluster scale 2.0e-9 (Tian+20;
+  different sample and mass method), 1.6x below it.**
+- F-SCALE: S_hat = 8.97 +/- 0.32, -2lnL -48.6, chi2_red 1.04.
+- MODEL-B (galaxy law + per-cluster scaled extra mass): -2lnL -69.2
+  (best raw), k = 8, chi2_red 1.17; **U_hat_c = 4.2-5.2 -- the
+  extra-mass factor is nearly UNIFORM (~4.6x baryons) across all
+  seven clusters** (the labeled outcome-(ii) measurement).
+- F-2SCALE (Eckert+22 eq. 20 context row): -2lnL -125.1 -- the
+  two-transition empirical form crushes every one-scale family
+  (their finding, reproduced on our assembly).
+
+**The operative contest: dBIC_CB = +4.38** (B better; bar for W-EXTRA
+was > +10), boot +4.5 +/- 4.5, P_boot(B better) = 0.845 (bar 0.90);
+GoF(CROWD) PASS; M_hat - 1 = 35x SE. **The pre-registered letter
+clauses fired W-WINDOW -- but G8 FAILED: dBIC_CB = -1.65 / +4.38 /
++10.63 at N_R = 6/8/10 (sign flips), because MODEL-B's raw advantage
+grows with radial point density (correlated smooth-reconstruction
+points) while its BIC penalty grows only as ln n. The pre-reg did NOT
+wire G8 into the letter grammar = trap #11, THIRD occurrence, owned.**
+Verdict booked as **W-WINDOW-QUALIFIED (G8-UNSTABLE)**; ROUND 35
+adjudicates the downgrade. Adverse co-reads disclosed: AIC favors B by
++16.5 on the primary cut; the L12 leg's dBIC_CB = -10.8 (CROWD ahead)
+is penalty-dominated (11 extra B params at 12 clusters), raw lnL still
+favors B by ~39 -- the CROWD-vs-B statistic is penalty-sensitive at
+every cut; the cluster-level bootstrap (P = 0.845) is the primary
+grade. LIN02 inner leg (0.02*R500) numerically INVALID (NaN; BCG /
+cool-core regime) -- disclosed, unused. LB15 (HSE bias 0.15): M_hat
+4.13, contest unchanged in sign (+8.3).
+
+**The SHAPE secondary (labeled, real):** F-SCALE beats F-CROWD by
+dBIC 7.88 (boot 7.92 +/- 1.31; positive in 100 pct of 400 cluster
+resamples) -- at one parameter each, the data prefer "same BE shape,
+shifted scale g_dagger = 9.0*a0" over "amplitude-lifted crowd at the
+galaxy temperature" (deep scales similar: S_hat 8.97 vs M_hat^2 11.75;
+the discrimination is transition-shape inside x in [0.23, 0.74]). The
+naive same-temperature crowd is an ACCEPTABLE but not PREFERRED shape.
+
+**What the stage established (my reading, pre-round):** (1) the
+registered M > 1 direction is measured: a crowd factor M ~ 3.4 at the
+galaxy temperature describes 7 X-COP clusters at 0.16 dex with the
+effective deep scale landing at the published cluster-RAR order --
+the row's outcome-(i) core in its weak (GoF) sense; (2) the strong
+(i)-vs-(ii) contest is honestly UNSTABLE at this data's correlation
+structure (G8) -- neither W-WINDOW clean nor W-EXTRA; (3) the
+framework-internal extra-mass measurement stands either way:
+U ~ 4.6x nearly uniform; (4) the two-transition structure (F-2SCALE)
+is beyond every one-scale family including ours -- successor
+question. NO credence moves (pre-signed all-HOLD; anomaly-real 53,
+mech 8). EMOND differentiation = print-use obligation, no print here.
+
+**PLAIN VERDICT: NEEDS REFINEMENT** -- the instrument worked (gates,
+power, recovery all green; the crowd parameter localizes hard), but
+the pre-registered letter grammar under-specified the thinning axis
+(trap #11 again), so the headline contest lands qualified pending
+ROUND 35.
+
+**ELI12:** Galaxy clusters are the one place our one-drum rule was
+registered to break -- there should be a whole drum-CIRCLE. We fetched
+twelve clusters' X-ray maps and asked: does "several drums, same
+temperature" fit better than "one drum plus hidden extra stuff"? The
+crowd size came out about 3-4 drums, and that number is rock-solid.
+But "several drums" vs "extra stuff" turned out to depend on how
+finely we sliced each cluster -- our own pre-written rule caught the
+wobble, so we flagged it instead of declaring victory. Bonus finding:
+however you slice it, the "extra stuff" answer always comes out the
+same size (about 4.6x the normal matter) -- weirdly tidy.
