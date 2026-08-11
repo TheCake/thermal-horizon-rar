@@ -1,0 +1,100 @@
+STAGE 10Q O5-AMPLITUDE (pre-reg: this commit)
+
+T1 THE SECTOR THEOREM + FD (sympy exact)
+GQ-1a Gibbs equipartition <q^2> = T/k: residue 0
+GQ-1b Fock <q^2> = (1/2 mu Om) coth(b Om/2): residue 0
+GQ-1c <q^2> = chi(0) (Om/2) coth(Om/2T): residue 0
+GQ-1d spectral FD (gamma/Om = 0.05): quad 2.041372 vs closed 2.041494 (rel 5.96e-05, bar 5e-3); doubling 9.62e-12 (bar 2e-3)
+GQ-1: PASS
+
+GQ-2 the sector Hessian (sympy exact):
+  Q:Q = 2 sum q_m^2 (residue 0); drive linear in q0 ONLY: True
+  Hessian = k * I_5 exactly: True; equilibrium q0 = 2 lam/(sqrt3 k), others 0: True
+  => ONE stiffness for all five coordinates; the measured DC
+     response chi(0) = q_DC/F pins it (10F: 'the measured q
+     constrains chi_2(0), not Om2' -- the hook, now used)
+GQ-2: PASS
+
+GQ-3 bright projection: rank-1 coupling on 3 seeded system
+  tensors (orthogonal complement 0 to 1e-12); unit projection of iid coords carries variance 1.000000000000 = single-coord
+GQ-3: PASS
+
+T2 THE STORED-ENERGY RATIO (4K solver, verbatim numerics)
+GQ-4b energy-integral analytic gate (thin shell at a = 1; A3 form):
+  l=0: E(w) = ['0.484736', '0.491107', '0.495659'] -> extrap 0.500394 vs analytic 0.500000 (rel 7.87e-04, bar 1e-2)
+        internal grad-vs-pair (full grid) 9.80e-04 (bar 1e-2); resolution row 2.40e-04 (bar 1e-2)
+  l=2: E(w) = ['0.017419', '0.018395', '0.019176'] -> extrap 0.019918 vs analytic 0.020000 (rel 4.12e-03, bar 1e-2)
+        internal grad-vs-pair (full grid) 1.96e-03 (bar 1e-2); resolution row 1.20e-03 (bar 1e-2)
+  kink-slope diagnostic: c(l=2)/c(l=0) x (E0/E2 norm) = 4.01 vs the (2l+1) ratio 5 (report row)
+
+GQ-4 the 4K regression + physical solves:
+      be eN=1.0: q = -0.08501 vs archive -0.08504 (rel 3.56e-04, bar 5e-3)
+        E2 = 7.8574e-03  E0 = 1.3681e-01  eps2 = E2/E0 = 0.05743  (grad-check l2 5.19e-05, l0 2.36e-05, bar 1e-2)
+      be eN=1.2: q = -0.09874 vs archive -0.09878 (rel 4.42e-04, bar 5e-3)
+        E2 = 6.9328e-03  E0 = 1.0683e-01  eps2 = E2/E0 = 0.06490  (grad-check l2 7.91e-05, l0 2.20e-05, bar 1e-2)
+      be eN=1.4: q = -0.11164 vs archive -0.11171 (rel 6.09e-04, bar 5e-3)
+        E2 = 6.2045e-03  E0 = 8.5601e-02  eps2 = E2/E0 = 0.07248  (grad-check l2 1.00e-04, l0 5.75e-05, bar 1e-2)
+  simple eN=1.2: q = -0.09759 vs archive -0.09779 (rel 2.04e-03, bar 5e-3)
+        E2 = 6.5004e-03  E0 = 1.4709e-01  eps2 = E2/E0 = 0.04419  (grad-check l2 7.83e-05, l0 1.04e-04, bar 1e-2)
+  BE eN=0.0199 (GALAXY row, report-grade L6): q = -0.00208  eps2 = 0.01592  (plateau dev 0.0%)
+  hi-res doubling: eps2 = 0.06495 vs 0.06490 (rel 8.25e-04, bar 3e-2)
+GQ-4: PASS   GQ-4b: PASS
+
+T3 THE ASSEMBLY  e_a = q_DC sqrt((T/E_amb)/(2 eps2)) sqrt(u coth u)
+GQ-5 coth flatness over Om2 in [0.293, 1] Om_amb: binary spread 0.089, galaxy 0.0015 (bar 0.15) -> PASS
+
+BINARY anchor (n_amb = 0.502, x_amb = 1.0954; eps2 = 0.06490 BE / 0.04419 simple):
+  E_amb = (thermal n) Om: T/E = 1.8185  e_a(q_c) = [0.3233, 0.3373]  full q-band [0.2744, 0.3883]
+  E_amb = (full n+1/2) Om: T/E = 0.9111  e_a(q_c) = [0.2288, 0.2388]  full q-band [0.1942, 0.2749]
+  E_amb = (spont n+1) Om: T/E = 0.6078  e_a(q_c) = [0.1869, 0.1950]  full q-band [0.1586, 0.2245]
+  CENTRAL (full, q_c, mid-coth): e_a = 0.2338; ENVELOPE [0.1586, 0.3883]
+  6E-token variant (n = 0.5202): e_a(q_c) = [0.2292, 0.2387] (convention spread row)
+
+GALAXY anchor (report-grade L6; n_amb = 6.63, x_amb = 0.1411; eps2 = 0.01592):
+  e_a(gal, q from its own solve) = [0.0116, 0.0116] (central row)
+
+GQ-9 reconciliation arithmetic (binary anchor):
+  <dq^2> central 0.0547, hi-edge 0.1508 vs chart 1.0 -> margin x6.6 (IN-CHART)
+  vs the 10G FD ceiling 2 n_amb + 1 = 2.004: the 1.43 RMS
+  was the BUDGET PREMISE at c = 1; the DERIVED occupation-
+  weighted amplitude is x6.1 below it -- the 10F-cap-vs-10G-FD pair RECONCILES: both were
+  ceilings; the physical value sits under both.
+  strike-corner completeness: e_a = 0.234 vs the
+  10G closure demand 6.7 -> shortfall x29 (the strike stands untouched)
+GQ-9: hi-edge in-chart -> PASS
+
+GQ-8 the frozen row (binary anchor):
+  Om_amb = x_amb H/(2 pi) => 1/Om_amb = 2 pi/(x_amb H) = 82.7 Gyr
+  refresh band [83, 282] Gyr (1/Om2 across the 10F band; period/damping variants slower)
+  vs the 10O boundary 2.48 Gyr: margin x33 (bar >= 10x) -> PASS -- the derived cloud is AUTOMATICALLY frozen-grade
+
+GQ-10 scope audit:
+  static ratio e_a_lo/q_DC = 1.84 (>= 2 keeps the
+  R25 'static-like' corner CLOSED; < 2 re-enters it -- FLAG)
+  no sky fits anywhere; archived meters only (provenance in
+  header); L1-L6 disclosed; the D-normalization CANCELS in eps2
+
+T4 THE P10 RE-READ (10N S machinery verbatim; GQ-6 reader gate)
+  (10N-native x_amb = ln(1 + 1/0.5202) = 1.0724; the T3 assembly keeps 10E/10F 1.0954 w/ the 6E variant row)
+GQ-6 reader identity: 7 archived tokens, worst rel d = 1.56e-02 (rounding-limited; bar abs 1.5e-5 + 2e-3 rel) -> PASS
+  e_a*(2%) best corner = 0.9356 vs archived 0.936 (bar 2e-3)
+
+S at the DERIVED amplitude (binary anchors; conv family):
+  x=0.5 gam=0.010 kap=0.888: conv0.71: Sc=0.00088 Sh=0.00258 Savg=0.00094  conv1.00: Sc=0.00184 Sh=0.00504 Savg=0.00181  conv1.41: Sc=0.00373 Sh=0.00891 Savg=0.00316
+  x=0.5 gam=0.010 kap=0.925: conv0.71: Sc=0.00084 Sh=0.00278 Savg=0.00102  conv1.00: Sc=0.00192 Sh=0.00552 Savg=0.00198  conv1.41: Sc=0.00410 Sh=0.00951 Savg=0.00336
+  x=0.5 gam=0.010 kap=1.000: conv0.71: Sc=0.00000 Sh=0.00384 Savg=0.00141  conv1.00: Sc=0.00218 Sh=0.00715 Savg=0.00253  conv1.41: Sc=0.00558 Sh=0.01112 Savg=0.00389
+  x=1.0 gam=0.010 kap=0.888: conv0.71: Sc=0.00033 Sh=0.00091 Savg=0.00033  conv1.00: Sc=0.00066 Sh=0.00181 Savg=0.00065  conv1.41: Sc=0.00132 Sh=0.00353 Savg=0.00127
+  x=1.0 gam=0.010 kap=0.925: conv0.71: Sc=0.00037 Sh=0.00104 Savg=0.00038  conv1.00: Sc=0.00075 Sh=0.00210 Savg=0.00076  conv1.41: Sc=0.00152 Sh=0.00415 Savg=0.00150
+  x=1.0 gam=0.010 kap=1.000: conv0.71: Sc=0.00000 Sh=0.00000 Savg=0.00000  conv1.00: Sc=0.00000 Sh=0.00304 Savg=0.00120  conv1.41: Sc=0.00000 Sh=0.00725 Savg=0.00259
+  S_max(central) = 0.00558; S_max(hi-envelope) = 0.01112; S_max(frozen-draw avg) = 0.00389
+
+GQ-7 P10 sub-letter: P10-REANCHOR-FLOOR  [S_max(hi) = 0.0111 < 0.02 everywhere AND the band straddles 0.005 (central 0.0056)]
+
+====================================================================
+LETTER: Q-VALUE  |  P10 sub-letter: P10-REANCHOR-FLOOR
+  e_a(binary) = 0.234 central, envelope [0.159, 0.388]
+  (q_DC band x L1 variants x coth band; eps2 = 0.06490 BE / 0.04419 simple)
+  FLAG (GQ-10 wiring): the extreme low-envelope corner static-ratio 1.84 < 2 (approaches static-grade); central ratio 2.7
+  gates: GQ-1 True GQ-2 True GQ-3 True GQ-4 True GQ-4b True GQ-5 True GQ-6 True GQ-8 True chart True
+CREDENCE (pre-signed): HOLD mech 8 / anomaly-real 53 (all cells)
+====================================================================

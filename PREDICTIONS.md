@@ -469,6 +469,8 @@ data simultaneously require that amplitude to be frozen — a
 fast-fluctuating e_a ~ 1 world is already dead. (κ_c = the unpinned
 O5-NORM conversion; the wedge bounds the product.)*
 
+*Annotation (2026-08-11, stage 10Q O5-AMPLITUDE, pre-reg 897fe15, fired Q-VALUE, gates 9/9 — ROUND 36 pending): the row's ONE open number is DERIVED. e_a(binary) = 0.234 central, envelope [0.159, 0.388] (fluctuation–dissipation at the measured static compliance: the sector Hessian is k_self·I₅ exactly, the measured static |q| pins the one stiffness, equipartition at T_dS gives the fluctuation Ω₂-independently — coth spread 8.9%; ε₂ = E₂/E₀ = 0.0649 from the 4K solver arrays, D-normalization cancelling). Consequences for this row: the 10F ≤~1 vs 10G 1.43 unreconciled pair RESOLVES (both were ceilings; the physical value sits ×6.6 inside the chart and ×6.1 under the FD ceiling); the DR4 σ_S = 0.02 discovery channel is DEAD at the mechanism's own derived amplitude (S_max at the hi-envelope = 0.011 < 0.02 everywhere — a 0.02-grade null no longer bounds the mechanism cloud); the operative test re-anchors to the perturbative κ-localized Lorentzian regime (σ_S ≈ 0.005 grade; derived-band S_max central 0.0056, frozen-draw average 0.0039 — EDGE-conditional at the floor). The 10O frozen requirement is automatically met (refresh 83–282 Gyr = ×33 over the 2.48 Gyr boundary) — the wedge tension on this row dissolves for the derived cloud. Static ratio 2.7 central (extreme low-envelope corner 1.84, flag-disclosed).*
+
 ---
 
 ## D. What we do NOT claim as unique

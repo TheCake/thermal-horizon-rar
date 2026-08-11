@@ -16201,3 +16201,70 @@ extra-stuff answer is always the same tidy 4.6x, and the one signature
 that would really tell the stories apart lives in a part of the
 clusters (stronger gravity, closer in) this dataset never reaches.
 That is where to point the next instrument.
+
+## Stage 10Q (2026-08-11): O5-AMPLITUDE -- e_a DERIVED (pre-reg 897fe15 + A1 f83cc2a / A2 2760044 / A3 0d6ab9d, each pre-quote, runs preserved)
+
+**Fired Q-VALUE (gates 9/9 at run 4; physics numbers identical runs 2-4).**
+The R33 named successor executed: the ambient l=2 fluctuation amplitude
+derived by fluctuation-dissipation at the measured static response,
+closing the 10F <=~1 vs 10G 1.43 unreconciled pair.
+
+- THE THEOREM (GQ-2 sympy exact): sector energy E = (1/2) k_self sum q_m^2
+  - F q_0 (isotropic self-energy + linear P2 drive) => Hessian = k_self I_5
+  EXACTLY -- one stiffness for all five coordinates; the measured static
+  |q| = q_DC = F/k_self pins it (the 10F "measured q constrains chi_2(0)"
+  hook executed).
+- FD (GQ-1 exact + spectral quadrature 6e-5): <dq_m^2> = chi(0) (Om2/2)
+  coth(Om2/2 T_dS); classical limit T q_DC/F -- Om2- AND inertia-
+  independent; coth spread over the whole 10F Om2 band = 8.9% (binary) /
+  0.15% (gal) => the Om2 band is DEAD at the amplitude level (GQ-5).
+- THE FORCE from the 4K solver stored energies (verbatim code path; q
+  regression 4-6e-4; grad-vs-pair 1e-4-grade; hi-res eps2 drift 8e-4):
+  <dq^2> = q_DC^2 (T/E_amb)/(2 eps2), eps2 = E2/E0 = 0.0649 (BE eN=1.2;
+  simple 0.0442; eN-trend 0.057-0.072; galaxy 0.0159). The
+  D-normalization CANCELS in the ratio.
+- **e_a(binary) = 0.234 central; envelope [0.159, 0.388]** (q_DC band x
+  E_amb variants {n, n+1/2, n+1} Om x coth band). 6E-token convention
+  spread sub-1%. Galaxy row (report-grade L6): e_a ~ 0.012 (q_DC,gal =
+  0.00208 -- the deep-galaxy ambient cloud is nearly isotropic).
+- RECONCILIATION (GQ-9): <dq^2> hi-edge 0.151 vs chart 1.0 (x6.6
+  in-chart); vs the 10G FD ceiling 2n+1 = 2.00 (x6.1 under): BOTH prior
+  numbers were CEILINGS; the physical value sits under both. Strike
+  corner x29 short of 6.7 -- the 10G strike untouched.
+- FROZEN (GQ-8): refresh 1/Om2 in [83, 282] Gyr = x33 over the 10O
+  boundary 2.48 Gyr -- the derived cloud is automatically in the
+  10O-allowed frozen corner.
+- **P10 SUB-LETTER: P10-REANCHOR-FLOOR** (GQ-6 reader identity pass,
+  e_a* = 0.9356 vs archived 0.936; GQ-7 mechanical): S_max(hi-envelope)
+  = 0.0111 < 0.02 everywhere => the registered DR4 sigma_S = 0.02
+  discovery channel is DEAD at the mechanism's own derived amplitude;
+  central S_max 0.0056, frozen-draw average 0.0039 => straddles the
+  0.005 floor -- the row re-anchors to the perturbative kappa-localized
+  regime (exactly the standing note's e_a <~ 0.3 Lorentzian regime).
+- FLAG (GQ-10 wiring): extreme low-envelope corner static-ratio 1.84 <
+  2; central 2.7 -- the R25 static-like corner stays closed at the
+  central, edge disclosed.
+- Amendments A1-A3 all gate-instrument-side (numpy API + sympy rewrite;
+  my thin-shell analytic constant wrong by the shell double-count,
+  corrected to E_l = 1/(2 (2l+1)^2 a); the kernel-kink linear-in-w
+  deficit => extrapolation gate, landing 8e-4/4e-3; the reader consumes
+  10N at its own archived x_amb). Physics numbers identical runs 2-4.
+- CREDENCE (pre-signed all-HOLD): mech 8 / anomaly-real 53. ROUND 36
+  pending.
+
+PLAIN VERDICT: SUCCESS (derivation-grade) -- the program's one open
+amplitude constant is now a derived number with an honest band, the
+FD/cap contradiction is resolved, and P10's operative test is
+re-anchored where the derived amplitude actually lives.
+
+ELI12: The cloud around each star system gets squashed a tiny bit by
+the galaxy's pull -- we MEASURED that squash long ago (8.6%). But the
+cloud also JIGGLES on its own from horizon heat, and nobody knew how
+big the jiggle is -- guesses ranged from "same as the squash" to
+"bigger than the whole cloud." The trick: how much something jiggles
+when warm is EXACTLY set by how hard it is to squash (a famous physics
+theorem), and we already measured the squash against a known push.
+Answer: the jiggle is about 23% -- bigger than the squash (2.7x), but
+well under "the whole cloud." That is too small for the coarse
+telescope test we had registered, so we moved that test's goalposts
+honestly: it now needs the sharper precision mode.
