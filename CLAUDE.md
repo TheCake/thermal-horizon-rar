@@ -1093,6 +1093,54 @@ outreach parked; visibility flip pending) · P3 round 4 / circulation ·
 P14 Oort seed (P11 data-blocked) · DR4 readiness · the κ=1-deep
 structural route.**
 
+**10R + ROUND 39 (2026-08-11 fifth close — the second "go for next" of
+the day; the author KILLED the spawned RNAAS-note referee mid-flight —
+that lane is DROPPED, the note stays 0.1, do not respawn without a
+fresh go): P14's FIRST LEG, and the letter did not survive the round.**
+Stage 10R (pre-reg a8d51bc; V-N-T 2403.09555 primary-read the same
+close — NOTES lit-note; single gates-green run; blind GA 10/10 @
+4aa73e8 = protocol execution #11) computed the class's first
+Oort-range anomaly profile (eps_deep(BE, 1.15, α=1) = 0.380, analytic
+0.3789; half-ramp 3926 au) and fired R-PROFILE-GRAY on the registered
+l=2 statistic (0.317 × spike-width; mono-spread exactly 0 =
+screening; shift 1.27×W letter-neutral). **ROUND 39
+(REVIEW-ROUND39-OPUS.md uncommitted): reproduction PERFECT (zero
+computed errors, byte-identical rerun, independent solver 0.03–0.3%),
+ruling hole YES severe — LETTER DOWNGRADED to R-PROFILE-INCOMPLETE,
+all 13 conditions adopted, GB 18/18 confirmed** (two GB verifier
+slips fixed/disclosed — trap #23 ×4 this close, all in verifiers):
+the map is AFFINE (d(1/a_osc)/du = 1+eps(Q) exact), l=1..8 were
+omitted (l=1 alone 0.191×W; restored family-max 0.62×W multipoles /
+1.17–1.19×W with scale = routing-dependent), and **the statistic is
+DEMONSTRATED POWERLESS (the F2 lesson = candidate trap #26: score the
+known-outcome worlds through any discriminator before licensing its
+letter): AQUAL μ10/μ20 fail V-N-T at 3e-16 yet score ~0 (SAFE) on
+it.** **P14 PRIOR → ADVERSE (PREDICTIONS row annotated; registration
+unchanged):** V-N-T price their screening escape at R_sc ≳ 5–10e4 au
+vs this class's ~4e3 au ramp (13–25× short); our static EFE
+multipoles at 1e4 au are 1.8×μ2 / 38×μ10 / 85×μ20 — LOUDER than every
+failing member; the SHIFT (DEFERRED-THREAT, 0.84–5.88×W family band)
+maps the observed spike to sources below the tidal injection zone,
+compensation ~45× short. CARVE-OUTS (reading-grade): torque-outcome
+scaling with static amplitude unestablished either way; the
+registered TRAJECTORY formulation carries no static field multipoles
+(7G/7H Saturn door) ⇒ **P14 is now ALSO an MI-vs-MG instrument**;
+the shift persists in both formulations. Durable products banked:
+the μ-contrast table (ledger sol-10r-oortprofile, 216 rows six gates
+PASS), matched-sky ambients e_N = 1.318 (BE)/1.271 (simple), the
+Galactic-tide comparison (17–500× below the class channel), the
+framing-sentence strike annotated in the stage docstring. Flagged
+seam (not chased, conservative here): 3T e_N = 1.15 vs Gaia-total
+ν-consistency (~1.32). CREDENCES: every cell pre-signed HOLD 53/8,
+referee-affirmed. **Profile-grade Oort statistics are SPENT; the only
+decisive P14 instrument = a full V-N-T-class pipeline (heavy,
+author-call; their code not public; Rubin LPC census this decade).
+FIVE closes 2026-08-11 — FRESH SESSION before the next arc. NEXT FORK
+(author's): circulation TODO 27–31 (P1/P2 arXiv before 2026-12-02
+OUTRANKS; the RNAAS-note referee round awaits a fresh author go) · P3
+round 4 / circulation · the V-N-T-pipeline arc · DR4 readiness · the
+κ=1-deep structural route.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

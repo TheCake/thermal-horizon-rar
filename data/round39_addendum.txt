@@ -14,3 +14,29 @@ GA 7 eps_deep 0.380 => v-boost 1.175 in the archived wide-bin ballpark OK
 ------------------------------------------------------------------------
 GA SUMMARY: 10 OK / 0 MISMATCH
 ========================================================================
+
+========================================================================
+ROUND 39 ADDENDUM -- GB half (reviewer-math verification + conditions)
+========================================================================
+GB 1 affine Jacobian d(1/a_osc)/du = 1 + eps(Q) (sympy)       OK  eps(Q) + 1
+GB 1n Jacobian at Q=3e+04: 1.3800 vs 1+eps=1.3795             OK  
+GB 1n Jacobian at Q=6e+04: 1.3804 vs 1+eps=1.3797             OK  
+GB 1n Jacobian at Q=9e+04: 1.3777 vs 1+eps=1.3798             OK  
+GB 2 l=1 channel 0.191 xW                                     OK  0.191
+GB 2 l=2 channel 0.240 xW                                     OK  0.240
+GB 2 l=3 channel ~0.028 xW                                    OK  0.038
+GB 2 Sum(l=1..8) = 0.464 xW                                   OK  0.474
+GB 3 restored simple 1.10 a1.3: multipoles 0.618 + scale 0.568 = 1.185 xW (his 0.605+0.567=1.172) OK  
+GB 4 matched e_N: BE 1.318 / simple 1.271                     OK  1.318 / 1.271
+GB 5 |phi2|(1e4 au): ours 4.938e-02 vs mu10 1.287e-03; ratio 38x (his 38x) OK  
+GB 6 mono spread analytic (simple) = 1.42e-6 = 0.019 xW       OK  1.416e-06 = 0.019 xW
+GB 7 source bands: EMP 5886-10539 au (his 5886-10539); nominal 3360-4492 (his 3360-4492) OK  
+GB 7 tidal compensation margin ~45x = 2.226e-4 / 5e-6         OK  44.5
+GB 8 tide quad at rho=0.08, Q=2e+04: 4.58e-08 = 0.0006 xW (his band 0.0006-0.029) OK  
+GB 8 tide quad at rho=0.15, Q=1e+05: 2.15e-06 au^-1 (his 2.1e-06) OK  
+GB 9 G4 re-fired on quad: NR 512->1024 rel d = 2.79e-04 (< 0.10; his 0.03%) OK  
+GB 10 solver inner edge = 70.3 au; np.interp clamps left      OK  
+------------------------------------------------------------------------
+GB SUMMARY: 18 OK / 0 MISMATCH
+GB VERDICT: ALL REVIEWER NUMBERS CONFIRMED -- adopt R39 in full (letter -> R-PROFILE-INCOMPLETE; 13 conditions; P14 ADVERSE)
+========================================================================

@@ -9,6 +9,59 @@ close, same commit as the verdict. Filip asked for this on 2026-08-06
 
 ---
 
+## 2026-08-11 fifth close (the 10R close -- P14's first leg, and the referee broke the letter, not the numbers)
+
+Second "go for next" of the day. I chose the P14 Oort lane (the
+unblocked seed) + the RNAAS-note referee round; THE AUTHOR KILLED the
+note-round agent mid-spawn -- lane dropped, note stays 0.1, do NOT
+respawn without a fresh go. The P14 leg ran end-to-end: V-N-T
+2403.09555 primary-read -> pre-reg a8d51bc -> single gates-green run
+(R-PROFILE-GRAY) -> blind GA 10/10 @ 4aa73e8 (#11th protocol
+execution) -> ROUND 39 -> GB 18/18 -> adopted in full.
+
+- **ROUND 39 = the 9X/9Y pattern again: reproduction PERFECT (zero
+  computed errors, byte-identical rerun, independent solver 0.3%),
+  conclusions BROKEN.** Letter downgraded R-PROFILE-GRAY ->
+  R-PROFILE-INCOMPLETE: I counted only the l=2 channel; the map is
+  AFFINE (d(1/a_osc)/du = 1 + eps(Q) exactly) and l=1 alone is 0.8x
+  the l=2 channel (V-N-T's own Sec II.2.2 SAYS the dipole is
+  comparable near r_M -- I read Sec I/II.2.1/V and not II.2.2's
+  warning). Restored family-max 0.62-1.19 xW = routing-dependent.
+- **THE INSTRUMENT-LEVEL POWER LESSON (candidate trap #26, log it as
+  standing): before licensing ANY letter on a discriminator statistic,
+  SCORE THE KNOWN-OUTCOME WORLDS THROUGH IT.** mu10/mu20 fail V-N-T at
+  3e-16 and score ~0 (SAFE) on my statistic -- the whole instrument
+  had no power over the observable, and no gate could catch that
+  because every gate tested internals. Trap #16's 5th occurrence (G4
+  null-power) rode along.
+- **P14 is now ADVERSE** (his F1/F2/F9, all GB-confirmed): the V-N-T
+  escape clause is PRICED in their Sec V at R_sc >~ 5-10e4 au vs our
+  ramp ~4e3 au; our static multipoles are LOUDER (38x/85x) than
+  members that fail; the SHIFT maps the observed spike to sources
+  below the tidal injection zone (~45x uncompensated). Carve-outs
+  (reading-grade): torque-outcome-vs-static-amplitude unestablished
+  either way; the TRAJECTORY formulation has no static field
+  multipoles (7G/7H) => P14 doubles as an MI-vs-MG instrument; the
+  shift threat persists in BOTH formulations.
+- **Don't-redo:** profile-grade Oort statistics are SPENT -- do not
+  build another one; the only decisive P14 instrument is a full
+  V-N-T-class 4.5-Gyr pipeline (L~27 multipoles, tide, passing stars,
+  fading; their code not public; Rubin LPC this decade). The
+  mu-contrast table and the matched-sky ambients (1.318/1.271) are
+  banked -- reuse, don't recompute.
+- Trap #23 fired FOUR times this close, all in MY verifiers (GA
+  lambda; GB grid-step Jacobian = the referee's own disclosed F14
+  artifact; GB dropped alpha) -- the verifier-is-an-instrument rule
+  is now the most-fired trap in the program. Slow down on verifier
+  code; write the analytic expectation FIRST.
+- Flagged seam (not chased): 3T's e_N = 1.15 vs nu-consistency with
+  the Gaia total 1.93 a0 (wants ~1.32). Conservative for 10R (F10);
+  a future cross-stage check, NOT a 3T retraction.
+- FIVE closes 2026-08-11. Forks (author's): circulation TODO 27-31
+  (P1/P2 arXiv before 2026-12-02 OUTRANKS; note round awaits a fresh
+  go) - P3 round 4 / circulation - the V-N-T-pipeline arc (heavy,
+  author-call) - DR4 readiness - kappa=1-deep structural route.
+
 ## 2026-08-11 fourth close (the P3-round-3 close -- the concurrent "you pick" close: thaw + ROUND 37 + P11 scout + sweep)
 
 The author delegated the fork ("you pick what's next... concurrently...

@@ -591,6 +591,36 @@ pipeline with honestly stated Oort-model systematics, ALSO destroys
 the spike. (Data: their published machinery; Rubin LPC census this
 decade for the sharpened version. MI-comet treatment scouted VIRGIN.)
 
+*Annotation (2026-08-11, stage 10R first leg, pre-reg a8d51bc, ROUND 39
+ADOPTED -- ROW PRIOR NOW ADVERSE, registration unchanged): the profile
+leg fired R-PROFILE-GRAY and ROUND 39 downgraded it to
+R-PROFILE-INCOMPLETE (zero computed errors; the statistic omitted the
+map's affine scale term and the l=1..8 multipoles -- restored
+family-max 0.62-1.19 x spike-width -- and is DEMONSTRATED POWERLESS:
+AQUAL mu10/mu20 fail V-N-T at 3e-16 yet score ~0 on it). THREE
+ADVERSE FACTS, primary-source grade: (1) V-N-T price their
+screened-variants escape at R_sc >~ 5-10e4 au; this class's screening
+ramp is ~4e3 au (13-25x short); (2) the class's static EFE multipoles
+at 1e4 au EXCEED every AQUAL member they simulate as failing (1.8x
+mu2, 38x mu10, 85x mu20 in l=2); (3) the monopole SHIFT (a
+DEFERRED-THREAT, 0.84-5.88 x width across the family) maps the
+observed spike to source orbits a_true ~ 3.4-10.5e3 au, below the
+tidal injection zone, with the boost's own compensation ~45x short at
+leading order. CARVE-OUTS (named, reading-grade): V-N-T's mechanism
+is dynamical (multipole torques over 4.5 Gyr) and whether its outcome
+scales with static multipole amplitude is unestablished either way;
+and the registered TRAJECTORY formulation carries no static field
+multipoles at all (the 7G/7H Saturn door) -- the torque channel is a
+field-formulation object, so P14 is now ALSO an MI-vs-MG-relevant
+instrument -- while the shift threat persists in BOTH formulations.
+The ONLY decisive leg is the registered full-pipeline kill above
+(their code not public; Rubin LPC census this decade). Durable
+products banked: the class's first Oort-range anomaly profile
+(eps_deep 0.38, half-ramp 3926 au), the mu-contrast table, the
+matched-sky ambients (1.318/1.271), the Galactic-tide comparison
+(17-500x below the class channel). Ledger sol-10r-oortprofile;
+credences HOLD 53/8 (pre-signed, referee-affirmed).*
+
 ### P15 — the eccentricity ledger (the frozen no-pump prediction + the erosion bound)
 Registered in the CORRECTED two-leg form (the naive "pump" draft of the
 chat essay is superseded by the sign analysis in PAPER4-SEED.md/DIARY

@@ -16424,3 +16424,121 @@ number, right conclusion, and now stronger. We also scouted whether the
 "galaxies with a past" test can run yet (not yet: nobody has published
 the needed who-fell-in-before list; two small pilots exist), and swept
 the repository so the one banned word appears nowhere.
+
+## Lit-note (2026-08-11): Vokrouhlicky, Nesvorny & Tremaine 2024 (arXiv:2403.09555) -- PRIMARY READ (P14 prerequisite)
+
+AQUAL-MOND vs the Oort spike. Observed spike: osculating 1/a in
+(0, 0.75e-4) au^-1 (their Sec I). Their adopted external field
+g_e = 2.32e-10 m/s^2 = 1.93 a0 in the TOTAL-field convention (Gaia
+centripetal; Sec II.2.1) -- maps to our NEWTONIAN convention as
+nu(e_N) e_N = 1.93 => e_N = 1.318 (BE) / 1.271 (simple); a0 = 1.2e-10;
+r_M = 7030 au. Newtonian sims reproduce the LPC binding-energy
+distribution; AQUAL sims do not -- the mechanism is DYNAMICAL: EFE
+multipole torques at r ~ r_M over 4.5 Gyr ("vigorous MONDian torques at
+heliocentric distances of a few thousand au ... provide an additional
+source of new comets", Sec IV.2); they carry multipoles to L = 27 and
+note the l=1 dipole is comparable to l=2 near r_M (Sec II.2.2).
+Transition functions mu_n, n = 1..20; sharp members mu_10/mu_20 STILL
+FAIL (chi2 ~ 4.8, likelihood 3e-16). THE PRICED ESCAPE (Sec V,
+verbatim-read): a screening length R_sc raised "from the size of the
+planetary system (a few au) to the size of the Oort cloud
+(5-10 x 10^4 au)" -- the escape clause P14 registered against is
+QUANTIFIED by their own text.
+
+## Stage 10R (2026-08-11): P14 first leg, THE OORT PROFILE LEDGER (pre-reg a8d51bc; verdict 4aa73e8; single run, no amendments)
+
+Fired R-PROFILE-GRAY gates-green first firing (G1 regression 1.4e-5;
+sympy exact; injection 6e-4; G6 convention diagnostic consistent):
+the class's solar-ambient anomaly profile from the validated 4K solver
+(eps_deep(BE, e_N=1.15, alpha=1) = 0.380; half-ramp 3926 au), the
+osculating map 1/a_osc = 1/a_true - 2I(q_p), SMEAR (as-registered,
+l=2 channel) = 0.317 x spike-width; mono-spread over perihelia = 0
+(Boltzmann screening; x(40 au) = 176); SHIFT (common-mode) 1.27 x
+width at the empirical-anchor central row; G7 class-separation FAILED
+informatively (static sharp-AQUAL profile at the supercritical solar
+ambient ~1e-3, SMALLER than ours). Blind GA 10/10 pre-committed
+4aa73e8 (protocol execution #11; one verifier lambda slip fixed and
+disclosed -- trap #23).
+
+## ROUND 39 ADOPTED (2026-08-11, same close): hole YES (severe), LETTER DOWNGRADED R-PROFILE-GRAY -> R-PROFILE-INCOMPLETE; ZERO computed errors; 13 conditions; P14 -> ADVERSE
+
+The referee reran the stage byte-identically, rebuilt the solver
+independently (0.03-0.3% agreement everywhere; eps_deep analytic
+nu(e)(1 + (1/3) dln nu/dln y) = 0.3789), then broke the LETTER, not
+the numbers:
+- OMISSION 1 (F3): the map is AFFINE -- d(1/a_osc)/du = 1 + eps(Q)
+  EXACTLY (GB-confirmed by sympy + smooth quadrature 1.380 vs 1.3795)
+  -- the stage measured the monopole on the perihelion axis where both
+  scale and translation vanish by construction.
+- OMISSION 2 (F4): only l=2 was counted; l=1 gives 0.191 xW (V-N-T
+  Sec II.2.2 say the dipole is comparable near r_M and carry L=27);
+  Sum(l=1..8) = 0.46-0.47 xW.
+- RESTORED under the stage's own family-MAX rule: 0.62 xW (multipoles
+  only) / 1.17-1.19 xW (with scale) = BROKEN-range => the letter is
+  routing-dependent once repaired => R-PROFILE-INCOMPLETE.
+- POWERLESSNESS (F2, the sharpest finding): mu_10/mu_20 -- which fail
+  V-N-T at 3e-16 -- score 0.002/0.000 xW on this statistic (would fire
+  SAFE); ours is 1.8x mu_2 / 38x mu_10 / 85x mu_20 in the l=2 EFE
+  channel at 1e4 au (GB: 38x confirmed); nu_simple IS mu_1-AQUAL's nu
+  to 4 digits. Trap #16 at the INSTRUMENT level.
+- PREMISE REFUTED (F1): V-N-T price their screening escape at
+  R_sc >~ 5-10e4 au; our ramp is ~4e3 au (13-25x short). The
+  pre-reg's "the measured class IS that clause" sentence is STRUCK
+  (annotated in the stage docstring).
+- SHIFT relabeled DEFERRED-THREAT (F8/F9): family band 0.84-5.88 xW
+  (nominal cell 2.97 xW); the osculating map sources the observed
+  spike from a_true 3360-10539 au -- below the tidal injection zone --
+  and the boost's compensation is ~45x short at leading order
+  (GB-confirmed bands + margin). "Re-equilibrates" must be WON by the
+  successor, not assumed.
+- IN THE STAGE'S FAVOUR: dP2 = 1.5 correct; the Newtonian Galactic
+  tide's own quadrupole is 17-500x below the class channel
+  (GB-confirmed 0.0006-0.029 xW); the empirical anchor (B^2-1) is a
+  category-mismatch FLOOR row but the family-max headline protected
+  the smear letter; G7's inference (the destruction is dynamical, the
+  full pipeline is required) CONFIRMED VERBATIM from Sec IV.2; G4
+  null-power discharged (quad moves 0.03% under NR doubling); G1's
+  proximity-picked target happened to select the correct row.
+- SURVIVES UNCONDITIONALLY: the profile computation itself (first
+  Oort-range anomaly profile of the measured class), the mono
+  screening bound (analytic 0.019 xW for simple, e^-176 for BE), the
+  mu-contrast table (the durable external product), and the
+  matched-sky ambients e_N = 1.318/1.271 (GB).
+Verification: GA 10/10 blind pre-report + GB 18/18 ALL REVIEWER
+NUMBERS CONFIRMED (calcs/round39_addendum.py; my GB first-firing
+carried TWO verifier slips -- the grid-step Jacobian artifact the
+referee himself disclosed in F14, and a dropped alpha factor -- both
+fixed and disclosed in-file; trap #23 fired four times this close,
+all in verifiers, zero in stages).
+CREDENCE: every cell pre-signed HOLD anomaly-real 53 / mech 8;
+referee-affirmed ("no credence motion; the thing that moved is the
+prior on P14 itself"). P14 row annotated ADVERSE with the
+formulation-split reading (field-formulation multipoles louder than
+failing AQUAL members; trajectory formulation carries no static field
+multipoles per the 7G/7H Saturn door -- reading-grade -- while the
+monopole shift threat persists in BOTH formulations). Flagged seam
+(reviewer iv.5, not chased): nu-consistency of the 3T e_N = 1.15
+with the Gaia total 1.93 a0 wants e_N ~ 1.32 -- direction conservative
+for this stage (F10), cross-stage check queued.
+
+PLAIN VERDICT: NEEDS REFINEMENT (the letter) / SUCCESS (the
+instrument and the round) -- the stage's numbers all survived two
+independent rebuilds; its verdict letter did not survive the referee,
+and the honest state is that profile-grade statistics cannot decide
+P14 at all: the only decisive instrument is a full V-N-T-class
+pipeline, and the prior there is now ADVERSE on their own primary
+text for the field-formulation reading.
+
+ELI12: We asked whether our gravity rule would break the famous
+"comet spike" the way standard MOND does. Our first-pass ruler said
+"probably not, but it is close." The referee then showed our ruler
+was missing two of its markings (we only counted one shape of push,
+and forgot the map stretches as well as slides) -- and worse, that
+rulers like ours read "safe" even for theories ALREADY PROVEN to
+break the spike. So the honest answer is: this cheap test cannot
+decide; only the full comet simulation can, and the signs there now
+lean against the field version of our rule (its pushes at comet
+distances are LOUDER than the failing theories'), while the
+trajectory version dodges that particular hammer. Every number both
+sides computed checked out; the correction was to the conclusion's
+strength, not the arithmetic.

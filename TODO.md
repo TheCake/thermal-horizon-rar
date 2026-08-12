@@ -1517,7 +1517,17 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     (d) **P14-stage: the Oort spike under the measured function.**
     Trajectory-formulation comet 1/a distribution; V-N-T
     (2403.09555) machinery as the contrast; binary orbit integrator
-    carries over.
+    carries over. **FIRST LEG EXECUTED 2026-08-11 = stage 10R**
+    (pre-reg a8d51bc; R-PROFILE-GRAY -> ROUND 39 DOWNGRADE to
+    R-PROFILE-INCOMPLETE, hole YES, zero computed errors): profile
+    statistics are POWERLESS for the spike (mu10/mu20 fail V-N-T at
+    3e-16 yet score SAFE); P14 prior ADVERSE (escape priced R_sc >~
+    5e4 au vs ramp 4e3; our static multipoles 38-85x louder than
+    failing AQUAL members; shift DEFERRED-THREAT ~45x uncompensated)
+    with the trajectory-formulation carve-out (no static field
+    multipoles; 7G/7H) reading-grade. ONLY decisive leg = the full
+    V-N-T-class pipeline (code not public; Rubin LPC this decade) --
+    a heavy dedicated arc if/when the author calls it.
     (e) **P12-stage (heaviest): stream coherence.** MI trajectory-
     averaged boost along Pal 5/GD-1 vs MG-EFE local shape; needs
     stream modeling the program does not yet own — design last.

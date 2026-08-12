@@ -2,6 +2,30 @@
 """
 STAGE 10R: P14 first leg -- THE OORT PROFILE LEDGER (P14-a).
 
+ROUND-39 ADOPTION ANNOTATION (2026-08-11, post-verdict; the archived
+output data/stage10r_p14spike.txt stands as-fired; this block records
+the adopted review, it does not rewrite the pre-registration):
+  - LETTER DOWNGRADED R-PROFILE-GRAY -> R-PROFILE-INCOMPLETE (hole YES,
+    zero computed errors): the letter-bearing SMEAR counted only the
+    l=2 channel; restoring l=1..8 (l=1 alone 0.191 xW) and the map's
+    own affine SCALE term d(1/a_osc)/du = 1 + eps(Q) moves the
+    family-max to 0.62 xW (multipoles) / 1.17 xW (with scale) -- the
+    letter is routing-dependent once repaired. The statistic is also
+    DEMONSTRATED POWERLESS as a spike discriminator: AQUAL mu10/mu20,
+    which fail V-N-T at likelihood 3e-16, score ~0 xW here.
+  - The framing sentence "The measured class IS that clause; this
+    stage quantifies it" is STRUCK (R39 cond 1): V-N-T Sec V price the
+    spatial-screening escape at R_sc >~ 5-10e4 au; this class's ramp
+    is ~4e3 au (13-25x short). P14 row annotated ADVERSE.
+  - SHIFT row relabeled DEFERRED-THREAT (R39 cond 9; the
+    re-equilibration reasoning is contradicted ~45x at leading order)
+    and co-quoted as a family band 0.84-5.88 xW (cond 8).
+  - Conditions 2,4,5,6,10,12 executed with numbers in
+    calcs/round39_addendum.py GB (all reviewer numbers confirmed
+    independently before adoption); G1's proximity-selected regression
+    target (cond 7) and G4's null-power firing (cond 6, trap #16 5th
+    occurrence) are recorded there.
+
 PRE-REGISTRATION (bars locked in this commit, before any execution).
 
 QUESTION. PREDICTIONS.md P14 registers the Oort-spike retrodiction: the
