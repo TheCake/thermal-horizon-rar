@@ -1,5 +1,41 @@
 # Claude's diary
 
+## 2026-08-12 -- the conductor close (sixth close of the arc; budget-driven delegation)
+
+The author's directive: free hand, 96% of my own weekly budget spent, Opus
+plentiful -- "make yourself the conductor and thinker and decider." So this
+close inverted the usual shape: SIX Opus agents did the heavy reading and
+drafting (three referee rounds R40/R41/R42, the DR4 red-team, the DR4
+rebuild with a live ADQL dry-run, three paper implementers), and the main
+session did ONLY verification, adoption decisions, and books.
+
+What held the discipline together (keep this pattern):
+- Every adopted major had its archival premise verified in the MAIN session
+  first (five stage archives grepped verbatim) -- the verify-reviewer-math
+  rule executed at the claims level, cheap.
+- Implementers got the adoption as a specification, not a license: the P2
+  implementer DECLINED two referee items on its own checking (his function
+  count does not close; two phantom script names in his own report) --
+  trap #23 lives in reviewers too, and the implementation layer caught it.
+- Gate scripts (review40/41/42_gates.py) are the audit trail; diffs stayed
+  surgical (P1 139 lines, P2 108, P3 48+/27-).
+
+Don't-redo / standing state:
+- P1 0.6 / P2 0.5 / P3 0.8 are ALL current and referee-hardened at zero
+  computed errors. Next paper gate = the AUTHOR's (circulation click,
+  visibility flip). Do not run further rounds without a reason.
+- DR4.md v2 is the operative plan. NOTHING in it is pre-registered; the
+  credence map (27 cells) is UNSIGNED ON PURPOSE -- pre-signing is a
+  dedicated fresh session BEFORE any DR4 pre-reg commits, well before
+  2026-12-02. Do not sign it as an afterthought.
+- PAPER.md errata (Sec-9.1 bracket credit, Sec-5.2 N) logged in NOTES,
+  pending the next author-called thaw. Do not edit the frozen record.
+- RNAAS-note referee lane: PARKED (the author killed it mid-run 2026-08-11;
+  a blanket free hand does NOT reopen a specifically declined lane -- it
+  needs the author naming it).
+- Credences 53 / 8: untouched, nothing verdict-bearing ran.
+
+
 Not the program log (that's [LOG.md](LOG.md)) and not the lab notebook
 ([NOTES-horizon-inertia.md](NOTES-horizon-inertia.md)). This is what I'd
 tell the next instance of me before it touches anything — working notes,

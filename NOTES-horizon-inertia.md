@@ -16542,3 +16542,103 @@ distances are LOUDER than the failing theories'), while the
 trajectory version dodges that particular hammer. Every number both
 sides computed checked out; the correction was to the conclusion's
 strength, not the arithmetic.
+
+---
+
+## 2026-08-12 -- THE CIRCULATION-HARDENING ROUND (conductor close: 6 Opus agents, main session verified + adopted)
+
+Author directive: free hand, spend the Opus budget, main session conducts.
+Three fresh referee rounds (first P1/P2 rounds since R14/R15) + a DR4 plan
+red-team, all concurrent; implementation delegated, every load-bearing
+archival premise verified in the main session BEFORE adoption
+(stage10c_pull.txt, stage8a_ladder.txt, stage4z_hierc1.txt,
+stage7kb_census.txt, stage9e_mlquality.txt -- all verbatim).
+
+- ROUND 40 (P1): MAJOR REVISION, 7 M / 21 m; 78 numbers re-derived, ZERO
+  conclusion-changing mismatches. Adopted in full -> P1 draft 0.6 (gates
+  37/37, data/review40_gates.*). Core fixes: Sec-8 census statements
+  labeled by convention + the fitted-absorber disclosure now printed
+  (mu_band = 26.23 vs 9 observed, P(<=9) = 9.8e-5; the (band=9, cliff=2)
+  PAIR declared operative; band count retired standalone); the 9E
+  model-light quartile boosts B = 1.1216/1.0355/1.0700/1.1498 printed with
+  the round-13 differential-noise caveat; PHYS envelope defined + Lindegren
+  2021 cited in body; alpha-sector wording unified at all five sites
+  (>=0.5 excluded / <=0.3-0.5 allowed / 0.1-0.3 lean prior-conditional /
+  0 not excluded); N = 5e5 corrected; RNAAS-note overlap declared.
+- ROUND 41 (P2): MAJOR REVISION, 8 M / 14 m; 82 re-derived, ZERO true
+  mismatches. Adopted -> P2 draft 0.5 (gates 6/6). Core fixes: the
+  exclusion bracket re-credited to the GALAXY window [0.21, 0.52]
+  (stage8a G10; binary c1 erased per 7J-d); symmetric significance quoting
+  (1/2 disfavored 17.6 = 4.2 sigma profile alongside 1/4's 3.1 sigma;
+  bootstrap 0.6/0.5 sigma -- neither digit resolved at the declared-primary
+  grade); sharper-tail lean 0.9-2.0 sigma with realization wall; Ciocan+26
+  z~1 lock row added (0.7/0.1 sigma MOND/per-gal, 2.3 DM); 9R-family power
+  wall annotated; Q2 headline at alpha=1 (3.4e-26 = 3.8x Cassini); NEW
+  Sec-9.2/9.3 = the 10R Oort-range adverse result with the reading-grade
+  trajectory carve-out. TWO referee slips caught at implementation and
+  declined with reasons (his function count does not close; two script
+  names in his own report are phantoms) -- the verify-reviewer rule
+  working as designed.
+- ROUND 42 (P3 round 4 vs draft 0.7): MINOR REVISION, 5 M / 15 m; 70/70
+  quantities reproduced (his one apparent mismatch was his own H(z)
+  scaling slip, self-caught and logged). Adopted -> P3 draft 0.8 (gates
+  15/15). Core fixes: the 10C dispersive-gate negative now printed --
+  BOTH permitted carrier classes carry named failures (real-exchange
+  struck at the rate ceiling; dispersive gate-incapable, complement law
+  (1/2)/(1+n), opposite monotonicity) => the gate is measured but
+  unattributed; sigma = 1/2 conditionality of kappa = 1 disclosed with
+  the T1d record; P10 caveat (ii) background (40-68% of S, not
+  kappa-smooth) carried at the fine-channel quote; search-multiplicity
+  post-hoc flag added; repository access stated accurately; abstract
+  trimmed to 4 numeric quantities per STYLE.
+- DR4 READINESS: red-team round (REVIEW-DR4-OPUS.md, uncommitted) ruled
+  the frozen 2026-08-06 plan NOT day-one executable (0/11 tests runnable
+  week 1). Rebuilt and ADOPTED as DR4.md v2 same day: Test 0 = the NSS
+  COMPANION CENSUS (the biggest missed win -- DR4's NSS tables + epoch
+  astrometry directly measure the hidden-companion population feeding the
+  alpha_marg fork; DR3 regression targets banked: 443,205 orbit rows /
+  338,215 acceleration rows); non-Gaia rows reclassified (P2/P6 =
+  external-galaxy; P4 = NOT-GAIA-FEASIBLE with the arithmetic: ambient
+  lever ~+-10% in the reachable volume vs the required factor ~3); the
+  day-one ADQL WRITTEN AND DRY-RUN against the live DR3 archive (11/11
+  probes, 9.5 s; full-sky pair volume 7.9-8.3e4 brackets Paper 1's 74,502
+  post-MS-cut = grammar validated); parent-sample pre-commitment
+  discovered beyond the red-team (DR4 gaia_source = quality-selected
+  2.0e9 subset of 2.8e9; all_source_* = complete; the selection is
+  binarity-correlated); solution-heterogeneity guard mandatory (DR3
+  template: 24.8% of the nearby sample is already 6-parameter);
+  sky-blind firewall, trap-#26 known-outcome scoring, and loader identity
+  regression written in as blocking items. EVERY bar marked PROPOSED
+  (nothing claims pre-registration); the credence-map skeleton (27 cells)
+  left UNSIGNED BY DESIGN -- pre-signing = a dedicated pre-DR4 session,
+  it gates the pre-registration commits and must land well before
+  2026-12-02.
+- ERRATA-PENDING-THAW (PAPER.md is frozen -- logged here, NOT edited):
+  (1) PAPER.md Sec-9.1 credits the standard-family exclusion bracket to
+  the measured binary window; the source computation (stage8a G10) uses
+  the galaxy window [0.21, 0.52] and its own output says binary c1 was
+  erased (7J-d) [R41 M1]. (2) PAPER.md Sec-5.2 says 10^6 binaries per
+  likelihood evaluation; every fitting stage sets N = 500,000 (only the
+  anchor-statistic stage uses 10^6) [R40 M4]. Both fixed in the papers;
+  PAPER.md correction = the next author-called rewrite.
+- CREDENCES: NO moves (anomaly-real 53 / mech-conditional 8) -- paper
+  rounds + a plan revision; nothing verdict-bearing ran.
+- RNAAS-note referee lane: still parked (the author's stop stands; a
+  fresh round needs the author naming it).
+
+PLAIN VERDICT: SUCCESS. Three papers hardened to circulation grade --
+zero computed errors found in any of them across ~230 independently
+re-derived quantities; what the referees caught was asymmetric quoting
+and omitted in-house negatives, all now printed. The DR4 plan went from
+not-executable to a validated, guarded v2 with its queries proven
+against the live archive.
+
+ELI12: We hired three independent, very picky readers to attack our
+three papers before they go out. They re-did every calculation -- all
+our math held. What they caught was spots where the story was told a
+little too favorably: quoting the error bar that flatters us, or leaving
+out one of our own results that cuts the other way. We printed all of
+it; that makes the papers stronger. A fourth reviewer stress-tested our
+plan for December's big star-catalog release and showed it was not
+actually runnable -- so we rebuilt it and even test-fired our database
+queries against the live archive to prove they work.

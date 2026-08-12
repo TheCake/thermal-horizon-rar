@@ -1,0 +1,442 @@
+DR4 DAY-ONE ADQL DRY-RUN -- banked queries and DR3 regression targets
+==============================================================================
+generated : 2026-08-12 19:14:10 local
+endpoint  : https://gea.esac.esa.int/tap-server/tap/sync (sync, CSV)
+script    : calcs/dr4_dryrun_adql.py
+purpose   : red-team findings F7 (solution heterogeneity),
+            F8 (NSS companion census = test 0), F10 (data access).
+status    : DRY RUN against Gaia DR3. Nothing here is pre-registered.
+            DR4 table/column names MUST be re-verified against the
+            published DR4 data model before any of this is fired.
+
+SELECTION CONSTANTS
+------------------------------------------------------------------------------
+  parallax > 5.0 mas (200 pc), parallax_over_error > 20.0
+  projected separation s in [200, 50000] AU
+  join radius 0.0695 deg = 250 arcsec = 50 kAU at exactly 5 mas
+  pm-consistency ceiling coefficient 0.44 derived as:
+    v_max = 29.8 km/s * sqrt(M/s_AU) with M = 5 Msun -> 66.6/sqrt(s_AU)
+    dmu[mas/yr] = v * plx / 4.74 ; s_AU = theta_arcsec * 1000 / plx
+    => dmu_max = 0.444 * plx^1.5 / sqrt(theta_arcsec)
+    (this reproduces the El-Badry & Rix 2018 coefficient independently)
+
+PATCHES
+------------------------------------------------------------------------------
+  A: ra=150.0 dec=10.0 radius=3.0 deg (area 28.3 deg2) -- l~228 b~+47, high latitude
+  B: ra=100.0 dec=10.0 radius=3.0 deg (area 28.3 deg2) -- l~204 b~+12, low latitude
+
+FULL-SKY PAIR-VOLUME EXTRAPOLATION
+------------------------------------------------------------------------------
+  patch A (l~228 b~+47, high latitude): 54 pairs / 28.3 deg2 = 1.91 pairs/deg2 -> full sky 78,787
+  patch B (l~204 b~+12, low latitude): 57 pairs / 28.3 deg2 = 2.02 pairs/deg2 -> full sky 83,164
+  FULL-SKY BRACKET (crude, isotropy assumed within each latitude class): 78,787 - 83,164 pairs at parallax > 5 mas, s in [0.2, 50] kAU, DR3 astrometry
+  RISK AXIS (ship it with the number, per the standing rule):
+    - two cones only; the true distribution is strongly latitude- and crowding-dependent, so this is a bracket of two samples, not a confidence interval;
+    - no chance-alignment subtraction (the pm+parallax consistency cuts are the only contamination control here; the 4I R_chance ladder is NOT applied);
+    - edge truncation: pairs straddling the cone boundary are lost (perimeter annulus ~4.6% of area, partial loss within it, so the deficit is <~2%);
+    - DR4 loosens the parallax floor at fixed sigma_v by the DR4 pm-improvement factor f: the volume scales ~f^3 and the yield ~f^3 only if the magnitude and main-sequence cuts do not bind. F13 says compute that, do not assume '~10x'.
+
+PER-QUERY RESULTS
+==============================================================================
+
+### Q1  census patch A
+status   : OK
+elapsed  : 0.4 s
+message  : OK
+rows     : 1
+ADQL:
+    SELECT COUNT(*) AS n_sources
+    FROM gaiadr3.gaia_source
+    WHERE 1 = CONTAINS(POINT('ICRS', ra, dec),
+                       CIRCLE('ICRS', 150.0, 10.0, 3.0))
+      AND parallax > 5.0
+      AND parallax_over_error > 20.0
+RESULT (first 40 rows):
+    n_sources
+    1064
+
+### Q1b census patch B
+status   : OK
+elapsed  : 0.9 s
+message  : OK
+rows     : 1
+ADQL:
+    SELECT COUNT(*) AS n_sources
+    FROM gaiadr3.gaia_source
+    WHERE 1 = CONTAINS(POINT('ICRS', ra, dec),
+                       CIRCLE('ICRS', 100.0, 10.0, 3.0))
+      AND parallax > 5.0
+      AND parallax_over_error > 20.0
+RESULT (first 40 rows):
+    n_sources
+    1251
+
+### Q2  solution types patch A (F7)
+status   : OK
+elapsed  : 0.4 s
+message  : OK
+rows     : 2
+ADQL:
+    SELECT astrometric_params_solved, COUNT(*) AS n,
+           AVG(ruwe) AS ruwe_mean, MIN(ruwe) AS ruwe_min, MAX(ruwe) AS ruwe_max
+    FROM gaiadr3.gaia_source
+    WHERE 1 = CONTAINS(POINT('ICRS', ra, dec),
+                       CIRCLE('ICRS', 150.0, 10.0, 3.0))
+      AND parallax > 5.0
+    GROUP BY astrometric_params_solved
+RESULT (first 40 rows):
+    astrometric_params_solved | n | ruwe_mean | ruwe_min | ruwe_max
+    31 | 970 | 1.3968332978867992 | 0.75047016 | 26.063826
+    95 | 320 | 1.3649143621325492 | 0.83125293 | 14.739847
+
+### Q3  RUWE-null count patch A (F7)
+status   : OK
+elapsed  : 0.4 s
+message  : OK
+rows     : 1
+ADQL:
+    SELECT COUNT(*) AS n_total,
+           SUM(ruwe) AS ruwe_sum_nonnull_only
+    FROM gaiadr3.gaia_source
+    WHERE 1 = CONTAINS(POINT('ICRS', ra, dec),
+                       CIRCLE('ICRS', 150.0, 10.0, 3.0))
+      AND parallax > 5.0
+      AND ruwe IS NULL
+RESULT (first 40 rows):
+    n_total | ruwe_sum_nonnull_only
+    0 | 
+
+### Q4  pair self-join listing patch A (F10)
+status   : OK
+elapsed  : 0.6 s
+message  : OK
+rows     : 54
+ADQL:
+    SELECT TOP 1000
+      a.source_id AS source_id1, b.source_id AS source_id2,
+      a.parallax AS parallax1, b.parallax AS parallax2,
+      a.pmra AS pmra1, a.pmdec AS pmdec1, b.pmra AS pmra2, b.pmdec AS pmdec2,
+      a.pmra_error AS pmra_error1, a.pmdec_error AS pmdec_error1,
+      b.pmra_error AS pmra_error2, b.pmdec_error AS pmdec_error2,
+      a.phot_g_mean_mag AS g1, b.phot_g_mean_mag AS g2,
+      a.ruwe AS ruwe1, b.ruwe AS ruwe2,
+      a.astrometric_params_solved AS aps1, b.astrometric_params_solved AS aps2,
+      3600.0 * DISTANCE(POINT('ICRS', a.ra, a.dec), POINT('ICRS', b.ra, b.dec)) AS theta_arcsec,
+      3600.0 * DISTANCE(POINT('ICRS', a.ra, a.dec), POINT('ICRS', b.ra, b.dec)) * 2000.0 / (a.parallax + b.parallax) AS s_au
+    FROM (SELECT source_id, ra, dec, parallax, parallax_error,
+                 pmra, pmdec, pmra_error, pmdec_error,
+                 phot_g_mean_mag, ruwe, astrometric_params_solved
+          FROM gaiadr3.gaia_source
+          WHERE 1 = CONTAINS(POINT('ICRS', ra, dec),
+                             CIRCLE('ICRS', 150.0, 10.0, 3.0))
+            AND parallax > 5.0
+            AND parallax_over_error > 20.0
+            AND astrometric_params_solved >= 31) AS a,
+         (SELECT source_id, ra, dec, parallax, parallax_error,
+                 pmra, pmdec, pmra_error, pmdec_error,
+                 phot_g_mean_mag, ruwe, astrometric_params_solved
+          FROM gaiadr3.gaia_source
+          WHERE 1 = CONTAINS(POINT('ICRS', ra, dec),
+                             CIRCLE('ICRS', 150.0, 10.0, 3.0))
+            AND parallax > 5.0
+            AND parallax_over_error > 20.0
+            AND astrometric_params_solved >= 31) AS b
+    WHERE a.source_id < b.source_id
+      AND 1 = CONTAINS(POINT('ICRS', a.ra, a.dec),
+                       CIRCLE('ICRS', b.ra, b.dec, 0.0695))
+      AND (3600.0 * DISTANCE(POINT('ICRS', a.ra, a.dec), POINT('ICRS', b.ra, b.dec)) * 2000.0 / (a.parallax + b.parallax)) BETWEEN 200.0 AND 50000.0
+      AND ABS(a.parallax - b.parallax) <
+          3.0 * SQRT(a.parallax_error * a.parallax_error
+                     + b.parallax_error * b.parallax_error)
+      AND SQRT(POWER(a.pmra - b.pmra, 2) + POWER(a.pmdec - b.pmdec, 2)) <
+          0.44 * POWER((a.parallax + b.parallax) / 2.0, 1.5) / SQRT(3600.0 * DISTANCE(POINT('ICRS', a.ra, a.dec), POINT('ICRS', b.ra, b.dec)))
+          + 3.0 * SQRT(a.pmra_error * a.pmra_error + b.pmra_error * b.pmra_error
+                       + a.pmdec_error * a.pmdec_error
+                       + b.pmdec_error * b.pmdec_error)
+RESULT (first 40 rows):
+    source_id1 | source_id2 | parallax1 | parallax2 | pmra1 | pmdec1 | pmra2 | pmdec2 | pmra_error1 | pmdec_error1 | pmra_error2 | pmdec_error2 | g1 | g2 | ruwe1 | ruwe2 | aps1 | aps2 | theta_arcsec | s_au
+    3878359664471096320 | 3878359664471374848 | 6.534488858292605 | 6.563863327060972 | 108.6818899586113 | -94.64271830217659 | 108.06824265349161 | -93.22561670341142 | 0.4477566 | 0.15722144 | 0.018027356 | 0.015993582 | 15.0866165 | 12.03533 | 1.3172859 | 1.0391719 | 95 | 31 | 1.5505620990157172 | 236.75681903705987
+    3878420343769325312 | 3878420373835980800 | 9.407746122145719 | 9.286933302128078 | -16.42409031983416 | -10.871506311556574 | -17.64050981648016 | -9.350704528639138 | 0.02479979 | 0.02460382 | 0.05344215 | 0.05070978 | 10.65977 | 15.389933 | 1.0725371 | 1.1158818 | 31 | 31 | 6.341730398426524 | 678.4529709765666
+    3879408426765332480 | 3879408426765927040 | 9.539174363028042 | 9.233619485608735 | -15.975477317181397 | -56.18197486602404 | -17.276557609588533 | -54.9440052815053 | 0.20267236 | 0.15006557 | 0.0784201 | 0.05801505 | 18.267899 | 13.974871 | 0.9680618 | 4.7111397 | 95 | 31 | 3.8280863553838573 | 407.8334196017223
+    3879478932949185536 | 3879478997375076224 | 5.637513426703968 | 5.7308050322973125 | -12.564586065459734 | -22.66267628039133 | -12.639534814724463 | -23.23244524154287 | 0.10236732 | 0.081500396 | 0.051435433 | 0.039544404 | 17.280718 | 14.825021 | 1.0280411 | 1.0692068 | 31 | 95 | 33.707631368584416 | 5930.0997751158475
+    3879478932949185536 | 3879478997373029120 | 5.637513426703968 | 5.626962378306279 | -12.564586065459734 | -22.66267628039133 | -12.03491526754919 | -22.610470501253264 | 0.10236732 | 0.081500396 | 0.030501658 | 0.02269275 | 17.280718 | 14.59466 | 1.0280411 | 1.0535567 | 31 | 31 | 35.82975520848941 | 6361.548611530231
+    3880128774385354368 | 3880128778680426240 | 8.321972628424252 | 8.295098075417261 | 27.21597154777804 | -81.57722937104796 | 28.39261291969499 | -81.66706375420021 | 0.017707007 | 0.014393009 | 0.06127395 | 0.04529556 | 12.534075 | 16.163841 | 1.2200439 | 1.0697119 | 31 | 31 | 8.976669988836807 | 1080.4154533399912
+    3881290859391989248 | 3881291168629634176 | 7.424354479366136 | 7.4267785398841255 | -62.01605702194915 | 13.309116345649981 | -61.22228983034803 | 13.695642911934154 | 0.053520452 | 0.039300647 | 0.030795755 | 0.021483188 | 15.959747 | 14.739494 | 1.0147071 | 1.0466651 | 31 | 31 | 27.102418737065264 | 3649.8789286897777
+    3877025063513365760 | 3877025063513677952 | 7.03166684579096 | 7.066792207747367 | -25.65108633989839 | 49.694458748039644 | -24.83101900831089 | 48.90310400134773 | 0.028559797 | 0.024671372 | 0.019492278 | 0.016636191 | 13.613044 | 12.805764 | 1.0294054 | 0.98972285 | 95 | 95 | 1.618576201800708 | 229.61037027581955
+    3874697290023399424 | 3874697290024164352 | 5.91915836469922 | 6.031638455285959 | -19.948004988914185 | -42.170751262299625 | -20.116855206969426 | -42.893711480080505 | 0.02736261 | 0.018315123 | 0.05479436 | 0.03930701 | 9.384203 | 10.553188 | 1.0668536 | 1.3977251 | 31 | 31 | 2.9193694862904054 | 488.5648263065401
+    3876569483448147072 | 3876569487742732928 | 9.644934344435205 | 9.628371062520817 | -41.95896644266613 | -21.068720744836348 | -41.32141232536324 | -21.039683676097216 | 0.019816076 | 0.016992446 | 0.04193472 | 0.033681322 | 11.765607 | 14.926172 | 0.91976774 | 1.0823659 | 31 | 31 | 9.89254182156164 | 1026.553734575417
+    3875072086049685632 | 3875072090344387968 | 5.629573913890359 | 5.406179373372317 | -7.297626784536868 | -26.85881996053349 | -6.801803092879553 | -26.960024616309326 | 0.029955687 | 0.029957356 | 0.25406352 | 0.25524262 | 14.063515 | 18.34483 | 1.1023159 | 1.0487987 | 31 | 95 | 1.8033220311236071 | 326.8144881790676
+    3876995067462117760 | 3876995067462118016 | 16.879416800001792 | 16.868916917465825 | -82.84793610806398 | -20.915298195573023 | -82.37711549335388 | -21.51798986560689 | 0.03895619 | 0.0320658 | 0.03536262 | 0.028393917 | 14.742715 | 14.703734 | 1.1488262 | 1.0282854 | 31 | 31 | 8.177480019142706 | 484.61533464748027
+    613123727014737280 | 613123731308861696 | 8.691541663821843 | 8.772159386836222 | -87.04617416879753 | -42.747773377649274 | -87.4688393242437 | -41.7855920228817 | 0.1250467 | 0.10446433 | 0.034175053 | 0.027590763 | 17.364622 | 14.799894 | 0.9803348 | 1.0883827 | 31 | 31 | 2.9470275581807397 | 337.5032073249662
+    3875237532484955520 | 3875237532484956032 | 10.107560030551038 | 10.155668477615654 | 12.502864386188328 | -52.23366732458189 | 11.093318851674958 | -51.46859406264041 | 0.035385888 | 0.032130867 | 0.041287556 | 0.035276428 | 14.873809 | 8.566165 | 0.9732905 | 1.4008732 | 31 | 31 | 18.330098347774694 | 1809.1982075202982
+    3877734862695127680 | 3877734866988973184 | 8.93175837844359 | 9.085415394626006 | -72.80334079562766 | -11.891149512805214 | -72.62528954420893 | -12.447571931989469 | 0.21465614 | 0.17437927 | 0.060403056 | 0.04846267 | 18.478554 | 16.105415 | 0.900756 | 1.0421075 | 95 | 31 | 3.1625391833045886 | 351.05829839213294
+    3879123756333650944 | 3879123790693389184 | 5.801814042959992 | 5.884145492834702 | -89.41480852332927 | -12.029138217327146 | -89.7792843876706 | -12.281665823716665 | 0.020081425 | 0.015378055 | 0.075653166 | 0.05582286 | 13.924483 | 16.772142 | 1.0657582 | 1.0293033 | 31 | 31 | 8.833858816149348 | 1511.8756468548063
+    3879879773656277632 | 3879879773656278016 | 9.130861979533103 | 9.153936116251579 | -27.446667522119892 | -48.68415209298355 | -27.82728020175162 | -48.30028048449457 | 0.031602386 | 0.025576923 | 0.10139114 | 0.07993787 | 14.712236 | 16.837416 | 0.9739435 | 1.1388491 | 31 | 31 | 14.689668374010788 | 1606.7629838797397
+    3881422285390876928 | 3881422285391206016 | 5.630009913841554 | 5.231987209342191 | -110.44333946549403 | 19.814180729006196 | -108.31466779588443 | 23.63518843965943 | 0.09899744 | 0.0946758 | 0.28028873 | 0.3901087 | 11.056716 | 16.11534 | 5.1878743 | 1.2782992 | 31 | 95 | 1.4055580558602183 | 258.80287757768014
+    3879372069867262720 | 3879372074162766080 | 7.6015542714223985 | 7.468306956774358 | -30.30967004238489 | -39.52141437346462 | -29.200087801530817 | -39.0725063317734 | 0.02180947 | 0.016949384 | 0.07170745 | 0.054805763 | 10.554828 | 15.5140295 | 1.105411 | 0.95690733 | 31 | 95 | 3.2933729509326772 | 437.08072703025925
+    3880217010193568000 | 3880217044553306112 | 5.933630829075628 | 5.929801258489446 | -88.99551435639864 | -34.86084240618115 | -88.77948907686489 | -34.96538674152889 | 0.023595458 | 0.024237907 | 0.022732599 | 0.021462418 | 10.701265 | 12.663913 | 1.0765069 | 1.0544221 | 31 | 31 | 37.609490609134355 | 6340.406440823412
+    3880323491023359744 | 3880323491028652672 | 7.82141663227747 | 7.688732047114764 | 52.32806690276756 | -114.3203177603125 | 53.21159502157863 | -114.82543982114211 | 0.082599655 | 0.060905512 | 0.16107051 | 0.118376985 | 16.653284 | 17.793623 | 1.0040804 | 1.0382452 | 31 | 31 | 4.964887777326986 | 640.2115002190341
+    3881088892850061312 | 3881088892850061696 | 5.6611910057280905 | 5.573101715586801 | -27.4082774847192 | -13.547304737643392 | -27.12496020655438 | -14.559031617502942 | 0.022629144 | 0.018696383 | 0.07637016 | 0.06172576 | 14.026023 | 16.747976 | 1.0757545 | 1.0079402 | 31 | 31 | 17.59455717235476 | 3132.2945927824194
+    3881540036214768896 | 3881540036215260800 | 12.414317842844431 | 12.193904141582042 | -155.4013283757232 | -119.82138085812025 | -155.64188523190614 | -118.12361351337708 | 0.103031576 | 0.09818149 | 0.04791637 | 0.044971053 | 17.179539 | 15.832873 | 1.0100871 | 1.0229316 | 31 | 31 | 2.6759444274839 | 217.48376856949642
+    3877788085931003008 | 3878163401645784704 | 7.07983758730797 | 6.861089021026623 | 6.848633619755217 | -21.493647984442873 | 7.03215602127508 | -20.509150725463442 | 0.141664 | 0.1090671 | 0.06583713 | 0.05037689 | 17.262142 | 16.550446 | 1.2226194 | 1.0238991 | 95 | 31 | 26.637239258095406 | 3821.4445863548713
+    3877788085931003008 | 3877788090223725696 | 7.07983758730797 | 6.746284913617451 | 6.848633619755217 | -21.493647984442873 | 6.421089780025065 | -20.58505975150972 | 0.141664 | 0.1090671 | 0.021074068 | 0.016263975 | 17.262142 | 14.101178 | 1.2226194 | 0.98791665 | 95 | 31 | 2.1968808841156036 | 317.786983873253
+    3878884470819938944 | 3878884475115260800 | 7.496842927855729 | 7.92794979274519 | 29.326247968964466 | -18.1592964050801 | 29.744985359457047 | -17.516048422456112 | 0.030953087 | 0.032746572 | 0.28285706 | 0.3764808 | 12.975815 | 17.339787 | 1.3074133 | 1.0653106 | 31 | 95 | 2.548661454954008 | 330.46297621232696
+    3878948212430162176 | 3878948212430247168 | 9.9448719994662 | 9.894459607975048 | 29.93694039566064 | -107.4293245299155 | 30.341222898178714 | -108.25403548267408 | 0.021392606 | 0.019672835 | 0.059859 | 0.051941276 | 8.845456 | 16.17252 | 1.0931082 | 1.0405561 | 31 | 31 | 11.706899140782529 | 1180.1707207103245
+    3879447321989419904 | 3879447321989929216 | 6.77756446404027 | 6.9515816586162895 | 6.532836066803074 | 25.371057095354487 | 4.341563089417636 | 24.69058853924714 | 0.059857856 | 0.0509898 | 0.01881562 | 0.014956675 | 15.218866 | 9.129599 | 1.0773777 | 1.1116678 | 95 | 31 | 3.60854026489106 | 525.6758479591177
+    3879732439098592512 | 3879732537882508032 | 6.853887061127273 | 6.958533268565664 | -26.934404863552288 | -36.152884132656936 | -26.45611364255614 | -36.02552122748242 | 0.15057369 | 0.122513376 | 0.17926875 | 0.14512202 | 17.721666 | 18.113117 | 0.9992153 | 1.0316267 | 31 | 95 | 34.31203396368224 | 4968.286968493237
+    3881091023153833600 | 3881091225016601728 | 5.233254981417109 | 5.167745147790379 | -4.649719799381819 | -26.832103164632215 | -5.053352870114395 | -26.138773811201283 | 0.053090554 | 0.05464867 | 0.020998403 | 0.021507949 | 15.689276 | 11.948155 | 0.95978826 | 0.9957445 | 31 | 31 | 12.995770267645034 | 2498.946275589606
+    613134657705583488 | 613158052392867072 | 6.228003338934863 | 6.263367264024716 | -42.17322527619683 | -32.79198480234087 | -42.17852825582098 | -32.57697377053279 | 0.10846575 | 0.08218166 | 0.1959468 | 0.12953705 | 17.05977 | 17.992693 | 0.9657387 | 1.0472633 | 31 | 31 | 25.666520786841225 | 4109.480312874563
+    613173552929392384 | 613173552929392512 | 5.043325173680676 | 5.176434308164418 | -46.37830866176815 | -10.208460125736208 | -45.86814916190824 | -10.516254539423338 | 0.05970237 | 0.052160807 | 0.04836585 | 0.042202055 | 15.70154 | 15.910571 | 1.1295067 | 1.0312244 | 95 | 31 | 2.2307997441812946 | 436.5659971047658
+    3878553449100921856 | 3878553453395755776 | 5.601161732943636 | 5.694436276981386 | -59.46173362852976 | -27.41802875684392 | -59.40515281621597 | -28.26949764123262 | 0.044482052 | 0.032507204 | 0.12259054 | 0.093819804 | 15.563377 | 17.130873 | 1.0620283 | 1.3097974 | 31 | 95 | 2.1396470895005457 | 378.8461819587626
+    3878643849572395008 | 3878643853867376000 | 7.097023578341316 | 6.747600816600988 | -59.22426626895169 | -40.885027809418226 | -58.21666108811837 | -40.02395814512415 | 0.05055568 | 0.030454135 | 0.17671832 | 0.12463475 | 14.934513 | 16.98022 | 1.3404125 | 1.7108523 | 31 | 95 | 1.9414963644197765 | 280.46934449576554
+    3879879704937353984 | 3879879808016012544 | 11.020914691795813 | 10.872911074978377 | -82.02087743384683 | -64.8443519337271 | -83.23959104999376 | -64.16885775474589 | 0.1649867 | 0.16163932 | 0.038619593 | 0.029893441 | 3.8388133 | 12.070132 | 1.7951955 | 1.4806089 | 95 | 95 | 8.152785533053475 | 744.7565921005953
+    3878186693254348544 | 3878186697548371968 | 6.457465501762673 | 6.416884759332758 | 36.934807332238655 | -46.68999073753963 | 37.8046356880728 | -45.78519611832952 | 0.10615254 | 0.07187905 | 0.08599645 | 0.059581466 | 16.561398 | 16.489819 | 1.0329276 | 1.1019777 | 95 | 31 | 1.622813304560403 | 252.1002258986736
+    3879308302488416512 | 3879308302488416640 | 9.368933261215233 | 9.28740007637333 | -58.76670945719685 | -28.98996259318561 | -60.5503743303097 | -30.511532170829554 | 0.028899498 | 0.027260061 | 0.023218093 | 0.022020586 | 11.045304 | 13.59223 | 1.1020613 | 1.0612243 | 31 | 31 | 2.9426248252809817 | 315.4558585584677
+    612660111064082560 | 612660111065486592 | 5.226051953423138 | 5.085179008942555 | -24.584965721088004 | -36.658017820405455 | -23.51371550098047 | -36.17183634447139 | 0.0777964 | 0.05479494 | 0.14834522 | 0.10373026 | 16.73455 | 18.00275 | 1.1377246 | 0.96300006 | 31 | 31 | 4.354747752122403 | 844.6610822735947
+    614759942049820288 | 614759942049850624 | 6.879631886807951 | 6.989763944834532 | -28.108615479591677 | -23.307053008464024 | -27.840215853890786 | -23.92812376616486 | 0.021056637 | 0.018189348 | 0.13643667 | 0.077294886 | 9.816082 | 16.383797 | 1.0031799 | 1.0031959 | 31 | 95 | 8.634209402932647 | 1245.0736149925199
+    3879478997373029120 | 3879478997375076224 | 5.626962378306279 | 5.7308050322973125 | -12.03491526754919 | -22.610470501253264 | -12.639534814724463 | -23.23244524154287 | 0.030501658 | 0.02269275 | 0.051435433 | 0.039544404 | 14.59466 | 14.825021 | 1.0535567 | 1.0692068 | 31 | 95 | 2.1727020828708654 | 382.59316366039235
+    ... 14 more rows suppressed
+
+### Q5  pair count patch A (F10)
+status   : OK
+elapsed  : 0.6 s
+message  : OK
+rows     : 1
+ADQL:
+    SELECT COUNT(*) AS n_pairs
+    FROM (SELECT source_id, ra, dec, parallax, parallax_error,
+                 pmra, pmdec, pmra_error, pmdec_error,
+                 phot_g_mean_mag, ruwe, astrometric_params_solved
+          FROM gaiadr3.gaia_source
+          WHERE 1 = CONTAINS(POINT('ICRS', ra, dec),
+                             CIRCLE('ICRS', 150.0, 10.0, 3.0))
+            AND parallax > 5.0
+            AND parallax_over_error > 20.0
+            AND astrometric_params_solved >= 31) AS a,
+         (SELECT source_id, ra, dec, parallax, parallax_error,
+                 pmra, pmdec, pmra_error, pmdec_error,
+                 phot_g_mean_mag, ruwe, astrometric_params_solved
+          FROM gaiadr3.gaia_source
+          WHERE 1 = CONTAINS(POINT('ICRS', ra, dec),
+                             CIRCLE('ICRS', 150.0, 10.0, 3.0))
+            AND parallax > 5.0
+            AND parallax_over_error > 20.0
+            AND astrometric_params_solved >= 31) AS b
+    WHERE a.source_id < b.source_id
+      AND 1 = CONTAINS(POINT('ICRS', a.ra, a.dec),
+                       CIRCLE('ICRS', b.ra, b.dec, 0.0695))
+      AND (3600.0 * DISTANCE(POINT('ICRS', a.ra, a.dec), POINT('ICRS', b.ra, b.dec)) * 2000.0 / (a.parallax + b.parallax)) BETWEEN 200.0 AND 50000.0
+      AND ABS(a.parallax - b.parallax) <
+          3.0 * SQRT(a.parallax_error * a.parallax_error
+                     + b.parallax_error * b.parallax_error)
+      AND SQRT(POWER(a.pmra - b.pmra, 2) + POWER(a.pmdec - b.pmdec, 2)) <
+          0.44 * POWER((a.parallax + b.parallax) / 2.0, 1.5) / SQRT(3600.0 * DISTANCE(POINT('ICRS', a.ra, a.dec), POINT('ICRS', b.ra, b.dec)))
+          + 3.0 * SQRT(a.pmra_error * a.pmra_error + b.pmra_error * b.pmra_error
+                       + a.pmdec_error * a.pmdec_error
+                       + b.pmdec_error * b.pmdec_error)
+RESULT (first 40 rows):
+    n_pairs
+    54
+
+### Q6  pair count patch B (F10)
+status   : OK
+elapsed  : 3.7 s
+message  : OK
+rows     : 1
+ADQL:
+    SELECT COUNT(*) AS n_pairs
+    FROM (SELECT source_id, ra, dec, parallax, parallax_error,
+                 pmra, pmdec, pmra_error, pmdec_error,
+                 phot_g_mean_mag, ruwe, astrometric_params_solved
+          FROM gaiadr3.gaia_source
+          WHERE 1 = CONTAINS(POINT('ICRS', ra, dec),
+                             CIRCLE('ICRS', 100.0, 10.0, 3.0))
+            AND parallax > 5.0
+            AND parallax_over_error > 20.0
+            AND astrometric_params_solved >= 31) AS a,
+         (SELECT source_id, ra, dec, parallax, parallax_error,
+                 pmra, pmdec, pmra_error, pmdec_error,
+                 phot_g_mean_mag, ruwe, astrometric_params_solved
+          FROM gaiadr3.gaia_source
+          WHERE 1 = CONTAINS(POINT('ICRS', ra, dec),
+                             CIRCLE('ICRS', 100.0, 10.0, 3.0))
+            AND parallax > 5.0
+            AND parallax_over_error > 20.0
+            AND astrometric_params_solved >= 31) AS b
+    WHERE a.source_id < b.source_id
+      AND 1 = CONTAINS(POINT('ICRS', a.ra, a.dec),
+                       CIRCLE('ICRS', b.ra, b.dec, 0.0695))
+      AND (3600.0 * DISTANCE(POINT('ICRS', a.ra, a.dec), POINT('ICRS', b.ra, b.dec)) * 2000.0 / (a.parallax + b.parallax)) BETWEEN 200.0 AND 50000.0
+      AND ABS(a.parallax - b.parallax) <
+          3.0 * SQRT(a.parallax_error * a.parallax_error
+                     + b.parallax_error * b.parallax_error)
+      AND SQRT(POWER(a.pmra - b.pmra, 2) + POWER(a.pmdec - b.pmdec, 2)) <
+          0.44 * POWER((a.parallax + b.parallax) / 2.0, 1.5) / SQRT(3600.0 * DISTANCE(POINT('ICRS', a.ra, a.dec), POINT('ICRS', b.ra, b.dec)))
+          + 3.0 * SQRT(a.pmra_error * a.pmra_error + b.pmra_error * b.pmra_error
+                       + a.pmdec_error * a.pmdec_error
+                       + b.pmdec_error * b.pmdec_error)
+RESULT (first 40 rows):
+    n_pairs
+    57
+
+### Q7  nss_two_body_orbit rows (F8)
+status   : OK
+elapsed  : 0.3 s
+message  : OK
+rows     : 1
+ADQL:
+    SELECT COUNT(*) AS n_rows FROM gaiadr3.nss_two_body_orbit
+RESULT (first 40 rows):
+    n_rows
+    443205
+
+### Q8  nss_acceleration_astro rows (F8)
+status   : OK
+elapsed  : 0.4 s
+message  : OK
+rows     : 1
+ADQL:
+    SELECT COUNT(*) AS n_rows FROM gaiadr3.nss_acceleration_astro
+RESULT (first 40 rows):
+    n_rows
+    338215
+
+### Q9  nss_two_body_orbit columns (F8)
+status   : OK
+elapsed  : 1.2 s
+message  : OK
+rows     : 77
+ADQL:
+    SELECT TOP 200 column_name, datatype, unit
+    FROM tap_schema.columns
+    WHERE table_name = 'gaiadr3.nss_two_body_orbit'
+    ORDER BY column_name
+RESULT (first 250 rows):
+    column_name | datatype | unit
+    arg_periastron | double | deg
+    arg_periastron_error | float | deg
+    astrometric_jitter | double | mas
+    astrometric_n_good_obs_al | int | 
+    astrometric_n_obs_al | int | 
+    a_thiele_innes | double | mas
+    a_thiele_innes_error | float | mas
+    bit_index | long | 
+    b_thiele_innes | double | mas
+    b_thiele_innes_error | float | mas
+    center_of_mass_velocity | double | km.s**-1
+    center_of_mass_velocity_error | float | km.s**-1
+    conf_spectro_period | float | 
+    corr_vec | float | 
+    c_thiele_innes | double | AU
+    c_thiele_innes_error | float | AU
+    dec | double | deg
+    dec_error | float | mas
+    eccentricity | double | 
+    eccentricity_error | float | 
+    ecl_dur_primary | double | d
+    ecl_dur_secondary | double | d
+    ecl_time_primary | double | d
+    ecl_time_secondary | double | d
+    efficiency | float | 
+    fill_factor_primary | double | 
+    fill_factor_primary_error | float | 
+    fill_factor_secondary | double | 
+    fill_factor_secondary_error | float | 
+    flags | long | 
+    f_thiele_innes | double | mas
+    f_thiele_innes_error | float | mas
+    g_luminosity_ratio | double | 
+    goodness_of_fit | float | 
+    g_rank | double | 
+    g_thiele_innes | double | mas
+    g_thiele_innes_error | float | mas
+    h_thiele_innes | double | AU
+    h_thiele_innes_error | float | AU
+    inclination | double | deg
+    inclination_error | float | deg
+    input_period_error | float | d
+    mass_ratio | double | 
+    mass_ratio_error | float | 
+    nss_solution_type | char | 
+    obj_func | float | 
+    parallax | double | mas
+    parallax_error | float | mas
+    period | double | d
+    period_error | float | d
+    phot_g_n_good_obs | int | 
+    phot_g_n_obs | int | 
+    pmdec | double | mas.yr**-1
+    pmdec_error | float | mas.yr**-1
+    pmra | double | mas.yr**-1
+    pmra_error | float | mas.yr**-1
+    ra | double | deg
+    ra_error | float | mas
+    r_l1_point_sum | double | 
+    r_pole_sum | double | 
+    r_spher_sum | double | 
+    rv_n_good_obs_primary | int | 
+    rv_n_good_obs_secondary | int | 
+    rv_n_obs_primary | int | 
+    rv_n_obs_secondary | int | 
+    semi_amplitude_primary | double | km.s**-1
+    semi_amplitude_primary_error | float | km.s**-1
+    semi_amplitude_secondary | double | km.s**-1
+    semi_amplitude_secondary_error | float | km.s**-1
+    significance | float | 
+    solution_id | long | 
+    source_id | long | 
+    temperature_ratio | double | 
+    temperature_ratio_definition | short | 
+    temperature_ratio_error | double | 
+    t_periastron | double | d
+    t_periastron_error | float | d
+
+### Q10 NSS x patch A cross-match (F8)
+status   : OK
+elapsed  : 0.5 s
+message  : OK
+rows     : 1
+ADQL:
+    SELECT COUNT(*) AS n_with_nss
+    FROM gaiadr3.gaia_source AS g,
+         gaiadr3.nss_two_body_orbit AS n
+    WHERE g.source_id = n.source_id
+      AND 1 = CONTAINS(POINT('ICRS', g.ra, g.dec),
+                       CIRCLE('ICRS', 150.0, 10.0, 3.0))
+      AND g.parallax > 5.0
+RESULT (first 40 rows):
+    n_with_nss
+    5
+
+==============================================================================
+DAY-ONE DR4 FORMS (UNTESTED -- schema not published at write time)
+==============================================================================
+Replace gaiadr3 -> gaiadr4 throughout.  Known DR4 differences that
+break these queries if not handled (ESA DR4 content page):
+  1. gaia_source in DR4 is the ~2.0e9 HIGH-QUALITY SUBSET of ~2.8e9
+     processed sources.  The complete astrometry lives in
+     all_source_astrometry.  Decide which is the parent sample and
+     pre-commit it: the subset is quality-selected, and that selection
+     is correlated with binarity.
+  2. gaia_source parameters are CONSOLIDATED across processing modules
+     -- a binary-star model may have been applied instead of the
+     single-star model.  astrometric_params_solved is therefore NOT the
+     full stratum axis in DR4; the applied-model flag is (see
+     all_source_flags).  This is finding F7.
+  3. RUWE is not listed on the DR4 content page.  The 9J dose curve must
+     be RE-DERIVED on whatever DR4 publishes, never transferred.
+  4. NSS tables in DR4 (10 of them, ESA content page): nss_two_body_orbit,
+     nss_acceleration_astro, nss_resolved_pair, nss_multiple_orbits,
+     nss_masses, nss_non_linear_spectro, nss_multiplicity, nss_vim_fl,
+     optical_pair (+1).  Test 0 rides on these.
+  5. epoch_astrometry is ~62 TB.  Any per-epoch work must be a
+     source_id-list-driven server-side join, never a bulk pull.
+
+FALLBACK ORDER (pre-committed here, per F10):
+  (a) our own ADQL above, run against the DR4 archive;
+  (b) a community DR4 wide-binary catalogue IF one exists AND it
+      reproduces our cut ladder within tolerance;
+  (c) bulk mirror download (AIP gaia.aip.de, ARI/Heidelberg, VizieR/CDS)
+      only if (a) is rate-limited past the first week.
+
+TOTAL WALL CLOCK: 9.5 s

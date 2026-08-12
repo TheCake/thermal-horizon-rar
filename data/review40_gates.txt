@@ -1,0 +1,40 @@
+PASS  G1 abstract <= 250 words  |  247 words
+PASS  G2 no prose sentence >= 70 words  |  n=306 mean=23.7 max=49: 'Model populations of 5 × 10⁵ binaries per likelihood evaluation (10⁶ i...'
+PASS  G3 fitted-cell band expectation (M1)  |  ok
+PASS  G4 model-light Q1 boost (M3)  |  ok
+PASS  G5 model population size (M4)  |  ok
+PASS  G6 stratified noise posterior (M2)  |  ok
+PASS  G7 band count P(<=9) (M1)  |  ok
+PASS  G8 differential-noise decomposition (M3)  |  ok
+PASS  G9 mass-model floor wording (m6)  |  ok
+PASS  G10 R_chance span (m2)  |  ok
+PASS  G11 overshoot attribution (m3)  |  ok
+PASS  G12 AQUAL field ratio (m7)  |  ok
+PASS  G13 sensitivity band endpoint (m8)  |  ok
+PASS  G14 Q1 width value (m10)  |  ok
+PASS  G15 heavy-tail class bound (m21)  |  ok
+PASS  G16 spectroscopic coverage (m20)  |  ok
+PASS  G17 NSS coverage disclosure (m19)  |  ok
+PASS  G18 secular-mixing staleness item (m22)  |  ok
+PASS  G19 repository status (M7a)  |  ok
+PASS  G20 companion-note declaration (M7b)  |  ok
+PASS  G21 census median max RUWE (m1)  |  median maximum RUWE 1.12 in the corrected nine-pair census, 1.06 in the uncorrected
+PASS  G22 Lindegren cited in body (M5/m13)  |  3 body mentions
+PASS  G23 error envelope defined (M5)  |  definition at first use
+PASS  G24 Bekenstein & Milgrom cited (m13)
+PASS  G25 Pittordis & Sutherland 2023 cited (m13)
+PASS  G26 alpha sector consistent [abstract]  |  excl=True allow=True interior=True conditioned=True
+PASS  G26 alpha sector consistent [S1 introduction]  |  excl=True allow=True interior=True conditioned=True
+PASS  G26 alpha sector consistent [S6.3 fine scan + closing]  |  excl=True allow=True interior=True conditioned=True
+PASS  G26 alpha sector consistent [Table 4 row]  |  excl=True allow=True interior=True conditioned=True
+PASS  G26 alpha sector consistent [Conclusions 5]  |  excl=True allow=True interior=True conditioned=True
+PASS  G27 retired flat wording absent  |  the round-13 re-grade wording
+PASS  G28 banned term absent  |  0 occurrences
+PASS  G29 codename absent [companion-win]
+PASS  G29 codename absent [boost-win]
+PASS  G29 codename absent [the phantom veto]
+PASS  G29 codename absent [Not for circulation]
+PASS  G30 figure numbering in appearance order (m12)  |  [1, 2, 3, 4, 5, 6]
+
+GATES: 37/37 PASS
+abstract words = 247; prose sentences = 306, mean 23.7, max 49

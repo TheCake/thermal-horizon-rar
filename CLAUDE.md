@@ -1141,6 +1141,46 @@ OUTRANKS; the RNAAS-note referee round awaits a fresh author go) · P3
 round 4 / circulation · the V-N-T-pipeline arc · DR4 readiness · the
 κ=1-deep structural route.**
 
+**THE CIRCULATION-HARDENING ROUND (2026-08-12, the conductor close -- the
+author: free hand + "spawn as much as possible" on Opus; main session
+verified and adopted, agents computed): ROUNDS 40/41/42 = the pre-arXiv
+referee rounds, all three adopted same day. P1 -> draft 0.6 (R40 MAJOR:
+7 M / 21 m; 78 re-derived, 0 conclusion-changing; Sec-8 census now prints
+the fitted-absorber disclosure mu_band 26.23 vs 9 = P 9.8e-5 with the
+(band=9, cliff=2) pair operative; 9E quartile boosts printed w/ round-13
+caveat; alpha-sector unified 5 sites; PHYS envelope defined; gates 37/37).
+P2 -> draft 0.5 (R41 MAJOR: 8 M / 14 m; 82 re-derived, 0 true mismatches;
+bracket re-credited to the galaxy window [0.21, 0.52]; symmetric
+significance quoting (1/2 disfavored 17.6 = 4.2 sigma profile; bootstrap
+neither digit resolved); Ciocan+26 lock row; Q2 at alpha=1 = 3.4e-26 =
+3.8x; NEW Sec-9.2/9.3 = the 10R Oort adverse result; gates 6/6; two
+referee slips declined with reasons). P3 -> draft 0.8 (R42 MINOR: 5 M /
+15 m; 70/70; the 10C dispersive-gate negative printed -- BOTH carrier
+classes now carry named failures, gate measured-but-unattributed; sigma =
+1/2 conditionality + T1d disclosed; P10 background caveat carried; gates
+15/15). Verification: archival premises of every major grepped verbatim
+in the main session pre-adoption; reviews in REVIEW-ROUND40/41/42-OPUS.md
+(uncommitted). **DR4.md v2 ADOPTED same day** (red-team REVIEW-DR4-OPUS.md
+uncommitted: frozen v1 = 0/11 tests day-one runnable): Test 0 = NSS
+companion census (DR4 directly measures the hidden-companion population
+feeding the alpha_marg fork); P4 NOT-GAIA-FEASIBLE (lever ~+-10% vs
+needed ~3x); P2/P6 reclassified non-Gaia; day-one ADQL dry-run 11/11 vs
+live DR3 (calcs/dr4_dryrun_adql.py; full-sky pair volume 7.9-8.3e4
+validates the grammar vs Paper 1's 74,502); parent-sample pre-commitment
+(gaia_source = quality-selected 2.0e9 of 2.8e9, binarity-correlated);
+solution-heterogeneity + firewall + trap-#26 scoring = blocking items.
+ALL bars PROPOSED (nothing pre-registered); **the 27-cell credence map is
+UNSIGNED BY DESIGN -- pre-signing = a DEDICATED pre-DR4 session, gates
+every DR4 pre-reg commit, must land well before 2026-12-02.**
+ERRATA-PENDING-THAW logged in NOTES (PAPER.md Sec-9.1 bracket mis-credit
+[R41 M1]; Sec-5.2 N = 10^6 -> 5e5 [R40 M4]) -- frozen record NOT edited.
+CREDENCES: NO moves (53 / 8) -- paper rounds + plan revision. RNAAS-note
+lane still parked (author's stop stands). NEXT FORK (author's):
+circulation clicks (visibility flip + arXiv before 2026-12-02 -- the
+papers are now referee-hardened for it) / the DR4 blocking build items
+incl. the credence-map pre-signing session / P14 V-N-T-pipeline arc /
+kappa=1-deep structural route.**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

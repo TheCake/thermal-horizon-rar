@@ -1,0 +1,71 @@
+ROUND 41 ADOPTION GATES -- papers/paper2_rar_coefficients.md
+====================================================================
+G1 abstract <= 250 words                   PASS  (abstract word count = 248)
+G2 no sentence >= 70 words                 PASS  (sentences = 232, longest = [60, 51, 51], offenders = [])
+G3 required strings present                PASS  (missing = [])
+G4 phantom script names absent             PASS  (found = [])
+G5 Appendix-B scripts exist on disk        PASS  (checked 60 names, absent = [])
+G6 banned word at zero occurrences         PASS  (occurrences = 0)
+====================================================================
+6/6 PASS
+Appendix-B script names checked:
+   fetch_iorio17.py
+   fetch_musedark3_release.py
+   fetch_xcop.py
+   note_verlinde_c1.py
+   paper2_figures.py
+   sparc_rar_fit.py
+   stage10d_kappa.py
+   stage10h_addendum.py
+   stage10h_zladder.py
+   stage10i_isoladder.py
+   stage10k_groupend.py
+   stage10p_p13crowd.py
+   stage10r_p14spike.py
+   stage4h_p_ml.py
+   stage4k_quadrupole.py
+   stage4l_mi_runner.py
+   stage4s_c1fit.py
+   stage4t_bathnoise.py
+   stage4u_mlmarg.py
+   stage4v_scorecard.py
+   stage4w_fullhier.py
+   stage4z_hierc1.py
+   stage5a_bumpid.py
+   stage5b_envtest.py
+   stage5c_hierbath.py
+   stage5d_hierbath_conv.py
+   stage5e_envtest_conv.py
+   stage5g_tailtest.py
+   stage5i_quadrupole2.py
+   stage5l_ladder.py
+   stage5m_hierv.py
+   stage5s_betaquad.py
+   stage6q_worldtable.py
+   stage6w_scalarefe.py
+   stage7a_einstein.py
+   stage7b_bumphunt.py
+   stage7c_gammaclean.py
+   stage7g_trajsaturn.py
+   stage7h_miavg.py
+   stage7jd_read.py
+   stage8a_ladder.py
+   stage8b_fetch.py
+   stage8b_simladder.py
+   stage8c_ceiling.py
+   stage8s_gasc1.py
+   stage8sb_gasedge.py
+   stage8sc_gddist.py
+   stage8v_gdboot.py
+   stage8x_regime.py
+   stage8y_pressure.py
+   stage9b_qflag.py
+   stage9c_adcorr.py
+   stage9g_gdambient.py
+   stage9m_convsplit.py
+   stage9n_risingdial.py
+   stage9r_gdrepl.py
+   stage9rb_contest.py
+   stage9rc_contest.py
+   stage9u_gammameter.py
+   stage9v_rladder.py

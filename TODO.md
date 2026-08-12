@@ -1543,3 +1543,17 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
     until D exists.
     Priority unchanged: P1/P2 arXiv BEFORE 2026-12-02 (TODO 27–31)
     outranks every seed stage.
+
+## 2026-08-12 annotations (the circulation-hardening round)
+- TODO 27-31 (circulation): P1 -> draft 0.6 (R40 adopted), P2 -> draft 0.5
+  (R41 adopted), P3 -> draft 0.8 (R42 adopted) -- all three at zero computed
+  errors, referee-hardened for arXiv. Remaining before arXiv: the author's
+  repo visibility flip + the author's circulation call. RNAAS-note round
+  still parked (author's stop stands).
+- TODO 29 (DR4 readiness): MAJOR progress -- DR4.md v2 adopted (red-team +
+  rebuild; day-one ADQL dry-run 11/11 vs DR3; Test 0 = NSS companion
+  census). BLOCKING items live in DR4.md Sec-10 (loader identity
+  regression, solution-type stratification, trap-#26 scoring of P9,
+  pre-registration commits, CREDENCE MAP PRE-SIGNING = dedicated session).
+- PAPER.md errata pending next thaw: Sec-9.1 bracket mis-credit (R41 M1);
+  Sec-5.2 N = 10^6 -> 5e5 (R40 M4). Logged in NOTES 2026-08-12.

@@ -1,0 +1,22 @@
+ROUND 42 adoption gates -- papers/paper3_mechanism.md
+====================================================================
+PASS  G1 abstract word count <= 250  [250 words]
+PASS  G2 abstract numeric quantities in [3,5]  [4: ['1.5', '0.23', '40', '8%']]
+PASS  G3 no sentence >= 70 words  [max 68 words: The renormalized convention has maximum exactly one half at κ_b = 1 and is nearly blind ac...]
+PASS  G4 max paragraph in section 6 < 250 words  [max 241 words: One route to promoting the threshold to a genuine bound was proposed i...]
+PASS  G5 present: sigma_p lower bound  [≥ 0.075]
+PASS  G5 present: dispersive gate monotonicity  [opposite monotonicity]
+PASS  G5 present: threshold family with sigma  [4/(2n + 1 + 2σ)]
+PASS  G5 present: P10 background fraction  [40 to 68%]
+PASS  G5 present: search multiplicity  [multiplicity]
+PASS  G5 present: post-hoc flag  [post-hoc flag]
+PASS  G5 present: clipped bootstrap disclosure  [clipped lower bound]
+PASS  G5 present: correction count  [nineteen corrections]
+PASS  G6 no sentence calls the repository public  [clean]
+PASS  G7 banned word absent  [0 occurrences]
+PASS  G8 draft history updated to 0.8 / 2026-08-12  [*Draft 0.8 (2026-08-12)]
+====================================================================
+abstract: 250 words, 4 numeric quantities
+longest sentence: 68 words
+longest paragraph anywhere: 281 words (section Appendix A. Transparency and corrections)
+15/15 gates PASS
