@@ -1,0 +1,16 @@
+========================================================================
+ROUND 39 ADDENDUM -- GA half (blind, pre-report)
+========================================================================
+GA 1 shift(BE,1.15,a1,qp=5) Simpson 9001-pt vs 2.226e-4     OK  2.226e-04
+GA 2 analytic screening at 40 au: x = 176, e^-x ~ 0         OK  BE nu-1 ~ e^-x; spread bound consistent with 1e-20
+GA 3 quad-spread(BE,1.15,a1) fine-band max vs stage 1.798e-5 OK  1.798e-05 (Q=2e4 point 1.798e-05)
+GA 4 nu_mu8(0.01): grid 10.0000 vs brentq 10.0000           OK  
+GA 4 nu_mu8(1.00): grid 1.0621 vs brentq 1.0620             OK  
+GA 4 nu_mu8(4.00): grid 1.0000 vs brentq 1.0000             OK  
+GA 5 smear ratio 0.317 = 2.381e-5/7.5e-5                    OK  0.317
+GA 5 shift ratio 1.27 = 9.489e-5/7.5e-5                     OK  1.265
+GA 6 unit chain 2*phi2*1.5/r_M au^-1 (GM = a0 rM^2)         OK  dimension 1/r_M exact
+GA 7 eps_deep 0.380 => v-boost 1.175 in the archived wide-bin ballpark OK  
+------------------------------------------------------------------------
+GA SUMMARY: 10 OK / 0 MISMATCH
+========================================================================
