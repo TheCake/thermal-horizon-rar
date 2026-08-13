@@ -1,23 +1,29 @@
 {
-  "title": "Testing the Thermal-Horizon Reading of the Radial Acceleration Relation, from Galaxies to Wide Binaries",
-  "upload_type": "publication",
-  "publication_type": "preprint",
+  "title": "thermal-horizon-rar: Testing the Thermal-Horizon Reading of the Radial Acceleration Relation, from Galaxies to Wide Binaries",
+  "upload_type": "software",
+  "version": "v1.0.0",
+  "publication_date": "2026-08-13",
   "creators": [
     {
       "name": "Hájek, Filip",
       "affiliation": "Independent researcher"
     }
   ],
-  "description": "Measurement and theory-testing program for gravity at low accelerations: coefficient-level tests of the radial acceleration relation on SPARC and KiDS-1000 lensing data; a joint two-dimensional (velocity, direction-angle) likelihood measurement of the low-acceleration velocity boost in 14,071 Gaia EDR3 wide binaries with full seed and bootstrap error budgets; the solar-system quadrupole consequences of the measured boost; a modified-inertia versus modified-gravity discrimination on the binary data; and a reconciliation by ablation of the conflicting published wide-binary analyses. The manuscript is PAPER.md; the chronological lab notebook (including all corrections and retractions) is NOTES-horizon-inertia.md; every claimed number is reproduced by a named script under calcs/.",
+  "description": "Measurement and theory-testing program for gravity at low accelerations, deposited as a complete repository snapshot: coefficient-level tests of the radial acceleration relation on SPARC rotation curves and KiDS-1000 lensing data; a joint two-dimensional (velocity, direction-angle) likelihood measurement of the low-acceleration velocity boost in 14,071 Gaia EDR3 wide binaries, with completeness marginalization, seed and bootstrap error budgets, and a noise-ceiling profile; the solar-system quadrupole consequences of the measured amplitude; a modified-inertia versus modified-gravity discrimination on the binary data; a reconciliation by ablation of the conflicting published wide-binary analyses; and a horizon-thermal mechanism programme with its exact results, its exclusions, and its open constants. Three manuscripts are under papers/ (wide binaries; radial-acceleration-relation coefficients; mechanism). The frozen internal record is PAPER.md; the chronological lab notebook, including every correction and retraction, is NOTES-horizon-inertia.md; the curated measurement ledger is LEDGER.csv; signed predictions registered before test are in PREDICTIONS.md. Every claimed number is reproduced by a named script under calcs/, and every analysis stage was pre-registered in a commit made before the run.",
   "license": "cc-by-4.0",
+  "access_right": "open",
   "keywords": [
     "MOND",
     "radial acceleration relation",
     "wide binaries",
     "Gaia",
+    "SPARC",
     "modified gravity",
     "modified inertia",
     "external field effect",
-    "galactic dynamics"
+    "galactic dynamics",
+    "de Sitter horizon thermodynamics",
+    "reproducible research",
+    "pre-registration"
   ]
 }

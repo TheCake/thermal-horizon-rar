@@ -2,9 +2,9 @@
 
 **Filip Hájek** (independent researcher) — hfilip11@gmail.com
 
-*Draft 0.5 (2026-08-12), written from the program record (PAPER.md v4.0). Round 41 adopted: the coefficient-window bracket of Section 7 re-credited to the galaxy dial, symmetric significance grades for the second digit, measured uncertainties on the tail index, the z ≈ 1 acceleration-scale point, the three executed dwarf replication attempts, the quadrupole quoted at the galactic calibration, the Oort-range solar-system constraint, and a repaired reproducibility appendix. Draft 0.4 (2026-08-06) carried the Round 15 items (methods subsection 2.2, the a₀-drift direction, the quarter-variant collapse phrasing, claim-grade qualifiers, sentence splits) and the pre-circulation polish. References verified (Desmond 2023 corrected to MNRAS 526, 3342 against its abstract). Figures 1–5 are produced by a provenance-gated build (calcs/paper2_figures.py). One pre-submission action is outstanding: the repository named in Appendix B still answers 404 to anonymous visitors, and its visibility must be flipped before the data-availability statement is true. Not for circulation.*
+*Draft 0.5 (2026-08-12), written from the program record (PAPER.md v4.0). Round 41 adopted: the coefficient-window bracket of Section 7 re-credited to the galaxy dial, symmetric significance grades for the second digit, measured uncertainties on the tail index, the z ≈ 1 acceleration-scale point, the three executed dwarf replication attempts, the quadrupole quoted at the galactic calibration, the Oort-range solar-system constraint, and a repaired reproducibility appendix. Draft 0.4 (2026-08-06) carried the Round 15 items (methods subsection 2.2, the a₀-drift direction, the quarter-variant collapse phrasing, claim-grade qualifiers, sentence splits) and the pre-circulation polish. References verified (Desmond 2023 corrected to MNRAS 526, 3342 against its abstract). Figures 1–5 are produced by a provenance-gated build (calcs/paper2_figures.py). The repository named in Appendix B is private while under review, with reader access granted to reviewers; it becomes public at circulation.*
 
-*Acknowledgments: the computational analysis, literature verification, and manuscript drafting were performed in collaboration with Claude (Anthropic). The full chronological program record, including all logged corrections, is public in the repository (Appendix B). A companion paper analyzes the wide-binary regime of the same program.*
+*Acknowledgments: the computational analysis, literature verification, and manuscript drafting were performed in collaboration with Claude (Anthropic). The full chronological program record, including all logged corrections, is in the repository (Appendix B; private while under review, public at circulation). A companion paper analyzes the wide-binary regime of the same program.*
 
 ## Abstract
 
@@ -18,7 +18,7 @@ Cadoni & Tuveri (2019) derived the second function rather than fitting it: ν = 
 
 This paper reports the coefficient program. We measure the leading coefficient c₁ on SPARC under progressively more conservative mass-to-light treatments (Section 3), and the screening index of the transition (Section 4). We assemble the acceleration-scale ladder across data sets and treatments (Section 5). We then characterize the relation's second moment, where a fluctuation-level discriminator was proposed and honestly closed as unmeasurable at current depth (Section 6). Section 7 summarizes the function ledger: thirteen candidate laws scored against every test in the program under a pre-registered freeze, together with a methods finding from the companion wide-binary analysis, namely that the binary regime currently carries no function discrimination at all. Section 8 reports the program's one open anomaly, a sign-reversed coefficient in gas-dominated galaxies that survives eight controls. Section 9 states the two solar-system constraints that bind field-formulation readings of the boost, at Saturn's orbit and at the Oort range, and the formulation dependence that relaxes the first but not yet the second. Section 10 collects the falsifiers.
 
-The program behind this paper runs under a bar-locking discipline: verdict thresholds and kill conditions are committed to a public repository before each deciding computation. Nineteen corrections logged during the program are documented in the record; the ones relevant to this paper are summarized in Appendix A. Every number is produced by a named script (Appendix B).
+The program behind this paper runs under a bar-locking discipline: verdict thresholds and kill conditions are committed to a version-controlled repository before each deciding computation, so the commit chain timestamps every bar. Nineteen corrections logged during the program are documented in the record; the ones relevant to this paper are summarized in Appendix A. Every number is produced by a named script (Appendix B).
 
 ## 2. Data and methods
 
@@ -234,7 +234,7 @@ The complete list, including the corrections specific to the wide-binary analysi
 
 ## Appendix B: reproducibility
 
-Every quantitative claim maps to a named script and output in the public repository (github.com/TheCake/thermal-horizon-rar), alongside the chronological program record (PAPER.md, the long-form companion to both papers), the audited measurement ledger (LEDGER.csv), and the SHA256 data manifest. Key mappings (all under calcs/):
+Every quantitative claim maps to a named script and output in the repository (github.com/TheCake/thermal-horizon-rar; public at circulation), alongside the chronological program record (PAPER.md, the long-form companion to both papers), the audited measurement ledger (LEDGER.csv), and the SHA256 data manifest. Key mappings (all under calcs/):
 
 - the screening index: sparc_rar_fit.py, stage4h_p_ml.py
 - the branch and rung tests: stage4a through stage4f
@@ -256,7 +256,7 @@ Every quantitative claim maps to a named script and output in the public reposit
 
 Large datasets are re-fetched by documented URLs: SPARC via Zenodo, the KiDS reductions via the survey portal and arXiv source.
 
-Data availability: all derived data products, stage outputs, scripts, the audited measurement ledger, and the SHA256 data manifest are public in the repository; the large source catalogs are re-fetched by the documented URLs above.
+Data availability: all derived data products, stage outputs, scripts, the audited measurement ledger, and the SHA256 data manifest are in the repository (public at circulation); the large source catalogs are re-fetched by the documented URLs above.
 
 ## References
 

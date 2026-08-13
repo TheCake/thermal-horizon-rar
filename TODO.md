@@ -1557,3 +1557,4 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
   pre-registration commits, CREDENCE MAP PRE-SIGNING = dedicated session).
 - PAPER.md errata pending next thaw: Sec-9.1 bracket mis-credit (R41 M1);
   Sec-5.2 N = 10^6 -> 5e5 (R40 M4). Logged in NOTES 2026-08-12.
+- 2026-08-13: TODO item 12 correction -- Zenodo GitHub integration CANNOT see private repos (support.zenodo.org FAQ, verified); route = manual zip deposit (git archive snapshot), DOI reserved pre-publish, RESTRICTED files until arXiv, then flip. Click-path in ZENODO-STEPS.md (uncommitted).
