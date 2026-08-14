@@ -1,0 +1,12 @@
+﻿lit0814 P3 citation-patch gates
+target: papers/paper3_mechanism.md
+
+G0-structure                 PASS  body 69368 chars / references 1010 chars
+G1-Gillot-2507.11524         PASS  body=True references=True
+G2-Luo-2602.14515            PASS  body=True references=True
+G3-abstract-unchanged        PASS  abstract word count 250 (bar <= 250); byte-identical to committed abstract=True
+G4-sentence-len              PASS  passages found 2/2; 10 sentences; longest 36 words (bar < 70): 'The scale is also predicted to grow as (1 + z), which is opposite in structure t'
+G5-banned-word               PASS  occurrences 0 (bar 0)
+G6-draft-line                PASS  draft 0.9 (2026-08-14); patch named=True
+
+7/7 PASS

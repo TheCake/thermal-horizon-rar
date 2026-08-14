@@ -1,0 +1,56 @@
+========================================================================
+Q2 QUADRUPOLE RATIOS -- archived bound vs current bound (2026-08-14)
+========================================================================
+
+Numerator (unchanged, stage4k_quadrupole.py):
+  Q2(alpha = 1.00, galactic calibration)      = 3.40e-26 s^-2
+  Q2(alpha = 1.15, superseded fenced binary)  = 3.90e-26 s^-2
+
+------------------------------------------------------------------------
+Hees+14  (PRD 89, 102002)
+  bound            : (3.0 +/- 3.0) e-27 s^-2  (1-sigma)
+  1-sigma ceiling  : 6.00e-27 s^-2
+  2-sigma ceiling  : 9.00e-27 s^-2   <-- the program's ratio denominator
+  ratio at alpha=1.00 : 3.78 x
+  ratio at alpha=1.15 : 4.33 x
+------------------------------------------------------------------------
+Park+26  (PRD 114, 024066)
+  bound            : (1.6 +/- 1.8) e-27 s^-2  (1-sigma)
+  1-sigma ceiling  : 3.40e-27 s^-2
+  2-sigma ceiling  : 5.20e-27 s^-2   <-- the program's ratio denominator
+  ratio at alpha=1.00 : 6.54 x
+  ratio at alpha=1.15 : 7.50 x
+------------------------------------------------------------------------
+
+REGRESSION against the figures already in Paper 2 draft 0.5 (Hees+14):
+  paper says 3.8x at alpha=1.00 ; computed 3.78  -> OK
+  paper says 4.3x at alpha=1.15 ; computed 4.33  -> OK
+
+THE UPDATE (Park+26 is the current bound):
+  alpha = 1.00 : 6.5 x  (was 3.8 x)
+  alpha = 1.15 : 7.5 x  (was 4.3 x)
+  tightening factor on every archived 'x Cassini' number: 1.731
+
+QUOTED RATIOS FOR THE PAPER (one decimal, as printed in Section 9.1):
+  RATIO_ALPHA1_NEW   = 6.5
+  RATIO_ALPHA115_NEW = 7.5
+  RATIO_ALPHA1_OLD   = 3.8
+  RATIO_ALPHA115_OLD = 4.3
+
+AMPLITUDE-LOCKED FUNCTION-FAMILY BAND (Section 9.1, second paragraph):
+  against Hees+14 (archived) : 4.0 - 5.8 x
+  against Park+26 (current)  : 6.9 - 10.0 x
+  (the band is a ratio to the same denominator, so it rescales exactly)
+
+CONTEXT, quoted from Park et al. (2026) and not recomputed here:
+  - rotation-curve tension now 3-15 sigma depending on mass modeling/subset
+  - Milky Way MOND boost at the Sun bounded to 2% (95% confidence)
+  - Solar System now constrains classical MG-MOND more strongly than
+    current wide-binary data
+
+========================================================================
+Direction of the update: the tension roughly doubles. It binds the FIELD
+formulation harder. The trajectory-formulation carve-out (Section 9.3) is
+untouched -- it is a statement about which accelerations Saturn's worldline
+samples, not about the size of the bound.
+========================================================================

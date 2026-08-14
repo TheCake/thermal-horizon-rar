@@ -188,3 +188,8 @@ calls it, not per stage.
 2026-08-12 R41: refereed P2 (first since R15) -> MAJOR REVISION; verified + adopted -> P2 draft 0.5 (gates 6/6); 82 re-derived, 0 true mismatches; 10R Oort adverse result added Sec-9.2; two referee slips declined with reasons.
 2026-08-12 R42: refereed P3 (round 4 vs 0.7) -> MINOR REVISION; verified + adopted -> P3 draft 0.8 (gates 15/15); 70/70 reproduced; 10C dispersive-gate negative now printed (both carrier classes carry named failures).
 2026-08-12 DR4: red-team ruled the frozen plan not day-one executable (0/11) -> rebuilt + ADOPTED DR4.md v2 (Test 0 = NSS companion census; ADQL dry-run 11/11 vs live DR3; P4 NOT-GAIA-FEASIBLE with arithmetic; all bars PROPOSED; credence map unsigned = dedicated pre-DR4 session).
+2026-08-14 SCOOP: 8-area priority scan pre-send -> 4 CLEAR, 3 NEAR-MISS fixed same day, 1 competitor map; nothing scooped; one search-engine confabulation killed by primary read.
+2026-08-14 LIT-P2: van Putten (MNRAS 548) cH/2pi differentiation (z-axis sign discriminant) + Park+26 Cassini rescale x1.731 (6.5x/7.5x; band 6.9-10.0x) -> P2 draft 0.6 gates 8/8.
+2026-08-14 LIT-P1: Makarov/Pasquini/Saad-Ting/Chae-2026/Cookson-journal engaged; Sec-1 direction claim rescoped (false-as-written caught) -> P1 draft 0.7 gates 7/7.
+2026-08-14 LIT-P3: Gillot + Luo cited from PDF-grade primary reads (Luo pre-thermal => occupation content uncontested) -> P3 draft 0.9 gates 7/7; P4-seed Soussa-Woodard obligation logged.
+2026-08-14 VENUE: ai.vixra = do-not-post (sourced); Zenodo paper-centric restricted deposit configured; arXiv 2026-01-21 endorsement change => colleague round is the gate.

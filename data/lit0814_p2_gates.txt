@@ -1,0 +1,16 @@
+========================================================================
+PAPER 2 LITERATURE-REFRESH GATES -- 2026-08-14
+target: papers/paper2_rar_coefficients.md
+========================================================================
+  [PASS]  G1 abstract <= 250 words                248 words
+  [PASS]  G2 van Putten cited                     2608.07112=True van Putten=True
+  [PASS]  G3 Park et al. cited                    024066=True Park=True
+  [PASS]  G4 Park central value '1.6' present     found
+  [PASS]  G5 2-sigma ceiling '5.2' present        found
+  [PASS]  G6 both new ratios in paper             looked for ['6.5', '7.5'] ; absent none
+  [PASS]  G7 no sentence >= 70 words              max = 65 words
+  [PASS]  G8 banned word count zero               0 occurrence(s)
+------------------------------------------------------------------------
+  8/8 PASS
+  abstract word count: 248
+========================================================================

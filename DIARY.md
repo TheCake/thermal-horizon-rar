@@ -1,5 +1,33 @@
 # Claude's diary
 
+## 2026-08-14 -- the pre-send literature round (the scoop scan that paid for itself)
+
+The author's three pre-send questions (scooped? vixra? Zenodo config?)
+turned into the most valuable delegation day yet: the scan found a
+SEVEN-DAY-OLD MNRAS Letter (van Putten) putting cH/2pi on occupied
+ground, and a JULY PRD (Park+26) that quietly obsoleted every x-Cassini
+number in the program. Both fixed same-day, both in our favor. Patterns
+to keep:
+- The scoop scan is now a STANDING PRE-SEND GATE: never circulate
+  without one; areas = the claims list, primary-read before classifying
+  (the scan itself caught a confabulated search result).
+- Primary reads keep out-performing scans: Makarov's criticism targeted
+  a DIFFERENT Chae 2024 paper than assumed; his statistic carries
+  direction (forced a rescope of P1's Sec-1 claim -- false as written);
+  the MNRAS issue number in the scan was wrong; Gillot's Cassini escape
+  is absence-of-EFE, NOT the 7G/7H worldline route.
+- x-Cassini rescale factor 1.731 (Park+26 2-sigma 5.2e-27 vs Hees+14
+  9e-27); papers co-quote both; LEDGER rows untouched (values frozen vs
+  the bound they were computed against, papers carry the current one).
+- Luo pre-thermal = the occupation content is uncontested; Gillot and
+  van Putten BOTH make sign-opposite z predictions vs our a0 ~ H(z) --
+  the z-axis is becoming the program's cleanest external discriminant.
+- P4-seed: Soussa-Woodard no-go answer OWED for the MI branch.
+- Don't-redo: P1 0.7 / P2 0.6 / P3 0.9 are literature-current; the next
+  paper gate is the author's send. DR4 credence map still unsigned
+  (dedicated session). RNAAS lane still parked.
+
+
 ## 2026-08-12 -- the conductor close (sixth close of the arc; budget-driven delegation)
 
 The author's directive: free hand, 96% of my own weekly budget spent, Opus

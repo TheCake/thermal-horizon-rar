@@ -16642,3 +16642,103 @@ it; that makes the papers stronger. A fourth reviewer stress-tested our
 plan for December's big star-catalog release and showed it was not
 actually runnable -- so we rebuilt it and even test-fired our database
 queries against the live archive to prove they work.
+
+---
+
+## 2026-08-14 -- THE PRE-SEND LITERATURE ROUND (scoop scan + venue diligence + three-paper refresh; six Opus agents, main session conducted)
+
+Trigger: the author's pre-send questions (arXiv scoop check; ai.vixra.org;
+Zenodo configuration). Colleague send was HELD until this round closed.
+
+- SCOOP SCAN (~74 searches/fetches, primary-read discipline; report
+  SCOOP-SCAN-2026-08.md, uncommitted): 8 areas -> 4 CLEAR (C&T
+  first-empirical-test claim -- still 31 citations none empirical; the NLO
+  1/2-branch test; the Oort-spike class; Merchen), 3 NEAR-MISS fixed
+  same-day, 1 competitor-mapping. One search-engine confabulation caught
+  by primary read (a fabricated "C&T tested on SPARC" Zenodo record).
+- NEAR-MISS 1 (P2, blocking): van Putten 2026 (MNRAS Letters 548,
+  arXiv:2608.07112, submitted 2026-08-07) -- parameter-free asymptotic
+  scale a0 = [sqrt(1-q)/2pi] c a_dS/c = 1.63e-10, weak-lensing-confirmed.
+  Verified distinct: geometric 2pi (zero thermal/occupation language),
+  scale-only (no shape/SPARC), da0/dz < 0 vs our a0 prop-to H(z) RISING
+  (MUSE-DARK III measures rising) => three distinguishable parameter-free
+  predictions; the z-axis separates them by SIGN. P2 -> draft 0.6: new
+  Sec-5.1 differentiation ("occupied ground, not this paper's own") +
+  falsifier annotations. Gates 8/8.
+- NEAR-MISS 2 (P2, blocking): Park, Hees, Famaey, Desmond & Durakovic
+  2026 (PRD 114, 024066, arXiv:2602.17884): Cassini Q2 = (1.6+-1.8)e-27
+  (40% improvement; their tension read 3-15 sigma; "solar system now
+  leads wide binaries"). EVERY archived x-Cassini figure was vs Hees+14
+  (3+-3)e-27 -- rescale factor exactly 1.731 (pinned in
+  data/lit0814_cassini.py): headline 3.8x -> 6.5x (alpha=1), 4.3x -> 7.5x
+  (alpha=1.15), family band 4.0-5.8x -> 6.9-10.0x. P2 quotes Park+26 as
+  current with Hees+14 co-quoted as the frozen-archive bound. The
+  tightening binds the FIELD formulation harder; trajectory carve-out
+  untouched.
+- NEAR-MISS 3 (P1, wording): five 2026 wide-binary papers engaged -> P1
+  draft 0.7 (gates 7/7): Makarov (AJ 171, 2512.25002; MOND null 103k
+  pairs; his "underestimated noise" = ANALYTIC defect in Chae 2024 ApJ
+  960,114's propagation formula at SNR->0 -- correct attribution caught
+  by primary read, DIFFERENT object from our empirical RUWE-flat >=2.1x
+  at 0.2-2 kAU; his cross-product statistic carries direction => our
+  Sec-1 "none uses direction" claim RESCOPED to the velocity-separation
+  angle channel -- a false claim caught before a referee found it);
+  Pasquini+ (A&A 707 L2; 3/12 ESPRESSO super-Newtonian systems, no
+  perpendicular decomposition/leakage null -- independent-channel
+  candidate population, neither confirms nor tests the census); Saad &
+  Ting (2603.11015; gamma = 1.12 Newton-consistent hier reanalysis of
+  Chae's 36 pairs -- the which-absorbers-are-free point stated); Chae+
+  2026 (2601.21728, gamma = 1.600, 4.9 sigma) + Chae & Yoon (2607.14450
+  rebuttal); Cookson -> MNRAS 547, stag342. Framing dividend: the field
+  now spans detections, MOND nulls, and Newton-consistent reanalyses on
+  overlapping catalogs -- exactly what a completeness-marginalized upper
+  limit is built for.
+- MECHANISM RIVALS (LIT-READS-2026-08.md, uncommitted; PDFs read):
+  Luo 2602.14515 = closest relative but PRE-THERMAL by his own statement
+  (no occupation number exists in his regime) => our occupation ladder /
+  amplitude derivation / environmental gate UNCONTESTED; separable on
+  the Newtonian arm (his additive constant vs our exponential screening).
+  Gillot 2507.11524 (EPJC accepted) = MI + Cassini-by-absence-of-EFE
+  (self-flagged unresolved), FITTED amplitude, a_min prop-to (1+z) =
+  sign-separable vs cH(z)/2pi. Kanatchikov+ 2511.15025 = orthogonal
+  (zero thermal ingredient; scale uncertain by orders); DIVIDEND: their
+  Sec-3.3 independently demands SHARPER interpolating functions from
+  inner-solar-system constraints -- convergent with our measured
+  screening class from a disjoint mechanism. P3 -> draft 0.9 (gates
+  7/7): Gillot + Luo cited in Sec-10 with the verified differentiations.
+- P4-SEED OBLIGATION (logged, no strike; seed axes untouched): Luo
+  claims Soussa-Woodard no-go evasion by leaving classical EOM alone;
+  our MI branch (4L, 7G/7H) modifies the trajectory functional and sits
+  INSIDE that constraint class -- Paper 4, if written, must answer the
+  no-go in its own words.
+- VENUE DILIGENCE: ai.vixra.org = DO NOT POST (sourced: 't Hooft on
+  viXra; the Kelk-Devine citation study 0.11 vs 1.3; Google Scholar
+  de-indexed per viXra's own FAQ; operator = Scientific God Inc.; no
+  screening policy; arXiv's May-2026 one-year ban for unchecked
+  AI-generated content makes an "AI papers" archive the worst possible
+  branding for honestly-disclosed AI-assisted work). Zenodo: restricted-
+  files deposit KEEPS public DOI + timestamp (verified vs live record);
+  paper-centric config written to ZENODO-STEPS.md (one Preprint record:
+  P1 + P2 PDFs + snapshot zip as supplement; P3 excluded; DOI reserved
+  first; flip open at arXiv). arXiv: prior Zenodo DOI = no conflict
+  (policy page); BUT 2026-01-21 endorsement change (institutional email
+  no longer auto-endorses; staff cannot waive) => the colleague round
+  is the endorsement gate, load-bearing.
+- CREDENCES: NO moves (anomaly-real 53 / mech 8) -- literature round.
+- COLLEAGUE-SEND HOLD LIFTED at this close (post re-render).
+
+PLAIN VERDICT: SUCCESS. Nothing was scooped; the two blocking
+near-misses (a seven-day-old MNRAS cH/2pi prediction and a tightened
+Cassini bound) were engaged the same day they were found, and both
+fixes run in our favor -- the lock now has a named sign-discriminant
+rival, and the quadrupole tension we carry openly sharpened by 1.73x.
+
+ELI12: Before mailing our papers, we checked whether anyone published
+our ideas while we worked. Core claims: still ours. But one week ago
+someone published a formula with the same famous constant in it (by a
+different road, with an opposite prediction about the past -- so the
+universe can tell us apart), and the Saturn measurement our papers
+compare against got 40% stricter in July. We updated both papers the
+same day. We also checked a website suggested for AI research papers
+and found it would hurt more than help -- the respectable timestamp
+service we already use does everything it would, without the stigma.

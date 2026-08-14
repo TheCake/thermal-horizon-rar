@@ -1558,3 +1558,17 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
 - PAPER.md errata pending next thaw: Sec-9.1 bracket mis-credit (R41 M1);
   Sec-5.2 N = 10^6 -> 5e5 (R40 M4). Logged in NOTES 2026-08-12.
 - 2026-08-13: TODO item 12 correction -- Zenodo GitHub integration CANNOT see private repos (support.zenodo.org FAQ, verified); route = manual zip deposit (git archive snapshot), DOI reserved pre-publish, RESTRICTED files until arXiv, then flip. Click-path in ZENODO-STEPS.md (uncommitted).
+
+## 2026-08-14 annotations (the pre-send literature round)
+- Papers now: P1 draft 0.7 / P2 draft 0.6 / P3 draft 0.9 -- literature-
+  current through 2026-08-14 (van Putten, Park+26 Cassini, Makarov,
+  Pasquini, Saad & Ting, Chae 2026 x2, Cookson journal, Gillot, Luo).
+- Colleague-send HOLD LIFTED. Author clicks: Zenodo deposit (paper-
+  centric, restricted, DOI reserved first -- ZENODO-STEPS.md), GitHub
+  reader invite, send email w/ 4 PDFs.
+- ai.vixra.org: DO NOT POST (sourced verdict in NOTES 2026-08-14).
+- arXiv endorsement: 2026-01-21 policy change -- personal endorsement
+  required, staff cannot waive => colleague round load-bearing.
+- P4-seed obligation: answer Soussa-Woodard no-go for the MI branch.
+- Every archived x-Cassini number predates Park+26; papers quote both
+  bounds; rescale factor 1.731 pinned in data/lit0814_cassini.py.

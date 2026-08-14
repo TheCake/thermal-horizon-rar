@@ -1181,6 +1181,41 @@ papers are now referee-hardened for it) / the DR4 blocking build items
 incl. the credence-map pre-signing session / P14 V-N-T-pipeline arc /
 kappa=1-deep structural route.**
 
+**THE PRE-SEND LITERATURE ROUND (2026-08-14, six Opus agents; the author's
+scoop/vixra/Zenodo questions): NOTHING SCOOPED -- 8-area scan (~74
+fetches): C&T first-test / NLO-1/2 / Oort-class / Merchen all CLEAR;
+three NEAR-MISSES fixed same day. P2 -> draft 0.6: van Putten (MNRAS 548,
+2608.07112, 7 days old) parameter-free sqrt(1-q)cH/2pi = 1.63e-10
+differentiated in new Sec-5.1 (geometric vs thermal; scale-only vs
+scale+shape; his da0/dz<0 vs our rising H(z) = SIGN discriminant;
+MUSE-DARK III measures rising); Park+26 (PRD 114, 024066) Cassini Q2 =
+(1.6+-1.8)e-27 -> ALL x-Cassini rescale x1.731 (3.8->6.5x alpha=1,
+4.3->7.5x, band 6.9-10.0x; data/lit0814_cassini.py; Hees+14 co-quoted as
+frozen-archive bound; field formulation bound harder, trajectory
+carve-out untouched). P1 -> draft 0.7: Makarov AJ 171 (analytic Chae-ApJ
+960,114 formula defect at SNR->0 != our empirical RUWE-flat 2.1x;
+Sec-1 direction claim RESCOPED -- his cross-product carries direction),
+Pasquini A&A 707 L2 (3/12 ESPRESSO super-Newtonian, no perp/leakage --
+candidate population only), Saad & Ting gamma=1.12, Chae 2026 pair,
+Cookson MNRAS 547. P3 -> draft 0.9: Gillot (EPJC; MI, Cassini-by-no-EFE
+self-flagged unresolved, fitted amplitude, a_min~(1+z) sign-separable)
++ Luo (2602.14515; PRE-THERMAL by own statement => occupation ladder /
+amplitude / gate UNCONTESTED; Newtonian-arm separable) cited Sec-10.
+Kanatchikov orthogonal + convergent sharper-screening note. P4-SEED
+OBLIGATION: answer Soussa-Woodard no-go for the MI branch (Luo evades by
+leaving EOM alone; ours modifies the trajectory functional). VENUE:
+ai.vixra.org DO-NOT-POST (sourced: 't Hooft; 0.11-vs-1.3 citation study;
+Scholar de-indexed; Scientific God Inc.; arXiv May-2026 AI-content
+policy); ZENODO-STEPS.md = paper-centric restricted deposit (P1+P2 PDFs
++ snapshot zip; P3 excluded; DOI reserved first; restricted files KEEP
+public DOI+timestamp, verified; flip at arXiv); arXiv 2026-01-21
+endorsement change => THE COLLEAGUE ROUND IS THE ENDORSEMENT GATE.
+Reports SCOOP-SCAN-2026-08.md / LIT-READS-2026-08.md uncommitted.
+CREDENCES: NO moves (53/8). COLLEAGUE-SEND HOLD LIFTED -- author clicks:
+Zenodo deposit, reader invite, send (4 PDFs, no zip). The z-axis is now
+the program's cleanest external discriminant (van Putten AND Gillot both
+sign-opposite to a0 ~ H(z)).**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

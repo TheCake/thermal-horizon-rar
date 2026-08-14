@@ -1,0 +1,30 @@
+LIT-REFRESH GATES -- papers/paper1_wide_binaries.md draft 0.7 (2026-08-14)
+==============================================================================
+[PASS] G1 five 2026 papers cited: all present (Chae & Yoon, Chae et al. 2026, Makarov (arXiv id), Makarov (name), Pasquini, Saad & Ting)
+[PASS] G2 Cookson journal record: found 'MNRAS 547, stag342'
+[PASS] G3 abstract <= 250 words: 247 words
+[PASS] G4 no sentence >= 70 words: 367 sentences, mean 23.3, max 61
+[PASS] G5 new arXiv ids primary-read: 6 identifier(s) introduced by this refresh (2309.10404, 2512.25002, 2601.21728, 2602.04661, 2603.11015, 2607.14450), all primary-read; 7 entries in the log, all cited in the text
+[PASS] G6 banned word absent: 0 occurrences
+[PASS] G7 draft line advanced: Draft 0.7 (2026-08-14) present
+==============================================================================
+
+PRIMARY-READ LOG (arXiv identifiers newly cited in draft 0.7)
+------------------------------------------------------------------------------
+  arXiv:2309.10404
+    Chae 2024, ApJ 960, 114 -- record verified (title, journal, volume, article) as the target of the Makarov uncertainty-formula criticism, so that the criticism is attributed to the correct Chae 2024 paper.
+  arXiv:2512.25002
+    Makarov 2026, AJ 171, 79 -- full-text HTML read. Deciding line: 'Eq. 7 in (Chae 2024) used to estimate the uncertainty of the relative proper motion magnitude is incorrect. It leads to a strongly underestimated noise component for the widest separations where the SNR is tending to zero.' Observable definition read: nu = s_x v_y - s_y v_x (2D cross product).
+  arXiv:2601.21728
+    Chae et al. 2026 -- abstract read. Deciding line: 36 wide binaries with accurate 3D velocities give gamma = 1.600 (+0.171, -0.141), 'inconsistent with standard gravity at 4.9 sigma'.
+  arXiv:2602.04661
+    Pasquini et al. 2026, A&A 707, L2 -- abstract read. Deciding line: 'Of the remaining 12, nine can be fitted with bound orbital solution, while three show velocity differences too large to be reconciled with any bound Newtonian orbit.' No perpendicular decomposition and no leakage/null statistic appear; unbinding by encounters/tides is offered by the authors.
+  arXiv:2602.24035
+    Cookson et al. -- journal record verified at the publisher: MNRAS 547, issue 2, article stag342, doi:10.1093/mnras/stag342 (2026-02-25).
+  arXiv:2603.11015
+    Saad & Ting 2026 -- abstract read. Deciding line: 'Our model yields gamma = 1.12 (+0.27, -0.22), consistent with Newtonian gravity (gamma = 1) at the ~0.4 sigma level.' Method: hierarchical Bayesian fit of 3D orbital elements to the same 36 pairs; de-projected-separation test returns 1.56.
+  arXiv:2607.14450
+    Chae & Yoon 2026 -- full abstract read. Deciding line: 'proper data quality control or reasonable variation in multiple-star modeling cannot remove the low-acceleration gravitational anomaly but confirms the MOND-type gravitational anomaly'; nulls attributed to bypassed multiple-star calibration, quality-control bias, and insufficient low-acceleration statistics.
+------------------------------------------------------------------------------
+
+7/7 gates PASS
