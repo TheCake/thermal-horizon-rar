@@ -1,0 +1,21 @@
+lit0818_gates.py -- gates for the a0(z) engagement patch (2026-08-18)
+------------------------------------------------------------------------------
+[PASS] G1a 2608.03576 in paper2
+[PASS] G1b 2608.03576 in paper3
+[PASS] G1c 2608.03576 in the PREDICTIONS 2026-08-18 annotation  -- annotation length 1890 chars
+[PASS] G2 2504.20857 in paper2
+[PASS] G2b 2504.20857 in paper3 (not required)  -- present: True
+[PASS] G3 all quoted numerics present verbatim in lit0818_a0z.txt  -- missing: none
+[PASS] G3b new-text blocks located  -- found 4 of 4
+[PASS] G3c no comparison numeric in new text absent from the computation output  -- stray: none
+[PASS] G4a paper2 draft advanced to 0.7 dated 2026-08-18
+[PASS] G4b paper2 draft line carries the engagement note
+[PASS] G4c paper3 draft advanced to 0.10 dated 2026-08-18
+[PASS] G4d paper3 draft line carries the engagement note
+[PASS] G5 paper2 abstract byte-identical to HEAD  -- 1610 chars
+[PASS] G5 paper3 abstract byte-identical to HEAD  -- 1687 chars
+[PASS] G6 no sentence of 70 words or more in new text  -- longest = 67 words: Their SPARC-ANCHORED fit a₁ = (5.23 ± 1.05)e-10 ("formal 5.0σ") sits +4.5σ ABOVE the lock at face value; but 5
+[PASS] G7 banned word zero occurrences in touched files  -- {'paper2': 0, 'paper3': 0, 'PREDICTIONS': 0, 'lit0818_a0z.txt': 0}
+------------------------------------------------------------------------------
+GATES: 16/16 PASS
+END lit0818_gates.py

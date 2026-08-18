@@ -1572,3 +1572,12 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
 - P4-seed obligation: answer Soussa-Woodard no-go for the MI branch.
 - Every archived x-Cassini number predates Park+26; papers quote both
   bounds; rescale factor 1.731 pinned in data/lit0814_cassini.py.
+
+## 2026-08-18 annotation (the delta round)
+- Papers now P1 0.7 / P2 0.7 / P3 0.10 -- literature-current through
+  2026-08-18 (MIGHTEE a0(z) engaged; convention comparison pinned).
+- Zenodo deposit UNBLOCKED (delta scan: nothing else new). Author
+  clicks unchanged: deposit (restricted, DOI first) -> reader invite ->
+  send. Author read-through of P1/P2 PDFs still recommended.
+- a0(z) discriminating requirement booked: intra-sample z-lever under
+  one selection function, or cross-sample zero-point control.

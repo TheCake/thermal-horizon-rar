@@ -1216,6 +1216,25 @@ Zenodo deposit, reader invite, send (4 PDFs, no zip). The z-axis is now
 the program's cleanest external discriminant (van Putten AND Gillot both
 sign-opposite to a0 ~ H(z)).**
 
+**THE DELTA ROUND (2026-08-18, pre-Zenodo re-scan on the author's ask):
+7/8 areas UNCHANGED; ONE new item = MIGHTEE-HI/LADUMA (2608.03576, 130
+HI gal to z~0.09) -- the FIRST direct low-z a0(z) fit, engaged same day:
+P2 -> 0.7, P3 -> 0.10, PREDICTIONS P3 dated annotation (append-only, 0
+deletions, NO flip). Pinned comparison (data/lit0818_a0z.py): a1_lock =
++0.52e-10/z; their pure sample (-1.60+-2.33) holds lock AND flat
+(0.22-sigma separation = no discrimination); their SPARC-anchored 5.23
++-1.05 ("5.0 sigma" rising) = +4.5 sigma above lock at face value but
+degenerate with their own inter-sample zero-point (0.47 vs 0.39
+intercept-gap arithmetic; their own 2.5-sigma anchor-selection caveat).
+SIGN RISES AT BOTH EPOCHS (z~0.09 + z~1 Ciocan) = the lock's direction,
+OPPOSITE van Putten and Gillot -- the z-axis is the program's cleanest
+external discriminant, now live. Discriminating requirement booked:
+intra-sample z-lever under one selection function / cross-sample
+zero-point control. Credences NO moves (53/8). ZENODO DEPOSIT UNBLOCKED
+-- author clicks: deposit (restricted, DOI-first, ZENODO-STEPS.md) ->
+reader invite -> send 4 PDFs. Delta-scan-before-any-outward-step is now
+STANDING PRACTICE (two for two).**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

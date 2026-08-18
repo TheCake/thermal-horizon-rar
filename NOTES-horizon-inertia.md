@@ -16742,3 +16742,56 @@ compare against got 40% stricter in July. We updated both papers the
 same day. We also checked a website suggested for AI research papers
 and found it would hurt more than help -- the respectable timestamp
 service we already use does everything it would, without the stigma.
+
+---
+
+## 2026-08-18 -- THE DELTA ROUND (pre-Zenodo re-scan; the a0(z) engagement)
+
+Author asked for a re-run of the scoop scan before the Zenodo click.
+Delta scan (30 primary fetches; DELTA section appended to
+SCOOP-SCAN-2026-08.md, uncommitted): 7 areas UNCHANGED (C&T untouched;
+no Cassini rebuttal; wide binaries quiet; Luo v3 substance-unchanged;
+Gillot still awaiting final EPJC record; Merchen nothing). ONE new item
+on the flagship: **Varasteanu, Jarvis, Desmond, Ponomareva, Yasin+ 2026
+(arXiv:2608.03576, MIGHTEE-HI/LADUMA, 130 HI galaxies to z ~ 0.09) --
+the first DIRECT low-z a0(z) fit** (origin of the claim: 2504.20857,
+19 galaxies, "first tentative evidence"). Convention-checked comparison
+PINNED (data/lit0818_a0z.py -> .txt; lock secant at flat LCDM H0=70
+Om=0.3): a1_lock = +0.52e-10/z (point derivative +0.49). THEIR PURE
+SAMPLE a1 = (-1.60 +- 2.33)e-10 contains BOTH no-evolution (0.69 sigma)
+and the lock (0.91 sigma) = no discrimination; their SPARC-ANCHORED
+a1 = (5.23 +- 1.05) ("formal 5.0 sigma" rising) sits +4.5 sigma above
+the lock at face value BUT 5.23 x 0.09 = 0.47e-10 vs their own
+intercept gap 0.39e-10 (residual 21%; pure-offset slope 4.33 sits 0.85
+sigma from their value) and their own text attributes the difference
+largely to the SPARC anchor's selection (their 2.5 sigma inter-fit
+statement). NO FLIP: the registered P3 kill not triggered; the sign
+RISES at both measured epochs (z ~ 0.09, z ~ 1 Ciocan) -- the lock's
+direction, OPPOSITE van Putten AND Gillot. Also from their abstract:
+delta = 4.1 shape "consistent with... a null Wide Binary Test"
+(different parameterization; convergent-adjacent, not competing).
+- P2 -> draft 0.7 (gates 16/16 shared): Sec-5 engagement paragraphs +
+  two-epoch sign statement in 5.1 + falsifier 2 rewritten to the
+  constrained state. P3 -> draft 0.10: Sec-9 compressed engagement.
+  PREDICTIONS P3 row: dated annotation appended (25 insertions, ZERO
+  deletions; registered form untouched).
+- DISCRIMINATING REQUIREMENT (booked): an intra-sample z-lever under
+  ONE selection function, or an explicit cross-sample zero-point
+  control; a slope across a sample boundary cannot separate evolution
+  from calibration at this lever arm.
+- CREDENCES: NO moves (53 / 8) -- constraining-not-deciding; no
+  pre-signed cell touches this outcome.
+
+PLAIN VERDICT: SUCCESS. The flagship prediction went from "unmeasured"
+to "measured, constraining, not decided" -- with the sign agreeing with
+the lock at both epochs and both named rivals predicting the opposite
+sign. The papers engage it before the timestamp freezes a version.
+
+ELI12: Someone finally measured whether the special acceleration
+constant changes as you look back in time. Their clean sample says
+"could be flat, could be our predicted small rise -- can't tell." Their
+headline 5-sigma steep rise appears only when they glue on a second,
+differently-calibrated sample, and the steepness is almost exactly what
+that calibration mismatch would fake -- which they say themselves. Our
+papers now report this honestly. Bonus: the direction of any trend
+matches us and contradicts the two rival predictions.

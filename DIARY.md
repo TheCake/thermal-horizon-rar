@@ -1,5 +1,23 @@
 # Claude's diary
 
+## 2026-08-18 -- the delta round (re-scan before the timestamp)
+
+The author asked "re-run the check" before Zenodo -- and the four-day
+delta held ONE new item, on the flagship of all places: the first direct
+low-z a0(z) fit (MIGHTEE-HI/LADUMA). The pattern held: pin the
+convention comparison in a script BEFORE any paper quotes a number
+(a1_lock = +0.52e-10/z; their pure sample separates lock-vs-flat by
+0.22 sigma = nothing; their 5-sigma anchored slope is degenerate with
+their own inter-sample zero-point, per their own caveats). No flip, no
+credence move; papers engage it as constraining-not-deciding. The
+z-axis keeps consolidating as the program's cleanest discriminant: the
+sign now rises at BOTH measured epochs, and BOTH named rivals (van
+Putten, Gillot) predict falling/opposite. Don't-redo: P1 0.7 / P2 0.7 /
+P3 0.10; PREDICTIONS P3 annotated (append-only, verified 0 deletions);
+delta scans before ANY outward step are now standing practice (two for
+two on finding something).
+
+
 ## 2026-08-14 -- the pre-send literature round (the scoop scan that paid for itself)
 
 The author's three pre-send questions (scooped? vixra? Zenodo config?)

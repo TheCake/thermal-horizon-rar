@@ -390,6 +390,31 @@ model-conditioned tracks are not clean-grade external data. Reopeners: the
 author-contact route (Desmond is a co-author; outreach list), galpak source
 read, MIGHTEE z<0.08, DR4-era. Ledger ext-10h-musedark-recon.*
 
+*[2026-08-18 annotation: the first DIRECT low-z a₀(z) fit exists; no status
+change, no flip fired.] Vărăşteanu, Jarvis, Desmond, Ponomareva, Yasin et al.
+2026 (arXiv:2608.03576, primary-read 2026-08-18; the MIGHTEE z<0.08 reopener
+named in the 10H annotation above, executed by them) fit a(z) = a₀ + a₁z to 130
+purely HI-selected galaxies with resolved kinematics to z ≈ 0.09. Origin of the
+evolution claim: arXiv:2504.20857 (same series, 19 galaxies, "the first tentative
+evidence for redshift evolution in the acceleration scale"). Convention-checked
+comparison in data/lit0818_a0z.py → data/lit0818_a0z.txt (lock secant over their
+window at flat ΛCDM H₀ = 70, Ωm = 0.3): a₁_lock = +0.52e-10 (point derivative at
+z = 0: +0.49e-10). THEIR PURE SAMPLE a₁ = (−1.60 ± 2.33)e-10 CONTAINS BOTH the
+no-evolution value (0.69σ) AND the lock slope (0.91σ) — separation 0.22σ of its
+own width, i.e. no discrimination. Their SPARC-ANCHORED fit a₁ = (5.23 ± 1.05)e-10
+("formal 5.0σ") sits +4.5σ ABOVE the lock at face value; but 5.23 × 0.09 = 0.47e-10
+against their own intercept gap 1.54 − 1.15 = 0.39e-10 (residual 21%), a
+pure-offset slope of 4.33e-10 sits 0.85σ from their anchored value, and their own
+text puts the two fits 2.5σ apart and attributes the difference largely to the
+low-redshift anchor's selection. The registered KILL ("a₀(z) flat at z ≳ 1 at 3σ")
+is NOT triggered; the sign RISES at both measured epochs (z ≈ 0.09 and z ≈ 1), the
+direction the lock predicts and opposite van Putten's falling derivative. The LOCK
+(paired p_gal(z) drift) remains unmeasured by anyone. DISCRIMINATING REQUIREMENT
+going forward: an intra-sample z-lever under ONE selection function, or an
+explicit cross-sample zero-point control — a slope inferred across a sample
+boundary cannot separate evolution from calibration at this lever arm. Papers 2
+(draft 0.7) and 3 (draft 0.10) carry the engagement.*
+
 ### P4 — the DR4 weak-ambient pair
 Weak-ambient wide binaries sharpen toward p ≈ 0.69, and the source-vs-dressed
 convention split becomes resolvable (Δp ≈ 0.025 at e_N = 0.4). (Stage 6U.)

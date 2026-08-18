@@ -193,3 +193,4 @@ calls it, not per stage.
 2026-08-14 LIT-P1: Makarov/Pasquini/Saad-Ting/Chae-2026/Cookson-journal engaged; Sec-1 direction claim rescoped (false-as-written caught) -> P1 draft 0.7 gates 7/7.
 2026-08-14 LIT-P3: Gillot + Luo cited from PDF-grade primary reads (Luo pre-thermal => occupation content uncontested) -> P3 draft 0.9 gates 7/7; P4-seed Soussa-Woodard obligation logged.
 2026-08-14 VENUE: ai.vixra = do-not-post (sourced); Zenodo paper-centric restricted deposit configured; arXiv 2026-01-21 endorsement change => colleague round is the gate.
+2026-08-18 DELTA: pre-Zenodo re-scan -> 7 areas unchanged; MIGHTEE-HI/LADUMA (2608.03576) = first direct low-z a0(z) fit engaged same day (P2 0.7, P3 0.10, PREDICTIONS P3 annotation; lock a1 +0.52 pinned in lit0818_a0z.py; pure sample no-discrimination 0.22 sigma; anchored 5-sigma = zero-point-offset-degenerate per their own text; NO flip; sign rises = lock direction, anti-van-Putten/Gillot).
