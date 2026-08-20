@@ -16795,3 +16795,66 @@ differently-calibrated sample, and the steepness is almost exactly what
 that calibration mismatch would fake -- which they say themselves. Our
 papers now report this honestly. Bonus: the direction of any trend
 matches us and contradicts the two rival predictions.
+
+---
+
+## 2026-08-20 -- THE OUTSIDE-REVIEWER ROUND (the Grok handoff)
+
+The author relayed a handoff brief from a Grok session (xAI) that read
+papers/, PAPER4-SEED.md, PREDICTIONS.md SE, DR4.md v2, TODO tail, and the
+10O/10P/10Q/10R letters (no code run by the reviewer). Archived verbatim in
+REVIEW-GROK-2026-08.md; reply drafted in GROK-REPLY-DRAFT.md (DO NOT SEND;
+relaying = the author's click). Both files uncommitted by convention.
+
+Verification of its checkable claims (main session):
+- Its 8K/8K-b NSS pointer is PRECISE (LOG line-level read: the NINE-CLEAN
+  ceiling-pair crossmatch, 55->57 by pre-signed map at that era). Its
+  proposed extension (all 14,071 pairs, host fraction, twin-law histograms)
+  = the DR4 Test 0 dress rehearsal -- ENDORSED as the best cheap
+  author-call stage on the table.
+- Its Section-1 table numbers are all CURRENT, including the R37-corrected
+  same-units strike factor (~40 = 9.45/0.2338). It read the letters.
+- Repo re-checked: still anonymous-404 (premise correct).
+- PREDICTIONS labeling complaint (its 2.6) HALF-RIGHT: the P1 ceiling
+  p <= 3/4 is grammar-derived (6Y + the gate's functional cap),
+  carrier-free by construction; the residue is real -- the
+  resonance/dispersive READING annotations in the P1/P9 rows get an
+  explicit "reading, not deduction" label at the next append-only touch
+  (BOOKED).
+- Its load-bearing physics objection (2.4, wrong-sign hotter-bath Unruh)
+  is RIGHT PHYSICS, STALE PREMISE: 6R closed the Deser-Levin matrix
+  (total branch -> boot + invisible n_BE(2pi) floor; boot dead both
+  systems: gal -9 vertical 5M, bin +17..24 5F) AND the free-fall theorem
+  (geodesic T_U = 0 exactly = the beta < 0.030 derivation). Its proposed
+  4.1 stage survives as the EMBEDDING-A half only: floor-composition
+  MI-EFE as a cloud-free consistency row under the S0 freeze, with the
+  3T 1.15-vs-1.32 ambient seam as a named scan axis and G0 as a 6R
+  regression. Author-gated; not run.
+- Adopted in spirit (already standing or now explicit): seed-absorbs-
+  its-own-strike standard (2.2), polaron-not-A/B-coefficients (2.3),
+  triples-not-EP with the frequency-criterion reason (2.5; 9Q Omega/H
+  makes the tight subsystem's COM ride the slow trajectory), do-not-
+  protect-the-53 (2.8 = the credence-map discipline, trail 70->35->45->
+  50->53 all by map).
+- One reviewer number DECLINED pending independent check: "four DR3 NSS
+  false positives" -- the exclusion list gets pulled from the ESA
+  known-issues page at pre-reg time (house rule).
+- CONVERGENCE: its named breakthrough axis (a0(z) sign vs van
+  Putten/Gillot) = the axis this program engaged 2026-08-18 (MIGHTEE).
+  Two independent reviewers, different reads, same sharpest axis.
+
+CREDENCES: NO moves (53 / 8) -- no pre-signed cell reads on a review
+brief. No stage started (author has not called one).
+
+PLAIN VERDICT: SUCCESS as a review round. The outside reviewer is
+high-grade (line-level reads, current numbers), its strategic frame
+matches ours, its one big objection was already closed on disk at 6R,
+and its cheap-stage recommendation (NSS join) was already our Test 0 --
+now endorsed as the next author-call.
+
+ELI12: A rival AI read our whole lab notebook and wrote us a tough memo.
+We checked its claims: almost everything it warned about we had already
+tested and killed months ago (with receipts), one label complaint was
+half-fair (we'll fix the label), and its best idea for what to do next
+was already on our to-do list. We wrote back a point-by-point reply for
+the author to send.

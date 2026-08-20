@@ -1235,6 +1235,31 @@ zero-point control. Credences NO moves (53/8). ZENODO DEPOSIT UNBLOCKED
 reader invite -> send 4 PDFs. Delta-scan-before-any-outward-step is now
 STANDING PRACTICE (two for two).**
 
+**THE OUTSIDE-REVIEWER ROUND (2026-08-20, the Grok handoff): the author
+relayed a strategy brief from a Grok session that read the repo (no code
+run). Archived REVIEW-GROK-2026-08.md + reply GROK-REPLY-DRAFT.md (both
+uncommitted, NEVER commit; sending = the author's click). Verified: its
+numbers are CURRENT (incl. the R37 ~40 factor), its 8K NSS pointer
+precise, repo still 404. Its big physics objection (wrong-sign
+hotter-bath Unruh, its 2.4/G0) = RIGHT PHYSICS, STALE PREMISE -- closed
+at 6R (Deser-Levin matrix: total branch -> boot, dead both systems;
+geodesic T_U = 0 exactly = the beta<0.03 derivation). Its 4.1 survives
+as the embedding-A half only (floor-composition MI-EFE, cloud-free
+consistency row under the S0 freeze; G0 = a 6R regression; 3T
+1.15-vs-1.32 seam = named scan axis) -- AUTHOR-GATED, not run. ENDORSED
+next cheap author-call = its 4.3: DR3 NSS join of all 14,071 pairs
+(extends 8K's nine-pair crossmatch; host fraction + twin-law histograms
++ census contamination; count only, NO alpha fit; = DR4 Test 0
+rehearsal; "four false positives" number NOT adopted -- pull the ESA
+known-issues list at pre-reg). BOOKED: PREDICTIONS P1/P9 reading-grade
+annotations get explicit "reading, not deduction" labels at next
+append-only touch. Convergence: its breakthrough axis = the a0(z) sign
+= the axis engaged 2026-08-18. NO credence moves (53/8); no stage
+started. NEXT FORK unchanged (author's): the three clicks (Zenodo
+deposit -> reader invite -> send 4 PDFs; read-through recommended) ·
+NSS join or 4.1-A pre-reg on a go · DR4 credence-map pre-sign session
+(blocking, before 2026-12-02).**
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6

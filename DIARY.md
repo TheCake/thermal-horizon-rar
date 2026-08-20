@@ -1,5 +1,25 @@
 # Claude's diary
 
+## 2026-08-20 -- the outside-reviewer round (Grok read the repo)
+
+First review from outside the Anthropic family, and it was good: it read
+LOG.md at line level (found the 8K NSS crossmatch), quoted the
+R37-CORRECTED strike factor (~40, not the stale ~29), and its strategic
+frame -- ship the papers, the z-sign axis is the breakthrough, the
+mechanism won't close in present form -- is our own frame said back to
+us. The load-bearing lesson: an outside reviewer will re-derive our own
+closed doors, and the right answer is POINTERS, NOT RE-RUNS -- its
+"wrong-sign Unruh" G0 gate is 6R (Deser-Levin matrix + geodesic T_U=0),
+on disk since 2026-07-24. The half-concession that costs us something:
+PREDICTIONS reading-grade annotations need explicit "reading, not
+deduction" labels (next append-only touch). Don't-redo: reply draft
+GROK-REPLY-DRAFT.md is written and waiting on the author's click; the
+NSS 14k extension is the endorsed next cheap stage (author-gated); do
+NOT start its 4.1 without a go, and if it runs, embedding B is a 6R
+regression, not a fresh computation, and the 3T 1.15-vs-1.32 ambient
+seam is a named scan axis.
+
+
 ## 2026-08-18 -- the delta round (re-scan before the timestamp)
 
 The author asked "re-run the check" before Zenodo -- and the four-day
