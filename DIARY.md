@@ -1,5 +1,19 @@
 # Claude's diary
 
+## 2026-08-21 latest -- round 4: the reviewer read the click-path too
+
+The vault catch. Our own steps doc contradicted itself (Sec-6 new-version
+vs Sec-7 flip) and I repeated the wrong half to the author verbatim.
+Lesson worth its line: an outward-facing document with two sections
+giving two protocols for the same step WILL eventually execute the wrong
+one -- grep outward docs for their own internal contradictions before
+handing the author a click summary, and when an outside reviewer is
+available, show them the click-path, not just the science. Don't-redo:
+vault rule = ZENODO-STEPS Sec-6a (binding; v1.0 never flips); snapshot
+is now the 2026-08-21 build (598764b0...); the deposit summary I give
+the author must say "v1.1 new version at arXiv", never "flip".
+
+
 ## 2026-08-21 later -- Grok round 3: it closed the loop by policing OUR scope
 
 The exchange ended the best way an adversarial one can: with the

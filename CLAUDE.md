@@ -1208,7 +1208,10 @@ ai.vixra.org DO-NOT-POST (sourced: 't Hooft; 0.11-vs-1.3 citation study;
 Scholar de-indexed; Scientific God Inc.; arXiv May-2026 AI-content
 policy); ZENODO-STEPS.md = paper-centric restricted deposit (P1+P2 PDFs
 + snapshot zip; P3 excluded; DOI reserved first; restricted files KEEP
-public DOI+timestamp, verified; flip at arXiv); arXiv 2026-01-21
+public DOI+timestamp, verified; [SUPERSEDED 2026-08-21: never flip
+v1.0 — arXiv-time = v1.1 NEW VERSION, two PDFs only; access is
+per-RECORD and the zip holds P3 + the notebook; ZENODO-STEPS Sec-6a =
+the binding vault rule]); arXiv 2026-01-21
 endorsement change => THE COLLEAGUE ROUND IS THE ENDORSEMENT GATE.
 Reports SCOOP-SCAN-2026-08.md / LIT-READS-2026-08.md uncommitted.
 CREDENCES: NO moves (53/8). COLLEAGUE-SEND HOLD LIFTED -- author clicks:
@@ -1281,7 +1284,18 @@ closure's operative scope — U-MISS = "this reconstruction does not
 carry the split", NEVER "SPARC excludes p=1/2 as a sky fact" (never
 print the latter). No reply sent (none needed). The ONE open thread:
 send the DR4 27-cell draft credence map to Grok at the pre-sign session
-BEFORE signing ("I will try to break it").**
+BEFORE signing ("I will try to break it"). **ROUND 4 (2026-08-21,
+deposit mechanics): Grok caught a REAL conflict in ZENODO-STEPS (Sec-7
+said "flip v1.0 public at arXiv" while Sec-6 planned a v1.1 new
+version; Zenodo access is per-RECORD, so the flip would publish the
+zip = P3 + the notebook). ADOPTED + EXECUTED: Sec-6a VAULT RULE
+written (v1.0 restricted FOREVER until repo+P3 are public anyway;
+arXiv-time = v1.1 new version, two PDFs only; colleague default =
+PDFs by email, record-invite grants the zip too); snapshot REBUILT to
+2026-08-21 HEAD (captures the Grok rounds + PREDICTIONS labels; 1,053
+entries, 0 private/REVIEW; sha 598764b0..., 66,482,150 B; 08-18 zip
+removed; ZENODO-STEPS hashes updated). Deposit remains three files
+restricted, DOI-first.**
 NEXT FORK (author's): the three clicks (Zenodo deposit -> reader invite
 -> send 4 PDFs; read-through recommended) · NSS join on a go (count
 only, no alpha) · DR4 credence-map pre-sign session (blocking, before

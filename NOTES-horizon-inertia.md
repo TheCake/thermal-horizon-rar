@@ -16972,3 +16972,51 @@ prove the simple theory is wrong about the whole sky, so never quote it
 that way." We checked its warning, it's right, and we wrote it into the
 books. It will come back one more time: to try to tear apart our big
 pre-registered promise-list for the next Gaia release before we sign it.
+
+---
+
+## 2026-08-21 latest -- GROK ROUND 4 (deposit mechanics): the vault rule
+
+Grok reviewed the deposit sequence and caught a REAL conflict inside our
+own ZENODO-STEPS.md: Sec-7's headline recommended "flip v1.0 restricted
+-> public at arXiv" while Sec-6 (correctly) planned a v1.1 NEW VERSION
+-- and Zenodo file access is per-RECORD, so the Sec-7 flip would have
+published the snapshot zip: paper3_mechanism.md (context-only by the
+author's decision) and the full notebook with it. The main session's
+own summary to the author repeated the Sec-7 line -- the error was ours
+twice over. One overstatement noted for the record: the repo visibility
+flip will make the zip's contents public eventually anyway, so the trap
+is about SEQUENCING CONTROL (P3 circulates when the author says, not as
+a side effect), not permanent secrecy -- the fix is the same either way.
+
+ADOPTED + EXECUTED same day:
+- ZENODO-STEPS Sec-6a THE VAULT RULE (binding): v1.0 = three files,
+  restricted, FOREVER by default; arXiv-time = v1.1 new version carrying
+  the two arXiv-matching PDFs only; v1.0 may be opened much later as
+  pure hash verification, only once repo + P3 are public anyway
+  (author's call, never a default). Sec-7 headline rewritten +
+  superseded-note; Sec-7.3 flip-timing retimed. Colleague default:
+  PDFs by email; a record-invite grants ALL files incl. the zip.
+- Snapshot REBUILT to the 2026-08-21 HEAD (captures the Grok-round
+  books + the PREDICTIONS P1/P4 labels): 1,053 entries, 0 private/,
+  0 REVIEW/reply files, sha256 598764b06bc758168c0b890ab83ef73d02
+  8e016f8db41464eb9155a94aa66733, 66,482,150 B; the 08-18 zip removed;
+  ZENODO-STEPS hash table + description template updated.
+- CLAUDE.md stale "flip at arXiv" phrase superseded in place (the R37
+  bracket-correction pattern).
+
+Deposit remains: reserve DOI -> three files -> metadata + hashes ->
+Restricted -> Publish. CREDENCES: NO moves (53 / 8).
+
+PLAIN VERDICT: SUCCESS -- an outward-step error caught BEFORE the click,
+by the standing practice of showing outside eyes the plan. The
+delta-scan-before-outward-step rule gains a sibling: outward-step
+DOCUMENTS get an outside read too when one is available.
+
+ELI12: We almost set a switch that, months from now, would have opened
+the whole sealed box -- including the essay we decided not to publish
+yet -- instead of just the two papers. The rival AI spotted the switch
+wiring. Now the box stays sealed forever, and at publishing time we
+hand out fresh copies of just the two papers instead of unlocking the
+box. We also refreshed the box's contents to include this week's work
+before sealing it.
