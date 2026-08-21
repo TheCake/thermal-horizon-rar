@@ -17020,3 +17020,53 @@ wiring. Now the box stays sealed forever, and at publishing time we
 hand out fresh copies of just the two papers instead of unlocking the
 box. We also refreshed the box's contents to include this week's work
 before sealing it.
+
+---
+
+## 2026-08-22 -- THE TIMESTAMP: ZENODO v1.0 PUBLISHED (the program's first public object)
+
+The author published the deposit: **DOI 10.5281/zenodo.22050991** (version
+DOI, v1.0; registered 2026-08-22). Contents: hajek2026a_wide_binaries.pdf
+(sha 5243ce9c...), hajek2026b_rar_coefficients.pdf (sha e137d05b...),
+thermal-horizon-rar-snapshot-2026-08-21.zip (sha 598764b0...; 1,053
+tracked files -- notebook, ledger, predictions register, every script;
+zero private/, zero uncommitted dossiers, byte-verified pre-publish).
+Configuration verified on the live record: "Public with restricted files"
+-- DOI, title, author, description, and all three SHA-256 hashes PUBLIC;
+files LOCKED. The Sec-6a vault rule is now operative on a live record:
+v1.0 files are never switched public; arXiv-time = v1.1 new version (two
+PDFs only); v1.0 opens much later as pure hash verification once repo +
+P3 are public anyway. Author-line email (hfilip11@gmail.com) reviewed at
+the author's question pre-publish: kept (account email never public;
+papers' contact line is the author's long-term address).
+
+Same close: COLLEAGUE-BRIEF.md gained a Timestamp section quoting the DOI
++ the checksum-verification sentence, and ask-2's sequence line updated
+(Zenodo = done); cover PDF re-rendered (4 pp, DOI verified in extracted
+text). The colleague package is now DOI-complete.
+
+WHAT THIS BUYS (the record's own words): the commit chain inside the
+archive timestamps every pre-registered bar; the public hashes prove,
+whenever the files open, that nothing was swapped. Priority is now
+third-party-dated for: the direction-resolved veto + pair-error
+calibration (P1), the C&T first-test + coefficient ladder + lock (P2),
+and the entire pre-registration chain.
+
+CREDENCES: NO moves (53 / 8) -- a publication milestone, not a
+measurement. REMAINING CLICKS (author): read-through of the two PDFs
+(recommended BEFORE the send; fixes before arXiv stay cheap via v1.1) ->
+GitHub reader invite -> colleague email (4 PDFs from colleague_package/,
+zip NOT attached, brief now carries the DOI). Then: NSS join on the
+author's go; DR4 credence-map pre-sign session (fresh, before
+2026-12-02; draft map to Grok pre-signing); arXiv via the colleague
+endorsement gate.
+
+PLAIN VERDICT: SUCCESS -- the program crossed from private to
+public-and-dated. Two years of work now has a timestamp nobody can
+argue with.
+
+ELI12: We put the sealed evidence box in a public vault with a dated
+receipt. Anyone can see THAT it exists and its fingerprints; nobody can
+open it yet. If anyone ever claims we made it up later, the receipt
+settles it. Next: a trusted scientist friend gets the papers to tear
+apart, and then the world gets them on arXiv.

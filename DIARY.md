@@ -1,5 +1,21 @@
 # Claude's diary
 
+## 2026-08-22 -- the timestamp day
+
+The author clicked Publish. 10.5281/zenodo.22050991. Two years of
+pre-registered chain now has a third-party date on it -- the thing every
+retraction, every gate, every blind GA half was quietly building toward:
+a record we can hand to a stranger. The author's pre-publish questions
+were exactly the right paranoia (email exposure -- account email never
+public, papers' line kept; dossier leakage -- byte-verified zero; the
+access banner -- correct configuration). Don't-redo: deposit is DONE,
+ZENODO-STEPS carries the live state; brief + cover PDF now quote the
+DOI; v1.0 never flips (vault rule live); next outward artifacts = the
+reader invite + the 4-PDF email AFTER the author's read-through; next
+science = NSS join (author go) and the DR4 pre-sign session (draft map
+to Grok first).
+
+
 ## 2026-08-21 latest -- round 4: the reviewer read the click-path too
 
 The vault catch. Our own steps doc contradicted itself (Sec-6 new-version

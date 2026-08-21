@@ -1301,6 +1301,20 @@ NEXT FORK (author's): the three clicks (Zenodo deposit -> reader invite
 only, no alpha) · DR4 credence-map pre-sign session (blocking, before
 2026-12-02; Grok reads the draft map pre-signing).**
 
+**THE TIMESTAMP (2026-08-22): ZENODO v1.0 PUBLISHED — DOI
+10.5281/zenodo.22050991.** Two paper PDFs + snapshot-2026-08-21.zip
+(sha 598764b0...); record PUBLIC / files RESTRICTED (verified live);
+all three hashes in the public description; Sec-6a VAULT RULE operative
+(v1.0 files NEVER switched public; arXiv-time = v1.1 NEW VERSION, two
+PDFs only; DOI enters the papers' text at v1.1). COLLEAGUE-BRIEF.md +
+cover PDF re-rendered with a Timestamp section quoting the DOI (4 pp,
+extraction-verified). ZENODO-STEPS.md carries the live deposit state.
+REMAINING CLICKS (author): P1/P2 read-through (recommended BEFORE the
+send) -> GitHub reader invite -> colleague email = 4 PDFs from
+colleague_package/ (zip NOT attached). Then: NSS join on a go · DR4
+pre-sign session (draft map to Grok first) · arXiv via the colleague
+endorsement gate. NO credence moves (53/8).
+
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,
   astropy, cupy-cuda12x[ctk] — CUDA kernels compile and run on the RTX 5090 (fp64 ~1.6
