@@ -1,5 +1,26 @@
 # Claude's diary
 
+## 2026-08-21 -- Grok round 2 (the reviewer retracted its own stage)
+
+Rare and worth remembering: the outside reviewer conceded 6R and then
+killed its OWN proposed stage with our triangulation -- embedding A was
+the baseline all along. I closed it one notch sharper than it asked: the
+4.1 letter was computable from ledger rows (cloud-free => r=0 => p=1/2;
+1.97 sigma under 9U; -56.4 on 5G; binaries fine) = U-MISS with zero
+compute. TWO standing lessons: (1) before pre-registering ANY consistency
+row, first check whether its letter is already computable from ledger
+rows -- a stage that can be scored on paper must be scored on paper; (2)
+I declined a reviewer number ("four NSS false positives") that was
+sitting in our own DR4.md Sec-2 -- the decline rule fired correctly but
+the lookup should have come first; grep OUR OWN documents before
+declining a number as unverified. Don't-redo: 4.1 CLOSED (any future
+carrier idea inherits the U-MISS paragraph as its null); PREDICTIONS
+P1/P4 labels executed, P9 needed none (its row list was one off); reply 2
+drafted awaiting the author's click; the DR4 27-cell draft map goes to
+Grok for adversarial read BEFORE signing (author-gated) -- that booking
+is the exchange's most valuable output.
+
+
 ## 2026-08-20 -- the outside-reviewer round (Grok read the repo)
 
 First review from outside the Anthropic family, and it was good: it read

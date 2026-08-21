@@ -1255,10 +1255,29 @@ known-issues list at pre-reg). BOOKED: PREDICTIONS P1/P9 reading-grade
 annotations get explicit "reading, not deduction" labels at next
 append-only touch. Convergence: its breakthrough axis = the a0(z) sign
 = the axis engaged 2026-08-18. NO credence moves (53/8); no stage
-started. NEXT FORK unchanged (author's): the three clicks (Zenodo
-deposit -> reader invite -> send 4 PDFs; read-through recommended) ·
-NSS join or 4.1-A pre-reg on a go · DR4 credence-map pre-sign session
-(blocking, before 2026-12-02).**
+started. **ROUND 2 (2026-08-21): Grok CONCEDED 6R and RETRACTED its own
+4.1 (embedding A = the lever the two-system split was DEFINED against;
+geodesic T_U=0 leaves no third embedding). Its residual design question
+answered FROM THE RECORD, zero compute: cloud-free => no exchange =>
+r=0 => spine p_gal = 1/2 EXACTLY = C&T-BE-under-EFE = the baseline —
+1.97 sigma under 9U (0.6471+-0.0746) past its own >1-sigma bar, -56.4
+lnL on the 5G ladder, binaries accept 1/2 (6E 0.5280) => U-MISS BY
+RECORD; **4.1 CLOSED not deferred — the gate stays a measured
+regularity with no attributed carrier; any future carrier idea inherits
+that paragraph as its null.** Its catch on us correct: the four NSS
+false-positive IDs were in OUR OWN DR4.md Sec-2 (decline rule fired on
+our own number; re-fetch at pre-reg stands). 2.6 sharpening EXECUTED:
+PREDICTIONS P1 + P4 dated labeling annotations (append-only; ceiling =
+theorem inside the gate ansatz, s^2 = the unattributed piece, readings
+labeled readings; P9 needed none = instrument-level). Reply 2 =
+GROK-REPLY-2-DRAFT.md (uncommitted; author sends). **BOOKED: the DR4
+27-cell draft credence map goes to GROK for adversarial read BEFORE any
+cell is signed (author-gated).** Standing lesson (DIARY): score a
+consistency row from ledger rows before pre-registering it as a stage.**
+NEXT FORK (author's): the three clicks (Zenodo deposit -> reader invite
+-> send 4 PDFs; read-through recommended) · NSS join on a go (count
+only, no alpha) · DR4 credence-map pre-sign session (blocking, before
+2026-12-02; Grok reads the draft map pre-signing).**
 
 ## Environment
 - Windows 11, PowerShell. Python is `py` (NOT `python`). Installed: numpy, scipy, sympy,

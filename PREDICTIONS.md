@@ -306,6 +306,18 @@ gate-CLOSING (p → ½) test toward dense environments is the axis this
 data supports. No sky read was performed; r̂ = 0.3365 ± 0.1869 (9V)
 stands operative.*
 
+*Annotation 2026-08-21 (the outside-reviewer round, Grok R1/R2; LABELING
+only, no status change, no registered text touched): scope of the ¾
+ceiling made explicit — it is a THEOREM INSIDE THE MEASURED GATE ANSATZ
+(M = 1 [6Y exclusion theorem] + the weight spine p = ½ + r·s²/2 with
+r ≤ ½), not a sky-theorem independent of that ansatz; the s² gate form
+itself is a measured regularity with NO ATTRIBUTED CARRIER (the 10G
+real-exchange strike + the 10C dispersive anti-lending law leave both
+carrier classes with named failures — Paper 3 §7 wording operative). The
+resonance/dispersive annotations above (9S/9T/10B) are READINGS of the
+grammar, not deductions from a derived mechanism. Kill conditions and
+registered forms unchanged.*
+
 ### P2 — the environmental ordering p(e_N)
 Weaker ambient → sharper tail (p rises toward 0.72–0.75 in voids; galaxy-population
 median 0.689). In-sample version WITHDRAWN (correction #14: gate heterogeneity, not
@@ -418,6 +430,16 @@ boundary cannot separate evolution from calibration at this lever arm. Papers 2
 ### P4 — the DR4 weak-ambient pair
 Weak-ambient wide binaries sharpen toward p ≈ 0.69, and the source-vs-dressed
 convention split becomes resolvable (Δp ≈ 0.025 at e_N = 0.4). (Stage 6U.)
+
+*Annotation 2026-08-21 (the outside-reviewer round; LABELING only, no
+status change): the sharpening direction and the Δp ≈ 0.025
+source-vs-dressed split are GATE-ANSATZ deductions (the 6U KMS
+decomposition) whose carrier is unattributed post-10G/10C — a
+reading-grade mechanism gloss on a registered phenomenological form.
+Feasibility cross-reference: DR4.md v2 (2026-08-12) classifies the Gaia
+route NOT-FEASIBLE at DR4 grade (ambient lever ~±10% vs the required
+~3×); the registered test is unchanged and awaits a non-Gaia
+weak-ambient route.*
 
 ### P5 — the nested-ambient rule (M = 1)
 The gate reads ONE collective ambient mode — the largest relevant environment's; ambients

@@ -16858,3 +16858,72 @@ tested and killed months ago (with receipts), one label complaint was
 half-fair (we'll fix the label), and its best idea for what to do next
 was already on our to-do list. We wrote back a point-by-point reply for
 the author to send.
+
+---
+
+## 2026-08-21 -- OUTSIDE-REVIEWER ROUND 2 (Grok conceded 6R and retracted its own stage)
+
+Grok's reply to our reply (archived in REVIEW-GROK-2026-08.md ROUND-2
+section; our answer = GROK-REPLY-2-DRAFT.md, DO NOT SEND, author clicks).
+Its round: concedes embedding B closed at 6R (restatement checked
+digit-for-digit before adopting the agreement: n_BE(2pi) = 0.001871, 5M -9,
+5F +17..24, source-branch no-finite-fixed-point -- all match), then
+RETRACTS ITS OWN 4.1 -- embedding A ("MI-EFE floor as cloud-free carrier")
+is the lever the two-system split was DEFINED against (EFE was on in both
+pipelines; 6T local-only binary-dead; 6D pointwise dead; 4L/7H MI ties
+MG), and geodesic T_U = 0 leaves no third Unruh-flavored embedding. Its
+residual design question ("any cloud-free no-new-function operation left,
+or is Paper 3's line the end?") ANSWERED FROM THE RECORD, zero new
+computation: cloud-free => no exchange channel => r = 0 => spine gives
+p_gal = 1/2 EXACTLY = C&T-BE under EFE = the baseline, already scored --
+1.97 sigma under the measured tail (9U 0.6471 +- 0.0746, honest sigma >=
+0.075) past its own >1 sigma fail bar, AND -56.4 lnL on the 5G ladder;
+binaries accept 1/2 (6E 0.5280) => carries one system, not the split.
+**Letter U-MISS BY RECORD; 4.1 CLOSED, not deferred. The gate stays a
+measured regularity with no attributed carrier (Paper 3's line); any
+future carrier idea inherits this paragraph as its null.**
+
+Its catch on us: the "four DR3 NSS false positives" number I declined in
+round 1 sits in OUR OWN DR4.md Sec-2 (WD 0141-675 / HIP 64690 / 54 Cas /
+HIP 66074, F9 hook Sec-4.6) -- the decline rule fired on our own number;
+rule survives, re-fetch at pre-reg stands (the list can grow). Its 2.6
+sharpening ACCEPTED AND EXECUTED same day: PREDICTIONS P1 + P4 dated
+labeling annotations (append-only, registered forms untouched -- ceiling
+= theorem inside the gate ansatz; s^2 form = the unattributed piece;
+9S/9T/10B annotations labeled readings; P4 Delta-p labeled gate-ansatz
+deduction + DR4-v2 not-Gaia-feasible cross-ref). Row-list correction back:
+P9 needed NO label (instrument-level width object, no mechanism content).
+
+Queue confirmed with zero exceptions: circulation -> NSS-join author-call
+(count only, no alpha) -> DR4 credence-map pre-sign (fresh session,
+before 2026-12-02) -- and the SECOND-ROUND BOOKING: the 27-cell draft map
+goes to GROK for adversarial read BEFORE any cell is signed
+(author-gated). 4.2 stays conditional on a live cloud-free inertial
+story, which the 10C polaron + an unattributed gate is not yet.
+
+Grok's own summary sentence, adopted (attributed): "The outside objection
+on hotter-bath Unruh was stale: 6R closed it. The outside design for a
+cloud-free Unruh gate is also stale: geodesic T_U=0 plus EFE-already-on
+leave no embedding to fit. The cheap next stage is still the NSS join.
+The expensive next physics is still the influence functional, and only if
+you can say what question is left after 'the gate has no carrier.'"
+
+CREDENCES: NO moves (53 / 8). No stage started; no stage remains proposed
+from this exchange except the author-gated NSS join.
+
+PLAIN VERDICT: SUCCESS. A two-round adversarial exchange with an outside
+model ended in full convergence: it conceded our closed door, we adopted
+its retraction and closed its proposed stage from our own ledger numbers,
+and the one thing it caught us on (our own DR4 list) cost nothing but
+humility. Net new obligations: two labeling annotations (done) and a
+booked outside read of the DR4 credence map.
+
+ELI12: The rival AI wrote back: "You're right, you already killed that
+idea months ago -- and actually, the replacement experiment I suggested
+is pointless too, unless you can explain in one paragraph what's left to
+test." We wrote the paragraph, and it says: nothing is left to test there
+-- our own old numbers already answer it (the simple no-cloud theory
+misses the galaxy data by exactly the margin the reviewer set as the
+kill). So that experiment is cancelled before it wasted a week. We also
+fixed two labels it said were overclaiming, and invited it to referee our
+big pre-registered plan for the next Gaia data release.
