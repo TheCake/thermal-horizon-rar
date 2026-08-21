@@ -1,5 +1,21 @@
 # Claude's diary
 
+## 2026-08-21 later -- Grok round 3: it closed the loop by policing OUR scope
+
+The exchange ended the best way an adversarial one can: with the
+reviewer's last act being a tightening of OUR quote discipline. The
+grade note is exactly the bootstrap-vs-nominal rule we wrote for
+ourselves at 9U/9V, applied to my U-MISS paragraph before I could
+over-quote it: the 1.97 sigma lives in the ONE instrument that defines
+the galaxy leg; 4H still holds 1/2 inside 1 sigma; -56.4 is profile
+grade. Operative scope, never to be violated: U-MISS kills the
+cloud-free reconstruction as a carrier of the SPLIT -- it does not make
+"SPARC excludes p=1/2" a sky fact. Don't-redo: exchange CLOSED, no
+further replies; the ONE open thread = send the DR4 27-cell draft map
+to Grok when the author calls the pre-sign session, before any cell is
+signed. It said "I will try to break it." Good.
+
+
 ## 2026-08-21 -- Grok round 2 (the reviewer retracted its own stage)
 
 Rare and worth remembering: the outside reviewer conceded 6R and then

@@ -16927,3 +16927,48 @@ misses the galaxy data by exactly the margin the reviewer set as the
 kill). So that experiment is cancelled before it wasted a week. We also
 fixed two labels it said were overclaiming, and invited it to referee our
 big pre-registered plan for the next Gaia data release.
+
+---
+
+## 2026-08-21 later -- OUTSIDE-REVIEWER ROUND 3 (Grok's close; exchange CLOSED)
+
+Grok accepted the U-MISS arithmetic and letter in full and closed the
+exchange ("this round should stop"; archived REVIEW-GROK-2026-08.md
+ROUND-3 section; NO reply drafted -- a reply would be noise). ONE grade
+note, VERIFIED against the record before adoption (all three digits
+match: 4H p = 0.578 +0.121/-0.115 with 1/2 at 0.7 sigma inside; 9V r=0
+at +1.8 sigma bootstrap despite ~31 nominal; 5G -56.4 = nominal/profile
+grade) and ADOPTED as the operative scope of the 4.1 closure:
+
+**U-MISS means "this reconstruction does not carry the two-system
+split" -- it does NOT mean "SPARC excludes p = 1/2 as a sky fact."
+NEVER print the latter.** The 1.97-sigma figure is the 9U hier-tail
+instrument that DEFINES the galaxy leg of the split; Paper 2's flat
+screening index holds 1/2 inside 1 sigma; the -56.4 is profile-grade.
+(This is our own bootstrap-vs-nominal discipline applied back at us --
+the same rule that made 9U/9V quote bootstrap grade.)
+
+Remaining state of the exchange: 4.1 CLOSED with the scoped letter; 4.2
+parked (no live cloud-free inertial story); NSS join = the standing
+cheap author-call; NEXT ENGAGEMENT = the 27-cell DR4 credence-map draft
+goes to Grok BEFORE any cell is signed ("I will try to break it") --
+send when the author calls that session. Grok endorsed the diary lesson
+verbatim ("if a consistency row can be scored from the ledger, score it
+from the ledger. That is how 4.1 died, and it is the right death").
+
+CREDENCES: NO moves (53 / 8) -- Grok's own closing line concurs.
+
+PLAIN VERDICT: SUCCESS, and closed. Three rounds with an outside model:
+it conceded our closed door, retracted its own stage, we closed that
+stage from ledger numbers, and its final act was to tighten OUR quote
+discipline on the closure's scope. Total cost: two labels and one
+humility; total gain: a cancelled stage, a scoped theorem-grade null
+for any future carrier idea, and a hostile referee booked for the DR4
+map.
+
+ELI12: The rival AI said "your math checks out, case closed -- just one
+warning: your number kills the SPECIFIC idea we discussed, it does not
+prove the simple theory is wrong about the whole sky, so never quote it
+that way." We checked its warning, it's right, and we wrote it into the
+books. It will come back one more time: to try to tear apart our big
+pre-registered promise-list for the next Gaia release before we sign it.

@@ -1273,7 +1273,15 @@ labeled readings; P9 needed none = instrument-level). Reply 2 =
 GROK-REPLY-2-DRAFT.md (uncommitted; author sends). **BOOKED: the DR4
 27-cell draft credence map goes to GROK for adversarial read BEFORE any
 cell is signed (author-gated).** Standing lesson (DIARY): score a
-consistency row from ledger rows before pre-registering it as a stage.**
+consistency row from ledger rows before pre-registering it as a stage.
+**ROUND 3 (2026-08-21 later, EXCHANGE CLOSED): Grok accepted U-MISS in
+full; its grade note VERIFIED (4H 1/2-inside-0.7-sigma / 9V r=0 at
++1.8-sigma bootstrap / 5G -56.4 profile-grade) and ADOPTED as the
+closure's operative scope — U-MISS = "this reconstruction does not
+carry the split", NEVER "SPARC excludes p=1/2 as a sky fact" (never
+print the latter). No reply sent (none needed). The ONE open thread:
+send the DR4 27-cell draft credence map to Grok at the pre-sign session
+BEFORE signing ("I will try to break it").**
 NEXT FORK (author's): the three clicks (Zenodo deposit -> reader invite
 -> send 4 PDFs; read-through recommended) · NSS join on a go (count
 only, no alpha) · DR4 credence-map pre-sign session (blocking, before
