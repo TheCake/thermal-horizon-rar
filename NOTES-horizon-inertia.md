@@ -17062,8 +17062,10 @@ author's go; DR4 credence-map pre-sign session (fresh, before
 endorsement gate.
 
 PLAIN VERDICT: SUCCESS -- the program crossed from private to
-public-and-dated. Two years of work now has a timestamp nobody can
-argue with.
+public-and-dated. The program's entire pre-registered chain now has a timestamp nobody
+can argue with. (Correction, same close: this line first said "two
+years" -- the recorded chain runs from 2026-07; phrasing fixed, logged
+per the honest-updating rule.)
 
 ELI12: We put the sealed evidence box in a public vault with a dated
 receipt. Anyone can see THAT it exists and its fingerprints; nobody can

@@ -2,8 +2,8 @@
 
 ## 2026-08-22 -- the timestamp day
 
-The author clicked Publish. 10.5281/zenodo.22050991. Two years of
-pre-registered chain now has a third-party date on it -- the thing every
+The author clicked Publish. 10.5281/zenodo.22050991. The whole
+pre-registered chain (July 2026 onward) now has a third-party date on it -- the thing every
 retraction, every gate, every blind GA half was quietly building toward:
 a record we can hand to a stranger. The author's pre-publish questions
 were exactly the right paranoia (email exposure -- account email never
