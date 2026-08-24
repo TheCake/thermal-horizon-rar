@@ -1301,6 +1301,36 @@ NEXT FORK (author's): the three clicks (Zenodo deposit -> reader invite
 only, no alpha) · DR4 credence-map pre-sign session (blocking, before
 2026-12-02; Grok reads the draft map pre-signing).**
 
+**THE SOL ROUND (2026-08-24, outside reviewer #2 = GPT Sol on P1/P2 0.7;
+archived REVIEW-SOL-2026-08.md uncommitted): CORRECTION #20 — P1 Sec-5.3's
+field-wide uncancelled-wobble-law attribution WITHDRAWN after a
+primary-source audit (Opus agent, LaTeX sources, verbatim equations):
+the uncancelled subset is EMPTY — Banik+24 |q~-L~|, P&S23/25 f_pb,
+Chae23/24x2/26 eta_phot ALL CANCELLED (provenance Penoyre+22 MNRAS 513,
+2437; audit reads logged LIT-READS addendum); Hernandez/Cookson =
+cuts-based, no companion model. OUR RESULTS UNAFFECTED (pipeline always
+used the cancelled law; Sec-5.3 costs were our-model-internal, rescoped
+self-referential). REPLACEMENT CLAIM pinned (data/reviewsol_wobble.py +
+.txt): the field's POPULATION inputs are twin-lean vs our measured twin
+t=5 — cancellation engagement 73.8% (measured) vs 48.8% (P&S) / 63.4%
+(Banik+24 q^0.4+4%delta) at s=5.4; field sims carry 1.26-1.30x
+per-companion wobble variance. PAPERS -> r0.8 BOTH (17fab8b): P1 Sec-5.3
+rewrite + Conclusion-3 + App-A withdrawal bullet + Penoyre ref/read +
+2.1x scoped "effective, forward-model-conditional" + repo wording; P2
+two-grade c1=0 quoting at 4 sites (profile decisive / bootstrap
+positivity 95.5-89.0 = disfavored-NOT-excluded — never print "excluded"
+alone) + consistent-with a0 lock + falsifier-2 FRW horizon-choice scope
+(dS-exact; instantaneous-Hubble = OUR registered hypothesis) +
+bar-locking-not-prereg both papers + counts -> TWENTY (papers+brief).
+Ledger bin-7j-rawcond label annotated (6 gates PASS). Gates: reviewsol
+9/9, R40 37/37, R41 6/6 (data/-path fix), lit0814 7/7+8/8, lit0818 16/16.
+QUEUED author-call (not run): flexible-family c1 robustness fit
+(pre-registered consistency check under the S0 freeze). PAPER.md errata
+list grew (Sec-6.x as-published framing). STANDING RULE (DIARY): any
+"the literature does X" sentence = a primary-source claim, verified at
+number grade before it ships. NO credence moves (53/8). Colleague send
+UNBLOCKED pending the author's read-through (r0.8 renders refreshed).**
+
 **THE TIMESTAMP (2026-08-22): ZENODO v1.0 PUBLISHED — DOI
 10.5281/zenodo.22050991.** Two paper PDFs + snapshot-2026-08-21.zip
 (sha 598764b0...); record PUBLIC / files RESTRICTED (verified live);
