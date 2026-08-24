@@ -17072,3 +17072,85 @@ receipt. Anyone can see THAT it exists and its fingerprints; nobody can
 open it yet. If anyone ever claims we made it up later, the receipt
 settles it. Next: a trusted scientist friend gets the papers to tear
 apart, and then the world gets them on arXiv.
+
+---
+
+## 2026-08-24 -- THE SOL ROUND (outside reviewer #2) + CORRECTION #20 + papers r0.8
+
+The author ran P1/P2 (draft 0.7) through GPT Sol (OpenAI); review archived
+REVIEW-SOL-2026-08.md (uncommitted). High-grade review: bit-exact table
+reads (0.377 +0.234/-0.311 / 89.0%), correct spot-check math (the 1/12-vs-
+1/8 rung), verdict matching our own credence map (methods-and-limit papers,
+breakthrough-now 3-4/10). THREE real hits, all verified before adoption.
+
+**CORRECTION #20 (the big one): P1 Sec-5.3's field-wide attribution of the
+uncancelled wobble law WITHDRAWN.** Sol challenged "the published wide-binary
+analyses use q/(1+q)"; a primary-source audit (Opus agent, LaTeX sources
+fetched for every paper, verbatim equations extracted) found the uncancelled
+subset EMPTY: Banik+24 (f_pb = |q~-L~|*sqrt(1+dM~), twins -> 0 explicit),
+P&S 2023+2025 (the two-branch f_pb, the notation's origin), Chae 2023/2024
+x2/2026 (eta_phot, verified algebraically == mass-minus-light at machine
+precision) ALL CANCELLED; Hernandez 2022/2023/2024 + Cookson 2026 = cuts-
+based, NO companion model, cancelled physics stated in prose where
+mentioned. Provenance: Penoyre, Belokurov & Evans 2022 (MNRAS 513, 2437;
+Delta = |q-l|/((1+q)(1+l)) in the abstract) -- the field imported it and
+cites it. OUR RESULTS UNAFFECTED: the pipeline used the cancelled law
+throughout; the Sec-5.3 lnL costs were always our-model-internal. The
+uncancelled law existed only in OUR early generations (the 3K-era f<=0.1
+cap story) -- rescoped self-referentially. Ledger bin-7j-rawcond label
+annotated (numbers stand; six audit gates PASS). PAPER.md Sec-6.x carries
+the old framing -> ERRATA-PENDING-THAW (joins the R40/R41 items).
+
+**THE REPLACEMENT CLAIM (stronger than the withdrawn one): the field's law
+is right, its POPULATION inputs are twin-lean.** Banik: q^0.4 + 4% twin
+delta; Chae: magnitude-difference law, no twin term; P&S: sorted IMF draws
+(twin-poor by construction). Our 7J-z2c GV7 measurement: twin t=5 (43%
+at q>=0.9). New pinned computation data/reviewsol_wobble.py (+ .txt;
+sanity gates GSOL-W1/W2 exact): at the P&S-implied L(M) exponent 5.4,
+photocentre cancellation removes 73.8% of naive per-companion wobble
+variance under the measured population vs 48.8% (P&S) / 63.4% (Banik) --
+the field's simulated companions carry 1.26-1.30x the per-companion wobble
+variance of the measured population, all parties using the correct law.
+
+**Papers -> r0.8 (both), gates green:** P1: Sec-5.3 rewritten (standard-law
+provenance + self-referential cost + population comparison), Conclusion 3
+rewritten, App-A withdrawal bullet, Penoyre reference + primary-read
+logged, 2.1x scoped "effective, forward-model-conditional" (abstract /
+Sec-4.1 / conclusion 1), repo wording harmonized, bar-locking-not-prereg
+sentence. P2: two-grade zero-exclusion at all four sites (profile decisive;
+bootstrap positivity 95.5/89.0 = disfavored-not-excluded), consistent-with
+(not equality) for the a0 lock, falsifier-2 horizon-choice scope (dS-exact
+-> FRW needs a horizon choice; instantaneous Hubble rate; OUR registered
+hypothesis, not C&T's theorem), App-A method scope paragraph, a 73-word
+0.7-era sentence split (caught by the full gate re-run), abstract 250w.
+COLLEAGUE-BRIEF: same four fixes + revision-vs-deposit sentence. Gate
+suite: NEW data/reviewsol_gates.py 9/9 + R40 37/37 + R41 6/6 (path fix
+for data/-scoped App-B scripts, dated) + lit0814 7/7 + 8/8 + lit0818
+15/16 (G5 = abstract-vs-HEAD, passes at commit) + ledger 6/6.
+
+**Declined/queued:** census look-elsewhere = already handled (Sol
+concedes); the flexible-family c1 robustness fit = legitimate referee
+demand but a NEW in-sample instrument under the S0 freeze -> QUEUED as an
+author-call pre-registered consistency check (flexible null family; not
+run silently). Sol's "rerun against the actual Banik implementation" =
+moot (no result ever depended on the attribution).
+
+CREDENCES: NO moves (53 / 8) -- claims corrections, no measurement moved.
+Correction count: twenty (papers + brief synced). The colleague send was
+HELD for this round and is now UNBLOCKED pending the author's read-through.
+
+PLAIN VERDICT: SUCCESS as a review round, at real cost honestly paid -- a
+false accusation against the field caught before any human outside read
+it, replaced by a defensible measurement-backed claim that is genuinely
+ours. The three-reviewer-family pattern (Opus rounds, Grok, Sol) has now
+caught errors at three different layers: computation, scope, attribution.
+
+ELI12: The new reviewer caught us claiming everyone else used a broken
+formula -- we checked their actual papers letter by letter, and they
+didn't; only our own early code did. We apologized in print, and replaced
+the accusation with something better and true: their formula is fine but
+they feed it the wrong mix of hidden stars (too few twins), and we
+measured the right mix. All our numbers were computed with the good
+formula all along, so nothing else changed. Both papers got more honest
+in a few other sentences, every automatic check is green, and the
+package for your friend is being rebuilt now.

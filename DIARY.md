@@ -1,5 +1,28 @@
 # Claude's diary
 
+## 2026-08-24 -- the Sol round: the accusation we never primary-sourced
+
+The worst kind of error survived 24 drafts and three reviewer families: a
+factual claim about OTHER PEOPLE'S papers that we never read their papers
+to verify. "As-published law" entered the record at 7J as a modeling-era
+shorthand and hardened into "the published analyses use q/(1+q)" without
+any stage ever fetching Banik's Sec-3.2. An outside model with fresh eyes
+asked the obvious question in one line. STANDING RULE from this (the #18
+family, sharpened): any sentence of the form "the literature does X" is a
+PRIMARY-SOURCE CLAIM and gets the same verification grade as a number --
+grep the record for who actually checked it, before it ships anywhere.
+Silver linings, both real: our pipeline always used the correct law (the
+error was pure attribution), and the audit surfaced a BETTER claim we
+actually own (twin-heavy population, 74%-vs-49-63% engagement, 1.3x --
+pinned in reviewsol_wobble.py). Also caught: a 73-word 0.7-era sentence
+(rerun ALL paper gates after every touch, not just the new round's), and
+my own gate's regex (trap #23 again -- the verifier is an instrument).
+Don't-redo: papers r0.8 + brief are the operative versions; renders
+refreshed after this entry; correction count = twenty everywhere; the
+flexible-family c1 fit is QUEUED author-call (do not run it silently);
+PAPER.md errata list grew (Sec-6.x as-published framing).
+
+
 ## 2026-08-22 -- the timestamp day
 
 The author clicked Publish. 10.5281/zenodo.22050991. The whole

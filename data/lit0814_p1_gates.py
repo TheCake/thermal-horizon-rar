@@ -25,6 +25,17 @@ PAPER = ROOT / "papers" / "paper1_wide_binaries.md"
 # Primary reads performed 2026-08-14 (abstract and/or full text fetched from the
 # source; the deciding line was quoted and checked, not taken from a search snippet).
 PRIMARY_READ = {
+    # 2026-08-24 addition (SOL round): Penoyre reference introduced by the
+    # draft-0.8 Sec-5.3 rewrite after the wobble-law primary-source audit.
+    "2111.10380": (
+        "Penoyre, Belokurov & Evans 2022, MNRAS 513, 2437 -- LaTeX source "
+        "fetched and read (2026-08-24 audit). Deciding line (abstract, "
+        "verbatim): 'the observed UWE scales [proportional to] varpi "
+        "(parallax), a (semi-major axis) and Delta = |q-l|/((1+q)(1+l)) "
+        "where q and l are the mass and light ratio respectively' -- "
+        "algebraically identical to |q/(1+q) - l/(1+l)|; Sec 7: twins "
+        "'become slightly harder to detect' (photocentre ~ barycentre)."
+    ),
     "2512.25002": (
         "Makarov 2026, AJ 171, 79 -- full-text HTML read. Deciding line: "
         "'Eq. 7 in (Chae 2024) used to estimate the uncertainty of the relative "

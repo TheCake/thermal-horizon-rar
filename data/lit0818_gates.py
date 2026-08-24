@@ -141,8 +141,10 @@ gate("G3c no comparison numeric in new text absent from the computation output",
      not stray, "stray: %s" % (sorted(set(stray)) if stray else "none"))
 
 # --------------------------------------------------------------------- G4
+# 2026-08-24: draft 0.8 (SOL round) now heads the line; the 0.7 record must
+# remain in the header history -- check presence, not line-leading position.
 gate("G4a paper2 draft advanced to 0.7 dated 2026-08-18",
-     "*Draft 0.7 (2026-08-18)" in p2)
+     "Draft 0.7 (2026-08-18)" in p2)
 gate("G4b paper2 draft line carries the engagement note",
      "a₀(z) measurement engaged (MIGHTEE-HI/LADUMA)" in p2.split("\n")[4])
 gate("G4c paper3 draft advanced to 0.10 dated 2026-08-18",

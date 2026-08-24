@@ -82,7 +82,11 @@ am = re.search(r'^## Appendix B: reproducibility\s*\n(.*?)(?=^## References)',
                TEXT, re.S | re.M)
 appb = am.group(1) if am else ''
 names = sorted(set(re.findall(r'\b([A-Za-z0-9_]+\.py)\b', appb)))
-absent = [n for n in names if not os.path.isfile(os.path.join(CALCS, n))]
+# 2026-08-24: Appendix B rows may carry explicit data/ paths (the pinned
+# literature-comparison scripts); resolve against calcs/, data/, and root.
+absent = [n for n in names
+          if not any(os.path.isfile(os.path.join(ROOT, d, os.path.basename(n)))
+                     for d in ('calcs', 'data', ''))]
 gate('G5 Appendix-B scripts exist on disk', names and not absent,
      'checked %d names, absent = %s' % (len(names), absent))
 
