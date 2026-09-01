@@ -17235,3 +17235,30 @@ error bars; we measured they're 2x too small) -- which the next Gaia
 release will settle. Two other new rival theories got their fair
 sentences too. Everything checks green. The papers are ready for your
 friend.
+
+---
+
+## 2026-09-02 -- THE DISCLOSURE: ZENODO v1.1 PUBLISHED OPEN (the papers are public)
+
+The author published v1.1: **DOI 10.5281/zenodo.22238948** -- both papers
+(P1 0.9, P2 0.9) OPEN ACCESS, downloadable by anyone, CC-BY-4.0.
+Verified live in-session: file checksums bit-exact vs disk (df1ee41a... /
+665df95c...), v1.0 vault UNTOUCHED (restricted, original 5243ce9c...
+checksums intact, newer-version banner up). PRIORITY IS NOW DISCLOSED,
+not just sealed: the 2.1x calibration, the direction-channel veto, the
+twin-heavy population law, the census, the C&T first test, the
+coefficient ladder, and the a0 lock are all publicly dated. Any later
+arXiv paper on this ground is second by construction. The residual
+exposure is ATTENTION (someone responding on arXiv before we post
+there), closed by the RNAAS + outreach + endorsement lanes.
+
+Remaining sequence: repo visibility flip -> colleague email (4 PDFs) ->
+"go RNAAS" / "go outreach" lanes -> arXiv endorsement code -> MNRAS
+direct submission as the Oct-15 backstop. CREDENCES: NO moves (53/8).
+
+PLAIN VERDICT: SUCCESS -- the program's findings are public.
+
+ELI12: The safe is now a shop window. Everyone can read the two papers,
+the date is stamped by a third party, and nobody can claim our results
+as theirs ever again. The old sealed box stays sealed as the tamper-
+proof original.
