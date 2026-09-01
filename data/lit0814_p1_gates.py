@@ -25,6 +25,19 @@ PAPER = ROOT / "papers" / "paper1_wide_binaries.md"
 # Primary reads performed 2026-08-14 (abstract and/or full text fetched from the
 # source; the deciding line was quoted and checked, not taken from a search snippet).
 PRIMARY_READ = {
+    # 2026-09-01 addition (delta scan): Boufourou engaged in Sec 9.4.
+    "2608.24556": (
+        "Boufourou, H. 2026 (single author, astro-ph.GA, submitted "
+        "2026-08-25) -- abs page fetched in-session + agent full-HTML reads "
+        "of Sec 2/3/6/7. Deciding lines (abstract, verbatim): 'a full-median "
+        "estimator ... recovers gamma = 1.08-1.13 from purely Newtonian "
+        "universes containing 20-30% residual triples'; 'gamma = 1.045 "
+        "[1.025, 1.068] (2-30 kau)'; 'gamma = 1.4 is rejected at ~16 sigma'. "
+        "Noise model: NO inflation of formal errors ('spatially correlated "
+        "calibration errors are common-mode ... largely cancel'). No angle "
+        "channel (magnitude-only observable, Sec 6 DR4 protocol included); "
+        "no q-distribution measurement; no explicit cancellation formula."
+    ),
     # 2026-08-24 addition (SOL round): Penoyre reference introduced by the
     # draft-0.8 Sec-5.3 rewrite after the wobble-law primary-source audit.
     "2111.10380": (

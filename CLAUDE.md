@@ -1301,6 +1301,33 @@ NEXT FORK (author's): the three clicks (Zenodo deposit -> reader invite
 only, no alpha) · DR4 credence-map pre-sign session (blocking, before
 2026-12-02; Grok reads the draft map pre-signing).**
 
+**THE PRE-SEND DELTA ROUND (2026-09-01, scan #4 — four for four): the
+equation + ALL registered claims UNSCOOPED (C&T zero empirical tests in
+31 citations; z-axis uncontested; van Putten/Gillot/Luo unchanged). ONE
+HIT engaged same day: **Boufourou arXiv:2608.24556** (08-25, single
+author) — velocity-only median estimators manufacture gamma 1.08–1.13
+from purely Newtonian universes with 20–30% triples = OUR Sec-7 disease
+independently; measures 1.045 on the Chae sample; froze his OWN Zenodo
+DR4 protocol (competitive pressure on 2026-12-02). Unscooped
+distinctives verified full-text: no angle channel, no width channel, no
+q-law, no census statistic. LIVE DISAGREEMENT: he applies NO error
+inflation (vs our measured >= 2.1x, in his own calibration range) —
+stated in P1 Sec-9.4 as the DR4-decidable collision, with the
+NON-CONVERSION rule (his gamma vs our median ratio = differently
+weighted moments). P1 -> 0.9. Also: Escala 2608.10073 (Machian a0 ~
+c/t_U, RISES with z = the lock's sign, different normalization) -> P2
+0.9 = FOUR-rival z-axis family; Rostami+ 2511.05632 (entropic/Unruh, no
+occupation, fitted scale, NGC 3198 only) -> P3 0.11 Sec-10. NestyNet
+2608.21051 PDF-read discharged (nonparametric F — no citation owed).
+DR4 pre-sign obligations BOOKED (TODO): primary-read Guerriero+ MNRAS
+548 (RUWE_lim = 1.15 DR4 forecast — do not freeze RUWE < 1.4 blind);
+Boufourou protocol = competitor baseline. Gates: ALL EIGHT suites green
+(lit0901 8/8 new; two stale baselines + P3's lost 0.8 date tag fixed).
+NO credence moves (53/8). Package re-rendered (P1 22pp / P2 19pp / P3
+20pp, engagement-verified). **THE COLLEAGUE SEND IS GREEN.**
+Scan archive: agents' reports in session task outputs; reads in
+LIT-READS addendum.**
+
 **THE SOL ROUND (2026-08-24, outside reviewer #2 = GPT Sol on P1/P2 0.7;
 archived REVIEW-SOL-2026-08.md uncommitted): CORRECTION #20 — P1 Sec-5.3's
 field-wide uncancelled-wobble-law attribution WITHDRAWN after a

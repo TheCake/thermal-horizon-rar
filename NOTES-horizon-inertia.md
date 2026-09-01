@@ -17154,3 +17154,84 @@ measured the right mix. All our numbers were computed with the good
 formula all along, so nothing else changed. Both papers got more honest
 in a few other sentences, every automatic check is green, and the
 package for your friend is being rebuilt now.
+
+---
+
+## 2026-09-01 -- THE PRE-SEND DELTA ROUND (scan #4; the Boufourou engagement)
+
+Third consecutive outward-step delta scan to find something that mattered
+(now four for four counting 08-14). Two Opus agents, both axes; ~40
+primary fetches; SCOOP state: **the equation and every registered claim
+remain OURS** -- C&T at 31 citations, newest 2026-06, still ZERO empirical
+tests; MIGHTEE zero citations; z-axis uncontested; van Putten v1-only;
+Gillot EPJC record still unposted; Luo v3 (08-17) still pre-thermal.
+
+**THE HIT (both agents independently): Boufourou 2026 (arXiv:2608.24556,
+single author, submitted 2026-08-25, 7pp)** -- "Estimator forensics for
+the wide-binary gravity test": full-median velocity estimators recover
+gamma = 1.08-1.13 from PURELY NEWTONIAN universes with 20-30% residual
+triples ("half-way to the claimed anomaly"); measures gamma = 1.045
+[1.025, 1.068] on the Chae 81,088-pair sample (mixture f_trip = 0.15,
+gamma = 1.4 rejected ~16 sigma); freezes his own Zenodo-timestamped DR4
+protocol. CONVERGENT with our Section-7 phantom mechanism, reached
+independently by simulation forensics; his manufactured range brackets
+our median anchor's neighborhood. UNSCOOPED DISTINCTIVES (full-text
+verified): NO angle channel ("does not utilize the v-r angle"), NO
+per-system width channel, NO q-distribution measurement, no census
+statistic (his sqrt(2) is a cut), no C&T content. THE LIVE DISAGREEMENT:
+he applies NO inflation to formal Gaia errors (common-mode-cancellation
+argument) -- directly contradicting our measured >= 2.1x at 0.2-2 kAU,
+in exactly his calibration range; if our measurement holds, his
+simulation templates understate the Newtonian width there. ENGAGED same
+day: P1 -> draft 0.9 (Sec-9.4 paragraph: convergence-on-the-disease /
+instruments-differ / NON-CONVERSION of his gamma vs our median ratio
+(differently weighted moments -- the q-moments rule applied) / the
+error-model collision as the DR4-decidable disagreement; Boufourou ref +
+primary-read logged). His competing DR4 protocol = named competitive
+pressure on our 2026-12-02 gate.
+
+Also engaged: **Escala 2026 (arXiv:2608.10073, 08-10, a prior-scan gap)**
+-- Machian a0 ~ c^2/R_U ~ c/t_U with BTFR-normalization evolution, z~2-5
+confrontation favoring baryon-only Lambda-dominated; tracks INVERSE
+COSMIC AGE => rises with z, THE LOCK'S SIGN, different normalization =>
+P2 -> draft 0.9: the Sec-5.1 rival family is now FOUR cosmological
+predictions separable by sign and slope on the z-axis. **Rostami,
+Rezazadeh & Rostampour (arXiv:2511.05632, IJGMMP 2650323)** -- entropic
+MOND via Unruh-relation equipartition, no occupation number, fitted
+scale, single-galaxy confrontation => P3 -> draft 0.11 (Sec-10 same-
+family differentiation; occupation ladder + lock + coefficient tests
+uncontested). NestyNet III (2608.21051) PDF-read discharged: their F is
+NONPARAMETRIC (blind-protocol recovery, Upsilon_d = 0.56 +- 0.14), form
+reported non-unique -- no coefficient content, no citation owed. Sosna
+2608.22505 (identifiability floors) + Boffin 2608.02814 (Hyades bimodal
+q) logged adjacent, no action.
+
+DR4-relevant flags BOOKED for the pre-sign session: (1) Guerriero,
+Penoyre & Brown MNRAS 548 -- RUWE_lim = 1.15 forecast for DR4 (do NOT
+freeze RUWE < 1.4 without reading it; primary-read obligation); (2)
+Boufourou's frozen protocol = the field will run DR4 estimator tests
+against our territory; sigma_stat(gamma) < 0.005 makes estimator
+systematics dominant -- his own framing SUPPORTS our error-model-first
+ordering (Test 0 -> error shape -> alpha).
+
+Gate state after the round: lit0901 8/8 (new) + SOL 9/9 + R40 37/37 +
+R41 6/6 + R42 15/15 + lit0814 7/7 + 8/8 + lit0818 16/16 -- the full-suite
+re-run caught and fixed two stale gate baselines, one 95-word sentence of
+my own, and a LOST DATE TAG in P3's draft history (the 0.8/2026-08-12
+record, restored -- review42 G8 had been silently unsatisfiable since
+0.9). CREDENCES: NO moves (53 / 8) -- literature round. Papers now P1
+0.9 / P2 0.9 / P3 0.11; renders refreshed; THE COLLEAGUE SEND IS GREEN.
+
+PLAIN VERDICT: SUCCESS -- nothing scooped, one nine-day-old convergent
+competitor engaged before a single human outside saw the papers, two
+rival-family additions, and the scan discipline is now four for four.
+
+ELI12: We checked one last time whether anyone beat us to our findings.
+Nobody did -- but nine days ago someone independently published half of
+our "velocity-only methods fool themselves" argument, using simulations
+where we use real measured directions. We added a fair paragraph about
+him, including the one thing we think he got wrong (he trusts Gaia's
+error bars; we measured they're 2x too small) -- which the next Gaia
+release will settle. Two other new rival theories got their fair
+sentences too. Everything checks green. The papers are ready for your
+friend.

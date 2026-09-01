@@ -107,8 +107,11 @@ NEW_BLOCKS = []
 for text, marker_start, marker_end in [
     (p2, "A first direct fit of a₀(z) has since appeared at the other end",
      "The binary translation's high-side pull"),
+    # 2026-09-01: end marker updated -- the rival-family sentence now reads
+    # "at least four" (Escala addition, draft 0.9); scope of this block is
+    # unchanged (it ends where the rival-family paragraph begins).
     (p2, "The low-redshift fit of Vărăşteanu et al. (2026) prefers",
-     "Stated plainly, at least three"),
+     "Stated plainly, at least four"),
     (p2, "A first direct slope now exists as well", "\n"),
     (p3, "A first direct low-redshift fit of the same quantity", "\n"),
 ]:
@@ -147,8 +150,9 @@ gate("G4a paper2 draft advanced to 0.7 dated 2026-08-18",
      "Draft 0.7 (2026-08-18)" in p2)
 gate("G4b paper2 draft line carries the engagement note",
      "a₀(z) measurement engaged (MIGHTEE-HI/LADUMA)" in p2.split("\n")[4])
+# 2026-09-01: draft 0.11 now heads the line; presence check like G4a.
 gate("G4c paper3 draft advanced to 0.10 dated 2026-08-18",
-     "*Draft 0.10 (2026-08-18)" in p3)
+     "Draft 0.10 (2026-08-18)" in p3)
 gate("G4d paper3 draft line carries the engagement note",
      "a₀(z) measurement engaged (MIGHTEE-HI/LADUMA)" in p3.split("\n")[4])
 

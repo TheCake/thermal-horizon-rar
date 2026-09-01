@@ -1581,3 +1581,14 @@ O17. **The Einstein fluctuation test + the signed prediction ledger**
   send. Author read-through of P1/P2 PDFs still recommended.
 - a0(z) discriminating requirement booked: intra-sample z-lever under
   one selection function, or cross-sample zero-point control.
+
+## 2026-09-01 annotation (pre-send delta round)
+- Papers P1 0.9 / P2 0.9 / P3 0.11 -- literature-current through
+  2026-09-01. COLLEAGUE SEND GREEN (4 PDFs from colleague_package/).
+- DR4 pre-sign session obligations (NEW): primary-read Guerriero,
+  Penoyre & Brown MNRAS 548 (RUWE_lim = 1.15 DR4 forecast) before
+  freezing any RUWE cut; treat Boufourou 2608.24556's frozen protocol
+  as the competitor baseline (his sigma_stat < 0.005 framing supports
+  the Test-0 -> error-shape -> alpha ordering).
+- Boufourou engagement queue item: if he posts a v2 or the paper is
+  refereed, re-read before arXiv.

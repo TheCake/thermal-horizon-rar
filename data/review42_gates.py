@@ -138,7 +138,8 @@ cnt = len(re.findall(BANNED, TEXT, re.I))
 gate("G7 banned word absent", cnt == 0, f"{cnt} occurrences")
 
 # ---------------------------------------------------------------- G8 draft line
-m = re.search(r"\*Draft 0\.8 \(2026-08-12\)", TEXT)
+# 2026-09-01: later drafts (0.9-0.11) now head the line; history presence check.
+m = re.search(r"Draft 0\.8 \(2026-08-12\)", TEXT)
 gate("G8 draft history updated to 0.8 / 2026-08-12", m is not None,
      m.group(0) if m else "MISSING")
 
