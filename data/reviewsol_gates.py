@@ -44,10 +44,14 @@ gate("G-SOL-2", ok2, f"(txt: {w_meas.group(2) if w_meas else '?'} / {w_ps.group(
 gate("G-SOL-3", "Penoyre, Z., Belokurov, V., & Evans, N. W. 2022, MNRAS 513, 2437" in P1
      and "withdrawn after a primary-source audit" in P1)
 
-# G-SOL-4
-gate("G-SOL-4", "the effective pair-level velocity errors are at least 2.1 times" in P1
-     and "EDR3 effective pair-level velocity errors" in P1
-     and "not a per-epoch instrumental calibration" in P1)
+# G-SOL-4 baseline superseded 2026-09-03 (correction #21): the 2.1x claim
+# these scoping strings guarded is WITHDRAWN; the gate now pins the
+# withdrawal at the abstract + conclusion sites and the surviving
+# joint-fit scoping in Sec 4.1.
+gate("G-SOL-4", "failed a null-injection audit" in P1
+     and "the narrow-bin calibrator that earlier versions quoted" in P1
+     and "effective inflation the joint forward model requires" in P1
+     and "the effective pair-level velocity errors are at least 2.1 times" not in P1)
 
 # G-SOL-5: all four P2 sites
 gate("G-SOL-5", "zero excluded at profile grade; bootstrap positivity 89–96%" in P2      # abstract
@@ -62,9 +66,10 @@ gate("G-SOL-5", "zero excluded at profile grade; bootstrap positivity 89–96%" 
 gate("G-SOL-6", "requires a choice of horizon, and we use the instantaneous Hubble rate" in P2
      and "not a theorem of the original construction" in P2)
 
-# G-SOL-7
-gate("G-SOL-7", "twenty are on record" in P1 and "The program logged twenty corrections" in P2
-     and "Twenty corrections logged during the program" in P2
+# G-SOL-7 baseline advanced 2026-09-03 (correction #21): count = twenty-one.
+gate("G-SOL-7", "twenty-one are on record" in P1
+     and "The program logged twenty-one corrections" in P2
+     and "Twenty-one corrections logged during the program" in P2
      and "nineteen" not in P1.lower() and "nineteen" not in P2.lower())
 
 # G-SOL-8

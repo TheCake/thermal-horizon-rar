@@ -35,7 +35,10 @@ gate("G4", "at least four distinguishable cosmological predictions" in P2
      and "rising with redshift like the lock, from a different normalization" in P2)
 gate("G5", "Rostami, Rezazadeh & Rostampour" in P3 and "arXiv:2511.05632" in P3
      and "no occupation number, no derived horizon lock" in P3)
-gate("G6", "*Draft 0.9 (2026-09-01)" in P1 and "*Draft 0.9 (2026-09-01)" in P2
+# G6 baseline advanced 2026-09-03 (correction #21): P1/P2 head at 0.10; the
+# 0.9 lines persist in the draft history without the leading asterisk.
+gate("G6", "*Draft 0.10 (2026-09-03)" in P1 and "Draft 0.9 (2026-09-01)" in P1
+     and "*Draft 0.10 (2026-09-03)" in P2 and "Draft 0.9 (2026-09-01)" in P2
      and "*Draft 0.11 (2026-09-01)" in P3)
 gate("G7", "- Boufourou, H. 2026, arXiv:2608.24556" in P1
      and "- Escala, A. 2026, arXiv:2608.10073" in P2

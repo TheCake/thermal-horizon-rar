@@ -119,8 +119,10 @@ def main():
     ver = dl.group(1) if dl else None
     date = dl.group(2) if dl else None
     names = ("Gillot" in text) and ("Luo" in text) and ("rival-mechanism" in text)
+    # baseline advanced 2026-09-03: P3 head = 0.11 (2026-09-01) since the
+    # lit0901 close; the original 0.9/2026-08-14 pin was stale.
     gate("G6-draft-line",
-         ver == "0.9" and date == "2026-08-14" and names,
+         ver == "0.11" and date == "2026-09-01" and names,
          "draft %s (%s); patch named=%s" % (ver, date, names))
 
     report()

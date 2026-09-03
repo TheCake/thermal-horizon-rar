@@ -68,7 +68,11 @@ checks = [
     ("G6 stratified noise posterior (M2)", ["1.97–2.25"]),
     ("G7 band count P(<=9) (M1)", ["9.8 × 10⁻⁵"]),
     ("G8 differential-noise decomposition (M3)", ["1.155", "1.126"]),
-    ("G9 mass-model floor wording (m6)", ["never below 1.77"]),
+    # G9 baseline superseded 2026-09-03 (correction #21): the 1.77 floor is
+    # WITHDRAWN with the calibrator; the gate now pins the withdrawal wording.
+    ("G9 mass-model floor withdrawal (m6 -> #21)",
+     ["a floor of 1.77 was previously quoted",
+      "The 1.77 mass-model floor fell with it"]),
     ("G10 R_chance span (m2)", ["7 × 10⁻⁶", "6 × 10⁻³"]),
     ("G11 overshoot attribution (m3)", ["17 pairs there at the fitted cell"]),
     ("G12 AQUAL field ratio (m7)", ["roughly 65%"]),
@@ -79,7 +83,10 @@ checks = [
     ("G17 NSS coverage disclosure (m19)", ["Seven of the nine"]),
     ("G18 secular-mixing staleness item (m22)", ["−0.90", "stage10o_p15erode.py"]),
     ("G19 repository status (M7a)", ["private at the time of writing"]),
-    ("G20 companion-note declaration (M7b)", ["observational note submitted separately"]),
+    # G20 baseline superseded 2026-09-03 (correction #21): the note is
+    # withdrawn, not submitted; the gate now pins the withdrawal statement.
+    ("G20 companion-note withdrawal (M7b -> #21)",
+     ["withdrawn rather than submitted"]),
 ]
 for name, needles in checks:
     missing = [n for n in needles if n not in TXT]

@@ -25,6 +25,22 @@ PAPER = ROOT / "papers" / "paper1_wide_binaries.md"
 # Primary reads performed 2026-08-14 (abstract and/or full text fetched from the
 # source; the deciding line was quoted and checked, not taken from a search snippet).
 PRIMARY_READ = {
+    # 2026-09-03 additions (correction #21 citation audit): the corrected
+    # sources for the single-star underestimation bracket, replacing the
+    # Lindegren miscitation (that paper says the opposite).
+    "2012.06242": (
+        "Fabricius et al. 2021, A&A 649, A5 (EDR3 catalogue validation) -- "
+        "primary-read by the 2026-09-03 audit agent (Sec 3.7). Deciding "
+        "content: unit-weight uncertainty factors ~1.05 (five-parameter) "
+        "and ~1.22 (six-parameter solutions), magnitude-dependent, "
+        "bright-end rise attributed to partially resolved doubles."
+    ),
+    "2105.11662": (
+        "Brandt 2021, ApJS 254, 42 (Hipparcos-Gaia Catalog of "
+        "Accelerations, EDR3 edition) -- primary-read by the 2026-09-03 "
+        "audit agent. Deciding content: EDR3 proper-motion error inflation "
+        "1.37 from the bright-star external cross-calibration."
+    ),
     # 2026-09-01 addition (delta scan): Boufourou engaged in Sec 9.4.
     "2608.24556": (
         "Boufourou, H. 2026 (single author, astro-ph.GA, submitted "
