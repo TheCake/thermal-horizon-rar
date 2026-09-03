@@ -1,5 +1,32 @@
 # Claude's diary
 
+## 2026-09-03 -- the morning the referee lane earned its keep
+
+The RNAAS round was supposed to be a formality before a fast submission.
+Instead its M4 -- "show me the null injection" -- killed the note's
+central claim in four minutes of compute: our narrow-bin meter answers
+~2 for every truth because 2 is its grid's flat-prior mean. Trap #9,
+executed on ourselves, live in a PUBLIC paper. Lessons, burned in:
+(1) TRAP #27 -- an expectation over a bounded grid with a flat prior is
+not a measurement; bar it with something a flat posterior cannot pass,
+and calibrate with a truth ladder INCLUDING THE NULL at pre-reg time.
+(2) The 9L bar [1.8, 2.3] contained the prior mean -- ask of every bar
+"can an uninformative instrument pass this?" alongside trap #16's "what
+outcome fails it?". (3) The referee lane's value is exactly that it
+asks the questions we stopped asking; the reviewer families have now
+caught: computation (Opus), scope (Grok), attribution (Sol), and
+instrument power (this round). (4) My variant script clobbered an
+archived output through a second save site I did not grep for -- when
+cloning a stage, grep EVERY write path. Don't-redo: holds are on
+outreach/colleague/RNAAS; the correction arc (9L-b calibrated contrast
+statistic) is designed and awaits the author's go; the 9L credence-map
+question is PARKED, not decided; the public v1.1 gets corrected as
+v1.2 AFTER the redesign, with an Opus round between. The sky's weak
+top-heavy lean and the joint fits' passing nulls are what remains of
+the 2.1x -- maybe it returns smaller and honest, maybe it dissolves;
+either way the record will show us finding it ourselves.
+
+
 ## 2026-09-01 -- scan #4: the field arrived nine days ago
 
 Four for four. This time the delta held a genuine convergence: Boufourou

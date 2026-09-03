@@ -17262,3 +17262,99 @@ ELI12: The safe is now a shop window. Everyone can read the two papers,
 the date is stamped by a third party, and nobody can claim our results
 as theirs ever again. The old sealed box stays sealed as the tamper-
 proof original.
+
+---
+
+## 2026-09-03 -- THE NULLINJ FINDING (the RNAAS referee round fires for real):
+## the narrow-bin f_pm meter is INSTRUMENT-NULL; the ">= 2.1x measured on the
+## boost-free bin" claim is VETOED as a measurement; correction arc OPENED
+
+The morning lanes ran as ordered (note updated 0.2; six outreach drafts,
+eight addresses verified). The RNAAS referee (fresh Opus, cold) returned
+MAJOR REVISION with nine majors; per house rule every load-bearing claim
+was verified before adoption -- and two verifications DETONATED:
+
+**1. The null injection (referee M4; bars pre-stated + committed 0202e6f
+BEFORE the run; calcs/stage9l_nullinj.py = verbatim 9L meter + truth
+ladder).** Result (data/stage9l_nullinj.txt): truth 1.0 -> E[fpm] =
+2.04/1.89; truth 1.4 -> 2.13/2.05; truth 1.5 -> 2.07/2.06; truth 2.1 ->
+2.12/2.06 (regression exact). THE METER RECOVERS ~2 FROM EVERY TRUTH.
+Diagnosis is arithmetic: FPM_GRID mean = 2.00; null marginals ~flat;
+the posterior in the narrow bin is PRIOR-DOMINATED. The archived G9L-3
+"injection recovery" (2.1 -> 2.12/2.06) was the prior mean posing as
+recovery -- truth ~ grid mean -- TRAP #9 EXECUTED ON OURSELVES, surviving
+24 paper drafts, three reviewer families, and two published deposits.
+The 9L bar (E[fpm] in [1.8, 2.3]) is satisfied by a totally
+uninformative posterior: 9L is INSTRUMENT-NULL in the R30 sense ("a
+powerless instrument supports neither").
+
+**2. The literature audit (referee M2/M3; Opus agent, primary texts):**
+Lindegren+21 A2 is a MISCITATION for the 1.05-1.4 underestimation
+bracket -- that paper says the OPPOSITE ("they should not be further
+inflated"). Real sources: Fabricius+21 Sec 3.7 (uwu 1.05 5p / 1.22 6p;
+bright-end rise = half-resolved doubles), EBRH21 (parallax <= 30%
+isolated / up to ~80% with a companion within <= 4 arcsec -- OUR BIN'S
+ANGULAR RANGE; PM calibration explicitly declined by that paper),
+Brandt 21 (PM 1.37, bright cross-calibration). Also M3 CONFIRMED: the
+note miscites the sample as "El-Badry & Rix (2018) EDR3" -- E&R18 is
+DR2; our catalog is EBRH21 (Zenodo 4435257, agent-confirmed from the
+paper's own Sec 7). P1 carries related attribution sites -- correction
+arc scope.
+
+**WHAT DIES / SURVIVES / REOPENS:**
+- DIES (as a measurement): "the boost-free bin requires effective errors
+  >= 2.1x" -- the narrow-bin instrument cannot measure f_pm; the number
+  2.12-2.30 is the grid's flat-prior mean (2.00) plus a weak data lean.
+- SURVIVES: the sky's marginals ARE top-heavy vs both flat and
+  null-injection shapes (P(top) 0.24-0.41 vs 0.15-0.19 across 8
+  quartile x seed cells) -- real, weak, significance unquantified; AND
+  the JOINT-fit width demand keeps its passing null controls (arm suite
+  A-E: P(fpm=3.0) <= 0.02 on synthetic skies vs 0.54/0.97 on the real
+  one) -- that instrument had the right null and passed it.
+- REOPENS: the 9L noise-vs-boost fork (L-NOISE-REAL is instrument-null;
+  the L-BOOST-EATEN branch is live again); the 9L pre-signed credence
+  move (56 -> 53) rests on a powerless verdict -- PARKED for an author
+  decision + review round, NOT reverted unilaterally.
+- PUBLIC EXPOSURE: P1 v1.1 (Zenodo, open) carries the claim in the
+  abstract, Sec 4.1, conclusion 1; the colleague brief and all six
+  outreach drafts quote it. HOLDS PLACED: outreach file banner marked
+  ON HOLD; the RNAAS note is frozen at 0.2 (cannot ship); the archived
+  9L output was briefly clobbered by the variant script's second save
+  site and RESTORED from git (script fixed).
+
+**CORRECTION ARC (author's call, options prepared):**
+  (1) RECOMMENDED: stage 9L-b -- a calibrated CONTRAST statistic
+      (posterior odds / delta-lnL between grid ends), truth-ladder
+      calibrated incl. nulls, pre-registered, read on the sky. Outcome
+      either an honest bound ("narrow bin excludes f_pm <= X at Y
+      grade") or honest no-power ("the error claim rests on the joint
+      fits"). Then P1 -> 0.10 + Zenodo v1.2 + App A correction #21 +
+      note rewrite or withdrawal. Hours, not days.
+  (2) FALLBACK: immediate reframe of P1 Sec 4.1 onto the joint-fit,
+      null-controlled width demand; drop the standalone note.
+  An Opus review round on the redesign BEFORE any public correction is
+  recommended. Until resolved: no outreach, no colleague send, no RNAAS.
+
+TRAP #27 (new, standing): a posterior EXPECTATION over a bounded grid
+with a flat prior is not a measurement -- every expectation-type meter
+gets a truth-LADDER calibration including the null AT PRE-REG TIME, and
+its bar must be a value a flat posterior CANNOT satisfy.
+
+CREDENCES: 53 / 8 formally unmoved this close (the 9L-map question is
+PARKED for the author + review round -- moving it is exactly the kind of
+decision the maps exist to discipline).
+
+PLAIN VERDICT: DIFFERENT PHYSICS -- the instrument, not the sky, made
+the number. Caught by our own referee lane before a single email went
+out; publicly correctable because the public record is versioned.
+
+ELI12: A referee asked the one question we never asked ourselves: "if
+the telescope's error bars were actually fine, would your tool notice?"
+We ran that test this morning. It wouldn't -- our tool answers "about
+2x" no matter what you feed it, because 2 is the average of its answer
+menu. So our claim that Gaia's error bars are 2x too small was the tool
+talking, not the sky. The deeper fits that DO pass this test still
+suggest extra noise, so the story is not dead -- but the headline number
+is, until we rebuild the tool honestly. All the emails are on hold, and
+because our publications are versioned, we can correct in the open --
+which is the whole point of doing it this way.

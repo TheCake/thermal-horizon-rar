@@ -1,0 +1,26 @@
+9L-NULLINJ (2026-09-03, the RNAAS referee's M4 control; bars pre-stated at commit 0202e6f BEFORE the run)
+
+[seed 31] N1-null: truth 1.0 -> E[fpm] = 2.04 (P(bottom)=0.19, P(top)=0.16) bar [0.00, 1.45] -> FAIL
+[seed 31] N2-ceiling: truth 1.4 -> E[fpm] = 2.13 (P(bottom)=0.14, P(top)=0.19) bar [1.20, 1.65] -> FAIL
+[seed 31] N2-ongrid: truth 1.5 -> E[fpm] = 2.07 (P(bottom)=0.16, P(top)=0.16) bar [1.25, 1.75] -> FAIL
+[seed 31] N3-regression: truth 2.1 -> E[fpm] = 2.12 bar [2.05, 2.19] -> PASS
+[seed 101] N1-null: truth 1.0 -> E[fpm] = 1.89 (P(bottom)=0.23, P(top)=0.15) bar [0.00, 1.45] -> FAIL
+[seed 101] N2-ceiling: truth 1.4 -> E[fpm] = 2.05 (P(bottom)=0.18, P(top)=0.25) bar [1.20, 1.65] -> FAIL
+[seed 101] N2-ongrid: truth 1.5 -> E[fpm] = 2.06 (P(bottom)=0.18, P(top)=0.26) bar [1.25, 1.75] -> FAIL
+[seed 101] N3-regression: truth 2.1 -> E[fpm] = 2.06 bar [1.99, 2.13] -> PASS
+
+DIAGNOSIS (arithmetic): FPM_GRID = [1.2, 1.5, 1.8, 2.1, 2.4, 3.0]; flat-posterior
+expectation = 2.00 exactly. Null-truth marginals are ~flat (per-node 0.14-0.23 vs
+flat 0.167). The archived G9L-3 "recovery" (truth 2.1 -> 2.12/2.06) was the prior
+mean masquerading as recovery: truth ~ grid mean. TRAP #9 EXECUTED ON OURSELVES.
+
+WHAT THE SKY STILL SHOWS: sky Q1-Q4 marginals are top-heavy vs both flat and the
+null-injection shapes (P(top node) = 0.24-0.41 vs 0.15-0.19) -- a real but WEAK
+and so-far unquantified lean. The joint-fit width demand retains its PASSING null
+controls (arm suite: P(fpm=3.0) <= 0.02 in all arms vs sky 0.54/0.97).
+
+LETTER (per the pre-stated N1 clause): NULL-FAIL -- the narrow-bin meter is
+PRIOR-DOMINATED and cannot measure f_pm at this grade. The note's central claim
+("the boost-free bin requires >= 2.1x") is VETOED as a measurement. The 9L
+verdict L-NOISE-REAL rested on a bar (E[fpm] in [1.8, 2.3]) that a completely
+uninformative posterior satisfies -- instrument-null in the R30 sense.
