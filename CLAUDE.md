@@ -1301,6 +1301,35 @@ NEXT FORK (author's): the three clicks (Zenodo deposit -> reader invite
 only, no alpha) · DR4 credence-map pre-sign session (blocking, before
 2026-12-02; Grok reads the draft map pre-signing).**
 
+**⚠ THE NULLINJ FINDING (2026-09-03 — READ FIRST; correction arc OPEN,
+HOLDS ACTIVE): the RNAAS referee's null-injection demand (bars
+pre-committed 0202e6f) showed the 9L narrow-bin f_pm meter is
+INSTRUMENT-NULL — it recovers E[fpm] ≈ 2 from EVERY injected truth
+(1.0 → 2.04/1.89; 1.4/1.5 → ~2.05-2.13; 2.1 regression exact) because
+the grid's flat-prior mean is exactly 2.00 (trap #9 on ourselves; NEW
+TRAP #27: expectation-over-bounded-grid meters need null-inclusive
+truth-ladder calibration at pre-reg, with bars a flat posterior cannot
+pass). CONSEQUENCES: the public ">= 2.1x measured on the boost-free
+bin" claim (P1 v1.1 abstract/Sec-4.1/conclusion-1, brief, note) is
+VETOED as a measurement; the 9L noise-vs-boost fork is REOPENED
+(L-BOOST-EATEN live again); the 9L pre-signed 56→53 credence move
+rests on a powerless verdict — PARKED for author + review round (do
+NOT move credences unilaterally). ALSO CONFIRMED by primary audit:
+Lindegren+21 miscited for the 1.05-1.4 bracket (paper says the
+OPPOSITE; real sources Fabricius+21 1.05/1.22, EBRH21 parallax
+≤30%/~80%-within-4arcsec + PM-declined, Brandt 1.37 PM), and the
+note's sample citation wrong (E&R18 = DR2; ours = EBRH21 Zenodo
+4435257). SURVIVES: the joint-fit width demand with its PASSING arm
+nulls (P(fpm=3.0) ≤ 0.02 arms vs 0.54/0.97 sky) + a weak top-heavy
+sky lean (P(top) 0.24-0.41 vs null 0.15-0.19). HOLDS: outreach drafts
+(banner'd), colleague send, RNAAS note (frozen 0.2) — NOTHING GOES OUT
+until the arc closes. NEXT: author picks correction arc option 1
+(9L-b calibrated contrast statistic, pre-registered, then Opus review
+round → P1 0.10 → Zenodo v1.2 → correction #21) or option 2 (reframe
+onto joint fits, drop the note). Morning-lane products otherwise
+intact: note 0.2, OUTREACH-DRAFTS-2026-09.md (8 addresses verified),
+RNAAS referee report in the session task output.**
+
 **THE PRE-SEND DELTA ROUND (2026-09-01, scan #4 — four for four): the
 equation + ALL registered claims UNSCOOPED (C&T zero empirical tests in
 31 citations; z-axis uncontested; van Putten/Gillot/Luo unchanged). ONE
