@@ -71,3 +71,57 @@ GA-6 mechanical letter selection from GA-recomputed gates:
   gates {31: ('PASS', 'FAIL'), 101: ('FAIL', 'FAIL')} => B-POWER-DEAD -> OK
 
 GA VERDICT: ALL OK
+
+ROUND 43 ADDENDUM -- GB half (post-report; independent draws)
+
+GB-5 z-ladder range from archived stage prints:
+  min z: mine +0.8600 vs his +0.8600 (tol 1e-09) -> OK
+  max z: mine +1.7900 vs his +1.7900 (tol 1e-09) -> OK
+
+[seed 31] rebuilding population + model...
+[seed 31] narrow counts per quartile: [2203, 2372, 2635, 2740] (sum 9950)
+GB-1 [seed 31] E[fpm] under injection (R = 64, own rng):
+  E[fpm|t=1.0] mean: mine +1.9101 vs his +1.9380 (tol 0.05) -> OK
+  E[fpm|t=1.0] sd: mine 0.100 vs his 0.137 (ratio 0.73) -> MISMATCH
+  E[fpm|t=2.4] mean: mine +1.9622 vs his +1.9820 (tol 0.05) -> OK
+  E[fpm|t=2.4] sd: mine 0.109 vs his 0.097 (ratio 1.12) -> OK
+  GB-4 sky-vs-t2.4 z: mine +2.2420 vs his +2.3100 (tol 0.35) -> OK
+GB-2 [seed 31] Neyman-Pearson oracle:
+  oracle Q1 (1.0 vs 2.4): mine +0.9665 vs his +0.9660 (tol 0.03) -> OK
+  KL(hi||lo)/pair (x1e4): mine +2.1316 vs his +2.1300 (tol 0.05) -> OK
+  oracle Q1 (1.0 vs 2.1): mine +0.9058 vs his +0.9060 (tol 0.03) -> OK
+  oracle Q1: mine +0.9665 vs his +0.9660 (tol 0.03) -> OK
+  oracle Q2: mine +0.9309 vs his +0.9310 (tol 0.03) -> OK
+  oracle Q3: mine +0.9738 vs his +0.9740 (tol 0.03) -> OK
+  oracle Q4: mine +1.0739 vs his +1.0740 (tol 0.03) -> OK
+  Fisher-additive total: mine +1.9755 vs his +1.9750 (tol 0.04) -> OK
+GB-3 [seed 31] pooled four-quartile calibration:
+  S_pooled(t=1.0): -0.919 +- 1.302
+  S_pooled(t=2.4): +0.230 +- 1.071
+  D_pooled: mine +1.1483 vs his +1.3750 (tol 0.3) -> OK
+  2 sigma_pool(pooled): mine +2.3837 vs his +2.2900 (tol 0.45) -> OK
+  pooled power verdict: FAIL (power-dead) -> OK (matches his FAIL)
+  pooled sky z(1.0): mine +2.3989 vs his +2.5100 (tol 0.35) -> OK
+  pooled sky z(2.4): mine +1.8437 vs his +1.8600 (tol 0.35) -> OK
+
+[seed 101] rebuilding population + model...
+[seed 101] narrow counts per quartile: [2203, 2372, 2635, 2740] (sum 9950)
+GB-1 [seed 101] E[fpm] under injection (R = 64, own rng):
+  E[fpm|t=1.0] mean: mine +1.9152 vs his +1.9260 (tol 0.05) -> OK
+  E[fpm|t=1.0] sd: mine 0.134 vs his 0.134 (ratio 1.00) -> OK
+  E[fpm|t=2.4] mean: mine +1.9992 vs his +1.9820 (tol 0.05) -> OK
+  E[fpm|t=2.4] sd: mine 0.142 vs his 0.120 (ratio 1.18) -> OK
+  GB-4 sky-vs-t2.4 z: mine +0.9140 vs his +1.2200 (tol 0.35) -> OK
+GB-2 [seed 101] Neyman-Pearson oracle:
+  oracle Q1 (1.0 vs 2.4): mine +0.9976 vs his +0.9970 (tol 0.03) -> OK
+  KL(hi||lo)/pair (x1e4): mine +2.3002 vs his +2.3000 (tol 0.05) -> OK
+GB-3 [seed 101] pooled four-quartile calibration:
+  S_pooled(t=1.0): -1.239 +- 1.229
+  S_pooled(t=2.4): +0.513 +- 0.752
+  D_pooled: mine +1.7527 vs his +1.4230 (tol 0.3) -> MISMATCH
+  2 sigma_pool(pooled): mine +2.0370 vs his +2.0380 (tol 0.45) -> OK
+  pooled power verdict: FAIL (power-dead) -> OK (matches his FAIL)
+  pooled sky z(1.0): mine +1.7587 vs his +2.1900 (tol 0.35) -> MISMATCH
+  pooled sky z(2.4): mine +0.5428 vs his +0.5900 (tol 0.35) -> OK
+
+GB VERDICT: MISMATCH PRESENT -- investigate
