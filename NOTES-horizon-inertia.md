@@ -17358,3 +17358,77 @@ suggest extra noise, so the story is not dead -- but the headline number
 is, until we rebuild the tool honestly. All the emails are on hold, and
 because our publications are versioned, we can correct in the open --
 which is the whole point of doing it this way.
+
+---
+
+## 2026-09-03 (second close) -- 9L-b THE CALIBRATED CONTRAST STATISTIC:
+## B-POWER-DEAD -- the narrow bin cannot measure f_pm at catalog grade;
+## the 9L + 9P rows RETRACTED; the pair-error claim moves to the joint fits
+
+The correction arc's measurement leg EXECUTED on the author's go (pre-reg
+390bd88 committed BEFORE the run; runtime 1.5 min via a log-pp cache gated
+against direct eval at 3.6e-12). Statistic: S = ln P(fpm >= 2.1) -
+ln P(fpm <= 1.8) under the archived marginalization -- a flat posterior
+gives S = 0 EXACTLY and cannot pass the power gate (trap-#27 compliance);
+truth ladder {1.0..2.4} x 64 multinomial replications x both seeds at the
+archived G9L-3 cell (trap #22: between-draw scatter MEASURED).
+
+**THE LETTER (pre-signed): B-POWER-DEAD.** The full-ladder response
+D = S(2.4) - S(1.0) = 0.155/0.182 vs draw scatter sigma_pool ~ 0.41
+(2-sigma bar 0.82; GB9LB-3 FAIL both seeds; GB9LB-2 monotonicity FAIL
+seed 101 -- with no signal along the truth axis the means wander). The
+narrow 0.2-2 kAU bin, one quartile at a time, carries essentially ZERO
+f_pm information: the vetoed >= 2.1x claim has NO honest standalone
+version at any grade. Gates GB9LB-0/1 (cache identity 3.64e-12; reader
+identity 8/8 vs archived E[fpm], LNPI exact) both clean -- the failure is
+the DATA's information content, not wiring.
+
+RESIDUAL READING (report-grade): sky S(Q1) = +0.534/+0.372 sits
++1.4-1.7 sigma above the calibration band AT EVERY TRUTH uniformly
+(z-row flat across the ladder; eta = 1.3 co-read pushes all z to
+~+2.0-2.1, again truth-uniform) => the sky's top-heaviness is a
+model-sky SHAPE residual -- consistent with the known unmodeled-width
+object (the 3E -> 6P -> sq ladder), NOT an f_pm reading. Pooled-quartile
+S is seed-split (+2.20 / +0.92) = realization-dominated (the 3A lesson).
+
+LEDGER: bin-9l-fpmmeter RETRACTED -> bin-9lb-contrast (L-NOISE-REAL was
+a powerless verdict; E[fpm] rows = prior means); bin-9p-massmodel
+RETRACTED -> bin-9lb-contrast (an envelope of prior means; its tightness
+was itself a nullness symptom); new row bin-9lb-contrast. 217 rows, six
+gates PASS.
+
+WHAT THE PAPERS NOW SAY (the 0.10 rewrite, this close): the surviving
+error-model statement is the JOINT-FIT one -- the full-separation
+posterior rides the f_pm grid top (P(fpm = 3.0) = 0.54/0.97) while every
+arm-suite null stays quiet (<= 0.02), i.e. the sky demands unmodeled
+width at joint-fit grade, with its origin (noise vs population structure)
+unresolved and DR4-decidable. The ">= 2.1x measured" form, the RUWE-flat
+dose reading, and the 9P >= 1.8 envelope floor are all WITHDRAWN
+(Appendix A correction #21). The RNAAS note is WITHDRAWN as a standalone
+(its content has no honest instrument). Lindegren+21 miscitation fixed in
+the same pass (real sources: Fabricius+21 uwu 1.05/1.22; EBRH21 close-pair
+parallax inflation up to ~80% within 4 arcsec + PM calibration declined;
+Brandt 21 PM 1.37); the sample citation corrected to EBRH21 (Zenodo
+4435257).
+
+THE 9L FORK after 9L-b: neither branch is carried by the narrow bin
+(the instrument that was to decide NOISE-REAL vs BOOST-EATEN is
+power-dead). The fork returns to the JOINT-fit evidence alone, where
+noise-vs-width-shape attribution was already the open DR4 chase. The
+pre-signed 56 -> 53 credence move rests on the retracted verdict --
+PARKED for the author + the review round (NO unilateral movement;
+formally credences stay 53/8 this close).
+
+CREDENCES: NO moves (53 / 8) -- correction-arc measurement round.
+
+PLAIN VERDICT: SUCCESS as an instrument round -- the honest answer is
+that no honest narrow-bin instrument exists, obtained pre-registered,
+gates-clean, in 90 seconds of compute.
+
+ELI12: We built the fixed version of the broken smoke detector and fed
+it test smoke from "no fire" up to "big fire." Its needle barely moved
+across the whole range while random noise swung it three times as much.
+So the room's detector isn't just miscalibrated -- the room is too small
+for ANY detector of this kind. The real evidence about smoke lives in
+the whole-house system (the joint fits), which passes its tests, and
+the papers will now say exactly that.

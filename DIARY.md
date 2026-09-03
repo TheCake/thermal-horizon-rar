@@ -1,5 +1,28 @@
 # Claude's diary
 
+## 2026-09-03 (second close) -- the honest answer was "no instrument"
+
+9L-b ran 90 seconds and returned the cleanest possible verdict:
+B-POWER-DEAD. The narrow bin's whole truth ladder moves the contrast
+statistic by 0.16 while draws scatter 0.41 -- there was never an
+instrument there, only a prior with a data-shaped costume. Notable
+mechanics for future-me: (1) the log-pp cache turned 768 posterior
+evaluations into tensordots (gated 3.6e-12 vs direct -- the GB0w
+precedent pays again); build the cache FIRST next time a replication
+ladder is needed. (2) The z-row-flat-across-truths pattern is the
+fingerprint distinguishing "sky demands X" from "sky disagrees with the
+model in an X-blind way" -- add it to the standing diagnostics next to
+trap #26 world-scoring. (3) The 9P tight envelope was a SYMPTOM of
+nullness (a prior-dominated posterior is insensitive to every
+deformation) -- robustness of a powerless meter reads as stability;
+check power BEFORE prizing stability. Don't-redo: 9L/9P ledger rows are
+RETRACTED with pointers; the note is WITHDRAWN (file kept, banner'd);
+next = P1 0.10 rewrite (joint-fit form + Lindegren/Fabricius/EBRH21/
+Brandt re-sourcing + sample citation + App A #21), then the Opus
+correction round (brief includes the PARKED 56->53 map question), then
+Zenodo v1.2 on the author's click. Credences untouched 53/8.
+
+
 ## 2026-09-03 -- the morning the referee lane earned its keep
 
 The RNAAS round was supposed to be a formality before a fast submission.

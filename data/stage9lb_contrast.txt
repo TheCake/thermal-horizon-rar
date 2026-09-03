@@ -1,0 +1,49 @@
+9L-b THE CALIBRATED CONTRAST STATISTIC (correction arc leg 1; bars pre-committed BEFORE the run; S = ln P(fpm>=2.1) - ln P(fpm<=1.8); flat posterior S = 0 exactly; NO credence movement under any letter)
+
+[seed 31] GB9LB-1 LNPI identity: max|d| = 0.00e+00 -> PASS
+[seed 31] GB9LB-1 reader Q1: E[fpm] = 2.206 vs archived 2.21 -> PASS
+[seed 31] GB9LB-1 reader Q2: E[fpm] = 2.168 vs archived 2.17 -> PASS
+[seed 31] GB9LB-1 reader Q3: E[fpm] = 2.263 vs archived 2.26 -> PASS
+[seed 31] GB9LB-1 reader Q4: E[fpm] = 2.117 vs archived 2.12 -> PASS
+[seed 31] GB9LB-0 cache identity: max|dT| = 3.64e-12 -> PASS
+[seed 31] calib truth 1.0: S = -0.180 +- 0.432 (R = 64)  (0.4 min)
+[seed 31] calib truth 1.2: S = -0.224 +- 0.424 (R = 64)  (0.4 min)
+[seed 31] calib truth 1.5: S = -0.199 +- 0.439 (R = 64)  (0.4 min)
+[seed 31] calib truth 1.8: S = -0.116 +- 0.460 (R = 64)  (0.4 min)
+[seed 31] calib truth 2.1: S = -0.104 +- 0.369 (R = 64)  (0.4 min)
+[seed 31] calib truth 2.4: S = -0.025 +- 0.336 (R = 64)  (0.5 min)
+[seed 31] GB9LB-2 monotonicity: min adjacent step = -0.044 vs -1 SE = -0.052 -> PASS
+[seed 31] GB9LB-3 power: D = S(2.4) - S(1.0) = 0.155 vs 2 sigma_pool = 0.824 -> FAIL
+[seed 31] SKY S(Q1..Q4) = +0.534, +0.481, +0.472, +0.341; pooled = +2.204
+[seed 31] PRIMARY Q1 z(truth) = 1.0:+1.65, 1.2:+1.79, 1.5:+1.67, 1.8:+1.41, 2.1:+1.73, 2.4:+1.66
+[seed 31] Q1 empirical exceedance counts (of 64) = 1.0:3, 1.2:2, 1.5:0, 1.8:1, 2.1:1, 2.4:3
+[seed 31] co-read sq=0.2 truth 1.0: S = -0.278 +- 0.488; z_sky = +1.66
+[seed 31] co-read sq=0.2 truth 2.4: S = +0.042 +- 0.420; z_sky = +1.17
+[seed 31] co-read eta=1.3 truth 1.0: S = -0.229 +- 0.469; z_sky(alt) = +2.09 (S_sky_alt = +0.753)
+[seed 31] co-read eta=1.3 truth 2.4: S = -0.024 +- 0.380; z_sky(alt) = +2.05 (S_sky_alt = +0.753)
+
+[seed 101] GB9LB-1 LNPI identity: max|d| = 0.00e+00 -> PASS
+[seed 101] GB9LB-1 reader Q1: E[fpm] = 2.129 vs archived 2.13 -> PASS
+[seed 101] GB9LB-1 reader Q2: E[fpm] = 2.266 vs archived 2.27 -> PASS
+[seed 101] GB9LB-1 reader Q3: E[fpm] = 2.249 vs archived 2.25 -> PASS
+[seed 101] GB9LB-1 reader Q4: E[fpm] = 2.304 vs archived 2.30 -> PASS
+[seed 101] GB9LB-0 cache identity: max|dT| = 3.64e-12 -> PASS
+[seed 101] calib truth 1.0: S = -0.212 +- 0.426 (R = 64)  (1.2 min)
+[seed 101] calib truth 1.2: S = -0.316 +- 0.466 (R = 64)  (1.2 min)
+[seed 101] calib truth 1.5: S = -0.217 +- 0.381 (R = 64)  (1.2 min)
+[seed 101] calib truth 1.8: S = +0.014 +- 0.350 (R = 64)  (1.2 min)
+[seed 101] calib truth 2.1: S = -0.005 +- 0.435 (R = 64)  (1.2 min)
+[seed 101] calib truth 2.4: S = -0.030 +- 0.393 (R = 64)  (1.2 min)
+[seed 101] GB9LB-2 monotonicity: min adjacent step = -0.104 vs -1 SE = -0.051 -> FAIL
+[seed 101] GB9LB-3 power: D = S(2.4) - S(1.0) = 0.182 vs 2 sigma_pool = 0.821 -> FAIL
+[seed 101] SKY S(Q1..Q4) = +0.372, +0.640, +0.670, +0.629; pooled = +0.921
+[seed 101] PRIMARY Q1 z(truth) = 1.0:+1.37, 1.2:+1.48, 1.5:+1.55, 1.8:+1.02, 2.1:+0.86, 2.4:+1.02
+[seed 101] Q1 empirical exceedance counts (of 64) = 1.0:7, 1.2:2, 1.5:3, 1.8:13, 2.1:12, 2.4:8
+[seed 101] co-read sq=0.2 truth 1.0: S = -0.141 +- 0.357; z_sky = +1.44
+[seed 101] co-read sq=0.2 truth 2.4: S = +0.069 +- 0.411; z_sky = +0.74
+[seed 101] co-read eta=1.3 truth 1.0: S = -0.196 +- 0.450; z_sky(alt) = +2.01 (S_sky_alt = +0.708)
+[seed 101] co-read eta=1.3 truth 2.4: S = -0.085 +- 0.448; z_sky(alt) = +1.77 (S_sky_alt = +0.708)
+
+==> 9L-b LETTER (locked grammar): B-POWER-DEAD - the narrow bin cannot measure fpm at catalog grade (GB9LB-2 PASS/FAIL, GB9LB-3 FAIL/FAIL); the error claim moves ENTIRELY to the joint fits; the note is withdrawn or reframed onto them. NO credence movement.
+
+done (1.5 min)

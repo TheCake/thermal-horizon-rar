@@ -1,4 +1,4 @@
-STAGE 6Q: ledger audit + world table  (216 ledger rows)
+STAGE 6Q: ledger audit + world table  (217 ledger rows)
 ==============================================================================
 G1 (ids/status/fields): PASS
 G2 (script/output on disk): PASS
