@@ -1301,8 +1301,8 @@ NEXT FORK (author's): the three clicks (Zenodo deposit -> reader invite
 only, no alpha) · DR4 credence-map pre-sign session (blocking, before
 2026-12-02; Grok reads the draft map pre-signing).**
 
-**⚠ THE NULLINJ FINDING (2026-09-03 — READ FIRST; correction arc OPEN,
-HOLDS ACTIVE): the RNAAS referee's null-injection demand (bars
+**THE NULLINJ FINDING (2026-09-03 morning — the correction arc it opened
+CLOSED the same day; read this block then the closing block below): the RNAAS referee's null-injection demand (bars
 pre-committed 0202e6f) showed the 9L narrow-bin f_pm meter is
 INSTRUMENT-NULL — it recovers E[fpm] ≈ 2 from EVERY injected truth
 (1.0 → 2.04/1.89; 1.4/1.5 → ~2.05-2.13; 2.1 regression exact) because
@@ -1329,6 +1329,61 @@ round → P1 0.10 → Zenodo v1.2 → correction #21) or option 2 (reframe
 onto joint fits, drop the note). Morning-lane products otherwise
 intact: note 0.2, OUTREACH-DRAFTS-2026-09.md (8 addresses verified),
 RNAAS referee report in the session task output.**
+
+**THE CORRECTION ARC CLOSED (2026-09-03, same day, option 1 on the
+author's "Go" — the strongest self-correction in the program's record per
+its own referee): 9L-b (pre-reg 390bd88 BEFORE the run; S = ln P(fpm ≥
+2.1) − ln P(fpm ≤ 1.8), flat posterior S = 0 exactly = trap-#27-proof;
+truth ladder × 64 reps × 2 seeds; log-pp cache gated 3.6e-12; 1.5 min)
+fired the pre-signed **B-POWER-DEAD**: ladder response 0.155/0.182 vs
+2σ_pool 0.82 — the narrow bin carries no usable f_pm information; the
+≥2.1× claim has NO honest standalone version. Ledger: bin-9l-fpmmeter +
+bin-9p-massmodel RETRACTED → bin-9lb-contrast (the 9P envelope's
+tightness re-read as a nullness SYMPTOM). P1 → 0.10 (claim withdrawn at
+every site; §4.1 = the audit record; §6.3 legitimacy rebuilt on
+injection controls; Lindegren miscite fixed → Fabricius+21/Brandt 21
+added; App A correction #21; counts twenty-one both papers); P2 → 0.10;
+note WITHDRAWN (banner, never submitted); brief + all six outreach
+drafts rewritten to the corrected form (the Boufourou letter now leads
+with the concession as estimator-forensics kinship). **ROUND 43** (fresh
+Opus; REVIEW-ROUND43-OPUS.md uncommitted; GA blind cf4ece9 = protocol
+execution #12 ALL OK + GB independent draws — oracle confirmed to 3–4
+digits, his C8 footgun softened to near-or-above-2 by my replication):
+ruling **hole NO for the letter** — his Neyman–Pearson ORACLE
+STRENGTHENED it (0.97–1.00σ per quartile, 1.98σ Fisher-pooled over ALL
+9,950 narrow pairs, all nuisances known ⇒ bin-level powerlessness
+INFORMATION-BOUND-LICENSED, banked); every pre-signed grammar branch
+withdraws the claim (his adversarial check). **Hole YES-narrow for the
+0.10 text**, eleven conditions ALL ADOPTED same close (my Fig-2b caption
+had shipped a WRONG number in the correction itself — 2.2 labeled "the
+prior mean" which is 2.000; replacement citations were imprecise:
+Fabricius = 5p-vs-6p parallax axis with NO numeric PM factor [primary
+read: his own exclusion rationale fails — the external factors 2.4/2.0/
+1.9 are Gaia-only parallax claims; fix = the PM/parallax SPLIT, envelope
+relabeled PM-specific on Brandt 1.37]; Lindegren's "should not be
+further inflated" restored WITH its load-bearing qualifier "based on
+the goodness-of-fit statistics"). **9L-c** (R43-C2, pre-reg 1451803):
+full-separation Q1 channel at α = 0 = **C-CHANNEL-DEAD-TOO** — responds
+~20× the narrow bin yet missed its 2σ bar by 2.5% in BOTH seeds (letter
+fired unmoved; miss axis = the 81-pair 20–50 kAU bin, noted not chased)
+⇒ Q1 E[f_pm] = 1.97–2.25 is quoted **FIT-INTERNAL** everywhere
+(abstract/§4.1/§6.3, flat-prior-mean 2.00 stated in-sentence); the
+prior-proof load rides the FULL-SAMPLE controls alone (arms ≤ 0.02 vs
+sky 0.54/0.97). P1 → **0.11** (abstract 250 exact); ledger 218 rows six
+gates PASS; ALL NINE paper suites PASS. NEW STANDING RULE (R43,
+adopted): compute the Neyman–Pearson separation between a bar's
+hypotheses BEFORE pre-registering the bar (9L dies at design time at
+0.91σ). CREDENCES: 53/8 formally unmoved all day; **the 9L 56→53 map
+question stays PARKED for the author** with R43's labeled ADVISORY on
+file (HOLD 53 but RE-ANCHOR: strike 9L from the stated basis; do not
+revert to 56; the truth-uniform boost-free-bin shape mismatch = new
+anomaly-down weight roughly offsetting the removed prop). REMAINING
+CLICKS (author): P1 0.11 + P2 0.10 read-through → **Zenodo v1.2** (new
+version, two PDFs, correction #21 named in the description) → then the
+outreach sends (drafts hold until v1.2 is live; update their DOI to the
+v1.2 record) + colleague send. The author's Italy window: everything is
+correction-complete before departure; the C&T letter carries the
+Italy-call sentence once dates are set.**
 
 **THE PRE-SEND DELTA ROUND (2026-09-01, scan #4 — four for four): the
 equation + ALL registered claims UNSCOOPED (C&T zero empirical tests in
