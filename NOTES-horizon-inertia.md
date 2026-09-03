@@ -17432,3 +17432,93 @@ So the room's detector isn't just miscalibrated -- the room is too small
 for ANY detector of this kind. The real evidence about smoke lives in
 the whole-house system (the joint fits), which passes its tests, and
 the papers will now say exactly that.
+
+---
+
+## 2026-09-03 (third close) -- ROUND 43 + 9L-c: the correction arc CLOSES.
+## Letter AFFIRMED at information-bound grade; correction text repaired per
+## eleven conditions; the C2 calibration fired C-CHANNEL-DEAD-TOO; P1 -> 0.11
+
+ROUND 43 (fresh Opus referee vs the whole arc; REVIEW-ROUND43-OPUS.md
+uncommitted): pre-reg integrity CLEAN (390bd88 byte-identical, verifiably
+pre-run); ZERO computed mismatches -- every 9L-b number reproduced, most
+exactly. Ruling: UNPATCHED HOLE **NO** for B-POWER-DEAD -- and his own
+adversarial computation STRENGTHENED it: the Neyman-Pearson ORACLE (all
+nuisances known) separates formal-errors truth from 2.4x by only
+0.97/1.00 sigma per clean quartile and 1.98 sigma Fisher-pooled over ALL
+9,950 narrow pairs => the bin, not the statistic, is the limitation
+(bin-level wording now information-bound-LICENSED; banked, ledger C9).
+His adversarial branch check: with the power gate deleted, the pre-signed
+grammar still lands B-GRAY -- EVERY branch withdraws the claim. UNPATCHED
+HOLE **YES-narrow** for the 0.10 text (not the withdrawal): M1 the Fig 2b
+caption called ~2.2 "the meter's prior mean" (it is 2.000; the 0.12-0.30
+excess is the truth-uniform residual -- a wrong number in the correction's
+own headline figure, MINE); M2 residual range quoting; M4/M5 the
+REPLACEMENT citations were themselves imprecise (Fabricius = 5p-vs-6p
+solution axis, parallax-only, NO numeric PM factor; Lindegren's "should
+not be further inflated" carries the load-bearing qualifier "based on the
+goodness-of-fit statistics" = don't-double-count-RUWE, not realism); M6
+the fpm <= 1.8 PHYS ceiling vs Fabricius's external factors. ALL ELEVEN
+CONDITIONS ADOPTED same close. Verification: GA blind pre-committed
+cf4ece9 (protocol execution #12, ALL OK first firing) + GB with
+independent draws (oracle CONFIRMED to 3-4 digits; three draw-grade
+deviations disclosed, one materially softening his C8 footgun claim --
+pooled sky z(1.0) = +2.4/+1.8-2.2 across replications, "near or above 2",
+not categorically > 2).
+
+C7 primary read (agent, Fabricius full text): the referee's own suggested
+exclusion rationale FAILS -- Fabricius Sec 3.7.1 explicitly ASSUMES
+external-catalogue errors negligible, so 2.4 (Hip) / 2.0 (VLBI) / 1.9
+(HST) / 2.17 (LMC) are claimed Gaia-only PARALLAX factors. Honest repair
+adopted: the proper-motion/parallax SPLIT -- largest published PM factor
+= Brandt 1.37 (the envelope's basis, now labeled PM-specific), parallax
+literature 1.9-2.4 disclosed alongside; "3.0 exceeds every published
+factor of either kind" replaces "twice the ceiling".
+
+9L-c (R43-C2, pre-reg 1451803 BEFORE the run; gates 6.9e-18 + reader
+identity 1e-4): the full-separation Q1 noise-channel truth ladder at
+alpha = 0 -- **C-CHANNEL-DEAD-TOO by the pre-signed letter**: D =
+3.116/3.358 vs 2 sigma_pool = 3.191/3.444 -- the channel responds ~20x
+the narrow bin and MISSES the bar by 2.5% in both seeds (near-miss = a
+disclosed fact; the letter is the letter; the miss axis = the 81-pair
+20-50 kAU bin's draw scatter, noted per the 9R-c autopsy rule, NOT
+chased). CONSEQUENCE (pre-signed): the C2 caveat is PERMANENT -- Q1
+E[fpm] = 1.97-2.25 is quoted FIT-INTERNAL everywhere (grid flat-prior
+mean 2.00 stated in the same sentence); Sec-6.3's clean-strata noise
+sentence weakened to fit-internal; the prior-proof load rides the
+FULL-SAMPLE controls alone (arms <= 0.02 vs sky 0.54/0.97). Diagnostic
+sky z(1.0) = +3.45/+2.10 NEVER quotable (alpha = 0 soaks wide-bin boost
+into fpm).
+
+P1 -> draft 0.11 (abstract 250w exact; all sites consistent); P2 stays
+0.10; ledger 218 rows six gates PASS (bin-9lc-jointcal added; 9lb row
+gains the C8 pooled-S fence + C9 banked oracle). Books + gate suites
+re-run this close. R43's process advisory ADOPTED AS STANDING RULE
+(DIARY): before pre-registering any bar on a derived statistic, compute
+the Neyman-Pearson separation between the hypotheses the bar
+distinguishes -- 9L would have died at design time at 0.91 sigma.
+
+CREDENCES: NO moves (53 / 8). The 9L map question stays PARKED for the
+author with R43's clearly-labeled ADVISORY on file: HOLD 53 but
+RE-ANCHOR (strike 9L from the stated basis; do NOT revert to 56; the
+truth-uniform boost-free-bin shape mismatch = a new anomaly-down
+consideration roughly offsetting the removed anomaly-down prop; mark the
+number RE-ANCHORED so the record cannot confuse it with the 9L-signed
+53). The author decides.
+
+PLAIN VERDICT: SUCCESS -- the arc closed in one day: claim vetoed,
+instrument rebuilt honestly, letter affirmed at information-bound grade,
+papers corrected, every reviewer number independently verified, and the
+one blocking calibration executed with its own pre-signed bars firing
+against convenience (fit-internal labels adopted, not argued away).
+
+ELI12: The outside referee tried hard to break our fixed smoke detector
+and instead proved something stronger: even a PERFECT detector in that
+room could never hear the difference we once claimed -- the room is just
+too quiet. He also caught a wrong number in our apology-figure's caption
+and two sloppy footnotes in the apology itself, which we fixed. We then
+tested the whole-house system's cleanest floor the same honest way; it
+came up just short of the bar too, so the paper now says plainly that
+the ~2x noise number comes from inside the big fit, not from any
+independent gauge. Everything is written down, versioned, and ready for
+the corrected upload.

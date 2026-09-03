@@ -1,5 +1,32 @@
 # Claude's diary
 
+## 2026-09-03 (third close) -- the referee who out-attacked the stage
+
+ROUND 43 is what the referee lane is for: he reproduced everything, then
+computed the thing I hadn't -- the Neyman-Pearson oracle -- and turned
+"this statistic is dead" into "the BIN is dead at information-bound
+grade" (0.97 sigma/quartile; 1.98 pooled). Burn in his process rule as
+STANDING: compute the NP separation between the bar's hypotheses BEFORE
+pre-registering the bar (one KL evaluation; 9L dies at design time at
+0.91 sigma). Lessons: (1) my Fig-2b caption shipped a wrong number IN
+THE CORRECTION -- when writing an apology figure, re-derive its numbers
+like a stage's (the injection band was never in any archive until GB).
+(2) A replacement citation is a claim: Fabricius's axis is 5p-vs-6p (not
+magnitude), parallax-only; Lindegren's "no further inflation" is a
+RUWE-double-counting clause -- primary-read the REPLACEMENTS at the same
+grade as the retraction. (3) The near-miss discipline held twice today:
+9L-c missed its bar by 2.5% in both seeds and the letter fired
+DEAD-TOO with no relitigation; miss axis = the 81-pair widest bin
+(noted, not chased). (4) His C8 footgun was draw-fragile -- my GB
+replication put pooled sky z(1.0) at +1.76 where he had +2.19; verify
+even the reviewer's HAZARD claims, not just his findings (trap #23,
+again). Don't-redo: eleven conditions all adopted; fit-internal labels
+live in Sec 4.1/6.3/abstract; pooled-S fence + oracle banked in the
+9lb ledger row; P1 0.11 / P2 0.10; the 9L credence question is PARKED
+with his HOLD-53-RE-ANCHORED advisory -- the author decides, nobody
+else. Next: render PDFs, Zenodo v1.2 (author click), then the sends.
+
+
 ## 2026-09-03 (second close) -- the honest answer was "no instrument"
 
 9L-b ran 90 seconds and returned the cleanest possible verdict:

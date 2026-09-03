@@ -48,7 +48,9 @@ gate("G-SOL-3", "Penoyre, Z., Belokurov, V., & Evans, N. W. 2022, MNRAS 513, 243
 # these scoping strings guarded is WITHDRAWN; the gate now pins the
 # withdrawal at the abstract + conclusion sites and the surviving
 # joint-fit scoping in Sec 4.1.
-gate("G-SOL-4", "failed a null-injection audit" in P1
+# needle updated 2026-09-03 (R43 adoption pass): abstract wording tightened
+# to "failed its null injection" for the 250-word contract.
+gate("G-SOL-4", "failed its null injection" in P1
      and "the narrow-bin calibrator that earlier versions quoted" in P1
      and "effective inflation the joint forward model requires" in P1
      and "the effective pair-level velocity errors are at least 2.1 times" not in P1)

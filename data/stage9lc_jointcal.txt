@@ -1,0 +1,23 @@
+9L-c THE FULL-SEPARATION NOISE-CHANNEL CALIBRATION (R43-C2; pre-reg committed BEFORE the run; alpha = 0 disclosed scope; NO credence movement; NO sky verdict)
+
+[seed 31] Q1 counts per bin: [2203, 835, 399, 81]
+[seed 31] GC9LC-1 reader identity: bin-0 S = +0.5339 vs 9L-b +0.534 -> PASS
+[seed 31] GC9LC-0 cache-vs-pp identity: max|dp| = 6.94e-18 -> PASS
+[seed 31] calib truth 1.0: S = -2.878 +- 1.724; P(fpm=3.0) = 0.008 +- 0.033 (flat 0.167)  (0.3 min)
+[seed 31] calib truth 1.5: S = -2.071 +- 1.638; P(fpm=3.0) = 0.020 +- 0.075 (flat 0.167)  (0.3 min)
+[seed 31] calib truth 2.1: S = +0.237 +- 1.407; P(fpm=3.0) = 0.059 +- 0.104 (flat 0.167)  (0.3 min)
+[seed 31] POWER: D = S(2.1) - S(1.0) = 3.116 vs 2 sigma_pool = 3.191 -> DEAD
+[seed 31] DIAGNOSTIC-ONLY sky: S = +3.060; z(truth) = 1.0:+3.45, 1.5:+3.13, 2.1:+2.01
+
+[seed 101] Q1 counts per bin: [2203, 835, 399, 81]
+[seed 101] GC9LC-1 reader identity: bin-0 S = +0.3716 vs 9L-b +0.372 -> PASS
+[seed 101] GC9LC-0 cache-vs-pp identity: max|dp| = 1.39e-17 -> PASS
+[seed 101] calib truth 1.0: S = -2.724 +- 2.125; P(fpm=3.0) = 0.017 +- 0.058 (flat 0.167)  (0.6 min)
+[seed 101] calib truth 1.5: S = -2.405 +- 1.695; P(fpm=3.0) = 0.027 +- 0.078 (flat 0.167)  (0.6 min)
+[seed 101] calib truth 2.1: S = +0.634 +- 1.228; P(fpm=3.0) = 0.045 +- 0.098 (flat 0.167)  (0.6 min)
+[seed 101] POWER: D = S(2.1) - S(1.0) = 3.358 vs 2 sigma_pool = 3.444 -> DEAD
+[seed 101] DIAGNOSTIC-ONLY sky: S = +1.743; z(truth) = 1.0:+2.10, 1.5:+2.45, 2.1:+0.90
+
+==> 9L-c LETTER (locked grammar): C-CHANNEL-DEAD-TOO - the C2 caveat is PERMANENT (Q1 E[fpm] only with the flat-prior-mean sentence; Sec-6.3 sentence weakened to fit-internal status). NO credence movement; NO sky verdict.
+
+done (0.6 min)

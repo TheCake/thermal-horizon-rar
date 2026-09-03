@@ -697,3 +697,18 @@ P(f"\ndone ({(time.time()-t0)/60:.1f} min)")
 with open('data/stage9lb_contrast.txt', 'w') as f:
     f.write("\n".join(L_) + "\n")
 print("\nsaved: data/stage9lb_contrast.txt")
+
+# ---------------------------------------------------------------------------
+# POST-ROUND-43 NOTE (2026-09-03, appended AFTER the report; non-functional;
+# the pre-registered blob is commit 390bd88 -- this comment is not part of it):
+# (1) The pooled four-quartile sky S printed above (+2.204/+0.921) is
+#     UNCALIBRATED in this stage. ROUND 43 + calcs/round43_gb.py calibrated
+#     it: ALSO POWER-DEAD (D 1.15-1.75 vs 2sigma 2.0-2.4), and its sky
+#     z(1.0) = +2.4 / +1.8-2.2 (draw-grade) is a truth-uniform artifact
+#     that would read as a false B-NOISE-BOUNDED under the z-grammar alone.
+#     NEVER read the pooled S as a noise measurement.
+# (2) R43 oracle bound (banked): the Neyman-Pearson ceiling for truth 1.0
+#     vs 2.4, all nuisances known, is < 1 sigma per quartile and 1.98 sigma
+#     pooled over all 9,950 narrow pairs -- the bin, not the statistic, is
+#     the limitation.
+# ---------------------------------------------------------------------------
