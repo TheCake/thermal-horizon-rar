@@ -252,7 +252,7 @@ The complete list, including the corrections specific to the wide-binary analysi
 
 ## Appendix B: reproducibility
 
-Every quantitative claim maps to a named script and output in the repository (github.com/TheCake/thermal-horizon-rar; public at circulation), alongside the chronological program record (PAPER.md, the long-form companion to both papers), the audited measurement ledger (LEDGER.csv), and the SHA256 data manifest. Key mappings (all under calcs/):
+Every quantitative claim maps to a named script and output in the repository (github.com/TheCake/thermal-horizon-rar; public), alongside the chronological program record (PAPER.md, the long-form companion to both papers), the audited measurement ledger (LEDGER.csv), and the SHA256 data manifest. Key mappings (all under calcs/):
 
 - the screening index: sparc_rar_fit.py, stage4h_p_ml.py
 - the branch and rung tests: stage4a through stage4f
@@ -275,7 +275,7 @@ Every quantitative claim maps to a named script and output in the repository (gi
 
 Large datasets are re-fetched by documented URLs: SPARC via Zenodo, the KiDS reductions via the survey portal and arXiv source.
 
-Data availability: all derived data products, stage outputs, scripts, the audited measurement ledger, and the SHA256 data manifest are in the repository (public at circulation); the large source catalogs are re-fetched by the documented URLs above.
+Data availability: all derived data products, stage outputs, scripts, the audited measurement ledger, and the SHA256 data manifest are in the repository (public); the large source catalogs are re-fetched by the documented URLs above.
 
 ## References
 

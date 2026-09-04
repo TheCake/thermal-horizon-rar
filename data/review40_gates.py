@@ -82,7 +82,10 @@ checks = [
     ("G16 spectroscopic coverage (m20)", ["three of the twenty-two"]),
     ("G17 NSS coverage disclosure (m19)", ["Seven of the nine"]),
     ("G18 secular-mixing staleness item (m22)", ["−0.90", "stage10o_p15erode.py"]),
-    ("G19 repository status (M7a)", ["private at the time of writing"]),
+    # G19 baseline advanced 2026-09-04: the author flipped the repository
+    # PUBLIC (verified anonymously, HTTP 200); the private-era wording is
+    # retired and the gate now pins the present-tense form.
+    ("G19 repository status (M7a -> public)", ["which is public"]),
     # G20 baseline superseded 2026-09-03 (correction #21): the note is
     # withdrawn, not submitted; the gate now pins the withdrawal statement.
     ("G20 companion-note withdrawal (M7b -> #21)",

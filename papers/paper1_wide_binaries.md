@@ -20,7 +20,7 @@ This paper does three things. It audits the pair-level velocity error budget of 
 
 Our conclusions are deliberately two-sided. The data do not support the full galactic-calibration boost in this catalog once astrometric quality is accounted for. The cleanest strata exclude α ≥ 0.5, in units of the galactic calibration, at every anchoring of the measured companion prior. They also do not vindicate the Newtonian null as usually stated. The same strata allow amplitudes up to 0.3–0.5, and they show a mild interior preference for 0.1–0.3 at the low-conversion edge of the measured companion prior that dissolves toward α = 0 at mid and high conversion; α = 0 is not excluded. A model-light median excess over the Newton-plus-nuisances expectation persists, and a small population of perpendicular-moving pairs sits above the Newtonian velocity bound with a sharp termination beyond the boosted edge, a pair of counts that survives every contaminant identity we could test. The decisive systematics are named and are measurable with Gaia DR4 epoch astrometry.
 
-The analysis was run under a bar-locking discipline: verdict thresholds and kill conditions were committed to the project repository (public at circulation) before each deciding computation ran, and every correction made during the program is logged there (Appendix A summarizes the ones that changed conclusions). Bar-locking prevents moving a declared goalpost, but it is not conventional preregistration: earlier looks at the same catalog inform later designs, and the decisive discipline is data these analyses never touched (Gaia DR4). Every number in this paper is produced by a named script (Appendix B).
+The analysis was run under a bar-locking discipline: verdict thresholds and kill conditions were committed to the project repository (public) before each deciding computation ran, and every correction made during the program is logged there (Appendix A summarizes the ones that changed conclusions). Bar-locking prevents moving a declared goalpost, but it is not conventional preregistration: earlier looks at the same catalog inform later designs, and the decisive discipline is data these analyses never touched (Gaia DR4). Every number in this paper is produced by a named script (Appendix B).
 
 ## 2. Data and sample
 
@@ -272,7 +272,7 @@ Several headline-grade intermediate results (a 99–110 log-likelihood Newtonian
 
 ## Appendix B: reproducibility
 
-Every quantitative claim maps to a named script and output in the project repository (github.com/TheCake/thermal-horizon-rar), which is private at the time of writing and will be made public when this paper is circulated. It also contains the chronological program record (PAPER.md, the long-form companion to this paper; NOTES; LOG.md), the audited measurement ledger (LEDGER.csv, with supersession status machine-checked), and the SHA256 data manifest. Key mappings (all under calcs/):
+Every quantitative claim maps to a named script and output in the project repository (github.com/TheCake/thermal-horizon-rar), which is public. It also contains the chronological program record (PAPER.md, the long-form companion to this paper; NOTES; LOG.md), the audited measurement ledger (LEDGER.csv, with supersession status machine-checked), and the SHA256 data manifest. Key mappings (all under calcs/):
 
 - sample, anchor statistic, and robustness: stage2b_population.py, stage2c_vtilde_data.py, stage2d_ruwe_variant.py, stage4i_rchance.py
 - the perspective audit and corrected re-fit: stage4q_perspective.py, stage4r_corrected_refit.py
