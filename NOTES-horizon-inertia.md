@@ -17522,3 +17522,73 @@ came up just short of the bar too, so the paper now says plainly that
 the ~2x noise number comes from inside the big fit, not from any
 independent gauge. Everything is written down, versioned, and ready for
 the corrected upload.
+
+---
+
+## 2026-09-04 -- ROUND 44 (the final pre-circulation referee) ADOPTED IN
+## FULL -> P1 draft 0.12; repo flipped PUBLIC by the author; PAPER.md
+## gains its errata block; the package is SEALED for Zenodo v1.2
+
+The author flipped the repository PUBLIC (verified anonymously, HTTP
+200); visibility wording flipped to present tense in P1/P2/brief;
+review40 G19 baseline advanced; hygiene sweep confirmed zero never-commit
+files tracked anywhere in the public history (only .zenodo.json, which
+is intentional).
+
+ROUND 44 (fresh Opus vs P1 0.11 + P2 0.10, read as the recipients will;
+REVIEW-ROUND44-OPUS.md uncommitted): ~45 quantities re-derived; verdict
+MINOR REVISION, four BLOCKING findings, ZERO conclusion-changing; P2
+clean (zero findings). Every disputed number verified in-session before
+adoption (archives + two primary re-reads, both CONFIRMED). The
+blockers, all adopted: F1 Table 3's width column was silently sourced
+from the RETRACTED 9L fit -- re-sourced to the stratified marginal
+(Q1 0.00-0.01, Q2 0.06-0.10, Q3 0.10-0.11, Q4 SATURATES at 0.30;
+the sec-6.3 "upper three plateau near 0.1" sentence corrected); F2
+"below 1 sigma per quartile" was FALSE for Q4 (oracle 1.0739, in our
+own GB file) -> 0.93-1.07 sigma at both sites + ledger + stage note;
+F3 Boufourou's TWO estimators de-conflated (1.08-1.13 = full-median E1
+on Newtonian truth; 1.045 = sqrt2-truncated E2 on Chae) + his
+"(statistical)" qualifier restored with the systematic band; F4
+Fabricius DOES give a PM figure (Sec 3.11: contaminated sources 1.6-1.8
+error bars) and his bright half-resolved-doubles "underestimated quite
+a bit" warning SUPPORTS us -- both now quoted. Minors adopted: Table 4
+high-conversion 31-61; census joint probability restated in the right
+direction (best ~1.4e-4, was quoting the smallest P(<=2) as if a joint);
+9L-c precision 2.34%/2.49% + 16-41x matched-endpoint; fit-internal label
+propagated to Table 2 / Conclusion 1 / Sec 9.4 / Sec 10.1; App-A bullet
+freed of the retracted 41% completeness scale; coherence run re-quoted
+on the measured slice (0.52->0.45; blending-safe 0.45); the 69%
+comparison names its convention (the Banik push); strata composition
+imbalance disclosed 480/409/281/267 (runs in the limit's favour -- the
+Chae push); Sec-9.4 now deploys the mock-sky <2%-vs-54-97% result where
+Boufourou is engaged (his push); premise sentence recast; citation
+wordings (Pasquini vetting, Saad&Ting projected, Chae-26 statistic
+attach); stale max-49 header note annotated. F20: PAPER.md (frozen v4.0)
+gains a top-of-file ERRATA block (E1 = correction #21 incl. the
+"boost-free meter decided the fork" passage; E2 = R41 M1 bracket; E3 =
+R40 M4 population size; E4 = correction #20 wobble law) -- body text
+untouched, per the honest-updating rule; required now that App B points
+public readers at the record. Recipient simulation banked: all four
+named pushes now answered in-text.
+
+Gates: ALL NINE paper suites PASS after needle updates (lit0901 G1
+de-conflation needles; G6 head 0.12); ledger 218 rows six gates PASS;
+abstract 250 exact. PDFs re-rendered + extraction-verified.
+
+CREDENCES: NO moves (53 / 8). THE PACKAGE IS SEALED: remaining steps are
+the author's clicks (Zenodo v1.2 -> DOI to me -> letters updated ->
+sends; the Slack re-ping after v1.2).
+
+PLAIN VERDICT: SUCCESS -- the final referee found no conclusion-level
+defect, strengthened three passages with the recipients' own likely
+objections, and caught one genuinely embarrassing residue (a withdrawn
+instrument's numbers still living in a table). The papers now say
+nothing the archives cannot back.
+
+ELI12: We asked one more stranger to read the fixed papers the way the
+seven experts on our mailing list will. He found no broken conclusions
+-- but he did find one table still quoting the broken detector, one
+"less than 1" that was really 1.07, and two footnotes quoting other
+papers slightly wrong. All fixed, all double-checked against the
+original papers themselves. The package is sealed; what remains is
+clicking "upload" and "send".

@@ -708,7 +708,7 @@ print("\nsaved: data/stage9lb_contrast.txt")
 #     that would read as a false B-NOISE-BOUNDED under the z-grammar alone.
 #     NEVER read the pooled S as a noise measurement.
 # (2) R43 oracle bound (banked): the Neyman-Pearson ceiling for truth 1.0
-#     vs 2.4, all nuisances known, is < 1 sigma per quartile and 1.98 sigma
-#     pooled over all 9,950 narrow pairs -- the bin, not the statistic, is
-#     the limitation.
+#     vs 2.4, all nuisances known, is 0.93-1.07 sigma per quartile (Q4
+#     slightly exceeds 1; R44-F2) and 1.98 sigma pooled over all 9,950
+#     narrow pairs -- the bin, not the statistic, is the limitation.
 # ---------------------------------------------------------------------------

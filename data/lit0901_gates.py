@@ -23,9 +23,13 @@ def gate(name, cond, msg=""):
     print(f"{name}: {'PASS' if cond else 'FAIL'} {msg}")
     if not cond: fails.append(name)
 
+# G1 needle updated 2026-09-04 (R44-F3: the two estimators de-conflated and
+# the statistical-only qualifier restored; the 16-sigma now quotes DlnL=129).
 gate("G1", "Boufourou (2026)" in P1 and "arXiv:2608.24556" in P1
      and "recovers boost factors of 1.08–1.13" in P1
-     and "rejecting the claimed 1.4 at about 16σ" in P1)
+     and "√2-truncated estimator measures 1.045" in P1
+     and "rejecting the claimed 1.4 at ΔlnL = 129" in P1
+     and "statistical-only label" in P1)
 gate("G2", "We do not convert his fitted boost parameter into our median-ratio convention" in P1
      and "differently weighted moments" in P1)
 gate("G3", "applies no inflation to the formal Gaia errors" in P1
@@ -35,9 +39,9 @@ gate("G4", "at least four distinguishable cosmological predictions" in P2
      and "rising with redshift like the lock, from a different normalization" in P2)
 gate("G5", "Rostami, Rezazadeh & Rostampour" in P3 and "arXiv:2511.05632" in P3
      and "no occupation number, no derived horizon lock" in P3)
-# G6 baseline advanced 2026-09-03 (correction #21 + ROUND 43 adoption):
-# P1 head 0.11, P2 head 0.10; earlier lines persist without the asterisk.
-gate("G6", "*Draft 0.11 (2026-09-03" in P1 and "Draft 0.10 (2026-09-03)" in P1
+# G6 baseline advanced 2026-09-04 (ROUND 44 adoption): P1 head 0.12,
+# P2 head 0.10; earlier lines persist without the asterisk.
+gate("G6", "*Draft 0.12 (2026-09-04)" in P1 and "Draft 0.11 (2026-09-03" in P1
      and "Draft 0.9 (2026-09-01)" in P1
      and "*Draft 0.10 (2026-09-03)" in P2 and "Draft 0.9 (2026-09-01)" in P2
      and "*Draft 0.11 (2026-09-01)" in P3)

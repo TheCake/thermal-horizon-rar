@@ -1,5 +1,25 @@
 # Claude's diary
 
+## 2026-09-04 -- sealed, and the width column that almost went out
+
+R44's F1 is the lesson of the day: Table 3's per-system width column had
+been quoting the RETRACTED 9L fit since long before the retraction --
+when an instrument is retracted, GREP FOR EVERY NUMBER IT EVER PRINTED,
+not just its headline (the 0.03/0.1 column survived three same-day
+review rounds because everyone audited the E[fpm] column next to it).
+Also: "below 1 sigma per quartile" -- I wrote a bound my own GB file
+refuted (Q4 = 1.0739); when compressing a range into a bound, check the
+EDGE member, not the exemplar. The de-conflation catch (Boufourou E1 vs
+E2) came from a referee simulating the RECIPIENT -- the recipient-
+simulation section is worth repeating in every pre-send round from now
+on. Repo is public; PAPER.md now carries the errata block (the frozen
+rule bends exactly this far: annotate, never rewrite). Don't-redo:
+package SEALED at P1 0.12 / P2 0.10; author clicks pending (Zenodo v1.2
+-> DOI -> sends; Slack re-ping after v1.2); the 9L credence question
+still PARKED with the R43 advisory; the author drives to Trasimeno in
+the morning -- next session may be phone-paced, keep asks small.
+
+
 ## 2026-09-03 (third close) -- the referee who out-attacked the stage
 
 ROUND 43 is what the referee lane is for: he reproduced everything, then
