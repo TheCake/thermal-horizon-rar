@@ -1385,6 +1385,37 @@ v1.2 record) + colleague send. The author's Italy window: everything is
 correction-complete before departure; the C&T letter carries the
 Italy-call sentence once dates are set.**
 
+**ROUND 44 + THE SEAL + ZENODO v1.2 (2026-09-04): the final
+pre-circulation referee (fresh Opus vs P1 0.11 + P2 0.10;
+REVIEW-ROUND44-OPUS.md uncommitted) = MINOR, ZERO conclusion-changing,
+P2 clean; four blockers all verified-then-adopted (Table-3 width column
+had been silently quoting the RETRACTED 9L fit — re-sourced to the
+stratified marginal, Q4 saturates at 0.30; oracle corrected to
+0.93–1.07σ/quartile, Q4 exceeds 1σ — never print "below 1σ per
+quartile"; Boufourou E1/E2 estimators de-conflated + his
+statistical-only qualifier restored [primary CONFIRMED]; Fabricius DOES
+give a PM figure, crowded-field 1.6–1.8, + his bright
+half-resolved-doubles warning SUPPORTS us [primary CONFIRMED]); sixteen
+minors incl. the recipient-simulation answers (Banik = the 69%
+convention sentence; Chae = strata composition 480/409/281/267 disclosed
+pro-limit; El-Badry = blending-safe 0.45; Boufourou = the §4.2 mock-sky
+cross-ref deployed); PAPER.md gained its top-of-file ERRATA block
+(E1 = #21, E2 = R41 M1, E3 = R40 M4, E4 = #20; body frozen). REPO
+FLIPPED PUBLIC by the author (verified 200; visibility wording flipped;
+hygiene sweep = zero never-commit files in the public history). **P1 →
+draft 0.12, SEALED; all nine suites PASS; ledger 218 rows six gates
+PASS. ZENODO v1.2 PUBLISHED (record 22311231, DOI
+10.5281/zenodo.22311231; concept DOI 10.5281/zenodo.22050990): live PDFs
+byte-verified (MD5 match to the sealed renders), SHA256s + correction
+#21 version note in the public description, access open. THE OUTREACH
+HOLD IS RELEASED** — letters cite v1.2; remaining = the author's
+ENDORSEMENT-CODE + sends (C&T first w/ the Italy sentence) + the Slack
+colleague re-ping ("corrected version is up, read that one"). NEW DIARY
+lesson: when an instrument is retracted, grep for EVERY number it ever
+printed, not just its headline. Credences 53/8 unmoved; the 9L map
+question stays PARKED (R43 advisory: HOLD-53-RE-ANCHORED). The author
+is in Italy — keep asks phone-sized.**
+
 **THE PRE-SEND DELTA ROUND (2026-09-01, scan #4 — four for four): the
 equation + ALL registered claims UNSCOOPED (C&T zero empirical tests in
 31 citations; z-axis uncontested; van Putten/Gillot/Luo unchanged). ONE
