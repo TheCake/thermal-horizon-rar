@@ -4,9 +4,13 @@
 of the universe's own horizon? A research program that tests that idea hard — run as
 an open human + AI collaboration.**
 
-*(Numbers below are current as of the notebook's 2026-07-24 state; [PAPER.md](PAPER.md)
-is the source of truth. This is an active research program, not a settled result, and
-it has not yet been peer-reviewed.)*
+*(Updated 2026-09-16. The citable versions of the results are the two papers,
+archived at DOI [10.5281/zenodo.22311231](https://doi.org/10.5281/zenodo.22311231):
+[papers/paper1_wide_binaries.md](papers/paper1_wide_binaries.md) and
+[papers/paper2_rar_coefficients.md](papers/paper2_rar_coefficients.md).
+[PAPER.md](PAPER.md) is the frozen internal record they grew from, kept with a
+running errata block. This is an active research program, not a settled result,
+and it has not yet been peer-reviewed.)*
 
 ---
 
@@ -52,41 +56,48 @@ Two datasets, chosen because they can check each other:
   binaries misbehave the same way galaxies do, dark matter has no answer.
 
 Highlights (each number has a script, an output file, and a row in the audited
-[LEDGER.csv](LEDGER.csv)):
+[LEDGER.csv](LEDGER.csv); the papers state each with its full error budget):
 
-- Wide binaries orbit **~8% faster than Newton predicts** (velocity boost 1.078,
-  CI 1.052–1.103, after a perspective correction we adopted from engaging a critical
-  paper). Newton loses in **all 2000** bootstrap contests we ran.
-- The binary data **demand the "external field effect"** — the suppression of the
-  anomaly by the galaxy's ambient field. That effect violates the strong equivalence
-  principle, which means **no dark-matter model can produce it even in principle.**
-- The deep-regime expansion of the measured curve carries a first coefficient
-  c₁ ≈ ½ — the vacuum's half-quantum — and **two completely disconnected systems
-  (galaxies and binaries) measure the same value.** A classical (non-quantum) thermal
-  bath is excluded at the level of hundreds of log-likelihood units; the vacuum "+1"
-  in the response structure is measurably load-bearing.
-- The one function that fits *both* systems — the "ambient-gated bath" — was not
-  fitted into existence. Its pieces were **derived**: the gate is the Boltzmann cost
-  of borrowing quanta from the environment's thermal cloud, the borrow count comes
-  from the interaction's own loop order, and exact quantum mechanics reproduces the
-  lending probability to a fraction of a percent. It postdicted both systems' tail
-  exponents before they were measured as a pair.
-- The core mechanism is even **buildable on a lab bench** (superconducting-circuit
-  parameters worked out; it would validate the mechanism class, not gravity itself —
-  we're explicit about that distinction).
+- **The raw signal is real; the verdict is deliberately modest.** Wide binaries show
+  a median velocity excess of about 8% over Newton (1.078, CI 1.052–1.103). But when
+  the measured hidden-companion population and the error model are forward-modeled
+  *together*, much of that excess is absorbed. The operative headline of Paper 1 is
+  an **upper limit**: boosts at or above half the galactic calibration are excluded
+  on the cleanest data (α ≥ 0.5 excluded), a small boost is preferred in the full
+  joint fit, and zero is not excluded. The paper's job is that accounting, in the open.
+- **Direction matters.** Adding the velocity–separation *angle* as a second
+  observable, velocity-only fits of these data report an apparent boost that the
+  direction data veto. Several published disagreements in this field become
+  arithmetically compatible once that channel and the shared error model are counted.
+- **The error model is itself a finding.** The joint fits demand pair-level velocity
+  errors near twice the formal Gaia values, with the origin (instrumental or
+  astrophysical) left open for Gaia DR4. We measured this, over-claimed it, and then
+  re-measured it honestly: our strongest calibration of the factor failed a
+  null-injection test and was withdrawn in public as correction #21.
+- **The galaxy side tests a published prediction ladder.** Treating the 2019
+  Cadoni–Tuveri identity as parameter-free predictions: the leading coefficient is
+  measured at c₁ ≈ 0.26–0.45 (zero excluded; the predicted ½ inside every bootstrap
+  band), the screening index is consistent with ½, and hierarchical fits return
+  a₀ = (1.04–1.13)×10⁻¹⁰ m s⁻² — consistent with the horizon temperature scale cH₀/2π.
+- **A mechanism candidate exists but carries low credence.** A thermal-horizon
+  mechanism is developed in a third, unpublished paper; after our own tests struck
+  down its strongest form we carry it at roughly 8%. None of the measurements above
+  depend on it. (Its core lending process is even buildable on a superconducting
+  circuit bench — which would validate the mechanism class, not gravity itself.)
 
 ## What we do NOT claim
 
 - **The Saturn problem is real and carried openly.** In the field formulation, our
   rule (like every relative of MOND we tested) predicts a solar-system quadrupole
-  ~4× above the Cassini bound. The derivation itself points at the one known escape
-  (a trajectory-level coupling), and making that quantitative is the current work —
-  but as of today this is an open tension, stated in the paper's own abstract.
+  several times above the Cassini bound. A trajectory-level formulation of the same
+  measured function passes Saturn by an enormous margin, so the tension is a property
+  of the formulation, not of the measured curve — but data do not yet decide between
+  the formulations, and the papers say so.
 - **Galaxy clusters are not addressed.**
 - **Dark matter is not "disproven."** On galaxies alone, dark-matter-plus-feedback
-  can mimic a lot. The no-mimic content is the *cross-system lock* — the binaries,
-  the shared coefficients, the shared temperature scale. We say exactly this and no
-  more.
+  can mimic a lot. The no-mimic content is the cross-system structure — binaries
+  probing a regime where dark matter cannot act, and the shared temperature scale.
+  We say exactly this and no more.
 - Nothing here has passed peer review yet. Credences are stated with numbers
   throughout the notebook, and they are nowhere near certainty.
 
@@ -101,11 +112,12 @@ This program's identity is its discipline, not its conclusions:
   retracted — superseded numbers are pointed forward, never deleted). Six audit
   gates verify it mechanically, including grepping quoted values against the actual
   stage outputs.
-- **Fourteen corrections and counting.** [PAPER.md](PAPER.md) Appendix A logs every
+- **Twenty-one corrections and counting.** Paper 1's Appendix A logs every
   retraction and correction, including the embarrassing ones (a claimed priority
   that a careful read revoked; three hallucinated citations caught by
   primary-source rules; a headline significance that deflated 4× under an honest
-  error model). Wrong things die fast and publicly here.
+  error model; most recently, a headline calibration claim withdrawn after it
+  failed a null-injection test). Wrong things die fast and publicly here.
 - **Signed falsifiers.** [PREDICTIONS.md](PREDICTIONS.md) lists the predictions with
   numeric kill conditions — including the parameter-free ones (example: the tail
   exponent can never exceed ¾; one clean void galaxy beyond that kills the
@@ -136,9 +148,11 @@ py calcs/<stage>.py          # any stage; outputs land in data/
 py calcs/stage6q_worldtable.py   # the ledger audit (all gates should PASS)
 ```
 
-Start reading with [PAPER.md](PAPER.md) (the manuscript),
+Start reading with the two papers in [papers/](papers/) (or the archived PDFs at
+[the DOI](https://doi.org/10.5281/zenodo.22311231)), then
 [NOTES-horizon-inertia.md](NOTES-horizon-inertia.md) (the chronological lab
-notebook, retractions included), and [TODO.md](TODO.md) (the live priority queue).
+notebook, retractions included) and [LOG.md](LOG.md) (the one-line-per-stage
+program log).
 
 ## License
 
