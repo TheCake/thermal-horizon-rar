@@ -85,6 +85,34 @@ Highlights (each number has a script, an output file, and a row in the audited
   depend on it. (Its core lending process is even buildable on a superconducting
   circuit bench — which would validate the mechanism class, not gravity itself.)
 
+## Where this sits in the wide-binary debate
+
+The field currently disagrees loudly: Banik et al. (2024) report a 16–19σ
+preference for Newtonian gravity; Chae (2023–2026) reports detections of a
+low-acceleration boost. Our analysis differs from both in three ways, and the
+differences are the point:
+
+- **A second observable.** The headline analyses on both sides fit velocity
+  distributions; we fit the joint distribution of the velocity *and* the
+  velocity–separation angle. The direction channel polices contaminants that the
+  velocity channel absorbs — velocity-only fits of our own data report an apparent
+  boost that the direction data then veto.
+- **The companion sector is measured, not assumed.** We measure the hidden-companion
+  host rate photometrically (it is high, supporting Chae's critique of hard fences)
+  and the inner mass-ratio distribution (it is strongly twin-heavy, which makes
+  those companions' kinematic effect small — closer to Banik's treatment in outcome).
+  The two camps' companion choices turn out to be different points on one measured
+  axis.
+- **The error model is a result, not an input.** The joint fits demand pair-level
+  velocity errors near twice the formal Gaia values. We calibrated that demand,
+  withdrew our strongest calibration when it failed a null test (correction #21),
+  and kept the weaker, null-controlled version; the origin of the extra width is
+  left open for Gaia DR4.
+
+Within that accounting, the published Newtonian preference, the published
+detections, and our upper limit are arithmetically compatible: the disagreement
+lives in sample construction and the shared error model, not in the sky.
+
 ## What we do NOT claim
 
 - **The Saturn problem is real and carried openly.** In the field formulation, our
