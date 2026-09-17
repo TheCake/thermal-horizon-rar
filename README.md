@@ -58,7 +58,7 @@ Two datasets, chosen because they can check each other:
 Highlights (each number has a script, an output file, and a row in the audited
 [LEDGER.csv](LEDGER.csv); the papers state each with its full error budget):
 
-- **The raw signal is real; the verdict is deliberately modest.** Wide binaries show
+- **The raw signal is real; the verdict is an upper limit.** Wide binaries show
   a median velocity excess of about 8% over Newton (1.078, CI 1.052–1.103). But when
   the measured hidden-companion population and the error model are forward-modeled
   *together*, much of that excess is absorbed. The operative headline of Paper 1 is
