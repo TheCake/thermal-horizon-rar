@@ -39,11 +39,11 @@ gate("G4", "at least four distinguishable cosmological predictions" in P2
      and "rising with redshift like the lock, from a different normalization" in P2)
 gate("G5", "Rostami, Rezazadeh & Rostampour" in P3 and "arXiv:2511.05632" in P3
      and "no occupation number, no derived horizon lock" in P3)
-# G6 baseline advanced 2026-09-04 (ROUND 44 adoption): P1 head 0.12,
-# P2 head 0.10; earlier lines persist without the asterisk.
-gate("G6", "*Draft 0.12 (2026-09-04)" in P1 and "Draft 0.11 (2026-09-03" in P1
+# G6 baseline advanced 2026-09-18 (register/disclosure pass -> v1.3):
+# P1 head 0.13, P2 head 0.11; earlier lines persist without the asterisk.
+gate("G6", "*Draft 0.13 (2026-09-18)" in P1 and "Draft 0.12 (2026-09-04)" in P1
      and "Draft 0.9 (2026-09-01)" in P1
-     and "*Draft 0.10 (2026-09-03)" in P2 and "Draft 0.9 (2026-09-01)" in P2
+     and "*Draft 0.11 (2026-09-18)" in P2 and "Draft 0.10 (2026-09-03)" in P2
      and "*Draft 0.11 (2026-09-01)" in P3)
 gate("G7", "- Boufourou, H. 2026, arXiv:2608.24556" in P1
      and "- Escala, A. 2026, arXiv:2608.10073" in P2
