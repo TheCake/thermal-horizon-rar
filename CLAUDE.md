@@ -2812,3 +2812,47 @@ endorsement gate. NO credence moves (53/8).
 - Public repo content must not reference the project's original pop-culture motivation
   (user's request); `private/` holds those documents. Branch `main` = clean single-commit
   history for the remote; `master` = full local history.
+
+**THE OUTREACH ARC + ZENODO v1.3 (2026-09-05..19; read LOG.md for the
+one-liners, OUTREACH-DRAFTS-2026-09.md for the operative letter file --
+NEVER commit it): SENT = C&T (09-05, w/ PDFs), Desmond + El-Badry cc
+Penoyre (09-10, link-only), Banik (09-15) -> FIRST REPLY in ~5 h
+(personal gmail, polite, no content engagement): he ROUTED the
+endorsement ask to Will Sutherland (P&S statistic founder, Cookson
+co-author; w.j.sutherland@qmul.ac.uk VERIFIED) -> R1 thanks sent +
+letter 8 SENT 09-17 (referral lead, both PDFs, cold-read hardened).
+Tuveri LinkedIn nudge SENT 09-19 (194 chars, ONE-nudge rule: if silent
+the C&T channel RESTS). REMAINING: Chae Sun/Mon 09-21/22 (letter 4
+FINAL, v1.3 DOI, link-only); BOUFOUROU DEFERRED by the author
+(competitor-timing; triggers = arXiv posting OR DR4 pre-sign);
+JOURNAL-BACKSTOP DECISION WED 09-24: zero engagement anywhere -> P1
+to OJAp/MNRAS direct (journals need no endorsement). Endorsement code
+QVUAUP is per-AUTHOR (astro-ph.GA), unaffected by paper versions.
+ZENODO v1.3 PUBLISHED 09-18 (record 22837688, byte-verified vs sealed
+renders; concept DOI unchanged) = THE DISCLOSURE PASS, author-called
+after two register audits + a Tuveri/Cadoni recipient simulation:
+P1 -> 0.13 / P2 -> 0.11 -- acknowledgments now state the review rounds
+were AI model sessions, not human referees, re-verified by scripts, no
+journal peer review yet; Appendix A opens with a process-vocabulary
+note (review round / bar-locking / gate / measurement ledger defined
+at true weight); P2's stale "private while under review" wording fixed;
+no number, figure, or conclusion changed; ALL NINE suites PASS (lit0901
+G6 baseline advanced); cosmetic register items QUEUED for the journal
+pass in REVIEW-REGISTER-2026-09.md (NEVER commit). README refreshed
+09-16/17 (papers+DOI first; "Where this sits in the wide-binary debate"
+section; upper-limit wording). NEW STANDING RULES (also in the memory
+dir): (a) NO house dialect in outward text -- "BE-RAR"/"load-bearing"/
+"referee process" all caught escaping; (b) EVERY outward text gets a
+fresh-subagent cold read before the author sends (5/5 texts checked
+had blocking defects); (c) changelog weight proportional to scientific
+impact; (d) never retype a hash -- machine-to-machine only (trap #23
+fired on the v1.2 hash, recovered via the Zenodo API). Credences 53/8
+UNMOVED all arc; the 9L map question stays PARKED (R43 advisory).
+QUEUED on author interest: PAPER P, the process paper ("fast because
+honest") -- own NEW repo (candidate name fast-because-honest), every
+claim computed by script from the public git history, REVIEW-* stays
+unpublished; slots AFTER Chae + the 09-24 decision; DR4 credence-map
+pre-sign session remains BLOCKING before 2026-12-02 (draft map to Grok
+first). Author context: back in Prague; girlfriend's graduation 09-17
+(the fifteen roses landed); checks the inbox less -- keep asks
+scheduled, not urgent.**
