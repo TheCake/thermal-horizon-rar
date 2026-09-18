@@ -1,5 +1,68 @@
 # Claude's diary
 
+## 2026-09-19 -- the outreach arc's diary entry (pre-compaction)
+
+The week that taught the program to talk to strangers. Don't-redo:
+letters 1/2/3/5/8 SENT + R1 + the Tuveri nudge (ONE nudge only, never
+a second); Chae = Sun/Mon, letter FINAL; Boufourou deferred on
+triggers; journal decision 09-24; v1.3 = record 22837688 byte-verified.
+Lessons that must not fade: the author's ear beat mine five times
+(house dialect, "deliberately modest", passive advert-speak, the
+masochistic changelog, "endorsement ask" via the subagent he ordered) --
+when he flags register, he is right; run the cold read BEFORE calling
+anything finished, the polish-horizon call was wrong. The disclosure
+arc: his "it feels almost like lying" found the one real gap (P3's
+AI-review sentence never copied to P1/P2) -- unease from the author is
+a detector, treat it as instrument output. Trap #23 fired AGAIN on a
+retyped hash; API-to-disk only. Banik routes rather than engages;
+Sutherland is the live endorsement hope; silence everywhere else is
+still base-rate. The human texture worth keeping: Galileo's lenses in
+Firenze, fifteen roses (five per year), the scene of Tuveri reading
+LinkedIn outside a Cagliari bar, and the author noticing he forgets to
+check the inbox -- the program is healthy exactly in proportion to how
+boring its quiet days are. Next session: read this, read the CLAUDE.md
+outreach block, and do not respawn any send that LOG says already went.
+
+
+## 2026-09-10 -- wave 2 out (Rome)
+
+Desmond + El-Badry(cc Penoyre) sent link-only from the phone; the
+attach-vs-spam call went link-only for cold first contact and that is
+now the default for the remaining three. Order defense that held:
+Desmond before Banik (two gifts vs adversarial stakes; endorsement
+first, debate second). El-Badry worry answered: his letter is the
+best-targeted (his catalog, his twin excess, Penoyre's law -- a
+nerd-snipe, not a favor ask). Czech Gmail trap caught live: Kopie=CC,
+Skryta kopie=BCC (Penoyre had to be VISIBLE). Don't-redo: letters
+3/4/6 FINAL in OUTREACH-DRAFTS-2026-09.md; schedule Banik Mon, Chae
+Tue, Boufourou Wed; Slack re-ping status UNKNOWN -- ask once, gently.
+First predatory-journal spam arrived = scraping has begun; standing
+answer: real interest names the papers, everything else is noise.
+Author is stressed at each send -- the correct read (and mine): every
+branch is survivable, the record defends itself. Keep asks phone-sized
+until he is back from Italy.
+
+
+## 2026-09-05 -- the first send (00:38, the night before Italy)
+
+The C&T letter is OUT -- the author clicked send at 00:38 and went to pack
+for Trasimeno. Final-form decisions worth keeping: disclosure toned to
+"close collaboration ... judgment calls and accountability are mine"
+(the first draft read as Claude-did-everything -- the author caught it);
+em dashes stripped from all sendable bodies+subjects; signature = bare
+name (body already says independent researcher; his Prague worry was
+unfounded -- CEICO -- but redundancy justified the cut); the
+priority-retraction sentence stays UNBOLDED (understatement is the flex;
+independent convergence on n_BE from thermal premises is ~10-30%, not
+miracle-grade -- framed as evidence the structure is natural).
+Don't-redo: letters 2-6 are FINAL in OUTREACH-DRAFTS-2026-09.md, send
+schedule in the banner; nothing needs me until a reply lands. Next
+sessions are PHONE-PACED from Italy: keep asks small, draft replies on
+request, no new arcs, no unprompted spawns. The 9L credence question
+stays PARKED; DR4 pre-sign session still the standing pre-December
+obligation.
+
+
 ## 2026-09-04 -- sealed, and the width column that almost went out
 
 R44's F1 is the lesson of the day: Table 3's per-system width column had
