@@ -1,0 +1,38 @@
+STAGE 10S SKY READ (pre-reg 2a461d5; two legs, one agreement test)
+
+selector regression (8S): GD = 38 galaxies / 422 points (archived 38/422) -> PASS
+leg A composition: 67 galaxies (41 anchored + 26 UMa); GD 16 / non-GD 51
+
+G0a solver identity (noiseless mocks): 62->62.000, 70->70.000, 78->78.001 -> PASS  [0s]
+G0b UMa-nuisance identity (width 1e-6 vs plain): d(-2lnL) = 0.000, d(a0) = 0.000% -> PASS  [1s]
+
+== LEG A (anchored + UMa; H0-assumption-independent distances) ==
+leg-A hier BE (PRIMARY): a0_A = 1.0186e-10 m/s^2, f_ML = 1.07, s_int = 0.031, UMa shared offset = -0.0258 dex (prior width 0.0217)
+leg-A flat BE (co-read): a0 = 1.1522e-10, f_d = 0.95
+leg-A hier p065: a0 = 1.0969e-10  [3s]
+leg-A hier gm: a0 = 1.0334e-10  [13s]
+leg-A hier boot: a0 = 1.0537e-10  [16s]
+sigma_A (flat boot, 200 reps): 1.935e-11 -> sigma(H0_A) = 12.52 km/s/Mpc; boot median a0 = 1.1603e-10 (central grade: hier)
+LEG A: H0_A = 65.87 +- 12.52 km/s/Mpc  (hier BE primary; family band a0 1.019e-10-1.097e-10 -> H0 65.9-70.9)
+G5 re-check at sky grade: powered
+G7 GD split (flat): a0(GD, 16 gal) = 1.0063e-10; a0(non-GD, 51 gal) = 1.0729e-10
+G7 GD split (hier): a0(GD) = 1.0056e-10; a0(non-GD) = 1.0287e-10; |d| = 2.31e-12 vs sigma_A 1.94e-11 -> inside 1 sigma
+
+== LEG B (flow; self-consistent solve) ==  [17s]
+  hier grid H0' = 60: a0 = 9.4040e-11, lock = 9.2777e-11, phi = +0.0135  [18s]
+  hier grid H0' = 65: a0 = 1.0063e-10, lock = 1.0051e-10, phi = +0.0012  [19s]
+  hier grid H0' = 70: a0 = 1.0723e-10, lock = 1.0824e-10, phi = -0.0093  [19s]
+  hier grid H0' = 75: a0 = 1.1381e-10, lock = 1.1597e-10, phi = -0.0188  [20s]
+  hier grid H0' = 80: a0 = 1.2043e-10, lock = 1.2370e-10, phi = -0.0268  [21s]
+leg-B flat BE solve: NO BRACKET
+leg-B flat p065 solve: NO BRACKET  [21s]
+leg-B flat gm solve: NO BRACKET  [21s]
+leg-B flat boot solve: NO BRACKET  [21s]
+sigma_B (flat-solve boot, 150 reps, 104 no-bracket): 10.07 km/s/Mpc; boot median 74.69; G4b floor cross-check ~1.7  [23s]
+Traceback (most recent call last):
+  File "C:\Users\hfili\Projects\PhysicsResearch\calcs\stage10s_skyread.py", line 495, in <module>
+    f"{min(v for v in fam_B.values() if v):.1f}-"
+       ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: min() iterable argument is empty
+
+[exited with code 1]

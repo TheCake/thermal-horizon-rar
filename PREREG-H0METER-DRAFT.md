@@ -186,6 +186,35 @@ original 1% single-noisy-mock bar was mis-posed; dated note at the gate).
 G2 parser wording corrected to token+regex (the .mrt byte-spec deviation,
 census finding reproduced).
 
+## AMENDMENT A2 (2026-09-20, after sky run 1, BEFORE any letter fired;
+## run 1 output preserved verbatim in data/stage10s_skyread_run1.txt)
+Run 1 crashed at a DISPLAY line (empty family list) after all fits
+printed. Sky facts on the table when this amendment was written:
+leg A hier = 1.0186e-10 (H0 65.9 +- 12.5, family 65.9-70.9, G7 inside
+1 sigma); leg B hier grid crosses between 65 and 70; the FLAT engine
+found NO fixed point in [55, 90] (diagnostic, archived with run 1:
+multi-start NM identical to single-start => not convergence; the flow
+subsample's flat a0 = 8.89e-11 at f_d = 1.33 — the flat M/L-vs-a0
+degeneracy trade, the known 4H/5M lesson and the pre-registered reason
+hier is PRIMARY; its implied crossing extrapolates to ~109).
+Amended, direction-neutral, before any letter:
+(a) display-bug guard (cosmetic);
+(b) the flat co-read's sky outcome is reported as NO-FIXED-POINT-IN-
+    RANGE with the extrapolation-grade implied crossing labeled as
+    such; the flat-vs-hier treatment split is NAMED in every letter
+    (two-grade rule);
+(c) NEW GATE G4h: the hier crossing (the leg-B PRIMARY estimator) was
+    never injection-validated (G4 validated the flat solver only; the
+    hier response measured on run 1's grid is gamma_H ~ 0.86, a x7
+    lever 1/(1-gamma_H)) — noiseless lock-mocks at 62/70/78 pushed
+    through the full hier grid crossing must recover truth to 1%;
+    3-seed noisy replication at 70 reported as the hier floor. NO
+    hier H0_B is quoted if G4h fails;
+(d) sigma_B = galaxy bootstrap of the HIER crossing itself (100 reps,
+    warm-started local grid), replacing the flat-solve bootstrap
+    (selection-biased at 104/150 no-bracket, wrong lever);
+(e) letters compute per the original grammar, hier primary, with (b).
+
 ## Order of work (firewall)
 1. Instrument build + G1–G5 on synthetic/archived inputs (sky-blind). DONE
    2026-09-20 (all green; record above).
