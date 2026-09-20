@@ -1,0 +1,26 @@
+STAGE 10S H0METER -- instrument-side gates (sky-blind)
+
+G2 census: parsers AGREE; counts flow/TRGB/Cep/UMa/SN = 97/45/3/28/2 (bar 97/45/3/28/2); reassignments NGC3992->SN, UGC06446->flow OK -> PASS
+quality-cut sample: 153 galaxies, 2700 points; leg membership after cuts: flow 82 / anchored 41 / UMa 26  (leg A = 67)
+
+G1a flat regression (4H-b machinery): a0 = 1.0411e-10 vs archived 1.041e-10 (d = 0.01%), p = 0.572 (arch 0.572), f_d = 1.23 (arch 1.23) -> PASS
+G3 scaling injection (flow, 82 gal, 1628 pts): a0(s)/a0(1) = 1.2925 @ s=0.85, 0.8005 @ s=1.15; measured d(ln a0)/d(ln s) = -1.585 (analytic -2; bar |e| in [1.5,2.5]) -> PASS (analytic shortcut licensed)
+G4a leg-B solver wiring (NOISELESS mocks, f_d_true=1.2; bar 0.2%):
+  H0_true 62 -> 62.000 (0.000%) OK
+  H0_true 70 -> 70.000 (0.000%) OK
+  H0_true 78 -> 78.001 (0.001%) OK
+G4b leg-B calibration (5 noise seeds x outer truths; unbiasedness bar |mean| <= max(1.5%, 2 SE)):
+  H0_true 62: mean -0.07% (bar +-2.27%), SD 2.54% OK
+  H0_true 78: mean -0.05% (bar +-2.14%), SD 2.39% OK
+  leg-B single-realization noise floor (replication SD): ~2.5% of H0 (~1.7 km/s/Mpc at H0~70); the fixed-point amplification 1/(gamma-1) = 1.71 at measured gamma = 1.585
+G4 -> PASS (G4a P / G4b P)
+
+G5 leg-A power (67 galaxies = 41 anchored + 26 UMa, 1072 pts; 200 boot reps, galaxy resample + distance jitter incl. UMa shared nuisance; CENTRAL MASKED):
+  sigma(a0_A) = 1.884e-11 m/s^2  ->  sigma(H0_A) = 12.18 km/s/Mpc  (bar: >15 = POWER-LIMITED)  -> PASS (leg A is powered)
+
+G1b hier regression (5M machinery, BE dv-ON): -2lnL = -12152.49 (arch -12152.49, d = 0.00), a0 = 1.0437e-10 (arch 1.044e-10, d = 0.03%), f_ML = 1.16 (arch 1.16) -> PASS
+
+G6 literature bar (second targeted round, 2026-09-20, session logs): no published a0->H0 lock-inversion measurement found. Nearest neighbor PRIMARY-READ at abstract grade: Schombert, McGaugh & Lelli 2020 (AJ 160, 71; arXiv:2006.08615) measure H0 = 75.1 +- 2.3 (stat) +- 1.5 (sys) with the bTFR as a conventional distance-ladder rung on the SAME catalog and the SAME 50-anchor/95-flow split (CosmicFlows-3 velocities) -- no lock anywhere in the method; MUST-CITE + census cross-validation (their '50 galaxies with accurate distances' = our anchor count). Landscape: the 2pi a0 ~ cH0 coincidence literature (e.g. arXiv:1110.2580) has no measurement execution; Zenodo 20377329 'Quantum Horizon Gravity I' = derivation-side deposit, not a measurement. -> PASS
+
+GATE SUMMARY: G2 P | G1a P | G1b P | G3 P | G4a/b P | G5 powered | G6 P
+INSTRUMENT READY -- sky legs remain LOCKED until the pre-reg is committed (author's word).
