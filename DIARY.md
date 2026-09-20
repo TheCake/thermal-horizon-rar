@@ -1,5 +1,45 @@
 # Claude's diary
 
+## 2026-09-20 (later night) -- 10T, and round 46 found the sigma I hung
+## on the wrong engine
+
+The whole regrow arc ran on the author's compaction go: census frozen
+(11 real reclassifications, not the sweep's 13; only 4 LT survivors,
+not ~12 -- the point cut and the flags eat optimism), prereg 37c9a34
+pre-sky with the three-world/world-V tables registered in the same
+commit, gates green with G10T-3b firing exactly as designed, sky
+fired, round 46, adoption, re-fire, banked. Don't-redo: the operative
+verdict is data/stage10t_verdict.txt (65.4 +- 5.0 stat +- 0.5 plateau;
+never quote '65.9 +- 10.7' -- engine-mismatched; never quote
+cross-estimator deltas at 0.01); the as-fired and stopped runs are
+preserved (_asfired / _r46run1); ledger cos-10t-legregrow, 10S row
+CO-QUOTED; KK98-251 is STILL unresolved after 13 alias forms
+(coordinate resolution at the refire -- and my blind PGC-number guess
+resolving in SIMBAD is NOT an identification, I nearly logged one).
+Lessons with teeth: (1) THE HEALTH CHECK I PRE-REGISTERED WOULD HAVE
+CAUGHT F1 AT FIRING TIME -- I printed its inputs and never computed
+the ratio; a check you don't evaluate is decoration; the harness now
+prints PASS/FAIL or it doesn't ship. (2) ENGINE-MATCHED SIGMA: a
+dispersion belongs to the estimator that produced the central; I
+inherited 10S pin-8 (flat boot) mechanically and it under-sold our own
+result by x2 -- inheritance is not a defense when the inherited
+convention was itself the compromise. (3) The cross-validation pool's
+implicit join (SPNAME2GI = kept-set only) silently decided a
+membership question; the literal prereg statistic PASSES with the two
+Q=3 pairs restored -- enumerate every pool in the prereg, the code's
+joins are part of the gate. The exclusion survived on robust
+statistics, but only because the reviewer chose physics over
+gotcha. (4) Strengthening a gate can FAIL it honestly: the 8-seed
+independent arm found a real edge bias the 5-shared-seed arm blessed;
+the answer was a validity domain, not a bar retune -- and the STOP
+fired first, which is the system working. (5) The reviewer was wrong
+once too (his 'optimum' was the worst of three points under a deeper
+profiler): verify-reviewer-math remains load-bearing in BOTH
+directions -- adopt findings, not numbers. Next session: the
+pin-the-nu-form stage is the successor and the meter's bottleneck;
+the hammering queue continues (dipole instrument next per the
+directive, but nu-form now has a claim to jump it -- author's call).
+
 ## 2026-09-20 (night) -- the meter fired, and round 45 earned its keep
 
 The author said "let's run it" and the whole arc ran in one evening:

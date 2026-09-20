@@ -17651,3 +17651,63 @@ Our referee also caught our search walking the wrong way along the
 cliff and quoting a confidence it never earned. We fixed the code, took
 back the too-good number, and wrote down exactly which better data
 would let each half work.
+
+## 2026-09-20 (late night) -- 10T: THE LEG-A REGROW + ROUND 46 (the
+## engine-matched-sigma round)
+
+Stage 10T (pre-reg PREREG-H0METER-10T.md, committed 37c9a34 BEFORE the
+sky read; PREDICTIONS SF three-world + world-V discriminants registered
+in the same commit) grew the meter's anchored leg 67 -> 78: eleven SPARC
+flow galaxies reclassified onto CosmicFlows-4 per-method anchors (9 TRGB
++ 1 SBF + 1 SNII; e_D 15-30% -> 4-9%; UGC09992 reclassifies on paper
+with zero surviving points; UGC02455 stays out on quality), the UMa
+block kept verbatim (its two new CF4 Cepheids straddle the block:
+NGC3972 21.2 / NGC4051 16.6 vs 18.0), and the four LITTLE THINGS
+candidates EXCLUDED from primary by the pre-registered G10T-3b clause --
+the two surveys' velocities agree at 0.05 dex while Oh+15's baryon
+models sit one-sidedly 0.13-0.14 dex low (7/7 overlap medians negative).
+ROUND 46 then broke the as-fired letter correctly: the quoted '+- 10.7
+(stat)' was the FLAT engine's bootstrap dispersion attached to the HIER
+central -- the pre-registered health check, which the harness printed
+inputs for but never evaluated, fails at 0.94 sigma, and the primary
+engine's own bootstrap is 4.99 with health 0.005. Fourteen conditions +
+one amendment executed; every reviewer number re-verified (GA blind
+pre-committed 508d2de + GB; the 7-pair port medians confirmed to the
+4th digit); one reviewer claim adjudicated down (his 64.89-as-optimum is
+the WORST of three candidate points under a deeper profiler -- the truth
+is a +-0.5 convergence plateau, now a carried systematic). The
+strengthened injection arm exposed a real -3.0 +- 0.7% one-sided bias at
+edge truth 85 (noiseless exact; all 8 seeds negative) -> a
+validity-domain clause (readings <= ~75), amendment A1, direction-
+neutral, runs preserved. OPERATIVE (data/stage10t_verdict.txt):
+T-SHARPENED (ENGINE-QUALIFIED) -- H0(leg A) = 65.4 +- 5.0 (stat) +- 0.5
+(convergence plateau), nu-form family band 65.4-70.4 = THE DOMINANT
+TERM, membership variants 64.8-65.4, flat treatment variant 76.7
+(envelope 10.7), peg-shared (CF4 calibrator scale = ladder pegs, gearing
+measured 1.3-1.6), GD split 0.33 sigma, additions GD-LIGHT (1/11).
+The converged 10S baseline is 65.25: eleven galaxies swapped flow
+distances for anchors and the reading moved +0.10. Three-world scoring
+(SF, report grade): L 0.3 / N 1.5 / P 1.9-2.7 sigma(stat) -- the first
+world-separating tension, leaning AGAINST pegs-short as the gearing
+predicts for a low reading, but NOTHING excluded while the nu-form band
+spans the L-N gap. Ledger cos-10t-legregrow (220 rows, six gates PASS);
+10S row -> CO-QUOTED (its 12.5 was also flat-engine). Credences 53/8
+untouched (pre-signed, R46-affirmed).
+
+PLAIN VERDICT: SUCCESS -- the leg sharpened x2.5 beyond what the as-fired
+letter dared claim, and the meter's bottleneck is now the function form,
+not the galaxy count. The named successor is PIN-THE-NU-FORM.
+
+ELI12: We made our galaxy-based speed-of-the-universe gauge better by
+swapping eleven fuzzy distances for sharp ones measured with star
+brightness tricks. The needle barely moved -- good sign, the old reading
+was honest. Then our checker caught that we had put the WRONG error bar
+next to the needle (we measured the wiggle of a different, wobblier
+gauge). With the right error bar the gauge is twice as sharp as we
+thought: it now says 'the universe grows about 65, give or take 5' --
+quietly closer to the satellite answer (67) than the supernova answer
+(73). But the gauge's own dial shape (which exact formula we use) can
+shift it by 5 all by itself, so before trusting it more, we must pin
+down the dial shape. Also: four tiny galaxies from another telescope
+survey wanted to join, but their ingredient lists disagree with ours, so
+they wait outside.

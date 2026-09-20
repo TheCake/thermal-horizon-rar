@@ -2988,3 +2988,50 @@ replies anywhere as of the send eve. The pop-science booklet
 Gravitys-Loose-Thread.pdf lives in the author's Documents folder
 (fact-checked, both agents' fixes applied). Credences 53/8 UNMOVED all
 day (planning + instrument-side work only).**
+
+**10T + ROUND 46 (2026-09-20 late night, hammering item 1 EXECUTED on
+the author's compaction go; full arc: census -> prereg 37c9a34
+pre-sky (PREDICTIONS SF three-world + world-V registered same commit)
+-> gates -> sky 87e689e -> ROUND 46 -> adoption d4e1652 -> banked):
+THE LEG-A REGROW. Leg A grew 67 -> 78 (11 CF4 per-method
+reclassifications, 9 TRGB + SBF + SNII, e_D 15-30% -> 4-9%; UMa kept,
+its two CF4 Cepheids = frozen co-read straddling the block; the 4
+LITTLE THINGS candidates EXCLUDED from primary by the pre-registered
+G10T-3b clause -- velocities agree 0.05 dex, Oh+15 baryon models
+one-sidedly 0.13 dex LOW, 7/7 overlap medians negative; LT co-reads
+65.1-65.4, materiality nil). ROUND 46 (REVIEW-ROUND46-OPUS.md
+uncommitted; hole YES letter-scoped; 14 conditions + amendment A1
+ALL executed; GA blind 508d2de + GB re-verified every load-bearing
+number): the as-fired '+-10.7 (stat)' was the FLAT engine's
+dispersion on the HIER central -- the pre-registered health check,
+never EVALUATED by the as-fired harness, fails at 0.94 sigma; the
+primary engine's own boot = 4.99 (health 0.005). **OPERATIVE
+(data/stage10t_verdict.txt): T-SHARPENED (ENGINE-QUALIFIED) --
+H0(leg A) = 65.4 +- 5.0 (stat) +- 0.5 (convergence plateau; three
+implementations span 64.9-65.9, the reviewer's 64.89-as-optimum
+REFUTED by the deeper profiler), nu-form family band 65.4-70.4 = THE
+DOMINANT TERM (the leg is SYSTEMATICS-LIMITED), membership variants
+64.8-65.4, flat treatment variant 76.7 (10.7 = envelope only),
+PEG-SHARED (CF4 calibrator scale = ladder pegs; gearing measured
+1.3-1.6), VALIDITY DOMAIN 62-75 (a real -3.0+-0.7% one-sided edge
+bias at truth 85, found by the C7-strengthened 8-seed arm ->
+amendment A1, runs preserved _asfired/_r46run1). Converged 10S
+baseline 65.25 -> the anchors moved the reading +0.10 (flow-era
+reading confirmed). Three-world scoring (SF annotated, report grade):
+L 0.3 / N 1.5 / P 1.9-2.7 sigma(stat) -- first world-separating
+tension, leaning against pegs-short, NOTHING excluded until the form
+is pinned.** NEVER QUOTE: '65.9 +- 10.7' (engine-mismatched), 0.01
+cross-estimator deltas. New standing rules (R46): health checks are
+EVALUATED with printed PASS/FAIL; sigma is ENGINE-MATCHED to its
+central (foreign-engine dispersion = labeled envelope only);
+cross-validation pools enumerate their joins in the prereg. Ledger
+cos-10t-legregrow (220 rows six gates PASS; cos-10s-h0meter ->
+CO-QUOTED, its 12.5 was also flat-engine). Credences 53/8 untouched
+(C14). **NEXT FORK (author's): the hammering menu said dipole next,
+but 10T's verdict gives PIN-THE-NU-FORM (in-catalog family contest on
+the anchored leg -- the 65.4-70.4 band is now the meter's bottleneck)
+a strong claim to jump the queue; KK98-251 coordinate resolution +
+D564-8/D631-7 CF4 check ride along at the next census; BIG-SPARC
+refire uses the R46 harness as-is. Wed 09-24 journal decision + early-
+Oct DR4 pre-sign unchanged. FRESH SESSION recommended before the next
+arc.**
