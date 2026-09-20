@@ -2930,7 +2930,12 @@ CONDITION; outreach resumes carrying P1+P2+F. UNCHANGED BY THE
 DIRECTIVE: the Chae click is the author's tonight-or-later call (the
 letter does not expire; Seoul-Monday timing repeats weekly); the WED
 2026-09-24 journal-backstop decision STANDS (journal submission is
-fire-and-forget, compatible with heads-down mode); the early-Oct DR4
+fire-and-forget, compatible with heads-down mode) — PRACTICAL
+CORRECTION 2026-09-20: OJAp is an arXiv OVERLAY journal (submission =
+an arXiv ID) so it sits BEHIND the unpassed endorsement gate; the
+realistic direct route is MNRAS (direct submission, no arXiv needed,
+no page charges, independent authors accepted); submission prep =
+MNRAS LaTeX conversion + a plain cover letter, hammering-compatible; the early-Oct DR4
 credence-map pre-sign session is CALENDAR-IMMOVABLE (hard deadline
 2026-12-02; it is itself data work); Boufourou/Tuveri trigger rules
 unchanged; P4 frozen through DR4.** **THE DATA SWEEP landed same night (5 scouts + main-loop CF4
