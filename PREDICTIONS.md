@@ -765,3 +765,67 @@ scout-verified unremarked in the EMRI-environment literature.
 Registration requires the D-normalization (O5-NORM); until D exists no
 kill number can be signed, so this is an annotation, not a prediction
 row. Threshold context: ~0.1–1 rad accumulated dephasing; LISA ~2035.*
+
+## F. The cosmology-instrument rows (registered 2026-09-20, this commit;
+## signed BEFORE any meter read sharper than stage 10S exists)
+
+Context: stage 10S (pre-reg 2a461d5/fb74226, Round-45-corrected verdict
+in data/stage10s_verdict.txt) executed the first a₀→H₀ lock inversion
+as a measurement: leg A (anchored) H₀ = 65.9 ± 12.5 (stat) with a
+~5 km/s/Mpc function-family band; three independent literature rounds
+found no published execution of this direction (van Putten = forward
+only). These rows register, in advance of any sharper read, WHAT a
+precise meter reading would discriminate. They are conditional
+discrimination tables under the lock (a₀ = cH/2π, instantaneous-H
+primary), not new predictions of the function.
+
+### F1 — the three-world discriminant (the meter against the ladder)
+The meter and the SH0ES ladder hang from the SAME calibration pegs (MW
+parallaxes / LMC / N4258 feeding the TRGB+Cepheid zero points; CF4
+table2 Note 4 makes the peg-sharing explicit for the 10T-era anchor
+set) with DIFFERENT gearing: a coherent peg rescale D → sD moves the
+ladder's H₀ as s⁻¹ but moves the meter's fitted a₀ as ~s⁻² (deep
+limit; the meter's measured response band is 1.3–1.6 by treatment, 10S
+G3), so the meter is ~×2 as peg-sensitive, same direction. At
+σ(meter) ≈ 2–3 km/s/Mpc the live worlds SEPARATE:
+- world P (shared pegs ~8% short; no new physics; true H₀ = 67): the
+  ladder reads 73 AND the meter reads ABOVE it, ≈ 75–79;
+- world N (new physics; the CMB extrapolation is wrong; true H₀ = 73;
+  pegs fine): the meter reads ≈ 73;
+- world L (true H₀ = 67; the ladder error lives BEYOND the shared pegs
+  — SN rung, photometry — which the meter does not use): meter ≈ 67;
+- lock-false (the control): the meter is unconstrained by any of the
+  three and its reading tracks none of the ladder/CMB structure.
+A LOW meter reading actively disfavors world P (the ×2 gearing would
+push it HIGH) — "meter agrees with Planck" points at a ladder
+systematic NOT in the shared pegs, never at pegs-short. Current state:
+66 ± 13 sits nearest world L but separates nothing (all three inside
+~1σ). Discrimination grade requires BIG-SPARC-era N (~4000 galaxies,
+2411.13329, in prep). Second-order dial (annotation, not a row): WHICH
+H the horizon tracks — instantaneous H(z) (the registered primary;
+lit0818/10H sign evidence) vs the dS-asymptotic H∞ = H₀√Ω_Λ ≈ 0.84 H₀
+— shifts the meter's conversion by up to ~16%; a precision meter
+co-read with the ladder constrains that branch (P3 falsifier-2 scope).
+
+### F2 — world V: the void/differential-expansion world
+The KBC-void class of tension solutions (Haslbauer, Banik & Kroupa
+2008.07524 — already a must-cite; MOND-amplified void) has the local
+~300 Mpc underdense and expanding faster: H_local ≈ 73 inside, global
+H₀ ≈ 67. Under the lock (instantaneous-H primary) this TRANSDUCES into
+galaxy dynamics: a₀_local = cH_local/2π runs HIGH inside the void, so
+the meter (fed by local rotation curves) reads ≈ 73 — degenerate with
+world N at the central value BUT with structure world N lacks:
+(a) a RADIAL a₀ gradient toward the void edge, and (b) an a₀ DIPOLE
+from our off-center position in it. Registered discriminant: at
+population grade, world V requires a₀ fitted in distance shells /
+hemispheres to vary coherently with the void geometry; world N
+requires it flat. The named executor is the a₀-dipole/hemisphere
+instrument on SPARC (hammering-queue item 2; Migkas/Secrest cluster
+anisotropies = the live external hints; direction + amplitude band to
+be signed at that stage's own pre-registration). This makes the
+Haslbauer mechanism lock-testable in rotation curves for the first
+time. Current 66 ± 13 leans weakly against V's central value and
+discriminates nothing. The strict reverse-causation form (galaxies
+sourcing expansion) is excluded within the measured mechanism: the O5
+carrier ledger bounds the galaxy→horizon energy channel 30+ orders
+below cosmological budgets (10A/10B); the arrow is horizon→galaxy.
