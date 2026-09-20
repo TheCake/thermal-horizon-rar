@@ -2938,7 +2938,22 @@ no page charges, independent authors accepted); submission prep =
 MNRAS LaTeX conversion + a plain cover letter, hammering-compatible; the early-Oct DR4
 credence-map pre-sign session is CALENDAR-IMMOVABLE (hard deadline
 2026-12-02; it is itself data work); Boufourou/Tuveri trigger rules
-unchanged; P4 frozen through DR4.** **THE DATA SWEEP landed same night (5 scouts + main-loop CF4
+unchanged; P4 frozen through DR4. **THE CZECH CHANNEL (author's idea,
+2026-09-20 night, VERIFIED): the resumed wave's SPEARHEAD = Pavel
+Kroupa, written in CZECH (author is Czech; Kroupa = Czech-born, Bonn
++ Charles Univ Prague guest professor, active 2025) — three hooks no
+other recipient has: co-author of Banik & Kroupa 2018 arXiv:1805.12273
+(the wide-binary test PROPOSAL that P1 executes), co-author of the
+KBC-void H0 paper (= world V, which the meter makes lock-testable),
+and can END0RSE astro-ph (solves the arXiv gate without Sutherland).
+Second Czech node: Michal Bilek (MOND specialist, FZU Prague +
+Paris). Letter AFTER the meter paper (F) exists, per hammer-first;
+agnostic posture explicit (Kroupa is a MOND partisan — we are not
+ammunition); endorsement ask embedded; outward rules apply IN CZECH
+(fresh-subagent cold read, no house dialect). Incidental delta-scan
+flags for pre-wave: arXiv 2607.14450 (2026 Chae-side anomaly
+confirmation) + MNRAS 547 stag342 quality-framework no-evidence paper
+(Cookson-family? verify).** **THE DATA SWEEP landed same night (5 scouts + main-loop CF4
 census, commit cf115cd; full block in PAPER-PROPOSALS Proposal F):
 leg A grows 67 -> ~90 (13 SPARC flow galaxies now CF4-anchor-grade,
 11 TRGB, shifts to +38%; NGC3972/4051 gain Cepheids = UMa check; ~12
