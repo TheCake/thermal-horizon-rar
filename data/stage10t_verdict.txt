@@ -1,0 +1,128 @@
+================================================================================
+STAGE 10T -- THE LEG-A REGROW: OPERATIVE VERDICT (Round-46-corrected)
+2026-09-20 night. This file supersedes the letter block of the as-fired
+output (preserved verbatim in data/stage10t_skyread_asfired.txt and at
+commit 87e689e). The operative corrected run = data/stage10t_skyread.txt
+(patched harness, R46 conditions C1-C13 + amendment A1 executed; stopped
+intermediate run preserved in data/stage10t_skyread_r46run1.txt).
+Verification chain: calcs/round46_addendum.py -- GA blind (committed
+508d2de BEFORE the round report; six legs green) + GB (every load-bearing
+reviewer number re-computed; one reviewer claim adjudicated, below).
+Round text: REVIEW-ROUND46-OPUS.md (uncommitted).
+================================================================================
+
+THE LETTER (as fired by the corrected harness):
+T-SHARPENED (ENGINE-QUALIFIED) [port caveat: LT co-reads only]
+
+  H0(leg A) = 65.4 +- 5.0 (stat) km/s/Mpc
+    - central = the DEEP-converged hierarchical BE fit on 78 anchored
+      galaxies (41 SPARC-anchored + 26 UMa + 11 CF4-reclassified);
+      convergence-plateau systematic +-0.5 (implementations span
+      64.9-65.9 within 0.73 profiled -2lnL units; GB-2b);
+    - sigma = the PRIMARY-ENGINE galaxy bootstrap (200 reps, distance
+      jitter + UMa shared draw), health check EVALUATED: |median -
+      central| = 0.005 sigma, PASS;
+    - function-family band 65.4-70.4 (p065 the high member) = NOW THE
+      DOMINANT TERM: the leg is SYSTEMATICS-LIMITED, and the named
+      successor is PIN THE NU-FORM, then BIG-SPARC N;
+    - membership-variant band 64.8-65.4 (CF4-uniform with all four
+      CF4-bearing UMa members swapped = the wide edge at 64.8); the
+      pre-registered flat treatment variant reads 76.7, and the
+      flat-engine dispersion 10.7 is retained ONLY as an envelope
+      spanning that treatment split;
+    - single-realization floor ~2.4 km/s/Mpc (8-seed injection SD at
+      the quote-region truths);
+    - VALIDITY DOMAIN (R46-A1): injection-validated unbiased at truths
+      62/66/73; a measured -3.0 +- 0.7% one-sided bias at the edge
+      truth 85 (all 8 seeds negative; noiseless exact) bounds the
+      quote's validity to readings <= ~75 -- recalibrate before ever
+      quoting higher;
+    - H0-ASSUMPTION-INDEPENDENT BUT PEG-SHARED: the CF4 per-method
+      moduli sit on the calibrator common scale (MW parallaxes / LMC /
+      N4258 -- the ladder's own pegs; CF4 ReadMe Abstract provenance);
+      the meter's peg-gearing is the measured 1.3-1.6 (x2 deep limit).
+
+  The meter still returns NO joint H0 (leg B power-limited at SPARC
+  grade; R45 standing, leg B not refired; flow census 82 -> 71).
+
+WHAT THE REGROW BOUGHT (the honest decomposition):
+  - 11 flow galaxies swapped 15-30% flow errors for 4-9% CF4 anchors
+    (TRGB x9, SBF, SNII); the 10S-67 deep baseline reads 65.25, the
+    extended 78 reads 65.36: the additions moved the converged central
+    by +0.1 -- the CF4 anchors are collectively consistent with what
+    the flow distances already said;
+  - flat-engine sigma decomposition (R46): 12.18 -> 11.40 from N,
+    -> 10.71 from error quality; the PRIMARY-engine sigma is 4.99;
+  - the additions are GD-LIGHT (1/11 gas-dominated; leg-A GD fraction
+    24% -> 22%); GD split 0.33 sigma; old-vs-new 0.04 sigma
+    (diagnostic only -- powerless at these subset sigmas, trap #16);
+  - UMa co-read: fitted shared u = -0.021 dex (block 18.0 -> 18.9 Mpc)
+    vs the two frozen CF4 Cepheids straddling the block (NGC3972
+    21.23, NGC4051 16.62); N=2 inside a 2.3 Mpc depth, annotation.
+
+THE LITTLE THINGS RULING (G10T-3b + R46-C3):
+  The 4 candidate LT dwarfs (CVnIdwA, DDO_52, DDO_133, DDO_210, all
+  CF4-TRGB) are CO-READS, never primary members. The two surveys'
+  VELOCITY fields agree (pooled |med dlgobs| = 0.053 dex over 91
+  matched rings including the Q=3 pairs the as-fired run silently
+  dropped -- NGC_2366's 44 rings and DDO_50; R46-F2) but Oh+15's
+  baryonic models sit ONE-SIDEDLY LOW vs SPARC's photometric ones:
+  7/7 overlap-galaxy medians negative (sign test p = 0.016), ring mean
+  -0.132 dex, galaxy median -0.139 dex vs the 0.12 bar, in the
+  DM-dominated subtraction regime (port V_bar^2/V_tot^2 ~ 0.1-0.2).
+  Under the literal as-registered ring-median statistic the gate would
+  have PASSED (0.090); the exclusion rests on the robust statistics,
+  now the pinned rule. Materiality either way <= 0.2 (LT-inclusive
+  co-read 65.4). All three LT co-reads: 65.1-65.4.
+
+ROUND 46 (fresh referee; ruling UNPATCHED HOLE YES, letter-scoped;
+adopted in full; 14 conditions + amendment A1 executed):
+  - F1 CONFIRMED (the round's centerpiece): the as-fired "+-10.7
+    (stat)" was the FLAT engine's dispersion attached to the HIER
+    central; the pre-registered health check, evaluated at last, fails
+    against the primary central (0.94 sigma) and the primary engine's
+    own boot gives 4.99 -- the leg was quoted at HALF its real
+    sharpness. The one place the stage under-claimed.
+  - F2 CONFIRMED numerically to the fourth digit (GB-3); exclusion
+    kept on robust grounds (above).
+  - F3 PARTIALLY CONFIRMED / claim ADJUDICATED (GB-2b): the
+    convergence plateau is real (+-0.5 systematic adopted; never quote
+    0.01-precision cross-estimator deltas); the reviewer's specific
+    "true optimum 64.89, stage +0.97 off" is REFUTED -- under the
+    deeper profiler his point is the worst of the three candidates and
+    the deep 65.36 is the best.
+  - F4-F11 all CONFIRMED and executed (variant band repaired + var4
+    as registered; composition disclosure was INVERTED, now measured;
+    old-vs-new relabeled diagnostic; injection arm strengthened --
+    which EXPOSED the 85-edge bias, amendment A1; peg clause restored;
+    provenance = ReadMe Abstract; unresolved-name pin corrected:
+    D564-8/D631-7 are TRGB-anchored at 8-9 Mpc, KK98-251 is flow at
+    6.8 Mpc INSIDE the reclassification band and its PGC is still
+    unresolved after 13 alias forms -- coordinate-based resolution
+    booked for the refire; gates_all wired; UMa 0.9-double-count seam
+    disclosed, immaterial, inherited from 10S).
+
+THE THREE-WORLD READ (PREDICTIONS SF, registered pre-read 37c9a34,
+scored at report grade):
+  At 65.4 +- 5.0 (stat): world L (true 67, ladder error beyond pegs)
+  0.3 sigma; world N (new physics, true 73) 1.5 sigma; world P (pegs
+  ~8% short) 1.9-2.7 sigma -- the first meter read with any
+  world-separating tension, and it leans AGAINST pegs-short exactly as
+  the x1.3-1.6 gearing predicts for a low reading. BUT the nu-form
+  band (+5.1) caps everything: no world is excluded until the form is
+  pinned. Successor order: PIN THE NU-FORM (in-catalog contest of the
+  family on the anchored leg), then BIG-SPARC N.
+
+RETRACTED / NEVER QUOTE: the 10S strings ("65.7 +- 8.5", sigma_B
+11.58) stay retracted; from this stage, never quote "65.9 +- 10.7"
+as the leg-A sharpness (engine-mismatched), and never quote a
+cross-estimator delta at 0.01 precision.
+
+CREDENCES: NO cell moves (pre-registered, both maps; 53 / 8 stand).
+
+Successors (in order): pin-the-nu-form stage on the anchored leg;
+KK98-251 coordinate resolution + D564-8/D631-7 CF4 check at the next
+census; BIG-SPARC refire (x20 N; the harness's R46 form is the refire
+instrument); WALLABY leg-B revival (gamma far from 1); DR4-era
+anchors.
+================================================================================

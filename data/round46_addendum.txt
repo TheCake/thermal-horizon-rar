@@ -32,3 +32,97 @@ GA-5 var4 cold start: a0 = 1.0112e-10 (stage warm 1.0112e-10; d = 0.003%)
 GA-6 conversion: independent-Mpc H0(1.0184e-10) = 65.861 (stage 65.86); KMS_MPC ratio = 1.000000089
 
 GA half complete (blind; committed before the round-46 report).
+
+======================================================================
+ROUND 46 ADDENDUM -- GB (post-report reviewer-number checks +
+the corrective operative re-runs; every load-bearing round-46
+number re-computed before adoption, per the standing rule)
+======================================================================
+
+GB-2 convergence audit (profiled -2lnL; reviewer -5918.094 /
+     -5918.910 at a0 1.00341e-10 -> 64.892):
+  profiled -2lnL at stage point = -5908.123 (rev -5918.094)
+  profiled -2lnL at rev optimum = -5907.576 (rev -5918.910)
+  gap = -0.547 (rev +0.816)
+  DEEP primary (tol 5e-4): a0 = 1.01064e-10 -> H0 = 65.359 (rev 64.892); f = 1.0505, s = 0.0324, u = -0.02115  [4s]
+  DEEP family H0: BE 65.36, p065 70.44, gm 66.29, boot 67.55  (rev 69.88/65.78/67.15)
+  DEEP 10S-67: H0 = 65.255 (rev 64.691); converged delta = +0.104 (rev +0.201)
+  DEEP UMa-only(u=0): H0 = 64.92 (rev 65.46; 10S archive 63.48 = optimizer scatter)
+
+GB-1 paired bootstrap (200 reps, seed 202, both engines):
+  rep 25/200  [110s]
+  rep 50/200  [177s]
+  rep 75/200  [248s]
+  rep 100/200  [314s]
+  rep 125/200  [382s]
+  rep 150/200  [447s]
+  rep 175/200  [514s]
+  rep 200/200  [583s]
+  flat engine: sigma = 10.71 (stage 10.71; rev 10.707), median 75.4
+  HIER (deep) engine: sigma = 4.99 (rev 5.07/5.14), median 65.4, pct 16/50/84 = [60.8, 65.4, 70.5]
+  paired ratio = 2.145 (rev 1.821); corr = 0.463 (rev 0.492)
+  HEALTH CHECK (pre-registered, now EVALUATED): hier |median-central|/sigma = 0.005 (bar 0.5) -> PASS; flat vs primary central = 0.938 (rev 0.891 FAIL)
+
+GB-3 literal-prereg cross-validation (7 pairs, no kept-set cut):
+  DDO_87    vs UGC05918 :   8 rings, med db -0.406
+  DDO_126   vs UGC07559 :   5 rings, med db -0.226
+  DDO_154   vs DDO154   :  14 rings, med db -0.079
+  DDO_168   vs DDO168   :  16 rings, med db -0.139
+  WLM       vs UGCA444  :   3 rings, med db -0.226
+  NGC_2366  vs NGC2366  :  44 rings, med db -0.057
+  DDO_50    vs UGC04305 :   1 rings, med db -0.101
+  pooled (91 rings): |med dlgobs| = 0.0531 (rev 0.0531), |med dlgbar| = 0.0903 (rev 0.0903, bar 0.12 -> literal gate PASSES)
+  robust: galaxy medians negative 7/7 (sign p = 0.0156), ring mean -0.1316, galaxy median -0.1392 (rev -0.132/-0.139: both FAIL the 0.12 bar)
+
+GB-4 variants (LT-free; stage-engine deep fits):
+  A-var2 LT-free: H0 = 65.30
+  A-var4 LT-free (as coded, 2 UMa swaps): H0 = 64.98
+  NGC4013: CF4 snII DM 31.582 -> D = 20.72 +- 4.39 Mpc (rev 20.72/13.96)
+  NGC4138: CF4 sbf DM 30.724 -> D = 13.96 +- 1.67 Mpc (rev 20.72/13.96)
+  A-var4 AS-REGISTERED (4 UMa swaps): H0 = 64.87 (rev coarse 64.708)
+  LT-inclusive co-read (deep): H0 = 65.35 (materiality vs primary -0.01)
+
+GB-5 composition (fired membership):
+  ESO563-G021  GDFRAC = 0.000
+  NGC2903      GDFRAC = 0.000
+  NGC4559      GDFRAC = 0.172
+  NGC5585      GDFRAC = 0.217
+  UGC02487     GDFRAC = 0.000
+  UGC05918     GDFRAC = 1.000
+  UGC05986     GDFRAC = 0.000
+  UGC07323     GDFRAC = 0.000
+  UGC07603     GDFRAC = 0.182
+  UGC08550     GDFRAC = 0.364
+  UGC12632     GDFRAC = 0.462
+  additions GD: 1/11 (rev 1/11); leg A GD 17/78 = 22% vs 10S 16/67 = 24% (rev: FELL 24 -> 22)
+GB-6 G10T-7b trip window: joint sigma = 43.63; 1-sigma trip needs additions outside [22.2, 109.5] (rev [22.2, 109.5]) -> POWERLESS, relabel diagnostic (trap #16)
+
+GB-7 injections, truth 66, 8 fresh seeds, deep estimator:
+  errors % = ['+4.71', '-4.54', '-3.30', '-3.90', '-2.28', '-2.42', '+5.39', '+1.07']
+  mean -0.66, SD 3.90, SE 1.38 (rev 12-seed: -0.90 / 5.20 / 1.50); stage r(62,85) from printed errors = 0.9998 (rev 0.9998)
+
+GB-8 text checks:
+  absolute-scale sentence at char -1 (Abstract region: YES); Note (4) at 11130 = registration sentence only -> F9 CONFIRMED (attribution wrong)
+  D564-8   : f_D = 2, D = 8.79 Mpc (rev: 2/8.79, 2/7.72, 1/6.80, 1/15.2) -> F10 CONFIRMED
+  D631-7   : f_D = 2, D = 7.72 Mpc (rev: 2/8.79, 2/7.72, 1/6.80, 1/15.2) -> F10 CONFIRMED
+  KK98-251 : f_D = 1, D = 6.80 Mpc (rev: 2/8.79, 2/7.72, 1/6.80, 1/15.2) -> F10 CONFIRMED
+  D512-2   : f_D = 1, D = 15.20 Mpc (rev: 2/8.79, 2/7.72, 1/6.80, 1/15.2) -> F10 CONFIRMED
+  UMa .mrt e_D values: ['2.50'] (rev: all 2.5 -> pin-7 double-count +6%, immaterial, inherited from 10S) -> F11b CONFIRMED
+
+GB complete [10.0 min]
+
+GB-2b ADJUDICATION SPOT CHECK (three candidate optima under the deep
+profiler, 60-sweep dv/dml refinement, xatol 1e-7):
+  stage-loose point (65.86):  profiled -2lnL = -5908.123
+  GB deep point     (65.36):  profiled -2lnL = -5908.310  <- best
+  reviewer point    (64.89):  profiled -2lnL = -5907.576  <- worst
+RULING ON R46-F3: PARTIALLY CONFIRMED. The convergence PLATEAU is
+real -- three independent implementations (stage loose / GB deep /
+reviewer converged) span 1 km/s/Mpc within 0.73 profiled units, so
+0.01-precision cross-estimator deltas are retracted and a +-0.5
+km/s/Mpc convergence-plateau systematic is carried. The reviewer's
+specific claim (64.892 = the optimum; the stage +0.97 off it) is NOT
+confirmed: under the deeper profiler his point is the worst of the
+three and the stage point sits only +0.19 above the best. OPERATIVE
+CENTRAL = the deep estimator (65.36), engine-matched to its own
+bootstrap (GB-1: median 65.4, health 0.005 sigma PASS).

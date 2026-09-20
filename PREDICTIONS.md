@@ -829,3 +829,19 @@ discriminates nothing. The strict reverse-causation form (galaxies
 sourcing expansion) is excluded within the measured mechanism: the O5
 carrier ledger bounds the galaxy→horizon energy channel 30+ orders
 below cosmological budgets (10A/10B); the arrow is horizon→galaxy.
+
+*Annotation 2026-09-20 (same night, post-10T Round 46; append-only, no
+flip): (a) F1's "~×2 as peg-sensitive" reads as the deep-limit
+asymptote; the operative gearing is the MEASURED response band
+1.3–1.6 (10S G3), ×2 only in the deep limit (R46-C9 wording). (b)
+First scoring at the corrected 10T grade (data/stage10t_verdict.txt:
+H0(leg A) = 65.4 ± 5.0 stat, ν-form band +5.1, validity domain
+62–75): world L 0.3σ(stat), world N 1.5σ, world P 1.9–2.7σ, world V
+central ≈ world N (1.5σ) pending the gradient/dipole discriminant —
+the first meter read with any world-separating tension, leaning
+against pegs-short exactly as the gearing's sign predicts for a low
+reading; NOTHING is excluded while the ν-form band spans the L–N gap.
+The registered successor priority is therefore PIN THE ν-FORM (an
+in-catalog family contest on the anchored leg), then BIG-SPARC N. The
+F1 sentence "current 66 ± 13 … separates nothing" is superseded at
+report grade by this annotation.*

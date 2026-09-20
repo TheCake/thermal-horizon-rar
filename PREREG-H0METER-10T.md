@@ -262,3 +262,84 @@ No extended-set central computed or printed anywhere.
 Membership note for the record: the prereg's "expected 82" resolves to
 PRIMARY 78 + 4 LT co-reads via the G10T-3b clause — the exclusion is
 the gate working as designed, not an amendment (no rule changed).
+
+## ROUND 46 ADOPTION RECORD (2026-09-20 night; report in
+## REVIEW-ROUND46-OPUS.md, uncommitted; verification =
+## calcs/round46_addendum.py GA (blind, pre-committed 508d2de) + GB;
+## operative corrected output = data/stage10t_skyread.txt re-fired
+## from the patched harness, with the AS-FIRED original preserved in
+## data/stage10t_skyread_asfired.txt and at commit 87e689e; operative
+## verdict = data/stage10t_verdict.txt)
+Ruling adopted IN FULL: UNPATCHED HOLE YES, letter-scoped, not
+verdict-reversing; T-SHARPENED → T-SHARPENED (ENGINE-QUALIFIED); all
+14 conditions executed (C1–C13 in the patched harness + addendum;
+C14 = no credence move, as pre-registered).
+The two severe holes, in the record's own words:
+- F1: the as-fired "± 10.7 (stat)" was the FLAT engine's bootstrap
+  dispersion attached to the HIER central; the pre-registered
+  bootstrap-health check (|median − central| < 0.5σ), which this
+  prereg wrote down and the stage printed inputs for but never
+  EVALUATED, fails against the primary central. The corrected quote
+  carries the primary-engine bootstrap σ, with the flat dispersion
+  retained only as an envelope spanning the treatment split. The leg
+  is thereby SYSTEMATICS-LIMITED (ν-form band > stat), and the
+  successor priority flips from more-anchors to PIN-THE-ν-FORM.
+- F2: the G10T-3b cross-validation pool was silently restricted to
+  SPARC-kept overlap galaxies (dropping the two Q=3 pairs, NGC_2366
+  with 44 matched rings and DDO_50); under the literal registered
+  pool the ring-median statistic PASSES. The LT exclusion STANDS on
+  the robust statistics (all seven galaxy medians negative, ring mean
+  and galaxy median both beyond the 0.12 bar), now the pinned decision
+  rule in the harness. Materiality either way ≤ 0.2 km/s/Mpc.
+Also adopted: F3 (the loose alternation is a coordinate-descent fixed
+point ~1 km/s/Mpc above the profile optimum; the operative estimator
+is the deep-converged fit, the loose fit is kept only as the 10S
+regression tie; never quote 0.01-precision deltas across estimators);
+F4 (variant band repaired: primary-eligible variants run LT-free,
+A-var4 swaps all four CF4-bearing UMa members, the flat treatment
+variant is named at its own value in the band sentence); F5 (the
+composition disclosure was INVERTED — the additions are GD-LIGHT,
+1/11; corrected to the measured fractions, with the three zero-point
+anchored dwarfs named); F6 (old-vs-new relabeled a diagnostic — the
+gate was powerless, trap #16); F7 (injection arm: per-truth
+independent rng streams, 8 seeds, interior truth added; the
+self-widening bar named; the realization floor carried into the
+letter); F8/C9 (every "H0-assumption-independent" now carries the
+peg-sharing clause; gearing quoted as the measured 1.3–1.6 with ×2 as
+the deep-limit asymptote); F9/C10 (the absolute-scale provenance
+sentence is from the CF4 ReadMe ABSTRACT, not Note 4 — CORRECTION to
+this prereg's "Distance-source pins" section, which mis-attributed
+it); F10/C11 (CORRECTION to the pin's unresolved-name sentence: NOT
+all unresolved names are flow LSBs ≳45 Mpc — D564-8 and D631-7 are
+f_D=2 at ~8–9 Mpc, KK98-251 is flow at 6.8 Mpc and D512-2 at 15.2;
+KK98-251's PGC must be resolved before the next refire); F11 (var4
+count 29-with-points; the pin-7 UMa 0.9-double-count seam disclosed —
+inherited from 10S, immaterial; gates_all wired into the letter;
+"computed anywhere" → "REPORTED").
+R46 AMENDMENT A1 (2026-09-20, logged after the corrected harness's
+run 1 STOPPED at the strengthened G10T-4 and BEFORE any corrected
+verdict; the stopped run is preserved verbatim in
+data/stage10t_skyread_r46run1.txt): executing C7 (8 independent seeds
+per truth, interior truth added) exposed a REAL one-sided estimator
+bias at the EDGE truth only — truth 85 recovers −2.96 ± 0.73% (all 8
+seeds negative) while truths 62 (+0.87 ± 1.01%) and 73 (−0.66 ±
+1.31%) are unbiased and the noiseless arm is exact everywhere: a
+noise-induced calibration property of the deep estimator ~20 km/s/Mpc
+above the actual reading, invisible to the as-fired 5-shared-seed arm
+(which passed its pre-registered bar). Amended semantics,
+direction-neutral for the reading: quote-region truths {62, 73} (plus
+the addendum's 66) are LETTER-VETOING; the edge truth 85 is a
+CALIBRATION-MAP leg whose failure adds a VALIDITY-DOMAIN clause to
+the letter (the quote is valid where it sits; any future reading
+above ~75 requires recalibration first) instead of stopping a reading
+deep inside the validated region. The finding itself is banked as
+instrument knowledge for the BIG-SPARC-era refire.
+Standing additions to the program's rules (from this round):
+- A pre-registered health check must be EVALUATED by the harness with
+  a printed PASS/FAIL, never merely have its inputs printed.
+- A dispersion is quoted only for the estimator that produced the
+  central ("engine-matched σ"); a different engine's dispersion may be
+  co-quoted as a labeled envelope only.
+- A cross-validation pool's implicit joins (name→index maps, kept-set
+  filters) are part of the gate definition and must be enumerated in
+  the prereg.

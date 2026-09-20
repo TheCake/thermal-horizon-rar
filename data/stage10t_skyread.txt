@@ -43,25 +43,29 @@ G10T-1: PASS  [17s]
 -- G10T-3 port (9R identity + overlap cross-validation) --
   9R ARM-V census identity: 65 pts / 7 gal (archived 65/7) -> PASS
   overlap cross-validation (matched rings, LT rescaled to SPARC D):
+    DDO_50     vs UGC04305  :   1 rings, med dlgobs = +0.077, med dlgbar = -0.101 (port Vbar2/Vtot2 med 0.66)  [SPARC Q=3, outside the fit kept-set]
     DDO_87     vs UGC05918  :   8 rings, med dlgobs = -0.048, med dlgbar = -0.406 (port Vbar2/Vtot2 med 0.09)
     DDO_126    vs UGC07559  :   5 rings, med dlgobs = +0.063, med dlgbar = -0.226 (port Vbar2/Vtot2 med 0.20)
     DDO_154    vs DDO154    :  14 rings, med dlgobs = -0.010, med dlgbar = -0.079 (port Vbar2/Vtot2 med 0.11)
     DDO_168    vs DDO168    :  16 rings, med dlgobs = +0.136, med dlgbar = -0.139 (port Vbar2/Vtot2 med 0.15)
+    NGC_2366   vs NGC2366   :  44 rings, med dlgobs = +0.064, med dlgbar = -0.057 (port Vbar2/Vtot2 med 0.23)  [SPARC Q=3, outside the fit kept-set]
     WLM        vs UGCA444   :   3 rings, med dlgobs = +0.022, med dlgbar = -0.226 (port Vbar2/Vtot2 med 0.14)
-  pooled (46 rings): |med dlgobs| = 0.008 (bar 0.06), |med dlgbar| = 0.159 (bar 0.12) -> FAIL (LT excluded from primary)
+  pooled (91 rings, 7 pairs): |med dlgobs| = 0.0531, |med dlgbar| = 0.0903; ring mean -0.1316, galaxy median -0.1392, same-sign 7/7
+  R46 robust rule (mean/galaxy-median vs 0.12; sign census): -> FAIL (LT excluded from primary)
   LT members EXCLUDED from primary per the pre-registered clause
   primary leg A = 78 (41 anchored + 26 UMa + 11 reclassified); LT = co-read only
 
 -- G10T-4 injections (extended design) --
-  noiseless    50 ->   49.98 (0.031%)
-  noiseless    62 ->   61.98 (0.038%)
-  noiseless    73 ->   72.96 (0.058%)
-  noiseless    85 ->   85.21 (0.248%)
-  noiseless   100 ->   99.98 (0.021%)
-  noiseless -> PASS  [18s]
-  noisy truth 62: errors % = ['-0.05', '+6.16', '-5.29', '-5.73', '-3.20']; mean -1.62 (bar max(1%, 2SE=4.38%)), SD 4.90% = realization floor -> PASS
-  noisy truth 85: errors % = ['+0.01', '+6.51', '-5.53', '-5.99', '-3.11']; mean -1.62 (bar max(1%, 2SE=4.59%)), SD 5.13% = realization floor -> PASS
-G10T-4: PASS  [24s]
+  noiseless    50 ->   49.99 (0.030%)
+  noiseless    62 ->   61.98 (0.026%)
+  noiseless    73 ->   72.95 (0.065%)
+  noiseless    85 ->   85.11 (0.126%)
+  noiseless   100 ->   99.98 (0.022%)
+  noiseless -> PASS  [24s]
+  noisy truth 62 (8 indep seeds): errors % = ['+5.07', '-0.09', '+4.96', '-0.08', '-0.61', '-1.25', '+1.78', '-2.82']; mean +0.87 (bar max(1%, 2SE=2.02%) -- SELF-WIDENING, residual bias up to ~2.0% passes), SD 2.86% = realization floor -> PASS
+  noisy truth 73 (8 indep seeds): errors % = ['-3.49', '-4.08', '+3.24', '+0.26', '+3.44', '+2.21', '-0.33', '-6.57']; mean -0.66 (bar max(1%, 2SE=2.62%) -- SELF-WIDENING, residual bias up to ~2.6% passes), SD 3.70% = realization floor -> PASS
+  noisy truth 85 (8 indep seeds): errors % = ['-1.41', '-2.02', '-7.12', '-3.07', '-1.38', '-3.31', '-0.88', '-4.50']; mean -2.96 (bar max(1%, 2SE=1.46%) -- SELF-WIDENING, residual bias up to ~1.5% passes), SD 2.07% = realization floor -> calibration-map: EDGE BIAS (validity-domain clause)
+G10T-4: PASS  [57s]
 
 -- G10T-5 power (central masked in gates mode) --
   sigma(H0_A, extended) = 10.71 km/s/Mpc (10S: 12.52; bar for T-SHARPENED path: <= 12.0)
@@ -69,8 +73,9 @@ G10T-5: T-SHARPENED path OPEN
 
 -- G10T-6 provenance --
   CF4 ReadMe Note 4 (verbatim): per-method moduli are given 'after
-  registration to a common scale with the MCMC analysis'; absolute
-  scale = 'Cepheid period-luminosity relation and tip of the red
+  registration to a common scale with the MCMC analysis'. The
+  absolute-scale sentence is from the ReadMe ABSTRACT (R46-C10):
+  'Cepheid period-luminosity relation and tip of the red
   giant branch observations founded on local stellar parallax
   measurements along with the geometric maser distance to NGC 4258'.
   TF/FP columns EXCLUDED (dynamical circularity); combined DM
@@ -79,42 +84,50 @@ G10T-5: T-SHARPENED path OPEN
 
 GATES: G1 PASS  G2 PASS  G3a PASS  G3b LT-EXCLUDED  G4 PASS  G5 open
 
-== 10T SKY READ: the extended leg A ==
-PRIMARY hier BE: a0 = 1.0184e-10, f_ML = 1.05, s_int = 0.032, u = -0.0231 dex -> H0_A = 65.86
-flat co-read: a0 = 1.1855e-10 (H0 76.7), f_d = 0.92
-hier family: BE 1.0184e-10 (H0 65.9), p065 1.0952e-10 (H0 70.8), gm 1.0306e-10 (H0 66.6), boot 1.0479e-10 (H0 67.8)
-sigma_A (flat boot, 200 reps, seed 202): 10.71; percentiles 16/50/84 = [64.6, 75.4, 86.4]
-LEG A (extended): H0_A = 65.86 +- 10.71 km/s/Mpc (hier BE primary; family H0 65.9-70.8)
+== 10T SKY READ: the extended leg A (R46-corrected) ==
+PRIMARY hier BE (DEEP, R46-C2): a0 = 1.0106e-10, f_ML = 1.050, s_int = 0.032, u = -0.0211 dex -> H0_A = 65.36
+  10S-convention loose fit (regression tie only): H0 = 65.86 (the loose alternation carries ~1 km/s/Mpc convergence scatter; R46-F3)
+flat co-read (the pre-registered treatment variant): a0 = 1.1855e-10 (H0 76.7), f_d = 0.92
+hier family (deep): BE 1.0106e-10 (H0 65.4), p065 1.0892e-10 (H0 70.4), gm 1.0250e-10 (H0 66.3), boot 1.0446e-10 (H0 67.6)
+sigma_A PRIMARY engine (hier boot, 200 reps, seed 202; R46-C1) running...  [97s]
+sigma_A (hier/PRIMARY): 4.99; percentiles 16/50/84 = [60.8, 65.4, 70.5]
+sigma_A (flat engine, co-quote): 10.71; percentiles = [64.6, 75.4, 86.4] (location sits at the flat co-read; spans the treatment split)
+BOOTSTRAP HEALTH CHECK (R46-C1, EVALUATED): |median - central| = 0.03 = 0.005 sigma (bar 0.5) -> PASS
+LEG A (extended): H0_A = 65.36 +- 4.99 (stat, primary-engine boot) km/s/Mpc; flat-engine envelope 10.71; family H0 65.4-70.4
 
 -- variants --
-A-var2 (UMa Cepheid pair moved, u-group 24): a0 = 1.0152e-10 (H0 65.7), u = -0.0223
-LT-inclusive co-read (gas slot; EXCLUDED from primary by G10T-3b): a0 = 1.0160e-10 (H0 65.7)
-A-var3 (LT disk-slot, f+dml on total; co-read only): a0 = 1.0146e-10 (H0 65.6)
-A-var4 (CF4-uniform; 31 original anchors swapped + UMa pair): a0 = 1.0112e-10 (H0 65.4)
-A-var5 (LT cut 0.20, 4 LT gal / 49 pts; co-read only): a0 = 1.0109e-10 (H0 65.4)
-10S-67 baseline (G10T-1): a0 = 1.0186e-10 (H0 65.87 +- 12.52)
-variant spread (primary-eligible variants): 65.4 - 65.9
+A-var2 (UMa Cepheid pair moved, u-group 24; LT-free): a0 = 1.0098e-10 (H0 65.3), u = -0.0206
+A-var4 (CF4-uniform; 29 original anchors with points swapped + 4 UMa members incl. NGC4013/NGC4138; LT-free; R46-C8): a0 = 1.0019e-10 (H0 64.8)
+LT-inclusive co-read (gas slot; EXCLUDED from primary by G10T-3b): a0 = 1.0106e-10 (H0 65.4)
+LT disk-slot co-read: a0 = 1.0068e-10 (H0 65.1)
+LT cut-0.20 co-read (4 LT gal / 49 pts): a0 = 1.0059e-10 (H0 65.1)
+10S-67 baseline: deep 65.25 / archived loose 65.87 +- 12.52 (flat-engine sigma; the G10T-1 regression tie)
+membership-variant band (primary-eligible: primary/var2/var4): 64.8 - 65.4; the pre-registered treatment variant (flat co-read) sits at 76.7
 
 -- G10T-7 composition --
-GD split (hier): GD(17) 1.0002e-10 / non-GD(61) 1.0275e-10; |d| = 2.73e-12 = 0.17 sigma (LT members GD by construction of the port; all 4 genuinely Mgas > Mstar per Oh+15)
-old-vs-new split: old(67) 1.0186e-10 (H0 65.9) vs new(11) 1.0523e-10 (H0 68.1 +- 41.8); |d| = 0.05 x joint sigma
+GD split (deep, letter-selecting): GD(17) 9.9317e-11 / non-GD(61) 1.0188e-10; |d| = 2.56e-12 = 0.33 x primary sigma
+MEASURED composition (R46-C5): the additions are GD-LIGHT -- 1/11 gas-dominated (UGC05918 only) vs 16/67 = 24% in the 10S baseline; leg-A GD fraction 17/78 = 22% (fell from 24%). Also pruned one-sidedly: three anchored dwarfs with zero surviving points (UGC07559/UGC07577/UGC07866, f_D=2, 2.6-5.0 Mpc).
+old-vs-new (DIAGNOSTIC, R46-C6 -- 1-sigma trip would need the additions outside [22, 110], powerless): old(67) 65.9 vs new(11) 67.7 +- 41.8; |d| = 0.04 x joint sigma
 
 -- G10T-8 UMa co-read (annotation) --
-fitted shared u = -0.0231 dex (distance factor 1.055 on 18.0 Mpc -> 18.98 Mpc); frozen Cepheids: NGC3972 21.23 Mpc (+0.072 dex), NGC4051 16.62 Mpc (-0.035 dex); N=2 inside a 2.3 Mpc depth -- annotation grade
+fitted shared u = -0.0211 dex (distance factor 1.050 on 18.0 Mpc -> 18.90 Mpc); frozen Cepheids: NGC3972 21.23 Mpc (+0.072 dex), NGC4051 16.62 Mpc (-0.035 dex); N=2 inside a 2.3 Mpc depth -- annotation grade
 
 == LETTER ==
-T-SHARPENED [port caveat: LT excluded from primary by G10T-3b]: the regrown anchored leg reads
-  H0(leg A) = 65.9 +- 10.7 (stat) km/s/Mpc,
-  function-family band 65.9-70.8, variant band 65.4-65.9 (H0-assumption-independent; hier BE primary).
-  This is a leg-A update of the 10S M-GRAY state: the meter still returns no joint H0 (leg B power-limited at SPARC grade, R45).
+T-SHARPENED (ENGINE-QUALIFIED) [port caveat: LT co-reads only, per G10T-3b]: the regrown anchored leg reads
+  H0(leg A) = 65.4 +- 5.0 (stat, primary-engine bootstrap) km/s/Mpc,
+  function-family band 65.4-70.4 (now the dominant term), membership-variant band 64.8-65.4;
+  the flat-engine dispersion 10.7 is retained only as an envelope that also spans the 11.3 hier-vs-flat treatment split (the flat treatment variant reads 76.7); single-realization floor 2.4.
+  H0-assumption-independent BUT PEG-SHARED (R46-C9): the anchor moduli sit on CF4's calibrator common scale = the ladder's own pegs (MW parallaxes/LMC/N4258); the meter's peg-gearing is the measured 1.3-1.6 (x2 in the deep limit).
+  VALIDITY DOMAIN (R46-A1): the estimator is injection-validated unbiased over H0_true 62-73 (and 66 in the addendum); at the edge truth 85 it carries a measured -3.0% one-sided bias -- the quote is valid where it sits; any future reading above ~75 requires recalibration first.
+  This is a leg-A update of the 10S M-GRAY state: the meter still returns no joint H0 (leg B power-limited at SPARC grade, R45), and the leg is now SYSTEMATICS-LIMITED (nu-form band > stat).
 
 MANDATORY DISCLOSURES:
-  treatment split: flat co-read a0 = 1.186e-10 vs hier 1.018e-10 (the 4H/5M M/L-vs-a0 degeneracy; hier = pre-registered primary).
-  composition: additions are GD-heavy by design; GD split 0.17 sigma, old-vs-new 0.05 sigma.
+  treatment split: flat co-read a0 = 1.186e-10 (H0 76.7) vs hier 1.011e-10 (H0 65.4) -- the 4H/5M M/L-vs-a0 degeneracy; hier = pre-registered primary.
+  composition (measured, R46-C5): additions GD-LIGHT (1/11); leg-A GD fraction 24% -> 22%; GD split 0.33 sigma (letter-selecting), old-vs-new 0.04 (diagnostic).
   flow census: 82 -> 71 with-points (11 reclassified; UGC09992 reclassified on paper, zero surviving points); leg B NOT refired (R45 standing).
-  LT port: velocity fields agree (pooled med dlgobs 0.008 dex) but the baryon models split (med dlgbar -0.16 dex, bar 0.12; port Vbar2/Vtot2 ~ 0.1-0.2 = DM-dominated subtraction) -> the 4 LT dwarfs are co-reads, never primary members, per the pre-registered G10T-3b clause.
-  three-world read (PREDICTIONS SF, report grade): at sigma ~ 11 the table separates nothing; registered for the BIG-SPARC-era refire.
+  LT port (R46-C3): velocity fields agree (pooled |med dlgobs| = 0.053 dex over 91 rings incl. the Q=3 pairs) but the baryon models sit one-sidedly low (7/7 galaxy medians negative, ring mean -0.132, galaxy median -0.139 vs bar 0.12; port Vbar2/Vtot2 ~ 0.1-0.2 = DM-dominated subtraction) -> the 4 LT dwarfs are co-reads, never primary members.
+  three-world read (PREDICTIONS SF at the corrected grade): at H0_A = 65.4 +- 5.0 (stat) the worlds sit at L 0.3 / N 1.5 / P 1.9-2.7 sigma(stat); discrimination is capped by the nu-form band (+5.1), so the named successor is PIN THE NU-FORM, then BIG-SPARC N.
 
-verdict letter: T-SHARPENED
+verdict letter: T-SHARPENED (ENGINE-QUALIFIED)
 credences: NO cell moves on any outcome (pre-registered); 53/8 untouched
-total wall-clock: 0.8 min
+total wall-clock: 10.8 min
