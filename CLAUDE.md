@@ -2856,3 +2856,50 @@ pre-sign session remains BLOCKING before 2026-12-02 (draft map to Grok
 first). Author context: back in Prague; girlfriend's graduation 09-17
 (the fifteen roses landed); checks the inbox less -- keep asks
 scheduled, not urgent.**
+
+**THE PROPOSALS DAY (2026-09-20, Sunday, one session): the forward
+portfolio was designed and banked. READ [PAPER-PROPOSALS-2026-09.md]
+(ignored via .git/info/exclude, deliberately NOT the public .gitignore)
+= proposals A (DR4 protocol paper, HARD deadline 12-02) / B (hidden-
+companion census paper) / C (Paper P + the 27-trap catalog + the
+author's speed-finds-ledger-keeps rebalance) / D (the gas-dominated
+anomaly paper -- lit scout: the c1 sign reversal is UNPUBLISHED, novelty
+holds; EDGE-2025 "RAR not universal in dwarfs" = closest neighbor,
+argues for arXiv sooner; data wall STANDS (MHONGOOSE/FEASTS release =
+firing trigger; WALLABY = consistency-grade only); first move = the
+SPARC-only bias-propagation stage) / E (realization note, folds into C)
+/ F (the cosmology-instrument paper: Hubble meter + a0 dipole + z-lock;
+scouts: a0->H0-as-measurement UNEXECUTED anywhere, dipole NEAR-MISS
+[arXiv 1707.00417 primary-read FIRST]) + P3/P4 status. NAMING: the P2
+Sec-8 anomaly = **"the dissident dwarfs"** (author's choice; sober
+abstract, one christening line at the journal pass; queued in
+REVIEW-REGISTER with the Sec-8 mechanism-suspects upgrade + P3's two
+pre-circulation fixes [stale "opened at circulation" line + pre-v1.3
+"adversarial/independent sessions" register]). **STAGE 10S H0METER
+STARTED sky-blind:** PREREG-H0METER-DRAFT.md written, UNCOMMITTED by
+the author's instruction (his word commits it, THEN sky legs fire);
+THE CIRCULARITY FIND: 97/175 SPARC distances are Hubble-flow ASSUMING
+H0=73 (50 anchored TRGB/Cep/SN, 28 UMa provenance-unknown) -> the naive
+H0 = 67.9 +- 6.5 km/s/Mpc is NOT publishable; the honest instrument =
+two legs (anchored-direct + flow-self-consistent) whose AGREEMENT is
+the test; G2 census PASSED (two parsers, 97/45/3/28/2); G7 added (leg A
+is dwarf-heavy incl. DDO154 -> gas-dominated composition disclosed both
+ways); REMAINING: G1 regression harness, G3 scaling injection, G4
+solver validation, G5 power check, UMa desk check -- FRESH SESSION.
+Priority per the author ("worth gold, don't defer"): F-core jumps the
+queue right after the Chae send; A keeps its deadline via an early-Oct
+pre-sign session; B slides. P4 stays FROZEN through DR4 (conflation
+protection). Register rule: "AI referee rounds" retired in speech ->
+"review sessions" (memory addendum saved; the vetted v1.3 in-paper
+sentence stands). Scout discipline: haiku scouts garbled an arXiv ID
+and asserted the a0(z) sign backwards (rising a0(z) IS the lock's sign)
+-- catches #6/#7 for verify-everything. Zenodo API decoded: flat stats
+keys = ALL-versions, version_* = THIS record; v1.3 had 8 unique
+downloads in ~2 days vs the v1.2 baseline 1/16 days (likely human;
+Sutherland's local trio = Pittordis + Shepherd; the Cookson-et-al
+seven = the organized Newton side, 4/7 already contacted). Chae send
+recommended Sun ~22:30-23:00 Prague (= Mon ~05:30 Seoul); STILL ZERO
+replies anywhere as of the send eve. The pop-science booklet
+Gravitys-Loose-Thread.pdf lives in the author's Documents folder
+(fact-checked, both agents' fixes applied). Credences 53/8 UNMOVED all
+day (planning + instrument-side work only).**

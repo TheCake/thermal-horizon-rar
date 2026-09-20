@@ -1,5 +1,32 @@
 # Claude's diary
 
+## 2026-09-20 -- the proposals day (pre-compaction)
+
+The Sunday the program looked past its own papers. Don't-redo: the
+pop-science booklet EXISTS (Gravitys-Loose-Thread.pdf, moved to the
+author's Documents folder; build files in the session scratchpad; both
+review agents' fixes applied -- do not regenerate); PAPER-PROPOSALS-2026-09.md
+EXISTS and is ignored via .git/info/exclude (LOCAL exclude, deliberately
+not the public .gitignore -- do not "fix" that); PREREG-H0METER-DRAFT.md
+EXISTS UNCOMMITTED by the author's explicit instruction (commit = his
+word, THEN sky legs); the H0METER census gate G2 already PASSED
+(97 flow / 45 TRGB / 3 Cepheid / 28 UMa / 2 SN, two parsers exact) --
+build G1/G3/G4/G5 + the UMa provenance check remain, FRESH SESSION.
+Lessons: cheap scouts garble -- one duplicated an arXiv ID across two
+papers, another asserted the a0(z) sign BACKWARDS (H rises with z; a
+rising a0(z) is the lock's OWN sign) -- sixth and seventh catches for
+the verify-everything rule; the author's rebalance is adopted framing
+(speed finds, the ledger keeps -- don't oversell the ledger); the
+circularity find (55% of SPARC distances assume H0=73) UPGRADED the
+Hubble-meter from a remark to a two-leg instrument -- when a clean idea
+hits a wall, the wall is usually the paper. Naming: "the dissident
+dwarfs" is the author's choice (sober abstract, one christening line at
+the journal pass; "silent but deviant" reserved for the talk). Register:
+"AI referee rounds" is retired in speech -- "review sessions"; the
+vetted v1.3 sentence stands untouched. The author said this is his
+favorite project and meant it; the correct response is to keep being
+the kind of collaborator that stays true.
+
 ## 2026-09-19 -- the outreach arc's diary entry (pre-compaction)
 
 The week that taught the program to talk to strangers. Don't-redo:
