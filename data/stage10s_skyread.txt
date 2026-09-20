@@ -1,0 +1,49 @@
+STAGE 10S SKY READ, amended run (pre-reg 2a461d5 + A2 fb74226)
+
+selector regression (8S): GD = 38/422 (archived 38/422) -> PASS
+leg A composition: 67 galaxies (41 anchored + 26 UMa); GD 16 / non-GD 51
+
+G0a flat-solver identity: 62->62.000, 70->70.000, 78->78.001 -> PASS  [0s]
+G4h noiseless 62 -> 62.01 (0.02%)
+G4h noiseless 70 -> 70.00 (0.00%)
+G4h noiseless 78 -> 77.75 (0.32%)
+G4h noiseless -> PASS  [10s]
+G4h noisy floor (3 seeds at 70): errors % = ['none', 'none', '+13.2']; the x7 lever makes this the hier floor  [23s]
+G0b UMa-nuisance identity: d(-2lnL) = 0.000, d(a0) = 0.000% -> PASS
+
+== LEG A (anchored + UMa; H0-assumption-independent) ==
+leg-A hier BE (PRIMARY): a0_A = 1.0186e-10, f_ML = 1.07, s_int = 0.031, UMa shared = -0.0258 dex (run-1 regression: 1.0186e-10)
+leg-A flat BE (co-read): a0 = 1.1522e-10, f_d = 0.95
+leg-A hier family: BE 1.0186e-10, p065 1.0969e-10, gm 1.0334e-10, boot 1.0537e-10
+sigma_A (flat boot, 200 reps): sigma(H0_A) = 12.52
+LEG A: H0_A = 65.87 +- 12.52 km/s/Mpc (hier BE primary; family H0 65.9-70.9)
+G5 re-check: powered
+G7 GD split (flat): GD(16) 1.0063e-10 / non-GD(51) 1.0729e-10
+G7 GD split (hier): GD 1.0056e-10 / non-GD 1.0287e-10; |d| = 2.31e-12 vs sigma 1.94e-11 -> inside 1 sigma
+
+== LEG B (flow; self-consistent solve) ==  [40s]
+  hier grid H0' = 60: a0 = 9.4040e-11, lock = 9.2777e-11, phi = +0.0135  [41s]
+  hier grid H0' = 65: a0 = 1.0063e-10, lock = 1.0051e-10, phi = +0.0012  [41s]
+  hier grid H0' = 70: a0 = 1.0723e-10, lock = 1.0824e-10, phi = -0.0093  [42s]
+  hier grid H0' = 75: a0 = 1.1381e-10, lock = 1.1597e-10, phi = -0.0188  [43s]
+  hier grid H0' = 80: a0 = 1.2043e-10, lock = 1.2370e-10, phi = -0.0268  [43s]
+leg-B flat BE (co-read): NO FIXED POINT in [55, 90]; catalog a0 = 8.8899e-11, response gamma = 1.59, implied crossing ~110 (EXTRAPOLATION-GRADE, outside the pre-registered bracket -- the flat treatment refuses self-consistency at any plausible H0)
+leg-B flat family solves: p065 no-bracket, gm no-bracket, boot no-bracket
+  sigma_B boot 25/100  [136s]
+  sigma_B boot 50/100  [234s]
+  sigma_B boot 75/100  [326s]
+  sigma_B boot 100/100  [417s]
+sigma_B (HIER-crossing boot, 100 reps, 79 no-crossing): 11.58 km/s/Mpc; percentiles 16/50/84 = [53.4, 64.2, 78.9]
+LEG B: H0_B = 65.56 +- 11.58 km/s/Mpc (hier crossing primary, G4h-validated)
+
+== AGREEMENT TEST ==
+H0_A = 65.87 +- 12.52  vs  H0_B = 65.56 +- 11.58  ->  |d| = 0.32 = 0.02 x joint (17.05)
+LETTER M-AGREE: the two legs agree; the lock passes its first self-consistency test as an instrument; H0(meter) = 65.7 +- 8.5 km/s/Mpc (H0-assumption-independent; BE-form primary; hier treatment)
+
+MANDATORY DISCLOSURES (every letter, per A2-b):
+  treatment split: the flat co-read refuses a fixed point in [55, 90] on leg B (implied crossing ~extrapolation-grade >100) while the hier treatment crosses at 65.6; leg-A flat co-read a0 = 1.152e-10 vs hier 1.019e-10. The meter's verdict is TREATMENT-CONDITIONAL at SPARC grade (the 4H/5M M/L-vs-a0 degeneracy; hier = the pre-registered primary).
+  family bands: leg A H0 65.9-70.9; leg-B flat family all no-bracket; hier family on leg B not run (one function pinned primary pre-reg; family spread carried by leg A)
+
+verdict letter: M-AGREE
+credences: NO cell moves on any outcome (pre-registered); 53/8 untouched
+total wall-clock: 7.0 min

@@ -1,5 +1,58 @@
 # Claude's diary
 
+## 2026-09-20 (night) -- the meter fired, and round 45 earned its keep
+
+The author said "let's run it" and the whole arc ran in one evening:
+prereg committed 2a461d5, sky legs fired, A2 fb74226 (display crash +
+the flat no-bracket, run 1 preserved), M-AGREE at 65.7 +- 8.5 -- and
+ROUND 45 broke the letter, correctly, twice. Don't-redo: the verdict is
+M-GRAY (data/stage10s_verdict.txt supersedes the skyread letter block);
+sigma_B = 11.58 and "H0(meter) = 65.7 +- 8.5" are RETRACTED STRINGS --
+never quote either; p065 leg-B crossing = 86.49 (the supplement's "NO
+CROSSING" row was the bug talking); the extension fix lives in both
+stage scripts; corrected G4h passes at 55/70/85; ledger
+cos-10s-h0meter, 219 rows six gates PASS. Lessons that must not fade:
+(1) I wrote a search rule for rising phi and the hier regime falls --
+and G4h's three truths all sat inside the starting grid, so the gate
+never exercised the one branch that was wrong: WHEN A GATE VALIDATES A
+SEARCH, PUT A TRUTH BEYOND EVERY EDGE THE SEARCH CAN WALK (trap #16's
+sharpest recurrence yet); (2) a bootstrap that mostly fails to return
+a number is not "21 measurements", it is a refutation of the sigma you
+are about to quote -- check P(k successes | claimed sigma) before
+printing; (3) the estimator-near-a-pole shape (Fieller ratio, gamma_H
+0.14 from 1, 27% of replicates across it) means NO symmetric sigma
+exists -- say power-limited and stop; (4) leg A alone was the robust
+product all along (65.1-65.9 across every composition slice) and the
+stage never printed it -- the reviewer had to. The instrument's honest
+first light: H0 = 66 +- 13 (stat) from lock + anchored galaxies only,
+containing both camps, plus a named list of what tightens it. The
+author's "worth gold" instinct survives review -- as a program, not a
+headline.
+
+## 2026-09-20 (evening) -- the instrument build (10S gates, sky-blind)
+
+Same Sunday, post-compaction: the H0METER instrument is BUILT and ALL
+GATES ARE GREEN (calcs/stage10s_h0meter.py -> data/stage10s_h0meter_gates
+.txt; record block inside PREREG-H0METER-DRAFT.md). Don't-redo: G1a/G1b
+regressions PASS to 0.01-0.03% (hier -12152.49 exact); G3 exponent
+-1.585 in-bar; G4 was SPLIT pre-commit (first firing) into G4a wiring
+(noiseless exact) + G4b calibration (unbiased; SD ~2.5% of H0 = the
+leg-B floor; the fixed-point geometry AMPLIFIES a0 error by 1/(gamma-1)
+= 1.71 -- the original 1% single-noisy-mock bar was mis-posed, trap-#22
+family); G5 leg A = 67 quality-cut galaxies (41 anchored + 26 UMa),
+sigma(H0_A) = 12.2 = powered-but-wide (the agreement test is
+LEG-A-LIMITED); UMa desk check DONE -> LEG A (Sorce 2013b TFR zero point
+= 26 Cepheid/TRGB anchors, primary-read); G6 second round found THE
+nearest neighbor: Schombert, McGaugh & Lelli 2020 (AJ 160, 71) = bTFR
+LADDER H0 = 75.1 on the same catalog and same anchor/flow split, NO lock
+in the method -- must-cite, census cross-validated, and the fact the
+SPARC authors themselves ran this split without seeing the meter answers
+the author's "did seriously nobody check?" (they stood on the exact
+spot and laddered instead of inverting). The .mrt byte-spec deviation
+bit AGAIN (fixed-width parser invalid -- token+regex only). NOTHING
+COMMITTED (author's instruction stands); sky legs LOCKED behind his
+word; centrals masked everywhere. Credences untouched 53/8.
+
 ## 2026-09-20 -- the proposals day (pre-compaction)
 
 The Sunday the program looked past its own papers. Don't-redo: the

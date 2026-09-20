@@ -17592,3 +17592,62 @@ seven experts on our mailing list will. He found no broken conclusions
 papers slightly wrong. All fixed, all double-checked against the
 original papers themselves. The package is sealed; what remains is
 clicking "upload" and "send".
+
+--------------------------------------------------------------------------
+2026-09-20 (late evening) -- STAGE 10S "H0METER" + ROUND 45 (the first
+a0 -> H0 instrument; pre-reg 2a461d5 + A2 fb74226, both before their
+runs; letter M-GRAY by the round, adopted in full)
+
+The lock a0 = cH0/2pi was fired as an instrument for the first time
+anywhere (G6: two targeted rounds; nearest neighbor = Schombert, McGaugh
+& Lelli 2020, bTFR ladder H0 = 75.1 on the same catalog and the same
+50-anchor/95-flow split, no lock in the method -- the SPARC authors
+stood on the spot and laddered outward instead of inverting). Design:
+the provenance census (97 flow assuming H0=73 / 45 TRGB / 3 Cepheid /
+28 UMa / 2 SN, two parsers) splits SPARC into an anchored leg (direct
+a0_A -> H0_A) and a flow leg (self-consistent fixed point in H0'), with
+agreement as the pre-registered spine. UMa desk check (primary read):
+Sorce 2013b's TF zero point = 26 Cepheid/TRGB galaxies -> UMa joins leg
+A with a 0.9-Mpc shared-distance nuisance.
+
+SKY: leg A (hier BE primary, all gates green) H0_A = 65.9 +- 12.5
+(stat), family band 65.9-70.9; robustness u=0 65.1 / anchored-only
+65.3 / UMa-only 63.5; GD split inside 1 sigma. Leg B fired as M-AGREE
+at 65.7 +- 8.5 -- and ROUND 45 broke it, both holes verified in
+calcs/round45_addendum.py before adoption: (1) the crossing-search
+extension rule was written for rising phi while the hier regime falls
+(gamma_H = 0.86) -- a noiseless truth-85 mock returns NO CROSSING under
+the stage logic and 85.00 under the fix; p065's "no crossing" was false
+(86.49); G4h had only ever run where it could not fail; (2) sigma_B =
+11.58 was self-refuted by its own bootstrap (P(<=21 in-window of 100) =
+4.6e-61; survivors' sd = 0.89 of the uniform-window value). The honest
+structure: leg B is a x7.1 amplifier on a 1.5% quantity, 0.14 from the
+pole at gamma = 1 that the bootstrap crosses ~27% of the time -- no
+finite variance at SPARC grade; POWER-LIMITED, no number. The agreement
+was consistent-but-uninformative (73% of the window would have passed).
+Treatment split SINGULAR: flat gamma 1.585 and hier 0.86 straddle the
+pole (implied crossings 109.8 vs 65.6). Ledger cos-10s-h0meter (219
+rows, six gates PASS); corrected verdict = data/stage10s_verdict.txt;
+14 round conditions adopted; extension fix in both scripts; corrected
+G4h passes at truths 55/70/85.
+
+CREDENCES: NO moves on any outcome (pre-registered; under M-GRAY the
+report-grade clause does not fire). anomaly-real 53 / mech 8.
+
+PLAIN VERDICT: NEEDS REFINEMENT -- the anchored leg is a real, powered,
+H0-assumption-independent reading (66 +- 13 stat, +~5 function),
+consistent with Planck AND SH0ES and discriminating between neither;
+the flow leg, which would have made it a closed test, is not an
+instrument at SPARC grade. The census, the circularity finding, the
+closed form, and the leg-A robustness set are the durable products.
+
+ELI12: We built a speedometer that reads the universe's expansion off
+how hard gravity's whisper is. The half using landmark-measured
+distances works: it says roughly 66, with big error bars that cover
+both famous camps. The clever half -- making the map redraw itself
+until it stops contradicting the speedometer -- turned out to sit on a
+mathematical cliff edge: tiny nudges send its answer flying anywhere.
+Our referee also caught our search walking the wrong way along the
+cliff and quoting a confidence it never earned. We fixed the code, took
+back the too-good number, and wrote down exactly which better data
+would let each half work.

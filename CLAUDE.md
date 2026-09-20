@@ -2884,8 +2884,40 @@ H0 = 67.9 +- 6.5 km/s/Mpc is NOT publishable; the honest instrument =
 two legs (anchored-direct + flow-self-consistent) whose AGREEMENT is
 the test; G2 census PASSED (two parsers, 97/45/3/28/2); G7 added (leg A
 is dwarf-heavy incl. DDO154 -> gas-dominated composition disclosed both
-ways); REMAINING: G1 regression harness, G3 scaling injection, G4
-solver validation, G5 power check, UMa desk check -- FRESH SESSION.
+ways); **BUILD COMPLETE same evening: ALL GATES GREEN**
+(calcs/stage10s_h0meter.py -> data/stage10s_h0meter_gates.txt; gate
+record inside the prereg draft): G1a/G1b regressions 0.01-0.03%, G3
+exponent -1.585 in-bar, G4 split pre-commit into G4a wiring (noiseless
+exact) + G4b calibration (unbiased, leg-B floor ~2.5% of H0,
+amplification 1/(gamma-1)=1.71), G5 leg A = 67 galaxies (41 anchored +
+26 UMa) sigma(H0_A)=12.2 powered-but-wide, UMa desk check -> LEG A
+(Sorce 2013b = Cepheid/TRGB TF zero point, primary-read), G6 second
+round: NEAREST NEIGHBOR = Schombert McGaugh & Lelli 2020 (AJ 160,71;
+bTFR LADDER H0=75.1, same catalog, same anchor/flow split, NO lock) =
+must-cite + census cross-validation. **10S FIRED SAME NIGHT (author's
+"let's run it"): pre-reg COMMITTED 2a461d5 + A2 fb74226 (run 1
+preserved) -> sky legs -> ROUND 45 (fresh Opus; REVIEW-ROUND45-OPUS.md
+uncommitted) DOWNGRADED the as-fired M-AGREE to M-GRAY, adopted in
+full, every reviewer number re-verified (calcs/round45_addendum.py
+GA-1..7 ALL CONFIRMED): LEG A (powered, the durable product) H0 = 65.9
++- 12.5 stat, family 65.9-70.9, robust across every composition slice
+(u=0 65.1 / anchored-only 65.3 / UMa-only 63.5, GD inside 1 sigma);
+LEG B POWER-LIMITED -- the flow solve is a x7.1 amplifier 0.14 from
+the gamma=1 pole (bootstrap crosses it ~27% => no finite variance);
+TWO R45 HOLES both real: extension-direction bug (search walked away
+from high roots; p065 crossing = 86.49 NOT "none"; fix in both
+scripts; corrected G4h passes 55/70/85) + sigma_B 11.58 self-refuted
+(P(<=21/100 in-window) = 4.6e-61) -- NEVER quote "65.7 +- 8.5" or
+sigma_B 11.58 (retracted strings); agreement =
+consistent-but-uninformative (73% of window would have passed);
+treatment split SINGULAR (flat implies ~109 vs hier 65.6, opposite
+sides of the pole); operative verdict file = data/stage10s_verdict.txt;
+ledger cos-10s-h0meter (219 rows six gates PASS); honest headline =
+the R45-allowed sentence in the verdict file; successors: DR4-era
+anchors / CosmicFlows flow model / cross-leg composition gate.
+Proposal F absorbs this as "the meter's first light + its measured
+levers", NOT as an H0 measurement. Credences 53/8 untouched all
+night.**
 Priority per the author ("worth gold, don't defer"): F-core jumps the
 queue right after the Chae send; A keeps its deadline via an early-Oct
 pre-sign session; B slides. P4 stays FROZEN through DR4 (conflation

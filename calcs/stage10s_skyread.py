@@ -1,32 +1,21 @@
 """
-STAGE 10S SKY READ -- the two-leg H0 meter fires (licensed by the
-pre-registration commit 2a461d5, author's word 2026-09-20 "let's run it").
+STAGE 10S SKY READ -- the two-leg H0 meter (pre-reg 2a461d5 + amendment
+A2 fb74226; run 1 preserved in data/stage10s_skyread_run1.txt).
 
-Everything here follows PREREG-H0METER-DRAFT.md pins 1-10 + letters.
-- LEG A (anchored + UMa, hier no-lensing PRIMARY with the UMa
-  shared-distance nuisance; flat BE co-read; sigma_A = the G5 bootstrap
-  machinery unmasked; hier family {p065, gm, boot} band; G7 GD split).
-- LEG B (flow; PRIMARY central = hier no-lensing a0 on the trial grid
-  H0' in {60,65,70,75,80}, crossing vs cH0'/2pi by linear interpolation,
-  extension by 5 to at most [50,95]; engine + sigma_B = the gated flat
-  BE fixed-point solve, 150-rep galaxy bootstrap with distance jitter;
-  flat family band).
-- AGREEMENT TEST: |H0_A - H0_B| vs the joint quadrature sigma; letters
-  M-AGREE / M-GRAY / M-SPLIT / M-POWER-DEAD per the pre-registered
-  grammar; prohibitions: no single-leg headline, no H0 without the
-  family band, "H0-assumption-independent" never "ladder-independent".
+A2 changes vs run 1 (all logged pre-letter in the pre-reg):
+  (a) display guards (run 1 crashed at a print after all fits landed);
+  (b) flat co-read reported as NO-FIXED-POINT-IN-RANGE with the
+      extrapolation-grade implied crossing labeled as such; the
+      flat-vs-hier treatment split NAMED in every letter;
+  (c) NEW GATE G4h: the hier crossing is injection-validated (noiseless
+      lock-mocks at 62/70/78 through the full grid procedure, bar 1%;
+      3-seed noisy replication at 70 = the hier floor). No hier H0_B
+      without G4h;
+  (d) sigma_B = galaxy bootstrap of the HIER crossing (100 reps, grid
+      {50,60,70,80,90}, per-pick distance jitter), replacing the
+      selection-biased flat-solve bootstrap.
 
-Wiring identities run FIRST (G0a: the G4a noiseless mocks reproduce
-62/70/78 to 0.2%; G0b: the UMa nuisance at prior width 1e-6 reproduces
-the plain no-nuisance leg-A fit). GD selector inherited verbatim from
-stage 8S (regression: 38 galaxies / 422 points). Implementation notes:
-the .mrt e_D = 2.5 Mpc for UMa members already includes the 0.9 shared
-part in quadrature (sqrt(2.3^2+0.9^2)); pin 7 keeps it as-is, so the
-shared component is very mildly double-counted in the per-galaxy prior
--- conservative (wider), disclosed. Hier G7 split quoted at hier grade
-only where both sides have >= 15 galaxies; flat split always printed.
-
-NO credence cell moves on any outcome (pre-registered).
+Pins 1-10 otherwise as committed. NO credence cell moves on any outcome.
 Writes data/stage10s_skyread.txt.
 """
 import glob, math, os, time
@@ -40,7 +29,7 @@ C_LIGHT = 299792458.0
 KMS_MPC = 3.240779e-20
 A0_FID = 1.2e-10
 S_ML = 0.1*LN10
-U_PRIOR = (0.9/18.0)/LN10        # UMa shared-distance prior, dex
+U_PRIOR = (0.9/18.0)/LN10
 
 def h0_of_a0(a0):
     return 2.0*math.pi*a0/C_LIGHT/KMS_MPC
@@ -54,7 +43,7 @@ def P(s):
     L.append(s)
 
 t00 = time.time()
-P("STAGE 10S SKY READ (pre-reg 2a461d5; two legs, one agreement test)")
+P("STAGE 10S SKY READ, amended run (pre-reg 2a461d5 + A2 fb74226)")
 P("")
 
 # ---------------- data build (verbatim harness) ----------------
@@ -108,11 +97,10 @@ flow_gal = ug[FD_G == 1]
 anch_gal = ug[np.isin(FD_G, (2, 3, 5))]
 uma_gal = ug[FD_G == 4]
 legA_gal = np.concatenate([anch_gal, uma_gal])
-assert len(gobs) == 2700 and kept == 153, "data-build regression FAIL"
-assert (len(flow_gal), len(anch_gal), len(uma_gal)) == (82, 41, 26), \
-    "leg census regression FAIL"
+assert len(gobs) == 2700 and kept == 153
+assert (len(flow_gal), len(anch_gal), len(uma_gal)) == (82, 41, 26)
+gpts_all = {g: np.where(gal_id == g)[0] for g in ug}
 
-# GD selector (verbatim 8S)
 gdfrac = {}
 for g_ in ug:
     m = gal_id == g_
@@ -120,8 +108,8 @@ for g_ in ug:
 gd_all = np.array([g_ for g_ in ug if gdfrac[g_] >= 0.5])
 npts_gd = int(np.isin(gal_id, gd_all).sum())
 sel_ok = (len(gd_all) == 38 and npts_gd == 422)
-P(f"selector regression (8S): GD = {len(gd_all)} galaxies / {npts_gd} "
-  f"points (archived 38/422) -> {'PASS' if sel_ok else 'FAIL'}")
+P(f"selector regression (8S): GD = {len(gd_all)}/{npts_gd} "
+  f"(archived 38/422) -> {'PASS' if sel_ok else 'FAIL'}")
 gd_A = np.array([g_ for g_ in legA_gal if gdfrac[g_] >= 0.5])
 nd_A = np.array([g_ for g_ in legA_gal if gdfrac[g_] < 0.5])
 P(f"leg A composition: {len(legA_gal)} galaxies ({len(anch_gal)} anchored "
@@ -169,10 +157,8 @@ def nu_boot(y):
     return nu
 FAMS = {'BE': nu_be, 'p065': nu_p065, 'gm': nu_gm, 'boot': nu_boot}
 
-# ---------------- flat machinery (gated in 10S harness) ----------------
-def fit_flat(pidx, nu, dlg=0.0, x0=(-9.92, 1.2)):
-    lg = lgobs[pidx] + dlg
-    gg, gd, gb_ = g_gas[pidx], g_dsk[pidx], g_bul[pidx]
+# ---------------- flat machinery (gated) ----------------
+def fit_flat_pts(lg, gg, gd, gb_, nu, x0=(-9.92, 1.2)):
     def lo(v):
         la0, fd = v
         if not (-10.8 < la0 < -9.2) or not (0.3 <= fd <= 3): return 1e9
@@ -183,21 +169,9 @@ def fit_flat(pidx, nu, dlg=0.0, x0=(-9.92, 1.2)):
                  options={'xatol': 1e-5, 'fatol': 1e-12, 'maxiter': 3000})
     return b.x[0], b.x[1]
 
-def fit_flat_pts(lg, gg, gd, gb_, nu, x0=(-9.92, 1.2)):
-    def lo(v):
-        la0, fd = v
-        if not (-10.8 < la0 < -9.2) or not (0.3 <= fd <= 3): return 1e9
-        gN = gg + fd*gd + gb_
-        r = lg - np.log10(gN*nu(gN/10**la0))
-        return float(np.mean(r*r))
-    b = minimize(lo, list(x0), method='Nelder-Mead',
-                 options={'xatol': 1e-5, 'fatol': 1e-12, 'maxiter': 3000})
-    return b.x[0]
-
 def solve_flat(lg, gg, gd, gb_, nu, iters=16):
-    """Fixed-point solve on given point arrays (lg at the catalog frame)."""
     def F(h0p):
-        la0_i = fit_flat_pts(lg - math.log10(73.0/h0p), gg, gd, gb_, nu)
+        la0_i, _ = fit_flat_pts(lg - math.log10(73.0/h0p), gg, gd, gb_, nu)
         return 10**la0_i - a0_of_h0(h0p)
     lo, hi = 55.0, 90.0
     flo = F(lo)
@@ -210,19 +184,30 @@ def solve_flat(lg, gg, gd, gb_, nu, iters=16):
     return 0.5*(lo+hi)
 
 # ---------------- hier machinery (5M minus lensing, + UMa u) ----------
-def build_sub(gal_list):
-    gset = set(int(g) for g in gal_list)
-    pidx = np.where(np.isin(gal_id, list(gset)))[0]
-    glist = sorted(gset)
-    gmap = {g: i for i, g in enumerate(glist)}
-    gidx_s = np.array([gmap[g] for g in gal_id[pidx]])
-    sv = np.array([sigv_g_map[g] for g in glist])
-    isuma_g = np.array([1.0 if fd_g_map[g] == 4 else 0.0 for g in glist])
-    return dict(pidx=pidx, n=len(glist), gidx=gidx_s, sv=sv,
-                isuma_g=isuma_g, isuma_pt=isuma_g[gidx_s],
+def build_sub(gal_seq, lg_src=None, dlg_per_occ=None):
+    """gal_seq may contain duplicates (bootstrap picks): each occurrence
+    is its own group with its own dv/dml. lg_src overrides lgobs (mocks).
+    dlg_per_occ: per-occurrence lgobs shift (distance jitter)."""
+    src = lgobs if lg_src is None else lg_src
+    blocks, gidx_s, sv, ig = [], [], [], []
+    lg_parts = []
+    for k, g in enumerate(gal_seq):
+        pts = gpts_all[int(g)]
+        blocks.append(pts)
+        gidx_s.append(np.full(len(pts), k))
+        sv.append(sigv_g_map[int(g)])
+        ig.append(1.0 if fd_g_map[int(g)] == 4 else 0.0)
+        shift = 0.0 if dlg_per_occ is None else dlg_per_occ[k]
+        lg_parts.append(src[pts] + shift)
+    pidx = np.concatenate(blocks)
+    gidx_s = np.concatenate(gidx_s)
+    n = len(gal_seq)
+    ig = np.array(ig)
+    return dict(n=n, gidx=gidx_s, sv=np.array(sv), isuma_g=ig,
+                isuma_pt=ig[gidx_s],
                 gg=g_gas[pidx], gd=g_dsk[pidx], gb=g_bul[pidx],
-                lg=lgobs[pidx].copy(), s2=sig2[pidx],
-                gpts=[np.where(gidx_s == i)[0] for i in range(len(glist))])
+                lg=np.concatenate(lg_parts), s2=sig2[pidx],
+                gpts=[np.where(gidx_s == i)[0] for i in range(n)])
 
 def fit_hier(sub, nu, use_u=False, upri=U_PRIOR, dlg=0.0, tol=0.05,
              max_rounds=15, th0=None):
@@ -234,7 +219,6 @@ def fit_hier(sub, nu, use_u=False, upri=U_PRIOR, dlg=0.0, tol=0.05,
     w_g = np.ones(n)
     dml = np.zeros(n)
     dv = np.zeros(n)
-    ndim = 4 if use_u else 3
 
     def m2(th, dml, dv):
         if use_u:
@@ -304,7 +288,50 @@ def fit_hier(sub, nu, use_u=False, upri=U_PRIOR, dlg=0.0, tol=0.05,
     if b.fun < best.fun: best = b
     return best
 
-# ---------------- G0a: solver wiring identity ----------------
+def hier_crossing(sub, grid=(60.0, 65.0, 70.0, 75.0, 80.0),
+                  lo_cap=50.0, hi_cap=95.0, verbose=False):
+    """The leg-B PRIMARY estimator: hier a0 on the trial grid, crossing
+    vs the lock by linear interpolation; extension by 5 within caps."""
+    phi = {}
+    th_warm = None
+    def node(h0p):
+        nonlocal th_warm
+        b = fit_hier(sub, nu_be, use_u=False,
+                     dlg=-math.log10(73.0/h0p), th0=th_warm)
+        th_warm = list(b.x)
+        return math.log(10**b.x[0]) - math.log(a0_of_h0(h0p)), 10**b.x[0]
+    for h0p in grid:
+        phi[h0p], a0h = node(h0p)
+        if verbose:
+            P(f"  hier grid H0' = {h0p:.0f}: a0 = {a0h:.4e}, lock = "
+              f"{a0_of_h0(h0p):.4e}, phi = {phi[h0p]:+.4f}  "
+              f"[{time.time()-t00:.0f}s]")
+    def bracketed(ph):
+        ks = sorted(ph.keys())
+        return any(ph[ks[i]]*ph[ks[i+1]] <= 0 for i in range(len(ks)-1))
+    while not bracketed(phi):
+        # ROUND-45 FIX (condition 2): the original rule assumed a RISING
+        # phi (the flat regime); the hier regime FALLS (gamma_H < 1), so
+        # it extended AWAY from high roots (one-sided censoring; the
+        # reviewer's noiseless truth-85 demonstration). Slope-aware now.
+        ks = sorted(phi.keys())
+        slope = phi[ks[-1]] - phi[ks[0]]
+        if phi[ks[0]] > 0: go_up = slope < 0
+        else: go_up = slope > 0
+        if go_up and ks[-1] < hi_cap: nxt = ks[-1] + 5.0
+        elif (not go_up) and ks[0] > lo_cap: nxt = ks[0] - 5.0
+        else: return None
+        phi[nxt], _ = node(nxt)
+        if verbose:
+            P(f"  hier grid EXTENDED H0' = {nxt:.0f}: phi = {phi[nxt]:+.4f}")
+    ks = sorted(phi.keys())
+    for i in range(len(ks)-1):
+        if phi[ks[i]]*phi[ks[i+1]] <= 0:
+            x0_, x1_ = ks[i], ks[i+1]
+            return x0_ + (x1_-x0_)*phi[x0_]/(phi[x0_]-phi[x1_])
+    return None
+
+# ---------------- G0a: flat solver identity ----------------
 fidx = np.where(np.isin(gal_id, flow_gal))[0]
 FD_TRUE = 1.2
 gN_true = g_gas[fidx] + FD_TRUE*g_dsk[fidx] + g_bul[fidx]
@@ -318,42 +345,77 @@ for h0_true in (62.0, 70.0, 78.0):
     derr = abs(h0_rec - h0_true)/h0_true if h0_rec else 1.0
     g0a_ok &= derr < 0.002
     rows.append(f"{h0_true:.0f}->{h0_rec:.3f}" if h0_rec else "NO-BRACKET")
-P(f"G0a solver identity (noiseless mocks): {', '.join(rows)} -> "
+P(f"G0a flat-solver identity: {', '.join(rows)} -> "
   f"{'PASS' if g0a_ok else 'FAIL'}  [{time.time()-t00:.0f}s]")
 
+# ---------------- G4h: hier-crossing injection (A2 gate) ----------
+# mock lgobs arrays live on the full-point grid so build_sub can slice
+g4h_ok = True
+mock_full = np.empty_like(lgobs)
+for h0_true in (62.0, 70.0, 78.0):
+    s_true = 73.0/h0_true
+    a0t = a0_of_h0(h0_true)
+    gNf = g_gas + FD_TRUE*g_dsk + g_bul
+    mock_full[:] = np.log10(s_true*gNf*nu_be(gNf/a0t))
+    subm = build_sub(list(flow_gal), lg_src=mock_full.copy())
+    h0r = hier_crossing(subm)
+    derr = abs(h0r - h0_true)/h0_true if h0r else 1.0
+    g4h_ok &= derr < 0.01
+    P(f"G4h noiseless {h0_true:.0f} -> "
+      f"{h0r:.2f} ({100*derr:.2f}%)" if h0r else
+      f"G4h noiseless {h0_true:.0f} -> NO CROSSING")
+P(f"G4h noiseless -> {'PASS' if g4h_ok else 'FAIL'}  "
+  f"[{time.time()-t00:.0f}s]")
+errs = []
+for seed in (42, 101, 202):
+    rng = np.random.default_rng(seed)
+    s_true = 73.0/70.0
+    a0t = a0_of_h0(70.0)
+    gNf = g_gas + FD_TRUE*g_dsk + g_bul
+    mock_full[:] = (np.log10(s_true*gNf*nu_be(gNf/a0t))
+                    + rng.normal(0, np.sqrt(sig2 + 0.08**2)))
+    subm = build_sub(list(flow_gal), lg_src=mock_full.copy())
+    h0r = hier_crossing(subm)
+    errs.append(100*(h0r-70.0)/70.0 if h0r else float('nan'))
+errs = np.array(errs)
+P(f"G4h noisy floor (3 seeds at 70): errors % = "
+  f"{[('%+.1f' % e) if np.isfinite(e) else 'none' for e in errs]}; the "
+  f"x{1.0/(1.0-0.86):.0f} lever makes this the hier floor  "
+  f"[{time.time()-t00:.0f}s]")
+if not g4h_ok:
+    P("G4h FAILED -> per A2 no hier H0_B is quoted; letter path "
+      "degrades to the flat co-read + M-GRAY/M-POWER-DEAD grammar")
+
 # ---------------- G0b: UMa nuisance identity ----------------
-subA = build_sub(legA_gal)
+subA = build_sub(list(legA_gal))
 bA_plain = fit_hier(subA, nu_be, use_u=False)
 bA_tight = fit_hier(subA, nu_be, use_u=True, upri=1e-6,
                     th0=list(bA_plain.x)+[0.0])
 d_fun = abs(bA_tight.fun - bA_plain.fun)
 d_a0 = abs(10**bA_tight.x[0] - 10**bA_plain.x[0])/10**bA_plain.x[0]
 g0b_ok = d_fun < 0.5 and d_a0 < 0.002
-P(f"G0b UMa-nuisance identity (width 1e-6 vs plain): d(-2lnL) = "
-  f"{d_fun:.3f}, d(a0) = {100*d_a0:.3f}% -> "
-  f"{'PASS' if g0b_ok else 'FAIL'}  [{time.time()-t00:.0f}s]")
+P(f"G0b UMa-nuisance identity: d(-2lnL) = {d_fun:.3f}, d(a0) = "
+  f"{100*d_a0:.3f}% -> {'PASS' if g0b_ok else 'FAIL'}")
 P("")
 
 # ================= LEG A =================
-P("== LEG A (anchored + UMa; H0-assumption-independent distances) ==")
+P("== LEG A (anchored + UMa; H0-assumption-independent) ==")
 bA = fit_hier(subA, nu_be, use_u=True, th0=list(bA_plain.x)+[0.0])
 a0_A = 10**bA.x[0]
-u_A = bA.x[3]
-P(f"leg-A hier BE (PRIMARY): a0_A = {a0_A:.4e} m/s^2, f_ML = "
-  f"{bA.x[1]:.2f}, s_int = {bA.x[2]:.3f}, UMa shared offset = "
-  f"{u_A:+.4f} dex (prior width {U_PRIOR:.4f})")
-la0_Af, fd_Af = fit_flat(np.where(np.isin(gal_id, legA_gal))[0], nu_be)
+P(f"leg-A hier BE (PRIMARY): a0_A = {a0_A:.4e}, f_ML = {bA.x[1]:.2f}, "
+  f"s_int = {bA.x[2]:.3f}, UMa shared = {bA.x[3]:+.4f} dex "
+  f"(run-1 regression: 1.0186e-10)")
+aidx = np.where(np.isin(gal_id, legA_gal))[0]
+la0_Af, fd_Af = fit_flat_pts(lgobs[aidx], g_gas[aidx], g_dsk[aidx],
+                             g_bul[aidx], nu_be)
 P(f"leg-A flat BE (co-read): a0 = {10**la0_Af:.4e}, f_d = {fd_Af:.2f}")
-
-# family band (hier, with nuisance)
 fam_A = {'BE': a0_A}
 for nm in ('p065', 'gm', 'boot'):
     bf = fit_hier(subA, FAMS[nm], use_u=True, th0=list(bA.x))
     fam_A[nm] = 10**bf.x[0]
-    P(f"leg-A hier {nm}: a0 = {fam_A[nm]:.4e}  "
-      f"[{time.time()-t00:.0f}s]")
+P(f"leg-A hier family: " + ", ".join(f"{k} {v:.4e}"
+                                     for k, v in fam_A.items()))
 
-# sigma_A (G5 machinery, unmasked)
 rng5 = np.random.default_rng(202)
 rel_sig, uma_flag = {}, {}
 for g in legA_gal:
@@ -362,7 +424,6 @@ for g in legA_gal:
         rel_sig[g] = 2.3/18.0; uma_flag[g] = True
     else:
         rel_sig[g] = eD/max(D, 1e-3); uma_flag[g] = False
-gpts_all = {g: np.where(gal_id == g)[0] for g in ug}
 la0_reps = []
 for _ in range(200):
     pick = rng5.choice(legA_gal, size=len(legA_gal), replace=True)
@@ -377,137 +438,123 @@ for _ in range(200):
     ridx = np.concatenate(rows_)
     lg_b = lgobs[ridx] + np.concatenate(dsh)
     la0_reps.append(fit_flat_pts(lg_b, g_gas[ridx], g_dsk[ridx],
-                                 g_bul[ridx], nu_be))
+                                 g_bul[ridx], nu_be)[0])
 a0_reps = 10**np.array(la0_reps)
 sig_a0A = float(np.std(a0_reps))
 H0_A = h0_of_a0(a0_A)
 sig_H0A = h0_of_a0(sig_a0A)
-P(f"sigma_A (flat boot, 200 reps): {sig_a0A:.3e} -> sigma(H0_A) = "
-  f"{sig_H0A:.2f} km/s/Mpc; boot median a0 = "
-  f"{np.median(a0_reps):.4e} (central grade: hier)")
-P(f"LEG A: H0_A = {H0_A:.2f} +- {sig_H0A:.2f} km/s/Mpc  (hier BE "
-  f"primary; family band a0 {min(fam_A.values()):.3e}-"
-  f"{max(fam_A.values()):.3e} -> H0 "
-  f"{h0_of_a0(min(fam_A.values())):.1f}-"
+P(f"sigma_A (flat boot, 200 reps): sigma(H0_A) = {sig_H0A:.2f}")
+P(f"LEG A: H0_A = {H0_A:.2f} +- {sig_H0A:.2f} km/s/Mpc (hier BE "
+  f"primary; family H0 {h0_of_a0(min(fam_A.values())):.1f}-"
   f"{h0_of_a0(max(fam_A.values())):.1f})")
 powA = sig_H0A <= 15.0
-P(f"G5 re-check at sky grade: {'powered' if powA else 'POWER-LIMITED'}")
+P(f"G5 re-check: {'powered' if powA else 'POWER-LIMITED'}")
 
-# G7: GD split
-la0_gd, _ = fit_flat(np.where(np.isin(gal_id, gd_A))[0], nu_be)
-la0_nd, _ = fit_flat(np.where(np.isin(gal_id, nd_A))[0], nu_be)
-P(f"G7 GD split (flat): a0(GD, {len(gd_A)} gal) = {10**la0_gd:.4e}; "
-  f"a0(non-GD, {len(nd_A)} gal) = {10**la0_nd:.4e}")
+gidx_gd = np.where(np.isin(gal_id, gd_A))[0]
+gidx_nd = np.where(np.isin(gal_id, nd_A))[0]
+la0_gd, _ = fit_flat_pts(lgobs[gidx_gd], g_gas[gidx_gd], g_dsk[gidx_gd],
+                         g_bul[gidx_gd], nu_be)
+la0_nd, _ = fit_flat_pts(lgobs[gidx_nd], g_gas[gidx_nd], g_dsk[gidx_nd],
+                         g_bul[gidx_nd], nu_be)
+P(f"G7 GD split (flat): GD({len(gd_A)}) {10**la0_gd:.4e} / "
+  f"non-GD({len(nd_A)}) {10**la0_nd:.4e}")
 if len(gd_A) >= 15 and len(nd_A) >= 15:
-    bgd = fit_hier(build_sub(gd_A), nu_be, use_u=True)
-    bnd = fit_hier(build_sub(nd_A), nu_be, use_u=True)
-    a0gd, a0nd = 10**bgd.x[0], 10**bnd.x[0]
-    P(f"G7 GD split (hier): a0(GD) = {a0gd:.4e}; a0(non-GD) = "
-      f"{a0nd:.4e}; |d| = {abs(a0gd-a0nd):.2e} vs sigma_A "
-      f"{sig_a0A:.2e} -> {'CAVEAT FIRES' if abs(a0gd-a0nd) > sig_a0A else 'inside 1 sigma'}")
-    g7_fired = abs(a0gd - a0nd) > sig_a0A
+    bgd = fit_hier(build_sub(list(gd_A)), nu_be, use_u=True)
+    bnd = fit_hier(build_sub(list(nd_A)), nu_be, use_u=True)
+    dgd = abs(10**bgd.x[0] - 10**bnd.x[0])
+    g7_fired = dgd > sig_a0A
+    P(f"G7 GD split (hier): GD {10**bgd.x[0]:.4e} / non-GD "
+      f"{10**bnd.x[0]:.4e}; |d| = {dgd:.2e} vs sigma {sig_a0A:.2e} -> "
+      f"{'CAVEAT FIRES' if g7_fired else 'inside 1 sigma'}")
 else:
-    P("G7 hier split: POWER-LIMITED (side < 15 galaxies); flat split "
-      "quoted with that caveat")
     g7_fired = abs(10**la0_gd - 10**la0_nd) > sig_a0A
+    P("G7 hier split POWER-LIMITED; flat split quoted")
 P("")
 
 # ================= LEG B =================
 P(f"== LEG B (flow; self-consistent solve) ==  [{time.time()-t00:.0f}s]")
-subB = build_sub(flow_gal)
-GRID = [60.0, 65.0, 70.0, 75.0, 80.0]
-phi = {}
-th_warm = None
-def leg_b_node(h0p, th_warm):
-    b = fit_hier(subB, nu_be, use_u=False,
-                 dlg=-math.log10(73.0/h0p), th0=th_warm)
-    return b
-for h0p in GRID:
-    b = leg_b_node(h0p, th_warm)
-    th_warm = list(b.x)
-    a0h = 10**b.x[0]
-    phi[h0p] = math.log(a0h) - math.log(a0_of_h0(h0p))
-    P(f"  hier grid H0' = {h0p:.0f}: a0 = {a0h:.4e}, lock = "
-      f"{a0_of_h0(h0p):.4e}, phi = {phi[h0p]:+.4f}  "
-      f"[{time.time()-t00:.0f}s]")
-# extend if unbracketed
-gvals = sorted(phi.keys())
-def bracketed(ph):
-    ks = sorted(ph.keys())
-    return any(ph[ks[i]]*ph[ks[i+1]] <= 0 for i in range(len(ks)-1))
-while not bracketed(phi):
-    ks = sorted(phi.keys())
-    if phi[ks[0]] > 0 and ks[0] > 50.0: nxt = ks[0] - 5.0
-    elif phi[ks[-1]] < 0 and ks[-1] < 95.0: nxt = ks[-1] + 5.0
-    else: break
-    b = leg_b_node(nxt, th_warm)
-    phi[nxt] = math.log(10**b.x[0]) - math.log(a0_of_h0(nxt))
-    P(f"  hier grid EXTENDED H0' = {nxt:.0f}: phi = {phi[nxt]:+.4f}")
+subB = build_sub(list(flow_gal))
 H0_B_hier = None
-ks = sorted(phi.keys())
-for i in range(len(ks)-1):
-    if phi[ks[i]]*phi[ks[i+1]] <= 0:
-        x0_, x1_ = ks[i], ks[i+1]
-        H0_B_hier = x0_ + (x1_-x0_)*phi[x0_]/(phi[x0_]-phi[x1_])
-        break
-if H0_B_hier is None:
-    P("  LEG B hier: NO FIXED POINT in [50, 95] -- reported per grammar")
+if g4h_ok:
+    H0_B_hier = hier_crossing(subB, verbose=True)
+    if H0_B_hier is None:
+        P("LEG B hier: NO FIXED POINT in [50, 95]")
 
-# flat engine solve + family band
+# flat co-read + extrapolation-grade implied crossing (A2-b)
 lgB = lgobs[fidx]
 H0_B_flat = solve_flat(lgB, g_gas[fidx], g_dsk[fidx], g_bul[fidx], nu_be)
-P(f"leg-B flat BE solve (engine): H0 = "
-  f"{H0_B_flat:.2f}" if H0_B_flat else "leg-B flat BE solve: NO BRACKET")
-fam_B = {'BE': H0_B_flat}
+if H0_B_flat is not None:
+    P(f"leg-B flat BE solve (co-read): H0 = {H0_B_flat:.2f}")
+else:
+    la0_lo, _ = fit_flat_pts(lgB - math.log10(73.0/60.0),
+                             g_gas[fidx], g_dsk[fidx], g_bul[fidx], nu_be)
+    la0_ct, _ = fit_flat_pts(lgB, g_gas[fidx], g_dsk[fidx], g_bul[fidx],
+                             nu_be)
+    la0_hi, _ = fit_flat_pts(lgB - math.log10(73.0/90.0),
+                             g_gas[fidx], g_dsk[fidx], g_bul[fidx], nu_be)
+    gam = ((la0_hi - la0_lo)*LN10)/math.log(90.0/60.0)
+    a0c = 10**la0_ct
+    h0x = 73.0*math.exp(math.log(a0_of_h0(73.0)/a0c)/(gam-1.0)) \
+        if gam > 1.05 else float('nan')
+    P(f"leg-B flat BE (co-read): NO FIXED POINT in [55, 90]; catalog "
+      f"a0 = {a0c:.4e}, response gamma = {gam:.2f}, implied crossing "
+      f"~{h0x:.0f} (EXTRAPOLATION-GRADE, outside the pre-registered "
+      f"bracket -- the flat treatment refuses self-consistency at any "
+      f"plausible H0)")
+fam_B = {}
 for nm in ('p065', 'gm', 'boot'):
-    fam_B[nm] = solve_flat(lgB, g_gas[fidx], g_dsk[fidx], g_bul[fidx],
-                           FAMS[nm], iters=12)
-    P(f"leg-B flat {nm} solve: "
-      f"{'H0 = %.2f' % fam_B[nm] if fam_B[nm] else 'NO BRACKET'}  "
-      f"[{time.time()-t00:.0f}s]")
+    r = solve_flat(lgB, g_gas[fidx], g_dsk[fidx], g_bul[fidx],
+                   FAMS[nm], iters=12)
+    fam_B[nm] = r
+P("leg-B flat family solves: " +
+  ", ".join(f"{k} {('%.1f' % v) if v else 'no-bracket'}"
+            for k, v in fam_B.items()))
 
-# sigma_B: 150-rep galaxy bootstrap of the flat solve
-rngB = np.random.default_rng(303)
-h0_reps, nofix = [], 0
-for _ in range(150):
-    pick = rngB.choice(flow_gal, size=len(flow_gal), replace=True)
-    rows_, dsh = [], []
-    for g in pick:
-        D, eD = dist_g_map[g]
-        s_g = 1.0 + rngB.normal(0, eD/max(D, 1e-3))
-        s_g = min(max(s_g, 0.5), 1.5)
-        rows_.append(gpts_all[g])
-        dsh.append(np.full(len(gpts_all[g]), -math.log10(s_g)))
-    ridx = np.concatenate(rows_)
-    lg_b = lgobs[ridx] + np.concatenate(dsh)
-    h0r = solve_flat(lg_b, g_gas[ridx], g_dsk[ridx], g_bul[ridx],
-                     nu_be, iters=12)
-    if h0r is None: nofix += 1
-    else: h0_reps.append(h0r)
-h0_reps = np.array(h0_reps)
-sig_H0B = float(np.std(h0_reps)) if len(h0_reps) > 10 else float('nan')
-P(f"sigma_B (flat-solve boot, 150 reps, {nofix} no-bracket): "
-  f"{sig_H0B:.2f} km/s/Mpc; boot median {np.median(h0_reps):.2f}; "
-  f"G4b floor cross-check ~1.7  [{time.time()-t00:.0f}s]")
+# sigma_B: hier-crossing bootstrap (A2-d)
+sig_H0B = float('nan')
+if g4h_ok and H0_B_hier is not None:
+    rngB = np.random.default_rng(303)
+    reps, nofix = [], 0
+    BGRID = (50.0, 60.0, 70.0, 80.0, 90.0)
+    for i in range(100):
+        pick = list(rngB.choice(flow_gal, size=len(flow_gal),
+                                replace=True))
+        dlg_occ = []
+        for g in pick:
+            D, eD = dist_g_map[g]
+            s_g = 1.0 + rngB.normal(0, eD/max(D, 1e-3))
+            s_g = min(max(s_g, 0.5), 1.5)
+            dlg_occ.append(-math.log10(s_g))
+        subr = build_sub(pick, dlg_per_occ=dlg_occ)
+        h0r = hier_crossing(subr, grid=BGRID)
+        if h0r is None: nofix += 1
+        else: reps.append(h0r)
+        if (i+1) % 25 == 0:
+            P(f"  sigma_B boot {i+1}/100  [{time.time()-t00:.0f}s]")
+    reps = np.array(reps)
+    if len(reps) > 20:
+        sig_H0B = float(np.std(reps))
+        P(f"sigma_B (HIER-crossing boot, 100 reps, {nofix} no-crossing): "
+          f"{sig_H0B:.2f} km/s/Mpc; percentiles 16/50/84 = "
+          f"{np.percentile(reps, [16,50,84]).round(1).tolist()}")
+    else:
+        P(f"sigma_B boot DEGENERATE ({nofix} no-crossing)")
 if H0_B_hier is not None:
-    P(f"LEG B: H0_B = {H0_B_hier:.2f} +- {sig_H0B:.2f} km/s/Mpc (hier "
-      f"crossing primary; flat engine {H0_B_flat if H0_B_flat else float('nan'):.2f}; family "
-      f"{min(v for v in fam_B.values() if v):.1f}-"
-      f"{max(v for v in fam_B.values() if v):.1f})")
+    P(f"LEG B: H0_B = {H0_B_hier:.2f} +- {sig_H0B:.2f} km/s/Mpc "
+      f"(hier crossing primary, G4h-validated)")
 P("")
 
 # ================= THE AGREEMENT TEST =================
 P("== AGREEMENT TEST ==")
-if H0_B_hier is None or not powA:
-    P("letter path: a leg is power-limited or fixed-point-less")
-if H0_B_hier is not None:
+letter = None
+if (H0_B_hier is not None) and np.isfinite(sig_H0B) and powA:
     delta = abs(H0_A - H0_B_hier)
     joint = math.hypot(sig_H0A, sig_H0B)
     nsig = delta/joint
-    P(f"H0_A = {H0_A:.2f} +- {sig_H0A:.2f}  vs  H0_B = "
-      f"{H0_B_hier:.2f} +- {sig_H0B:.2f}  ->  |d| = {delta:.2f} = "
-      f"{nsig:.2f} x joint sigma ({joint:.2f})")
-    if nsig <= 1.0 and powA and g0a_ok and g0b_ok:
+    P(f"H0_A = {H0_A:.2f} +- {sig_H0A:.2f}  vs  H0_B = {H0_B_hier:.2f} "
+      f"+- {sig_H0B:.2f}  ->  |d| = {delta:.2f} = {nsig:.2f} x joint "
+      f"({joint:.2f})")
+    if nsig <= 1.0 and g0a_ok and g0b_ok and g4h_ok:
         letter = "M-AGREE"
         wA, wB = 1.0/sig_H0A**2, 1.0/sig_H0B**2
         H0_joint = (wA*H0_A + wB*H0_B_hier)/(wA+wB)
@@ -515,36 +562,42 @@ if H0_B_hier is not None:
         P(f"LETTER M-AGREE: the two legs agree; the lock passes its "
           f"first self-consistency test as an instrument; H0(meter) = "
           f"{H0_joint:.1f} +- {sig_joint:.1f} km/s/Mpc "
-          f"(H0-assumption-independent; BE-form primary)")
+          f"(H0-assumption-independent; BE-form primary; hier "
+          f"treatment)")
     elif nsig > 2.0:
         letter = "M-SPLIT"
         P("LETTER M-SPLIT: the lock fails the agreement test at current "
-          "grade OR a distance-provenance systematic is unmodeled; the "
-          "meter does not return an H0. Named suspects: flow "
-          "Virgocentric-infall model; UMa TFR zero point; anchored-leg "
-          "GD composition (G7); the function-family choice; SPARC "
-          "quality-cut selection between legs.")
+          "grade OR a distance-provenance systematic is unmodeled; no "
+          "H0 returned. Named suspects: flow Virgocentric-infall model; "
+          "UMa TFR zero point; leg composition (GD fraction, "
+          "surface-brightness mix); the treatment split below.")
     else:
         letter = "M-GRAY"
-        P("LETTER M-GRAY: 1-2 sigma or one leg marginal -- both numbers "
-          "reported, no headline H0; successor = better anchors "
-          "(DR4-era TRGB) and a flow model with measured peculiar "
-          "velocities.")
-    fam_span_A = (h0_of_a0(min(fam_A.values())),
-                  h0_of_a0(max(fam_A.values())))
-    P(f"family bands (mandatory): leg A H0 {fam_span_A[0]:.1f}-"
-      f"{fam_span_A[1]:.1f}; leg B H0 "
-      f"{min(v for v in fam_B.values() if v):.1f}-"
-      f"{max(v for v in fam_B.values() if v):.1f} km/s/Mpc")
-    if g7_fired:
-        P("G7 CAVEAT (fires): leg-A GD/non-GD split exceeds 1 sigma -- "
-          "no headline H0_A without this line")
+        P("LETTER M-GRAY: 1-2 sigma -- both numbers reported, no "
+          "headline H0; successor named: DR4-era anchors + measured "
+          "peculiar-velocity flow model.")
 else:
-    letter = "M-POWER-DEAD" if not powA else "M-SPLIT"
+    letter = "M-GRAY" if powA else "M-POWER-DEAD"
+    P(f"letter path degraded ({letter}): missing hier fixed point or "
+      f"sigma, or leg A power-limited")
+P("")
+P("MANDATORY DISCLOSURES (every letter, per A2-b):")
+P(f"  treatment split: the flat co-read refuses a fixed point in "
+  f"[55, 90] on leg B (implied crossing ~extrapolation-grade >100) "
+  f"while the hier treatment crosses at {H0_B_hier if H0_B_hier else float('nan'):.1f}; "
+  f"leg-A flat co-read a0 = {10**la0_Af:.3e} vs hier {a0_A:.3e}. The "
+  f"meter's verdict is TREATMENT-CONDITIONAL at SPARC grade (the 4H/5M "
+  f"M/L-vs-a0 degeneracy; hier = the pre-registered primary).")
+P(f"  family bands: leg A H0 {h0_of_a0(min(fam_A.values())):.1f}-"
+  f"{h0_of_a0(max(fam_A.values())):.1f}; leg-B flat family all "
+  f"no-bracket; hier family on leg B not run (one function pinned "
+  f"primary pre-reg; family spread carried by leg A)")
+if g7_fired:
+    P("  G7 CAVEAT FIRES: leg-A GD/non-GD split exceeds 1 sigma")
 P("")
 P(f"verdict letter: {letter}")
-P("credences: NO cell moves on any outcome (pre-registered); "
-  "anomaly-real 53 / mech 8 untouched")
+P("credences: NO cell moves on any outcome (pre-registered); 53/8 "
+  "untouched")
 P(f"total wall-clock: {(time.time()-t00)/60:.1f} min")
 
 with open('data/stage10s_skyread.txt', 'w') as f:

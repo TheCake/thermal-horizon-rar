@@ -1,0 +1,6 @@
+10S SUPPLEMENT: leg-B HIER family crossings (labeled, post-pin)
+     BE: crossing = 65.56 km/s/Mpc  [3s]
+   p065: crossing = NO CROSSING in [50,95]  [5s]
+     gm: crossing = 68.88 km/s/Mpc  [51s]
+   boot: crossing = 72.20 km/s/Mpc  [17s]
+(BE row = regression vs the sky read's 65.56)

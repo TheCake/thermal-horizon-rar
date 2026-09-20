@@ -1,0 +1,17 @@
+STAGE 10S H0METER -- CORRECTED VERDICT (round 45 adopted; supersedes the letter block of data/stage10s_skyread.txt)
+
+LETTER: M-GRAY (downgraded from the as-fired M-AGREE by round 45; every reviewer number independently re-verified in this addendum).
+
+LEG A (powered): H0_A = 65.9 +- 12.5 (statistical) km/s/Mpc; function-family band 65.9-70.9; robustness: UMa-nuisance off 65.1 / anchored-only 65.3 / UMa-only 63.5 / GD split inside 1 sigma. The quoted error is STATISTICAL ONLY; nu-form, M/L convention and photometric calibration are common-mode and do not shrink in quadrature. sigma_A is the flat bootstrap attached to the hier central (13% treatment offset disclosed).
+
+LEG B (POWER-LIMITED -- no number returned): the self-consistent flow solve is a x7.1 amplifier on a 1.5% quantity (closed form: H0_B = 73*(a0_73/a0_lock73)^(1/(1-gamma)); hier gamma_H = 0.86 sits 0.14 from the pole at gamma = 1, which the galaxy bootstrap crosses ~27% of the time -> the estimator has no finite variance at SPARC grade. The as-fired sigma_B = 11.58 is RETRACTED (selection-censored by an extension-direction code bug, since fixed; corrected G4h passes at truths 55/70/85). Never quote a symmetric +-sigma for leg B. Point crossings (report grade only): BE 65.6 / gm 68.9 / boot 72.2 / p065 86.5 -- the family carries the joint anywhere from 65.7 to 79.3, containing both Planck and SH0ES.
+
+THE AGREEMENT TEST: consistent-but-uninformative. Any leg-B value in [48.8, 82.9] (73% of the search window) would have satisfied the 1-sigma criterion; the 0.31 km/s/Mpc point agreement is smaller than the estimator's own grid-definition ambiguity. No headline H0. The treatment split is SINGULAR, not conditional: flat gamma = 1.585 and hier gamma_H = 0.86 lie on opposite sides of the pole (implied crossings 109.8 vs 65.6). Named open systematic: the leg-A-vs-leg-B composition axis (a0 offset +9.2% hier / -22.8% flat, f_ML 1.07 vs 1.25) is ungated; G7 tests a different axis.
+
+HONEST HEADLINE (the one sentence allowed): using only the SPARC galaxies whose distances do not assume a Hubble constant, a0 = cH0/2pi reads H0 = 66 +- 13 (stat) km/s/Mpc with a further ~+5/-0 from the interpolation-function choice -- consistent with both Planck and SH0ES, discriminating between neither; the flow-leg self-consistency test that would sharpen this is not an instrument at SPARC grade.
+
+SUCCESSORS (named): (i) DR4-era anchored dwarfs widen leg A; (ii) a flow model with measured peculiar velocities (CosmicFlows) replaces the 73-rescale idealization; (iii) any dataset where the response exponent gamma sits far from 1 revives leg B (the lever is 1/|1-gamma|); (iv) the cross-leg composition gate before any re-fire.
+
+Amendment-integrity note (round-45 condition 13): A2's stated censoring rationale for replacing the flat bootstrap was not cured by the replacement (79/100 vs 104/150 censored); the switch stands on the lever argument alone.
+
+CREDENCE: no cell moves (pre-registered); under M-GRAY the report-grade improvement clause does NOT fire. 53 / 8 untouched.
