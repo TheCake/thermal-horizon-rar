@@ -2917,7 +2917,18 @@ the R45-allowed sentence in the verdict file; successors: DR4-era
 anchors / CosmicFlows flow model / cross-leg composition gate.
 Proposal F absorbs this as "the meter's first light + its measured
 levers", NOT as an H0 measurement. Credences 53/8 untouched all
-night.**
+night. **THE DATA SWEEP landed same night (5 scouts + main-loop CF4
+census, commit cf115cd; full block in PAPER-PROPOSALS Proposal F):
+leg A grows 67 -> ~90 (13 SPARC flow galaxies now CF4-anchor-grade,
+11 TRGB, shifts to +38%; NGC3972/4051 gain Cepheids = UMa check; ~12
+usable new LITTLE THINGS TRGB dwarfs, Oh+15 mass models on disk,
+9R-port validated; PGC cache = data/scout10t_pgc_cache.json, PGC =
+SIMBAD "LEDA"); STAGE 10T (leg-A regrow) READY TO PRE-REGISTER on
+the author's word; BIG-SPARC (arXiv:2411.13329, ~4000 gal) verified
+IN PREP no date = the refire target, our method timestamped first;
+WALLABY DR2 = the leg-B revival population (gas-dominated kills both
+the M/L pole and the lever) on the same trigger as the D paper;
+third independent NOT-FOUND on any published a0->H0 inversion.**
 Priority per the author ("worth gold, don't defer"): F-core jumps the
 queue right after the Chae send; A keeps its deadline via an early-Oct
 pre-sign session; B slides. P4 stays FROZEN through DR4 (conflation
