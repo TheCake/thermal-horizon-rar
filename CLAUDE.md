@@ -2917,7 +2917,23 @@ the R45-allowed sentence in the verdict file; successors: DR4-era
 anchors / CosmicFlows flow model / cross-leg composition gate.
 Proposal F absorbs this as "the meter's first light + its measured
 levers", NOT as an H0 measurement. Credences 53/8 untouched all
-night. **THE DATA SWEEP landed same night (5 scouts + main-loop CF4
+night. **STRATEGY DIRECTIVE (author, 2026-09-20 night, pre-compact):
+HAMMER-FIRST -- keep working the data we already hold at the current
+pace; NEW outreach is PAUSED until we decide the in-hand data is
+mined out or the meter paper exists ("resume outreach, possibly with
+the new paper"). The hammering menu (in order): 10T leg-A regrow ->
+the a0-dipole/hemisphere instrument on SPARC (Proposal F's second
+instrument, executable NOW, Migkas/Secrest-adjacent) -> the
+dissident-dwarfs bias-propagation stage (Proposal D's first move,
+SPARC-only, pre-registrable now) -> Proposal F drafting = the EXIT
+CONDITION; outreach resumes carrying P1+P2+F. UNCHANGED BY THE
+DIRECTIVE: the Chae click is the author's tonight-or-later call (the
+letter does not expire; Seoul-Monday timing repeats weekly); the WED
+2026-09-24 journal-backstop decision STANDS (journal submission is
+fire-and-forget, compatible with heads-down mode); the early-Oct DR4
+credence-map pre-sign session is CALENDAR-IMMOVABLE (hard deadline
+2026-12-02; it is itself data work); Boufourou/Tuveri trigger rules
+unchanged; P4 frozen through DR4.** **THE DATA SWEEP landed same night (5 scouts + main-loop CF4
 census, commit cf115cd; full block in PAPER-PROPOSALS Proposal F):
 leg A grows 67 -> ~90 (13 SPARC flow galaxies now CF4-anchor-grade,
 11 TRGB, shifts to +38%; NGC3972/4051 gain Cepheids = UMa check; ~12
