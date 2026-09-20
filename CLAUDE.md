@@ -2945,9 +2945,15 @@ Kroupa, written in CZECH (author is Czech; Kroupa = Czech-born, Bonn
 other recipient has: co-author of Banik & Kroupa 2018 arXiv:1805.12273
 (the wide-binary test PROPOSAL that P1 executes), co-author of the
 KBC-void H0 paper (= world V, which the meter makes lock-testable),
-and can END0RSE astro-ph (solves the arXiv gate without Sutherland).
-Second Czech node: Michal Bilek (MOND specialist, FZU Prague +
-Paris). Letter AFTER the meter paper (F) exists, per hammer-first;
+and can ENDORSE astro-ph (solves the arXiv gate without Sutherland).
+PRECISION (author asked): Kroupa is BASED IN BONN; Prague = guest
+professorship with recurring physical presence (MFF UK Troja,
+public seminars) — the letter closes with a no-pressure
+meet-in-Prague line (the author is Prague-based; the only recipient
+with a walkable door; letter FIRST, never an ambush). Second Czech
+node: Michal Bilek (MOND specialist, FZU Prague + Paris); wider
+Czech wing to map at letter time (Vokrouhlicky/Nesvorny already in
+our reference list; others memory-grade, verify then). Letter AFTER the meter paper (F) exists, per hammer-first;
 agnostic posture explicit (Kroupa is a MOND partisan — we are not
 ammunition); endorsement ask embedded; outward rules apply IN CZECH
 (fresh-subagent cold read, no house dialect). Incidental delta-scan
