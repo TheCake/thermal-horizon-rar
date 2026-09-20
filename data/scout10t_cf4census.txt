@@ -1,0 +1,58 @@
+SPARC rows: 175
+  resolved 40/175
+  resolved 80/175
+  resolved 120/175
+  resolved 160/175
+PGC resolved: 154/175; unresolved: ['CamB', 'D512-2', 'D564-8', 'D631-7', 'F561-1', 'F563-1', 'F563-V1', 'F563-V2', 'F565-V2', 'F567-2', 'F568-1', 'F568-3', 'F568-V1', 'F571-8', 'F571-V1', 'F574-1', 'F574-2', 'F579-V1', 'F583-1', 'F583-4', 'KK98-251']
+CF4 galaxies: 55877
+spot PGC 2557: {'DM': 24.366, 'eDM': 0.045, 'snia': None, 'tf': None, 'fp': None, 'sbf': 24.214, 'snII': None, 'trgb': 24.53, 'ceph': 24.397, 'mas': None}
+
+FLOW GALAXIES (97): anchor-grade CF4 hit = 13; no anchor method = 66; unresolved PGC = 18 ['D512-2', 'F561-1', 'F563-1', 'F563-V1', 'F563-V2', 'F565-V2', 'F567-2', 'F568-1', 'F568-3', 'F568-V1', 'F571-8', 'F571-V1', 'F574-1', 'F574-2', 'F579-V1', 'F583-1', 'F583-4', 'KK98-251']
+  trgb :  11  ['NGC2903', 'NGC4559', 'NGC5585', 'UGC02455', 'UGC05918', 'UGC05986', 'UGC07323', 'UGC07603', 'UGC08550', 'UGC09992', 'UGC12632']
+  ceph :   0  []
+  mas  :   0  []
+  sbf  :   1  ['UGC02487']
+  snia :   0  []
+  snII :   1  ['ESO563-G021']
+
+per-galaxy anchor hits (name, PGC, SPARC flow D, methods, DMs):
+  ESO563-G021 PGC   24685  D_flow=  60.8  snII=68.9Mpc
+  NGC2903     PGC   27077  D_flow=   6.6  trgb=9.0Mpc
+  NGC4559     PGC   42002  D_flow=   9.0  trgb=8.6Mpc
+  NGC5585     PGC   51210  D_flow=   7.1  trgb=6.8Mpc
+  UGC02455    PGC   11329  D_flow=   6.9  trgb=6.7Mpc
+  UGC02487    PGC   11425  D_flow=  69.1  sbf=52.5Mpc
+  UGC05918    PGC   32405  D_flow=   7.7  trgb=8.3Mpc
+  UGC05986    PGC   32643  D_flow=   8.6  trgb=8.9Mpc
+  UGC07323    PGC   39423  D_flow=   8.0  trgb=7.4Mpc
+  UGC07603    PGC   41066  D_flow=   4.7  trgb=6.5Mpc
+  UGC08550    PGC   47788  D_flow=   6.7  trgb=8.7Mpc
+  UGC09992    PGC   55809  D_flow=  10.7  trgb=11.0Mpc
+  UGC12632    PGC   71596  D_flow=   9.8  trgb=8.8Mpc
+
+UMa galaxies with direct TRGB/Ceph/maser in CF4: 2 [('NGC3972', ['ceph']), ('NGC4051', ['ceph'])]
+anchored galaxies gaining a MASER distance: []
+
+LITTLE THINGS overlap (PGC-keyed):
+  overlap (6): [('DDO_50', 23324), ('DDO_87', 32405), ('DDO_126', 40791), ('DDO_154', 43869), ('DDO_168', 46039), ('NGC_2366', 21102)]
+  genuinely new (16): ['CVnIdwA', 'DDO_43', 'DDO_46', 'DDO_47', 'DDO_52', 'DDO_53', 'DDO_70', 'DDO_101', 'DDO_133', 'DDO_210', 'DDO_216', 'IC_10', 'IC_1613', 'NGC_1569', 'NGC_3738', 'UGC_8508']
+  unresolved (4): ['F564-V3', 'WLM', 'HARO_29', 'HARO_36']
+  CF4 anchor methods for the new LT dwarfs:
+    CVnIdwA    PGC   42275: {'trgb': '3.8Mpc'}
+    DDO_43     PGC   21073: {'trgb': '10.2Mpc'}
+    DDO_46     PGC   21585: {'trgb': '10.1Mpc'}
+    DDO_47     PGC   21600: {'trgb': '8.0Mpc'}
+    DDO_52     PGC   23769: {'trgb': '9.6Mpc'}
+    DDO_53     PGC   24050: {'trgb': '3.6Mpc'}
+    DDO_70     PGC   28913: not in CF4 table2
+    DDO_101    PGC   37449: no anchor method in CF4
+    DDO_133    PGC   41636: {'trgb': '4.8Mpc'}
+    DDO_210    PGC   65367: {'trgb': '1.0Mpc'}
+    DDO_216    PGC   71538: {'trgb': '0.9Mpc'}
+    IC_10      PGC    1305: {'trgb': '0.8Mpc'}
+    IC_1613    PGC    3844: {'trgb': '0.7Mpc', 'ceph': '0.7Mpc'}
+    NGC_1569   PGC   15345: not in CF4 table2
+    NGC_3738   PGC   35856: {'trgb': '5.2Mpc'}
+    UGC_8508   PGC   47495: not in CF4 table2
+
+[exited with code 0]
