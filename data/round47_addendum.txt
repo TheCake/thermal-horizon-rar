@@ -1,0 +1,44 @@
+
+========================================================================
+ROUND-47 ADDENDUM -- mode = ga
+========================================================================
+
+-- GA-1 independent objective at the refit optima --
+  d(gm - BE): independent +23.95 | engine +23.95 | sky print +24.0 -> OK
+  d(p065 - BE): independent +25.91 | engine +25.91 | sky print +25.9 -> OK
+  d(boot - BE): independent +63.32 | engine +63.32 | sky print +63.3 -> OK
+GA-1: OK
+
+-- GA-2 mpmath 30-digit member identity --
+  BE   : max rel dev vs mpmath = 1.87e-16 (bar 1e-9) -> OK
+  p065 : max rel dev vs mpmath = 2.96e-16 (bar 1e-9) -> OK
+  gm   : max rel dev vs mpmath = 2.52e-16 (bar 1e-9) -> OK
+  boot : max rel dev vs mpmath = 2.12e-16 (bar 1e-9) -> OK
+GA-2: OK
+
+-- GA-3 separation arithmetic re-derived from printed stats --
+  A1 BE-p065: sep24 recomputed 1.79 vs printed 1.80 -> OK
+  A1 boot-gm: sep24 recomputed 1.59 vs printed 1.61 -> OK
+GA-3: OK (8-seed matrix + A1 pooled, from printed stats, bar +-0.15)
+
+-- GA-4 demotion logic re-applied from the printed record --
+  re-derived: demoted = {'boot': ['BE', 'p065']}, survivors = ['BE', 'p065', 'gm'], letter = U-FORM-NARROWED (printed U-FORM-NARROWED)
+GA-4: OK
+
+-- GA-5 paired bootstrap reps 1-10 (seed-202 stream) --
+  rep fingerprints (sum pick ids, shared draw): [(6348, 0.992912), (7086, 1.017514), (6701, 0.865705)] ...
+  P(BE beats gm) printed 0.915: reps 1-10 wins = 9/10 (95% window [7,10]) -> OK
+  P(BE beats boot) printed 0.990: reps 1-10 wins = 9/10 (95% window [9,10]) -> OK
+  P(p065 beats boot) printed 1.000: reps 1-10 wins = 10/10 (95% window [10,10]) -> OK
+  P(BE beats p065) printed 0.955: reps 1-10 wins = 9/10 (95% window [8,10]) -> OK
+GA-5: OK
+
+-- GA-6 mpmath H0 conversions + band arithmetic --
+  BE   : H0(mpmath) = 65.36 vs engine 65.36 vs printed 65.4 -> OK
+  p065 : H0(mpmath) = 70.44 vs engine 70.44 vs printed 70.4 -> OK
+  gm   : H0(mpmath) = 66.29 vs engine 66.29 vs printed 66.3 -> OK
+  boot : H0(mpmath) = 67.55 vs engine 67.55 vs printed 67.6 -> OK
+  survivor band = (65.4, 70.4) vs printed 65.4-70.4 -> OK
+GA-6: OK
+
+GA BLIND HALF: ALL OK
