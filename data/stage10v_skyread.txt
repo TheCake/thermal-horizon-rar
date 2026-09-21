@@ -1,0 +1,309 @@
+STAGE 10V STRATIFICATION -- mode = sky (sky read)
+
+== baselines (deterministic archived conventions) ==
+  anchored refits done  [40s]
+  G10V-1 anchored regression:
+    BE   : a0 d = 0.004% (bar 0.1%); |d - arch| = 0.00 (bar 0.5); nuis ok
+    p065 : a0 d = 0.003% (bar 0.1%); |d - arch| = 0.01 (bar 0.5); nuis ok
+    gm   : a0 d = 0.004% (bar 0.1%); |d - arch| = 0.05 (bar 0.5); nuis ok
+    boot : a0 d = 0.002% (bar 0.1%); |d - arch| = 0.02 (bar 0.5); nuis ok
+  G10V-1: PASS
+  flow warm refits done  [94s]
+  G10V-2a flow warm replication (vs GB R-i):
+    BE   : d = +48.7 vs GB +48.7 -> ok
+    p065 : d = +7.6 vs GB +7.6 -> ok
+    gm   : d = +2.5 vs GB +2.5 -> ok
+    boot : d = +0.0 vs GB +0.0 -> ok
+  G10V-2a: PASS
+    flow cold BE fit  [96s]
+    flow cold p065 fit  [99s]
+    flow cold gm fit  [136s]
+    flow cold boot fit  [148s]
+  G10V-2b flow contest-grade baseline:
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.1132e-10  1.426  0.0509  -0.0000    48.7   0.00
+    p065   1.1900e-10  1.589  0.0500  +0.0000     7.6   0.00
+    gm     1.0993e-10  1.620  0.0499  +0.0000     2.5   0.00
+    boot   1.1221e-10  1.747  0.0498  +0.0000     0.0   0.00
+  G10V-2b: best = boot, d(BE) = +48.7 -> PASS
+
+-- G10V-3 wiring --
+  s=1 identity True; s=1.1162 exact-shift True; sv self-swap True; zero-injection identity True
+  G10V-3: PASS
+
+-- G10V-5 block-SD regression --
+  anchored SD_block(BE->boot) = 22.96 vs GB 22.96 (bar 2%) -> PASS
+  flow SD_block(boot->BE) = 68.24 (FROZEN at this print; no bar -- new number)
+  flow lag-1 rho (boot fields) = +0.722
+
+-- G10V-6 census (values FROZEN at this print) --
+  rel_med_flow = 0.2500; rel_med_anch = 0.0623; sigma_inj = 0.1086 dex
+  flow_gasrich: 20 galaxies 
+  flow_gaspoor: 51 galaxies 
+  anch_gasrich: 16 galaxies 
+  anch_gaspoor: 62 galaxies 
+  log10 y percentiles: legA P10/P90 = -1.44/0.16; flow = -1.35/0.78
+  window = [-1.35, 0.16] in log10 y (y = gN1/ARC_BE)
+  windowed legs: anchored 64/78, flow 60/71 galaxies survive (>= 3 in-window points)
+  dropped anchored: CamB, D564-8, DDO154, IC2574, NGC3109, NGC3741, NGC4068, NGC5005, NGC6789, UGC01281, UGC05918, UGC06667, UGC07232, UGCA444
+  a_conf (flow: gas-poor vs high-y agreement) = 0.61 
+  measured cost: 14 fits so far, 12 s/fit (alternation fields included) -> sky ETA ~ 31 min for ~158 fits
+
+GATES: G10V-1 PASS  G10V-2a PASS  G10V-2b PASS (best = boot, BE +48.7)  G10V-3 PASS  G10V-5 PASS (SD_A 23.0, SD_F 68.2)  G10V-6 censused (H2 powered, H3 powered, a_conf 0.61)
+
+== H1 DISTANCE ==
+
+-- H1c anchored-loosened (PRIMARY; rel -> rel_med_flow, data unchanged) --
+    [H1c] BE fit  [168s]
+    [H1c] p065 fit  [173s]
+    [H1c] gm fit  [254s]
+    [H1c] boot fit  [281s]
+  H1c (contest; n_gal = 78):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.1222e-10  1.039  0.0300  -0.0260     0.0   0.00
+    p065   1.1901e-10  1.169  0.0307  -0.0253    25.8   0.00
+    gm     1.1084e-10  1.185  0.0307  -0.0243    27.1   0.00
+    boot   1.1242e-10  1.279  0.0314  -0.0261    61.8   0.00
+    -> winner = BE; d(BE,boot) = +61.8; SD_block = 21.0; cross-lead = -61.8 vs bar 21.0; rho = +0.61 -> no-fire
+
+-- H1b(ii) anchored + flow-grade scatter + loosened priors (PRIMARY; 4 seeds) --
+    [H1b2-s7001] BE fit  [296s]
+    [H1b2-s7001] p065 fit  [302s]
+    [H1b2-s7001] gm fit  [382s]
+    [H1b2-s7001] boot fit  [410s]
+  H1b2-s7001 (contest; n_gal = 78):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.1673e-10  1.052  0.0300  -0.0315     0.0   0.00
+    p065   1.2310e-10  1.185  0.0307  -0.0304    25.9   0.00
+    gm     1.1461e-10  1.201  0.0307  -0.0294    27.8   0.00
+    boot   1.1578e-10  1.297  0.0314  -0.0308    62.2   0.00
+    -> winner = BE; d(BE,boot) = +62.2; SD_block = 21.1; cross-lead = -62.2 vs bar 21.1; rho = +0.61 -> no-fire
+    [trap-#28 vetting] refit s_int: BE 0.0300, p065 0.0307, gm 0.0307, boot 0.0314
+    [H1b2-s7002] BE fit  [425s]
+    [H1b2-s7002] p065 fit  [430s]
+    [H1b2-s7002] gm fit  [511s]
+    [H1b2-s7002] boot fit  [538s]
+  H1b2-s7002 (contest; n_gal = 78):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.1246e-10  1.037  0.0302  -0.0579     0.0   0.00
+    p065   1.1935e-10  1.168  0.0309  -0.0570    25.3   0.00
+    gm     1.1118e-10  1.183  0.0309  -0.0560    26.3   0.00
+    boot   1.1278e-10  1.277  0.0316  -0.0575    61.0   0.00
+    -> winner = BE; d(BE,boot) = +61.0; SD_block = 20.9; cross-lead = -61.0 vs bar 20.9; rho = +0.61 -> no-fire
+    [trap-#28 vetting] refit s_int: BE 0.0302, p065 0.0309, gm 0.0309, boot 0.0316
+    [H1b2-s7003] BE fit  [552s]
+    [H1b2-s7003] p065 fit  [558s]
+    [H1b2-s7003] gm fit  [639s]
+    [H1b2-s7003] boot fit  [667s]
+  H1b2-s7003 (contest; n_gal = 78):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.1665e-10  1.058  0.0300  -0.0211     0.0   0.00
+    p065   1.2309e-10  1.193  0.0307  -0.0202    26.2   0.00
+    gm     1.1461e-10  1.209  0.0308  -0.0192    27.8   0.00
+    boot   1.1582e-10  1.307  0.0314  -0.0207    62.2   0.00
+    -> winner = BE; d(BE,boot) = +62.2; SD_block = 21.3; cross-lead = -62.2 vs bar 21.3; rho = +0.61 -> no-fire
+    [trap-#28 vetting] refit s_int: BE 0.0300, p065 0.0307, gm 0.0308, boot 0.0314
+    [H1b2-s7004] BE fit  [681s]
+    [H1b2-s7004] p065 fit  [687s]
+    [H1b2-s7004] gm fit  [768s]
+    [H1b2-s7004] boot fit  [795s]
+  H1b2-s7004 (contest; n_gal = 78):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.1468e-10  1.044  0.0302  -0.0191     0.0   0.00
+    p065   1.2131e-10  1.176  0.0308  -0.0185    26.0   0.00
+    gm     1.1301e-10  1.192  0.0309  -0.0175    27.9   0.00
+    boot   1.1447e-10  1.286  0.0316  -0.0192    62.5   0.00
+    -> winner = BE; d(BE,boot) = +62.5; SD_block = 21.1; cross-lead = -62.5 vs bar 21.1; rho = +0.61 -> no-fire
+    [trap-#28 vetting] refit s_int: BE 0.0302, p065 0.0308, gm 0.0309, boot 0.0316
+
+-- H1b(i) anchored + scatter, priors UNCHANGED (disclosure; 2 seeds) --
+    [H1b1-s7001] BE fit  [810s]
+    [H1b1-s7001] p065 fit  [816s]
+    [H1b1-s7001] gm fit  [901s]
+    [H1b1-s7001] boot fit  [930s]
+  H1b1-s7001 (contest; n_gal = 78):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.1185e-10  1.125  0.0370  -0.0437     0.0   0.00
+    p065   1.1961e-10  1.251  0.0378  -0.0422    20.7   0.00
+    gm     1.1261e-10  1.264  0.0377  -0.0422    17.7   0.00
+    boot   1.1411e-10  1.346  0.0386  -0.0418    48.2   0.00
+    -> winner = BE; d(BE,boot) = +48.2; SD_block = 19.6; cross-lead = -48.2 vs bar 19.6; rho = +0.62 -> no-fire
+    [trap-#28 vetting] refit s_int: BE 0.0370, p065 0.0378, gm 0.0377, boot 0.0386
+    [H1b1-s7002] BE fit  [942s]
+    [H1b1-s7002] p065 fit  [948s]
+    [H1b1-s7002] gm fit  [1029s]
+    [H1b1-s7002] boot fit  [1056s]
+  H1b1-s7002 (contest; n_gal = 78):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.0304e-10  1.115  0.0330  -0.0725     0.0   0.00
+    p065   1.1146e-10  1.244  0.0336  -0.0722    22.3   0.00
+    gm     1.0479e-10  1.262  0.0336  -0.0726    16.0   0.00
+    boot   1.0703e-10  1.353  0.0344  -0.0738    51.4   0.00
+    -> winner = BE; d(BE,boot) = +51.4; SD_block = 22.4; cross-lead = -51.4 vs bar 22.4; rho = +0.62 -> no-fire
+    [trap-#28 vetting] refit s_int: BE 0.0330, p065 0.0336, gm 0.0336, boot 0.0344
+
+-- H1a flow-rescale (CO-READ; coherent D x 73/H0') --
+    [H1a-s1.1162] BE fit  [1069s]
+    [H1a-s1.1162] p065 fit  [1074s]
+    [H1a-s1.1162] gm fit  [1147s]
+    [H1a-s1.1162] boot fit  [1171s]
+  H1a-s1.1162 (contest; n_gal = 71):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.0500e-10  1.349  0.0515  -0.0000    49.3   0.00
+    p065   1.1383e-10  1.495  0.0505  +0.0000     7.0   0.00
+    gm     1.0550e-10  1.522  0.0504  +0.0000     0.3   0.00
+    boot   1.0840e-10  1.634  0.0504  -0.0000     0.0   0.00
+    -> winner = boot; d(BE,boot) = -49.3; SD_block = 69.2; cross-lead = -49.3 vs bar 69.2; rho = +0.72 -> no-fire
+    [H1a-s1.0369] BE fit  [1183s]
+    [H1a-s1.0369] p065 fit  [1188s]
+    [H1a-s1.0369] gm fit  [1261s]
+    [H1a-s1.0369] boot fit  [1285s]
+  H1a-s1.0369 (contest; n_gal = 71):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.0920e-10  1.400  0.0511  -0.0000    49.0   0.00
+    p065   1.1728e-10  1.557  0.0501  -0.0000     7.4   0.00
+    gm     1.0846e-10  1.587  0.0500  -0.0000     1.8   0.00
+    boot   1.1095e-10  1.709  0.0500  -0.0000     0.0   0.00
+    -> winner = boot; d(BE,boot) = -49.0; SD_block = 68.6; cross-lead = -49.0 vs bar 68.6; rho = +0.72 -> no-fire
+
+-- H1d flow-tightened (CO-READ; rel -> rel_med_anch, data unchanged) --
+    [H1d] BE fit  [1297s]
+    [H1d] p065 fit  [1302s]
+    [H1d] gm fit  [1375s]
+    [H1d] boot fit  [1401s]
+  H1d (contest; n_gal = 71):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     9.5517e-11  1.444  0.0550  -0.0000    49.2   0.00
+    p065   1.0524e-10  1.588  0.0540  -0.0000     9.8   0.00
+    gm     9.7738e-11  1.622  0.0539  +0.0000     0.6   0.00
+    boot   1.0052e-10  1.728  0.0538  +0.0000     0.0   0.00
+    -> winner = boot; d(BE,boot) = -49.2; SD_block = 59.9; cross-lead = -49.2 vs bar 59.9; rho = +0.73 -> no-fire
+  H1 FIRES: False (H1c reversal False; H1b(ii) reversals 0/4)
+
+== H2 COMPOSITION (gas dominance; fgas >= 0.5) ==
+    [flow_gasrich] BE fit  [1408s]
+    [flow_gasrich] p065 fit  [1409s]
+    [flow_gasrich] gm fit  [1436s]
+    [flow_gasrich] boot fit  [1445s]
+  flow_gasrich (contest; n_gal = 20):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     6.2684e-11  1.981  0.0348  +0.0000    20.4   0.00
+    p065   6.6673e-11  2.198  0.0328  +0.0000     5.2   0.00
+    gm     6.2919e-11  2.199  0.0332  -0.0000     7.1   0.00
+    boot   6.2804e-11  2.349  0.0324  -0.0000     0.0   0.00
+    -> winner = boot; d(BE,boot) = -20.4; SD_block = 12.2; cross-lead = -20.4 vs bar 12.2; rho = +0.71 -> no-fire
+    [flow_gaspoor] BE fit  [1451s]
+    [flow_gaspoor] p065 fit  [1455s]
+    [flow_gaspoor] gm fit  [1509s]
+    [flow_gaspoor] boot fit  [1528s]
+  flow_gaspoor (contest; n_gal = 51):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.1813e-10  1.311  0.0526  +0.0000    31.1   0.00
+    p065   1.2402e-10  1.483  0.0519  -0.0000     2.7   0.00
+    gm     1.1423e-10  1.517  0.0518  -0.0000     0.0   0.00
+    boot   1.1568e-10  1.654  0.0519  +0.0000     3.3   0.00
+    -> winner = gm; d(BE,boot) = -27.8; SD_block = 61.8; cross-lead = -27.8 vs bar 61.8; rho = +0.72 -> winner-neither
+    [anch_gasrich] BE fit  [1534s]
+    [anch_gasrich] p065 fit  [1535s]
+    [anch_gasrich] gm fit  [1546s]
+    [anch_gasrich] boot fit  [1550s]
+  anch_gasrich (contest; n_gal = 16):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     9.9741e-11  0.904  0.0532  +0.0228     7.8   0.00
+    p065   1.0838e-10  0.964  0.0518  +0.0229     0.7   0.00
+    gm     1.0404e-10  0.957  0.0522  +0.0229     2.5   0.00
+    boot   1.0618e-10  0.990  0.0518  +0.0229     0.0   0.00
+    -> winner = boot; d(BE,boot) = -7.8; SD_block = 4.6; cross-lead = +7.8 vs bar 4.6; rho = +0.70 -> REVERSAL
+    [anch_gaspoor] BE fit  [1555s]
+    [anch_gaspoor] p065 fit  [1560s]
+    [anch_gaspoor] gm fit  [1630s]
+    [anch_gaspoor] boot fit  [1654s]
+  anch_gaspoor (contest; n_gal = 62):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.0158e-10  1.075  0.0303  -0.0337     0.0   0.00
+    p065   1.0957e-10  1.202  0.0312  -0.0335    36.0   0.00
+    gm     1.0260e-10  1.219  0.0311  -0.0335    30.9   0.00
+    boot   1.0481e-10  1.303  0.0322  -0.0347    74.3   0.00
+    -> winner = BE; d(BE,boot) = +74.3; SD_block = 23.6; cross-lead = -74.3 vs bar 23.6; rho = +0.58 -> no-fire
+  H2 FIRES: False 
+
+== H3 COVERAGE (window-matched legs) ==
+    [H3-anchored-windowed] BE fit  [1666s]
+    [H3-anchored-windowed] p065 fit  [1670s]
+    [H3-anchored-windowed] gm fit  [1741s]
+    [H3-anchored-windowed] boot fit  [1765s]
+  H3-anchored-windowed (contest; n_gal = 64):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     8.7577e-11  1.187  0.0261  -0.0221    11.0   0.00
+    p065   9.2966e-11  1.347  0.0257  -0.0209     0.4   0.00
+    gm     8.6046e-11  1.377  0.0258  -0.0209     2.0   0.00
+    boot   8.4610e-11  1.513  0.0257  -0.0203     0.0   0.00
+    -> winner = boot; d(BE,boot) = -11.0; SD_block = 17.6; cross-lead = +11.0 vs bar 17.6; rho = +0.59 -> no-fire
+    [H3-flow-windowed] BE fit  [1776s]
+    [H3-flow-windowed] p065 fit  [1780s]
+    [H3-flow-windowed] gm fit  [1841s]
+    [H3-flow-windowed] boot fit  [1861s]
+  H3-flow-windowed (contest; n_gal = 60):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     9.6789e-11  1.254  0.0429  -0.0000    36.5   0.00
+    p065   9.6809e-11  1.465  0.0420  -0.0000    14.1   0.00
+    gm     8.7789e-11  1.511  0.0422  +0.0000    18.7   0.00
+    boot   8.0903e-11  1.720  0.0411  -0.0000     0.0   0.00
+    -> winner = boot; d(BE,boot) = -36.5; SD_block = 36.7; cross-lead = -36.5 vs bar 36.7; rho = +0.66 -> no-fire
+  H3 FIRES: False
+
+== SCREENING (warm-only; no letter weight) ==
+    [anchored-direct-41] BE fit  [1870s]
+    [anchored-direct-41] p065 fit  [1872s]
+    [anchored-direct-41] gm fit  [1898s]
+    [anchored-direct-41] boot fit  [1907s]
+  anchored-direct-41 (screening; n_gal = 41):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.0001e-10  1.027  0.0304  +0.0000     0.0   0.00
+    p065   1.0776e-10  1.146  0.0315  -0.0000    30.5   0.00
+    gm     1.0162e-10  1.159  0.0315  -0.0000    31.2   0.00
+    boot   1.0375e-10  1.233  0.0327  -0.0000    66.2   0.00
+    -> winner = BE (screening grade)
+    [UMa-26] BE fit  [1908s]
+    [UMa-26] p065 fit  [1909s]
+    [UMa-26] gm fit  [1924s]
+    [UMa-26] boot fit  [1930s]
+  UMa-26 (screening; n_gal = 26):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.3012e-10  1.318  0.0272  -0.0815    12.2   0.00
+    p065   1.4073e-10  1.496  0.0262  -0.0855     3.5   0.00
+    gm     1.3138e-10  1.520  0.0259  -0.0854     0.5   0.00
+    boot   1.3541e-10  1.654  0.0256  -0.0911     0.0   0.00
+    -> winner = boot (screening grade)
+    [reclassified-11] BE fit  [1930s]
+    [reclassified-11] p065 fit  [1931s]
+    [reclassified-11] gm fit  [1938s]
+    [reclassified-11] boot fit  [1940s]
+  reclassified-11 (screening; n_gal = 11):
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.0463e-10  0.908  0.0434  -0.0000     0.0   0.00
+    p065   1.1161e-10  1.015  0.0439  -0.0000     2.3   0.00
+    gm     1.0458e-10  1.030  0.0440  -0.0000     2.3   0.00
+    boot   1.0477e-10  1.112  0.0446  -0.0000     5.2   0.00
+    -> winner = BE (screening grade)
+
+-- flow jackknife (standing; top-2 fixed-parameter carriers) --
+  fixed-parameter top carriers of d(boot,BE) on flow (CONSTRUCTION-SENSITIVE): UGC03580 +53.6, NGC5371 +20.4
+  drop UGC03580: d(boot beats BE) changes by +55.9 of +48.7
+  drop NGC5371: d(boot beats BE) changes by +17.6 of +48.7
+
+== LETTER ==
+V-UNRESOLVED
+
+MANDATORY DISCLOSURES:
+  multiplicity: 4 fire opportunities (H1c, H1b(ii), H2, H3);
+  attribution-grade only -- NO meter quantity moves on any
+  branch (band 65.4-70.4, stat 5.0, all banked clauses
+  untouched); fixed-parameter decompositions are
+  construction-sensitive (refit jackknife primary); screening
+  rows are warm-only grade.
+  MATERIAL rows: none
+  a_conf = 0.61; H2 powered; H3 powered
+
+credences: NO cell moves (pre-signed SS8); 53 / 8 untouched
+total fits: 158; wall-clock: 32.8 min
