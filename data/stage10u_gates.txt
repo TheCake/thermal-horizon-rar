@@ -1,0 +1,70 @@
+STAGE 10U PIN-THE-NU-FORM -- mode = gates (sky-blind gates)
+
+CF4 parse checks: M31 ceph/trgb/sbf -> PASS; NGC4258 DMmas -> PASS
+census: reclass table = 12 on paper (frozen 12) -> PASS
+world: primary leg A = 78 (41 anchored + 26 UMa + 11 reclassified; LT inert), flow = 71
+
+-- G10U-2 member identity (independent scalar solves) --
+  BE   : max |d nu|/nu = 0.00e+00 (bar 1e-6), monotone-decreasing yes -> PASS
+  p065 : max |d nu|/nu = 0.00e+00 (bar 1e-6), monotone-decreasing yes -> PASS
+  gm   : max |d nu|/nu = 1.86e-15 (bar 1e-6), monotone-decreasing yes -> PASS
+  boot : max |d nu|/nu = 2.09e-16 (bar 1e-6), monotone-decreasing yes -> PASS
+G10U-2: PASS
+
+-- G10U-1 regression (archived 10T deep fits; funs MASKED) --
+  BE   : a0 = 1.0106e-10 vs archived 1.0106e-10 (d = 0.004% vs bar 0.1%)
+  p065 : a0 = 1.0892e-10 vs archived 1.0892e-10 (d = 0.003% vs bar 0.1%)
+  gm   : a0 = 1.0250e-10 vs archived 1.0250e-10 (d = 0.004% vs bar 0.1%)
+  boot : a0 = 1.0446e-10 vs archived 1.0446e-10 (d = 0.002% vs bar 0.1%)
+  BE params: f_ML = 1.050 (1.050), s_int = 0.032 (0.032), u = -0.0211 (-0.0211)
+G10U-1: PASS  [40s]
+
+-- G10U-3 power (4 truths x 8 seeds, G10T-4 generative model) --
+  truth BE    worlds fit  [475s]
+  truth p065  worlds fit  [918s]
+  truth gm    worlds fit  [1357s]
+  truth boot  worlds fit  [1809s]
+  self-recovery (truth never significantly loses; bar mean >= -2SE):
+    truth BE   : d(T beats R) = p065 +3.7+-3.1, gm +4.2+-3.3, boot +12.4+-4.8
+    truth p065 : d(T beats R) = BE +2.8+-3.7, gm +0.4+-0.7, boot +3.8+-2.9
+    truth gm   : d(T beats R) = BE +6.6+-2.7, p065 +0.7+-1.4, boot +1.0+-2.4
+    truth boot : d(T beats R) = BE +15.1+-3.7, p065 +3.9+-2.1, gm +3.5+-1.6
+  self-recovery -> PASS
+  separation matrix sep(A,B) (pair powered iff >= 2.0; 8+8 seeds,
+  ~0.35*sep sampling noise -- a measured, lean-grade boundary):
+    BE    vs     BE   p065     gm   boot
+                .     1.93   3.61   6.41
+    p065  vs     BE   p065     gm   boot
+               1.93    .     0.96   3.05
+    gm    vs     BE   p065     gm   boot
+               3.61   0.96    .     2.21
+    boot  vs     BE   p065     gm   boot
+               6.41   3.05   2.21    .  
+  powered ordered pairs (sep >= 2.0): [('BE', 'boot'), ('BE', 'gm'), ('boot', 'BE'), ('boot', 'gm'), ('boot', 'p065'), ('gm', 'BE'), ('gm', 'boot'), ('p065', 'boot')]
+
+-- A1 boundary-pair seed extension (pre-sky amendment) --
+  pairs with |sep8 - 2.0| <= 0.5: [('BE', 'p065'), ('boot', 'gm')]
+  truth BE    +16 worlds fit  [1896s]
+  truth boot  +16 worlds fit  [2683s]
+  truth gm    +16 worlds fit  [3584s]
+  truth p065  +16 worlds fit  [3666s]
+  BE-p065: sep8 = 1.93 -> sep24 = 1.80 (dA +3.1+-3.1, dB -3.4+-4.1) -> unpowered
+  boot-gm: sep8 = 2.21 -> sep24 = 1.61 (dA +2.9+-2.8, dB -1.8+-3.1) -> unpowered
+  powered ordered pairs (final, A1-pooled): [('BE', 'boot'), ('BE', 'gm'), ('boot', 'BE'), ('boot', 'p065'), ('gm', 'BE'), ('p065', 'boot')]
+
+-- G10U-4 convergence repeat --
+  c_conv (truth-BE seed-11 world, max |fun_cold - fun_warm| over members) = 0.00 (bar 2.0)
+  cross-world max start gap (diagnostic) = 0.00
+G10U-4: PASS
+
+-- G10U-6 N-forecast (DIAGNOSTIC/FORECAST; BE vs p065; cold fits) --
+  N x1 (N = 78): d|truthBE = +3.7+-3.3, d|truthP = -5.1+-1.9 -> sep = 3.22  [3684s]
+  N x2 (N = 156): d|truthBE = +7.7+-2.8, d|truthP = -10.0+-3.6 -> sep = 5.48  [3724s]
+  N x4 (N = 312): d|truthBE = +12.6+-7.8, d|truthP = -9.9+-14.1 -> sep = 1.97  [3812s]
+  [A1(3) flag: the x4 row is convergence-suspect -- 4-seed SD noise + rounds-cap risk on 312-galaxy cold fits; excluded from the sqrt(N) fit]
+  sqrt(N) law (x1-x2): sep ~ 3.55 x sqrt(N/78); sep = 2 at N ~ 25, sep = 3 at N ~ 56 (FORECAST grade; BIG-SPARC requirement)
+
+GATES: G10U-1 PASS  G10U-2 PASS  G10U-3self PASS  G10U-4 PASS (c_conv = 0.00)  powered pairs = 6/12
+
+gates mode complete -- sky member objectives were computed only inside the G10U-1 regression and are MASKED (a0 regressions printed, funs never printed; R46-C12 pattern). No contest delta, no paired bootstrap, no ruling.
+wall-clock: 63.5 min
