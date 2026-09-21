@@ -423,3 +423,27 @@ becomes "what does inertia freeze-out leave behind" (candidate relic
 windows, unscouted: horizon-scale CMB anomalies, primordial GW
 backgrounds, BBN-era dynamics). No stage, no credence, no claim --
 a dated idea, per this file's charter.
+
+## PART B ADDENDUM 2 (2026-09-22, the author's computational-frugality
+## reading; intuition-grade, dated for the record)
+
+The author's synthesis, same night as the freeze-out addendum:
+relativity slows local clocks where the scene gets complicated; quantum
+outcomes resolve only when interrogated; and the thermal binding clause
+pushes matter into local clusters -- three laws that read like one
+design principle: the universe economizes. On this reading the boost is
+not an anomaly but part of the same frugality: keep things gathered,
+keep effects local (the Boltzmann gate = bounded influence), administer
+the subsidy from the horizon -- the same boundary where the holographic
+principle says the information ledger lives. Aesthetic lean noted: the
+frugality reading prefers a LAW doing the binding (free with
+thermodynamics, one clock, no new ingredient) over a SUBSTANCE (a dark
+sector added to the recipe). Walls, stated: the pattern as a whole is a
+reading, not a claim -- it confirms on whatever exists and owns no
+counterfactual ensemble; the anthropic half does not discriminate
+against dark matter (both glues permit astronomers); nothing here moves
+a credence. Its legitimate role is COMPASS: this framing generated the
+freeze-out question (Addendum 1) within the hour, and the discriminating
+receipts remain the registered ones (a0(z) sign, DR4, void asymptote).
+Register rule: this framing stays in the seed file and conversation --
+never in outward text or papers.
