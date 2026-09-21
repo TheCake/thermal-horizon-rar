@@ -1,0 +1,36 @@
+10V FLOW-LEG PAIRED BOOTSTRAP (verification annex; R48 SS11-2)
+
+baseline (warm, GB R-i convention): BE +48.7, p065 +7.6, gm +2.5, boot +0.0
+  rep 10/200  [10.3 min]
+  rep 20/200  [19.5 min]
+  rep 30/200  [29.5 min]
+  rep 40/200  [41.3 min]
+  rep 50/200  [52.9 min]
+  rep 60/200  [64.9 min]
+  rep 70/200  [76.4 min]
+  rep 80/200  [88.3 min]
+  rep 90/200  [97.9 min]
+  rep 100/200  [106.6 min]
+  rep 110/200  [115.7 min]
+  rep 120/200  [124.6 min]
+  rep 130/200  [132.9 min]
+  rep 140/200  [141.8 min]
+  rep 150/200  [150.9 min]
+  rep 160/200  [159.5 min]
+  rep 170/200  [168.6 min]
+  rep 180/200  [177.5 min]
+  rep 190/200  [186.3 min]
+  rep 200/200  [195.1 min]
+
+P(A beats B) over 200 paired replicates:
+  BE   :    .     0.080   0.105   0.200
+  p065 :  0.920     .     0.235   0.385
+  gm   :  0.895   0.765     .     0.415
+  boot :  0.800   0.615   0.585     .  
+
+d(BE,boot) replicates: mean -49.8, SD 58.4, pct16/50/84 = -109.6/-49.2/+13.4
+sky d = -48.7 -> paired-boot z = -0.83 (frozen SD_block 68.24 -> 0.71; fixed-global surrogate -0.71/-0.78)
+P(BE better than boot) = 0.200
+
+NOTE: uncertainty measurement only -- no letter, no bar, no credence content; quotes of the flow leg now carry THIS grade.
+wall-clock: 195.1 min
