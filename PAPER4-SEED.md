@@ -383,3 +383,43 @@ LOOKS like extra gravity is pulling them. Dark matter is the receipt
 we wrote for a discount we didn't know we were getting. And the ½
 that keeps showing up in our fits is the half of the bill that empty
 space itself always pays, warm or not.
+
+---
+
+## PART B ADDENDUM (2026-09-22, the author's early-universe inversion;
+## intuition-grade, dated for the record)
+
+The author's question, verbatim in spirit: "if inertia is
+thermodynamic, then inertia is in principle an engineerable quantity"
+-- so turn the dial the OTHER way: strong gravity, strong heat, the
+soup after the Big Bang. The framework's two dials must be kept
+separate: strong LOCAL gravity (neutron stars, today) pushes x up and
+KILLS the effect exponentially -- no signature. But the BATH
+temperature rides the horizon, a0(t) = cH(t)/2pi, and in the early
+universe H was enormous: a0(BBN) ~ 1e7 m/s^2, seventeen orders above
+today. Meanwhile gravitational accelerations from density
+perturbations scaled like delta x cH ~ 1e-5 x (2pi a0) -- so EVERY
+gravitational motion in the primordial soup sat DEEP in the occupied
+regime (x ~ 0.01, occupation ~ 100), gate open (ambient fields far
+below a0(t)). Reading: in the soup, the thermal discount on inertia
+was not a whisper at the bottom of galaxy outskirts -- it was
+order-unity for everything gravitational. Inertia as we know it
+FROZE OUT as H fell: mass condensed like everything else did. The
+universe already ran the strong-coupling experiment; the early cosmos
+is the lab we cannot build. Bookend: in the far de Sitter future
+H -> H_Lambda and every structure's internal accelerations decay --
+the cosmos ends all-deep, the bath never dies.
+
+Honest walls, stated at seed grade: the program has NO relativistic
+formulation, so nothing here computes a CMB peak or a BBN yield; the
+structure-formation role of the boost is the known graveyard of
+MOND-flavored cosmologies (Skordis-Zlosnik is the existence proof
+that a completion CAN fit the CMB, not evidence ours would); every
+sentence above is reading-grade extrapolation of the registered
+z-axis (a0 rising with H(z)), whose near end (z ~ 0.1-7) is already
+under test. If the z-axis sign confirms at decisive grade, this
+addendum upgrades from poetry to research program: the P4 question
+becomes "what does inertia freeze-out leave behind" (candidate relic
+windows, unscouted: horizon-scale CMB anomalies, primordial GW
+backgrounds, BBN-era dynamics). No stage, no credence, no claim --
+a dated idea, per this file's charter.
