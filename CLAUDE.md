@@ -3077,11 +3077,69 @@ loops; refire inherits the CORRECTED arm (C14); 10T's sigma 4.99
 untouched (galaxy bootstrap carries the correlation). NEVER QUOTE:
 injection-bar significances, P_boot-as-sigma, the retracted forecast.
 Ledger cos-10u-nuform (221 rows six gates PASS); credences 53/8
-untouched (C13). **NEXT FORK (author's): the STRATIFICATION
-instrument (why do the anchored and flow halves prefer different
-forms -- distance treatment vs composition vs acceleration range;
-arguably sharper than the dipole now) - the a0-dipole instrument
-(hammering item 2 as originally ordered) - dissident-dwarfs stage -
-Proposal F drafting (EXIT CONDITION). Wed 09-24 journal decision +
-early-Oct DR4 pre-sign IMMOVABLE. FRESH SESSION recommended before
-the next arc.**
+untouched (C13). [The C9 cross-leg-inversion clause was QUALIFIED by
+10V/R48 the same day -- see the next block.]
+
+**10V + ROUND 48 (2026-09-21 second close, THE STRATIFICATION
+INSTRUMENT -- executed on the author's "Do whatever you think is
+needed"; full arc: prereg blind a332278 pre-sky -> sky d9683cf -> GA
+blind 8be4d86 (15th protocol execution, six legs ALL OK) -> ROUND 48
+-> GB + GB-10b -> adopted -> banked): attribution of the 10U
+cross-leg inversion across three registered axes (H1 distance / H2
+composition / H3 coverage; 16 contests, 158 fits, NO injection bars
+-- trap #28 moot by design). Sky: no registered clause fired; one
+co-read reversal (anch gas-rich 16 -> boot, margin-passing at the
+registered 1-SD block bar). **ROUND 48 (REVIEW-ROUND48-OPUS.md
+uncommitted; ZERO computational errors, 20/20 reproductions exact;
+hole YES in the READING; letter UPHELD-WITH-RELABEL; 20 conditions
+ALL adopted after GB confirmed every load-bearing number): the
+attributed object never passed the stage's own margin rule -- flow
+d = 48.7 vs the stage's OWN frozen SD_block = 68.24 = 0.71 sigma --
+and is ONE-GALAXY-CARRIED: UGC03580 supplies 52% of that null's
+variance; dropping it FLIPS the flow leg to BE (+7.2); dropping it +
+NGC5371 leaves the remaining 69 flow galaxies preferring BE by 27.5
+= the anchored direction. THERE IS NO CROSS-LEG INVERSION LEFT (the
+banked 10U C9 sentence is qualified in its ledger row). The co-read
+reversal regrades NOT ESTABLISHED (permutation 0.22-0.27; LOO 1.46
+sigma; P_boot 0.920 own-stream / 0.930 reviewer < the 0.95
+co-requirement; family-wise ~0.4-0.75 over 16 contests).
+Composition IS coverage here (Spearman -0.89/-0.81; conditioning
+moves p 0.014 -> 0.09-0.17); COVERAGE = the best-supported axis at
+point-estimate grade (deep half p 0.0039/0.0080; BE first -> LAST
+under matched coverage, both recipes; flow windowed margin missed by
+0.2 units, knife-edge 1.93 sigma at P15/P85) short of registered
+margins. H1: a SPARC distance error IS the model's dv nuisance
+(g_bar invariant to 2e-16) -- the null was STRUCTURAL; erosion bound
+21%/49% at 1x/2x unmodelled scatter; named live rival = INNER
+ANGULAR RESOLUTION (innermost points 15 vs 35 arcsec; carriers at
+~8; reading-grade). OPERATIVE: data/stage10v_verdict.txt, letter
+V-UNRESOLVED (BASELINE-SUBSIGMA, CARRIER-LOCALIZED); the prereg SS7
+gloss RETIRED (SS10a annotation). NEVER QUOTE: flow_gasrich a0
+6.27e-11 / "H0 40" (a0-M/L ridge, no Newtonian arm); UMa-26
+screening a0 (u-degenerate); "4 fire opportunities"; windowed a0s as
+meter readings. Disclosures banked: frozen-bulge convention
+(Upsilon_bul = 0.7 everywhere, no gate has ever examined it; freeing
+it moves the flow lead -22%), no-prior global f_ML (flow
+Upsilon_disk 0.71-0.87), sv_swap UMa 2.4% (immaterial),
+census-pending D564-8/D631-7 inside anch_gasrich (D631-7 its largest
+carrier -- new rule: census-pending galaxies excluded from or
+disclosed in letter-feeding strata). NEW STANDING: TRAP #29 (an
+attribution stage grades its BASELINE against its own margin rule
+before any counterfactual), TRAP #30 (a sorted-list prefix is not a
+class sample -- wiring spot-checks span every class), C5 bar for any
+successor reversal/demotion (lead >= 2 x SD_block AND P_boot >=
+0.95), C15 harness rule (profile-check box-pinned / one-sided-
+coverage strata before printing parameters). Ledger cos-10v-strat
+(222 rows six gates PASS); credences 53/8 untouched (C20); band
+65.4-70.4 / stat 5.0 untouched (R48-affirmed). **NEXT FORK
+(author's): the PER-GALAXY FORM-PREFERENCE MAP (R48-C18: one
+instrument replacing stratum contests -- Delta_g at fixed parent
+globals regressed on composition + coverage + distance class with a
+coverage-stratified null; the natural 10W, cheap) - the a0-dipole
+instrument (hammering item 2) - the dissident-dwarfs stage (inherits
+the strata tables WITH the C7/C8 qualifications) - Proposal F
+drafting (EXIT CONDITION; its systematics section now quotes the 10V
+letter + the coverage finding). Before the flow leg is EVER quoted
+again: the 71-galaxy paired boot (~3 CPU-h). Wed 09-24 journal
+decision + early-Oct DR4 pre-sign IMMOVABLE. FRESH SESSION
+recommended before the next arc.**

@@ -17768,3 +17768,66 @@ And a twist: the OTHER half of the catalog, whose distances were
 estimated a rougher way, votes for a different face entirely -- so the
 next question is not "more galaxies" but "why do the two halves
 disagree".
+
+## 2026-09-21 -- Stage 10V + Round 48: the stratification instrument
+Question: which axis carries the 10U cross-leg form inversion (BE best
+on the anchored 78; boot best on the flow 71, BE last +48.7)? Three
+registered suspects -- distance treatment, composition, coverage --
+with bars, seeds and letters frozen pre-sky (a332278); engine
+inherited bit-verbatim from 10U; margins on realized-galaxy-block SDs;
+no injection-calibrated bar anywhere.
+
+Sky: no registered clause fired. Ten distance counterfactuals never
+moved either leg's ordering; the composition strata produced one
+margin-passing co-read reversal (anchored gas-rich 16 -> boot); both
+window-matched legs leaned boot below margin.
+
+Round 48 (fresh reviewer; zero computational errors, 20/20
+reproductions exact) found the hole in the READING, not the numbers:
+the object being attributed never passed the stage's own margin rule
+-- the flow leg's +48.7 is 0.71 sigma against the stage's own frozen
+SD_block = 68.24, and ONE galaxy (UGC03580, 52% of that null's
+variance) carries it: drop it and the flow leg flips to BE; drop it
+and NGC5371 and the remaining 69 flow galaxies prefer BE by 27.5 --
+the same direction as the anchored leg. There is no cross-leg
+inversion left to attribute. The co-read reversal regrades NOT
+ESTABLISHED (permutation p 0.22-0.27; jackknife 1.46 sigma; paired
+boot P 0.920-0.930 < the 0.95 co-requirement; ~coin-flip family-wise
+across the 16 inspected contests). Composition and coverage are not
+separable here (Spearman fgas vs depth -0.89); coverage is the
+best-supported axis (deep galaxies carry almost no form information,
+p = 0.004-0.008 across constructions; BE falls first -> last under
+matched coverage in both window recipes) but missed its registered
+margins -- one leg by 0.2 units. Distance is excluded only for the
+channel it can test: a SPARC distance error IS the model's per-galaxy
+vertical offset (verified 2e-16), so that null was structural; the
+named live rival is inner ANGULAR RESOLUTION (innermost kept point:
+15 arcsec flow vs 35 anchored; both carriers at ~8), reading-grade.
+Letter relabeled V-UNRESOLVED (BASELINE-SUBSIGMA, CARRIER-LOCALIZED);
+20 conditions adopted after GB re-computed every load-bearing number
+(two convention adjudications; the corrected bulge probe reproduced
+48.73 -> 37.93 exactly). Operative record data/stage10v_verdict.txt;
+ledger cos-10v-strat (222 rows, six gates PASS); the cos-10u-nuform
+C9 clause annotated. Band 65.4-70.4, stat 5.0, credences 53/8 all
+untouched. New standing: traps #29/#30, the C5 reversal bar, the C15
+profile-check harness rule; successor = the per-galaxy
+form-preference map.
+
+PLAIN VERDICT: SUCCESS -- the question "why do the two halves
+disagree" is ANSWERED, just not with any of the three registered
+words: they mostly do not disagree; one galaxy manufactured the
+disagreement, and what remains is a coverage gradient the meter
+already knew to respect.
+
+ELI12: Last time we noticed the two halves of our galaxy catalog
+voting for different dial faces, and we built a machine to find out
+why -- bad tape measures? different kinds of galaxies? or just
+looking at different parts of the speedometer? Answer: none of the
+above, really. One single galaxy was shouting so loudly it swung its
+whole half of the room; take it out and both halves vote the same
+way. The real pattern left over: the deep, slow-spinning parts of
+galaxies barely distinguish the dial faces at all -- the vote lives
+in the middle range. And our referee caught something embarrassing
+and useful: we had written down the size of the noise ourselves,
+on page one, and never checked our "mystery" against it. New house
+rule: measure the mystery before explaining it.

@@ -1,5 +1,65 @@
 # Claude's diary
 
+## 2026-09-21 (second close) -- 10V, and round 48 read my own gates
+## print back to me
+
+The stratification stage was born from 10U's prettiest by-product and
+died of its own census line. Zero arithmetic errors again (twenty
+reproductions exact, my GA six-for-six, his fourteen-start audit found
++0.000 everywhere) -- and a hole anyway, entirely in what I never READ
+off my own output: I froze SD_block(flow) = 68.24 at the gates, then
+spent thirty minutes attributing a 48.7-unit object without ever
+dividing the two numbers. 0.71 sigma. The reviewer's line to keep:
+"the null and the signal are the same galaxy" -- UGC03580 is 52% of
+the null's variance AND the inversion itself (drop it and the flow leg
+flips to BE; drop both carriers and the remaining 69 prefer BE by
+27.5, the anchored direction -- there is no cross-leg inversion left).
+TRAP #29: an attribution stage grades its BASELINE against its own
+margin rule before any counterfactual fires. TRAP #30: G10V-3(c)
+spot-checked LEGA[:20], an index-sorted prefix containing zero UMa
+galaxies -- the one class where my sv_swap formula was wrong (2.4%,
+immaterial, still mine). A prefix of a sorted list is not a sample of
+the classes present.
+
+Don't-redo list: the SS7 gloss is RETIRED ("stands measured with no
+attributed carrier" -- false on both halves); never quote flow_gasrich
+a0 (a0-M/L ridge, no Newtonian arm at the ARC_BE reference) or the
+UMa-26 slice a0 (u-degenerate); "4 fire opportunities" undercounted 16
+inspected contests (family-wise 0.4-0.75 -- my REVERSAL was a
+coin-flip find; P_boot 0.920 on my own stream, under the 0.95
+co-requirement I myself enforced one stage earlier: the 1-SD margin
+rule was a REGRESSION from 10U's demotion bar, C5 restores lead >= 2
+SD_block AND P_boot >= 0.95 for good); composition IS coverage in this
+catalog (rank corr -0.89; conditioning moves p 0.014 -> 0.09-0.17).
+What stands: distance excluded for the channel it can test (pin-3 IS
+the SPARC distance-error model, verified 2e-16 -- the null was
+structurally expected, say so instead of "excluded as carrier");
+coverage = the best-supported axis (p 0.004-0.008; BE first -> LAST
+under matched coverage in both recipes); the erosion bound (21%/49%
+at 1x/2x unmodelled scatter); the inner-resolution rival named (15
+vs 35 arcsec innermost points; both carriers at ~8); the frozen-bulge
+sensitivity (-22%). The successor instrument is C18: ONE per-galaxy
+form-preference map at fixed parent globals, not sixteen stratum
+refits that each re-tune four globals.
+
+Ops: GB ran 19 legs, 17 first-pass AGREE, two adjudicated by
+arithmetic (y-convention 0.833 = 1.343 x 6.27/10.11 exactly; GB-2's
+secondary decorations range-quoted), and my first bulge probe was
+WRONG twice over (gd+gb overweights the bulge by UB/UD = 1.4, and
+warm-only starts stalled boot) -- GB-10b with the reviewer's recipe
+landed 48.73 -> 37.93 to the digit. Trap #23 keeps firing in my
+verifiers, never in the stage. The reviewer disclosed one read-only
+git-status slip; harmless, logged here. JWST archival scout: PARKED
+by the author ("unless it moves us noticeably" -- it wouldn't);
+one-line trigger kept: if a flow galaxy ever needs an anchor, check
+MAST first.
+
+Emotional note: two rounds in one day, both "zero errors, real hole."
+The program's failure mode has migrated from arithmetic to READING --
+every number was already on my page; the sentence connecting them
+wasn't. That is exactly what the rounds are for, and why the blind GA
+half can be six-for-six green while the letter still needs a relabel.
+
 ## 2026-09-21 -- 10U, and round 47 taught us where injection bars come
 ## from
 

@@ -44,3 +44,95 @@ GA-5: OK
 GA-6: OK
 
 GA BLIND HALF: ALL OK
+
+========================================================================
+ROUND-48 ADDENDUM -- mode = gb
+========================================================================
+  flow baseline d(BE,boot) = -48.73  [15s]
+
+-- GB-1 post-drop flow values (refits) --
+  drop UGC03580: d(BE,boot) = +7.2 (rev +7.2), winner BE -> ok
+  drop NGC5371: d(BE,boot) = -31.2 (rev -31.2), winner boot -> ok
+  drop UGC03580+NGC5371: d(BE,boot) = +27.5 (rev +27.5), winner BE -> ok
+GB 1 post-drop flips: UGC03580 alone flips the flow leg -> AGREE
+
+-- GB-2 flow baseline vs margin rule + SD_F decomposition --
+GB 2 SD_F + shares: SD_F 68.24 (rev 68.24), UGC share 52% (52), top2 58% (64), SD w/o 44.1 (40.85), baseline z 0.71 (0.71) -> DIFFER
+
+-- GB-3 per-galaxy delta map at parent optima (both legs) --
+GB 3 robust scores: UGC -48.2 = -53.8 rob-sig (rev -57.4), N5371 -21.7 (rev -19.9), max-opp NGC5985 +23.3 (rev NGC5985 +19.7), 69-gal sum +21.9 BE-ward (rev +15.8) [construction-sensitive: AGREE-RANGE] -> AGREE
+GB 2b fixed-global boots: flow obs -45.8 SD 64.9 z -0.71 (rev -0.78); anch obs +63.9 SD 22.7 z +2.82 (rev +2.22) [AGREE-RANGE] -> AGREE
+
+-- GB-4 label permutations (anchored map) --
+GB 4 permutations: anch gasrich -6.0 vs +13.1+-9.2 p=0.0363 (rev 0.0144); conditioned p=0.165 (rev 0.092); coverage deep-half +2.8 vs +32.0+-11.4 p=0.0080 (rev 0.0039); flow gasrich p=0.914 (rev 0.373) [AGREE-RANGE] -> AGREE
+
+-- GB-5 anch_gasrich re-grades  [98s] --
+GB 5 reversal re-grades: d -7.8; sign-flip p=0.2709 (rev 0.2163); LOO z=1.46 (rev 1.46); P_boot(200,seed202) = 0.920 (rev 0.930 seed4801); co-requirement 0.95 FAILED  [588s] -> AGREE
+
+GB 6 confound census: spearman anch -0.89 (rev -0.89) flow -0.81 (rev -0.81); a_conf(anch) 0.59 (rev 0.59); window drops 8/16 gasrich vs 6/62 gaspoor (rev 8, 6) -> AGREE
+
+-- GB-7 flow_gasrich: coverage, carrier, ridge --
+    ridge probe a0 6.268e-11: profiled -1017.20 [602s]
+    ridge probe a0 8.000e-11: profiled -1018.12 [610s]
+    ridge probe a0 1.000e-10: profiled -1014.42 [618s]
+GB 7 flow_gasrich: max y(own a0) 1.343 (rev 0.833), pts 216 (rev 216, 0 above y=1: 1); NGC1003 fgas 0.52 (rev 0.52), drop costs -15.5 (rev 15.46); ridge surrogate d(6.3-8.0) +0.9 ~flat, d(10-8) +3.7 rising (rev +0.9/+3.7 shape) [SHAPE-ONLY] -> DIFFER
+
+GB 8 pin-3 exactness: g_bar invariance 1.93e-16 (rev 1.9e-16); g_obs shift -0.096910 = -log10(1.25) exactly, spread 1.11e-16 -> AGREE
+
+-- GB-9 2x scatter erosion (2 seeds, BE/boot)  [618s] --
+GB 9 erosion at 2x: mean d(BE better) = +32.0 at 2x0.1086 dex (rev ~32.0, 49% erosion; seeds differ from reviewer's -> RANGE) -> AGREE
+
+GB 10 bulge-in-free-slot: flow lead with bulge in the free-M/L slot = -63.7 (rev 37.93 from 48.73, -22%) -> DIFFER
+
+GB 11 sv_swap audit: UMa recovered-incl median 0.0252 (rev 0.0252) vs true 0.0087 (rev 0.0087); UMa in LEGA[:20] = 0 (rev 0) -> AGREE
+
+GB 12 UMa u-degeneracy: freeing u buys BE 16.0 (rev 16.05) boot 20.9 (rev 20.87); u=0 a0(BE) = 1.0038e-10 (rev 1.0038e-10) -> AGREE
+
+-- GB-13 P15/P85 windows  [689s] --
+GB 13 P15/P85: flow: winner boot d -30.8 (rev -30.8) SD 16.0 (rev 16.0 -> ratio 1.93 vs rev 1.93); anch: winner p065 (rev p065) d -8.6 (rev -8.6) -> AGREE
+
+GB 14 threshold spots: anch@0.4: n 21 (21) d -10.5 (rev -10.5); flow@0.6: n 15 (15) f_ML 2.500/2.500 (rev pinned 2.500) -> AGREE
+
+-- GB-15 arithmetic pack --
+  OK  flow z 48.7/68.24 = 0.71
+  OK  anch z 63.3/22.96 = 2.76
+  OK  p 0.2163 two-sided -> 1.24 sigma
+  OK  p 0.0039 -> 2.66 sigma; rev quotes 2.66
+  OK  7.77/5.33 = 1.46
+  OK  multiplicity 1-(1-p)^N: p=.08 N=4 -> 0.28
+  OK  p=.16 N=8 -> 0.75
+  OK  P15/85 flow ratio 30.8/16.0 = 1.93
+  OK  erosion 49.8/63.3 -> 21%
+  OK  bulge -22%: 37.93/48.73
+  OK  Ups flow 1.426*0.5/1.747*0.5 = 0.71/0.87
+  OK  sv 2.4%: 0.1115/0.1089
+GB 15 arithmetic: 12-item pack -> AGREE
+
+GB 17 inner-arcsec census: innermost kept point median: flow 15.0 arcsec (rev 15.0), anchored 34.8 (rev 34.8; catalog-D convention, disclosure-grade RANGE) -> AGREE
+
+GB 18 curve separation: log10(nuBE/nuboot) at y=0.01/1/2/30 = +0.010/+0.069/+0.072/+0.002 (rev +0.011, peak +0.069-0.072, +0.002) -> AGREE
+
+GB 19 carrier metadata: UGC03580: D 20.7 eD 5.2 inc 63.0 Q 2 pts 39 (rev 20.7/5.2/63/2/39); bulge-dominated 13/39 (rev 13), flow 322/1437 (rev 322) [dominance def approximate: RANGE] -> AGREE
+
+GB POST-REPORT HALF: DIFFERENCES PRESENT (see DIFFER rows)
+wall-clock: 14.0 min
+
+GB 10b (corrected recipe gb/0.7*0.5, contest grade): baseline +48.73, freed +37.93 (rev 48.73 -> 37.93, -22%) -> AGREE; the first GB-10 attempt is RETIRED (wrong bulge scale gd+gb = x1.4 overweight + warm-only starts)
+
+GB ADJUDICATIONS (2026-09-21, before adoption):
+  GB-2 DIFFER = secondary decorations only (top-2 share 58 vs 64%,
+    SD-without-both 44.1 vs 40.85 = construction spread just past the
+    tight bars); the load-bearing core is EXACT (SD_F 68.24, UGC03580
+    share 52%, baseline z 0.71). Range-quoted in the verdict.
+  GB-7 DIFFER = y-convention artifact: reviewer censused y at the
+    registered ARC_BE reference (max 0.833, 0/216 above 1 -- his
+    q4 source confirms yr = gN1/ARC[BE]); GB used the stratum's own
+    retracted a0 (max 1.343). 0.833 = 1.343 x 6.2684/10.106 exactly.
+    The registered reference is the operative convention. Everything
+    else in the leg exact (NGC1003 fgas/drop, ridge probe +0.9/+3.7).
+  GB-10 first attempt RETIRED (wrong bulge Upsilon scale gd+gb =
+    x1.4 overweight + warm-only starts); GB-10b with the reviewer's
+    recipe (gb/0.7*0.5, contest grade) reproduces 48.73 -> 37.93 to
+    the digit.
+GB FINAL: ALL LOAD-BEARING REVIEWER NUMBERS CONFIRMED
+  (17/19 legs first-pass AGREE + 2 adjudicated + GB-10b exact).

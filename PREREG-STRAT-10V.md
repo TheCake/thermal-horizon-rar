@@ -196,6 +196,20 @@ R47-corrected arm; (b) Proposal F's systematics section quotes the
 letter verbatim; (c) if H2 fires, the dissident-dwarfs stage (
 Proposal D) inherits the strata tables as its starting census.
 
+## §10a POST-ROUND ANNOTATION (Round 48, 2026-09-21; append-only)
+C1 adopted: the §7 gloss of V-UNRESOLVED ("the inversion stands
+measured with no attributed carrier") was found FALSE on both halves
+by Round 48 (the attributed object is 0.71 sigma on this stage's own
+frozen SD_block = 68.24, and the carrier IS attributed -- UGC03580,
+52% of that null's variance, whose removal flips the flow leg to BE).
+The gloss is RETIRED for this stage and all successors of this
+grammar; the letter travels everywhere as V-UNRESOLVED
+(BASELINE-SUBSIGMA, CARRIER-LOCALIZED). Operative record:
+data/stage10v_verdict.txt. The §6 sv_swap formula is annotated
+mis-specified for the 26 UMa galaxies (2.4% prior-width error,
+immaterial; C12). The §4 margin rule is superseded for successors by
+the C5 bar (lead >= 2 x SD_block AND P_boot >= 0.95).
+
 ## §11 Runtime (honest, from measured cost)
 Per-fit cost is MEASURED at gates and the sky ETA quoted from it
 (the 10U lesson: never estimate from a cheaper arm). Registered fit

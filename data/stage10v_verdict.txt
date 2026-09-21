@@ -1,0 +1,233 @@
+================================================================================
+STAGE 10V -- THE STRATIFICATION INSTRUMENT: OPERATIVE VERDICT
+(Round-48-corrected). 2026-09-21. This file supersedes the letter block
+of the as-fired sky read (preserved verbatim in data/stage10v_skyread.txt,
+commit d9683cf). Chain: prereg + gates a332278 (pre-sky; census frozen)
+-> sky d9683cf -> GA blind 8be4d86 (pre-report; 15th protocol execution,
+six legs ALL OK) -> ROUND 48 (REVIEW-ROUND48-OPUS.md, uncommitted;
+zero computational errors found -- 20/20 reproductions exact; hole YES
+scoped to the gloss/grades/readings, 20 conditions) -> GB
+(calcs/round48_addendum.py gb: reviewer numbers re-computed in own
+code; see data/round48_addendum.txt) -> adopted in full.
+================================================================================
+
+THE LETTER (C1 relabel applied; the pre-registered SS7 gloss of
+V-UNRESOLVED is RETIRED for this stage and all successors of this
+grammar -- Round 48 found it false on both halves):
+
+V-UNRESOLVED (BASELINE-SUBSIGMA, CARRIER-LOCALIZED)
+
+  No registered axis fires -- AND the stage's own frozen null explains
+  why there was nothing stratum-level to find:
+
+  THE BASELINE NEVER MET THE STAGE'S OWN BAR (C3). The object under
+  attribution -- the flow leg's boot-over-BE preference, d = 48.7 --
+  measures 0.71 sigma against the stage's own frozen
+  SD_block(flow) = 68.24 (gates, pre-sky). Corroborations:
+  fixed-global galaxy bootstrap z = -0.78, P(BE better) = 0.221; the
+  refit jackknife sign-flips on a single drop. The anchored leg by
+  contrast: 63.3/22.96 = 2.76 sigma (bootstrap z = +2.22, consistent
+  with 10U's paired z = 1.94). The null is itself carrier-built:
+  UGC03580 supplies 52% of SD_block^2 alone (GB exact; top two
+  58-64% and SD-without-them 41-44 = construction spread, GB vs
+  reviewer, both quoted). The null and the signal are the same
+  galaxy.
+
+  ONE GALAXY CARRIES THE INVERSION (C2). Post-drop values (the stage
+  printed only the changes): baseline d(BE,boot) = -48.7 (boot);
+  drop UGC03580 -> +7.2, WINNER BE; drop NGC5371 -> -31.2 (boot);
+  drop both -> +27.5, WINNER BE. Dropping UGC03580 ALONE flips the
+  flow leg's winner; with both carriers removed the remaining 69 flow
+  galaxies prefer BE -- the same direction as the anchored leg.
+  UGC03580 is one sufficient carrier plus NGC5371 a material one
+  ("top-2 carriers" retired as the summary). Neither is formally
+  disqualified (Q=2/Q=1, inclinations interior); UGC03580 is simply
+  the leg's widest-coverage galaxy (2.1 dex of y, crossing the whole
+  discriminating window on one dv offset) -- at 57 robust sigma of
+  the leg's own per-galaxy distribution.
+
+  Scope note (R48 SS5.3): INSIDE the shared coverage window the flow
+  boot preference is NOT carrier-dominated (drop-both leaves +17.8
+  boot-ward of the windowed 36.5). The one-galaxy statement is about
+  the FULL flow leg with its high-y tail -- exactly the object 10U
+  banked.
+
+AXIS VERDICTS (all Round-48-corrected):
+  H1 DISTANCE (C10 relabel): the distance-MARGINALISATION channel is
+    non-carrying, AS THE MODEL'S STRUCTURE REQUIRES -- a SPARC
+    distance error is exactly a per-galaxy vertical offset (g_bar
+    invariant under D -> sD to 2e-16; g_obs shifts -log10 s
+    identically per point; GB-confirmed), i.e. the model's own dv
+    nuisance. H1's null was structurally expected, not empirically
+    won. NEVER print "the distance axis is excluded as carrier".
+    The flow delta is immune (moves <= 0.6 of 48.7) to a coherent
+    11.6% rescale, a 3.7% rescale, and a 2.5x prior tightening --
+    which is exactly what a one-galaxy within-curve shape preference
+    should do (C13, the same sentence). What H1 cannot reach:
+    (a) unmodelled per-galaxy scatter -- measured erosion of the
+    anchored BE lead: 21% at 1x flow grade (0.109 dex), 49% at 2x;
+    (b) systematics CORRELATED with distance class: the innermost
+    kept point sits at median 15.0 arcsec (flow) vs 34.8 (anchored),
+    median D 21.3 vs 9.4 Mpc, both carriers at ~8 arcsec -- INNER
+    ANGULAR RESOLUTION is the named live rival (reading-grade, not
+    demonstrated; beam smearing pushes high-y points down = the
+    boot-ward direction).
+  H2 COMPOSITION (C4/C8): the anch_gasrich "REVERSAL" is regraded
+    NOT ESTABLISHED -- reversal at the registered 1-SD block bar
+    only; the honest grades: block 1.68 sigma; exact sign-flip
+    permutation p = 0.2163 (~1.24 sigma); leave-one-out refit
+    jackknife 1.46 sigma; paired galaxy bootstrap P(boot beats BE) =
+    0.930 < the program's own 0.95 co-requirement (the clause 10U
+    used to refuse gm at 0.915 one stage earlier). The strongest
+    honest form survives at disclosure grade: at FIXED parent
+    globals the gas-rich 16 contribute -10.9 (boot-ward) vs a
+    permutation null of +13.0 +- 11.6 (p = 0.0144 reviewer / 0.036
+    GB own-construction) -- but conditioning on coverage moves it to
+    p = 0.092 / 0.165 (GB), and fgas is
+    rank-correlated with coverage at -0.89 (anchored) / -0.81
+    (flow): COMPOSITION IS NOT SEPARABLE FROM COVERAGE in this
+    catalog. The flow half of the "both legs agree" pattern carries
+    ZERO information beyond its own (one-galaxy) leg baseline
+    (p = 0.373 reviewer / 0.914 GB -- both null). Sign pattern is
+    threshold-robust (fgas 0.4/0.5/0.6) -- one measurement looked at
+    three times, not three measurements.
+  H3 COVERAGE (C9): the BEST-SUPPORTED candidate at point-estimate
+    grade, short of its registered margins. Both windowed legs agreed
+    on boot; BE falls from FIRST (anchored leg) to LAST under matched
+    coverage in BOTH window recipes (+11.0 registered; +10.1 at
+    P15/P85); the flow windowed margin missed by 0.2 units and is
+    recipe-knife-edge (1.93 sigma under P15/P85, where SD_block
+    halves to 16.0). The direct within-leg coverage test the stage
+    never ran is the strongest ordering in the stage: the anchored
+    deep half contributes -5.8 of +63.3 vs null +31.7 +- 14.4,
+    p = 0.0039 (reviewer) / 0.0080 (GB own-construction) -- deep
+    galaxies carry essentially no form
+    information (the family curves separate 0.011 dex at y = 0.01,
+    peak 0.069-0.072 dex at y = 1-2). The anchored BE preference is
+    a property of its high-acceleration galaxies.
+
+RETRACTED / NEVER QUOTE (from this stage on):
+  - the SS7 gloss "the inversion stands measured with no attributed
+    carrier" (false on both halves; C1).
+  - "the cross-leg inversion stands measured" in any form -- the
+    banked 10U C9 inversion was never given a null and does not pass
+    one (0.71 sigma; C19 carries this to the 10U ledger row note).
+  - flow_gasrich a0 = 6.27e-11 or "H0 ~ 40" (C7): zero of its 216
+    points reach y = 1 at the registered ARC_BE reference scale
+    (max 0.833; GB adjudication: at the stratum's own retracted a0
+    the same point reads 1.343 -- pure convention, 0.833 =
+    1.343 x 6.2684/10.106 exactly; the registered reference is the
+    operative one) -- no Newtonian arm; the a0 is a
+    ridge coordinate on an a0-M/L degeneracy (flat to ~1 unit over
+    a0 6.3-8.0e-11, f_ML riding 2.04->2.14), NOT the estimator's own
+    profile optimum either (fit_deep stalls +0.8-1.3 above the
+    profiled minimum on this all-deep stratum, a0 low by 13-18%;
+    C15; deltas protected, common-mode: -20.43 -> -19.96). The 9V
+    standing design check fired on a stratum this stage designed.
+  - the UMa-26 screening a0/H0 (C14): on an all-UMa slice u is a
+    global vertical offset degenerate with a0 (freeing u buys
+    16.05/20.87 units and moves H0 64.9 -> 84.2 / 69.0 -> 87.6 at
+    3.8-4.2 prior widths) -- a slice artefact, not a reading.
+  - "4 fire opportunities" as the multiplicity count (C6): 16
+    contests were inspected; per-contest reversal probability under
+    a global null p in [0.08, 0.16], N_eff in [4, 8]; family-wise
+    P(at least one margin-passing reversal) = 0.28-0.75, most
+    plausibly 0.4-0.65. A 1.2-1.6 sigma reversal found once in that
+    family is not evidence.
+  - windowed-leg a0 values as meter readings (7.4-9.7e-11 = H0
+    48-63, below the 62-75 validity domain; contest instruments
+    only).
+
+DISCLOSURES (adopted; GB-verified where numeric):
+  - FROZEN BULGE (C11): the engine gives the bulge neither f_ML nor
+    dml (Upsilon_bul = 0.7 frozen, all members); 322/1437 flow
+    points are bulge-dominated (13/39 of UGC03580's). Freeing it:
+    flow lead 48.73 -> 37.93 (-22%); dropping bulge-dominated points
+    raises it to 60.23 -- a disclosed sensitivity, not an
+    explanation. No gate in 10T/10U/10V examines this convention.
+  - sv_swap WIRING (C12): the swap formula assumed sigv was built
+    from rel -- false for the 26 UMa galaxies (rel overridden to
+    2.3/18 while sigv keeps SPARC eD/D): recovered inclination term
+    median 0.0252 vs true 0.0087 => 2.4% prior-width error on 26/78
+    galaxies in H1c. Immaterial; logged. Gate lesson: G10V-3(c)
+    sampled LEGA[:20] = zero UMa galaxies (index-sorted list) --
+    see trap #30.
+  - MATERIAL TIER (C13): arithmetically dead on the flow side (bar
+    2 x 68.24 = 136.5 vs moves 0.3-0.6) and not evaluated for H2/H3
+    (base_d=None) -- "MATERIAL rows: none" carried no information
+    there (trap-#11 pattern, R35 standing rule).
+  - NUISANCE ASYMMETRY (C16): flow f_ML 1.426-1.747 = effective
+    Upsilon_disk[3.6] 0.71-0.87 vs anchored 0.53-0.63; NO prior on
+    global f_ML (0.3-2.5 box only); boot -- the flow winner -- wants
+    the heaviest disks; at fgas >= 0.6 the flow gas-rich fit pins
+    f_ML at the 2.5 wall for both members. Part of what the flow
+    contest measures is which family best tolerates an implausible
+    global M/L.
+  - CENSUS-PENDING CARRIERS (C17): D564-8 and D631-7 (declared out
+    of scope pending the next census) sit INSIDE anch_gasrich, and
+    D631-7 is its largest carrier (+3.3 of +6.05 fixed-parameter;
+    dropping it costs 3.05 of the 7.77 lead; removing the pending
+    trio moves the composition p 0.0144 -> 0.0313). New rule:
+    census-pending galaxies are excluded from, or explicitly
+    disclosed in, any letter-feeding stratum.
+  - the stage's restraint AFFIRMED (R48 SS6a): not promoting the
+    co-read to a positive letter was correct on the merits, not just
+    by grammar ("that is the machine working").
+
+THE HONEST ONE-LINE PRODUCT (R48 SS10, adopted verbatim):
+  10V measured that the cross-leg form inversion it set out to
+  attribute is not a leg-level object at all: at 48.7 against its
+  own frozen block SD of 68.24 it is 0.71 sigma, and one galaxy --
+  UGC03580, 52% of that SD, whose removal flips the flow leg to BE
+  -- carries it; the three registered axes came up empty because
+  there was no stratum-level effect to find, and the only ordering
+  the data support is acceleration coverage (deep galaxies carry
+  almost no form information, p = 0.0039), which composition is
+  rank-correlated with at -0.89 and which H3's window-matching could
+  not see.
+
+NEW STANDING RULES (booked in DIARY):
+  - TRAP #29: an attribution stage must FIRST apply its own margin
+    rule to the object it attributes -- grade the baseline before
+    any counterfactual. (10V froze SD_block = 68.24 two gates after
+    its STOP gate passed on a fixed d >= 20 bar and never put the
+    two numbers in one sentence.)
+  - TRAP #30: a prefix of a sorted list is not a sample of the
+    classes present -- wiring spot-checks must span every class the
+    formula will meet (G10V-3(c) vs the UMa sv_swap defect).
+  - REVERSAL/DEMOTION BAR (C5): any successor reversal or demotion
+    clause in this family requires lead >= 2 x SD_block AND
+    P_boot >= 0.95 (paired galaxy bootstrap); the block SD is never
+    used at 1 sigma and never alone. (10V's 1-SD bar was weaker than
+    the 10U rule R47 endorsed -- a regression, now repaired.)
+  - HARNESS (C15): on any stratum where a fit sits at a parameter
+    box or the y-coverage is one-sided, re-check the reported
+    optimum against a directly profiled objective before printing
+    its parameters.
+
+CREDENCES: NO cell moves (pre-signed SS8; C20) -- anomaly-real 53 /
+mech 8 stand. No meter quantity moves: the band 65.4-70.4, stat 5.0,
+and every banked 10T/10U clause are untouched (R48 affirms).
+
+SUCCESSORS (C18 replaces the SS10 mandate):
+  1. THE PER-GALAXY FORM-PREFERENCE MAP: Delta_g = fun_boot,g -
+     fun_BE,g at the parent-leg optima (no stratum refits), regressed
+     jointly on composition, coverage and distance class, with a
+     galaxy bootstrap and a coverage-stratified permutation null --
+     one instrument answering H1/H2/H3 at once with its own
+     multiplicity. (Reviewer's per-galaxy arrays:
+     data/review48_pergal_*.npz, review-side, uncommitted.)
+  2. Before the flow leg is EVER quoted again: the full 71-galaxy
+     paired bootstrap with refits (~3 CPU-h; the fixed-global
+     surrogate says z = -0.78 and will not surprise).
+  3. The inner-angular-resolution instrument (R48 SS11): an
+     inner-radius cut in ANGULAR units (~2 beams) applied to both
+     legs -- settles whether the two carriers survive; cheap.
+  4. BIG-SPARC refire: inherits the R47-corrected arm + the C5 bar +
+     the coverage finding as its stratification spec (composition
+     strata are coverage strata at this N).
+  5. Proposal F: quotes this letter verbatim in the systematics
+     section; the dissident-dwarfs stage inherits the strata tables
+     WITH the C7/C8 qualifications (the gas-rich strata are
+     all-deep strata).
+================================================================================
