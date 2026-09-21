@@ -447,3 +447,33 @@ freeze-out question (Addendum 1) within the hour, and the discriminating
 receipts remain the registered ones (a0(z) sign, DR4, void asymptote).
 Register rule: this framing stays in the seed file and conversation --
 never in outward text or papers.
+
+## PART B ADDENDUM 3 (2026-09-22, the author's boundary-exchange
+## question; intuition-grade, dated)
+
+The author, on hearing the AdS/CFT error-correction story: "Can we use
+that for our C&T equation somehow? I guess we are holding the other
+part of the boundary -- the horizon." The sharpened form, worth
+keeping: AdS/CFT holds the SOLVABLE boundary with no observer and no
+data; this program holds the OBSERVED boundary (the dS horizon, whose
+Gibbons-Hawking temperature is the lock's own T) with no solvable
+theory. Two halves of one bridge. If the lock is right, rotation
+curves are the first DATA in horizon thermodynamics -- every other
+entry in that field is theory checking theory.
+
+Actionable content, deferred behind F per the hammering order:
+(a) SCOUT TASK (cheap, future): does the de Sitter static-patch /
+soft-mode literature contain a computable object matching the O5-NORM
+hole (the O(H) coupling of a bound system to horizon soft modes)?
+Named entry points: the IR triangle (soft theorems / memory /
+asymptotic charges), dS edge modes, and the 2022-23 static-patch
+algebra results (crossed-product / Type II entropy for the dS
+observer -- the first rigorous handle on observer-dependent horizon
+accounting). Primary-read before use; scout-grade only.
+(b) AUDIENCE NOTE for the post-F wave: the mechanism story may land
+better with the IR-gravity / quantum-horizon community than with the
+MOND community -- a second door, different reviewers, different
+priors. (c) WALL, stated: AdS tools do not port naively (no spatial
+boundary, observer-dependent horizons, no boundary theory for dS);
+nothing here computes today. P4 remains FROZEN through DR4; this
+addendum books the idea, fires nothing.
