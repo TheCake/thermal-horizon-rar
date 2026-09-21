@@ -17711,3 +17711,60 @@ shift it by 5 all by itself, so before trusting it more, we must pin
 down the dial shape. Also: four tiny galaxies from another telescope
 survey wanted to join, but their ingredient lists disagree with ours, so
 they wait outside.
+
+## 2026-09-21 -- STAGE 10U + ROUND 47: pin-the-nu-form (the anchored-leg family contest)
+
+Question: can the 78-galaxy anchored leg demote any of the four registered
+meter forms (BE/p065/gm/boot), or is the 65.4-70.4 band the honest floor?
+Prereg PREREG-NUFORM-10U.md (bars blind) + A1 boundary-pair seed extension,
+committed d05942c pre-sky; world/engine bit-verbatim 10T; sky 1f35d23; GA
+blind a1976b5 (14th protocol execution); ROUND 47 adopted in full (15
+conditions); GB re-computed every reviewer number: ALL CONFIRMED.
+Operative verdict: data/stage10u_verdict.txt. Ledger cos-10u-nuform (221
+rows, six gates PASS).
+
+RESULT (letter U-FORM-NARROWED-INTERIOR (CALIBRATION-QUALIFIED)): the sky
+prefers plain BE (gm +24.0, p065 +25.9, boot +63.3 behind). boot is
+DEMOTED at report grade ~2 sigma (paired-bootstrap z 1.94 BE-route / 2.66
+p065-route; P_boot 0.990/1.000; permutation p ~ 0.06; passes 6-test
+Bonferroni only via p065). gm survives on the bootstrap co-requirement
+(0.915 < 0.95 -- a 1.26-sigma preference correctly refused). The band
+edges (BE vs p065) cannot separate at N = 78 under any calibration that
+charges the sky's measured within-curve correlation, so the band stands
+UNCHANGED at 65.4-70.4: the demotion bought no width.
+
+ROUND 47 (the round's centerpiece, all GB-verified in own code): the
+injection power arm inherited 10T's H0-recovery noise model unvetted --
+injected s_int = 0.08 vs the sky's fitted 0.0324 (x3.85 in weight) and
+zero within-curve correlation vs the measured lag-1 rho = 0.62. The two
+~1.7x errors CANCEL in the separation (the printed sep 1.80 is "right to
+1% by coincidence": amplitude-corrected 2.60-3.04, correlation-charged
+1.79, wild galaxy-block 0.55) and COMPOUND in the spread (injection null
+SDs 4.4-9.4x too small vs 13.6-33.4 from four agreeing constructions).
+In amplitude-only-corrected worlds the rule would demote p065 too and
+collapse the band to 65.4-66.3; under the wild null nothing is powered
+(U-POWER-LIMITED alternative disclosed). The N-forecast (sep = 2 at
+N ~ 25) is RETRACTED; the honest BIG-SPARC requirement is N ~ 100-1000.
+The deltas are carried by ~5 galaxies (IC2574 + NGC0891 = 43-68% of the
+leads; N_eff 5-10 of 78). And the contest INVERTS across strata: the
+flow leg prefers boot (BE last, +48.7), the union prefers gm -- at this
+N the contest measures a subsample, not a form. TRAP #28 booked; the
+refire inherits the corrected arm; 10T's sigma = 4.99 is untouched (it
+is a galaxy bootstrap, which carries the correlation automatically).
+
+PLAIN VERDICT: SUCCESS -- the stage answered its pre-registered question
+(the band IS the floor at this N, now with the reason measured), demoted
+one form at honest grade, and the review corrected the instrument's
+self-account before anything shipped. Credences 53/8 untouched.
+
+ELI12: We asked our 78 best-measured galaxies to vote on which of four
+dial faces the gauge should wear. They voted one face off the island
+(boot) -- but reading the fine print, the vote was closer than our first
+count claimed, because galaxy data points come in correlated clumps, not
+as independent voters, and our test-elections had used the wrong kind of
+practice ballots. The two big faces (the ones that read 65 and 70) got
+almost exactly equal votes, so the gauge keeps showing the honest range.
+And a twist: the OTHER half of the catalog, whose distances were
+estimated a rougher way, votes for a different face entirely -- so the
+next question is not "more galaxies" but "why do the two halves
+disagree".

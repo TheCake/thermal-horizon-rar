@@ -42,3 +42,78 @@ GA-5: OK
 GA-6: OK
 
 GA BLIND HALF: ALL OK
+
+========================================================================
+ROUND-47 ADDENDUM -- mode = gb
+========================================================================
+
+-- GB refits (deterministic archived convention) --
+  member   a0          f_ML    s_int    u      (R-b claim)
+  BE    1.0106e-10  1.050  0.0324  -0.0211  -> AGREE
+  p065  1.0892e-10  1.172  0.0331  -0.0208  -> AGREE
+  gm    1.0250e-10  1.187  0.0331  -0.0211  -> AGREE
+  boot  1.0446e-10  1.266  0.0341  -0.0215  -> AGREE
+GB R-b per-member nuisances: AGREE
+
+GB R-a lag-1 rho (BE): +0.612 (reviewer 0.618-0.622) -> AGREE
+GB R-a lag-1 rho (p065): +0.612 (reviewer 0.618-0.622) -> AGREE
+GB R-a lag-1 rho (gm): +0.613 (reviewer 0.618-0.622) -> AGREE
+GB R-a lag-1 rho (boot): +0.616 (reviewer 0.618-0.622) -> AGREE
+
+-- GB R-d analytic null SDs for d_AB (own constructions) --
+  BE->p065: iid 5.03 / AR1 8.39 / block 14.10 (reviewer 5.39/9.17/16.27) -> AGREE
+  BE->gm: iid 5.50 / AR1 9.25 / block 13.70 (reviewer 6.16/10.65/16.47) -> AGREE
+  BE->boot: iid 9.61 / AR1 16.17 / block 22.96 (reviewer 10.45/18.03/30.14) -> AGREE
+  p065->boot: iid 5.17 / AR1 8.75 / block 11.10 (reviewer 5.83/10.16/14.27) -> AGREE
+  gm->boot: iid 4.42 / AR1 7.46 / block 11.58 (reviewer 4.69/8.04/13.8) -> AGREE
+GB R-d: AGREE (within 25%)
+GB R-e demotion z, MY block construction: BE->boot 2.76 (rev block 2.10, bootstrap 1.94), p065->boot 3.37 (rev 2.62/2.66); adjudicated range across constructions ~1.9-3.4 = 'centred near 2 sigma' CONFIRMED -> AGREE-RANGE
+
+-- GB R-f per-galaxy concentration (fixed-parameter) --
+  d(BE,p065): top-5 share 87% (rev 93%), favor 51/78 (rev 44), top = IC2574 +7.8 -> AGREE-QUALITATIVE
+  d(BE,gm): top-5 share 75% (rev 102%), favor 48/78 (rev 45), top = IC2574 +7.7 -> AGREE-QUALITATIVE
+  d(BE,boot): top-5 share 59% (rev 70%), favor 50/78 (rev 47), top = NGC0891 +10.5 -> AGREE-QUALITATIVE
+GB R-f: AGREE-QUALITATIVE (construction-sensitive shares; refit leg R-g is primary and exact)
+
+-- GB R-g drop-one refits (IC2574, NGC0891) --
+  drop IC2574: costs d(BE,boot) +13.9 (rev 13.9), d(BE,p065) +10.6 (rev 10.6) -> AGREE
+  drop NGC0891: costs d(BE,boot) +13.6 (rev 13.6), d(BE,p065) +7.1 (rev 7.1) -> AGREE
+GB R-g: AGREE
+
+GB R-c: injected worlds re-fit s_int = [np.float64(0.077), np.float64(0.078)] (rev ~0.077); inverse-variance ratio = 3.85 (rev 3.85) -> AGREE
+
+-- GB R-h matched-noise sep(BE,p065), OWN seed streams --
+  s_int 0.032, 8+8 own seeds: dA +15.06+-7.74, dB -10.85+-5.23 -> sep = 3.92
+  s_int 0.050, 4+4 own seeds: dA +8.72+-6.37, dB -7.26+-6.20 -> sep = 2.54
+GB R-h: 0.032 -> 3.92 (rev 3.04+-0.43); 0.050 -> 2.54 (rev 2.21+-0.53) -> CONSISTENT
+
+-- GB R-i cross-leg contest (flow 71; union spot) --
+  flow deltas: BE +48.7, p065 +7.6, gm +2.5, boot +0.0
+  union spot: d(BE - gm) = +40.4 (rev +40.4; gm best)
+GB R-i: flow best = boot (rev boot), BE +48.7 (rev +48.7) -> AGREE
+
+GB R-j Laplace rel (p065): -1.34 (rev -1.33) -> AGREE
+GB R-j Laplace rel (gm): -1.84 (rev -1.83) -> AGREE
+GB R-j Laplace rel (boot): -3.82 (rev -3.77) -> AGREE
+GB R-k A1 selection bias at true 1.4: E[sep24|sel] - true = +0.16 on 7933 selected (rev +0.14, toward powered) -> AGREE
+
+-- GB R-l arithmetic pack --
+  OK  forecast SE(4 seeds, d=3.22) = 1.17
+  OK  tension = 1.2 sigma
+  OK  N(sep=2) direct = 96
+  OK  N(sep=2) AR1 = 97
+  OK  N(sep=2) iid-matched = 34
+  OK  N(sep=2) block = 306
+  OK  N(sep=2) wild = 1031
+  OK  FWER(3 tests, 2SD) = 6.7%
+  OK  Bonferroni-3 bar 0.0167: BE route p=0.010 passes
+  OK  Bonferroni-6 bar 0.0083: BE route fails, p065 route (<=0.005) passes
+  OK  permutation p = 1/17 = 0.059
+  OK  P_boot 0.990 as normal sigma would read 2.33 (banned conversion)
+  OK  z arithmetic: 63.32/32.68 = 1.94
+  OK  z arithmetic: 37.41/14.06 = 2.66
+  OK  d(gm,boot) = 63.3-24.0 = 39.3
+  OK  sky vs truth-BE expectation (BE,p065): (25.91-3.11)/3.06 = 7.4 SD
+GB R-l: ALL OK
+
+GB POST-REPORT HALF: ALL REVIEWER NUMBERS CONFIRMED

@@ -232,3 +232,37 @@ edge to gm/boot) or gm/boot->BE (low edge up). N-forecast (x1-x2):
 sep ~ 3.55 sqrt(N/78) FORECAST-grade, in tension with the direct
 24-seed sep(78) = 1.80 — the direct measurement is operative; the
 tension is flagged for Round 47.
+
+---
+## ROUND 47 ADOPTION RECORD (2026-09-21, appended post-round; the
+operative verdict = data/stage10u_verdict.txt)
+
+Fresh referee, ~6.5 CPU-h, own world build + own objective + own
+optimiser: EVERY stage number reproduced (deltas +25.91/+23.96/+63.32;
+all four a0 <= 0.04%; sep8 1.93 / sep24 1.80 regenerated from the
+pinned seeds; bootstrap stream fingerprints exact; zero computational
+errors anywhere incl. the blind GA). Ruling UNPATCHED HOLE YES, scoped
+to the calibration arm / quoted grades / N-forecast -- NOT the
+demotion decision. 15 conditions, ALL ADOPTED after the GB half
+(calcs/round47_addendum.py gb) re-computed every load-bearing reviewer
+number in own code: ALL CONFIRMED (cross-leg inversion to the decimal;
+rho 0.612-0.616; nuisances exact; s_int refit 0.077/0.078 + ratio 3.85
+exact; refit jackknife exact; matched-noise seps consistent on
+independent streams 3.92/2.54; Laplace -1.34/-1.84/-3.82; A1 MC +0.16;
+16/16 arithmetic checks). Two diagnostics adjudicated to range grade
+(fixed-parameter concentration shares and block-SD exact values are
+construction-sensitive within ~25%; the refit jackknife and the
+qualitative claims are exact/confirmed).
+
+Headline corrections adopted: the letter is renamed
+U-FORM-NARROWED-INTERIOR (CALIBRATION-QUALIFIED); the boot demotion is
+quoted at ~2 sigma (bootstrap z 1.94/2.66), never at the injection
+bar; the N-forecast law is RETRACTED (honest requirement N ~ 100-1000);
+the power gate's powered set is calibration-conditional (5/6 powered
+at matched amplitude i.i.d. -> {BE, gm}; 0/6 under the wild
+galaxy-block null -> U-POWER-LIMITED alternative disclosed); the band
+65.4-70.4 stands under every correlation-charged calibration and its
+survival rests on the correlation term the stage did not model; SS5
+sentence 2 is superseded (the refire inherits the CORRECTED arm).
+TRAP #28 booked. Credences 53/8 pre-signed HOLD, referee-affirmed
+(C13).

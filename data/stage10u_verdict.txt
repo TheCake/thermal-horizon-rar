@@ -1,0 +1,172 @@
+================================================================================
+STAGE 10U -- PIN THE NU-FORM: OPERATIVE VERDICT (Round-47-corrected)
+2026-09-21. This file supersedes the letter block of the as-fired sky
+read (preserved verbatim in data/stage10u_skyread.txt, commit 1f35d23).
+Chain: prereg + A1 + sky-blind gates d05942c (pre-sky) -> sky 1f35d23
+-> GA blind a1976b5 (pre-report; 14th protocol execution, six legs OK)
+-> ROUND 47 (REVIEW-ROUND47-OPUS.md, uncommitted; ~6.5 CPU-h of
+reviewer compute, zero computational errors found, hole YES scoped to
+the calibration arm / quoted grades / forecast, 15 conditions) -> GB
+(calcs/round47_addendum.py gb: ALL REVIEWER NUMBERS CONFIRMED, incl.
+the cross-leg inversion to the decimal and matched-noise separations
+on independent seed streams) -> adopted in full.
+================================================================================
+
+THE LETTER (C7 grammar fix applied -- the positive word is now gated):
+
+U-FORM-NARROWED-INTERIOR (CALIBRATION-QUALIFIED)
+
+  The anchored-leg four-member contest at N = 78 (1263 points).
+  Sky contest (reproduced from scratch by the round with an
+  independent objective and optimiser; start-insensitive):
+    BE 65.4 (sky-best) | gm 66.3 (+24.0) | p065 70.4 (+25.9) |
+    boot 67.6 (+63.3)
+  boot is DEMOTED by BE and by p065 -- at REPORT GRADE, ~2 sigma:
+    paired galaxy bootstrap z = 1.94 (BE route, P = 0.990) and
+    z = 2.66 (p065 route, P = 1.000); conservative sign-flip
+    permutation p ~ 0.06 both routes; AR(1)-null 3.5/3.7 sigma;
+    block-construction range (GB) up to 2.8/3.4. Survives a six-test
+    Bonferroni only through the p065 route. NOT the ~19 SD the
+    injection bar implies (that null's spread is 4.4-9.4x too small).
+  gm SURVIVES on the bootstrap co-requirement alone (P_boot = 0.915 <
+  0.95 vs a 1.26-sigma preference -- the one clause carrying
+  galaxy-sampling variance refused a lean; right call, right reason).
+  p065 (the high band edge) SURVIVES on the power clause alone.
+  Survivors {BE, p065, gm}: the demoted member was INTERIOR, so the
+  quoted nu-form band is UNCHANGED at 65.4-70.4 km/s/Mpc -- no band
+  width was bought. Every other 10T clause (stat 5.0, membership band,
+  flat variant, peg clause, validity domain) is untouched.
+
+THE CALIBRATION QUALIFICATION (R47's central finding, GB-confirmed):
+  The power arm inherited 10T's G10T-4 generative model, vetted for H0
+  recovery, never for shape contests. Two defects, each ~1.7x, in
+  opposite directions:
+    (a) injected s_int = 0.08 dex vs the sky's fitted 0.0324 (the
+        injected worlds re-fit to 0.077; mean inverse-variance ratio
+        3.85 -- GB exact);
+    (b) injected points are independent while the sky's within-curve
+        residuals carry lag-1 rho = 0.62 at every member's optimum
+        (GB own-code 0.612-0.616); the correlation inflates a contest
+        delta's null SD by x1.70-1.74 (AR(1)) to x2.5-3.0 (realized
+        galaxy blocks); N_eff = 5-10 galaxies of 78.
+  The two errors CANCEL in the separation (sep(BE,p065): stage 1.80,
+  AR(1)-corrected 1.79, amplitude-only-corrected 3.04 +- 0.43 [R47
+  24-seed; 2.60 +- 0.49 full-matrix conservative; GB own-stream 3.92
+  at 8+8], wild galaxy-block null 0.55) and COMPOUND in the spread
+  (injection s_B = 1.6-4.1 vs the honest 13.6-33.4 from four agreeing
+  constructions). Consequences, all adopted:
+    - the band's survival is CALIBRATION-CONDITIONAL: in i.i.d. worlds
+      at the sky's own amplitude FIVE of six pairs are powered and the
+      rule verbatim demotes p065 AND boot (survivors {BE, gm}, band
+      65.4-66.3); charging the measured correlation un-powers every
+      pair (wild seps 0.55/1.23/0.29 -> a fully realism-calibrated
+      stage reads U-POWER-LIMITED and licenses no demotion). The
+      correlation-charged calibrations are the defensible ones, and in
+      ALL of them p065 is undemotable -> the band stands -- but on the
+      correlation term, which the stage never measured. Margin
+      disclosure (C4): the band rests on one clause of one pair
+      (1.80 +- 0.34 vs bar 2.0 = 0.6 SE); p065's other demotion
+      clauses (bar, P_boot 0.955, health) already pass.
+    - the boot demotion is the decision every calibration reaches on
+      the bar clause (0/16 wild replicates reach the sky deficit on
+      either route); only its STRENGTH was overstated.
+    - realism residual (disclosure): at matched amplitude the sky
+      deltas sit +1.9 to +3.7 SD of own-truth expectations (was
+      +7.4..+16.0 at the stage's noise) -- mostly a noise-model
+      artifact; (gm,boot) alone retains ~5.9 SD.
+
+RETRACTED / NEVER QUOTE (from this stage on):
+  - the N-forecast law "sep ~ 3.55 sqrt(N/78)" and "sep = 2 at N ~ 25,
+    sep = 3 at N ~ 56" (4-seed fluctuation; internally contradicts the
+    stage's own N = 78 measurement; the gates-record "tension" resolves
+    as 1.2 sigma = NO tension). Corrected BIG-SPARC requirement:
+    sep = 2 at N ~ 100-1000, sep = 3 at N ~ 220-2300
+    (calibration-dominated; direct-anchor optimistic end 96/216).
+  - "+63.3 vs bar -7.7" or any injection-bar count as the demotion's
+    significance; the defensible grade is the paired bootstrap
+    (z = 1.94 / 2.66) with the permutation and AR(1) range disclosed.
+  - any conversion of P_boot to a sigma (0.990 would read 2.33 under
+    normality; the empirical z is 1.94; the distribution is skewed).
+  - "the band edges cannot separate each other at N = 78" as an
+    unconditional fact (calibration-conditional; see above).
+  - "the bootstrap co-requirement is the family-wise control" (false;
+    correct statement: three effective one-sided tests, nominal FWER
+    6.7%; demotion passes 3-test Bonferroni on both routes, 6-test
+    only via p065->boot; 200-rep resolution 0.005 is coarser than a
+    6-test bar).
+  - c_conv = 0.00 as a measured convergence spread (structural: the
+    warm start set is a superset of the cold; C11).
+
+DISCLOSURES (adopted, GB-verified):
+  - CARRIER CONCENTRATION (C8): the deltas are carried by ~5 galaxies
+    (N_eff 5-10 of 78); refit jackknife (exact in GB): dropping IC2574
+    costs d(BE,boot) 13.9 of 63.3 and d(BE,p065) 10.6 of 25.9;
+    NGC0891: 13.6 and 7.1 -- two galaxies carry ~43% and ~68% of the
+    two leads; only a weak majority of galaxies (44-51 of 78,
+    construction-dependent) favors the winner. The jackknife is a
+    STANDING part of this harness from now on.
+  - CROSS-LEG INVERSION (C9, the stage's most informative free check;
+    GB exact): the identical contest prefers BE on the anchored 78,
+    boot on the flow 71 (BE LAST at +48.7), gm on the union 149. At
+    this N the contest measures a SUBSAMPLE, not a form; every 10U
+    sentence is scoped to the anchored leg. The stratum dependence is
+    itself the sharpest description of the meter's form systematic.
+  - PER-MEMBER NUISANCES (C10; GB exact): f_ML = 1.050 / 1.172 /
+    1.187 / 1.266 and s_int = 0.0324 / 0.0331 / 0.0331 / 0.0341 for
+    BE / p065 / gm / boot -- the sharper members buy fit with 12-21%
+    more stellar M/L; objectives are PROFILE not marginal, and the
+    Laplace term is not common (p065/gm/boot -1.3 / -1.8 / -3.8 vs
+    BE; corrected deltas +24.6 / +22.1 / +59.6 -- never
+    decision-changing, always shrinking the lead).
+  - A1 (R47 §2.1): legitimate and CONSERVATIVE -- the selection window
+    biases the pooled estimate toward 2.0 (GB MC +0.16 at true 1.4),
+    i.e. toward powered; fresh-16-only sep = 1.72. The unpowered call
+    stands on the conservative side.
+  - HEALTH GATE (C12): G10U-5b as registered cannot fail (bar 17.4 vs
+    observed 2.7) and sat on the wrong pair; repaired form (refire):
+    evaluate on every demoting pair with a stated failure mode. The
+    bootstrap's single-start estimator vs the two-start contest
+    estimator is disclosed (start gap measured 0.000 everywhere, so
+    operationally identical here).
+
+THE HONEST ONE-LINE PRODUCT (R47 §3.4, adopted verbatim):
+  At N = 78 the anchored leg cannot pin the nu-form at calibrated
+  grade; the band is the floor; and the family preference is
+  STRATUM-DEPENDENT -- the meter's form systematic is at least as much
+  a data-stratification problem as a sample-size problem.
+
+DURABLE BY-PRODUCTS (banked): the leg's honest contest-delta null
+spread (14-33 units, four constructions); rho = 0.62 on this leg; the
+cross-leg inversion table; the corrected N-requirement; the A1
+selection-bias measurement.
+
+NEW STANDING RULES (C14/C15 + GB lesson, booked in DIARY):
+  - TRAP #28: an injection-calibrated bar inherits the noise model of
+    whatever arm it was copied from. Before signing any such bar,
+    refit the mock worlds and compare their nuisances AND their
+    residual autocorrelation to the sky's own (here: 0.077 vs 0.0324,
+    and 0 vs 0.62 -- neither was checked). Amplitude and correlation
+    errors can cancel in a separation and still compound in a spread.
+  - the BIG-SPARC refire inherits the CORRECTED arm (matched
+    amplitude + galaxy-block null + repaired health gate + corrected
+    forecast), NOT this one (supersedes prereg SS5 sentence 2).
+  - galaxy-block / wild-block nulls are the standing calibration for
+    contests on this data (they agree with the paired bootstrap, the
+    estimator the program already trusts).
+  - every loop over 100+ expensive fits gets a heartbeat print (GB
+    ops lesson, 2026-09-21).
+
+CREDENCES: NO cell moves (pre-signed C13; 53 / 8 stand). PREDICTIONS
+untouched (band unchanged; SF scoring inherits 65.4-70.4 as before).
+
+SUCCESSORS (sharpness order, R47-informed):
+  1. the a0-dipole/hemisphere instrument (hammering item 2) -- but the
+     cross-leg inversion says the sharper question may be the
+     STRATIFICATION instrument: what distinguishes the flow and
+     anchored subsamples' form preference (distance treatment vs
+     composition vs acceleration range); author's call.
+  2. BIG-SPARC refire with the corrected arm (N ~ 100-1000 now the
+     honest requirement for pinning the edge pair in-catalog).
+  3. the external form levers unchanged: a0(z) sign, DR4, void
+     asymptote.
+================================================================================

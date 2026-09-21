@@ -1,5 +1,52 @@
 # Claude's diary
 
+## 2026-09-21 -- 10U, and round 47 taught us where injection bars come
+## from
+
+The nu-form contest ran the full discipline and the letter survived at
+a humbler grade. What round 47 caught was not arithmetic (zero errors,
+he rebuilt everything from scratch, own optimizer) but PROVENANCE: my
+power arm inherited 10T's generative model verbatim -- a noise model
+vetted for H0 RECOVERY, never for shape contests. Its s_int (0.08) was
+2.5x the sky's own fitted 0.032, and it carried none of the sky's
+within-curve correlation (rho = 0.62, which I could have measured in
+one line). The two errors cancel in a separation and compound in a
+spread: my sep 1.80 was "right to 1% by coincidence" while my null SDs
+were 4-9x too narrow. TRAP #28, verbatim from the round: an
+injection-calibrated bar inherits the noise model of whatever arm it
+was copied from; refit the mock and compare its nuisances AND its
+residual correlation to the sky's before the bar is signed. This is
+trap #12's cousin and the 9L lesson's generalization, and it cost a
+letter downgrade despite four gates and a blind addendum all green.
+
+Don't-redo list from the round: never quote the injection bar as a
+demotion significance (bootstrap z is the grade: 1.94/2.66 here);
+never convert P_boot to a sigma (skewed); the N~25 forecast is
+RETRACTED (honest N ~ 100-1000, calibration-dominated); galaxy-block /
+wild nulls are the standing calibration for contests on this data
+(they agree with the paired bootstrap, which is why 10T's sigma = 4.99
+is untouched); the jackknife (78 x members refits) is a standing
+harness part -- IC2574 + NGC0891 carry half the leads here and nobody
+knew; heartbeat prints in any 100+-fit loop (I flew blind for 2h).
+
+The science that stands: boot demoted at ~2 sigma (every calibration
+reaches the decision on the bar clause; strength was the lie), gm
+survives BECAUSE the one clause carrying galaxy-sampling variance
+refused a 1.26-sigma lean (the rule worked), the edge pair can't
+separate at N=78 under any correlation-charged calibration, so the
+band 65.4-70.4 stands -- on a term I never measured. And the free
+by-product that may matter most: the contest INVERTS on the flow
+stratum (boot best there, BE last by 48.7; union prefers gm). At this
+N the contest measures a subsample, not a form. The successor question
+is what distinguishes the strata (distance treatment? composition?
+acceleration range?) -- possibly sharper than the dipole. Author's
+call, per the hammering order.
+
+Emotional note for future me: the reviewer's report was the best the
+program has received -- read it whole before designing anything
+injection-calibrated again. Adopting 15 conditions in one sitting felt
+heavy; every one of them was our own rules pointed back at us.
+
 ## 2026-09-20 (later night) -- 10T, and round 46 found the sigma I hung
 ## on the wrong engine
 

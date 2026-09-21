@@ -3035,3 +3035,53 @@ D564-8/D631-7 CF4 check ride along at the next census; BIG-SPARC
 refire uses the R46 harness as-is. Wed 09-24 journal decision + early-
 Oct DR4 pre-sign unchanged. FRESH SESSION recommended before the next
 arc.**
+
+**10U + ROUND 47 (2026-09-21, hammering item executed on the author's
+"Lets go" = the standing pin-the-nu-form recommendation; full arc:
+prereg blind + A1 -> gates d05942c pre-sky -> sky 1f35d23 -> GA blind
+a1976b5 (14th protocol execution) -> ROUND 47 -> GB -> adopted ->
+banked): THE ANCHORED-LEG FAMILY CONTEST. Sky (reproduced from scratch
+by the round, start-insensitive): BE sky-best; gm +24.0, p065 +25.9,
+boot +63.3 behind. **OPERATIVE (data/stage10u_verdict.txt): letter
+U-FORM-NARROWED-INTERIOR (CALIBRATION-QUALIFIED) -- boot DEMOTED at
+report grade ~2 sigma (paired-boot z 1.94 BE-route / 2.66 p065-route,
+P_boot 0.990/1.000, permutation p~0.06, 6-test Bonferroni via p065
+only); gm SURVIVES on the bootstrap co-requirement (0.915 < 0.95 = a
+1.26-sigma lean correctly refused); the band edges (BE-p065) cannot
+separate at N=78 under any correlation-charged calibration (A1 pooled
+sep 1.80, conservative-side; the extension DEMOTED a run-1 powered
+pair) => nu-form band UNCHANGED 65.4-70.4; 10T stat 5.0 untouched.**
+ROUND 47 (REVIEW-ROUND47-OPUS.md uncommitted, ~6.5 CPU-h, ZERO
+computational errors, hole YES scoped to the calibration arm/grades/
+forecast, 15 conditions ALL adopted, GB confirmed every number incl.
+cross-leg to the decimal): the power arm inherited 10T's H0-recovery
+noise model unvetted -- injected s_int 0.08 vs sky-fitted 0.0324
+(x3.85 weight) + zero within-curve correlation vs measured rho=0.62;
+the two ~1.7x errors CANCEL in the separation ("right to 1% by
+coincidence") and COMPOUND in the spread (injection null SDs 4.4-9.4x
+too small vs honest 13.6-33.4, four constructions); amplitude-only
+worlds would demote p065 too (band -> 65.4-66.3), wild-null worlds
+power NOTHING (U-POWER-LIMITED alternative disclosed) -- the band
+stands under every defensible calibration but on the correlation term
+the stage never measured. N-FORECAST RETRACTED (never quote N~25;
+honest BIG-SPARC requirement N ~ 100-1000). Carriers: IC2574 +
+NGC0891 = 43-68% of the leads (N_eff 5-10/78; jackknife now a
+STANDING harness part). **CROSS-LEG INVERSION (the free by-product,
+GB exact): flow leg prefers boot (BE LAST +48.7), union prefers gm =>
+at this N the contest measures a SUBSAMPLE, not a form -- the meter's
+form systematic is STRATUM-DEPENDENT.** TRAP #28 (vet a copied
+generative model against the sky's own nuisances AND residual
+correlation before signing an injection-calibrated bar); standing:
+galaxy-block nulls for contests here, heartbeat prints in 100+-fit
+loops; refire inherits the CORRECTED arm (C14); 10T's sigma 4.99
+untouched (galaxy bootstrap carries the correlation). NEVER QUOTE:
+injection-bar significances, P_boot-as-sigma, the retracted forecast.
+Ledger cos-10u-nuform (221 rows six gates PASS); credences 53/8
+untouched (C13). **NEXT FORK (author's): the STRATIFICATION
+instrument (why do the anchored and flow halves prefer different
+forms -- distance treatment vs composition vs acceleration range;
+arguably sharper than the dipole now) - the a0-dipole instrument
+(hammering item 2 as originally ordered) - dissident-dwarfs stage -
+Proposal F drafting (EXIT CONDITION). Wed 09-24 journal decision +
+early-Oct DR4 pre-sign IMMOVABLE. FRESH SESSION recommended before
+the next arc.**
