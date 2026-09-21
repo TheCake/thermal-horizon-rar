@@ -2822,8 +2822,11 @@ endorsement ask to Will Sutherland (P&S statistic founder, Cookson
 co-author; w.j.sutherland@qmul.ac.uk VERIFIED) -> R1 thanks sent +
 letter 8 SENT 09-17 (referral lead, both PDFs, cold-read hardened).
 Tuveri LinkedIn nudge SENT 09-19 (194 chars, ONE-nudge rule: if silent
-the C&T channel RESTS). REMAINING: Chae Sun/Mon 09-21/22 (letter 4
-FINAL, v1.3 DOI, link-only); BOUFOUROU DEFERRED by the author
+the C&T channel RESTS). REMAINING: Chae DEFERRED by the author
+(2026-09-21, restated after a stale-window nudge: waits for the
+meter-paper outcome and goes out with the resumed wave carrying
+P1+P2+F; letter 4 stays FINAL in the drafts file; do NOT re-offer
+the weekly Seoul-Monday window); BOUFOUROU DEFERRED by the author
 (competitor-timing; triggers = arXiv posting OR DR4 pre-sign);
 JOURNAL-BACKSTOP DECISION WED 09-24: zero engagement anywhere -> P1
 to OJAp/MNRAS direct (journals need no endorsement). Endorsement code
