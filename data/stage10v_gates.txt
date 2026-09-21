@@ -1,0 +1,56 @@
+STAGE 10V STRATIFICATION -- mode = gates (sky-blind gates)
+
+== baselines (deterministic archived conventions) ==
+  anchored refits done  [40s]
+  G10V-1 anchored regression:
+    BE   : a0 d = 0.004% (bar 0.1%); |d - arch| = 0.00 (bar 0.5); nuis ok
+    p065 : a0 d = 0.003% (bar 0.1%); |d - arch| = 0.01 (bar 0.5); nuis ok
+    gm   : a0 d = 0.004% (bar 0.1%); |d - arch| = 0.05 (bar 0.5); nuis ok
+    boot : a0 d = 0.002% (bar 0.1%); |d - arch| = 0.02 (bar 0.5); nuis ok
+  G10V-1: PASS
+  flow warm refits done  [94s]
+  G10V-2a flow warm replication (vs GB R-i):
+    BE   : d = +48.7 vs GB +48.7 -> ok
+    p065 : d = +7.6 vs GB +7.6 -> ok
+    gm   : d = +2.5 vs GB +2.5 -> ok
+    boot : d = +0.0 vs GB +0.0 -> ok
+  G10V-2a: PASS
+    flow cold BE fit  [96s]
+    flow cold p065 fit  [99s]
+    flow cold gm fit  [135s]
+    flow cold boot fit  [148s]
+  G10V-2b flow contest-grade baseline:
+    member  a0          f_ML   s_int   u        d      gap
+    BE     1.1132e-10  1.426  0.0509  -0.0000    48.7   0.00
+    p065   1.1900e-10  1.589  0.0500  +0.0000     7.6   0.00
+    gm     1.0993e-10  1.620  0.0499  +0.0000     2.5   0.00
+    boot   1.1221e-10  1.747  0.0498  +0.0000     0.0   0.00
+  G10V-2b: best = boot, d(BE) = +48.7 -> PASS
+
+-- G10V-3 wiring --
+  s=1 identity True; s=1.1162 exact-shift True; sv self-swap True; zero-injection identity True
+  G10V-3: PASS
+
+-- G10V-5 block-SD regression --
+  anchored SD_block(BE->boot) = 22.96 vs GB 22.96 (bar 2%) -> PASS
+  flow SD_block(boot->BE) = 68.24 (FROZEN at this print; no bar -- new number)
+  flow lag-1 rho (boot fields) = +0.722
+
+-- G10V-6 census (values FROZEN at this print) --
+  rel_med_flow = 0.2500; rel_med_anch = 0.0623; sigma_inj = 0.1086 dex
+  flow_gasrich: 20 galaxies 
+  flow_gaspoor: 51 galaxies 
+  anch_gasrich: 16 galaxies 
+  anch_gaspoor: 62 galaxies 
+  log10 y percentiles: legA P10/P90 = -1.44/0.16; flow = -1.35/0.78
+  window = [-1.35, 0.16] in log10 y (y = gN1/ARC_BE)
+  windowed legs: anchored 64/78, flow 60/71 galaxies survive (>= 3 in-window points)
+  dropped anchored: CamB, D564-8, DDO154, IC2574, NGC3109, NGC3741, NGC4068, NGC5005, NGC6789, UGC01281, UGC05918, UGC06667, UGC07232, UGCA444
+  a_conf (flow: gas-poor vs high-y agreement) = 0.61 
+  measured cost: 14 fits so far, 12 s/fit (alternation fields included) -> sky ETA ~ 30 min for ~158 fits
+
+GATES: G10V-1 PASS  G10V-2a PASS  G10V-2b PASS (best = boot, BE +48.7)  G10V-3 PASS  G10V-5 PASS (SD_A 23.0, SD_F 68.2)  G10V-6 censused (H2 powered, H3 powered, a_conf 0.61)
+
+gates mode complete -- NO counterfactual contest was computed;
+all census values above are FROZEN by the pre-sky commit.
+wall-clock: 2.7 min
