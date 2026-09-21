@@ -3142,7 +3142,11 @@ coverage-stratified null; the natural 10W, cheap) - the a0-dipole
 instrument (hammering item 2) - the dissident-dwarfs stage (inherits
 the strata tables WITH the C7/C8 qualifications) - Proposal F
 drafting (EXIT CONDITION; its systematics section now quotes the 10V
-letter + the coverage finding). Before the flow leg is EVER quoted
-again: the 71-galaxy paired boot (~3 CPU-h). Wed 09-24 journal
-decision + early-Oct DR4 pre-sign IMMOVABLE. FRESH SESSION
-recommended before the next arc.**
+letter + the coverage finding). The 71-galaxy paired boot EXECUTED
+same night (R48 SS11-2 DISCHARGED, commit 98dd7c6): z = -0.83,
+P(boot beats BE) = 0.800, 84th pct POSITIVE -- four constructions
+agree the flow leg carries NO established form preference; the flow
+leg is quotable at this grade only (data/stage10v_flowboot.txt).
+Wed 09-24 journal decision + early-Oct DR4 pre-sign IMMOVABLE.
+FRESH SESSION recommended before the next arc (F drafting: first
+build+gate the CPU worker pool, then the 10W map folded into F).**
