@@ -1,0 +1,91 @@
+STAGE 10W MAP + RESOLUTION CUT -- mode = sky (sky read)
+
+pool certificate: GATE PASS on file -> Part-3 fits pooled
+
+== baselines (the 10V G10V-1/G10V-2a recipe, verbatim) ==
+  anchored refits done  [39s]
+  flow refits done  [93s]
+  G10W-1 engine identity (A2 bars: anch delta 0.5 = the 10V bar; flow delta 0.05 vs GB R-i; a0 0.1%):
+    BE   : anch a0 d = 0.004%; |d_anch - arch| = 0.000; |d_flow - arch| = 0.025 ok
+    p065 : anch a0 d = 0.003%; |d_anch - arch| = 0.012; |d_flow - arch| = 0.017 ok
+    gm   : anch a0 d = 0.004%; |d_anch - arch| = 0.046; |d_flow - arch| = 0.050 ok
+    boot : anch a0 d = 0.002%; |d_anch - arch| = 0.020; |d_flow - arch| = 0.000 ok
+  G10W-1: PASS
+
+== trap-#29 baseline grading (before any Part-2/3 statistic) ==
+  anch: d(BE,boot) = +63.3; SD_block = 23.0; |d|/SD = 2.76 sigma (rho_lag1 = +0.61)
+  flow: d(BE,boot) = -48.7; SD_block = 68.2; |d|/SD = 0.71 sigma (rho_lag1 = +0.72)
+  no Part-2/3 grammar may claim what these baselines cannot support (trap #29)
+
+== PART 1: the per-galaxy form-preference map (fixed parent globals) ==
+  anch: decomposed 4 members  [125s]
+  flow: decomposed 4 members  [141s]
+  map written: data/stage10w_map.csv (149 rows)
+  anch top-5 carriers (boot pair): IC2574 d = +12.5 (sd2 37%); NGC0891 d = +12.2 (sd2 23%); NGC5055 d = +6.9 (sd2 0%); NGC7814 d = +6.6 (sd2 0%); NGC2903 d = +6.3 (sd2 1%)
+  flow top-5 carriers (boot pair): UGC03580 d = -47.8 (sd2 52%); NGC5985 d = +19.7 (sd2 12%); NGC5371 d = -16.7 (sd2 6%); UGC03205 d = +15.2 (sd2 8%); UGC09133 d = +13.4 (sd2 4%)
+
+== PART 2: axes (partial-rank primary, A4-i machinery; seed 707; Bonferroni x4) ==
+  collinearity (disclosed): spear(fgas,cov) = -0.85; spear(res,cov) = -0.45; spear(res,leg) = -0.48
+  coverage   : partial rho = +0.195; p = 0.0160 (x4 Bonferroni = 0.0640)
+  composition: partial rho = -0.050; p = 0.5422 (x4 Bonferroni = 1.0000)
+  resolution : partial rho = +0.092; p = 0.2610 (x4 Bonferroni = 1.0000)
+  leg        : partial rho = -0.215; p = 0.0093 (x4 Bonferroni = 0.0372)
+  OLS co-read (DESCRIPTIVE; collinear): std slopes cov +0.1, fgas -0.5, res +0.2, leg -0.6
+  carrier-drop battery (rho; p at 2000 perms):
+    -UGC03580              : cove +0.21/0.007  comp -0.06/0.519  reso +0.09/0.263  leg -0.20/0.010
+    -NGC5371               : cove +0.21/0.007  comp -0.05/0.588  reso +0.09/0.290  leg -0.20/0.017
+    -IC2574                : cove +0.21/0.008  comp -0.03/0.698  reso +0.10/0.241  leg -0.21/0.012
+    -NGC0891               : cove +0.18/0.032  comp -0.05/0.570  reso +0.09/0.258  leg -0.21/0.011
+    -UGC03580+NGC5371      : cove +0.23/0.007  comp -0.05/0.530  reso +0.09/0.278  leg -0.19/0.025
+  grammar per axis (registered SS4 + A1):
+    coverage   : NOT ESTABLISHED (corrected p = 0.0640; carrier-robust = False)
+    composition: NOT ESTABLISHED (corrected p = 1.0000; carrier-robust = False)
+    resolution : NOT ESTABLISHED (corrected p = 1.0000; carrier-robust = False)
+    leg        : SUPPORTED-AT-POINT-GRADE (corrected p = 0.0372; carrier-robust = False)
+
+== PART 3: the cut instrument (theta_min in 10/20/30 arcsec; contest grade; SD_block recomputed per cut) ==
+  cut 10: anchored 78/78 gal (1259 pts), flow 70/71 gal (1340 pts)
+    dropped flow: F568-V1
+  cut 20: anchored 78/78 gal (1236 pts), flow 69/71 gal (1185 pts)
+    dropped flow: F568-V1, UGC05750
+  cut 30: anchored 77/78 gal (1204 pts), flow 64/71 gal (1029 pts)
+    dropped anch: NGC6789
+    dropped flow: D512-2, F565-V2, F568-V1, F571-V1, F574-1, F583-4, UGC05750
+  24 contest tasks -> pool
+  [cuts] 24 tasks -> 14 workers
+  [cuts] 0/24 done [0.1 min]
+  [cuts] 14/24 done [0.7 min]
+  [cuts] 16/24 done [1.3 min]
+  [cuts] complete in 1.8 min
+  cut 10 anch: winner = BE; d(BE,boot) = +63.5; SD_block = 23.7; deltas BE +0.0, p065 +24.9, gm +23.4, boot +63.5
+  cut 10 flow: winner = gm; d(BE,boot) = -31.7; SD_block = 88.0; deltas BE +36.7, p065 +2.7, gm +0.0, boot +5.1
+  cut 20 anch: winner = BE; d(BE,boot) = +66.0; SD_block = 25.5; deltas BE +0.0, p065 +26.1, gm +25.3, boot +66.0
+  cut 20 flow: winner = gm; d(BE,boot) = -29.7; SD_block = 66.0; deltas BE +34.1, p065 +1.6, gm +0.0, boot +4.4
+  cut 30 anch: winner = BE; d(BE,boot) = +61.8; SD_block = 26.0; deltas BE +0.0, p065 +25.4, gm +23.0, boot +61.8
+  cut 30 flow: winner = boot; d(BE,boot) = -54.2; SD_block = 56.9; deltas BE +54.2, p065 +12.4, gm +6.0, boot +0.0
+
+== letter (registered SS5 + A1-iii) ==
+  flow: d_uncut = -48.7; d_cut = 10: -31.7 (SD 88.0), 20: -29.7 (SD 66.0), 30: -54.2 (SD 56.9)
+  anch: d_uncut = +63.3; d_cut = 10: +63.5 (SD 23.7), 20: +66.0 (SD 25.5), 30: +61.8 (SD 26.0)
+  point conditions: carried = True (flow sign-flip or sub-SD at 20 AND 30); anch-stable = True; immune = True
+
+  conditional co-requirement boot: 200 paired reps, seed 909, 20-arcsec cut flow leg (flowboot construction)
+  [cutboot] 400 tasks -> 14 workers
+  [cutboot] 7/400 done [0.1 min]
+  [cutboot] 84/400 done [0.7 min]
+  [cutboot] 161/400 done [1.3 min]
+  [cutboot] 238/400 done [1.8 min]
+  [cutboot] 256/400 done [2.4 min]
+  [cutboot] 277/400 done [3.0 min]
+  [cutboot] 298/400 done [3.6 min]
+  [cutboot] 317/400 done [4.2 min]
+  [cutboot] 337/400 done [4.8 min]
+  [cutboot] 355/400 done [5.3 min]
+  [cutboot] 375/400 done [5.9 min]
+  [cutboot] 396/400 done [6.5 min]
+  [cutboot] complete in 6.8 min
+  boot: P(d_rep > 0) = 0.225; P(d_rep > -SD_block(20)) = 0.635 (C5 bar 0.95)
+
+LETTER: W-RESOLUTION-CARRIED (point grade only; C5 co-requirement NOT met)
+credences: every outcome pre-signed HOLD 53 / HOLD 8 (SS8); the meter (band 65.4-70.4, stat 5.0) untouched by construction
+fits pooled = True; wall-clock: 11.8 min
