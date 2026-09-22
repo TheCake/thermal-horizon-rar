@@ -1,0 +1,35 @@
+ROUND-50 GA (blind, pre-report)
+primary re-derived: H0 = 65.36 (battery printed 65.36)
+
+-- GA-1 A4 bulge-free: independent subset + cold/warm refit --
+  independent bulge-free N = 66; stage construction N = 66; sets IDENTICAL
+  warm H0 = 59.49; COLD-chain H0 = 59.49 (battery printed 59.49); -2lnL warm -4375.25 vs cold -4375.25
+  A4 optimum: la0 = -10.0363, f_ML = 1.060 (box 0.3/2.5), s_int = 0.0361 (box 1e-3/0.4), u = -0.0043 (box +-0.2)
+    dml pinned (|dml| ~ 0.7): 2/66 per-member; largest |dml| = 0.700; box-adjacent globals: NONE
+
+-- GA-2 A1 NGC5907 leave-out: cold refit --
+  warm dH0 = +2.250; cold-chain dH0 = +2.250 (battery printed +2.250); -2lnL warm -5844.37 vs cold -5844.37
+  LOO-5907 optimum: la0 = -9.9807, f_ML = 1.028 (box 0.3/2.5), s_int = 0.0310 (box 1e-3/0.4), u = -0.0228 (box +-0.2)
+    dml pinned (|dml| ~ 0.7): 2/77 per-member; largest |dml| = 0.700; box-adjacent globals: NONE
+
+-- GA-3 census leg: astropy separations + modulus arithmetic --
+  D564-8 vs PGC 86668: sep = 0.16 arcmin (astropy); DMtrgb = 29.68 +- 0.07 -> D = 8.63 +- 0.28 Mpc; SPARC 8.79; gap -1.8% (battery: -1.8%/-0.4%)
+  D631-7 vs PGC 22277: sep = 0.43 arcmin (astropy); DMtrgb = 29.43 +- 0.03 -> D = 7.69 +- 0.11 Mpc; SPARC 7.72; gap -0.4% (battery: -1.8%/-0.4%)
+  KK98-251: nearest CF4 row anywhere = PGC 64824 at 5.6 arcmin (battery rule: no row within 3 arcmin -> CONFIRMED)
+
+-- GA-4 bar arithmetic --
+  LOO: N = 77 -> bar = 1.14
+  incl40: N = 74 -> bar = 2.32
+  incl45: N = 71 -> bar = 3.13
+  incl50: N = 63 -> bar = 4.87
+  Q1: N = 46 -> bar = 8.32
+  bulge-free: N = 66 -> bar = 4.26
+  A5: floor 1.00 (same membership)
+
+-- GA-5 A5 construction --
+  sv ratio applied: min/max = 1.500/1.500 (expect 1.5/1.5)
+  refit H0 = 66.54 (battery printed 66.54)
+  A5 optimum: la0 = -9.9876, f_ML = 1.038 (box 0.3/2.5), s_int = 0.0312 (box 1e-3/0.4), u = -0.0176 (box +-0.2)
+    dml pinned (|dml| ~ 0.7): 0/78 per-member; largest |dml| = 0.609; box-adjacent globals: NONE
+
+GA total: 0.3 min
