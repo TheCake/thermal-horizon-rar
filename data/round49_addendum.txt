@@ -1,0 +1,31 @@
+ROUND 49 GA (blind; pre-committed)
+
+baselines re-fit  [94s]
+GA-1 map closure: anch CSV sum +63.28 vs engine +63.32 (OK); flow -48.73 vs -48.73 (OK)
+GA-2 coverage   : matrix partial rho = +0.1944 vs stage +0.195 (OK)
+GA-2 composition: matrix partial rho = -0.0495 vs stage -0.050 (OK)
+GA-2 resolution : matrix partial rho = +0.0917 vs stage +0.092 (OK)
+GA-2 leg        : matrix partial rho = -0.2147 vs stage -0.215 (OK)
+GA-3 cut-20 flow (serial): d = -29.70 (sky -29.7), SD_block = 66.02 (sky 66.0), gals 69/71 (OK)  [130s]
+  [ga4boot] 400 tasks -> 14 workers
+  [ga4boot] 7/400 done [0.1 min]
+  [ga4boot] 81/400 done [0.7 min]
+  [ga4boot] 155/400 done [1.3 min]
+  [ga4boot] 224/400 done [1.8 min]
+  [ga4boot] 255/400 done [2.3 min]
+  [ga4boot] 270/400 done [2.8 min]
+  [ga4boot] 284/400 done [3.3 min]
+  [ga4boot] 305/400 done [3.9 min]
+  [ga4boot] 326/400 done [4.5 min]
+  [ga4boot] 345/400 done [5.1 min]
+  [ga4boot] 363/400 done [5.7 min]
+  [ga4boot] 382/400 done [6.3 min]
+  [ga4boot] 400/400 done [6.8 min]
+  [ga4boot] complete in 6.9 min
+GA-4 boot re-run: P(d>0) = 0.225 (sky 0.225), P(d>-SD) = 0.635 (sky 0.635) (EXACT); drep pct16/50/84 = -91.0/-43.1/+17.7
+GA-5 letter booleans on the sky numbers: carried-point = True, immune = True -> BOTH TRUE = the registered branches are NOT mutually exclusive at these SDs; the stage's if-order (carried first) decided the label. DISCLOSED for R49.
+GA-6 UGC03580: theta_min = 8.0 arcsec (R48: carriers ~8); CSV 8.0
+GA-6 NGC5371: theta_min = 7.5 arcsec (R48: carriers ~8); CSV 7.5
+
+GA VERDICT: ALL OK
+wall-clock: 9.1 min
