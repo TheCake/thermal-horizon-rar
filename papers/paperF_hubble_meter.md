@@ -9,10 +9,13 @@ verified against arXiv/ADS/publisher pages the same day (one wrong
 arXiv ID caught and corrected program-wide: Haslbauer et al. is
 2009.11292, not 2008.07524). The census-pending pair was cleared and
 KK98-251 closed by the stage-10X census leg (2026-09-22, same day).
-Remaining [ASSEMBLY] blockers: (i) the AJ-PDF cross-check; (ii) the
-Ponomareva et al. 2018 and Cadoni–Tuveri 2020 reference entries;
-(iii) abstract word count on the final text; (iv) the stage-10X
-robustness rows enter section 6 only per the Round-50 adoption. Guardrails from the stage
+The stage-10X battery is adopted (Round 50, 2026-09-22): section 6f
+carries the influence list, the membership axes, and the two new
+primary-side systematic rows (frozen bulge mass-to-light; galaxy-
+level prior width) in the adopted wording. Remaining [ASSEMBLY]
+blockers: (i) the AJ-PDF cross-check; (ii) the Ponomareva et al.
+2018 and Cadoni–Tuveri 2020 reference entries; (iii) abstract word
+count on the final text. Guardrails from the stage
 verdict files are restated in Appendix A and are binding on every
 future edit.**
 
@@ -184,15 +187,21 @@ are 65.1-65.4, within 0.2 of the primary.
 
 The final anchored arm is 78 galaxies: 41 individually anchored, 26
 Ursa Major, 11 CF4-reclassified. Two anchored galaxies (D564-8,
-D631-7) carried provenance-review flags through the map stage; a
-subsequent positional cross-check against the CF4 per-method table
-cleared both (TRGB distances within 1.8 and 0.4 percent of the SPARC
-values; PGC 86668 and 22277 at 0.2 and 0.4 arcmin). The released
+D631-7) carried provenance-review flags through the map stage.
+Positional cross-matching places them at PGC 86668 (0.16 arcmin) and
+PGC 22277 (0.43 arcmin); each carries a CF4 tip-of-the-red-giant-
+branch modulus agreeing with the SPARC distance to 1.8 and 0.4
+percent. Because the SPARC distances for these two are themselves
+TRGB-based, this confirms the identification and the anchor grade
+(which is what was pending) rather than providing an independent
+distance; both flags are cleared on that basis. The released
 per-galaxy table and Figure 3 retain the flags as of the map stage.
 One flow-subsample object inside the reclassification band, KK98-251,
-was resolved as having no proper PGC identifier (its best NED match
-is an anonymous field designation), so it cannot enter any CF4
-reclassification and stays a flow member.
+remains unresolved at the registered 3-arcmin matching radius, with
+one group-consistent TRGB candidate just outside it (PGC 64824 at
+5.6 arcmin, in the NGC 6946 group, 6.98 Mpc against the SPARC flow
+distance 6.80 +- 2.04); it stays a flow member, deferred to the next
+census pass.
 
 ## 4. Method
 
@@ -234,7 +243,12 @@ absorbs that correlation. Injection tests validate the estimator as
 unbiased for true H0 in 62-73; at a true value of 85 it carries a
 measured -3.0 +- 0.7 percent one-sided bias, so the quote is valid for
 readings up to about 75 and any future reading above that requires
-recalibration first. Every fit in the program executes on a
+recalibration first. One scope note attaches: the injection arm draws
+its per-galaxy nuisance offsets from the priors the fit assumes, so
+the validation is conditional on that generative family and is not a
+defense against prior mis-specification (section 6f measures that
+axis directly; a sky-matched re-run of the injection arm is booked in
+the record). Every fit in the program executes on a
 deterministic worker pool certified bit-identical to serial execution
 at two pool widths, and all pre-registrations, thresholds, and review
 adoptions are in the public repository.
@@ -449,14 +463,76 @@ measured response is 1.3-1.6 times steeper, same direction.*
 
 ### 6e. Conventions disclosed
 
-Three conventions are fixed throughout and disclosed rather than
-varied. The bulge mass-to-light ratio is 0.7 and was never varied by
-any check in this program; freeing it moves the flow subsample's form
-contest by -22 percent and touches nothing anchored. The global disk
-mass-to-light ratio carries no prior (it is fit; the anchored arm
-fits it at 1.05). The Ursa Major block shares one distance nuisance,
-whose fitted shift is -0.021 dex against a 2.3 Mpc block depth; the
-two direct-Cepheid members straddle it.
+Three conventions are fixed throughout and disclosed. The bulge
+mass-to-light ratio is 0.7; a robustness battery run for this paper
+promoted it from a disclosed convention to a named systematic of the
+central (section 6f). The global disk mass-to-light ratio carries no
+prior (it is fit; the anchored arm fits it at 1.05). The Ursa Major
+block shares one distance nuisance, whose fitted shift is -0.021 dex
+against a 2.3 Mpc block depth; the two direct-Cepheid members
+straddle it.
+
+### 6f. The robustness battery: influence, membership, and the prior
+
+A pre-registered diagnostic battery ran the referee-grade axes on the
+anchored central; its verdict grammar was itself corrected on
+adversarial review (Appendix A), and everything quoted here is the
+adopted, re-verified form.
+
+Influence. No single galaxy moves the anchored central by more than
+2.25 km/s/Mpc (NGC 5907, 0.45 of the statistical error); the median
+leave-one-out shift is 0.22 and the 90th percentile 1.09, and the
+implied jackknife error (5.3) agrees with the bootstrap (5.0).
+Influence concentrates where a distance-quality-weighted estimator
+should concentrate it: the leave-one-out shift correlates with point
+count (Spearman +0.41) and inversely with the adopted distance-prior
+width (-0.57), and not with acceleration coverage (+0.05).
+
+Membership. Inclination cuts at 40, 45 and 50 degrees move the
+central by +0.28, +0.21 and +1.64 km/s/Mpc, within the measured
+random-subset scatter at those sizes (0.89 at N = 74, 2.40 at
+N = 63). Restricting to quality flag Q = 1 (46 galaxies) moves it by
++4.35 against a measured random-subset scatter of 5.24: at that
+sample size the cut is uninformative either way. Dropping the 12
+galaxies with a bulge component moves the central by -5.87, a
+2.8-sigma deviation against the measured subset scatter (2.10; none
+of 40 random 66-galaxy subsets deviates as far) - and the shift is an
+acceleration-coverage effect, not a bulge-population effect: those 12
+galaxies supply 64 percent of the points above the acceleration scale
+and all seven above ten times it, and removing only the points above
+the scale, keeping all 78 galaxies, reproduces the shift at -6.07.
+In the deep regime mass normalization and the acceleration scale
+trade one-for-one; only data above the transition break the
+degeneracy, and most of that data lives in the bulged galaxies.
+
+Two systematic rows follow, both properties of the primary.
+
+The frozen bulge mass-to-light. The meter moves +12.5 km/s/Mpc per
+unit change in the bulge mass-to-light ratio, so the conventional
++-0.1 range around 0.7 is worth +-1.3 on the central - larger than
+the membership band and 2.6 times the convergence term. The fit's
+own profile mildly prefers about 0.55 (roughly 2 sigma after
+correcting the formal curvature for the measured overdispersion),
+which would read 63.5; the bulge-free membership axis stops firing
+below about 0.57, so its verdict is conditional on the convention.
+
+The galaxy-level prior width. Widening the per-galaxy distance-and-
+inclination prior by 50 percent moves the central by +1.18 km/s/Mpc
+(the local gradient is about +2 per e-fold). The response is
+directional - in mock skies drawn from the estimator's own prior it
+is +0.30 +- 0.37 - and the fitted per-galaxy offsets are 1.70 times
+wider than the prior allows (19 of 78 beyond two sigma, 9 beyond
+three, where 3.6 and 0.2 are expected). At the prior width that
+makes the offsets self-consistent the central reads 69.5; matched
+injections show the too-tight prior inflates realization scatter
+rather than biasing the central, so that value is a realization, not
+a correction, and the prior-width choice enters the budget as a
+model axis. The disk mass-to-light prior width is a weak axis by
+contrast (+0.11 to +0.29 over the same ladder).
+
+Both rows are smaller than the functional-form band, which remains
+the dominant systematic; both are now in the budget by measurement
+rather than by assumption.
 
 ## 7. Forecast and the BIG-SPARC timestamp
 
@@ -673,6 +749,16 @@ following adopted downgrades, listed so they cannot be un-learned:
   values (the reviewer's endpoint was reproduced to the third
   decimal), the uncut fits were verified at their profiled optima to
   0.01, and one subsample scatter was corrected (66.0 to 64.3).
+- The robustness battery's verdict was corrected on review: one of
+  its three firing axes (a leave-one-out maximum graded against a
+  single-draw band) was struck as a mis-specified order-statistic
+  bar that would fire with 97 percent probability under its own
+  null, and the surviving verdict was re-scoped from a
+  subset-fragility statement to the two named primary-side
+  systematics of section 6f. A census over-claim for one unmatched
+  flow galaxy ("closed") was withdrawn to deferred-candidate status.
+  Every reviewer number was re-verified by independent scripts
+  before adoption.
 
 Standing guardrails bound at the stage verdicts and binding on this
 text:
@@ -705,7 +791,8 @@ instrument:
 | low-z evolution comparison | data/lit0818_a0z.py | data/lit0818_a0z.txt |
 | z ~ 1 intercept comparison | calcs/stage10h_addendum.py | data/stage10h_addendum.txt |
 | all five figures (gated) + the conversion-branch arithmetic | calcs/paperf_figures.py | papers/figs/figf1-5, data/paperf_figs.txt |
-| robustness battery + census leg (section 3; section 6 rows pending review adoption) | calcs/stage10x_meterrobust.py | data/stage10x_battery.txt |
+| robustness battery + census leg (sections 3, 6f) | calcs/stage10x_meterrobust.py | data/stage10x_battery.txt, data/stage10x_verdict.txt |
+| battery verification (blind + post-report) | calcs/round50_ga.py, calcs/round50_gb.py | data/round50_ga.txt, data/round50_gb.txt |
 
 ## References
 

@@ -3275,3 +3275,63 @@ the residual-contrast successor instrument (R49-C17, costs no fits)
 -- early-Oct DR4 credence-map pre-sign session (IMMOVABLE; draft map
 to Grok first; hard deadline 2026-12-02) -- the a0-dipole instrument
 (hammering item, behind F).**
+
+**10X + ROUND 50 (2026-09-22 third block, the author's "aren't there
+more things we should analyze on the meter?" + blanket go): THE METER
+ROBUSTNESS BATTERY -- full arc same day (prereg 8f11fe7 + A1/A2
+pre-quote -> gates 4/4 -> battery -> GA blind 0c20286 [17th protocol]
+-> ROUND 50 -> GB + GB-7b -> adopted). OPERATIVE:
+data/stage10x_verdict.txt; letter X-METER-SENSITIVE(A4, A5), grade
+COVERAGE-AND-PRIOR PRIMARY-SIDE; "X-METER-SENSITIVE(A1 ...)" is a
+RETIRED STRING (the A1 max-of-78 bar fired at P = 0.973 under its own
+null -> TRAP #32 born: order statistics get order-statistic bars +
+P(fire|null) computed per axis at prereg, > ~0.5 = diagnostic only;
+branch degeneracy P(ROBUST) <= 0.027 -> TRAP #33 born: record branch
+priors, < 10% = the stage is graded on its table). THE PRODUCT = TWO
+NEW PRIMARY-SIDE SYSTEMATIC ROWS in the meter's budget (both
+GB-verified, both in F section 6f): (1) FROZEN BULGE M/L --
+dH0/dUB = +12.5/unit, +-0.1 = +-1.3 (> the membership band, 2.6x the
+convergence term); the profile mildly prefers UB ~ 0.55 (~2 sigma
+after overdispersion deflation) reading 63.5; the A4 bulge-free
+firing (-5.87, a real 2.8 sigma on a bar the round measured CORRECT
+at that N) is COVERAGE IN DISGUISE (point-cut y <= 1 reproduces it
+at -6.07 with all 78 galaxies kept; the bulged 12 own 64% of points
+above a0, 7/7 above 10a0) and stops firing for UB <~ 0.57. (2)
+GALAXY-LEVEL PRIOR WIDTH -- sv x1.5 = +1.18, gradient ~ +2/e-fold;
+STRAIN CENSUS: SD(dv/sv) = 1.696, 19/78 > 2 sigma, 9/78 > 3; the
+self-consistent width k* = 2.5 reads 69.5 = A REALIZATION NOT A
+CORRECTION (sky-matched injections: bias -0.07 +- 1.55 = variance
+not bias; correct-prior null +0.30 +- 0.37 directional, GB-7b model
+mocks +0.26). A1 re-published as an INFLUENCE LIST (max NGC5907
++2.25 = 0.45 sigma_stat; sigma_jack 5.3 vs boot 5.0 = two error
+routes agree; influence tracks point count +0.41 and inverse prior
+width -0.57, NOT coverage +0.05). Q=1 axis uninformative (empirical
+subset scatter 5.24 at N = 46; the analytic bar formula is fit only
+above N_sub ~ 55 -- looseness table banked). Curvature-vs-bootstrap
+gap 1.86 vs 4.99 = measured unmodelled galaxy scatter (bootstrap IS
+the error bar; NEVER quote 1.86). TRAP-#28 INSTANCE: 10T line 848
+draws injection offsets from the assumed prior -- "injection-
+validated" is SCOPED (never a defense of the prior axis); R50-C11
+BOOKED = the named successor: re-run the 10T injection arm
+SKY-MATCHED (offsets 1.7-2.5x sv + sky s_int + within-curve rho)
+before that phrase is used again. CENSUS: D564-8 -> PGC 86668 /
+D631-7 -> PGC 22277, TRGB gaps -1.8%/-0.4% = IDENTIFICATION + ANCHOR
+GRADE confirmed (TRGB-vs-TRGB, NOT independent distances; both
+SPARC f_D = 2); KK98-251 re-lettered UNRESOLVED-AT-3' with a
+group-consistent candidate (PGC 64824 at 5.60', nest NGC 6946, 6.98
+Mpc vs SPARC 6.80 +- 2.04) DEFERRED to the next census stage -- the
+as-fired "CLOSED" withdrawn (census nearest-row rule standing;
+prior-strain census rule standing: every hierarchical central prints
+SD(nuisance/prior) + tail counts). GB disclosures: my first GB-7
+mock construction was VOID (offsets on the real sky != a null),
+replaced by GB-7b model mocks which CONFIRM the reviewer.
+NEVER QUOTE: the retired A1 string; bars 1.14/8.32 as tolerances;
+"bulged 12 read 89.2"; ladder centrals outside 62-75 as readings;
+"UB = 0.55 +- 0.03 measured"; curvature 1.86; "KK98-251 CLOSED".
+Primary 65.4 +- 5.0 +- 0.5 / band 65.4-70.4 / validity 62-75
+UNTOUCHED; credences 53/8 pre-signed HOLD, reviewer-affirmed; ledger
+224 rows six gates PASS. F sections 3/4/6e/6f/App-A updated with the
+adopted wording (draft 0.2 now carries the battery). NEXT FORK
+unchanged (F referee round on the author's word; WED 09-24 MNRAS;
+DR4 pre-sign early Oct; a0-dipole; + R50-C11 sky-matched injection
+re-run before any new "injection-validated" claim).**

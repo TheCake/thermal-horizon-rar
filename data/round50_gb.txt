@@ -1,0 +1,68 @@
+ROUND-50 GB (post-report)
+primary: H0 = 65.3592 (rev 65.3592), th = [-9.9954   1.05048  0.03239 -0.02115]
+
+-- GB-1 A1 bar arithmetic + order-statistic null --
+  P(one draw > 2 sigma) = 0.0455; P(any of 78 fires) = 0.9735 (rev 0.973)
+  simulated E[max|d|] = 1.514 (rev 1.515); 95th pct = 1.931 (rev 1.935)
+
+-- GB-2 full LOO re-run (my own list) --
+  max |d| = 2.250 (NGC5907); RMS = 0.6028 (rev 0.6028); SD = 0.6067
+  sigma_jack = sqrt(77)*SD = 5.324 (rev 5.290; bootstrap 4.99 -> ratio 1.07)
+  N_eff realized = 15.1 (rev 15.1); top-1 share of Sum d^2 = 17.9% (rev 17.9)
+  max percentile under homogeneous null at observed RMS: 98.4% (his heterogeneous null: 87.5%)
+  [2.8 min]
+
+-- GB-3 A4 point-cut ladder (y at the primary optimum, UB frozen) --
+  y <= 10.00: pts 2619/1263, gal 78, d = -0.273 (rev -0.273) OK
+  y <=  3.00: pts 2369/1263, gal 78, d = -4.050 (rev -4.050) OK
+  y <=  1.00: pts 1996/1263, gal 77, d = -6.074 (rev -6.074) OK
+  y <=  0.50: pts 1665/1263, gal 73, d = -6.745 (rev -6.745) OK
+
+-- GB-4 Upsilon_bul ladder --
+  UB 0.55: -2lnL =  -5931.98, H0 = 63.487
+  UB 0.60: -2lnL =  -5928.28, H0 = 64.121
+  UB 0.70: -2lnL =  -5908.37, H0 = 65.359
+  UB 0.80: -2lnL =  -5876.53, H0 = 66.654
+  UB 0.55 COLD chain: H0 = 63.487, -2lnL = -5931.98 (warm -5931.98)
+  slope (0.60-0.80) = +12.7 /unit (rev +12.5); Delta(-2lnL) 0.70 vs 0.55 = +23.61 (rev +23.61)
+  H0(0.55) = 63.49 (rev 63.487; delta to primary -1.87, rev -1.87)
+  A4 delta at UB 0.55 = -3.997 vs bar 4.2555 -> no fire (rev -3.997, no fire)
+
+-- GB-5 primary prior-strain census --
+  SD(dv/sv) = 1.696 (rev 1.696); |z|>2: 19/78 (rev 19); |z|>3: 9/78 (rev 9)
+  SD(dml/S_ML) = 1.194 (rev 1.194); pinned |dml|~0.7: 3/78 (rev 3)
+
+-- GB-6 sv ladder spots + gradient --
+  k = 0.5: H0 = 64.157 (rev 64.157)
+  k = 1.5: H0 = 66.540 (rev 66.54)
+  k = 2.0: H0 = 68.032 (rev 68.032)
+  k = 2.5: H0 = 69.487 (rev 69.487)
+  gradient dH0/dln sv: central(0.5-1.5) = +2.17, fwd(1-1.5) = +2.91, (1-2) = +3.86  [rev quoted +1.81 -- ADJUDICATE]
+
+-- GB-7 A5 correct-prior mock null (3 seeds) --
+  seed 11: response = +1.212
+  seed 12: response = +1.661
+  seed 13: response = +1.251
+  mean +1.375 (rev +0.30 +- 0.37, 6/6 positive; sign check: 3/3 positive)
+
+-- GB-8 random-subset sigma spot checks --
+  N = 66: my 12-draw SD = 2.42 (rev 2.097 at more draws); max |d| = 4.19
+  N = 46: my 10-draw SD = 4.31 (rev 5.236 at more draws); max |d| = 11.51
+
+-- GB-9 census verifications --
+  PGC 64824: DMtrgb = 29.22 +- 0.09 -> D = 6.98 Mpc (rev 6.98); 1PGC nest = 65001 (rev 65001); sep = 5.60 arcmin (rev 5.60)
+  SPARC f_D(D564-8) = 2 (rev: 2 = TRGB for both)
+  SPARC f_D(D631-7) = 2 (rev: 2 = TRGB for both)
+  stage10t line 848: voff = [rng.normal(0, W10T['sigv'][g]) for g in legA82]
+
+-- GB-10 coherent prior scenario (sv AND upri x1.5) --
+  sv x1.5 + upri x1.5: d = +1.364 (rev +1.364)
+
+GB total: 4.5 min
+
+GB-7b: A5 null on MODEL-GENERATED mocks (truth = the primary optimum)
+  seed 21: base 64.83, response = +0.102
+  seed 22: base 65.11, response = -0.112
+  seed 23: base 63.77, response = +0.826
+  seed 24: base 61.42, response = +0.234
+  mean +0.263 +- 0.201 (rev +0.30 +- 0.15, SD 0.37); positive 3/4

@@ -138,3 +138,31 @@ serial.
   stage script itself is deterministic and offline — it reads the
   file if present and reports UNRESOLVED for any name it does not
   contain. The clearing rule of section 6 is unchanged.
+
+## Post-round annotation (2026-09-22, Round 50 adopted in full;
+## operative record = data/stage10x_verdict.txt — this registration
+## is NOT edited above this block)
+
+Three registration defects found by the round, recorded here so the
+grammar cannot be reused:
+1. THE A1 BAR WAS DEGENERATE (trap #32, born here): a single-draw
+   2-sigma band graded the MAX of 78 draws; P(fire) = 0.973 under
+   its own null (the section-4 "biases TOWARD firing; accepted"
+   disclosure named the direction but never computed the rate). The
+   A1 clause is struck from the letter; A1 is re-published as an
+   influence list. "X-METER-SENSITIVE(A1 ...)" is a RETIRED STRING.
+2. THE LETTER WAS NON-DEGENERATE-IN-NAME-ONLY (trap #33, born here):
+   with the A1 clause included, P(X-METER-ROBUST) <= 0.027 a priori
+   — exclusivity and exhaustiveness were checked, branch prior
+   probability was not. The stage is graded on its table.
+3. THE A5 NULL PREMISE WAS FALSE: section 4 asserts "for A5 (same
+   membership) sigma_exp = 0". The correct-prior null response to a
+   1.5x widening is +0.30 +- 0.37 (directional; reviewer-measured,
+   GB-confirmed on model-generated mocks at +0.26), so the floor bar
+   1.0 was ~1.9 sigma of the true null — a reasonable bar reached by
+   a wrong premise. Also the axis scaled sv only, not the shared UMa
+   prior; the coherent scenario reads +1.36.
+The census-leg "CLOSED" wording for KK98-251 exceeded the registered
+rule and is withdrawn (candidate PGC 64824 at 5.6 arcmin, deferred to
+the next census stage). Letter as adopted: X-METER-SENSITIVE(A4, A5),
+grade COVERAGE-AND-PRIOR, PRIMARY-SIDE.

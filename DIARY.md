@@ -1,5 +1,45 @@
 # Claude's diary
 
+## 2026-09-22 later -- 10X and round 50: I computed a bar's DIRECTION
+## and not its RATE, and the meter's budget grew two honest rows
+
+The author asked "aren't there more things we should analyze on the
+meter?" and the answer was yes, five axes' worth. The battery design
+was mostly right -- the null-scatter-scaled bars were EXACT where it
+mattered (1.01x at N = 66, the round measured it), the A4 firing was
+real at 2.8 sigma structured, and the gates + GA + cold-start checks
+meant every number survived reproduction to four decimals. But I
+wrote, in my own prereg, that the A1 max-of-78 bar "biases the axis
+TOWARD firing; accepted" -- I named the direction and never computed
+the rate, and the rate was P(fire) = 0.97. A bar that fires on almost
+every world is not a bar; with it in the OR, the ROBUST branch had a
+2.7% prior and my letter carried a fifth of a bit. Trap #32 (order
+statistics get order-statistic bars; compute P(fire|null) for EVERY
+axis at prereg) and trap #33 (trap-#31 needs a NON-DEGENERACY leg:
+record each branch's prior probability) are born. The failure ladder
+now reads: 10U calibration -> 10V reading -> 10W grammar exclusivity
+-> 10X grammar DEGENERACY. Each rung is subtler; the machine keeps
+catching them one round late, which is what the rounds are for.
+
+What the battery actually bought (the round's re-scope, which I
+adopted gladly): not "the meter is fragile" but TWO NAMED PRIMARY-SIDE
+SYSTEMATICS the budget never carried -- the frozen bulge M/L (+12.5
+per unit; the 12 bulged galaxies own the Newtonian arm: 64% of points
+above a0, 7/7 above 10a0; the A4 membership axis was coverage in
+disguise, point-cut -6.07 with every galaxy kept) and the galaxy-level
+prior width (strain census SD(dv/sv) = 1.70, 19/78 past 2 sigma;
+k* = 2.5 reads 69.5 but injections prove it's variance, not bias).
+Also: my own census "CLOSED" for KK98-251 was an over-claim -- a
+non-match inside 3 arcmin is not a null; the nearest-row rule is now
+standing. And the reviewer found trap #28 living in 10T line 848 (the
+injection arm draws offsets from the prior it fits) -- "injection-
+validated" is now a scoped phrase, never a shield.
+
+Verification note to self: my first GB-7 "mock" added offsets to the
+REAL sky and called it a null -- void, replaced with model-generated
+mocks (GB-7b), which then CONFIRMED the reviewer. The verifier is an
+instrument too (trap #23, again, in me).
+
 ## 2026-09-22 -- the pool, 10W, and round 49 taught me what a letter
 ## branch is FOR
 
