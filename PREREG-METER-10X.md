@@ -116,3 +116,25 @@ amendment is a dated pre-quote entry here with the prior run
 preserved. Credences: HOLD 53/8 on every cell (pre-signed).
 Wall-clock estimate: ~90 deep fits, minutes on the certified pool or
 serial.
+
+## Amendments
+
+- A1 (2026-09-22, BEFORE any run; self-caught at design review): the
+  G10X-4 identity bar as first registered (relative 1e-6 on a0) is
+  tighter than the estimator's own convergence floor — the inner
+  optimizer runs at fatol 1e-7 on the objective, which with the
+  measured curvature (sigma_la0 ~ 0.033 dex) implies ~1e-5 dex
+  path jitter, i.e. ~2e-5 relative on a0, and the alternation stops
+  at tol 5e-4 objective units. A perfect replication could therefore
+  fail the 1e-6 bar (the 10W-A2 failure class: a bar a correct
+  replication cannot meet). G10X-4 bar re-set to relative 1e-4 on
+  a0, matching the verification-grade reproduction precision the
+  10T/R46 record actually achieved. No run has been executed under
+  either bar.
+
+- A2 (2026-09-22, BEFORE any run): the census leg's external PGC
+  resolution is performed OUTSIDE the stage (session-documented
+  lookups written to data/stage10x_pgc.json with provenance); the
+  stage script itself is deterministic and offline — it reads the
+  file if present and reports UNRESOLVED for any name it does not
+  contain. The clearing rule of section 6 is unchanged.
