@@ -1,0 +1,14 @@
+
+====================================================================
+STAGE 10Y GA (blind; independent routes)
+
+GA-1 anch S1 matched (brute): -0.0947 +/- 0.0493 (22 pts, 16 gal)  [sky -0.0947 +/- 0.0493 / 22 / 16]
+GA-2 anch d_Ii: -0.0893 +/- 0.0349 (n 19)  [sky -0.0893 +/- 0.0349 / 19]
+GA-2 anch d_Oi: -0.0177 +/- 0.0130 (n 55)  [sky -0.0177 +/- 0.0130 / 55]
+GA-2 flow d_Ii: -0.0021 +/- 0.0204 (n 43)  [sky -0.0021 +/- 0.0204 / 43]
+GA-3 own-stream shift p: Ii 0.0005 [sky 0.0005], Oi 0.0200 [sky 0.0190] (binomial MC scatter expected)
+GA-4 anch spearman: thmin rho +0.019 [sky +0.019], dist rho -0.318 [sky -0.318] (scipy analytic p 0.935/0.172; perm p stays operative)
+GA-5 grammar: populated True, survives False, collapses False, sig_ang False, sig_dsk False -> BRANCH B4  [sky B4]
+GA-6 WORLD-Y bias (own seed): +0.0006 +/- 0.0012 [gates -0.0017 +/- 0.0013; bar |bias| <= 0.010]
+
+GA complete; wall-clock 0.1 min
