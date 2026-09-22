@@ -260,6 +260,87 @@ def s1_banded(gal, res_by_gal, edges, qual):
         if n >= 2 else float('nan')
     return val, se, nbands, len(qual), cb, ni, no
 
+DY_MATCH, MINW, NMIN_MPT = 0.15, 5, 15
+
+def build_matcher(gal, quse, inner_of, outer_of):
+    """A2-i: precomputed nearest-neighbor y-match design. inner_of/
+    outer_of: fn(gd_) -> point mask. Windows are design (y fixed)."""
+    wins = []
+    B_j, B_i, B_ly = [], [], []
+    for j in quse:
+        gd_ = gal[j]
+        ly = np.log10(gd_['y'])
+        for i in np.where(outer_of(gd_))[0]:
+            B_j.append(j); B_i.append(i); B_ly.append(ly[i])
+    B_j = np.array(B_j, dtype=int)
+    B_i = np.array(B_i, dtype=int)
+    B_ly = np.array(B_ly)
+    for j in quse:
+        gd_ = gal[j]
+        ly = np.log10(gd_['y'])
+        for i in np.where(inner_of(gd_))[0]:
+            k = np.where(np.abs(B_ly - ly[i]) <= DY_MATCH)[0]
+            wins.append((j, int(i), k))
+    return dict(wins=wins, B_j=B_j, B_i=B_i)
+
+def matcher_census(M):
+    q = [w for w in M['wins'] if len(w[2]) >= MINW]
+    return len(M['wins']), len(q), len({w[0] for w in q})
+
+def s1_matched(res_by_gal, M):
+    """Value + leave-one-galaxy-out jackknife SE (A2-i)."""
+    Bres = np.array([res_by_gal[j][i]
+                     for j, i in zip(M['B_j'], M['B_i'])])
+    B_j = M['B_j']
+
+    def value(skip=None):
+        vals, gals = [], set()
+        for (j, i, k) in M['wins']:
+            if skip is not None and j == skip:
+                continue
+            kk = k if skip is None else k[B_j[k] != skip]
+            if len(kk) < MINW:
+                continue
+            vals.append(res_by_gal[j][i] - float(Bres[kk].mean()))
+            gals.add(j)
+        if not vals:
+            return float('nan'), 0, set()
+        return float(np.mean(vals)), len(vals), gals
+
+    val, m, gals = value()
+    if not np.isfinite(val) or len(gals) < 2:
+        return val, float('nan'), m, len(gals)
+    jk = []
+    for j in sorted(gals):
+        v, _, _ = value(skip=j)
+        if np.isfinite(v):
+            jk.append(v)
+    jk = np.array(jk)
+    n = len(jk)
+    se = math.sqrt((n - 1)/n*float(np.sum((jk - jk.mean())**2))) \
+        if n >= 2 else float('nan')
+    return val, se, m, len(gals)
+
+M_S1_A = build_matcher(GAL_A, QUAL_A,
+                       lambda gd_: gd_['th'] < TH_STAR,
+                       lambda gd_: gd_['th'] >= TH_STAR)
+M_S1_F = build_matcher(GAL_F, QUAL_F,
+                       lambda gd_: gd_['th'] < TH_STAR,
+                       lambda gd_: gd_['th'] >= TH_STAR)
+
+def _oi_mask(gd_):
+    if not np.isfinite(gd_['rd']) or gd_['rd'] <= 0:
+        return np.zeros(len(gd_['th']), dtype=bool)
+    return (gd_['th'] >= TH_STAR) & (gd_['rk'] < RD_FAC*gd_['rd'])
+
+def _oo_mask(gd_):
+    if not np.isfinite(gd_['rd']) or gd_['rd'] <= 0:
+        return np.zeros(len(gd_['th']), dtype=bool)
+    return (gd_['th'] >= TH_STAR) & (gd_['rk'] >= RD_FAC*gd_['rd'])
+
+M_OI_A = build_matcher(GAL_A, list(range(len(GAL_A))),
+                       _oi_mask, _oo_mask)
+
 def overlap_census(gal, res_by_gal):
     """The retired per-galaxy y-overlap match (co-read census)."""
     diffs = []
@@ -366,13 +447,10 @@ def s3_shift_p(gal, res_by_gal, obs_ii, obs_oi, rng,
     poi = (coi + 1)/(noi + 1) if noi else float('nan')
     return pii, poi
 
-def grammar(gal, res_by_gal, rng, edges, qual, nperm=N_PERM,
-            want_p=False):
-    mm, sm, nbands, nq, cb, ni, no = s1_banded(gal, res_by_gal,
-                                               edges, qual)
-    rec = dict(s1_mean=mm, s1_se=sm, s1_bands=nbands, s1_nqual=nq,
-               s1_cb=cb, s1_ni=ni, s1_no=no)
-    s1_pop = (nbands >= NMIN_BANDS) and (nq >= NMIN_S1) \
+def grammar(gal, res_by_gal, rng, M, nperm=N_PERM, want_p=False):
+    mm, sm, mpts, ng = s1_matched(res_by_gal, M)
+    rec = dict(s1_mean=mm, s1_se=sm, s1_mpts=mpts, s1_ngal=ng)
+    s1_pop = (mpts >= NMIN_MPT) and (ng >= NMIN_S1) \
         and np.isfinite(mm) and np.isfinite(sm)
     survives = s1_pop and mm <= -2*sm
     collapses = s1_pop and abs(mm) < 1*sm
@@ -510,6 +588,13 @@ if MODE == 'gates':
     P(f"  S1 design: both-sides galaxies {len(QUAL_A)} "
       f"(N_min {NMIN_S1}); y-band edges (log10 y) "
       f"{np.array2string(EDGES_A, precision=2)}")
+    ta_, qa_, ga_ = matcher_census(M_S1_A)
+    P(f"  S1 matcher census (A2): inner points {ta_}, "
+      f"window>={MINW} qualifying {qa_}, from {ga_} galaxies "
+      f"(floors {NMIN_MPT} pts / {NMIN_S1} gal)")
+    to_, qo_, go_ = matcher_census(M_OI_A)
+    P(f"  Oi matcher census (A2-ii): Oi points {to_}, qualifying "
+      f"{qo_}, from {go_} galaxies (descriptive co-read)")
     P(f"  WORLD-Y calibration: b = {B_Y:+.4f} per dex(y) "
       f"(composition term C = {C_Y:+.4f} over {N_CAL} gal)")
     P(f"  G10Y-2 {'PASS' if ok2 else 'FAIL'}")
@@ -524,7 +609,7 @@ if MODE == 'gates':
     nsz = 2000
     for _ in range(nsz):
         rb = world_noise(GAL_A, rng)
-        br, rec = grammar(GAL_A, rb, rng, EDGES_A, QUAL_A, nperm=500)
+        br, rec = grammar(GAL_A, rb, rng, M_S1_A, nperm=500)
         fires['ii_deep'] += rec['ii_deep']
         fires['oi_deep'] += rec['oi_deep']
         fires['s2'] += rec['s2_fire']
@@ -558,8 +643,7 @@ if MODE == 'gates':
         cnt = dict(B1=0, B2=0, B3=0, B4=0, B4_s1surv=0)
         for _ in range(N_WORLD):
             rb = wfun(GAL_A, rng)
-            br, rec = grammar(GAL_A, rb, rng, EDGES_A, QUAL_A,
-                              nperm=500)
+            br, rec = grammar(GAL_A, rb, rng, M_S1_A, nperm=500)
             cnt[br] += 1
             if br == 'B4' and rec['s1_pop'] and \
                np.isfinite(rec['s1_mean']) and \
@@ -583,22 +667,22 @@ if MODE == 'gates':
 
     # -- G10Y-4 y-match wiring (banded; A1-v) -------------------------
     P("")
-    P("-- G10Y-4 y-match wiring (500 draws/world; banded S1) --")
+    P("-- G10Y-4 y-match wiring (500 draws/world; matched S1) --")
     czero = ckeep = 0
     for _ in range(N_WIRE):
-        mm, sm, nb_, nq, _, _, _ = s1_banded(
-            GAL_A, world_y(GAL_A, rng), EDGES_A, QUAL_A)
-        if nb_ >= NMIN_BANDS and np.isfinite(mm) and abs(mm) < sm:
+        mm, sm, mp_, ng_ = s1_matched(world_y(GAL_A, rng), M_S1_A)
+        if mp_ >= NMIN_MPT and ng_ >= NMIN_S1 and np.isfinite(mm) \
+           and abs(mm) < sm:
             czero += 1
-        mm, sm, nb_, nq, _, _, _ = s1_banded(
-            GAL_A, world_r(GAL_A, rng), EDGES_A, QUAL_A)
-        if nb_ >= NMIN_BANDS and np.isfinite(mm) and mm <= -sm:
+        mm, sm, mp_, ng_ = s1_matched(world_r(GAL_A, rng), M_S1_A)
+        if mp_ >= NMIN_MPT and ng_ >= NMIN_S1 and np.isfinite(mm) \
+           and mm <= -sm:
             ckeep += 1
     czero /= N_WIRE; ckeep /= N_WIRE
     ok4 = (czero >= 0.80) and (ckeep >= 0.60)
-    P(f"  P(banded ~0 | WORLD-Y) = {czero:.3f} "
+    P(f"  P(matched ~0 | WORLD-Y) = {czero:.3f} "
       f"{'PASS' if czero >= 0.80 else 'FAIL'} (>= 0.80)")
-    P(f"  P(banded <= -1SE | WORLD-R) = {ckeep:.3f} "
+    P(f"  P(matched <= -1SE | WORLD-R) = {ckeep:.3f} "
       f"{'PASS' if ckeep >= 0.60 else 'FAIL'} (>= 0.60)")
 
     P("")
@@ -617,22 +701,21 @@ else:  # ---------------------------- sky ----------------------------
     P("")
     rng = np.random.default_rng(20260923 + 1)
 
-    for legnm, gal, sub, edges, qual in (
-            ('ANCHORED', GAL_A, subP, EDGES_A, QUAL_A),
-            ('FLOW', GAL_F, subF, EDGES_F, QUAL_F)):
+    for legnm, gal, sub, edges, qual, M in (
+            ('ANCHORED', GAL_A, subP, EDGES_A, QUAL_A, M_S1_A),
+            ('FLOW', GAL_F, subF, EDGES_F, QUAL_F, M_S1_F)):
         res_by_gal = [gd_['res'] for gd_ in gal]
         P(f"---- {legnm} leg (best form "
           f"{A2_A if legnm == 'ANCHORED' else A2_F}) ----")
         d, m, s = contrast_plain(gal, res_by_gal)
         P(f"  S0 plain contrast: {m:+.4f} +/- {s:.4f} over {len(d)} gal")
-        mm, sm, nb_, nq, cb, ni, no = s1_banded(gal, res_by_gal,
+        mm, sm, mp_, ng_ = s1_matched(res_by_gal, M)
+        P(f"  S1 y-matched (A2 primary): {mm:+.4f} +/- {sm:.4f} "
+          f"(jackknife; {mp_} matched inner pts, {ng_} gal)")
+        mb, sb, nb_, nq, cb, ni, no = s1_banded(gal, res_by_gal,
                                                 edges, qual)
-        P(f"  S1 y-banded:       {mm:+.4f} +/- {sm:.4f} (jackknife; "
-          f"{nb_} usable bands, {nq} both-sides gal)")
-        for b in range(len(cb)):
-            if np.isfinite(cb[b]):
-                P(f"    band {b}: c_b = {cb[b]:+.4f} "
-                  f"(n_in {int(ni[b])}, n_out {int(no[b])})")
+        P(f"  S1 co-read banded (A1-ii, demoted): {mb:+.4f} +/- "
+          f"{sb:.4f} ({nb_} usable bands, {nq} both-sides gal)")
         oc = overlap_census(gal, res_by_gal)
         P(f"  S1 co-read per-galaxy overlap match: {len(oc)} gal "
           f"qualify" + (f", mean {np.mean(oc):+.4f}" if len(oc) >= 2
@@ -657,6 +740,10 @@ else:  # ---------------------------- sky ----------------------------
         pii, poi = s3_shift_p(gal, res_by_gal, mii, moi, rng)
         P(f"  S3 circular-shift p: Ii {pii:.4f}, Oi {poi:.4f} "
           f"(one-sided toward depression; {N_SHIFT_SIZE} draws)")
+        if legnm == 'ANCHORED':
+            vo, so_, mo_, ngo = s1_matched(res_by_gal, M_OI_A)
+            P(f"  S3 co-read y-matched d_Oi (A2-ii): {vo:+.4f} +/- "
+              f"{so_:.4f} ({mo_} Oi pts, {ngo} gal; descriptive)")
         legres = RES_A if legnm == 'ANCHORED' else RES_F
         P(f"  rho_lag1 = {lag1_of(sub, legres):.3f}")
         P("")
@@ -698,8 +785,8 @@ else:  # ---------------------------- sky ----------------------------
     P("---- LETTER (prereg section 4 + A1 grammar; ANCHORED) ----")
     rngL = np.random.default_rng(20260923 + 2)
     br, rec = grammar(GAL_A, [gd_['res'] for gd_ in GAL_A], rngL,
-                      EDGES_A, QUAL_A, nperm=N_PERM, want_p=True)
-    P(f"  S1: bands {rec['s1_bands']}, qual {rec['s1_nqual']}, "
+                      M_S1_A, nperm=N_PERM, want_p=True)
+    P(f"  S1: matched pts {rec['s1_mpts']}, gal {rec['s1_ngal']}, "
       f"mean {rec['s1_mean']:+.4f} +/- {rec['s1_se']:.4f}; "
       f"populated {rec['s1_pop']}; survives {rec['survives']}, "
       f"collapses {rec['collapses']}")

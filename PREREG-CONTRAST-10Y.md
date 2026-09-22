@@ -295,6 +295,46 @@ Branch priors unchanged (B1 0.25 / B2 0.15 / B3 0.20 / B4 0.40).
 Nothing in this amendment reads a real residual number beyond the
 published targets and the run-1 gate prints.
 
+## A2 — AMENDMENT (pre-quote; gates run 2 preserved as
+## data/stage10y_gates_r2.txt; committed BEFORE the amended gates run)
+
+Run 2: G10Y-1/2 PASS (parser fixed; censuses healthy: Ii 19, Oi 55,
+Oo 77 galaxies; constituent sizes 0.031/0.028/0.018 all in-bar), but
+the A1-ii banded S1 is DESIGN-DEAD too: the 20 both-sides anchored
+galaxies hold only 27 inner points total (band counts 3/4/4/4/12
+against 75/73/73/73/66 outer), so at the >= 5-per-band rule a single
+band qualifies, deterministically. A y-banding fine enough to cancel
+the trend cannot be populated at 27 points. Design fact banked: the
+C17 depression is carried by 27 sub-20-arcsec points.
+
+A2-i S1 REDESIGN (the caveat-1 breaker, third form): point-level
+  NEAREST-NEIGHBOR y-matching. Pool the qual (both-sides) galaxies'
+  points; for each INNER point a, its window = all OUTER points
+  (any qual galaxy) with |log10 y - log10 y_a| <= 0.15 dex; a
+  qualifies if the window holds >= 5 points. S1 = mean over
+  qualifying inner points of (RES_a - mean RES(window)); SE = the
+  leave-one-galaxy-out jackknife over the union of contributing
+  galaxies (a left-out galaxy's inner points leave the average AND
+  its outer points leave every window; qualification is
+  re-evaluated per leave-out). Populated: >= 15 qualifying inner
+  points from >= 8 galaxies. Windows are design objects (y is
+  design), precomputed once. Bars unchanged (survive <= -2 SE;
+  collapse |.| < 1 SE). Residual leak under a pure trend is
+  bounded by |b| x 0.15 ~ 0.025 with near-cancelling sign across
+  points — G10Y-4 measures it. Cross-galaxy matching is licensed
+  by the per-galaxy dv profiling already removing galaxy offsets
+  (stated limitation: any residual galaxy-level structure enters
+  both sides of the match).
+  The A1-ii banded form demotes to a printed co-read (no branch
+  weight); the per-galaxy overlap census stays a census line.
+
+A2-ii The same matcher, applied to Oi points vs Oo windows, is the
+  y-matched d_Oi co-read named in A1-iii (descriptive).
+
+A2-iii Constants: dy = 0.15 dex, window minimum 5 points, floors
+  15 points / 8 galaxies. Everything else unchanged, including the
+  A1-iii cell grammar, bars, priors, and worlds.
+
 ## 7. Outputs
 
 calcs/stage10y_organizer.py (modes: gates / sky) ->

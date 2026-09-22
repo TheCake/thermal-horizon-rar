@@ -1,0 +1,39 @@
+baselines  [92s]
+designs: anch best form BE, flow best form boot  [99s]
+
+====================================================================
+STAGE 10Y GATES (pre-sky; PREREG-CONTRAST-10Y.md + A1)
+
+-- G10Y-1 identity (GB-9 regression) --
+  anch: mean -0.0857 +/- 0.0301 over 20 gal (target -0.0857 +/- 0.0301 / 20); fields_ext vs inherited max|d| = 0.0e+00  PASS
+  flow: mean -0.0055 +/- 0.0176 over 45 gal (target -0.0055 +/- 0.0176 / 45); fields_ext vs inherited max|d| = 0.0e+00  PASS
+  G10Y-1 PASS
+
+-- G10Y-2 Rdisk census (A1-i token parse) --
+  matched with Rdisk > 0: 149/149; missing: none
+  spot: Rdisk(IC2574) = 2.78 kpc (truth 2.78) PASS
+  spot: Rdisk(DDO154) = 0.37 kpc (truth 0.37) PASS
+  spot: Rdisk(NGC2403) = 1.39 kpc (truth 1.39) PASS
+  anchored cell census (design, galaxies with Oo): Ii 19, Io 0, Oi 55, Oo 77 (N_min 5 for Ii/Oi)
+  S1 design: both-sides galaxies 20 (N_min 8); y-band edges (log10 y) [-1.63 -0.96 -0.59 -0.3   0.06  1.81]
+  WORLD-Y calibration: b = -0.1663 per dex(y) (composition term C = +0.5152 over 20 gal)
+  G10Y-2 PASS
+
+-- G10Y-3 size (noise-only, 2000 draws; inner perms 500 for
+   the null tables -- the sky grammar uses the full 4000) --
+  constituent P(d_Ii <= -2SE) = 0.031  PASS [0.01, 0.10]
+  constituent P(d_Oi <= -2SE) = 0.028  PASS [0.01, 0.10]
+  constituent P(S2 Holm+sign) = 0.018  PASS [0.01, 0.10]
+  compound rates (printed, no bar; A1-iv): sig_ang 0.018, sig_dsk 0.005
+  context: P(S1 populated) = 0.000, P(S1 survive|noise) = 0.000, P(S1 collapse|noise) = 0.000
+
+-- G10Y-3 branch rates (1000 draws/world; trap #32/#33) --
+  WORLD-Y: B1 0.000  B2 0.000  B3 0.000  B4 1.000  (B4 w/ S1<=-1SE: 0.000)
+  WORLD-R: B1 0.000  B2 0.000  B3 0.000  B4 1.000  (B4 w/ S1<=-1SE: 0.000)
+  POWER: P(B1|WORLD-Y) = 0.000 FAIL (>= 0.60); P(radius kept|WORLD-R) = 0.000 FAIL (>= 0.60)
+
+-- G10Y-4 y-match wiring (500 draws/world; banded S1) --
+  P(banded ~0 | WORLD-Y) = 0.000 FAIL (>= 0.80)
+  P(banded <= -1SE | WORLD-R) = 0.000 FAIL (>= 0.60)
+
+GATES FAIL; wall-clock 6.5 min
