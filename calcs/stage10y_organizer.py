@@ -667,21 +667,23 @@ if MODE == 'gates':
 
     # -- G10Y-4 y-match wiring (banded; A1-v) -------------------------
     P("")
-    P("-- G10Y-4 y-match wiring (500 draws/world; matched S1) --")
-    czero = ckeep = 0
+    P("-- G10Y-4 y-match wiring (500 draws/world; matched S1; A3) --")
+    vy, ckeep = [], 0
     for _ in range(N_WIRE):
         mm, sm, mp_, ng_ = s1_matched(world_y(GAL_A, rng), M_S1_A)
-        if mp_ >= NMIN_MPT and ng_ >= NMIN_S1 and np.isfinite(mm) \
-           and abs(mm) < sm:
-            czero += 1
+        if np.isfinite(mm):
+            vy.append(mm)
         mm, sm, mp_, ng_ = s1_matched(world_r(GAL_A, rng), M_S1_A)
         if mp_ >= NMIN_MPT and ng_ >= NMIN_S1 and np.isfinite(mm) \
            and mm <= -sm:
             ckeep += 1
-    czero /= N_WIRE; ckeep /= N_WIRE
-    ok4 = (czero >= 0.80) and (ckeep >= 0.60)
-    P(f"  P(matched ~0 | WORLD-Y) = {czero:.3f} "
-      f"{'PASS' if czero >= 0.80 else 'FAIL'} (>= 0.80)")
+    vy = np.array(vy); ckeep /= N_WIRE
+    bias = float(vy.mean())
+    bse = float(vy.std(ddof=1)/math.sqrt(len(vy)))
+    ok4 = (abs(bias) <= 0.010) and (ckeep >= 0.60)
+    P(f"  WORLD-Y bias of matched S1 = {bias:+.4f} +/- {bse:.4f} "
+      f"(MC SE; {len(vy)} draws)  "
+      f"{'PASS' if abs(bias) <= 0.010 else 'FAIL'} (|bias| <= 0.010)")
     P(f"  P(matched <= -1SE | WORLD-R) = {ckeep:.3f} "
       f"{'PASS' if ckeep >= 0.60 else 'FAIL'} (>= 0.60)")
 

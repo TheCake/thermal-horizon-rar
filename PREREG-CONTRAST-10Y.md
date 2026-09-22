@@ -335,6 +335,26 @@ A2-iii Constants: dy = 0.15 dex, window minimum 5 points, floors
   15 points / 8 galaxies. Everything else unchanged, including the
   A1-iii cell grammar, bars, priors, and worlds.
 
+## A3 — AMENDMENT (pre-quote; gates run 3 preserved as
+## data/stage10y_gates_r3.txt; committed BEFORE the amended gates run)
+
+Run 3: everything passes except the G10Y-4 WORLD-Y clause, and that
+bar was ARITHMETICALLY IMPOSSIBLE as posed: it demanded
+P(|v| < 1 SE) >= 0.80, but that event has ~0.68 probability for an
+exactly unbiased estimator (the run-3 noise-only context prints
+0.669; WORLD-Y prints 0.624 — the matcher removes the trend to
+within Monte-Carlo resolution). Bar-design lesson for the record
+(the A1-iv class, second occurrence in this stage): a gate bar is a
+fire-event too — compute its rate under the IDEAL instrument before
+signing it.
+
+A3-i G10Y-4 WORLD-Y clause re-posed as a BIAS gate: over 500
+  WORLD-Y draws, |mean of the matched value| <= 0.010 dex
+  (one-tenth of the target depression), with the Monte-Carlo SE
+  printed. The WORLD-R keep clause is unchanged (run-3 value 0.970,
+  PASS). The branch-rate power bars (G10Y-3) already carry the
+  "usually collapses" requirement and passed (0.625 / 0.968).
+
 ## 7. Outputs
 
 calcs/stage10y_organizer.py (modes: gates / sky) ->
