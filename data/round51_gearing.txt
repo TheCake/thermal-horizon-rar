@@ -1,0 +1,10 @@
+ROUND-51 GEARING: anchored arm (78), coherent rescale, hier PRIMARY
+  s = 1.00: a0 = 1.0106e-10, H0 = 65.359, f_ML = 1.0505
+  s = 0.92: a0 = 1.1541e-10, H0 = 74.635, f_ML = 1.1136
+  s = 1.08: a0 = 8.9406e-11, H0 = 57.820, f_ML = 0.9939
+  s = 1.08 COLD chain: a0 = 8.9406e-11 (warm 8.9406e-11; rel d = 1.32e-06)
+  GAMMA (hier, anchored): chord 0.92-1.00 = 1.592; 1.00-1.08 = 1.593; two-sided = 1.592
+  flat co-read (same arm, same s): a0 ratio -> gamma = 1.845
+  f_ML absorption: 1.1136 / 1.0505 / 0.9939 (Newtonian-arm share of the shift)
+  record context: flow-flat gamma = 1.585 (10S G3); flow-hier 0.86 (10S leg-B grid); ladder = 1 by construction
+total: 0.2 min

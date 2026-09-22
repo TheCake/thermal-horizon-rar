@@ -3020,7 +3020,10 @@ REFUTED by the deeper profiler), nu-form family band 65.4-70.4 = THE
 DOMINANT TERM (the leg is SYSTEMATICS-LIMITED), membership variants
 64.8-65.4, flat treatment variant 76.7 (10.7 = envelope only),
 PEG-SHARED (CF4 calibrator scale = ladder pegs; gearing measured
-1.3-1.6), VALIDITY DOMAIN 62-75 (a real -3.0+-0.7% one-sided edge
+1.3-1.6 [RETIRED 2026-09-23 by R51: untraceable; the MEASURED
+anchored-primary gearing = 1.59, flat 1.85, flow-hier 0.86 --
+calcs/round51_gearing.py; see the R51 block below]), VALIDITY
+DOMAIN 62-75 (a real -3.0+-0.7% one-sided edge
 bias at truth 85, found by the C7-strengthened 8-seed arm ->
 amendment A1, runs preserved _asfired/_r46run1). Converged 10S
 baseline 65.25 -> the anchors moved the reading +0.10 (flow-era
@@ -3339,3 +3342,45 @@ adopted wording (draft 0.2 now carries the battery). NEXT FORK
 unchanged (F referee round on the author's word; WED 09-24 MNRAS;
 DR4 pre-sign early Oct; a0-dipole; + R50-C11 sky-matched injection
 re-run before any new "injection-validated" claim).**
+
+**ROUND 51 + F 0.3 (2026-09-23, the finish push on the author's
+"gotta finish this and send it to Kroupa"; Tuesday, still zero
+replies => the WED MNRAS-direct condition is MET): F's first
+JOURNAL-REFEREE round (fresh session, MNRAS register, readability
+explicit) = MAJOR REVISION, 11 M + 40 m, ALL ADOPTED SAME DAY ->
+DRAFT 0.3 (report REVIEW-ROUND51-OPUS.md uncommitted; adoption
+record data/round51_adopt.txt; 72/78 paper numbers reproduced exact;
+guardrail sweep PASS). THE HEADLINE CATCH (M1, verified then FIXED
+BY MEASUREMENT): the peg-gearing "1.3-1.6" TRACED TO NOTHING -- the
+record's only responses were flow-flat -1.585 and flow-hier 0.86;
+ran the missing measurement (calcs/round51_gearing.py, coherent
++-8% rescale, anchored arm, hier primary, cold=warm 1e-6): **GAMMA =
+1.59** (flat co-read 1.85; f_ML absorbs the Newtonian share) -- the
+reviewer's reversal scenario did NOT materialize, the discriminant
+survives at the measured value; world P = 76.8 under measured
+gearing (2.3 sigma), registered 75-79 = the gamma[1.3,2] span,
+correctly attributed now (M2); "separates pegs from new physics"
+re-scoped to the honest asymmetric reading-vs-worlds form (M3: N and
+P differ by 2-4 and separate from each other slowly). "1.3-1.6" =
+RETIRED STRING (corrected in the 10T verdict by dated appendix, in
+PREDICTIONS F1 by dated annotation, here above). Other verified
+wrong numbers fixed: MIGHTEE degeneracy 21% not 15 (M5); 10U noise
+ratio = 2.5x scatter / 3.85 INVERSE-VARIANCE (M6); "4-9%" holds for
+TRGB only, SN II member 15->15.2% (M10, 10T verdict corrected);
+LT span 0.26 (m4); whole-catalog = 67.50 at G1b (m20). Structure:
+section-6 ERROR-BUDGET TABLE added (conversion branch visible as a
+named excluded row, +12.8 sign-disfavored); section-4 EQUATIONS
+added (the relation, all four nu forms, the likelihood, the
+conversion constant); coverage story unified 6b<->6f; f_ML = 1.05
+stated as x0.5 multiplier (Upsilon_disk 0.53). All 40 minors in
+(figures rebuilt: Fig4b = measured 1.59 vs ladder vs deep-limit
+asymptote, GF-4 now parses+asserts the gearing record; Fig2 axis
+capped, variant bar to the primary; Fig1 overflow fixed; abstract
+250 exact, title "a first execution"; six uncited refs wired;
+"block scatter" defined; App A six sessions). Credences 53/8
+untouched; primary/band/stat/validity unchanged. F remaining
+[ASSEMBLY]: AJ-PDF cross-check + final abstract recount. THE SEND
+PACKAGE (Kroupa, letter 9 in OUTREACH-DRAFTS, drafted in Czech with
+the verified KBC-void hook ONLY): remaining steps = F PDF render ->
+Czech cold read (fresh subagent) -> the author's click; WED 09-24 =
+the MNRAS-direct decision for P1 (condition met; prep notes owed).**

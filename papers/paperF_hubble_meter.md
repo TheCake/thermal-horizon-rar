@@ -1,26 +1,24 @@
-# A Hubble meter from galaxy rotation curves: first execution of the a0-to-H0 inversion
+# A Hubble meter from galaxy rotation curves: a first execution of the a0-to-H0 inversion
 
-**Draft 0.2 — full prose (2026-09-22). Style contract: papers/STYLE.md.
-Figures are built and gated by calcs/paperf_figures.py (provenance dump
-data/paperf_figs.txt). Verification state: the SML20 quote set was
-verified against the accepted arXiv v2 source on 2026-09-22 (residual:
-cross-check the published AJ PDF at assembly); the reference list was
-verified against arXiv/ADS/publisher pages the same day (one wrong
-arXiv ID caught and corrected program-wide: Haslbauer et al. is
-2009.11292, not 2008.07524). The census-pending pair was cleared and
-KK98-251 closed by the stage-10X census leg (2026-09-22, same day).
-The stage-10X battery is adopted (Round 50, 2026-09-22): section 6f
-carries the influence list, the membership axes, and the two new
-primary-side systematic rows (frozen bulge mass-to-light; galaxy-
-level prior width) in the adopted wording. Remaining [ASSEMBLY]
-blockers: (i) the AJ-PDF cross-check; (ii) abstract word count on
-the final text. (The Ponomareva 2018 entry was verified 2026-09-23,
-MNRAS 474, 4366; the Cadoni–Tuveri 2020 conditional reference was
-resolved DROP — its abstract carries no a0(z) generalization, and
-section 8 now owns the generalization as this program's registered
-reading.) Guardrails from the stage
-verdict files are restated in Appendix A and are binding on every
-future edit.**
+**Draft 0.3 — post-referee (2026-09-23; Round 51 MAJOR REVISION
+adopted in full: 11 major + 40 minor findings executed, incl. the
+peg-gearing re-measurement — the untraceable "1.3-1.6" replaced by
+the measured anchored-primary response 1.59, calcs/round51_gearing.py
+— the section-6 error-budget table, the section-4 equations, and the
+census re-scope). Style contract: papers/STYLE.md. Figures gated by
+calcs/paperf_figures.py. Verification state: SML20 quote set verified
+against the accepted arXiv v2 source (residual: cross-check the
+published AJ PDF at assembly); reference list verified against
+arXiv/ADS/publisher pages (Haslbauer ID corrected program-wide to
+2009.11292; Ponomareva 2018 = MNRAS 474, 4366; Cadoni–Tuveri 2020
+resolved DROP). Census: the flag-pending pair cleared at
+identification-plus-grade scope; KK98-251 carried to a deferred
+candidate by the stage-10X census leg. The stage-10X battery is
+adopted (Round 50): section 6f carries the two primary-side
+systematic rows. Remaining [ASSEMBLY] blockers: (i) the AJ-PDF
+cross-check; (ii) abstract word count on the final text. Guardrails
+from the stage verdict files are restated in Appendix A and are
+binding on every future edit.**
 
 Author: Filip Hájek (independent researcher).
 
@@ -32,10 +30,10 @@ The radial acceleration relation of galaxies is governed by an
 acceleration scale a0 whose measured value coincides with cH0/2pi. If
 that identity is physical, rotation curves are a Hubble meter: a0,
 measured from galaxy dynamics, returns H0 with no supernova rung and no
-period–luminosity rung. We report the first execution of this inversion.
+period–luminosity rung. We report a first execution of this inversion.
 Because 97 of the 175 SPARC distances are Hubble-flow distances that
 already assume H0 = 73, a whole-catalog inversion is circular; the
-instrument is therefore built on the anchored subsample alone, 78
+instrument is built on the anchored subsample alone, 78
 galaxies with tip-of-the-red-giant-branch, Cepheid, supernova, surface
 brightness fluctuation, or cluster distances after a CosmicFlows-4
 per-method reclassification; the flow subsample serves only as a
@@ -43,16 +41,16 @@ consistency arm. The anchored arm reads H0 = 65.4 +- 5.0 (statistical)
 +- 0.5 (convergence) km/s/Mpc. The dominant systematic is not
 statistical: the choice of the relation's functional form moves the
 reading across 65.4-70.4, and we measure the levers of that band
-directly. A per-galaxy preference map shows the flow subsample's
-contrary form lean is carried by a single galaxy and sits below its own
-scatter; an inner-angular-resolution cut resolves nothing and excludes
-nothing while moving the anchored reading by at most 0.8. The meter
-hangs from the same calibration pegs as the distance ladder but with
-1.3-1.6 times the response, so at a precision of 2-3 km/s/Mpc it
-separates a shared-peg systematic from new physics; at the current
-precision it separates nothing. The method is timestamped for the
-~4000-galaxy BIG-SPARC era, where the statistical term shrinks into
-the deciding range.
+directly. A per-galaxy map shows the flow subsample's contrary form
+lean is one galaxy sitting below its own scatter, and an
+inner-resolution cut resolves nothing and excludes nothing. The meter
+hangs from the same calibration pegs as the distance ladder with a
+measured 1.6 times the response. At 2-3 km/s/Mpc precision a reading
+like this one would sit over two sigma from both high-reading tension
+worlds while staying consistent with a ladder error beyond the pegs;
+at the current precision it separates nothing. The method is
+timestamped for the ~4000-galaxy BIG-SPARC era, where the statistical
+term shrinks into the deciding range.
 
 ---
 
@@ -82,9 +80,11 @@ fixed cosmological parameters and compares the result to the measured
 a0. The nearest neighbor in data and intent is Schombert, McGaugh &
 Lelli (2020), who measured H0 = 75.1 +- 2.3 (stat) +- 1.5 (sys) from
 the baryonic Tully–Fisher relation, calibrated on 50 galaxies with
-Cepheid (27) or TRGB (23) distances — stated by them as 30 drawn from
-SPARC and 20 from Ponomareva et al. (2018) — and then applied outward
-to the remaining 95 SPARC galaxies through CosmicFlows-3 velocities.
+Cepheid (27) or TRGB (23) distances, stated by them as 30 drawn from
+SPARC and 20 from Ponomareva et al. (2018) (their printed tables
+enumerate 29 and 21). The calibrated relation was then applied
+outward to the remaining 95 of their 125-galaxy inclination-selected
+SPARC sample through CosmicFlows-3 velocities.
 Their dominant quoted systematic (the +- 1.5) is the standard
 deviation among flow models, which spans 72.8-77.5 across the four
 velocity treatments they tabulate (including an uncorrected case they
@@ -116,9 +116,9 @@ assuming H0 = 73, 50 carry H0-independent anchors (tip of the red
 giant branch, Cepheids, supernovae), and 28 share the Ursa Major
 cluster distance. A whole-catalog fit inherits the assumed 73 through
 the majority class: the answer would be built into the question. (We
-measured this directly in the design stage; the whole-catalog reading
-lands near 68, pulled between the assumed 73 and the anchored value,
-and means nothing.)
+measured this directly in the design stage; the whole-catalog
+hierarchical fit reads 67.5, pulled between the assumed 73 and the
+anchored value, and means nothing.)
 
 The instrument therefore has two arms (Figure 1). The anchored arm
 fits the RAR to the anchored subsample only and reads H0 = 2pi a0/c
@@ -132,17 +132,6 @@ does not. As section 5 reports, the flow arm turns out to be
 power-limited at SPARC depth, so the internal test is deferred to
 samples where its limiting degeneracy is absent by construction; the
 anchored arm alone carries the measurement.
-
-All analysis choices in this program are committed in advance: the
-sample definitions, estimators, thresholds, and the wording of every
-possible verdict are written to a public version-controlled repository
-before each deciding fit is run (we call this bar-locking; the commit
-chain timestamps every threshold). Each stage was then examined by an
-adversarial review session, run as an AI model session rather than
-human peer review. Every load-bearing finding of those sessions was
-verified by independent recomputation before adoption, and all were
-adopted in full; the downgrades this produced are part of the record
-and are summarized in Appendix A.
 
 ![Figure 1](figs/figf1_census.png)
 
@@ -167,11 +156,15 @@ conventions are the catalog's (disk 0.5, bulge 0.7 at 3.6 micron),
 with the disk value refit globally as described in section 4.
 
 The anchored subsample was then extended by a per-method pass through
-CosmicFlows-4 (Tully et al. 2023 [ASSEMBLY: verify entry]). Eleven
+CosmicFlows-4 (Tully et al. 2023), whose TRGB entries derive from the
+Extragalactic Distance Database catalog (Anand et al. 2021). Eleven
 flow galaxies have CF4 per-method distances of anchor grade (nine
-TRGB, one surface-brightness-fluctuation, one Type II supernova),
-which replaces 15-30 percent flow-distance errors with 4-9 percent
-anchor errors. Two safeguards from the review of that stage apply.
+TRGB, one surface-brightness-fluctuation, one Type II supernova).
+For the nine TRGB members this replaces 15-30 percent flow-distance
+errors with 4-9 percent anchor errors, and the
+surface-brightness-fluctuation member reaches 5 percent; the Type II
+supernova member keeps a 15 percent error and gains only
+H0-independence. Two safeguards from the review of that stage apply.
 The CF4 per-method moduli are used, never the combined modulus, which
 mixes Tully–Fisher and fundamental-plane information and would be
 dynamically circular. And CF4's own H0 = 74.6 is nowhere imported:
@@ -186,7 +179,7 @@ Their velocity fields agree with SPARC's to 0.05 dex where the
 surveys overlap, but their published baryonic models sit one-sidedly
 0.13 dex low against SPARC's photometric ones (7 of 7 overlap medians
 negative). They enter as cross-checks only; all cross-check readings
-are 65.1-65.4, within 0.2 of the primary.
+are 65.1-65.4, within 0.3 of the primary.
 
 The final anchored arm is 78 galaxies: 41 individually anchored, 26
 Ursa Major, 11 CF4-reclassified. Two anchored galaxies (D564-8,
@@ -208,30 +201,63 @@ census pass.
 
 ## 4. Method
 
-The estimator is a hierarchical fit of the RAR to the anchored arm.
-Per galaxy, the model carries a distance nuisance (prior width = the
-published distance error; the Ursa Major members share one draw) and
-an inclination nuisance (published error); globally, it carries the
-disk mass-to-light ratio, an intrinsic scatter, and the acceleration
-scale a0. The likelihood is evaluated on the ~1,300 rotation-curve
-points that survive the per-point velocity-error cut, with the
-published errors propagated. The fit is refit to convergence with a
+All analysis choices in this program are committed in advance: the
+sample definitions, estimators, thresholds, and the wording of every
+possible verdict are written to a public version-controlled repository
+before each deciding fit is run (we call this bar-locking; the commit
+chain timestamps every threshold). Each stage was then examined by an
+adversarial review session, run as an AI model session rather than
+human peer review. Every load-bearing finding of those sessions was
+verified by independent recomputation before adoption, and all were
+adopted in full; the downgrades this produced are part of the record
+and are summarized in Appendix A.
+
+The fitted relation is the radial acceleration relation in the form
+
+  g_obs = g_bar nu(y),   y = g_bar/a0,
+
+where g_bar is the baryonic (Newtonian) acceleration from the SPARC
+mass model and nu is the transition function. The primary form is the
+Bose-Einstein form derived by Cadoni & Tuveri,
+
+  nu_BE(y) = [1 - exp(-sqrt(y))]^(-1),
+
+equivalently 1 + n_BE(sqrt(y)) with n_BE(x) = 1/(e^x - 1). The three
+pre-registered alternatives span the plausible transition-sharpness
+range measured in the companion program (Hájek 2026b): a sharper-tail
+variant nu(y) = [1 - exp(-y^0.65)]^(-1/1.3); a geometric-mean
+construction defined implicitly by nu = 1 + n_BE(y^(3/4) nu^(1/2));
+and a self-consistent bootstrap form nu = 1 + n_BE(y nu). H0 is read
+at each member through H0 = 2 pi a0/c (so that a0 = 1.011e-10 m/s^2
+corresponds to 65.4 km/s/Mpc).
+
+The estimator is a hierarchical fit of this relation to the anchored
+arm. Per galaxy g, the model predicts
+
+  log g_obs = log[g_N nu(g_N/a0)] + dv_g (+ u for Ursa Major members),
+  g_N = g_gas + f e^(m_g) g_disk + g_bul,
+
+with dv_g a per-galaxy velocity-level offset (prior width = the
+published distance and inclination errors propagated to the log; the
+Ursa Major members share one offset u with the cluster-depth prior),
+m_g a per-galaxy disk mass-to-light offset (prior 0.1 dex), and
+globally the disk scale factor f (no prior), an intrinsic scatter
+added in quadrature to the published per-point errors, and the
+acceleration scale a0. The likelihood is evaluated on the ~1,300
+rotation-curve points with relative velocity errors below 10 percent,
+with the published errors propagated.
+
+The fit is refit to convergence with a
 deep alternation (the initial stage used a looser schedule; the
 difference, about 1 km/s/Mpc, is the origin of the quoted convergence
 term). A flat-treatment variant (no per-galaxy nuisances, single
-global mass-to-light) is retained as a treatment envelope and is never
-the statistic: the two treatments sit on opposite sides of the
+global mass-to-light) is retained as a treatment envelope and is
+never the statistic: the two treatments sit on opposite sides of the
 mass-to-light/a0 degeneracy that the hierarchical model is built to
-break, and the primary treatment was declared before any sky fit.
-
-The functional-form family is fixed in advance: the Bose–Einstein form
-(the derived identity of Cadoni & Tuveri, and the best-fitting form on
-this subsample), and three measured alternatives spanning the
-plausible transition-sharpness range from the companion program (a
-sharper-tail variant, a geometric-mean construction, and a
-self-consistent bootstrap form). H0 is read at each member; the family
-span is the dominant systematic and is reported as a band, never
-folded into the error bar (section 6a).
+break, and the primary treatment was declared before any sky fit. H0
+is read at each family member; the family span is the dominant
+systematic and is reported as a band, never folded into the error bar
+(section 6a).
 
 Uncertainties are engine-matched: the quoted statistical error is the
 galaxy bootstrap of the primary estimator itself (200 resamples with
@@ -243,10 +269,14 @@ rather than points because within-curve residuals are strongly
 correlated (measured near 0.6 in this program), which makes
 point-level error estimates optimistic; galaxy-block resampling
 absorbs that correlation. Injection tests validate the estimator as
-unbiased for true H0 in 62-73; at a true value of 85 it carries a
-measured -3.0 +- 0.7 percent one-sided bias, so the quote is valid for
-readings up to about 75 and any future reading above that requires
-recalibration first. One scope note attaches: the injection arm draws
+unbiased at every injected truth from 62 to 73; at a true value of 85
+it carries a measured -3.0 +- 0.7 percent one-sided bias, so the
+quote is valid for readings up to about 75 and any future reading
+above that requires recalibration first. The injection bar is
+self-widening at eight seeds, so a residual bias of up to 2-3 percent
+(1.3-2.0 km/s/Mpc at the reading) would pass undetected; that
+allowance is not inside the quoted error terms. One scope note
+attaches: the injection arm draws
 its per-galaxy nuisance offsets from the priors the fit assumes, so
 the validation is conditional on that generative family and is not a
 defense against prior mis-specification (section 6f measures that
@@ -277,7 +307,9 @@ only as the treatment envelope (the hierarchical/flat split is the
 known mass-to-light degeneracy, and the hierarchical treatment is the
 pre-registered primary). A single-realization floor of about 2.4
 km/s/Mpc (the seed scatter of injection recoveries at survey depth)
-is part of the statistical term, not additional to it.
+is of the same nature as, and not additional to, the statistical
+term: the galaxy bootstrap resamples the realization along with the
+membership.
 
 The flow arm returned no reading, for a structural reason worth
 reporting. With star-dominated galaxies, the self-consistent solve
@@ -300,9 +332,32 @@ the treatment split, not a statistic. The light backdrop is the
 injection-validated domain (62-75). Dotted and dashed lines mark the
 Planck CMB value 67.4 +- 0.5 (Planck Collaboration 2020) and the
 distance-ladder value 73.0 +- 1.0 (Riess et al. 2022). Every plotted
-value is parsed from the committed stage outputs.*
+value is parsed from the committed stage outputs. The
+membership-variant bar spans the two variants (64.8, 65.3); the
+quoted band 64.8-65.4 includes the primary as its upper member.*
 
 ## 6. Systematics: the measured levers
+
+Table 1 collects the budget; the subsections that follow measure each
+row. Terms are in km/s/Mpc on the anchored central (65.4).
+
+| Term | Size | Nature | Where |
+|---|---|---|---|
+| statistical (galaxy bootstrap; contains the ~2.4 realization floor) | 5.0 | sampling | section 5 |
+| convergence plateau | 0.5 | numerical | section 5 |
+| functional form (four-member band 65.4-70.4) | +5.0 | model; the dominant term | section 6a |
+| membership variants | 0.6 | sample | section 5 |
+| frozen bulge mass-to-light (+-0.1 around 0.7) | +-1.3 | convention, measured lever +12.5-12.7 per unit | section 6f |
+| galaxy-level prior width (x1.5; +4.1 at the self-consistent width) | +1.2 | model axis | section 6f |
+| inner-resolution cut (sensitivity, never a reading) | <= 0.8 | data selection | section 6c |
+| residual injection-bias allowance (self-widening bar) | <= 1.3-2.0 | calibration allowance | section 4 |
+| peg gearing (response x1.59 to a coherent calibrator rescale) | exposure, not additive | shared calibration | section 6d |
+| conversion branch (instantaneous H(z) vs asymptotic rate; x1.195) | +12.8, excluded by registration; sign-disfavored | reading choice | section 8 |
+
+The conversion-branch row is excluded from the quoted budget by the
+registration (the instantaneous reading is the registered primary)
+and is disfavored in sign by both measured redshift epochs; it is
+carried in the table so the exclusion is visible rather than silent.
 
 ### 6a. The functional-form band
 
@@ -312,22 +367,24 @@ the band 65.4-70.4 exceeds the statistical term and is the meter's
 bottleneck. A dedicated contest on the anchored arm demoted the
 bootstrap form at report grade (about 2 sigma by paired galaxy
 bootstrap; a permutation construction agrees) but could not separate
-the band's edges at N = 78 under any defensible calibration; the
-geometric-mean member survives because the data refuse its rejection
-at 1.26 sigma, short of the pre-registered bar. The review of that
-stage found the contest's injection-calibrated significance bars had
-inherited an unvetted noise model: intrinsic scatter 3.85 times the
-sky-fitted value, and no within-curve correlation where the sky
-measures 0.62. Those two errors cancelled in the separation estimate
-and compounded in its spread. The band therefore stands on the
-uncalibrated statistics alone, and the smaller sample-size forecasts
-the injection model implied were retracted. The contest's evidence is
-also concentrated: a refit jackknife shows two galaxies (IC 2574 and
-NGC 891) carry roughly 43 and 68 percent of the two demotion leads
-(an effective sample of 5-10 galaxies), and only a weak majority of
-galaxies (44-51 of 78, construction-dependent) favors the winning
-form. The honest requirement for pinning the form is N of order
-100-1000 (section 7).
+the band's edges at N = 78 under any defensible calibration. The
+geometric-mean member survives because the paired galaxy bootstrap
+returns P = 0.915 against the pre-registered 0.95 bar: a 1.26-sigma
+preference the sampling-variance clause refuses to convert into a
+rejection. The review of that stage found the contest's
+injection-calibrated significance bars had inherited an unvetted
+noise model: an intrinsic scatter 2.5 times the sky-fitted value (a
+mean inverse-variance ratio of 3.85), and no within-curve correlation
+where the sky measures 0.62. Those two errors cancelled in the
+separation estimate and compounded in its spread. The band therefore
+stands on the uncalibrated statistics alone, and the smaller
+sample-size forecasts the injection model implied were retracted. The
+contest's evidence is also concentrated: a refit jackknife shows two
+galaxies (IC 2574 and NGC 891) jointly carry 43 percent of one
+demotion lead and 68 percent of the other (an effective sample of
+5-10 galaxies), and only a weak majority of galaxies (44-51 of 78,
+construction-dependent) favors the winning form. The measured
+requirement for pinning the form is N of order 100-1000 (section 7).
 
 ### 6b. The per-galaxy preference map
 
@@ -345,10 +402,17 @@ percent of the block variance.
 
 Second, the flow subsample's contrary lean — the one hint in this
 program that a different form might fit elsewhere — is one galaxy.
-UGC 3580 contributes -47.8 of the flow total of -48.7 (52 percent of
-that subsample's block variance); the remaining 70 flow galaxies net
-to -1.0. The lean itself is 0.71 of the subsample's own realized
-galaxy-block scatter: below noise before any interpretation.
+UGC 3580 contributes -47.8 of the flow total of -48.7; the remaining
+70 flow galaxies net to -1.0. Throughout this section, a subsample's
+"block scatter" is the scatter of its summed contribution under
+galaxy-block resampling, and a galaxy's "share of the block variance"
+is its contribution to that scatter's square; UGC 3580 holds 52
+percent of the flow subsample's. The lean itself is 0.71 of that
+block scatter: below noise before any interpretation. One sensitivity
+attaches to both totals: the frozen bulge mass-to-light convention
+(section 6e) moves the flow total by 22 percent when freed, while the
+anchored total is carried by galaxies without bulges — a disclosed
+sensitivity, not an explanation.
 
 Third, composition is not an axis. Across four registered axes
 (acceleration coverage, gas fraction, inner angular resolution,
@@ -356,9 +420,14 @@ subsample membership) tested with a rank-based partial-correlation
 machinery under a coverage-conditioned permutation null, gas fraction
 carries nothing beyond acceleration coverage (partial p = 0.54), and
 no axis reaches an established grade once the family of tests is
-accounted for. The map itself is robust to the construction (rank
-correlation 0.926 between per-galaxy decompositions at the two
-subsample optima); only the axis grades move.
+accounted for. Acceleration coverage is the best-supported of the
+four and misses its registered bar narrowly (Holm-corrected
+p = 0.050); the same axis reappears in section 6f as the driver of
+the bulge-free membership shift, where a point cut isolates it
+directly. The map itself is robust to the construction (rank
+correlation 0.926 between the per-subsample-optimum decomposition
+used here and one computed at a single joint fit of both subsamples);
+only the axis grades move.
 
 ![Figure 3](figs/figf3_map.png)
 
@@ -391,22 +460,23 @@ and excludes nothing, and it costs the anchored acceleration scale
 
 The details carry the information. The anchored Bose–Einstein
 preference survives every cut at 2.4-2.7 sigma of its own block
-scatter (+63.3 uncut becomes +63.5, +66.0, +61.8), so the meter's arm
-is not an inner-resolution artefact; its fitted H0 moves to 64.5 at
-the 20-arcsec cut (a sensitivity statement, never a reading — the
-quoted band and statistical error are uncut-arm properties and do not
-move). The flow lean wanders from -48.7 to -31.7, -29.7, -54.2 across
-the cut grid, and every level and every cut-induced move is below
-that subsample's own scatter (0.36-0.95 sigma). A paired galaxy
-bootstrap gives P = 0.62, against a 0.95 bar, that the cut moves the
-lean toward the anchored subsample's preferred form. The apparent
-reversal at 30 arcsec is a point-cut effect, not a population change:
-holding the galaxy population fixed and cutting only the points
-reproduces -30.3 of it, and the seven galaxies the 30-arcsec cut
-ejects carry -0.6 of the -24.5 swing. Most tellingly, the carrier is
-unstable while the total is not: UGC 3580's share of the flow block
-variance runs 52, 46, 14, 0 percent across the grid while the total
-stays inside -30 to -54. An unstable decomposition under a stable
+scatter (+63.3 uncut becomes +63.5, +66.0, +61.8). The meter's arm is
+therefore not an inner-resolution artefact. Its fitted H0 moves to
+64.5 at the 20-arcsec cut — a sensitivity statement, never a reading;
+the quoted band and statistical error are uncut-arm properties and do
+not move. The flow lean wanders from -48.7 to -31.7, -29.7, -54.2
+across the cut grid, and every level and every cut-induced move is
+below that subsample's own scatter (0.36-0.95 sigma). A paired galaxy
+bootstrap gives P = 0.56-0.62 across constructions, against a 0.95
+bar, that the cut moves the lean toward the anchored subsample's
+preferred form. The apparent reversal at 30 arcsec is a point-cut
+effect, not a population change: at the 30-arcsec census population,
+cutting only to 20 arcsec gives -30.3, against -29.7 for the full
+20-arcsec world, so the seven galaxies the 30-arcsec cut ejects carry
+only -0.6 of the -24.5 swing. The sharpest fact is that the carrier
+is unstable while the total is not: UGC 3580's share of the flow
+block variance runs 52, 46, 14, 0 percent across the grid while the
+total stays inside -30 to -54. An unstable decomposition under a stable
 total is the signature of noise, not of a carrier. Inner angular
 resolution is therefore neither established nor excluded as the
 source of a residue that is itself sub-noise.
@@ -428,41 +498,61 @@ of the distance calibrators: the CF4 per-method moduli sit on the
 same calibrator common scale as the distance ladder itself (Milky Way
 parallaxes, the LMC, the NGC 4258 maser). The response is what
 differs. A coherent peg-distance rescale moves the ladder's H0 as the
-first power; the meter's fitted a0 responds as roughly the second
-power in the deep limit, and its measured response on this sample is
-1.3-1.6 (Figure 4b). Shared pegs, different gearing, same direction:
-that combination is what makes the meter a discriminant rather than a
-replica.
+first power. The meter's fitted a0 responds as the second power in
+the pure deep limit, and its measured response — a coherent +-8
+percent rescale injected into the anchored arm under the primary
+estimator — is a factor 1.59, linear across the injected range
+(Figure 4b). The response is treatment- and sample-dependent (the
+same injection under the flat treatment gives 1.85, and the flow
+subsample's hierarchical response in the design stage was 0.86,
+because the fitted mass-to-light and the per-galaxy nuisances absorb
+different shares of a coherent shift in different samples); 1.59 is
+the number for the configuration whose reading this paper quotes.
+Shared pegs, different gearing, same direction: that combination is
+what makes the meter an independent check rather than a replica.
 
 Figure 4a scores the reading against the live explanations of the
 Hubble tension. A world where the tension is a ladder error beyond
-the shared pegs (true H0 near 67) sits 0.3 sigma from this reading; a
-new-physics world (true H0 near 73, pegs fine) sits 1.5 sigma; a
+the shared pegs (true H0 near 67) sits 0.3 sigma from this reading. A
+new-physics world (true H0 near 73, pegs fine) sits 1.5 sigma. A
 world where the shared pegs are about 8 percent short predicts the
-meter reads above the ladder, 75-79, and sits 1.9-2.7 sigma. A low
-meter reading is the specific signature that disfavors the shared-peg
-explanation, because the gearing would push a peg-driven meter high,
-not low. Nothing is excluded at this precision, and the form band
-spans the first two worlds' gap; the figure's content is that at
-sigma = 2-3 km/s/Mpc the meter separates what no same-peg ladder
-re-measurement can. A local-void world (the differential-expansion
-class) predicts the new-physics central value but with structure the
-uniform world lacks, a radial gradient and a dipole in the fitted a0;
-that discriminant is a registered hemisphere instrument left to
-future work.
+meter reads above the ladder: 76.8 under the measured gearing (2.3
+sigma from this reading); the registered range 75-79 spans gearing
+values from 1.3 up to the deep-limit asymptote of 2 (1.9-2.7 sigma).
+A low meter reading is the specific signature that disfavors the
+shared-peg explanation, because the gearing would push a peg-driven
+meter high, not low. Nothing is excluded at this precision, and the
+form band spans the gap between the first two worlds. What improved
+precision buys is asymmetric: the shared-peg and new-physics worlds
+predict readings only 2-4 apart and separate from each other slowly,
+but a reading like the present one at sigma = 2-3 km/s/Mpc would sit
+more than two sigma from both high-reading worlds while remaining
+consistent with the beyond-the-pegs world — a discrimination no
+same-peg ladder re-measurement can make. A local-void world (the
+differential-expansion class; Haslbauer, Banik & Kroupa 2020)
+predicts the new-physics central value but with structure the uniform
+world lacks: a radial gradient and a dipole in the fitted a0. The
+cluster-scaling and quasar-dipole anisotropies (Migkas et al. 2021;
+Secrest et al. 2021) are the live external hints. That discriminant
+is a registered hemisphere instrument left to future work.
 
 ![Figure 4](figs/figf4_worlds.png)
 
 *Figure 4. (a) Separation between the current central value and the
 three tension worlds as a function of meter precision: L (ladder
 error beyond the shared pegs, true 67), N (new physics, true 73), P
-(shared pegs ~8 percent short; the meter's 1.3-1.6 gearing then
-predicts a reading of 75-79). At the current sigma = 5.0 the worlds
-sit at 0.3, 1.5, and 1.9-2.7 sigma; the functional-form band
-(section 6a) caps discrimination until it is pinned. (b) The gearing:
+(shared pegs ~8 percent short; under the measured gearing the meter
+would read 76.8, and the plotted 75-79 range spans gearing values
+from 1.3 to the deep-limit 2). At the current sigma = 5.0 the worlds
+sit at 0.3, 1.5, and 1.9-2.7 sigma (2.3 at the measured gearing); the
+functional-form band (section 6a) caps discrimination until it is
+pinned. (b) The gearing:
 response of each instrument's H0 to a coherent rescale of the shared
-calibration pegs; the ladder responds as the first power, the meter's
-measured response is 1.3-1.6 times steeper, same direction.*
+calibration pegs; the ladder responds as the first power, and the
+meter's measured response — the anchored arm under the primary
+estimator — is 1.59 times steeper, same direction, against a
+deep-limit asymptote of 2. In panel (a) precision improves to the
+right.*
 
 ### 6e. Conventions disclosed
 
@@ -470,10 +560,11 @@ Three conventions are fixed throughout and disclosed. The bulge
 mass-to-light ratio is 0.7; a robustness battery run for this paper
 promoted it from a disclosed convention to a named systematic of the
 central (section 6f). The global disk mass-to-light ratio carries no
-prior (it is fit; the anchored arm fits it at 1.05). The Ursa Major
-block shares one distance nuisance, whose fitted shift is -0.021 dex
-against a 2.3 Mpc block depth; the two direct-Cepheid members
-straddle it.
+prior: it is fit as a single scale factor on the catalog's 0.5, and
+the anchored arm returns 1.05, i.e. a disk mass-to-light of 0.53 at
+3.6 micron. The Ursa Major block shares one distance nuisance, whose
+fitted shift is -0.021 dex (18.0 to 18.9 Mpc) against a 2.3 Mpc block
+depth; the two direct-Cepheid members straddle it.
 
 ### 6f. The robustness battery: influence, membership, and the prior
 
@@ -499,31 +590,34 @@ N = 63). Restricting to quality flag Q = 1 (46 galaxies) moves it by
 sample size the cut is uninformative either way. Dropping the 12
 galaxies with a bulge component moves the central by -5.87, a
 2.8-sigma deviation against the measured subset scatter (2.10; none
-of 40 random 66-galaxy subsets deviates as far) - and the shift is an
-acceleration-coverage effect, not a bulge-population effect: those 12
+of 40 random 66-galaxy subsets deviates as far). The shift is an
+acceleration-coverage effect, not a bulge-population effect. Those 12
 galaxies supply 64 percent of the points above the acceleration scale
 and all seven above ten times it, and removing only the points above
-the scale, keeping all 78 galaxies, reproduces the shift at -6.07.
-In the deep regime mass normalization and the acceleration scale
-trade one-for-one; only data above the transition break the
-degeneracy, and most of that data lives in the bulged galaxies.
+the scale, keeping all 78 galaxies, reproduces the shift at -6.07
+(the membership axis also stops firing altogether for a bulge
+mass-to-light below about 0.57; see the row below). In the deep
+regime mass normalization and the acceleration scale trade
+one-for-one; only data above the transition break the degeneracy, and
+most of that data lives in the bulged galaxies.
 
 Two systematic rows follow, both properties of the primary.
 
-The frozen bulge mass-to-light. The meter moves +12.5 km/s/Mpc per
-unit change in the bulge mass-to-light ratio, so the conventional
-+-0.1 range around 0.7 is worth +-1.3 on the central - larger than
-the membership band and 2.6 times the convergence term. The fit's
-own profile mildly prefers about 0.55 (roughly 2 sigma after
-correcting the formal curvature for the measured overdispersion),
-which would read 63.5; the bulge-free membership axis stops firing
-below about 0.57, so its verdict is conditional on the convention.
+The frozen bulge mass-to-light. The meter moves +12.5 to +12.7
+km/s/Mpc per unit change in the bulge mass-to-light ratio, so the
+conventional +-0.1 range around 0.7 is worth +-1.3 on the central,
+larger than the membership band and 2.6 times the convergence term.
+The fit's own profile mildly prefers about 0.55 (roughly 2 sigma
+after correcting the formal curvature for the measured
+overdispersion), which would read 63.5; the bulge-free membership
+axis stops firing below about 0.57, so its verdict is conditional on
+the convention.
 
 The galaxy-level prior width. Widening the per-galaxy distance-and-
 inclination prior by 50 percent moves the central by +1.18 km/s/Mpc
 (the local gradient is about +2 per e-fold). The response is
-directional - in mock skies drawn from the estimator's own prior it
-is +0.30 +- 0.37 - and the fitted per-galaxy offsets are 1.70 times
+directional: in mock skies drawn from the estimator's own prior it is
++0.30 +- 0.37. And the fitted per-galaxy offsets are 1.70 times
 wider than the prior allows (19 of 78 beyond two sigma, 9 beyond
 three, where 3.6 and 0.2 are expected). At the prior width that
 makes the offsets self-consistent the central reads 69.5; matched
@@ -531,24 +625,28 @@ injections show the too-tight prior inflates realization scatter
 rather than biasing the central, so that value is a realization, not
 a correction, and the prior-width choice enters the budget as a
 model axis. The disk mass-to-light prior width is a weak axis by
-contrast (+0.11 to +0.29 over the same ladder).
+contrast (+0.11 to +0.29 over a comparable 1.5-3 times ladder).
 
-Both rows are smaller than the functional-form band, which remains
-the dominant systematic; both are now in the budget by measurement
-rather than by assumption.
+At their conventional excursions (+-1.3 and +1.2) both rows are
+smaller than the functional-form band, which remains the dominant
+single systematic; the prior-width axis reaches +4.1 at the
+self-consistent width, where it becomes comparable to the band. Both
+rows are now in the budget by measurement rather than by assumption
+(Table 1).
 
 ## 7. Forecast and the BIG-SPARC timestamp
 
-The statistical term at N = 78 is 5.0 km/s/Mpc. The honest
+The statistical term at N = 78 is 5.0 km/s/Mpc. The measured
 requirement for arbitrating the form band is N of order 100-1000
-(measured from the contest's own separation scaling; smaller
-forecasts from the retracted injection model are not quoted). Two
-developments meet that requirement. Near term, gas-dominated flow
-samples (WALLABY-class) revive the consistency arm: gas dominance
-removes the mass-to-light pole that power-limits it at SPARC depth.
-Decisive, BIG-SPARC (~4,000 homogeneous galaxies, in preparation;
-Haubner et al., arXiv:2411.13329 [ASSEMBLY: verify entry]) brings
-twenty times the sample. Its distance choices will embed an H0
+(from the contest's own separation scaling; smaller forecasts from
+the retracted injection model are not quoted). Two developments meet
+that requirement. Near term, gas-dominated flow samples
+(WALLABY-class) revive the consistency arm: gas dominance removes the
+mass-to-light pole that power-limits it at SPARC depth. Decisive,
+BIG-SPARC (~4,000 homogeneous galaxies, in preparation; Haubner et
+al. 2024) brings roughly twenty times the SPARC catalog; how much of
+that reaches an anchored arm depends on its own distance provenance,
+which is the point of the split. Its distance choices will embed an H0
 exactly as SPARC's do, which is why this paper timestamps the
 provenance-split design now: the census, the per-method
 reclassification pass, the two-arm architecture, and the validity
@@ -562,18 +660,20 @@ per unit redshift at low z). The generalization is this program's
 registered reading, not a published derivation: the Cadoni & Tuveri
 result is derived in a static de Sitter setting, and which expansion
 rate the identity tracks at finite redshift is the branch choice
-discussed below. Both epochs measured so far lean the
-lock's way (Figure 5).
+discussed below. Nothing in sections 5-7 depends on this section.
+Both epochs measured so far lean the lock's way (Figure 5).
 
-At z < 0.09, the MIGHTEE-HI evolution fit (Varasteanu et al. 2026)
-brackets the prediction. Their HI-selected sample alone gives
+At z < 0.09, the MIGHTEE-HI evolution fit (Varasteanu et al. 2026;
+the evolution claim originates in Varasteanu et al. 2025) brackets
+the prediction. Their HI-selected sample alone gives
 da0/dz = -1.60 +- 2.33, which contains both zero and the lock and
 separates them at no useful grade. Their SPARC-anchored fit gives
 +5.23 +- 1.05, sign-agreeing with the lock and sitting 4.5 sigma
 above it at face value; but the rise it implies across their window
-equals, to within 15 percent, the zero-point offset between their own
-two subsamples, so slope and inter-sample calibration are not
-separated by that lever arm. At z ~ 1, the MUSE-DARK III
+(0.47 x 10^-10) matches, to within about 20 percent, the zero-point
+offset between their own two quoted intercepts (0.39 x 10^-10), so
+slope and inter-sample calibration are not separated by that lever
+arm. At z ~ 1, the MUSE-DARK III
 rotation-curve sample (Ciocan et al. 2026) back-extrapolates to
 a0(z=0) rows that contain the lock intercept in two of their three
 frameworks (0.7 and 0.1 sigma; the dark-matter framework row sits 2.3
@@ -583,8 +683,9 @@ contains and is not reproducible from the public products (Hájek
 
 The comparison discriminates among rival scalings already: the
 measured sign at both epochs is a rise, where the van Putten (2026)
-geometric identity predicts a falling a0(z), Gillot's construction is
-sign-separable the same way, and a frozen a0 predicts zero. The
+geometric identity predicts a falling a0(z), the Gillot (2026)
+construction is sign-separable the same way, and a frozen a0 predicts
+zero. The
 redshift axis is the cleanest external discriminant the identity has,
 and it is live now.
 
@@ -619,42 +720,39 @@ figure script).*
 
 ## 9. Discussion
 
-What the meter is today: the first executed inversion of the
-acceleration scale into a Hubble constant, reading 65.4 +- 5.0
-(stat) +- 0.5 (convergence) with a functional-form band of 65.4-70.4,
-on 78 anchored galaxies, unbiased over the validated domain 62-75.
-The reading is Planck-adjacent and separates none of the live Hubble
-tension worlds at this precision; the two statements above are the
-operative pair and no headline should compress them into one number.
-
-What it becomes at sigma ~ 2-3 km/s/Mpc: a referee with different
-systematics from every existing route. No supernova rung, no
-period-luminosity rung, no flow model; the same calibration pegs as
-the ladder but with 1.3-1.6 times the response, so a peg systematic
-drags the two instruments apart instead of together. The path to that
-precision is sample size and form-pinning, both of which BIG-SPARC
-supplies, plus the gas-dominated flow samples that revive the
-internal consistency arm.
+The meter today reads 65.4 +- 5.0 (stat) +- 0.5 (convergence) with a
+functional-form band of 65.4-70.4: Planck-adjacent, separating none
+of the live Hubble tension worlds at this precision. The two
+statements are the operative pair and no headline should compress
+them into one number. At sigma ~ 2-3 km/s/Mpc the meter becomes an
+independent arbiter with different systematics from every existing
+route: no supernova rung, no period-luminosity rung, no flow model,
+and the same calibration pegs as the ladder at 1.59 times the
+response, so a shared-peg systematic drags the two instruments apart
+instead of together. The path to that precision is sample size and
+form-pinning, both of which BIG-SPARC supplies, plus the
+gas-dominated flow samples that revive the internal consistency arm.
 
 Conditionality and credence. The reading is conditional on the
 identity a0 = cH0/2pi being physical; this paper presents an
-instrument, not evidence for the identity (the companion papers carry
-the measurements that motivate it, and their support is coefficient-
-level, not H0-level). The program behind this work tracks its own
-credence numerically as a matter of policy: the standing figure for
-the underlying low-acceleration anomaly being real physics is about
-53 percent, unchanged by any result here — an instrument's first
-light should not move belief in the physics it presumes. Honest nulls
-attach: the meter implies no age-of-universe consequence at this
-precision, supplies no relativistic completion, and inherits the
+instrument, not evidence for the identity (the companion papers,
+Hájek 2026a,b, carry the measurements that motivate it, and their
+support is coefficient-level, not H0-level). The program behind this
+work tracks its own credence numerically as a matter of policy: the
+standing figure for the underlying low-acceleration anomaly being
+real physics is about 53 percent, unchanged by any result here — an
+instrument's first light should not move belief in the physics it
+presumes. (The figure is maintained in the program's public
+prediction ledger; see the repository.) Three negative statements
+bound the scope: the meter implies no age-of-universe consequence at
+this precision, supplies no relativistic completion, and inherits the
 exponential solar-system screening of the measured function class
 (Hájek 2026b, section 9).
 
 Three caveats bound the claim. The anchored arm is anchored, not
 assumption-free: a coherent error in the shared calibrator pegs moves
-this reading 1.3-1.6 times as fast as it moves the ladder (that
-gearing is the design's discriminating feature, and also its
-exposure). The functional-form band is a physics systematic, not a
+this reading 1.59 times as fast as it moves the ladder (that gearing
+is the design's discriminating feature, and also its exposure). The functional-form band is a physics systematic, not a
 statistical one: no amount of resampling shrinks it; only a larger
 sample can pin the form, and section 6 shows the in-sample levers
 (composition, resolution) do not. And the conversion itself carries a
@@ -673,9 +771,9 @@ self-consistent flow arm.
 
 2. The anchored arm (78 galaxies) reads H0 = 65.4 +- 5.0 (stat) +-
 0.5 (convergence) km/s/Mpc, with membership variants spanning
-64.8-65.4, validated unbiased over 62-75. The flow arm is
-power-limited at SPARC depth by a mass-to-light pole and returns no
-number.
+64.8-65.4, unbiased at every injected truth from 62 to 73 and valid
+to about 75. The flow arm is power-limited at SPARC depth by a
+mass-to-light pole and returns no number.
 
 3. The dominant systematic is the functional form of the radial
 acceleration relation: 65.4-70.4 across the pre-registered family.
@@ -688,11 +786,14 @@ by at most 0.30 of its own, and the anchored H0 by at most 0.8
 km/s/Mpc, resolving and excluding nothing.
 
 4. The meter shares its calibration pegs with the distance ladder at
-1.3-1.6 times the response. At sigma = 2-3 km/s/Mpc that separates a
-shared-peg systematic (meter reads 75-79) from new physics (meter
-reads 73) from a beyond-the-pegs ladder error (meter reads 67); at
-the current precision the worlds sit at 1.9-2.7, 1.5, and 0.3 sigma
-and nothing is excluded.
+a measured 1.59 times the response. The three tension worlds predict
+meter readings of about 77 (shared pegs short), 73 (new physics), and
+67 (ladder error beyond the pegs); the present reading sits at 2.3,
+1.5, and 0.3 sigma from them, and nothing is excluded. The shared-peg
+and new-physics worlds separate from each other only if the reading
+itself moves high; what a precision of 2-3 km/s/Mpc buys is that a
+reading like the present one would sit more than two sigma from both
+high-reading worlds while remaining consistent with the third.
 
 5. The identity's redshift generalization, a0 rising as cH(z)/2pi, is
 sign-supported at both measured epochs and sign-opposed by the
@@ -716,17 +817,19 @@ paper has not yet undergone journal peer review.
 
 ## Appendix A: transparency and corrections
 
-The program logs its corrections publicly; the five review sessions
+The program logs its corrections publicly; the six review sessions
 behind this paper (one per stage: design, anchored extension, form
-contest, stratification, map and resolution cut) produced the
-following adopted downgrades, listed so they cannot be un-learned:
+contest, stratification, map and resolution cut, robustness battery)
+produced the following adopted downgrades, listed so they cannot be
+un-learned:
 
 - The design stage's as-fired two-arm agreement statement was
   downgraded to consistent-but-uninformative: 73 percent of the
   tested window would have passed the agreement bar. Two early error
   strings from that stage (a two-arm H0 with a combined error, and a
-  flow-arm dispersion of 11.58) are retracted and never quoted; the
-  flow arm has no finite variance at SPARC depth.
+  flow-arm dispersion) are retracted; both are on the record in the
+  stage verdict files and neither is quoted as a result anywhere in
+  this paper. The flow arm has no finite variance at SPARC depth.
 - The anchored extension was initially quoted at half its real
   sharpness: the flat engine's dispersion (10.7) had been attached to
   the hierarchical central. The engine-matched bootstrap gives 5.0,
@@ -735,10 +838,11 @@ following adopted downgrades, listed so they cannot be un-learned:
   injection arm, which exposed the one-sided edge bias at true
   H0 = 85 and produced the 62-75 validity domain.
 - The form contest's injection-calibrated significance bars inherited
-  an unvetted noise model (intrinsic scatter 3.85 times the sky value;
-  no within-curve correlation against a measured 0.62); the two errors
-  cancelled in the separation estimate and compounded in its spread.
-  The band conclusion stands on the uncalibrated statistics; the
+  an unvetted noise model (an intrinsic scatter 2.5 times the sky
+  value, a mean inverse-variance ratio of 3.85; no within-curve
+  correlation against a measured 0.62); the two errors cancelled in
+  the separation estimate and compounded in its spread. The band
+  conclusion stands on the uncalibrated statistics; the
   injection-based sample-size forecast (a factor ~4 too optimistic)
   was retracted.
 - The stratification stage's headline reading (an apparent
@@ -752,10 +856,11 @@ following adopted downgrades, listed so they cannot be un-learned:
   excluded form quoted in section 6c. The same review found the
   fitting engine re-initializes per-galaxy nuisances on cut-world
   refits, stalling 5.5-11.8 likelihood units short on those worlds
-  only; all cut-world numbers quoted here are the corrected, profiled
-  values (the reviewer's endpoint was reproduced to the third
-  decimal), the uncut fits were verified at their profiled optima to
-  0.01, and one subsample scatter was corrected (66.0 to 64.3).
+  only. All cut-world numbers quoted here are therefore the
+  corrected, profiled values (the reviewer's endpoint was reproduced
+  to the third decimal); the uncut fits were verified at their
+  profiled optima to 0.01, and one subsample scatter was corrected
+  (66.0 to 64.3).
 - The robustness battery's verdict was corrected on review: one of
   its three firing axes (a leave-one-out maximum graded against a
   single-draw band) was struck as a mis-specified order-statistic
@@ -773,7 +878,8 @@ text:
 - no flow-arm H0 is ever quoted;
 - the flat-treatment dispersion is an envelope, never a statistic;
 - cut-world acceleration scales are never quoted as readings (their
-  implied H0, 77-84, sits outside the validity domain);
+  implied H0, 77-84, sits outside the validity domain; this is a
+  different object from the conversion branch of section 8);
 - the form band and the statistical error are never compressed into
   one number;
 - the per-galaxy map's axis grades are quoted only with their
@@ -798,6 +904,9 @@ instrument:
 | low-z evolution comparison | data/lit0818_a0z.py | data/lit0818_a0z.txt |
 | z ~ 1 intercept comparison | calcs/stage10h_addendum.py | data/stage10h_addendum.txt |
 | all five figures (gated) + the conversion-branch arithmetic | calcs/paperf_figures.py | papers/figs/figf1-5, data/paperf_figs.txt |
+| the peg-gearing measurement (section 6d; 1.59, flat 1.85) | calcs/round51_gearing.py | data/round51_gearing.txt |
+| whole-catalog reading 67.5; census + reclassification error table | calcs/stage10t_legregrow.py (gates G1b, R1) | data/stage10s_h0meter_gates.txt, data/stage10t_skyread.txt |
+| external-literature quote verification (SML20; references) | session record 2026-09-22/23 | LOG.md entries; the reference list's (v) tags |
 | robustness battery + census leg (sections 3, 6f) | calcs/stage10x_meterrobust.py | data/stage10x_battery.txt, data/stage10x_verdict.txt |
 | battery verification (blind + post-report) | calcs/round50_ga.py, calcs/round50_gb.py | data/round50_ga.txt, data/round50_gb.txt |
 

@@ -161,15 +161,29 @@ P(f"GF-3 PASS: map closed vs verdict (flow {flow_tot:+.1f} = {v_flowtot:+.1f}; "
 
 # --- three worlds (PREDICTIONS F1, scored in the SF annotation) ---
 W_L, W_N = 67.0, 73.0            # meter predictions: worlds L and N
-W_P_LO, W_P_HI = 75.0, 79.0      # world P: meter reads ~75-79 (registered)
+W_P_LO, W_P_HI = 75.0, 79.0      # world P registered range (gamma 1.3..2)
 sL = abs(H0_A - W_L) / sigA
 sN = abs(H0_A - W_N) / sigA
 sP_lo = abs(H0_A - W_P_LO) / sigA
 sP_hi = abs(H0_A - W_P_HI) / sigA
 assert round(sL, 1) == 0.3 and round(sN, 1) == 1.5, (sL, sN)
 assert round(sP_lo, 1) == 1.9 and round(sP_hi, 1) == 2.7, (sP_lo, sP_hi)
+# the measured peg gearing (R51 M1 fix): parse the measurement record
+tgear = ftext('data/round51_gearing.txt')
+GAMMA = float(grep1(tgear, r"two-sided = ([\d.]+)", 'round51_gearing')
+              .group(1))
+GAMMA_FLAT = float(grep1(tgear, r"flat co-read .*gamma = ([\d.]+)",
+                         'round51_gearing').group(1))
+assert abs(GAMMA - 1.59) < 0.01, GAMMA
+W_P_MEAS = W_L * (W_N / W_L) ** GAMMA     # 67 x (73/67)^gamma
+sP_meas = abs(H0_A - W_P_MEAS) / sigA
+assert abs(W_P_MEAS - 76.8) < 0.1 and abs(sP_meas - 2.29) < 0.02, \
+    (W_P_MEAS, sP_meas)
+assert W_P_LO <= W_P_MEAS <= W_P_HI
 P(f"GF-4 PASS: world scoring reproduced (L {sL:.2f} / N {sN:.2f} / "
-  f"P {sP_lo:.2f}-{sP_hi:.2f} sigma at sigma = {sigA})")
+  f"P {sP_lo:.2f}-{sP_hi:.2f} sigma at sigma = {sigA}); measured "
+  f"gearing {GAMMA:.3f} (flat {GAMMA_FLAT:.2f}) -> world P "
+  f"{W_P_MEAS:.1f} at {sP_meas:.2f} sigma")
 
 # --- lock-curve conventions (verbatim data/lit0818_a0z.py) ---
 H0_KM_S_MPC, OMEGA_M = 70.0, 0.3
@@ -256,11 +270,15 @@ ax.text(x0, ytop + 2.3, f"SPARC distance-method census ({tot} galaxies)",
 yleg, hleg = 0.6, 3.0
 box(2, yleg, 44, hleg, f"flow arm ({n_flowB} usable galaxies)\n"
     r"self-consistent solve for $a_0(H_0)$" + "\nconsistency test only:\n"
-    "power-limited at SPARC depth (mass-to-light pole)", '#faf0e6', ec=C_FLOW)
-box(53, yleg, 45, hleg, f"anchored arm ({nA} galaxies)\n"
-    f"{nA_anch} anchored + {nA_uma} Ursa Major + {nA_re} CF4-reclassified\n"
+    "power-limited at SPARC depth (mass-to-light pole)", '#faf0e6',
+    ec=C_FLOW, fs=8)
+box(52, yleg, 46, hleg, f"anchored arm ({nA} galaxies)\n"
+    f"{nA_anch} anchored + {nA_uma} UMa + {nA_re} CF4-reclassified\n"
     r"direct inversion  $H_0 = 2\pi\,a_0/c$" + "\nthe measurement arm",
-    '#eef4fa', ec=C_ANCH, lw=1.4)
+    '#eef4fa', ec=C_ANCH, lw=1.4, fs=8)
+ax.text(75, 4.55, f"curve-quality cuts: {n_anch0} → {nA_anch}, "
+        f"{n_uma} → {nA_uma}", fontsize=7.5, ha='center',
+        color=C_GRAY)
 # arrows (all from box bottom edges to leg-box top edges)
 arrow(x0 + wf * 0.30, ytop - 0.05, 20, yleg + hleg + 0.05)
 arrow(x0 + wf * 0.80, ytop - 0.05, 62, yleg + hleg + 0.05)
@@ -285,13 +303,14 @@ ax.axvline(SH0ES, color='#333333', ls='--', lw=1.0, zorder=2)
 
 rows_f2 = [   # top-down reading order
     ("primary (hierarchical, deep)", H0_A, (pc16, pc84), C_ANCH, 'o', 7.0),
-    ("membership variants", None, (H0_var4, H0_var2), C_ANCH, 's', 6.0),
+    ("membership variants", None, (H0_var4, H0_A), C_ANCH, 's', 6.0),
     ("form family:  BE", fam['BE'][1], None, C_ANCH, 'o', 4.9),
     ("geometric-mean", fam['gm'][1], None, C_GRAY, 'D', 4.2),
     ("bootstrap form", fam['boot'][1], None, C_GRAY, 'D', 3.5),
     ("p = 0.65 tail", fam['p065'][1], None, C_GRAY, 'D', 2.8),
     ("flat treatment (envelope only)", H0_flat, (H0_flat - sig_flat,
-                                                 H0_flat + sig_flat),
+                                                 min(H0_flat + sig_flat,
+                                                     80.0)),
      '#aaaaaa', 'v', 1.5),
 ]
 for lab, x, span, c, mk, y in rows_f2:
@@ -304,6 +323,10 @@ for lab, x, span, c, mk, y in rows_f2:
         ax.plot(span, [y, y], '|', color=c, ms=8, zorder=5)
     else:
         ax.plot([x], [y], mk, color=c, ms=6, zorder=4)
+ax.annotate('', xy=(80.4, 1.5), xytext=(79.4, 1.5),
+            arrowprops=dict(arrowstyle='-|>', color='#aaaaaa', lw=1.2))
+ax.text(79.9, 1.75, f"to {H0_flat + sig_flat:.0f}", fontsize=7.5,
+        color='#888888', ha='center')
 yt = [r[5] for r in rows_f2]
 ax.set_yticks(yt)
 ax.set_yticklabels([r[0] for r in rows_f2], fontsize=8.5)
@@ -317,7 +340,7 @@ ax.text((band_lo + band_hi) / 2, 0.25, "form band 65.4–70.4",
         ha='center', va='bottom', fontsize=8, color='#1c4c78')
 ax.text(VAL_HI - 0.3, 0.82, "validity 62–75", ha='right', va='bottom',
         fontsize=8, color='#888888')
-ax.set_xlim(56, 90); ax.set_ylim(0, 8.8)
+ax.set_xlim(56, 80.5); ax.set_ylim(0, 8.8)
 ax.set_xlabel(r"$H_0$  [km s$^{-1}$ Mpc$^{-1}$]")
 for s in ('left', 'right', 'top'):
     ax.spines[s].set_visible(False)
@@ -410,11 +433,10 @@ ax1.text(0.02, 0.03, "(a)", transform=ax1.transAxes, va='bottom', fontsize=10)
 s = np.linspace(-0.08, 0.08, 100)      # fractional peg-distance rescale
 ax2.plot(100 * s, 100 * (-1.0) * s, color='#333333', lw=1.4,
          label='ladder  ($\\propto s^{-1}$)')
-ax2.fill_between(100 * s, 100 * (-1.3) * s, 100 * (-1.6) * s, color=C_ANCH,
-                 alpha=0.30, lw=0)
-ax2.plot(100 * s, 100 * (-1.3) * s, color=C_ANCH, lw=1.0)
-ax2.plot(100 * s, 100 * (-1.6) * s, color=C_ANCH, lw=1.0,
-         label='meter  (measured 1.3–1.6)')
+ax2.plot(100 * s, 100 * (-2.0) * s, color='#999999', lw=1.0, ls=':',
+         label='deep-limit asymptote (2)')
+ax2.plot(100 * s, 100 * (-GAMMA) * s, color=C_ANCH, lw=1.8,
+         label=f'meter  (measured {GAMMA:.2f})')
 ax2.axhline(0, color='#bbbbbb', lw=0.6); ax2.axvline(0, color='#bbbbbb', lw=0.6)
 ax2.set_xlabel("coherent peg-distance rescale  [%]")
 ax2.set_ylabel(r"response of $H_0$ reading  [%]")
@@ -437,7 +459,8 @@ ax1.plot(zz, lo_band, color=C_ANCH, lw=1.0)
 ax1.plot(zz, hi_band, color=C_ANCH, lw=1.0)
 a0A_u = a0_A / UNIT
 ax1.axhline(a0A_u, color='#888888', ls='--', lw=1.0,
-            label=r"frozen $a_0$ (no evolution)")
+            label=("frozen $a_0$ (no evolution;\nalso the "
+                   "asymptotic-rate branch)"))
 sig_a0 = a0A_u * sigA / H0_A     # linear conversion of the bootstrap sigma
 ax1.errorbar([0.0], [a0A_u], yerr=[[sig_a0], [sig_a0]], fmt='o', color=C_ANCH,
              ms=5, capsize=3, zorder=5, label="this work (anchored leg)")

@@ -1,0 +1,101 @@
+======================================================================
+ROUND 51 ADOPTION RECORD (2026-09-23) -- Proposal F's first journal-
+referee round (fresh session, MNRAS register, readability an explicit
+dimension per the author's standing request). Report:
+REVIEW-ROUND51-OPUS.md (uncommitted). Verdict: MAJOR REVISION, 11
+major + 40 minor findings; 72 of 78 checked numbers reproduced
+exactly; guardrail audit PASS (one header residue). ALL FINDINGS
+ADOPTED; the fixes are in paper draft 0.3 (same-day commit).
+======================================================================
+
+THE HEADLINE (M1) -- verified, measured, and fixed:
+  The paper's peg-gearing claim "1.3-1.6" traced to NO committed
+  computation. Verified by the main session against the record: the
+  only prior response measurements are flow-flat -1.585 (10S G3,
+  data/stage10s_h0meter_gates.txt L7) and flow-hier 0.86 (the 10S
+  leg-B grid, ln(1.2043/0.94040)/ln(80/60) = 0.860); nothing prints
+  1.3. THE FIX WAS RUN (calcs/round51_gearing.py ->
+  data/round51_gearing.txt, executed as a round condition): a
+  coherent +-8% distance rescale injected into the ANCHORED arm under
+  the HIER PRIMARY gives
+    GAMMA = 1.592 (chords 1.592/1.593; linear to 0.001; cold = warm
+    to 1.3e-6),
+  with the flat co-read on the same arm 1.845 and f_ML absorbing the
+  Newtonian share (1.114 -> 0.994 across s). The reviewer's reversal
+  scenario (gamma < 1 would invert the discriminant) does NOT
+  materialize; the discriminant logic survives at the measured value.
+  "gearing 1.3-1.6" is a RETIRED STRING (it survives only in
+  correction notices naming it). World P under the measured gearing:
+  67 x (73/67)^1.592 = 76.8, at 2.29 sigma from the reading; the
+  REGISTERED range 75-79 = the gamma in [1.3, 2.0] span (1.93-2.73
+  sigma) and stands as registered, now correctly attributed (M2).
+
+THE OTHER WRONG/UNTRACEABLE NUMBERS (all verified, all fixed):
+  M5  "within 15 percent" -> the source prints 21% (lit0818_a0z.txt
+      L49/L54); the paper now quotes their two numbers (0.47 vs 0.39
+      x 1e-10, ~20%).
+  M6  "intrinsic scatter 3.85x" -> 3.85 is the INVERSE-VARIANCE
+      ratio (10U verdict L44-46); scatter ratio 0.08/0.0324 = 2.47;
+      both now stated.
+  M10 "4-9 percent anchor errors" -> true for the nine TRGB members
+      only; SBF 5.2%, SN II 15 -> 15.2% (no improvement); fixed in
+      section 3 AND corrected in the 10T verdict by dated appendix.
+  m4  "within 0.2" -> the LT co-read span vs the primary is 0.26;
+      now "within 0.3".
+  m20 "near 68" -> the committed G1b whole-catalog hier a0 1.0437e-10
+      = 67.50; now quoted with its gate.
+
+STRUCTURAL ADOPTIONS:
+  M7  Table 1 (the error budget) added at the top of section 6,
+      including the conversion branch as a named excluded row (+12.8,
+      excluded by registration, sign-disfavored) so the largest
+      lever is visible rather than resident in a discussion section.
+  M9  The relation, the four family members' nu equations, the
+      hierarchical likelihood, and the a0->H0 conversion constant now
+      appear in section 4 (forms transcribed from the engine's nu
+      families and cross-checked against the 5G/5J/5O house
+      definitions: BE = [1-exp(-sqrt y)]^-1; tail =
+      [1-exp(-y^0.65)]^(-1/1.3); gm implicit nu = 1+n_BE(y^3/4
+      sqrt nu); boot implicit nu = 1+n_BE(y nu)).
+  M3  The "separates X from Y" overclaim re-scoped everywhere to the
+      reading-vs-worlds form (N and P differ by only 2-4 and separate
+      from each other slowly; the asymmetric statement is now the
+      quoted one).
+  M8  "both rows smaller than the band" scoped to conventional
+      excursions with the +4.1 self-consistent excursion named.
+  M11 Coverage story unified (6b now names coverage best-supported,
+      Holm p = 0.050, and points to 6f's point-cut isolation).
+  M4  f_ML = 1.05 stated as a multiplier on the catalog 0.5
+      (Upsilon_disk[3.6] = 0.53).
+
+MINORS: all 40 executed in 0.3 (highlights: injection coverage
+worded "unbiased at every injected truth 62-73, valid to ~75" +
+residual-bias allowance 1.3-2.0 carried as a budget row; paired-boot
+P range-quoted 0.56-0.62; "block scatter" defined at first use;
+bulge-convention sensitivity disclosed at the map totals; the
+6b/6f-6c point-cut sentence rewritten parseable; membership-variant
+figure bar extended to the primary with the caption note; Fig 1
+box overflow fixed + quality-cuts label; Fig 2 axis capped at 80.5
+with the flat envelope clipped-arrow to 87; Fig 4b redrawn at the
+measured gearing with the deep-limit asymptote; Fig 5a legend
+carries both meanings of the dashed line; title "a first execution";
+abstract trimmed to 250 with the 0.8 dropped; six uncited references
+wired into 3/6d/8/9; Gillot (2026); credence pointer added;
+App A "six sessions" + retraction-phrasing fix; App B +3 rows).
+
+VERIFICATION RECORD (the verify-reviewer-math rule): M1's source
+claims re-derived from the committed files (exact); M2/M3 arithmetic
+recomputed (74.9/76.9/79.5 at gamma 1.3/1.6/2.0; 2.29 sigma at
+1.592); M5/M6/M10/m4/m20 checked against their sources (exact); the
+gearing fix run fresh with a cold-start control. No reviewer number
+failed verification. The round also confirmed 72/78 paper numbers
+exactly and the full guardrail sweep PASS -- the one residue (the
+draft-header "KK98-251 closed") is fixed.
+
+STATE AFTER ADOPTION: paper = draft 0.3; figures rebuilt, gates
+GF-1..GF-6 PASS including the new measured-gearing assertions;
+abstract 250 words; remaining [ASSEMBLY] blockers: the SML20 AJ-PDF
+cross-check (accepted-arXiv-source verification stands) and the final
+abstract recount at assembly. Credences 53/8 untouched (paper round).
+The primary, the band, the stat, the validity domain: unchanged.
+======================================================================

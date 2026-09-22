@@ -4,7 +4,7 @@ legs (10T): leg A = 78 (41+26+11); flow leg = 71
 first light: H0_A = 65.36 +- 4.99 (pct 60.8/65.4/70.5); family 65.4-70.4; variants 64.8/65.3; flat 76.7 env 10.71
 GF-2 PASS: first-light values parsed + lock-linearity closed (<0.06)
 GF-3 PASS: map closed vs verdict (flow -48.7 = -48.7; anch +63.3 = +63.3; UGC03580 -47.8 [52%]; IC2574 +12.5 [37%])
-GF-4 PASS: world scoring reproduced (L 0.33 / N 1.53 / P 1.93-2.73 sigma at sigma = 4.99)
+GF-4 PASS: world scoring reproduced (L 0.33 / N 1.53 / P 1.93-2.73 sigma at sigma = 4.99); measured gearing 1.592 (flat 1.84) -> world P 76.8 at 2.29 sigma
 GF-5 PASS: lock conventions recomputed (a0(0) = 1.0824, a1_lock = +0.52); z~1 rows reproduce 2.30/0.66/0.12 sigma
 GF-6 PASS: conversion-branch arithmetic (factor 1.195; asymptotic-branch reading 78.1, band 78.2-84.1 -- outside the validity domain, quoted only as the section-8 branch disclosure)
 wrote papers/figs/figf1_census.png/.pdf

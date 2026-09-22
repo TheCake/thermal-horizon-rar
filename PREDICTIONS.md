@@ -846,6 +846,19 @@ in-catalog family contest on the anchored leg), then BIG-SPARC N. The
 F1 sentence "current 66 ± 13 … separates nothing" is superseded at
 report grade by this annotation.*
 
+*Annotation 2026-09-23 (measurement correction, append-only, no
+flip): the F1 sentence "the meter's measured response band is
+1.3–1.6 by treatment, 10S G3" is WRONG — no committed computation
+produces 1.3–1.6 (10S G3 measured one treatment on the flow
+subsample, −1.585; the 10S leg-B hier grid gives 0.86; neither is
+the anchored arm). The anchored-arm PRIMARY response was measured
+2026-09-23 (calcs/round51_gearing.py, Round-51 condition): GAMMA =
+1.59 (flat co-read 1.85; deep-limit asymptote 2 stands). The
+registered world-P range 75–79 is UNCHANGED as registered and now
+correctly attributed: it spans gamma in [1.3, 2.0]; under the
+measured 1.59, world P predicts ≈76.8 (2.3σ at the current stat).
+The annotation of 2026-09-20 item (a) inherits this correction.*
+
 *Annotation 2026-09-22 (citation correction, append-only, no flip):
 the F2 arXiv string "2008.07524" is a WRONG ID — that ID resolves to
 an unrelated quantum-computing paper (Lockwood & Si). The Haslbauer,
