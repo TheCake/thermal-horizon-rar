@@ -364,3 +364,32 @@ cos-10y-organizer. Review protocol: GA blind pre-committed before
 the round report is read; fresh-session review round; GB
 re-computation of every load-bearing reviewer number (standing
 rules).
+
+## POST-ROUND ANNOTATION (2026-09-23, Round 52 conditions 9/10;
+## append-only — the registered text above is not edited)
+
+(i) A1-ii's "qualifies ZERO galaxies ... run-1 print" is corrected:
+the per-galaxy y-overlap match qualifies ONE anchored galaxy
+(ESO563-G021, contrast -0.1379, GB-13 exact), and no overlap count
+appears in data/stage10y_gates_r1.txt — the actual run-1 evidence is
+that the run-1 construction returned NaN below 2 qualifying galaxies,
+driving every run-1 wiring and branch rate to 0.000. The conclusion
+(1 << N_min = 8, construction design-dead) is unaffected.
+
+(ii) A1-iii's Io = 0 census was decided on the RUN-1 (broken-parse)
+Rdisk values; the bug inflated Rdisk and therefore biased TOWARD
+Io = 0. It was re-confirmed on the corrected run-2 census before the
+sky ran, and Round 52 confirmed it structural (every sub-20-arcsec
+anchored point sits at R/Rd 0.078-1.089, median 0.485). Conclusion
+sound; the decision order was not, and is recorded here.
+
+(iii) Section 5's WORLD-R power clause says "B4-with-S1-surviving"
+(text: survive = -2 SE) while the code counts S1 <= -1 SE. Measured
+both ways (R52 + GB-12): 0.815-0.863 at -2 SE, 0.968-0.970 at -1 SE;
+the >= 0.60 bar passes under either reading. The coded -1 SE form is
+the as-fired one.
+
+(iv) The registered letter string for branch B4 is superseded by the
+Round-52 replacement letter in data/stage10y_verdict.txt
+(Y-EXCLUDED-ANGLE-FAVOURED ...); "B4" remains the grammar's branch
+output (metadata), never the stage summary.

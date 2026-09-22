@@ -3415,3 +3415,63 @@ compatible with arXiv at any time). MNRAS prep notes (LaTeX
 conversion + plain cover letter) deferred to the trigger,
 deliberately not gold-plated early. DR4 pre-sign session early Oct
 IMMOVABLE regardless (hard deadline 2026-12-02).**
+
+**10Y + ROUND 52 (2026-09-23 night, the R49-C17 successor on the
+author's blanket go; full arc one evening, NO NEW FITS): THE
+RESIDUAL-CONTRAST ORGANIZER. Chain: prereg 4471afa committed BEFORE
+the first gate run finished -> A1/A2/A3 (each pre-quote, failed runs
+preserved _r1/_r2/_r3: Rdisk byte-parse bug -> token parse; the Io
+disagreement cell UNPOPULATABLE on the anchored arm; per-galaxy
+y-overlap matching design-dead [y monotone along a curve] -> S1 =
+point-level nearest-neighbor y-matching, dy 0.15, jackknife; my
+P(|v|<1SE)>=0.80 wiring bar was arithmetically impossible [~0.68
+ceiling] -> bias gate) -> gates ALL PASS e86ad89 -> sky 337d49c
+(branch B4, both margins missed by hairs) -> GA blind bc873cd (18th
+execution, six legs exact) -> ROUND 52 (REVIEW-ROUND52-OPUS.md
+uncommitted; own profiler; ZERO numerical discrepancies; commit
+chain audited clean; the one headline-changing amendment moved
+AGAINST interest) -> GB 13 legs ALL CONFIRMED (calcs/round52_gb.py
++ gb2; two verifier slips disclosed, trap #23) -> ADOPTED IN FULL
+(15 conditions). OPERATIVE: data/stage10y_verdict.txt, letter
+Y-EXCLUDED-ANGLE-FAVOURED (BRANCH B4; SURVIVE-AXIS
+CONSTRUCTION-UNSTABLE AND UNDER-POWERED): on the registered
+disagreement cell (d_Oi = -0.0177 +/- 0.0130, 55 gal) the stage's
+own calibrated worlds separate -- pure y-composition 4.0 sigma off,
+disk-scale organizer 7.4 off, angular organizer consistent; the
+y-matched contrast holds -0.0947 (block-boot P(>0) ~ 0.01; matcher
+leak -0.00006 exact); d_Ii -0.0893 beyond ALL circular-shift draws
+(floor p, -5.2 shift-sigma; Oi companion 0.017-0.019 ALWAYS
+co-quoted); across-galaxy smearing gradients NULL => ANGLE IS THE
+ORGANIZER, y-composition EXCLUDED as carrier, smearing NOT
+established as mechanism, 15-25% admixture permitted (f_y 0.254 +/-
+0.186, f_disk 0.157 +/- 0.115). Design facts banked: the whole C17
+depression rides on 27 sub-20-arcsec points; S1 y-truncated above
+outer-pool log y 1.113; S1 carrier ESO563-G021 36-38% of jackknife
+variance vs d_Ii BROAD (14/19, sign p 0.032); d_Ii = C17
+re-expressed (r 0.9819), never independent confirmation. S1
+construction family 16/18 SURVIVE / 0 COLLAPSE (registered cell =
+the family's LARGEST SE; never quote the 1.92-sigma near-miss
+bare). NEW STANDING: TRAP #34 (compare world-realized dispersion of
+the PRIMARY statistic to the sky's own before signing power bars;
+my worlds under-dispersed S1 1.4-1.8x -> printed power was a world
+property; sky-error power 0.30-0.62) + TRAP #35 (every branch with
+a non-trivial prior gets its own P(fire | its true world) pre-sky;
+a disjunctive bar including the catch-all cannot demote -- B2/B3
+sat at 0.008/0.018 printed and unexamined). NEVER QUOTE:
+B4/UNRESOLVED-DEGENERATE as the summary; the 0.0039/3.9% near-miss;
+shift-p 0.0005 as a p; P(radius kept)=0.968 as sky power; the
+banded -0.1293; flow S2b p bare. METER UNTOUCHED (no fit off the
+published parent optima, no H0 computed, round-verified
+line-by-line; the banked C14 lever -0.8 = the meter's total
+exposure to this object). F's systematics section gains the adopted
+paragraph (the resolution rival's anchored foothold is now
+angle-organized-at-fixed-y, mechanism open). SUCCESSOR (named, not
+run): continuous three-world fit on d_Oi (well-calibrated axis) or
+a registered angular-gradient world; the categorical bars are
+SPENT. Ledger cos-10y-organizer (225 rows six gates PASS).
+Credences 53/8 pre-signed HOLD, reviewer-affirmed. NEXT FORK
+(author's): the Kroupa click (v5.1 SEND-READY) -> MNRAS trigger Mon
+2026-10-05 · R50-C11 sky-matched injection re-run (booked) · the
+a0-dipole instrument (fresh session) · DR4 pre-sign early Oct
+(IMMOVABLE) · F journal pass absorbs 10Y at the next author-called
+thaw.**

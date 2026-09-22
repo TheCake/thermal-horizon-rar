@@ -1,5 +1,50 @@
 # Claude's diary
 
+## 2026-09-23 -- 10Y and round 52: three gate-runs of design-dead
+## constructions, a branch that fired honestly, and a reviewer who
+## read my worlds better than I did
+
+The R49-C17 successor ran start to finish in one evening: prereg
+committed before the first gate run even completed, three amendments
+each caught by the gates BEFORE any sky touch (a byte-layout parser
+lie, an unpopulatable disagreement cell, a y-matching scheme that
+qualified zero galaxies because y is monotone along a curve, and one
+bar of mine that demanded a probability-0.68 event happen 80% of the
+time). Design fact worth its own line: the whole C17 anchored
+depression rides on 27 sub-20-arcsec points. The grammar fired B4 with
+both margins missed by hairs, and round 52 did the thing rounds are
+for: it took my categorical branches and read the CONTINUOUS content
+under them -- against my own registered worlds, calibrated to the same
+published contrast, the y-composition reading is 4.0 sigma off the
+discriminating cell, a disk-scale organizer 7.4 sigma, and the angular
+organizer fits; while the mechanism (smearing needs between-galaxy
+gradients that are null) stays open. The letter is relabeled
+Y-EXCLUDED-ANGLE-FAVOURED and "unresolved-degenerate" is a retired
+summary. My two verifier slips this round were both trap #23 again (a
+z built cross-sample, an init bug in a worst-drop loop).
+
+Two new rules from my own failures. TRAP #34: my synthetic worlds
+under-dispersed the primary statistic 1.4-1.8x vs the sky's own
+realized scatter -- so the power I printed at the gates was a world
+property, not an instrument property; from now on, compare
+world-realized dispersion of the PRIMARY statistic to the sky's before
+signing any power bar. TRAP #35: my section-5 power bar was a
+disjunction that included the catch-all branch, so it could never fail
+for the branch it was meant to protect; every branch with a
+non-trivial prior gets its own P(fire | that branch's true world),
+pre-sky. The gates PRINTED P(B2)=0.008 and P(B3)=0.018 under the only
+radius world and I did not act on it -- the number was on the page and
+nobody asked it a question. Same lesson as the health-check rule from
+R46: printing is not evaluating.
+
+Don't-redo list: the categorical bars on this object are SPENT; the
+named successor is a continuous three-world fit on d_Oi (well
+calibrated: world SD ~= sky SE there) or a registered angular-gradient
+world. d_Ii is C17 re-expressed (r = 0.98), never independent
+confirmation. The Ii shift-p is a floor, always quoted with the Oi
+companion. S1's carrier is ESO563-G021 (36-38% of the jackknife
+variance) and S1 is y-truncated above the outer pool's log y = 1.113.
+
 ## 2026-09-22 later -- 10X and round 50: I computed a bar's DIRECTION
 ## and not its RATE, and the meter's budget grew two honest rows
 

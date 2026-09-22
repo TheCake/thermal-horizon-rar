@@ -1,0 +1,73 @@
+
+====================================================================
+ROUND 52 GB (post-report; reviewer numbers re-computed)
+
+-- GB-1 exact noise-free world signatures --
+  WORLD-D delta = 0.11333 (rev 0.11333)
+  WORLD-Y: plain -0.08570  d_Ii -0.09554  d_Oi -0.06991  S1 -0.00006
+  WORLD-R: plain -0.08570  d_Ii -0.08570  d_Oi +0.00000  S1 -0.08570
+  WORLD-D: plain -0.08570  d_Ii -0.11333  d_Oi -0.11333  S1 -0.08508
+  [rev: Y -0.08570/-0.09554/-0.06991/-0.00006; R -0.08570/-0.08570/+0.00000/-0.08570; D -0.08570/-0.11333/-0.11333/-0.08508]
+
+-- GB-2 z rows + Oi mixtures --
+  sky d_Oi -0.017739 +/- 0.012984 (n 55); z(Y) +4.02 [rev +4.02], z(R) -1.37 [rev -1.37], z(D) +7.36 [rev +7.36]
+  f_y = 0.254 +/- 0.186 [rev 0.254 +/- 0.186]; f_disk = 0.157 +/- 0.115 [rev 0.157 +/- 0.115]
+
+-- GB-3 both-sides-restricted d_Oi --
+  d_Oi (both-sides gal): -0.03574 +/- 0.02397 (n 16) [rev -0.03574 +/- 0.02397]; z(Y) +1.43 [+1.83], z(R) -1.49 [-1.49], z(D) +3.24 [+3.24]
+
+-- GB-4 S1 construction grid (own brute matcher) --
+  dy 0.10/minw 5: -0.10971 +/- 0.04057 = -2.704 SE [rev -2.744]
+  dy 0.15/minw 3: -0.09188 +/- 0.04493 = -2.045 SE [rev -2.061]
+  dy 0.15/minw 5: -0.09475 +/- 0.04989 = -1.899 SE [rev -1.922]
+  dy 0.20/minw 5: -0.09485 +/- 0.04181 = -2.269 SE [rev -2.292]
+  dy 0.30/minw 10: -0.09300 +/- 0.04112 = -2.261 SE [rev -2.282]
+  dy 0.50/minw 3: -0.07904 +/- 0.03697 = -2.138 SE [rev -2.146]
+  18-cell survive count = 16 [rev 16]
+  galaxy-weighted: -0.08497 = -1.661 SE [rev -0.08497 = -1.692]
+  cross-galaxy-only: -0.09657 = -1.983 SE [rev -0.09657 = -2.006]
+
+-- GB-5 shift-null SDs, own stream (4000 draws) --
+  null SD(d_Ii) = 0.017113 [rev 0.017083]; SD(d_Oi) = 0.008279 [rev 0.008232]
+  sky in shift units: Ii -5.22 [rev -5.23], Oi -2.14 [rev -2.16]
+  Ii exceedances in 4000 = 0 (floor confirmed) [rev 0 of 20000]
+
+-- GB-6 S1 pool-rebuilt galaxy bootstrap (4000, own seed) --
+  SD = 0.038514 [rev 0.038776]; P(S1 > 0) = 0.0088 [rev 0.0097]; 95% (-0.1683, -0.0170) [rev (-0.1685, -0.0174)]
+
+-- GB-7 carriers --
+  top jackknife-variance carrier: ESO563-G021 share 0.363 [rev ESO563-G021 0.378]; top-two 0.524 [rev 0.533]
+  drop ESO563-G021: S1 = -0.065180 [rev -0.065180]
+  d_Ii breadth: 14/19 negative, sign p = 0.0318 [rev 14/19, 0.0318]; worst single drop -> +0.00000 [rev -0.07024]
+
+-- GB-8 S1 y-truncation + inner geometry --
+  outer-pool log y ceiling = 1.113 [rev 1.113]; dropped inner points (5):
+    NGC0891 log y +1.250 (window 2) [rev list incl. NGC0891 1.25, NGC5005 1.345/1.152, NGC6946 1.812, NGC7814 1.637]
+    NGC5005 log y +1.345 (window 0) [rev list incl. NGC0891 1.25, NGC5005 1.345/1.152, NGC6946 1.812, NGC7814 1.637]
+    NGC5005 log y +1.152 (window 3) [rev list incl. NGC0891 1.25, NGC5005 1.345/1.152, NGC6946 1.812, NGC7814 1.637]
+    NGC6946 log y +1.812 (window 0) [rev list incl. NGC0891 1.25, NGC5005 1.345/1.152, NGC6946 1.812, NGC7814 1.637]
+    NGC7814 log y +1.637 (window 0) [rev list incl. NGC0891 1.25, NGC5005 1.345/1.152, NGC6946 1.812, NGC7814 1.637]
+  sub-20-arcsec R/Rd: range 0.078-1.089, median 0.485 [rev 0.078-1.089, 0.485]
+
+-- GB-9 signature specificity (400 draws/world, own seeds) --
+  WORLD-R: P(d_Ii deep) 0.895, sig_ang 0.615, sig_dsk 0.025  [rev ang 0.618 dsk 0.022]
+  WORLD-D: P(d_Ii deep) 0.993, sig_ang 0.000, sig_dsk 0.993  [rev ang 0.000 dsk 0.990]
+  WORLD-Y: P(d_Ii deep) 0.807, sig_ang 0.000, sig_dsk 0.807  [rev ang 0.000 dsk 0.874]
+
+-- GB-10 dispersion audit (trap #28) --
+  anchored point SD = 0.0570 [rev 0.0570]; inner-27 SD = 0.1596 [rev 0.1596]
+  realized S1 SD: registered world 0.0268 [rev 0.0272]; sky-matched noise 0.0251 [rev 0.0257]
+  power at fixed sky bars (sky-matched noise): P(S1 <= -2x0.0493) = 0.300; P(S1 <= -2x0.0388) = 0.618 [rev ~0.40 / ~0.58 ballpark]
+
+-- GB-11 d_Ii vs the published C17 contrast --
+  Pearson r = 0.9819 over 19 galaxies [rev 0.9819 over 19]; means -0.08931 vs -0.08603
+
+-- GB-12 P(S1 <= -2 SE_draw | WORLD-R, registered noise) = 0.815 [rev 0.817-0.863]
+
+-- GB-13 anchored overlap-match qualifiers: [('ESO563-G021', -0.13788217086153542)] [rev ESO563-G021 -0.13788]
+
+GB complete; wall-clock 0.2 min
+
+-- GB addendum (verifier corrections, disclosed) --
+  (a) WORLD-Y d_Oi on the both-sides-16 subsample = -0.07950; z(Y) = +1.83 [reviewer +1.83; the GB-3 +1.43 used the 55-galaxy world value and is RETIRED]
+  (b) d_Ii worst single drop -> -0.10955 (-22.7% of the mean) [reviewer -0.07024 / 21.3%; the GB-7 +0.00000 was an init bug in the verifier, disclosed]

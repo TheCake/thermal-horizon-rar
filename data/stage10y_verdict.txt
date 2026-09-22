@@ -1,0 +1,203 @@
+================================================================================
+STAGE 10Y -- THE RESIDUAL-CONTRAST ORGANIZER: OPERATIVE VERDICT
+(Round-52-adopted). 2026-09-23. This file supersedes the letter line of the
+sky read (data/stage10y_skyread.txt, commit 337d49c, preserved verbatim).
+Chain: prereg 4471afa (committed BEFORE the first gate run completed) ->
+A1 28fd35f / A2 217744f / A3 2f15b4a (each pre-quote, each with the prior
+gate run preserved: _r1/_r2/_r3) -> gates ALL PASS e86ad89 -> sky 337d49c ->
+GA blind bc873cd (18th protocol execution, six legs ALL OK) -> ROUND 52
+(REVIEW-ROUND52-OPUS.md, uncommitted; reviewer's own profiler + parsers;
+ZERO numerical discrepancies; commit-chain audit CLEAN, one against-interest
+amendment noted) -> GB (calcs/round52_gb.py + round52_gb2.py ->
+data/round52_gb.txt: every load-bearing reviewer number re-computed; all
+CONFIRMED, three adjudications + two disclosed verifier slips, trap #23) ->
+adopted in full (15 conditions).
+================================================================================
+
+THE LETTER (Round-52 replacement, adopted; the as-fired string
+"B4 / UNRESOLVED-DEGENERATE" is RETIRED as the stage summary and never
+quoted as such):
+
+Y-EXCLUDED-ANGLE-FAVOURED (BRANCH B4; SURVIVE-AXIS CONSTRUCTION-UNSTABLE
+AND UNDER-POWERED)
+
+  The registered grammar returns branch B4, and that return is correct and
+  construction-robust: neither disagreement-cell signature fires on the
+  registered between-galaxy error route, so no reachable value of the
+  y-matched contrast could have produced B2 or B3. But "unresolved" is not
+  what the stage measured. Read as continuous quantities against the
+  stage's own pre-registered synthetic worlds -- all calibrated to
+  reproduce the published -0.0857 contrast exactly, so the plain contrast
+  itself carries no information -- the candidates separate cleanly on the
+  disagreement cell. The cell reads -0.0177 +/- 0.0130 over 55 galaxies,
+  against predictions of -0.0699 for a pure acceleration-composition
+  world, +0.0000 for a pure angular world, and -0.1133 for a disk-scale
+  world calibrated the same way: 4.0, 1.4 and 7.4 sigma. Restricted to the
+  sixteen galaxies that carry inner points (with the world predictions
+  computed on the same subsample), the comparison reads 1.8, 1.5 and 3.2
+  sigma. The composition reading is excluded a second time on the
+  y-matched contrast itself: -0.0947 with a leave-one-galaxy-out error of
+  0.0493, a galaxy-block bootstrap that puts P(S1 > 0) at 0.009-0.010, and
+  a matcher measured to remove a linear log-acceleration trend exactly
+  (noise-free leak -0.00006) and to stay unbiased at half, double and
+  curved trend strength. The three pooled detrend co-reads keep -0.063 to
+  -0.084.
+
+  The depression itself is real and aligned with the inner radii: the
+  inner-cell delta is -0.0893 +/- 0.0349, negative in fourteen of nineteen
+  galaxies (sign test p = 0.032), and a circular-shift null that preserves
+  each curve's own autocorrelation places it beyond all 2000 registered
+  draws (p <= 0.0005, the 1/2001 floor; beyond all 20 000 in the review's
+  re-run; -5.2 shift-null sigma). That discharges the autocorrelation
+  caveat this successor was registered to break, and the composition
+  caveat falls in the same pass. The third caveat is NOT broken: the
+  across-galaxy predictions of beam smearing are null (innermost-angle
+  rho = +0.019, p = 0.94; distance rho = -0.318, p = 0.18, right sign, not
+  significant), so the depression is organized BY angle without the
+  between-galaxy gradient smearing would also produce. Angle is the
+  organizer; smearing is not established as the mechanism.
+
+  What stays open is the size of the non-angular admixture: on the Oi axis
+  the two-world mixtures allow a composition fraction 0.254 +/- 0.186 and
+  a disk-scale fraction 0.157 +/- 0.115, and the same circular-shift null
+  puts the small residual Oi depression at p = 0.017-0.019. A fifteen to
+  twenty-five per cent component is permitted and nominally present.
+
+  Two instrument facts bound all of this. The survive/gap distinction is
+  not a measurement: across matching windows 0.10-0.50 dex and window
+  minima 3-10, SIXTEEN of eighteen constructions cross the two-error bar
+  and none collapses (value family -0.079..-0.110, ratio family
+  -1.69..-2.76 [GB SE-convention band -1.66..-2.75]), and the registered
+  construction carries the largest error in the family. And the registered
+  synthetic worlds under-disperse the S1 statistic by 1.4-1.8x relative to
+  the sky's own realized scatter (world-realized SD 0.0268-0.0272
+  registered / 0.0251-0.0257 sky-matched noise, vs sky 0.0493 jackknife /
+  0.0385-0.0388 block bootstrap), so the gate-printed 0.968 is
+  registered-world power, not sky power: at the measured error a true
+  angular world of the published amplitude clears the survive bar only
+  ~0.30 (jackknife bar) to ~0.62 (bootstrap bar) of the time -- B4 on the
+  survive axis was the modal outcome even under a true angular reading.
+
+  Nothing here moves the meter. H0 = 65.4 +/- 5.0 (stat) +/- 0.5, the form
+  band 65.4-70.4 and the validity domain 62-75 are untouched: the stage
+  runs no fit off the published parent optima and computes no Hubble
+  constant (verified line-by-line by the round). Flow-leg statements carry
+  the R48-C3 0.71-sigma baseline grade; the flow leg is null on every axis.
+
+THE WORLD-COMPARISON TABLE (C2; exact noise-free signatures, GB-confirmed
+to the digit; WORLD-Y/WORLD-R = registered, WORLD-D = reviewer-added,
+step -0.11333 inside 1.5 Rd; ALL calibrated to the published plain
+contrast -0.0857):
+                     plain      d_Ii      d_Oi        S1
+    SKY            -0.0857   -0.0893   -0.0177   -0.0947
+    WORLD-Y        -0.0857   -0.0955   -0.0699   -0.0001
+    WORLD-R        -0.0857   -0.0857   +0.0000   -0.0857
+    WORLD-D        -0.0857   -0.1133   -0.1133   -0.0851
+  z(sky vs world) on d_Oi, 55-galaxy sample / 16 both-sides subsample
+  (subsample world predictions recomputed on the subsample; WORLD-Y there
+  = -0.0795):
+    WORLD-Y +4.02 / +1.83;  WORLD-R -1.37 / -1.49;  WORLD-D +7.36 / +3.24
+  Oi-axis mixtures: f_y = 0.254 +/- 0.186; f_disk = 0.157 +/- 0.115.
+
+THE S1 CONSTRUCTION FAMILY (C3; 18 cells dy x minw + 2 variants):
+  survive 16 / gap 2 / collapse 0; values -0.0790..-0.1097; ratios
+  -1.69..-2.76 (reviewer) / -1.66..-2.75 (GB, leave-out-set convention);
+  registered cell (0.15, 5) = -0.0947 +/- 0.0493 = -1.90..-1.92, the
+  LARGEST SE in the family; galaxy-weighted -0.0850 (-1.66..-1.69);
+  cross-galaxy-windows-only -0.0966 (-1.98..-2.01).
+
+THE BOOTSTRAP CO-READ (C4): pool-rebuilt galaxy-block bootstrap (4000):
+  SD 0.0385-0.0388, P(S1 > 0) = 0.0088-0.0097, 95% interval
+  (-0.168, -0.017). The jackknife stays primary because it alone
+  propagates the window-pool dependence; it is also the loosest route.
+
+THE TWO NULL ROUTES (C5; never conflate): between-galaxy SEs 0.0349 (Ii)
+  / 0.0130 (Oi) vs circular-shift null SDs 0.0171 / 0.0082-0.0083. Sky in
+  shift units: Ii -5.2, Oi -2.1. The Ii shift-p is the 1/2001 FLOOR (0
+  exceedances at 2000, 4000 and 20 000 draws); the Oi companion is
+  0.017-0.019 and is ALWAYS quoted with it.
+
+SIGNATURE SPECIFICITY (C6; measured, 400-500 draws/world): sig_ang is a
+  clean angular detector (power 0.615-0.618 under WORLD-R; false rate
+  0.000 under both rivals). sig_dsk is NOT a disk detector (0.990-0.993
+  under WORLD-D vs 0.807-0.874 under WORLD-Y; D:Y likelihood ratio ~1.1-
+  1.2); B3's specificity was supplied entirely by its S1-survive conjunct.
+
+NEW STANDING RULES (C7/C8; into DIARY + every future prereg template):
+  TRAP #34 (the 10Y instance of the trap-#28 family): before signing any
+    power bar, compare the synthetic world's realized dispersion of the
+    PRIMARY statistic with the sky's own realized dispersion of the same
+    statistic; a world tighter by more than ~20% makes the printed power a
+    world property, and it must be labelled as such. (Here 0.027 world vs
+    0.049/0.039 sky = 1.4-1.8x.)
+  TRAP #35: a disjunctive power bar that includes the catch-all branch
+    cannot demote a discriminating branch. Every branch with a
+    non-trivial registered prior gets its own measured P(fire) under a
+    world in which that branch is TRUE, before the sky runs. (Here B2/B3
+    had 0.008/0.018 under the only radius world registered, printed
+    pre-sky and not acted on.)
+
+RECORD CORRECTIONS (C9/C10): executed as a dated append-only annotation in
+  PREREG-CONTRAST-10Y.md -- the A1 overlap-match count (ONE qualifier,
+  ESO563-G021 at -0.1379, not zero; the run-1 evidence was the NaN-driven
+  zeros, not an overlap print), the A1-iii decision order (Io = 0 was
+  decided on the broken-parse census -- a bug that biased TOWARD the
+  conclusion -- and re-confirmed on the fixed run-2 census; independently
+  confirmed structural: every sub-20-arcsec anchored point sits at
+  R/Rd 0.078-1.089, median 0.485), and the section-5 WORLD-R clause
+  text/code mismatch (-2 SE text vs -1 SE code; measured 0.815-0.863 at
+  -2 SE and 0.968-0.970 at -1 SE; passes either way).
+
+DISCLOSURES (C11/C12):
+  - S1 is y-TRUNCATED on design: five of the 27 inner points have no
+    outer counterpart within 0.15 dex (outer-pool log y ceiling 1.113;
+    NGC0891 +1.25; NGC5005 +1.345, +1.152 [the +1.152 point has window 3
+    < 5]; NGC6946 +1.812; NGC7814 +1.637) -- S1 estimates the depression
+    only where inner y is representable in the outer pool, a narrower
+    object than S0 or d_Ii.
+  - S1 carrier concentration: ESO563-G021 carries 5/22 matched points and
+    36-38% of the jackknife variance (top two 52-53%); dropping it gives
+    S1 = -0.0652 (block-boot P(>0) = 0.022). d_Ii by contrast is BROAD:
+    14/19 negative (sign p 0.0318); worst attenuating drop -0.0702, worst
+    deepening drop -0.1096 (both ~21-23% of the mean).
+  - d_Ii is a RE-EXPRESSION of the published C17 contrast (per-galaxy
+    Pearson r = 0.9819 over the 19 shared galaxies), banked under a new
+    null, never as independent confirmation that the depression exists.
+
+NEVER QUOTE (adds to the standing list):
+  - "S1 missed the survive bar by 0.0039 dex / by 3.9%", and "1.92 sigma"
+    bare without the construction family (-1.7..-2.8) and the bootstrap
+    P(S1 > 0) ~ 0.01.
+  - "B4" / "UNRESOLVED-DEGENERATE" as the stage summary (branch metadata
+    only).
+  - "shift-p = 0.0005" as a measured p (it is the floor) or without its
+    Oi companion 0.017-0.019.
+  - "P(radius kept | WORLD-R) = 0.968" as the instrument's sky power.
+  - the banded co-read "-0.1293 +/- 0.0475" (a one-band statistic,
+    retired by A2).
+  - the flow "S2b p = 0.031-0.035" bare (anti-smearing-signed, one of
+    four uncorrected tests, on the 0.71-sigma-baseline leg).
+  - "the per-galaxy y-overlap match qualifies zero galaxies" (one:
+    ESO563-G021, -0.1379).
+
+SUCCESSOR (C14, named, not run): the categorical bars are SPENT; the
+  discriminating axis is d_Oi and it is well calibrated (world SD
+  0.0117-0.0124 vs sky SE 0.0130). Either a continuous three-world fit on
+  d_Oi, or a registered ANGULAR-GRADIENT world (theta-dependent
+  suppression with a between-galaxy amplitude) that would give B2's S2
+  conjunct something to detect -- costs no new fits and would separate
+  "organized by angle" from "caused by beam smearing".
+
+FOR PROPOSAL F (the systematics discussion): the anchored inner
+  depression, previously the resolution rival's only anchored foothold, is
+  now measured to be organized by angle at fixed acceleration, with
+  y-composition excluded as its carrier and the smearing mechanism not
+  established (its across-galaxy signatures are null); it is carried by 27
+  sub-20-arcsec points, and the already-banked C14 cut lever (-0.8 km/s/Mpc
+  maximum) remains the meter's total exposure to it.
+
+CREDENCES (C15): every cell pre-signed HOLD -- anomaly-real 53 / mechanism
+  8, reviewer-affirmed (checked, not assumed). Ledger row
+  cos-10y-organizer carries the d_Oi world-comparison as the measured
+  product, with the branch label as metadata.
+================================================================================
