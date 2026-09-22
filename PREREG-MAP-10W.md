@@ -192,7 +192,36 @@ Caught at build time, before any gate or statistic:
   claim -> P(d_rep > -SD_block(cut)) (the uncut lead does not
   re-establish at one block SD). Both printed either way.
 
-## 10. Outputs
+## 10. Amendment A2 (2026-09-22, pre-gates, pre-quote — no run exists)
+
+- (i) G10W-5 as first written graded a SINGLE synthetic draw's p
+  against p >= 0.2 — under the null that p is uniform, a ~20%
+  spurious-STOP rate designed into the gate. CORRECTED: the gate
+  grades the MEDIAN p over 25 independent synthetic draws (2000
+  permutations each, seed 1313 stream): median unrestricted p <=
+  0.001 AND median stratified p >= 0.2.
+- (ii) G10W-1 anchored-delta bar aligned to the 10V bar (0.5): the
+  archived 10V run itself sits up to 0.05 from the rounded REF_A
+  values (its gm printed |d - arch| = 0.05 at 2-decimal rounding),
+  so a 0.05 bar could fail a perfect replication on print-rounding
+  alone. The flow-side bar stays 0.05 (GB R-i matched at 0.1 print).
+
+## 11. Amendment A3 (2026-09-22, pre-gates, pre-quote — wiring probe)
+
+A pre-gate wiring probe (scratchpad probe_g10w2.py; flow leg, BE and
+boot) measured the A1-ii closure gap at -1.86e-2/-2.61e-2: the
+decomposition alternates per-galaxy nuisances to 1e-10 while the
+engine's fit_hier rounds at tol 5e-4, so the decomposition total
+lands DEEPER (lower) than the engine's returned optimum — the 1e-6
+bar was structurally impossible, not a wiring defect. G10W-2
+re-operationalized sign-aware: (i) tautological closure asserted;
+(ii) -0.1 <= (indep total - engine fun) <= 1e-6 on both legs at BE
+and boot optima (deeper-or-equal, bounded); (iii) DISCLOSED: per-
+galaxy contributions carry an O(3e-4)-per-galaxy mean convergence
+residual, immaterial to shares and carrier ordering, and partially
+common-moded in member DELTAS (the map's quoted object).
+
+## 12. Outputs
 
 calcs/stage10w_map.py (modes: gates | sky);
 data/stage10w_gates.txt; data/stage10w_skyread.txt;

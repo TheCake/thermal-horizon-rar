@@ -1,0 +1,25 @@
+FITPOOL DETERMINISM GATE (pool == serial, two widths)
+cpu_count = 16; default workers = 14
+
+parent engine loaded [2s]
+battery: 16 tasks (8 deep baselines + 4 flow contests + 4 jittered deeps)
+
+serial reference: 4.3 min (16.0 s/task)
+  [gate4] 16 tasks -> 4 workers
+  [gate4] 3/16 done [0.1 min]
+  [gate4] 11/16 done [0.6 min]
+  [gate4] 14/16 done [1.1 min]
+  [gate4] 14/16 done [1.6 min]
+  [gate4] 14/16 done [2.1 min]
+  [gate4] 15/16 done [2.6 min]
+  [gate4] complete in 2.9 min
+pool@4: fun exact 16/16, x exact 16/16, gap exact 16/16, wall 2.9 min (speedup x1.5) -> BIT-IDENTICAL
+  [gate14] 16 tasks -> 14 workers
+  [gate14] 6/16 done [0.1 min]
+  [gate14] 13/16 done [0.6 min]
+  [gate14] 15/16 done [1.1 min]
+  [gate14] complete in 1.3 min
+pool@14: fun exact 16/16, x exact 16/16, gap exact 16/16, wall 1.3 min (speedup x3.2) -> BIT-IDENTICAL
+
+GATE PASS: pooled fits are bit-identical to serial at both widths -- the pool may carry science
+wall-clock total: 8.6 min
