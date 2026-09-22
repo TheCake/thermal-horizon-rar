@@ -1,22 +1,27 @@
 # A Hubble meter from galaxy rotation curves: a first execution of the a0-to-H0 inversion
 
-**Draft 0.3 — post-referee (2026-09-23; Round 51 MAJOR REVISION
+**Draft 0.4 — post-referee (2026-09-23; Round 51 MAJOR REVISION
 adopted in full: 11 major + 40 minor findings executed, incl. the
 peg-gearing re-measurement — the untraceable "1.3-1.6" replaced by
 the measured anchored-primary response 1.59, calcs/round51_gearing.py
 — the section-6 error-budget table, the section-4 equations, and the
-census re-scope). Style contract: papers/STYLE.md. Figures gated by
+census re-scope. This revision additionally absorbs the stage-10Y
+residual-contrast organizer + Round 52 into section 6c and the
+appendices: the anchored inner depression is angle-organized at
+fixed acceleration, composition excluded as its carrier, mechanism
+open). Style contract: papers/STYLE.md. Figures gated by
 calcs/paperf_figures.py. Verification state: SML20 quote set verified
-against the accepted arXiv v2 source (residual: cross-check the
-published AJ PDF at assembly); reference list verified against
-arXiv/ADS/publisher pages (Haslbauer ID corrected program-wide to
-2009.11292; Ponomareva 2018 = MNRAS 474, 4366; Cadoni–Tuveri 2020
-resolved DROP). Census: the flag-pending pair cleared at
-identification-plus-grade scope; KK98-251 carried to a deferred
-candidate by the stage-10X census leg. The stage-10X battery is
-adopted (Round 50): section 6f carries the two primary-side
-systematic rows. Remaining [ASSEMBLY] blockers: (i) the AJ-PDF
-cross-check; (ii) abstract word count on the final text. Guardrails
+against the accepted arXiv v2 source AND the published AJ page
+(free full text, checked 2026-09-23: 75.1 +- 2.3 +- 1.5; the 30 + 20
+calibrator split as stated; zero occurrences of a0 / RAR / MOND);
+reference list verified against arXiv/ADS/publisher pages (Haslbauer
+ID corrected program-wide to 2009.11292; Ponomareva 2018 = MNRAS
+474, 4366; Cadoni–Tuveri 2020 resolved DROP). Census: the
+flag-pending pair cleared at identification-plus-grade scope;
+KK98-251 carried to a deferred candidate by the stage-10X census
+leg. The stage-10X battery is adopted (Round 50): section 6f carries
+the two primary-side systematic rows. Abstract recounted at exactly
+250 words on this text. NO REMAINING ASSEMBLY BLOCKERS. Guardrails
 from the stage verdict files are restated in Appendix A and are
 binding on every future edit.**
 
@@ -42,7 +47,7 @@ consistency arm. The anchored arm reads H0 = 65.4 +- 5.0 (statistical)
 statistical: the choice of the relation's functional form moves the
 reading across 65.4-70.4, and we measure the levers of that band
 directly. A per-galaxy map shows the flow subsample's contrary form
-lean is one galaxy sitting below its own scatter, and an
+lean is one galaxy below its own scatter, and an
 inner-resolution cut resolves nothing and excludes nothing. The meter
 hangs from the same calibration pegs as the distance ladder with a
 measured 1.6 times the response. At 2-3 km/s/Mpc precision a reading
@@ -481,15 +486,39 @@ total is the signature of noise, not of a carrier. Inner angular
 resolution is therefore neither established nor excluded as the
 source of a residue that is itself sub-noise.
 
-One directional diagnostic survives with a footprint worth recording:
-galaxy-paired inner-minus-outer residuals at 20 arcsec show an inner
-depression on the anchored subsample (-0.086 +- 0.030 dex, 2.9 sigma)
-and none on the flow subsample (-0.004 +- 0.018). The rival was
-invented for the flow subsample and has no footprint on it; whatever
-the inner depression is (beam smearing and radial misfit are
-degenerate here), it lives on the arm whose form preference the cut
-leaves intact. This diagnostic is the registered successor instrument
-for the resolution question.
+One directional diagnostic survived with a footprint worth
+recording: galaxy-paired inner-minus-outer residuals at 20 arcsec
+show an inner depression on the anchored subsample (-0.086 +- 0.030
+dex, 2.9 sigma) and none on the flow subsample (-0.004 +- 0.018).
+The rival was invented for the flow subsample and has no footprint
+on it. The registered successor instrument has since run on this
+depression, with no new fits: every statistic is a function of the
+residuals at the published parent optima. Matching each inner point
+to outer points at the same baryonic acceleration, through a
+construction measured to remove a pure composition trend exactly on
+synthetic worlds, the depression persists at -0.095 +/- 0.049. That
+value is stable across matching constructions (sixteen of eighteen
+variants cross two of their own errors and none collapses), and a
+galaxy bootstrap places the probability of a positive value near
+0.01; the depression is therefore not a composition artefact of the
+relation's shape. It is organized by angle rather than by the
+disk's own scale. On the cell where the candidate explanations
+separate (points beyond 20 arcsec but inside 1.5 disk scale
+lengths), the measured -0.018 +/- 0.013 sits four sigma from a pure
+composition trend calibrated to reproduce the same depression, and
+seven sigma from a disk-scale organizer, while an angular organizer
+is consistent; matched in acceleration, that cell is clean
+(-0.004 +/- 0.010). A within-curve circular-shift null that
+preserves each curve's own autocorrelation places the inner
+depression beyond all of its draws. The mechanism, however, is not
+established: beam smearing would hit galaxies whose inner points
+subtend smaller angles harder, and that between-galaxy gradient is
+null (rank correlation +0.02 with the innermost angle, p = 0.94;
+-0.32 with distance, p = 0.18, the right sign but not significant).
+The feature is carried by 27 points inside 20 arcsec; a non-angular
+admixture of order fifteen to twenty-five per cent remains
+permitted; and the 0.8 km/s/Mpc cut lever above remains the meter's
+total exposure to it.
 
 ### 6d. Peg sharing and gearing
 
@@ -817,11 +846,11 @@ paper has not yet undergone journal peer review.
 
 ## Appendix A: transparency and corrections
 
-The program logs its corrections publicly; the six review sessions
+The program logs its corrections publicly; the seven review sessions
 behind this paper (one per stage: design, anchored extension, form
-contest, stratification, map and resolution cut, robustness battery)
-produced the following adopted downgrades, listed so they cannot be
-un-learned:
+contest, stratification, map and resolution cut, robustness battery,
+residual-contrast organizer) produced the following adopted
+downgrades, listed so they cannot be un-learned:
 
 - The design stage's as-fired two-arm agreement statement was
   downgraded to consistent-but-uninformative: 73 percent of the
@@ -871,6 +900,20 @@ un-learned:
   flow galaxy ("closed") was withdrawn to deferred-candidate status.
   Every reviewer number was re-verified by independent scripts
   before adoption.
+- The residual-contrast organizer (the successor to the section-6c
+  diagnostic) fired its registered catch-all branch, and the review
+  relabeled the verdict from "unresolved" to the measured content
+  quoted in section 6c: composition excluded, angular organization
+  established, mechanism open. The same review found the stage's
+  synthetic worlds under-dispersed the primary statistic by 1.4-1.8
+  relative to the sky's own realized scatter, so its gate-printed
+  power figures were world properties (the power at the measured
+  error is 0.3-0.6), and that a branch-level power table printed
+  before the sky (two discriminating branches below two percent
+  under their own true worlds) had not been acted on; both are now
+  standing design rules. Three failed gate runs preceded the sky,
+  each preserved in the record: a parser fault and two
+  constructions that could not populate on this sample.
 
 Standing guardrails bound at the stage verdicts and binding on this
 text:
@@ -909,11 +952,15 @@ instrument:
 | external-literature quote verification (SML20; references) | session record 2026-09-22/23 | LOG.md entries; the reference list's (v) tags |
 | robustness battery + census leg (sections 3, 6f) | calcs/stage10x_meterrobust.py | data/stage10x_battery.txt, data/stage10x_verdict.txt |
 | battery verification (blind + post-report) | calcs/round50_ga.py, calcs/round50_gb.py | data/round50_ga.txt, data/round50_gb.txt |
+| residual-contrast organizer (section 6c: matched contrast, cells, worlds) | calcs/stage10y_organizer.py | data/stage10y_verdict.txt, data/stage10y_skyread.txt |
+| organizer verification (blind + post-report) | calcs/stage10y_ga.py, calcs/round52_gb.py | data/stage10y_ga.txt, data/round52_gb.txt |
 
 ## References
 
-[ASSEMBLY: verify every entry against ADS/arXiv before submission;
-entries marked (v) were verified in earlier papers of this program.]
+[All entries verified against ADS/arXiv/publisher pages (sweep of
+2026-09-22/23); entries marked (v) were additionally verified in
+earlier papers of this program. The (v) tags and this note are
+stripped from the rendered PDF.]
 
 - Cadoni M., Tuveri M., 2019, Phys. Rev. D 99, 084042
   (arXiv:1904.11835). (v)

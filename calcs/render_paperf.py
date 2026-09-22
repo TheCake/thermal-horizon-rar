@@ -16,8 +16,9 @@ os.chdir(ROOT)
 src = open('papers/paperF_hubble_meter.md', encoding='utf-8').read()
 
 # 1. strip the draft-status banner (the first ** ... ** block after the title)
-src = re.sub(r"\n\*\*Draft 0\.3[^*]*\*\*\n", "\n", src, count=1, flags=re.S)
+src = re.sub(r"\n\*\*Draft 0\.\d+[^*]*\*\*\n", "\n", src, count=1, flags=re.S)
 # 2. internal tags
+src = re.sub(r"\n\[All entries verified[^\]]*\]\n", "\n", src)
 src = re.sub(r"\s*\[ASSEMBLY[^\]]*\]", "", src)
 src = re.sub(r"\s*\[All quotes verified[^\]]*\]", "", src)
 # 3. reference-list verification tags: "(v)" with optional bracket notes
