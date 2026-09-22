@@ -172,7 +172,27 @@ NEVER-QUOTE stands: flow_gasrich a0 6.27e-11 / "H0 ~ 40"; UMa-26
 screening a0; windowed-leg a0s as meter readings; injection-bar
 significances; "N ~ 25".
 
-## 9. Outputs
+## 9. Amendment A1 (2026-09-22, pre-gates, pre-quote — no run exists)
+
+Caught at build time, before any gate or statistic:
+- (i) The SS4 leg-axis null as first written ("within leg") is
+  VACUOUS — a permutation confined to a leg never changes any
+  galaxy's leg label, so the leg statistic is permutation-invariant
+  and p = 1 identically (a null that cannot fire; the trap-#16
+  family). CORRECTED: the leg-axis null permutes Delta_g within
+  POOLED coverage terciles ACROSS legs. Composition and resolution
+  nulls stay as registered (within leg x coverage-tercile cells);
+  the coverage null stays as registered (unrestricted within leg).
+- (ii) G10W-2 operationalized: the per-galaxy sum is tautological by
+  construction, so the non-vacuous gate content is |decomposition
+  total - the engine's own fit optimum value| <= 1e-6 at BE and boot
+  optima on both legs (plus the tautological closure asserted).
+- (iii) The SS5 conditional-boot co-requirement construction, pinned
+  before fire: sign-flip point claim -> P(d_rep > 0); sub-SD point
+  claim -> P(d_rep > -SD_block(cut)) (the uncut lead does not
+  re-establish at one block SD). Both printed either way.
+
+## 10. Outputs
 
 calcs/stage10w_map.py (modes: gates | sky);
 data/stage10w_gates.txt; data/stage10w_skyread.txt;
