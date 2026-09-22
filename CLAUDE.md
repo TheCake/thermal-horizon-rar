@@ -3469,9 +3469,21 @@ angle-organized-at-fixed-y, mechanism open). SUCCESSOR (named, not
 run): continuous three-world fit on d_Oi (well-calibrated axis) or
 a registered angular-gradient world; the categorical bars are
 SPENT. Ledger cos-10y-organizer (225 rows six gates PASS).
-Credences 53/8 pre-signed HOLD, reviewer-affirmed. NEXT FORK
-(author's): the Kroupa click (v5.1 SEND-READY) -> MNRAS trigger Mon
-2026-10-05 · R50-C11 sky-matched injection re-run (booked) · the
-a0-dipole instrument (fresh session) · DR4 pre-sign early Oct
-(IMMOVABLE) · F journal pass absorbs 10Y at the next author-called
-thaw.**
+Credences 53/8 pre-signed HOLD, reviewer-affirmed. **F -> DRAFT 0.4
+SAME NIGHT (the author's two questions): 10Y/R52 absorbed into
+section 6c + App A/B; ALL ASSEMBLY BLOCKERS DISCHARGED (the SML20 AJ
+page is FREE full text and confirms every claim; abstract exactly
+250); PDF 19 pp re-rendered; figure gates PASS. THE SEND ORDER
+CHANGED: Zenodo v1.4 FIRST (adds hajek2026d to the SAME record,
+concept DOI unchanged -- the P1/P2 timestamp-before-outreach rule
+applied to F's first-execution claim; exact clicks + the PDF sha256
+in ZENODO-STEPS.md Section 8) -> the author's read -> send (letter
+v5.1 closing now says all three papers are archived; revert sentence
+in the gate block if the deposit is skipped). Decided same night: NO
+new science gates the send -- the a0-dipole is the successor
+conversation with Kroupa, and R50-C11 is a booked obligation, not a
+blocker (F carries the allowance-row hedge, not the retired
+phrase).** NEXT FORK (author's): Zenodo v1.4 publish -> the Kroupa
+click -> MNRAS trigger Mon 2026-10-05 · R50-C11 sky-matched
+injection re-run (booked) · the a0-dipole instrument (fresh
+session) · DR4 pre-sign early Oct (IMMOVABLE).**
