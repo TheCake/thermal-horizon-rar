@@ -211,6 +211,21 @@ P(f"GF-5 PASS: lock conventions recomputed (a0(0) = {a0_0:.4f}, "
 PLANCK, E_PLANCK = 67.4, 0.5
 SH0ES, E_SH0ES = 73.0, 1.0
 
+# --- GF-6: the conversion-branch arithmetic (paper section 8/9) ------
+# Asymptotic de Sitter branch: H_inf = H0 sqrt(Omega_Lambda) is z-flat,
+# so the same fitted a0 implies H0_asym = H0 / sqrt(0.7) (Omega_Lambda
+# = 0.7, the declared comparison cosmology).
+fac_asym = 1.0 / math.sqrt(0.7)
+H0_asym = H0_A * fac_asym
+band_asym = (band_lo * fac_asym, band_hi * fac_asym)
+assert abs(fac_asym - 1.195) < 0.001, fac_asym
+assert abs(H0_asym - 78.1) < 0.1, H0_asym
+assert abs(band_asym[0] - 78.1) < 0.1 and abs(band_asym[1] - 84.1) < 0.1
+P(f"GF-6 PASS: conversion-branch arithmetic (factor {fac_asym:.3f}; "
+  f"asymptotic-branch reading {H0_asym:.1f}, band "
+  f"{band_asym[0]:.1f}-{band_asym[1]:.1f} -- outside the validity "
+  f"domain, quoted only as the section-8 branch disclosure)")
+
 # ================= FIGURE 1: census + two-leg design ================
 fig, ax = plt.subplots(figsize=(8.0, 3.9))
 ax.set_xlim(0, 100); ax.set_ylim(0, 10); ax.axis('off')
@@ -471,7 +486,7 @@ fig.tight_layout()
 save(fig, 'figf5_zaxis')
 
 # ================= provenance dump ==================================
-P("ALL GATES PASS (GF-1..GF-5); five figures written")
+P("ALL GATES PASS (GF-1..GF-6); five figures written")
 with open('data/paperf_figs.txt', 'w', encoding='utf-8') as f:
     f.write("\n".join(L_) + "\n")
 P("provenance dump: data/paperf_figs.txt")

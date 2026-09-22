@@ -6,10 +6,11 @@ GF-2 PASS: first-light values parsed + lock-linearity closed (<0.06)
 GF-3 PASS: map closed vs verdict (flow -48.7 = -48.7; anch +63.3 = +63.3; UGC03580 -47.8 [52%]; IC2574 +12.5 [37%])
 GF-4 PASS: world scoring reproduced (L 0.33 / N 1.53 / P 1.93-2.73 sigma at sigma = 4.99)
 GF-5 PASS: lock conventions recomputed (a0(0) = 1.0824, a1_lock = +0.52); z~1 rows reproduce 2.30/0.66/0.12 sigma
+GF-6 PASS: conversion-branch arithmetic (factor 1.195; asymptotic-branch reading 78.1, band 78.2-84.1 -- outside the validity domain, quoted only as the section-8 branch disclosure)
 wrote papers/figs/figf1_census.png/.pdf
 GF-1 PASS: figure-1 counts are the parsed census/leg values (175 = 97+50+28; 78 = 41+26+11)
 wrote papers/figs/figf2_firstlight.png/.pdf
 wrote papers/figs/figf3_map.png/.pdf
 wrote papers/figs/figf4_worlds.png/.pdf
 wrote papers/figs/figf5_zaxis.png/.pdf
-ALL GATES PASS (GF-1..GF-5); five figures written
+ALL GATES PASS (GF-1..GF-6); five figures written

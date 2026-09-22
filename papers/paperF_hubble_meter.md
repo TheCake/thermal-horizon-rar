@@ -7,11 +7,12 @@ verified against the accepted arXiv v2 source on 2026-09-22 (residual:
 cross-check the published AJ PDF at assembly); the reference list was
 verified against arXiv/ADS/publisher pages the same day (one wrong
 arXiv ID caught and corrected program-wide: Haslbauer et al. is
-2009.11292, not 2008.07524). Remaining [ASSEMBLY] blockers: (i) the
-AJ-PDF cross-check; (ii) resolve the two census-pending galaxies
-(booked for the next census pass under its own check); (iii) the
-Ponomareva et al. 2018 and Cadoni–Tuveri 2020 reference entries; (iv)
-abstract word count on the final text. Guardrails from the stage
+2009.11292, not 2008.07524). The census-pending pair was cleared and
+KK98-251 closed by the stage-10X census leg (2026-09-22, same day).
+Remaining [ASSEMBLY] blockers: (i) the AJ-PDF cross-check; (ii) the
+Ponomareva et al. 2018 and Cadoni–Tuveri 2020 reference entries;
+(iii) abstract word count on the final text; (iv) the stage-10X
+robustness rows enter section 6 only per the Round-50 adoption. Guardrails from the stage
 verdict files are restated in Appendix A and are binding on every
 future edit.**
 
@@ -183,9 +184,15 @@ are 65.1-65.4, within 0.2 of the primary.
 
 The final anchored arm is 78 galaxies: 41 individually anchored, 26
 Ursa Major, 11 CF4-reclassified. Two anchored galaxies (D564-8,
-D631-7) have distance provenance still under review [ASSEMBLY:
-resolve]; both are flagged in the released per-galaxy table and
-neither carries any conclusion (Figure 3 marks them).
+D631-7) carried provenance-review flags through the map stage; a
+subsequent positional cross-check against the CF4 per-method table
+cleared both (TRGB distances within 1.8 and 0.4 percent of the SPARC
+values; PGC 86668 and 22277 at 0.2 and 0.4 arcmin). The released
+per-galaxy table and Figure 3 retain the flags as of the map stage.
+One flow-subsample object inside the reclassification band, KK98-251,
+was resolved as having no proper PGC identifier (its best NED match
+is an anonymous field designation), so it cannot enter any CF4
+reclassification and stays a flow member.
 
 ## 4. Method
 
@@ -219,7 +226,11 @@ galaxy bootstrap of the primary estimator itself (200 resamples with
 distance jitter and a shared Ursa Major draw), a rule adopted after a
 review session found the initial run had attached the flat engine's
 dispersion to the hierarchical central, overstating the error by a
-factor of two (Appendix A). Injection tests validate the estimator as
+factor of two (Appendix A). The bootstrap resamples whole galaxies
+rather than points because within-curve residuals are strongly
+correlated (measured near 0.6 in this program), which makes
+point-level error estimates optimistic; galaxy-block resampling
+absorbs that correlation. Injection tests validate the estimator as
 unbiased for true H0 in 62-73; at a true value of 85 it carries a
 measured -3.0 +- 0.7 percent one-sided bias, so the quote is valid for
 readings up to about 75 and any future reading above that requires
@@ -293,8 +304,13 @@ sky-fitted value, and no within-curve correlation where the sky
 measures 0.62. Those two errors cancelled in the separation estimate
 and compounded in its spread. The band therefore stands on the
 uncalibrated statistics alone, and the smaller sample-size forecasts
-the injection model implied were retracted. The honest requirement
-for pinning the form is N of order 100-1000 (section 7).
+the injection model implied were retracted. The contest's evidence is
+also concentrated: a refit jackknife shows two galaxies (IC 2574 and
+NGC 891) carry roughly 43 and 68 percent of the two demotion leads
+(an effective sample of 5-10 galaxies), and only a weak majority of
+galaxies (44-51 of 78, construction-dependent) favors the winning
+form. The honest requirement for pinning the form is N of order
+100-1000 (section 7).
 
 ### 6b. The per-galaxy preference map
 
@@ -333,8 +349,9 @@ subsample optima); only the axis grades move.
 data/stage10w_map.csv). (a) Each galaxy's contribution to the
 bootstrap-versus-Bose–Einstein preference at fixed global parameters,
 against its acceleration coverage; positive values prefer the
-Bose–Einstein form. Open symbols mark the two census-pending
-galaxies. (b) Cumulative contributions ranked by size: the anchored
+Bose–Einstein form. Open symbols mark two galaxies whose distance
+provenance was under review at map time (both flags subsequently
+cleared against CF4 TRGB distances; section 3). (b) Cumulative contributions ranked by size: the anchored
 subsample's preference accumulates broadly to +63.3, while the flow
 subsample's contrary lean is a single galaxy (UGC 3580, 52 percent of
 its block variance); the remaining 70 flow galaxies net to -1.0.*
@@ -488,11 +505,26 @@ sign-separable the same way, and a frozen a0 predicts zero. The
 redshift axis is the cleanest external discriminant the identity has,
 and it is live now.
 
+One branch ambiguity belongs to this section rather than to the
+error budget. The identity can be read with the instantaneous Hubble
+rate H(z), the registered primary used throughout, or with the
+asymptotic de Sitter rate H0 sqrt(Omega_Lambda) ~ 0.84 H0, which is
+constant in redshift. The branch changes the meter's conversion:
+under the asymptotic reading the same fitted acceleration scale
+implies H0 ~ 78 (form band 78-84, the factor 1/sqrt(0.7) = 1.195),
+a value that would sit above the ladder and outside the meter's
+validated domain, requiring recalibration before it could even be
+quoted. The redshift axis is what separates the branches: the
+asymptotic rate predicts a z-flat a0 (the dashed line of Figure 5a),
+and both measured epochs lean the rising way. The z-axis therefore
+polices the conversion branch as well as the rivals.
+
 ![Figure 5](figs/figf5_zaxis.png)
 
 *Figure 5. The redshift axis. (a) The lock prediction a0(z) =
 cH(z)/2pi with H0 spanning this paper's form band (shaded), a frozen
-a0 (dashed), and this measurement at z = 0. (b) Evolution-rate
+a0 (dashed; this line is also the asymptotic-rate branch of the
+identity, section 8), and this measurement at z = 0. (b) Evolution-rate
 comparison over the MIGHTEE-HI window (z < 0.09; Varasteanu et al.
 2026, values verbatim): their two fits against the lock secant
 (+0.52) and zero. (c) The z ~ 1 test: back-extrapolated a0(z=0) from
@@ -535,14 +567,18 @@ precision, supplies no relativistic completion, and inherits the
 exponential solar-system screening of the measured function class
 (Hájek 2026b, section 9).
 
-Two caveats bound the claim. The anchored arm is anchored, not
+Three caveats bound the claim. The anchored arm is anchored, not
 assumption-free: a coherent error in the shared calibrator pegs moves
 this reading 1.3-1.6 times as fast as it moves the ladder (that
 gearing is the design's discriminating feature, and also its
-exposure). And the functional-form band is a physics systematic, not
-a statistical one: no amount of resampling shrinks it; only a larger
+exposure). The functional-form band is a physics systematic, not a
+statistical one: no amount of resampling shrinks it; only a larger
 sample can pin the form, and section 6 shows the in-sample levers
-(composition, resolution) do not.
+(composition, resolution) do not. And the conversion itself carries a
+branch choice (section 8): the registered primary reads the
+instantaneous H(z); the asymptotic-rate alternative would multiply
+the reading by 1.195 and is sign-disfavored by the measured redshift
+lean, but it is a reading choice, not a measured fact.
 
 ## 10. Conclusions
 
@@ -668,7 +704,8 @@ instrument:
 | deterministic worker pool certificate | calcs/fitpool.py | data/fitpool_gate.txt |
 | low-z evolution comparison | data/lit0818_a0z.py | data/lit0818_a0z.txt |
 | z ~ 1 intercept comparison | calcs/stage10h_addendum.py | data/stage10h_addendum.txt |
-| all five figures (gated) | calcs/paperf_figures.py | papers/figs/figf1-5, data/paperf_figs.txt |
+| all five figures (gated) + the conversion-branch arithmetic | calcs/paperf_figures.py | papers/figs/figf1-5, data/paperf_figs.txt |
+| robustness battery + census leg (section 3; section 6 rows pending review adoption) | calcs/stage10x_meterrobust.py | data/stage10x_battery.txt |
 
 ## References
 
