@@ -1,0 +1,65 @@
+baselines  [92s]
+designs: anch best form BE, flow best form boot  [99s]
+
+====================================================================
+STAGE 10Y SKY READ (post-prereg-commit; A1 form)
+
+---- ANCHORED leg (best form BE) ----
+  S0 plain contrast: -0.0857 +/- 0.0301 over 20 gal
+  S1 y-matched (A2 primary): -0.0947 +/- 0.0493 (jackknife; 22 matched inner pts, 16 gal)
+  S1 co-read banded (A1-ii, demoted): -0.1293 +/- 0.0475 (1 usable bands, 20 both-sides gal)
+  S1 co-read per-galaxy overlap match: 1 gal qualify (unpopulated, as the A1 census found)
+  S1 co-read detrend-lin: -0.0842 +/- 0.0300 (biased toward collapse; no branch weight)
+  S1 co-read detrend-quad: -0.0736 +/- 0.0301 (biased toward collapse; no branch weight)
+  S1 co-read detrend-cub: -0.0626 +/- 0.0314 (biased toward collapse; no branch weight)
+  S2a_thmin: rho = +0.019, perm p = 0.9418 (smearing sign +; n = 20)
+  S2b_dist: rho = -0.318, perm p = 0.1805 (smearing sign -; n = 20)
+  S3 d_Ii (inner-both vs Oo):      -0.0893 +/- 0.0349 over 19 gal
+  S3 d_Oi (outer-angle, inner-disk): -0.0177 +/- 0.0130 over 55 gal
+  S3 Io census: 0 galaxies carry any inner-angle-outer-disk point
+  S3 circular-shift p: Ii 0.0005, Oi 0.0190 (one-sided toward depression; 2000 draws)
+  S3 co-read y-matched d_Oi (A2-ii): -0.0035 +/- 0.0098 (212 Oi pts, 54 gal; descriptive)
+  rho_lag1 = 0.612
+
+---- FLOW leg (best form boot) ----
+  S0 plain contrast: -0.0055 +/- 0.0176 over 45 gal
+  S1 y-matched (A2 primary): -0.0004 +/- 0.0170 (jackknife; 209 matched inner pts, 44 gal)
+  S1 co-read banded (A1-ii, demoted): -0.0020 +/- 0.0170 (5 usable bands, 45 both-sides gal)
+  S1 co-read per-galaxy overlap match: 3 gal qualify, mean -0.0533
+  S1 co-read detrend-lin: -0.0040 +/- 0.0176 (biased toward collapse; no branch weight)
+  S1 co-read detrend-quad: -0.0051 +/- 0.0175 (biased toward collapse; no branch weight)
+  S1 co-read detrend-cub: -0.0051 +/- 0.0175 (biased toward collapse; no branch weight)
+  S2a_thmin: rho = -0.188, perm p = 0.2242 (smearing sign +; n = 45)
+  S2b_dist: rho = +0.314, perm p = 0.0347 (smearing sign -; n = 45)
+  S3 d_Ii (inner-both vs Oo):      -0.0021 +/- 0.0204 over 43 gal
+  S3 d_Oi (outer-angle, inner-disk): +0.0161 +/- 0.0150 over 43 gal
+  S3 Io census: 5 galaxies carry any inner-angle-outer-disk point
+  S3 circular-shift p: Ii 0.4308, Oi 0.9170 (one-sided toward depression; 2000 draws)
+  rho_lag1 = 0.722
+
+---- S4 banded residual profile (ANCHORED; descriptive) ----
+  th[10,20) R/Rd[0,1) y-ter2: -0.0827 +/- 0.0405 (n = 11)
+  th[20,40) R/Rd[0,1) y-ter1: -0.0815 +/- 0.0236 (n = 15)
+  th[20,40) R/Rd[0,1) y-ter2: -0.0191 +/- 0.0162 (n = 20)
+  th[20,40) R/Rd[1,1.5) y-ter2: +0.0286 +/- 0.0191 (n = 10)
+  th[40,1e+09) R/Rd[0,1) y-ter0: -0.0370 +/- 0.0249 (n = 17)
+  th[40,1e+09) R/Rd[0,1) y-ter1: -0.0137 +/- 0.0173 (n = 19)
+  th[40,1e+09) R/Rd[0,1) y-ter2: +0.0087 +/- 0.0093 (n = 41)
+  th[40,1e+09) R/Rd[1,1.5) y-ter0: +0.0019 +/- 0.0157 (n = 22)
+  th[40,1e+09) R/Rd[1,1.5) y-ter1: -0.0092 +/- 0.0185 (n = 22)
+  th[40,1e+09) R/Rd[1,1.5) y-ter2: -0.0033 +/- 0.0064 (n = 66)
+  th[40,1e+09) R/Rd[1.5,3) y-ter0: -0.0102 +/- 0.0065 (n = 85)
+  th[40,1e+09) R/Rd[1.5,3) y-ter1: +0.0099 +/- 0.0046 (n = 83)
+  th[40,1e+09) R/Rd[1.5,3) y-ter2: -0.0012 +/- 0.0028 (n = 159)
+  th[40,1e+09) R/Rd[3,1e+09) y-ter0: -0.0008 +/- 0.0029 (n = 287)
+  th[40,1e+09) R/Rd[3,1e+09) y-ter1: -0.0010 +/- 0.0021 (n = 267)
+  th[40,1e+09) R/Rd[3,1e+09) y-ter2: +0.0070 +/- 0.0031 (n = 105)
+
+---- LETTER (prereg section 4 + A1 grammar; ANCHORED) ----
+  S1: matched pts 22, gal 16, mean -0.0947 +/- 0.0493; populated True; survives False, collapses False
+  S3: d_Ii -0.0893 +/- 0.0349 (n 19, shift-p 0.0005); d_Oi -0.0177 +/- 0.0130 (n 55, shift-p 0.0190)
+  signatures: angular False, disk False; S2 fire False
+  BRANCH: B4
+
+carrier note: innermost angles UGC03580 8.0 arcsec (flow), NGC5371 7.5 arcsec (flow)
+sky complete; wall-clock 1.8 min
