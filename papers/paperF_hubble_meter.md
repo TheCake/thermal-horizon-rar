@@ -13,9 +13,12 @@ The stage-10X battery is adopted (Round 50, 2026-09-22): section 6f
 carries the influence list, the membership axes, and the two new
 primary-side systematic rows (frozen bulge mass-to-light; galaxy-
 level prior width) in the adopted wording. Remaining [ASSEMBLY]
-blockers: (i) the AJ-PDF cross-check; (ii) the Ponomareva et al.
-2018 and Cadoni–Tuveri 2020 reference entries; (iii) abstract word
-count on the final text. Guardrails from the stage
+blockers: (i) the AJ-PDF cross-check; (ii) abstract word count on
+the final text. (The Ponomareva 2018 entry was verified 2026-09-23,
+MNRAS 474, 4366; the Cadoni–Tuveri 2020 conditional reference was
+resolved DROP — its abstract carries no a0(z) generalization, and
+section 8 now owns the generalization as this program's registered
+reading.) Guardrails from the stage
 verdict files are restated in Appendix A and are binding on every
 future edit.**
 
@@ -555,7 +558,11 @@ domain are the instrument a BIG-SPARC-era inversion needs on day one.
 
 The identity generalizes: a0(z) = cH(z)/2pi rises with redshift, and
 the rise is parameter-free once H0 is set (about +0.5 x 10^-10 m/s^2
-per unit redshift at low z). Both epochs measured so far lean the
+per unit redshift at low z). The generalization is this program's
+registered reading, not a published derivation: the Cadoni & Tuveri
+result is derived in a static de Sitter setting, and which expansion
+rate the identity tracks at finite redshift is the branch choice
+discussed below. Both epochs measured so far lean the
 lock's way (Figure 5).
 
 At z < 0.09, the MIGHTEE-HI evolution fit (Varasteanu et al. 2026)
@@ -801,8 +808,6 @@ entries marked (v) were verified in earlier papers of this program.]
 
 - Cadoni M., Tuveri M., 2019, Phys. Rev. D 99, 084042
   (arXiv:1904.11835). (v)
-- Cadoni M., Tuveri M., 2020, anisotropic-fluid cosmology
-  (arXiv:2002.06988). [verify; cite only if section 8 keeps it]
 - Ciocan B. I., et al., 2026, MUSE-DARK III (arXiv:2604.22613). (v)
 - Gillot J., 2026, Eur. Phys. J. C, accepted (arXiv:2507.11524). (v)
 - Hájek F., 2026a, wide-binary companion paper (Zenodo DOI
@@ -820,8 +825,8 @@ entries marked (v) were verified in earlier papers of this program.]
 - Migkas K., et al., 2021, A&A 649, A151 (arXiv:2103.13904). (v)
 - Milgrom M., 1983, ApJ 270, 365. (v)
 - Planck Collaboration, 2020, A&A 641, A6. (v)
-- Ponomareva A. A., et al., 2018 (the independent bTFR calibrator
-  sample used by SML20). [verify full entry at assembly]
+- Ponomareva A. A., Verheijen M. A. W., Papastergis E., Bosma A.,
+  Peletier R. F., 2018, MNRAS 474, 4366 (arXiv:1711.09112). (v)
 - Riess A. G., et al., 2022, ApJL 934, L7 (arXiv:2112.04510). (v)
 - Schombert J., McGaugh S., Lelli F., 2020, AJ 160, 71
   (arXiv:2006.08615). (v — every quoted number verified against the

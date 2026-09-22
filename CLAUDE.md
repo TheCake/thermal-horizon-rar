@@ -2945,9 +2945,13 @@ unchanged; P4 frozen through DR4. **THE CZECH CHANNEL (author's idea,
 2026-09-20 night, VERIFIED): the resumed wave's SPEARHEAD = Pavel
 Kroupa, written in CZECH (author is Czech; Kroupa = Czech-born, Bonn
 + Charles Univ Prague guest professor, active 2025) — three hooks no
-other recipient has: co-author of Banik & Kroupa 2018 arXiv:1805.12273
-(the wide-binary test PROPOSAL that P1 executes), co-author of the
-KBC-void H0 paper (= world V, which the meter makes lock-testable),
+other recipient has [hook 1 CORRECTED 2026-09-23: arXiv:1805.12273 is
+Banik & ZHAO 2018, MNRAS 480, 2660 (verified at the abs page) — Kroupa
+did NOT co-author the wide-binary proposal; the letter must not claim
+it]: co-author of the
+KBC-void H0 paper (Haslbauer, Banik & Kroupa 2020, MNRAS 499, 2845 =
+arXiv:2009.11292 = world V, which the meter makes lock-testable — THE
+hook),
 and can ENDORSE astro-ph (solves the arXiv gate without Sutherland).
 PRECISION (author asked): Kroupa is BASED IN BONN; Prague = guest
 professorship with recurring physical presence (MFF UK Troja,
