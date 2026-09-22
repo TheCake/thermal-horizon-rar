@@ -221,7 +221,41 @@ galaxy contributions carry an O(3e-4)-per-galaxy mean convergence
 residual, immaterial to shares and carrier ordering, and partially
 common-moded in member DELTAS (the map's quoted object).
 
-## 12. Outputs
+## 12. Amendment A4 (2026-09-22, post-gates-run-1, pre-sky — both
+gate STOPs were the instrument catching itself; run 1 preserved as
+data/stage10w_gates_r1.txt; NO sky statistic exists)
+
+- (i) G10W-5 FIRED AS DESIGNED and measured the registered
+  conditioning INADEQUATE: within-coverage-TERCILE permutation
+  leaves the planted coverage signal readable through composition
+  at median p = 0.002 (bar >= 0.2) — at spear(fgas, cov) = -0.89
+  three bins cannot condition; the within-cell coverage variation
+  still carries the confound. CORRECTED MACHINERY (all Part-2
+  axes): partial rank correlation with Freedman-Lane permutation —
+  rank-transform Delta, axis, and the conditioning set; correlate
+  the least-squares residuals; null = unrestricted permutation of
+  the Delta-residuals (10,000 perms, seed 707 unchanged).
+  Conditioning sets mirror the registered intent: coverage | leg;
+  composition | (coverage, leg); resolution | (coverage, leg);
+  leg | coverage. G10W-5 re-certifies the NEW machinery on the same
+  synthetic (median over 25 draws: coverage-axis p <= 0.001 AND
+  composition-axis p >= 0.2). DISCLOSED: the conditioning is
+  linear-in-ranks; nonlinear residual confounding is out of scope
+  and stated with the results.
+- (ii) G10W-4 FIRED AS DESIGNED: eight leg galaxies carry FEWER
+  THAN 3 POINTS UNCUT (anch CamB 2, NGC4068 2, NGC6789 1, UGC07232
+  2, UGCA444 1; flow D512-2 1, UGC05005 1, UGC05750 2), so
+  window_world's unconditional >= 3 rule ejects them even at
+  theta = 0 — the cut image would not be the baseline leg, and any
+  cut would conflate point-cutting with short-galaxy ejection.
+  CORRECTED: the 10W cut builder keeps a galaxy if the cut left it
+  UNTOUCHED (all its points survive, whatever their number — these
+  galaxies are in the baseline contests) or if it retains >= 3
+  points; a galaxy the cut touches that falls below 3 points is
+  dropped (censused by name). The theta = 0 identity bar is
+  unchanged and must now hold exactly.
+
+## 13. Outputs
 
 calcs/stage10w_map.py (modes: gates | sky);
 data/stage10w_gates.txt; data/stage10w_skyread.txt;

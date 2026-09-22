@@ -223,19 +223,56 @@ def spear(a, b):
     return float(np.sum(ra*rb)
                  / math.sqrt(np.sum(ra*ra)*np.sum(rb*rb)))
 
-def perm_p(delta, axis, cells, rng, nperm=10000):
-    """Two-sided permutation p for spear(delta, axis), permuting
-    delta WITHIN each cell (cells = int labels)."""
-    obs = spear(delta, axis)
-    d = delta.copy()
-    idx_by_cell = [np.where(cells == c)[0] for c in np.unique(cells)]
+def _resid(v, Z):
+    A = (np.column_stack([np.ones(len(v)), Z]) if Z.shape[1]
+         else np.ones((len(v), 1)))
+    beta, *_ = np.linalg.lstsq(A, v, rcond=None)
+    return v - A @ beta
+
+def partial_p(delta, axis, Zcols, rng, nperm=10000):
+    """A4-i machinery: partial rank correlation (Spearman on
+    least-squares rank residuals given the conditioning set) with a
+    Freedman-Lane null (unrestricted permutation of the
+    delta-residuals). Two-sided."""
+    rd = rankdata(delta).astype(float)
+    ra = rankdata(axis).astype(float)
+    rZ = (np.column_stack([rankdata(z).astype(float) for z in Zcols])
+          if Zcols else np.empty((len(delta), 0)))
+    ed, ea = _resid(rd, rZ), _resid(ra, rZ)
+    den_a = math.sqrt(float(np.sum(ea*ea)))
+    obs = float(np.sum(ed*ea)) / (math.sqrt(float(np.sum(ed*ed)))
+                                  * den_a)
     hits = 0
     for _ in range(nperm):
-        for idx in idx_by_cell:
-            d[idx] = d[idx][rng.permutation(len(idx))]
-        if abs(spear(d, axis)) >= abs(obs) - 1e-15:
+        e = ed[rng.permutation(len(ed))]
+        r = float(np.sum(e*ea)) / (math.sqrt(float(np.sum(e*e)))
+                                   * den_a)
+        if abs(r) >= abs(obs) - 1e-15:
             hits += 1
     return obs, (1 + hits)/(1 + nperm)
+
+# ---------------- the A4-ii cut builder ----------------------------
+def cut_world(W, keep):
+    """Point cut with the touched-galaxy rule: a galaxy the cut left
+    UNTOUCHED is kept whatever its point count (it is in the
+    baseline contests); a touched galaxy needs >= 3 surviving
+    points. theta = 0 is therefore the exact identity."""
+    idx = np.where(keep)[0]
+    W2 = dict(W)
+    for k in ('gg', 'gd', 'gb', 'lgobs', 'sig2', 'gal_id'):
+        W2[k] = W[k][idx]
+    ug = np.unique(W2['gal_id'])
+    gp = {int(g): np.where(W2['gal_id'] == g)[0] for g in ug}
+    keepg = set()
+    for g in gp:
+        if (len(gp[g]) == len(W['gpts'][int(g)])
+                or len(gp[g]) >= 3):
+            keepg.add(g)
+    W2['gpts'] = {g: gp[g] for g in keepg}
+    W2['ug'] = np.array(sorted(keepg))
+    legw = [g for g in LEGA if g in keepg]
+    floww = [g for g in FLOW if g in keepg]
+    return W2, legw, floww
 
 # ---------------- baselines (both modes; the 10V recipe) -----------
 P("")
@@ -327,9 +364,9 @@ if not SKY:
 
     # ---------------- G10W-4 cut wiring ----------------------------
     P("")
-    P("-- G10W-4 cut wiring --")
+    P("-- G10W-4 cut wiring (A4-ii builder) --")
     keep0 = ~(PT_THETA < 0.0)          # NaN -> True; theta=0 cut
-    W0, leg0, flow0 = window_world(W78, keep0)
+    W0, leg0, flow0 = cut_world(W78, keep0)
     g4_ok = (list(leg0) == list(LEGA) and list(flow0) == list(FLOW))
     for k in ('gg', 'gd', 'gb', 'lgobs', 'sig2', 'gal_id'):
         g4_ok &= bool(np.array_equal(W0[k], W78[k]))
@@ -339,7 +376,7 @@ if not SKY:
     P(f"  theta = 0 identity (world arrays + anchored sub): "
       f"{'exact' if g4_ok else 'BROKEN'}")
     keep20 = ~(PT_THETA < 20.0)
-    W20, leg20, flow20 = window_world(W78, keep20)
+    W20, leg20, flow20 = cut_world(W78, keep20)
     nptsA = sum(len(W78['gpts'][g]) for g in LEGA)
     nptsF = sum(len(W78['gpts'][g]) for g in FLOW)
     npts20A = sum(len(W20['gpts'][g]) for g in leg20)
@@ -354,29 +391,25 @@ if not SKY:
 
     # ---------------- G10W-5 null machinery (A2 form) --------------
     P("")
-    P("-- G10W-5 null machinery (synthetic; A2: median p over 25 "
-      "draws) --")
+    P("-- G10W-5 null machinery (synthetic; A2 median over 25 "
+      "draws; A4-i partial-rank machinery) --")
     gal_all = LEGA + FLOW
     cov = np.array([cov_of(g) for g in gal_all])
     fgas = np.array([fgas_of(g) for g in gal_all])
-    legv = np.array([0]*len(LEGA) + [1]*len(FLOW))
-    edges = np.percentile(cov, [100/3, 200/3])
-    terc = np.digitize(cov, edges)
-    cells_unres = legv                      # coverage-null cells
-    cells_strat = legv*3 + terc             # leg x tercile cells
+    legv = np.array([0.0]*len(LEGA) + [1.0]*len(FLOW))
     rng5 = np.random.default_rng(1313)
     p_un, p_st = [], []
     for _ in range(25):
         syn = 2.0*cov + rng5.normal(0.0, float(np.std(cov)),
                                     len(cov))
-        _, pu = perm_p(syn, cov, cells_unres, rng5, nperm=2000)
-        _, ps = perm_p(syn, fgas, cells_strat, rng5, nperm=2000)
+        _, pu = partial_p(syn, cov, [legv], rng5, nperm=2000)
+        _, ps = partial_p(syn, fgas, [cov, legv], rng5, nperm=2000)
         p_un.append(pu); p_st.append(ps)
     med_un = float(np.median(p_un)); med_st = float(np.median(p_st))
     g5_ok = (med_un <= 1e-3) and (med_st >= 0.2)
-    P(f"  planted-coverage synthetic: median unrestricted p = "
-      f"{med_un:.4f} (bar <= 0.001); median stratified fgas p = "
-      f"{med_st:.3f} (bar >= 0.2)")
+    P(f"  planted-coverage synthetic: median coverage-axis p = "
+      f"{med_un:.4f} (bar <= 0.001); median conditioned "
+      f"composition-axis p = {med_st:.3f} (bar >= 0.2)")
     P(f"  G10W-5: {'PASS' if g5_ok else 'FAIL'}")
 
     # ---------------- G10W-6 pool spot-check -----------------------
@@ -500,20 +533,18 @@ for leg in ('anch', 'flow'):
 
 # ---------------- PART 2: the joint axis instrument ----------------
 P("")
-P("== PART 2: axes (Spearman primary; stratified nulls; seed 707; "
-  "Bonferroni x4) ==")
+P("== PART 2: axes (partial-rank primary, A4-i machinery; seed 707;"
+  " Bonferroni x4) ==")
 gal_all = LEGA + FLOW
 delta = np.array([r['d_boot'] for r in rows])
 fgas = np.array([r['fgas'] for r in rows])
 cov = np.array([r['cov'] for r in rows])
 res = np.log10(np.array([r['theta'] for r in rows]))
-legv = np.array([0 if r['leg'] == 'anch' else 1 for r in rows])
-edges = np.percentile(cov, [100/3, 200/3])
-terc = np.digitize(cov, edges)
-CELLS = {'coverage': legv, 'composition': legv*3 + terc,
-         'resolution': legv*3 + terc, 'leg': terc}
+legv = np.array([0.0 if r['leg'] == 'anch' else 1.0 for r in rows])
 AXES = {'coverage': cov, 'composition': fgas, 'resolution': res,
         'leg': legv}
+COND = {'coverage': [legv], 'composition': [cov, legv],
+        'resolution': [cov, legv], 'leg': [cov]}
 P(f"  collinearity (disclosed): spear(fgas,cov) = "
   f"{spear(fgas, cov):+.2f}; spear(res,cov) = {spear(res, cov):+.2f};"
   f" spear(res,leg) = {spear(res, legv):+.2f}")
@@ -521,9 +552,9 @@ P(f"  collinearity (disclosed): spear(fgas,cov) = "
 rng7 = np.random.default_rng(707)
 P2 = {}
 for ax in ('coverage', 'composition', 'resolution', 'leg'):
-    rho, p = perm_p(delta, AXES[ax], CELLS[ax], rng7, nperm=10000)
+    rho, p = partial_p(delta, AXES[ax], COND[ax], rng7, nperm=10000)
     P2[ax] = (rho, p)
-    P(f"  {ax:11s}: rho = {rho:+.3f}; p = {p:.4f} "
+    P(f"  {ax:11s}: partial rho = {rho:+.3f}; p = {p:.4f} "
       f"(x4 Bonferroni = {min(4*p, 1.0):.4f})")
 
 # OLS co-read (descriptive only)
@@ -545,8 +576,9 @@ for dnames in DROPS:
     keep = ~np.isin(names_arr, dnames)
     parts = []
     for ax in ('coverage', 'composition', 'resolution', 'leg'):
-        rho, p = perm_p(delta[keep], AXES[ax][keep],
-                        CELLS[ax][keep], rng7, nperm=2000)
+        rho, p = partial_p(delta[keep], AXES[ax][keep],
+                           [z[keep] for z in COND[ax]], rng7,
+                           nperm=2000)
         DROP_P[ax].append((rho, p))
         parts.append(f"{ax[:4]} {rho:+.2f}/{p:.3f}")
     P(f"    -{'+'.join(dnames):22s}: " + "  ".join(parts))
@@ -575,7 +607,7 @@ CUTS = (10.0, 20.0, 30.0)
 cutW, tasks, subs = {}, [], {}
 for th in CUTS:
     keep = ~(PT_THETA < th)
-    W2, legc, flowc = window_world(W78, keep)
+    W2, legc, flowc = cut_world(W78, keep)
     cutW[th] = (W2, legc, flowc)
     for legnm, seq in (('anch', legc), ('flow', flowc)):
         sname = f'{legnm}{int(th)}'

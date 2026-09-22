@@ -1,0 +1,53 @@
+STAGE 10W MAP + RESOLUTION CUT -- mode = gates (sky-blind gates)
+
+pool certificate: GATE PASS on file -> Part-3 fits pooled
+
+== baselines (the 10V G10V-1/G10V-2a recipe, verbatim) ==
+  anchored refits done  [40s]
+  flow refits done  [94s]
+  G10W-1 engine identity (A2 bars: anch delta 0.5 = the 10V bar; flow delta 0.05 vs GB R-i; a0 0.1%):
+    BE   : anch a0 d = 0.004%; |d_anch - arch| = 0.000; |d_flow - arch| = 0.025 ok
+    p065 : anch a0 d = 0.003%; |d_anch - arch| = 0.012; |d_flow - arch| = 0.017 ok
+    gm   : anch a0 d = 0.004%; |d_anch - arch| = 0.046; |d_flow - arch| = 0.050 ok
+    boot : anch a0 d = 0.002%; |d_anch - arch| = 0.020; |d_flow - arch| = 0.000 ok
+  G10W-1: PASS
+
+-- G10W-2 decomposition closure (A3 sign-aware form) --
+  anch/BE: indep_total - engine fun = -3.529e-04 (A3 band [-0.1, 1e-6]) ok
+  anch/boot: indep_total - engine fun = -1.096e-03 (A3 band [-0.1, 1e-6]) ok
+  flow/BE: indep_total - engine fun = -1.864e-02 (A3 band [-0.1, 1e-6]) ok
+  flow/boot: indep_total - engine fun = -2.605e-02 (A3 band [-0.1, 1e-6]) ok
+  G10W-2: PASS
+
+-- G10W-3 arcsec census --
+  GB-17 convention medians: flow 15.00 (rev 15.0), anchored 34.78 (rev 34.8) ok
+  world-aligned (both filters, the CUT convention): flow 15.00, anchored 34.78 (operative; difference vs GB-17 disclosed)
+  trap-#30 spot-checks (2 per class, seeded 31):
+    anch-nonUMa UGC08490    : n_pts = 30, theta_min = 15.1 arcsec
+    anch-nonUMa NGC5585     : n_pts = 23, theta_min = 7.6 arcsec
+    UMa         NGC3769     : n_pts = 10, theta_min = 40.1 arcsec
+    UMa         NGC4138     : n_pts = 4, theta_min = 29.9 arcsec
+    flow        UGC00731    : n_pts = 12, theta_min = 15.0 arcsec
+    flow        ESO116-G012 : n_pts = 14, theta_min = 13.2 arcsec
+  G10W-3: PASS
+
+-- G10W-4 cut wiring --
+  theta = 0 identity (world arrays + anchored sub): BROKEN
+  20-arcsec census (NO fits, sky-blind): anchored 1228/1263 pts, 73/78 gal; flow 1183/1437 pts, 67/71 gal
+  flow galaxies dropped at 20: D512-2, F568-V1, UGC05005, UGC05750
+  G10W-4: FAIL
+
+-- G10W-5 null machinery (synthetic; A2: median p over 25 draws) --
+  planted-coverage synthetic: median unrestricted p = 0.0005 (bar <= 0.001); median stratified fgas p = 0.002 (bar >= 0.2)
+  G10W-5: FAIL
+
+-- G10W-6 pool spot-check (2 tasks, pool == serial) --
+  [spot] 2 tasks -> 2 workers
+  [spot] 1/2 done [0.1 min]
+  [spot] complete in 0.2 min
+  BE: bit-identical
+  boot: bit-identical
+  G10W-6: PASS
+
+== GATES FAIL -> STOP (G10W-6 informational) ==
+wall-clock: 2.2 min
