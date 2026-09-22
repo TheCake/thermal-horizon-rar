@@ -1,0 +1,37 @@
+baselines  [92s]
+designs: anch best form BE, flow best form boot  [99s]
+
+====================================================================
+STAGE 10Y GATES (pre-sky; PREREG-CONTRAST-10Y.md)
+
+-- G10Y-1 identity (GB-9 regression) --
+  anch: mean -0.0857 +/- 0.0301 over 20 gal (target -0.0857 +/- 0.0301 / 20); fields_ext vs inherited max|d| = 0.0e+00  PASS
+  flow: mean -0.0055 +/- 0.0176 over 45 gal (target -0.0055 +/- 0.0176 / 45); fields_ext vs inherited max|d| = 0.0e+00  PASS
+  G10Y-1 PASS
+
+-- G10Y-2 Rdisk census --
+  matched with Rdisk > 0: 64/149; missing: ['ESO563-G021', 'NGC0024', 'NGC0300', 'NGC0891', 'NGC2403', 'NGC2683', 'NGC2841', 'NGC2903', 'NGC2915', 'NGC2976', 'NGC3198', 'NGC3726', 'NGC3769', 'NGC3877', 'NGC3893', 'NGC3917', 'NGC3949', 'NGC3953', 'NGC3972', 'NGC3992', 'NGC4013', 'NGC4051', 'NGC4085', 'NGC4088', 'NGC4100', 'NGC4138', 'NGC4157', 'NGC4217', 'NGC4559', 'NGC5005', 'NGC5055', 'NGC5907', 'NGC6503', 'NGC6946', 'NGC7331', 'NGC7793', 'NGC7814', 'UGC02487', 'UGC06667', 'UGC06923', 'UGC07089', 'UGC08490', 'DDO064', 'ESO079-G014', 'F568-V1', 'F571-8', 'IC4202', 'NGC0289', 'NGC0801', 'NGC1003', 'NGC1090', 'NGC2955', 'NGC2998', 'NGC3521', 'NGC5033', 'NGC5371', 'NGC5985', 'NGC6015', 'NGC6195', 'NGC6674', 'UGC00191', 'UGC00731', 'UGC02259', 'UGC02885', 'UGC02916', 'UGC02953', 'UGC03205', 'UGC03546', 'UGC03580', 'UGC05253', 'UGC05721', 'UGC05750', 'UGC05764', 'UGC06614', 'UGC06786', 'UGC06787', 'UGC07399', 'UGC07690', 'UGC08699', 'UGC09037', 'UGC09133', 'UGC11455', 'UGC11557', 'UGC11914', 'UGC12506']
+  spot: Rdisk(IC2574) = 8.00 kpc
+  spot: Rdisk(DDO154) = 5.00 kpc
+  spot: Rdisk(NGC2403) = nan kpc
+  anchored cell-population census (design): Io 0 gal, Oi 20 gal (N_min 5 each)
+  WORLD-Y calibration: b = -0.1663 per dex(y) (composition term C = +0.5152 over 20 gal)
+  G10Y-2 FAIL
+
+-- G10Y-3 size (noise-only, 2000 draws; inner perms 500 for
+   the null tables -- the sky grammar uses the full 4000) --
+  P(sig_ang) = 0.000  FAIL [0.01, 0.10]
+  P(sig_dsk) = 0.000  FAIL [0.01, 0.10]
+  P(S2 Holm+sign) = 0.018  PASS [0.01, 0.10]
+  (context: P(S1 survive|noise) = 0.000, P(S1 collapse|noise) = 0.000)
+
+-- G10Y-3 branch rates (1000 draws/world; trap #32/#33) --
+  WORLD-Y: B1 0.000  B2 0.000  B3 0.000  B4 1.000  (B4 w/ S1<=-1SE: 0.000)
+  WORLD-R: B1 0.000  B2 0.000  B3 0.000  B4 1.000  (B4 w/ S1<=-1SE: 0.000)
+  POWER: P(B1|WORLD-Y) = 0.000 FAIL (>= 0.60); P(radius kept|WORLD-R) = 0.000 FAIL (>= 0.60)
+
+-- G10Y-4 y-match wiring (500 draws/world) --
+  P(matched ~0 | WORLD-Y) = 0.000 FAIL (>= 0.80)
+  P(matched <= -1SE | WORLD-R) = 0.000 FAIL (>= 0.60)
+
+GATES FAIL; wall-clock 6.2 min

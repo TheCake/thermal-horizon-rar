@@ -1,5 +1,6 @@
-"""STAGE 10Y -- THE RESIDUAL-CONTRAST ORGANIZER.
-Pre-registration: PREREG-CONTRAST-10Y.md (committed pre-sky).
+"""STAGE 10Y -- THE RESIDUAL-CONTRAST ORGANIZER (A1 form).
+Pre-registration: PREREG-CONTRAST-10Y.md + amendment A1 (gates run 1
+preserved as data/stage10y_gates_r1.txt; A1 committed pre-quote).
 
 What organizes the anchored inner-minus-outer residual depression
 (R49 C17: -0.0857 +/- 0.0301 dex, 20 galaxies, 20-arcsec split)?
@@ -59,17 +60,16 @@ def P(s=""):
     L.append(s)
 
 t0 = time.time()
-RNG = np.random.default_rng(20260923)
 TH_STAR = 20.0          # arcsec (prereg locked)
 RD_FAC = 1.5            # x Rdisk (prereg locked, 7B/7C boundary)
 RHO_AR = 0.66
 SIG_PT = 0.10
 N_PERM = 4000
 N_SHIFT_SIZE = 2000
-N_SHIFT_BR = 1000
 N_WORLD = 1000
 N_WIRE = 500
 NMIN_S1, NMIN_CELL, NMIN_S2 = 8, 5, 15
+NMIN_BAND_PTS, NMIN_BANDS = 5, 3
 
 # ---------------- baselines (verbatim round49_gb.py) ----------------
 subP = build_sub(W78, LEGA)
@@ -109,17 +109,17 @@ for g in LEGA + FLOW:
     PT[W78['gpts'][int(g)]] = ths
     RK[W78['gpts'][int(g)]] = rks
 
-# ---------------- Rdisk from the SPARC master table -----------------
+# ---------------- Rdisk (A1-i: token parse; index 11) ---------------
 RDISK = {}
 for l in open('data/sparc/SPARC_Lelli2016c.mrt', encoding='utf-8'):
-    if len(l) < 66: continue
-    nm2 = l[0:11].strip()
+    t = l.split()
+    if len(t) < 18:
+        continue
     try:
-        rd = float(l[61:66])
+        int(t[1]); rd = float(t[11])
     except ValueError:
         continue
-    if nm2:
-        RDISK[nm2] = rd
+    RDISK[t[0]] = rd
 
 # ---------------- fields (sub_fields verbatim + y + nuisances) ------
 def fields_ext(sub, nm, th):
@@ -173,8 +173,6 @@ def lag1_of(sub, res):
 
 # ---------------- leg design objects --------------------------------
 def leg_design(sub, seq, opt):
-    """A2 best form (GB-9 rule), fields at its optimum, per-galaxy
-    point arrays in radius order (rotmod order = increasing R)."""
     A2 = 'BE' if opt['BE'].fun <= opt['boot'].fun else 'boot'
     MU, RW, RES, Y, DML, DV = fields_ext(sub, A2, list(opt[A2].x))
     gal = []
@@ -188,27 +186,82 @@ def leg_design(sub, seq, opt):
                         rk=np.asarray(rk_g), rd=rd,
                         D=SP['dist'][int(g)][0],
                         y=Y[pts], res=RES[pts]))
-    return A2, gal, RES, Y
+    return A2, gal, RES
 
-A2_A, GAL_A, RES_A, Y_A = leg_design(subP, LEGA, arch)
-A2_F, GAL_F, RES_F, Y_F = leg_design(subF, FLOW, fw)
+A2_A, GAL_A, RES_A = leg_design(subP, LEGA, arch)
+A2_F, GAL_F, RES_F = leg_design(subF, FLOW, fw)
 P(f"designs: anch best form {A2_A}, flow best form {A2_F}  "
   f"[{time.time()-t0:.0f}s]")
 
-# ---------------- the statistics (residual vector -> everything) ----
+def qual_and_edges(gal):
+    """Both-sides galaxies + y-band quintile edges (DESIGN, fixed)."""
+    qual = [j for j, gd_ in enumerate(gal)
+            if (gd_['th'] < TH_STAR).any()
+            and (gd_['th'] >= TH_STAR).any()]
+    ly = np.concatenate([np.log10(gal[j]['y']) for j in qual])
+    e = np.quantile(ly, [0, .2, .4, .6, .8, 1.0])
+    e[0] -= 1e-9; e[-1] += 1e-9
+    return qual, e
+
+QUAL_A, EDGES_A = qual_and_edges(GAL_A)
+QUAL_F, EDGES_F = qual_and_edges(GAL_F)
+
+# ---------------- the statistics ------------------------------------
 def contrast_plain(gal, res_by_gal):
-    diffs, names = [], []
+    diffs = []
     for gd_, r in zip(gal, res_by_gal):
         inn = r[gd_['th'] < TH_STAR]; out = r[gd_['th'] >= TH_STAR]
         if len(inn) and len(out):
             diffs.append(float(inn.mean() - out.mean()))
-            names.append(gd_['name'])
     d = np.array(diffs)
     if len(d) < 2:
-        return d, names, float('nan'), float('nan')
-    return d, names, float(d.mean()), float(d.std(ddof=1)/math.sqrt(len(d)))
+        return d, float('nan'), float('nan')
+    return d, float(d.mean()), float(d.std(ddof=1)/math.sqrt(len(d)))
 
-def contrast_matched(gal, res_by_gal):
+def banded_value(gal, res_by_gal, edges, qual, skip=None):
+    """A1-ii: count-weighted mean of per-band inner-minus-outer
+    contrasts over the pooled both-sides galaxies."""
+    nb = len(edges) - 1
+    si = np.zeros(nb); ni = np.zeros(nb)
+    so = np.zeros(nb); no = np.zeros(nb)
+    for j in qual:
+        if skip is not None and j == skip:
+            continue
+        gd_, r = gal[j], res_by_gal[j]
+        ly = np.log10(gd_['y'])
+        bi = np.clip(np.searchsorted(edges, ly, side='right') - 1,
+                     0, nb - 1)
+        mi = gd_['th'] < TH_STAR
+        np.add.at(si, bi[mi], r[mi]); np.add.at(ni, bi[mi], 1)
+        np.add.at(so, bi[~mi], r[~mi]); np.add.at(no, bi[~mi], 1)
+    use = (ni >= NMIN_BAND_PTS) & (no >= NMIN_BAND_PTS)
+    if use.sum() == 0:
+        return float('nan'), 0, np.full(nb, np.nan), ni, no
+    cb = si[use]/ni[use] - so[use]/no[use]
+    wb = ni[use]*no[use]/(ni[use] + no[use])
+    val = float(np.sum(wb*cb)/np.sum(wb))
+    cb_full = np.full(nb, np.nan)
+    cb_full[use] = cb
+    return val, int(use.sum()), cb_full, ni, no
+
+def s1_banded(gal, res_by_gal, edges, qual):
+    val, nbands, cb, ni, no = banded_value(gal, res_by_gal, edges, qual)
+    if not np.isfinite(val) or len(qual) < 2:
+        return float('nan'), float('nan'), nbands, len(qual), cb, ni, no
+    jk = []
+    for j in qual:
+        v, nb_, _, _, _ = banded_value(gal, res_by_gal, edges, qual,
+                                       skip=j)
+        if np.isfinite(v):
+            jk.append(v)
+    jk = np.array(jk)
+    n = len(jk)
+    se = math.sqrt((n - 1)/n*float(np.sum((jk - jk.mean())**2))) \
+        if n >= 2 else float('nan')
+    return val, se, nbands, len(qual), cb, ni, no
+
+def overlap_census(gal, res_by_gal):
+    """The retired per-galaxy y-overlap match (co-read census)."""
     diffs = []
     for gd_, r in zip(gal, res_by_gal):
         mi = gd_['th'] < TH_STAR; mo = ~mi
@@ -222,10 +275,7 @@ def contrast_matched(gal, res_by_gal):
         ko = mo & (gd_['y'] >= lo) & (gd_['y'] <= hi)
         if ki.any() and ko.any():
             diffs.append(float(r[ki].mean() - r[ko].mean()))
-    d = np.array(diffs)
-    if len(d) < 2:
-        return d, float('nan'), float('nan')
-    return d, float(d.mean()), float(d.std(ddof=1)/math.sqrt(len(d)))
+    return diffs
 
 def detrend_contrast(gal, res_by_gal, deg):
     ly = np.concatenate([np.log10(gd_['y']) for gd_ in gal])
@@ -243,12 +293,13 @@ def spearman(a, b):
     return float(np.sum(ra*rb)/den) if den > 0 else float('nan')
 
 def s2_tests(gal, res_by_gal, rng, nperm=N_PERM):
-    d, names, _, _ = contrast_plain(gal, res_by_gal)
-    sel = []
+    d, sel = [], []
     for gd_, r in zip(gal, res_by_gal):
         inn = r[gd_['th'] < TH_STAR]; out = r[gd_['th'] >= TH_STAR]
         if len(inn) and len(out):
+            d.append(float(inn.mean() - out.mean()))
             sel.append(gd_)
+    d = np.array(d)
     thmin = np.array([float(g_['th'].min()) for g_ in sel])
     dist = np.array([g_['D'] for g_ in sel])
     outp = {}
@@ -267,20 +318,24 @@ def s2_tests(gal, res_by_gal, rng, nperm=N_PERM):
     return outp
 
 def s3_cells(gal, res_by_gal):
-    dio, doi, n_io, n_oi = [], [], 0, 0
+    """A1-iii: d_Ii and d_Oi vs the Oo baseline; Io census only."""
+    dii, doi, n_io = [], [], 0
     for gd_, r in zip(gal, res_by_gal):
         if not np.isfinite(gd_['rd']) or gd_['rd'] <= 0:
             continue
         inn_th = gd_['th'] < TH_STAR
         inn_rd = gd_['rk'] < RD_FAC*gd_['rd']
+        Ii = inn_th & inn_rd
         Io = inn_th & ~inn_rd
         Oi = ~inn_th & inn_rd
         Oo = ~inn_th & ~inn_rd
         if not Oo.any():
             continue
-        base = float(r[Oo].mean())
         if Io.any():
-            dio.append(float(r[Io].mean()) - base)
+            n_io += 1
+        base = float(r[Oo].mean())
+        if Ii.any():
+            dii.append(float(r[Ii].mean()) - base)
         if Oi.any():
             doi.append(float(r[Oi].mean()) - base)
     def pack(v):
@@ -288,47 +343,49 @@ def s3_cells(gal, res_by_gal):
         if len(v) < 2:
             return v, float('nan'), float('nan')
         return v, float(v.mean()), float(v.std(ddof=1)/math.sqrt(len(v)))
-    return pack(dio), pack(doi)
+    return pack(dii), pack(doi), n_io
 
-def s3_shift_p(gal, res_by_gal, obs_io, obs_oi, rng,
+def s3_shift_p(gal, res_by_gal, obs_ii, obs_oi, rng,
                nshift=N_SHIFT_SIZE):
-    cio = coi = nio = noi = 0
+    cii = coi = nii = noi = 0
     for _ in range(nshift):
         shifted = []
         for gd_, r in zip(gal, res_by_gal):
             s = int(rng.integers(0, len(r))) if len(r) else 0
             shifted.append(np.roll(r, s))
-        (dio, mio, _), (doi, moi, _) = s3_cells(gal, shifted)
-        if np.isfinite(mio) and np.isfinite(obs_io):
-            nio += 1
-            if mio <= obs_io:
-                cio += 1
+        (dii, mii, _), (doi, moi, _), _ = s3_cells(gal, shifted)
+        if np.isfinite(mii) and np.isfinite(obs_ii):
+            nii += 1
+            if mii <= obs_ii:
+                cii += 1
         if np.isfinite(moi) and np.isfinite(obs_oi):
             noi += 1
             if moi <= obs_oi:
                 coi += 1
-    pio = (cio + 1)/(nio + 1) if nio else float('nan')
+    pii = (cii + 1)/(nii + 1) if nii else float('nan')
     poi = (coi + 1)/(noi + 1) if noi else float('nan')
-    return pio, poi
+    return pii, poi
 
-def grammar(gal, res_by_gal, rng, nperm=N_PERM, nshift=N_SHIFT_SIZE,
-            want_p=True):
-    """Full branch evaluation (prereg section 4). Returns branch +
-    the component record."""
-    dm, mm, sm = contrast_matched(gal, res_by_gal)
-    rec = dict(s1_n=len(dm), s1_mean=mm, s1_se=sm)
-    s1_pop = len(dm) >= NMIN_S1
-    survives = s1_pop and np.isfinite(mm) and mm <= -2*sm
-    collapses = s1_pop and np.isfinite(mm) and abs(mm) < 1*sm
-    (dio, mio, sio), (doi, moi, soi) = s3_cells(gal, res_by_gal)
-    rec.update(io_n=len(dio), io_mean=mio, io_se=sio,
-               oi_n=len(doi), oi_mean=moi, oi_se=soi)
-    io_pop = len(dio) >= NMIN_CELL
+def grammar(gal, res_by_gal, rng, edges, qual, nperm=N_PERM,
+            want_p=False):
+    mm, sm, nbands, nq, cb, ni, no = s1_banded(gal, res_by_gal,
+                                               edges, qual)
+    rec = dict(s1_mean=mm, s1_se=sm, s1_bands=nbands, s1_nqual=nq,
+               s1_cb=cb, s1_ni=ni, s1_no=no)
+    s1_pop = (nbands >= NMIN_BANDS) and (nq >= NMIN_S1) \
+        and np.isfinite(mm) and np.isfinite(sm)
+    survives = s1_pop and mm <= -2*sm
+    collapses = s1_pop and abs(mm) < 1*sm
+    (dii, mii, sii), (doi, moi, soi), n_io = s3_cells(gal, res_by_gal)
+    rec.update(ii_n=len(dii), ii_mean=mii, ii_se=sii,
+               oi_n=len(doi), oi_mean=moi, oi_se=soi, io_gal=n_io)
+    ii_pop = len(dii) >= NMIN_CELL
     oi_pop = len(doi) >= NMIN_CELL
-    sig_ang = (io_pop and oi_pop and np.isfinite(mio)
-               and mio <= -2*sio and abs(moi) < 1*soi)
-    sig_dsk = (io_pop and oi_pop and np.isfinite(moi)
-               and moi <= -2*soi and abs(mio) < 1*sio)
+    ii_deep = ii_pop and np.isfinite(mii) and mii <= -2*sii
+    oi_deep = oi_pop and np.isfinite(moi) and moi <= -2*soi
+    oi_flat = oi_pop and np.isfinite(moi) and abs(moi) < 1*soi
+    sig_ang = ii_deep and oi_pop and oi_flat
+    sig_dsk = ii_deep and oi_deep
     s2 = s2_tests(gal, res_by_gal, rng, nperm)
     rec['s2'] = s2
     ps = sorted([(s2['S2a_thmin'][1], 'S2a_thmin'),
@@ -343,10 +400,11 @@ def grammar(gal, res_by_gal, rng, nperm=N_PERM, nshift=N_SHIFT_SIZE,
             else:
                 break
     rec.update(sig_ang=sig_ang, sig_dsk=sig_dsk, s2_fire=s2_fire,
-               s1_pop=s1_pop, io_pop=io_pop, oi_pop=oi_pop)
+               s1_pop=s1_pop, ii_deep=ii_deep, oi_deep=oi_deep,
+               oi_flat=oi_flat, survives=survives, collapses=collapses)
     if want_p:
-        rec['io_p'], rec['oi_p'] = s3_shift_p(
-            gal, res_by_gal, mio, moi, rng, nshift)
+        rec['ii_p'], rec['oi_p'] = s3_shift_p(
+            gal, res_by_gal, mii, moi, rng)
     if s1_pop and collapses:
         br = 'B1'
     elif survives and sig_ang and s2_fire:
@@ -393,7 +451,7 @@ def world_r(gal, rng):
 if MODE == 'gates':
     P("")
     P("=" * 68)
-    P("STAGE 10Y GATES (pre-sky; PREREG-CONTRAST-10Y.md)")
+    P("STAGE 10Y GATES (pre-sky; PREREG-CONTRAST-10Y.md + A1)")
     P("")
 
     # -- G10Y-1 identity: the GB-9 regression (published targets) ----
@@ -407,7 +465,7 @@ if MODE == 'gates':
         res_by_gal = [gd_['res'] for gd_ in gal]
         dmax = max(float(np.max(np.abs(res_inh[gd_['pts']] - r)))
                    for gd_, r in zip(gal, res_by_gal))
-        d, names, m, s = contrast_plain(gal, res_by_gal)
+        d, m, s = contrast_plain(gal, res_by_gal)
         tgt = {'anch': (-0.0857, 0.0301, 20),
                'flow': (-0.0055, 0.0176, 45)}[legnm]
         p1 = (abs(m - tgt[0]) <= 1.5e-4 and abs(s - tgt[1]) <= 1.5e-4
@@ -419,29 +477,39 @@ if MODE == 'gates':
           f"{'PASS' if p1 else 'FAIL'}")
     P(f"  G10Y-1 {'PASS' if ok1 else 'FAIL'}")
 
-    # -- G10Y-2 Rdisk census + cell-population feasibility -----------
+    # -- G10Y-2 Rdisk census + design feasibility (A1-i/iii) ---------
     P("")
-    P("-- G10Y-2 Rdisk census --")
+    P("-- G10Y-2 Rdisk census (A1-i token parse) --")
     miss = [NAMEOF[int(g)] for g in LEGA + FLOW
             if RDISK.get(NAMEOF[int(g)], 0) <= 0]
     ok2 = (len(miss) == 0)
     P(f"  matched with Rdisk > 0: {len(LEGA)+len(FLOW)-len(miss)}/"
       f"{len(LEGA)+len(FLOW)}; missing: {miss if miss else 'none'}")
-    for nm2 in ('IC2574', 'DDO154', 'NGC2403'):
-        P(f"  spot: Rdisk({nm2}) = {RDISK.get(nm2, float('nan')):.2f} kpc")
-    ncells = dict(Io=0, Oi=0)
+    for nm2, truth in (('IC2574', 2.78), ('DDO154', 0.37),
+                       ('NGC2403', 1.39)):
+        got = RDISK.get(nm2, float('nan'))
+        oks = abs(got - truth) < 0.005
+        ok2 &= oks
+        P(f"  spot: Rdisk({nm2}) = {got:.2f} kpc (truth {truth:.2f}) "
+          f"{'PASS' if oks else 'FAIL'}")
+    cens = dict(Ii=0, Io=0, Oi=0, Oo=0)
     for gd_ in GAL_A:
         if not np.isfinite(gd_['rd']) or gd_['rd'] <= 0:
             continue
         inn_th = gd_['th'] < TH_STAR
         inn_rd = gd_['rk'] < RD_FAC*gd_['rd']
-        Oo = ~inn_th & ~inn_rd
-        if not Oo.any():
+        if not (~inn_th & ~inn_rd).any():
             continue
-        if (inn_th & ~inn_rd).any(): ncells['Io'] += 1
-        if (~inn_th & inn_rd).any(): ncells['Oi'] += 1
-    P(f"  anchored cell-population census (design): Io {ncells['Io']} "
-      f"gal, Oi {ncells['Oi']} gal (N_min {NMIN_CELL} each)")
+        if (inn_th & inn_rd).any(): cens['Ii'] += 1
+        if (inn_th & ~inn_rd).any(): cens['Io'] += 1
+        if (~inn_th & inn_rd).any(): cens['Oi'] += 1
+        cens['Oo'] += 1
+    P(f"  anchored cell census (design, galaxies with Oo): "
+      f"Ii {cens['Ii']}, Io {cens['Io']}, Oi {cens['Oi']}, "
+      f"Oo {cens['Oo']} (N_min {NMIN_CELL} for Ii/Oi)")
+    P(f"  S1 design: both-sides galaxies {len(QUAL_A)} "
+      f"(N_min {NMIN_S1}); y-band edges (log10 y) "
+      f"{np.array2string(EDGES_A, precision=2)}")
     P(f"  WORLD-Y calibration: b = {B_Y:+.4f} per dex(y) "
       f"(composition term C = {C_Y:+.4f} over {N_CAL} gal)")
     P(f"  G10Y-2 {'PASS' if ok2 else 'FAIL'}")
@@ -451,33 +519,37 @@ if MODE == 'gates':
     P("-- G10Y-3 size (noise-only, 2000 draws; inner perms 500 for")
     P("   the null tables -- the sky grammar uses the full 4000) --")
     rng = np.random.default_rng(20260923)
-    fires = dict(sig_ang=0, sig_dsk=0, s2=0, s1_surv=0, s1_coll=0)
+    fires = dict(ii_deep=0, oi_deep=0, s2=0, sig_ang=0, sig_dsk=0,
+                 s1_surv=0, s1_coll=0, s1_pop=0)
     nsz = 2000
     for _ in range(nsz):
         rb = world_noise(GAL_A, rng)
-        br, rec = grammar(GAL_A, rb, rng, nperm=500, nshift=0,
-                          want_p=False)
+        br, rec = grammar(GAL_A, rb, rng, EDGES_A, QUAL_A, nperm=500)
+        fires['ii_deep'] += rec['ii_deep']
+        fires['oi_deep'] += rec['oi_deep']
+        fires['s2'] += rec['s2_fire']
         fires['sig_ang'] += rec['sig_ang']
         fires['sig_dsk'] += rec['sig_dsk']
-        fires['s2'] += rec['s2_fire']
-        dm, mm, sm = rec['s1_n'], rec['s1_mean'], rec['s1_se']
-        if rec['s1_pop'] and np.isfinite(mm):
-            fires['s1_surv'] += (mm <= -2*sm)
-            fires['s1_coll'] += (abs(mm) < sm)
+        fires['s1_surv'] += rec['survives']
+        fires['s1_coll'] += rec['collapses']
+        fires['s1_pop'] += rec['s1_pop']
     for k in fires:
         fires[k] /= nsz
-    okA = 0.01 <= fires['sig_ang'] <= 0.10
-    okD = 0.01 <= fires['sig_dsk'] <= 0.10
+    okI = 0.01 <= fires['ii_deep'] <= 0.10
+    okO = 0.01 <= fires['oi_deep'] <= 0.10
     okS = 0.01 <= fires['s2'] <= 0.10
-    P(f"  P(sig_ang) = {fires['sig_ang']:.3f}  "
-      f"{'PASS' if okA else 'FAIL'} [0.01, 0.10]")
-    P(f"  P(sig_dsk) = {fires['sig_dsk']:.3f}  "
-      f"{'PASS' if okD else 'FAIL'} [0.01, 0.10]")
-    P(f"  P(S2 Holm+sign) = {fires['s2']:.3f}  "
+    P(f"  constituent P(d_Ii <= -2SE) = {fires['ii_deep']:.3f}  "
+      f"{'PASS' if okI else 'FAIL'} [0.01, 0.10]")
+    P(f"  constituent P(d_Oi <= -2SE) = {fires['oi_deep']:.3f}  "
+      f"{'PASS' if okO else 'FAIL'} [0.01, 0.10]")
+    P(f"  constituent P(S2 Holm+sign) = {fires['s2']:.3f}  "
       f"{'PASS' if okS else 'FAIL'} [0.01, 0.10]")
-    P(f"  (context: P(S1 survive|noise) = {fires['s1_surv']:.3f}, "
-      f"P(S1 collapse|noise) = {fires['s1_coll']:.3f})")
-    ok3a = okA and okD and okS
+    P(f"  compound rates (printed, no bar; A1-iv): "
+      f"sig_ang {fires['sig_ang']:.3f}, sig_dsk {fires['sig_dsk']:.3f}")
+    P(f"  context: P(S1 populated) = {fires['s1_pop']:.3f}, "
+      f"P(S1 survive|noise) = {fires['s1_surv']:.3f}, "
+      f"P(S1 collapse|noise) = {fires['s1_coll']:.3f}")
+    ok3a = okI and okO and okS
 
     P("")
     P("-- G10Y-3 branch rates (1000 draws/world; trap #32/#33) --")
@@ -486,8 +558,8 @@ if MODE == 'gates':
         cnt = dict(B1=0, B2=0, B3=0, B4=0, B4_s1surv=0)
         for _ in range(N_WORLD):
             rb = wfun(GAL_A, rng)
-            br, rec = grammar(GAL_A, rb, rng, nperm=500, nshift=0,
-                              want_p=False)
+            br, rec = grammar(GAL_A, rb, rng, EDGES_A, QUAL_A,
+                              nperm=500)
             cnt[br] += 1
             if br == 'B4' and rec['s1_pop'] and \
                np.isfinite(rec['s1_mean']) and \
@@ -509,22 +581,24 @@ if MODE == 'gates':
       f"{'PASS' if pw2 else 'FAIL'} (>= 0.60)")
     ok3 = ok3a and pw1 and pw2
 
-    # -- G10Y-4 y-match wiring ----------------------------------------
+    # -- G10Y-4 y-match wiring (banded; A1-v) -------------------------
     P("")
-    P("-- G10Y-4 y-match wiring (500 draws/world) --")
+    P("-- G10Y-4 y-match wiring (500 draws/world; banded S1) --")
     czero = ckeep = 0
     for _ in range(N_WIRE):
-        dm, mm, sm = contrast_matched(GAL_A, world_y(GAL_A, rng))
-        if len(dm) >= NMIN_S1 and np.isfinite(mm) and abs(mm) < sm:
+        mm, sm, nb_, nq, _, _, _ = s1_banded(
+            GAL_A, world_y(GAL_A, rng), EDGES_A, QUAL_A)
+        if nb_ >= NMIN_BANDS and np.isfinite(mm) and abs(mm) < sm:
             czero += 1
-        dm, mm, sm = contrast_matched(GAL_A, world_r(GAL_A, rng))
-        if len(dm) >= NMIN_S1 and np.isfinite(mm) and mm <= -sm:
+        mm, sm, nb_, nq, _, _, _ = s1_banded(
+            GAL_A, world_r(GAL_A, rng), EDGES_A, QUAL_A)
+        if nb_ >= NMIN_BANDS and np.isfinite(mm) and mm <= -sm:
             ckeep += 1
     czero /= N_WIRE; ckeep /= N_WIRE
     ok4 = (czero >= 0.80) and (ckeep >= 0.60)
-    P(f"  P(matched ~0 | WORLD-Y) = {czero:.3f} "
+    P(f"  P(banded ~0 | WORLD-Y) = {czero:.3f} "
       f"{'PASS' if czero >= 0.80 else 'FAIL'} (>= 0.80)")
-    P(f"  P(matched <= -1SE | WORLD-R) = {ckeep:.3f} "
+    P(f"  P(banded <= -1SE | WORLD-R) = {ckeep:.3f} "
       f"{'PASS' if ckeep >= 0.60 else 'FAIL'} (>= 0.60)")
 
     P("")
@@ -539,36 +613,49 @@ if MODE == 'gates':
 else:  # ---------------------------- sky ----------------------------
     P("")
     P("=" * 68)
-    P("STAGE 10Y SKY READ (post-prereg-commit)")
+    P("STAGE 10Y SKY READ (post-prereg-commit; A1 form)")
     P("")
     rng = np.random.default_rng(20260923 + 1)
 
-    for legnm, gal, sub in (('ANCHORED', GAL_A, subP),
-                            ('FLOW', GAL_F, subF)):
+    for legnm, gal, sub, edges, qual in (
+            ('ANCHORED', GAL_A, subP, EDGES_A, QUAL_A),
+            ('FLOW', GAL_F, subF, EDGES_F, QUAL_F)):
         res_by_gal = [gd_['res'] for gd_ in gal]
         P(f"---- {legnm} leg (best form "
           f"{A2_A if legnm == 'ANCHORED' else A2_F}) ----")
-        d, names, m, s = contrast_plain(gal, res_by_gal)
+        d, m, s = contrast_plain(gal, res_by_gal)
         P(f"  S0 plain contrast: {m:+.4f} +/- {s:.4f} over {len(d)} gal")
-        dm, mm, sm = contrast_matched(gal, res_by_gal)
-        P(f"  S1 y-matched:      {mm:+.4f} +/- {sm:.4f} over "
-          f"{len(dm)} gal (N_min {NMIN_S1})")
+        mm, sm, nb_, nq, cb, ni, no = s1_banded(gal, res_by_gal,
+                                                edges, qual)
+        P(f"  S1 y-banded:       {mm:+.4f} +/- {sm:.4f} (jackknife; "
+          f"{nb_} usable bands, {nq} both-sides gal)")
+        for b in range(len(cb)):
+            if np.isfinite(cb[b]):
+                P(f"    band {b}: c_b = {cb[b]:+.4f} "
+                  f"(n_in {int(ni[b])}, n_out {int(no[b])})")
+        oc = overlap_census(gal, res_by_gal)
+        P(f"  S1 co-read per-galaxy overlap match: {len(oc)} gal "
+          f"qualify" + (f", mean {np.mean(oc):+.4f}" if len(oc) >= 2
+                        else " (unpopulated, as the A1 census found)"))
         for deg, tag in ((1, 'lin'), (2, 'quad'), (3, 'cub')):
-            _, _, md, sd_ = detrend_contrast(gal, res_by_gal, deg)
+            _, md, sd_ = detrend_contrast(gal, res_by_gal, deg)
             P(f"  S1 co-read detrend-{tag}: {md:+.4f} +/- {sd_:.4f} "
               f"(biased toward collapse; no branch weight)")
         s2 = s2_tests(gal, res_by_gal, rng)
         for tag in ('S2a_thmin', 'S2b_dist'):
             rho, p, sgn, n = s2[tag]
             P(f"  {tag}: rho = {rho:+.3f}, perm p = {p:.4f} "
-            f"(smearing sign {'+' if sgn > 0 else '-'}; n = {n})")
-        (dio, mio, sio), (doi, moi, soi) = s3_cells(gal, res_by_gal)
-        P(f"  S3 d_Io (inner-angle only vs Oo): {mio:+.4f} +/- "
-          f"{sio:.4f} over {len(dio)} gal")
-        P(f"  S3 d_Oi (inner-disk only vs Oo):  {moi:+.4f} +/- "
+              f"(smearing sign {'+' if sgn > 0 else '-'}; n = {n})")
+        (dii, mii, sii), (doi, moi, soi), n_io = s3_cells(gal,
+                                                          res_by_gal)
+        P(f"  S3 d_Ii (inner-both vs Oo):      {mii:+.4f} +/- "
+          f"{sii:.4f} over {len(dii)} gal")
+        P(f"  S3 d_Oi (outer-angle, inner-disk): {moi:+.4f} +/- "
           f"{soi:.4f} over {len(doi)} gal")
-        pio, poi = s3_shift_p(gal, res_by_gal, mio, moi, rng)
-        P(f"  S3 circular-shift p: Io {pio:.4f}, Oi {poi:.4f} "
+        P(f"  S3 Io census: {n_io} galaxies carry any "
+          f"inner-angle-outer-disk point")
+        pii, poi = s3_shift_p(gal, res_by_gal, mii, moi, rng)
+        P(f"  S3 circular-shift p: Ii {pii:.4f}, Oi {poi:.4f} "
           f"(one-sided toward depression; {N_SHIFT_SIZE} draws)")
         legres = RES_A if legnm == 'ANCHORED' else RES_F
         P(f"  rho_lag1 = {lag1_of(sub, legres):.3f}")
@@ -608,15 +695,18 @@ else:  # ---------------------------- sky ----------------------------
     P("")
 
     # the letter
-    P("---- LETTER (prereg section 4 grammar; ANCHORED) ----")
+    P("---- LETTER (prereg section 4 + A1 grammar; ANCHORED) ----")
     rngL = np.random.default_rng(20260923 + 2)
-    br, rec = grammar(GAL_A, [gd_['res'] for gd_ in GAL_A], rngL)
-    P(f"  S1: n {rec['s1_n']}, mean {rec['s1_mean']:+.4f} +/- "
-      f"{rec['s1_se']:.4f}; populated {rec['s1_pop']}")
-    P(f"  S3: Io {rec['io_mean']:+.4f} +/- {rec['io_se']:.4f} "
-      f"(n {rec['io_n']}, p {rec.get('io_p', float('nan')):.4f}); "
-      f"Oi {rec['oi_mean']:+.4f} +/- {rec['oi_se']:.4f} "
-      f"(n {rec['oi_n']}, p {rec.get('oi_p', float('nan')):.4f})")
+    br, rec = grammar(GAL_A, [gd_['res'] for gd_ in GAL_A], rngL,
+                      EDGES_A, QUAL_A, nperm=N_PERM, want_p=True)
+    P(f"  S1: bands {rec['s1_bands']}, qual {rec['s1_nqual']}, "
+      f"mean {rec['s1_mean']:+.4f} +/- {rec['s1_se']:.4f}; "
+      f"populated {rec['s1_pop']}; survives {rec['survives']}, "
+      f"collapses {rec['collapses']}")
+    P(f"  S3: d_Ii {rec['ii_mean']:+.4f} +/- {rec['ii_se']:.4f} "
+      f"(n {rec['ii_n']}, shift-p {rec.get('ii_p', float('nan')):.4f}); "
+      f"d_Oi {rec['oi_mean']:+.4f} +/- {rec['oi_se']:.4f} "
+      f"(n {rec['oi_n']}, shift-p {rec.get('oi_p', float('nan')):.4f})")
     P(f"  signatures: angular {rec['sig_ang']}, disk {rec['sig_dsk']}; "
       f"S2 fire {rec['s2_fire']}")
     P(f"  BRANCH: {br}")

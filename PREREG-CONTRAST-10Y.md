@@ -235,6 +235,66 @@ moves no world-level credence regardless of branch.
 Amendments: instrument-side only, each committed pre-quote with the
 prior run preserved under a suffixed filename (house standard).
 
+## A1 — AMENDMENT (pre-quote; gates run 1 preserved as
+## data/stage10y_gates_r1.txt; committed BEFORE the amended gates run)
+
+Run 1 (G10Y-1 PASS, everything else FAIL) found one bug and two
+DESIGN-DEAD constructions. No sky statistic was touched. The fixes:
+
+A1-i PARSER: the .mrt is not at the header's byte layout on disk;
+  Rdisk is parsed by whitespace token (index 11), name = token 0.
+  Spot truths: IC2574 2.78, DDO154 0.37, NGC2403 1.39 kpc.
+
+A1-ii S1 REDESIGN (the per-galaxy y-overlap match qualifies ZERO
+  galaxies — y is near-monotone in radius, so inner and outer
+  y-ranges barely overlap within one galaxy; run-1 print):
+  S1 primary = the Y-BANDED matched contrast. Band edges = quintiles
+  of log10 y over the pooled points of both-sides galaxies (DESIGN
+  quantities, fixed once). Per band with >= 5 inner and >= 5 outer
+  points: c_b = mean RES(in, b) - mean RES(out, b); S1 = the
+  count-weighted mean (w_b = n_in n_out/(n_in + n_out)); SE = the
+  leave-one-galaxy-out JACKKNIFE over the both-sides galaxies
+  (block-honest, deterministic). Populated: >= 3 usable bands AND
+  >= 8 both-sides galaxies. Survive/collapse bars unchanged
+  (-2 SE / |.| < 1 SE). The per-galaxy overlap match demotes to a
+  census-reported co-read; the pooled detrends stay labeled
+  co-reads. Rationale: within a y band, inner and outer points
+  carry (nearly) the same y, so a pure y-trend cancels; a
+  radius-specific depression does not.
+
+A1-iii S3 REDESIGN (the Io cell is UNPOPULATABLE on the anchored
+  arm — 20 arcsec at anchored distances is a small physical radius,
+  so no point is inner-by-angle but outer-by-disk; run-1 census
+  Io = 0, Oi = 20): the populated grammar reads THREE cells:
+  Ii (th < 20 AND R < 1.5 Rd), Oi (th >= 20 AND R < 1.5 Rd),
+  Oo (th >= 20 AND R >= 1.5 Rd). Per galaxy with Oo populated:
+  d_Ii and d_Oi vs the Oo baseline. The organizers separate on
+  d_Oi — the points BEYOND the angular split but INSIDE the disk
+  scale:
+    ANGULAR signature: d_Ii <= -2 SE(d_Ii) AND |d_Oi| < 1 SE(d_Oi)
+      (the depression stops at the angle).
+    DISK signature: d_Ii <= -2 SE(d_Ii) AND d_Oi <= -2 SE(d_Oi)
+      (the depression fills the disk scale).
+  Mutually exclusive via the d_Oi clause; the gap (d_Oi between
+  -2 SE and -1 SE, or d_Ii shallow) is B4. Io is reported as a
+  census line only. Named confound: Oi sits at lower y than Ii; the
+  y-banded d_Oi co-read is printed (descriptive). N_min(cell) = 5
+  unchanged; circular-shift p unchanged, now for d_Ii/d_Oi.
+
+A1-iv SIZE BARS: the [0.01, 0.10] band applies to each CONSTITUENT
+  one-sided 2-SE test (d_Ii, d_Oi, S2 Holm+sign); the compound
+  signature rates are PRINTED without bars (a conjunction is
+  legitimately rarer than 1% under noise; the run-1 bar was
+  mis-posed for conjunctions).
+
+A1-v POWER/WIRING: same bars (P(B1|WORLD-Y) >= 0.60;
+  P(radius kept|WORLD-R) >= 0.60; wiring >= 0.80 / >= 0.60), now
+  evaluated on the banded S1 and the A1-iii grammar.
+
+Branch priors unchanged (B1 0.25 / B2 0.15 / B3 0.20 / B4 0.40).
+Nothing in this amendment reads a real residual number beyond the
+published targets and the run-1 gate prints.
+
 ## 7. Outputs
 
 calcs/stage10y_organizer.py (modes: gates / sky) ->
