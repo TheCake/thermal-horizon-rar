@@ -3225,3 +3225,40 @@ owed) -- early-Oct DR4 credence-map pre-sign session
 (CALENDAR-IMMOVABLE, draft map to Grok first; hard deadline
 2026-12-02) -- the a0-dipole instrument (hammering item, now behind
 F per the exit condition).**
+
+**PROPOSAL F BUILD (2026-09-22 second block, the author's "lets go
+for the next thing"): THE FIGURES STAGE + THE PROSE PASS ARE DONE.
+calcs/paperf_figures.py created and gated (GF-1..GF-5 ALL PASS
+first run; every plotted number PARSED from committed stage outputs
+or recomputed from declared conventions -- census closure 175 =
+97+50+28 / legA 78 = 41+26+11, first-light values + a0<->H0
+lock-linearity closed <= 0.06, map totals/carriers exact vs the R49
+verdict incl. the rest-net -1.0 assert, three-world scoring
+reproduced 0.3/1.5/1.9-2.7 at sigma 4.99, lock a1 = +0.52 recomputed,
+z~1 rows 2.30/0.66/0.12 exact; provenance dump data/paperf_figs.txt);
+five figures figf1-5 rendered AND visually audited (census/two-arm
+design; first-light forest -- no invented posterior shape, boot
+percentiles carry the asymmetry; THE MAP scatter + ranked-cumulative;
+worlds + measured-gearing panel; z-axis 3 panels with the Ciocan
+95%->1-sigma conversion labeled correctly). FOUND ON THE WAY: P2's
+a0-ladder table mislabels those same converted half-widths as "their
+95% intervals" (pulls right, label wrong) -- QUEUED in
+REVIEW-REGISTER-2026-09.md for the journal pass, NOT touched in P2.
+papers/paperF_hubble_meter.md -> DRAFT 0.2 FULL PROSE per STYLE.md
+(abstract 249 words; register-audited: zero banned strings, 7
+em-dashes, 60+-word sentences split; "arms" not "legs", no house
+dialect; the R49 one-sentence product carried in 6c; App A = the five
+review sessions' adopted downgrades + retracted strings + binding
+guardrails as bullets; App B = the reproducibility table; references
+split verified-(v) / [verify]; [ASSEMBLY] tags = the submission
+blockers: SML20 quote verification vs the PDF, D564-8/D631-7 census
+resolution, tagged reference verification, final abstract count). NO
+sky numbers touched, NO ledger row (paper work), credences 53/8
+untouched. NEXT FORK (author's): F referee round (fresh journal-
+referee session vs 0.2 -- TELL THE AUTHOR FIRST, standing rule; then
+the ASSEMBLY blockers) -- WED 09-24 MNRAS backstop decision for P1
+(prep notes owed Wednesday, deliberately not gold-plated early) --
+the residual-contrast successor instrument (R49-C17, costs no fits)
+-- early-Oct DR4 credence-map pre-sign session (IMMOVABLE; draft map
+to Grok first; hard deadline 2026-12-02) -- the a0-dipole instrument
+(hammering item, behind F).**
