@@ -1,0 +1,54 @@
+STAGE 10X METER ROBUSTNESS BATTERY -- mode = run
+
+[inherited 10T header executed: SPARC/CF4/LT load, worlds, engine]
+
+-- G10X-1 primary reproduction (archived chain: plain -> loose -> deep) --
+  a0 = 1.0106e-10 vs archived 1.0106e-10 (rel 4.12e-05 vs 1e-3); H0 = 65.36 vs 65.36
+G10X-1: PASS  [4s]
+
+-- G10X-2 variant-harness identity (A-var2 world) --
+  a0 = 1.0098e-10 vs archived 1.0098e-10 (rel 3.89e-05 vs 1e-3)
+G10X-2: PASS
+
+-- G10X-3 axis census (bars from counts alone) --
+  A1 LOO: N_sub = 77 per fit, 78 fits; bar = 1.14 km/s/Mpc (on the max)
+  A2 incl>=40: N_sub = 74; bar = 2.32 km/s/Mpc
+  A2 incl>=45: N_sub = 71; bar = 3.13 km/s/Mpc
+  A2 incl>=50: N_sub = 63; bar = 4.87 km/s/Mpc
+  A3 Q=1: N_sub = 46; bar = 8.32 km/s/Mpc
+  A4 bulge-free: N_sub = 66; bar = 4.26 km/s/Mpc
+  A5 svx1.5: N_sub = 78; bar = 1.00 km/s/Mpc
+  letter-eligible set E = ['A1 LOO', 'A2 incl>=40', 'A2 incl>=45', 'A2 incl>=50', 'A3 Q=1', 'A4 bulge-free', 'A5 svx1.5']
+G10X-3: PASS
+
+-- G10X-4 warm-start determinism (A1 amendment bar: rel 1e-4) --
+  identity refit rel delta = 6.78e-07 vs 1e-4
+G10X-4: PASS
+
+== 10X BATTERY ==
+
+-- A1 leave-one-out (78 deep refits; bar 1.14 on the max) --
+  max |dH0| = 2.250 (NGC5907); top influences: NGC5907 +2.250, NGC0891 -1.482, NGC7331 -1.421, NGC2403 -1.329, NGC7814 -1.303, NGC5585 -1.167
+  distribution |dH0|: median 0.220, 90th pct 1.089
+  [2.8 min]
+-- A2 incl>=40: N = 74, H0 = 65.64, dH0 = +0.28 (bar 2.32) -> pass
+-- A2 incl>=45: N = 71, H0 = 65.57, dH0 = +0.21 (bar 3.13) -> pass
+-- A2 incl>=50: N = 63, H0 = 67.00, dH0 = +1.64 (bar 4.87) -> pass
+-- A3 Q=1: N = 46, H0 = 69.71, dH0 = +4.35 (bar 8.32) -> pass
+-- A4 bulge-free: N = 66, H0 = 59.49, dH0 = -5.87 (bar 4.26) -> FIRES
+-- A5 svx1.5: H0 = 66.54, dH0 = +1.18 (bar 1.00) -> FIRES
+
+LETTER: X-METER-SENSITIVE(A1 LOO |d| 2.25 > bar 1.14; A4 bulge-free |d| 5.87 > bar 4.26; A5 svx1.5 |d| 1.18 > bar 1.00)
+  [DIAGNOSTIC GRADE -- a SENSITIVE letter triggers a review round before anything is quoted from it]
+  No variant reading replaces the primary; the band 65.4-70.4 and stat 5.0 are uncut-primary properties and do not move (pre-registered cap, this block).
+
+-- CENSUS LEG (clearing rule frozen in prereg section 6) --
+  CF4 coordinate rows parsed: 55877
+  D564-8: CF4 PGC 86668 (0.16 arcmin), method trgb: D_CF4 = 8.63 +- 0.28 vs SPARC D = 8.79 +- 0.28; gap -1.8% vs tol 15% -> flag CLEARED
+    [no membership or distance change either way; membership moves only through a registered census stage]
+  D631-7: CF4 PGC 22277 (0.43 arcmin), method trgb: D_CF4 = 7.69 +- 0.11 vs SPARC D = 7.72 +- 0.18; gap -0.4% vs tol 15% -> flag CLEARED
+    [no membership or distance change either way; membership moves only through a registered census stage]
+  KK98-251: no CF4 row within 3 arcmin of the NED position; NED itself gives only an anonymous field designation (PGC1 0065001 NED007, the NGC 6946 field) -> RESOLVED AS UNLISTABLE: no proper PGC, no CF4 per-method entry; it cannot be CF4-reclassified and stays a flow member at its SPARC distance. Census question CLOSED.
+
+CREDENCES: every cell pre-signed HOLD (53 / 8); diagnostic stage.
+total wall-clock: 3.2 min
