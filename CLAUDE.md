@@ -3380,7 +3380,18 @@ capped, variant bar to the primary; Fig1 overflow fixed; abstract
 "block scatter" defined; App A six sessions). Credences 53/8
 untouched; primary/band/stat/validity unchanged. F remaining
 [ASSEMBLY]: AJ-PDF cross-check + final abstract recount. THE SEND
-PACKAGE (Kroupa, letter 9 in OUTREACH-DRAFTS, drafted in Czech with
-the verified KBC-void hook ONLY): remaining steps = F PDF render ->
-Czech cold read (fresh subagent) -> the author's click; WED 09-24 =
-the MNRAS-direct decision for P1 (condition met; prep notes owed).**
+PACKAGE (Kroupa, letter 9 in OUTREACH-DRAFTS, Czech, verified
+KBC-void hook only) IS ASSEMBLED: F PDF rendered
+(colleague_package/hajek2026d_hubble_meter.pdf, 18 pp, via
+calcs/render_paperf.py -- markdown -> P1/P2-template HTML -> Edge
+headless; internal apparatus stripped, disclosed in-script); the
+letter passed TWO fresh cold reads (both FIX-THEN-SEND, all findings
+adopted into v3 -- incl. read #2's catches: the v2 Zenodo link
+pointed at the PRE-disclosure v1.2 record [repointed to the concept
+DOI 22050990] and "už rok" was false vs the repo's 07-22 first
+commit [dropped]; the +-5-vs-2-3 comparison deleted rather than
+defended with an unmeasured cancellation claim). REMAINING = the
+author's read + click (attachments P1 0.13 + P2 0.11 + hajek2026d;
+verify Kroupa's current email at send time -- Bonn vs Charles
+University page, never guess). WED 09-24 = the MNRAS-direct decision
+for P1 (the zero-replies condition MET; prep notes owed with it).**
