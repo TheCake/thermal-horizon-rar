@@ -3392,6 +3392,16 @@ DOI 22050990] and "už rok" was false vs the repo's 07-22 first
 commit [dropped]; the +-5-vs-2-3 comparison deleted rather than
 defended with an unmeasured cancellation claim). REMAINING = the
 author's read + click (attachments P1 0.13 + P2 0.11 + hajek2026d;
-verify Kroupa's current email at send time -- Bonn vs Charles
-University page, never guess). WED 09-24 = the MNRAS-direct decision
-for P1 (the zero-replies condition MET; prep notes owed with it).**
+email VERIFIED 2026-09-23 at the primary pages, recorded in the
+drafts file send gate -- Bonn primary; MFF Prague fallback; the
+2014-stale HISKP address flagged do-not-use). **RE-SEQUENCED BY THE
+AUTHOR 2026-09-23: KROUPA GOES FIRST -- the arXiv door (endorsement)
+is worth the wait; the WED 09-24 MNRAS-direct decision is PARKED,
+condition still MET, new trigger = Kroupa silent through MON
+2026-10-05 (or declines to engage) -> P1 to MNRAS that week; on an
+endorsement, arXiv post (Zenodo v1.1-per-vault-rule wave) and the
+venue question reopens (OJAp becomes available; MNRAS remains
+compatible with arXiv at any time). MNRAS prep notes (LaTeX
+conversion + plain cover letter) deferred to the trigger,
+deliberately not gold-plated early. DR4 pre-sign session early Oct
+IMMOVABLE regardless (hard deadline 2026-12-02).**
