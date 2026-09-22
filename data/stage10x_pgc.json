@@ -1,0 +1,6 @@
+{
+  "_provenance": "Session-documented external lookups 2026-09-22 (PREREG-METER-10X.md amendment A2). D564-8 and D631-7 coordinates: VizieR J/AJ/152/157/table1 (SPARC, computed J2000 positions), fetched via asu-tsv. KK98-251: NED objsearch on '[KK98] 251' -> resolved to the anonymous designation 'PGC1 0065001 NED007' (an object in the PGC 65001 = NGC 6946 field, NOT a proper PGC of its own), v = 126 km/s, position 20h30m32.9s +60d21m17s. SIMBAD rejected all tried identifier forms; HyperLEDA unreachable over https. The stage matches these positions into the local CF4 table2 coordinate columns (RAdeg 138-145, DEdeg 147-154) within 3 arcmin.",
+  "D564-8":  {"ra": 135.7223189, "dec": 20.0756139, "source": "VizieR J/AJ/152/157"},
+  "D631-7":  {"ra": 119.2542811, "dec": 14.3965711, "source": "VizieR J/AJ/152/157"},
+  "KK98-251": {"ra": 307.63708, "dec": 60.35472, "source": "NED [KK98] 251; NED gives only an anonymous field designation (PGC1 0065001 NED007), no proper PGC"}
+}

@@ -1,0 +1,29 @@
+STAGE 10X METER ROBUSTNESS BATTERY -- mode = gates
+
+[inherited 10T header executed: SPARC/CF4/LT load, worlds, engine]
+
+-- G10X-1 primary reproduction (archived chain: plain -> loose -> deep) --
+  a0 = 1.0106e-10 vs archived 1.0106e-10 (rel 4.12e-05 vs 1e-3); H0 = 65.36 vs 65.36
+G10X-1: PASS  [4s]
+
+-- G10X-2 variant-harness identity (A-var2 world) --
+  a0 = 1.0098e-10 vs archived 1.0098e-10 (rel 3.89e-05 vs 1e-3)
+G10X-2: PASS
+
+-- G10X-3 axis census (bars from counts alone) --
+  A1 LOO: N_sub = 77 per fit, 78 fits; bar = 1.14 km/s/Mpc (on the max)
+  A2 incl>=40: N_sub = 74; bar = 2.32 km/s/Mpc
+  A2 incl>=45: N_sub = 71; bar = 3.13 km/s/Mpc
+  A2 incl>=50: N_sub = 63; bar = 4.87 km/s/Mpc
+  A3 Q=1: N_sub = 46; bar = 8.32 km/s/Mpc
+  A4 bulge-free: N_sub = 66; bar = 4.26 km/s/Mpc
+  A5 svx1.5: N_sub = 78; bar = 1.00 km/s/Mpc
+  letter-eligible set E = ['A1 LOO', 'A2 incl>=40', 'A2 incl>=45', 'A2 incl>=50', 'A3 Q=1', 'A4 bulge-free', 'A5 svx1.5']
+G10X-3: PASS
+
+-- G10X-4 warm-start determinism (A1 amendment bar: rel 1e-4) --
+  identity refit rel delta = 6.78e-07 vs 1e-4
+G10X-4: PASS
+
+GATES: ALL PASS (no variant central computed in gates mode)
+total wall-clock: 0.1 min
