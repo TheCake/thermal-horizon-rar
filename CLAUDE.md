@@ -3390,7 +3390,17 @@ adopted into v3 -- incl. read #2's catches: the v2 Zenodo link
 pointed at the PRE-disclosure v1.2 record [repointed to the concept
 DOI 22050990] and "už rok" was false vs the repo's 07-22 first
 commit [dropped]; the +-5-vs-2-3 comparison deleted rather than
-defended with an unmeasured cancellation claim). REMAINING = the
+defended with an unmeasured cancellation claim). READ #3 (2026-09-23,
+on the author's hook-first restructure) FIX-THEN-SEND, adopted in
+full -> LETTER v5: method-first subject (inverze a0=cH0/2pi first),
+the void agreement stated DIRECTION-ONLY with the non-exclusion
+sentence and the one-sided systematic IN the opening (read #3 caught
+my "přesně tam, kde potřebuje" confirmation language + a false
+stat-vs-systematic size claim), hemispheric test explicitly UN-RUN,
+singular voice throughout (the "we = language models"
+discovery-order risk), Prague line matches the verified
+guest-professorship, credibility block (prereg + 21 corrections + AI
+disclosure) moved to the bottom skim zone. REMAINING = the
 author's read + click (attachments P1 0.13 + P2 0.11 + hajek2026d;
 email VERIFIED 2026-09-23 at the primary pages, recorded in the
 drafts file send gate -- Bonn primary; MFF Prague fallback; the
