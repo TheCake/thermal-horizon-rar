@@ -3254,7 +3254,20 @@ split verified-(v) / [verify]; [ASSEMBLY] tags = the submission
 blockers: SML20 quote verification vs the PDF, D564-8/D631-7 census
 resolution, tagged reference verification, final abstract count). NO
 sky numbers touched, NO ledger row (paper work), credences 53/8
-untouched. NEXT FORK (author's): F referee round (fresh journal-
+untouched. SAME BLOCK, the verification pass: SML20 DISCHARGED at
+accepted-arXiv-source grade (all six claims string-verified on the
+v2 LaTeX; precision adds folded into section 1: 30/20 = their STATED
+split vs tables 29+21; LSRK self-ruled-out named; a0/RAR "cited only
+as background" wording; residual = AJ-PDF cross-check at assembly);
+reference sweep verified (Riess/Secrest -> ApJL; CF4 = Tully+ 2023
+ApJ 944, 94 publisher-confirmed against a haiku arXiv-year
+confusion) and caught a REAL record error: the Haslbauer/Banik/
+Kroupa KBC-void arXiv ID was 2008.07524 (an unrelated quantum-RL
+paper) everywhere in the program -- corrected to 2009.11292, two
+independent fetches, PREDICTIONS F2 carries the dated append-only
+annotation. Remaining F [ASSEMBLY] blockers: AJ-PDF cross-check,
+census-pending pair (next census pass), Ponomareva-2018 +
+Cadoni-Tuveri-2020 entries, final abstract count. NEXT FORK (author's): F referee round (fresh journal-
 referee session vs 0.2 -- TELL THE AUTHOR FIRST, standing rule; then
 the ASSEMBLY blockers) -- WED 09-24 MNRAS backstop decision for P1
 (prep notes owed Wednesday, deliberately not gold-plated early) --

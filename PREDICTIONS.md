@@ -845,3 +845,12 @@ The registered successor priority is therefore PIN THE ν-FORM (an
 in-catalog family contest on the anchored leg), then BIG-SPARC N. The
 F1 sentence "current 66 ± 13 … separates nothing" is superseded at
 report grade by this annotation.*
+
+*Annotation 2026-09-22 (citation correction, append-only, no flip):
+the F2 arXiv string "2008.07524" is a WRONG ID — that ID resolves to
+an unrelated quantum-computing paper (Lockwood & Si). The Haslbauer,
+Banik & Kroupa KBC-void paper is arXiv:2009.11292 = MNRAS 499, 2845
+(2020), verified at the arXiv abstract page 2026-09-22 (two
+independent fetches; the wrong ID entered at F2's registration from
+memory). Use 2009.11292 everywhere; the registered physics content of
+F2 is untouched.*

@@ -2,12 +2,18 @@
 
 **Draft 0.2 — full prose (2026-09-22). Style contract: papers/STYLE.md.
 Figures are built and gated by calcs/paperf_figures.py (provenance dump
-data/paperf_figs.txt). Assembly TODOs, each blocking submission, are
-tagged [ASSEMBLY] in place: (i) verify every Schombert–McGaugh–Lelli 2020
-quote against the PDF; (ii) resolve the two census-pending galaxies;
-(iii) verify the reference entries so tagged; (iv) abstract word count on
-the final text. Guardrails from the stage verdict files are restated in
-Appendix A and are binding on every future edit.**
+data/paperf_figs.txt). Verification state: the SML20 quote set was
+verified against the accepted arXiv v2 source on 2026-09-22 (residual:
+cross-check the published AJ PDF at assembly); the reference list was
+verified against arXiv/ADS/publisher pages the same day (one wrong
+arXiv ID caught and corrected program-wide: Haslbauer et al. is
+2009.11292, not 2008.07524). Remaining [ASSEMBLY] blockers: (i) the
+AJ-PDF cross-check; (ii) resolve the two census-pending galaxies
+(booked for the next census pass under its own check); (iii) the
+Ponomareva et al. 2018 and Cadoni–Tuveri 2020 reference entries; (iv)
+abstract word count on the final text. Guardrails from the stage
+verdict files are restated in Appendix A and are binding on every
+future edit.**
 
 Author: Filip Hájek (independent researcher).
 
@@ -68,17 +74,23 @@ direction exists: van Putten (2026) evaluates a related identity at
 fixed cosmological parameters and compares the result to the measured
 a0. The nearest neighbor in data and intent is Schombert, McGaugh &
 Lelli (2020), who measured H0 = 75.1 +- 2.3 (stat) +- 1.5 (sys) from
-the baryonic Tully–Fisher relation: calibrated on 50 galaxies with
-Cepheid or TRGB distances (30 of them in SPARC), then applied outward
-to 95 SPARC galaxies through CosmicFlows-3 flow velocities. Their
-dominant systematic is the flow-model choice (72.8-77.5 across four
-models); no acceleration scale and no radial acceleration relation
-appears anywhere in their method. [ASSEMBLY: verify these numbers
-against the PDF.] The differentiation is direction: the same catalog,
-run the opposite way. They ladder out through a flow model; we invert
-the acceleration scale on the anchored subsample with no flow model.
-The two instruments share calibration pegs and fail in different
-places, which is what makes the comparison useful.
+the baryonic Tully–Fisher relation, calibrated on 50 galaxies with
+Cepheid (27) or TRGB (23) distances — stated by them as 30 drawn from
+SPARC and 20 from Ponomareva et al. (2018) — and then applied outward
+to the remaining 95 SPARC galaxies through CosmicFlows-3 velocities.
+Their dominant quoted systematic (the +- 1.5) is the standard
+deviation among flow models, which spans 72.8-77.5 across the four
+velocity treatments they tabulate (including an uncorrected case they
+themselves deem inadequate); in their words it "dominates the other
+systematics". No acceleration scale enters their analysis; the radial
+acceleration relation is cited only as background. [All quotes
+verified against the accepted arXiv source, 2026-09-22; cross-check
+the published AJ PDF at assembly.] The differentiation is direction:
+the same catalog, run the opposite way. They ladder out through a
+flow model; we invert the acceleration scale on the anchored
+subsample with no flow model. The two instruments share calibration
+pegs and fail in different places, which is what makes the comparison
+useful.
 
 This paper is the instrument: the circularity in the naive inversion
 and its two-arm resolution (section 2), the first reading (section 5),
@@ -668,24 +680,34 @@ entries marked (v) were verified in earlier papers of this program.]
 - Cadoni M., Tuveri M., 2020, anisotropic-fluid cosmology
   (arXiv:2002.06988). [verify; cite only if section 8 keeps it]
 - Ciocan B. I., et al., 2026, MUSE-DARK III (arXiv:2604.22613). (v)
-- Gillot S., 2026, EPJC. [copy the verified entry from the program
-  record at assembly]
+- Gillot J., 2026, Eur. Phys. J. C, accepted (arXiv:2507.11524). (v)
 - Hájek F., 2026a, wide-binary companion paper (Zenodo DOI
   10.5281/zenodo.22050990 concept). (v)
 - Hájek F., 2026b, RAR-coefficients companion paper (same record). (v)
+- Anand G. S., Rizzi L., Tully R. B., et al., 2021, AJ 162, 80
+  (arXiv:2104.02649; the EDD TRGB catalog). (v)
 - Haslbauer M., Banik I., Kroupa P., 2020, MNRAS 499, 2845
-  (arXiv:2008.07524). [verify]
-- Haubner K., et al., BIG-SPARC (arXiv:2411.13329). [verify authors]
+  (arXiv:2009.11292). (v) [ID corrected 2026-09-22: the program
+  record briefly carried 2008.07524, an unrelated paper]
+- Haubner K., et al., 2024, arXiv:2411.13329 (BIG-SPARC; IAU Symp.
+  392 proceedings; the database itself is in preparation). (v)
 - Lelli F., McGaugh S. S., Schombert J. M., 2016, AJ 152, 157. (v)
 - McGaugh S. S., Lelli F., Schombert J. M., 2016, PRL 117, 201101. (v)
-- Migkas K., et al., 2021, A&A 649, A151. [verify]
+- Migkas K., et al., 2021, A&A 649, A151 (arXiv:2103.13904). (v)
 - Milgrom M., 1983, ApJ 270, 365. (v)
 - Planck Collaboration, 2020, A&A 641, A6. (v)
-- Riess A. G., et al., 2022, ApJ 934, L7. [verify]
-- Schombert J., McGaugh S., Lelli F., 2020, AJ 160, 71.
-  [ASSEMBLY: verify all quoted numbers against the PDF]
-- Secrest N. J., et al., 2021, ApJ 908, L51. [verify]
-- Tully R. B., et al., 2023, CosmicFlows-4, ApJ 944, 94. [verify]
+- Ponomareva A. A., et al., 2018 (the independent bTFR calibrator
+  sample used by SML20). [verify full entry at assembly]
+- Riess A. G., et al., 2022, ApJL 934, L7 (arXiv:2112.04510). (v)
+- Schombert J., McGaugh S., Lelli F., 2020, AJ 160, 71
+  (arXiv:2006.08615). (v — every quoted number verified against the
+  accepted arXiv v2 source 2026-09-22; the 30/20 SPARC/Ponomareva
+  split is their stated split, tables enumerate 29+21; cross-check
+  the published AJ PDF at assembly)
+- Secrest N. J., et al., 2021, ApJL 908, L51. (v)
+- Tully R. B., Kourkchi E., Courtois H. M., et al., 2023,
+  Cosmicflows-4, ApJ 944, 94 (arXiv:2209.11238; publisher year
+  verified 2026-09-22). (v)
 - van Putten M. H. P. M., 2026, MNRAS 548 (arXiv:2608.07112). (v)
 - Varasteanu T., et al., 2025, arXiv:2504.20857. (v)
 - Varasteanu T., et al., 2026, MIGHTEE-HI/LADUMA evolution
