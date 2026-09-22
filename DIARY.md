@@ -1,5 +1,81 @@
 # Claude's diary
 
+## 2026-09-22 -- the pool, 10W, and round 49 taught me what a letter
+## branch is FOR
+
+The pool first, because it colors everything after: subprocess
+workers (multiprocessing would have re-executed our unguarded stage
+scripts in every Windows spawn child), all randomness parent-drawn,
+certified bit-identical at two widths before any science rode it --
+and then it carried ~2,000 science fits today, with GA reproducing
+the 400-fit boot probabilities EXACTLY from a rebuilt stream. The
+author asked two nights ago "was it at least parallel?"; now it is,
+honestly.
+
+10W's gates STOPped their own stage twice before the sky -- the
+tercile conditioning could not condition at rho -0.89 (the
+certification synthetic caught it at p 0.002) and window_world's
+unconditional >=3 rule would have ejected eight short galaxies from
+a theta = 0 "identity" -- both fixed pre-quote, and I felt good about
+the machine. Then round 49 found the deeper thing: MY LETTER GRAMMAR
+HAD NO FALSIFIER. CARRIED's condition (|d| < 1 SD_block) was already
+true of the UNCUT object I set out to test; CARRIED and IMMUNE could
+both fire (both did; margins 4.7% vs 71%; the if-order in my own code
+chose the printed string); and trap #29, which I implemented as a
+dutiful PRINT, forbade exactly the letter I then printed. TRAP #31 is
+born: registered letter branches must be mutually exclusive with a
+stated tie-break, and every branch must name an in-grid outcome that
+would make it FALSE. And trap #29 is now a CODE-CAP, not a print -- a
+baseline below 1 SD_block caps the letter at descriptive grade in the
+same commit as the grading. The failure mode keeps migrating UP: 10U
+arithmetic clean / calibration wrong; 10V arithmetic clean / reading
+wrong; 10W arithmetic clean / the REGISTERED GRAMMAR ITSELF wrong.
+Write the falsifier first, then the branch.
+
+The instrument lesson (new engine gate): fit_hier re-initialises
+per-galaxy nuisances to zero on every call, which was fine on every
+world we ever fit -- and 5.5-11.8 lnL wrong on the FIRST genuinely
+new world class (17-28% of points cut). The first time a stage fits
+a new world class, one directly-profiled re-check per member before
+any number is quoted. Also his C13 sentence to keep: difference
+claims get difference statistics (my co-requirement read the cut
+world alone while the claim was a MOVE; his paired form -- resample
+once, fit both worlds -- fails the same bar, which is the cleanest
+support the relabel could have).
+
+What 10W actually bought, because it did buy things: the MAP
+(UGC03580 = -47.8 of the flow -48.7, the carrier question now a
+committed CSV with a figure waiting in F); composition DEAD beyond
+coverage (p 0.54 -- R48-C7 sharpened to done); the anchored BE
+preference CUT-IMMUNE (2.4-2.7 sigma at every cut, H0 moving at most
+0.8 -- the meter's leg is robust against the named rival); the
+carrier-ROTATION table (52 -> 46 -> 14 -> 0% while the total sits
+still = noise, not a carrier); and the reviewer's direction-finder,
+which I am adopting as the successor instrument: the inner-minus-
+outer residual contrast is 2.9 sigma on the ANCHORED leg and 0.2 on
+the flow leg -- the rival has no footprint on the leg it was invented
+for. Don't-redo: never quote W-RESOLUTION-CARRIED (retired string),
+cut-flow a0 (H0 77-84, outside the validity domain), "winner = gm at
+20 arcsec" (not optimum-grade), "paired t = +4.27" (his own flagged
+artefact), or the leg-axis p without its two companions
+(0.0093/0.107/0.070). Adjudicated-not-errors: paired-P 0.565 mine vs
+0.620 his (seeds; range-quote), pinning census 28%+18% per-member vs
+84% union-signed (conventions; both), NGC5985 dml 0.637 vs 0.700
+(profile depth; the SD itself agrees EXACTLY at 64.30).
+
+Banked positives per his C15, because the machine should know what
+it did right: the both-branches disclosure is what made the grammar
+defect findable; the A4-i machinery is honestly SIZED (0.045-0.056
+measured -- SIZE joins the standing null gate); the prior-exposure
+declaration becomes the consolidation-stage template. F moved today
+too: skeleton committed, SML20 primary-read folded in (75.1 +- 2.3
++- 1.5; their dominant systematic is the flow model, ours is the
+form band -- same pegs, different failure modes), and the 10W
+product sentence is already sitting in section 6c in his wording.
+Wednesday is the MNRAS decision; early October the DR4 pre-sign.
+Credences 53/8 untouched by everything above, reviewer-affirmed,
+checked not assumed.
+
 ## 2026-09-21 (second close) -- 10V, and round 48 read my own gates
 ## print back to me
 

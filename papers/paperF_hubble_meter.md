@@ -30,8 +30,9 @@ a self-consistency leg. The anchored leg reads H0 = 65.4 +/- 5.0
 the relation's functional form moves the reading across 65.4-70.4, and
 we measure the levers of that band directly (a per-galaxy
 form-preference map; a single galaxy, UGC03580, carries the flow
-subsample's contrary form lean; an inner-angular-resolution cut moves
-the form contest by [TODO: adopted 10W letter wording]). The meter
+subsample's contrary form lean; an inner-angular-resolution cut
+resolves nothing and excludes nothing while costing the anchored
+acceleration scale 0.8 km/s/Mpc). The meter
 shares its calibration pegs with the ladder but with roughly twice the
 gearing, so at a precision of 2-3 km/s/Mpc it separates a
 pegs-systematic world from a new-physics world; at the current
@@ -159,14 +160,24 @@ headline numbers only]
   form. Composition (gas fraction) carries no information beyond
   acceleration coverage (partial rank correlation p = 0.54 after
   conditioning); coverage itself reaches only point grade.
-- (c) THE RESOLUTION LEVER [TODO: quote the ADOPTED 10W letter
-  verbatim once Round 49 closes]: cutting points inside 20 arcsec
-  moves the flow subsample's contrary lean from -48.7 to -29.7 while
-  leaving the anchored leg unmoved (+63.3 to +66.0); the 30-arcsec
-  cut is population-confounded (seven low-surface-brightness dwarfs
-  leave the sample); an attribution co-requirement at the 0.95 level
-  was not met, so the resolution reading is carried at point grade
-  only.
+- (c) THE RESOLUTION LEVER (adopted Round-49 wording; the operative
+  record is the stage verdict file): the inner-angular-resolution
+  lever moves the anchored subsample's form preference by at most
+  0.10 of its own scatter and the flow subsample's by at most 0.30 of
+  its own, in a direction that reverses between 20 and 30 arcsec; it
+  resolves nothing and excludes nothing, and it costs the anchored
+  acceleration scale 0.8 km/s/Mpc in H0. The 30-arcsec reversal is a
+  point-cut effect, not a population change (holding the population
+  fixed, the seven ejected low-surface-brightness dwarfs carry -0.6
+  of the -24.5 move). A paired galaxy bootstrap gives P = 0.62 (bar
+  0.95) that the cut moves the flow lean toward the anchored
+  subsample's preferred form: inner resolution is neither established
+  nor excluded as the carrier of a residue that is itself 0.71 sigma.
+  The carrier structure is unstable under the cut while the total is
+  not (UGC03580's variance share runs 52 -> 46 -> 14 -> 0 percent
+  across the cut grid) -- the signature of noise, not of a carrier.
+  [Never quote cut-flow a0 values: their implied H0 (77-84) sits
+  outside the meter's validity domain.]
 - (d) PEG SHARING AND GEARING: the meter hangs from the same
   calibration pegs as the ladder (MW parallaxes / LMC / N4258 feeding
   TRGB and Cepheid zero points) with measured gearing 1.3-1.6 times

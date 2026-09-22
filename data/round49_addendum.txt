@@ -29,3 +29,104 @@ GA-6 NGC5371: theta_min = 7.5 arcsec (R48: carriers ~8); CSV 7.5
 
 GA VERDICT: ALL OK
 wall-clock: 9.1 min
+
+====================================================================
+ROUND 49 GB (post-report; reviewer numbers re-computed)
+
+baselines  [94s]
+  [gbcuts] 9 tasks -> 9 workers
+  [gbcuts] 0/9 done [0.1 min]
+  [gbcuts] 7/9 done [0.6 min]
+  [gbcuts] 7/9 done [1.1 min]
+  [gbcuts] complete in 1.3 min
+
+-- GB-1 engine-stall gaps (indep-profiled vs engine, cut flow) --
+  f20/BE: engine - profiled = +0.14 (rev claims 5.5-11.8 member-dependent)
+  f20/p065: engine - profiled = +0.13 (rev claims 5.5-11.8 member-dependent)
+  f20/gm: engine - profiled = +0.16 (rev claims 5.5-11.8 member-dependent)
+  f20/boot: engine - profiled = +1.24 (rev claims 5.5-11.8 member-dependent)
+  f30/BE: engine - profiled = +0.17 (rev claims 5.5-11.8 member-dependent)
+  f30/p065: engine - profiled = +0.27 (rev claims 5.5-11.8 member-dependent)
+  f30/gm: engine - profiled = +0.28 (rev claims 5.5-11.8 member-dependent)
+  f30/boot: engine - profiled = +0.20 (rev claims 5.5-11.8 member-dependent)
+  profiled-at-stage-x d: 20 = -30.80 (rev -33.99), 30 = -54.20 (rev -56.21)
+  profiled 20-arcsec ordering: BE +34.1, p065 +1.7, gm +0.0, boot +3.3  (rev: BE +34.0, p065 +0.9, gm/boot tie)
+
+-- GB-2 SD_block(flow,20) at deep-profiled fields --
+  engine-fields SD = 66.02 (stage 66.0); deep-profiled SD = 64.30 (rev 64.30); non-converged galaxies at 200 iters: engine-side n/a, deep 0/0
+  NGC5985 dml(BE) at 20-arcsec optimum = -0.432 (rev: BE -0.432, boot +0.700 = the box wall)
+  NGC5985 dml(boot) at 20-arcsec optimum = +0.637 (rev: BE -0.432, boot +0.700 = the box wall)
+
+-- GB-3 the 20-arcsec cut on the 30-arcsec population --
+  d(64 gal, 20-arcsec points) = -30.28 (rev -30.28; stage 20-arcsec 69-gal -29.70, 30-arcsec 64-gal -54.16)
+  -> population share of the 20->30 move = 0.58, resolution share = 23.88 (rev 0.58 / 23.88)
+
+-- GB-4 symmetrised partial correlations --
+  leg | cov,res: rho = -0.133, p = 0.106 (rev -0.133 / 0.107)
+  res | cov    : rho = +0.192, p = 0.017 (rev +0.192 / 0.021)
+
+-- GB-5 the joint 149-galaxy re-run --
+  joint-fit deltas vs pooled map: rank-corr = 0.926 (rev 0.926)
+  coverage | leg (joint): rho = +0.222, p = 0.0061 (rev +0.222 / 0.0072)
+  leg | cov (joint): rho = -0.150, p = 0.068 (rev p 0.070)
+  [330s]
+
+-- GB-6 the paired co-requirement (own construction, seed 911) --
+  [gb6paired] 800 tasks -> 14 workers
+  [gb6paired] 8/800 done [0.1 min]
+  [gb6paired] 36/800 done [0.6 min]
+  [gb6paired] 69/800 done [1.1 min]
+  [gb6paired] 118/800 done [1.6 min]
+  [gb6paired] 148/800 done [2.1 min]
+  [gb6paired] 183/800 done [2.6 min]
+  [gb6paired] 231/800 done [3.1 min]
+  [gb6paired] 260/800 done [3.6 min]
+  [gb6paired] 299/800 done [4.1 min]
+  [gb6paired] 343/800 done [4.6 min]
+  [gb6paired] 374/800 done [5.1 min]
+  [gb6paired] 415/800 done [5.6 min]
+  [gb6paired] 455/800 done [6.1 min]
+  [gb6paired] 487/800 done [6.6 min]
+  [gb6paired] 525/800 done [7.1 min]
+  [gb6paired] 567/800 done [7.6 min]
+  [gb6paired] 599/800 done [8.1 min]
+  [gb6paired] 641/800 done [8.6 min]
+  [gb6paired] 680/800 done [9.1 min]
+  [gb6paired] 713/800 done [9.6 min]
+  [gb6paired] 758/800 done [10.1 min]
+  [gb6paired] 794/800 done [10.6 min]
+  [gb6paired] complete in 10.8 min
+  Delta = d_cut - d_uncut: sky +19.03; replicates mean +5.41, SD 37.09 (rev +11.35 / 37.62)
+  P(Delta > 0) = 0.565 (rev 0.620; bar 0.95)
+
+-- GB-7 dml box-pinning census --
+  f20/BE: pinned 5/69; |Delta|-share of pinned rows = 28% (rev: 6/69 carrying 84%)
+  f20/boot: pinned 3/69; |Delta|-share of pinned rows = 18% (rev: 6/69 carrying 84%)
+  IC2574 dml(BE, anchored baseline) = -0.700 (rev: pinned -0.700 both members)
+  IC2574 dml(boot, anchored baseline) = -0.700 (rev: pinned -0.700 both members)
+
+-- GB-8: C15 trigger outside the estimator box CONFIRMED by source read (f in (0.3,2.5), s_int in [1e-3,0.4), dml +-0.7); H0(anch 20-arcsec, BE) = 64.54 (rev 64.54)
+
+-- GB-9 inner-minus-outer residual contrast at 20 arcsec --
+  anch: mean -0.0857 +/- 0.0301 dex over 20 galaxies (rev anch -0.086 +/- 0.030, flow -0.004 +/- 0.018)
+  flow: mean -0.0055 +/- 0.0176 dex over 45 galaxies (rev anch -0.086 +/- 0.030, flow -0.004 +/- 0.018)
+
+GB complete; wall-clock 16.4 min
+
+-- GB-1b endpoint verification (scratchpad gb1b_endpoint.py) --
+  flow20/BE at reviewer polished x: my indep = -5818.890 (rev -5818.891) AGREE
+  flow20/boot: -5852.877 (rev -5852.877) AGREE
+  profiled d(20) at reviewer points = -33.99 (rev -33.99) EXACT
+  -> the R49 stall finding (engine 5.5/8.5 above reachable profiled
+  points on the cut-flow worlds; corrected d) is CONFIRMED at full
+  grade; flow30 adopted at reviewer grade bracketed by the GB-1
+  stage-x co-read (-54.20).
+
+GB FINAL: ALL LOAD-BEARING REVIEWER NUMBERS CONFIRMED (exact or
+in-band); adjudicated as convention/seed differences, not errors:
+paired-P 0.565 own-stream vs 0.620 reviewer (identical conclusion,
+range-quoted); pinning census per-member |Delta|-share 5/69 = 28% +
+3/69 = 18% (mine) vs union signed-share 6/69 = 84% (his; sharper
+concentration statement, both quoted); NGC5985 boot dml +0.637 at
+1e-10 alternation vs +0.700 at his exact profiler (profile-depth
+decoration; the SD 64.30 itself agrees EXACTLY).

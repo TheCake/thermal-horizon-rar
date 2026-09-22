@@ -17831,3 +17831,73 @@ in the middle range. And our referee caught something embarrassing
 and useful: we had written down the size of the noise ourselves,
 on page one, and never checked our "mystery" against it. New house
 rule: measure the mystery before explaining it.
+
+## 2026-09-22 -- FITPOOL + Stage 10W (the map + the resolution cut) + Round 49
+
+The Tier-1 CPU worker pool was built and CERTIFIED first (subprocess
+workers, parent-drawn randomness only; bit-identical to serial at
+widths 4 and 14, 16/16 exact on funs, parameter vectors and gaps;
+data/fitpool_gate.txt) and then carried ~2,000 science fits today --
+the 400-fit conditional bootstrap in 6.8 minutes, with the blind GA
+later reproducing its probabilities EXACTLY from an independently
+rebuilt stream. Parallelism at zero cost to determinism.
+
+10W (prereg PREREG-MAP-10W.md + A1-A4; gates run 1 = two by-design
+STOPs, both instrument defects caught pre-sky and amended on the
+record) fired the R48-C18 successor: the per-galaxy form-preference
+map at fixed parent globals, the four-axis conditioned instrument,
+and the angular-resolution cut contests. Round 49 (fresh reviewer,
+~1500 own fits) found the stage's arithmetic CLEAN and its LETTER
+GRAMMAR broken: both registered branches fired (code order chose the
+string), the CARRIED condition was already true of the uncut object,
+and trap #29 had been implemented as a print rather than a veto.
+Letter relabeled W-CUT-SUB-NOISE (BRANCH-DEGENERATE; RESOLUTION
+NEITHER CARRIED NOR RETIRED); every reviewer number re-computed and
+confirmed before adoption (data/round49_addendum.txt, GA blind
+pre-committed + GB incl. an exact endpoint reproduction of his
+principal finding). Three instrument-level corrections adopted: the
+cut-world profiled-optimum stall (fit_hier zero-re-inits per-galaxy
+nuisances; 5.5-11.8 lnL on the new world class ONLY -- the meter and
+all banked stages verified untouched), SD_block(flow,20) 66.0 ->
+64.30, and the 20-arcsec winner label retired.
+
+What stands, measured: UGC03580 is -47.8 of the flow leg total -48.7
+(the map, committed as data/stage10w_map.csv); composition carries
+NOTHING beyond acceleration coverage (p = 0.54); the 30-arcsec
+snap-back is 97.6% a point-cut effect (population-fixed control
+-30.28, verified exact); the flow carrier structure ROTATES under
+the cut (52 -> 46 -> 14 -> 0% of block variance) while the total
+stays put -- the signature of noise, not a carrier; the anchored
+Bose-Einstein preference is CUT-IMMUNE (2.4-2.7 sigma at every cut;
+H0 lever at most -0.8 km/s/Mpc, a sensitivity, never a reading);
+and the reviewer's direction-finder -- the inner-minus-outer
+residual contrast -- puts the rival's only footprint (2.9 sigma) on
+the ANCHORED leg, the one whose preference the cut cannot move. The
+registered successor costs no fits. New standing rules: TRAP #31
+(letter branches mutually exclusive, each falsifiable in-grid),
+trap-#29 as a code-level cap, the profiled-recheck engine gate on
+new world classes, the paired co-requirement form, SIZE in the null
+gate. Band 65.4-70.4, stat 5.0, credences 53/8: untouched,
+reviewer-affirmed. Proposal F draft 0.1 exists with the 10W product
+in its systematics section and the SML20 differentiation at primary
+grade.
+
+PLAIN VERDICT: SUCCESS as an instrument (the map + three durable
+negatives + the meter leg proven robust to the named rival), with
+the letter grammar itself the round's casualty -- relabeled, not
+retracted.
+
+ELI12: We built a machine that lets all sixteen of our computers
+check homework at once and proved it gets exactly the same answers
+as one computer working alone. Then we used it to ask: is the weird
+half of our galaxy vote caused by blurry innermost measurements?
+We cut the blurry parts out at three sizes. The steady half of the
+vote did not budge -- good news, our main measurement does not care
+about blur. The weird half wobbled around but never said anything
+louder than its own static, and when we listed WHICH galaxies
+carried the weirdness, the list kept changing while the total
+stayed the same -- that is what pure static looks like, not a
+culprit. Our referee also caught that the rulebook we wrote for
+announcing the answer had two boxes that could both be ticked at
+once, and a box that was pre-ticked before the test started. New
+rule: every answer box must have a way to NOT get ticked.

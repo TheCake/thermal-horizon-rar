@@ -1,0 +1,216 @@
+STAGE 10W OPERATIVE VERDICT (post-Round 49, adopted in full
+2026-09-22; the as-fired read is data/stage10w_skyread.txt; the round
+is REVIEW-ROUND49-OPUS.md, uncommitted; verification =
+data/round49_addendum.txt: GA blind pre-committed 779601b, six legs
+ALL OK, + GB post-report, ALL LOAD-BEARING REVIEWER NUMBERS CONFIRMED
+incl. the stall endpoints reproduced to the third decimal and
+d_profiled(20) = -33.99 EXACT).
+
+======================================================================
+THE LETTER (Round-49 replacement, adopted verbatim; the as-fired
+string "W-RESOLUTION-CARRIED" is RETIRED and never quoted):
+
+W-CUT-SUB-NOISE (BRANCH-DEGENERATE; RESOLUTION NEITHER CARRIED NOR
+RETIRED)
+
+The registered CARRIED and IMMUNE conditions are both satisfied. The
+pre-registration did not make them exclusive, so the printed letter
+was selected by the order of the code's branches, not by the data; on
+the stage's own metric IMMUNE is satisfied with a 71% margin and
+CARRIED with 4.7%. Neither branch is informative here, because the
+flow subsample's form preference is smaller than its own realized
+galaxy-block scatter at every cut (0.36 / 0.45 / 0.95 sigma at
+10 / 20 / 30 arcsec, against 0.71 uncut) and every cut-induced move
+is at most 0.30 of that scatter -- the CARRIED condition was already
+true of the uncut object, and the stage's own trap-#29 grading said
+so before Part 3 ran.
+
+What was measured: the 20-arcsec cut moves the flow lean from -48.7
+to -29.7 and the 30-arcsec cut moves it back to -54.2; that reversal
+is a point-cut effect, not the population change it was assumed to be
+(holding the population fixed at the 30-arcsec census and cutting
+only to 20 arcsec gives -30.3, so the seven ejected galaxies carry
+-0.6 of the -24.5). The paired galaxy bootstrap co-requirement
+returned P = 0.635 against its 0.95 bar, and the uncut flow leg
+already stood at P(BE better) = 0.200 against 0.225 after the cut.
+The C5 demotion bar (lead >= 2 x SD_block) is arithmetically
+unreachable on a 48.7-unit object with a 68-unit block scatter.
+
+The co-requirement was also mis-constructed: it reads the cut world
+alone, while the claim is a difference. Run in its paired form -- 200
+galaxy resamples, each fitted both uncut and cut -- the measured move
+is Delta = +19.0 with a resampling spread of +/-37.6 and
+P(Delta > 0) = 0.620 [GB own-stream 0.565; range-quote 0.56-0.62],
+so the correctly constructed test fails on the same bar.
+
+Inner angular resolution is therefore neither established nor retired
+as the carrier of the flow residue, and the residue itself remains
+what Round 48 found it to be. Two things the cut does establish: the
+anchored subsample's Bose-Einstein preference is not an
+inner-resolution artefact (it survives every cut at 2.4-2.7 sigma,
+moving by at most 0.10 of its own block scatter), and the flow leg's
+carrier structure is unstable under the cut while its total is not --
+UGC03580 falls from 52% of the block variance to 0% across the grid
+while the leg total stays inside -30 to -54.
+
+======================================================================
+ROUND 49 RULING: zero errors in the stage's ARITHMETIC (reproduction
+exact across the map, the axes, the cuts, the boot); THREE
+computational findings, all instrument-level, all GB-confirmed:
+ (1) SD_block(flow,20) = 64.30, not 66.0 (NGC5985's per-galaxy dml
+     profile runs toward the +0.7 box wall; the engine's 200-iter
+     alternation stops short; deep-profiled fields agree EXACTLY with
+     the reviewer; direction conservative, no condition flips).
+ (2) THE CUT-WORLD STALL (the principal finding): fit_hier
+     re-initialises per-galaxy nuisances to zero on every call, so on
+     the NEW world class (17-28% of points removed) the engine's
+     optima sit 5.5-11.8 units above reachable profiled points,
+     member-dependently. Corrected d: -33.99 at 20 arcsec (endpoint
+     reproduced by GB to the digit), -56.21 at 30 (reviewer grade,
+     bracketed by the GB stage-globals co-read -54.20). Scope: CUT
+     flow worlds ONLY -- uncut flow 0.44-0.56, anchored <= 0.01, so
+     10T/10U/10V and the meter are UNTOUCHED (GB-confirmed).
+     Resolution: DISCLOSED, not re-fired (both cuts stay sub-noise at
+     profiled grade; re-firing would polish a sub-noise object). NEW
+     ENGINE GATE (standing): the first time a stage fits a NEW world
+     class, one directly-profiled re-check of each member's optimum
+     before any number from it is quoted.
+ (3) "cut 20 flow: winner = gm" is NOT optimum-grade: at the
+     reviewer's profiled optima gm and boot tie; at
+     profiled-at-stage-globals gm leads boot by 3.3. The label is
+     RETIRED either way.
+
+THE SUB-NOISE TABLE (C2; as-fired SDs, profiled in brackets):
+  flow d/SD: uncut -48.7/68.2 = 0.71; cut 10 -31.7/88.0 = 0.36
+  [-32.2/89.1 = 0.36]; cut 20 -29.7/66.0->64.3 = 0.45 [-34.0/62.9 =
+  0.54]; cut 30 -54.2/56.9 = 0.95 [-56.2/58.0 = 0.97].
+  Moves: +17.1/+19.0/-5.4 = 0.19/0.29/0.10 of the same SDs. The
+  CARRIED point condition (|d| < 1 SD) was ALREADY TRUE of the uncut
+  object; the C5 bar (2 x SD_block = 114-176) was arithmetically
+  unreachable on a 48.7-unit object. CARRIED margin 4.7% (3.1%
+  profiled at 30); IMMUNE margin 71%.
+
+PART 2 REGRADES (C6/C7/C16, all GB-confirmed):
+  - leg axis -> NOT ESTABLISHED (CONDITIONING-DEPENDENT). Never print
+    its registered p (0.0093) without: leg | cov,res = -0.133,
+    p 0.107; leg under one joint 149-galaxy normalisation p 0.070
+    (x4 = 0.279). Symmetrically never print "resolution p = 1.0000"
+    without resolution | cov = +0.192, p 0.021.
+  - The Part-2 response pools per-galaxy deltas from TWO different
+    global optima (f_ML 1.05-1.27 anch vs 1.43-1.75 flow); at one
+    joint fit the grammar output SWAPS: coverage +0.222, p 0.0072
+    (x4 = 0.029) becomes the supported axis. THE MAP ITSELF IS ROBUST
+    (rank-corr 0.926 between constructions) -- only the axis grade
+    moves, not the figure.
+  - Family-wise: Holm over the registered four gives leg 0.0380,
+    coverage 0.0501; the leg result survives no family that also
+    counts Part 3's six letter comparisons (0.095). One
+    0.04-corrected result inside a ten-comparison stage is a LEAN,
+    already carrier-fragile in the stage's own drop battery.
+  - COMPOSITION stays the round's cleanest negative: nothing beyond
+    coverage (p 0.54), sharpening R48-C7.
+
+DURABLE PRODUCTS (bank these):
+  - THE MAP (data/stage10w_map.csv, 149 rows, committed): UGC03580 =
+    -47.8 of the flow total -48.7 (52% of block variance); anchored
+    lead broad (top carrier IC2574 +12.5 = 37%); closure vs engine
+    funs exact (GA-1).
+  - THE CARRIER-ROTATION TABLE (C12; the most informative Part-3
+    product): UGC03580's block-variance share 52% -> 46% -> 14% -> 0%
+    across uncut/10/20/30 while the leg total runs -48.7 -> -31.7 ->
+    -29.7 -> -54.2, the top carrier rotating to NGC5985 then
+    UGC06787. Unstable decomposition + stable total = noise, not a
+    carrier.
+  - THE POPULATION-FIXED CONTROL (GB EXACT): the 30-arcsec snap-back
+    is 97.6% point-cut (resolution-axis), 2.4% population (-0.6 of
+    -24.5 from the seven ejected galaxies).
+  - THE RESIDUAL-CONTRAST DIRECTION-FINDER (C17, GB-confirmed):
+    galaxy-paired inner-minus-outer residuals at 20 arcsec: anchored
+    -0.086 +/- 0.030 dex (2.9 sigma), flow -0.004 +/- 0.018 (0.2
+    sigma). The rival was built for the flow leg and has no footprint
+    on it; the inner depression lives on the leg whose form
+    preference the cut leaves intact. Caveats: y-composition of inner
+    points, rho_lag1 0.61-0.72, misfit-vs-smearing degeneracy.
+    = THE REGISTERED SUCCESSOR (no fits needed) before any further
+    contest-based resolution instrument.
+  - THE ANCHORED ROBUSTNESS (C11, the real anchored content): the BE
+    preference survives every cut at 2.4-2.7 sigma; but "anch-stable"
+    as a letter condition was near-vacuous BY CONSTRUCTION (the same
+    absolute cut removes 2.1/4.7% of anchored points vs 17.5/28.4% of
+    flow points -- not a matched control).
+  - THE H0 LEVER (C14, sensitivity, never a reading): cutting inside
+    20 arcsec moves the anchored BE central to H0 = 64.54 (-0.82 =
+    0.16 sigma_stat; -0.76 at 30). These anchored cut fits ARE at
+    their profiled optima (<= 0.01). The band 65.4-70.4 and stat 5.0
+    are uncut-leg properties and DO NOT MOVE.
+  - HONEST SIZE (C15-ii, reviewer-measured, banked): the A4-i
+    machinery's null size over 2000 draws on the real design:
+    P(p <= 0.05) = 0.050/0.056/0.045/0.046. SIZE joins power and
+    conditioning in the standing null-machinery gate.
+
+NEVER QUOTE (adds to the standing list):
+  - "W-RESOLUTION-CARRIED" (retired string) and "winner = gm at 20
+    arcsec" (not optimum-grade).
+  - CUT-FLOW a0 values (as fired 1.10-1.19e-10; profiled
+    1.195-1.301e-10 -> H0 77-84, OUTSIDE the 62-75 validity domain).
+  - "paired t = +4.27" (the reviewer's own flagged artefact: MC
+    precision of a bootstrap mean, not significance).
+  - The Part-2 leg-axis p without its two companions (above).
+
+NEW STANDING RULES (into DIARY + the next prereg template):
+  - TRAP #31: a registered letter's branches must be mutually
+    exclusive by construction with a stated tie-break, and every
+    branch must name an outcome inside the registered grid that would
+    make it FALSE. A branch whose condition is already satisfied by
+    the object under test is a diagnostic, not a letter clause.
+  - THE TRAP-#29 WIRE (C4): a baseline grading below 1 SD_block CAPS
+    the letter at descriptive grade IN CODE, same commit as the
+    grading -- never a print alone.
+  - THE PROFILED-RECHECK ENGINE GATE (C9): first fit of a NEW world
+    class -> one directly-profiled re-check per member before
+    quoting.
+  - THE PAIRED CO-REQUIREMENT FORM (C13): difference claims get
+    difference statistics -- resample once, fit both worlds, read
+    Delta. (The A1-iii sub-SD form was mis-scaled: equivalent to
+    demanding a ~73-unit swing on a 48.7-unit object.)
+  - C15 proximity triggers: box-edge checks test proximity to the
+    ESTIMATOR'S OWN box (f in (0.3,2.5), s_int in [1e-3,0.4), dml
+    +/-0.7), and the per-galaxy dml box is part of every contest
+    printout (pinned counts + share; census convention: per-member
+    |Delta|-share AND union signed-share both quoted; measured here
+    5/69 = 28% + 3/69 = 18% per-member, 6/69 = 84% union-signed).
+  - PRIOR-EXPOSURE declarations (the 10W SS1 form) become standard
+    for consolidation stages (C15-iii).
+
+AMENDMENT CHAIN: CLEAN, with the leak MEASURED (C18): A1-A4 monotone,
+A4 16 minutes before the sky commit; the A4-ii builder choice was
+worth -0.26 lnL at 20 arcsec / +0.03 at 30 (0.4%/0.05% of an SD); the
+A2-ii bar loosening was never binding (max deviation 0.046).
+
+CREDENCES: every cell pre-signed HOLD -- anomaly-real 53 / mechanism
+8, reviewer-affirmed (checked, not assumed). The meter (band
+65.4-70.4, stat 5.0) untouched: uncut-leg properties, fits at
+profiled optima to <= 0.01.
+
+THE ONE-SENTENCE HONEST PRODUCT (for Proposal F's systematics
+section, reviewer wording adopted): Cutting every rotation-curve
+point inside 10, 20 and 30 arcsec leaves the anchored subsample's
+form preference intact -- +63.3 becomes +63.5, +66.0 and +61.8, that
+is 2.4 to 2.7 sigma of its own realized galaxy-block scatter
+throughout, with the fitted acceleration scale moving the implied
+Hubble constant by at most -0.8 km/s/Mpc -- while the flow
+subsample's contrary lean moves -48.7 -> -31.7 -> -29.7 -> -54.2,
+every level and every change being smaller than that subsample's own
+scatter, the 30-arcsec reversal measured to be a point-cut effect
+rather than the loss of seven galaxies, and a paired galaxy bootstrap
+returning P = 0.62 that the cut moves the lean toward the anchored
+subsample's preferred form: inner angular resolution is therefore
+neither established nor excluded as the carrier of a residue that is
+itself 0.71 sigma.
+
+TABLE-CAPTION VERSION: The inner-angular-resolution lever moves the
+anchored subsample's form preference by at most 0.10 of its own
+scatter and the flow subsample's by at most 0.30 of its own, in a
+direction that reverses between 20 and 30 arcsec; it resolves nothing
+and excludes nothing, and it costs the anchored acceleration scale
+0.8 km/s/Mpc in H0.

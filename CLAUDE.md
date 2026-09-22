@@ -3150,3 +3150,78 @@ leg is quotable at this grade only (data/stage10v_flowboot.txt).
 Wed 09-24 journal decision + early-Oct DR4 pre-sign IMMOVABLE.
 FRESH SESSION recommended before the next arc (F drafting: first
 build+gate the CPU worker pool, then the 10W map folded into F).**
+
+**FITPOOL + 10W + ROUND 49 (2026-09-22, the pool-then-map morning,
+executed on the author's "What do we do next? Lets go for that"):
+THE POOL IS CERTIFIED AND CARRIED ITS FIRST SCIENCE. calcs/fitpool.py
+= subprocess workers (NEVER multiprocessing -- Windows spawn
+re-imports unguarded stage scripts), randomness parent-drawn, results
+keyed; gate = one 16-task battery serial + widths 4/14, 16/16
+BIT-IDENTICAL (data/fitpool_gate.txt; GATE PASS is the certificate
+any stage must cite); carried ~2,000 fits today (400-fit boots ~7
+min; GA reproduced boot P's EXACTLY from a rebuilt stream). 10W THE
+MAP + RESOLUTION CUT (prereg PREREG-MAP-10W.md + A1-A4 all pre-quote;
+gates run 1 = TWO by-design STOPs preserved in _r1: tercile
+conditioning could not condition at rho -0.89 -> partial-rank
+Freedman-Lane machinery; window_world's unconditional >=3 rule would
+eject 8 short leg galaxies at theta=0 -> the touched-galaxy cut
+rule): sky = the MAP (data/stage10w_map.csv COMMITTED, 149 rows, F's
+systematics-figure source; UGC03580 = -47.8 of the flow total -48.7;
+anchored lead broad, IC2574 +12.5 = 37% max), composition DEAD beyond
+coverage (p 0.54), the cut contests + a 400-fit conditional boot.
+ROUND 49 (REVIEW-ROUND49-OPUS.md uncommitted; ~1500 own fits; stage
+arithmetic CLEAN): hole YES in the LETTER GRAMMAR -- both registered
+branches fired (if-order chose; margins 4.7% vs 71%), CARRIED's
+condition was ALREADY TRUE of the uncut object, trap #29 was a print
+not a veto -> **LETTER RELABELED W-CUT-SUB-NOISE (BRANCH-DEGENERATE;
+RESOLUTION NEITHER CARRIED NOR RETIRED); "W-RESOLUTION-CARRIED" is a
+RETIRED STRING. data/stage10w_verdict.txt = THE OPERATIVE RECORD.**
+Three instrument findings ALL GB-confirmed (18 conditions adopted;
+GA blind 779601b = 16th protocol execution; GB incl. endpoint
+reproduction of the stall to the third decimal, d_prof(20) = -33.99
+EXACT): the CUT-WORLD STALL (fit_hier zero-re-inits per-galaxy
+nuisances -> engine 5.5-11.8 lnL above reachable profiled points on
+the NEW world class ONLY; corrected d -33.99/-56.21; uncut flow
+0.44-0.56, anchored <=0.01 = 10T/10U/10V AND THE METER UNTOUCHED,
+verified); SD_block(flow,20) 66.0 -> 64.30 (NGC5985 near-wall);
+"winner = gm at 20" retired (not optimum-grade). MEASURED AND
+BANKED: the 30-arcsec snap-back is 97.6% POINT-CUT (population-fixed
+control -30.28 GB EXACT -- the "seven dwarfs" reading is FALSE, F
+corrected); carrier ROTATION 52 -> 46 -> 14 -> 0% while the total
+stays -30..-54 = noise not carrier; the anchored BE preference
+CUT-IMMUNE (2.4-2.7 sigma every cut; H0 lever anch-20 BE = 64.54 =
+-0.82 = SENSITIVITY never a reading); leg axis regraded NOT
+ESTABLISHED (conditioning-dependent 0.0093/0.107/0.070; the map
+itself construction-robust, rank-corr 0.926); the residual-contrast
+DIRECTION-FINDER (inner-minus-outer -0.086 +/- 0.030 = 2.9 sigma
+ANCHORED vs -0.004 +/- 0.018 flow = the rival has NO footprint on
+the leg it was invented for) = **THE REGISTERED SUCCESSOR, costs no
+fits**. NEW STANDING: TRAP #31 (letter branches mutually exclusive +
+tie-break + each falsifiable in-grid); trap-#29 = a CODE-CAP in the
+same commit as the grading, never a print; the PROFILED-RECHECK
+engine gate (first fit of a new world class -> one directly-profiled
+re-check per member); the PAIRED co-requirement form (difference
+claims get difference statistics; P 0.56-0.62 range vs bar 0.95 --
+fails in both constructions); C15 proximity triggers vs the
+ESTIMATOR'S box (f (0.3,2.5), s_int [1e-3,0.4), dml +/-0.7) + dml
+pinned-count prints; SIZE in the null-machinery gate (measured
+0.045-0.056); prior-exposure declarations standard. NEVER QUOTE:
+cut-flow a0 (profiled 1.195-1.301e-10 -> H0 77-84, outside 62-75);
+"paired t = +4.27"; the leg-axis p bare. Amendment chain CLEAN, leak
+MEASURED (-0.26/+0.03 lnL). Credences 53/8 pre-signed HOLD,
+reviewer-affirmed; band 65.4-70.4 / stat 5.0 untouched. Ledger
+cos-10w-map (223 rows six gates PASS). **PROPOSAL F IS OPEN:
+papers/paperF_hubble_meter.md draft 0.1 (skeleton, style-contract
+prose pending) with the 10W product sentence + table caption already
+in SS6c (R49 wording), the SML20 primary read folded in at
+differentiation grade (75.1 +- 2.3 +- 1.5; 50 calibrators = 30 SPARC
++ 20 Ponomareva; their dominant systematic = the flow model, ours =
+the form band; a0/RAR/MOND absent from their text -- LIT-READS
+2026-09-22 addendum, verify-at-print). NEXT FORK (author's): F prose
++ figures (calcs/paperf_figures.py to build; Fig 3 = the map CSV) --
+the residual-contrast successor instrument (R49-C17, no fits) -- WED
+09-24 journal-backstop decision (MNRAS direct for P1; prep notes
+owed) -- early-Oct DR4 credence-map pre-sign session
+(CALENDAR-IMMOVABLE, draft map to Grok first; hard deadline
+2026-12-02) -- the a0-dipole instrument (hammering item, now behind
+F per the exit condition).**

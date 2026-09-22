@@ -255,7 +255,26 @@ data/stage10w_gates_r1.txt; NO sky statistic exists)
   dropped (censused by name). The theta = 0 identity bar is
   unchanged and must now hold exactly.
 
-## 13. Outputs
+## 13. Post-round annotation (2026-09-22, Round 49 ADOPTED — read
+data/stage10w_verdict.txt as the operative record)
+
+The SS5 letter grammar carried a design defect the round measured:
+the CARRIED and IMMUNE branches are NOT mutually exclusive at the
+realized block SDs (both fired; margins 4.7% vs 71%; code branch
+order selected the printed string), and CARRIED's point condition
+(|d| < 1 SD_block) was already true of the UNCUT object — a branch
+with no falsifying outcome inside the registered grid. The as-fired
+letter is RELABELED W-CUT-SUB-NOISE (BRANCH-DEGENERATE; RESOLUTION
+NEITHER CARRIED NOR RETIRED); "W-RESOLUTION-CARRIED" is a retired
+string. TRAP #31 and the trap-#29 code-cap rule supersede this
+grammar for successors; the A1-iii co-requirement construction is
+superseded by the paired form (R49-C13). The registered SS4 leg-axis
+grade is regraded NOT ESTABLISHED (CONDITIONING-DEPENDENT) per
+R49-C6/C7. Three instrument-level computational findings (SD 64.30;
+the cut-world profiled-optimum stall; the 20-arcsec winner label)
+are recorded in the verdict with their GB confirmations.
+
+## 14. Outputs
 
 calcs/stage10w_map.py (modes: gates | sky);
 data/stage10w_gates.txt; data/stage10w_skyread.txt;
