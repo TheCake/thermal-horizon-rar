@@ -51,13 +51,19 @@ headline numbers only]
 - The proposition: run the identity BACKWARD. Nobody has (three
   independent literature sweeps found no published a0-to-H0 inversion
   as a measurement; the forward direction exists: van Putten).
-- The nearest neighbor and the differentiation [TODO: SML20 primary
-  read lands here]: Schombert, McGaugh & Lelli (2020) measured H0 =
-  75.1 from the baryonic Tully-Fisher relation on the same catalog
-  with the same anchor/flow architecture, pointed the OTHER way: they
-  calibrate a ladder rung and ladder OUT to H0; no acceleration scale
-  and no lock appears in their method. The two instruments share data
-  and differ in what they assume and what they test.
+- The nearest neighbor and the differentiation [SML20 primary read
+  done 2026-09-22, verify quotes at print]: Schombert, McGaugh &
+  Lelli (2020) measured H0 = 75.1 +/- 2.3 (stat) +/- 1.5 (sys) from
+  the baryonic Tully-Fisher relation, calibrated on 50 Cepheid/TRGB
+  galaxies (30 of them SPARC) and applied OUT to 95 SPARC flow
+  galaxies through CosmicFlows-3 velocities. Their dominant
+  systematic is the flow-model choice (72.8-77.5 across four models);
+  no acceleration scale, no radial acceleration relation, and no lock
+  appears anywhere in their method (confirmed at primary grade). The
+  differentiation sentence: same catalog, opposite direction — they
+  ladder out through a flow model, we invert the acceleration scale
+  on the anchored subsample with no flow model; the two instruments
+  share calibration pegs and fail in different places.
 - What this paper is: the instrument's design (the circularity and its
   two-leg resolution), its first light, and the measured levers of its
   systematics. What this paper is not: an H0 arbiter at current
