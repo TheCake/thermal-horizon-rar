@@ -1,29 +1,41 @@
 # A Hubble meter from galaxy rotation curves: a first execution of the a0-to-H0 inversion
 
-**Draft 0.4 — post-referee (2026-09-23; Round 51 MAJOR REVISION
-adopted in full: 11 major + 40 minor findings executed, incl. the
-peg-gearing re-measurement — the untraceable "1.3-1.6" replaced by
-the measured anchored-primary response 1.59, calcs/round51_gearing.py
-— the section-6 error-budget table, the section-4 equations, and the
-census re-scope. This revision additionally absorbs the stage-10Y
-residual-contrast organizer + Round 52 into section 6c and the
-appendices: the anchored inner depression is angle-organized at
-fixed acceleration, composition excluded as its carrier, mechanism
-open). Style contract: papers/STYLE.md. Figures gated by
-calcs/paperf_figures.py. Verification state: SML20 quote set verified
-against the accepted arXiv v2 source AND the published AJ page
-(free full text, checked 2026-09-23: 75.1 +- 2.3 +- 1.5; the 30 + 20
-calibrator split as stated; zero occurrences of a0 / RAR / MOND);
-reference list verified against arXiv/ADS/publisher pages (Haslbauer
-ID corrected program-wide to 2009.11292; Ponomareva 2018 = MNRAS
-474, 4366; Cadoni–Tuveri 2020 resolved DROP). Census: the
-flag-pending pair cleared at identification-plus-grade scope;
-KK98-251 carried to a deferred candidate by the stage-10X census
-leg. The stage-10X battery is adopted (Round 50): section 6f carries
-the two primary-side systematic rows. Abstract recounted at exactly
-250 words on this text. NO REMAINING ASSEMBLY BLOCKERS. Guardrails
-from the stage verdict files are restated in Appendix A and are
-binding on every future edit.**
+**Draft 0.5 — post-referee + PDF-level cold read (2026-09-24; the
+outward-artifact rule applied to the rendered PDF by a fresh
+reader, FIX-THEN-SEND adopted in full: three leaked verification
+notes removed and the render script hardened with
+whitespace-tolerant strips + fail-loud asserts; section 6c
+re-graded to the 10Y verdict's operative qualifiers — the
+descriptive matched-cell co-read dropped, the circular-shift
+result now carries its always-co-quoted Oi companion p of about
+0.02, and the admixture clause reads "permitted and nominally
+present"; abstract gearing 1.6 -> 1.59; the App A map bullet
+scoped to the anchored uncut fits; the App B verification cell
+reworded; "the lock" defined at first body use. Prior state,
+Draft 0.4 (2026-09-23): Round 51 MAJOR REVISION adopted in full
+(11 major + 40 minor, incl. the peg-gearing re-measurement — the
+untraceable "1.3-1.6" replaced by the measured anchored-primary
+response 1.59, calcs/round51_gearing.py — the section-6
+error-budget table, the section-4 equations, and the census
+re-scope) + the stage-10Y residual-contrast organizer + Round 52
+absorbed into section 6c and the appendices: the anchored inner
+depression is angle-organized at fixed acceleration, composition
+excluded as its carrier, mechanism open. Style contract:
+papers/STYLE.md. Figures gated by calcs/paperf_figures.py.
+Verification state: SML20 quote set verified against the accepted
+arXiv v2 source AND the published AJ page (free full text, checked
+2026-09-23: 75.1 +- 2.3 +- 1.5; the 30 + 20 calibrator split as
+stated; zero occurrences of a0 / RAR / MOND); reference list
+verified against arXiv/ADS/publisher pages (Haslbauer ID corrected
+program-wide to 2009.11292; Ponomareva 2018 = MNRAS 474, 4366;
+Cadoni–Tuveri 2020 resolved DROP). Census: the flag-pending pair
+cleared at identification-plus-grade scope; KK98-251 carried to a
+deferred candidate by the stage-10X census leg. The stage-10X
+battery is adopted (Round 50): section 6f carries the two
+primary-side systematic rows. Abstract 250 words (whitespace-token
+count, re-measured 2026-09-24). NO REMAINING ASSEMBLY BLOCKERS.
+Guardrails from the stage verdict files are restated in Appendix A
+and are binding on every future edit.**
 
 Author: Filip Hájek (independent researcher).
 
@@ -47,10 +59,10 @@ consistency arm. The anchored arm reads H0 = 65.4 +- 5.0 (statistical)
 statistical: the choice of the relation's functional form moves the
 reading across 65.4-70.4, and we measure the levers of that band
 directly. A per-galaxy map shows the flow subsample's contrary form
-lean is one galaxy below its own scatter, and an
+lean is one galaxy, below its own scatter, and an
 inner-resolution cut resolves nothing and excludes nothing. The meter
 hangs from the same calibration pegs as the distance ladder with a
-measured 1.6 times the response. At 2-3 km/s/Mpc precision a reading
+measured 1.59 times the response. At 2-3 km/s/Mpc precision a reading
 like this one would sit over two sigma from both high-reading tension
 worlds while staying consistent with a ladder error beyond the pegs;
 at the current precision it separates nothing. The method is
@@ -95,10 +107,8 @@ deviation among flow models, which spans 72.8-77.5 across the four
 velocity treatments they tabulate (including an uncorrected case they
 themselves deem inadequate); in their words it "dominates the other
 systematics". No acceleration scale enters their analysis; the radial
-acceleration relation is cited only as background. [All quotes
-verified against the accepted arXiv source, 2026-09-22; cross-check
-the published AJ PDF at assembly.] The differentiation is direction:
-the same catalog, run the opposite way. They ladder out through a
+acceleration relation is cited only as background. The
+differentiation is direction: the same catalog, run the opposite way. They ladder out through a
 flow model; we invert the acceleration scale on the anchored
 subsample with no flow model. The two instruments share calibration
 pegs and fail in different places, which is what makes the comparison
@@ -507,18 +517,18 @@ separate (points beyond 20 arcsec but inside 1.5 disk scale
 lengths), the measured -0.018 +/- 0.013 sits four sigma from a pure
 composition trend calibrated to reproduce the same depression, and
 seven sigma from a disk-scale organizer, while an angular organizer
-is consistent; matched in acceleration, that cell is clean
-(-0.004 +/- 0.010). A within-curve circular-shift null that
-preserves each curve's own autocorrelation places the inner
-depression beyond all of its draws. The mechanism, however, is not
+is consistent; a within-curve circular-shift null that preserves
+each curve's own autocorrelation places the inner depression beyond
+all of its draws, and grades the small residual in that cell at p of
+about 0.02. The mechanism, however, is not
 established: beam smearing would hit galaxies whose inner points
 subtend smaller angles harder, and that between-galaxy gradient is
 null (rank correlation +0.02 with the innermost angle, p = 0.94;
 -0.32 with distance, p = 0.18, the right sign but not significant).
 The feature is carried by 27 points inside 20 arcsec; a non-angular
 admixture of order fifteen to twenty-five per cent remains
-permitted; and the 0.8 km/s/Mpc cut lever above remains the meter's
-total exposure to it.
+permitted and nominally present; and the 0.8 km/s/Mpc cut lever
+above remains the meter's total exposure to it.
 
 ### 6d. Peg sharing and gearing
 
@@ -683,8 +693,8 @@ domain are the instrument a BIG-SPARC-era inversion needs on day one.
 
 ## 8. The redshift axis
 
-The identity generalizes: a0(z) = cH(z)/2pi rises with redshift, and
-the rise is parameter-free once H0 is set (about +0.5 x 10^-10 m/s^2
+The identity generalizes: a0(z) = cH(z)/2pi (hereafter the lock)
+rises with redshift, and the rise is parameter-free once H0 is set (about +0.5 x 10^-10 m/s^2
 per unit redshift at low z). The generalization is this program's
 registered reading, not a published derivation: the Cadoni & Tuveri
 result is derived in a static de Sitter setting, and which expansion
@@ -887,9 +897,9 @@ downgrades, listed so they cannot be un-learned:
   refits, stalling 5.5-11.8 likelihood units short on those worlds
   only. All cut-world numbers quoted here are therefore the
   corrected, profiled values (the reviewer's endpoint was reproduced
-  to the third decimal); the uncut fits were verified at their
-  profiled optima to 0.01, and one subsample scatter was corrected
-  (66.0 to 64.3).
+  to the third decimal); the uncut anchored fits were verified at
+  their profiled optima to 0.01, and one subsample scatter was
+  corrected (66.0 to 64.3).
 - The robustness battery's verdict was corrected on review: one of
   its three firing axes (a leave-one-out maximum graded against a
   single-draw band) was struck as a mis-specified order-statistic
@@ -949,7 +959,7 @@ instrument:
 | all five figures (gated) + the conversion-branch arithmetic | calcs/paperf_figures.py | papers/figs/figf1-5, data/paperf_figs.txt |
 | the peg-gearing measurement (section 6d; 1.59, flat 1.85) | calcs/round51_gearing.py | data/round51_gearing.txt |
 | whole-catalog reading 67.5; census + reclassification error table | calcs/stage10t_legregrow.py (gates G1b, R1) | data/stage10s_h0meter_gates.txt, data/stage10t_skyread.txt |
-| external-literature quote verification (SML20; references) | session record 2026-09-22/23 | LOG.md entries; the reference list's (v) tags |
+| external-literature quote verification (SML20; references) | session record 2026-09-22/23 | LOG.md entries; the reference-list verification notes (repository markdown) |
 | robustness battery + census leg (sections 3, 6f) | calcs/stage10x_meterrobust.py | data/stage10x_battery.txt, data/stage10x_verdict.txt |
 | battery verification (blind + post-report) | calcs/round50_ga.py, calcs/round50_gb.py | data/round50_ga.txt, data/round50_gb.txt |
 | residual-contrast organizer (section 6c: matched contrast, cells, worlds) | calcs/stage10y_organizer.py | data/stage10y_verdict.txt, data/stage10y_skyread.txt |
@@ -985,14 +995,14 @@ stripped from the rendered PDF.]
   Peletier R. F., 2018, MNRAS 474, 4366 (arXiv:1711.09112). (v)
 - Riess A. G., et al., 2022, ApJL 934, L7 (arXiv:2112.04510). (v)
 - Schombert J., McGaugh S., Lelli F., 2020, AJ 160, 71
-  (arXiv:2006.08615). (v — every quoted number verified against the
-  accepted arXiv v2 source 2026-09-22; the 30/20 SPARC/Ponomareva
-  split is their stated split, tables enumerate 29+21; cross-check
-  the published AJ PDF at assembly)
+  (arXiv:2006.08615). (v) [every quoted number verified against the
+  accepted arXiv v2 source and the published AJ page, 2026-09-22/23;
+  the 30/20 SPARC/Ponomareva split is their stated split, tables
+  enumerate 29+21]
 - Secrest N. J., et al., 2021, ApJL 908, L51. (v)
 - Tully R. B., Kourkchi E., Courtois H. M., et al., 2023,
-  Cosmicflows-4, ApJ 944, 94 (arXiv:2209.11238; publisher year
-  verified 2026-09-22). (v)
+  Cosmicflows-4, ApJ 944, 94 (arXiv:2209.11238). (v) [publisher year
+  verified 2026-09-22]
 - van Putten M. H. P. M., 2026, MNRAS 548 (arXiv:2608.07112). (v)
 - Varasteanu T., et al., 2025, arXiv:2504.20857. (v)
 - Varasteanu T., et al., 2026, MIGHTEE-HI/LADUMA evolution

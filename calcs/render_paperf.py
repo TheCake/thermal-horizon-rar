@@ -17,10 +17,9 @@ src = open('papers/paperF_hubble_meter.md', encoding='utf-8').read()
 
 # 1. strip the draft-status banner (the first ** ... ** block after the title)
 src = re.sub(r"\n\*\*Draft 0\.\d+[^*]*\*\*\n", "\n", src, count=1, flags=re.S)
-# 2. internal tags
-src = re.sub(r"\n\[All entries verified[^\]]*\]\n", "\n", src)
+# 2. internal tags (whitespace-tolerant: bracket notes wrap across lines)
+src = re.sub(r"\s*\[All\s+(?:entries|quotes)\s+verified[^\]]*\]", "", src)
 src = re.sub(r"\s*\[ASSEMBLY[^\]]*\]", "", src)
-src = re.sub(r"\s*\[All quotes verified[^\]]*\]", "", src)
 # 3. reference-list verification tags: "(v)" with optional bracket notes
 src = re.sub(r"\s*\(v\)(\s*\[[^\]]*\])?", "", src)
 src = re.sub(r"\s*\[verify[^\]]*\]", "", src)
@@ -31,11 +30,13 @@ src = re.sub(r"\n\[ASSEMBLY: verify every entry[^\]]*\]\n", "\n", src)
 src = src.replace(
     "Author: Filip Hájek (independent researcher).",
     "Author: Filip Hájek (independent researcher).\n\n"
-    "*Preprint draft, 2026-09-23. Full analysis chain: "
+    "*Preprint draft, 2026-09-24. Full analysis chain: "
     "github.com/TheCake/thermal-horizon-rar; archived record: "
     "doi.org/10.5281/zenodo.22050990 (concept).*")
 
-assert '[ASSEMBLY' not in src and '(v)' not in src, "internal tags remain"
+for bad in ('[ASSEMBLY', '(v)', '(v ', '[All', '[verify', '[ID corrected',
+            'at assembly', 'cross-check the published'):
+    assert bad not in src, "internal tag remains: " + bad
 
 body = markdown.markdown(src, extensions=['tables'])
 
