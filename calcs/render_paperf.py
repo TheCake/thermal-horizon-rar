@@ -32,7 +32,8 @@ src = src.replace(
     "Author: Filip Hájek (independent researcher).\n\n"
     "*Preprint draft, 2026-09-24. Full analysis chain: "
     "github.com/TheCake/thermal-horizon-rar; archived record: "
-    "doi.org/10.5281/zenodo.22050990 (concept).*")
+    "doi.org/10.5281/zenodo.22923373 (this paper); companion papers: "
+    "doi.org/10.5281/zenodo.22050990.*")
 
 for bad in ('[ASSEMBLY', '(v)', '(v ', '[All', '[verify', '[ID corrected',
             'at assembly', 'cross-check the published'):
