@@ -1,6 +1,6 @@
 # A Hubble meter from galaxy rotation curves: a first execution of the a0-to-H0 inversion
 
-**Draft 0.5 — post-referee + PDF-level cold read (2026-09-24; the
+**Draft 0.5 — post-referee + PDF-level cold read (2026-09-23; the
 outward-artifact rule applied to the rendered PDF by a fresh
 reader, FIX-THEN-SEND adopted in full: three leaked verification
 notes removed and the render script hardened with
@@ -33,7 +33,7 @@ cleared at identification-plus-grade scope; KK98-251 carried to a
 deferred candidate by the stage-10X census leg. The stage-10X
 battery is adopted (Round 50): section 6f carries the two
 primary-side systematic rows. Abstract 250 words (whitespace-token
-count, re-measured 2026-09-24). NO REMAINING ASSEMBLY BLOCKERS.
+count, re-measured 2026-09-23). NO REMAINING ASSEMBLY BLOCKERS.
 Guardrails from the stage verdict files are restated in Appendix A
 and are binding on every future edit.**
 

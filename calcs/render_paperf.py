@@ -27,6 +27,10 @@ src = re.sub(r"\s*\[ID corrected[^\]]*\]", "", src)
 # 4. the reference-list ASSEMBLY preamble line
 src = re.sub(r"\n\[ASSEMBLY: verify every entry[^\]]*\]\n", "\n", src)
 # 5. version line under the author
+# NB: the byline date and DOI below match the PUBLISHED v0.5 file (Zenodo
+# record 22923373, publication_date 2026-09-23; the 09-24 was a one-day
+# clock slip, left as-is on the frozen published file). Do NOT re-render
+# between the publish and the send; update both fields at the next version.
 src = src.replace(
     "Author: Filip Hájek (independent researcher).",
     "Author: Filip Hájek (independent researcher).\n\n"
