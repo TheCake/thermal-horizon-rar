@@ -4,13 +4,16 @@
 of the universe's own horizon? A research program that tests that idea hard — run as
 an open human + AI collaboration.**
 
-*(Updated 2026-09-16. The citable versions of the results are the two papers,
-archived at DOI [10.5281/zenodo.22311231](https://doi.org/10.5281/zenodo.22311231):
+*(Updated 2026-09-24. The citable versions of the results are the three papers:
 [papers/paper1_wide_binaries.md](papers/paper1_wide_binaries.md) and
-[papers/paper2_rar_coefficients.md](papers/paper2_rar_coefficients.md).
-[PAPER.md](PAPER.md) is the frozen internal record they grew from, kept with a
-running errata block. This is an active research program, not a settled result,
-and it has not yet been peer-reviewed.)*
+[papers/paper2_rar_coefficients.md](papers/paper2_rar_coefficients.md), archived
+at DOI [10.5281/zenodo.22050990](https://doi.org/10.5281/zenodo.22050990), and
+[papers/paperF_hubble_meter.md](papers/paperF_hubble_meter.md) (a Hubble-constant
+meter built from the a0 = cH0/2pi inversion), archived at DOI
+[10.5281/zenodo.22923373](https://doi.org/10.5281/zenodo.22923373).
+[PAPER.md](PAPER.md) is the frozen internal record the first two grew from, kept
+with a running errata block. This is an active research program, not a settled
+result, and none of it has yet been peer-reviewed.)*
 
 ---
 
@@ -176,8 +179,9 @@ py calcs/<stage>.py          # any stage; outputs land in data/
 py calcs/stage6q_worldtable.py   # the ledger audit (all gates should PASS)
 ```
 
-Start reading with the two papers in [papers/](papers/) (or the archived PDFs at
-[the DOI](https://doi.org/10.5281/zenodo.22311231)), then
+Start reading with the three papers in [papers/](papers/) (or the archived PDFs
+at [10.5281/zenodo.22050990](https://doi.org/10.5281/zenodo.22050990) and
+[10.5281/zenodo.22923373](https://doi.org/10.5281/zenodo.22923373)), then
 [NOTES-horizon-inertia.md](NOTES-horizon-inertia.md) (the chronological lab
 notebook, retractions included) and [LOG.md](LOG.md) (the one-line-per-stage
 program log).

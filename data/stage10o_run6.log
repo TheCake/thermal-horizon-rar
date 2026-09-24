@@ -1,0 +1,95 @@
+﻿[mode: ADAPTIVE per-orbit DOP853 (A3) -> data/stage10o_results.json]
+========================================================================
+PART A: the phase-mixing map (M&H eq. 26/30/33 machinery)
+========================================================================
+  GATE G10O-0f: PASS  (symbolic vZLK turning-point residual = 0)
+  Gamma=0.333 alpha_i=-0.99 -> alpha_f=-0.8932  (R=6, SE 0.0009, last halves -0.795/-0.790, drift99 9.5e-07, L1 0.014)
+      replicates: -0.8938, -0.8903, -0.8959, -0.8921, -0.8921, -0.8953
+  Gamma=0.333 alpha_i=+0.10 -> alpha_f=+0.3899  (R=6, SE 0.0074, last halves +0.426/+0.424, drift99 1.1e-05, L1 0.007)
+      replicates: +0.3649, +0.4177, +0.3793, +0.3988, +0.3934, +0.3849
+  Gamma=0.333 alpha_i=+0.50 -> alpha_f=+0.7244  (R=6, SE 0.0146, last halves +0.711/+0.710, drift99 8.7e-06, L1 0.007)
+      replicates: +0.7349, +0.7131, +0.6787, +0.7860, +0.7250, +0.7086
+  Gamma=0.333 alpha_i=+0.80 -> alpha_f=+0.8655  (R=6, SE 0.0210, last halves +0.767/+0.769, drift99 7.0e-06, L1 0.007)
+      replicates: +0.8584, +0.9265, +0.9031, +0.8287, +0.7874, +0.8888
+  Gamma=0.333 alpha_i=+1.00 -> alpha_f=+0.9805  (R=6, SE 0.0288, last halves +1.006/+1.006, drift99 7.2e-06, L1 0.008)
+      replicates: +1.0691, +0.8969, +1.0093, +1.0179, +0.8935, +0.9964
+  Gamma=0.333 alpha_i=+1.20 -> alpha_f=+1.0884  (R=6, SE 0.0209, last halves +1.111/+1.112, drift99 8.0e-06, L1 0.007)
+      replicates: +1.1261, +1.0587, +1.1053, +1.1603, +1.0588, +1.0215
+  Gamma=0.333 alpha_i=+1.60 -> alpha_f=+1.3090  (R=6, SE 0.0457, last halves +1.355/+1.355, drift99 1.1e-05, L1 0.006)
+      replicates: +1.1459, +1.3846, +1.3876, +1.3445, +1.1897, +1.4019
+  Gamma=0.333 alpha_i=+2.00 -> alpha_f=+1.4354  (R=6, SE 0.0726, last halves +1.377/+1.374, drift99 6.6e-06, L1 0.006)
+      replicates: +1.6631, +1.2427, +1.2845, +1.5067, +1.5998, +1.3160
+  Gamma=0.333 alpha_i=+2.50 -> alpha_f=+1.5652  (R=6, SE 0.0489, last halves +1.648/+1.650, drift99 1.0e-05, L1 0.005)
+      replicates: +1.5265, +1.4455, +1.5898, +1.7911, +1.5189, +1.5195
+  Gamma=1.000 alpha_i=-0.99 -> alpha_f=-0.9047  (R=6, SE 0.0017, last halves -0.795/-0.791, drift99 5.9e-05, L1 0.012)
+      replicates: -0.9051, -0.9046, -0.9046, -0.9054, -0.9105, -0.8978
+  Gamma=1.000 alpha_i=+0.10 -> alpha_f=+0.3240  (R=6, SE 0.0128, last halves +0.239/+0.239, drift99 4.7e-04, L1 0.007)
+      replicates: +0.3500, +0.3366, +0.2841, +0.3397, +0.3496, +0.2838
+  Gamma=1.000 alpha_i=+0.50 -> alpha_f=+0.6559  (R=6, SE 0.0074, last halves +0.752/+0.752, drift99 4.1e-04, L1 0.006)
+      replicates: +0.6669, +0.6568, +0.6272, +0.6602, +0.6449, +0.6792
+  Gamma=1.000 alpha_i=+0.80 -> alpha_f=+0.8825  (R=6, SE 0.0084, last halves +0.862/+0.864, drift99 6.7e-04, L1 0.010)
+      replicates: +0.9089, +0.8621, +0.8981, +0.8841, +0.8866, +0.8551
+  Gamma=1.000 alpha_i=+1.00 -> alpha_f=+0.9870  (R=6, SE 0.0186, last halves +1.012/+1.010, drift99 4.1e-04, L1 0.009)
+      replicates: +1.0481, +1.0019, +0.9623, +1.0042, +0.9131, +0.9924
+  Gamma=1.000 alpha_i=+1.20 -> alpha_f=+1.1326  (R=6, SE 0.0123, last halves +1.166/+1.170, drift99 2.7e-04, L1 0.010)
+      replicates: +1.1326, +1.1240, +1.1448, +1.0915, +1.1823, +1.1205
+  Gamma=1.000 alpha_i=+1.60 -> alpha_f=+1.3485  (R=6, SE 0.0236, last halves +1.259/+1.260, drift99 4.2e-04, L1 0.009)
+      replicates: +1.3934, +1.3493, +1.3560, +1.3882, +1.3678, +1.2360
+  Gamma=1.000 alpha_i=+2.00 -> alpha_f=+1.4488  (R=6, SE 0.0425, last halves +1.582/+1.581, drift99 6.2e-04, L1 0.007)
+      replicates: +1.3593, +1.4779, +1.4281, +1.6019, +1.3153, +1.5100
+  Gamma=1.000 alpha_i=+2.50 -> alpha_f=+1.7085  (R=6, SE 0.0109, last halves +1.638/+1.634, drift99 3.4e-04, L1 0.005)
+      replicates: +1.7261, +1.6660, +1.6934, +1.7001, +1.7311, +1.7343
+  GATE G10O-0d: PASS  (worst 99th-pct H drift = 7.14e-04)
+  GATE G10O-0c: PASS  (worst window L1 = 0.014)
+  GATE G10O-0a: PASS  (max |map - (1+a)/2| near unity = 0.0345)
+  GATE G10O-0b: PASS  (max |map(1) - 1| = 0.0195)
+  ALPHA_FLOOR: Gamma=1/3 -> -0.8932, Gamma=1 -> -0.9047
+Refresh chains (random re-orientation between mixings), Gamma = 1:
+  chain from alpha_0=-0.99: k=1,2,3 -> -0.8984, -0.7341, -0.5410
+  chain from alpha_0=+1.32: k=1,2,3 -> +1.1949, +0.9898, +0.8774
+  chain from alpha_0=+2.50: k=1,2,3 -> +1.6113, +1.2251, +1.0643
+  GATE G10O-1: PASS  (Table 1 headline (superthermal > 10^3 AU; 1.32+/-0.09 at 3.16-10 kAU))
+========================================================================
+PART B: timescales and conversion
+========================================================================
+  GATE G10O-2: PASS  (t0(10^4 AU) = 3.49 Gyr vs M&H 4 / H22 5x1)
+  r_M(1 Msun) = 7031 AU; Gamma_Gal = 1.135e-29 s^-2
+  conversion: Gamma_c/Gamma_Gal = 1.005e+04 x (e_a kappa_c)
+  Galactic t0 per bin (Gyr): 8281.0, 2267.7, 956.3, 403.3, 170.1, 46.6, 8.3, 1.5
+========================================================================
+PART C: the exclusion wedge
+========================================================================
+  k_gal per bin: [0, 0, 0, 0, 0, 0, 1, 1]
+  tau_c ~ 0.10 Gyr: excluded ratio >= 100  -> e_a*kappa_c >= 0.00995
+  tau_c ~ 0.29 Gyr: excluded ratio >= 31.6  -> e_a*kappa_c >= 0.00315
+  tau_c ~ 1.10 Gyr: excluded ratio >= 10  -> e_a*kappa_c >= 0.000995
+  tau_c ~ 3.32 Gyr: NO exclusion
+  tau_c ~ 10.00 Gyr: NO exclusion
+  FROZEN CORNER (tau_c = age): NO exclusion (alpha_0-degenerate)
+  SECONDARY (bin 1 included): tau=1 -> 0.0009949739344750704, frozen -> None
+  robustness (tau_c = 1 Gyr bound on e_a*kappa_c): ceil2.0=0.000995, ceil1.6=0.000995, age8=0.000995, age12=0.000995, dom1=0.000995, dom4=0.000995, gamthird=0.000995
+  no-pump non-test: max(alpha + 2 sigma) = 1.50 < ceiling 2.5 -> pump direction CANNOT fire here (as pre-stated)
+G10O-4 injection at the exclusion boundary:
+  cell (tau=0.29, ratio=31.6): forward-sim violates a bin: True
+  cell (tau=1.10, ratio=10): forward-sim violates a bin: True
+  GATE G10O-4: PASS  (boundary cells verified: [True, True])
+G10O-3 resolution row (A6 z-grade):
+  alpha_i=-0.99: hi-res -0.8956 (SE 0.0001) vs cell -0.9047 (SE 0.0017) -> d 0.0091 vs bar 0.0300
+  alpha_i=+1.00: hi-res +1.0204 (SE 0.0325) vs cell +0.9870 (SE 0.0186) -> d 0.0333 vs bar 0.0936
+  alpha_i=+2.50: hi-res +1.7197 (SE 0.0522) vs cell +1.7085 (SE 0.0109) -> d 0.0112 vs bar 0.1333
+  GATE G10O-3: PASS  (-0.99: d=0.0091 bar=0.0300; +1.00: d=0.0333 bar=0.0936; +2.50: d=0.0112 bar=0.1333)
+========================================================================
+PART D: the step statistic
+========================================================================
+  data: chi2_null = 3.37 (5 dof), best step at x0 = 2.5, size = -0.090, Delta chi2 = 1.21
+  GATE G10O-5a: FAIL  (step recovery 35/200)
+  GATE G10O-5b: PASS  (false positive 2/200)
+  STEP VERDICT: POWER-LIMITED
+========================================================================
+PART E: Galactic-halving consistency read
+========================================================================
+  rho0=0.2: bins mixed within age: [7, 8]; map(1.32) = 1.155 vs bin-8 1.17+/-0.15 -> d = +0.10 sigma
+  rho0=0.1: bins mixed within age: [8]; map(1.32) = 1.155 vs bin-8 1.17+/-0.15 -> d = +0.10 sigma
+========================================================================
+LETTER: O-WEDGE   gates 10/11   step: POWER-LIMITED   wall 6154 s
+results -> data/stage10o_results.json

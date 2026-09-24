@@ -1,5 +1,16 @@
 # The circulation playbook (2026-08-06)
 
+**Status note (2026-09-24): this is the frozen 2026-08-06 plan; several
+items have since executed or changed. The RNAAS calibration note (item
+1) was WITHDRAWN on 2026-09-03 after its headline calibrator failed a
+null-injection test (correction #21; see the banner in
+papers/note_pair_errors.md) — it was never submitted. The venue in item
+5 changed: OJAp is an arXiv-overlay journal and sits behind the
+endorsement gate, so the direct-submission route is MNRAS. Items 2, 3,
+and 6 have executed in modified form (Zenodo records
+10.5281/zenodo.22050990 and 10.5281/zenodo.22923373 are live; outreach
+is under way). The live plan is tracked in LOG.md, not here.**
+
 Author request: "we should write it down to not forget." This is the
 don't-forget document for everything between here and the papers being
 read. Sources: the round-15 reviewer's strategy memo (archived in
