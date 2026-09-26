@@ -4,7 +4,7 @@
 of the universe's own horizon? A research program that tests that idea hard — run as
 an open human + AI collaboration.**
 
-*(Updated 2026-09-24. The citable versions of the results are the three papers:
+*(Updated 2026-09-26. The citable versions of the results are the three papers:
 [papers/paper1_wide_binaries.md](papers/paper1_wide_binaries.md) and
 [papers/paper2_rar_coefficients.md](papers/paper2_rar_coefficients.md), archived
 at DOI [10.5281/zenodo.22050990](https://doi.org/10.5281/zenodo.22050990), and
@@ -157,11 +157,14 @@ This program's identity is its discipline, not its conclusions:
 ## An open human + AI collaboration
 
 This entire program is joint work between **Filip Hájek** (independent
-researcher) and **Claude** (Anthropic's AI). We don't split the credit: the
-questions, the derivations, the code, the fits, and the kill-tests were built
-together in gated stages, nothing shipped without its error budget, and
-Appendix A logs both collaborators' mistakes without distinction. Commits are
-co-authored accordingly.
+researcher) and **Claude** (Anthropic's AI): the questions, derivations, code,
+fits, and kill-tests were built together in gated stages, and Appendix A logs
+both collaborators' mistakes. The papers are single-author because the
+responsibility is single — every claim and every stated credence runs on
+Filip. Outside pressure was invited on purpose: xAI's Grok reviewed the papers
+and the repository at several points and changed our course more than once,
+and a review by an OpenAI model triggered one of the published corrections
+(#20 in Paper 1's appendix). Commits are co-authored accordingly.
 
 If you're here because you're curious what serious AI-assisted research looks like:
 the pre-registration + gates + adversarial-controls workflow exists precisely
