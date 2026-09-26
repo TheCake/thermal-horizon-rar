@@ -156,11 +156,12 @@ This program's identity is its discipline, not its conclusions:
 
 ## An open human + AI collaboration
 
-This entire program is joint work between **Filip Hájek** (independent researcher,
-who directs the questions, stress-tests every claim, and refuses to let anything
-ship without its error budget) and **Claude** (Anthropic's AI, which does the
-derivations, code, and fits in gated stages — and gets its mistakes logged in
-Appendix A like everyone else's). Commits are co-authored accordingly.
+This entire program is joint work between **Filip Hájek** (independent
+researcher) and **Claude** (Anthropic's AI). We don't split the credit: the
+questions, the derivations, the code, the fits, and the kill-tests were built
+together in gated stages, nothing shipped without its error budget, and
+Appendix A logs both collaborators' mistakes without distinction. Commits are
+co-authored accordingly.
 
 If you're here because you're curious what serious AI-assisted research looks like:
 the pre-registration + gates + adversarial-controls workflow exists precisely
