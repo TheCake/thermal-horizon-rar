@@ -169,15 +169,23 @@ mis-citation) are real; the corrections ledger shows the system catching both.
 
 ## Reproduce it
 
-Windows/PowerShell with Python (`py`), numpy/scipy/sympy/astropy; the binary
-population fits use CUDA (cupy) on a consumer GPU. Large datasets are fetched, not
-committed — each loader script documents its exact source (SPARC via Zenodo, Gaia
-EDR3 binaries via Zenodo, El-Badry–Rix via VizieR).
+Three commands from a fresh clone:
 
 ```
-py calcs/<stage>.py          # any stage; outputs land in data/
-py calcs/stage6q_worldtable.py   # the ledger audit (all gates should PASS)
+pip install -r requirements.txt
+py calcs/stage6q_worldtable.py   # audit the ledger + committed outputs (<1 s, no data needed)
+py calcs/fetch_inputs.py         # fetch SPARC + the EDR3 catalog (1.4 GB), verify every hash
 ```
+
+The fetch script proves your inputs byte-identical to the papers' (it
+checks the pre-registered SHA256 manifest, including an aggregate hash
+over the 175 SPARC rotation curves). Then [REPRO.md](REPRO.md) walks the
+rest: recomputing the provenance invariants, regenerating every paper
+figure with its gates, and re-deriving headline numbers from the ledger
+map. A GPU is needed only for the wide-binary population fits — the
+whole galaxy side, including the Hubble-meter stages, is plain CPU, and
+the binary fits' posterior cubes are committed so downstream analyses
+re-run without refitting.
 
 Start reading with the three papers in [papers/](papers/) (or the archived PDFs
 at [10.5281/zenodo.22050990](https://doi.org/10.5281/zenodo.22050990) and

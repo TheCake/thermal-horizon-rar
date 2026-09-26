@@ -1,0 +1,12 @@
+# The environment of record for the committed outputs
+# (Windows 11, Python 3.13.2; the CUDA fits ran on an RTX 5090).
+# Later versions are expected to work; these are the versions of record.
+numpy==2.5.1
+scipy==1.18.0
+sympy==1.14.0
+astropy==8.0.1
+matplotlib==3.11.1
+# GPU-only dependency: the wide-binary population fits (the binary engines
+# under calcs/). CPU-only machines skip this line -- the whole galaxy side,
+# every audit gate, and every committed-output verification run without it.
+cupy-cuda12x==14.1.1

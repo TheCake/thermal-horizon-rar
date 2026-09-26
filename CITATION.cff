@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite it as below."
 type: software
 title: "thermal-horizon-rar: Testing the Thermal-Horizon Reading of the Radial Acceleration Relation, from Galaxies to Wide Binaries"
-version: "v1.0.0"
-date-released: "2026-08-13"
+version: "v1.1.0"
+date-released: "2026-09-26"
 license: CC-BY-4.0
 authors:
   - family-names: "Hájek"
@@ -20,16 +20,22 @@ abstract: >-
   bootstrap error budgets, and a noise-ceiling profile; the solar-system quadrupole
   consequences of the measured amplitude; a modified-inertia versus modified-gravity
   discrimination on the binary data; a reconciliation by ablation of the conflicting
-  published wide-binary analyses; and a horizon-thermal mechanism programme with its
-  exact results, its exclusions, and its open constants. Three manuscripts are under
-  papers/ (wide binaries; radial-acceleration-relation coefficients; mechanism). The
-  frozen internal record is PAPER.md; the chronological lab notebook, including every
-  correction and retraction, is NOTES-horizon-inertia.md; the curated measurement
-  ledger is LEDGER.csv; signed predictions registered before test are in
-  PREDICTIONS.md. Every claimed number is reproduced by a named script under calcs/,
-  and every analysis stage was pre-registered in a commit made before the run.
+  published wide-binary analyses; a Hubble-constant meter built from the a0-to-H0
+  inversion on distance-independent SPARC rotation curves; and a horizon-thermal
+  mechanism programme with its exact results, its exclusions, and its open constants.
+  Four manuscripts are under papers/ (wide binaries; radial-acceleration-relation
+  coefficients; the Hubble meter; mechanism); the citable archived PDFs are at
+  doi:10.5281/zenodo.22050990 (the first two) and doi:10.5281/zenodo.22923373 (the
+  Hubble meter). The frozen internal record is PAPER.md; the chronological lab
+  notebook, including every correction and retraction, is NOTES-horizon-inertia.md;
+  the curated measurement ledger is LEDGER.csv; signed predictions registered before
+  test are in PREDICTIONS.md. Every claimed number is reproduced by a named script
+  under calcs/, every analysis stage was pre-registered in a commit made before the
+  run, calcs/fetch_inputs.py retrieves and hash-verifies the input data in one
+  command, and REPRO.md walks the full reproduction path.
 keywords:
   - MOND
+  - Hubble constant
   - radial acceleration relation
   - wide binaries
   - Gaia
