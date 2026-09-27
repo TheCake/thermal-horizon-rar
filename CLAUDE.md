@@ -3487,3 +3487,29 @@ phrase).** NEXT FORK (author's): Zenodo v1.4 publish -> the Kroupa
 click -> MNRAS trigger Mon 2026-10-05 · R50-C11 sky-matched
 injection re-run (booked) · the a0-dipole instrument (fresh
 session) · DR4 pre-sign early Oct (IMMOVABLE).**
+
+**THE KROUPA SEND (2026-09-27 ~19:00 Prague): letter v7.11 SENT to
+pkroupa@uni-bonn.de (P1 0.13 + P2 0.11 + hajek2026d 763,619 B; the
+full eleven-version delta record lives in the OUTREACH-DRAFTS gate
+block, never commit; NEW STANDING RULE: letters go out via an
+unwrapped paste artifact, never raw from the hard-wrapped drafts
+file). CLOCKS: MNRAS trigger = Kroupa silent through Mon 2026-10-05
+-> P1 to MNRAS that week; endorsement detector = the arXiv
+submission probe (baseline 2026-09-26: NOT ENDORSED). BOUFOUROU
+LETTER DEFERRED INDEFINITELY by the author 2026-09-27
+(soft-competitor rule: he is an independent researcher too,
+verified 'Independent Researcher, Brussels' on his arXiv listing) —
+the earlier triggers (arXiv posting / DR4 pre-sign) are DEAD; only
+the author's explicit call sends it; the public bar-locking commits
+and the protocol DOI do the talking. README collaboration section
+rewritten same day to the measured-throughput form (500 commits /
+42 active days / 313 scripts / 4 manuscripts / 225 ledger rows /
+review sessions numbered to 52 — every number re-derived from git
+before printing). Grok CLI operational for booked reads (empty-dir
+cwd, -p single-turn; two send-day rounds archived in
+REVIEW-GROK-2026-09.md). NEXT: the author's pass on
+DR4-CREDENCE-MAP-DRAFT.md -> terminal grok attack -> pre-sign
+session Fri/Sat 2026-10-03/04 (hard deadline 2026-12-02) · R50-C11
+sky-matched injection re-run (booked) · the a0-dipole instrument
+(fresh session) · reproduction package second half (CI + shared
+loaders) UNBLOCKED post-send.**
