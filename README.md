@@ -165,6 +165,26 @@ Outside reviews were part of the build: xAI's Grok read the papers and the
 repository at several points, and a review by an OpenAI model led to
 correction #20. Commits are co-authored.
 
+What the pairing buys is measurable in this repository:
+
+- **Pace.** First commit 2026-07-22; nine weeks later the record holds 500
+  commits across 42 active days: 313 scripts in [calcs/](calcs/), four
+  manuscripts, and the 225-row audited ledger, built alongside a day job.
+  [LOG.md](LOG.md) shows single days closing multiple full stages (design,
+  validation gates, run, review, write-up).
+- **Code at conversation speed.** An analysis stage routinely goes from
+  question to gated, committed result in one sitting, because the code is
+  written and revised in dialogue; the pre-registered bars and the
+  validation gates are what keep that speed honest.
+- **Adversarial testing as a habit.** Fits now face injected-truth
+  recovery and null-injection controls before their verdicts count, and the
+  papers' version histories cite review sessions (numbered up to 52) in which
+  independently briefed model sessions re-derived the load-bearing numbers
+  and tried to break the conclusions; sixteen of the re-verification scripts
+  are committed (calcs/round*_addendum.py). Correction #21, a headline claim
+  withdrawn after its estimator failed a null-injection test, is that
+  machinery working in public.
+
 If you're here because you're curious what serious AI-assisted research looks like:
 the pre-registration + gates + adversarial-controls workflow exists precisely
 because *both* human enthusiasm and model failure modes (e.g., confident
